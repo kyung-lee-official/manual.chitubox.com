@@ -1,0 +1,67 @@
+{
+	"docInstanceName": "CHITUBOX Basic",
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "1.9.4",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "Introduction"
+				},
+				{
+					"item": "comparison",
+					"label": "Comparison"
+				},
+				{
+					"item": "requirements",
+					"label": "Requirements"
+				},
+				{
+					"item": "setting-up",
+					"label": "Setting Up",
+					"subItems": [
+						{
+							"item": "installation",
+							"label": "Installation"
+						},
+						{
+							"item": "update-printer-firmware",
+							"label": "Update Printer Firmware"
+						},
+						{
+							"item": "configure-print-parameters",
+							"label": "Configure Print Parameters"
+						},
+						{
+							"item": "configure-support-parameters",
+							"label": "Configure Support Parameters"
+						}
+					]
+				},
+				{
+					"item": "application-overview",
+					"label": "Application Overview",
+					"subItems": [
+						{
+							"item": "ui-introduction",
+							"label": "UI Introduction"
+						},
+						{
+							"item": "file",
+							"label": "File"
+						},
+						{
+							"item": "menu-bar",
+							"label": "Menu Bar"
+						},
+						{
+							"item": "slice-preview",
+							"label": "Slice Preview"
+						}
+					]
+				}
+			]
+		}
+	]
+}

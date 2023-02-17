@@ -1,0 +1,46 @@
+{
+	"title": {
+		"docLayoutTitle": "CHITUBOX - 文档"
+	},
+	"header": {
+		"title": "CHITUBOX 文档",
+		"placeholder": "占位",
+		"about": "关于",
+		"languages": "语言",
+		"searchResult": "个结果"
+	},
+	"docContent": {
+		"onThisPage": "本页目录"
+	},
+	"footer": {
+		"relevantDocs": "相关文档",
+		"chituboxDocs": "CHITUBOX文档",
+		"chituboxDocsLink": "https://manual.chitubox.com/zh/",
+		"chituboxBasicDoc": "CHITUBOX Basic",
+		"chituboxProDoc": "CHITUBOX Pro",
+		"faqDoc": "常见问题",
+		"community": "社区",
+		"facebook": "脸书",
+		"facebookLink": "https://www.facebook.com/chitubox/",
+		"twitter": "推特",
+		"twitterLink": "https://twitter.com/chitubox",
+		"instagram": "Ins",
+		"instagramLink": "https://www.instagram.com/chitubox_official/",
+		"youtube": "油管",
+		"youtubeLink": "https://www.youtube.com/channel/UCD4m1SdLs_VokY2133ZqUgQ",
+		"Discord": "Discord",
+		"DiscordLink": "https://discord.com/invite/E45UFqGPZh",
+		"more": "更多",
+		"chituboxSite": "CHITUBOX 官网",
+		"chituboxSiteLink": "https://www.chitubox.com/",
+		"supportEmail": "技术支持邮箱",
+		"supportEmailLink": "mailto://support@chitubox.com",
+		"copyright": "版权所有 ©",
+		"companyName": "深圳市创必得科技有限公司"
+	},
+	"error": {
+		"pageNotFound": "找不到该页面 😢",
+		"message1": "",
+		"message2": " 秒后将跳转回首页..."
+	}
+}

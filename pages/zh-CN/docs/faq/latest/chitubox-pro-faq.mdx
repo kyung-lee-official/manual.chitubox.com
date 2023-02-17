@@ -1,0 +1,267 @@
+import { DocsLayout } from "@/components/docsLayout";
+
+export const meta = {
+	title: "常见问题",
+	author: "CHITUBOX Team",
+};
+
+# CHITUBOX Pro 常见问题
+
+<Admonition type="tip" title="提示">
+	您可以用 **CTRL + F** 搜索本页内容。
+</Admonition>
+
+## Windows 操作系统问题
+
+<Admonition type="note" title="注意">
+	请确保你已经安装了<NextLink href="/zh-CN/docs/chitubox-pro/latest/requirements">所需运行环境</NextLink>中提到的所有环境。
+</Admonition>
+
+### MSVCR110.dll 丢失
+
+“MSVCR110.dll Missing”表示您缺少 Visual Studio 2012 的 Visual C++ Redistributable Packages，请从<SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=30679">此处</SpanA>下载所需的环境。
+
+### MSVCR120.dll 丢失
+
+“MSVCR120.dll Missing”表示您缺少 Visual Studio 2013 的 Visual C++ Redistributable Packages，请从<SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">此处</SpanA>下载所需的环境。
+
+### MSVCR140.dll 丢失
+
+“MSVCR140.dll Missing”表示您缺少 Visual Studio 2015，2017，和 2019 的 Visual C++ Redistributable Packages，请从<SpanA href="https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170">此处</SpanA>下载所需的环境。
+
+### 其他系统级错误
+
+-   错误代码 -1073741701
+
+-   错误代码 -1073741515
+
+-   错误代码 -1073740791
+
+-   错误代码 -0xc000007b
+
+出现此类问题的原因可能是某些系统文件损坏或操作系统文件损坏。
+
+您可以尝试以下方法进行修复：
+
+方法 1： 在 PC 上打开 cmd（使用 Win + R 并输入 cmd），输入以下命令：
+
+```shell
+DISM.exe /Online /Cleanup-image /Scanhealth
+
+DISM.exe /Online /Cleanup-image /Restorehealth
+```
+
+方法 2： 在 PC 上打开 cmd（使用 Win + R 并输入 cmd），输入以下命令：
+
+```shell
+sfc /scannow
+```
+
+如果这些方法都不能解决问题，您可能需要从微软官方网站下载并重新安装您的系统。
+
+-   <SpanA href="https://www.microsoft.com/en-us/software-download/windows11">Windows 11</SpanA>
+
+-   <SpanA href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10</SpanA>
+
+### Windows 资源管理器反复重启
+
+如果您的 Windows 资源管理器一直反复重启，请通过以下方式修复：
+
+通过按 Ctrl + Shift + Esc 调出你的 Windows 任务管理器，右击 Windows 资源管理器，然后结束任务（注意不是重新启动）。
+
+<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-pro/faq002.png"} />
+
+在任务管理器中，点击 文件 > 运行新任务，输入 `cmd`, 勾选 **以系统管理权限创建此任务**, 然后点击 **确定**.
+
+输入：
+
+```shell
+regsvr32 /u "CHITUBOX-Installation-Path\CHITUBOX_Thumbnail.dll"
+```
+
+注意，这里要把 `CHITUBOX-Installation-Path` 换成你的 CHITUBOX 安装路径，例如：
+
+```shell
+regsvr32 /u "C:\Program Files\CHITUBOXPro V1.0.1\CHITUBOX_Thumbnail.dll"
+```
+
+敲击回车键 Enter 运行命令。
+
+<Admonition type="note" title="注意">
+	你的 OpenGL 版本不应低于 2.0。
+</Admonition>
+
+### 和 Fusion 360 冲突或者 OpenGL 报错 Failed to create OpenGL context for format QSurfaceFormat
+
+<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-pro/faq001.png"} />
+
+请打开 系统设置 > 关于 > 高级系统设置，删除环境变量 `QT_OPENGL` 。
+
+### 报错：This application failed to start because no Qt platform plugin could be initialized
+
+<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-pro/faq006.png"} />
+
+请打开 系统设置 > 关于 > 高级系统设置，删除 `QT_OPENGL` `QT_PLUGIN_PATH` 这两个环境变量。
+
+### CHITUBOX Pro 无响应
+
+<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-pro/faq008.png"} />
+
+极有可能是软件冲突问题，请一一退出正在运行的软件，并查找与 CHITUBOX 冲突的软件。 完成此操作后，大多数情况下应该可以解决问题。
+以下软件可能会导致冲突：
+
+-   杀毒软件，各种管家，卫士，助手，大师
+
+-   Tabtip (任务栏里面叫 Touch Keyboard and Handwriting Panel)
+
+-   PowerToys
+
+-   Google Drive
+
+## 插件问题
+
+### Longer 错误代码 -1
+
+1. Longer 的控制板对分辨率进行了特殊处理，我们已经确认了正确的分辨率 x：960，y：1708。我们已经仔细检查并确认了这一点，所以请不要更改它。
+
+2. `错误代码 -1` 更改分辨率后是插件内码错误。 因为您更改了分辨率，所以发生了报错。
+
+点击<SpanA href="https://drive.google.com/drive/u/0/folders/1rPRw68b3Z1oqLwc7hSmP5A9Zx0HjatbE?fbclid=IwAR2XyvSs_jCWwqXymOh9ZEvcuyKNuj-ibnmbLAmfOsZMWzjJdke71kxANwQ">这里</SpanA>下载 Longer 插件。
+
+## 文件问题
+
+### 缩略图异常
+
+<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-pro/faq004.png"} />
+
+按住 Ctrl + Shift + Esc 打开任务管理器，点击 文件 > 运行新任务，输入 `cmd`, 勾选 **以系统管理权限创建此任务**, 然后点击 **确定**。
+
+输入：
+
+```shell
+regsvr32 /u "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
+```
+
+注意，这里要把 `{CHITUBOX-Installation-Path}` 换成你的 CHITUBOX 安装路径，例如：
+
+```shell
+regsvr32 /u "C:\Program Files\CHITUBOXPro V1.0.1\CHITUBOX_Thumbnail.dll"
+```
+
+敲击回车键 Enter 运行命令。
+
+<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-pro/faq004-1.png"} />
+
+输入：
+
+```shell
+regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
+```
+
+敲击回车键 Enter 运行命令。
+
+<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-pro/faq004-2.png"} />
+
+**清理磁盘**
+
+找到您的系统磁盘（一般是 C 盘），右击选择属性，点击“磁盘清理”。
+
+勾选“缩略图”，再点击“清理系统文件”，然后点击“确定”。
+
+<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-pro/faq004-4.png"} />
+
+选择“删除文件”。
+
+<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-pro/faq004-5.png"} />
+
+**重启资源管理器**
+
+通过按 Ctrl + Shift + Esc 调出你的 Windows 任务管理器，右击 Windows 资源管理器，然后结束任务（注意不是重新启动）。
+
+### 切片文件模型表面粗糙
+
+在模型被切片后，大家可能会觉得图像的质量很粗糙，但实际上这是模型在切片后通过立体渲染将每一个体素都表现出来的样子。就如同大家在 Photoshop 中将图像放大可以看到每一个像素的样子一般。<br />
+如图所示，每一个立方体的高是在切片设置中设置的层高，长是屏幕上横向每个像素的长度，宽是屏幕上纵向每个像素的宽度。长，宽，高构成体素的体积。体素是构成打印件的最小单位。
+
+<StyledAntdImage
+	src={"/images/docs/zh-CN/faq/chitubox-pro/faq005.png"}
+	style={{ maxwidth: "400px" }}
+/>
+
+<Admonition type="note" title="注意">
+	此体素成像在初次切完片预览时无法看到，需要重新将.ctb 文件加载在 CHITUBOX
+	中打开才能看到。
+</Admonition>
+
+### 为什么 STL 文件导入 CHITUBOX 后比例被缩放了？
+
+STL 文件并不包含具体的单位信息，而是使用数字记录。因此，不同的软件读取 STL 文件时使用的单位不一定相同。例如，当使用 STL 时，Blender 中的 1 米相当于 CHITUBOX 中的 1 毫米。您需要先测试您使用的 3D 建模软件和 CHITUBOX 的比例关系后再导出文件。
+
+## 其他问题
+
+出于某种原因，您可能会遇到由版本之间的数据损坏引起的其他问题。 您可以尝试以下方法来解决问题：
+
+### 清除缓存
+
+1. 打开软件日志路径 （设置/帮助 > 打开日志）。<NextLink href="/zh-CN/docs/chitubox-pro/latest/application-overview/setting-and-help#打开日志">📃点击这里</NextLink>学习如何打开日志。
+
+1. 关闭 CHITUBOX Pro (**务必先关闭 CHITUBOX Pro**) 。
+
+1. 确保已经关闭 CHITUBOX Pro 后，删除除了 📁*machine* 文件夹和 📄*userLogin.cfg* 以外的所有文件和文件夹。
+
+    <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-pro/faq003.png"} />
+
+1. 重新打开 CHITUBOX Pro。
+
+## U 盘问题
+
+您可能会发现您的打印机有时无法正确读取您的 U 盘。 这主要是因为您的打印机控制板设计为使用 USB 2.0 且容量等于或小于 16GB。 USB 3.0 使用较大的电流，因此有时会对控制板造成电气干扰。您的 U 盘应满足以下要求：
+
+-   FAT32 格式
+-   USB 2.0
+-   ≤ 16GB
+-   分配单元大小 = 2048 bytes
+
+	<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-pro/faq009.png"} />
+
+## 如何成为我们的分销商
+
+1. 在 www.chitubox.com 上登录您的帐户。
+
+    <StyledAntdImage
+    	src={"/images/docs/zh-CN/faq/chitubox-pro/faq007-1.png"}
+    	style={{ maxwidth: "700px" }}
+    />
+
+1. 编辑您的频道信息并申请成为分销商。
+
+    <StyledAntdImage
+    	src={"/images/docs/zh-CN/faq/chitubox-pro/faq007-2.png"}
+    	style={{ maxwidth: "700px" }}
+    />
+
+1. 待我们批准您的申请后，您可以在您的分销商中心查看更多详细信息。
+
+    <StyledAntdImage
+    	src={"/images/docs/zh-CN/faq/chitubox-pro/faq007-3.png"}
+    	style={{ maxwidth: "700px" }}
+    />
+
+1. 您可以输入登录页面链接以生成您的自定义链接。
+
+    <StyledAntdImage
+    	src={"/images/docs/zh-CN/faq/chitubox-pro/faq007-4.png"}
+    	style={{ maxwidth: "700px" }}
+    />
+
+   <br />
+   <br />
+
+    <StyledAntdImage
+    	src={"/images/docs/zh-CN/faq/chitubox-pro/faq007-5.png"}
+    	style={{ maxwidth: "700px" }}
+    />
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

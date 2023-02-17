@@ -1,0 +1,19 @@
+{
+	"docInstanceName": "常见问题",
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "1.x.x",
+			"pagesContext": [
+				{
+					"item": "chitubox-basic-faq",
+					"label": "CHITUBOX Basic 常见问题"
+				},
+				{
+					"item": "chitubox-pro-faq",
+					"label": "CHITUBOX Pro 常见问题"
+				}
+			]
+		}
+	]
+}

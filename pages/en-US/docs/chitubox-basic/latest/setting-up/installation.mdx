@@ -1,0 +1,104 @@
+import { DocsLayout } from "@/components/docsLayout";
+
+export const meta = {
+	title: "Installation",
+	author: "CHITUBOX Team",
+};
+
+# Installation
+
+## Windows
+
+Double click CHITUBOX installer to start installing.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-installation001.png"
+	}
+/>
+
+Click **Next**.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-installation002--1.png"
+	}
+/>
+
+Agree the EULA.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-installation003--1.png"
+	}
+/>
+
+Select your path for installation, and click **Install**.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-installation004--1.png"
+	}
+/>
+
+Wait for the progress bar until it is done.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-installation005--1.png"
+	}
+/>
+
+Click **Yes**, restart the resource manager to continue.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-installation006--1.png"
+	}
+/>
+
+Click **Finish**, you're done!
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-installation007--1.png"
+	}
+/>
+
+## Video tutorial
+
+### How to Download CHITUBOX
+
+<YouTubeVideoContainer>
+	<iframe
+		src="https://www.youtube.com/embed/y2W32NtPNzc"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</YouTubeVideoContainer>
+
+### How to Install CHITUBOX
+
+<YouTubeVideoContainer>
+	<iframe
+		src="https://www.youtube.com/embed/9wB-HC1dhrM"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</YouTubeVideoContainer>
+
+<br />
+
+<Admonition type="note">
+	If you found issues that were claimed fixed in the update log but still exist after updating CHITUBOX Pro, please clean the cache and try again. Click <NextLink href="/en-US/docs/faq/latest/chitubox-basic-faq#clean-the-cache">here</NextLink> to learn more about cache cleaning.
+</Admonition>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

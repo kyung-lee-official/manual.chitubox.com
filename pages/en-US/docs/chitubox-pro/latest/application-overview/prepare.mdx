@@ -1,0 +1,257 @@
+import { DocsLayout } from "@/components/docsLayout";
+
+export const meta = {
+	title: "Prepare",
+	author: "CHITUBOX Team",
+};
+
+# Prepare
+
+## Copy
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare001.png"
+	}
+/>
+
+Copy one or more selected models, and add the specified number of copied models to the current project.
+
+<StyledAntdImage
+	src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/001copy.gif"}
+	style={{ maxWidth: 200 }}
+/>
+
+## Split Model
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare002.png"
+	}
+/>
+
+Split the original assembly model into independent part models.
+
+If you have one object that was not a structurally one-piece, for example, the image below shows one object that contains two structurally separated parts.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare010.png"
+	}
+	style={{ width: "100%", maxWidth: 721 }}
+/>
+
+After spliting, two separated parts were sparated into two **independent** objects.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare012.png"
+	}
+	style={{ width: "100%", maxWidth: 721 }}
+/>
+
+## Auto Orientation
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare003.png"
+	}
+/>
+
+Recommend and set the layout orientation for the selected 3D model before support. The line defined by two points with the longest distance on the surface of the model will be considered as the vertical axis when applying auto orientation.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/gif/006-application-overview-prepare003.1.gif"
+	}
+	style={{ maxWidth: 200 }}
+/>
+
+## Auto Layout
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare004.png"
+	}
+/>
+
+Quickly layout the models in the project according to the set arrangement rule.
+
+If **Model rotation limit** is enabled, the rotation angle will be limited when auto layout is applied.
+
+If **Circular layout** is enabled, the model will be automatically laid out according to the circular end-to-end mode during automatic layout.
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare019.png"
+		}
+		style={{ width: "100%", maxWidth: 721 }}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare019.1.png"
+		}
+		style={{ width: "100%", maxWidth: 721 }}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<StyledAntdImage
+		src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/002auto-layout.gif"}
+		style={{ maxWidth: 200 }}
+	/>
+</ImageContainer>
+
+## Add Tag
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare005.png"
+	}
+/>
+
+Add a set text label to the specified position of the model.
+
+Here you can tag your 3D models. This function is useful when you planning to print dozens of instances from the same 3D model but using different parameters or resins or any variate that could possibly causes differences on printing results. You can mark your 3D Models by adding tags on their surface, so you won't mixed up with printing results those are similar to each others.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare013.png"
+	}
+	style={{ width: "100%", maxWidth: 721 }}
+/>
+
+## Boolean Operation
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare006.png"
+	}
+/>
+
+Perform **union**, **intersection** or **subtraction** operations between models for the selected intersecting model.
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare014.png"
+		}
+		style={{ width: "100%", maxWidth: 721 }}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare015.png"
+		}
+		style={{ width: "100%", maxWidth: 721 }}
+	/>
+</ImageContainer>
+
+## Cut
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare007.png"
+	}
+/>
+
+Split the model according to the set cutting plane.
+
+Here you can cut a 3D model into pieces (separated objects).
+
+-   You can choose cut your 3D models with an axis based face:
+
+    <StyledAntdImage
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare016.png"
+    	}
+    />
+
+-   Or you can cut your 3D model by drawing a line:
+
+    <StyledAntdImage
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare017.png"
+    	}
+    />
+
+    <StyledAntdImage
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare018.png"
+    	}
+    />
+
+## Hollow
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare008.png"
+	}
+/>
+
+The selected models will be hollowed out according to the set hollowing parameters.
+
+<ImageContainer>
+	<StyledAntdImage
+		src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/003hollow.gif"}
+		style={{ maxWidth: 200 }}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare008.1.png"
+		}
+	/>
+</ImageContainer>
+
+-   Wall Thickness: The thickness of the chamber structure after an object was hollowed (the thickness of peeled-off part under **Outer** mode).
+
+-   Mode:
+
+    -   _Inner_: A closed chamber left after hollowing.
+
+    -   _Outer_: peel off the outside of an object with the thickness of **Wall Thickness**.
+
+    -   _Bottom through_: Similar to _Inner_, but does not keep the bottom part.
+
+-   Infill: Enable/Disable generating infill structures.
+
+-   Precision: Number of triangles generated on the hollowed face.
+
+-   Hollowing process animation: Play the animation when hollowing (the real progress of hollowing subjects to the progress bar in the bottom).
+
+-   Keep the main cavity: Only one main cavity is generated when the model is hollowed out.
+
+    <StyledAntdImage
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare008.2.png"
+    	}
+    />
+
+## Dig Hole
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare009.png"
+	}
+/>
+
+The selected model is excavated according to the set hole parameters. As you increasing the edges, the shape of the hole will get close to a circle.
+
+<ImageContainer>
+	<StyledAntdImage
+		src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/004-dig-hole.gif"}
+	/>
+</ImageContainer>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

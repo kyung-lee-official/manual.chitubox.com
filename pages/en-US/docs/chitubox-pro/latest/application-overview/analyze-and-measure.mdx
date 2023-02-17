@@ -1,0 +1,101 @@
+import { DocsLayout } from "@/components/docsLayout";
+
+export const meta = {
+	title: "Analyze/Measure",
+	author: "CHITUBOX Team",
+};
+
+# Analyze/Measure
+
+## Collision Detection
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure001.png"
+	}
+/>
+
+Detect whether there are collisions, if yes, rearrange models to avoid collisions.
+
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure006.png"
+	}
+	text1={"Before collision detection"}
+	img2Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure007.png"
+	}
+	text2={"After collision detection"}
+/>
+
+## Display Size
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure002.png"
+	}
+/>
+
+Automatically measure and display the envelope length, width and height of the selected model.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure008.png"
+	}
+	style={{ width: "100%", maxWidth: "710px" }}
+/>
+
+## Two Point Distance
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure003.png"
+	}
+/>
+
+Measure the distance between two points.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure009.png"
+	}
+	style={{ width: "100%", maxWidth: "710px" }}
+/>
+
+## Point to Plane Distance
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure004.png"
+	}
+/>
+
+Measure and display the distance value from the point on the model to the plane.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure010.png"
+	}
+	style={{ width: "100%", maxWidth: "710px" }}
+/>
+
+## Parallel Plane Distance
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure005.png"
+	}
+/>
+
+Measure and display the distance between two parallel planes on the model.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure011.png"
+	}
+	style={{ width: "100%", maxWidth: "710px" }}
+/>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

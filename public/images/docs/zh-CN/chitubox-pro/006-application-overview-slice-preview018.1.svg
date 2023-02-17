@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 708 430" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g id="Layer-1" serif:id="Layer 1" transform="matrix(1,0,0,1,-74.9925,-277.082)">
+        <path id="path1026" d="M86.112,417.344C62.234,465.598 85.629,571.327 85.629,571.327C86.562,588.258 142.592,602.06 210.394,602.06C277.937,602.06 333.847,588.364 335.149,571.499L335.166,571.499C335.166,571.499 358.439,466.295 334.851,417.879C335.066,418.624 335.174,419.372 335.174,420.119C335.174,420.119 335.174,420.119 335.174,420.119C335.174,437.214 278.848,451.28 210.396,451.28C210.396,451.28 210.395,451.28 210.395,451.28C141.943,451.28 85.616,437.214 85.616,420.119C85.616,420.119 85.616,420.119 85.616,420.119C85.617,419.193 85.782,418.267 86.113,417.344L86.112,417.344Z" style="fill:rgb(0,128,0);fill-rule:nonzero;stroke:black;stroke-width:0.75px;"/>
+        <path id="path1028" d="M333.952,575.764C325.307,591.071 272.296,602.574 210.397,602.574C148.751,602.574 95.881,591.165 86.938,575.933C91.369,591.613 106.573,646.985 111.076,684.153C111.071,684.238 111.069,684.324 111.069,684.41C111.068,696.225 155.906,705.948 210.395,705.948C210.395,705.948 210.396,705.948 210.396,705.948C264.885,705.948 309.723,696.225 309.723,684.41C309.723,684.41 309.723,684.41 309.723,684.41C309.723,684.369 309.722,684.327 309.721,684.286C314.256,646.898 329.627,591.052 333.952,575.764L333.952,575.764Z" style="fill:rgb(0,255,255);fill-rule:nonzero;stroke:black;stroke-width:0.75px;"/>
+        <ellipse id="path833-6" cx="210.395" cy="683.783" rx="99.328" ry="21.537" style="fill:none;stroke:black;stroke-width:0.59px;stroke-dasharray:0.21,0.21;"/>
+        <ellipse id="path833-6-2-3" cx="210.395" cy="570.898" rx="124.778" ry="31.162" style="fill:none;stroke:black;stroke-width:0.79px;stroke-dasharray:0.28,0.56;"/>
+        <path id="path833-6-2-3-4" d="M111.07,298.757C111.069,298.839 110.042,367.333 87.022,415.469C86.652,416.079 86.355,416.691 86.131,417.305C86.13,417.307 86.13,417.311 86.128,417.313C85.787,418.251 85.616,419.193 85.616,420.135C85.615,437.345 141.481,451.296 210.394,451.296C279.308,451.297 335.174,437.345 335.174,420.135C335.173,418.406 334.597,416.681 333.451,414.977C310.724,366.848 309.722,298.916 309.722,298.916C309.722,298.916 309.722,298.916 309.722,298.916C309.722,310.731 264.884,320.454 210.394,320.454C210.394,320.454 210.394,320.454 210.394,320.454C155.905,320.453 111.067,310.731 111.067,298.916C111.067,298.863 111.068,298.81 111.07,298.758L111.07,298.757Z" style="fill:rgb(0,255,255);fill-rule:nonzero;stroke:black;stroke-width:0.79px;"/>
+        <ellipse id="path833" cx="210.395" cy="298.915" rx="99.328" ry="21.537" style="fill:rgb(0,255,255);stroke:black;stroke-width:0.59px;"/>
+    </g>
+    <g id="Layer-2" serif:id="Layer 2" transform="matrix(1,0,0,1,-74.9925,-277.082)">
+        <ellipse id="path833-6-2-3-5" cx="210.395" cy="420.119" rx="124.778" ry="31.162" style="fill:rgb(0,128,0);fill-opacity:0.88;stroke:black;stroke-width:0.79px;stroke-dasharray:0.28,0.56;"/>
+        <g transform="matrix(1,0,0,1,342.818,364.824)">
+            <g id="text1190">
+                <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:30px;fill:rgb(0,255,255);">Proﬁle 1</text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,339.687,651.652)">
+            <g id="text1190-7">
+                <g>
+                    <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:30px;fill:rgb(0,255,255);">Proﬁle 1 (</text>
+                    <text x="128.379px" y="0px" style="font-family:'SimHei', monospace;font-size:30px;fill:rgb(0,255,255);">允许底层和过渡层</text>
+                    <text x="368.378px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:30px;fill:rgb(0,255,255);">)</text>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,373.274,517.304)">
+            <g id="text1190-6">
+                <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:30px;fill:rgb(0,128,0);">Proﬁle 2</text>
+            </g>
+        </g>
+    </g>
+</svg>

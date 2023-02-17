@@ -1,0 +1,142 @@
+import { DocsLayout } from "@/components/docsLayout";
+
+export const meta = {
+	title: "Start",
+	author: "CHITUBOX Team",
+};
+
+# Start
+
+## New Project
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start001.png"
+	}
+/>
+
+New project file.
+
+## Open Project
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start002.png"
+	}
+/>
+
+Open a project file or load and merge the project file into the current project.
+
+## Open
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start003.png"
+	}
+/>
+
+<Admonition type="note">
+	Please note that the .ctb file is the final sliced file, which is for printing only under most circumstances. You SHOULD NOT apply 3D model operations to it, only a few non-model-dependent operations like exposure time, lift and retract speed, layer pixel editing (CHITUBOX Pro only), etc. are available. Please ALWAYS modify your models on unsliced formats (.stl, .obj, etc.).
+</Admonition>
+
+Open project files, import 3D models or slice files.
+
+## Recently Opened
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start004.png"
+	}
+/>
+
+Open the project file, 3D model or slice file that has been successfully opened recently.
+
+## Save Project
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start005.png"
+	}
+/>
+
+Save the current job objects as a project file.
+
+## Save All As
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start006.png"
+	}
+/>
+
+Save the project file or merge and export all 3D models (Including supports) in the project.
+
+## Merge Export
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start008.png"
+	}
+/>
+
+Combine the selected files and export to a 3D model file.
+
+Here you can export multiple selected files as a single 3D model file.
+
+_.stl_ and _.obj_ formats supported.
+
+## Section Export
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start009.png"
+	}
+/>
+
+Export the selected file sections as separate 3D model files.
+
+Here you can export multiple selected files as separated 3D model files at once.
+
+_.stl_ and _.obj_ formats supported.
+
+## Add Machine
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start010.png"
+	}
+/>
+
+Select and add the configuration parameter information of the selected device and the current operating environment.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start011.png"
+	}
+/>
+
+Or you can click this <StyledAntdImage src={"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start013.png"} /> icon at the bottom of the Viewport to add a 3D printer.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start012.png"
+	}
+/>
+
+## Replace model
+
+After selecting the model, right-click the mouse and select "Replace model". You can replace the model without change or remove the supports.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-start001.gif"
+	}
+/>
+
+<Admonition type="note">
+	The model still needs to remain the same look but only detail modified.
+</Admonition>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

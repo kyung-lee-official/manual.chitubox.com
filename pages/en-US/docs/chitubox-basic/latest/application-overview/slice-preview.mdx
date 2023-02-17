@@ -1,0 +1,133 @@
+import { DocsLayout } from "@/components/docsLayout";
+
+export const meta = {
+	title: "Slice Preview",
+	author: "CHITUBOX Team",
+};
+
+# Slice Preview
+
+## Slice
+
+Slice is the final step before your sliced file is generated.
+
+Click Slice the button to enter the slice preview.
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-slice-preview001.png"
+		}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-slice-preview002--1.png"
+		}
+	/>
+</ImageContainer>
+
+Sliced your models with the selected default profile in the Slicing Profile Panel. Applied to all your models inside the printable space on the platform.
+
+<Admonition type="note">
+	Resin Volume is calculated by summing up voxels (area of pixel $\times$
+	layer height), the algorithm is pretty simple. However, this is a
+	theoretical value, it could be affected by many other factors (resin residue
+	on the build plate and model surface, volatility, density change during
+	curing, etc.) in the real world.
+</Admonition>
+
+## Parameter Manager
+
+Edit and adjust the current print slice related parameters that need to be saved.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-slice-preview004.png"
+	}
+/>
+
+## Detect Islands
+
+Check whether the current slice file has a floating layer that cannot be successfully printed.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-slice-preview005--1.png"
+	}
+/>
+
+## Delete Island
+
+Delete the island layer in the file, you can choose to delete the current layer or all layers.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-slice-preview010--1.png"
+	}
+/>
+
+## Network Sending
+
+<Admonition type="note">
+	1. Your printer should have a USB drive plugged in to store received sliced files from your computer.
+    1. Your printer and computer must under the same LAN.
+    1. The transmission speed is limited by printer's network module, for most printers, it's around 500KBytes/s, therefore for large size files, **Network Sending** is not recommended.
+    1. Not all printers support **Network Sending** waiting mode. Read the <SpanA href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃full compatibility list</SpanA> here.
+</Admonition>
+
+Printers support network sending will have this **Network Sending** button, which can send your sliced data to your printer directly.
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-slice-preview023.png"
+		}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-slice-preview024.png"
+		}
+	/>
+</ImageContainer>
+
+## Save
+
+Save the slice file.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-slice-preview012.png"
+	}
+/>
+
+<Admonition type="note">
+	After slicing your model, click "Save", you can select a supported format
+	for your printer from the dropdown menu, and then print.
+</Admonition>
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-slice-preview012-1--1.png"
+	}
+	style={{ maxwidth: "906px" }}
+/>
+
+## Back
+
+Return to the previous interface.
+
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-slice-preview013.png"
+	}
+/>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

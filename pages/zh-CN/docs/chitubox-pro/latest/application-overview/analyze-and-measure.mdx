@@ -1,0 +1,101 @@
+import { DocsLayout } from "@/components/docsLayout";
+
+export const meta = {
+	title: "分析/测量",
+	author: "CHITUBOX Team",
+};
+
+# 分析/测量
+
+## 碰撞检测
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/006-application-overview-analyze-and-measure001.png"
+	}
+/>
+
+检测排版模型是否存在碰撞现象，若存在碰撞现象，则可对碰撞模型进行避让。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/006-application-overview-analyze-and-measure006.png"
+	}
+	text1={"碰撞避让前"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/006-application-overview-analyze-and-measure007.png"
+	}
+	text2={"碰撞避让后"}
+/>
+
+## 显示大小
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/006-application-overview-analyze-and-measure002.png"
+	}
+/>
+
+自动测量并显示选定模型的包络长、宽、高尺寸值。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/006-application-overview-analyze-and-measure008.png"
+	}
+	style={{ width: "100%", maxWidth: 710 }}
+/>
+
+## 两点距离
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/006-application-overview-analyze-and-measure003.png"
+	}
+/>
+
+测量并显示模型两点之间的距离值。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/006-application-overview-analyze-and-measure009.png"
+	}
+	style={{ width: "100%", maxWidth: 710 }}
+/>
+
+## 点到平面距离
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/006-application-overview-analyze-and-measure004.png"
+	}
+/>
+
+测量并显示模型上点到平面的距离值。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/006-application-overview-analyze-and-measure010.png"
+	}
+	style={{ width: "100%", maxWidth: 710 }}
+/>
+
+## 平行平面距离
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/006-application-overview-analyze-and-measure005.png"
+	}
+/>
+
+测量并显示模型上两平面的距离值。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/006-application-overview-analyze-and-measure011.png"
+	}
+	style={{ width: "100%", maxWidth: 710 }}
+/>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

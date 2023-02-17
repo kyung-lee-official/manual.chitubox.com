@@ -1,0 +1,19 @@
+{
+	"docInstanceName": "FAQ",
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "1.x.x",
+			"pagesContext": [
+				{
+					"item": "chitubox-basic-faq",
+					"label": "CHITUBOX Basic FAQ"
+				},
+				{
+					"item": "chitubox-pro-faq",
+					"label": "CHITUBOX Pro FAQ"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,67 @@
+{
+	"docInstanceName": "CHITUBOX Basic",
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "1.9.4",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "介绍"
+				},
+				{
+					"item": "comparison",
+					"label": "比较"
+				},
+				{
+					"item": "requirements",
+					"label": "要求"
+				},
+				{
+					"item": "setting-up",
+					"label": "上手",
+					"subItems": [
+						{
+							"item": "installation",
+							"label": "安装"
+						},
+						{
+							"item": "update-printer-firmware",
+							"label": "更新打印机固件"
+						},
+						{
+							"item": "configure-print-parameters",
+							"label": "设置打印参数"
+						},
+						{
+							"item": "configure-support-parameters",
+							"label": "设置支撑参数"
+						}
+					]
+				},
+				{
+					"item": "application-overview",
+					"label": "软件概况",
+					"subItems": [
+						{
+							"item": "ui-introduction",
+							"label": "用户界面介绍"
+						},
+						{
+							"item": "file",
+							"label": "文件"
+						},
+						{
+							"item": "menu-bar",
+							"label": "菜单栏"
+						},
+						{
+							"item": "slice-preview",
+							"label": "切片预览"
+						}
+					]
+				}
+			]
+		}
+	]
+}
