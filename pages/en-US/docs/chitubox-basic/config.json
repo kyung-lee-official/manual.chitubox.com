@@ -3,6 +3,38 @@
 	"versionedContexts": [
 		{
 			"versionCode": "latest",
+			"versionNumber": "2.0.0",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "Introduction"
+				},
+				{
+					"item": "installation",
+					"label": "Installation"
+				},
+				{
+					"item": "quick-start",
+					"label": "Quick Start"
+				},
+				{
+					"item": "learn",
+					"label": "Learn",
+					"subItems": [
+						{
+							"item": "configure-print-parameters",
+							"label": "Configure Print Parameters"
+						},
+						{
+							"item": "configure-support-parameters",
+							"label": "Configure Support Parameters"
+						}
+					]
+				}
+			]
+		},
+		{
+			"versionCode": "v1.9.4",
 			"versionNumber": "1.9.4",
 			"pagesContext": [
 				{
