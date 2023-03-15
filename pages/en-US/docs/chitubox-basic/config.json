@@ -18,18 +18,46 @@
 					"label": "Quick Start"
 				},
 				{
-					"item": "learn",
-					"label": "Learn",
+					"item": "sections",
+					"label": "Sections",
 					"subItems": [
 						{
-							"item": "configure-print-parameters",
-							"label": "Configure Print Parameters"
+							"item": "menu",
+							"label": "Menu"
+						},
+						{
+							"item": "gadgets",
+							"label": "Gadgets"
+						},
+						{
+							"item": "operations",
+							"label": "Operations"
+						},
+						{
+							"item": "manage-files",
+							"label": "Manage Files"
+						},
+						{
+							"item": "risk-detection",
+							"label": "Risk Detection"
+						},
+						{
+							"item": "configure-print-profiles",
+							"label": "Configure Print Profiles"
 						},
 						{
 							"item": "configure-support-parameters",
 							"label": "Configure Support Parameters"
+						},
+						{
+							"item": "preview",
+							"label": "Preview"
 						}
 					]
+				},
+				{
+					"item": "resin-material-alliance",
+					"label": "Resin Material Alliance"
 				}
 			]
 		},
