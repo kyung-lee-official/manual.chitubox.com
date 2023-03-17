@@ -12,6 +12,7 @@ export * from "./docsSidebar";
 export * from "./pageDrawer";
 export * from "./pageDrawerContent";
 export * from "./responsiveTable";
+export * from "./systemRequirements";
 export * from "./footer";
 export * from "./header";
 export * from "./homePage";
