@@ -24,5 +24,6 @@ export * from "./layout";
 export * from "./mdxComponent";
 export * from "./mdxContainer";
 export * from "./tabs";
+export * from "./themeScrollSlider";
 export * from "./toc";
 export * from "./versionDropdown";

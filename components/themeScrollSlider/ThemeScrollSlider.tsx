@@ -1,0 +1,113 @@
+import {
+	motion,
+	useMotionValueEvent,
+	useScroll,
+	useSpring,
+	useTransform,
+} from "framer-motion";
+import React, { useRef, useState } from "react";
+import styled from "styled-components";
+
+const StyledScrollContainer = styled.div`
+	display: flex;
+	width: 100%;
+	max-width: 960px;
+`;
+
+const StyledBackground = styled.div`
+	position: relative;
+	display: flex;
+	width: 60rem;
+	margin: auto;
+`;
+
+const StyledMasked = styled(motion.div)`
+	position: absolute;
+	display: flex;
+	width: 100%;
+	margin: auto;
+`;
+
+export const ThemeScrollSlider = () => {
+	const maskWidth = 50;
+	const xDeviation = 30;
+	const containerRef = useRef(null);
+	const ref = useRef(null);
+	const { scrollYProgress } = useScroll({
+		target: ref,
+		offset: ["30% start", "70% end"],
+	});
+	const scrollYProgressSpring = useSpring(scrollYProgress, {
+		stiffness: 100,
+		damping: 30,
+		restDelta: 0.001,
+	});
+	const [upperLeftProgressState, setUpperLeftProgressState] =
+		useState<number>();
+	const [upperRightProgressState, setUpperRightProgressState] =
+		useState<number>();
+	const [lowerRightProgressState, setLowerRightProgressState] =
+		useState<number>();
+	const [lowerLeftProgressState, setLowerLeftProgressState] =
+		useState<number>();
+
+	const upperLeftProgress = useTransform(
+		scrollYProgressSpring,
+		[1, 0],
+		[-maskWidth, 100 + xDeviation]
+	);
+	const upperRightProgress = useTransform(
+		scrollYProgressSpring,
+		[1, 0],
+		[0, 100 + maskWidth + xDeviation]
+	);
+	const lowerRightProgress = useTransform(
+		scrollYProgressSpring,
+		[1, 0],
+		[-xDeviation, 100 + maskWidth]
+	);
+	const lowerLeftProgress = useTransform(
+		scrollYProgressSpring,
+		[1, 0],
+		[-maskWidth - xDeviation, 100]
+	);
+
+	useMotionValueEvent(upperLeftProgress, "change", (latest) => {
+		setUpperLeftProgressState(latest);
+	});
+	useMotionValueEvent(upperRightProgress, "change", (latest) => {
+		setUpperRightProgressState(latest);
+	});
+	useMotionValueEvent(lowerRightProgress, "change", (latest) => {
+		setLowerRightProgressState(latest);
+	});
+	useMotionValueEvent(lowerLeftProgress, "change", (latest) => {
+		setLowerLeftProgressState(latest);
+	});
+
+	return (
+		<StyledScrollContainer ref={containerRef}>
+			<StyledBackground ref={ref}>
+				<img
+					src="/images/docs/en-US/chitubox-basic/2.x.x/001-theme-dark.png"
+					alt=""
+					width={"100%"}
+				/>
+				<StyledMasked
+					style={{
+						clipPath: `polygon(${upperLeftProgressState}% 0,
+							${upperRightProgressState}% 0,
+							${lowerRightProgressState}% 100%,
+							${lowerLeftProgressState}% 100%)`,
+					}}
+				>
+					<img
+						src="/images/docs/en-US/chitubox-basic/2.x.x/001-theme-light.png"
+						alt=""
+						width={"100%"}
+					/>
+				</StyledMasked>
+			</StyledBackground>
+		</StyledScrollContainer>
+	);
+};
