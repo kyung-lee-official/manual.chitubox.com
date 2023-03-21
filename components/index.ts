@@ -15,7 +15,7 @@ export * from "./responsiveTable";
 export * from "./systemRequirements";
 export * from "./footer";
 export * from "./header";
-export * from "./homePage";
+export * from "./hero";
 export * from "./icons";
 export * from "./imageComparison";
 export * from "./imageContainer";

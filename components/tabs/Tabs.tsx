@@ -31,6 +31,7 @@ const Labels = (props: any) => {
 			{items.map((item: any, i: number) => {
 				return (
 					<StyledLabel
+						key={i}
 						onClick={() => {
 							setActiveKey(item.key);
 						}}
