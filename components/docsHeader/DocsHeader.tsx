@@ -8,9 +8,9 @@ import styled from "styled-components";
 import {
 	AiOutlineMenu,
 	Banner,
+	BasicLogo2022,
 	DocsSearch,
 	LanguageDropdown,
-	Logo2021,
 	ThemeSwitch,
 	VersionDropdown,
 } from "..";
@@ -183,7 +183,7 @@ export const DocsHeader = () => {
 					</StyledHeaderItem>
 				)}
 				<StyledTitleAndTitleLink href="/">
-					<Logo2021 size={"48px"} fill={"#0086cc"} />
+					<BasicLogo2022 size={"48px"} />
 				</StyledTitleAndTitleLink>
 				<StyledTitleAndTitleLink href="/">
 					<StyledTitle>{t("header.title")}</StyledTitle>
