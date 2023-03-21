@@ -49,7 +49,7 @@ const IndexPage = () => {
 		return () => {
 			clearTimeout(timer);
 		};
-	}, []);
+	}, [reduxUrlLocale, router]);
 
 	return (
 		<Layout>
