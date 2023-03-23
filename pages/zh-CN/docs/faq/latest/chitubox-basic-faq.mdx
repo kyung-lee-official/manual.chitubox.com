@@ -207,15 +207,17 @@ STL 文件并不包含具体的单位信息，而是使用数字记录。因此�
 
 1. 关闭 CHITUBOX Basic (**务必先关闭 CHITUBOX Basic**) 。
 
-1. 确保已经关闭 CHITUBOX Basic 后，删除除了 machine 文件夹和 userLogin.cfg 以外的所有文件和文件夹。
+1. 确保已经关闭 CHITUBOX Basic 后，备份 📁*machine* 文件夹，删除除了 📄*userLogin.cfg* 以外的所有文件和文件夹。
 
     <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq003.png"} />
 
 1. 重新打开 CHITUBOX Basic。
 
+1. 重新打开软件后，会生成新的 📁*machine* 文件夹，可以将 _.cfg_ 文件复制粘贴到新的 📁*machine* 文件夹中以恢复您的机器。请不要一次性将所有的 _.cfg_ 文件复制到 📁*machine* 文件夹中，因为您遇到的问题有可能是其中的一个文件引起的。
+
 ## U 盘问题
 
-您可能会发现您的打印机有时无法正确读取您的 U 盘。 这主要是因为您的打印机控制板设计为使用 USB 2.0 且容量等于或小于 16GB。 USB 3.0 使用较大的电流，因此有时会对控制板造成电气干扰。您的 USB 盘应满足以下要求：
+您可能会发现您的打印机有时无法正确读取您的 U 盘。 这主要是因为您的打印机控制板设计为使用 USB 2.0 且容量等于或小于 16GB。 USB 3.0 使用较大的电流，因此有时会对控制板造成电气干扰。您的 U 盘应满足以下要求：
 
 -   FAT32 格式
 -   USB 2.0
