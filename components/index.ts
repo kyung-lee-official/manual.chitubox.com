@@ -1,4 +1,5 @@
 export * from "./advertisement";
+export * from "./directX";
 export * from "./docsContent";
 export * from "./docsDrawer";
 export * from "./docsDrawerContent";
