@@ -8,7 +8,7 @@ import {
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 
-const StyledScrollContainer = styled.div`
+const StyledScrollContainer = styled(motion.div)`
 	display: flex;
 	width: 100%;
 	max-width: 960px;
@@ -19,6 +19,7 @@ const StyledBackground = styled.div`
 	display: flex;
 	width: 60rem;
 	margin: auto;
+	filter: drop-shadow(0 0 1rem hsla(0, 0%, 0%, 0.7));
 `;
 
 const StyledMasked = styled(motion.div)`
@@ -31,7 +32,6 @@ const StyledMasked = styled(motion.div)`
 export const ThemeScrollSlider = () => {
 	const maskWidth = 50;
 	const xDeviation = 30;
-	const containerRef = useRef(null);
 	const ref = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: ref,
@@ -43,13 +43,13 @@ export const ThemeScrollSlider = () => {
 		restDelta: 0.001,
 	});
 	const [upperLeftProgressState, setUpperLeftProgressState] =
-		useState<number>();
+		useState<number>(-maskWidth);
 	const [upperRightProgressState, setUpperRightProgressState] =
-		useState<number>();
+		useState<number>(0);
 	const [lowerRightProgressState, setLowerRightProgressState] =
-		useState<number>();
+		useState<number>(-xDeviation);
 	const [lowerLeftProgressState, setLowerLeftProgressState] =
-		useState<number>();
+		useState<number>(-maskWidth - xDeviation);
 
 	const upperLeftProgress = useTransform(
 		scrollYProgressSpring,
@@ -86,7 +86,11 @@ export const ThemeScrollSlider = () => {
 	});
 
 	return (
-		<StyledScrollContainer ref={containerRef}>
+		<StyledScrollContainer
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 1.5 }}
+		>
 			<StyledBackground ref={ref}>
 				<img
 					src="/images/docs/en-US/chitubox-basic/2.x.x/001-theme-dark.png"

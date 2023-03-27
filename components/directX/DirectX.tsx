@@ -6,18 +6,17 @@ import styled from "styled-components";
 const StyledAntdImage = styled(motion.img)`
 	border-radius: 10px;
 	margin: auto;
+	box-shadow: 0 0 3rem 0 hsla(100, 100%, 50%, 0.7);
 `;
 
 export const DirectX = () => {
 	const ref = useRef(null);
 	const isInView = useInView(ref, {
-		margin: "0px 0px -300px 0px",
+		margin: "0px 0px -250px 0px",
 		once: true,
 	});
 
 	useEffect(() => {
-		console.log(isInView);
-
 		if (isInView) {
 			animate(
 				"#directx",
@@ -35,7 +34,7 @@ export const DirectX = () => {
 				src={"/images/docs/en-US/chitubox-basic/2.x.x/001_directx.png"}
 				alt="DirectX"
 				width={"80%"}
-				style={{ maxWidth: "751px" }}
+				style={{ maxWidth: "400px" }}
 				initial={{ x: 100, opacity: 0 }}
 			/>
 		</ImageContainer>

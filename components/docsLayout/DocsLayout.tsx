@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import React, { createContext, useState } from "react";
 import styled from "styled-components";
-import { Banner, DocsContent, DocsHeader, Footer } from "..";
+import { Banner, DocsContent, DocsHeader, Footer, IsPageUseful } from "..";
 import docsContext from "preload/docsContext.json";
 import { getFlattenPagesContext } from "helpers/functions";
 
@@ -96,6 +96,7 @@ export const DocsLayout: React.FC<any> = (props) => {
 				<DocsContent>{children}</DocsContent>
 				<Footer />
 			</StyledMain>
+			<IsPageUseful meta={meta} />
 		</DocContext.Provider>
 	);
 };

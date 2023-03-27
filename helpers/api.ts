@@ -16,3 +16,10 @@ export const getBannerInfo = async (lang: "en" | "zh-Hans"): Promise<any> => {
 	// const res = await axios.get(`http://localhost:3001/activities`);
 	return res.data.data;
 };
+
+export const sendFeedback = async (data: any): Promise<any> => {
+	const res = await axios.post("/chitubox-manual-feedbacks", data, {
+		baseURL: process.env.NEXT_PUBLIC_API_HOST,
+	});
+	return res.data.data;
+};
