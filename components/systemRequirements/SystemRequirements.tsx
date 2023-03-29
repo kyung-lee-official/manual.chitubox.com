@@ -1,30 +1,22 @@
 import React from "react";
 import { ResponsiveTable } from "../responsiveTable";
 import { Tabs } from "..";
+import { WindowsIcon, MacOSIcon, LinuxIcon } from "../icons";
+import styled from "styled-components";
 
-const WindowsIcon = () => {
-	return (
-		<svg
-			viewBox="0 0 24 24"
-			height="24"
-			width="24"
-			focusable="false"
-			role="img"
-			fill="currentColor"
-			xmlns="http://www.w3.org/2000/svg"
-		>
-			<path d="m3 5.557 7.357-1.002.004 7.097-7.354.042L3 5.557zm7.354 6.913.006 7.103-7.354-1.011v-6.14l7.348.048zm.892-8.046L21.001 3v8.562l-9.755.077V4.424zm9.758 8.113-.003 8.523-9.755-1.378-.014-7.161 9.772.016z"></path>
-		</svg>
-	);
-};
+const StyledLabel = styled.div`
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+`;
 
 const enItems = [
 	{
 		key: "windows",
 		label: (
-			<div>
-				Windows <WindowsIcon />
-			</div>
+			<StyledLabel>
+				Windows <WindowsIcon size={"24px"} />
+			</StyledLabel>
 		),
 		children: (
 			<ResponsiveTable>
@@ -72,7 +64,11 @@ const enItems = [
 	},
 	{
 		key: "macos",
-		label: <div>macOS</div>,
+		label: (
+			<StyledLabel>
+				macOS <MacOSIcon size={"24px"} />
+			</StyledLabel>
+		),
 		children: (
 			<ResponsiveTable>
 				<thead>
@@ -99,7 +95,11 @@ const enItems = [
 	},
 	{
 		key: "linux",
-		label: <div>Linux</div>,
+		label: (
+			<StyledLabel>
+				Linux <LinuxIcon size={"24px"} />
+			</StyledLabel>
+		),
 		children: (
 			<ResponsiveTable>
 				<thead>
@@ -136,14 +136,152 @@ const enItems = [
 	},
 ];
 
+const zhItems = [
+	{
+		key: "windows",
+		label: (
+			<StyledLabel>
+				Windows <WindowsIcon size={"24px"} />
+			</StyledLabel>
+		),
+		children: (
+			<ResponsiveTable>
+				<thead>
+					<tr>
+						<th>规格</th>
+						<th>最低配置</th>
+						<th>推荐配置</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>处理器</td>
+						<td>Intel® Core™ i5 6600K 或 AMD Ryzen™ 5 1600</td>
+						<td>Intel Core i7 4790 或 AMD Ryzen 7 2700X</td>
+					</tr>
+					<tr>
+						<td>操作系统</td>
+						<td>Windows 7 (64-bit)</td>
+						<td>Windows 10 或 Windows 11</td>
+					</tr>
+					<tr>
+						<td>内存</td>
+						<td>16GB</td>
+						<td>≥ 32GB</td>
+					</tr>
+					<tr>
+						<td>硬盘</td>
+						<td>不低于 10GB 的硬盘存储空间</td>
+						<td>20GB 以上的固态硬盘</td>
+					</tr>
+					<tr>
+						<td>显卡</td>
+						<td>GPU RAM: ≥1GB</td>
+						<td>GPU RAM: ≥4GB</td>
+					</tr>
+					<tr>
+						<td>显示器分辨率</td>
+						<td>≥ 1280x960</td>
+						<td>≥ 1280x1024</td>
+					</tr>
+				</tbody>
+			</ResponsiveTable>
+		),
+	},
+	{
+		key: "macos",
+		label: (
+			<StyledLabel>
+				macOS <MacOSIcon size={"24px"} />
+			</StyledLabel>
+		),
+		children: (
+			<ResponsiveTable>
+				<thead>
+					<tr>
+						<th>规格</th>
+						<th>最低配置</th>
+						<th>推荐配置</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>处理器</td>
+						<td>Intel® 或 M1, M2 processors</td>
+						<td>Intel® 或 M1, M2 processors</td>
+					</tr>
+					<tr>
+						<td>操作系统</td>
+						<td>macOS High Sierra (10.15 版本)</td>
+						<td>macOS Big Sur (11.6 版本) 或以上</td>
+					</tr>
+				</tbody>
+			</ResponsiveTable>
+		),
+	},
+	{
+		key: "linux",
+		label: (
+			<StyledLabel>
+				Linux <LinuxIcon size={"24px"} />
+			</StyledLabel>
+		),
+		children: (
+			<ResponsiveTable>
+				<thead>
+					<tr>
+						<th>规格</th>
+						<th>最低配置</th>
+						<th>推荐配置</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>处理器</td>
+						<td>Intel® Core™ i5 6600K 或 AMD Ryzen™ 5 1600</td>
+						<td>Intel Core i7 4790 或 AMD Ryzen 7 2700X</td>
+					</tr>
+					<tr>
+						<td>操作系统</td>
+						<td>Ubuntu 20.04 LTS</td>
+						<td>Ubuntu 22.04 LTS</td>
+					</tr>
+					<tr>
+						<td>内存</td>
+						<td>16GB</td>
+						<td>32GB 或以上</td>
+					</tr>
+					<tr>
+						<td>硬盘</td>
+						<td>不低于 10GB 的硬盘存储空间</td>
+						<td>20GB 以上的固态硬盘</td>
+					</tr>
+				</tbody>
+			</ResponsiveTable>
+		),
+	},
+];
+
 const onChange = (key: string) => {
 	console.log(key);
 };
 
 export const SystemRequirements = (props: any) => {
 	const { lang } = props;
+	let langTable;
+	switch (lang) {
+		case "en":
+			langTable = enItems;
+			break;
+		case "zh":
+			langTable = zhItems;
+			break;
+		default:
+			langTable = enItems;
+			break;
+	}
 
 	return (
-		<Tabs defaultActiveKey="windows" items={enItems} onChange={onChange} />
+		<Tabs defaultActiveKey="windows" items={langTable} onChange={onChange} />
 	);
 };

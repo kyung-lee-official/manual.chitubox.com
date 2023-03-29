@@ -3,6 +3,66 @@
 	"versionedContexts": [
 		{
 			"versionCode": "latest",
+			"versionNumber": "2.0.0",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "介绍"
+				},
+				{
+					"item": "installation",
+					"label": "安装"
+				},
+				{
+					"item": "quick-start",
+					"label": "快速开始"
+				},
+				{
+					"item": "sections",
+					"label": "章节",
+					"subItems": [
+						{
+							"item": "menu",
+							"label": "菜单"
+						},
+						{
+							"item": "gadgets",
+							"label": "小工具"
+						},
+						{
+							"item": "operations",
+							"label": "操作"
+						},
+						{
+							"item": "manage-files",
+							"label": "文件管理"
+						},
+						{
+							"item": "risk-detection",
+							"label": "风险检测"
+						},
+						{
+							"item": "configure-print-profiles",
+							"label": "配置打印文件"
+						},
+						{
+							"item": "configure-support-parameters",
+							"label": "配置支撑参数"
+						},
+						{
+							"item": "preview",
+							"label": "预览"
+						}
+					]
+				},
+				{
+					"item": "resin-material-alliance",
+					"label": "树脂联盟"
+				}
+			]
+		},
+		{
+			"versionCode": "v1.9.4",
 			"versionNumber": "1.9.4",
 			"pagesContext": [
 				{
