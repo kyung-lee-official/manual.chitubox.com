@@ -12,7 +12,7 @@ const StyledAntdImage = styled(motion.img)`
 export const DirectX = () => {
 	const ref = useRef(null);
 	const isInView = useInView(ref, {
-		margin: "0px 0px -250px 0px",
+		margin: "0px 0px -280px 0px",
 		once: true,
 	});
 
