@@ -10,15 +10,16 @@ import styled from "styled-components";
 
 const StyledScrollContainer = styled(motion.div)`
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	max-width: 960px;
-`;
+	`;
 
 const StyledBackground = styled.div`
+	flex: 0.8;
 	position: relative;
 	display: flex;
-	width: 60rem;
-	margin: auto;
+	max-width: 960px;
 	filter: drop-shadow(0 0 1rem hsla(0, 0%, 0%, 0.7));
 `;
 

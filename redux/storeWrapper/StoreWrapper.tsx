@@ -4,7 +4,7 @@ import { RootState } from "../store";
 import { initialState } from "../storeVersion/slice";
 import { ThemeProvider } from "styled-components";
 import { changeLanguage, getUrlLocale, languageList } from "../language/slice";
-import { dark, light } from "styles/themes";
+import { ThemeType, dark, light } from "styles/themes";
 import { useRouter } from "next/router";
 import i18n from "i18n/configs";
 
@@ -21,7 +21,7 @@ const StoreWrapper: React.FC<any> = ({ children }) => {
 	}
 
 	const reduxTheme = useSelector((state: RootState) => state.theme);
-	const theme = reduxTheme.currentTheme === "light" ? light : dark;
+	const theme: ThemeType = reduxTheme.currentTheme === "light" ? light : dark;
 
 	const reduxLanguageState = useSelector(
 		(state: RootState) => state.language

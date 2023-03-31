@@ -11,6 +11,7 @@ const StyledWrapper = styled.div<StyledWrapperProps>`
 		return props.$justifyContent;
 	}};
 	margin: 1rem 0;
+	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.6));
 `;
 
 type ImageContainerType = {

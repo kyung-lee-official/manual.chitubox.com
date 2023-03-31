@@ -13,7 +13,70 @@ import {
 	grey,
 } from "@ant-design/colors";
 
-export const light = {
+export type ThemeType = {
+	headerBackground: string;
+	headerShadow: string;
+	headerItemHighlight: string;
+	headerItemShadow: string;
+	drawerBackground: string;
+	headerIcons: string;
+	searchbarText: string;
+	searchbarPlaceholder: string;
+	searchbarBackground: string;
+	searchbarFocusedBackground: string;
+	searchResultText: string;
+	searchbarResultsShadow: string;
+	searchbarResultsBackground: string;
+	sidebarActiveItem: string;
+	sidebarActiveBackground: string;
+	sidebarScrollbar: string;
+	sidebarScrollbarThumb: string;
+	sidebarScrollbarHover: string;
+	versionNumber: string;
+	versionNumberBackground: string;
+	tableThBackground: string;
+	tableTdBackground: string;
+	tableTdBorder: string;
+	admonitionNoteBorder: string;
+	admonitionNoteColor: string;
+	admonitionNoteBackground: string;
+	admonitionTipBorder: string;
+	admonitionTipColor: string;
+	admonitionTipBackground: string;
+	admonitionWarningBorder: string;
+	admonitionWarningColor: string;
+	admonitionWarningBackground: string;
+	admonitionDangerBorder: string;
+	admonitionDangerColor: string;
+	admonitionDangerBackground: string;
+	tocColorActive: string;
+	tocColor: string;
+	tocBackground: string;
+	tocBackgroundActive: string;
+	footerBackground: string;
+
+	basic: string;
+
+	textTitle: string;
+	textContent: string;
+	textPrimaryText: string;
+	textSecondaryText: string;
+	textDisable: string;
+	textBorder: string;
+	textDividers: string;
+	textBackground: string;
+	textTableHeader: string;
+	background: string;
+	secondaryBackground: string;
+	docName: string;
+	activeDocName: string;
+	mdxComponentCode: string;
+	mdxComponentCodeBorder: string;
+
+	transitionDuration: string;
+};
+
+export const light: ThemeType = {
 	headerBackground: `hsla(0, 0%, 96%, 0.4)`,
 	headerShadow: "hsla(0, 0%, 0%, 0.1)",
 	headerItemHighlight: "hsla(0, 0%, 100%, 1)",
@@ -76,7 +139,7 @@ export const light = {
 	transitionDuration: "0.5s",
 };
 
-export const dark = {
+export const dark: ThemeType = {
 	headerBackground: `hsla(0, 0%, 23%, 0.6)`,
 	headerShadow: "hsla(0, 0%, 0%, 0.25)",
 	headerItemHighlight: "hsla(0, 0%, 35%, 1)",

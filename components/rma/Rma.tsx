@@ -10,8 +10,6 @@ export const Rma = () => {
 	});
 
 	useEffect(() => {
-		console.log(isInView);
-
 		if (isInView) {
 			animate(
 				"#rmaIcon",
