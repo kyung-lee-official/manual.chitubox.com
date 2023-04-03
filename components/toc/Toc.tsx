@@ -20,24 +20,11 @@ const StyledTocAffix = styled.div`
 	position: -webkit-sticky;
 	position: sticky;
 	top: 160px;
-	overflow-y: auto;
-	height: 100vh;
+	height: 70vh;
 	padding: 2rem 1rem;
-	&::-webkit-scrollbar {
-		width: 5px;
-		border-radius: 3px;
-		background-color: ${(props) => props.theme.sidebarScrollbar};
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 3px;
-		background-color: ${(props) => props.theme.sidebarScrollbarThumb};
-	}
-	&::-webkit-scrollbar-thumb {
-		&:hover {
-			border-radius: 3px;
-			background-color: ${(props) => props.theme.sidebarScrollbarHover};
-		}
-	}
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 `;
 
 const StyledA = styled.a`
@@ -82,6 +69,26 @@ const StyledOnThisPage = styled.div`
 	box-shadow: -4px -5px 7px ${(props) => props.theme.headerItemHighlight},
 		4px 5px 7px ${(props) => props.theme.headerItemShadow};
 	transition-duration: ${(props) => props.theme.transitionDuration};
+`;
+
+const StyledScrollable = styled.div`
+	overflow-y: auto;
+	height: 70vh;
+	&::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 3px;
+		background-color: ${(props) => props.theme.sidebarScrollbar};
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 3px;
+		background-color: ${(props) => props.theme.sidebarScrollbarThumb};
+	}
+	&::-webkit-scrollbar-thumb {
+		&:hover {
+			border-radius: 3px;
+			background-color: ${(props) => props.theme.sidebarScrollbarHover};
+		}
+	}
 `;
 
 const TocHeadings: React.FC<any> = () => {
@@ -153,7 +160,7 @@ const TocHeadings: React.FC<any> = () => {
 			});
 		}
 		return (
-			<>
+			<StyledScrollable>
 				{h2H3Toc?.map((heading: any) => {
 					return (
 						<StyledA href={`#${heading.id}`} key={heading.id}>
@@ -166,7 +173,7 @@ const TocHeadings: React.FC<any> = () => {
 						</StyledA>
 					);
 				})}
-			</>
+			</StyledScrollable>
 		);
 	} else {
 		return null;

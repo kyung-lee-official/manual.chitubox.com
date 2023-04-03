@@ -1,4 +1,5 @@
 import { DocsLayout } from "@/components/docsLayout";
+import { ChituboxMenu } from "@/components/icons";
 
 export const meta = {
 	title: "Menu",
@@ -7,188 +8,88 @@ export const meta = {
 
 # Menu
 
+Click the Menu Icon <ChituboxMenu size={24} /> on the top left corner to open the Menu.
+
 ## New Project
 
-New project file.
+The "New Project" button allows you to create a new project in the software. This is where you will begin importing a 3D model file.
 
 ## Open Project
 
-Open a project file or load and merge the project file into the current project.
+The "Open Project" button allows you to open an existing project file or load and merge the project file into the current project.
+
+The file extension name of the project file is _.chitubox_, make sure you don't mix them up with the 3D mesh files or the sliced files.
 
 ## Save Project
 
-Save the All or Selected Model project.
+The "Save Project" button allows you to save your current project to a _.chitubox_ file.
 
 ## Open
 
-Open project files, import 3D models or slice files.
+The "Open" button allows you to open 3D mesh files or sliced files.
 
-<Admonition type="note">
+<Admonition type="warning">
 	Please note that the .ctb file is the final sliced file, which is for
-	printing only under most circumstances. You SHOULD NOT apply 3D model
+	printing only under most circumstances. You **SHOULD NOT** apply 3D model
 	operations to it, only a few non-model-dependent operations like exposure
 	time, lift and retract speed, layer pixel editing (CHITUBOX Pro only), etc.
-	are available. Please ALWAYS modify your models on unsliced formats (.stl,
-	.obj, etc.).
+	are available. Please **ALWAYS** modify your models on 3D mesh formats
+	(.stl, .obj, etc.).
 </Admonition>
 
-## Save As
+## Export Model
 
-Save the project file or merge and export all 3D models (including supports) in the project.
+The "Export Model" button allows you to export all models or only the selected model from the software. You can export models in a variety of file formats. This allows you to share your models with other users or use them with other 3D software.
 
--   All models
--   Selected model
+## Recently Opened
 
-## Open Recent
-
-Open the project file, 3D model or slice file that has been successfully opened recently.
+The "Recently Opened" button allows you to quickly open projects and 3D model files that you have previously opened in the software. It displays a list of recently opened files and projects, so you can quickly open them without having to search for them again.
 
 ## Account
 
-Login account and view authorization.
+The Account button allows you to sign in to your CHITUBOX account. You can create an account and log in to access additional features, such as saving your settings across multiple devices. The Account button can be found in the main menu of the software.
+
+## Community
+
+## Feedback
 
 ## Language
 
--   Users can choose their own language according to their needs. Currently supported languages list:
-    -   Deutsch <br/>
-        <span style={{ color: "grey" }}>German</span>
-    -   English <br/>
-        <span style={{ color: "grey" }}>English</span>
-    -   Français <br/>
-        <span style={{ color: "grey" }}>French</span>
-    -   Italiano <br/>
-        <span style={{ color: "grey" }}>Italian</span>
-    -   Magyar <br/>
-        <span style={{ color: "grey" }}>Hungarian</span>
-    -   Nederlands <br/>
-        <span style={{ color: "grey" }}>Dutch</span>
-    -   Polskie <br/>
-        <span style={{ color: "grey" }}>Polish</span>
-    -   Português <br/>
-        <span style={{ color: "grey" }}>Portuguese</span>
-    -   Suomalainen <br/>
-        <span style={{ color: "grey" }}>Finnish</span>
-    -   Türk <br/>
-        <span style={{ color: "grey" }}>Turkish</span>
-    -   Española <br/>
-        <span style={{ color: "grey" }}>Spanish</span>
-    -   Čeština <br/>
-        <span style={{ color: "grey" }}>Czech</span>
-    -   Ελληνικά <br/>
-        <span style={{ color: "grey" }}>Greek</span>
-    -   Pусский <br/>
-        <span style={{ color: "grey" }}>Russian</span>
-    -   Arabic <br/>
-        <span style={{ color: "grey" }}>Arabic</span>
-    -   日本語 <br/>
-        <span style={{ color: "grey" }}>Japanese</span>
-    -   简体中文 <br/>
-        <span style={{ color: "grey" }}>Simplified Chinese</span>
-    -   繁體中文<br/>
-        <span style={{ color: "grey" }}>Traditional Chinese</span>
-    -   한국어<br/>
-        <span style={{ color: "grey" }}>Korean</span>
+Users can choose their own language according to their needs. Currently supported languages are: German, English, French, Italian, Hungarian, Dutch, Polish, Portuguese, Finnish, Turkish, Spanish, Czech, Greek, Russian, Arabic, Japanese, Simplified Chinese, Traditional Chinese, Korean.
 
-## Fix Translation
+## Help
 
-Fix translation errors.
+### Check For Updates
 
-## Check For Update
+### Factory Setting
 
-Check for updates: check if the current version is up to date.
+### Export configuration
 
-## Factory Setting
+### Import configuration
 
-Reset CHITUBOX to factory settings.
+### About CHITUBOX
 
-## Import or Export Configuration
+### Open Log Path
 
-Import or export the resin, slice, support and other configurations of the current machine. (Make sure to select the same machine when importing and exporting)
+### User Manual
 
-## Open Log Path
+### Data Collection
 
-The **Open Log Path** file will prompt out the path of CHITUBOX log file in a File Explorer.
+### Plugins
 
-In case you have trouble open the path from CHITUBOX, please open Windows File Explorer, access the path directly.
-
-Replace `{Your-PC-User-Name}` with your PC's user name:
-
-```shell
-C:\Users\{Your-PC-User-Name}\AppData\Local\ChiTuBox
-```
-
-## Manual
-
-Open the path of the link user manuals in File Explorer.
-
-## Plugin
-
-Import, build or delete third-party plugins.
-
-The standard plugin file extension name is _.CHplugin_
+### Shortcut
 
 ## Setting
 
-General settings of CHITUBOX Basic.
+Check for updates: check if the current version is up to date.
 
-Display Support Auxiliary Line: whether show support auxiliary lines in model surfaces.
+## Examples
 
-<Admonition type="note">
-	Starting from CHITUBOX Basic v1.8.1, to improve user experience, we disabled
-	support auxiliary lines calculation when loading models, this makes the
-	loading process faster. If you wanna bring them back, auto support will
-	calculate auxiliary lines (they will show up if you remove auto-added
-	supports, but only on critical areas compared to Basic V1.8.1). We encourage
-	you to judge risky areas using the red highlight instead.
-</Admonition>
+The "Example" button allows you to open example 3D models provided by the software. It contains three example models: a 20x20x20 cube, a cylinder, and a sphere. These models can be opened and used as a starting point for creating your own 3D models.
 
-Auto Save Interval: the interval of auto-saving. CHITUBOX will generate a temporary _.chitubox_ project file under the **Auto Save Path** (log path by default). If CHITUBOX exits normally, the temporary project file will be removed.
+## Exit
 
-Auto Save Directory: you can manually enter the directory to be saved, or select a folder as the auto-save directory.
-
-Graphics quality: the refresh rate grade of CHITUBOX, the higher the number, the lower the refresh rate.
-
-## Shortcut
-
-Display shortcuts.
-
-| Function                                  | Shortcut          |
-| ----------------------------------------- | ----------------- |
-| Save current project                      | Ctrl+S            |
-| Load model                                | Ctrl+O            |
-| Delete model                              | Delete            |
-| Clone Current Models                      | Ctrl+V            |
-| Undo                                      | Ctrl+Z            |
-| Redo                                      | Ctrl+Y            |
-| Zoom the view slowly                      | Ctrl+Scroll       |
-| View the up layer profile at the top      | Shift+Up          |
-| View the down layer profile at the top    | Shift+Down        |
-| View the up layer profile at the bottom   | Alt+Up            |
-| View the down layer profile at the bottom | Alt+Down          |
-| Move view Up                              | Ctrl+Up           |
-| Move view Down                            | Ctrl+Down         |
-| Move view Left                            | Ctrl+Left         |
-| Move view Right                           | Ctrl+Right        |
-| Record screen gif animation               | Ctrl+F1           |
-| Record screen picture                     | Ctrl+Shift+A      |
-| Select and deselect models                | Ctrl+Left-Button  |
-| Select continuous models in the file list | Shift+Left-Button |
-| Add support mode                          | A                 |
-| Edit support mode                         | E                 |
-| Delete support mode                       | D                 |
-| Select multiple                           | Ctrl+Left-Button  |
-| Area selection                            | Ctrl+Left-Button  |
-| Switch between heavy support              | Ctrl+3            |
-| Switch between middle support             | Ctrl+2            |
-| Switch between light support              | Ctrl+1            |
-
-## Example
-
-Two example models.
-
-## Quit
-
-Quit the CHITUBOX.
+The "Exit" button allows you to close the software.
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
