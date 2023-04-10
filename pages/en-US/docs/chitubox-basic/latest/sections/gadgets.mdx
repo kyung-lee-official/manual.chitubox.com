@@ -1,4 +1,21 @@
 import { DocsLayout } from "@/components/docsLayout";
+import {
+	ChituboxSelectIcon,
+	ChituboxSelectBoxIcon,
+	ChituboxMoveIcon,
+	ChituboxRotateIcon,
+	ChituboxScaleIcon,
+	ChituboxMirrorIcon,
+	ChituboxGlobalIcon,
+	ChituboxLocalIcon,
+	ChituboxResetIcon,
+	ChituboxAddMachine,
+	ChituboxMachineBarMenuIcon,
+	ChituboxDeleteIcon,
+	ChituboxCopyAddIcon,
+	ChituboxRenderDetailedIcon,
+	ChituboxRenderFresnelIcon,
+} from "@/components/icons";
 
 export const meta = {
 	title: "Gadgets",
@@ -6,6 +23,105 @@ export const meta = {
 };
 
 # Gadgets
+
+In this section, we will introduce some useful gadgets that can be used in the CHITUBOX software.
+
+## Toolbar
+
+The toolbar is located at the left of the main window. It contains the select, move, rotate, scale, and mirror options.
+
+### Select
+
+<ChituboxSelectIcon /> The select pointer tool is used to select objects in the
+scene by clicking.
+
+<ChituboxSelectBoxIcon /> The select box tool is used to select objects in the
+scene by draging a box.
+
+### Move
+
+<ChituboxMoveIcon /> The move tool is used to move objects in the scene. You can
+also move objects precisely by inputting the coordinates in the move panel.
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-move-panel.png"
+		}
+	/>
+</ImageContainer>
+
+-   Put on the plate: The object will be put on the plate.
+
+-   Cetered: The object will be centered on the plate, if multiple objects are selected, the center of the objects will be the center of the plate.
+
+### Rotate
+
+<ChituboxRotateIcon /> The rotate tool is used to rotate objects in the scene.
+You can also rotate objects precisely by inputting the angles in the rotate
+panel.
+
+-   Combination Center: If enabled,the center of the rotation is the center of the selected objects.
+
+-   Flatten by face: The object will be put on the plate by the face you selected on the object.
+
+-   Auto-orientate Selected: The object will be auto-oriented by CHITUBOX.
+
+### Scale
+
+<ChituboxScaleIcon /> The scale tool is used to scale objects in the scene. You
+can also scale objects precisely by inputting the scale size or ratio in the
+scale panel.
+
+<ChituboxGlobalIcon /> Global coordinate: The scale handle parallels to the
+global coordinate.
+
+<ChituboxLocalIcon /> Local coordinate: The scale handle parallels to object's
+local coordinate.
+
+<ChituboxResetIcon /> Reset: Reset the ratio to 100%.
+
+-   Lock Ratio: If enabled, the X, Y and Z dimentioned will be scaled by the same ratio.
+
+-   Lock support diameter: If enabled, the support diameter will not be scaled.
+
+### Mirror
+
+<ChituboxMirrorIcon /> The mirror tool is used to mirror objects in the scene.
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-mirror-panel.png"
+		}
+	/>
+</ImageContainer>
+
+-   Keep the original model: If enabled, the original model will be kept.
+
+## Info Panel
+
+The Info Panel is located at the lower left of the main window. It contains the brief information of current settings.
+
+## Machine Management Bar
+
+The Machine Management Bar is located at bottom of the main window. Here you can add, delete, and copy printers.
+
+Click the add machine button <ChituboxAddMachine /> to add a new printer.
+
+Hover the mouse cursor on the menu icon <ChituboxMachineBarMenuIcon />, you can see the delete button <ChituboxDeleteIcon /> and copy buttons <ChituboxCopyAddIcon />.
+
+## Render Mode
+
+The render mode is located at the upper right of the main window. It contains two modes: Details and Fresnel.
+
+<ChituboxRenderDetailedIcon />
+
+<ChituboxRenderFresnelIcon />
+
+## Viewport Gizmos
+
+## Slider
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

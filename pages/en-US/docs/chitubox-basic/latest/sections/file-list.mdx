@@ -1,0 +1,35 @@
+import { DocsLayout } from "@/components/docsLayout";
+import {
+	ChituboxCheckboxIcon,
+	ChituboxEyeIcon,
+	ChituboxRulerIcon,
+	ChituboxDeleteIcon,
+} from "@/components/icons";
+
+export const meta = {
+	title: "Manage Files",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-basic/v2.0.0/file-list",
+};
+
+# File List
+
+All loaded files are displayed in the file list. You can select multiple files at the same time. You can also select all files by clicking the select all button.
+
+<ImageContainer>
+	<StyledAntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/007-file-list-panel.png"}
+	/>
+</ImageContainer>
+
+The checkbox icon <ChituboxCheckboxIcon /> allows you to select the file.
+
+The eye icon <ChituboxEyeIcon /> allows you to hide the file. The add icon allows you to add files.
+
+The ruler icon <ChituboxRulerIcon /> allows you to display the <SpanA href={"https://computersciencewiki.org/index.php/Bounding_boxes"}>bounding box</SpanA> dimension of all files.
+
+The trash icon <ChituboxDeleteIcon /> allows you to delete the selected files.
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

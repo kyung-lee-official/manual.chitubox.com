@@ -155,10 +155,12 @@ const NextLink: React.FC<any> = (props) => {
 
 const StyledUl = styled.ul`
 	font-size: 1.03rem;
+	font-weight: 700;
 `;
 
 const StyledOl = styled.ol`
 	font-size: 1.03rem;
+	font-weight: 700;
 `;
 
 const StyledBlockquote = styled.blockquote`

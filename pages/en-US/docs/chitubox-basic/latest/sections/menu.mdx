@@ -1,4 +1,5 @@
 import { DocsLayout } from "@/components/docsLayout";
+import { ChituboxMenu } from "@/components/icons";
 
 export const meta = {
 	title: "Menu",
@@ -7,188 +8,206 @@ export const meta = {
 
 # Menu
 
+Click the Menu Icon <ChituboxMenu size={24} /> on the top left corner to open the Menu.
+
 ## New Project
 
-New project file.
+The "New Project" option allows you to create a new project in the software. This is where you will begin importing a 3D model file.
 
 ## Open Project
 
-Open a project file or load and merge the project file into the current project.
+The "Open Project" option allows you to open an existing project file or load and merge the project file into the current project.
+
+The file extension name of the project file is _.chitubox_, make sure you don't mix them up with the 3D mesh files or the sliced files.
 
 ## Save Project
 
-Save the All or Selected Model project.
+The "Save Project" option allows you to save your current project to a _.chitubox_ file.
 
 ## Open
 
-Open project files, import 3D models or slice files.
+The "Open" option allows you to open 3D mesh files or sliced files.
 
-<Admonition type="note">
+<Admonition type="warning">
 	Please note that the .ctb file is the final sliced file, which is for
-	printing only under most circumstances. You SHOULD NOT apply 3D model
-	operations to it, only a few non-model-dependent operations like exposure
-	time, lift and retract speed, layer pixel editing (CHITUBOX Pro only), etc.
-	are available. Please ALWAYS modify your models on unsliced formats (.stl,
-	.obj, etc.).
+	printing only. You **SHOULD NOT** try to modify its 3D structures, only a
+	few non-structure-relative operations like exposure time, lift and retract
+	speed, and layer pixel editing (CHITUBOX Pro only), etc. are available.
 </Admonition>
 
-## Save As
+## Export Model
 
-Save the project file or merge and export all 3D models (including supports) in the project.
+The "Export Model" menu allows you to export all models or only the selected model from the software. You can export models in a variety of file formats. This allows you to share your models with other users or use them with other 3D software.
 
--   All models
--   Selected model
+## Recently Opened
 
-## Open Recent
-
-Open the project file, 3D model or slice file that has been successfully opened recently.
+The "Recently Opened" menu allows you to quickly open projects and 3D model files that you have previously opened in the software. It displays a list of recently opened files and projects, so you can quickly open them without having to search for them again.
 
 ## Account
 
-Login account and view authorization.
+The Account menu allows you to sign in to your CHITUBOX account. You can create an account and log in to access additional features, such as saving your settings across multiple devices.
+
+## Community
+
+The "Community" menu provides quick access to our social communities. This allows you to engage with other users who are using our software and stay up-to-date on the latest news, releases, and updates. Get involved in the community and explore the possibilities of what you can create with CHITUBOX.
+
+## Feedback
+
+The "Feedback" menu allows you to submit any suggestions, ideas, or complaints you have about CHITUBOX to the developers. This helps to ensure that your concerns are heard and taken into consideration when making improvements and updates to CHITUBOX. Your feedback is valuable, so make sure to submit it to help make CHITUBOX the best 3D printing software it can be.
 
 ## Language
 
--   Users can choose their own language according to their needs. Currently supported languages list:
-    -   Deutsch <br/>
-        <span style={{ color: "grey" }}>German</span>
-    -   English <br/>
-        <span style={{ color: "grey" }}>English</span>
-    -   Français <br/>
-        <span style={{ color: "grey" }}>French</span>
-    -   Italiano <br/>
-        <span style={{ color: "grey" }}>Italian</span>
-    -   Magyar <br/>
-        <span style={{ color: "grey" }}>Hungarian</span>
-    -   Nederlands <br/>
-        <span style={{ color: "grey" }}>Dutch</span>
-    -   Polskie <br/>
-        <span style={{ color: "grey" }}>Polish</span>
-    -   Português <br/>
-        <span style={{ color: "grey" }}>Portuguese</span>
-    -   Suomalainen <br/>
-        <span style={{ color: "grey" }}>Finnish</span>
-    -   Türk <br/>
-        <span style={{ color: "grey" }}>Turkish</span>
-    -   Española <br/>
-        <span style={{ color: "grey" }}>Spanish</span>
-    -   Čeština <br/>
-        <span style={{ color: "grey" }}>Czech</span>
-    -   Ελληνικά <br/>
-        <span style={{ color: "grey" }}>Greek</span>
-    -   Pусский <br/>
-        <span style={{ color: "grey" }}>Russian</span>
-    -   Arabic <br/>
-        <span style={{ color: "grey" }}>Arabic</span>
-    -   日本語 <br/>
-        <span style={{ color: "grey" }}>Japanese</span>
-    -   简体中文 <br/>
-        <span style={{ color: "grey" }}>Simplified Chinese</span>
-    -   繁體中文<br/>
-        <span style={{ color: "grey" }}>Traditional Chinese</span>
-    -   한국어<br/>
-        <span style={{ color: "grey" }}>Korean</span>
+Users can choose their own language according to their needs. Currently supported languages are: German, English, French, Italian, Hungarian, Dutch, Polish, Portuguese, Finnish, Turkish, Spanish, Czech, Greek, Russian, Arabic, Japanese, Simplified Chinese, Traditional Chinese, Korean.
 
-## Fix Translation
+## Help
 
-Fix translation errors.
+### Check for Updates
 
-## Check For Update
+The "Check for Updates" option allows you to quickly check if there are any new updates available for the software. This ensures that you are always running the latest version of CHITUBOX and taking advantage of all the features and improvements it has to offer.
 
-Check for updates: check if the current version is up to date.
+### Factory Setting
 
-## Factory Setting
+The "Factory Setting" option allows you to quickly restore the software to its factory settings. By clicking the Factory Settings button, you will be able to reset the software to the settings it was originally installed with. This is useful for troubleshooting any issues you may be having with the software or for resetting the software after making significant changes.
 
-Reset CHITUBOX to factory settings.
+### Export configuration
 
-## Import or Export Configuration
+The "Export Configuration" option in CHITUBOX allows you to quickly save the current printer configurations in a _.cfg_ file, which can then be used to restore the settings at any time. This is useful for keeping a backup of your printer configurations, or for sharing your printer settings with other users.
 
-Import or export the resin, slice, support and other configurations of the current machine. (Make sure to select the same machine when importing and exporting)
+### Import configuration
 
-## Open Log Path
+The "Import Configuration" option in CHITUBOX allows you to quickly restore printer configurations from a _.cfg_ file. You can select a saved _.cfg_ file to restore your printer configurations. This is useful for restoring your printer settings after making changes, or for importing settings from other users.
 
-The **Open Log Path** file will prompt out the path of CHITUBOX log file in a File Explorer.
+### About CHITUBOX
 
-In case you have trouble open the path from CHITUBOX, please open Windows File Explorer, access the path directly.
+The "About" option in CHITUBOX allows you to view information about the software. You will be able to check the current version of the software, as well as other related information such as the copyright information. This is useful for keeping track of the version you are currently running and making sure you are up-to-date with the latest version.
 
-Replace `{Your-PC-User-Name}` with your PC's user name:
+### Open Log Path
 
-```shell
-C:\Users\{Your-PC-User-Name}\AppData\Local\ChiTuBox
-```
+The "Open Log Path" option in CHITUBOX allows you to access the folder containing log and cache files.
 
-## Manual
+### User Manual
 
-Open the path of the link user manuals in File Explorer.
+The "User Manual" menu provides quick access to this CHITUBOX User Manual, which allows you to quickly learn how to use the software.
 
-## Plugin
+### Data Collection
 
-Import, build or delete third-party plugins.
+The "Data Collection" option in CHITUBOX allows you to view what data is being collected by CHITUBOX and how it is used. This is useful for ensuring that your data is kept secure and only used for the purpose it was intended.
 
-The standard plugin file extension name is _.CHplugin_
+### Plugins
 
-## Setting
+The "Plugins" option in CHITUBOX allows you to manage plugins for the software. You will be able to import or export plugins to support printers that don't use the Chitu System. This is ensures that you can use CHITUBOX with a variety of printers.
 
-General settings of CHITUBOX Basic.
+### Shortcut
 
-Display Support Auxiliary Line: whether show support auxiliary lines in model surfaces.
+The "Shortcuts" option in CHITUBOX allows you to view and modify keyboard shortcuts for the software.
+
+## Settings
+
+The "Settings" option in CHITUBOX allows you to modify the settings for the software. By clicking the "Settings" button, you will be able to open a window containing the Appearance, File, System, Function, Render, and Theme Color tabs. This is useful for customizing the settings to fit your needs.
+
+### Appearance
+
+#### Theme
+
+This allows you to switch between the light and dark themes.
+
+#### Sectional Area Pattern
+
+This allow you to change the pattern of the sectional area.
+
+#### UI Display Scale
+
+This allows you to change the size of the UI.
+
+#### Grid Width
+
+This allows you to change the width of the grid on the build plate.
+
+### File
+
+#### Sliced File Thumbnail
+
+This allows you to change the view angle in the thumbnail of the sliced file.
+
+#### Auto Save Interval
+
+This allows you to change the interval at which the software automatically saves your project.
+
+#### Auto Save Directory
+
+This allows you to change the directory where the software saves your project.
+
+#### Model Rename
+
+This automatically suffixes file names by the operations you made. For example, `#number`, `hollowed out`, `fixed`, and `mirrored`.
+
+#### Project File Naming
+
+-   Model Filename Append Sequentially: The filename is composed of the loaded model filename Sequentially.
+
+#### Slice File Naming
+
+Set the naming rules for the sliced file.
+
+#### Duplicate Name Replacement
+
+Set the naming rule for conflict filenames.
+
+#### Character Replacement
+
+#### Custom Character Replacement
+
+### System
+
+#### Max Undos
+
+This allows you to change the maximum number of undo operations that can be performed.
+
+#### Available Memory
+
+Available memory is the amount of memory (RAM) that is available on your computer (MB).
+
+#### Maximum Memory Usage
+
+Maximum Memory Usage is the maximum amount of memory (RAM) that is distributed for CHITUBOX.
+
+#### Graphics Card Backward Compatible
+
+If the model looks strange or the software doesn't behave as expected, you can try to turn this option on. Restart to take effect.
 
 <Admonition type="note">
-	Starting from CHITUBOX Basic v1.8.1, to improve user experience, we disabled
-	support auxiliary lines calculation when loading models, this makes the
-	loading process faster. If you wanna bring them back, auto support will
-	calculate auxiliary lines (they will show up if you remove auto-added
-	supports, but only on critical areas compared to Basic V1.8.1). We encourage
-	you to judge risky areas using the red highlight instead.
+	The program will use more memory if this option is turned on.
 </Admonition>
 
-Auto Save Interval: the interval of auto-saving. CHITUBOX will generate a temporary _.chitubox_ project file under the **Auto Save Path** (log path by default). If CHITUBOX exits normally, the temporary project file will be removed.
+#### Graphics Quality
 
-Auto Save Directory: you can manually enter the directory to be saved, or select a folder as the auto-save directory.
+The graphics quality grade of CHITUBOX. The greater the number, the lower the refresh rate and the higher the graphics quality.
 
-Graphics quality: the refresh rate grade of CHITUBOX, the higher the number, the lower the refresh rate.
+### Function
 
-## Shortcut
+#### Slice File Volume Calculation
 
-Display shortcuts.
+This allows you to enable or disable volume calculation during slicing.
 
-| Function                                  | Shortcut          |
-| ----------------------------------------- | ----------------- |
-| Save current project                      | Ctrl+S            |
-| Load model                                | Ctrl+O            |
-| Delete model                              | Delete            |
-| Clone Current Models                      | Ctrl+V            |
-| Undo                                      | Ctrl+Z            |
-| Redo                                      | Ctrl+Y            |
-| Zoom the view slowly                      | Ctrl+Scroll       |
-| View the up layer profile at the top      | Shift+Up          |
-| View the down layer profile at the top    | Shift+Down        |
-| View the up layer profile at the bottom   | Alt+Up            |
-| View the down layer profile at the bottom | Alt+Down          |
-| Move view Up                              | Ctrl+Up           |
-| Move view Down                            | Ctrl+Down         |
-| Move view Left                            | Ctrl+Left         |
-| Move view Right                           | Ctrl+Right        |
-| Record screen gif animation               | Ctrl+F1           |
-| Record screen picture                     | Ctrl+Shift+A      |
-| Select and deselect models                | Ctrl+Left-Button  |
-| Select continuous models in the file list | Shift+Left-Button |
-| Add support mode                          | A                 |
-| Edit support mode                         | E                 |
-| Delete support mode                       | D                 |
-| Select multiple                           | Ctrl+Left-Button  |
-| Area selection                            | Ctrl+Left-Button  |
-| Switch between heavy support              | Ctrl+3            |
-| Switch between middle support             | Ctrl+2            |
-| Switch between light support              | Ctrl+1            |
+<Admonition type="note">
+	Enabling this option may slow down the slicing speed.
+</Admonition>
 
-## Example
+#### Thumbnail Preview of Desktop
 
-Two example models.
+This allows you to enable or disable the thumbnail preview of the desktop.
 
-## Quit
+#### Preview Supports
 
-Quit the CHITUBOX.
+This allows you to enable or disable the support preview when adding manual supports.
+
+## Examples
+
+The "Example" button allows you to open example 3D models provided by the software. It contains three example models: a 20x20x20 cube, a cylinder, and a sphere. These models can be opened and used as a starting point for creating your own 3D models.
+
+## Exit
+
+The "Exit" button allows you to close the software.
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

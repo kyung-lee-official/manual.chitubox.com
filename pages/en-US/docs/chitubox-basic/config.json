@@ -34,8 +34,8 @@
 							"label": "Operations"
 						},
 						{
-							"item": "manage-files",
-							"label": "Manage Files"
+							"item": "file-list",
+							"label": "File List"
 						},
 						{
 							"item": "risk-detection",
@@ -54,10 +54,6 @@
 							"label": "Preview"
 						}
 					]
-				},
-				{
-					"item": "resin-material-alliance",
-					"label": "Resin Material Alliance"
 				}
 			]
 		},
