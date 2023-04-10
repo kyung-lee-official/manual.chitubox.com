@@ -735,18 +735,20 @@ export const ChituboxAddMachine = ({ size, fill }: any) => {
 				viewBox="0 0 20 20"
 				fill={textContent}
 			>
-				<g transform="translate(3 3)">
-					<g transform="translate(0 6)">
-						<path
-							d="M77,450H65a1,1,0,0,1,0-2H77a1,1,0,0,1,0,2Z"
-							transform="translate(-64 -448)"
-						/>
-					</g>
-					<g transform="translate(6)">
-						<path
-							d="M449,78a1,1,0,0,1-1-1V65a1,1,0,0,1,2,0V77A1,1,0,0,1,449,78Z"
-							transform="translate(-448 -64)"
-						/>
+				<g>
+					<g transform="translate(3 3)">
+						<g transform="translate(0 6)">
+							<path
+								d="M77,450H65a1,1,0,0,1,0-2H77a1,1,0,0,1,0,2Z"
+								transform="translate(-64 -448)"
+							/>
+						</g>
+						<g transform="translate(6)">
+							<path
+								d="M449,78a1,1,0,0,1-1-1V65a1,1,0,0,1,2,0V77A1,1,0,0,1,449,78Z"
+								transform="translate(-448 -64)"
+							/>
+						</g>
 					</g>
 				</g>
 			</svg>
@@ -824,6 +826,713 @@ export const ChituboxFileConfig = ({ size, fill }: any) => {
 							d="M554.529,452.27l-4.754-2.745a1,1,0,0,0-1,0l-4.754,2.745a1,1,0,0,0-.5.866v5.489a1,1,0,0,0,.5.866l4.754,2.745a1,1,0,0,0,1,0l4.754-2.745a1,1,0,0,0,.5-.866v-5.489A1,1,0,0,0,554.529,452.27Zm-5.254,5.611a2,2,0,1,1,2-2A2,2,0,0,1,549.276,457.88Z"
 							transform="translate(-535.029 -442.37)"
 						/>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxSelectIcon = ({ size, fill }: any) => {
+	const { textContent, textSecondaryText } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+			>
+				<g transform="translate(-18 -138)">
+					<g transform="translate(-138.5 -18.5)">
+						<path
+							d="M160.422,187.718a1.415,1.415,0,0,0-.338,1.488l4.968,14.128a1.435,1.435,0,0,0,2.516.369l3.711-5.129h0"
+							transform="translate(0 -27.296)"
+							fill={textSecondaryText}
+						/>
+						<path
+							d="M187.718,160.422a1.415,1.415,0,0,1,1.488-.338l14.128,4.968a1.435,1.435,0,0,1,.369,2.516l-5.129,3.711h0"
+							transform="translate(-27.296)"
+							fill={textContent}
+						/>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxSelectBoxIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill={textContent}
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g transform="translate(-18 -138)">
+					<g transform="translate(20 140)">
+						<g transform="translate(10 10)">
+							<g transform="translate(0 0.248)">
+								<path
+									d="M640.247,655.881a.832.832,0,0,0-.2.875l2.922,8.311a.844.844,0,0,0,1.48.217l2.183-3.017h0"
+									transform="translate(-640 -655.881)"
+								/>
+							</g>
+							<g transform="translate(0.248)">
+								<path
+									d="M655.881,640.247a.832.832,0,0,1,.875-.2l8.311,2.922a.844.844,0,0,1,.217,1.48l-3.017,2.183h0"
+									transform="translate(-655.881 -640)"
+								/>
+							</g>
+						</g>
+						<path d="M10,18H8V16h2ZM6,18H4V16H6ZM2,18H1a1,1,0,0,1-1-1V16H2Zm0-4H0V12H2Zm16-4H16V8h2ZM2,10H0V8H2ZM18,6H16V4h2ZM2,6H0V4H2ZM18,2H16V0h1a1,1,0,0,1,1,1ZM14,2H12V0h2ZM10,2H8V0h2ZM6,2H4V0H6ZM2,2H0V1A1,1,0,0,1,1,0H2Z" />
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxMoveIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill={textContent}
+			>
+				<g transform="translate(-18 -138)">
+					<g transform="translate(19.981 140)">
+						<g transform="translate(9.019)">
+							<path
+								d="M577,8a1,1,0,0,1-1-1V1a1,1,0,0,1,2,0V7A1,1,0,0,1,577,8Z"
+								transform="translate(-576)"
+							/>
+						</g>
+						<g transform="translate(6.019 0.016)">
+							<path
+								d="M390.96,6.1a1.075,1.075,0,0,1-.762-.316l-2.159-2.159-2.159,2.159a1.078,1.078,0,0,1-1.525-1.525l2.922-2.922a1.078,1.078,0,0,1,1.525,0l2.922,2.922a1.078,1.078,0,0,1-.762,1.84Z"
+								transform="translate(-384.039 -1.019)"
+							/>
+						</g>
+						<g transform="translate(9.019 12)">
+							<path
+								d="M577,776a1,1,0,0,1-1-1v-6a1,1,0,0,1,2,0v6A1,1,0,0,1,577,776Z"
+								transform="translate(-576 -768)"
+							/>
+						</g>
+						<g transform="translate(6.019 14.891)">
+							<path
+								d="M388.038,958.077a1.075,1.075,0,0,1-.762-.316l-2.922-2.922a1.078,1.078,0,0,1,1.525-1.525l2.159,2.159,2.159-2.159a1.078,1.078,0,0,1,1.525,1.525l-2.922,2.922A1.075,1.075,0,0,1,388.038,958.077Z"
+								transform="translate(-384.039 -953)"
+							/>
+						</g>
+						<g transform="translate(12.019 9)">
+							<path
+								d="M775.019,577.981h-6a1,1,0,0,1,0-2h6a1,1,0,0,1,0,2Z"
+								transform="translate(-768.019 -575.981)"
+							/>
+						</g>
+						<g transform="translate(14.925 6)">
+							<path
+								d="M955.1,392.019a1.078,1.078,0,0,1-.762-1.84l2.159-2.159-2.159-2.159a1.078,1.078,0,0,1,1.525-1.525l2.922,2.922a1.078,1.078,0,0,1,0,1.525L955.86,391.7A1.075,1.075,0,0,1,955.1,392.019Z"
+								transform="translate(-954.02 -384.02)"
+							/>
+						</g>
+						<g transform="translate(0.019 9)">
+							<path
+								d="M7.019,577.981h-6a1,1,0,0,1,0-2h6a1,1,0,0,1,0,2Z"
+								transform="translate(-0.019 -575.981)"
+							/>
+						</g>
+						<g transform="translate(0.051 6)">
+							<path
+								d="M6.038,392.019a1.075,1.075,0,0,1-.762-.316l-2.922-2.922a1.078,1.078,0,0,1,0-1.525l2.922-2.922A1.078,1.078,0,0,1,6.8,385.86l-2.159,2.159L6.8,390.178a1.078,1.078,0,0,1-.762,1.84Z"
+								transform="translate(-2.038 -384.02)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxRotateIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill={textContent}
+			>
+				<g transform="translate(-18 -138)">
+					<g transform="translate(20 140)">
+						<path d="M14.876,18.565a1,1,0,0,1-.543-1.84A8,8,0,1,0,2,10a1,1,0,0,1-2,0A10,10,0,0,1,19.214,6.107a10,10,0,0,1-.472,8.751,10.069,10.069,0,0,1-3.324,3.547A1,1,0,0,1,14.876,18.565Z" />
+						<g transform="translate(0.946 13.02)">
+							<path
+								d="M69.621,840.362a1,1,0,0,1,0-2,8.018,8.018,0,0,0,.887-.053,1,1,0,1,1,.23,1.987,10.046,10.046,0,0,1-1.109.066Zm-3.872-.863a1,1,0,0,1-.427-.1,10.086,10.086,0,0,1-.975-.529,1,1,0,1,1,1.05-1.7,8.081,8.081,0,0,0,.781.424,1,1,0,0,1-.428,1.9Zm-3.713-3.248a1,1,0,0,1-.84-.457,9.978,9.978,0,0,1-.551-.965,1,1,0,0,1,1.79-.892,7.957,7.957,0,0,0,.44.771,1,1,0,0,1-.839,1.543Z"
+								transform="translate(-60.54 -833.383)"
+							/>
+						</g>
+						<g transform="translate(13.625 12.867)">
+							<path
+								d="M877.132,829.7H873a1,1,0,0,1-1-1v-4.131a1,1,0,0,1,2,0V827.7h3.132a1,1,0,1,1,0,2Z"
+								transform="translate(-872 -823.569)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxScaleIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill={textContent}
+			>
+				<g transform="translate(-18 -138)">
+					<g transform="translate(-43 77)">
+						<g transform="translate(64 70)">
+							<path
+								d="M74,460H66a2,2,0,0,1-2-2v-8a2,2,0,0,1,2-2h8a2,2,0,0,1,2,2v8A2,2,0,0,1,74,460Zm-8-2h8v-8H66v8Z"
+								transform="translate(-64 -448)"
+							/>
+						</g>
+						<g transform="translate(64 64)">
+							<path
+								d="M66,68H64V65a1,1,0,0,1,1-1h3v2H66Z"
+								transform="translate(-64 -64)"
+							/>
+						</g>
+						<g transform="translate(78 78)">
+							<path
+								d="M963,964h-3v-2h2v-2h2v3A1,1,0,0,1,963,964Z"
+								transform="translate(-960 -960)"
+							/>
+						</g>
+						<g transform="translate(70 64)">
+							<rect width="4" height="2" />
+						</g>
+						<g transform="translate(80 72)">
+							<rect width="2" height="4" />
+						</g>
+						<g transform="translate(76 64.007)">
+							<path
+								d="M833,70.463a1,1,0,0,1-.707-1.707l3.993-3.993a1,1,0,0,1,1.414,1.414l-3.993,3.993A1,1,0,0,1,833,70.463Z"
+								transform="translate(-832 -64.471)"
+							/>
+						</g>
+						<g transform="translate(76 64)">
+							<path
+								d="M837,70a1,1,0,0,1-1-1V66h-3a1,1,0,0,1,0-2h4a1,1,0,0,1,1,1v4A1,1,0,0,1,837,70Z"
+								transform="translate(-832 -64)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxMirrorIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill={textContent}
+			>
+				<g transform="translate(-18 -138)">
+					<g transform="translate(20 140)">
+						<g transform="translate(9)">
+							<path
+								d="M577,20a1,1,0,0,1-1-1V1a1,1,0,0,1,2,0V19A1,1,0,0,1,577,20Z"
+								transform="translate(-576)"
+							/>
+						</g>
+						<g transform="translate(0 2)">
+							<path
+								d="M5,144H2a2,2,0,0,1-2-2V130a2,2,0,0,1,2-2H5a2,2,0,0,1,2,2v12A2,2,0,0,1,5,144Zm-3-2H5V130H2v12Zm3,0H5Z"
+								transform="translate(0 -128)"
+							/>
+						</g>
+						<g transform="translate(13 2)">
+							<path
+								d="M834,131h-2v-1a2,2,0,0,1,2-2h1v2h-1Z"
+								transform="translate(-832 -128)"
+							/>
+						</g>
+						<g transform="translate(17 2)">
+							<path
+								d="M1091,131h-2v-1h-1v-2h1a2,2,0,0,1,2,2Z"
+								transform="translate(-1088 -128)"
+							/>
+						</g>
+						<g transform="translate(13 15)">
+							<path
+								d="M835,963h-1a2,2,0,0,1-2-2v-1h2v1h1Z"
+								transform="translate(-832 -960)"
+							/>
+						</g>
+						<g transform="translate(17 15)">
+							<path
+								d="M1089,963h-1v-2h1v-1h2v1A2,2,0,0,1,1089,963Z"
+								transform="translate(-1088 -960)"
+							/>
+						</g>
+						<g transform="translate(13 7)">
+							<rect width="2" height="2" />
+						</g>
+						<g transform="translate(13 11)">
+							<rect width="2" height="2" />
+						</g>
+						<g transform="translate(18 7)">
+							<rect width="2" height="2" />
+						</g>
+						<g transform="translate(18 11)">
+							<rect width="2" height="2" />
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxCheckboxIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				viewBox="0 0 24 24"
+				height="20"
+				width="20"
+				focusable="false"
+				role="img"
+				fill={textContent}
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path fill="none" d="M0 0h24v24H0V0z"></path>
+				<path d="M19 5v14H5V5h14m2-2H3v18h18V3z"></path>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxEyeIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				viewBox="0 0 20 20"
+				width="20"
+				height="20"
+				fill={textContent}
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g transform="translate(2 -187)">
+					<path d="M8,192c-4.418,0-8,4-8,5s3.582,5,8,5,8-4,8-5S12.418,192,8,192Zm0,9a4,4,0,1,1,4-4A4,4,0,0,1,8,201Z" />
+					<path
+						d="M515,323a4.032,4.032,0,0,1-2.25-.75A3.791,3.791,0,0,1,512,320,3,3,0,0,1,515,323Z"
+						transform="translate(-504 -126)"
+					/>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxRulerIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill={textContent}
+			>
+				<g transform="translate(-3 -3)">
+					<g transform="translate(5 5)">
+						<path d="M4,15H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0H4A1,1,0,0,1,5,1V14A1,1,0,0,1,4,15ZM1,1V14H4V1Z" />
+						<g transform="translate(4 10)">
+							<path
+								d="M266,645H256v-1h10v-3H256v-1h10a1,1,0,0,1,1,1v3A1,1,0,0,1,266,645Z"
+								transform="translate(-256 -640)"
+							/>
+						</g>
+						<g transform="translate(0.625 4)">
+							<rect width="1.375" height="1" />
+						</g>
+						<g transform="translate(0.625 7)">
+							<rect width="1.375" height="1" />
+						</g>
+						<g transform="translate(0.625 10)">
+							<rect width="1.375" height="1" />
+						</g>
+						<g transform="translate(8 13)">
+							<rect width="1" height="1.375" />
+						</g>
+						<g transform="translate(11 13)">
+							<rect width="1" height="1.375" />
+						</g>
+						<g transform="translate(12 1)">
+							<path
+								d="M770,66h-1V65h-1V64h1a1,1,0,0,1,1,1Z"
+								transform="translate(-768 -64)"
+							/>
+						</g>
+						<g transform="translate(6 1)">
+							<rect width="2" height="1" />
+						</g>
+						<g transform="translate(9 1)">
+							<rect width="2" height="1" />
+						</g>
+						<g transform="translate(13 4)">
+							<rect width="1" height="2" />
+						</g>
+						<g transform="translate(13 7)">
+							<rect width="1" height="2" />
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxDeleteIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill={textContent}
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g transform="translate(-265 -295)">
+					<g transform="translate(267 297)">
+						<g transform="translate(0 2)">
+							<path
+								d="M15,130H1a1,1,0,0,1,0-2H15a1,1,0,0,1,0,2Z"
+								transform="translate(0 -128)"
+							/>
+						</g>
+						<g transform="translate(2.05 6)">
+							<path
+								d="M140.95,394H133.4a2.324,2.324,0,0,1-1.489-.525A1.926,1.926,0,0,1,131.2,392v-7a1,1,0,0,1,2,0v6.945a.347.347,0,0,0,.2.055h7.55a.347.347,0,0,0,.2-.055V385a1,1,0,0,1,2,0v7a1.927,1.927,0,0,1-.711,1.475A2.324,2.324,0,0,1,140.95,394Z"
+								transform="translate(-131.2 -384)"
+							/>
+						</g>
+						<g transform="translate(7 6)">
+							<path
+								d="M449,390a1,1,0,0,1-1-1v-4a1,1,0,0,1,2,0v4A1,1,0,0,1,449,390Z"
+								transform="translate(-448 -384)"
+							/>
+						</g>
+						<g transform="translate(6)">
+							<rect width="4" height="4" rx="1" />
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxGlobalIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill={textContent}
+			>
+				<g transform="translate(-184 -290)">
+					<g transform="translate(186 292.002)">
+						<g transform="translate(4 -0.002)">
+							<path
+								d="M262,12A6,6,0,0,1,259.664.472a6,6,0,0,1,4.672,11.056A5.963,5.963,0,0,1,262,12Zm0-10a4,4,0,1,0,4,4A4,4,0,0,0,262,2Z"
+								transform="translate(-256 0)"
+							/>
+						</g>
+						<g transform="translate(7.375 -0.002)">
+							<path
+								d="M474.625,12a1.771,1.771,0,0,1-1.425-.784,4.583,4.583,0,0,1-.675-1.372A12.918,12.918,0,0,1,472,6a12.918,12.918,0,0,1,.525-3.845A4.583,4.583,0,0,1,473.2.784a1.688,1.688,0,0,1,2.851,0,4.583,4.583,0,0,1,.675,1.372A12.918,12.918,0,0,1,477.25,6a12.918,12.918,0,0,1-.525,3.845,4.583,4.583,0,0,1-.675,1.372A1.771,1.771,0,0,1,474.625,12Zm0-9.728a4.724,4.724,0,0,0-.311.894A11.927,11.927,0,0,0,474,6a11.927,11.927,0,0,0,.314,2.834,4.724,4.724,0,0,0,.311.894,4.724,4.724,0,0,0,.311-.894A11.927,11.927,0,0,0,475.25,6a11.927,11.927,0,0,0-.314-2.834A4.724,4.724,0,0,0,474.625,2.272Z"
+								transform="translate(-472)"
+							/>
+						</g>
+						<g transform="translate(4 4.998)">
+							<path
+								d="M267,322H257a1,1,0,0,1,0-2h10a1,1,0,0,1,0,2Z"
+								transform="translate(-256 -320)"
+							/>
+						</g>
+						<g transform="translate(0 -0.002)">
+							<path
+								d="M15,16H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1.707.291l2,2A1,1,0,0,1,2.293,3.7L2,3.412V14H15a1,1,0,0,1,0,2Z"
+								transform="translate(0 0.002)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxLocalIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill={textContent}
+			>
+				<g transform="translate(-3 -3)">
+					<g transform="translate(5 5.002)">
+						<g transform="translate(0 -0.002)">
+							<path
+								d="M15,16H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1.707.291l2,2A1,1,0,0,1,2.293,3.7L2,3.412V14H15a1,1,0,0,1,0,2Z"
+								transform="translate(0 0.002)"
+							/>
+						</g>
+						<g transform="translate(5 2.998)">
+							<path
+								d="M327,200h-6a1,1,0,0,1-1-1v-6a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1v6A1,1,0,0,1,327,200Zm-5-2h4v-4h-4Z"
+								transform="translate(-320 -192)"
+							/>
+						</g>
+						<g transform="translate(5 -0.002)">
+							<path
+								d="M327,11a1,1,0,0,1-.707-1.707L329,6.586V2h-4.586l-2.707,2.707a1,1,0,0,1-1.414-1.414l3-3A1,1,0,0,1,324,0h6a1,1,0,0,1,1,1V7a1,1,0,0,1-.293.707l-3,3A1,1,0,0,1,327,11Z"
+								transform="translate(-320)"
+							/>
+						</g>
+						<g transform="translate(11 -0.002)">
+							<path
+								d="M705,5a1,1,0,0,1-.707-1.707l3-3a1,1,0,0,1,1.414,1.414l-3,3A1,1,0,0,1,705,5Z"
+								transform="translate(-704 0)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxResetIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill={textContent}
+			>
+				<g transform="translate(2 2)">
+					<g transform="translate(0 0.798)">
+						<path
+							d="M8,66.3A8,8,0,0,1,.938,54.538a8.063,8.063,0,0,1,2.49-2.8,1,1,0,1,1,1.144,1.64,6,6,0,1,0,6.213-.391,1,1,0,1,1,.93-1.771A8,8,0,0,1,8,66.3Z"
+							transform="translate(0 -51.098)"
+						/>
+					</g>
+					<g transform="translate(9.625)">
+						<path
+							d="M617,6a1,1,0,0,1-1-1V1a1,1,0,0,1,1-1h4a1,1,0,0,1,0,2h-3V5A1,1,0,0,1,617,6Z"
+							transform="translate(-616)"
+						/>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxMachineBarMenuIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill={textContent}
+			>
+				<g transform="translate(-166 -979)">
+					<g transform="translate(-274.321 981)">
+						<rect
+							width="2"
+							height="2"
+							transform="translate(449.322 2)"
+						/>
+						<rect
+							width="2"
+							height="2"
+							transform="translate(449.322 7)"
+						/>
+						<rect
+							width="2"
+							height="2"
+							transform="translate(449.322 12)"
+						/>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxCopyAddIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill={textContent}
+			>
+				<g transform="translate(-61 -61)">
+					<g transform="translate(64 64)">
+						<path
+							d="M69.125,74H65a1,1,0,0,1-1-1V65a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1v4H72V66H66v6h3.125Z"
+							transform="translate(-64 -64)"
+						/>
+					</g>
+					<g transform="translate(68 68)">
+						<path
+							d="M329,330h-8a1,1,0,0,1-1-1v-8a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1v8A1,1,0,0,1,329,330Zm-7-2h6v-6h-6Z"
+							transform="translate(-320 -320)"
+						/>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxRenderDetailedIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill={textContent}
+			>
+				<g>
+					<path
+						d="M14.763,12.276q.1-.162.2-.328v0q.1-.168.183-.341h0a7.949,7.949,0,0,0,.509-1.266h0q.042-.137.079-.275v0q.037-.138.069-.278v0q.016-.069.03-.139h0A8.027,8.027,0,0,0,16,8.108h0Q16,8.054,16,8c0-.05,0-.1,0-.149,0-.01,0-.02,0-.031q0-.073,0-.145V7.655q0-.069-.007-.138V7.5q0-.074-.011-.148l0-.023q-.013-.152-.031-.3l0-.016q-.009-.076-.02-.151V6.853a7.957,7.957,0,0,0-1.427-3.529h0q-.082-.113-.167-.223l0,0q-.085-.11-.174-.216l0,0q-.089-.107-.181-.21l0,0q-.093-.1-.189-.2h0l-.1-.1h0q-.1-.1-.2-.193l0,0q-.1-.093-.2-.183l-.008-.007q-.1-.089-.206-.174l-.01-.008q-.1-.085-.211-.166l-.011-.008q-.107-.081-.216-.158L12.6,1.452l-.105-.073-.005,0L12.375,1.3l-.01-.007-.1-.067-.012-.007-.114-.07-.007,0-.107-.063-.016-.009-.116-.066h0L11.776.945l-.019-.01q-.115-.061-.233-.119L11.5.805q-.117-.057-.236-.11l-.023-.01-.11-.048-.01,0L11,.583,10.98.574,10.874.532,10.856.525,10.735.48,10.713.472,10.608.435,10.584.427,10.462.386,10.444.38,10.336.347,10.308.338,10.184.3l-.012,0L10.058.267,10.028.26Q9.9.227,9.776.2L9.745.191,9.627.166l-.01,0L9.489.138,9.458.133,9.347.113l-.021,0L9.2.089l-.031,0L9.06.07l-.027,0L8.9.051l-.028,0L8.767.036l-.031,0L8.606.023l-.023,0L8.47.014l-.034,0L8.3.006H8.289l-.12,0H8A8,8,0,0,0,0,8c0,.045,0,.089,0,.134q0,.018,0,.035,0,.059,0,.117V8.3q0,.066.006.132l0,.034q0,.055.007.11l0,.026q0,.065.011.13l0,.03q.005.054.011.107l0,.03q.007.064.015.128l0,.025q.007.054.015.108l0,.033q.01.064.02.128l0,.016q.01.057.02.114l.006.033q.024.127.052.253L.2,9.771q.013.056.026.111l0,.015q.015.062.031.124l.008.031.028.1.006.023q.017.061.036.122l.008.027.031.1.009.027q.019.06.04.12l.007.021.036.1.01.029q.022.06.044.119l0,.012.042.107L.58,11q.048.118.1.234l.013.028.047.1.006.012.054.114.013.026.048.1.01.019.058.112.012.022.051.094L1,11.882l.062.11.01.017.056.095.014.024.066.108,0,.007.064.1.016.024q.069.106.142.21l.016.023.068.1.006.008.076.1.016.02.068.089.011.014.079.1.014.017.07.085.014.017.083.1.01.012.075.085.017.018.087.095,0,0,.084.089.018.019q.089.092.181.181l.018.017.088.084,0,0,.1.087.017.015.086.076.011.01.1.084.015.012.088.073.015.012.1.081.01.007.093.072.018.014.1.078h0l.1.074.019.014q.106.074.214.144l.019.013.105.067,0,0,.112.068.018.011.1.06.012.007L4.119,15l.015.008.1.056.017.009.116.061.01,0,.107.054.02.01a7.943,7.943,0,0,0,2.319.715l.022,0,.148.02.014,0,.144.016.014,0,.148.014.027,0,.149.011H7.5l.142.007h.025l.146,0h.03L8,16h.113A8.035,8.035,0,0,0,9.5,15.86h0l.138-.028.012,0,.131-.029h0l.139-.033h0l.136-.035h0q.139-.037.276-.079h0a7.961,7.961,0,0,0,1.939-.893h0A8.03,8.03,0,0,0,13.294,14h0q.091-.081.18-.164l.01-.009.082-.078,0,0q.088-.085.173-.173l.005-.006.08-.083.006-.006q.084-.09.166-.183h0a8.03,8.03,0,0,0,.758-1.009ZM12.95,3.05a6.978,6.978,0,0,1,1.484,2.187L12.895,3.7a7.944,7.944,0,0,0-.2-.89Q12.825,2.926,12.95,3.05ZM15,8q0,.305-.026.606L12.861,6.493A8.028,8.028,0,0,0,13,5.215l1.954,1.954A7.108,7.108,0,0,1,15,8Zm-2.436-.389,2.2,2.2a6.952,6.952,0,0,1-.314.914q-.028.065-.057.13L12.144,8.6A7.952,7.952,0,0,0,12.564,7.611ZM2.809,12.7a7.948,7.948,0,0,0,.867.2L5.2,14.42A6.978,6.978,0,0,1,3.05,12.95Q2.926,12.825,2.809,12.7ZM8,15a7.107,7.107,0,0,1-.822-.047L5.223,13A8.026,8.026,0,0,0,6.5,12.86l2.114,2.114Q8.309,15,8,15Zm1.817-.237-2.2-2.2a7.948,7.948,0,0,0,.993-.421l2.25,2.25-.135.059A6.951,6.951,0,0,1,9.817,14.763Zm1.961-.868L9.5,11.616a8.035,8.035,0,0,0,.8-.619l2.292,2.292A6.981,6.981,0,0,1,11.778,13.9ZM11,10.29a8.034,8.034,0,0,0,.618-.8L13.9,11.773a6.976,6.976,0,0,1-.605.809Z"
+						transform="translate(2 2)"
+					/>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxRenderFresnelIcon = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill={textContent}
+			>
+				<g transform="translate(-1418 -190)">
+					<g transform="translate(1420 192)">
+						<path d="M8,16A8,8,0,0,1,4.886.629a8,8,0,0,1,6.228,14.742A7.95,7.95,0,0,1,8,16ZM8,1a7,7,0,1,0,7,7A7.008,7.008,0,0,0,8,1Z" />
+						<g transform="translate(2 2)">
+							<path
+								d="M129,135a1,1,0,0,1-1-1,6,6,0,0,1,6-6,1,1,0,0,1,0,2,4,4,0,0,0-4,4A1,1,0,0,1,129,135Z"
+								transform="translate(-128 -128)"
+							/>
+						</g>
+						<g transform="translate(12.743 3.547)">
+							<path
+								d="M818.055,229.489l-2.5-2.5a7.49,7.49,0,0,1,.252,1.666l2.5,2.5A7.49,7.49,0,0,0,818.055,229.489Z"
+								transform="translate(-815.555 -226.989)"
+							/>
+						</g>
+						<g transform="translate(12.668 6.558)">
+							<path
+								d="M813.494,422.211l-2.5-2.5a7.447,7.447,0,0,1-.258,1.156l2.5,2.5A7.447,7.447,0,0,0,813.494,422.211Z"
+								transform="translate(-810.736 -419.711)"
+							/>
+						</g>
+						<g transform="translate(11.759 8.731)">
+							<path
+								d="M755.582,561.271l-2.5-2.5a7.492,7.492,0,0,1-.511.9l2.5,2.5A7.492,7.492,0,0,0,755.582,561.271Z"
+								transform="translate(-752.571 -558.771)"
+							/>
+						</g>
+						<g transform="translate(10.44 10.436)">
+							<path
+								d="M668.87,667.893a7.55,7.55,0,0,1-.707.707l2.86,2.86.707-.707Z"
+								transform="translate(-668.163 -667.893)"
+							/>
+						</g>
+						<g transform="translate(8.736 11.756)">
+							<path
+								d="M560.016,752.368a7.491,7.491,0,0,1-.9.512l2.5,2.5a7.491,7.491,0,0,0,.9-.512Z"
+								transform="translate(-559.114 -752.368)"
+							/>
+						</g>
+						<g transform="translate(6.565 12.666)">
+							<path
+								d="M423.808,813.118l-2.5-2.5a7.445,7.445,0,0,1-1.155.259l2.5,2.5A7.445,7.445,0,0,0,423.808,813.118Z"
+								transform="translate(-420.153 -810.618)"
+							/>
+						</g>
+						<g transform="translate(3.557 12.746)">
+							<path
+								d="M229.34,815.986a7.5,7.5,0,0,1-1.663-.249l2.5,2.5a7.493,7.493,0,0,0,1.663.249Z"
+								transform="translate(-227.677 -815.737)"
+							/>
+						</g>
 					</g>
 				</g>
 			</svg>

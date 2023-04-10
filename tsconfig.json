@@ -31,7 +31,7 @@
     "**/*.tsx" ],
   "exclude": [
     "node_modules",
-	"preload/preload.ts",
-	"preload/test.ts",
+    "preload/preload.ts",
+    "preload/test.ts",
   ]
 }
