@@ -12,10 +12,14 @@ export const DocsContent: React.FC<any> = (props) => {
 	}, [isDesktopOrLaptop]);
 
 	return (
-		<div className="flex min-h-[100vh]">
-			{isDesktop ? <DocsSidebar /> : null}
+		<div
+			className="flex min-h-screen
+            font-sans text-gray-800 dark:text-gray-100
+            bg-slate-50 dark:bg-slate-900"
+		>
+			{isDesktop && <DocsSidebar />}
 			<MdxContainer>{children}</MdxContainer>
-			{isDesktop ? <Toc /> : null}
+			{isDesktop && <Toc />}
 		</div>
 	);
 };

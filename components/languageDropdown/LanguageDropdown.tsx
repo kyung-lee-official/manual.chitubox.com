@@ -69,7 +69,7 @@ export const LanguageDropdown: React.FC<any> = () => {
 						<div
 							className="relative flex flex-col justify-center gap-2 items-center top-2 p-3 min-w-fit
                             font-bold text-base text-gray-800 dark:text-gray-50
-                            bg-gray-50 dark:bg-gray-800
+                            bg-gray-50/30 dark:bg-gray-800/30 backdrop-blur-md
                             shadow-lg rounded-md"
 						>
 							{items.map((item: any) => {

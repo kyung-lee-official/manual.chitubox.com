@@ -37,7 +37,7 @@ export const VersionDropdown: React.FC<any> = () => {
 							<div
 								className={`relative flex flex-col justify-center gap-2 items-center top-2 p-3
                                 font-bold text-base text-gray-800 dark:text-gray-50
-                                bg-gray-50 dark:bg-gray-800
+                                bg-gray-50/30 dark:bg-gray-800/30
                                 shadow-lg rounded-md`}
 							>
 								{items.map((item: any) => {
@@ -45,7 +45,7 @@ export const VersionDropdown: React.FC<any> = () => {
 									return (
 										<div
 											className={`flex justify-center items-center
-                                            hover:text-green-500
+                                            hover:text-blue-500
                                             cursor-pointer`}
 											key={item.key}
 											onClick={() => {

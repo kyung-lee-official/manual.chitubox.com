@@ -19,7 +19,9 @@ function Loading() {
 	return (
 		<div
 			className="flex flex-col justify-center items-center min-h-[60vh]
-            text-3xl font-medium"
+            font-medium text-3xl
+            text-gray-800 dark:text-gray-400
+            bg-slate-50 dark:bg-slate-900"
 		>
 			Loading{ellipsis}
 		</div>
@@ -34,7 +36,7 @@ const IndexPage = () => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			router.push(`/${urlLocale}`);
-		}, 10000);
+		}, 1000);
 		return () => {
 			clearTimeout(timer);
 		};

@@ -26,7 +26,7 @@ export const DocsSearchResult: React.FC<any> = ({ searchResults }) => {
 							return (
 								<div
 									className="flex justify-start items-center px-6
-                                    font-medium text-lg hover:text-green-500
+                                    font-medium text-lg hover:text-blue-500
                                     cursor-pointer"
 									key={path}
 									onMouseDown={() => {
@@ -55,7 +55,7 @@ export const DocsSearchResult: React.FC<any> = ({ searchResults }) => {
 							return (
 								<div
 									className="flex justify-start items-center px-6
-                                    font-medium text-lg hover:text-green-500"
+                                    font-medium text-lg hover:text-blue-500"
 									key={path}
 									onMouseDown={() => {
 										router.push(`/${path}`);

@@ -4,35 +4,6 @@ import styled from "styled-components";
 import { DocsMenu } from "..";
 import { DocContext } from "../docsLayout";
 
-const StyledSidebar = styled.div`
-	flex: 0 0 300px;
-	transition-duration: 0.2s;
-	box-shadow: 1px 0px 6px ${(props) => props.theme.headerShadow};
-`;
-
-const StyledSidebarAffix = styled.div`
-	position: -webkit-sticky;
-	position: sticky;
-	top: 160px;
-	overflow-y: auto;
-	min-height: 100vh;
-	&::-webkit-scrollbar {
-		width: 7px;
-		border-radius: 3px;
-		background-color: ${(props) => props.theme.sidebarScrollbar};
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 3px;
-		background-color: ${(props) => props.theme.sidebarScrollbarThumb};
-	}
-	&::-webkit-scrollbar-thumb {
-		&:hover {
-			border-radius: 3px;
-			background-color: ${(props) => props.theme.sidebarScrollbarHover};
-		}
-	}
-`;
-
 export const DocsSidebar: React.FC<any> = () => {
 	const router = useRouter();
 	const { versionedContext } = useContext(DocContext);
@@ -67,14 +38,17 @@ export const DocsSidebar: React.FC<any> = () => {
 	initSidebarMenu();
 
 	return (
-		<StyledSidebar>
-			<StyledSidebarAffix>
+		<div
+			className="flex-[0_0_300px] border-r-[1px] border-gray-300 dark:border-gray-700
+            transition-color duration-300"
+		>
+			<div className="sticky top-32 max-h-[80vh] overflow-auto scrollbar">
 				<DocsMenu
 					menuItems={menuItems}
 					defaultOpenKeys={[]}
 					activeKey={selectedKey}
 				/>
-			</StyledSidebarAffix>
-		</StyledSidebar>
+			</div>
+		</div>
 	);
 };

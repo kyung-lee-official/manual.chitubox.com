@@ -11,13 +11,6 @@ import {
 } from "..";
 import { motion } from "framer-motion";
 
-const StyledStickyHeaderContainer = styled.div`
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0px;
-	z-index: 10;
-`;
-
 interface StyledHeaderContainerProps {
 	$isLargeScreen: boolean;
 }
@@ -34,6 +27,23 @@ const StyledHeaderContainer = styled.div<StyledHeaderContainerProps>`
 	/* box-shadow: 0px 3px 6px hsl(0, 0%, 0%, 0.3); */
 	height: 4.5rem;
 `;
+
+const HeaderContainer = (props: any) => {
+	const { children } = props;
+
+	return (
+		<div
+			className={`flex justify-between items-center gap-6 h-16 px-16
+            text-2xl font-sans
+            text-gray-400
+            bg-slate-800
+            shadow-md
+            transition-colors duration-300`}
+		>
+			{children}
+		</div>
+	);
+};
 
 const StyledTitleAndTitleLink = styled.a`
 	display: flex;
@@ -83,9 +93,9 @@ export const Header: React.FC<any> = () => {
 	}
 
 	return (
-		<StyledStickyHeaderContainer>
+		<div className="sticky top-0 z-10">
 			<Banner />
-			<StyledHeaderContainer
+			<HeaderContainer
 				$isLargeScreen={isDesktop}
 				className="header-container"
 			>
@@ -133,13 +143,13 @@ export const Header: React.FC<any> = () => {
 						</StyledHeaderItem>
 					</motion.div>
 				) : null}
-			</StyledHeaderContainer>
+			</HeaderContainer>
 			{isDesktop ? null : (
 				<PageDrawer
 					openDrawer={openDrawer}
 					setOpenDrawer={setOpenDrawer}
 				/>
 			)}
-		</StyledStickyHeaderContainer>
+		</div>
 	);
 };
