@@ -1,3 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.scrollbar::-webkit-scrollbar {
+		@apply w-2;
+	}
+
+	.scrollbar::-webkit-scrollbar-track {
+		@apply rounded-lg
+		bg-slate-200
+		dark:bg-gray-700;
+	}
+
+	.scrollbar::-webkit-scrollbar-thumb {
+		@apply rounded-lg
+		bg-slate-300
+		dark:bg-gray-600;
+	}
+
+	.scrollbar::-webkit-scrollbar-thumb:hover {
+		@apply bg-slate-400 
+		dark:bg-gray-500;
+	}
+}
+
 html,
 body {
 	padding: 0;

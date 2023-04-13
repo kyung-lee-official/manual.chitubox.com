@@ -1,12 +1,11 @@
 import { getBannerInfo } from "helpers/api";
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import { RootState } from "redux/store";
 import styled from "styled-components";
 import dayjs from "dayjs";
 import isBetween from "dayjs/plugin/isBetween";
 import axios from "axios";
 import { useQuery } from "react-query";
+import { useLanguageStore } from "stores/language";
 dayjs.extend(isBetween);
 
 const StyledImgWrapper = styled.div`
@@ -49,10 +48,7 @@ function blockCountdownActivities(activities: any) {
 }
 
 export const Banner: React.FC<any> = () => {
-	const reduxLanguageState = useSelector(
-		(state: RootState) => state.language
-	);
-	const { currentLocale } = reduxLanguageState;
+	const { language } = useLanguageStore();
 	const [isImageAva, setIsImageAva] = useState(false);
 
 	let bannerQuery;
@@ -60,10 +56,10 @@ export const Banner: React.FC<any> = () => {
 	let currentActivity;
 
 	bannerQuery = useQuery("bannerQuery", () => getBannerInfo("en"), {
-		enabled: currentLocale === "en_US",
+		enabled: language === "en_US",
 	});
 	bannerQuery = useQuery("bannerQuery", () => getBannerInfo("zh-Hans"), {
-		enabled: currentLocale === "zh_CN",
+		enabled: language === "zh_CN",
 	});
 
 	if (bannerQuery?.isLoading) {

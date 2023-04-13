@@ -1,63 +1,17 @@
 import { Dropdown, MenuProps } from "antd";
 import { useRouter } from "next/router";
-import React, { ReactNode } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import styled from "styled-components";
+import React from "react";
 import { IoLanguage } from "..";
-import { changeLanguage } from "../../redux/language/slice";
-import { RootState } from "../../redux/store";
+import { LanguageType, languageList, useLanguageStore } from "stores/language";
 
-const StyledTitleLink = styled.a`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-`;
-
-const StyledCustomDropdownContainer = styled.div`
-	position: relative;
-	top: 8px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	min-width: 6rem;
-	padding: 0.3rem 0;
-	background-color: ${(props) => props.theme.searchbarResultsBackground};
-	backdrop-filter: blur(4px);
-	box-shadow: 0px 0px 10px 3px
-		${(props) => props.theme.searchbarResultsShadow};
-	border-radius: 10px;
-`;
-
-const StyledCustomDropdownItem = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: ${(props) => props.theme.headerIcons};
-	width: 100%;
-	padding: 0.3rem 0;
-	font-weight: bold;
-	font-size: 16px;
-	cursor: pointer;
-	transition: 0.3s;
-	&:hover {
-		color: ${(props) => props.theme.basic};
-		transition: 0.3s;
-	}
-`;
-
-export const LanguageDropdown: React.FC<any> = ({ color }) => {
+export const LanguageDropdown: React.FC<any> = () => {
 	const router = useRouter();
-	const reduxLanguageState = useSelector(
-		(state: RootState) => state.language
-	);
-	const dispatch = useDispatch();
+	const { setLanguage } = useLanguageStore();
 
 	const LanguageMenuItem: React.FC<any> = ({ pathname, languageObject }) => {
 		const isOneField: boolean = isRoutePathOneFieldOnly(pathname);
-		const dispatch = useDispatch();
 		function onItemClick(event: any) {
-			dispatch(changeLanguage(languageObject.code));
+			setLanguage(languageObject.code);
 			if (isOneField) {
 				router.push(`/${languageObject.urlCode}`);
 			} else {
@@ -72,20 +26,19 @@ export const LanguageDropdown: React.FC<any> = ({ color }) => {
 		return <div onClick={onItemClick}>{languageObject.label}</div>;
 	};
 
-	const languageMenuItems: MenuProps["items"] =
-		reduxLanguageState.languageList.map(
-			(languageObject: any, i: any) => {
-				return {
-					label: (
-						<LanguageMenuItem
-							pathname={router.pathname}
-							languageObject={languageObject}
-						/>
-					),
-					key: languageObject.label,
-				};
-			}
-		);
+	const languageMenuItems: MenuProps["items"] = languageList.map(
+		(languageObject: LanguageType) => {
+			return {
+				label: (
+					<LanguageMenuItem
+						pathname={router.pathname}
+						languageObject={languageObject}
+					/>
+				),
+				key: languageObject.label,
+			};
+		}
+	);
 
 	/**
 	 * Check whether the route has one field only.
@@ -113,15 +66,18 @@ export const LanguageDropdown: React.FC<any> = ({ color }) => {
 				if (menus) {
 					const { items } = menus.props;
 					return (
-						<StyledCustomDropdownContainer>
+						<div
+							className="relative flex flex-col justify-center gap-2 items-center top-2 p-3 min-w-fit
+                            font-bold text-base text-gray-800 dark:text-gray-50
+                            bg-gray-50 dark:bg-gray-800
+                            shadow-lg rounded-md"
+						>
 							{items.map((item: any) => {
 								const { languageObject } = item.label.props;
 								const isOneField: boolean =
 									isRoutePathOneFieldOnly(router.pathname);
 								function onItemClick(event: any) {
-									dispatch(
-										changeLanguage(languageObject.locale)
-									);
+									setLanguage(languageObject.locale);
 									if (isOneField) {
 										router.push(
 											`/${languageObject.urlLocale}`
@@ -137,22 +93,25 @@ export const LanguageDropdown: React.FC<any> = ({ color }) => {
 									}
 								}
 								return (
-									<StyledCustomDropdownItem
+									<div
+										className={`flex justify-center items-center
+                                        hover:text-blue-500
+                                        cursor-pointer`}
 										key={item.key}
 										onClick={onItemClick}
 									>
 										{item.key}
-									</StyledCustomDropdownItem>
+									</div>
 								);
 							})}
-						</StyledCustomDropdownContainer>
+						</div>
 					);
 				}
 			}}
 		>
-			<StyledTitleLink onClick={(e: any) => e.preventDefault()}>
-				<IoLanguage size={"32px"} fill={color} />
-			</StyledTitleLink>
+			<div className="flex justify-center items-center cursor-pointer">
+				<IoLanguage size={"32px"} />
+			</div>
 		</Dropdown>
 	);
 };

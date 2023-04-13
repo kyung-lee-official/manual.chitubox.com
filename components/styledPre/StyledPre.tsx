@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/nightOwl";
@@ -47,8 +47,13 @@ const LineContent = styled.span`
 
 export const StyledPre: React.FC<any> = (props) => {
 	const isDesktopOrLaptop = useMediaQuery({
-		query: "(min-width: 1224px)",
+		query: "(min-width: 1280px)",
 	});
+	const [isDesktop, setIsDesktop] = useState(false);
+
+	useEffect(() => {
+		setIsDesktop(isDesktopOrLaptop);
+	}, [isDesktopOrLaptop]);
 
 	const className = props.children.props.className;
 	// This will trim off the "language-" prefix.
@@ -70,7 +75,7 @@ export const StyledPre: React.FC<any> = (props) => {
 				<Pre
 					className={className}
 					style={style}
-					maxWidth={isDesktopOrLaptop ? "45vw" : "80vw"}
+					maxWidth={isDesktop ? "45vw" : "80vw"}
 				>
 					{tokens.map((line: any, i: number) => (
 						<Line key={i} {...getLineProps({ line, key: i })}>

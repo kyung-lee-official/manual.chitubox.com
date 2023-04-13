@@ -1,11 +1,9 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useSelector } from "react-redux";
-import { getUrlLocale } from "redux/language/slice";
 import styled from "styled-components";
 import { Document, More, Community } from "..";
-import { RootState } from "../../redux/store";
+import { getUrlLocale, useLanguageStore } from "stores/language";
 
 const StyledFooterContainer = styled.div`
 	display: flex;
@@ -21,7 +19,7 @@ const StyledFooterInfoColContainer = styled.div`
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	color: #c3d9ee;
-	@media (max-width: 1224px) {
+	@media (max-width: 1280px) {
 		justify-content: flex-start;
 		flex-direction: column;
 		align-items: center;
@@ -34,7 +32,7 @@ const StyledFooterInfoCol = styled.div`
 	justify-content: center;
 	align-items: flex-start;
 	width: 20rem;
-	@media (max-width: 1224px) {
+	@media (max-width: 1280px) {
 		justify-content: flex-start;
 		align-items: flex-start;
 		width: 15rem;
@@ -78,7 +76,7 @@ const StyledCopyRight = styled.div`
 	padding-bottom: 3rem;
 	font-family: "system-ui";
 	font-size: 1.03rem;
-	@media (max-width: 1224px) {
+	@media (max-width: 1280px) {
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
@@ -91,10 +89,8 @@ const StyledCopyRight = styled.div`
 
 export const Footer = () => {
 	const { t } = useTranslation();
-	const reduxLanguageState = useSelector(
-		(state: RootState) => state.language
-	);
-	const reduxUrlLocale = getUrlLocale(reduxLanguageState.currentLocale);
+	const { language } = useLanguageStore();
+	const urlLocale = getUrlLocale(language);
 	const [fullYear, setDate] = useState(new Date().getFullYear());
 	const router = useRouter();
 
@@ -115,7 +111,7 @@ export const Footer = () => {
 							onClick={() => {
 								router.push(
 									"/" +
-										reduxUrlLocale +
+										urlLocale +
 										"/docs/chitubox-basic/latest/introduction"
 								);
 							}}
@@ -126,7 +122,7 @@ export const Footer = () => {
 							onClick={() => {
 								router.push(
 									"/" +
-										reduxUrlLocale +
+										urlLocale +
 										"/docs/chitubox-pro/latest/introduction"
 								);
 							}}
@@ -137,7 +133,7 @@ export const Footer = () => {
 							onClick={() => {
 								router.push(
 									"/" +
-										reduxUrlLocale +
+										urlLocale +
 										"/docs/faq/latest/chitubox-basic-faq"
 								);
 							}}
@@ -201,7 +197,7 @@ export const Footer = () => {
 						>
 							{t("footer.supportEmail")}
 						</StyledLink>
-						{reduxLanguageState.currentLocale === "en_US" ? (
+						{language === "en_US" ? (
 							<StyledLink
 								target={"_blank"}
 								href={t("footer.chituSystemsLink") as string}

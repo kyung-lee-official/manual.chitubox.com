@@ -1,53 +1,13 @@
 import React, { useContext } from "react";
 import { Dropdown, MenuProps } from "antd";
-import styled from "styled-components";
 import { DocContext } from "../docsLayout";
 import { TbVersions } from "..";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useMediaQuery } from "react-responsive";
 
-const StyledTitleLink = styled.a`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-`;
-
-const StyledCustomDropdownContainer = styled.div`
-	position: relative;
-	top: 8px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	min-width: 6rem;
-	padding: 0.3rem 0;
-	background-color: ${(props) => props.theme.searchbarResultsBackground};
-	backdrop-filter: blur(4px);
-	box-shadow: 0px 0px 10px 3px
-		${(props) => props.theme.searchbarResultsShadow};
-	border-radius: 10px;
-`;
-
-const StyledCustomDropdownItem = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: ${(props) => props.theme.headerIcons};
-	width: 100%;
-	padding: 0.3rem 0;
-	font-weight: bold;
-	font-size: 16px;
-	cursor: pointer;
-	transition: 0.3s;
-	&:hover {
-		color: ${(props) => props.theme.basic};
-		transition: 0.3s;
-	}
-`;
-
-export const VersionDropdown: React.FC<any> = ({ color }) => {
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
+export const VersionDropdown: React.FC<any> = () => {
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
 	const router = useRouter();
 	const { docInstanceContext } = useContext(DocContext);
 	const { isVersioned } = docInstanceContext;
@@ -74,28 +34,36 @@ export const VersionDropdown: React.FC<any> = ({ color }) => {
 					if (menus) {
 						const { items } = menus.props;
 						return (
-							<StyledCustomDropdownContainer>
+							<div
+								className={`relative flex flex-col justify-center gap-2 items-center top-2 p-3
+                                font-bold text-base text-gray-800 dark:text-gray-50
+                                bg-gray-50 dark:bg-gray-800
+                                shadow-lg rounded-md`}
+							>
 								{items.map((item: any) => {
 									const { children, href } = item.label.props;
 									return (
-										<StyledCustomDropdownItem
+										<div
+											className={`flex justify-center items-center
+                                            hover:text-green-500
+                                            cursor-pointer`}
 											key={item.key}
 											onClick={() => {
 												router.push(href);
 											}}
 										>
 											{children}
-										</StyledCustomDropdownItem>
+										</div>
 									);
 								})}
-							</StyledCustomDropdownContainer>
+							</div>
 						);
 					}
 				}}
 			>
-				<StyledTitleLink onClick={(e) => e.preventDefault()}>
-					<TbVersions size={"28px"} fill={color} />
-				</StyledTitleLink>
+				<div className="flex justify-center items-center cursor-pointer">
+					<TbVersions size={32} />
+				</div>
 			</Dropdown>
 		);
 	} else {

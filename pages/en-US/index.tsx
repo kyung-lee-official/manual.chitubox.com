@@ -2,49 +2,13 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import styled from "styled-components";
-import { useSelector } from "react-redux";
-import { RootState } from "redux/store";
-import { getUrlLocale } from "redux/language/slice";
 import { Layout } from "@/components/layout";
 import Hero from "@/components/hero/Hero";
-
-const StyledContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	gap: 40px;
-	height: 150px;
-	padding-top: 1rem;
-	background-color: #1c2d3f;
-	@media (max-width: 1224px) {
-		flex-direction: column;
-		align-items: center;
-		gap: 3rem;
-		height: 330px;
-		padding: 0;
-	}
-`;
-
-const StyledButton = styled(motion.div)`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #8c8c8c;
-	min-width: 230px;
-	max-width: 9rem;
-	height: 48px;
-	font-family: "system-ui";
-	font-size: large;
-	font-weight: bold;
-	border-radius: 24px;
-	cursor: pointer;
-`;
+import { getUrlLocale, useLanguageStore } from "stores/language";
 
 const IndexPage = () => {
-	const reduxLanguageState = useSelector(
-		(state: RootState) => state.language
-	);
-	let reduxUrlLocale = getUrlLocale(reduxLanguageState.currentLocale);
+	const { language } = useLanguageStore();
+	let urlLocale = getUrlLocale(language);
 	const { t } = useTranslation();
 	const router = useRouter();
 	const buttonColor: string = "#87a8c7";
@@ -81,8 +45,11 @@ const IndexPage = () => {
 	return (
 		<Layout>
 			<Hero />
-			<StyledContainer>
-				<StyledButton
+			<div
+				className="flex flex-col xl:flex-row justify-center items-center xl:items-start gap-10 h-80 xl:h-40
+                bg-[#1c2d3f]"
+			>
+				<motion.button
 					initial={{
 						opacity: 0,
 						boxShadow: initialButtonBoxShadow,
@@ -104,15 +71,18 @@ const IndexPage = () => {
 						setButtonBasicColor(buttonColor);
 						setButtonBasicBoxShadow(buttonBoxShadow);
 					}}
+					className="flex justify-center items-center w-60 h-12
+                    font-medium text-lg
+                    rounded-full"
 					onClick={() => {
 						router.push(
-							`/${reduxUrlLocale}/docs/chitubox-basic/latest/introduction`
+							`/${urlLocale}/docs/chitubox-basic/latest/introduction`
 						);
 					}}
 				>
 					CHITUBOX Basic
-				</StyledButton>
-				<StyledButton
+				</motion.button>
+				<motion.button
 					initial={{
 						opacity: 0,
 						boxShadow: initialButtonBoxShadow,
@@ -134,15 +104,18 @@ const IndexPage = () => {
 						setButtonProColor(buttonColor);
 						setButtonProBoxShadow(buttonBoxShadow);
 					}}
+					className="flex justify-center items-center w-60 h-12
+                    font-medium text-lg
+                    rounded-full"
 					onClick={() => {
 						router.push(
-							`/${reduxUrlLocale}/docs/chitubox-pro/latest/introduction`
+							`/${urlLocale}/docs/chitubox-pro/latest/introduction`
 						);
 					}}
 				>
 					CHITUBOX Pro
-				</StyledButton>
-				<StyledButton
+				</motion.button>
+				<motion.button
 					initial={{
 						opacity: 0,
 						boxShadow: initialButtonBoxShadow,
@@ -172,15 +145,18 @@ const IndexPage = () => {
 						setButtonFaqColor(buttonColor);
 						setButtonFaqBoxShadow(buttonBoxShadow);
 					}}
+					className="flex justify-center items-center w-60 h-12
+                    font-medium text-lg
+                    rounded-full"
 					onClick={() => {
 						router.push(
-							`/${reduxUrlLocale}/docs/faq/latest/chitubox-basic-faq`
+							`/${urlLocale}/docs/faq/latest/chitubox-basic-faq`
 						);
 					}}
 				>
 					{t("footer.faqDoc")}
-				</StyledButton>
-			</StyledContainer>
+				</motion.button>
+			</div>
 		</Layout>
 	);
 };

@@ -1,23 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { RootState } from "../redux/store";
-import { getUrlLocale } from "../redux/language/slice";
 import { useRouter } from "next/router";
 import { Layout } from "../components";
-import styled from "styled-components";
-
-const StyledLoading = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-size: 3rem;
-	font-weight: bold;
-	color: ${(props) => props.theme.textSecondaryText};
-	background-color: ${(props) => props.theme.background};
-	min-height: 60vh;
-	padding: 10rem;
-`;
+import { getUrlLocale, useLanguageStore } from "stores/language";
 
 function Loading() {
 	const [count, setCount] = useState<number>(0);
@@ -32,24 +16,29 @@ function Loading() {
 		const dots = count % 4;
 		setEllipsis(".".repeat(dots));
 	}, [count]);
-	return <StyledLoading>Loading{ellipsis}</StyledLoading>;
+	return (
+		<div
+			className="flex flex-col justify-center items-center min-h-[60vh]
+            text-3xl font-medium"
+		>
+			Loading{ellipsis}
+		</div>
+	);
 }
 
 const IndexPage = () => {
 	const router = useRouter();
-	const reduxLanguageState = useSelector(
-		(state: RootState) => state.language
-	);
-	let reduxUrlLocale = getUrlLocale(reduxLanguageState.currentLocale);
+	const { language } = useLanguageStore();
+	let urlLocale = getUrlLocale(language);
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
-			router.push(`/${reduxUrlLocale}`);
-		}, 1000);
+			router.push(`/${urlLocale}`);
+		}, 10000);
 		return () => {
 			clearTimeout(timer);
 		};
-	}, [reduxUrlLocale, router]);
+	}, [urlLocale, router]);
 
 	return (
 		<Layout>

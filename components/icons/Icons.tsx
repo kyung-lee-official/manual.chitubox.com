@@ -1,10 +1,8 @@
 import { motion, useAnimationControls } from "framer-motion";
 import React, { useEffect, useMemo, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { ThemeType, dark, light } from "styles/themes";
-import { RootState } from "../../redux/store";
-import { changeTheme } from "../../redux/theme/slice";
 import styled, { useTheme } from "styled-components";
+import { Theme, useThemeStore } from "stores/theme";
 
 export const Logo2021 = ({ size, fill }: any) => {
 	return (
@@ -178,22 +176,6 @@ export const Taobao = ({ size, fill }: any) => {
 };
 
 export const GoSearch = ({ size, fill }: any) => {
-	const reduxTheme = useSelector(
-		(state: RootState) => state.theme.currentTheme
-	);
-	const control = useAnimationControls();
-
-	useEffect(() => {
-		control.start({
-			fill: fill
-				? fill
-				: reduxTheme === "dark"
-					? dark.headerIcons
-					: light.headerIcons,
-			transition: { duration: 0.7 },
-		});
-	}, [reduxTheme, control, fill]);
-
 	return (
 		<svg
 			height={size}
@@ -205,15 +187,7 @@ export const GoSearch = ({ size, fill }: any) => {
 			xmlns="http://www.w3.org/2000/svg"
 			cursor={"pointer"}
 		>
-			<motion.path
-				initial={{
-					fill: fill
-						? fill
-						: reduxTheme === "dark"
-							? dark.headerIcons
-							: light.headerIcons,
-				}}
-				animate={control}
+			<path
 				fillRule="evenodd"
 				d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"
 			/>
@@ -222,40 +196,15 @@ export const GoSearch = ({ size, fill }: any) => {
 };
 
 export const IoLanguage = ({ size, fill }: any) => {
-	const reduxTheme = useSelector(
-		(state: RootState) => state.theme.currentTheme
-	);
-	const control = useAnimationControls();
-
-	useEffect(() => {
-		control.start({
-			fill: fill
-				? fill
-				: reduxTheme === "dark"
-					? dark.headerIcons
-					: light.headerIcons,
-			transition: { duration: 0.7 },
-		});
-	}, [reduxTheme, control, fill]);
-
 	return (
 		<svg
 			height={size}
 			width={size}
 			viewBox="0 0 512 512"
 			xmlns="http://www.w3.org/2000/svg"
+			fill="currentColor"
 		>
-			<motion.path
-				initial={{
-					fill: fill
-						? fill
-						: reduxTheme === "dark"
-							? dark.headerIcons
-							: light.headerIcons,
-				}}
-				animate={control}
-				d="M478.33 433.6l-90-218a22 22 0 00-40.67 0l-90 218a22 22 0 1040.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 00458 464a22 22 0 0020.32-30.4zM334.83 362L368 281.65 401.17 362zm-66.99-19.08a22 22 0 00-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 000-44H214V70a22 22 0 00-44 0v20H54a22 22 0 000 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 00-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1021.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0030.75-4.9z"
-			/>
+			<path d="M478.33 433.6l-90-218a22 22 0 00-40.67 0l-90 218a22 22 0 1040.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 00458 464a22 22 0 0020.32-30.4zM334.83 362L368 281.65 401.17 362zm-66.99-19.08a22 22 0 00-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 000-44H214V70a22 22 0 00-44 0v20H54a22 22 0 000 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 00-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1021.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0030.75-4.9z" />
 		</svg>
 	);
 };
@@ -277,46 +226,23 @@ export const AiOutlineMenu = ({ size, fill }: any) => {
 };
 
 export const TbVersions = ({ size, fill }: any) => {
-	const reduxTheme = useSelector(
-		(state: RootState) => state.theme.currentTheme
-	);
-	const control = useAnimationControls();
-
-	useEffect(() => {
-		control.start({
-			stroke: fill
-				? fill
-				: reduxTheme === "dark"
-					? dark.headerIcons
-					: light.headerIcons,
-			transition: { duration: 0.7 },
-		});
-	}, [reduxTheme, control, fill]);
-
 	return (
-		<motion.svg
+		<svg
 			height={size}
 			width={size}
-			// viewBox="0 0 24 24"
-			viewBox="2 1 20 21"
+			viewBox="0 0 24 24"
+			// viewBox="2 1 20 21"
 			fill="none"
+			stroke="currentColor"
 			strokeWidth="2"
 			strokeLinecap="round"
 			strokeLinejoin="round"
 			xmlns="http://www.w3.org/2000/svg"
-			initial={{
-				stroke: fill
-					? fill
-					: reduxTheme === "dark"
-						? dark.headerIcons
-						: light.headerIcons,
-			}}
-			animate={control}
 		>
 			<rect x="10" y="5" width="10" height="14" rx="2"></rect>
 			<line x1="7" y1="7" x2="7" y2="17"></line>
 			<line x1="4" y1="8" x2="4" y2="16"></line>
-		</motion.svg>
+		</svg>
 	);
 };
 
@@ -335,13 +261,10 @@ export const ThemeSwitch: React.FC<any> = () => {
 		];
 	}, []);
 
-	/* Get current theme in Redux Store. */
-	const reduxTheme = useSelector(
-		(state: RootState) => state.theme.currentTheme
-	);
-	const dispatch = useDispatch();
+	/* Get current theme in Store. */
+	const { theme, setTheme } = useThemeStore();
 	const [isDark, setIsDark] = useState<boolean>(
-		reduxTheme === "dark" ? true : false
+		theme === Theme.DARK ? true : false
 	);
 	const lightThemeColor: string = light.headerIcons;
 	const darkThemeColor: string = dark.headerIcons;
@@ -350,22 +273,22 @@ export const ThemeSwitch: React.FC<any> = () => {
 	const morphControls = useAnimationControls();
 	const rayControls = useAnimationControls();
 
-	function changeReduxTheme() {
+	function changetheme() {
 		if (!isLock) {
 			setIsLock(true);
-			const targetTheme: "dark" | "light" =
-				reduxTheme === "dark" ? "light" : "dark";
-			dispatch(changeTheme(targetTheme));
+			const targetTheme: Theme.DARK | Theme.LIGHT =
+				theme === Theme.DARK ? Theme.LIGHT : Theme.DARK;
+			setTheme(targetTheme);
 		}
 	}
 
 	useEffect(() => {
-		if (reduxTheme === "dark") {
+		if (theme === Theme.DARK) {
 			setIsDark(true);
 		} else {
 			setIsDark(false);
 		}
-	}, [reduxTheme]);
+	}, [theme]);
 
 	useEffect(() => {
 		if (isDark !== isComponentDark) {
@@ -373,7 +296,6 @@ export const ThemeSwitch: React.FC<any> = () => {
 				/* Light to dark */
 				morphControls.start({
 					d: [shapes[0].d, shapes[1].d],
-					stroke: darkThemeColor,
 					transition: { duration: 0.5, delay: 0.3 },
 				});
 				rayControls.start({
@@ -383,7 +305,6 @@ export const ThemeSwitch: React.FC<any> = () => {
 				/* Dark to light */
 				morphControls.start({
 					d: [shapes[1].d, shapes[0].d],
-					stroke: lightThemeColor,
 					transition: { duration: 0.5 },
 				});
 				rayControls.start({
@@ -410,13 +331,13 @@ export const ThemeSwitch: React.FC<any> = () => {
 			viewBox="0 0 300 300"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
-			onClick={changeReduxTheme}
+			onClick={changetheme}
 			cursor={"pointer"}
 		>
 			<motion.path
+				stroke="currentColor"
 				strokeWidth={strokeWidth}
 				initial={{
-					stroke: isDark ? darkThemeColor : lightThemeColor,
 					d: isDark ? shapes[1].d : shapes[0].d,
 				}}
 				animate={morphControls}
@@ -426,7 +347,7 @@ export const ThemeSwitch: React.FC<any> = () => {
 			/>
 			<motion.path
 				d="M150 50V10"
-				stroke="black"
+				stroke="currentColor"
 				strokeWidth={strokeWidth}
 				strokeMiterlimit="10"
 				strokeLinecap="round"
@@ -435,7 +356,7 @@ export const ThemeSwitch: React.FC<any> = () => {
 			/>
 			<motion.path
 				d="M80 80L51 51"
-				stroke="black"
+				stroke="currentColor"
 				strokeWidth={strokeWidth}
 				strokeMiterlimit="10"
 				strokeLinecap="round"
@@ -444,7 +365,7 @@ export const ThemeSwitch: React.FC<any> = () => {
 			/>
 			<motion.path
 				d="M50 150H10"
-				stroke="black"
+				stroke="currentColor"
 				strokeWidth={strokeWidth}
 				strokeMiterlimit="10"
 				strokeLinecap="round"
@@ -453,7 +374,7 @@ export const ThemeSwitch: React.FC<any> = () => {
 			/>
 			<motion.path
 				d="M80 220L51 249"
-				stroke="black"
+				stroke="currentColor"
 				strokeWidth={strokeWidth}
 				strokeMiterlimit="10"
 				strokeLinecap="round"
@@ -462,7 +383,7 @@ export const ThemeSwitch: React.FC<any> = () => {
 			/>
 			<motion.path
 				d="M150 250V290"
-				stroke="black"
+				stroke="currentColor"
 				strokeWidth={strokeWidth}
 				strokeMiterlimit="10"
 				strokeLinecap="round"
@@ -471,7 +392,7 @@ export const ThemeSwitch: React.FC<any> = () => {
 			/>
 			<motion.path
 				d="M220 220L249 249"
-				stroke="black"
+				stroke="currentColor"
 				strokeWidth={strokeWidth}
 				strokeMiterlimit="10"
 				strokeLinecap="round"
@@ -480,7 +401,7 @@ export const ThemeSwitch: React.FC<any> = () => {
 			/>
 			<motion.path
 				d="M250 150H290"
-				stroke="black"
+				stroke="currentColor"
 				strokeWidth={strokeWidth}
 				strokeMiterlimit="10"
 				strokeLinecap="round"
@@ -489,7 +410,7 @@ export const ThemeSwitch: React.FC<any> = () => {
 			/>
 			<motion.path
 				d="M220 80L249 51"
-				stroke="black"
+				stroke="currentColor"
 				strokeWidth={strokeWidth}
 				strokeMiterlimit="10"
 				strokeLinecap="round"
@@ -695,8 +616,6 @@ export const RmaIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxMenu = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
-
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -704,7 +623,7 @@ export const ChituboxMenu = ({ size, fill }: any) => {
 				width={size}
 				viewBox="0 0 20 16"
 				xmlns="http://www.w3.org/2000/svg"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<path
 					d="M21,6H3A1,1,0,0,1,3,4H21a1,1,0,0,1,0,2Z"
@@ -724,8 +643,6 @@ export const ChituboxMenu = ({ size, fill }: any) => {
 };
 
 export const ChituboxAddMachine = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
-
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -733,7 +650,7 @@ export const ChituboxAddMachine = ({ size, fill }: any) => {
 				width="20"
 				height="20"
 				viewBox="0 0 20 20"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g>
 					<g transform="translate(3 3)">
@@ -757,8 +674,6 @@ export const ChituboxAddMachine = ({ size, fill }: any) => {
 };
 
 export const ChituboxSupport = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
-
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -766,7 +681,7 @@ export const ChituboxSupport = ({ size, fill }: any) => {
 				width="24"
 				height="24"
 				viewBox="0 0 24 24"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-63 -13)">
 					<g transform="translate(65 14.981)">
@@ -808,8 +723,6 @@ export const ChituboxSupport = ({ size, fill }: any) => {
 };
 
 export const ChituboxFileConfig = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
-
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -817,7 +730,7 @@ export const ChituboxFileConfig = ({ size, fill }: any) => {
 				width="24"
 				height="24"
 				viewBox="0 0 24 24"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-63 -13)">
 					<g transform="translate(65 15)">
@@ -834,7 +747,6 @@ export const ChituboxFileConfig = ({ size, fill }: any) => {
 };
 
 export const ChituboxSelectIcon = ({ size, fill }: any) => {
-	const { textContent, textSecondaryText } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -848,12 +760,12 @@ export const ChituboxSelectIcon = ({ size, fill }: any) => {
 						<path
 							d="M160.422,187.718a1.415,1.415,0,0,0-.338,1.488l4.968,14.128a1.435,1.435,0,0,0,2.516.369l3.711-5.129h0"
 							transform="translate(0 -27.296)"
-							fill={textSecondaryText}
+							className="fill-gray-400"
 						/>
 						<path
 							d="M187.718,160.422a1.415,1.415,0,0,1,1.488-.338l14.128,4.968a1.435,1.435,0,0,1,.369,2.516l-5.129,3.711h0"
 							transform="translate(-27.296)"
-							fill={textContent}
+							fill="currentColor"
 						/>
 					</g>
 				</g>
@@ -863,14 +775,13 @@ export const ChituboxSelectIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxSelectBoxIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
 				width="24"
 				height="24"
 				viewBox="0 0 24 24"
-				fill={textContent}
+				fill="currentColor"
 				xmlns="http://www.w3.org/2000/svg"
 			>
 				<g transform="translate(-18 -138)">
@@ -898,7 +809,6 @@ export const ChituboxSelectBoxIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxMoveIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -906,7 +816,7 @@ export const ChituboxMoveIcon = ({ size, fill }: any) => {
 				width="24"
 				height="24"
 				viewBox="0 0 24 24"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-18 -138)">
 					<g transform="translate(19.981 140)">
@@ -966,7 +876,6 @@ export const ChituboxMoveIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxRotateIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -974,7 +883,7 @@ export const ChituboxRotateIcon = ({ size, fill }: any) => {
 				width="24"
 				height="24"
 				viewBox="0 0 24 24"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-18 -138)">
 					<g transform="translate(20 140)">
@@ -999,7 +908,6 @@ export const ChituboxRotateIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxScaleIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1007,7 +915,7 @@ export const ChituboxScaleIcon = ({ size, fill }: any) => {
 				width="24"
 				height="24"
 				viewBox="0 0 24 24"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-18 -138)">
 					<g transform="translate(-43 77)">
@@ -1055,7 +963,6 @@ export const ChituboxScaleIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxMirrorIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1063,7 +970,7 @@ export const ChituboxMirrorIcon = ({ size, fill }: any) => {
 				width="24"
 				height="24"
 				viewBox="0 0 24 24"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-18 -138)">
 					<g transform="translate(20 140)">
@@ -1123,7 +1030,6 @@ export const ChituboxMirrorIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxCheckboxIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1132,7 +1038,7 @@ export const ChituboxCheckboxIcon = ({ size, fill }: any) => {
 				width="20"
 				focusable="false"
 				role="img"
-				fill={textContent}
+				fill="currentColor"
 				xmlns="http://www.w3.org/2000/svg"
 			>
 				<path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -1143,14 +1049,13 @@ export const ChituboxCheckboxIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxEyeIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
 				viewBox="0 0 20 20"
 				width="20"
 				height="20"
-				fill={textContent}
+				fill="currentColor"
 				xmlns="http://www.w3.org/2000/svg"
 			>
 				<g transform="translate(2 -187)">
@@ -1166,7 +1071,6 @@ export const ChituboxEyeIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxRulerIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1174,7 +1078,7 @@ export const ChituboxRulerIcon = ({ size, fill }: any) => {
 				width="20"
 				height="20"
 				viewBox="0 0 20 20"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-3 -3)">
 					<g transform="translate(5 5)">
@@ -1226,14 +1130,13 @@ export const ChituboxRulerIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxDeleteIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
 				width="20"
 				height="20"
 				viewBox="0 0 20 20"
-				fill={textContent}
+				fill="currentColor"
 				xmlns="http://www.w3.org/2000/svg"
 			>
 				<g transform="translate(-265 -295)">
@@ -1267,7 +1170,6 @@ export const ChituboxDeleteIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxGlobalIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1275,7 +1177,7 @@ export const ChituboxGlobalIcon = ({ size, fill }: any) => {
 				width="20"
 				height="20"
 				viewBox="0 0 20 20"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-184 -290)">
 					<g transform="translate(186 292.002)">
@@ -1311,7 +1213,6 @@ export const ChituboxGlobalIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxLocalIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1319,7 +1220,7 @@ export const ChituboxLocalIcon = ({ size, fill }: any) => {
 				width="20"
 				height="20"
 				viewBox="0 0 20 20"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-3 -3)">
 					<g transform="translate(5 5.002)">
@@ -1355,7 +1256,6 @@ export const ChituboxLocalIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxResetIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1363,7 +1263,7 @@ export const ChituboxResetIcon = ({ size, fill }: any) => {
 				width="20"
 				height="20"
 				viewBox="0 0 20 20"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(2 2)">
 					<g transform="translate(0 0.798)">
@@ -1385,7 +1285,6 @@ export const ChituboxResetIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxMachineBarMenuIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1393,7 +1292,7 @@ export const ChituboxMachineBarMenuIcon = ({ size, fill }: any) => {
 				width="20"
 				height="20"
 				viewBox="0 0 20 20"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-166 -979)">
 					<g transform="translate(-274.321 981)">
@@ -1420,7 +1319,6 @@ export const ChituboxMachineBarMenuIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxCopyAddIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1428,7 +1326,7 @@ export const ChituboxCopyAddIcon = ({ size, fill }: any) => {
 				width="20"
 				height="20"
 				viewBox="0 0 20 20"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-61 -61)">
 					<g transform="translate(64 64)">
@@ -1450,7 +1348,6 @@ export const ChituboxCopyAddIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxRenderDetailedIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1458,7 +1355,7 @@ export const ChituboxRenderDetailedIcon = ({ size, fill }: any) => {
 				width="20"
 				height="20"
 				viewBox="0 0 20 20"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g>
 					<path
@@ -1472,7 +1369,6 @@ export const ChituboxRenderDetailedIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxRenderFresnelIcon = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1480,7 +1376,7 @@ export const ChituboxRenderFresnelIcon = ({ size, fill }: any) => {
 				width="20"
 				height="20"
 				viewBox="0 0 20 20"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-1418 -190)">
 					<g transform="translate(1420 192)">
@@ -1541,8 +1437,6 @@ export const ChituboxRenderFresnelIcon = ({ size, fill }: any) => {
 };
 
 export const ChituboxDetectIslands = ({ size, fill }: any) => {
-	const { textContent } = useTheme() as ThemeType;
-
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1550,31 +1444,41 @@ export const ChituboxDetectIslands = ({ size, fill }: any) => {
 				width="28"
 				height="28"
 				viewBox="0 0 28 28"
-				fill={textContent}
+				fill="currentColor"
 			>
 				<g transform="translate(-88 -29)">
 					<g transform="translate(27 -32)">
 						<g transform="translate(64 64)">
 							<path
 								d="M65,72a1,1,0,0,1-1-1V65a1,1,0,0,1,1-1h6a1,1,0,0,1,0,2H66v5A1,1,0,0,1,65,72Z"
-								transform="translate(-64 -64)" />
+								transform="translate(-64 -64)"
+							/>
 						</g>
 						<g transform="translate(78 64)">
 							<path
 								d="M967,72a1,1,0,0,1-1-1V66h-5a1,1,0,0,1,0-2h6a1,1,0,0,1,1,1v6A1,1,0,0,1,967,72Z"
-								transform="translate(-960 -64)" />
+								transform="translate(-960 -64)"
+							/>
 						</g>
 						<g transform="translate(78 78)">
 							<path
 								d="M967,968h-6a1,1,0,0,1,0-2h5v-5a1,1,0,0,1,2,0v6A1,1,0,0,1,967,968Z"
-								transform="translate(-960 -960)" />
+								transform="translate(-960 -960)"
+							/>
 						</g>
 						<g transform="translate(64 78)">
 							<path
 								d="M71,968H65a1,1,0,0,1-1-1v-6a1,1,0,0,1,2,0v5h5a1,1,0,0,1,0,2Z"
-								transform="translate(-64 -960)" />
+								transform="translate(-64 -960)"
+							/>
 						</g>
-						<g transform="translate(67.929 67.929)"><rect width="10" height="10" rx="1" transform="translate(7.071) rotate(45)" />
+						<g transform="translate(67.929 67.929)">
+							<rect
+								width="10"
+								height="10"
+								rx="1"
+								transform="translate(7.071) rotate(45)"
+							/>
 						</g>
 					</g>
 				</g>

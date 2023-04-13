@@ -1,11 +1,10 @@
 import { Drawer } from "antd";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useSelector } from "react-redux";
-import { RootState } from "redux/store";
 import styled from "styled-components";
 import { dark, light } from "styles/themes";
 import { DocsDrawerContent, DrawerClose, Logo2021 } from "..";
+import { Theme, useThemeStore } from "stores/theme";
 
 const headerStyle = {
 	display: "flex",
@@ -61,9 +60,7 @@ const StyledPlaceHolder = styled.div`
 const Title: React.FC<any> = (props) => {
 	const { setOpenDrawer } = props;
 	const { t } = useTranslation();
-	const reduxTheme = useSelector(
-		(state: RootState) => state.theme.currentTheme
-	);
+	const { theme } = useThemeStore();
 
 	return (
 		<StyledDrawerHeader>
@@ -75,7 +72,7 @@ const Title: React.FC<any> = (props) => {
 				<DrawerClose
 					size={"24px"}
 					fill={
-						reduxTheme === "dark"
+						theme === Theme.DARK
 							? darkStyle.color
 							: lightStyle.color
 					}
@@ -94,9 +91,7 @@ const Title: React.FC<any> = (props) => {
 
 export const DocsDrawer: React.FC<any> = (props) => {
 	const { openDrawer, setOpenDrawer } = props;
-	const reduxTheme = useSelector(
-		(state: RootState) => state.theme.currentTheme
-	);
+	const { theme } = useThemeStore();
 
 	return (
 		<Drawer
@@ -108,7 +103,7 @@ export const DocsDrawer: React.FC<any> = (props) => {
 			}}
 			open={openDrawer}
 			headerStyle={headerStyle}
-			style={reduxTheme === "dark" ? darkStyle : lightStyle}
+			style={theme === Theme.DARK ? darkStyle : lightStyle}
 		>
 			<DocsDrawerContent />
 		</Drawer>

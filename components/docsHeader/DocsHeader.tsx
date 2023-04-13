@@ -1,9 +1,7 @@
 import { useRouter } from "next/router";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useSelector } from "react-redux";
 import { useMediaQuery } from "react-responsive";
-import { RootState } from "redux/store";
 import styled from "styled-components";
 import {
 	AiOutlineMenu,
@@ -17,6 +15,7 @@ import {
 import { DocsDrawer } from "../docsDrawer/DocsDrawer";
 import { DocContext } from "../docsLayout";
 import { dark, light } from "styles/themes";
+import { Theme, useThemeStore } from "stores/theme";
 
 const StyledStickyHeaderContainer = styled.div`
 	position: -webkit-sticky;
@@ -95,34 +94,29 @@ const InstanceTitleContainer = styled.div`
 	margin: 0 2rem;
 `;
 
-interface InstanceTitleProps {
-	$isActive: boolean;
-	$reduxTheme: string;
-}
-const InstanceTitle = styled.div<InstanceTitleProps>`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: ${(props) => {
-		if (props.$isActive) {
-			return props.theme.sidebarActiveItem;
-		} else {
-			return props.theme.textTitle;
-		}
-	}};
-	cursor: pointer;
-`;
+const InstanceTitle = (props: any) => {
+	const { isActive, children } = props;
+	return (
+		<div className="flex justify-center items-center cursor-pointer">
+			{children}
+		</div>
+	);
+};
 
 export const InstanceTitles: React.FC<any> = () => {
 	const router = useRouter();
-	const reduxTheme = useSelector((state: RootState) => state.theme);
 	const {
 		localizedContext,
 		docInstanceContext: { docInstanceName },
 	} = useContext(DocContext);
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(false);
 
-	if (isDesktopOrLaptop) {
+	useEffect(() => {
+		setIsDesktop(isDesktopOrLaptop);
+	}, [isDesktopOrLaptop]);
+
+	if (isDesktop) {
 		return (
 			<InstanceTitleContainer>
 				{localizedContext.localizedDocInstances.map(
@@ -134,8 +128,7 @@ export const InstanceTitles: React.FC<any> = () => {
 								: false;
 						return (
 							<InstanceTitle
-								$isActive={isActive}
-								$reduxTheme={reduxTheme.currentTheme}
+								isActive={isActive}
 								key={i}
 								onClick={() => {
 									router.push(
@@ -158,9 +151,14 @@ export const InstanceTitles: React.FC<any> = () => {
 
 export const DocsHeader = () => {
 	const { t } = useTranslation();
-	const reduxTheme = useSelector((state: RootState) => state.theme);
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
+	const { theme } = useThemeStore();
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(false);
 	const [openDrawer, setOpenDrawer] = useState(false);
+
+	useEffect(() => {
+		setIsDesktop(isDesktopOrLaptop);
+	}, [isDesktopOrLaptop]);
 
 	function showDrawer() {
 		setOpenDrawer(true);
@@ -169,13 +167,13 @@ export const DocsHeader = () => {
 	return (
 		<StyledStickyHeaderContainer>
 			<Banner />
-			<StyledHeaderContainer $isLargeScreen={isDesktopOrLaptop}>
-				{isDesktopOrLaptop ? null : (
+			<StyledHeaderContainer $isLargeScreen={isDesktop}>
+				{isDesktop ? null : (
 					<StyledHeaderItem onClick={showDrawer}>
 						<AiOutlineMenu
 							size={"1.5rem"}
 							fill={
-								reduxTheme.currentTheme === "dark"
+								theme === Theme.DARK
 									? dark.textTitle
 									: light.textTitle
 							}
@@ -192,7 +190,7 @@ export const DocsHeader = () => {
 					<InstanceTitles />
 				</StyledHeaderItem>
 				<StyledPlaceHolder />
-				{isDesktopOrLaptop ? (
+				{isDesktop ? (
 					<>
 						<StyledHeaderItem>
 							<DocsSearch />
@@ -215,7 +213,7 @@ export const DocsHeader = () => {
 					</>
 				) : null}
 			</StyledHeaderContainer>
-			{isDesktopOrLaptop ? null : (
+			{isDesktop ? null : (
 				<DocsDrawer
 					openDrawer={openDrawer}
 					setOpenDrawer={setOpenDrawer}

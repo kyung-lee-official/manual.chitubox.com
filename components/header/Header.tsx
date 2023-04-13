@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
@@ -71,9 +71,13 @@ const StyledDrawerItem = styled.div`
 
 export const Header: React.FC<any> = () => {
 	const { t } = useTranslation();
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(false);
 	const [openDrawer, setOpenDrawer] = useState(false);
 
+	useEffect(() => {
+		setIsDesktop(isDesktopOrLaptop);
+	}, [isDesktopOrLaptop]);
 	function showDrawer() {
 		setOpenDrawer(true);
 	}
@@ -82,10 +86,10 @@ export const Header: React.FC<any> = () => {
 		<StyledStickyHeaderContainer>
 			<Banner />
 			<StyledHeaderContainer
-				$isLargeScreen={isDesktopOrLaptop}
+				$isLargeScreen={isDesktop}
 				className="header-container"
 			>
-				{isDesktopOrLaptop ? null : (
+				{isDesktop ? null : (
 					<StyledHeaderItem onClick={showDrawer}>
 						<AiOutlineMenu size={"1.5rem"} fill={"#c3d9ee"} />
 					</StyledHeaderItem>
@@ -115,7 +119,7 @@ export const Header: React.FC<any> = () => {
 					</StyledTitleAndTitleLink>
 				</motion.div>
 				<StyledPlaceHolder />
-				{isDesktopOrLaptop ? (
+				{isDesktop ? (
 					<motion.div
 						initial={{ y: -50, opacity: 0 }}
 						animate={{
@@ -130,7 +134,7 @@ export const Header: React.FC<any> = () => {
 					</motion.div>
 				) : null}
 			</StyledHeaderContainer>
-			{isDesktopOrLaptop ? null : (
+			{isDesktop ? null : (
 				<PageDrawer
 					openDrawer={openDrawer}
 					setOpenDrawer={setOpenDrawer}

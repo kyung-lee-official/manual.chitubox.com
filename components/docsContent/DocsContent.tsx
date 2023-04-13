@@ -1,23 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import styled from "styled-components";
 import { DocsSidebar, MdxContainer, Toc } from "..";
-
-const StyledContent = styled.div`
-	display: flex;
-	color: ${(props) => props.theme.textContent};
-	min-height: 110vh;
-`;
 
 export const DocsContent: React.FC<any> = (props) => {
 	const { children } = props;
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(false);
+
+	useEffect(() => {
+		setIsDesktop(isDesktopOrLaptop);
+	}, [isDesktopOrLaptop]);
 
 	return (
-		<StyledContent>
-			{isDesktopOrLaptop ? <DocsSidebar /> : null}
+		<div className="flex min-h-[100vh]">
+			{isDesktop ? <DocsSidebar /> : null}
 			<MdxContainer>{children}</MdxContainer>
-			{isDesktopOrLaptop ? <Toc /> : null}
-		</StyledContent>
+			{isDesktop ? <Toc /> : null}
+		</div>
 	);
 };

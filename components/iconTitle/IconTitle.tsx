@@ -1,7 +1,6 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
 import styled from "styled-components";
+import { Theme, useThemeStore } from "stores/theme";
 
 const StyledH2Light = styled.h2`
 	color: black;
@@ -27,17 +26,17 @@ const StyledDiv = styled.div`
 `;
 
 export const IconTitle: React.FC<any> = ({ icon, title }) => {
-	const reduxTheme = useSelector(
-		(state: RootState) => state.theme.currentTheme
-	);
+	const { theme } = useThemeStore();
 
 	return (
-		<div style={{
-			display: "flex",
-			gap: "1rem",
-			alignItems: "center",
-			marginTop: "1rem"
-		}}>
+		<div
+			style={{
+				display: "flex",
+				gap: "1rem",
+				alignItems: "center",
+				marginTop: "1rem",
+			}}
+		>
 			<StyledDiv>
 				<StyledIconText>{icon}</StyledIconText>
 			</StyledDiv>
@@ -48,7 +47,7 @@ export const IconTitle: React.FC<any> = ({ icon, title }) => {
 					alignItems: "center",
 				}}
 			>
-				{reduxTheme === "dark" ? (
+				{theme === Theme.DARK ? (
 					<StyledH2Dark>{title}</StyledH2Dark>
 				) : (
 					<StyledH2Light>{title}</StyledH2Light>

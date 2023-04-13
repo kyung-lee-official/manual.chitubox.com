@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import { RootState } from "redux/store";
 import styled from "styled-components";
 
 const StyledLabelsWrapper = styled.div`
@@ -21,9 +19,6 @@ const StyledLabel = styled.div<IStyledLabel>`
 `;
 
 const Labels = (props: any) => {
-	const reduxTheme = useSelector(
-		(state: RootState) => state.theme.currentTheme
-	);
 
 	const { items, activeKey, setActiveKey } = props;
 	return (
