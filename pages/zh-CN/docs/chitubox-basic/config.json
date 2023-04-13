@@ -15,7 +15,7 @@
 				},
 				{
 					"item": "quick-start",
-					"label": "快速开始"
+					"label": "快速入门"
 				},
 				{
 					"item": "sections",
@@ -43,21 +43,17 @@
 						},
 						{
 							"item": "configure-print-profiles",
-							"label": "配置打印文件"
+							"label": "设置打印参数"
 						},
 						{
 							"item": "configure-support-parameters",
-							"label": "配置支撑参数"
+							"label": "设置支撑参数"
 						},
 						{
 							"item": "preview",
 							"label": "预览"
 						}
 					]
-				},
-				{
-					"item": "resin-material-alliance",
-					"label": "树脂联盟"
 				}
 			]
 		},

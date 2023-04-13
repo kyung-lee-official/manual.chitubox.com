@@ -15,7 +15,7 @@ const enItems = [
 		key: "windows",
 		label: (
 			<StyledLabel>
-				Windows <WindowsIcon size={"24px"} />
+				Windows&nbsp;<WindowsIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (
@@ -66,7 +66,7 @@ const enItems = [
 		key: "macos",
 		label: (
 			<StyledLabel>
-				macOS <MacOSIcon size={"24px"} />
+				macOS&nbsp;<MacOSIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (
@@ -97,7 +97,7 @@ const enItems = [
 		key: "linux",
 		label: (
 			<StyledLabel>
-				Linux <LinuxIcon size={"24px"} />
+				Linux&nbsp;<LinuxIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (
@@ -141,7 +141,7 @@ const zhItems = [
 		key: "windows",
 		label: (
 			<StyledLabel>
-				Windows <WindowsIcon size={"24px"} />
+				Windows&nbsp;<WindowsIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (
@@ -192,7 +192,7 @@ const zhItems = [
 		key: "macos",
 		label: (
 			<StyledLabel>
-				macOS <MacOSIcon size={"24px"} />
+				macOS&nbsp;<MacOSIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (
@@ -223,7 +223,7 @@ const zhItems = [
 		key: "linux",
 		label: (
 			<StyledLabel>
-				Linux <LinuxIcon size={"24px"} />
+				Linux&nbsp;<LinuxIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (

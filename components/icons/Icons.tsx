@@ -188,8 +188,8 @@ export const GoSearch = ({ size, fill }: any) => {
 			fill: fill
 				? fill
 				: reduxTheme === "dark"
-				? dark.headerIcons
-				: light.headerIcons,
+					? dark.headerIcons
+					: light.headerIcons,
 			transition: { duration: 0.7 },
 		});
 	}, [reduxTheme, control, fill]);
@@ -210,8 +210,8 @@ export const GoSearch = ({ size, fill }: any) => {
 					fill: fill
 						? fill
 						: reduxTheme === "dark"
-						? dark.headerIcons
-						: light.headerIcons,
+							? dark.headerIcons
+							: light.headerIcons,
 				}}
 				animate={control}
 				fillRule="evenodd"
@@ -232,8 +232,8 @@ export const IoLanguage = ({ size, fill }: any) => {
 			fill: fill
 				? fill
 				: reduxTheme === "dark"
-				? dark.headerIcons
-				: light.headerIcons,
+					? dark.headerIcons
+					: light.headerIcons,
 			transition: { duration: 0.7 },
 		});
 	}, [reduxTheme, control, fill]);
@@ -250,8 +250,8 @@ export const IoLanguage = ({ size, fill }: any) => {
 					fill: fill
 						? fill
 						: reduxTheme === "dark"
-						? dark.headerIcons
-						: light.headerIcons,
+							? dark.headerIcons
+							: light.headerIcons,
 				}}
 				animate={control}
 				d="M478.33 433.6l-90-218a22 22 0 00-40.67 0l-90 218a22 22 0 1040.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 00458 464a22 22 0 0020.32-30.4zM334.83 362L368 281.65 401.17 362zm-66.99-19.08a22 22 0 00-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 000-44H214V70a22 22 0 00-44 0v20H54a22 22 0 000 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 00-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1021.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0030.75-4.9z"
@@ -287,8 +287,8 @@ export const TbVersions = ({ size, fill }: any) => {
 			stroke: fill
 				? fill
 				: reduxTheme === "dark"
-				? dark.headerIcons
-				: light.headerIcons,
+					? dark.headerIcons
+					: light.headerIcons,
 			transition: { duration: 0.7 },
 		});
 	}, [reduxTheme, control, fill]);
@@ -308,8 +308,8 @@ export const TbVersions = ({ size, fill }: any) => {
 				stroke: fill
 					? fill
 					: reduxTheme === "dark"
-					? dark.headerIcons
-					: light.headerIcons,
+						? dark.headerIcons
+						: light.headerIcons,
 			}}
 			animate={control}
 		>
@@ -1532,6 +1532,49 @@ export const ChituboxRenderFresnelIcon = ({ size, fill }: any) => {
 								d="M229.34,815.986a7.5,7.5,0,0,1-1.663-.249l2.5,2.5a7.493,7.493,0,0,0,1.663.249Z"
 								transform="translate(-227.677 -815.737)"
 							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxDetectIslands = ({ size, fill }: any) => {
+	const { textContent } = useTheme() as ThemeType;
+
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="28"
+				height="28"
+				viewBox="0 0 28 28"
+				fill={textContent}
+			>
+				<g transform="translate(-88 -29)">
+					<g transform="translate(27 -32)">
+						<g transform="translate(64 64)">
+							<path
+								d="M65,72a1,1,0,0,1-1-1V65a1,1,0,0,1,1-1h6a1,1,0,0,1,0,2H66v5A1,1,0,0,1,65,72Z"
+								transform="translate(-64 -64)" />
+						</g>
+						<g transform="translate(78 64)">
+							<path
+								d="M967,72a1,1,0,0,1-1-1V66h-5a1,1,0,0,1,0-2h6a1,1,0,0,1,1,1v6A1,1,0,0,1,967,72Z"
+								transform="translate(-960 -64)" />
+						</g>
+						<g transform="translate(78 78)">
+							<path
+								d="M967,968h-6a1,1,0,0,1,0-2h5v-5a1,1,0,0,1,2,0v6A1,1,0,0,1,967,968Z"
+								transform="translate(-960 -960)" />
+						</g>
+						<g transform="translate(64 78)">
+							<path
+								d="M71,968H65a1,1,0,0,1-1-1v-6a1,1,0,0,1,2,0v5h5a1,1,0,0,1,0,2Z"
+								transform="translate(-64 -960)" />
+						</g>
+						<g transform="translate(67.929 67.929)"><rect width="10" height="10" rx="1" transform="translate(7.071) rotate(45)" />
 						</g>
 					</g>
 				</g>

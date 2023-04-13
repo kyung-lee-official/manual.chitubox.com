@@ -1,192 +1,169 @@
 import { DocsLayout } from "@/components/docsLayout";
+import { ChituboxMenu } from "@/components/icons";
 
 export const meta = {
 	title: "菜单",
 	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/menu",
 };
 
 # 菜单
 
-## New Project
+点击左上方菜单按钮 <ChituboxMenu size={24} /> 打开菜单面板。
 
-New project file.
+## 新项目
 
-## Open Project
+创建一个新项目。
 
-Open a project file or load and merge the project file into the current project.
+## 打开项目
 
-## Save Project
+打开一个现有的项目文件或将项目文件加载合并于当前项目。
 
-Save the All or Selected Model project.
+项目文件的文件扩展名为 _.chitubox_ ，请确保不要将它们与 3D 模型文件或切片文件混淆。
 
-## Open
+## 保存项目
 
-Open project files, import 3D models or slice files.
+保存全部或所选模型为一个 _.chitubox_ 项目文件。
 
-<Admonition type="note">
-	Please note that the .ctb file is the final sliced file, which is for
-	printing only under most circumstances. You SHOULD NOT apply 3D model
-	operations to it, only a few non-model-dependent operations like exposure
-	time, lift and retract speed, layer pixel editing (CHITUBOX Pro only), etc.
-	are available. Please ALWAYS modify your models on unsliced formats (.stl,
-	.obj, etc.).
+## 打开
+
+打开项目文件、导入三维模型或切片文件。
+
+<Admonition type="note" title="注意">
+	请注意，.ctb 文件是最终的切片文件，在大多数情况下仅用于打印。
+	您不应该对其进行 3D
+	模型操作，只有一些非模型相关的操作，如曝光时间、升降速度、像素编辑（仅限CHITUBOX
+	Pro）等可用。
 </Admonition>
 
-## Save As
+## 全部另存为
 
-Save the project file or merge and export all 3D models (including supports) in the project.
+将打印平台上的所有模型另存为一个项目文件。
 
--   All models
--   Selected model
+## 导出模型
 
-## Open Recent
+导出所有或已选三维模型（包括支撑）。您可以任意选择多种文件格式导出模型。这样您就能够与其他用户分享您的模型或将它们与其他 3D 软件一起使用。
 
-Open the project file, 3D model or slice file that has been successfully opened recently.
+## 最近打开
 
-## Account
+打开之前在软件中成功打开过的项目和 3D 模型文件。它会显示最近打开的文件和项目的列表，因此您可以快速打开它们而无需再次查找。
 
-Login account and view authorization.
+## 账户
 
-## Language
+登录您的 CHITUBOX 账户。您可以创建一个帐户并登录以访问其他功能，例如保存您的设置以便于在多个设备上使用。
 
--   Users can choose their own language according to their needs. Currently supported languages list:
-    -   Deutsch <br/>
-        <span style={{ color: "grey" }}>German</span>
-    -   English <br/>
-        <span style={{ color: "grey" }}>English</span>
-    -   Français <br/>
-        <span style={{ color: "grey" }}>French</span>
-    -   Italiano <br/>
-        <span style={{ color: "grey" }}>Italian</span>
-    -   Magyar <br/>
-        <span style={{ color: "grey" }}>Hungarian</span>
-    -   Nederlands <br/>
-        <span style={{ color: "grey" }}>Dutch</span>
-    -   Polskie <br/>
-        <span style={{ color: "grey" }}>Polish</span>
-    -   Português <br/>
-        <span style={{ color: "grey" }}>Portuguese</span>
-    -   Suomalainen <br/>
-        <span style={{ color: "grey" }}>Finnish</span>
-    -   Türk <br/>
-        <span style={{ color: "grey" }}>Turkish</span>
-    -   Española <br/>
-        <span style={{ color: "grey" }}>Spanish</span>
-    -   Čeština <br/>
-        <span style={{ color: "grey" }}>Czech</span>
-    -   Ελληνικά <br/>
-        <span style={{ color: "grey" }}>Greek</span>
-    -   Pусский <br/>
-        <span style={{ color: "grey" }}>Russian</span>
-    -   Arabic <br/>
-        <span style={{ color: "grey" }}>Arabic</span>
-    -   日本語 <br/>
-        <span style={{ color: "grey" }}>Japanese</span>
-    -   简体中文 <br/>
-        <span style={{ color: "grey" }}>Simplified Chinese</span>
-    -   繁體中文<br/>
-        <span style={{ color: "grey" }}>Traditional Chinese</span>
-    -   한국어<br/>
-        <span style={{ color: "grey" }}>Korean</span>
+## 社区
 
-## Fix Translation
+快速访问 CHITUBOX 官方社区。这使您可以与使用我们软件的其他用户互动，并及时获取最新资讯、版本及更新。加入社区让我们一起使用 CHITUBOX 创造无限可能。
 
-Fix translation errors.
+## 反馈
 
-## Check For Update
+此处可以向开发者提交您对 CHITUBOX 的任何想法、建议或意见。您的反馈将有助于 CHITUBOX 成为更好的切片软件。
 
-Check for updates: check if the current version is up to date.
+## 语言
 
-## Factory Setting
+用户可以根据需要选择语言。
 
-Reset CHITUBOX to factory settings.
+目前支持的语言有：德语、英语、法语、意大利语、匈牙利语、荷兰语、波兰语、葡萄牙语、芬兰语、土耳其语、西班牙语、捷克语、希腊语、俄语、阿拉伯语、日语、简体中文、繁体中文、韩语。
 
-## Import or Export Configuration
+## 帮助
 
-Import or export the resin, slice, support and other configurations of the current machine. (Make sure to select the same machine when importing and exporting)
+### 检查更新
 
-## Open Log Path
+检查当前版本是否需要更新，并显示软件不同版本更新的过程日志。这确保您能够一直保持在最新版本并享受它所提供的所有功能。
 
-The **Open Log Path** file will prompt out the path of CHITUBOX log file in a File Explorer.
+### 出厂设置
 
-In case you have trouble open the path from CHITUBOX, please open Windows File Explorer, access the path directly.
+将软件还原为最初安装时的状态。这有助于解决您可能遇到的软件问题或重置软件。
 
-Replace `{Your-PC-User-Name}` with your PC's user name:
+### 导出配置
+
+导出当前机器的配置并存为一个 _.cfg_ 文件。这将有助于打印设置的备份或与其他用户分享您的打印设置。
+
+### 导入配置
+
+选择一个 _.cfg_ 文件并导入到当前机器配置。这有助于恢复打印设置或导入其他用户的打印设置。
+
+## 打开日志路径
+
+打开并查阅软件使用过程的日志记录。
+
+如果您无法从 CHITUBOX 打开路径，请打开 Windows 文件资源管理器，直接访问路径。
+
+将 `{Your-PC-User-Name}` 替换为您 PC 的用户名：
 
 ```shell
-C:\Users\{Your-PC-User-Name}\AppData\Local\ChiTuBox
+    C:\Users\{Your-PC-User-Name}\AppData\Local\ChiTuBox
 ```
 
-## Manual
+## 用户手册
 
-Open the path of the link user manuals in File Explorer.
+查阅软件相关的使用指导说明手册。
 
-## Plugin
+## 插件
 
-Import, build or delete third-party plugins.
+添加、构建或删除第三方插件，插件文件的后缀名为 _.CHplugin_ 。
 
-The standard plugin file extension name is _.CHplugin_
+## 快捷键
 
-## Setting
+获取软件不同功能所对应的快捷按键。
 
-General settings of CHITUBOX Basic.
+| 功能                       | 快捷键            |
+| -------------------------- | ----------------- |
+| 新项目                     | Ctrl+N            |
+| 加载模型                   | Ctrl+O            |
+| 打开项目                   | Ctrl+P            |
+| 保存当前项目               | Ctrl+S            |
+| 另存当前项目               | Ctrl+Shift+S      |
+| 打开历史文件               | Ctrl+L            |
+| 删除模型                   | Delete            |
+| 全选模型                   | Ctrl+A            |
+| 撤销                       | Ctrl+Z            |
+| 克隆当前模型               | Ctrl+V            |
+| 重做                       | Ctrl+Y            |
+| 缓慢缩放视图               | Ctrl+中键（滚动） |
+| 查看顶部的向上图层切面     | Shift+上          |
+| 查看顶部的向下图层切面     | Shift+下          |
+| 查看底部的向上图层切面     | Alt+上            |
+| 查看底部的向下图层切面     | Alt+下            |
+| 向上移动视图               | Ctrl+上           |
+| 向下移动视图               | Ctrl+下           |
+| 向左移动视图               | Ctrl+左           |
+| 向右移动视图               | Ctrl+右           |
+| 录制屏幕 GIF 动画          | Ctrl+F1           |
+| 录制屏幕图片               | Ctrl+Shift+A      |
+| 选择和取消多个模型         | Ctrl+左键         |
+| 文件列表中连续选择多个模型 | Shift+左键        |
+| 添加支撑模式               | A                 |
+| 编辑支撑模式               | E                 |
+| 删除支撑模式               | D                 |
+| 选择多个                   | Ctrl+左键         |
+| 区域选择                   | Ctrl+左键         |
+| 选择粗支撑                 | Ctrl+3            |
+| 选择中支撑                 | Ctrl+2            |
+| 选择细支撑                 | Ctrl+1            |
 
-Display Support Auxiliary Line: whether show support auxiliary lines in model surfaces.
+## 设置
 
-<Admonition type="note">
-	Starting from CHITUBOX Basic v1.8.1, to improve user experience, we disabled
-	support auxiliary lines calculation when loading models, this makes the
-	loading process faster. If you wanna bring them back, auto support will
-	calculate auxiliary lines (they will show up if you remove auto-added
-	supports, but only on critical areas compared to Basic V1.8.1). We encourage
-	you to judge risky areas using the red highlight instead.
-</Admonition>
+CHITUBOX Basic 的常规设置。
 
-Auto Save Interval: the interval of auto-saving. CHITUBOX will generate a temporary _.chitubox_ project file under the **Auto Save Path** (log path by default). If CHITUBOX exits normally, the temporary project file will be removed.
+### 外观
 
-Auto Save Directory: you can manually enter the directory to be saved, or select a folder as the auto-save directory.
+### 文件
 
-Graphics quality: the refresh rate grade of CHITUBOX, the higher the number, the lower the refresh rate.
+### 系统
 
-## Shortcut
+### 功能
 
-Display shortcuts.
+### 渲染
 
-| Function                                  | Shortcut          |
-| ----------------------------------------- | ----------------- |
-| Save current project                      | Ctrl+S            |
-| Load model                                | Ctrl+O            |
-| Delete model                              | Delete            |
-| Clone Current Models                      | Ctrl+V            |
-| Undo                                      | Ctrl+Z            |
-| Redo                                      | Ctrl+Y            |
-| Zoom the view slowly                      | Ctrl+Scroll       |
-| View the up layer profile at the top      | Shift+Up          |
-| View the down layer profile at the top    | Shift+Down        |
-| View the up layer profile at the bottom   | Alt+Up            |
-| View the down layer profile at the bottom | Alt+Down          |
-| Move view Up                              | Ctrl+Up           |
-| Move view Down                            | Ctrl+Down         |
-| Move view Left                            | Ctrl+Left         |
-| Move view Right                           | Ctrl+Right        |
-| Record screen gif animation               | Ctrl+F1           |
-| Record screen picture                     | Ctrl+Shift+A      |
-| Select and deselect models                | Ctrl+Left-Button  |
-| Select continuous models in the file list | Shift+Left-Button |
-| Add support mode                          | A                 |
-| Edit support mode                         | E                 |
-| Delete support mode                       | D                 |
-| Select multiple                           | Ctrl+Left-Button  |
-| Area selection                            | Ctrl+Left-Button  |
-| Switch between heavy support              | Ctrl+3            |
-| Switch between middle support             | Ctrl+2            |
-| Switch between light support              | Ctrl+1            |
+### 界面颜色
 
-## Example
+## 示例
 
 Two example models.
 
-## Quit
+## 退出
 
 Quit the CHITUBOX.
 
