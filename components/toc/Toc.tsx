@@ -57,21 +57,6 @@ const StyledTocHeading = styled.div<StyledTocHeadingProps>`
 	}};
 `;
 
-const StyledOnThisPage = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 30px;
-	margin: 0 2rem;
-	font-weight: bold;
-	border-radius: 12px;
-	color: ${(props) => props.theme.versionNumber};
-	background-color: ${(props) => props.theme.versionNumberBackground};
-	box-shadow: -4px -5px 7px ${(props) => props.theme.headerItemHighlight},
-		4px 5px 7px ${(props) => props.theme.headerItemShadow};
-	transition-duration: ${(props) => props.theme.transitionDuration};
-`;
-
 const StyledScrollable = styled.div`
 	overflow-y: auto;
 	height: 70vh;
@@ -187,9 +172,15 @@ export const Toc: React.FC<any> = () => {
 	return (
 		<StyledToc>
 			<StyledTocAffix>
-				<StyledOnThisPage>
+				<div
+					className="flex justify-center items-center max-w-max h-8 px-8 mx-auto
+                    font-medium 
+                    text-sm text-gray-700 dark:text-gray-300
+                    bg-gray-50 dark:bg-gray-700
+                    shadow rounded-full"
+				>
 					{t("docContent.onThisPage")}
-				</StyledOnThisPage>
+				</div>
 				<TocHeadings />
 			</StyledTocAffix>
 		</StyledToc>
