@@ -43,7 +43,7 @@ export const VersionDropdown: React.FC<any> = () => {
 								return (
 									<div
 										className={`flex justify-center items-center
-                                            hover:text-blue-500
+                                            hover:text-sky-400
                                             cursor-pointer`}
 										key={item.key}
 										onClick={() => {

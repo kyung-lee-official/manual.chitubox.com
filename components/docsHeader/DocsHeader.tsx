@@ -62,7 +62,7 @@ export const InstanceTitles = (props: any) => {
 			);
 			return (
 				<div
-					className={`text-xl text-blue-500`}
+					className={`text-xl text-blue-500 dark:text-sky-400`}
 					onClick={() => {
 						router.push(
 							activeInstance.versionedContexts[0].pagesContext[0]
@@ -77,7 +77,8 @@ export const InstanceTitles = (props: any) => {
 			return (
 				<div
 					className="flex gap-6
-			        text-xl"
+			        text-xl
+                    cursor-default"
 				>
 					{localizedContext.localizedDocInstances.map(
 						(instance: any, i: number) => {
@@ -88,7 +89,9 @@ export const InstanceTitles = (props: any) => {
 							return (
 								<div
 									key={i}
-									className={`${isActive && "text-blue-500"}`}
+									className={`${
+										isActive && " text-blue-500 dark:text-sky-400"
+									} cursor-pointer`}
 									onClick={() => {
 										router.push(
 											instance.versionedContexts[0]

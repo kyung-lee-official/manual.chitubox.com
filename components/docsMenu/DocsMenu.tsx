@@ -42,7 +42,7 @@ const SubMenu: React.FC<any> = (props) => {
 		<li className="p-0">
 			<ul
 				className={`flex justify-between items-center py-3 
-                ${hasActiveKey && "text-blue-500"}
+                ${hasActiveKey && "text-blue-500 dark:text-sky-400"}
                 cursor-pointer`}
 				onClick={onUlHeadClick}
 			>
@@ -76,7 +76,7 @@ const SubMenu: React.FC<any> = (props) => {
 										hasActiveKey ? {} : subItemVariant
 									}
 									className={`pl-6 ${
-										isActiveItem && "text-blue-500"
+										isActiveItem && "text-blue-500 dark:text-sky-400"
 									}`}
 								>
 									{subItem.label}
@@ -105,7 +105,7 @@ export const DocsMenu: React.FC<any> = (props) => {
 						<Link href={item.path} key={item.path}>
 							<motion.li
 								className={`${
-									isActiveItem && "text-blue-500"
+									isActiveItem && "text-blue-500 dark:text-sky-400"
 								}`}
 							>
 								{item.label}
