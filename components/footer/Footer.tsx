@@ -1,219 +1,141 @@
-import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import styled from "styled-components";
 import { Document, More, Community } from "..";
 import { getUrlLocale, useLanguageStore } from "stores/language";
 
-const StyledFooterContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	background-color: #1c2d3f;
-`;
+const ColTitle = (props: any) => {
+	const { children } = props;
+	return (
+		<div
+			className="flex justify-start items-center gap-4 mb-4
+            font-bold text-xl"
+		>
+			{children}
+		</div>
+	);
+};
 
-const StyledFooterInfoColContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	color: #c3d9ee;
-	@media (max-width: 1280px) {
-		justify-content: flex-start;
-		flex-direction: column;
-		align-items: center;
-		padding-bottom: 0.5rem;
-	}
-`;
+const Link = (props: any) => {
+	const { href, target, children } = props;
+	return (
+		<a href={href} target={target} className="hover:text-sky-500">
+			{children}
+		</a>
+	);
+};
 
-const StyledFooterInfoCol = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	width: 20rem;
-	@media (max-width: 1280px) {
-		justify-content: flex-start;
-		align-items: flex-start;
-		width: 15rem;
-		margin-bottom: 1.5rem;
-	}
-`;
-
-const StyledFooterInfoCenteredCol = styled.div`
-	display: flex;
-	flex-direction: column;
-`;
-
-const StyledFooterInfoTitle = styled.div`
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 0.5rem;
-	padding-bottom: 1rem;
-	font-family: "system-ui";
-	font-size: 1.1rem;
-	font-weight: bold;
-`;
-
-const StyledLink = styled.a`
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-	margin: 0.25rem 0rem;
-	font-family: "system-ui";
-	font-size: 1.03rem;
-	color: #c3d9ee;
-	cursor: pointer;
-`;
-
-const StyledCopyRight = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #c3d9ee;
-	padding-top: 2rem;
-	padding-bottom: 3rem;
-	font-family: "system-ui";
-	font-size: 1.03rem;
-	@media (max-width: 1280px) {
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
-		gap: 1rem;
-		flex-direction: column;
-		padding-top: 0;
-		padding-bottom: 3rem;
-	}
-`;
+const FooterCol = (props: any) => {
+	const { children } = props;
+	return (
+		<div className="flex flex-col justify-start xl:justify-center items-start w-40 mb-6 xl:m-0 gap-2">
+			{children}
+		</div>
+	);
+};
 
 export const Footer = () => {
 	const { t } = useTranslation();
 	const { language } = useLanguageStore();
 	const urlLocale = getUrlLocale(language);
 	const [fullYear, setDate] = useState(new Date().getFullYear());
-	const router = useRouter();
 
 	useEffect(() => {
 		setDate(new Date().getFullYear());
 	}, []);
 
 	return (
-		<StyledFooterContainer>
-			<StyledFooterInfoColContainer>
-				<StyledFooterInfoCol>
-					<StyledFooterInfoCenteredCol>
-						<StyledFooterInfoTitle>
-							<Document size={"36"} fill="#c3d9ee" />
-							{t("footer.relevantDocs")}
-						</StyledFooterInfoTitle>
-						<StyledLink
-							onClick={() => {
-								router.push(
-									"/" +
-										urlLocale +
-										"/docs/chitubox-basic/latest/introduction"
-								);
-							}}
-						>
-							{t("footer.chituboxBasicDoc")}
-						</StyledLink>
-						<StyledLink
-							onClick={() => {
-								router.push(
-									"/" +
-										urlLocale +
-										"/docs/chitubox-pro/latest/introduction"
-								);
-							}}
-						>
-							{t("footer.chituboxProDoc")}
-						</StyledLink>
-						<StyledLink
-							onClick={() => {
-								router.push(
-									"/" +
-										urlLocale +
-										"/docs/faq/latest/chitubox-basic-faq"
-								);
-							}}
-						>
-							{t("footer.faqDoc")}
-						</StyledLink>
-					</StyledFooterInfoCenteredCol>
-				</StyledFooterInfoCol>
-				<StyledFooterInfoCol>
-					<StyledFooterInfoCenteredCol>
-						<StyledFooterInfoTitle>
-							<Community size={"36"} fill="#c3d9ee" />
-							{t("footer.community")}
-						</StyledFooterInfoTitle>
-						<StyledLink
+		<div
+			className="flex flex-col w-full py-6
+            font-sans text-blue-200 bg-gray-900"
+		>
+			<div className="flex flex-col xl:flex-row justify-start xl:justify-center items-center xl:items-start pb-2 xl:py-8 xl:gap-28">
+				<FooterCol>
+					<ColTitle>
+						<Document size={"36"} />
+						{t("footer.relevantDocs")}
+					</ColTitle>
+					<Link
+						href={`/${urlLocale}/docs/chitubox-basic/latest/introduction`}
+					>
+						{t("footer.chituboxBasicDoc")}
+					</Link>
+					<Link
+						href={`/${urlLocale}/docs/chitubox-pro/latest/introduction`}
+					>
+						{t("footer.chituboxProDoc")}
+					</Link>
+					<Link
+						href={`/${urlLocale}/docs/faq/latest/chitubox-basic-faq`}
+					>
+						{t("footer.faqDoc")}
+					</Link>
+				</FooterCol>
+				<FooterCol>
+					<ColTitle>
+						<Community size={"36"} fill="#c3d9ee" />
+						{t("footer.community")}
+					</ColTitle>
+					<Link
+						target={"_blank"}
+						href={t("footer.DiscordLink") as string}
+					>
+						{t("footer.Discord")}
+					</Link>
+					<Link
+						target={"_blank"}
+						href={t("footer.facebookLink") as string}
+					>
+						{t("footer.facebook")}
+					</Link>
+					<Link
+						target={"_blank"}
+						href={t("footer.twitterLink") as string}
+					>
+						{t("footer.twitter")}
+					</Link>
+					<Link
+						target={"_blank"}
+						href={t("footer.instagramLink") as string}
+					>
+						{t("footer.instagram")}
+					</Link>
+					<Link
+						target={"_blank"}
+						href={t("footer.youtubeLink") as string}
+					>
+						{t("footer.youtube")}
+					</Link>
+				</FooterCol>
+				<FooterCol>
+					<ColTitle>
+						<More size={"36"} fill="#c3d9ee" />
+						{t("footer.more")}
+					</ColTitle>
+					<Link
+						target={"_blank"}
+						href={t("footer.chituboxSiteLink") as string}
+					>
+						{t("footer.chituboxSite")}
+					</Link>
+					<Link href={t("footer.supportEmailLink") as string}>
+						{t("footer.supportEmail")}
+					</Link>
+					{language === "en_US" ? (
+						<Link
 							target={"_blank"}
-							href={t("footer.DiscordLink") as string}
+							href={t("footer.chituSystemsLink") as string}
 						>
-							{t("footer.Discord")}
-						</StyledLink>
-						<StyledLink
-							target={"_blank"}
-							href={t("footer.facebookLink") as string}
-						>
-							{t("footer.facebook")}
-						</StyledLink>
-						<StyledLink
-							target={"_blank"}
-							href={t("footer.twitterLink") as string}
-						>
-							{t("footer.twitter")}
-						</StyledLink>
-						<StyledLink
-							target={"_blank"}
-							href={t("footer.instagramLink") as string}
-						>
-							{t("footer.instagram")}
-						</StyledLink>
-						<StyledLink
-							target={"_blank"}
-							href={t("footer.youtubeLink") as string}
-						>
-							{t("footer.youtube")}
-						</StyledLink>
-					</StyledFooterInfoCenteredCol>
-				</StyledFooterInfoCol>
-				<StyledFooterInfoCol>
-					<StyledFooterInfoCenteredCol>
-						<StyledFooterInfoTitle>
-							<More size={"36"} fill="#c3d9ee" />
-							{t("footer.more")}
-						</StyledFooterInfoTitle>
-						<StyledLink
-							target={"_blank"}
-							href={t("footer.chituboxSiteLink") as string}
-						>
-							{t("footer.chituboxSite")}
-						</StyledLink>
-						<StyledLink
-							href={t("footer.supportEmailLink") as string}
-						>
-							{t("footer.supportEmail")}
-						</StyledLink>
-						{language === "en_US" ? (
-							<StyledLink
-								target={"_blank"}
-								href={t("footer.chituSystemsLink") as string}
-							>
-								{t("footer.chituSystems")}
-							</StyledLink>
-						) : null}
-					</StyledFooterInfoCenteredCol>
-				</StyledFooterInfoCol>
-			</StyledFooterInfoColContainer>
-			<StyledCopyRight>
+							{t("footer.chituSystems")}
+						</Link>
+					) : null}
+				</FooterCol>
+			</div>
+			<div className="flex flex-col xl:flex-row flex-start xl:justify-center items-center py-4 gap-2 xl:gap-0">
 				<div>
 					{t("footer.copyright")} {fullYear} &nbsp;
 				</div>
 				<div>{t("footer.companyName")}</div>
-			</StyledCopyRight>
-		</StyledFooterContainer>
+			</div>
+		</div>
 	);
 };

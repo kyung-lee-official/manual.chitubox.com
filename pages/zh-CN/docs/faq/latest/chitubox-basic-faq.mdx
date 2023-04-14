@@ -69,7 +69,7 @@ sfc /scannow
 
 通过按 Ctrl + Shift + Esc 调出你的 Windows 任务管理器，右击 Windows 资源管理器，然后结束任务（注意不是重新启动）。
 
-<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq002.png"} />
+<AntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq002.png"} />
 
 在任务管理器中，点击 文件 > 运行新任务，输入 `cmd`, 勾选 **以系统管理权限创建此任务**, 然后点击 **确定**.
 
@@ -93,19 +93,19 @@ regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 
 ### 和 Fusion 360 冲突或者 OpenGL 报错 Failed to create OpenGL context for format QSurfaceFormat
 
-<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq001.png"} />
+<AntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq001.png"} />
 
 请打开 系统设置 > 关于 > 高级系统设置，删除环境变量 `QT_OPENGL` 。
 
 ### 报错：This application failed to start because no Qt platform plugin could be initialized
 
-<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq006.png"} />
+<AntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq006.png"} />
 
 请打开 系统设置 > 关于 > 高级系统设置，删除 `QT_OPENGL` `QT_PLUGIN_PATH` 这两个环境变量。
 
 ### CHITUBOX 无响应
 
-<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq008.png"} />
+<AntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq008.png"} />
 
 极有可能是软件冲突问题，请一一退出正在运行的软件，并查找与 CHITUBOX 冲突的软件。 完成此操作后，大多数情况下应该可以解决问题。
 以下软件可能会导致冲突：
@@ -132,7 +132,7 @@ regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 
 ### 缩略图异常
 
-<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004.png"} />
+<AntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004.png"} />
 
 按住 Ctrl + Shift + Esc 打开任务管理器，点击 文件 > 运行新任务，输入 `cmd`, 勾选 **以系统管理权限创建此任务**, 然后点击 **确定**。
 
@@ -150,7 +150,7 @@ regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 
 敲击回车键 Enter 运行命令。
 
-<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-1.png"} />
+<AntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-1.png"} />
 
 输入：
 
@@ -160,7 +160,7 @@ regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 
 敲击回车键 Enter 运行命令。
 
-<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-2.png"} />
+<AntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-2.png"} />
 
 **清理磁盘**
 
@@ -168,11 +168,11 @@ regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 
 勾选“缩略图”，再点击“清理系统文件”，然后点击“确定”。
 
-<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-4.png"} />
+<AntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-4.png"} />
 
 选择“删除文件”。
 
-<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-5.png"} />
+<AntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-5.png"} />
 
 **重启资源管理器**
 
@@ -183,7 +183,7 @@ regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 在模型被切片后，大家可能会觉得图像的质量很粗糙，但实际上这是模型在切片后通过立体渲染将每一个体素都表现出来的样子。就如同大家在 Photoshop 中将图像放大可以看到每一个像素的样子一般。<br />
 如图所示，每一个立方体的高是在切片设置中设置的层高，长是屏幕上横向每个像素的长度，宽是屏幕上纵向每个像素的宽度。长，宽，高构成体素的体积。体素是构成打印件的最小单位。
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/zh-CN/faq/chitubox-basic/faq005.png"}
 	style={{ maxwidth: "400px" }}
 />
@@ -209,7 +209,7 @@ STL 文件并不包含具体的单位信息，而是使用数字记录。因此�
 
 1. 确保已经关闭 CHITUBOX Basic 后，备份 📁*machine* 文件夹到其他路径，删除除了 📄*userLogin.cfg* 以外的所有文件和文件夹。
 
-    <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq003.png"} />
+    <AntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq003.png"} />
 
 1. 重新打开 CHITUBOX Basic。
 
@@ -224,7 +224,7 @@ STL 文件并不包含具体的单位信息，而是使用数字记录。因此�
 -   ≤ 16GB
 -   分配单元大小 = 2048 bytes
 
-	<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq009.png"} />
+	<AntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq009.png"} />
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

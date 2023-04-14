@@ -1,13 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { ImageContainer } from "..";
 import { animate, motion, useInView } from "framer-motion";
-import styled from "styled-components";
-
-const StyledAntdImage = styled(motion.img)`
-	border-radius: 10px;
-	margin: auto;
-	box-shadow: 0 0 3rem 0 hsla(100, 100%, 50%, 0.7);
-`;
 
 export const DirectX = () => {
 	const ref = useRef(null);
@@ -28,14 +21,14 @@ export const DirectX = () => {
 
 	return (
 		<ImageContainer justifyContent="center">
-			<StyledAntdImage
+			<motion.img
 				ref={ref}
 				id="directx"
 				src={"/images/docs/en-US/chitubox-basic/2.x.x/001_directx.png"}
 				alt="DirectX"
-				width={"80%"}
-				style={{ maxWidth: "400px" }}
 				initial={{ x: 100, opacity: 0 }}
+				className="w-[80%] max-w-[400px] m-auto 
+                shadow-[0_0_3rem_0_hsla(100,100%,50%,0.7)] rounded-xl"
 			/>
 		</ImageContainer>
 	);

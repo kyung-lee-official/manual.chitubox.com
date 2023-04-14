@@ -47,7 +47,7 @@ const IndexPage = () => {
 			<Hero />
 			<div
 				className="flex flex-col xl:flex-row justify-center items-center xl:items-start gap-10 h-80 xl:h-40
-                bg-[#1c2d3f]"
+                bg-gray-900"
 			>
 				<motion.button
 					initial={{

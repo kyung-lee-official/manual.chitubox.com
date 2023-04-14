@@ -13,7 +13,7 @@ To configurate your print parameters, you need to add a printer first, if you ha
 
 One printer can have multiple profiles, you can manage your profiles in the **Slicing Profile Panel**, where you can add, delete, import, export, and reset your profiles.
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters001.png"
 	}
@@ -26,7 +26,7 @@ Double click a profile to open the slice profile configuration window.
 ### Resin
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters002.png"
 		}
@@ -38,7 +38,7 @@ Set your resin type, density, and cost here.
 ### Print
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.png"
 		}
@@ -100,14 +100,14 @@ When both normal layers and bottom layers are involved, it makes sense that ther
 
 | Sub-stage                                                                                | Relevant Parameters                                                                                                       |
 | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Bottom layers slow lift</span>    | <StyledAntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.1.png")}/> |
-| <span style={{ color: "#00b894", fontWeight: "bold" }}>Bottom layers fast lift</span>    | <StyledAntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.2.png")}/> |
-| <span style={{ color: "#00b894", fontWeight: "bold" }}>Bottom layers fast retract</span> | <StyledAntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.3.png")}/> |
-| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Bottom layers slow retract</span> | <StyledAntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.4.png")}/> |
-| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Normal layers slow lift</span>    | <StyledAntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.5.png")}/> |
-| <span style={{ color: "#00b894", fontWeight: "bold" }}>Normal layers fast lift</span>    | <StyledAntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.6.png")}/> |
-| <span style={{ color: "#00b894", fontWeight: "bold" }}>Normal layers fast retract</span> | <StyledAntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.7.png")}/> |
-| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Normal layers slow retract</span> | <StyledAntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.8.png")}/> |
+| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Bottom layers slow lift</span>    | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.1.png")}/> |
+| <span style={{ color: "#00b894", fontWeight: "bold" }}>Bottom layers fast lift</span>    | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.2.png")}/> |
+| <span style={{ color: "#00b894", fontWeight: "bold" }}>Bottom layers fast retract</span> | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.3.png")}/> |
+| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Bottom layers slow retract</span> | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.4.png")}/> |
+| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Normal layers slow lift</span>    | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.5.png")}/> |
+| <span style={{ color: "#00b894", fontWeight: "bold" }}>Normal layers fast lift</span>    | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.6.png")}/> |
+| <span style={{ color: "#00b894", fontWeight: "bold" }}>Normal layers fast retract</span> | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.7.png")}/> |
+| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Normal layers slow retract</span> | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.8.png")}/> |
 
 <Admonition type="warning">
 	Please note that each Distance has its corresponding Speed, for example, **Bottom Lift Distance** corresponds to **Bottom Lift Speed**, you can't
@@ -138,7 +138,7 @@ When both normal layers and bottom layers are involved, it makes sense that ther
 In order to simplify the calculation of Light Off Delay, CHITUBOX launched a new Waiting Mode During Printing, **Resting Time**, when using this mode, you simply need to fill in Rest Time Before Lift, Rest Time After Lift, Rest Time After Retract without tedious calculations.
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters002.1.png"
 		}
@@ -178,7 +178,7 @@ Light-off delay = Time for lifting + Time for retracting + Wait time
 An example is worth a thousand words:
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.2.png"
 		}
@@ -212,7 +212,7 @@ Modify editable fields to get **Light-off Delay**.
 </Admonition>
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.1.png"
 		}
@@ -226,7 +226,7 @@ Modify editable fields to get **Light-off Delay**.
 ### Advanced
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.png"
 		}
@@ -330,7 +330,7 @@ Some high-resolution printers could have extra delays when loading data and will
 -   **Auto Generated**
 
 	<ImageContainer>
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004-1.png"
 			}
@@ -360,7 +360,7 @@ _Gray scale unit_ : click <NextLink href="/en-US/docs/chitubox-pro/latest/settin
 The range of **Gray Parameter** is available from `0` (black) to `255` (white).
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters004.1.png"
 		}
@@ -378,7 +378,7 @@ here is a comparison for different **Equal radius**:
 		<tr style={{ width: "100%" }}>
 			<th style={{ width: "50%" }}>
 				<figure>
-					<StyledAntdImage
+					<AntdImage
 						src={
 							"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.equal_radius_1.png"
 						}
@@ -396,7 +396,7 @@ here is a comparison for different **Equal radius**:
 			</th>
 			<th style={{ width: "50%" }}>
 				<figure>
-					<StyledAntdImage
+					<AntdImage
 						src={
 							"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.equal_radius_3.png"
 						}
@@ -423,7 +423,7 @@ The range of **Gray Parameter** is available from `0` (black) to `255` (white).
 For example, here is a 2 $\times$ 3 matrix with different grayscales.
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters004.2.png"
 		}
@@ -431,7 +431,7 @@ For example, here is a 2 $\times$ 3 matrix with different grayscales.
 </ImageContainer>
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.2x3_matrix.png"
 		}
@@ -450,7 +450,7 @@ Let's say the size of the build plate is 80mm $\times$ 120mm, the resolution of 
 This is the mask picture, also with resolution of 800px $\times$ 1200px. All squares in the picture have the size of 50px $\times$ 50px.
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.3.png"
 		}
@@ -461,7 +461,7 @@ This is the mask picture, also with resolution of 800px $\times$ 1200px. All squ
 If the **Gray scale unit** was set to 51px, the processed image will be like this:
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.4.png"
 		}
@@ -479,7 +479,7 @@ This part will be averaged by 35 pixels themselves, therefore, the grayscale did
 ## Printer
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters005.png"
 		}

@@ -117,7 +117,7 @@ export const Document = ({ size, fill }: any) => {
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<path
-				fill={fill}
+				fill="currentColor"
 				d="m19.707 7.293-4-4A.996.996 0 0 0 15 3H7C5.346 3 4 4.346 4 6v12c0 1.654 1.346 3 3 3h10c1.654 0 3-1.346 3-3V8a.996.996 0 0 0-.293-.707zM17.586 8H16.5c-.827 0-1.5-.673-1.5-1.5V5.414L17.586 8zM17 19H7a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h7v1.5C14 7.879 15.121 9 16.5 9H18v9a1 1 0 0 1-1 1z"
 			></path>
 		</svg>
@@ -134,7 +134,7 @@ export const Community = ({ size, fill }: any) => {
 		>
 			<path fill="none" d="M0 0h24v24H0z"></path>
 			<path
-				fill={fill}
+				fill="currentColor"
 				d="M21 21H3a1 1 0 0 1-1-1v-7.513a1 1 0 0 1 .343-.754L6 8.544V4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1zM9 19h3v-6.058L8 9.454l-4 3.488V19h3v-4h2v4zm5 0h6V5H8v2.127c.234 0 .469.082.657.247l5 4.359a1 1 0 0 1 .343.754V19zm2-8h2v2h-2v-2zm0 4h2v2h-2v-2zm0-8h2v2h-2V7zm-4 0h2v2h-2V7z"
 			></path>
 		</svg>
@@ -151,7 +151,7 @@ export const More = ({ size, fill }: any) => {
 		>
 			<path fill="none" d="M0 0h24v24H0V0z"></path>
 			<path
-				fill={fill}
+				fill="currentColor"
 				d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.97.89 1.66.89H22c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14z"
 			></path>
 			<circle fill={fill} cx="9" cy="12" r="1.5"></circle>

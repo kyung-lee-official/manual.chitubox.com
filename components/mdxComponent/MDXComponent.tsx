@@ -178,10 +178,9 @@ const StyledInlineCode = styled.code`
 	font-size: 1.06rem;
 `;
 
-const StyledAntdImage = styled(Image)`
-	border-radius: 10px;
-	margin: auto;
-`;
+const AntdImage: React.FC<any> = (props) => {
+	return <Image {...props} className="m-auto rounded-lg" />;
+};
 
 export const MDXComponent = {
 	h1: ({ children }: any) => {
@@ -280,7 +279,7 @@ export const MDXComponent = {
 	FacebookVideoContainer: FacebookVideoContainer,
 	BilibiliVideoContainer: BilibiliVideoContainer,
 	Admonition: Admonition,
-	StyledAntdImage: StyledAntdImage,
+	AntdImage: AntdImage,
 	ImageComparison: ImageComparison,
 	ImageContainer: ImageContainer,
 	ResponsiveTable: ResponsiveTable,
