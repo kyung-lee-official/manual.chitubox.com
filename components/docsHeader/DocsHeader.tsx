@@ -12,6 +12,7 @@ import {
 	VersionDropdown,
 } from "..";
 import { DocContext } from "../docsLayout";
+import Link from "next/link";
 
 const HeaderContainer = (props: any) => {
 	const { children } = props;
@@ -90,7 +91,8 @@ export const InstanceTitles = (props: any) => {
 								<div
 									key={i}
 									className={`${
-										isActive && " text-blue-500 dark:text-sky-400"
+										isActive &&
+										" text-blue-500 dark:text-sky-400"
 									} cursor-pointer`}
 									onClick={() => {
 										router.push(
@@ -139,12 +141,12 @@ export const DocsHeader = () => {
 			<div>
 				<BasicLogo2022 size={"48px"} />
 			</div>
-			<a
+			<Link
 				href="/"
 				className="flex justify-center items-center gap-2 no-underline"
 			>
 				{t("header.title")}
-			</a>
+			</Link>
 			<div className="flex justify-center items-center cursor-pointer">
 				<InstanceTitles showActiveOnly={false} />
 			</div>

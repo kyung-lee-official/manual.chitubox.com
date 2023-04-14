@@ -41,7 +41,7 @@ const SubMenu: React.FC<any> = (props) => {
 	return (
 		<li className="p-0">
 			<ul
-				className={`flex justify-between items-center py-3 
+				className={`flex justify-between items-center
                 ${hasActiveKey && "text-blue-500 dark:text-sky-400"}
                 cursor-pointer`}
 				onClick={onUlHeadClick}
@@ -57,7 +57,7 @@ const SubMenu: React.FC<any> = (props) => {
 			</ul>
 			{show ? (
 				<motion.ul
-					className="list-none p-0"
+					className="flex flex-col gap-2 list-none py-2"
 					initial="hidden"
 					animate="visible"
 					variants={hasActiveKey ? {} : subUlVariant}
@@ -94,7 +94,7 @@ export const DocsMenu: React.FC<any> = (props) => {
 	const { menuItems, defaultOpenKeys, activeKey } = props;
 	return (
 		<ul
-			className="flex flex-col px-6
+			className="flex flex-col px-6 gap-2
             font-medium text-lg
             list-none"
 		>

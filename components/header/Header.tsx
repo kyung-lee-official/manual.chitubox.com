@@ -9,6 +9,7 @@ import {
 	PageDrawer,
 } from "..";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeaderContainer = (props: any) => {
 	const { children } = props;
@@ -67,9 +68,9 @@ export const Header: React.FC<any> = () => {
 						transition: { duration: 0.6, type: "spring" },
 					}}
 				>
-					<a href="/">
+					<Link href="/">
 						<div>{t("header.title")}</div>
-					</a>
+					</Link>
 				</motion.div>
 				<div className="flex-1" />
 				{isDesktop ? (
