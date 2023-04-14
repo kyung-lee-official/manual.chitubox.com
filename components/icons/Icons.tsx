@@ -1,7 +1,7 @@
 import { motion, useAnimationControls } from "framer-motion";
 import React, { useEffect, useMemo, useState } from "react";
-import { ThemeType, dark, light } from "styles/themes";
-import styled, { useTheme } from "styled-components";
+import { dark, light } from "styles/themes";
+import styled from "styled-components";
 import { Theme, useThemeStore } from "stores/theme";
 
 export const Logo2021 = ({ size, fill }: any) => {
