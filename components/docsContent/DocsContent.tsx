@@ -15,7 +15,7 @@ export const DocsContent: React.FC<any> = (props) => {
 		<div
 			className="flex min-h-screen
             font-sans text-gray-800 dark:text-gray-100
-            bg-slate-50 dark:bg-slate-900"
+            bg-slate-50 dark:bg-gray-800"
 		>
 			{isDesktop && <DocsSidebar />}
 			<MdxContainer>{children}</MdxContainer>

@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import {
 	AiOutlineMenu,
+	BasicLogo2022,
+	DocsDrawer,
 	DocsSearch,
 	LanguageDropdown,
 	ThemeSwitch,
@@ -16,11 +18,11 @@ const HeaderContainer = (props: any) => {
 
 	return (
 		<div
-			className={`flex justify-between items-center gap-12 h-16 px-16
+			className={`sticky flex justify-between items-center gap-6 top-0 z-10 h-16 px-16 
             text-2xl font-sans
             text-gray-700 dark:text-gray-200
-            bg-gray-50 dark:bg-gray-800
-            shadow-md
+            bg-gray-50/40 dark:bg-gray-800/40
+            shadow-md backdrop-blur-md
             transition-colors duration-300`}
 		>
 			{children}
@@ -86,9 +88,7 @@ export const InstanceTitles = (props: any) => {
 							return (
 								<div
 									key={i}
-									className={`${
-										isActive && "text-blue-500"
-									}`}
+									className={`${isActive && "text-blue-500"}`}
 									onClick={() => {
 										router.push(
 											instance.versionedContexts[0]
@@ -124,46 +124,47 @@ export const DocsHeader = () => {
 	}, [isDesktopOrLaptop]);
 
 	return (
-		<div className="sticky top-0 z-10">
-			<HeaderContainer>
-				{!isDesktop && (
-					<div onClick={showDrawer}>
-						<AiOutlineMenu size={"1.5rem"} />
-					</div>
-				)}
-				<a
-					href="/"
-					className="flex justify-center items-center gap-2 no-underline"
-				>
-					{t("header.title")}
-				</a>
-				<div className="flex justify-center items-center cursor-pointer">
-					<InstanceTitles showActiveOnly={false} />
+		<HeaderContainer>
+			{!isDesktop && (
+				<div onClick={showDrawer}>
+					<AiOutlineMenu size={"1.5rem"} />
 				</div>
-				<div className="flex-1" />
-				{isDesktop && (
-					<div className="flex gap-6">
-						<HeaderItem>
-							<DocsSearch />
-						</HeaderItem>
-						<HeaderItem>
-							<VersionDropdown />
-						</HeaderItem>
-						<HeaderItem>
-							<ThemeSwitch />
-						</HeaderItem>
-						<HeaderItem>
-							<LanguageDropdown />
-						</HeaderItem>
-					</div>
-				)}
-			</HeaderContainer>
-			{/* {isDesktop ? null : (
+			)}
+			<div>
+				<BasicLogo2022 size={"48px"} />
+			</div>
+			<a
+				href="/"
+				className="flex justify-center items-center gap-2 no-underline"
+			>
+				{t("header.title")}
+			</a>
+			<div className="flex justify-center items-center cursor-pointer">
+				<InstanceTitles showActiveOnly={false} />
+			</div>
+			<div className="flex-1" />
+			{isDesktop && (
+				<div className="flex gap-6">
+					<HeaderItem>
+						<DocsSearch />
+					</HeaderItem>
+					<HeaderItem>
+						<VersionDropdown />
+					</HeaderItem>
+					<HeaderItem>
+						<ThemeSwitch />
+					</HeaderItem>
+					<HeaderItem>
+						<LanguageDropdown />
+					</HeaderItem>
+				</div>
+			)}
+			{!isDesktop && (
 				<DocsDrawer
 					openDrawer={openDrawer}
 					setOpenDrawer={setOpenDrawer}
 				/>
-			)} */}
-		</div>
+			)}
+		</HeaderContainer>
 	);
 };

@@ -4,6 +4,7 @@ import React, {
 	useContext,
 	useEffect,
 	useMemo,
+	useRef,
 	useState,
 } from "react";
 import { useTranslation } from "react-i18next";
@@ -136,18 +137,19 @@ const TocHeadings: React.FC<any> = () => {
 		[h2H3Toc]
 	);
 
-	const observer = useMemo(() => {
-		return new IntersectionObserver(callback, options);
-	}, [callback, options]);
+	const observer = useRef<IntersectionObserver>();
+	useEffect(() => {
+		observer.current = new IntersectionObserver(callback, options);
+	}, []);
 
 	useEffect(() => {
 		let h2h3Elements: any;
-		if (h2H3Toc) {
+		if (h2H3Toc && observer.current) {
 			h2h3Elements = h2H3Toc.map((heading: any) => {
 				return document.querySelector(`[id="${heading.id}"]`);
 			});
 			for (const element of h2h3Elements) {
-				observer.observe(element);
+				observer.current.observe(element);
 			}
 		}
 	}, [h2H3Toc, observer]);

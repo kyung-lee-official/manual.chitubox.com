@@ -60,7 +60,7 @@ const AppWrapper: React.FC<any> = ({ children }) => {
 		}
 	}, []);
 
-	return <div>{children}</div>;
+	return <div className="bg-gray-50 dark:bg-gray-800">{children}</div>;
 };
 
 export default AppWrapper;
