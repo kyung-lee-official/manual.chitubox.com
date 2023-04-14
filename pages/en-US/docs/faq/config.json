@@ -1,5 +1,6 @@
 {
 	"docInstanceName": "FAQ",
+	"isVersioned": true,
 	"versionedContexts": [
 		{
 			"versionCode": "latest",

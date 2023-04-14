@@ -1,14 +1,16 @@
 import { MDXProvider } from "@mdx-js/react";
-import React from "react";
-import { MDXComponent } from "..";
+import React, { useContext } from "react";
+import { DocContext, MDXComponent } from "..";
 import { VersionTag } from "../versionTag";
 
 export const MdxContainer: React.FC<any> = (props) => {
 	const { children } = props;
-
+	const {
+		docInstanceContext: { isVersioned },
+	} = useContext(DocContext);
 	return (
 		<div className="flex-auto min-w-0 px-12 py-8">
-			<VersionTag />
+			{isVersioned && <VersionTag />}
 			<MDXProvider components={MDXComponent}>{children}</MDXProvider>
 		</div>
 	);

@@ -112,6 +112,9 @@ export const InstanceTitles = (props: any) => {
 export const DocsHeader = () => {
 	const { t } = useTranslation();
 	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const {
+		docInstanceContext: { isVersioned },
+	} = useContext(DocContext);
 	const [isDesktop, setIsDesktop] = useState<boolean>(true);
 	const [openDrawer, setOpenDrawer] = useState<boolean>(false);
 
@@ -148,9 +151,11 @@ export const DocsHeader = () => {
 					<HeaderItem>
 						<DocsSearch />
 					</HeaderItem>
-					<HeaderItem>
-						<VersionDropdown />
-					</HeaderItem>
+					{isVersioned && (
+						<HeaderItem>
+							<VersionDropdown />
+						</HeaderItem>
+					)}
 					<HeaderItem>
 						<ThemeSwitch />
 					</HeaderItem>

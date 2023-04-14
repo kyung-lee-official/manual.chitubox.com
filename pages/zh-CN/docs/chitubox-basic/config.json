@@ -1,5 +1,6 @@
 {
 	"docInstanceName": "CHITUBOX Basic",
+	"isVersioned": true,
 	"versionedContexts": [
 		{
 			"versionCode": "latest",

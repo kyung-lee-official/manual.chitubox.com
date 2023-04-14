@@ -78,7 +78,7 @@ export const DocsSearch: React.FC<any> = () => {
 					setShowInput(true);
 				}}
 			>
-				<GoSearch size={28} />
+				<GoSearch size={32} />
 			</div>
 			<form
 				className="absolute right-10"
