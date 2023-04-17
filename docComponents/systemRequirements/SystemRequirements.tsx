@@ -1,8 +1,8 @@
+import { LinuxIcon, MacOSIcon, WindowsIcon } from "@/components/icons/Icons";
+import { ResponsiveTable } from "@/components/responsiveTable/ResponsiveTable";
 import React from "react";
-import { ResponsiveTable } from "../responsiveTable";
-import { Tabs } from "..";
-import { WindowsIcon, MacOSIcon, LinuxIcon } from "../icons";
 import styled from "styled-components";
+import { Tabs } from "../tabs/Tabs";
 
 const StyledLabel = styled.div`
 	display: flex;
@@ -15,7 +15,8 @@ const enItems = [
 		key: "windows",
 		label: (
 			<StyledLabel>
-				Windows&nbsp;<WindowsIcon size={"24px"} />
+				Windows&nbsp;
+				<WindowsIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (
@@ -66,7 +67,8 @@ const enItems = [
 		key: "macos",
 		label: (
 			<StyledLabel>
-				macOS&nbsp;<MacOSIcon size={"24px"} />
+				macOS&nbsp;
+				<MacOSIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (
@@ -97,7 +99,8 @@ const enItems = [
 		key: "linux",
 		label: (
 			<StyledLabel>
-				Linux&nbsp;<LinuxIcon size={"24px"} />
+				Linux&nbsp;
+				<LinuxIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (
@@ -141,7 +144,8 @@ const zhItems = [
 		key: "windows",
 		label: (
 			<StyledLabel>
-				Windows&nbsp;<WindowsIcon size={"24px"} />
+				Windows&nbsp;
+				<WindowsIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (
@@ -192,7 +196,8 @@ const zhItems = [
 		key: "macos",
 		label: (
 			<StyledLabel>
-				macOS&nbsp;<MacOSIcon size={"24px"} />
+				macOS&nbsp;
+				<MacOSIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (
@@ -223,7 +228,8 @@ const zhItems = [
 		key: "linux",
 		label: (
 			<StyledLabel>
-				Linux&nbsp;<LinuxIcon size={"24px"} />
+				Linux&nbsp;
+				<LinuxIcon size={"24px"} />
 			</StyledLabel>
 		),
 		children: (
@@ -282,6 +288,10 @@ export const SystemRequirements = (props: any) => {
 	}
 
 	return (
-		<Tabs defaultActiveKey="windows" items={langTable} onChange={onChange} />
+		<Tabs
+			defaultActiveKey="windows"
+			items={langTable}
+			onChange={onChange}
+		/>
 	);
 };

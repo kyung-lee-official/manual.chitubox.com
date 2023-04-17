@@ -1,8 +1,8 @@
 import { MDXProvider } from "@mdx-js/react";
 import React, { useContext } from "react";
-import { DocContext } from "../docsLayout";
-import { MDXComponent } from "..";
-import { VersionTag } from "../versionTag";
+import { DocContext } from "../docsLayout/DocContext";
+import { VersionTag } from "../versionTag/VersionTag";
+import { MDXComponent } from "../mdxComponent/MDXComponent";
 
 export const MdxContainer: React.FC<any> = (props) => {
 	const { children } = props;

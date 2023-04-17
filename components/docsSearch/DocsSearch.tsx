@@ -1,8 +1,9 @@
 import { getFlattenToc } from "helpers/functions";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { DocsSearchResult, GoSearch } from "..";
-import { DocContext } from "../docsLayout";
+import { DocContext } from "../docsLayout/DocContext";
+import { GoSearch } from "../icons/Icons";
+import { DocsSearchResult } from "../docsSearchResult/DocsSearchResult";
 
 export const DocsSearch: React.FC<any> = () => {
 	const { flattenPagesContext, searchResults, setSearchResults } =

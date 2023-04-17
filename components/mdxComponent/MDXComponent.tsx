@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { Image } from "antd";
 import React from "react";
-import { Admonition } from "../admonition";
 import { BilibiliVideoContainer } from "../videoContainer/BilibiliVideoContainer";
 import { YouTubeVideoContainer } from "../videoContainer/YouTubeVideoContainer";
 import { FacebookVideoContainer } from "../videoContainer/FacebookVideoContainer";
-import { ImageComparison } from "../imageComparison";
-import { ImageContainer } from "../imageContainer";
-import { ResponsiveTable } from "..";
-import { StyledPre } from "../styledPre";
 import Link from "next/link";
+import { ResponsiveTable } from "../responsiveTable/ResponsiveTable";
+import { StyledPre } from "../styledPre/StyledPre";
+import { Admonition } from "../admonition/Admonition";
+import { ImageComparison } from "../imageComparison/ImageComparison";
+import { ImageContainer } from "../imageContainer/ImageContainer";
 
 const StyledHeadingAnchor = styled.a`
 	display: flex;

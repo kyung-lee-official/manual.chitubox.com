@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { DocsSidebar, MdxContainer, Toc } from "..";
+import { DocsSidebar } from "../docsSidebar/DocsSidebar";
+import { MdxContainer } from "../mdxContainer/MdxContainer";
+import { Toc } from "../toc/Toc";
 
 export const DocsContent: React.FC<any> = (props) => {
 	const { children } = props;

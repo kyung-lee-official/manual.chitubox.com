@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { LanguageDropdown, ThemeSwitch } from "..";
+import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
 
 const StyledContainer = styled.div`
 	display: flex;

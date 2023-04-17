@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Layout } from "../components";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
+import { Layout } from "@/components/layout/Layout";
 
 const StyledContent = styled.div`
 	display: flex;

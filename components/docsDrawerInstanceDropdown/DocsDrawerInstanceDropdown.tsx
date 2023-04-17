@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useContext } from "react";
 import styled from "styled-components";
-import { DocContext } from "../docsLayout";
+import { DocContext } from "../docsLayout/DocContext";
 
 const StyledCurrentInstance = styled.div`
 	display: flex;

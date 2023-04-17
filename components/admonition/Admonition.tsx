@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Dangerous, InfoCircle, Lightbulb, Warning } from "..";
+import { Dangerous, InfoCircle, Lightbulb, Warning } from "../icons/Icons";
 
 interface StyledAdmonitionProps {
 	type?: "note" | "tip" | "warning" | "danger";

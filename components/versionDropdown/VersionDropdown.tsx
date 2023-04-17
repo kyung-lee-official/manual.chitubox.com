@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { Dropdown, MenuProps } from "antd";
-import { DocContext } from "../docsLayout";
-import { TbVersions } from "..";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useMediaQuery } from "react-responsive";
+import { DocContext } from "../docsLayout/DocContext";
+import { TbVersions } from "../icons/Icons";
 
 export const VersionDropdown: React.FC<any> = () => {
 	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
