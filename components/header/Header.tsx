@@ -24,12 +24,12 @@ const HeaderContainer = (props: any) => {
 	);
 };
 
-export const Header: React.FC<any> = () => {
+const Header: React.FC<any> = () => {
 	const { t } = useTranslation();
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
-	const [isDesktop, setIsDesktop] = useState(false);
 	const [openDrawer, setOpenDrawer] = useState(false);
 
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
 	useEffect(() => {
 		setIsDesktop(isDesktopOrLaptop);
 	}, [isDesktopOrLaptop]);
@@ -94,3 +94,5 @@ export const Header: React.FC<any> = () => {
 		</div>
 	);
 };
+
+export default Header;

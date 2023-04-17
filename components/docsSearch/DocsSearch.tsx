@@ -3,19 +3,31 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { DocContext } from "../docsLayout/DocContext";
 import { GoSearch } from "../icons/Icons";
-import { DocsSearchResult } from "../docsSearchResult/DocsSearchResult";
+import dynamic from "next/dynamic";
 
-export const DocsSearch: React.FC<any> = () => {
+const DynamicDocsSearchResult = dynamic(
+	() => import("@/components/docsSearchResult/DocsSearchResult"),
+	{
+		ssr: false,
+	}
+);
+
+const DocsSearch: React.FC<any> = () => {
 	const { flattenPagesContext, searchResults, setSearchResults } =
 		useContext(DocContext);
 	const searchIconRef = useRef<any>(null);
 	const [showInput, setShowInput] = useState<boolean>(false);
 	const [searchTerm, setSearchTerm] = useState<string>("");
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
 
 	function onSearchTermChange(event: any) {
 		setSearchTerm(event.target.value.toLowerCase());
 	}
+
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
+	useEffect(() => {
+		setIsDesktop(isDesktopOrLaptop);
+	}, [isDesktopOrLaptop]);
 
 	useEffect(() => {
 		function handleClickOutside(event: any) {
@@ -109,9 +121,11 @@ export const DocsSearch: React.FC<any> = () => {
 					}}
 				/>
 			</form>
-			{isDesktopOrLaptop && (
-				<DocsSearchResult searchResults={searchResults} />
+			{isDesktop && (
+				<DynamicDocsSearchResult searchResults={searchResults} />
 			)}
 		</div>
 	);
 };
+
+export default DocsSearch;

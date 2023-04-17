@@ -2,11 +2,11 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
-export const DocsSearchResult: React.FC<any> = ({ searchResults }) => {
+const DocsSearchResult: React.FC<any> = ({ searchResults }) => {
 	const router = useRouter();
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
-	const [isDesktop, setIsDesktop] = useState(false);
 
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
 	useEffect(() => {
 		setIsDesktop(isDesktopOrLaptop);
 	}, [isDesktopOrLaptop]);
@@ -70,3 +70,5 @@ export const DocsSearchResult: React.FC<any> = ({ searchResults }) => {
 		}
 	}
 };
+
+export default DocsSearchResult;

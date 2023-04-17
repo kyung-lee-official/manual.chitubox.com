@@ -45,12 +45,9 @@ const LineContent = styled.span`
 	display: table-cell;
 `;
 
-export const StyledPre: React.FC<any> = (props) => {
-	const isDesktopOrLaptop = useMediaQuery({
-		query: "(min-width: 1280px)",
-	});
-	const [isDesktop, setIsDesktop] = useState(false);
-
+const StyledPre: React.FC<any> = (props) => {
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
 	useEffect(() => {
 		setIsDesktop(isDesktopOrLaptop);
 	}, [isDesktopOrLaptop]);
@@ -95,3 +92,5 @@ export const StyledPre: React.FC<any> = (props) => {
 		</Highlight>
 	);
 };
+
+export default StyledPre;

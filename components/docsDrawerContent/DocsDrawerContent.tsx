@@ -1,16 +1,34 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { DocContext } from "../docsLayout/DocContext";
-import { VersionDropdown } from "../versionDropdown/VersionDropdown";
 import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
-import { DocsSearch } from "../docsSearch/DocsSearch";
-import { DocsSearchResult } from "../docsSearchResult/DocsSearchResult";
 import { DocsDrawerInstanceDropdown } from "../docsDrawerInstanceDropdown/DocsDrawerInstanceDropdown";
 import { DocsSidebar } from "../docsSidebar/DocsSidebar";
 import dynamic from "next/dynamic";
 
 const DynamicThemeSwitcher = dynamic(
 	() => import("@/components/icons/ThemeSwitch"),
+	{
+		ssr: false,
+	}
+);
+
+const DynamicVersionDropdown = dynamic(
+	() => import("@/components/versionDropdown/VersionDropdown"),
+	{
+		ssr: false,
+	}
+);
+
+const DynamicDocsSearch = dynamic(
+	() => import("@/components/docsSearch/DocsSearch"),
+	{
+		ssr: false,
+	}
+);
+
+const DynamicDocsSearchResult = dynamic(
+	() => import("@/components/docsSearchResult/DocsSearchResult"),
 	{
 		ssr: false,
 	}
@@ -38,7 +56,7 @@ export const DocsDrawerContent: React.FC<any> = () => {
 		<StyledContainer>
 			<StyledPanel>
 				<StyledPanelItem>
-					<VersionDropdown />
+					<DynamicVersionDropdown />
 				</StyledPanelItem>
 				<StyledPanelItem>
 					<DynamicThemeSwitcher />
@@ -48,9 +66,9 @@ export const DocsDrawerContent: React.FC<any> = () => {
 				</StyledPanelItem>
 			</StyledPanel>
 			<StyledPanelItem>
-				<DocsSearch />
+				<DynamicDocsSearch />
 			</StyledPanelItem>
-			<DocsSearchResult searchResults={searchResults} />
+			<DynamicDocsSearchResult searchResults={searchResults} />
 			<DocsDrawerInstanceDropdown />
 			<DocsSidebar />
 		</StyledContainer>

@@ -5,14 +5,26 @@ import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { AiOutlineMenu, BasicLogo2022 } from "../icons/Icons";
-import { DocsSearch } from "../docsSearch/DocsSearch";
 import { DocsDrawer } from "../docsDrawer/DocsDrawer";
 import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
-import { VersionDropdown } from "../versionDropdown/VersionDropdown";
 import { DocContext } from "../docsLayout/DocContext";
 
 const DynamicThemeSwitcher = dynamic(
 	() => import("@/components/icons/ThemeSwitch"),
+	{
+		ssr: false,
+	}
+);
+
+const DynamicVersionDropdown = dynamic(
+	() => import("@/components/versionDropdown/VersionDropdown"),
+	{
+		ssr: false,
+	}
+);
+
+const DynamicDocsSearch = dynamic(
+	() => import("@/components/docsSearch/DocsSearch"),
 	{
 		ssr: false,
 	}
@@ -51,86 +63,75 @@ export const InstanceTitles = (props: any) => {
 		localizedContext,
 		docInstanceContext: { docInstanceName },
 	} = useContext(DocContext);
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
-	const [isDesktop, setIsDesktop] = useState<boolean>(true);
 
-	useEffect(() => {
-		setIsDesktop(isDesktopOrLaptop);
-	}, [isDesktopOrLaptop]);
-
-	if (isDesktop) {
-		if (showActiveOnly) {
-			const activeInstance = localizedContext.localizedDocInstances.find(
-				(instance: any) => {
-					return instance.docInstanceName === docInstanceName;
-				}
-			);
-			return (
-				<div
-					className={`text-xl text-blue-500 dark:text-sky-400`}
-					onClick={() => {
-						router.push(
-							activeInstance.versionedContexts[0].pagesContext[0]
-								.path
-						);
-					}}
-				>
-					{activeInstance.docInstanceName}
-				</div>
-			);
-		} else {
-			return (
-				<div
-					className="flex gap-6
+	if (showActiveOnly) {
+		const activeInstance = localizedContext.localizedDocInstances.find(
+			(instance: any) => {
+				return instance.docInstanceName === docInstanceName;
+			}
+		);
+		return (
+			<div
+				className={`text-xl text-blue-500 dark:text-sky-400`}
+				onClick={() => {
+					router.push(
+						activeInstance.versionedContexts[0].pagesContext[0].path
+					);
+				}}
+			>
+				{activeInstance.docInstanceName}
+			</div>
+		);
+	} else {
+		return (
+			<div
+				className="flex gap-6
 			        text-xl
                     cursor-default"
-				>
-					{localizedContext.localizedDocInstances.map(
-						(instance: any, i: number) => {
-							let isActive: boolean =
-								instance.docInstanceName === docInstanceName
-									? true
-									: false;
-							return (
-								<div
-									key={i}
-									className={`${
-										isActive &&
-										" text-blue-500 dark:text-sky-400"
-									} cursor-pointer`}
-									onClick={() => {
-										router.push(
-											instance.versionedContexts[0]
-												.pagesContext[0].path
-										);
-									}}
-								>
-									{instance.docInstanceName}
-								</div>
-							);
-						}
-					)}
-				</div>
-			);
-		}
-	} else {
-		return null;
+			>
+				{localizedContext.localizedDocInstances.map(
+					(instance: any, i: number) => {
+						let isActive: boolean =
+							instance.docInstanceName === docInstanceName
+								? true
+								: false;
+						return (
+							<div
+								key={i}
+								className={`${
+									isActive &&
+									" text-blue-500 dark:text-sky-400"
+								} cursor-pointer`}
+								onClick={() => {
+									router.push(
+										instance.versionedContexts[0]
+											.pagesContext[0].path
+									);
+								}}
+							>
+								{instance.docInstanceName}
+							</div>
+						);
+					}
+				)}
+			</div>
+		);
 	}
 };
 
-export const DocsHeader = () => {
+const DocsHeader = () => {
 	const { t } = useTranslation();
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
 	const {
 		docInstanceContext: { isVersioned },
 	} = useContext(DocContext);
-	const [isDesktop, setIsDesktop] = useState<boolean>(true);
 	const [openDrawer, setOpenDrawer] = useState<boolean>(false);
 
 	function showDrawer() {
 		setOpenDrawer(true);
 	}
 
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
 	useEffect(() => {
 		setIsDesktop(isDesktopOrLaptop);
 	}, [isDesktopOrLaptop]);
@@ -151,18 +152,20 @@ export const DocsHeader = () => {
 			>
 				{t("header.title")}
 			</Link>
-			<div className="flex justify-center items-center cursor-pointer">
-				<InstanceTitles showActiveOnly={false} />
-			</div>
+			{isDesktop && (
+				<div className="flex justify-center items-center cursor-pointer">
+					<InstanceTitles showActiveOnly={false} />
+				</div>
+			)}
 			<div className="flex-1" />
 			{isDesktop && (
 				<div className="flex gap-6">
 					<HeaderItem>
-						<DocsSearch />
+						<DynamicDocsSearch />
 					</HeaderItem>
 					{isVersioned && (
 						<HeaderItem>
-							<VersionDropdown />
+							<DynamicVersionDropdown />
 						</HeaderItem>
 					)}
 					<HeaderItem>
@@ -182,3 +185,5 @@ export const DocsHeader = () => {
 		</HeaderContainer>
 	);
 };
+
+export default DocsHeader;

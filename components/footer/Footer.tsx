@@ -15,14 +15,14 @@ const ColTitle = (props: any) => {
 	);
 };
 
-// const Link = (props: any) => {
-// 	const { href, target, children } = props;
-// 	return (
-// 		<a href={href} target={target} className="hover:text-sky-500">
-// 			{children}
-// 		</a>
-// 	);
-// };
+const Link = (props: any) => {
+	const { href, target, children } = props;
+	return (
+		<a href={href} target={target} className="hover:text-sky-500">
+			{children}
+		</a>
+	);
+};
 
 const FooterCol = (props: any) => {
 	const { children } = props;
@@ -45,7 +45,7 @@ const Footer = () => {
 
 	return (
 		<div
-			className="flex flex-col w-full py-6
+			className="flex flex-col gap-8 w-full py-6
             font-sans text-blue-200 bg-gray-900"
 		>
 			<div className="flex flex-col xl:flex-row justify-start xl:justify-center items-center xl:items-start pb-2 xl:py-8 xl:gap-28">
@@ -54,7 +54,7 @@ const Footer = () => {
 						<Document size={"36"} />
 						{t("footer.relevantDocs")}
 					</ColTitle>
-					{/* <Link
+					<Link
 						href={`/${urlLocale}/docs/chitubox-basic/latest/introduction`}
 					>
 						{t("footer.chituboxBasicDoc")}
@@ -68,14 +68,14 @@ const Footer = () => {
 						href={`/${urlLocale}/docs/faq/latest/chitubox-basic-faq`}
 					>
 						{t("footer.faqDoc")}
-					</Link> */}
+					</Link>
 				</FooterCol>
 				<FooterCol>
 					<ColTitle>
 						<Community size={"36"} />
 						{t("footer.community")}
 					</ColTitle>
-					{/* <Link
+					<Link
 						target={"_blank"}
 						href={t("footer.DiscordLink") as string}
 					>
@@ -104,14 +104,14 @@ const Footer = () => {
 						href={t("footer.youtubeLink") as string}
 					>
 						{t("footer.youtube")}
-					</Link> */}
+					</Link>
 				</FooterCol>
 				<FooterCol>
 					<ColTitle>
 						<More size={"36"} />
 						{t("footer.more")}
 					</ColTitle>
-					{/* <Link
+					<Link
 						target={"_blank"}
 						href={t("footer.chituboxSiteLink") as string}
 					>
@@ -127,7 +127,7 @@ const Footer = () => {
 						>
 							{t("footer.chituSystems")}
 						</Link>
-					) : null} */}
+					) : null}
 				</FooterCol>
 			</div>
 			<div className="flex flex-col xl:flex-row flex-start xl:justify-center items-center py-4 gap-2 xl:gap-0">

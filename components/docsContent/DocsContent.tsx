@@ -4,11 +4,11 @@ import { DocsSidebar } from "../docsSidebar/DocsSidebar";
 import { MdxContainer } from "../mdxContainer/MdxContainer";
 import { Toc } from "../toc/Toc";
 
-export const DocsContent: React.FC<any> = (props) => {
+const DocsContent: React.FC<any> = (props) => {
 	const { children } = props;
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
-	const [isDesktop, setIsDesktop] = useState(false);
 
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
 	useEffect(() => {
 		setIsDesktop(isDesktopOrLaptop);
 	}, [isDesktopOrLaptop]);
@@ -25,3 +25,5 @@ export const DocsContent: React.FC<any> = (props) => {
 		</div>
 	);
 };
+
+export default DocsContent;

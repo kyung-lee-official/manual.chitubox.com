@@ -1,4 +1,4 @@
-import { DocsLayout } from "@/components/docsLayout";
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
 
 export const meta = {
 	title: "CHITUBOX Basic FAQ",
@@ -14,7 +14,11 @@ export const meta = {
 ## Windows Issues
 
 <Admonition type="note">
-	Please make sure you've installed all <NextLink href="/en-US/docs/chitubox-basic/latest/requirements">required environments</NextLink>.
+	Please make sure you've installed all{" "}
+	<NextLink href="/en-US/docs/chitubox-basic/latest/requirements">
+		required environments
+	</NextLink>
+	.
 </Admonition>
 
 ### MSVCR110.dll Missing
@@ -63,9 +67,13 @@ sfc /scannow
 
 If these method doesn't solve these errors, you might need to download and reinstall your system from Microsoft's official website.
 
--   <SpanA href="https://www.microsoft.com/en-us/software-download/windows11">Windows 11</SpanA>
+-   <SpanA href="https://www.microsoft.com/en-us/software-download/windows11">
+    	Windows 11
+    </SpanA>
 
--   <SpanA href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10</SpanA>
+-   <SpanA href="https://www.microsoft.com/en-us/software-download/windows10">
+    	Windows 10
+    </SpanA>
 
 ### Windows Explorer Keep Restart Repeatedly
 
@@ -73,9 +81,7 @@ If your Windows Explorer keeps restarting repeatedly, please follow these steps 
 
 Invoke your Task Manager by pressing Ctrl + Shift + Esc, right-click Windows Explorer, then click End Task (not Restart).
 
-<AntdImage
-	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq002.png"}
-/>
+<AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq002.png"} />
 
 In your Task Manager, click File > Run new task, input `cmd`, check **Create this task with administrative privileges**, then click **OK**.
 
@@ -99,25 +105,19 @@ Hit Enter to run it.
 
 ### Conflict with Fusion 360 or Failed to create OpenGL context for format QSurfaceFormat
 
-<AntdImage
-	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq001.png"}
-/>
+<AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq001.png"} />
 
 Please open System Settings> About> Advanced System Settings and remove the environment variable `QT_OPENGL`.
 
 ### This application failed to start because no Qt platform plugin could be initialized
 
-<AntdImage
-	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq006.png"}
-/>
+<AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq006.png"} />
 
 Please open System Settings> About> Advanced System Settings and remove the two environment variables `QT_OPENGL` and `QT_PLUGIN_PATH`.
 
 ### CHITUBOX is Not Responding
 
-<AntdImage
-	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq008.png"}
-/>
+<AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq008.png"} />
 
 Most likely it is a software conflict issue, please quit your runtime software one by one to track down which software conflicts with CHITUBOX. After this is done, the problem should be solved for most cases.
 The following software may cause the conflict:
@@ -144,9 +144,7 @@ Download Longer plugin <SpanA href="https://drive.google.com/drive/u/0/folders/1
 
 ### Thumbnail Abnormal
 
-<AntdImage
-	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004.png"}
-/>
+<AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004.png"} />
 
 Hold Ctrl + Shift + Esc to open the Task Manager, click File > Run new task, input `cmd`, check **Create this task with administrative privileges**, then click **OK**.
 
@@ -164,9 +162,7 @@ regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 
 Hit Enter to run it.
 
-<AntdImage
-	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004-1.png"}
-/>
+<AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004-1.png"} />
 
 Input:
 
@@ -176,9 +172,7 @@ regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 
 Hit Enter to run it.
 
-<AntdImage
-	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004-2.png"}
-/>
+<AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004-2.png"} />
 
 **Disk Cleanup**
 
@@ -186,15 +180,11 @@ Find your system disk (usually C drive), right-click to select properties, and c
 
 Check "Thumbnails", then click "Clean up system files", and then click "OK".
 
-<AntdImage
-	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004-4.png"}
-/>
+<AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004-4.png"} />
 
 Select "Delete Files".
 
-<AntdImage
-	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004-5.png"}
-/>
+<AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004-5.png"} />
 
 **Restart Explorer**
 
@@ -212,7 +202,8 @@ As it is shown in the figure, the height of each voxel is the layer height set i
 />
 
 <Admonition type="note">
-	This voxel image cannot be seen during the preview after the slicing. You need to reload the .ctb file in CHITUBOX to see it.
+	This voxel image cannot be seen during the preview after the slicing. You
+	need to reload the .ctb file in CHITUBOX to see it.
 </Admonition>
 
 ### Why STL files were scaled after importing to CHITUBOX?
@@ -231,9 +222,7 @@ For some reason, you might encounter other issues caused by data corruption betw
 
 1. Make sure you already closed CHITUBOX Basic, back up the 📂*machine* folder to another location, then delete all files and folders except 📄*userLogin.cfg* file.
 
-	<AntdImage
-		src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq003.png"}
-	/>
+    <AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq003.png"} />
 
 1. Restart CHITUBOX Basic.
 
@@ -251,9 +240,7 @@ You might found that your printer can't read your USB drive properly sometimes. 
 
 -   Allocation unit size = 2048 bytes
 
-	<AntdImage
-		src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq009.png"}
-	/>
+    <AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq009.png"} />
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

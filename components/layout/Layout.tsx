@@ -1,8 +1,11 @@
 import React, { useMemo } from "react";
 import Head from "next/head";
 import { useTranslation } from "react-i18next";
-import { Header } from "../header/Header";
 import dynamic from "next/dynamic";
+
+const DynamicHeader = dynamic(() => import("@/components/header/Header"), {
+	ssr: false,
+});
 
 const DynamicFooter = dynamic(() => import("@/components/footer/Footer"), {
 	ssr: false,
@@ -10,7 +13,7 @@ const DynamicFooter = dynamic(() => import("@/components/footer/Footer"), {
 
 export const Layout: React.FC<any> = ({ children }) => {
 	const { t } = useTranslation();
-	const header = useMemo(() => <Header />, []);
+	const header = useMemo(() => <DynamicHeader />, []);
 
 	return (
 		<main>

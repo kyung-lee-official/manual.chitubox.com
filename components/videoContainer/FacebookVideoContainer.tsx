@@ -29,12 +29,9 @@ const StyledVerticalVideoContainerForDesktop = styled.div<StyledVerticalVideoCon
 	height: ${(props) => props.$height + "px"};
 `;
 
-export const FacebookVideoContainer: React.FC<any> = ({ children }) => {
-	const isDesktopOrLaptop = useMediaQuery({
-		query: "(min-width: 1280px)",
-	});
-	const [isDesktop, setIsDesktop] = useState(false);
-
+const FacebookVideoContainer: React.FC<any> = ({ children }) => {
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
 	useEffect(() => {
 		setIsDesktop(isDesktopOrLaptop);
 	}, [isDesktopOrLaptop]);
@@ -75,3 +72,5 @@ export const FacebookVideoContainer: React.FC<any> = ({ children }) => {
 		);
 	}
 };
+
+export default FacebookVideoContainer;

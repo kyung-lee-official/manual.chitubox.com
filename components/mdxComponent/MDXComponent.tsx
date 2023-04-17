@@ -3,13 +3,26 @@ import { Image } from "antd";
 import React from "react";
 import { BilibiliVideoContainer } from "../videoContainer/BilibiliVideoContainer";
 import { YouTubeVideoContainer } from "../videoContainer/YouTubeVideoContainer";
-import { FacebookVideoContainer } from "../videoContainer/FacebookVideoContainer";
 import Link from "next/link";
 import { ResponsiveTable } from "../responsiveTable/ResponsiveTable";
-import { StyledPre } from "../styledPre/StyledPre";
 import { Admonition } from "../admonition/Admonition";
 import { ImageComparison } from "../imageComparison/ImageComparison";
 import { ImageContainer } from "../imageContainer/ImageContainer";
+import dynamic from "next/dynamic";
+
+const DynamicFacebookVideoContainer = dynamic(
+	() => import("@/components/videoContainer/FacebookVideoContainer"),
+	{
+		ssr: false,
+	}
+);
+
+const DynamicStyledPre = dynamic(
+	() => import("@/components/styledPre/StyledPre"),
+	{
+		ssr: false,
+	}
+);
 
 const StyledHeadingAnchor = styled.a`
 	display: flex;
@@ -274,9 +287,9 @@ export const MDXComponent = {
 		return <StyledInlineCode>{children}</StyledInlineCode>;
 	},
 
-	pre: StyledPre,
+	pre: DynamicStyledPre,
 	YouTubeVideoContainer: YouTubeVideoContainer,
-	FacebookVideoContainer: FacebookVideoContainer,
+	FacebookVideoContainer: DynamicFacebookVideoContainer,
 	BilibiliVideoContainer: BilibiliVideoContainer,
 	Admonition: Admonition,
 	AntdImage: AntdImage,

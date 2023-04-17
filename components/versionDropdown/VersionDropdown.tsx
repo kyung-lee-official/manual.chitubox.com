@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Dropdown, MenuProps } from "antd";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -6,10 +6,15 @@ import { useMediaQuery } from "react-responsive";
 import { DocContext } from "../docsLayout/DocContext";
 import { TbVersions } from "../icons/Icons";
 
-export const VersionDropdown: React.FC<any> = () => {
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+const VersionDropdown: React.FC<any> = () => {
 	const router = useRouter();
 	const { docInstanceContext } = useContext(DocContext);
+
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
+	useEffect(() => {
+		setIsDesktop(isDesktopOrLaptop);
+	}, [isDesktopOrLaptop]);
 
 	const versionMenuItems: MenuProps["items"] =
 		docInstanceContext.versionedContexts.map(
@@ -27,7 +32,7 @@ export const VersionDropdown: React.FC<any> = () => {
 	return (
 		<Dropdown
 			menu={{ items: versionMenuItems }}
-			placement={isDesktopOrLaptop ? "bottomRight" : "bottomLeft"}
+			placement={isDesktop ? "bottomRight" : "bottomLeft"}
 			dropdownRender={(menus: any) => {
 				if (menus) {
 					const { items } = menus.props;
@@ -65,3 +70,5 @@ export const VersionDropdown: React.FC<any> = () => {
 		</Dropdown>
 	);
 };
+
+export default VersionDropdown;
