@@ -1,36 +1,29 @@
 import { animate, motion, useAnimationFrame } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
-import styled, { keyframes } from "styled-components";
+import React, { useEffect, useState } from "react";
 
-const gradient = keyframes`
-	0% {
-		background-position: 0% 0%;
-	}
-	50% {
-		background-position: 100% 0%;
-	}
-	60% {
-		background-position: 100% 100%;
-	}
-	70% {
-		background-position: 0% 100%;
-	}
-	100% {
-		background-position: 0% 0%;
-	}
-`;
-
-const StyledSvgContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: start;
-	height: 410px;
-	width: 100%;
-	background: linear-gradient(-45deg, #5296ee, #563ce7, #23a6d5, #23d5ab);
-	background-size: 500% 500%;
-	animation: ${gradient} 20s ease infinite;
-`;
+const SvgContainer = (props: any) => {
+	const { children } = props;
+	return (
+		<motion.div
+			animate={{
+				backgroundPosition: [
+					"0% 0%",
+					"100% 0%",
+					"100% 100%",
+					"0% 100%",
+					"0% 0%",
+				],
+				transition: { repeat: Infinity, duration: 5 },
+			}}
+			className="flex flex-col justify-start items-center h-[410px] w-full
+            bg-gradient-to-br from-[#5296ee] to-[#23d5ab] bg-[gradient:linear-gradient(-45deg,#5296ee,#563ce7,#23a6d5,#23d5ab)]
+            bg-[position:0%_0%]
+            bg-[size:500%_500%]"
+		>
+			{children}
+		</motion.div>
+	);
+};
 
 const resolution: number = 100;
 const waterSpringsLength: number = resolution + 1;
@@ -179,7 +172,7 @@ const Hero = () => {
 	}, [repeatDep]);
 
 	return (
-		<StyledSvgContainer>
+		<SvgContainer>
 			<svg
 				width="400"
 				height="350"
@@ -213,7 +206,7 @@ const Hero = () => {
 				/>
 				<path d="M254 0H148V60H254V0Z" fill="#14212e" />
 				<path d="M243 0H159V60H243V0Z" fill="#595959" />
-                {/* Logo */}
+				{/* Logo */}
 				<path
 					d="M125 184.413C125 198.695 142.402 211.017 167.603 216.81C173.373 242.011 185.717 259.413 200 259.413C214.282 259.413 226.604 242.011 232.398 216.81C257.598 211.017 275 198.695 275 184.413C275 170.13 257.598 157.808 232.398 152.015C226.604 126.815 214.26 109.435 200 109.435C185.74 109.435 173.373 126.837 167.603 152.037C142.402 157.808 125 170.13 125 184.413Z"
 					className="fill-gray-900"
@@ -480,7 +473,7 @@ const Hero = () => {
 					className="fill-gray-900"
 				></polygon>
 			</svg>
-		</StyledSvgContainer>
+		</SvgContainer>
 	);
 };
 

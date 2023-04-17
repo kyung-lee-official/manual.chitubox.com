@@ -1,18 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
-import styled from "styled-components";
-
-const StyledDiv = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 2rem;
-	font-weight: bold;
-	color: ${(props) => props.theme.textSecondaryText};
-	background-color: ${(props) => props.theme.background};
-	height: 70vh;
-`;
 
 /**
  * Lagacy URL redirection
@@ -29,7 +17,13 @@ const IndexPage = () => {
 	}, [router]);
 	return (
 		<Layout>
-			<StyledDiv>Redirecting...</StyledDiv>
+			<div
+				className="flex justify-center items-center h-70vh
+                text-2xl font-bold text-gray-500 dark:text-gray-400 
+                bg-gray-100 dark:bg-gray-800"
+			>
+				Redirecting...
+			</div>
 		</Layout>
 	);
 };

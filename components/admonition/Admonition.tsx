@@ -1,94 +1,65 @@
 import React from "react";
-import styled from "styled-components";
 import { Dangerous, InfoCircle, Lightbulb, Warning } from "../icons/Icons";
-
-interface StyledAdmonitionProps {
-	type?: "note" | "tip" | "warning" | "danger";
-}
-const StyledAdmonitionContainer = styled.div<StyledAdmonitionProps>`
-	padding: 1rem 1rem 1rem 1rem;
-	margin: 1rem 0rem 1rem 0rem;
-	color: ${(props) => {
-		switch (props.type) {
-			case "note":
-				return props.theme.admonitionNoteColor;
-			case "tip":
-				return props.theme.admonitionTipColor;
-			case "warning":
-				return props.theme.admonitionWarningColor;
-			case "danger":
-				return props.theme.admonitionDangerColor;
-			default:
-				break;
-		}
-	}};
-	background-color: ${(props) => {
-		switch (props.type) {
-			case "note":
-				return props.theme.admonitionNoteBackground;
-			case "tip":
-				return props.theme.admonitionTipBackground;
-			case "warning":
-				return props.theme.admonitionWarningBackground;
-			case "danger":
-				return props.theme.admonitionDangerBackground;
-			default:
-				break;
-		}
-	}};
-	border-left: 5px solid
-		${(props) => {
-			switch (props.type) {
-				case "note":
-					return props.theme.admonitionNoteBorder;
-				case "tip":
-					return props.theme.admonitionTipBorder;
-				case "warning":
-					return props.theme.admonitionWarningBorder;
-				case "danger":
-					return props.theme.admonitionDangerBorder;
-				default:
-					break;
-			}
-		}};
-	border-radius: 8px;
-`;
-
-const StyledTitle = styled.div`
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 0.8rem;
-	font-weight: bold;
-	font-size: 1.15rem;
-`;
 
 const Icon: React.FC<any> = ({ type }) => {
 	switch (type) {
 		case "note":
-			return <InfoCircle size={"30px"} />;
+			return <InfoCircle size={30} />;
 		case "tip":
-			return <Lightbulb size={"30px"} />;
+			return <Lightbulb size={30} />;
 		case "warning":
-			return <Warning size={"30px"} />;
+			return <Warning size={30} />;
 		case "danger":
-			return <Dangerous size={"30px"} />;
+			return <Dangerous size={30} />;
 		default:
 			return null;
 			break;
 	}
 };
 
-const StyledContent = styled.div`
-	margin-top: 1rem;
-	font-size: 1.03rem;
-`;
-
 interface Admonition {
 	children: any;
 	type?: "note" | "tip" | "warning" | "danger";
 	title?: string;
 }
+
+const AdmonitionContainer = (props: any) => {
+	const { type, children } = props;
+
+	let dynamicClassName;
+
+	switch (type) {
+		case "note":
+			dynamicClassName =
+				"text-blue-700 dark:text-blue-300 bg-blue-500/30 border-blue-500";
+			break;
+		case "tip":
+			dynamicClassName =
+				"text-lime-700 dark:text-lime-300 bg-lime-500/30 border-lime-500";
+			break;
+		case "warning":
+			dynamicClassName =
+				"text-amber-400 dark:text-amber-400 bg-amber-400/30 border-amber-400";
+			break;
+		case "danger":
+			dynamicClassName =
+				"text-red-700 dark:text-red-300 bg-red-500/30 border-red-500";
+			break;
+		default:
+			break;
+	}
+
+	return (
+		<div
+			className={`flex flex-col gap-4 p-4 my-4
+            border-l-4 ${dynamicClassName}
+            rounded-lg`}
+		>
+			{children}
+		</div>
+	);
+};
+
 export const Admonition: React.FC<any> = ({
 	type,
 	title,
@@ -122,12 +93,12 @@ export const Admonition: React.FC<any> = ({
 	}
 	title = title.toUpperCase();
 	return (
-		<StyledAdmonitionContainer type={type}>
-			<StyledTitle>
+		<AdmonitionContainer type={type}>
+			<div className="flex justify-start items-center gap-3 font-bold">
 				<Icon type={type} />
 				{title}
-			</StyledTitle>
-			<StyledContent>{children}</StyledContent>
-		</StyledAdmonitionContainer>
+			</div>
+			<div>{children}</div>
+		</AdmonitionContainer>
 	);
 };

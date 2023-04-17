@@ -6,29 +6,6 @@ import {
 	useTransform,
 } from "framer-motion";
 import React, { useRef, useState } from "react";
-import styled from "styled-components";
-
-const StyledScrollContainer = styled(motion.div)`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	`;
-
-const StyledBackground = styled.div`
-	flex: 0.8;
-	position: relative;
-	display: flex;
-	max-width: 960px;
-	filter: drop-shadow(0 0 1rem hsla(0, 0%, 0%, 0.7));
-`;
-
-const StyledMasked = styled(motion.div)`
-	position: absolute;
-	display: flex;
-	width: 100%;
-	margin: auto;
-`;
 
 export const ThemeScrollSlider = () => {
 	const maskWidth = 50;
@@ -87,18 +64,20 @@ export const ThemeScrollSlider = () => {
 	});
 
 	return (
-		<StyledScrollContainer
+		<motion.div
+			className="flex flex-col justify-center items-center w-full drop-shadow-[0_0_10px_hsla(0,0%,0%,0.7)]"
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 1.5 }}
 		>
-			<StyledBackground ref={ref}>
+			<div className="relative max-w-[960px]" ref={ref}>
 				<img
 					src="/images/docs/en-US/chitubox-basic/2.x.x/001-theme-dark.png"
 					alt=""
 					width={"100%"}
 				/>
-				<StyledMasked
+				<div
+					className="absolute top-0 flex width-full m-auto"
 					style={{
 						clipPath: `polygon(${upperLeftProgressState}% 0,
 							${upperRightProgressState}% 0,
@@ -111,8 +90,8 @@ export const ThemeScrollSlider = () => {
 						alt=""
 						width={"100%"}
 					/>
-				</StyledMasked>
-			</StyledBackground>
-		</StyledScrollContainer>
+				</div>
+			</div>
+		</motion.div>
 	);
 };

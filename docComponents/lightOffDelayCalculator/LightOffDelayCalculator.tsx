@@ -1,31 +1,6 @@
 import React, { useEffect, useReducer, useState } from "react";
 import styled from "styled-components";
 
-const StyledScrollable = styled.div`
-	max-width: 1100px;
-	overflow-x: auto;
-	overflow-y: hidden;
-	::-webkit-scrollbar:horizontal {
-		height: 6px;
-	}
-`;
-
-const StyledCalculatorContainer = styled.div`
-	min-width: 900px;
-	font-weight: bold;
-`;
-
-const StyledWindowHeader = styled.div`
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 1rem;
-	color: #ffffff;
-	background-color: #616263;
-	height: 35px;
-	border-radius: 8px 8px 0 0;
-`;
-
 const StyledWindowContent = styled.div`
 	display: flex;
 	padding: 2rem 1rem;
@@ -58,12 +33,12 @@ const StyledMachineDefault = styled.div`
 	border-radius: 5px;
 `;
 
-const StyledIcon = styled.img`
-	height: 30px;
-	padding: 6px;
-	border: 1px lightgray solid;
-	border-radius: 5px;
-`;
+const Icon = (props: any) => {
+	const { src, alt } = props;
+	return (
+		<img src={src} alt={alt} className="h-[30px] p-[6px] border-gray-300" />
+	);
+};
 
 const StyledSplitLine = styled.div`
 	height: 450px;
@@ -546,20 +521,23 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 	]);
 
 	return (
-		<StyledScrollable>
-			<StyledCalculatorContainer>
-				<StyledWindowHeader>
+		<div className="max-w-[1100px] overflow-x-auto overflow-y-hidden horizontal-scrollbar">
+			<div className="min-w-[900px] font-medium">
+				<div
+					className="flex justify-between items-center px-4 h-9
+                    text-white bg-gray-600 rounded-[8px_8px_0_0]"
+				>
 					<div>{langTable.settings}</div>
 					<div>✕</div>
-				</StyledWindowHeader>
+				</div>
 				<StyledWindowContent>
 					<StyledMachinePanel>
 						<StyledMachineAddRemove>
-							<StyledIcon
+							<Icon
 								src="/images/components/lightOffDelayCalculator/add.svg"
 								style={{ flex: "1" }}
 							/>
-							<StyledIcon
+							<Icon
 								src="/images/components/lightOffDelayCalculator/delete.svg"
 								style={{ flex: "1" }}
 							/>
@@ -583,13 +561,13 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 							>
 								{langTable.profile}
 							</div>
-							<StyledIcon src="/images/components/lightOffDelayCalculator/add.svg" />
-							<StyledIcon src="/images/components/lightOffDelayCalculator/edit.svg" />
-							<StyledIcon src="/images/components/lightOffDelayCalculator/delete.svg" />
-							<StyledIcon src="/images/components/lightOffDelayCalculator/update.svg" />
-							<StyledIcon src="/images/components/lightOffDelayCalculator/import.svg" />
-							<StyledIcon src="/images/components/lightOffDelayCalculator/export.svg" />
-							<StyledIcon src="/images/components/lightOffDelayCalculator/batch_export.svg" />
+							<Icon src="/images/components/lightOffDelayCalculator/add.svg" />
+							<Icon src="/images/components/lightOffDelayCalculator/edit.svg" />
+							<Icon src="/images/components/lightOffDelayCalculator/delete.svg" />
+							<Icon src="/images/components/lightOffDelayCalculator/update.svg" />
+							<Icon src="/images/components/lightOffDelayCalculator/import.svg" />
+							<Icon src="/images/components/lightOffDelayCalculator/export.svg" />
+							<Icon src="/images/components/lightOffDelayCalculator/batch_export.svg" />
 						</StyledParamBlockRow>
 						<StyledParamBlockRow>
 							<StyledParamTab>{langTable.machine}</StyledParamTab>
@@ -770,7 +748,7 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 						</StyledParamBlockRow>
 					</StyledParamPanel>
 				</StyledWindowContent>
-			</StyledCalculatorContainer>
-		</StyledScrollable>
+			</div>
+		</div>
 	);
 };

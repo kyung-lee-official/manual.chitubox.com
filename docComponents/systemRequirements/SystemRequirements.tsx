@@ -1,23 +1,23 @@
 import { LinuxIcon, MacOSIcon, WindowsIcon } from "@/components/icons/Icons";
 import { ResponsiveTable } from "@/components/responsiveTable/ResponsiveTable";
 import React from "react";
-import styled from "styled-components";
 import { Tabs } from "../tabs/Tabs";
 
-const StyledLabel = styled.div`
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-`;
+const Label = (props: any) => {
+	const { children } = props;
+	return (
+		<div className="flex justify-center items-center gap-2">{children}</div>
+	);
+};
 
 const enItems = [
 	{
 		key: "windows",
 		label: (
-			<StyledLabel>
-				Windows&nbsp;
+			<Label>
+				<div>Windows</div>
 				<WindowsIcon size={"24px"} />
-			</StyledLabel>
+			</Label>
 		),
 		children: (
 			<ResponsiveTable>
@@ -66,10 +66,10 @@ const enItems = [
 	{
 		key: "macos",
 		label: (
-			<StyledLabel>
-				macOS&nbsp;
+			<Label>
+				<div>macOS</div>
 				<MacOSIcon size={"24px"} />
-			</StyledLabel>
+			</Label>
 		),
 		children: (
 			<ResponsiveTable>
@@ -98,10 +98,10 @@ const enItems = [
 	{
 		key: "linux",
 		label: (
-			<StyledLabel>
-				Linux&nbsp;
+			<Label>
+				<div>Linux</div>
 				<LinuxIcon size={"24px"} />
-			</StyledLabel>
+			</Label>
 		),
 		children: (
 			<ResponsiveTable>
@@ -143,10 +143,10 @@ const zhItems = [
 	{
 		key: "windows",
 		label: (
-			<StyledLabel>
-				Windows&nbsp;
+			<Label>
+				<div>Windows</div>
 				<WindowsIcon size={"24px"} />
-			</StyledLabel>
+			</Label>
 		),
 		children: (
 			<ResponsiveTable>
@@ -195,10 +195,10 @@ const zhItems = [
 	{
 		key: "macos",
 		label: (
-			<StyledLabel>
-				macOS&nbsp;
+			<Label>
+				<div>macOS</div>
 				<MacOSIcon size={"24px"} />
-			</StyledLabel>
+			</Label>
 		),
 		children: (
 			<ResponsiveTable>
@@ -227,10 +227,10 @@ const zhItems = [
 	{
 		key: "linux",
 		label: (
-			<StyledLabel>
-				Linux&nbsp;
+			<Label>
+				<div>Linux</div>
 				<LinuxIcon size={"24px"} />
-			</StyledLabel>
+			</Label>
 		),
 		children: (
 			<ResponsiveTable>

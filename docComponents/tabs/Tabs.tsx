@@ -1,42 +1,39 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 
-const StyledLabelsWrapper = styled.div`
-	display: flex;
-	font-size: 1.3rem;
-	gap: 2rem;
-	cursor: pointer;
-`;
+const Label = (props: any) => {
+	const { isActive, onClick, children } = props;
 
-interface IStyledLabel {
-	$isActive: boolean;
-}
-const StyledLabel = styled.div<IStyledLabel>`
-	color: ${(props) => (props.$isActive ? "#00aeff" : props.theme.textTitle)};
-	&:hover {
-		color: #00aeff;
-	}
-`;
+	return (
+		<div
+			className={`flex 
+            ${isActive && "text-blue-500 dark:text-sky-400"}
+            cursor-pointer`}
+			onClick={onClick}
+		>
+			{children}
+		</div>
+	);
+};
 
 const Labels = (props: any) => {
-
 	const { items, activeKey, setActiveKey } = props;
+
 	return (
-		<StyledLabelsWrapper>
+		<div className="flex gap-10 text-xl">
 			{items.map((item: any, i: number) => {
 				return (
-					<StyledLabel
+					<Label
 						key={i}
+						isActive={item.key === activeKey}
 						onClick={() => {
 							setActiveKey(item.key);
 						}}
-						$isActive={item.key === activeKey}
 					>
 						{item.label}
-					</StyledLabel>
+					</Label>
 				);
 			})}
-		</StyledLabelsWrapper>
+		</div>
 	);
 };
 
@@ -45,6 +42,7 @@ export const Tabs = (props: any) => {
 	const [activeKey, setActiveKey] = useState<"windows" | "macos" | "linux">(
 		defaultActiveKey
 	);
+
 	return (
 		<div>
 			<Labels
