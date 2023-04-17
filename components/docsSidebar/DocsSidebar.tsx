@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import React, { useContext } from "react";
-import styled from "styled-components";
 import { DocsMenu } from "..";
 import { DocContext } from "../docsLayout";
 
