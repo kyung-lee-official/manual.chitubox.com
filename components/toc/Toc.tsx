@@ -9,7 +9,7 @@ import React, {
 } from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import { DocContext } from "../docsLayout";
+import { DocContext } from "../docsLayout/DocContext";
 
 const StyledToc = styled.div`
 	flex-grow: 0;

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import { ImageContainer } from "..";
 import { animate, motion, useInView } from "framer-motion";
+import { ImageContainer } from "@/components/imageContainer/ImageContainer";
 
 export const DirectX = () => {
 	const ref = useRef(null);

@@ -1,8 +1,7 @@
 import { useRouter } from "next/router";
 import React, { useContext } from "react";
-import styled from "styled-components";
-import { DocsMenu } from "..";
-import { DocContext } from "../docsLayout";
+import { DocContext } from "../docsLayout/DocContext";
+import { DocsMenu } from "../docsMenu/DocsMenu";
 
 export const DocsSidebar: React.FC<any> = () => {
 	const router = useRouter();

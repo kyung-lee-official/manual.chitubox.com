@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import i18n from "i18n/configs";
-import { Theme, useThemeStore } from "stores/theme";
 import {
 	Language,
 	LanguageType,

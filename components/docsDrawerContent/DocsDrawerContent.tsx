@@ -1,15 +1,20 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import { DocContext } from "../docsLayout";
-import {
-	DocsSearch,
-	DocsSearchResult,
-	LanguageDropdown,
-	ThemeSwitch,
-	VersionDropdown,
-	DocsDrawerInstanceDropdown,
-	DocsSidebar,
-} from "..";
+import { DocContext } from "../docsLayout/DocContext";
+import { VersionDropdown } from "../versionDropdown/VersionDropdown";
+import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
+import { DocsSearch } from "../docsSearch/DocsSearch";
+import { DocsSearchResult } from "../docsSearchResult/DocsSearchResult";
+import { DocsDrawerInstanceDropdown } from "../docsDrawerInstanceDropdown/DocsDrawerInstanceDropdown";
+import { DocsSidebar } from "../docsSidebar/DocsSidebar";
+import dynamic from "next/dynamic";
+
+const DynamicThemeSwitcher = dynamic(
+	() => import("@/components/icons/ThemeSwitch"),
+	{
+		ssr: false,
+	}
+);
 
 const StyledContainer = styled.div`
 	display: flex;
@@ -36,7 +41,7 @@ export const DocsDrawerContent: React.FC<any> = () => {
 					<VersionDropdown />
 				</StyledPanelItem>
 				<StyledPanelItem>
-					<ThemeSwitch />
+					<DynamicThemeSwitcher />
 				</StyledPanelItem>
 				<StyledPanelItem>
 					<LanguageDropdown />

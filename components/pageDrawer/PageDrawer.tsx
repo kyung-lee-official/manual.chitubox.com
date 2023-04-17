@@ -3,7 +3,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { dark } from "styles/themes";
-import { BasicLogo2022, DrawerClose, PageDrawerContent } from "..";
+import { BasicLogo2022, DrawerClose } from "../icons/Icons";
+import { PageDrawerContent } from "../pageDrawerContent/PageDrawerContent";
 
 const headerStyle = {
 	display: "flex",

@@ -2,17 +2,21 @@ import { useRouter } from "next/router";
 import React, { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
-import {
-	AiOutlineMenu,
-	BasicLogo2022,
-	DocsDrawer,
-	DocsSearch,
-	LanguageDropdown,
-	ThemeSwitch,
-	VersionDropdown,
-} from "..";
-import { DocContext } from "../docsLayout";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+import { AiOutlineMenu, BasicLogo2022 } from "../icons/Icons";
+import { DocsSearch } from "../docsSearch/DocsSearch";
+import { DocsDrawer } from "../docsDrawer/DocsDrawer";
+import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
+import { VersionDropdown } from "../versionDropdown/VersionDropdown";
+import { DocContext } from "../docsLayout/DocContext";
+
+const DynamicThemeSwitcher = dynamic(
+	() => import("@/components/icons/ThemeSwitch"),
+	{
+		ssr: false,
+	}
+);
 
 const HeaderContainer = (props: any) => {
 	const { children } = props;
@@ -162,7 +166,7 @@ export const DocsHeader = () => {
 						</HeaderItem>
 					)}
 					<HeaderItem>
-						<ThemeSwitch />
+						<DynamicThemeSwitcher />
 					</HeaderItem>
 					<HeaderItem>
 						<LanguageDropdown />

@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Layout } from "@/components/layout";
 import Hero from "@/components/hero/Hero";
 import { getUrlLocale, useLanguageStore } from "stores/language";
+import { Layout } from "@/components/layout/Layout";
 
 const IndexPage = () => {
 	const { language } = useLanguageStore();

@@ -1,11 +1,17 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React, { createContext, useState } from "react";
-import { Banner, DocsContent, DocsHeader, Footer, IsPageUseful } from "..";
 import docsContext from "preload/docsContext.json";
 import { getFlattenPagesContext } from "helpers/functions";
+import { DocsHeader } from "../docsHeader/DocsHeader";
+import { DocsContent } from "../docsContent/DocsContent";
+import { IsPageUseful } from "../userFeedback/IsPageUseful";
+import { DocContext } from "./DocContext";
+import dynamic from "next/dynamic";
 
-export const DocContext = createContext<any>(null);
+const DynamicFooter = dynamic(() => import("@/components/footer/Footer"), {
+	ssr: false,
+});
 
 export const DocsLayout: React.FC<any> = (props) => {
 	const {
@@ -81,7 +87,7 @@ export const DocsLayout: React.FC<any> = (props) => {
 			</Head>
 			<DocsHeader />
 			<DocsContent>{children}</DocsContent>
-			<Footer />
+			<DynamicFooter />
 			<IsPageUseful meta={meta} />
 		</DocContext.Provider>
 	);

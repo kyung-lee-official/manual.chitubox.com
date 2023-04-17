@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
-import {
-	AiOutlineMenu,
-	Banner,
-	BasicLogo2022,
-	LanguageDropdown,
-	PageDrawer,
-} from "..";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { AiOutlineMenu, BasicLogo2022 } from "../icons/Icons";
+import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
+import { PageDrawer } from "../pageDrawer/PageDrawer";
 
 const HeaderContainer = (props: any) => {
 	const { children } = props;
@@ -37,6 +33,7 @@ export const Header: React.FC<any> = () => {
 	useEffect(() => {
 		setIsDesktop(isDesktopOrLaptop);
 	}, [isDesktopOrLaptop]);
+
 	function showDrawer() {
 		setOpenDrawer(true);
 	}

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import { ImageContainer, RmaIcon } from "..";
 import { animate, motion, useInView } from "framer-motion";
+import { ImageContainer } from "../../components/imageContainer/ImageContainer";
+import { RmaIcon } from "../../components/icons/Icons";
 
 export const Rma = () => {
 	const ref = useRef(null);

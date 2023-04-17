@@ -1,8 +1,8 @@
 import { Dropdown, MenuProps } from "antd";
 import { useRouter } from "next/router";
 import React from "react";
-import { IoLanguage } from "..";
 import { LanguageType, languageList, useLanguageStore } from "stores/language";
+import { IoLanguage } from "../icons/Icons";
 
 export const LanguageDropdown: React.FC<any> = () => {
 	const router = useRouter();

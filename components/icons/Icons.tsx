@@ -1,8 +1,5 @@
-import { motion, useAnimationControls } from "framer-motion";
-import React, { useEffect, useMemo, useState } from "react";
-import { dark, light } from "styles/themes";
+import React from "react";
 import styled from "styled-components";
-import { Theme, useThemeStore } from "stores/theme";
 
 export const Logo2021 = ({ size, fill }: any) => {
 	return (
@@ -154,9 +151,9 @@ export const More = ({ size, fill }: any) => {
 				fill="currentColor"
 				d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.97.89 1.66.89H22c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14z"
 			></path>
-			<circle fill={fill} cx="9" cy="12" r="1.5"></circle>
-			<circle fill={fill} cx="14" cy="12" r="1.5"></circle>
-			<circle fill={fill} cx="19" cy="12" r="1.5"></circle>
+			<circle fill="currentColor" cx="9" cy="12" r="1.5"></circle>
+			<circle fill="currentColor" cx="14" cy="12" r="1.5"></circle>
+			<circle fill="currentColor" cx="19" cy="12" r="1.5"></circle>
 		</svg>
 	);
 };
@@ -242,181 +239,6 @@ export const TbVersions = ({ size, fill }: any) => {
 			<rect x="10" y="5" width="10" height="14" rx="2"></rect>
 			<line x1="7" y1="7" x2="7" y2="17"></line>
 			<line x1="4" y1="8" x2="4" y2="16"></line>
-		</svg>
-	);
-};
-
-export const ThemeSwitch: React.FC<any> = () => {
-	const strokeWidth: string = "23px";
-	let shapes = useMemo(() => {
-		return [
-			/* Sun */
-			{
-				d: "M204.116 118.756C221.372 148.644 211.132 186.861 181.244 204.116C151.356 221.372 113.139 211.132 95.8835 181.244C78.6279 151.356 88.8681 113.139 118.756 95.8835C148.644 78.6279 186.861 88.8681 204.116 118.756Z",
-			},
-			/* Moon */
-			{
-				d: "M 140 154 C 211 253 279.601 228.146 216.238 264.728 C 152.876 301.311 71.8543 279.601 35.2719 216.238 C -1.3105 152.876 20.3991 71.8543 83.7617 35.2719 C 147.124 -1.3105 83 50 140 154 Z",
-			},
-		];
-	}, []);
-
-	/* Get current theme in Store. */
-	const { theme, setTheme } = useThemeStore();
-	const [isDark, setIsDark] = useState<boolean>(
-		theme === Theme.DARK ? true : false
-	);
-	const lightThemeColor: string = light.headerIcons;
-	const darkThemeColor: string = dark.headerIcons;
-	const [isComponentDark, setIsComponentDark] = useState<boolean>(isDark);
-	const [isLock, setIsLock] = useState<boolean>(false);
-	const morphControls = useAnimationControls();
-	const rayControls = useAnimationControls();
-
-	function changetheme() {
-		if (!isLock) {
-			setIsLock(true);
-			const targetTheme: Theme.DARK | Theme.LIGHT =
-				theme === Theme.DARK ? Theme.LIGHT : Theme.DARK;
-			setTheme(targetTheme);
-		}
-	}
-
-	useEffect(() => {
-		if (theme === Theme.DARK) {
-			setIsDark(true);
-		} else {
-			setIsDark(false);
-		}
-	}, [theme]);
-
-	useEffect(() => {
-		if (isDark !== isComponentDark) {
-			if (isDark) {
-				/* Light to dark */
-				morphControls.start({
-					d: [shapes[0].d, shapes[1].d],
-					transition: { duration: 0.5, delay: 0.3 },
-				});
-				rayControls.start({
-					opacity: 0,
-				});
-			} else {
-				/* Dark to light */
-				morphControls.start({
-					d: [shapes[1].d, shapes[0].d],
-					transition: { duration: 0.5 },
-				});
-				rayControls.start({
-					opacity: 1,
-					transition: { delay: 0.5 },
-				});
-			}
-			setIsComponentDark(isDark);
-		}
-	}, [
-		isDark,
-		darkThemeColor,
-		lightThemeColor,
-		isComponentDark,
-		morphControls,
-		rayControls,
-		shapes,
-	]);
-
-	return (
-		<svg
-			width="32"
-			height="32"
-			viewBox="0 0 300 300"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			onClick={changetheme}
-			cursor={"pointer"}
-		>
-			<motion.path
-				stroke="currentColor"
-				strokeWidth={strokeWidth}
-				initial={{
-					d: isDark ? shapes[1].d : shapes[0].d,
-				}}
-				animate={morphControls}
-				onAnimationComplete={(definition) => {
-					setIsLock(false);
-				}}
-			/>
-			<motion.path
-				d="M150 50V10"
-				stroke="currentColor"
-				strokeWidth={strokeWidth}
-				strokeMiterlimit="10"
-				strokeLinecap="round"
-				initial={{ opacity: isDark ? 0 : 1 }}
-				animate={rayControls}
-			/>
-			<motion.path
-				d="M80 80L51 51"
-				stroke="currentColor"
-				strokeWidth={strokeWidth}
-				strokeMiterlimit="10"
-				strokeLinecap="round"
-				initial={{ opacity: isDark ? 0 : 1 }}
-				animate={rayControls}
-			/>
-			<motion.path
-				d="M50 150H10"
-				stroke="currentColor"
-				strokeWidth={strokeWidth}
-				strokeMiterlimit="10"
-				strokeLinecap="round"
-				initial={{ opacity: isDark ? 0 : 1 }}
-				animate={rayControls}
-			/>
-			<motion.path
-				d="M80 220L51 249"
-				stroke="currentColor"
-				strokeWidth={strokeWidth}
-				strokeMiterlimit="10"
-				strokeLinecap="round"
-				initial={{ opacity: isDark ? 0 : 1 }}
-				animate={rayControls}
-			/>
-			<motion.path
-				d="M150 250V290"
-				stroke="currentColor"
-				strokeWidth={strokeWidth}
-				strokeMiterlimit="10"
-				strokeLinecap="round"
-				initial={{ opacity: isDark ? 0 : 1 }}
-				animate={rayControls}
-			/>
-			<motion.path
-				d="M220 220L249 249"
-				stroke="currentColor"
-				strokeWidth={strokeWidth}
-				strokeMiterlimit="10"
-				strokeLinecap="round"
-				initial={{ opacity: isDark ? 0 : 1 }}
-				animate={rayControls}
-			/>
-			<motion.path
-				d="M250 150H290"
-				stroke="currentColor"
-				strokeWidth={strokeWidth}
-				strokeMiterlimit="10"
-				strokeLinecap="round"
-				initial={{ opacity: isDark ? 0 : 1 }}
-				animate={rayControls}
-			/>
-			<motion.path
-				d="M220 80L249 51"
-				stroke="currentColor"
-				strokeWidth={strokeWidth}
-				strokeMiterlimit="10"
-				strokeLinecap="round"
-				initial={{ opacity: isDark ? 0 : 1 }}
-				animate={rayControls}
-			/>
 		</svg>
 	);
 };

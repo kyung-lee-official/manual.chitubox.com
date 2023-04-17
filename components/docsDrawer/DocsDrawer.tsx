@@ -3,8 +3,9 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import { dark, light } from "styles/themes";
-import { DocsDrawerContent, DrawerClose, Logo2021 } from "..";
 import { Theme, useThemeStore } from "stores/theme";
+import { DrawerClose, Logo2021 } from "../icons/Icons";
+import { DocsDrawerContent } from "../docsDrawerContent/DocsDrawerContent";
 
 const headerStyle = {
 	display: "flex",

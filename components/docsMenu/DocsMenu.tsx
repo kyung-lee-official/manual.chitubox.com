@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { useState } from "react";
-import { SubMenuToggle } from "..";
+import { SubMenuToggle } from "../icons/Icons";
 
 const SubMenu: React.FC<any> = (props) => {
 	const { subItemContext, isDefaultOpen, activeKey } = props;

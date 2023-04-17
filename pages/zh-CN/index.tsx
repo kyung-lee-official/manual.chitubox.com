@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Layout } from "@/components/layout";
 import Hero from "@/components/hero/Hero";
 import { getUrlLocale, useLanguageStore } from "stores/language";
+import { Layout } from "@/components/layout/Layout";
 
 const IndexPage = () => {
-    const { language } = useLanguageStore();
+	const { language } = useLanguageStore();
 	let urlLocale = getUrlLocale(language);
 	const { t } = useTranslation();
 	const router = useRouter();
@@ -43,11 +43,11 @@ const IndexPage = () => {
 		useState<number>(0.7);
 
 	return (
-		<div>
+		<Layout>
 			<Hero />
 			<div
 				className="flex flex-col xl:flex-row justify-center items-center xl:items-start gap-10 h-80 xl:h-40
-                bg-[#1c2d3f]"
+                bg-gray-900"
 			>
 				<motion.button
 					initial={{
@@ -71,8 +71,9 @@ const IndexPage = () => {
 						setButtonBasicColor(buttonColor);
 						setButtonBasicBoxShadow(buttonBoxShadow);
 					}}
-					className="flex flex-col xl:flex-row justify-center items-center xl:items-start gap-10 h-80 xl:h-40
-                    bg-[#1c2d3f]"
+					className="flex justify-center items-center w-60 h-12
+                    font-medium text-lg
+                    rounded-full"
 					onClick={() => {
 						router.push(
 							`/${urlLocale}/docs/chitubox-basic/latest/introduction`
@@ -103,8 +104,9 @@ const IndexPage = () => {
 						setButtonProColor(buttonColor);
 						setButtonProBoxShadow(buttonBoxShadow);
 					}}
-					className="flex flex-col xl:flex-row justify-center items-center xl:items-start gap-10 h-80 xl:h-40
-                    bg-[#1c2d3f]"
+					className="flex justify-center items-center w-60 h-12
+                    font-medium text-lg
+                    rounded-full"
 					onClick={() => {
 						router.push(
 							`/${urlLocale}/docs/chitubox-pro/latest/introduction`
@@ -143,8 +145,9 @@ const IndexPage = () => {
 						setButtonFaqColor(buttonColor);
 						setButtonFaqBoxShadow(buttonBoxShadow);
 					}}
-					className="flex flex-col xl:flex-row justify-center items-center xl:items-start gap-10 h-80 xl:h-40
-                    bg-[#1c2d3f]"
+					className="flex justify-center items-center w-60 h-12
+                    font-medium text-lg
+                    rounded-full"
 					onClick={() => {
 						router.push(
 							`/${urlLocale}/docs/faq/latest/chitubox-basic-faq`
@@ -154,7 +157,7 @@ const IndexPage = () => {
 					{t("footer.faqDoc")}
 				</motion.button>
 			</div>
-		</div>
+		</Layout>
 	);
 };
 

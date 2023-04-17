@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Document, More, Community } from "..";
 import { getUrlLocale, useLanguageStore } from "stores/language";
+import { Document, Community, More } from "../icons/Icons";
 
 const ColTitle = (props: any) => {
 	const { children } = props;
@@ -15,14 +15,14 @@ const ColTitle = (props: any) => {
 	);
 };
 
-const Link = (props: any) => {
-	const { href, target, children } = props;
-	return (
-		<a href={href} target={target} className="hover:text-sky-500">
-			{children}
-		</a>
-	);
-};
+// const Link = (props: any) => {
+// 	const { href, target, children } = props;
+// 	return (
+// 		<a href={href} target={target} className="hover:text-sky-500">
+// 			{children}
+// 		</a>
+// 	);
+// };
 
 const FooterCol = (props: any) => {
 	const { children } = props;
@@ -33,7 +33,7 @@ const FooterCol = (props: any) => {
 	);
 };
 
-export const Footer = () => {
+const Footer = () => {
 	const { t } = useTranslation();
 	const { language } = useLanguageStore();
 	const urlLocale = getUrlLocale(language);
@@ -54,7 +54,7 @@ export const Footer = () => {
 						<Document size={"36"} />
 						{t("footer.relevantDocs")}
 					</ColTitle>
-					<Link
+					{/* <Link
 						href={`/${urlLocale}/docs/chitubox-basic/latest/introduction`}
 					>
 						{t("footer.chituboxBasicDoc")}
@@ -68,14 +68,14 @@ export const Footer = () => {
 						href={`/${urlLocale}/docs/faq/latest/chitubox-basic-faq`}
 					>
 						{t("footer.faqDoc")}
-					</Link>
+					</Link> */}
 				</FooterCol>
 				<FooterCol>
 					<ColTitle>
-						<Community size={"36"} fill="#c3d9ee" />
+						<Community size={"36"} />
 						{t("footer.community")}
 					</ColTitle>
-					<Link
+					{/* <Link
 						target={"_blank"}
 						href={t("footer.DiscordLink") as string}
 					>
@@ -104,14 +104,14 @@ export const Footer = () => {
 						href={t("footer.youtubeLink") as string}
 					>
 						{t("footer.youtube")}
-					</Link>
+					</Link> */}
 				</FooterCol>
 				<FooterCol>
 					<ColTitle>
-						<More size={"36"} fill="#c3d9ee" />
+						<More size={"36"} />
 						{t("footer.more")}
 					</ColTitle>
-					<Link
+					{/* <Link
 						target={"_blank"}
 						href={t("footer.chituboxSiteLink") as string}
 					>
@@ -127,7 +127,7 @@ export const Footer = () => {
 						>
 							{t("footer.chituSystems")}
 						</Link>
-					) : null}
+					) : null} */}
 				</FooterCol>
 			</div>
 			<div className="flex flex-col xl:flex-row flex-start xl:justify-center items-center py-4 gap-2 xl:gap-0">
@@ -139,3 +139,5 @@ export const Footer = () => {
 		</div>
 	);
 };
+
+export default Footer;

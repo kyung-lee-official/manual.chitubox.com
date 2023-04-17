@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { Layout } from "../components";
 import { getUrlLocale, useLanguageStore } from "stores/language";
+import { Layout } from "@/components/layout/Layout";
 
 function Loading() {
 	const [count, setCount] = useState<number>(0);
