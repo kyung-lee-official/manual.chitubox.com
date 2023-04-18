@@ -1,18 +1,4 @@
 import React from "react";
-import styled from "styled-components";
-
-interface StyledWrapperProps {
-	$justifyContent: "flex-start" | "center" | "flex-end";
-}
-const StyledWrapper = styled.div<StyledWrapperProps>`
-	display: flex;
-	align-items: center;
-	justify-content: ${(props) => {
-		return props.$justifyContent;
-	}};
-	margin: 1rem 0;
-	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.6));
-`;
 
 type ImageContainerType = {
 	justifyContent: "flex-start" | "center" | "flex-end";
@@ -22,10 +8,31 @@ export const ImageContainer: React.FC<ImageContainerType> = ({
 	justifyContent,
 	children,
 }) => {
+	let justify: "justify-start" | "justify-center" | "justify-end" =
+		"justify-start";
+
+	switch (justifyContent) {
+		case "flex-start":
+			justify = "justify-start";
+			break;
+		case "center":
+			justify = "justify-center";
+			break;
+		case "flex-end":
+			justify = "justify-end";
+			break;
+		default:
+			justify = "justify-start";
+			break;
+	}
+
 	return (
-		<StyledWrapper $justifyContent={justifyContent}>
+		<div
+			className={`flex ${justify} items-center my-4
+            drop-shadow-lg`}
+		>
 			{children}
-		</StyledWrapper>
+		</div>
 	);
 };
 

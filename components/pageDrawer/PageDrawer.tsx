@@ -1,7 +1,6 @@
 import { Drawer } from "antd";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import styled from "styled-components";
 import { dark } from "styles/themes";
 import { BasicLogo2022, DrawerClose } from "../icons/Icons";
 import { PageDrawerContent } from "../pageDrawerContent/PageDrawerContent";
@@ -18,59 +17,35 @@ const darkStyle = {
 	backdropFilter: "blur(5px)",
 };
 
-const StyledDrawerHeader = styled.div`
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 0rem 2rem;
-	gap: 1.5rem;
-	font-family: "system-ui";
-`;
-
-const StyledIconWrapper = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-`;
-
-const StyledTitleAndTitleLink = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-`;
-
-const StyledTitle = styled.span`
-	font-size: 1.3rem;
-	font-weight: bold;
-	color: ${(props) => props.theme.textTitle};
-	transition-duration: ${(props) => props.theme.transitionDuration};
-`;
-
-const StyledPlaceHolder = styled.div`
-	flex: 1;
-`;
+const TitleAndTitleLink = (props: any) => {
+	const { children } = props;
+	return <div className="flex justify-center items-center">{children}</div>;
+};
 
 const Title: React.FC<any> = (props) => {
 	const { setOpenDrawer } = props;
 	const { t } = useTranslation();
 	return (
-		<StyledDrawerHeader>
-			<StyledIconWrapper
+		<div
+			className="flex justify-evenly items-center gap-6 px-8
+            text-gray-700 dark:text-gray-300"
+		>
+			<div
+				className="flex justify-center items-center cursor-pointer"
 				onClick={() => {
 					setOpenDrawer(false);
 				}}
 			>
-				<DrawerClose size={"24px"} fill={darkStyle.color} />
-			</StyledIconWrapper>
-			<StyledTitleAndTitleLink>
-				<BasicLogo2022 size={"48px"} />
-			</StyledTitleAndTitleLink>
-			<StyledTitleAndTitleLink>
-				<StyledTitle>{t("header.title")}</StyledTitle>
-			</StyledTitleAndTitleLink>
-			<StyledPlaceHolder />
-		</StyledDrawerHeader>
+				<DrawerClose size={24} fill={darkStyle.color} />
+			</div>
+			<TitleAndTitleLink>
+				<BasicLogo2022 size={48} />
+			</TitleAndTitleLink>
+			<TitleAndTitleLink>
+				<span className="font-medium text-xl">{t("header.title")}</span>
+			</TitleAndTitleLink>
+			<div className="flex-1" />
+		</div>
 	);
 };
 

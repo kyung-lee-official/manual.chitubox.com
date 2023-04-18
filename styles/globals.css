@@ -24,9 +24,26 @@
 		dark:bg-gray-500;
 	}
 
-    .horizontal-scrollbar::-webkit-scrollbar:horizontal {
-        @apply h-2;
-    }
+	.horizontal-scrollbar::-webkit-scrollbar:horizontal {
+		@apply h-2;
+	}
+
+	.horizontal-scrollbar::-webkit-scrollbar-track:horizontal {
+		@apply rounded-lg
+		bg-slate-200
+		dark:bg-gray-700;
+	}
+
+	.horizontal-scrollbar::-webkit-scrollbar-thumb:horizontal {
+		@apply rounded-lg
+		bg-slate-300
+		dark:bg-gray-600;
+	}
+
+	.horizontal-scrollbar::-webkit-scrollbar-thumb:hover:horizontal {
+		@apply bg-slate-400 
+		dark:bg-gray-500;
+	}
 }
 
 html,

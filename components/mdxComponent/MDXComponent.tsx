@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { Image } from "antd";
 import React from "react";
 import { BilibiliVideoContainer } from "../videoContainer/BilibiliVideoContainer";
@@ -24,136 +23,29 @@ const DynamicStyledPre = dynamic(
 	}
 );
 
-const StyledHeadingAnchor = styled.a`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	opacity: 0.2;
-	transition: 0.3s;
-`;
-
-const StyledH1 = styled.h1`
-	font-size: 2.2rem;
-	font-weight: bolder;
-	color: ${(props) => props.theme.textContent};
-`;
-
-const StyledH2 = styled.h2`
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 1rem;
-	margin: 1rem 0rem;
-	font-size: 1.8rem;
-	font-weight: bolder;
-	&:hover {
-		${StyledHeadingAnchor} {
-			opacity: 1;
-			transition: 0.3s;
-		}
-	}
-	color: ${(props) => props.theme.textContent};
-	transition-duration: ${(props) => props.theme.transitionDuration};
-`;
-
-const StyledH3 = styled.h3`
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 1rem;
-	margin: 1rem 0rem;
-	font-size: 1.6rem;
-	font-weight: bolder;
-	&:hover {
-		${StyledHeadingAnchor} {
-			opacity: 1;
-			transition: 0.3s;
-		}
-	}
-	color: ${(props) => props.theme.textContent};
-	transition-duration: ${(props) => props.theme.transitionDuration};
-`;
-
-const StyledH4 = styled.h4`
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 1rem;
-	margin: 1rem 0rem;
-	font-size: 1.4rem;
-	font-weight: bolder;
-	&:hover {
-		${StyledHeadingAnchor} {
-			opacity: 1;
-			transition: 0.3s;
-		}
-	}
-	color: ${(props) => props.theme.textContent};
-	transition-duration: ${(props) => props.theme.transitionDuration};
-`;
-
-const StyledH5 = styled.h5`
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 1rem;
-	margin: 1rem 0rem;
-	font-size: 1.2rem;
-	font-weight: bolder;
-	&:hover {
-		${StyledHeadingAnchor} {
-			opacity: 1;
-			transition: 0.3s;
-		}
-	}
-	color: ${(props) => props.theme.textContent};
-	transition-duration: ${(props) => props.theme.transitionDuration};
-`;
-
-const StyledH6 = styled.h6`
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 1rem;
-	margin: 1rem 0rem;
-	font-size: 1.1rem;
-	font-weight: bolder;
-	&:hover {
-		${StyledHeadingAnchor} {
-			opacity: 1;
-			transition: 0.3s;
-		}
-	}
-	color: ${(props) => props.theme.textContent};
-	transition-duration: ${(props) => props.theme.transitionDuration};
-`;
-
-const StyledP = styled.p`
-	font-size: 1.07rem;
-	font-weight: 600;
-	line-height: 2rem;
-`;
+const HeadingAnchor = (props: any) => {
+	const { children, ...rest } = props;
+	return (
+		<a
+			{...rest}
+			className="flex justify-center items-center no-underline opacity-20"
+		>
+			{children}
+		</a>
+	);
+};
 
 const SpanText: React.FC<any> = (props) => {
 	const { children } = props;
-	return <StyledP>{children}</StyledP>;
+	return <p>{children}</p>;
 };
-
-const StyledStrong = styled.strong`
-	font-size: 1.1rem;
-`;
-
-const StyledA = styled.a`
-	color: #00aeff;
-`;
 
 const SpanA: React.FC<any> = (props) => {
 	const { children, href } = props;
 	return (
-		<strong>
-			<StyledA href={href}>{children}</StyledA>
-		</strong>
+		<a href={href} className="text-blue-500 dark:text-sky-400">
+			{children}
+		</a>
 	);
 };
 
@@ -166,30 +58,23 @@ const NextLink: React.FC<any> = (props) => {
 	);
 };
 
-const StyledUl = styled.ul`
-	font-size: 1.03rem;
-	font-weight: 700;
-`;
+const Blockquote: React.FC<any> = (props) => {
+	const { children } = props;
+	return (
+		<blockquote
+			className="pl-4 border-l-4 
+            text-gray-400
+            border-l-gray-400"
+		>
+			{children}
+		</blockquote>
+	);
+};
 
-const StyledOl = styled.ol`
-	font-size: 1.03rem;
-	font-weight: 700;
-`;
-
-const StyledBlockquote = styled.blockquote`
-	padding-left: 1rem;
-	border-left: 3px solid ${(props) => props.theme.textSecondaryText};
-	color: ${(props) => props.theme.textSecondaryText};
-	font-size: 1.06rem;
-`;
-
-const StyledInlineCode = styled.code`
-	padding: 0rem 0.2rem 0rem 0.2rem;
-	color: ${(props) => props.theme.mdxComponentCode};
-	border: 2px solid ${(props) => props.theme.mdxComponentCodeBorder};
-	border-radius: 5px;
-	font-size: 1.06rem;
-`;
+const InlineCode = (props: any) => {
+	const { children } = props;
+	return <code className="px-1 border-2 rounded">{children}</code>;
+};
 
 const AntdImage: React.FC<any> = (props) => {
 	return <Image {...props} className="m-auto rounded-lg" />;
@@ -197,65 +82,75 @@ const AntdImage: React.FC<any> = (props) => {
 
 export const MDXComponent = {
 	h1: ({ children }: any) => {
-		return <StyledH1>{children[1]}</StyledH1>;
+		return <h1 className="font-bold text-5xl">{children[1]}</h1>;
 	},
 	h2: ({ children }: any) => {
 		return (
-			<StyledH2 id={children[0].props.href.slice(1)}>
+			<h2
+				id={children[0].props.href.slice(1)}
+				className={`flex justify-start items-center gap-4 my-1
+                font-bold text-4xl`}
+			>
 				{children[1]}
-				<StyledHeadingAnchor href={children[0].props.href}>
-					#
-				</StyledHeadingAnchor>
-			</StyledH2>
+				<HeadingAnchor href={children[0].props.href}>#</HeadingAnchor>
+			</h2>
 		);
 	},
 	h3: ({ children }: any) => {
 		return (
-			<StyledH3 id={children[0].props.href.slice(1)}>
+			<h3
+				id={children[0].props.href.slice(1)}
+				className={`flex justify-start items-center gap-4 my-1
+                font-bold text-3xl`}
+			>
 				{children[1]}
-				<StyledHeadingAnchor href={children[0].props.href}>
-					#
-				</StyledHeadingAnchor>
-			</StyledH3>
+				<HeadingAnchor href={children[0].props.href}>#</HeadingAnchor>
+			</h3>
 		);
 	},
 	h4: ({ children }: any) => {
 		return (
-			<StyledH4 id={children[0].props.href.slice(1)}>
+			<h4
+				id={children[0].props.href.slice(1)}
+				className={`flex justify-start items-center gap-4 my-1
+                font-bold text-2xl`}
+			>
 				{children[1]}
-				<StyledHeadingAnchor href={children[0].props.href}>
-					#
-				</StyledHeadingAnchor>
-			</StyledH4>
+				<HeadingAnchor href={children[0].props.href}>#</HeadingAnchor>
+			</h4>
 		);
 	},
 	h5: ({ children }: any) => {
 		return (
-			<StyledH5 id={children[0].props.href.slice(1)}>
+			<h5
+				id={children[0].props.href.slice(1)}
+				className={`flex justify-start items-center gap-4 my-1
+                font-bold text-xl`}
+			>
 				{children[1]}
-				<StyledHeadingAnchor href={children[0].props.href}>
-					#
-				</StyledHeadingAnchor>
-			</StyledH5>
+				<HeadingAnchor href={children[0].props.href}>#</HeadingAnchor>
+			</h5>
 		);
 	},
 	h6: ({ children }: any) => {
 		return (
-			<StyledH6 id={children[0].props.href.slice(1)}>
+			<h6
+				id={children[0].props.href.slice(1)}
+				className={`flex justify-start items-center gap-4 my-1
+                font-bold text-lg`}
+			>
 				{children[1]}
-				<StyledHeadingAnchor href={children[0].props.href}>
-					#
-				</StyledHeadingAnchor>
-			</StyledH6>
+				<HeadingAnchor href={children[0].props.href}>#</HeadingAnchor>
+			</h6>
 		);
 	},
 
 	p: ({ children }: any) => {
-		return <StyledP>{children}</StyledP>;
+		return <p>{children}</p>;
 	},
 
 	strong: ({ children }: any) => {
-		return <StyledStrong>{children}</StyledStrong>;
+		return <strong>{children}</strong>;
 	},
 
 	/**
@@ -268,11 +163,11 @@ export const MDXComponent = {
 	// },
 
 	ul: ({ children }: any) => {
-		return <StyledUl>{children}</StyledUl>;
+		return <ul>{children}</ul>;
 	},
 
 	ol: ({ children }: any) => {
-		return <StyledOl>{children}</StyledOl>;
+		return <ol>{children}</ol>;
 	},
 
 	table: ({ children }: any) => {
@@ -280,11 +175,11 @@ export const MDXComponent = {
 	},
 
 	blockquote: ({ children }: any) => {
-		return <StyledBlockquote>{children}</StyledBlockquote>;
+		return <Blockquote>{children}</Blockquote>;
 	},
 
 	code: ({ children }: any) => {
-		return <StyledInlineCode>{children}</StyledInlineCode>;
+		return <InlineCode>{children}</InlineCode>;
 	},
 
 	pre: DynamicStyledPre,

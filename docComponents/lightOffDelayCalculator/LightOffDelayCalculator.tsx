@@ -1,37 +1,4 @@
-import React, { useEffect, useReducer, useState } from "react";
-import styled from "styled-components";
-
-const StyledWindowContent = styled.div`
-	display: flex;
-	padding: 2rem 1rem;
-	border-radius: 0 0 8px 8px;
-	background-color: #ffffff;
-`;
-
-const StyledMachinePanel = styled.div`
-	flex: 3;
-	display: flex;
-	justify-content: flex-start;
-	flex-direction: column;
-	gap: 1rem;
-`;
-
-const StyledMachineAddRemove = styled.div`
-	display: flex;
-	justify-content: space-between;
-	gap: 0.5rem;
-`;
-
-const StyledMachineDefault = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	height: 30px;
-	border: 1px #4eaeee solid;
-	background-color: #4eaeee;
-	border-radius: 5px;
-`;
+import React, { useEffect, useReducer } from "react";
 
 const Icon = (props: any) => {
 	const { src, alt } = props;
@@ -40,117 +7,147 @@ const Icon = (props: any) => {
 	);
 };
 
-const StyledSplitLine = styled.div`
-	height: 450px;
-	background-color: lightgray;
-	width: 3px;
-	margin: 0 0.5rem;
-`;
+const ParamBlockRow: React.FC<any> = (props: any) => {
+	const { children } = props;
+	return <div className="flex gap-2 text-gray-900">{children}</div>;
+};
 
-const StyledParamPanel = styled.div`
-	flex: 15;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-`;
+const ParamTab = (props: any) => {
+	const { children } = props;
+	return (
+		<div
+			className="flex-1 flex justify-center items-center h-[30]
+            text-gray-900 border border-gray-300 rounded-md"
+		>
+			{children}
+		</div>
+	);
+};
 
-const StyledParamBlockRow = styled.div`
-	display: flex;
-	gap: 0.4rem;
-	color: black;
-`;
+const Col1Label = (props: any) => {
+	const { isActive, children } = props;
+	return (
+		<span
+			className={`flex-[1_0_180px] 
+            ${isActive ? "text-black" : "text-gray-400"}
+            whitespace-nowrap overflow-hidden text-overflow-ellipsis`}
+		>
+			{children}
+		</span>
+	);
+};
 
-const StyledParamTab = styled.div`
-	flex: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 30px;
-	border: 1px lightgray solid;
-	border-radius: 5px;
-	color: black;
-`;
+const Col1Value = (props: any) => {
+	const { isActive, children } = props;
+	return (
+		<div
+			className={`flex-[0_0_60px] 
+            border-[1px_solid] 
+            ${isActive ? "border-black" : "border-gray-400"}
+            ${isActive ? "cursor-pointer" : "cursor-not-allowed"}
+            rounded-[5px]`}
+		>
+			{children}
+		</div>
+	);
+};
 
-interface StyledCol1LabelProps {
-	$isActive: boolean;
-}
-interface StyledCol2LabelProps {
-	$isActive: boolean;
-}
+const Col1Unit = (props: any) => {
+	const { isActive, children } = props;
+	return (
+		<div
+			className={`flex-[0_0_30px] ${
+				isActive ? "text-black" : "text-gray-400"
+			}`}
+		>
+			{children}
+		</div>
+	);
+};
 
-const StyledCol1Label = styled.span<StyledCol1LabelProps>`
-	flex-grow: 1;
-	flex-shrink: 0;
-	flex-basis: 180px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	color: ${(props) => (props.$isActive ? "black" : "#bfbfbf")};
-`;
-const StyledCol1Value = styled.div<StyledCol1LabelProps>`
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: 60px;
-	border: 1px solid ${(props) => (props.$isActive ? "black" : "#bfbfbf")};
-	border-radius: 5px;
-	cursor: ${(props) => (props.$isActive ? "cursor" : "not-allowed")};
-`;
+const Col2Label = (props: any) => {
+	const { isActive, children } = props;
+	return (
+		<div
+			className={`flex-[1_0_150px] ${
+				isActive ? "text-black" : "text-gray-400"
+			} whitespace-nowrap overflow-hidden text-overflow-ellipsis`}
+		>
+			{children}
+		</div>
+	);
+};
 
-const StyledCol1Unit = styled.div<StyledCol1LabelProps>`
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: 30px;
-	color: ${(props) => (props.$isActive ? "black" : "#bfbfbf")};
-`;
-const StyledCol2Label = styled.span<StyledCol2LabelProps>`
-	flex-grow: 1;
-	flex-shrink: 0;
-	flex-basis: 150px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	color: ${(props) => (props.$isActive ? "black" : "#bfbfbf")};
-`;
-const StyledCol2Value1 = styled.div<StyledCol2LabelProps>`
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: 60px;
-	border: 1px solid ${(props) => (props.$isActive ? "black" : "#bfbfbf")};
-	border-radius: 5px;
-	cursor: ${(props) => (props.$isActive ? "cursor" : "not-allowed")};
-`;
-const StyledCol2Sign = styled.div<StyledCol2LabelProps>`
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: 12px;
-	text-align: center;
-	color: ${(props) => (props.$isActive ? "black" : "#bfbfbf")};
-`;
-const StyledCol2Value2 = styled.div<StyledCol2LabelProps>`
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: 60px;
-	border: 1px solid ${(props) => (props.$isActive ? "black" : "#bfbfbf")};
-	border-radius: 5px;
-	cursor: ${(props) => (props.$isActive ? "cursor" : "not-allowed")};
-`;
-const StyledCol2Unit = styled.div<StyledCol2LabelProps>`
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: 65px;
-	color: ${(props) => (props.$isActive ? "black" : "#bfbfbf")};
-`;
-const StyledInput = styled.input<StyledCol1LabelProps>`
-	width: 100%;
-	border: none;
-	border-radius: 5px;
-	text-align: center;
-	color: black;
-	&:focus {
-		outline: none;
-	}
-	cursor: ${(props) => (props.$isActive ? "cursor" : "not-allowed")};
-`;
+const Col2Value1 = (props: any) => {
+	const { isActive, children } = props;
+	return (
+		<div
+			className={`flex-[0_0_60px] border-[1px_solid]
+            ${isActive ? "border-black" : "border-gray-400"} 
+            ${isActive ? "cursor-pointer" : "cursor-not-allowed"}
+            rounded-[5px]`}
+		>
+			{children}
+		</div>
+	);
+};
+
+const Col2Sign = (props: any) => {
+	const { isActive, children } = props;
+	return (
+		<div
+			className={`flex-[0_0_12px] ${
+				isActive ? "text-black" : "text-gray-400"
+			} text-center`}
+		>
+			{children}
+		</div>
+	);
+};
+
+const Col2Value2 = (props: any) => {
+	const { isActive, children } = props;
+	return (
+		<div
+			className={`flex-[0_0_60px] border-[1px_solid]
+            ${isActive ? "border-black" : "border-gray-400"}
+            ${isActive ? "cursor-pointer" : "cursor-not-allowed"}
+            rounded-[5px]`}
+		>
+			{children}
+		</div>
+	);
+};
+
+const Col2Unit = (props: any) => {
+	const { isActive, children } = props;
+	return (
+		<div
+			className={`flex-[0_0_65px] ${
+				isActive ? "text-black" : "text-gray-400"
+			}`}
+		>
+			{children}
+		</div>
+	);
+};
+
+const Input = (props: any) => {
+	const { isActive, readOnly, type, min, disabled, value, onChange } = props;
+	return (
+		<input
+			className={`w-full border-none rounded-[5px] text-center
+            text-black ${isActive ? "cursor-pointer" : "cursor-not-allowed"}
+            focus:outline-none`}
+			readOnly={readOnly}
+			type={type}
+			min={min}
+			value={value}
+			onChange={onChange}
+			disabled={disabled}
+		/>
+	);
+};
 
 const ParameterRow: React.FC<any> = ({
 	col1Label,
@@ -180,26 +177,24 @@ const ParameterRow: React.FC<any> = ({
 				gap: "8px",
 			}}
 		>
-			<StyledCol1Label title={col1Label} $isActive={col1LabelIsActive}>
+			<Col1Label title={col1Label} isActive={col1LabelIsActive}>
 				{col1Label}:
-			</StyledCol1Label>
-			<StyledCol1Value $isActive={col1LabelIsActive}>
-				<StyledInput
-					$isActive={col1LabelIsActive}
+			</Col1Label>
+			<Col1Value isActive={col1LabelIsActive}>
+				<Input
+					isActive={col1LabelIsActive}
 					disabled={!col1LabelIsActive}
 					readOnly={col1ValueIsReadOnly}
 					value={col1Value}
 				/>
-			</StyledCol1Value>
-			<StyledCol1Unit $isActive={col1LabelIsActive}>
-				{col1Unit}
-			</StyledCol1Unit>
-			<StyledCol2Label title={col2Label} $isActive={col2LabelIsActive}>
+			</Col1Value>
+			<Col1Unit isActive={col1LabelIsActive}>{col1Unit}</Col1Unit>
+			<Col2Label title={col2Label} isActive={col2LabelIsActive}>
 				{col2Label}:
-			</StyledCol2Label>
-			<StyledCol2Value1 $isActive={col2LabelIsActive}>
-				<StyledInput
-					$isActive={col2LabelIsActive}
+			</Col2Label>
+			<Col2Value1 isActive={col2LabelIsActive}>
+				<Input
+					isActive={col2LabelIsActive}
 					readOnly={col2Value1IsReadOnly}
 					type={"number"}
 					min={0}
@@ -207,13 +202,11 @@ const ParameterRow: React.FC<any> = ({
 					value={col2Value1}
 					onChange={col2Value1Change}
 				/>
-			</StyledCol2Value1>
-			<StyledCol2Sign $isActive={col2LabelIsActive}>
-				{col2Sign}
-			</StyledCol2Sign>
-			<StyledCol2Value2 $isActive={col2LabelIsActive}>
-				<StyledInput
-					$isActive={col2LabelIsActive}
+			</Col2Value1>
+			<Col2Sign isActive={col2LabelIsActive}>{col2Sign}</Col2Sign>
+			<Col2Value2 isActive={col2LabelIsActive}>
+				<Input
+					isActive={col2LabelIsActive}
 					readOnly={col2Value2IsReadOnly}
 					type={"number"}
 					min={0}
@@ -221,10 +214,8 @@ const ParameterRow: React.FC<any> = ({
 					value={col2Value2}
 					onChange={col2Value2Change}
 				/>
-			</StyledCol2Value2>
-			<StyledCol2Unit $isActive={col2LabelIsActive}>
-				{col2Unit}
-			</StyledCol2Unit>
+			</Col2Value2>
+			<Col2Unit isActive={col2LabelIsActive}>{col2Unit}</Col2Unit>
 		</div>
 	);
 };
@@ -521,7 +512,10 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 	]);
 
 	return (
-		<div className="max-w-[1100px] overflow-x-auto overflow-y-hidden horizontal-scrollbar">
+		<div
+			className="max-w-[1100px] my-6
+            overflow-x-auto overflow-y-hidden horizontal-scrollbar"
+		>
 			<div className="min-w-[900px] font-medium">
 				<div
 					className="flex justify-between items-center px-4 h-9
@@ -530,9 +524,12 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 					<div>{langTable.settings}</div>
 					<div>✕</div>
 				</div>
-				<StyledWindowContent>
-					<StyledMachinePanel>
-						<StyledMachineAddRemove>
+				<div
+					className="flex px-4 py-8
+                    bg-white rounded-[0_0_8px_8px]"
+				>
+					<div className="flex-[3] flex flex-col justify-start gap-4">
+						<div className="flex justify-between gap-2">
 							<Icon
 								src="/images/components/lightOffDelayCalculator/add.svg"
 								style={{ flex: "1" }}
@@ -541,14 +538,20 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 								src="/images/components/lightOffDelayCalculator/delete.svg"
 								style={{ flex: "1" }}
 							/>
-						</StyledMachineAddRemove>
-						<StyledMachineDefault>
+						</div>
+						<div
+							className="flex justify-center items-center
+                            text-white bg-sky-500 rounded-[5px]"
+						>
 							{langTable.default}
-						</StyledMachineDefault>
-					</StyledMachinePanel>
-					<StyledSplitLine />
-					<StyledParamPanel>
-						<StyledParamBlockRow>
+						</div>
+					</div>
+					<div
+						className="w-[3px] h-[450px] mx-2
+                        bg-gray-300"
+					/>
+					<div className="flex-[15] flex flex-col gap-4">
+						<ParamBlockRow>
 							<div
 								style={{
 									display: "flex",
@@ -568,11 +571,11 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 							<Icon src="/images/components/lightOffDelayCalculator/import.svg" />
 							<Icon src="/images/components/lightOffDelayCalculator/export.svg" />
 							<Icon src="/images/components/lightOffDelayCalculator/batch_export.svg" />
-						</StyledParamBlockRow>
-						<StyledParamBlockRow>
-							<StyledParamTab>{langTable.machine}</StyledParamTab>
-							<StyledParamTab>{langTable.resin}</StyledParamTab>
-							<StyledParamTab
+						</ParamBlockRow>
+						<ParamBlockRow>
+							<ParamTab>{langTable.machine}</ParamTab>
+							<ParamTab>{langTable.resin}</ParamTab>
+							<ParamTab
 								style={{
 									color: "white",
 									border: "1px #4EAEEE solid",
@@ -580,13 +583,11 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 								}}
 							>
 								{langTable.print}
-							</StyledParamTab>
-							<StyledParamTab>{langTable.gcode}</StyledParamTab>
-							<StyledParamTab>
-								{langTable.advanced}
-							</StyledParamTab>
-						</StyledParamBlockRow>
-						<StyledParamBlockRow>
+							</ParamTab>
+							<ParamTab>{langTable.gcode}</ParamTab>
+							<ParamTab>{langTable.advanced}</ParamTab>
+						</ParamBlockRow>
+						<ParamBlockRow>
 							<div
 								style={{
 									flex: "1",
@@ -697,39 +698,37 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 										margin: "0.5rem 0rem",
 									}}
 								>
-									<StyledCol1Label
+									<Col1Label
 										title={langTable.bottomLoD}
-										$isActive={false}
+										isActive={false}
 									>
 										{langTable.bottomLoD}:
-									</StyledCol1Label>
-									<StyledCol1Value $isActive={false}>
-										<StyledInput
-											$isActive={false}
+									</Col1Label>
+									<Col1Value isActive={false}>
+										<Input
+											isActive={false}
 											disabled={true}
 											readOnly={true}
 											value={""}
 										/>
-									</StyledCol1Value>
-									<StyledCol1Unit $isActive={false}>
-										{"mm"}
-									</StyledCol1Unit>
-									<StyledCol2Label
+									</Col1Value>
+									<Col1Unit isActive={false}>{"mm"}</Col1Unit>
+									<Col2Label
 										title={langTable.expectedWT}
-										$isActive={true}
+										isActive={true}
 									>
 										{langTable.expectedWT}:
-									</StyledCol2Label>
-									<StyledCol2Value1
-										$isActive={true}
+									</Col2Label>
+									<Col2Value1
+										isActive={true}
 										style={{
 											flexGrow: "0",
 											flexShrink: "0",
 											flexBasis: "148px",
 										}}
 									>
-										<StyledInput
-											$isActive={true}
+										<Input
+											isActive={true}
 											readOnly={false}
 											type={"number"}
 											min={0}
@@ -739,15 +738,13 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 												handleExpectedWaitTimeChange
 											}
 										/>
-									</StyledCol2Value1>
-									<StyledCol2Unit $isActive={true}>
-										{"s"}
-									</StyledCol2Unit>
+									</Col2Value1>
+									<Col2Unit isActive={true}>{"s"}</Col2Unit>
 								</div>
 							</div>
-						</StyledParamBlockRow>
-					</StyledParamPanel>
-				</StyledWindowContent>
+						</ParamBlockRow>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

@@ -8,74 +8,19 @@ import React, {
 	useState,
 } from "react";
 import { useTranslation } from "react-i18next";
-import styled from "styled-components";
 import { DocContext } from "../docsLayout/DocContext";
 
-const StyledToc = styled.div`
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: 400px;
-`;
-
-const StyledTocAffix = styled.div`
-	position: -webkit-sticky;
-	position: sticky;
-	top: 160px;
-	height: 70vh;
-	padding: 2rem 1rem;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-`;
-
-const StyledA = styled.a`
-	text-decoration: none;
-	color: ${(props) => props.theme.tocColor};
-	font-weight: 600;
-`;
-
-interface StyledTocHeadingProps {
-	$isActive: boolean;
-	$depth: number;
-}
-
-const StyledTocHeading = styled.div<StyledTocHeadingProps>`
-	color: ${(props: any) => {
-		return props.$isActive
-			? props.theme.tocColorActive
-			: props.theme.tocColor;
-	}};
-	margin: ${(props: any) => {
-		switch (props.$depth) {
-			case 2:
-				return "1rem 0 1rem 0";
-			case 3:
-				return "1rem 0 1rem 0.7rem";
-			default:
-				break;
-		}
-	}};
-`;
-
-const StyledScrollable = styled.div`
-	overflow-y: auto;
-	height: 70vh;
-	&::-webkit-scrollbar {
-		width: 5px;
-		border-radius: 3px;
-		background-color: ${(props) => props.theme.sidebarScrollbar};
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 3px;
-		background-color: ${(props) => props.theme.sidebarScrollbarThumb};
-	}
-	&::-webkit-scrollbar-thumb {
-		&:hover {
-			border-radius: 3px;
-			background-color: ${(props) => props.theme.sidebarScrollbarHover};
-		}
-	}
-`;
+const TocHeading = (props: any) => {
+	const { isActive, depth, children } = props;
+	return (
+		<div
+			className={`my-4 ${depth === 3 && "ml-6"}
+            ${isActive && "text-blue-500 dark:text-sky-400"}}`}
+		>
+			{children}
+		</div>
+	);
+};
 
 const TocHeadings: React.FC<any> = () => {
 	const { pageContext } = useContext(DocContext);
@@ -147,20 +92,20 @@ const TocHeadings: React.FC<any> = () => {
 			});
 		}
 		return (
-			<StyledScrollable>
+			<div className="overflow-y-auto h-[70vh] scrollbar">
 				{h2H3Toc?.map((heading: any) => {
 					return (
-						<StyledA href={`#${heading.id}`} key={heading.id}>
-							<StyledTocHeading
+						<a href={`#${heading.id}`} key={heading.id}>
+							<TocHeading
 								$isActive={activeTocItem === heading.id}
 								$depth={heading.depth}
 							>
 								{heading.value}
-							</StyledTocHeading>
-						</StyledA>
+							</TocHeading>
+						</a>
 					);
 				})}
-			</StyledScrollable>
+			</div>
 		);
 	} else {
 		return null;
@@ -170,8 +115,8 @@ const TocHeadings: React.FC<any> = () => {
 export const Toc: React.FC<any> = () => {
 	const { t } = useTranslation();
 	return (
-		<StyledToc>
-			<StyledTocAffix>
+		<div className="flex-[0_0_400px]">
+			<div className="sticky top-[160px] h-[70vh] flex flex-col gap-4 px-4 py-8">
 				<div
 					className="flex justify-center items-center max-w-max h-8 px-8 mx-auto
                     font-medium 
@@ -182,7 +127,7 @@ export const Toc: React.FC<any> = () => {
 					{t("docContent.onThisPage")}
 				</div>
 				<TocHeadings />
-			</StyledTocAffix>
-		</StyledToc>
+			</div>
+		</div>
 	);
 };

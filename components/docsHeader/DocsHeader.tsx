@@ -9,7 +9,7 @@ import { DocsDrawer } from "../docsDrawer/DocsDrawer";
 import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
 import { DocContext } from "../docsLayout/DocContext";
 
-const DynamicThemeSwitcher = dynamic(
+const DynamicThemeSwitch = dynamic(
 	() => import("@/components/icons/ThemeSwitch"),
 	{
 		ssr: false,
@@ -169,7 +169,7 @@ const DocsHeader = () => {
 						</HeaderItem>
 					)}
 					<HeaderItem>
-						<DynamicThemeSwitcher />
+						<DynamicThemeSwitch />
 					</HeaderItem>
 					<HeaderItem>
 						<LanguageDropdown />

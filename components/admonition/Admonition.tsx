@@ -39,7 +39,7 @@ const AdmonitionContainer = (props: any) => {
 			break;
 		case "warning":
 			dynamicClassName =
-				"text-amber-400 dark:text-amber-400 bg-amber-400/30 border-amber-400";
+				"text-amber-700 dark:text-amber-400 bg-amber-400/30 border-amber-400";
 			break;
 		case "danger":
 			dynamicClassName =

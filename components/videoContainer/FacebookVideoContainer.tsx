@@ -1,33 +1,30 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
 import { useMediaQuery } from "react-responsive";
 
-interface StyledVideoContainerProps {
-	$HeightWidthRatio: number;
-}
-const StyledVideoContainer = styled.div<StyledVideoContainerProps>`
-	overflow: hidden;
-	padding-bottom: ${(props) => props.$HeightWidthRatio * 100 + "%"};
-	position: relative;
-	height: 0;
-	margin: 1rem 0;
-`;
-const StyledHorizontalIframe = styled.iframe`
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-`;
+const VideoContainer: React.FC<any> = (props: any) => {
+	const { heightWidthRatio, children } = props;
+	return (
+		<div
+			className={`relative h-0 pb-${
+				heightWidthRatio * 100
+			}% my-4 overflow-hidden`}
+		>
+			{children}
+		</div>
+	);
+};
 
-interface StyledVerticalVideoContainerPropsForDesktop {
-	$height: number;
-}
-const StyledVerticalVideoContainerForDesktop = styled.div<StyledVerticalVideoContainerPropsForDesktop>`
-	display: flex;
-	justify-content: center;
-	height: ${(props) => props.$height + "px"};
-`;
+const HorizontalIframe = (props: any) => {
+	const { src } = props;
+	return <iframe src={src} className="absolute top-0 left-0 w-full h-full" />;
+};
+
+const VerticalVideoContainerForDesktop = (props: any) => {
+	const { height, children } = props;
+	return (
+		<div className={`flex justify-center h-[${height}px]`}>{children}</div>
+	);
+};
 
 const FacebookVideoContainer: React.FC<any> = ({ children }) => {
 	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
@@ -39,36 +36,33 @@ const FacebookVideoContainer: React.FC<any> = ({ children }) => {
 	if (isDesktop) {
 		if (children.props.width > children.props.height) {
 			return (
-				<StyledVideoContainer
-					$HeightWidthRatio={
+				<VideoContainer
+					heightWidthRatio={
 						children.props.height / children.props.width
 					}
 				>
-					<StyledHorizontalIframe
+					<HorizontalIframe
 						src={children.props.src}
 						frameBorder={0}
 					/>
-				</StyledVideoContainer>
+				</VideoContainer>
 			);
 		} else {
 			return (
-				<StyledVerticalVideoContainerForDesktop
+				<VerticalVideoContainerForDesktop
 					$height={children.props.height}
 				>
 					{children}
-				</StyledVerticalVideoContainerForDesktop>
+				</VerticalVideoContainerForDesktop>
 			);
 		}
 	} else {
 		return (
-			<StyledVideoContainer
-				$HeightWidthRatio={children.props.height / children.props.width}
+			<VideoContainer
+				heightWidthRatio={children.props.height / children.props.width}
 			>
-				<StyledHorizontalIframe
-					src={children.props.src}
-					frameBorder={0}
-				/>
-			</StyledVideoContainer>
+				<HorizontalIframe src={children.props.src} frameBorder={0} />
+			</VideoContainer>
 		);
 	}
 };

@@ -1,23 +1,11 @@
 import { getBannerInfo } from "helpers/api";
 import React, { useState } from "react";
-import styled from "styled-components";
 import dayjs from "dayjs";
 import isBetween from "dayjs/plugin/isBetween";
 import axios from "axios";
 import { useQuery } from "react-query";
 import { useLanguageStore } from "stores/language";
 dayjs.extend(isBetween);
-
-const StyledImgWrapper = styled.div`
-	width: 100%;
-	max-height: 8rem;
-	overflow-y: hidden;
-`;
-
-const StyledImg = styled.img`
-	width: 100%;
-	vertical-align: middle;
-`;
 
 function getQualifiedActivities(activities: any[]): any {
 	const qualifiedActivities = activities.filter((activity) => {
@@ -90,14 +78,15 @@ export const Banner: React.FC<any> = () => {
 					});
 				return isImageAva ? (
 					<a href={currentActivity.noticeLink}>
-						<StyledImgWrapper>
+						<div className="w-full max-h-32 overflow-hidden">
 							<picture>
-								<StyledImg
+								<img
+									className="w-full align-middle"
 									src={currentActivity.noticeImg}
 									alt="banner"
 								/>
 							</picture>
-						</StyledImgWrapper>
+						</div>
 					</a>
 				) : null;
 			} else {

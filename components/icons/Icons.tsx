@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 export const Logo2021 = ({ size, fill }: any) => {
 	return (
@@ -321,7 +320,7 @@ export const DrawerClose = ({ size, fill }: any) => {
 			height={size}
 			width={size}
 			viewBox="0 0 512 512"
-			fill={fill}
+			fill="currentColor"
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<path d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"></path>
@@ -373,18 +372,14 @@ export const LinuxIcon = ({ size, fill }: any) => {
 
 /* CHITUBOX Icons */
 
-const StyledSvg = styled.svg`
-	filter: drop-shadow(-30px -10px 3rem hsla(180, 100%, 50%, 0.8))
-		drop-shadow(30px 10px 3rem hsla(269, 100%, 50%, 0.8));
-`;
-
 export const RmaIcon = ({ size, fill }: any) => {
 	return (
-		<StyledSvg
+		<svg
 			height={size}
 			width={size}
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 23.98 21.46"
+            className="[filter:drop-shadow(-30px_-10px_3rem_hsla(180,100%,50%,0.8))_drop-shadow(30px_10px_3rem_hsla(269,100%,50%,0.8))]"
 		>
 			<defs>
 				<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -433,7 +428,7 @@ export const RmaIcon = ({ size, fill }: any) => {
 					transform="translate(-2 -3.27)"
 				/>
 			</g>
-		</StyledSvg>
+		</svg>
 	);
 };
 

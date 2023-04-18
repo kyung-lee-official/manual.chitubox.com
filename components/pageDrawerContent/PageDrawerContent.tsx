@@ -1,32 +1,14 @@
 import React from "react";
-import styled from "styled-components";
 import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
-
-const StyledContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-`;
-const StyledPanel = styled.div`
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-`;
-const StyledPanelItem = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-`;
 
 export const PageDrawerContent: React.FC<any> = () => {
 	return (
-		<StyledContainer>
-			<StyledPanel>
-				<StyledPanelItem>
+		<div className="flex flex-col gap-8">
+			<div className="flex justify-evenly items-center">
+				<div className="flex justify-center items-center cursor-pointer">
 					<LanguageDropdown />
-				</StyledPanelItem>
-			</StyledPanel>
-		</StyledContainer>
+				</div>
+			</div>
+		</div>
 	);
 };
