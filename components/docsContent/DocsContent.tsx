@@ -5,7 +5,7 @@ import { MdxContainer } from "../mdxContainer/MdxContainer";
 import { Toc } from "../toc/Toc";
 
 const DocsContent: React.FC<any> = (props) => {
-	const { children } = props;
+	const { showBanner, children } = props;
 
 	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
 	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
@@ -19,9 +19,9 @@ const DocsContent: React.FC<any> = (props) => {
             font-sans text-gray-800 dark:text-gray-100
             bg-slate-50 dark:bg-gray-800"
 		>
-			{isDesktop && <DocsSidebar />}
+			{isDesktop && <DocsSidebar showBanner={showBanner} />}
 			<MdxContainer>{children}</MdxContainer>
-			{isDesktop && <Toc />}
+			{isDesktop && <Toc showBanner={showBanner} />}
 		</div>
 	);
 };

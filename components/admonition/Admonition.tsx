@@ -31,7 +31,7 @@ const AdmonitionContainer = (props: any) => {
 	switch (type) {
 		case "note":
 			dynamicClassName =
-				"text-blue-700 dark:text-blue-300 bg-blue-500/30 border-blue-500";
+				"text-blue-900 dark:text-blue-300 bg-blue-500/30 border-blue-500";
 			break;
 		case "tip":
 			dynamicClassName =

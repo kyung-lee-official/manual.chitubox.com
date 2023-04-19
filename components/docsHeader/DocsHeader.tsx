@@ -8,6 +8,7 @@ import { AiOutlineMenu, BasicLogo2022 } from "../icons/Icons";
 import { DocsDrawer } from "../docsDrawer/DocsDrawer";
 import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
 import { DocContext } from "../docsLayout/DocContext";
+import { Banner } from "@/docComponents/advertisement/Banner";
 
 const DynamicThemeSwitch = dynamic(
 	() => import("@/components/icons/ThemeSwitch"),
@@ -35,7 +36,7 @@ const HeaderContainer = (props: any) => {
 
 	return (
 		<div
-			className={`sticky flex justify-between items-center gap-6 top-0 z-10 h-16 px-16 
+			className={`flex justify-between items-center gap-6 h-16 px-16 
             text-2xl font-sans
             text-gray-700 dark:text-gray-200
             bg-gray-50/40 dark:bg-gray-800/40
@@ -119,7 +120,9 @@ export const InstanceTitles = (props: any) => {
 	}
 };
 
-const DocsHeader = () => {
+const DocsHeader = (props: any) => {
+	const { setShowBanner } = props;
+
 	const { t } = useTranslation();
 	const {
 		docInstanceContext: { isVersioned },
@@ -137,52 +140,55 @@ const DocsHeader = () => {
 	}, [isDesktopOrLaptop]);
 
 	return (
-		<HeaderContainer>
-			{!isDesktop && (
-				<div onClick={showDrawer}>
-					<AiOutlineMenu size={"1.5rem"} />
+		<div className="sticky top-0 z-10">
+			<Banner setShowBanner={setShowBanner} />
+			<HeaderContainer>
+				{!isDesktop && (
+					<div onClick={showDrawer}>
+						<AiOutlineMenu size={"1.5rem"} />
+					</div>
+				)}
+				<div>
+					<BasicLogo2022 size={"48px"} />
 				</div>
-			)}
-			<div>
-				<BasicLogo2022 size={"48px"} />
-			</div>
-			<Link
-				href="/"
-				className="flex justify-center items-center gap-2 no-underline"
-			>
-				{t("header.title")}
-			</Link>
-			{isDesktop && (
-				<div className="flex justify-center items-center cursor-pointer">
-					<InstanceTitles showActiveOnly={false} />
-				</div>
-			)}
-			<div className="flex-1" />
-			{isDesktop && (
-				<div className="flex gap-6">
-					<HeaderItem>
-						<DynamicDocsSearch />
-					</HeaderItem>
-					{isVersioned && (
+				<Link
+					href="/"
+					className="flex justify-center items-center gap-2 no-underline"
+				>
+					{t("header.title")}
+				</Link>
+				{isDesktop && (
+					<div className="flex justify-center items-center cursor-pointer">
+						<InstanceTitles showActiveOnly={false} />
+					</div>
+				)}
+				<div className="flex-1" />
+				{isDesktop && (
+					<div className="flex gap-6">
 						<HeaderItem>
-							<DynamicVersionDropdown />
+							<DynamicDocsSearch />
 						</HeaderItem>
-					)}
-					<HeaderItem>
-						<DynamicThemeSwitch />
-					</HeaderItem>
-					<HeaderItem>
-						<LanguageDropdown />
-					</HeaderItem>
-				</div>
-			)}
-			{!isDesktop && (
-				<DocsDrawer
-					openDrawer={openDrawer}
-					setOpenDrawer={setOpenDrawer}
-				/>
-			)}
-		</HeaderContainer>
+						{isVersioned && (
+							<HeaderItem>
+								<DynamicVersionDropdown />
+							</HeaderItem>
+						)}
+						<HeaderItem>
+							<DynamicThemeSwitch />
+						</HeaderItem>
+						<HeaderItem>
+							<LanguageDropdown />
+						</HeaderItem>
+					</div>
+				)}
+				{!isDesktop && (
+					<DocsDrawer
+						openDrawer={openDrawer}
+						setOpenDrawer={setOpenDrawer}
+					/>
+				)}
+			</HeaderContainer>
+		</div>
 	);
 };
 

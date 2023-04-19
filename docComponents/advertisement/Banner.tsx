@@ -1,5 +1,5 @@
 import { getBannerInfo } from "helpers/api";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
 import isBetween from "dayjs/plugin/isBetween";
 import axios from "axios";
@@ -35,11 +35,12 @@ function blockCountdownActivities(activities: any) {
 	});
 }
 
-export const Banner: React.FC<any> = () => {
+export const Banner: React.FC<any> = (props: any) => {
+	const { setShowBanner } = props;
 	const { language } = useLanguageStore();
 	const [isImageAva, setIsImageAva] = useState(false);
 
-	let bannerQuery;
+	let bannerQuery: any;
 	let activities;
 	let currentActivity;
 
@@ -49,6 +50,18 @@ export const Banner: React.FC<any> = () => {
 	bannerQuery = useQuery("bannerQuery", () => getBannerInfo("zh-Hans"), {
 		enabled: language === "zh_CN",
 	});
+
+	useEffect(() => {
+		if (bannerQuery.status === "success") {
+			if (setShowBanner) {
+				setShowBanner(true);
+			}
+		} else {
+			if (setShowBanner) {
+				setShowBanner(false);
+			}
+		}
+	}, [bannerQuery.status]);
 
 	if (bannerQuery?.isLoading) {
 		return null;
@@ -76,19 +89,23 @@ export const Banner: React.FC<any> = () => {
 					.catch((error) => {
 						console.error("Failed to fetch the banner image");
 					});
-				return isImageAva ? (
-					<a href={currentActivity.noticeLink}>
-						<div className="w-full max-h-32 overflow-hidden">
-							<picture>
-								<img
-									className="w-full align-middle"
-									src={currentActivity.noticeImg}
-									alt="banner"
-								/>
-							</picture>
-						</div>
-					</a>
-				) : null;
+				if (isImageAva) {
+					return (
+						<a href={currentActivity.noticeLink}>
+							<div className="w-full max-h-[88px] overflow-hidden">
+								<picture>
+									<img
+										className="w-full align-middle"
+										src={currentActivity.noticeImg}
+										alt="banner"
+									/>
+								</picture>
+							</div>
+						</a>
+					);
+				} else {
+					return null;
+				}
 			} else {
 				return null;
 			}

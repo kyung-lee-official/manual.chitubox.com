@@ -6,6 +6,7 @@ import Link from "next/link";
 import { AiOutlineMenu, BasicLogo2022 } from "../icons/Icons";
 import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
 import { PageDrawer } from "../pageDrawer/PageDrawer";
+import { Banner } from "@/docComponents/advertisement/Banner";
 
 const HeaderContainer = (props: any) => {
 	const { children } = props;
@@ -40,7 +41,7 @@ const Header: React.FC<any> = () => {
 
 	return (
 		<div className="sticky top-0 z-10">
-			{/* <Banner /> */}
+			{<Banner />}
 			<HeaderContainer>
 				{!isDesktop && (
 					<div onClick={showDrawer}>

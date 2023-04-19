@@ -15,7 +15,7 @@ const TocHeading = (props: any) => {
 	return (
 		<div
 			className={`my-4 ${depth === 3 && "ml-6"}
-            ${isActive && "text-blue-500 dark:text-sky-400"}}`}
+            ${isActive && "text-blue-500 dark:text-sky-400"}`}
 		>
 			{children}
 		</div>
@@ -97,8 +97,8 @@ const TocHeadings: React.FC<any> = () => {
 					return (
 						<a href={`#${heading.id}`} key={heading.id}>
 							<TocHeading
-								$isActive={activeTocItem === heading.id}
-								$depth={heading.depth}
+								isActive={activeTocItem === heading.id}
+								depth={heading.depth}
 							>
 								{heading.value}
 							</TocHeading>
@@ -112,11 +112,17 @@ const TocHeadings: React.FC<any> = () => {
 	}
 };
 
-export const Toc: React.FC<any> = () => {
+export const Toc: React.FC<any> = (props: any) => {
+	const { showBanner } = props;
+
 	const { t } = useTranslation();
 	return (
-		<div className="flex-[0_0_400px]">
-			<div className="sticky top-[160px] h-[70vh] flex flex-col gap-4 px-4 py-8">
+		<div className="flex-[0_0_350px]">
+			<div
+				className={`sticky ${
+					showBanner ? "top-[184px]" : "top-24"
+				} h-[70vh] flex flex-col gap-4 px-4`}
+			>
 				<div
 					className="flex justify-center items-center max-w-max h-8 px-8 mx-auto
                     font-medium 

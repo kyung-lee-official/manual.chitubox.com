@@ -82,13 +82,13 @@ const AntdImage: React.FC<any> = (props) => {
 
 export const MDXComponent = {
 	h1: ({ children }: any) => {
-		return <h1 className="font-bold text-5xl">{children[1]}</h1>;
+		return <h1 className="font-bold text-5xl my-10">{children[1]}</h1>;
 	},
 	h2: ({ children }: any) => {
 		return (
 			<h2
 				id={children[0].props.href.slice(1)}
-				className={`flex justify-start items-center gap-4 my-1
+				className={`flex justify-start items-center gap-4 my-8
                 font-bold text-4xl`}
 			>
 				{children[1]}
@@ -100,7 +100,7 @@ export const MDXComponent = {
 		return (
 			<h3
 				id={children[0].props.href.slice(1)}
-				className={`flex justify-start items-center gap-4 my-1
+				className={`flex justify-start items-center gap-4 my-6
                 font-bold text-3xl`}
 			>
 				{children[1]}
@@ -112,7 +112,7 @@ export const MDXComponent = {
 		return (
 			<h4
 				id={children[0].props.href.slice(1)}
-				className={`flex justify-start items-center gap-4 my-1
+				className={`flex justify-start items-center gap-4 my-6
                 font-bold text-2xl`}
 			>
 				{children[1]}
@@ -124,7 +124,7 @@ export const MDXComponent = {
 		return (
 			<h5
 				id={children[0].props.href.slice(1)}
-				className={`flex justify-start items-center gap-4 my-1
+				className={`flex justify-start items-center gap-4 my-6
                 font-bold text-xl`}
 			>
 				{children[1]}
@@ -136,7 +136,7 @@ export const MDXComponent = {
 		return (
 			<h6
 				id={children[0].props.href.slice(1)}
-				className={`flex justify-start items-center gap-4 my-1
+				className={`flex justify-start items-center gap-4 my-4
                 font-bold text-lg`}
 			>
 				{children[1]}
