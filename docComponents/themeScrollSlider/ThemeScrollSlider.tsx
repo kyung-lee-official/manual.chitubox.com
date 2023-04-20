@@ -65,7 +65,7 @@ export const ThemeScrollSlider = () => {
 
 	return (
 		<motion.div
-			className="flex flex-col justify-center items-center w-full drop-shadow-[0_0_10px_hsla(0,0%,0%,0.7)]"
+			className="flex flex-col justify-center items-center w-full drop-shadow-[0_0_10px_hsla(0,0%,0%,0.7)] my-8"
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 1.5 }}

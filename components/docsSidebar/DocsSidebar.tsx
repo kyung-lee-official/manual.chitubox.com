@@ -3,7 +3,9 @@ import React, { useContext } from "react";
 import { DocContext } from "../docsLayout/DocContext";
 import { DocsMenu } from "../docsMenu/DocsMenu";
 
-export const DocsSidebar: React.FC<any> = () => {
+export const DocsSidebar: React.FC<any> = (props: any) => {
+	const { showBanner } = props;
+
 	const router = useRouter();
 	const { versionedContext } = useContext(DocContext);
 	const menuItems = versionedContext.pagesContext;
@@ -41,7 +43,11 @@ export const DocsSidebar: React.FC<any> = () => {
 			className="flex-[0_0_300px] border-r-[1px] border-gray-300 dark:border-gray-700
             transition-color duration-300"
 		>
-			<div className="sticky top-32 max-h-[80vh] overflow-auto scrollbar">
+			<div
+				className={`sticky ${
+					showBanner ? "top-[184px]" : "top-24"
+				} min-h-[70vh] overflow-auto scrollbar`}
+			>
 				<DocsMenu
 					menuItems={menuItems}
 					defaultOpenKeys={[]}
