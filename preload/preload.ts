@@ -43,8 +43,19 @@ for (const absLocalePath of absLocalePaths) {
 	const urlLocale = path.basename(absLocalePath);
 	docsContext.push({ locale: urlLocale, localizedDocInstances: [] });
 	const absDocsPath = path.resolve(absLocalePath, "docs");
-	const docInstances = await readdir(absDocsPath);
-	for (const docInstance of docInstances) {
+    let itemsInDocsFolder = await readdir(absDocsPath);
+    const orderedDocInstanceNameList = JSON.parse(await readFile(path.resolve(absDocsPath, "config.json"), "utf-8"));
+	const docInstances = itemsInDocsFolder.filter(item => item !== "config.json");
+    const orderedDocInstances = [];
+    for (const instanceName of orderedDocInstanceNameList) {
+        for (const docInstance of docInstances) {
+            if (docInstance === instanceName) {
+                orderedDocInstances.push(docInstance);
+            }
+        }
+    }
+
+	for (const docInstance of orderedDocInstances) {
 		const localizedContext = getLocalizedContext(docsContext, urlLocale);
 		localizedContext.localizedDocInstances.push({ docInstance: docInstance });
 		const absDocInstancePath = path.resolve(absDocsPath, docInstance);
