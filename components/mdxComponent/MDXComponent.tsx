@@ -62,7 +62,7 @@ const Blockquote: React.FC<any> = (props) => {
 	const { children } = props;
 	return (
 		<blockquote
-			className="pl-4 border-l-4 
+			className="pl-4 border-l-4 my-4
             text-gray-400
             border-l-gray-400"
 		>
@@ -146,7 +146,7 @@ export const MDXComponent = {
 	},
 
 	p: ({ children }: any) => {
-		return <p>{children}</p>;
+		return <p className="my-2">{children}</p>;
 	},
 
 	strong: ({ children }: any) => {
