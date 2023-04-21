@@ -41,26 +41,26 @@ export const DocsLayout: React.FC<any> = (props) => {
 
 	function getContexts(urlLocale: string) {
 		/* Get the localized context, which contains the context of all doc instances for the designated language. */
-		let localizedContext = docsContext.find((locallizedSidebar: any) => {
+		const localizedContext = docsContext.find((locallizedSidebar: any) => {
 			return locallizedSidebar.locale === urlLocale;
 		});
 		/* Get the doc instance context, which contains all version contexts of the designated doc instance. */
-		let docInstanceContext = localizedContext!.localizedDocInstances.find(
+		const docInstanceContext = localizedContext!.localizedDocInstances.find(
 			(localizedDocInstance: any) => {
 				return localizedDocInstance.docInstance === docInstance;
 			}
 		);
 		/* Get the versioned context, which contains all page contexts of the designated doc instance and version. */
-		let versionedContext = docInstanceContext!.versionedContexts.find(
+		const versionedContext = docInstanceContext!.versionedContexts.find(
 			(versionedContext: any) => {
 				return versionedContext.versionCode === versionCode;
 			}
 		);
 		/* Get the page context, which contains all TOC contexts of the designated page. */
-		let flattenPagesContext = getFlattenPagesContext(
+		const flattenPagesContext = getFlattenPagesContext(
 			versionedContext!.pagesContext
 		);
-		let pageContext = flattenPagesContext.find((pageContext: any) => {
+		const pageContext = flattenPagesContext.find((pageContext: any) => {
 			return pageContext.path === router.pathname;
 		});
 		return {
