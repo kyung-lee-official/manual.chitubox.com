@@ -80,7 +80,7 @@ const DocsSearch: React.FC<any> = () => {
 		} else {
 			setSearchResults("");
 		}
-	}, [searchTerm, flattenPagesContext, setSearchResults]);
+	}, [searchTerm, setSearchResults]);
 
 	return (
 		<div className="relative flex justify-center items-center">
@@ -94,7 +94,7 @@ const DocsSearch: React.FC<any> = () => {
 				<GoSearch size={32} />
 			</div>
 			<form
-				className="absolute right-10"
+				className="absolute xl:right-10"
 				onSubmit={(e) => {
 					/* Prevent form submissions when enter is pressed inside input */
 					e.preventDefault();
