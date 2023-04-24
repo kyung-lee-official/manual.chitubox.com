@@ -20,6 +20,12 @@ export const Layout: React.FC<any> = ({ children }) => {
 			<Head>
 				<link rel="icon" href="favicon.ico"></link>
 				<title>{t("header.title")}</title>
+				<meta
+					name="description"
+					content={"The user manual of CHITUBOX"}
+				/>
+				<meta property="og:description" content={"CHITUBOX Docs"} />
+				<meta property="og:image" content={"/images/pages/logo.svg"} />
 			</Head>
 			{header}
 			{children}
