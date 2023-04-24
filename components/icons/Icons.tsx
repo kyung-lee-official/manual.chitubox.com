@@ -1253,7 +1253,7 @@ export const ChituboxRenderFresnelIcon = ({ size, fill }: any) => {
 	);
 };
 
-export const ChituboxDetectIslands = ({ size, fill }: any) => {
+export const ChituboxDetectIslandsIcon = ({ size, fill }: any) => {
 	return (
 		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
 			<svg
@@ -1297,6 +1297,31 @@ export const ChituboxDetectIslands = ({ size, fill }: any) => {
 								transform="translate(7.071) rotate(45)"
 							/>
 						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxDeleteIslandsIcon = ({ size, fill }: any) => {
+	return (
+		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="28"
+				height="28"
+				viewBox="0 0 28 28"
+				fill="currentColor"
+			>
+				<g transform="translate(-88 -29)">
+					<g transform="translate(-36 31)">
+						<path
+							d="M12511,6738a1,1,0,0,1-1-1v-1a1,1,0,0,1,1-1h4.983v-1a1,1,0,0,1,1-1H12523a1,1,0,0,1,1,1v1h5a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1Z"
+							transform="translate(-12382 -6733)" />
+						<path
+							d="M1,0H15a1,1,0,0,1,1,1V14a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V1A1,1,0,0,1,1,0Z"
+							transform="translate(130 7)" />
 					</g>
 				</g>
 			</svg>
