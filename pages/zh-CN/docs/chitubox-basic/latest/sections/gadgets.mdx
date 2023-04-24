@@ -1,12 +1,115 @@
 import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import {
+	ChituboxSelectIcon,
+	ChituboxSelectBoxIcon,
+	ChituboxMoveIcon,
+	ChituboxRotateIcon,
+	ChituboxScaleIcon,
+	ChituboxMirrorIcon,
+	ChituboxGlobalIcon,
+	ChituboxLocalIcon,
+	ChituboxResetIcon,
+	ChituboxAddMachine,
+	ChituboxMachineBarMenuIcon,
+	ChituboxDeleteIcon,
+	ChituboxCopyAddIcon,
+	ChituboxRenderDetailedIcon,
+	ChituboxRenderFresnelIcon,
+} from "@/components/icons/Icons";
 
 export const meta = {
-	title: "Gadgets",
+	title: "小工具",
 	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitubox-basic/v2.0.0/gadgets"
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/gadgets",
 };
 
-# Gadgets
+# 小工具
+
+在本节中，我们将介绍一些可以在 CHITUBOX 软件中使用的小工具。
+
+## 工具栏
+
+工具栏位于主窗口左侧。它主要包括选择、移动、旋转、缩放和镜像这五个选项。
+
+### 选择
+
+<ChituboxSelectIcon /> 通过点击的方式选择画面中的模型。
+
+<ChituboxSelectBoxIcon /> 通过框选的方式选择画面中的模型。
+
+### 移动
+
+<ChituboxMoveIcon /> 用于移动所选模型。你也可以通过在移动面板中输入坐标来精准移动模型。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/005-gadgets-move-panel.png"
+		}
+	/>
+</ImageContainer>
+
+-   放在底板上：以模型的最低点为基准点，将所选模型放在底板上。
+
+-   居中：将所选模型居中放置在打印平台上。如果多个模型被选择，则以所选多个模型的组合的中心为准进行居中。
+
+### 旋转
+
+<ChituboxRotateIcon /> 用于旋转所选模型。你也可以通过在移动面板中输入角度来精准旋转模型。
+
+-   组合中心：以所选的多个模型的组合的中心为旋转中心。
+
+-   按面放平：将模型按照你所选择的面放置在打印平台上。
+
+-   自动定向：模型将被 CHITUBOX 自动定向。
+
+### 缩放
+
+<ChituboxScaleIcon /> 用于缩放所选模型。你也可以通过在移动面板中输入大小和比例来精准缩放模型。
+
+<ChituboxGlobalIcon /> 全局坐标：
+
+<ChituboxLocalIcon /> 局部坐标：
+
+<ChituboxResetIcon /> 重置比例为 100%
+
+-   锁定比例：如果启用，所选模型的 X 轴，Y 轴和 Z 轴将按照相同比例进行缩放。
+
+-   支撑直径不变：如果启用，支撑直径将不会被缩放。
+
+### 镜像
+
+<ChituboxMirrorIcon /> 用于镜像平台上的所选模型。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/005-gadgets-mirror-panel.png"
+		}
+	/>
+</ImageContainer>
+
+-   保留原始模型：如果启用，将保留原模型。
+
+## 信息面板
+
+信息面板位于主窗口左下方，它显示了当前设置的简要信息。
+
+## 机器管理栏
+
+机器管理栏位于主窗口的下方，你可以在这里添加、删除、复制机器。
+
+点击添加机器按钮 <ChituboxAddMachine /> 以添加新的机器。
+
+将鼠标悬停在 <ChituboxMachineBarMenuIcon /> 上，你会看到删除机器按钮 <ChituboxDeleteIcon /> 和 复制机器按钮 <ChituboxCopyAddIcon />。
+
+## 渲染模式
+
+渲染模式位于主窗口右上方，包含细节和菲涅尔两种模式可选。
+
+<ChituboxRenderDetailedIcon />
+
+<ChituboxRenderFresnelIcon />
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

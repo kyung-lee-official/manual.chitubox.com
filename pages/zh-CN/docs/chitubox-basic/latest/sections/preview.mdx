@@ -1,11 +1,75 @@
-import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { DocsLayout } from "@/components/docsLayout/docsLayout";
+import { ChituboxDetectIslandsIcon, ChituboxDeleteIslandsIcon } from "@/components/icons/Icons";
 
 export const meta = {
-	title: "Preview",
+	title: "预览",
 	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/preview",
 };
 
-# Preview
+# 预览
+
+## 切片
+
+切片是导出可打印文件前的最后一步，单击右下方的切片按钮进入切片预览。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/011-application-overview-slice-preview001.png"
+		}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/011-application-overview-slice-preview002.png"
+		}
+	/>
+</ImageContainer>
+
+使用切片配置文件面板中选定的打印机配置文件对您的模型进行切片。应用于平台上可打印空间内的所有模型。
+
+<Admonition type="note" title="注意">
+	树脂体积的计算方法是将体素（像素面积 × 层高）相加，算法很简单。
+	然而，这是一个理论值，它可能会受到现实世界中许多其他因素（构建板和模型表面上的树脂残留、树脂挥发性、固化过程中的密度变化等）的影响。
+</Admonition>
+
+## 切片参数编辑
+
+可以在此面版编辑和调整当前需要保存的部分打印相关参数。
+
+<AntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-basic/2.x.x/011-application-overview-slice-preview003.png"
+	}
+/>
+
+## 检测孤岛
+
+点击左上方的检测孤岛按钮 <ChituboxDetectIslandsIcon /> 检测当前切片文件中是否存在不可成功打印的孤岛。
+
+## 删除孤岛
+
+点击删除孤岛按钮 <ChituboxDeleteIslandsIcon /> 可将文件中的孤岛删除，可选择删除当前层孤岛或所有层孤岛。
+
+## 网络发送
+
+<Admonition type="note" title="注意">
+	1. 打印机需要插入一个 U 盘来存储接收到的文件。 
+	1. <b>网络发送</b> 功能要求打印机和电脑在同一局域网下。
+	1. 传输速率受打印机的网络模块限制，大多数打印机的网络模块传输速率大约是 500kBytes/秒，因此对于大文件，不推荐使用 <b>网络发送</b>。
+	1. 目前只有部分打印机支持 **网络发送**，点击 <SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃这里</SpanA> 查看机器兼容性表格。
+</Admonition>
+
+## 保存切片
+
+保存切片文件。
+
+<Admonition type="note" title="注意">
+	对您的模型进行切片后，点击 “保存”，您可以在下拉菜单中选择需要保存的切片格式。
+</Admonition>
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

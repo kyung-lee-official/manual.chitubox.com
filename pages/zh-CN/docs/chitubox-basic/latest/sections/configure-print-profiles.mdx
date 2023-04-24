@@ -1,12 +1,26 @@
 import { DocsLayout } from "@/components/docsLayout/DocsLayout";
 
 export const meta = {
-	title: "Configure Print Profiles",
+	title: "设置打印参数",
 	author: "CHITUBOX Team",
 	pageId: "/zh-CN/chitubox-basic/v2.0.0/configure-print-profiles"
 };
 
-# Configure Print Profiles
+# 设置打印参数
+
+要配置打印参数，你需要先添加一台打印机，如果你还没添加打印机，点击主窗口下方的添加机器按钮 <ChituboxAddMachine /> 添加一台打印机。
+
+一台打印机可以添加多个切片配置文件，你可以在**切片设置列表**管理你的切片配置文件，你可以在这里下载，上传，添加，删除，导入，导出，以及重置你的切片配置文件。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/009-setting-up-configure-printer-parameters001.png"
+		}
+	/>
+</ImageContainer>
+
+单击右下方的切片设置按钮打开切片配置文件窗口。
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
