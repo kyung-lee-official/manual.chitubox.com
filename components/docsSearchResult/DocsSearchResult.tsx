@@ -24,8 +24,8 @@ const DocsSearchResult: React.FC<any> = ({ searchResults }) => {
 						return (
 							<div
 								className="flex justify-start items-center px-6
-                                    font-medium text-lg hover:text-sky-400
-                                    cursor-pointer"
+                                font-medium text-lg hover:text-sky-400
+                                cursor-pointer"
 								key={path}
 								onMouseDown={() => {
 									router.push(`/${path}`);
@@ -44,16 +44,16 @@ const DocsSearchResult: React.FC<any> = ({ searchResults }) => {
 		if (searchResults.length > 0) {
 			return (
 				<div
-					className="static top-10 right-10 w-64
-                        bg-gray-50 dark:bg-gray-700
-                        shadow-lg rounded-lg"
+					className="absolute top-52 left-14 w-64 z-10
+                    bg-gray-50 dark:bg-gray-700
+                    shadow-lg rounded-lg"
 				>
 					{searchResults.map((result: any) => {
 						const { label, path } = result;
 						return (
 							<div
 								className="flex justify-start items-center px-6
-                                    font-medium text-lg hover:text-sky-400"
+                                font-medium text-lg hover:text-sky-400"
 								key={path}
 								onMouseDown={() => {
 									router.push(`/${path}`);
