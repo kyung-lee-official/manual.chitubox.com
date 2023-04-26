@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { animate, motion, useInView } from "framer-motion";
+import { WindowsIcon } from "@/components/icons/Icons";
 
 export const DirectX = () => {
 	const ref = useRef(null);
 	const isInView = useInView(ref, {
-		margin: "0px 0px -350px 0px",
+		margin: "0px 0px -500px 0px",
 		once: true,
 	});
 
@@ -19,14 +20,20 @@ export const DirectX = () => {
 	}, [isInView]);
 
 	return (
-		<motion.img
+		<motion.div
 			ref={ref}
 			id="directx"
-			src={"/images/docs/en-US/chitubox-basic/2.x.x/001_directx.png"}
-			alt="DirectX"
+			className="relative mx-auto my-6 flex justify-center items-center
+            drop-shadow-[0_0_60px_hsla(199.3700787401575,95.4887218045113%,73.92156862745098%,0.9)] rounded-xl"
 			initial={{ x: 100, opacity: 0 }}
-			className="w-[80%] max-w-[400px] mx-auto my-6
-            shadow-[0_0_3rem_0_hsla(100,100%,50%,0.7)] rounded-xl"
-		/>
+		>
+			<WindowsIcon size={192} fill={"#7dd3fc"} />
+			<div
+				className="absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center
+                font-bold text-8xl text-white drop-shadow-2xl opacity-90"
+			>
+				DirectX
+			</div>
+		</motion.div>
 	);
 };

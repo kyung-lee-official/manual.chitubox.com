@@ -502,7 +502,7 @@ export const WindowsIcon = ({ size, fill }: any) => {
 			height={size}
 			width={size}
 			viewBox="0 0 24 24"
-			fill="currentColor"
+			fill={fill ? fill : "currentColor"}
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<path d="m3 5.557 7.357-1.002.004 7.097-7.354.042L3 5.557zm7.354 6.913.006 7.103-7.354-1.011v-6.14l7.348.048zm.892-8.046L21.001 3v8.562l-9.755.077V4.424zm9.758 8.113-.003 8.523-9.755-1.378-.014-7.161 9.772.016z"></path>
@@ -1486,10 +1486,12 @@ export const ChituboxDeleteIslandsIcon = ({ size, fill }: any) => {
 					<g transform="translate(-36 31)">
 						<path
 							d="M12511,6738a1,1,0,0,1-1-1v-1a1,1,0,0,1,1-1h4.983v-1a1,1,0,0,1,1-1H12523a1,1,0,0,1,1,1v1h5a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1Z"
-							transform="translate(-12382 -6733)" />
+							transform="translate(-12382 -6733)"
+						/>
 						<path
 							d="M1,0H15a1,1,0,0,1,1,1V14a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V1A1,1,0,0,1,1,0Z"
-							transform="translate(130 7)" />
+							transform="translate(130 7)"
+						/>
 					</g>
 				</g>
 			</svg>
