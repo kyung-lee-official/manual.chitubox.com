@@ -163,11 +163,27 @@ export const MDXComponent = {
 	// },
 
 	ul: ({ children }: any) => {
-		return <ul>{children}</ul>;
+		return (
+			<ul
+				className="list-inside list-disc my-3
+                [&_>_li_>_ul]:list-inside
+                [&_>_li_>_ul]:pl-4 [&_>_li_>_ul]:my-2
+                [&_>_li_>_ul]:list-[circle]"
+			>
+				{children}
+			</ul>
+		);
 	},
 
 	ol: ({ children }: any) => {
-		return <ol>{children}</ol>;
+		return (
+			<ol
+				className="list-inside list-decimal my-3
+                [&_>_li]:my-2"
+			>
+				{children}
+			</ol>
+		);
 	},
 
 	table: ({ children }: any) => {

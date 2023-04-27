@@ -168,7 +168,7 @@ export const StandardParts = () => {
 
 	useEffect(() => {
 		if (isInView) {
-			animate("#standardParts", { opacity: [0, 1] }, { duration: 3 });
+			animate("#standardParts", { opacity: [0, 1] }, { duration: 2 });
 		}
 	}, [isInView]);
 
@@ -177,9 +177,9 @@ export const StandardParts = () => {
 			ref={ref}
 			id="standardParts"
             initial={{ opacity: 0 }}
-			className="h-48 xl:h-96"
+			className="h-48 xl:h-[480px]"
 		>
-			<Canvas className="h-48 xl:h-96">
+			<Canvas className="h-48 xl:h-[480px]">
 				<CameraAnimation />
 				{/* <OrbitControls makeDefault /> */}
 				<Scene />
