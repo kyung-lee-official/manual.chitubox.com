@@ -113,9 +113,3 @@ export const DocsLayout: React.FC<any> = (props) => {
 		</DocContext.Provider>
 	);
 };
-
-// DocsLayout.defaultProps = {
-// 	defaultTitle: "Default Title",
-// 	defaultKeywords: "default keywords",
-// 	defaultDescription: "default description",
-// };
