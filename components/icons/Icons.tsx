@@ -1587,3 +1587,71 @@ export const ChituboxOthographicIcon = ({ size, fill }: any) => {
 		</span>
 	);
 };
+
+export const ChituboxImportConfigIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill="currentColor"
+			>
+				<g transform="translate(-1740 -167)">
+					<g transform="translate(1742 169)">
+						<g transform="translate(4)">
+							<path
+								d="M267,16H257a1,1,0,0,1-1-1V11h1v4h10V3.207L264.793,1H257V8h-1V1a1,1,0,0,1,1-1h8a.5.5,0,0,1,.354.146l2.5,2.5A.5.5,0,0,1,268,3V15A1,1,0,0,1,267,16Z"
+								transform="translate(-256)" />
+						</g>
+						<g transform="translate(0 5)">
+							<path
+								d="M10.375,325H2.5A2.5,2.5,0,0,1,0,322.5v-2a.5.5,0,0,1,1,0v2A1.5,1.5,0,0,0,2.5,324h7.875a.5.5,0,0,1,0,1Z"
+								transform="translate(0 -320)" />
+						</g>
+						<g transform="translate(7.879 6.882)">
+							<path
+								d="M504.735,445.714a.5.5,0,0,1-.354-.854l1.768-1.768-1.768-1.768a.5.5,0,1,1,.707-.707l2.121,2.121a.5.5,0,0,1,0,.707l-2.121,2.121A.5.5,0,0,1,504.735,445.714Z"
+								transform="translate(-504.235 -440.471)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+
+	);
+};
+
+export const ChituboxExportConfigIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="20"
+				height="20"
+				viewBox="0 0 20 20"
+				fill="currentColor"
+			>
+				<g transform="translate(-1740 -167)">
+					<g transform="translate(1743 169)">
+						<path
+							d="M11,16H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0H9a.5.5,0,0,1,.354.146l2.5,2.5A.5.5,0,0,1,12,3V5H11V3.207L8.793,1H1V15H11V12h1v3A1,1,0,0,1,11,16Z" />
+						<g transform="translate(7 8)">
+							<path
+								d="M448.5,517a.5.5,0,0,1-.5-.5v-2a2.5,2.5,0,0,1,2.5-2.5h5a.5.5,0,0,1,0,1h-5a1.5,1.5,0,0,0-1.5,1.5v2A.5.5,0,0,1,448.5,517Z"
+								transform="translate(-448 -512)" />
+						</g>
+						<g transform="translate(12.879 5.875)">
+							<path d="M824.735,381.242a.5.5,0,0,1-.354-.854l1.768-1.768-1.768-1.768a.5.5,0,0,1,.707-.707l2.121,2.121a.5.5,0,0,1,0,.707l-2.121,2.121A.5.5,0,0,1,824.735,381.242Z"
+								transform="translate(-824.235 -376)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+

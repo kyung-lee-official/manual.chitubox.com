@@ -1,9 +1,10 @@
 import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { ChituboxAddMachine } from "@/components/icons/Icons";
 
 export const meta = {
 	title: "设置打印参数",
 	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitubox-basic/v2.0.0/configure-print-profiles"
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/configure-print-profiles",
 };
 
 # 设置打印参数
@@ -15,12 +16,31 @@ export const meta = {
 <ImageContainer>
 	<AntdImage
 		src={
-			"/images/docs/zh-CN/chitubox-pro/1.x.x/009-setting-up-configure-printer-parameters001.png"
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/009-setting-up-configure-printer-parameters001.png"
 		}
 	/>
 </ImageContainer>
 
-单击右下方的切片设置按钮打开切片配置文件窗口。
+单击主窗口右下方的 “切片设置” 按钮打开切片配置文件窗口。
+
+## 切片设置
+
+### 机器
+
+| 参数         | 说明                                                                             |
+| ------------ | -------------------------------------------------------------------------------- |
+| 名称         | 当前打印机的名称                                                                 |
+| 机器类型     | 机器的类型说明                                                                   |
+| 镜像         | 镜像模式选择                                                                     |
+| 分辨率       | X: X 轴方向的像素个数 <br/> Y: Y 轴方向的像素个数                                |
+| 尺寸         | X 轴方向的最大打印尺寸 <br/> Y 轴方向的最大打印尺寸 <br/> Z 轴方向的最大打印尺寸 |
+| 锁定比例     | X 轴和 Y 轴的尺寸和分辨率的比值相等                                              |
+| 构建区域偏移 | 设定打印区域边界线                                                               |
+
+### 树脂
+### 打印
+### GCode
+### 高级
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
