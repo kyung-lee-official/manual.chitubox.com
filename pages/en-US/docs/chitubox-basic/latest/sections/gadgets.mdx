@@ -15,6 +15,9 @@ import {
 	ChituboxCopyAddIcon,
 	ChituboxRenderDetailedIcon,
 	ChituboxRenderFresnelIcon,
+	ChituboxHomeIcon,
+	ChituboxPerspectiveIcon,
+	ChituboxOthographicIcon,
 } from "@/components/icons/Icons";
 
 export const meta = {
@@ -115,13 +118,50 @@ Hover the mouse cursor on the menu icon <ChituboxMachineBarMenuIcon />, you can 
 
 The render mode is located at the upper right of the main window. It contains two modes: Details and Fresnel.
 
-<ChituboxRenderDetailedIcon />
+<ChituboxRenderDetailedIcon /> In Details mode, the model shows more details on
+the surface.
 
-<ChituboxRenderFresnelIcon />
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-details.png"}
+	/>
+</ImageContainer>
+
+<ChituboxRenderFresnelIcon /> In Fresnel mode, the model will appear smoother on
+the surface.
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-fresnel.png"}
+	/>
+</ImageContainer>
 
 ## Viewport Gizmos
 
+The Viewport Gizmos is located at the upper right of the main window, it provides an intuitive way to quickly manipulate the view and enables users to quickly change the angle or perspective of the viewport, making it easy to check the positions of objects relative to each other.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadget-viewport_gizmo.svg"
+		}
+		width={200}
+	/>
+</ImageContainer>
+
+The Home <ChituboxHomeIcon /> icon and the Perspective <ChituboxPerspectiveIcon /> / Orthographic <ChituboxOthographicIcon /> icons are located at the upper-right of the main window beside the viewport gizmos.
+
+The Home icon allows users to reset the viewport to the default view. The Perspective/Orthographic icon allows users to switch between Perspective and Orthographic views. Perspective mode provides a more realistic frustum view of the scene, while Orthographic mode gives users a flat view of the scene, it allows users to easily assess the position of objects on the build plate and make adjustments as needed.
+
 ## Slider
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadget-slider.gif"}
+	/>
+</ImageContainer>
+
+The slider is located at the right of the main window which is used to preview the sectional area of models (pre-sliced) and layers of models (post-sliced). This feature allows users to preview the various sections and layers of the 3D model before it is sent to the printer. The slider has two buttons on the top and bottom separately, which are used to animate the slider position. The reset button on the bottom will reset the slider position to the default value. The slider component can help users assess the quality of the 3D model before it is sent to the printer, allowing them to make adjustments as needed.
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

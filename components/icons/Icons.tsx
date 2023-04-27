@@ -602,7 +602,7 @@ export const RmaIcon = ({ size, fill }: any) => {
 
 export const ChituboxMenu = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				height={size}
 				width={size}
@@ -629,7 +629,7 @@ export const ChituboxMenu = ({ size, fill }: any) => {
 
 export const ChituboxAddMachine = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="20"
@@ -660,7 +660,7 @@ export const ChituboxAddMachine = ({ size, fill }: any) => {
 
 export const ChituboxSupport = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="24"
@@ -709,7 +709,7 @@ export const ChituboxSupport = ({ size, fill }: any) => {
 
 export const ChituboxFileConfig = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="24"
@@ -733,7 +733,7 @@ export const ChituboxFileConfig = ({ size, fill }: any) => {
 
 export const ChituboxSelectIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="24"
@@ -761,7 +761,7 @@ export const ChituboxSelectIcon = ({ size, fill }: any) => {
 
 export const ChituboxSelectBoxIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				width="24"
 				height="24"
@@ -795,7 +795,7 @@ export const ChituboxSelectBoxIcon = ({ size, fill }: any) => {
 
 export const ChituboxMoveIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="24"
@@ -862,7 +862,7 @@ export const ChituboxMoveIcon = ({ size, fill }: any) => {
 
 export const ChituboxRotateIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="24"
@@ -894,7 +894,7 @@ export const ChituboxRotateIcon = ({ size, fill }: any) => {
 
 export const ChituboxScaleIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="24"
@@ -949,7 +949,7 @@ export const ChituboxScaleIcon = ({ size, fill }: any) => {
 
 export const ChituboxMirrorIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="24"
@@ -1016,7 +1016,7 @@ export const ChituboxMirrorIcon = ({ size, fill }: any) => {
 
 export const ChituboxCheckboxIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				viewBox="0 0 24 24"
 				height="20"
@@ -1035,7 +1035,7 @@ export const ChituboxCheckboxIcon = ({ size, fill }: any) => {
 
 export const ChituboxEyeIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				viewBox="0 0 20 20"
 				width="20"
@@ -1057,7 +1057,7 @@ export const ChituboxEyeIcon = ({ size, fill }: any) => {
 
 export const ChituboxRulerIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="20"
@@ -1116,7 +1116,7 @@ export const ChituboxRulerIcon = ({ size, fill }: any) => {
 
 export const ChituboxDeleteIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				width="20"
 				height="20"
@@ -1156,7 +1156,7 @@ export const ChituboxDeleteIcon = ({ size, fill }: any) => {
 
 export const ChituboxGlobalIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="20"
@@ -1199,7 +1199,7 @@ export const ChituboxGlobalIcon = ({ size, fill }: any) => {
 
 export const ChituboxLocalIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="20"
@@ -1242,7 +1242,7 @@ export const ChituboxLocalIcon = ({ size, fill }: any) => {
 
 export const ChituboxResetIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="20"
@@ -1271,7 +1271,7 @@ export const ChituboxResetIcon = ({ size, fill }: any) => {
 
 export const ChituboxMachineBarMenuIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="20"
@@ -1305,7 +1305,7 @@ export const ChituboxMachineBarMenuIcon = ({ size, fill }: any) => {
 
 export const ChituboxCopyAddIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="20"
@@ -1334,7 +1334,7 @@ export const ChituboxCopyAddIcon = ({ size, fill }: any) => {
 
 export const ChituboxRenderDetailedIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="20"
@@ -1355,7 +1355,7 @@ export const ChituboxRenderDetailedIcon = ({ size, fill }: any) => {
 
 export const ChituboxRenderFresnelIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="20"
@@ -1423,7 +1423,7 @@ export const ChituboxRenderFresnelIcon = ({ size, fill }: any) => {
 
 export const ChituboxDetectIslandsIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="28"
@@ -1474,7 +1474,7 @@ export const ChituboxDetectIslandsIcon = ({ size, fill }: any) => {
 
 export const ChituboxDeleteIslandsIcon = ({ size, fill }: any) => {
 	return (
-		<span style={{ margin: "0 0.3rem", verticalAlign: "middle" }}>
+		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="28"
@@ -1493,6 +1493,95 @@ export const ChituboxDeleteIslandsIcon = ({ size, fill }: any) => {
 							transform="translate(130 7)"
 						/>
 					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxHomeIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="currentColor"
+			>
+				<g transform="translate(2 2)">
+					<path d="M19.652,8.822,10.752.307a1.106,1.106,0,0,0-1.532,0L.346,8.824a1.118,1.118,0,0,0,.767,1.926H3V17a2,2,0,0,0,2,2H15a2,2,0,0,0,2-2V10.75h1.887A1.118,1.118,0,0,0,19.652,8.822ZM10,15c-2.761,0-5-1.567-5-3.5S7.239,8,10,8s5,1.567,5,3.5S12.762,15,10,15Z" />
+					<ellipse
+						cx="1.5"
+						cy="1.5"
+						rx="1.5"
+						ry="1.5"
+						transform="translate(8.5 10)"
+					/>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxPerspectiveIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+			>
+				<g transform="translate(-61 -61)">
+					<rect
+						width="13"
+						height="13"
+						transform="translate(64 69)"
+						className="fill-gray-400"
+					/>
+					<path d="M77,69H64l9-5h9Z" className="fill-gray-300" />
+					<path
+						d="M901,64l-5,5V82l5-9Z"
+						transform="translate(-819)"
+						className="fill-gray-500"
+					/>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxOthographicIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="currentColor"
+			>
+				<g transform="translate(-61 -61)">
+					<g transform="translate(64 69)">
+						<rect
+							width="13"
+							height="13"
+							className="fill-gray-400"
+						/>
+					</g>
+					<g transform="translate(64 64)">
+						<path
+							d="M77,69H64l5-5H82Z"
+							transform="translate(-64 -64)"
+							className="fill-gray-300"
+						/>
+					</g>
+					<path
+						d="M896,69l5-5V77l-5,5Z"
+						transform="translate(-819)"
+						className="fill-gray-500"
+					/>
 				</g>
 			</svg>
 		</span>
