@@ -20,11 +20,13 @@ export const ImageComparison: React.FC<any> = ({
 					</picture>
 				</div>
 			</div>
-			<div className="flex gap-4">
+			<div className="flex gap-4 text-gray-500 dark:text-gray-400">
 				<div className="flex-1 p-4 text-center border-t-[1px] border-t-gray-500">
 					{text1}
 				</div>
-				<div>{text2}</div>
+				<div className="flex-1 p-4 text-center border-t-[1px] border-t-gray-500">
+					{text2}
+				</div>
 			</div>
 		</div>
 	);

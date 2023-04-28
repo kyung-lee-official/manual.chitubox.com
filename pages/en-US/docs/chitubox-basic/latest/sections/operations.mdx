@@ -1,4 +1,5 @@
 import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { ImageComparison } from "@/components/imageComparison/ImageComparison";
 import {
 	ChituboxOpenIcon,
 	ChituboxSaveIcon,
@@ -94,15 +95,42 @@ plate, and near the Y side of the build plate.
 
 ### Hollow Parameters Explained
 
-1. Wall Thickness: wall thickness determines the overall thickness of the walls.
-1. Precision: precision determines the number of faces generated on the inside wall as per the given percentage.
-1. Infill Structure: infill structure determines the type of pattern used for the infill.
-1. Infill Density: infill density determines how dense the infill will be.
-1. Animation: enabling this option will show the hollowing process.
+-   **Wall Thickness**: wall thickness determines the overall thickness of the walls.
+-   **Precision**: precision determines the number of faces generated on the inside wall as per the given percentage.
+    <ImageContainer>
+    	<ImageComparison
+    		img1Src={
+    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-low-precision.png"
+    		}
+    		text1={"Low Precision"}
+    		img2Src={
+    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-high-precision.png"
+    		}
+    		text2={"High Precision"}
+    	/>
+    </ImageContainer>
+-   **Infill Structure**: infill structure determines the type of pattern used for the infill.
+-   **Infill Density**: infill density determines how dense the infill will be.
+-   **Animation**: enabling this option will show the hollowing process.
 
 ## Dig Hole
 
-<ChituboxDigHoleIcon />
+<ChituboxDigHoleIcon /> The "Dig Hole" function allows users to create holes of
+designated shape or size in 3D models with a few simple clicks.
+
+### Dig Hole Parameters Explained
+
+-   **Shape**: the shape of the hole, available shapes are Circular, Hexagon, and Square.
+-   **Diameter**: the diameter of the hole.
+-   **Depth**: the maximum thickness of the wall that the hole can dig through.
+
+    <Admonition type="note">
+    	This function is designed to penetrate walls of models, so it will not
+    	dig a non-penetrate hole as per the depth you set.
+    </Admonition>
+
+-   **Perpendicular**: digging angle perpendicular to screen or to model.
+-   **Keep the cork**: whether to Keep the cork or not.
 
 ## Repair
 
@@ -115,7 +143,18 @@ plate, and near the Y side of the build plate.
 
 ## Standard Parts
 
-<ChituboxStandardPartsIcon />
+<ChituboxStandardPartsIcon /> The Standard Parts provides users with a library
+of pre-made 3D models that can be quickly and easily imported into their
+project, includes a wide selection of Basic Geometry, Testing models, Tool
+models, Mechanical Parts, and more.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-standard-parts.png"
+		}
+	/>
+</ImageContainer>
 
 ## Resin Material Alliance
 
@@ -123,7 +162,8 @@ plate, and near the Y side of the build plate.
 
 ## Login
 
-<ChituboxSignInIcon />
+<ChituboxSignInIcon /> The Login option allows users to login to their CHITUBOX
+account. Once logged in, users can access their settings from cloud.
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

@@ -165,8 +165,8 @@ export const MDXComponent = {
 	ul: ({ children }: any) => {
 		return (
 			<ul
-				className="list-inside list-disc my-3
-                [&_>_li_>_ul]:list-inside
+				className="list-outside list-disc my-3 pl-4
+                [&_>_li_>_ul]:list-outside
                 [&_>_li_>_ul]:pl-4 [&_>_li_>_ul]:my-2
                 [&_>_li_>_ul]:list-[circle]"
 			>
@@ -178,7 +178,7 @@ export const MDXComponent = {
 	ol: ({ children }: any) => {
 		return (
 			<ol
-				className="list-inside list-decimal my-3
+				className="list-outside list-decimal my-3 pl-4
                 [&_>_li]:my-2"
 			>
 				{children}
