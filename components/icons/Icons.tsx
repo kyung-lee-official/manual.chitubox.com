@@ -1472,33 +1472,6 @@ export const ChituboxDetectIslandsIcon = ({ size, fill }: any) => {
 	);
 };
 
-export const ChituboxDeleteIslandsIcon = ({ size, fill }: any) => {
-	return (
-		<span className="inline-block align-middle">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="28"
-				height="28"
-				viewBox="0 0 28 28"
-				fill="currentColor"
-			>
-				<g transform="translate(-88 -29)">
-					<g transform="translate(-36 31)">
-						<path
-							d="M12511,6738a1,1,0,0,1-1-1v-1a1,1,0,0,1,1-1h4.983v-1a1,1,0,0,1,1-1H12523a1,1,0,0,1,1,1v1h5a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1Z"
-							transform="translate(-12382 -6733)"
-						/>
-						<path
-							d="M1,0H15a1,1,0,0,1,1,1V14a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V1A1,1,0,0,1,1,0Z"
-							transform="translate(130 7)"
-						/>
-					</g>
-				</g>
-			</svg>
-		</span>
-	);
-};
-
 export const ChituboxHomeIcon = ({ size, fill }: any) => {
 	return (
 		<span className="inline-block align-middle">
@@ -1593,7 +1566,7 @@ export const ChituboxOpenIcon = ({ size, fill }: any) => {
 		<span className="inline-block align-middle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				width="36   "
+				width="36"
 				height="36"
 				viewBox="0 0 28 28"
 			>
@@ -1998,12 +1971,14 @@ export const ChituboxImportConfigIcon = ({ size, fill }: any) => {
 						<g transform="translate(4)">
 							<path
 								d="M267,16H257a1,1,0,0,1-1-1V11h1v4h10V3.207L264.793,1H257V8h-1V1a1,1,0,0,1,1-1h8a.5.5,0,0,1,.354.146l2.5,2.5A.5.5,0,0,1,268,3V15A1,1,0,0,1,267,16Z"
-								transform="translate(-256)" />
+								transform="translate(-256)"
+							/>
 						</g>
 						<g transform="translate(0 5)">
 							<path
 								d="M10.375,325H2.5A2.5,2.5,0,0,1,0,322.5v-2a.5.5,0,0,1,1,0v2A1.5,1.5,0,0,0,2.5,324h7.875a.5.5,0,0,1,0,1Z"
-								transform="translate(0 -320)" />
+								transform="translate(0 -320)"
+							/>
 						</g>
 						<g transform="translate(7.879 6.882)">
 							<path
@@ -2015,7 +1990,6 @@ export const ChituboxImportConfigIcon = ({ size, fill }: any) => {
 				</g>
 			</svg>
 		</span>
-
 	);
 };
 
@@ -2031,15 +2005,16 @@ export const ChituboxExportConfigIcon = ({ size, fill }: any) => {
 			>
 				<g transform="translate(-1740 -167)">
 					<g transform="translate(1743 169)">
-						<path
-							d="M11,16H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0H9a.5.5,0,0,1,.354.146l2.5,2.5A.5.5,0,0,1,12,3V5H11V3.207L8.793,1H1V15H11V12h1v3A1,1,0,0,1,11,16Z" />
+						<path d="M11,16H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0H9a.5.5,0,0,1,.354.146l2.5,2.5A.5.5,0,0,1,12,3V5H11V3.207L8.793,1H1V15H11V12h1v3A1,1,0,0,1,11,16Z" />
 						<g transform="translate(7 8)">
 							<path
 								d="M448.5,517a.5.5,0,0,1-.5-.5v-2a2.5,2.5,0,0,1,2.5-2.5h5a.5.5,0,0,1,0,1h-5a1.5,1.5,0,0,0-1.5,1.5v2A.5.5,0,0,1,448.5,517Z"
-								transform="translate(-448 -512)" />
+								transform="translate(-448 -512)"
+							/>
 						</g>
 						<g transform="translate(12.879 5.875)">
-							<path d="M824.735,381.242a.5.5,0,0,1-.354-.854l1.768-1.768-1.768-1.768a.5.5,0,0,1,.707-.707l2.121,2.121a.5.5,0,0,1,0,.707l-2.121,2.121A.5.5,0,0,1,824.735,381.242Z"
+							<path
+								d="M824.735,381.242a.5.5,0,0,1-.354-.854l1.768-1.768-1.768-1.768a.5.5,0,0,1,.707-.707l2.121,2.121a.5.5,0,0,1,0,.707l-2.121,2.121A.5.5,0,0,1,824.735,381.242Z"
 								transform="translate(-824.235 -376)"
 							/>
 						</g>
@@ -2050,3 +2025,126 @@ export const ChituboxExportConfigIcon = ({ size, fill }: any) => {
 	);
 };
 
+export const ChituboxRefreshIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="currentColor"
+			>
+				<g transform="translate(-748 -62)">
+					<g transform="translate(750 64)">
+						<g transform="translate(0 2.292)">
+							<path
+								d="M10,164.375a10,10,0,0,1-6.667-17.453,1,1,0,1,1,1.334,1.49A8,8,0,0,0,10,162.375a1,1,0,0,1,0,2Z"
+								transform="translate(0 -146.667)"
+							/>
+						</g>
+						<g transform="translate(9)">
+							<path
+								d="M583,17.708a1,1,0,0,1-.667-1.745A8,8,0,0,0,577,2a1,1,0,0,1,0-2,10,10,0,0,1,6.667,17.453A1,1,0,0,1,583,17.708Z"
+								transform="translate(-576)"
+							/>
+						</g>
+						<g transform="translate(14 12.5)">
+							<path
+								d="M901,806h-4a1,1,0,0,1-1-1v-4a1,1,0,0,1,2,0v3h3a1,1,0,0,1,0,2Z"
+								transform="translate(-896 -800)"
+							/>
+						</g>
+						<g transform="translate(0 1.5)">
+							<path
+								d="M5,102a1,1,0,0,1-1-1V98H1a1,1,0,0,1,0-2H5a1,1,0,0,1,1,1v4A1,1,0,0,1,5,102Z"
+								transform="translate(0 -96)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxIslandsDetectionIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="36"
+				height="36"
+				viewBox="0 0 28 28"
+				className="fill-gray-400"
+			>
+				<g transform="translate(-88 -29)">
+					<g transform="translate(27 -32)">
+						<g transform="translate(64 64)">
+							<path
+								d="M65,72a1,1,0,0,1-1-1V65a1,1,0,0,1,1-1h6a1,1,0,0,1,0,2H66v5A1,1,0,0,1,65,72Z"
+								transform="translate(-64 -64)"
+							/>
+						</g>
+						<g transform="translate(78 64)">
+							<path
+								d="M967,72a1,1,0,0,1-1-1V66h-5a1,1,0,0,1,0-2h6a1,1,0,0,1,1,1v6A1,1,0,0,1,967,72Z"
+								transform="translate(-960 -64)"
+							/>
+						</g>
+						<g transform="translate(78 78)">
+							<path
+								d="M967,968h-6a1,1,0,0,1,0-2h5v-5a1,1,0,0,1,2,0v6A1,1,0,0,1,967,968Z"
+								transform="translate(-960 -960)"
+							/>
+						</g>
+						<g transform="translate(64 78)">
+							<path
+								d="M71,968H65a1,1,0,0,1-1-1v-6a1,1,0,0,1,2,0v5h5a1,1,0,0,1,0,2Z"
+								transform="translate(-64 -960)"
+							/>
+						</g>
+						<g transform="translate(67.929 67.929)">
+							<rect
+								width="10"
+								height="10"
+								rx="1"
+								transform="translate(7.071) rotate(45)"
+								className="fill-gray-300"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxDeleteIslandsIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="36"
+				height="36"
+				viewBox="0 0 28 28"
+				fill="currentColor"
+			>
+				<g transform="translate(-88 -29)">
+					<g transform="translate(-36 31)">
+						<path
+							d="M12511,6738a1,1,0,0,1-1-1v-1a1,1,0,0,1,1-1h4.983v-1a1,1,0,0,1,1-1H12523a1,1,0,0,1,1,1v1h5a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1Z"
+							transform="translate(-12382 -6733)"
+							className="fill-gray-400"
+						/>
+						<path
+							d="M1,0H15a1,1,0,0,1,1,1V14a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V1A1,1,0,0,1,1,0Z"
+							transform="translate(130 7)"
+							className="fill-gray-300"
+						/>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
