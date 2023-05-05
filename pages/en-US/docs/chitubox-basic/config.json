@@ -43,8 +43,8 @@
 							"label": "Risk Detection"
 						},
 						{
-							"item": "configure-print-profiles",
-							"label": "Configure Print Profiles"
+							"item": "configure-print-parameters",
+							"label": "Configure Print Parameters"
 						},
 						{
 							"item": "configure-support-parameters",

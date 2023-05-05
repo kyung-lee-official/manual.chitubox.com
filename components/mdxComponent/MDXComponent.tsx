@@ -43,7 +43,7 @@ const SpanText: React.FC<any> = (props) => {
 const SpanA: React.FC<any> = (props) => {
 	const { children, href } = props;
 	return (
-		<a href={href} className="text-blue-500 dark:text-sky-400">
+		<a href={href} className="text-blue-500 dark:text-sky-400 font-medium">
 			{children}
 		</a>
 	);
@@ -52,9 +52,12 @@ const SpanA: React.FC<any> = (props) => {
 const NextLink: React.FC<any> = (props) => {
 	const { children, href } = props;
 	return (
-		<strong style={{ color: "#00aeff" }}>
-			<Link href={href}>{children}</Link>
-		</strong>
+		<Link
+			href={href}
+			className="text-blue-500 dark:text-sky-400 font-medium"
+		>
+			{children}
+		</Link>
 	);
 };
 
@@ -73,7 +76,11 @@ const Blockquote: React.FC<any> = (props) => {
 
 const InlineCode = (props: any) => {
 	const { children } = props;
-	return <code className="px-1 border-2 rounded">{children}</code>;
+	return (
+		<code className="px-1 border-2 rounded border-gray-400">
+			{children}
+		</code>
+	);
 };
 
 const AntdImage: React.FC<any> = (props) => {
