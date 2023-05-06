@@ -2527,3 +2527,256 @@ export const ChituboxProfileLinkIcon = ({ size, fill }: any) => {
 		</span>
 	);
 };
+
+export const ChituboxAddSupportIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				className="fill-gray-600 dark:fill-gray-300"
+			>
+				<g transform="translate(-18 -138)">
+					<g transform="translate(20 140)">
+						<g transform="translate(0 18)">
+							<path
+								d="M13,1154H1a1,1,0,0,1,0-2H13a1,1,0,0,1,0,2Z"
+								transform="translate(0 -1152)"
+							/>
+						</g>
+						<g transform="translate(5 5)">
+							<path
+								d="M324,334h-4V322a2,2,0,0,1,2-2h0a2,2,0,0,1,2,2Z"
+								transform="translate(-320 -320)"
+							/>
+						</g>
+						<path d="M8.236,5.428,1.359,0,0,1.234,5,7.25Z" />
+						<g transform="translate(10 4)">
+							<path
+								d="M649,258h-8a1,1,0,0,1,0-2h8a1,1,0,0,1,0,2Z"
+								transform="translate(-640 -256)"
+							/>
+						</g>
+						<g transform="translate(14)">
+							<path
+								d="M897,10a1,1,0,0,1-1-1V1a1,1,0,0,1,2,0V9A1,1,0,0,1,897,10Z"
+								transform="translate(-896)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxDeleteSupportIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				className="fill-gray-600 dark:fill-gray-300"
+			>
+				<g transform="translate(-18 -138)">
+					<g transform="translate(20 140)">
+						<g transform="translate(0 18)">
+							<path
+								d="M13,1154H1a1,1,0,0,1,0-2H13a1,1,0,0,1,0,2Z"
+								transform="translate(0 -1152)"
+							/>
+						</g>
+						<g transform="translate(5 5)">
+							<path
+								d="M324,334h-4V322a2,2,0,0,1,2-2h0a2,2,0,0,1,2,2Z"
+								transform="translate(-320 -320)"
+							/>
+						</g>
+						<path d="M8.236,5.428,1.359,0,0,1.234,5,7.25Z" />
+						<g transform="translate(10 2)">
+							<path
+								d="M649,130h-8a1,1,0,0,1,0-2h8a1,1,0,0,1,0,2Z"
+								transform="translate(-640 -128)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxEditSupportIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				className="fill-gray-600 dark:fill-gray-300"
+			>
+				<g transform="translate(-18 -138)">
+					<g transform="translate(20 140.002)">
+						<g transform="translate(0 17.998)">
+							<path
+								d="M13,1154H1a1,1,0,0,1,0-2H13a1,1,0,0,1,0,2Z"
+								transform="translate(0 -1152)"
+							/>
+						</g>
+						<g transform="translate(5 4.998)">
+							<path
+								d="M324,334h-4V322a2,2,0,0,1,2-2h0a2,2,0,0,1,2,2Z"
+								transform="translate(-320 -320)"
+							/>
+						</g>
+						<g transform="translate(0 -0.002)">
+							<path d="M8.236,5.428,1.359,0,0,1.234,5,7.25Z" />
+						</g>
+						<g transform="translate(10 -0.002)">
+							<path
+								d="M649,10h-8a1,1,0,0,1-1-1V1a1,1,0,0,1,1-1h4a1,1,0,1,1,0,2h-3V8h6V6a1,1,0,1,1,2,0V9A1,1,0,0,1,649,10Z"
+								transform="translate(-640)"
+							/>
+						</g>
+						<g transform="translate(14 -0.002)">
+							<path
+								d="M897,7a1,1,0,0,1-.78-1.625l4-5a1,1,0,1,1,1.562,1.249l-4,5A1,1,0,0,1,897,7Z"
+								transform="translate(-895.998 0.002)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxSupportDisplayAllIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				className="fill-gray-600 dark:fill-gray-50"
+			>
+				<g transform="translate(-18 -138)">
+					<g transform="translate(-169 140)">
+						<g transform="translate(192 18)">
+							<path
+								d="M205,1154H193a1,1,0,0,1,0-2h12a1,1,0,0,1,0,2Z"
+								transform="translate(-192 -1152)"
+							/>
+						</g>
+						<g transform="translate(197 5)">
+							<path
+								d="M516,334h-4V322a2,2,0,0,1,2-2h0a2,2,0,0,1,2,2Z"
+								transform="translate(-512 -320)"
+							/>
+						</g>
+						<g transform="translate(192)">
+							<path
+								d="M200.27,5.449,193.359,0,192,1.234l5.5,6.809a1.919,1.919,0,0,0,2.9.3h0A1.919,1.919,0,0,0,200.27,5.449Z"
+								transform="translate(-192)"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxSupportDisplayTopIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				className="fill-gray-400"
+			>
+				<g
+					xmlns="http://www.w3.org/2000/svg"
+					transform="translate(-18 -138)"
+				>
+					<g transform="translate(-169 140)">
+						<g transform="translate(192 18)">
+							<path
+								d="M205,1154H193a1,1,0,0,1,0-2h12a1,1,0,0,1,0,2Z"
+								transform="translate(-192 -1152)"
+							/>
+						</g>
+						<g transform="translate(197 5)">
+							<path
+								d="M516,334h-4V322a2,2,0,0,1,2-2h0a2,2,0,0,1,2,2Z"
+								transform="translate(-512 -320)"
+							/>
+						</g>
+						<g transform="translate(192)">
+							<path
+								d="M200.27,5.449,193.359,0,192,1.234l5.5,6.809a1.919,1.919,0,0,0,2.9.3h0A1.919,1.919,0,0,0,200.27,5.449Z"
+								transform="translate(-192)"
+								className="fill-gray-600 dark:fill-gray-50"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};
+
+export const ChituboxSupportDisplayTipIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				className="fill-gray-400"
+			>
+				<g
+					xmlns="http://www.w3.org/2000/svg"
+					transform="translate(-18 -138)"
+				>
+					<g transform="translate(-169 140)">
+						<g transform="translate(192 18)">
+							<path
+								d="M205,1154H193a1,1,0,0,1,0-2h12a1,1,0,0,1,0,2Z"
+								transform="translate(-192 -1152)"
+							/>
+						</g>
+						<g transform="translate(197 5)">
+							<path
+								d="M516,334h-4V322a2,2,0,0,1,2-2h0a2,2,0,0,1,2,2Z"
+								transform="translate(-512 -320)"
+							/>
+						</g>
+						<g transform="translate(192)">
+							<path
+								d="M200.27,5.449,193.359,0,192,1.234l5.5,6.809a1.919,1.919,0,0,0,2.9.3h0A1.919,1.919,0,0,0,200.27,5.449Z"
+								transform="translate(-192)"
+							/>
+						</g>
+						<g transform="translate(192)">
+							<path
+								d="M192.85,2.287,192,1.234,193.359,0l.984.776a1.069,1.069,0,0,1,.124,1.564h0A1.069,1.069,0,0,1,192.85,2.287Z"
+								transform="translate(-192)"
+								className="fill-gray-600 dark:fill-gray-50"
+							/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
+	);
+};

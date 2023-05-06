@@ -21,7 +21,7 @@ export const Rma = () => {
 	}, [isInView]);
 
 	return (
-		<ImageContainer justifyContent="center">
+		<ImageContainer className={"justify-center"}>
 			<motion.div
 				ref={ref}
 				id="rmaIcon"
