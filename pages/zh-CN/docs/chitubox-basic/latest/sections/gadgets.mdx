@@ -13,8 +13,15 @@ import {
 	ChituboxMachineBarMenuIcon,
 	ChituboxDeleteIcon,
 	ChituboxCopyAddIcon,
+	ChituboxSupport,
+	ChituboxSupportDisplayAllIcon,
+	ChituboxSupportDisplayTopIcon,
+	ChituboxSupportDisplayTipIcon,
 	ChituboxRenderDetailedIcon,
 	ChituboxRenderFresnelIcon,
+	ChituboxHomeIcon,
+	ChituboxPerspectiveIcon,
+	ChituboxOthographicIcon,
 } from "@/components/icons/Icons";
 
 export const meta = {
@@ -103,13 +110,87 @@ export const meta = {
 
 将鼠标悬停在 <ChituboxMachineBarMenuIcon /> 上，你会看到删除机器按钮 <ChituboxDeleteIcon /> 和 复制机器按钮 <ChituboxCopyAddIcon />。
 
+## 支撑显示模式
+
+点击 <ChituboxSupport /> 切换到支持视图。 有 3 个按钮允许您在不同的支撑显示模式之间切换。
+
+<ChituboxSupportDisplayAllIcon /> 显示完整的支撑。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-all.png"
+		}
+	/>
+</ImageContainer>
+
+<ChituboxSupportDisplayTopIcon /> 显示支撑顶部。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-top.png"
+		}
+	/>
+</ImageContainer>
+
+<ChituboxSupportDisplayTipIcon /> 显示支撑尖端。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-tip.png"
+		}
+	/>
+</ImageContainer>
+
 ## 渲染模式
 
-渲染模式位于主窗口右上方，包含细节和菲涅尔两种模式可选。
+渲染模式位于主窗口的右上角。 它包含两种模式：细节和菲涅耳。
 
-<ChituboxRenderDetailedIcon />
+<ChituboxRenderDetailedIcon /> 在细节模式下，模型显示更多表面细节。
 
-<ChituboxRenderFresnelIcon />
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-details.png"}
+	/>
+</ImageContainer>
+
+<ChituboxRenderFresnelIcon /> 在菲涅尔模式下，模型在表面上会显得更加平滑。
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-fresnel.png"}
+	/>
+</ImageContainer>
+
+## 视窗小工具
+
+视窗小工具位于主窗口的右上方，它提供了一种快速操作视图的直观方法，使用户能够快速改变视窗的角度或视角，便于检查对象之间的相对位置。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadget-viewport_gizmo.svg"
+		}
+		width={200}
+	/>
+</ImageContainer>
+
+<ChituboxHomeIcon /> 图标和透视 <ChituboxPerspectiveIcon /> /
+正射 <ChituboxOthographicIcon /> 图标位于主窗口的右上方，在视窗小工具旁边。
+
+主页图标允许用户将视窗重置为默认视图。透视/正射图标允许用户在透视和正射视图之间切换。透视模式提供了一个更真实的场景地壳视图，而正射模式则为用户提供了一个场景的平面视图，它允许用户轻松地评估物体在构建板上的位置并根据需要进行调整。
+
+## 滑动条
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadget-slider.gif"}
+	/>
+</ImageContainer>
+
+滑块位于主窗口的右侧，用于预览模型的截面面积（预切片）和模型的层数（后切片）。该功能允许用户在3D模型被发送到打印机之前预览其各个部分和层。滑块在顶部和底部分别有两个按钮，用于对滑块位置进行动画处理。底部的重置按钮将把滑块位置重置为默认值。滑块组件可以帮助用户在3D模型被送到打印机之前评估其质量，使他们能够根据需要进行调整。
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
