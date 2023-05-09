@@ -1,0 +1,31 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import {
+	ChituboxCheckboxIcon,
+	ChituboxEyeIcon,
+	ChituboxRulerIcon,
+	ChituboxDeleteIcon,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "文件列表",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/file-list",
+};
+
+# 文件列表
+
+所有加载完成的文件都会显示在文件列表中。你可以同时选择多个文件，还可以通过单击全选按钮来选择所有文件。
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/zh-CN/chitubox-basic/2.x.x/007-file-list-panel.png"}
+	/>
+</ImageContainer>
+
+复选框图标 <ChituboxCheckboxIcon /> 允许您选择该文件。
+
+眼睛图标 <ChituboxEyeIcon /> 允许您隐藏文件。添加图标允许您添加文件。
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);
