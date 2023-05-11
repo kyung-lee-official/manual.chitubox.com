@@ -10,7 +10,8 @@
 		"searchResult": "个结果"
 	},
 	"docContent": {
-		"onThisPage": "本页目录"
+		"onThisPage": "本页目录",
+		"notLatest": "您正在阅读的不是最新版本的文档。"
 	},
 	"footer": {
 		"relevantDocs": "相关文档",

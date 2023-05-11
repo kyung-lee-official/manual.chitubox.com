@@ -10,7 +10,8 @@
 		"searchResult": "Result"
 	},
 	"docContent": {
-		"onThisPage": "On This Page"
+		"onThisPage": "On This Page",
+		"notLatest": "This is an older version of the documentation."
 	},
 	"footer": {
 		"relevantDocs": "Docs",
