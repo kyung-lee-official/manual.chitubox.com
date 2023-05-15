@@ -44,6 +44,10 @@
 		@apply bg-slate-400 
 		dark:bg-gray-500;
 	}
+
+	.custom-input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+	}
 }
 
 html,

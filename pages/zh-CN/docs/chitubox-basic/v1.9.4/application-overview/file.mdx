@@ -147,9 +147,7 @@ export const meta = {
 
 修正错误的翻译。
 
-<AntdImage
-	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/006-file-4.png"}
-/>
+<AntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/006-file-4.png"} />
 
 <BilibiliVideoContainer>
 	<iframe
@@ -197,9 +195,7 @@ export const meta = {
 
 导入或导出当前机器的树脂、切片、支撑等配置。（确保导入导出时选择的机器是相同的）
 
-<AntdImage
-	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/006-file-2.png"}
-/>
+<AntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/006-file-2.png"} />
 
 <BilibiliVideoContainer>
 	<iframe
@@ -222,9 +218,11 @@ export const meta = {
 
 打开并查阅软件使用过程的日志记录。
 
-如果您无法从 CHITUBOX 打开路径，请打开 Windows 文件资源管理器，直接访问路径。
+如果您无法从 CHITUBOX 打开路径，请直接访问路径：
 
-将 `{Your-PC-User-Name}` 替换为您 PC 的用户名：
+-   Windows 路径
+
+打开 Windows 资源管理器，访问以下路径，将 `{Your-PC-User-Name}` 替换为您 PC 的用户名：
 
 ```shell
     C:\Users\{Your-PC-User-Name}\AppData\Local\ChiTuBox
@@ -246,6 +244,14 @@ export const meta = {
 		allowfullscreen="true"
 	></iframe>
 </BilibiliVideoContainer>
+
+-   macOS 路径
+
+将 `{Your-PC-User-Name}` 替换为您的电脑用户名：
+
+```shell
+HD > Users > {Your-PC-User-Name} > Library > Preferences > ChiTuBox
+```
 
 ## 用户手册
 
@@ -283,7 +289,8 @@ export const meta = {
 | 删除插件 | 删除软件中所选的插件                                |
 
 <Admonition type="note" title="注意">
-	构建插件功能，可以选择本地文件打包为 _.CHplugin_ 格式的插件文件，所选文件必须在符合插件文件标准的前提下，该功能才能被成功使用。
+	构建插件功能，可以选择本地文件打包为 _.CHplugin_
+	格式的插件文件，所选文件必须在符合插件文件标准的前提下，该功能才能被成功使用。
 </Admonition>
 
 <BilibiliVideoContainer>
@@ -395,17 +402,13 @@ CHITUBOX Basic 的常规设置。
 
 两个示例模型。
 
-<AntdImage
-	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/006-file-1.png"}
-/>
+<AntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/006-file-1.png"} />
 
 ## 退出
 
 退出 CHITUBOX。
 
-<AntdImage
-	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/006-file-3.png"}
-/>
+<AntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/006-file-3.png"} />
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
