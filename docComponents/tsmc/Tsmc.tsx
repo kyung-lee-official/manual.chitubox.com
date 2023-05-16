@@ -1,11 +1,10 @@
 import {
 	animate,
 	motion,
-	useAnimate,
 	useMotionTemplate,
 	useMotionValue,
 } from "framer-motion";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const CaretUpFill = ({ size, fill }: any) => {
 	return (
@@ -40,9 +39,41 @@ const CaretDownFill = ({ size, fill }: any) => {
 };
 
 const Input = (props: any) => {
-	const { className, value, setValue, ...rest } = props;
+	const {
+		className,
+		value,
+		setValue,
+		isFast,
+		stage,
+		setActiveStage,
+		readOnly,
+		onBlur,
+		...rest
+	} = props;
 	const x = useMotionValue(0);
-	const boxShadow = useMotionTemplate`0px 0px 8px rgba(0,255,0,${x})`;
+	const boxShadow = useMotionTemplate`0px 0px 10px rgba(${
+		isFast ? "0" : "200"
+	},200,0,${x})`;
+	const [originalValue, setOriginalValue] = useState<string>(value);
+
+	const originalOnBlur = (e: any) => {
+		if (parseFloat(e.target.value) >= 0) {
+			setOriginalValue(parseFloat(e.target.value).toFixed(3));
+			setValue(parseFloat(e.target.value).toFixed(3));
+		} else {
+			setValue(originalValue);
+		}
+	};
+
+	let conditionalOnBlur: Function = () => {};
+	if (!readOnly) {
+		if (onBlur) {
+			conditionalOnBlur = onBlur;
+		} else {
+			conditionalOnBlur = originalOnBlur;
+		}
+	}
+
 	return (
 		<motion.div
 			className={`flex gap-[1px]`}
@@ -60,32 +91,58 @@ const Input = (props: any) => {
 						? className
 						: "text-center w-[80px] dark:bg-gray-700 rounded-sm outline-none custom-input"
 				}
-				onChange={(e) => setValue(e.target.value)}
+				readOnly={readOnly}
+				onChange={
+					readOnly ? () => null : (e) => setValue(e.target.value)
+				}
 				onFocus={() => {
+					setActiveStage(stage);
 					x.set(1);
-					animate(x, 0, { duration: 0.5 });
+					animate(x, 0, { duration: 1.2 });
 				}}
-				onBlur={(e) => setValue(parseFloat(e.target.value).toFixed(3))}
+				onBlur={conditionalOnBlur}
 			/>
 			<div
 				className="flex flex-col justify-center items-end gap-[2px]
                 pointer-events-none"
 			>
 				<div
-					className="hover:text-gray-300 bg-gray-700
-                    rounded-sm cursor-pointer pointer-events-auto"
-					onClick={() => {
-						setValue((parseFloat(value) + 1).toFixed(3));
-					}}
+					className={`hover:text-gray-300 ${
+						readOnly ? "bg-gray-800" : "bg-gray-700"
+					}
+                    rounded-sm ${
+						readOnly ? "cursor-not-allowed" : "cursor-pointer"
+					} pointer-events-auto`}
+					onClick={
+						readOnly
+							? () => null
+							: () => {
+									setValue(
+										(parseFloat(value) + 1).toFixed(3)
+									);
+							  }
+					}
 				>
 					<CaretUpFill />
 				</div>
 				<div
-					className="hover:text-gray-300 bg-gray-700
-                    rounded-sm cursor-pointer pointer-events-auto"
-					onClick={() => {
-						setValue((parseFloat(value) - 1).toFixed(3));
-					}}
+					className={`hover:text-gray-300 ${
+						readOnly ? "bg-gray-800" : "bg-gray-700"
+					}
+                    rounded-sm ${
+						readOnly ? "cursor-not-allowed" : "cursor-pointer"
+					} pointer-events-auto`}
+					onClick={
+						readOnly
+							? () => null
+							: () => {
+									if (parseFloat(value) - 1 >= 0) {
+										setValue(
+											(parseFloat(value) - 1).toFixed(3)
+										);
+									}
+							  }
+					}
 				>
 					<CaretDownFill />
 				</div>
@@ -99,7 +156,8 @@ const Unit = ({ children }: any) => (
 	<div className="flex justify-start pl-4">{children}</div>
 );
 
-const TsmcParams = () => {
+const TsmcParams = (props: any) => {
+	const { setActiveStage } = props;
 	const [bld1, setBld1] = useState("3.000");
 	const [bld2, setBld2] = useState("4.000");
 	const [ld1, setLd1] = useState("3.000");
@@ -117,6 +175,20 @@ const TsmcParams = () => {
 	const [rs1, setRs1] = useState("180.000");
 	const [rs2, setRs2] = useState("65.000");
 
+	useEffect(() => {
+		if (parseFloat(bld1) + parseFloat(bld2) - parseFloat(brd2) >= 0) {
+			setBrd1(
+				(
+					parseFloat(bld1) +
+					parseFloat(bld2) -
+					parseFloat(brd2)
+				).toFixed(3)
+			);
+		}
+	}, [bld1, bld2, brd2]);
+
+	useEffect(() => {}, [ld1, ld2, rd2]);
+
 	return (
 		<div
 			className="flex flex-col gap-4
@@ -127,13 +199,29 @@ const TsmcParams = () => {
 					<tr>
 						<td className="w-[300px]">Bottom Lift Distance</td>
 						<td className="w-[96px]">
-							<Input value={bld1} setValue={setBld1} />
+							<Input
+								value={bld1}
+								setValue={setBld1}
+								stage={Stage.Bl1}
+								setActiveStage={setActiveStage}
+								onChange={(e: any) => {
+									if (e.target.value + bld2 > brd1 + brd2) {
+										setBld1(e.target.value);
+									}
+								}}
+							/>
 						</td>
 						<td className="w-[32px]">
 							<Add />
 						</td>
 						<td className="w-[96px]">
-							<Input value={bld2} setValue={setBld2} />
+							<Input
+								value={bld2}
+								setValue={setBld2}
+								isFast={true}
+								stage={Stage.Bl2}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<td>
 							<Unit>mm</Unit>
@@ -142,13 +230,24 @@ const TsmcParams = () => {
 					<tr>
 						<td>Lifting Distance</td>
 						<td>
-							<Input value={ld1} setValue={setLd1} />
+							<Input
+								value={ld1}
+								setValue={setLd1}
+								stage={Stage.L1}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<td>
 							<Add />
 						</td>
 						<td>
-							<Input value={ld2} setValue={setLd2} />
+							<Input
+								value={ld2}
+								setValue={setLd2}
+								isFast={true}
+								stage={Stage.L2}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<td>
 							<Unit>mm</Unit>
@@ -157,13 +256,26 @@ const TsmcParams = () => {
 					<tr>
 						<td>Bottom Retract Distance</td>
 						<td>
-							<Input value={brd1} setValue={setBrd1} />
+							<Input
+								value={brd1}
+								isFast={true}
+								stage={Stage.Br1}
+								setActiveStage={setActiveStage}
+								readOnly={true}
+								className="text-center w-[80px] dark:bg-gray-800 rounded-sm outline-none custom-input"
+								onBlur={(e: any) => {}}
+							/>
 						</td>
 						<td>
 							<Add />
 						</td>
 						<td>
-							<Input value={brd2} setValue={setBrd2} />
+							<Input
+								value={brd2}
+								setValue={setBrd2}
+								stage={Stage.Br2}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<td>
 							<Unit>mm</Unit>
@@ -172,13 +284,25 @@ const TsmcParams = () => {
 					<tr>
 						<td>Retract Distance</td>
 						<td>
-							<Input value={rd1} setValue={setRd1} />
+							<Input
+								value={rd1}
+								isFast={true}
+								stage={Stage.R1}
+								setActiveStage={setActiveStage}
+								readOnly={true}
+								className="text-center w-[80px] dark:bg-gray-800 rounded-sm outline-none custom-input"
+							/>
 						</td>
 						<td>
 							<Add />
 						</td>
 						<td>
-							<Input value={rd2} setValue={setRd2} />
+							<Input
+								value={rd2}
+								setValue={setRd2}
+								stage={Stage.R2}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<td>
 							<Unit>mm</Unit>
@@ -191,13 +315,24 @@ const TsmcParams = () => {
 					<tr>
 						<td className="w-[300px]">Bottom Lift Speed</td>
 						<td className="w-[96px]">
-							<Input value={bls1} setValue={setBls1} />
+							<Input
+								value={bls1}
+								setValue={setBls1}
+								stage={Stage.Bl1}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<td className="w-[32px]">
 							<Add />
 						</td>
 						<td className="w-[96px]">
-							<Input value={bls2} setValue={setBls2} />
+							<Input
+								value={bls2}
+								setValue={setBls2}
+								isFast={true}
+								stage={Stage.Bl2}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 
 						<td>
@@ -207,39 +342,72 @@ const TsmcParams = () => {
 					<tr>
 						<td>Lifting Speed</td>
 						<td>
-							<Input value={ls1} setValue={setLs1} />
+							<Input
+								value={ls1}
+								setValue={setLs1}
+								stage={Stage.L1}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<td>
 							<Add />
 						</td>
 						<td>
-							<Input value={ls2} setValue={setLs2} />
+							<Input
+								value={ls2}
+								setValue={setLs2}
+								isFast={true}
+								stage={Stage.L2}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<Unit>mm/mim</Unit>
 					</tr>
 					<tr>
 						<td>Bottom Retract Speed</td>
 						<td>
-							<Input value={brs1} setValue={setBrs1} />
+							<Input
+								value={brs1}
+								setValue={setBrs1}
+								isFast={true}
+								stage={Stage.Br1}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<td>
 							<Add />
 						</td>
 						<td>
-							<Input value={brs2} setValue={setBrs2} />
+							<Input
+								value={brs2}
+								setValue={setBrs2}
+								stage={Stage.Br2}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<Unit>mm/mim</Unit>
 					</tr>
 					<tr>
 						<td>Retract Speed</td>
 						<td>
-							<Input value={rs1} setValue={setRs1} />
+							<Input
+								value={rs1}
+								setValue={setRs1}
+								isFast={true}
+								stage={Stage.R1}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<td>
 							<Add />
 						</td>
 						<td>
-							<Input value={rs2} setValue={setRs2} />
+							<Input
+								value={rs2}
+								setValue={setRs2}
+								stage={Stage.R2}
+								setActiveStage={setActiveStage}
+							/>
 						</td>
 						<Unit>mm/mim</Unit>
 					</tr>
@@ -249,7 +417,13 @@ const TsmcParams = () => {
 	);
 };
 
-const Graph = () => {
+const Graph = (props: any) => {
+	const { stage } = props;
+
+	// useEffect(() => {
+	// 	console.log(stage);
+	// }, [stage]);
+
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -320,164 +494,136 @@ const Graph = () => {
 				height="20"
 				className="fill-gray-700"
 			/>
-			{/* layers */}
-			<rect
-				x="60.5"
-				y="132.31"
-				width="160"
-				height="4"
-				className="fill-sky-500"
-			/>
-			<rect
-				x="60.5"
-				y="138.11"
-				width="160"
-				height="4"
-				className="fill-sky-500"
-			/>
-			<rect
-				x="60.5"
-				y="143.92"
-				width="160"
-				height="4"
-				className="fill-sky-500"
-			/>
-			<rect
-				x="65.5"
-				y="149.72"
-				width="150"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="70.5"
-				y="155.53"
-				width="140"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="75.5"
-				y="161.34"
-				width="130"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="167.14"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="172.95"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="178.75"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="184.56"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="190.37"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="196.17"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="201.98"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="207.79"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="213.59"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="219.4"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="225.2"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="231.01"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="236.82"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<rect
-				x="80.5"
-				y="242.62"
-				width="120"
-				height="4"
-				className="fill-gray-500/20"
-			/>
-			<polygon
+			{/* Bottom layers */}
+			<motion.g
+				initial={{
+					fill: "rgba(107,114,128,0.2)",
+				}}
+				animate={{
+					fill:
+						stage === Stage.Bl1 ||
+						stage === Stage.Bl2 ||
+						stage === Stage.Br1 ||
+						stage === Stage.Br2
+							? "#0ea5e9"
+							: "rgba(107,114,128,0.2)",
+				}}
+			>
+				<rect x="60.5" y="132.31" width="160" height="4" />
+				<rect x="60.5" y="138.11" width="160" height="4" />
+				<rect x="60.5" y="143.92" width="160" height="4" />
+			</motion.g>
+			{/* Regular layers */}
+			<motion.g
+				initial={{
+					fill: "rgba(107,114,128,0.2)",
+				}}
+				animate={{
+					fill:
+						stage === Stage.L1 ||
+						stage === Stage.L2 ||
+						stage === Stage.R1 ||
+						stage === Stage.R2
+							? "#0ea5e9"
+							: "rgba(107,114,128,0.2)",
+				}}
+			>
+				<rect x="65.5" y="149.72" width="150" height="4" />
+				<rect x="70.5" y="155.53" width="140" height="4" />
+				<rect x="75.5" y="161.34" width="130" height="4" />
+				<rect x="80.5" y="167.14" width="120" height="4" />
+				<rect x="80.5" y="172.95" width="120" height="4" />
+				<rect x="80.5" y="178.75" width="120" height="4" />
+				<rect x="80.5" y="184.56" width="120" height="4" />
+				<rect x="80.5" y="190.37" width="120" height="4" />
+				<rect x="80.5" y="196.17" width="120" height="4" />
+				<rect x="80.5" y="201.98" width="120" height="4" />
+				<rect x="80.5" y="207.79" width="120" height="4" />
+				<rect x="80.5" y="213.59" width="120" height="4" />
+				<rect x="80.5" y="219.4" width="120" height="4" />
+				<rect x="80.5" y="225.2" width="120" height="4" />
+				<rect x="80.5" y="231.01" width="120" height="4" />
+				<rect x="80.5" y="236.82" width="120" height="4" />
+				<rect x="80.5" y="242.62" width="120" height="4" />
+			</motion.g>
+			{/* Arrows */}
+			<motion.polygon
 				points="42.53 319.25 20.5 348.15 32.53 348.15 32.53 398.15 52.53 398.15 52.53 348.15 64.56 348.15 42.53 319.25"
-				className="fill-gray-700"
-				onClick={() => {}}
+				// className={
+				// 	stage === Stage.Bl1 || stage === Stage.L1
+				// 		? "fill-yellow-600"
+				// 		: "fill-gray-700"
+				// }
+				initial={{
+					fill: "#374151",
+				}}
+				animate={{
+					fill:
+						stage === Stage.Bl1 || stage === Stage.L1
+							? "#f59e0b"
+							: "#374151",
+				}}
 			/>
-			<polygon points="42.53 238.82 20.5 267.72 32.53 267.72 32.53 317.72 52.53 317.72 52.53 267.72 64.56 267.72 42.53 238.82" />
-			<polygon points="238.47 317.72 260.5 288.82 248.47 288.82 248.47 238.82 228.47 238.82 228.47 288.82 216.44 288.82 238.47 317.72" />
-			<polygon points="238.47 398.15 260.5 369.25 248.47 369.25 248.47 319.25 228.47 319.25 228.47 369.25 216.44 369.25 238.47 398.15" />
+			<motion.polygon
+				points="42.53 238.82 20.5 267.72 32.53 267.72 32.53 317.72 52.53 317.72 52.53 267.72 64.56 267.72 42.53 238.82"
+				initial={{
+					fill: "#374151",
+				}}
+				animate={{
+					fill:
+						stage === Stage.Bl2 || stage === Stage.L2
+							? "#10b981"
+							: "#374151",
+				}}
+			/>
+			<motion.polygon
+				points="238.47 317.72 260.5 288.82 248.47 288.82 248.47 238.82 228.47 238.82 228.47 288.82 216.44 288.82 238.47 317.72"
+				initial={{
+					fill: "#374151",
+				}}
+				animate={{
+					fill:
+						stage === Stage.Br1 || stage === Stage.R1
+							? "#10b981"
+							: "#374151",
+				}}
+			/>
+			<motion.polygon
+				points="238.47 398.15 260.5 369.25 248.47 369.25 248.47 319.25 228.47 319.25 228.47 369.25 216.44 369.25 238.47 398.15"
+				initial={{
+					fill: "#374151",
+				}}
+				animate={{
+					fill:
+						stage === Stage.Br2 || stage === Stage.R2
+							? "#f59e0b"
+							: "#374151",
+				}}
+			/>
 		</svg>
 	);
 };
 
+const enum Stage {
+	Bl1 = 0,
+	Bl2 = 1,
+	Br1 = 2,
+	Br2 = 3,
+	L1 = 4,
+	L2 = 5,
+	R1 = 6,
+	R2 = 7,
+}
+
 export const Tsmc = () => {
+	const [activeStage, setActiveStage] = useState<Stage>();
 	return (
-		<div className="flex flex-col gap-6 my-8">
-			<TsmcParams />
-			<Graph />
+		<div
+			className="flex flex-col gap-6 my-8 p-4
+            bg-gray-100 dark:bg-gray-900 rounded-xl"
+		>
+			<TsmcParams setActiveStage={setActiveStage} />
+			<Graph stage={activeStage} />
 		</div>
 	);
 };
