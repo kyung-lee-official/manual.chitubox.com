@@ -334,6 +334,110 @@ const TsmcParams = (props: any) => {
 								setOv={setOld1}
 								stage={Stage.L1}
 								setActiveStage={setActiveStage}
+								onBlur={(e: any) => {
+									if (parseFloat(e.target.value) >= 0) {
+										if (
+											/* Is decrease */
+											parseFloat(oLd1) -
+												parseFloat(e.target.value) >
+											0
+										) {
+											if (
+												/* rd1 is large enough to decrease */
+												parseFloat(oLd1) -
+													parseFloat(
+														e.target.value
+													) <=
+												parseFloat(rd1)
+											) {
+												setOld1(
+													parseFloat(
+														e.target.value
+													).toFixed(3)
+												);
+												setLd1(
+													parseFloat(
+														e.target.value
+													).toFixed(3)
+												);
+												setRd1(
+													(
+														parseFloat(rd1) -
+														(parseFloat(oLd1) -
+															parseFloat(
+																e.target.value
+															))
+													).toFixed(3)
+												);
+												setOrd1(
+													(
+														parseFloat(rd1) -
+														(parseFloat(oLd1) -
+															parseFloat(
+																e.target.value
+															))
+													).toFixed(3)
+												);
+											} else {
+												setLd1(
+													parseFloat(oLd1).toFixed(3)
+												);
+											}
+										} else {
+											/* Is increase or not changed */
+											setOld1(parseFloat(ld1).toFixed(3));
+											setLd1(parseFloat(ld1).toFixed(3));
+											setRd1(
+												(
+													parseFloat(rd1) +
+													(parseFloat(
+														e.target.value
+													) -
+														parseFloat(oLd1))
+												).toFixed(3)
+											);
+											setOrd1(
+												(
+													parseFloat(rd1) +
+													(parseFloat(
+														e.target.value
+													) -
+														parseFloat(oLd1))
+												).toFixed(3)
+											);
+										}
+									} else {
+										setLd1(parseFloat(oLd1).toFixed(3));
+									}
+								}}
+								onStepUp={() => {
+									setOld1((parseFloat(ld1) + 1).toFixed(3));
+									setLd1((parseFloat(ld1) + 1).toFixed(3));
+									setOrd1((parseFloat(rd1) + 1).toFixed(3));
+									setRd1((parseFloat(rd1) + 1).toFixed(3));
+								}}
+								onStepDown={() => {
+									if (parseFloat(ld1) - 1 >= 0) {
+										if (
+											/* rd1 is large enough to decrease */
+											parseFloat(rd1) - 1 >=
+											0
+										) {
+											setOld1(
+												(parseFloat(ld1) - 1).toFixed(3)
+											);
+											setLd1(
+												(parseFloat(ld1) - 1).toFixed(3)
+											);
+											setOrd1(
+												(parseFloat(rd1) - 1).toFixed(3)
+											);
+											setRd1(
+												(parseFloat(rd1) - 1).toFixed(3)
+											);
+										}
+									}
+								}}
 							/>
 						</td>
 						<td>
@@ -348,6 +452,110 @@ const TsmcParams = (props: any) => {
 								isFast={true}
 								stage={Stage.L2}
 								setActiveStage={setActiveStage}
+								onBlur={(e: any) => {
+									if (parseFloat(e.target.value) >= 0) {
+										if (
+											/* Is decrease */
+											parseFloat(oLd2) -
+												parseFloat(e.target.value) >
+											0
+										) {
+											if (
+												/* rd1 is large enough to decrease */
+												parseFloat(oLd2) -
+													parseFloat(
+														e.target.value
+													) <=
+												parseFloat(rd1)
+											) {
+												setOld2(
+													parseFloat(
+														e.target.value
+													).toFixed(3)
+												);
+												setLd2(
+													parseFloat(
+														e.target.value
+													).toFixed(3)
+												);
+												setRd1(
+													(
+														parseFloat(rd1) -
+														(parseFloat(oLd2) -
+															parseFloat(
+																e.target.value
+															))
+													).toFixed(3)
+												);
+												setOrd1(
+													(
+														parseFloat(rd1) -
+														(parseFloat(oLd2) -
+															parseFloat(
+																e.target.value
+															))
+													).toFixed(3)
+												);
+											} else {
+												setLd2(
+													parseFloat(oLd2).toFixed(3)
+												);
+											}
+										} else {
+											/* Is increase or not changed */
+											setOld2(parseFloat(ld2).toFixed(3));
+											setLd2(parseFloat(ld2).toFixed(3));
+											setRd1(
+												(
+													parseFloat(rd1) +
+													(parseFloat(
+														e.target.value
+													) -
+														parseFloat(oLd2))
+												).toFixed(3)
+											);
+											setOrd1(
+												(
+													parseFloat(rd1) +
+													(parseFloat(
+														e.target.value
+													) -
+														parseFloat(oLd2))
+												).toFixed(3)
+											);
+										}
+									} else {
+										setLd2(parseFloat(oLd2).toFixed(3));
+									}
+								}}
+								onStepUp={() => {
+									setOld2((parseFloat(ld2) + 1).toFixed(3));
+									setLd2((parseFloat(ld2) + 1).toFixed(3));
+									setOrd1((parseFloat(rd1) + 1).toFixed(3));
+									setRd1((parseFloat(rd1) + 1).toFixed(3));
+								}}
+								onStepDown={() => {
+									if (parseFloat(ld2) - 1 >= 0) {
+										if (
+											/* rd1 is large enough to decrease */
+											parseFloat(rd1) - 1 >=
+											0
+										) {
+											setOld2(
+												(parseFloat(ld2) - 1).toFixed(3)
+											);
+											setLd2(
+												(parseFloat(ld2) - 1).toFixed(3)
+											);
+											setOrd1(
+												(parseFloat(rd1) - 1).toFixed(3)
+											);
+											setRd1(
+												(parseFloat(rd1) - 1).toFixed(3)
+											);
+										}
+									}
+								}}
 							/>
 						</td>
 						<td>
@@ -524,6 +732,116 @@ const TsmcParams = (props: any) => {
 								setOv={setOrd2}
 								stage={Stage.R2}
 								setActiveStage={setActiveStage}
+								onBlur={(e: any) => {
+									if (parseFloat(e.target.value) >= 0) {
+										if (
+											/* Is decrease */
+											parseFloat(oRd2) -
+												parseFloat(e.target.value) >
+											0
+										) {
+											setOrd2(parseFloat(rd2).toFixed(3));
+											setRd2(parseFloat(rd2).toFixed(3));
+											setOrd1(
+												(
+													parseFloat(ld1) +
+													parseFloat(ld2) -
+													parseFloat(rd2)
+												).toFixed(3)
+											);
+											setRd1(
+												(
+													parseFloat(ld1) +
+													parseFloat(ld2) -
+													parseFloat(rd2)
+												).toFixed(3)
+											);
+										} else {
+											/* Is increase or not changed */
+											if (
+												/* Does not exceed the sum of ld1 and ld2 */
+												parseFloat(rd2) <=
+												parseFloat(ld1) +
+													parseFloat(ld2)
+											) {
+												setOrd2(
+													parseFloat(rd2).toFixed(3)
+												);
+												setRd2(
+													parseFloat(rd2).toFixed(3)
+												);
+												setOrd1(
+													(
+														parseFloat(ld1) +
+														parseFloat(ld2) -
+														parseFloat(rd2)
+													).toFixed(3)
+												);
+												setRd1(
+													(
+														parseFloat(ld1) +
+														parseFloat(ld2) -
+														parseFloat(rd2)
+													).toFixed(3)
+												);
+											} else {
+												setRd2(
+													parseFloat(oRd2).toFixed(3)
+												);
+											}
+										}
+									} else {
+										setRd2(parseFloat(oRd2).toFixed(3));
+									}
+								}}
+								onStepUp={() => {
+									if (
+										/* Does not exceed the sum of ld1 and ld2 */
+										parseFloat(ld1) +
+											parseFloat(ld2) -
+											(parseFloat(rd2) + 1) >=
+										0
+									) {
+										setOrd2(
+											(parseFloat(rd2) + 1).toFixed(3)
+										);
+										setRd2(
+											(parseFloat(rd2) + 1).toFixed(3)
+										);
+										setOrd1(
+											(
+												parseFloat(ld1) +
+												parseFloat(ld2) -
+												(parseFloat(rd2) + 1)
+											).toFixed(3)
+										);
+										setRd1(
+											(
+												parseFloat(ld1) +
+												parseFloat(ld2) -
+												(parseFloat(rd2) + 1)
+											).toFixed(3)
+										);
+									}
+								}}
+								onStepDown={() => {
+									setOrd2((parseFloat(rd2) - 1).toFixed(3));
+									setRd2((parseFloat(rd2) - 1).toFixed(3));
+									setOrd1(
+										(
+											parseFloat(ld1) +
+											parseFloat(ld2) -
+											(parseFloat(rd2) - 1)
+										).toFixed(3)
+									);
+									setRd1(
+										(
+											parseFloat(ld1) +
+											parseFloat(ld2) -
+											(parseFloat(rd2) - 1)
+										).toFixed(3)
+									);
+								}}
 							/>
 						</td>
 						<td>
