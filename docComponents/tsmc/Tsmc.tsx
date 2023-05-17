@@ -48,20 +48,21 @@ const Input = (props: any) => {
 		setActiveStage,
 		readOnly,
 		onBlur,
+		ov /* Original value */,
+		setOv,
 		...rest
 	} = props;
 	const x = useMotionValue(0);
 	const boxShadow = useMotionTemplate`0px 0px 10px rgba(${
 		isFast ? "0" : "200"
 	},200,0,${x})`;
-	const [originalValue, setOriginalValue] = useState<string>(value);
 
 	const originalOnBlur = (e: any) => {
 		if (parseFloat(e.target.value) >= 0) {
-			setOriginalValue(parseFloat(e.target.value).toFixed(3));
+			setOv(parseFloat(e.target.value).toFixed(3));
 			setValue(parseFloat(e.target.value).toFixed(3));
 		} else {
-			setValue(originalValue);
+			setValue(ov);
 		}
 	};
 
@@ -158,34 +159,49 @@ const Unit = ({ children }: any) => (
 
 const TsmcParams = (props: any) => {
 	const { setActiveStage } = props;
+	/**
+	 * b: bottom
+	 * l: lift
+	 * d: distance
+	 * s: speed
+	 * o: original
+	 * 1: 1st column
+	 * 2: 2nd column
+	 */
 	const [bld1, setBld1] = useState("3.000");
+	const [oBld1, setObld1] = useState("3.000");
 	const [bld2, setBld2] = useState("4.000");
+	const [oBld2, setObld2] = useState("4.000");
 	const [ld1, setLd1] = useState("3.000");
+	const [oLd1, setOld1] = useState("3.000");
 	const [ld2, setLd2] = useState("4.000");
+	const [oLd2, setOld2] = useState("4.000");
 	const [brd1, setBrd1] = useState("5.500");
+	const [oBrd1, setObrd1] = useState("5.500");
 	const [brd2, setBrd2] = useState("1.500");
+	const [oBrd2, setObrd2] = useState("1.500");
 	const [rd1, setRd1] = useState("5.500");
+	const [oRd1, setOrd1] = useState("5.500");
 	const [rd2, setRd2] = useState("1.500");
+	const [oRd2, setOrd2] = useState("1.500");
 	const [bls1, setBls1] = useState("65.000");
+	const [oBls1, setObls1] = useState("65.000");
 	const [bls2, setBls2] = useState("180.000");
+	const [oBls2, setObls2] = useState("180.000");
 	const [ls1, setLs1] = useState("65.000");
+	const [oLs1, setOls1] = useState("65.000");
 	const [ls2, setLs2] = useState("180.000");
+	const [oLs2, setOls2] = useState("180.000");
 	const [brs1, setBrs1] = useState("180.000");
+	const [oBrs1, setObrs1] = useState("180.000");
 	const [brs2, setBrs2] = useState("65.000");
+	const [oBrs2, setObrs2] = useState("65.000");
 	const [rs1, setRs1] = useState("180.000");
+	const [oRs1, setOrs1] = useState("180.000");
 	const [rs2, setRs2] = useState("65.000");
+	const [oRs2, setOrs2] = useState("65.000");
 
-	useEffect(() => {
-		if (parseFloat(bld1) + parseFloat(bld2) - parseFloat(brd2) >= 0) {
-			setBrd1(
-				(
-					parseFloat(bld1) +
-					parseFloat(bld2) -
-					parseFloat(brd2)
-				).toFixed(3)
-			);
-		}
-	}, [bld1, bld2, brd2]);
+	useEffect(() => {}, [oBld1, oBld2, oBrd2]);
 
 	useEffect(() => {}, [ld1, ld2, rd2]);
 
@@ -204,11 +220,88 @@ const TsmcParams = (props: any) => {
 								setValue={setBld1}
 								stage={Stage.Bl1}
 								setActiveStage={setActiveStage}
-								onChange={(e: any) => {
-									if (e.target.value + bld2 > brd1 + brd2) {
-										setBld1(e.target.value);
+								onBlur={(e: any) => {
+									if (parseFloat(e.target.value) >= 0) {
+										if (
+											/* Is decrease */
+											parseFloat(oBld1) -
+												parseFloat(e.target.value) >
+											0
+										) {
+											if (
+												/* brd1 is large enough to decrease */
+												parseFloat(oBld1) -
+													parseFloat(
+														e.target.value
+													) <=
+												parseFloat(brd1)
+											) {
+												setObld1(
+													parseFloat(
+														e.target.value
+													).toFixed(3)
+												);
+												setBld1(
+													parseFloat(
+														e.target.value
+													).toFixed(3)
+												);
+												setBrd1(
+													(
+														parseFloat(brd1) -
+														(parseFloat(oBld1) -
+															parseFloat(
+																e.target.value
+															))
+													).toFixed(3)
+												);
+												setObrd1(
+													(
+														parseFloat(brd1) -
+														(parseFloat(oBld1) -
+															parseFloat(
+																e.target.value
+															))
+													).toFixed(3)
+												);
+											} else {
+												setBld1(
+													parseFloat(oBld1).toFixed(3)
+												);
+											}
+										} else {
+											/* Is increase or not changed */
+											setObld1(
+												parseFloat(bld1).toFixed(3)
+											);
+											setBld1(
+												parseFloat(bld1).toFixed(3)
+											);
+											setBrd1(
+												(
+													parseFloat(brd1) +
+													(parseFloat(
+														e.target.value
+													) -
+														parseFloat(oBld1))
+												).toFixed(3)
+											);
+											setObrd1(
+												(
+													parseFloat(brd1) +
+													(parseFloat(
+														e.target.value
+													) -
+														parseFloat(oBld1))
+												).toFixed(3)
+											);
+										}
+									} else {
+										setBld1(parseFloat(oBld1).toFixed(3));
 									}
 								}}
+								ov={oBld1}
+								setOv={setObld1}
 							/>
 						</td>
 						<td className="w-[32px]">
@@ -221,6 +314,8 @@ const TsmcParams = (props: any) => {
 								isFast={true}
 								stage={Stage.Bl2}
 								setActiveStage={setActiveStage}
+								ov={oBld2}
+								setOv={setObld2}
 							/>
 						</td>
 						<td>
@@ -235,6 +330,8 @@ const TsmcParams = (props: any) => {
 								setValue={setLd1}
 								stage={Stage.L1}
 								setActiveStage={setActiveStage}
+								ov={oLd1}
+								setOv={setOld1}
 							/>
 						</td>
 						<td>
@@ -247,6 +344,8 @@ const TsmcParams = (props: any) => {
 								isFast={true}
 								stage={Stage.L2}
 								setActiveStage={setActiveStage}
+								ov={oLd2}
+								setOv={setOld2}
 							/>
 						</td>
 						<td>
@@ -263,7 +362,8 @@ const TsmcParams = (props: any) => {
 								setActiveStage={setActiveStage}
 								readOnly={true}
 								className="text-center w-[80px] dark:bg-gray-800 rounded-sm outline-none custom-input"
-								onBlur={(e: any) => {}}
+								ov={oBrd1}
+								setOv={setObrd1}
 							/>
 						</td>
 						<td>
@@ -275,6 +375,8 @@ const TsmcParams = (props: any) => {
 								setValue={setBrd2}
 								stage={Stage.Br2}
 								setActiveStage={setActiveStage}
+								ov={oBrd2}
+								setOv={setObrd2}
 							/>
 						</td>
 						<td>
@@ -291,6 +393,8 @@ const TsmcParams = (props: any) => {
 								setActiveStage={setActiveStage}
 								readOnly={true}
 								className="text-center w-[80px] dark:bg-gray-800 rounded-sm outline-none custom-input"
+								ov={oRd1}
+								setOv={setOrd1}
 							/>
 						</td>
 						<td>
@@ -302,6 +406,8 @@ const TsmcParams = (props: any) => {
 								setValue={setRd2}
 								stage={Stage.R2}
 								setActiveStage={setActiveStage}
+								ov={oRd2}
+								setOv={setOrd2}
 							/>
 						</td>
 						<td>
@@ -320,6 +426,8 @@ const TsmcParams = (props: any) => {
 								setValue={setBls1}
 								stage={Stage.Bl1}
 								setActiveStage={setActiveStage}
+								ov={oBls1}
+								setOv={setObls1}
 							/>
 						</td>
 						<td className="w-[32px]">
@@ -332,6 +440,8 @@ const TsmcParams = (props: any) => {
 								isFast={true}
 								stage={Stage.Bl2}
 								setActiveStage={setActiveStage}
+								ov={oBls2}
+								setOv={setObls2}
 							/>
 						</td>
 
@@ -347,6 +457,8 @@ const TsmcParams = (props: any) => {
 								setValue={setLs1}
 								stage={Stage.L1}
 								setActiveStage={setActiveStage}
+								ov={oLs1}
+								setOv={setOls1}
 							/>
 						</td>
 						<td>
@@ -359,6 +471,8 @@ const TsmcParams = (props: any) => {
 								isFast={true}
 								stage={Stage.L2}
 								setActiveStage={setActiveStage}
+								ov={oLs2}
+								setOv={setOls2}
 							/>
 						</td>
 						<Unit>mm/mim</Unit>
@@ -372,6 +486,8 @@ const TsmcParams = (props: any) => {
 								isFast={true}
 								stage={Stage.Br1}
 								setActiveStage={setActiveStage}
+								ov={oBrs1}
+								setOv={setObrs1}
 							/>
 						</td>
 						<td>
@@ -383,6 +499,8 @@ const TsmcParams = (props: any) => {
 								setValue={setBrs2}
 								stage={Stage.Br2}
 								setActiveStage={setActiveStage}
+								ov={oBrs2}
+								setOv={setObrs2}
 							/>
 						</td>
 						<Unit>mm/mim</Unit>
@@ -396,6 +514,8 @@ const TsmcParams = (props: any) => {
 								isFast={true}
 								stage={Stage.R1}
 								setActiveStage={setActiveStage}
+								ov={oRs1}
+								setOv={setOrs1}
 							/>
 						</td>
 						<td>
@@ -407,6 +527,8 @@ const TsmcParams = (props: any) => {
 								setValue={setRs2}
 								stage={Stage.R2}
 								setActiveStage={setActiveStage}
+								ov={oRs2}
+								setOv={setOrs2}
 							/>
 						</td>
 						<Unit>mm/mim</Unit>
@@ -419,10 +541,6 @@ const TsmcParams = (props: any) => {
 
 const Graph = (props: any) => {
 	const { stage } = props;
-
-	// useEffect(() => {
-	// 	console.log(stage);
-	// }, [stage]);
 
 	return (
 		<svg
@@ -549,11 +667,6 @@ const Graph = (props: any) => {
 			{/* Arrows */}
 			<motion.polygon
 				points="42.53 319.25 20.5 348.15 32.53 348.15 32.53 398.15 52.53 398.15 52.53 348.15 64.56 348.15 42.53 319.25"
-				// className={
-				// 	stage === Stage.Bl1 || stage === Stage.L1
-				// 		? "fill-yellow-600"
-				// 		: "fill-gray-700"
-				// }
 				initial={{
 					fill: "#374151",
 				}}
@@ -619,8 +732,8 @@ export const Tsmc = () => {
 	const [activeStage, setActiveStage] = useState<Stage>();
 	return (
 		<div
-			className="flex flex-col gap-6 my-8 p-4
-            bg-gray-100 dark:bg-gray-900 rounded-xl"
+			className="flex flex-col gap-6 my-8 p-8
+            bg-gray-100 dark:bg-gray-900 rounded-xl overflow-x-scroll"
 		>
 			<TsmcParams setActiveStage={setActiveStage} />
 			<Graph stage={activeStage} />
