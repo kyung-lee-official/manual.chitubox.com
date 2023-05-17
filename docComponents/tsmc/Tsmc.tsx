@@ -1,156 +1,6 @@
-import {
-	animate,
-	motion,
-	useMotionTemplate,
-	useMotionValue,
-} from "framer-motion";
 import React, { useEffect, useState } from "react";
-
-const CaretUpFill = ({ size, fill }: any) => {
-	return (
-		<svg
-			viewBox="0 0 16 16"
-			height="12"
-			width="12"
-			focusable="false"
-			role="img"
-			fill="currentColor"
-			xmlns="http://www.w3.org/2000/svg"
-		>
-			<path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"></path>
-		</svg>
-	);
-};
-
-const CaretDownFill = ({ size, fill }: any) => {
-	return (
-		<svg
-			viewBox="0 0 16 16"
-			height="12"
-			width="12"
-			focusable="false"
-			role="img"
-			fill="currentColor"
-			xmlns="http://www.w3.org/2000/svg"
-		>
-			<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path>
-		</svg>
-	);
-};
-
-const Input = (props: any) => {
-	const {
-		className,
-		value,
-		setValue,
-		isFast,
-		stage,
-		setActiveStage,
-		readOnly,
-		onBlur,
-		ov /* Original value */,
-		setOv,
-		...rest
-	} = props;
-	const x = useMotionValue(0);
-	const boxShadow = useMotionTemplate`0px 0px 10px rgba(${
-		isFast ? "0" : "200"
-	},200,0,${x})`;
-
-	const originalOnBlur = (e: any) => {
-		if (parseFloat(e.target.value) >= 0) {
-			setOv(parseFloat(e.target.value).toFixed(3));
-			setValue(parseFloat(e.target.value).toFixed(3));
-		} else {
-			setValue(ov);
-		}
-	};
-
-	let conditionalOnBlur: Function = () => {};
-	if (!readOnly) {
-		if (onBlur) {
-			conditionalOnBlur = onBlur;
-		} else {
-			conditionalOnBlur = originalOnBlur;
-		}
-	}
-
-	return (
-		<motion.div
-			className={`flex gap-[1px]`}
-			style={{
-				boxShadow: boxShadow,
-			}}
-		>
-			<input
-				type="number"
-				step={"1"}
-				value={value}
-				{...rest}
-				className={
-					className
-						? className
-						: "text-center w-[80px] dark:bg-gray-700 rounded-sm outline-none custom-input"
-				}
-				readOnly={readOnly}
-				onChange={
-					readOnly ? () => null : (e) => setValue(e.target.value)
-				}
-				onFocus={() => {
-					setActiveStage(stage);
-					x.set(1);
-					animate(x, 0, { duration: 1.2 });
-				}}
-				onBlur={conditionalOnBlur}
-			/>
-			<div
-				className="flex flex-col justify-center items-end gap-[2px]
-                pointer-events-none"
-			>
-				<div
-					className={`hover:text-gray-300 ${
-						readOnly ? "bg-gray-800" : "bg-gray-700"
-					}
-                    rounded-sm ${
-						readOnly ? "cursor-not-allowed" : "cursor-pointer"
-					} pointer-events-auto`}
-					onClick={
-						readOnly
-							? () => null
-							: () => {
-									setValue(
-										(parseFloat(value) + 1).toFixed(3)
-									);
-							  }
-					}
-				>
-					<CaretUpFill />
-				</div>
-				<div
-					className={`hover:text-gray-300 ${
-						readOnly ? "bg-gray-800" : "bg-gray-700"
-					}
-                    rounded-sm ${
-						readOnly ? "cursor-not-allowed" : "cursor-pointer"
-					} pointer-events-auto`}
-					onClick={
-						readOnly
-							? () => null
-							: () => {
-									if (parseFloat(value) - 1 >= 0) {
-										setValue(
-											(parseFloat(value) - 1).toFixed(3)
-										);
-									}
-							  }
-					}
-				>
-					<CaretDownFill />
-				</div>
-			</div>
-		</motion.div>
-	);
-};
+import { Input } from "./Input";
+import { Graph } from "./Graph";
 
 const Add = () => <div className="flex justify-center">+</div>;
 const Unit = ({ children }: any) => (
@@ -218,6 +68,8 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={bld1}
 								setValue={setBld1}
+								ov={oBld1}
+								setOv={setObld1}
 								stage={Stage.Bl1}
 								setActiveStage={setActiveStage}
 								onBlur={(e: any) => {
@@ -300,8 +152,42 @@ const TsmcParams = (props: any) => {
 										setBld1(parseFloat(oBld1).toFixed(3));
 									}
 								}}
-								ov={oBld1}
-								setOv={setObld1}
+								onStepUp={() => {
+									setObld1((parseFloat(bld1) + 1).toFixed(3));
+									setBld1((parseFloat(bld1) + 1).toFixed(3));
+									setObrd1((parseFloat(brd1) + 1).toFixed(3));
+									setBrd1((parseFloat(brd1) + 1).toFixed(3));
+								}}
+								onStepDown={() => {
+									if (parseFloat(bld1) - 1 >= 0) {
+										if (
+											/* brd1 is large enough to decrease */
+											parseFloat(brd1) - 1 >=
+											0
+										) {
+											setObld1(
+												(parseFloat(bld1) - 1).toFixed(
+													3
+												)
+											);
+											setBld1(
+												(parseFloat(bld1) - 1).toFixed(
+													3
+												)
+											);
+											setObrd1(
+												(parseFloat(brd1) - 1).toFixed(
+													3
+												)
+											);
+											setBrd1(
+												(parseFloat(brd1) - 1).toFixed(
+													3
+												)
+											);
+										}
+									}
+								}}
 							/>
 						</td>
 						<td className="w-[32px]">
@@ -311,11 +197,127 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={bld2}
 								setValue={setBld2}
+								ov={oBld2}
+								setOv={setObld2}
 								isFast={true}
 								stage={Stage.Bl2}
 								setActiveStage={setActiveStage}
-								ov={oBld2}
-								setOv={setObld2}
+								onBlur={(e: any) => {
+									if (parseFloat(e.target.value) >= 0) {
+										if (
+											/* Is decrease */
+											parseFloat(oBld2) -
+												parseFloat(e.target.value) >
+											0
+										) {
+											if (
+												/* brd1 is large enough to decrease */
+												parseFloat(oBld2) -
+													parseFloat(
+														e.target.value
+													) <=
+												parseFloat(brd1)
+											) {
+												setObld2(
+													parseFloat(
+														e.target.value
+													).toFixed(3)
+												);
+												setBld2(
+													parseFloat(
+														e.target.value
+													).toFixed(3)
+												);
+												setBrd1(
+													(
+														parseFloat(brd1) -
+														(parseFloat(oBld2) -
+															parseFloat(
+																e.target.value
+															))
+													).toFixed(3)
+												);
+												setObrd1(
+													(
+														parseFloat(brd1) -
+														(parseFloat(oBld2) -
+															parseFloat(
+																e.target.value
+															))
+													).toFixed(3)
+												);
+											} else {
+												setBld2(
+													parseFloat(oBld2).toFixed(3)
+												);
+											}
+										} else {
+											/* Is increase or not changed */
+											setObld2(
+												parseFloat(bld2).toFixed(3)
+											);
+											setBld2(
+												parseFloat(bld2).toFixed(3)
+											);
+											setBrd1(
+												(
+													parseFloat(brd1) +
+													(parseFloat(
+														e.target.value
+													) -
+														parseFloat(oBld2))
+												).toFixed(3)
+											);
+											setObrd1(
+												(
+													parseFloat(brd1) +
+													(parseFloat(
+														e.target.value
+													) -
+														parseFloat(oBld2))
+												).toFixed(3)
+											);
+										}
+									} else {
+										setBld2(parseFloat(oBld2).toFixed(3));
+									}
+								}}
+								onStepUp={() => {
+									setObld2((parseFloat(bld2) + 1).toFixed(3));
+									setBld2((parseFloat(bld2) + 1).toFixed(3));
+									setObrd1((parseFloat(brd1) + 1).toFixed(3));
+									setBrd1((parseFloat(brd1) + 1).toFixed(3));
+								}}
+								onStepDown={() => {
+									if (parseFloat(bld2) - 1 >= 0) {
+										if (
+											/* brd1 is large enough to decrease */
+											parseFloat(brd1) - 1 >=
+											0
+										) {
+											setObld2(
+												(parseFloat(bld2) - 1).toFixed(
+													3
+												)
+											);
+											setBld2(
+												(parseFloat(bld2) - 1).toFixed(
+													3
+												)
+											);
+											setObrd1(
+												(parseFloat(brd1) - 1).toFixed(
+													3
+												)
+											);
+											setBrd1(
+												(parseFloat(brd1) - 1).toFixed(
+													3
+												)
+											);
+										}
+									}
+								}}
 							/>
 						</td>
 						<td>
@@ -328,10 +330,10 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={ld1}
 								setValue={setLd1}
-								stage={Stage.L1}
-								setActiveStage={setActiveStage}
 								ov={oLd1}
 								setOv={setOld1}
+								stage={Stage.L1}
+								setActiveStage={setActiveStage}
 							/>
 						</td>
 						<td>
@@ -341,11 +343,11 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={ld2}
 								setValue={setLd2}
+								ov={oLd2}
+								setOv={setOld2}
 								isFast={true}
 								stage={Stage.L2}
 								setActiveStage={setActiveStage}
-								ov={oLd2}
-								setOv={setOld2}
 							/>
 						</td>
 						<td>
@@ -358,12 +360,12 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={brd1}
 								isFast={true}
+								ov={oBrd1}
+								setOv={setObrd1}
 								stage={Stage.Br1}
 								setActiveStage={setActiveStage}
 								readOnly={true}
 								className="text-center w-[80px] dark:bg-gray-800 rounded-sm outline-none custom-input"
-								ov={oBrd1}
-								setOv={setObrd1}
 							/>
 						</td>
 						<td>
@@ -373,10 +375,124 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={brd2}
 								setValue={setBrd2}
-								stage={Stage.Br2}
-								setActiveStage={setActiveStage}
 								ov={oBrd2}
 								setOv={setObrd2}
+								stage={Stage.Br2}
+								setActiveStage={setActiveStage}
+								onBlur={(e: any) => {
+									if (parseFloat(e.target.value) >= 0) {
+										if (
+											/* Is decrease */
+											parseFloat(oBrd2) -
+												parseFloat(e.target.value) >
+											0
+										) {
+											setObrd2(
+												parseFloat(brd2).toFixed(3)
+											);
+											setBrd2(
+												parseFloat(brd2).toFixed(3)
+											);
+											setObrd1(
+												(
+													parseFloat(bld1) +
+													parseFloat(bld2) -
+													parseFloat(brd2)
+												).toFixed(3)
+											);
+											setBrd1(
+												(
+													parseFloat(bld1) +
+													parseFloat(bld2) -
+													parseFloat(brd2)
+												).toFixed(3)
+											);
+										} else {
+											/* Is increase or not changed */
+											if (
+												/* Does not exceed the sum of bld1 and bld2 */
+												parseFloat(brd2) <=
+												parseFloat(bld1) +
+													parseFloat(bld2)
+											) {
+												setObrd2(
+													parseFloat(brd2).toFixed(3)
+												);
+												setBrd2(
+													parseFloat(brd2).toFixed(3)
+												);
+												setObrd1(
+													(
+														parseFloat(bld1) +
+														parseFloat(bld2) -
+														parseFloat(brd2)
+													).toFixed(3)
+												);
+												setBrd1(
+													(
+														parseFloat(bld1) +
+														parseFloat(bld2) -
+														parseFloat(brd2)
+													).toFixed(3)
+												);
+											} else {
+												setBrd2(
+													parseFloat(oBrd2).toFixed(3)
+												);
+											}
+										}
+									} else {
+										setBrd2(parseFloat(oBrd2).toFixed(3));
+									}
+								}}
+								onStepUp={() => {
+									if (
+										/* Does not exceed the sum of bld1 and bld2 */
+										parseFloat(bld1) +
+											parseFloat(bld2) -
+											(parseFloat(brd2) + 1) >=
+										0
+									) {
+										setObrd2(
+											(parseFloat(brd2) + 1).toFixed(3)
+										);
+										setBrd2(
+											(parseFloat(brd2) + 1).toFixed(3)
+										);
+										setObrd1(
+											(
+												parseFloat(bld1) +
+												parseFloat(bld2) -
+												(parseFloat(brd2) + 1)
+											).toFixed(3)
+										);
+										setBrd1(
+											(
+												parseFloat(bld1) +
+												parseFloat(bld2) -
+												(parseFloat(brd2) + 1)
+											).toFixed(3)
+										);
+									}
+								}}
+								onStepDown={() => {
+									setObrd2((parseFloat(brd2) - 1).toFixed(3));
+									setBrd2((parseFloat(brd2) - 1).toFixed(3));
+									setObrd1(
+										(
+											parseFloat(bld1) +
+											parseFloat(bld2) -
+											(parseFloat(brd2) - 1)
+										).toFixed(3)
+									);
+									setBrd1(
+										(
+											parseFloat(bld1) +
+											parseFloat(bld2) -
+											(parseFloat(brd2) - 1)
+										).toFixed(3)
+									);
+								}}
 							/>
 						</td>
 						<td>
@@ -388,13 +504,13 @@ const TsmcParams = (props: any) => {
 						<td>
 							<Input
 								value={rd1}
+								ov={oRd1}
+								setOv={setOrd1}
 								isFast={true}
 								stage={Stage.R1}
 								setActiveStage={setActiveStage}
 								readOnly={true}
 								className="text-center w-[80px] dark:bg-gray-800 rounded-sm outline-none custom-input"
-								ov={oRd1}
-								setOv={setOrd1}
 							/>
 						</td>
 						<td>
@@ -404,10 +520,10 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={rd2}
 								setValue={setRd2}
-								stage={Stage.R2}
-								setActiveStage={setActiveStage}
 								ov={oRd2}
 								setOv={setOrd2}
+								stage={Stage.R2}
+								setActiveStage={setActiveStage}
 							/>
 						</td>
 						<td>
@@ -424,10 +540,10 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={bls1}
 								setValue={setBls1}
-								stage={Stage.Bl1}
-								setActiveStage={setActiveStage}
 								ov={oBls1}
 								setOv={setObls1}
+								stage={Stage.Bl1}
+								setActiveStage={setActiveStage}
 							/>
 						</td>
 						<td className="w-[32px]">
@@ -437,11 +553,11 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={bls2}
 								setValue={setBls2}
+								ov={oBls2}
+								setOv={setObls2}
 								isFast={true}
 								stage={Stage.Bl2}
 								setActiveStage={setActiveStage}
-								ov={oBls2}
-								setOv={setObls2}
 							/>
 						</td>
 
@@ -455,10 +571,10 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={ls1}
 								setValue={setLs1}
-								stage={Stage.L1}
-								setActiveStage={setActiveStage}
 								ov={oLs1}
 								setOv={setOls1}
+								stage={Stage.L1}
+								setActiveStage={setActiveStage}
 							/>
 						</td>
 						<td>
@@ -468,11 +584,11 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={ls2}
 								setValue={setLs2}
+								ov={oLs2}
+								setOv={setOls2}
 								isFast={true}
 								stage={Stage.L2}
 								setActiveStage={setActiveStage}
-								ov={oLs2}
-								setOv={setOls2}
 							/>
 						</td>
 						<Unit>mm/mim</Unit>
@@ -483,11 +599,11 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={brs1}
 								setValue={setBrs1}
+								ov={oBrs1}
+								setOv={setObrs1}
 								isFast={true}
 								stage={Stage.Br1}
 								setActiveStage={setActiveStage}
-								ov={oBrs1}
-								setOv={setObrs1}
 							/>
 						</td>
 						<td>
@@ -497,10 +613,10 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={brs2}
 								setValue={setBrs2}
-								stage={Stage.Br2}
-								setActiveStage={setActiveStage}
 								ov={oBrs2}
 								setOv={setObrs2}
+								stage={Stage.Br2}
+								setActiveStage={setActiveStage}
 							/>
 						</td>
 						<Unit>mm/mim</Unit>
@@ -511,11 +627,11 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={rs1}
 								setValue={setRs1}
+								ov={oRs1}
+								setOv={setOrs1}
 								isFast={true}
 								stage={Stage.R1}
 								setActiveStage={setActiveStage}
-								ov={oRs1}
-								setOv={setOrs1}
 							/>
 						</td>
 						<td>
@@ -525,10 +641,10 @@ const TsmcParams = (props: any) => {
 							<Input
 								value={rs2}
 								setValue={setRs2}
-								stage={Stage.R2}
-								setActiveStage={setActiveStage}
 								ov={oRs2}
 								setOv={setOrs2}
+								stage={Stage.R2}
+								setActiveStage={setActiveStage}
 							/>
 						</td>
 						<Unit>mm/mim</Unit>
@@ -539,185 +655,7 @@ const TsmcParams = (props: any) => {
 	);
 };
 
-const Graph = (props: any) => {
-	const { stage } = props;
-
-	return (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="281"
-			height="403.12"
-			viewBox="0 0 281 403.12"
-		>
-			{/* vat */}
-			<polygon
-				points="270.5 364.62 270.5 398.62 10.5 398.62 10.5 364.62 0.5 364.62 0.5 398.62 0.5 402.62 10.5 402.62 270.5 402.62 280.5 402.62 280.5 398.62 280.5 364.62 270.5 364.62"
-				className="fill-gray-700"
-			/>
-			{/* plate */}
-			<rect
-				x="0.5"
-				y="94.5"
-				width="280"
-				height="36"
-				className="fill-gray-700"
-			/>
-			{/* holder */}
-			<rect
-				x="101.42"
-				y="56.5"
-				width="78.15"
-				height="10"
-				className="fill-gray-700"
-			/>
-			<rect
-				x="101.42"
-				y="56.5"
-				width="10"
-				height="38"
-				className="fill-gray-700"
-			/>
-			<rect
-				x="169.58"
-				y="56.5"
-				width="10"
-				height="38"
-				className="fill-gray-700"
-			/>
-			<rect
-				x="71.42"
-				y="84.5"
-				width="40"
-				height="10"
-				className="fill-gray-700"
-			/>
-			<rect
-				x="169.58"
-				y="84.5"
-				width="40"
-				height="10"
-				className="fill-gray-700"
-			/>
-			<rect
-				x="122.5"
-				y="20.5"
-				width="36"
-				height="36"
-				className="fill-gray-700"
-			/>
-			<rect
-				x="101.42"
-				y="0.5"
-				width="78.15"
-				height="20"
-				className="fill-gray-700"
-			/>
-			{/* Bottom layers */}
-			<motion.g
-				initial={{
-					fill: "rgba(107,114,128,0.2)",
-				}}
-				animate={{
-					fill:
-						stage === Stage.Bl1 ||
-						stage === Stage.Bl2 ||
-						stage === Stage.Br1 ||
-						stage === Stage.Br2
-							? "#0ea5e9"
-							: "rgba(107,114,128,0.2)",
-				}}
-			>
-				<rect x="60.5" y="132.31" width="160" height="4" />
-				<rect x="60.5" y="138.11" width="160" height="4" />
-				<rect x="60.5" y="143.92" width="160" height="4" />
-			</motion.g>
-			{/* Regular layers */}
-			<motion.g
-				initial={{
-					fill: "rgba(107,114,128,0.2)",
-				}}
-				animate={{
-					fill:
-						stage === Stage.L1 ||
-						stage === Stage.L2 ||
-						stage === Stage.R1 ||
-						stage === Stage.R2
-							? "#0ea5e9"
-							: "rgba(107,114,128,0.2)",
-				}}
-			>
-				<rect x="65.5" y="149.72" width="150" height="4" />
-				<rect x="70.5" y="155.53" width="140" height="4" />
-				<rect x="75.5" y="161.34" width="130" height="4" />
-				<rect x="80.5" y="167.14" width="120" height="4" />
-				<rect x="80.5" y="172.95" width="120" height="4" />
-				<rect x="80.5" y="178.75" width="120" height="4" />
-				<rect x="80.5" y="184.56" width="120" height="4" />
-				<rect x="80.5" y="190.37" width="120" height="4" />
-				<rect x="80.5" y="196.17" width="120" height="4" />
-				<rect x="80.5" y="201.98" width="120" height="4" />
-				<rect x="80.5" y="207.79" width="120" height="4" />
-				<rect x="80.5" y="213.59" width="120" height="4" />
-				<rect x="80.5" y="219.4" width="120" height="4" />
-				<rect x="80.5" y="225.2" width="120" height="4" />
-				<rect x="80.5" y="231.01" width="120" height="4" />
-				<rect x="80.5" y="236.82" width="120" height="4" />
-				<rect x="80.5" y="242.62" width="120" height="4" />
-			</motion.g>
-			{/* Arrows */}
-			<motion.polygon
-				points="42.53 319.25 20.5 348.15 32.53 348.15 32.53 398.15 52.53 398.15 52.53 348.15 64.56 348.15 42.53 319.25"
-				initial={{
-					fill: "#374151",
-				}}
-				animate={{
-					fill:
-						stage === Stage.Bl1 || stage === Stage.L1
-							? "#f59e0b"
-							: "#374151",
-				}}
-			/>
-			<motion.polygon
-				points="42.53 238.82 20.5 267.72 32.53 267.72 32.53 317.72 52.53 317.72 52.53 267.72 64.56 267.72 42.53 238.82"
-				initial={{
-					fill: "#374151",
-				}}
-				animate={{
-					fill:
-						stage === Stage.Bl2 || stage === Stage.L2
-							? "#10b981"
-							: "#374151",
-				}}
-			/>
-			<motion.polygon
-				points="238.47 317.72 260.5 288.82 248.47 288.82 248.47 238.82 228.47 238.82 228.47 288.82 216.44 288.82 238.47 317.72"
-				initial={{
-					fill: "#374151",
-				}}
-				animate={{
-					fill:
-						stage === Stage.Br1 || stage === Stage.R1
-							? "#10b981"
-							: "#374151",
-				}}
-			/>
-			<motion.polygon
-				points="238.47 398.15 260.5 369.25 248.47 369.25 248.47 319.25 228.47 319.25 228.47 369.25 216.44 369.25 238.47 398.15"
-				initial={{
-					fill: "#374151",
-				}}
-				animate={{
-					fill:
-						stage === Stage.Br2 || stage === Stage.R2
-							? "#f59e0b"
-							: "#374151",
-				}}
-			/>
-		</svg>
-	);
-};
-
-const enum Stage {
+export const enum Stage {
 	Bl1 = 0,
 	Bl2 = 1,
 	Br1 = 2,
