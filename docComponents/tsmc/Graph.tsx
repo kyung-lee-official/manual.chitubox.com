@@ -1,8 +1,75 @@
 import { motion } from "framer-motion";
 import { Stage } from "./Tsmc";
+import { useEffect, useState } from "react";
 
 export const Graph = (props: any) => {
-	const { stage } = props;
+	const { stage, oBld1, oBld2, oLd1, oLd2, oBrd1, oBrd2, oRd1, oRd2 } = props;
+
+	const arrowHeight = 28.9;
+
+	const arrow12RangeTopY = 238.82 + arrowHeight;
+	const arrow12RangeBottomY = 398.15 - arrowHeight;
+	const arrow12Range = arrow12RangeBottomY - arrow12RangeTopY;
+
+	const [arrow1TipY, setArrow1TipY] = useState<number>(
+		arrow12RangeTopY +
+			(1 - parseFloat(oBld1) / (parseFloat(oBld1) + parseFloat(oBld2))) *
+				arrow12Range
+	);
+	const [arrow1BottomY, setArrow1BottomY] = useState<number>(
+		arrow12RangeTopY +
+			(1 - parseFloat(oBld1) / (parseFloat(oBld1) + parseFloat(oBld2))) *
+				arrow12Range +
+			arrowHeight
+	);
+
+	const arrow34RangeTopY = 238.82 + arrowHeight;
+	const arrow34RangeBottomY = 398.15 - arrowHeight;
+	const arrow34Range = arrow34RangeBottomY - arrow34RangeTopY;
+
+	const [arrow3TipY, setArrow3TipY] = useState<number>(
+		arrow34RangeTopY +
+			(parseFloat(oBrd1) / (parseFloat(oBrd1) + parseFloat(oBrd2))) *
+				arrow34Range
+	);
+	const [arrow3BottomY, setArrow3BottomY] = useState<number>(
+		arrow34RangeTopY +
+			(parseFloat(oBrd1) / (parseFloat(oBrd1) + parseFloat(oBrd2))) *
+				arrow34Range -
+			arrowHeight
+	);
+
+	useEffect(() => {
+		setArrow1TipY(
+			arrow12RangeTopY +
+				(1 -
+					parseFloat(oBld1) /
+						(parseFloat(oBld1) + parseFloat(oBld2))) *
+					arrow12Range
+		);
+		setArrow1BottomY(
+			arrow12RangeTopY +
+				(1 -
+					parseFloat(oBld1) /
+						(parseFloat(oBld1) + parseFloat(oBld2))) *
+					arrow12Range +
+				arrowHeight
+		);
+	}, [oBld1, oBld2]);
+
+	useEffect(() => {
+		setArrow3TipY(
+			arrow34RangeTopY +
+				(parseFloat(oBrd1) / (parseFloat(oBrd1) + parseFloat(oBrd2))) *
+					arrow34Range
+		);
+		setArrow3BottomY(
+			arrow34RangeTopY +
+				(parseFloat(oBrd1) / (parseFloat(oBrd1) + parseFloat(oBrd2))) *
+					arrow34Range -
+				arrowHeight
+		);
+	}, [oBrd1, oBrd2]);
 
 	return (
 		<svg
@@ -127,8 +194,8 @@ export const Graph = (props: any) => {
 				<rect x="80.5" y="242.62" width="120" height="4" />
 			</motion.g>
 			{/* Arrows */}
+			{/* Arrow 1 */}
 			<motion.polygon
-				points="42.53 319.25 20.5 348.15 32.53 348.15 32.53 398.15 52.53 398.15 52.53 348.15 64.56 348.15 42.53 319.25"
 				initial={{
 					fill: "#374151",
 				}}
@@ -137,10 +204,11 @@ export const Graph = (props: any) => {
 						stage === Stage.Bl1 || stage === Stage.L1
 							? "#f59e0b"
 							: "#374151",
+					points: `42.53 ${arrow1TipY} 20.5 ${arrow1BottomY} 32.53 ${arrow1BottomY} 32.53 398.15 52.53 398.15 52.53 ${arrow1BottomY} 64.56 ${arrow1BottomY} 42.53 ${arrow1TipY}`,
 				}}
 			/>
+			{/* Arrow 2 */}
 			<motion.polygon
-				points="42.53 238.82 20.5 267.72 32.53 267.72 32.53 317.72 52.53 317.72 52.53 267.72 64.56 267.72 42.53 238.82"
 				initial={{
 					fill: "#374151",
 				}}
@@ -149,10 +217,11 @@ export const Graph = (props: any) => {
 						stage === Stage.Bl2 || stage === Stage.L2
 							? "#10b981"
 							: "#374151",
+					points: `42.53 238.82 20.5 267.72 32.53 267.72 32.53 ${arrow1TipY} 52.53 ${arrow1TipY} 52.53 267.72 64.56 267.72 42.53 238.82`,
 				}}
 			/>
+			{/* Arrow 3 */}
 			<motion.polygon
-				points="238.47 317.72 260.5 288.82 248.47 288.82 248.47 238.82 228.47 238.82 228.47 288.82 216.44 288.82 238.47 317.72"
 				initial={{
 					fill: "#374151",
 				}}
@@ -161,10 +230,11 @@ export const Graph = (props: any) => {
 						stage === Stage.Br1 || stage === Stage.R1
 							? "#10b981"
 							: "#374151",
+					points: `238.47 ${arrow3TipY} 260.5 ${arrow3BottomY} 248.47 ${arrow3BottomY} 248.47 238.82 228.47 238.82 228.47 ${arrow3BottomY} 216.44 ${arrow3BottomY} 238.47 ${arrow3TipY}`,
 				}}
 			/>
+			{/* Arrow 4 */}
 			<motion.polygon
-				points="238.47 398.15 260.5 369.25 248.47 369.25 248.47 319.25 228.47 319.25 228.47 369.25 216.44 369.25 238.47 398.15"
 				initial={{
 					fill: "#374151",
 				}}
@@ -173,6 +243,7 @@ export const Graph = (props: any) => {
 						stage === Stage.Br2 || stage === Stage.R2
 							? "#f59e0b"
 							: "#374151",
+					points: `238.47 398.15 260.5 369.25 248.47 369.25 248.47 ${arrow3TipY} 228.47 ${arrow3TipY} 228.47 369.25 216.44 369.25 238.47 398.15`,
 				}}
 			/>
 		</svg>
