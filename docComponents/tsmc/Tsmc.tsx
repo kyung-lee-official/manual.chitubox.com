@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Input } from "./Input";
 import { Graph } from "./Graph";
+import { useTranslation } from "react-i18next";
 
 const Add = () => <div className="flex justify-center">+</div>;
 const Unit = ({ children }: any) => (
@@ -76,6 +77,8 @@ const TsmcParams = (props: any) => {
 		setOrs2,
 	} = props;
 
+	const { t } = useTranslation();
+
 	return (
 		<div
 			className="flex flex-col gap-4
@@ -84,7 +87,9 @@ const TsmcParams = (props: any) => {
 			<table className="w-[700px] [&_>_tbody_>_tr_>_td:first-child]:h-8">
 				<tbody>
 					<tr>
-						<td className="w-[300px]">Bottom Lift Distance</td>
+						<td className="w-[300px]">
+							{t("docComponents.tsmc.bld")}
+						</td>
 						<td className="w-[96px]">
 							<Input
 								value={bld1}
@@ -346,7 +351,7 @@ const TsmcParams = (props: any) => {
 						</td>
 					</tr>
 					<tr>
-						<td>Lifting Distance</td>
+						<td>{t("docComponents.tsmc.ld")}</td>
 						<td>
 							<Input
 								value={ld1}
@@ -584,7 +589,7 @@ const TsmcParams = (props: any) => {
 						</td>
 					</tr>
 					<tr>
-						<td>Bottom Retract Distance</td>
+						<td>{t("docComponents.tsmc.brd")}</td>
 						<td>
 							<Input
 								value={brd1}
@@ -729,7 +734,7 @@ const TsmcParams = (props: any) => {
 						</td>
 					</tr>
 					<tr>
-						<td>Retract Distance</td>
+						<td>{t("docComponents.tsmc.rd")}</td>
 						<td>
 							<Input
 								value={rd1}
@@ -874,7 +879,9 @@ const TsmcParams = (props: any) => {
 			<table className="w-[700px] [&_>_tbody_>_tr_>_td:first-child]:h-8">
 				<tbody>
 					<tr>
-						<td className="w-[300px]">Bottom Lift Speed</td>
+						<td className="w-[300px]">
+							{t("docComponents.tsmc.bls")}
+						</td>
 						<td className="w-[96px]">
 							<Input
 								value={bls1}
@@ -905,7 +912,7 @@ const TsmcParams = (props: any) => {
 						</td>
 					</tr>
 					<tr>
-						<td>Lifting Speed</td>
+						<td>{t("docComponents.tsmc.ls")}</td>
 						<td>
 							<Input
 								value={ls1}
@@ -933,7 +940,7 @@ const TsmcParams = (props: any) => {
 						<Unit>mm/mim</Unit>
 					</tr>
 					<tr>
-						<td>Bottom Retract Speed</td>
+						<td>{t("docComponents.tsmc.bls")}</td>
 						<td>
 							<Input
 								value={brs1}
@@ -961,7 +968,7 @@ const TsmcParams = (props: any) => {
 						<Unit>mm/mim</Unit>
 					</tr>
 					<tr>
-						<td>Retract Speed</td>
+						<td>{t("docComponents.tsmc.rs")}</td>
 						<td>
 							<Input
 								value={rs1}
@@ -1053,7 +1060,7 @@ export const Tsmc = () => {
 	return (
 		<div
 			className="flex flex-col gap-6 my-8 p-8
-            bg-gray-100 dark:bg-gray-900 rounded-xl overflow-x-scroll"
+            bg-gray-100 dark:bg-gray-900 rounded-xl overflow-x-auto"
 		>
 			<TsmcParams
 				setActiveStage={setActiveStage}
