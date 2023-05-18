@@ -5,6 +5,13 @@ import { useEffect, useState } from "react";
 export const Graph = (props: any) => {
 	const { stage, oBld1, oBld2, oLd1, oLd2, oBrd1, oBrd2, oRd1, oRd2 } = props;
 
+	const [isBottomLayers, setIsBottomLayers] = useState<boolean>(
+		stage === Stage.Bl1 ||
+			stage === Stage.Bl2 ||
+			stage === Stage.Br1 ||
+			stage === Stage.Br2
+	);
+
 	const arrowHeight = 28.9;
 
 	const arrow12RangeTopY = 238.82 + arrowHeight;
@@ -13,12 +20,18 @@ export const Graph = (props: any) => {
 
 	const [arrow1TipY, setArrow1TipY] = useState<number>(
 		arrow12RangeTopY +
-			(1 - parseFloat(oBld1) / (parseFloat(oBld1) + parseFloat(oBld2))) *
+			(1 -
+				parseFloat(isBottomLayers ? oBld1 : oLd1) /
+					(parseFloat(isBottomLayers ? oBld1 : oLd1) +
+						parseFloat(isBottomLayers ? oBld2 : oLd2))) *
 				arrow12Range
 	);
 	const [arrow1BottomY, setArrow1BottomY] = useState<number>(
 		arrow12RangeTopY +
-			(1 - parseFloat(oBld1) / (parseFloat(oBld1) + parseFloat(oBld2))) *
+			(1 -
+				parseFloat(isBottomLayers ? oBld1 : oLd1) /
+					(parseFloat(isBottomLayers ? oBld1 : oLd1) +
+						parseFloat(isBottomLayers ? oBld2 : oLd2))) *
 				arrow12Range +
 			arrowHeight
 	);
@@ -40,36 +53,55 @@ export const Graph = (props: any) => {
 	);
 
 	useEffect(() => {
+		if (
+			stage === Stage.Bl1 ||
+			stage === Stage.Bl2 ||
+			stage === Stage.Br1 ||
+			stage === Stage.Br2
+		) {
+			setIsBottomLayers(true);
+		} else {
+			setIsBottomLayers(false);
+		}
+	}, [stage]);
+
+	useEffect(() => {
 		setArrow1TipY(
 			arrow12RangeTopY +
 				(1 -
-					parseFloat(oBld1) /
-						(parseFloat(oBld1) + parseFloat(oBld2))) *
+					parseFloat(isBottomLayers ? oBld1 : oLd1) /
+						(parseFloat(isBottomLayers ? oBld1 : oLd1) +
+							parseFloat(isBottomLayers ? oBld2 : oLd2))) *
 					arrow12Range
 		);
 		setArrow1BottomY(
 			arrow12RangeTopY +
 				(1 -
-					parseFloat(oBld1) /
-						(parseFloat(oBld1) + parseFloat(oBld2))) *
+					parseFloat(isBottomLayers ? oBld1 : oLd1) /
+						(parseFloat(isBottomLayers ? oBld1 : oLd1) +
+							parseFloat(isBottomLayers ? oBld2 : oLd2))) *
 					arrow12Range +
 				arrowHeight
 		);
-	}, [oBld1, oBld2]);
+	}, [isBottomLayers, oBld1, oBld2, oLd1, oLd2]);
 
 	useEffect(() => {
 		setArrow3TipY(
 			arrow34RangeTopY +
-				(parseFloat(oBrd1) / (parseFloat(oBrd1) + parseFloat(oBrd2))) *
+				(parseFloat(isBottomLayers ? oBrd1 : oRd1) /
+					(parseFloat(isBottomLayers ? oBrd1 : oRd1) +
+						parseFloat(isBottomLayers ? oBrd2 : oRd2))) *
 					arrow34Range
 		);
 		setArrow3BottomY(
 			arrow34RangeTopY +
-				(parseFloat(oBrd1) / (parseFloat(oBrd1) + parseFloat(oBrd2))) *
+				(parseFloat(isBottomLayers ? oBrd1 : oRd1) /
+					(parseFloat(isBottomLayers ? oBrd1 : oRd1) +
+						parseFloat(isBottomLayers ? oBrd2 : oRd2))) *
 					arrow34Range -
 				arrowHeight
 		);
-	}, [oBrd1, oBrd2]);
+	}, [isBottomLayers, oBrd1, oBrd2, oRd1, oRd2]);
 
 	return (
 		<svg
