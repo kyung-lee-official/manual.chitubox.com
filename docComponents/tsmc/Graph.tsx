@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { Stage } from "./Tsmc";
 import { useEffect, useState } from "react";
+import { Theme, useThemeStore } from "stores/theme";
 
 export const Graph = (props: any) => {
 	const { stage, oBld1, oBld2, oLd1, oLd2, oBrd1, oBrd2, oRd1, oRd2 } = props;
 
+	const { theme } = useThemeStore();
 	const [isBottomLayers, setIsBottomLayers] = useState<boolean>(
 		stage === Stage.Bl1 ||
 			stage === Stage.Bl2 ||
@@ -113,7 +115,7 @@ export const Graph = (props: any) => {
 			{/* vat */}
 			<polygon
 				points="270.5 364.62 270.5 398.62 10.5 398.62 10.5 364.62 0.5 364.62 0.5 398.62 0.5 402.62 10.5 402.62 270.5 402.62 280.5 402.62 280.5 398.62 280.5 364.62 270.5 364.62"
-				className="fill-gray-700"
+				className="fill-gray-300 dark:fill-gray-700"
 			/>
 			{/* plate */}
 			<rect
@@ -121,7 +123,7 @@ export const Graph = (props: any) => {
 				y="94.5"
 				width="280"
 				height="36"
-				className="fill-gray-700"
+				className="fill-gray-300 dark:fill-gray-700"
 			/>
 			{/* holder */}
 			<rect
@@ -129,49 +131,49 @@ export const Graph = (props: any) => {
 				y="56.5"
 				width="78.15"
 				height="10"
-				className="fill-gray-700"
+				className="fill-gray-300 dark:fill-gray-700"
 			/>
 			<rect
 				x="101.42"
 				y="56.5"
 				width="10"
 				height="38"
-				className="fill-gray-700"
+				className="fill-gray-300 dark:fill-gray-700"
 			/>
 			<rect
 				x="169.58"
 				y="56.5"
 				width="10"
 				height="38"
-				className="fill-gray-700"
+				className="fill-gray-300 dark:fill-gray-700"
 			/>
 			<rect
 				x="71.42"
 				y="84.5"
 				width="40"
 				height="10"
-				className="fill-gray-700"
+				className="fill-gray-300 dark:fill-gray-700"
 			/>
 			<rect
 				x="169.58"
 				y="84.5"
 				width="40"
 				height="10"
-				className="fill-gray-700"
+				className="fill-gray-300 dark:fill-gray-700"
 			/>
 			<rect
 				x="122.5"
 				y="20.5"
 				width="36"
 				height="36"
-				className="fill-gray-700"
+				className="fill-gray-300 dark:fill-gray-700"
 			/>
 			<rect
 				x="101.42"
 				y="0.5"
 				width="78.15"
 				height="20"
-				className="fill-gray-700"
+				className="fill-gray-300 dark:fill-gray-700"
 			/>
 			{/* Bottom layers */}
 			<motion.g
@@ -229,52 +231,60 @@ export const Graph = (props: any) => {
 			{/* Arrow 1 */}
 			<motion.polygon
 				initial={{
-					fill: "#374151",
+					fill: theme === Theme.DARK ? "#374151" : "#d1d5db",
 				}}
 				animate={{
 					fill:
 						stage === Stage.Bl1 || stage === Stage.L1
 							? "#f59e0b"
-							: "#374151",
+							: theme === Theme.DARK
+							? "#374151"
+							: "#d1d5db",
 					points: `42.53 ${arrow1TipY} 20.5 ${arrow1BottomY} 32.53 ${arrow1BottomY} 32.53 398.15 52.53 398.15 52.53 ${arrow1BottomY} 64.56 ${arrow1BottomY} 42.53 ${arrow1TipY}`,
 				}}
 			/>
 			{/* Arrow 2 */}
 			<motion.polygon
 				initial={{
-					fill: "#374151",
+					fill: theme === Theme.DARK ? "#374151" : "#d1d5db",
 				}}
 				animate={{
 					fill:
 						stage === Stage.Bl2 || stage === Stage.L2
 							? "#10b981"
-							: "#374151",
+							: theme === Theme.DARK
+							? "#374151"
+							: "#d1d5db",
 					points: `42.53 238.82 20.5 267.72 32.53 267.72 32.53 ${arrow1TipY} 52.53 ${arrow1TipY} 52.53 267.72 64.56 267.72 42.53 238.82`,
 				}}
 			/>
 			{/* Arrow 3 */}
 			<motion.polygon
 				initial={{
-					fill: "#374151",
+					fill: theme === Theme.DARK ? "#374151" : "#d1d5db",
 				}}
 				animate={{
 					fill:
 						stage === Stage.Br1 || stage === Stage.R1
 							? "#10b981"
-							: "#374151",
+							: theme === Theme.DARK
+							? "#374151"
+							: "#d1d5db",
 					points: `238.47 ${arrow3TipY} 260.5 ${arrow3BottomY} 248.47 ${arrow3BottomY} 248.47 238.82 228.47 238.82 228.47 ${arrow3BottomY} 216.44 ${arrow3BottomY} 238.47 ${arrow3TipY}`,
 				}}
 			/>
 			{/* Arrow 4 */}
 			<motion.polygon
 				initial={{
-					fill: "#374151",
+					fill: theme === Theme.DARK ? "#374151" : "#d1d5db",
 				}}
 				animate={{
 					fill:
 						stage === Stage.Br2 || stage === Stage.R2
 							? "#f59e0b"
-							: "#374151",
+							: theme === Theme.DARK
+							? "#374151"
+							: "#d1d5db",
 					points: `238.47 398.15 260.5 369.25 248.47 369.25 248.47 ${arrow3TipY} 228.47 ${arrow3TipY} 228.47 369.25 216.44 369.25 238.47 398.15`,
 				}}
 			/>

@@ -119,7 +119,7 @@ export const Input = (props: any) => {
 				className={
 					className
 						? className
-						: "text-center w-[80px] dark:bg-gray-700 rounded-sm outline-none custom-input"
+						: "text-center w-[80px] bg-gray-100 dark:bg-gray-700 rounded-sm outline-none custom-input"
 				}
 				readOnly={readOnly}
 				onChange={
@@ -138,7 +138,9 @@ export const Input = (props: any) => {
 			>
 				<div
 					className={`hover:text-gray-300 ${
-						readOnly ? "bg-gray-800" : "bg-gray-700"
+						readOnly
+							? "bg-gray-50 dark:bg-gray-800"
+							: "bg-gray-100 dark:bg-gray-700"
 					}
                     rounded-sm ${
 						readOnly ? "cursor-not-allowed" : "cursor-pointer"
@@ -149,7 +151,9 @@ export const Input = (props: any) => {
 				</div>
 				<div
 					className={`hover:text-gray-300 ${
-						readOnly ? "bg-gray-800" : "bg-gray-700"
+						readOnly
+							? "bg-gray-50 dark:bg-gray-800"
+							: "bg-gray-100 dark:bg-gray-700"
 					}
                     rounded-sm ${
 						readOnly ? "cursor-not-allowed" : "cursor-pointer"
