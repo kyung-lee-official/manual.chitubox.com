@@ -1,11 +1,21 @@
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import Lottie from "lottie-react";
+import ThumbUpDark from "./thumbup-dark.json";
+import ThumbUpLight from "./thumbup-light.json";
+import { ThumbDown } from "../icons/Icons";
+import { useTranslation } from "react-i18next";
+import { Theme, useThemeStore } from "stores/theme";
 
 export const IsPageUseful = (props: any) => {
 	const { meta } = props;
 	const router = useRouter();
 
 	const [isClicked, setIsClicked] = useState(false);
+	const thumbRef = useRef<any>(null);
+	const { theme } = useThemeStore();
+
+	const { t } = useTranslation();
 
 	function click() {
 		console.log(meta);
@@ -20,17 +30,43 @@ export const IsPageUseful = (props: any) => {
             shadow-md rounded-md"
 		>
 			{isClicked ? (
-				<div className="font-medium">Thank you for your feedback!</div>
+				<div className="font-medium">
+					{t("docComponents.isPageUseful.thanks")}
+				</div>
 			) : (
-				<>
-					<div className="font-medium">Is this page useful?</div>
-					<div className="cursor-pointer" onClick={click}>
-						👍
+				<div className="flex items-center gap-4">
+					<div className="font-medium">
+						{t("docComponents.isPageUseful.question")}
+					</div>
+					<div
+						className="cursor-pointer"
+						onClick={() => {
+							thumbRef.current.goToAndPlay(0, false);
+						}}
+					>
+						<div className="relative w-6 h-6">
+							<div className="absolute w-[100px] h-[100px] top-[-38px] left-[-38px] pointer-events-none">
+								<Lottie
+									animationData={
+										theme === Theme.DARK
+											? ThumbUpDark
+											: ThumbUpLight
+									}
+									loop={false}
+									autoplay={false}
+									lottieRef={thumbRef}
+									onComplete={() => {
+										setIsClicked(true);
+									}}
+								/>
+							</div>
+						</div>
+						{/* <ThumbUp /> */}
 					</div>
 					<div className="cursor-pointer" onClick={click}>
-						👎
+						<ThumbDown />
 					</div>
-				</>
+				</div>
 			)}
 		</div>
 	);

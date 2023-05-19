@@ -56,6 +56,10 @@
 			"ls": "Lift Speed",
 			"brs": "Bottom Retract Speed",
 			"rs": "Retract Speed"
+		},
+		"isPageUseful": {
+			"question": "Is this page useful?",
+			"thanks": "Thanks for your feedback!"
 		}
 	}
 }
