@@ -76,6 +76,10 @@
 							"label": "Setting/Help"
 						},
 						{
+							"item": "slice",
+							"label": "Slice"
+						},
+						{
 							"item": "slice-preview",
 							"label": "Slice Preview"
 						}

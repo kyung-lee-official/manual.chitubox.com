@@ -76,6 +76,10 @@
 							"label": "设置/帮助"
 						},
 						{
+							"item": "slice",
+							"label": "切片"
+						},
+						{
 							"item": "slice-preview",
 							"label": "切片预览"
 						}
