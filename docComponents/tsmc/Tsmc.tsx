@@ -179,12 +179,14 @@ const TsmcParams = (props: any) => {
 									}
 								}}
 								onStepUp={() => {
+									setActiveStage(Stage.Bl1);
 									setObld1((parseFloat(bld1) + 1).toFixed(3));
 									setBld1((parseFloat(bld1) + 1).toFixed(3));
 									setObrd1((parseFloat(brd1) + 1).toFixed(3));
 									setBrd1((parseFloat(brd1) + 1).toFixed(3));
 								}}
 								onStepDown={() => {
+									setActiveStage(Stage.Bl1);
 									if (parseFloat(bld1) - 1 >= 0) {
 										if (
 											/* brd1 is large enough to decrease */
@@ -309,12 +311,14 @@ const TsmcParams = (props: any) => {
 									}
 								}}
 								onStepUp={() => {
+									setActiveStage(Stage.Bl2);
 									setObld2((parseFloat(bld2) + 1).toFixed(3));
 									setBld2((parseFloat(bld2) + 1).toFixed(3));
 									setObrd1((parseFloat(brd1) + 1).toFixed(3));
 									setBrd1((parseFloat(brd1) + 1).toFixed(3));
 								}}
 								onStepDown={() => {
+									setActiveStage(Stage.Bl2);
 									if (parseFloat(bld2) - 1 >= 0) {
 										if (
 											/* brd1 is large enough to decrease */
@@ -437,12 +441,14 @@ const TsmcParams = (props: any) => {
 									}
 								}}
 								onStepUp={() => {
+									setActiveStage(Stage.L1);
 									setOld1((parseFloat(ld1) + 1).toFixed(3));
 									setLd1((parseFloat(ld1) + 1).toFixed(3));
 									setOrd1((parseFloat(rd1) + 1).toFixed(3));
 									setRd1((parseFloat(rd1) + 1).toFixed(3));
 								}}
 								onStepDown={() => {
+									setActiveStage(Stage.L1);
 									if (parseFloat(ld1) - 1 >= 0) {
 										if (
 											/* rd1 is large enough to decrease */
@@ -555,12 +561,14 @@ const TsmcParams = (props: any) => {
 									}
 								}}
 								onStepUp={() => {
+									setActiveStage(Stage.L2);
 									setOld2((parseFloat(ld2) + 1).toFixed(3));
 									setLd2((parseFloat(ld2) + 1).toFixed(3));
 									setOrd1((parseFloat(rd1) + 1).toFixed(3));
 									setRd1((parseFloat(rd1) + 1).toFixed(3));
 								}}
 								onStepDown={() => {
+									setActiveStage(Stage.L2);
 									if (parseFloat(ld2) - 1 >= 0) {
 										if (
 											/* rd1 is large enough to decrease */
@@ -680,6 +688,7 @@ const TsmcParams = (props: any) => {
 									}
 								}}
 								onStepUp={() => {
+									setActiveStage(Stage.Br2);
 									if (
 										/* Does not exceed the sum of bld1 and bld2 */
 										parseFloat(bld1) +
@@ -710,6 +719,7 @@ const TsmcParams = (props: any) => {
 									}
 								}}
 								onStepDown={() => {
+									setActiveStage(Stage.Br2);
 									setObrd2((parseFloat(brd2) - 1).toFixed(3));
 									setBrd2((parseFloat(brd2) - 1).toFixed(3));
 									setObrd1(
@@ -821,6 +831,7 @@ const TsmcParams = (props: any) => {
 									}
 								}}
 								onStepUp={() => {
+									setActiveStage(Stage.R2);
 									if (
 										/* Does not exceed the sum of ld1 and ld2 */
 										parseFloat(ld1) +
@@ -851,6 +862,7 @@ const TsmcParams = (props: any) => {
 									}
 								}}
 								onStepDown={() => {
+									setActiveStage(Stage.R2);
 									setOrd2((parseFloat(rd2) - 1).toFixed(3));
 									setRd2((parseFloat(rd2) - 1).toFixed(3));
 									setOrd1(

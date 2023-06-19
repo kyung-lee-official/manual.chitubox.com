@@ -77,6 +77,7 @@ export const Input = (props: any) => {
 	}
 
 	const originalOnStepUp = () => {
+		setActiveStage(stage);
 		setOv((parseFloat(value) + 1).toFixed(3));
 		setValue((parseFloat(value) + 1).toFixed(3));
 	};
@@ -90,6 +91,7 @@ export const Input = (props: any) => {
 	}
 
 	const originalOnStepDown = () => {
+		setActiveStage(stage);
 		if (parseFloat(value) - 1 >= 0) {
 			setOv((parseFloat(value) - 1).toFixed(3));
 			setValue((parseFloat(value) - 1).toFixed(3));
