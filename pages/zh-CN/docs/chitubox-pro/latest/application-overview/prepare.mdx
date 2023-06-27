@@ -240,7 +240,7 @@ export const meta = {
 	}
 />
 
-将选定的模型按照设定的挖洞参数挖洞。随着边数的增加，洞的形状将越来越接近圆形。
+将选定的模型按照设定的挖洞参数挖洞。
 
 <StyledAntdImage
 	src={
@@ -248,17 +248,16 @@ export const meta = {
 	}
 />
 
-<Admonition type="note" title="注意">
-	在 CHITUBOX Pro V1.3.0
-	版本中优化了挖洞功能的算法，**取消了壁厚参数B**，软件将自动计算出壁厚并进行挖洞。
-</Admonition>
-
-<StyledAntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/006-application-overview-prepare009.gif"
-	}
-	style={{ maxWidth: 720 }}
-/>
+-   挖洞模式：有贯穿和非贯穿模式两种。
+-   多边形边数：边数越大，孔的形状将越接近圆形。
+-   Φ：孔的直径。
+-   B：孔能够穿透的最大深度。
+-   C：孔与孔底部形成的夹角。
+-   旋转：孔的旋转角度。
+-   保留孔：开启/关闭保留打孔塞子。
+-   角度：以垂直于模型/相机透视角度进行挖洞。
+-   强制挖洞：开启/关闭强制挖洞。
+-   限制深度 B：开启/关闭限制挖洞深度 B。
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

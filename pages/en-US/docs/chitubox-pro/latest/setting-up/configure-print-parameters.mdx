@@ -280,11 +280,19 @@ The triangular sawtooth of image edge is softened to achieve smoother surface ef
 
 -   _Image Blur Enable_ : Enable/Disable image blur, **designed for _.ctb_ format**.
 
-    -   <SpanText>_Image Blur Pixel_ : `2`, `3`, `4`, determines the number of pixels for edge transition, the higher level you select, the softer edge would be. Similar to the feather function in Photoshop.</SpanText>
+    -   <SpanText>_Image Blur Pixel_ : `2` ~ `8`, determines the number of pixels for edge transition, the higher level you select, the softer edge would be. Similar to the feather function in Photoshop.</SpanText>
 
 Open <SpanA href="https://youtu.be/ihITNQetn94">📺this video</SpanA> and <SpanA href="https://www.chitubox.com/docs/en-US/chitubox/indepth/1.x.x/technology/52">📃this article</SpanA> to learn more about **Anti-aliasing**, **Grayscale**, and **Image Blur**.
 
-#### 5 Tolerance Compensation
+#### 5 Shrinkage Compensation
+
+Shrinkage compensation of the model in X, Y, and Z directions. The percentage represents the size compared to the original size, the default value is 100%.
+
+When the percentage value is larger, the model body is larger.
+
+When the percentage value is smaller, the model body is smaller.
+
+#### 6 Tolerance Compensation
 
 Inner and outer diameter compensation of normal printing layers 
 
@@ -301,7 +309,7 @@ This will expand the layer if a negative value was specified.
 
 Open <SpanA href="https://youtu.be/iYKVPmmoUUo">📺this video</SpanA> and <SpanA href="https://www.chitubox.com/docs/en-US/chitubox/howto/1.x.x/chitubox-free/settings/how-to-use-tolerance-compensation-on-chitubox">📃this article</SpanA> to learn more about **Tolerance Compensation**.
 
-#### 6 Bottom Tolerance Compensation
+#### 7 Bottom Tolerance Compensation
 
 Inner and outer diameter compensation of bottom printing layers
 
@@ -317,7 +325,7 @@ When b is smaller, the outer diameter is shorter, and the model body is smaller.
 	When the bottom layer tolerance compensation is disabled, the normal layer tolerance compensation will be effective for the whole model.
 </Admonition>
 
-#### 7 Print Time Compensation
+#### 8 Print Time Compensation
 
 Some high-resolution printers could have extra delays when loading data and will lead to inaccurate printing time estimation, you can set up a time compensation to improve the issue.
 
@@ -343,7 +351,7 @@ Some high-resolution printers could have extra delays when loading data and will
 		Remember to click **Apply** after changing parameters, otherwise, the parameters won't take effect.
 	</Admonition>
 
-#### 8 Mask
+#### 9 Mask
 
 Mask is designed for a commonly seen issue that is uneven light strength from points to points on the screen and is mostly caused by improper light sources. The purpose of the mask is to provide a correction layer on the screen by adjusting the transmittance on different areas of the screen respectively, make the uneven light homogeneous.
 
@@ -351,9 +359,9 @@ _Mask File_ : You can select an existing image by clicking `...` icon or create 
 
 _Gray scale unit_ : click <NextLink href="/en-US/docs/chitubox-pro/latest/setting-up/configure-print-parameters#82-gray-scale-unit">here</NextLink> to learn more about gray scale unit.
 
-##### 8.1 Mask Generator
+##### 9.1 Mask Generator
 
-###### 8.1.1 Hub-and-Spoke
+###### 9.1.1 Hub-and-Spoke
 
 **Hub-and-Spoke** generate a ripple-like pattern. The number of circles is set by **Number of equal parts**. Radius of circles are arithmetic sequence, increases by **Equal radius**.
 
@@ -416,7 +424,7 @@ here is a comparison for different **Equal radius**:
 	</tbody>
 </table>
 
-###### 8.1.2 Matrix Mode
+###### 9.1.2 Matrix Mode
 
 **Matrix Mode** generate a matrix-like pattern. Rows and columns are set by `m` and `n` respectively.
 The range of **Gray Parameter** is available from `0` (black) to `255` (white).
@@ -439,7 +447,7 @@ For example, here is a 2 $\times$ 3 matrix with different grayscales.
 	/>
 </ImageContainer>
 
-##### 8.2. Gray scale unit
+##### 9.2. Gray scale unit
 
 The way **Gray scale unit** work is to average the grey value of specified number of pixels in X-axis direction, and apply averaged grayscale to pixels in corresponding position of the original image.
 

@@ -246,13 +246,33 @@ The selected models will be hollowed out according to the set hollowing paramete
 	}
 />
 
-The selected model is excavated according to the set hole parameters. As you increasing the edges, the shape of the hole will get close to a circle.
+The selected model is excavated according to the set hole parameters.
 
-<ImageContainer>
-	<StyledAntdImage
-		src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/004-dig-hole.gif"}
-	/>
-</ImageContainer>
+<StyledAntdImage
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare009.1.png"
+	}
+/>
+
+-   Hole Mode: Digging a penetration or non-penetration hole.
+
+-   Edge Number: As increasing the edges, the shape of the hole will get close to a circle.
+
+-   Φ: The diameter of the hole.
+
+-   B: The maximum thickness of the wall that the hole can dig through.
+
+-   C: The angle between the hole and the bottom of the hole.
+
+-   Rotate: The rotation angle of the hole.
+
+-   Keep Hole: Whether to keep the cork or not.
+
+-   Angle: Digging angle perpendicular to the screen or to the model.
+
+-   Forced digging hole: Whether to force digging holes or not.
+
+-   Limited Depth B: Whether to limited depth B or not.
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
