@@ -215,8 +215,6 @@ export const meta = {
 	/>
 </ImageContainer>
 
-显示支撑辅助线： 是否在模型表面显示支撑复制线。
-
 <Admonition type="note" title="注意">
 	CHITUBOX Basic V1.8.1
 	开始，为了提升用户体验，我们在加载模型时禁用了支撑辅助线计算，这使得加载过程更快。
@@ -407,7 +405,7 @@ export const meta = {
 		<tr>
 			<td>增强自动支撑</td>
 			<td>
-				启用/关闭增强自动支撑。
+				启用/关闭增强自动支撑。V1.4.0 版本新增了<NextLink href="#增强自动支撑">三角强化（TR）</NextLink>和 <NextLink href="#增强自动支撑">全局强化（GR）</NextLink>两种模式。
 				<StyledAntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support.gif"
@@ -493,9 +491,28 @@ export const meta = {
 	</tbody>
 </ResponsiveTable>
 
+### 增强自动支撑
+
+添加自动支撑时，一些孤立支撑主干会自动增加辅助支撑，并生成连接结构。
+
+- 三角强化（TR）：当选中三角强化模式，添加自动支撑时，将自动连接相邻的三个孤立支撑主干，从而形成稳定的三角结构。
+
+- 全局强化（GR）：当选中全局强化模式，添加自动支撑时，将全面强化所有孤立支撑主干，自动形成由三角结构组合而成的更加稳定的结构，将所有支撑关联起来以更好地辅助支撑的稳定性。
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-tr.png"
+		}
+		text1={"三角强化（TR）"}
+		img2Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-gr.png"
+		}
+		text2={"全局强化（GR）"}
+	/>
+</ImageContainer>
+
 <Admonition type="note" title="注意">
-	启用增强自动支撑功能：添加自动支撑时，一些孤立支撑主干会自动增加辅助支撑，并生成连接结构。
-	<br />
 	启用小柱子自动吸附功能：可以自由设置吸附半径的大小。切片软件会根据算法在添加小柱子支撑时，将小柱子的下端自动吸附在合适的支撑上。
 </Admonition>
 

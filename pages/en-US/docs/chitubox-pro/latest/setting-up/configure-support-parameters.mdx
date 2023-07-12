@@ -48,14 +48,15 @@ To open **Support Configuration Panel**, you need to enter the <NextLink href="/
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support010.1.png"
 		}
-	/>, and rename your support profiles, where "save" supports _Auto Save_ and _Manual Save_. 
+	/>, and rename your support profiles, where "save" supports _Auto Save_ and _Manual Save_.
 
-	**Z Lift Height**: The height distance
-	between the lowest point of the model and the platform.
-	<StyledAntdImage
-		src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/009-z-lift-height.gif"}
-		style={{ maxWidth: "200px" }}
-	/>
+    **Z Lift Height**: The height distance
+    between the lowest point of the model and the platform.
+    <StyledAntdImage
+    	src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/009-z-lift-height.gif"}
+    	style={{ maxWidth: "200px" }}
+    />
+
 </div>
 
 ## Support Settings
@@ -195,10 +196,13 @@ The **Advance** button below provides more flexibility for your supports.
 	/>
 </ImageContainer>
 
-Display Support Auxiliary Line: whether show support auxiliary lines in model surfaces.
-
 <Admonition type="note">
-	Starting from CHITUBOX Basic v1.8.1, to improve user experience, we disabled support auxiliary lines calculation when loading models, this makes the loading process faster. If you wanna bring them back, auto support will calculate auxiliary lines (they will show up if you remove auto-added supports, but only on critical areas compared to Basic V1.8.1). We encourage you to judge risky areas using the red highlight instead.
+	Starting from CHITUBOX Basic v1.8.1, to improve user experience, we disabled
+	support auxiliary lines calculation when loading models, this makes the
+	loading process faster. If you wanna bring them back, auto support will
+	calculate auxiliary lines (they will show up if you remove auto-added
+	supports, but only on critical areas compared to Basic V1.8.1). We encourage
+	you to judge risky areas using the red highlight instead.
 </Admonition>
 
 <ResponsiveTable>
@@ -471,14 +475,31 @@ Display Support Auxiliary Line: whether show support auxiliary lines in model su
 	</tbody>
 </ResponsiveTable>
 
-<Admonition type="note">
-	**Enable enhanced automatic support**: When adding automatic
-	supports, some isolated trunk supports are automatically added auxiliary
-	supports and will generate connecting structures.
+### Enhanced Automatic Support
 
-	**Enable automatic adsorption of small columns**: You can freely
-	set the size of the adsorption radius. The software will automatically attach
-	the lower end of the small column to the appropriate support when adding the
+When adding automatic supports, some isolated trunk supports are automatically added auxiliary supports and will generate connecting structures.
+
+-   Triangular Reinforcement (TR): When adding automatic supports, some isolated trunk supports will be automatically connected to form a stable triangular structure.
+
+-   Global Reinforcement (GR): When adding automatic supports, a more stable structure composed of triangular structures will be automatically formed to better assist the stability of the support.
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-tr.png"
+		}
+		text1={"Triangular Reinforcement (TR)"}
+		img2Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-gr.png"
+		}
+		text2={"Global Reinforcement (GR)"}
+	/>
+</ImageContainer>
+
+<Admonition type="note">
+	**Enable automatic adsorption of small columns**: You can freely set the
+	size of the adsorption radius. The software will automatically attach the
+	lower end of the small column to the appropriate support when adding the
 	small column support according to the algorithm.
 </Admonition>
 
