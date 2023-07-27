@@ -1,18 +1,3 @@
-import {
-	red,
-	volcano,
-	gold,
-	yellow,
-	lime,
-	green,
-	cyan,
-	blue,
-	geekblue,
-	purple,
-	magenta,
-	grey,
-} from "@ant-design/colors";
-
 export type ThemeType = {
 	headerBackground: string;
 	headerShadow: string;

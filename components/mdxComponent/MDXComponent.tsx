@@ -84,7 +84,7 @@ const InlineCode = (props: any) => {
 };
 
 const AntdImage: React.FC<any> = (props) => {
-	return <Image {...props} className="m-auto rounded-lg" />;
+	return <Image {...props} alt="" className="m-auto rounded-lg" />;
 };
 
 export const MDXComponent = {

@@ -12,9 +12,9 @@ export const ThemeScrollSlider = () => {
 	const xDeviation = 30;
 	const ref = useRef(null);
 	const { scrollYProgress } = useScroll({
-		target: ref as any,
-		offset: ["30% start", "70% end"] as any,
-	});
+		target: ref,
+		offset: ["30% start", "70% end"],
+	} as any);
 	const scrollYProgressSpring = useSpring(scrollYProgress, {
 		stiffness: 100,
 		damping: 30,

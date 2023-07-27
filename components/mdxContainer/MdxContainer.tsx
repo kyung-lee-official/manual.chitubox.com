@@ -15,7 +15,9 @@ export const MdxContainer: React.FC<any> = (props) => {
 		<div className="flex-auto min-w-0 px-12 py-8">
 			{router.pathname.split("/")[4] !== "latest" && <NotLatestHint />}
 			{docInstanceContext.isVersioned && <VersionTag />}
-			<MDXProvider components={MDXComponent}>{children}</MDXProvider>
+			<MDXProvider components={MDXComponent as any}>
+				{children}
+			</MDXProvider>
 		</div>
 	);
 };

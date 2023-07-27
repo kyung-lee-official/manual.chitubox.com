@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Highlight, { defaultProps } from "prism-react-renderer";
-import theme from "prism-react-renderer/themes/nightOwl";
+import { Highlight, themes } from "prism-react-renderer";
 import { useMediaQuery } from "react-responsive";
 
 const Pre = (props: any) => {
@@ -42,8 +41,7 @@ const StyledPre: React.FC<any> = (props) => {
 	const language = className.replace(/language-/, "");
 	return (
 		<Highlight
-			{...defaultProps}
-			theme={theme}
+			theme={themes.shadesOfPurple}
 			code={props.children.props.children.trim()}
 			language={language}
 		>
