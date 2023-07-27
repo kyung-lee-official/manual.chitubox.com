@@ -1,4 +1,5 @@
 FROM node:18-alpine AS base
+RUN  npm i -g pnpm
 
 # Install dependencies only when needed
 FROM base AS deps
@@ -8,7 +9,7 @@ WORKDIR /app
 
 # Install dependencies based on the preferred package manager
 COPY package.json ./
-RUN  npm i
+RUN  pnpm i
 
 
 # Rebuild the source code only when needed
@@ -25,8 +26,9 @@ COPY . .
 # RUN yarn build
 
 # If using npm comment out above and use below instead
-RUN npm run preload
-RUN npm run build
+RUN pnpm preload
+RUN pnpm build
+RUN pnpm prune --prod
 
 # Production image, copy all the files and run next
 FROM base AS runner
@@ -53,4 +55,4 @@ EXPOSE 3000
 ENV PORT 3000
 
 # CMD ["ls", "-la"]
-CMD ["npm", "run", "start"]
+CMD ["pnpm", "start"]
