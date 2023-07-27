@@ -98,11 +98,13 @@ export const DocsLayout: React.FC<any> = (props) => {
 				<link rel="icon" href="/favicon.ico" />
 				<title>{title}</title>
 				<meta name="description" content={description} />
+				<meta property="og:type" content="website" />
+				<meta property="og:title" content="CHITUBOX Docs" />
 				<meta property="og:description" content={ogDescription} />
-				<meta
-					property="og:image"
-					content={ogImage}
-				/>
+				<meta property="og:image" content={ogImage} />
+				<meta property="og:image:width" content="400" />
+				<meta property="og:image:height" content="400" />
+				<meta property="og:url" content="https://manual.chitubox.com" />
 			</Head>
 			<DynamicDocsHeader setShowBanner={setShowBanner} />
 			<DynamicDocsContent showBanner={showBanner}>

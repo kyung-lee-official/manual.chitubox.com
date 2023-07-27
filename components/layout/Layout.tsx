@@ -24,8 +24,16 @@ export const Layout: React.FC<any> = ({ children }) => {
 					name="description"
 					content={"The user manual of CHITUBOX"}
 				/>
-				<meta property="og:description" content={"CHITUBOX Docs"} />
+				<meta property="og:type" content="website" />
+				<meta property="og:title" content="CHITUBOX Docs" />
+				<meta
+					property="og:description"
+					content="The user manual of CHITUBOX"
+				/>
 				<meta property="og:image" content={"/images/pages/logo.svg"} />
+				<meta property="og:image:width" content="400" />
+				<meta property="og:image:height" content="400" />
+				<meta property="og:url" content="https://manual.chitubox.com" />
 			</Head>
 			{header}
 			{children}
