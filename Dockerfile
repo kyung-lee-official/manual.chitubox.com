@@ -1,5 +1,6 @@
 FROM node:18-alpine AS base
 RUN  npm i -g pnpm
+ENV NODE_OPTIONS=--max_old_space_size=850
 
 # Install dependencies only when needed
 FROM base AS deps
