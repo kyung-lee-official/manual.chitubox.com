@@ -88,7 +88,7 @@ const enItems = [
 					</tr>
 					<tr>
 						<td>OS</td>
-						<td>macOS High Sierra (version 10.15)</td>
+						<td>macOS Catalina (version 10.15)</td>
 						<td>macOS Big Sur (version 11.6) or above</td>
 					</tr>
 				</tbody>
@@ -217,7 +217,7 @@ const zhItems = [
 					</tr>
 					<tr>
 						<td>操作系统</td>
-						<td>macOS High Sierra (10.15 版本)</td>
+						<td>macOS Catalina (10.15 版本)</td>
 						<td>macOS Big Sur (11.6 版本) 或以上</td>
 					</tr>
 				</tbody>

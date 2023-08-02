@@ -10,6 +10,8 @@ export const meta = {
 	title: "风险检测",
 	author: "CHITUBOX Team",
 	pageId: "/zh-CN/chitubox-basic/v2.0.0/risk-detection",
+	description: "本节我们将介绍一些可以在 CHITUBOX 中使用的风险检测功能",
+	ogImage: "/images/docs/og_logo.png",
 };
 
 # 风险检测
@@ -56,7 +58,7 @@ export const meta = {
 
 ## 悬空检测
 
-悬空检测在支撑视图中可用，点击 <ChituboxSupport /> 切换到支撑视图。悬空检测位于支撑视图右侧，支撑列表面板下方。
+悬空检测在支撑视图中可用，点击 <ChituboxSupport /> 切换到支撑视图。悬空检测位于支撑视图右侧，支撑视图位于支撑列表面板下方。
 
 <ImageContainer>
 	<AntdImage
@@ -66,13 +68,13 @@ export const meta = {
 	/>
 </ImageContainer>
 
-它提供三个准确度级别：低、中和高。 精度等级越高，检测结果越准确，但检测时间越长。 点击“刷新”按钮<ChituboxRefreshIcon />，可以刷新检测结果。
+它提供了三个准确度级别：低、中和高。 精度等级越高，检测结果越准确，但检测时间越长。 点击“刷新”按钮 <ChituboxRefreshIcon />，可以刷新检测结果。
 
 单击 “悬空区域” 面板中的箭头将自动放大模型中的相应区域。
 
 ## 孤岛检测
 
-孤岛检测与悬空检测类似，但是它是通过迭代 2D 图层而不是 3D 模型来检测孤岛。要使用孤岛检测，需要点击主面板右侧文件列表面板下方的 **切片** 按钮对模型进行切片。
+孤岛检测与悬空检测类似，但是它是通过迭代 2D 图层而不是 3D 模型的方式来检测孤岛。要使用孤岛检测，需要点击主面板右侧文件列表面板下方的 **切片** 按钮对模型进行切片。
 
 <ImageContainer>
 	<AntdImage
@@ -84,9 +86,9 @@ export const meta = {
 
 切片模型后，您会进入预览窗口，并在预览窗口顶部看到 **检测孤岛** 和 **删除孤岛** 按钮。
 
-<ChituboxIslandsDetectionIcon /> 检测孤岛将检测模型中的孤岛，并在预览窗口中以红色突出显示。
+<ChituboxIslandsDetectionIcon /> 检测孤岛将检测模型中的孤岛，并在预览窗口中以红色突出显示已检测到的孤岛。
 
-<ChituboxDeleteIslandsIcon /> 删除孤岛将删除已检测到的孤岛。通常，您不希望使用此功能，而是希望返回并为已检测到的孤岛添加支撑。仅当检测到的孤岛仅连续存在于少数几个图层中并且您想要删除它们时才使用它。
+<ChituboxDeleteIslandsIcon /> 删除孤岛将删除已检测到的孤岛。通常，您不希望直接使用此功能，而是希望返回并为已检测到的孤岛添加支撑。仅当检测到的孤岛存在于少数连续的几个图层中，并且您想要删除它们时才使用此功能。
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

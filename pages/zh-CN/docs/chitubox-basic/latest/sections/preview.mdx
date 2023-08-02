@@ -1,10 +1,16 @@
 import { DocsLayout } from "@/components/docsLayout/DocsLayout";
-import { ChituboxDetectIslandsIcon, ChituboxDeleteIslandsIcon } from "@/components/icons/Icons";
+import {
+	ChituboxDetectIslandsIcon,
+	ChituboxDeleteIslandsIcon,
+} from "@/components/icons/Icons";
 
 export const meta = {
 	title: "预览",
 	author: "CHITUBOX Team",
 	pageId: "/zh-CN/chitubox-basic/v2.0.0/preview",
+	description:
+		"在切片器中预览切片文件对于确保 3D 打印准确并满足您的期望非常重要。 本节我们将介绍 CHITUBOX 中的切片预览窗口。",
+	ogImage: "/images/docs/og_logo.png",
 };
 
 # 预览
@@ -29,11 +35,11 @@ export const meta = {
 支持网络发送的打印机将拥有此**网络发送**按钮，该按钮可以直接将切片数据发送到打印机。
 
 <ImageContainer>
-    <AntdImage
-        src={
-            "/images/docs/en-US/chitubox-basic/2.x.x/011-preview-network-sending.png"
-        }
-    />
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/011-preview-network-sending.png"
+		}
+	/>
 </ImageContainer>
 
 ## 保存文件
@@ -41,11 +47,9 @@ export const meta = {
 切片完成后，您可以将切片文件保存到计算机上。单击预览窗口右下角的**保存**按钮即可保存切片文件。
 
 <ImageContainer>
-    <AntdImage
-        src={
-            "/images/docs/en-US/chitubox-basic/2.x.x/011-preview-save.png"
-        }
-    />
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/011-preview-save.png"}
+	/>
 </ImageContainer>
 
 <Admonition type="note" title="注意">
