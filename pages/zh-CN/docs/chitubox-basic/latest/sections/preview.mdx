@@ -26,18 +26,18 @@ export const meta = {
 ## 网络发送
 
 <Admonition type="note" title="注意">
-    1. 打印机应插入USB驱动器以存储从计算机接收的切片文件。
-    1. 您的打印机和计算机必须在同一局域网中。
-    1. 传输速度受打印机的网络模块限制，对于大型文件，不建议使用网络发送。
-    1. 并非所有打印机都支持网络发送。在此处阅读<SpanA href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃完整兼容性列表</SpanA>。
+	1. 打印机需要插入一个 U 盘来存储接收到的文件。 
+	1. <b>网络发送</b> 功能要求打印机和电脑在同一局域网下。
+	1. 传输速率受打印机的网络模块限制，大多数打印机的网络模块传输速率大约是 500KBytes/秒，因此对于大文件，不推荐使用 <b>网络发送</b>。
+	1. 目前只有部分打印机支持 **网络发送**，点击 <SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃这里</SpanA> 查看机器兼容性表格。
 </Admonition>
 
-支持网络发送的打印机将拥有此**网络发送**按钮，该按钮可以直接将切片数据发送到打印机。
+若打印机支持网络发送，则该界面上会有 **网络发送** 按钮，此功能可以直接向打印机发送切片数据进行打印。
 
 <ImageContainer>
 	<AntdImage
 		src={
-			"/images/docs/en-US/chitubox-basic/2.x.x/011-preview-network-sending.png"
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/011-preview-network-sending.png"
 		}
 	/>
 </ImageContainer>
@@ -48,7 +48,7 @@ export const meta = {
 
 <ImageContainer>
 	<AntdImage
-		src={"/images/docs/en-US/chitubox-basic/2.x.x/011-preview-save.png"}
+		src={"/images/docs/zh-CN/chitubox-basic/2.x.x/011-preview-save.png"}
 	/>
 </ImageContainer>
 
