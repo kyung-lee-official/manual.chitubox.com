@@ -1,18 +1,3 @@
-import {
-	red,
-	volcano,
-	gold,
-	yellow,
-	lime,
-	green,
-	cyan,
-	blue,
-	geekblue,
-	purple,
-	magenta,
-	grey,
-} from "@ant-design/colors";
-
 export const light = {
 	headerBackground: `hsla(0, 0%, 96%, 0.4)`,
 	headerShadow: "hsla(0, 0%, 0%, 0.1)",
