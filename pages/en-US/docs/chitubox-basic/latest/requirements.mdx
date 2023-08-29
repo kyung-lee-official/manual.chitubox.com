@@ -22,7 +22,7 @@ export const meta = {
 
 <Admonition type="warning">
 	Some Quadro Series graphic cards may not compatible with CHITUBOX, if you're
-	facing this issue, you can report your graphics cards model to email 
+	facing this issue, you can report your graphics cards model to email
 	<SpanA href="mailto:support@chitubox.com">📧 support@chitubox.com</SpanA>, which
 	might help us analyze the issue.
 </Admonition>
@@ -71,6 +71,7 @@ export const meta = {
 
 {/*
 ## Firmware Requirements
+
 CHITUBOX Basic has minimum supported firmware versions requirements for printers that support _.ctb_ format, please update your firmware to the latest version from <SpanA href="https://www.chitubox.com/en/download/chitubox-free#firmwareList">here</SpanA>.
 */}
 
@@ -88,8 +89,6 @@ CHITUBOX Basic has minimum supported firmware versions requirements for printers
 | ----------------------- | -------------------- |
 | CHITUBOX slicer         | \*.cbddlp            |
 | CHITUBOX slicer         | \*.ctb               |
-| Photon Series           | \*.photon            |
-| Photon Series           | \*.photons           |
 | Halot One Series        | \*.cxdlp             |
 | ZIP Compress            | \*.zip               |
 | SLC                     | \*.slc               |
@@ -99,6 +98,10 @@ CHITUBOX Basic has minimum supported firmware versions requirements for printers
 | Phrozen File            | \*.phz               |
 | FlashDLPrint File       | \*.svgx              |
 | fdg                     | \*.fdg               |
+| Goo                     | \*.goo               |
+| Prz                     | \*.prz               |
+| Photon Series           | \*.photons           |
+| Photon Series           | \*.photon            |
 | Photon Series           | \*.pw0               |
 | Photon Series           | \*.pwmo              |
 | Photon Series           | \*.pwms              |
@@ -110,7 +113,14 @@ CHITUBOX Basic has minimum supported firmware versions requirements for printers
 | Photon Series           | \*.pws               |
 | Photon Series           | \*.pm3               |
 | Photon Series           | \*.pm3m              |
+| Photon Series           | \*.pm3n              |
+| Photon Series           | \*.pm3r              |
+| Photon Series           | \*.pm5               |
+| Photon Series           | \*.pm5s              |
+| Photon Series           | \*.pmx2              |
+| Photon Series           | \*.pm6s              |
 | Photon Series           | \*.dlp               |
+| Photon Series           | \*.dl2p              |
 | Plugin 1                | \*.cws               |
 | Plugin 2                | \*.lgs               |
 
@@ -120,18 +130,6 @@ CHITUBOX Basic has minimum supported firmware versions requirements for printers
 | --------------- | -------------------- |
 | Import & Export | \*.stl               |
 | Import & Export | \*.obj               |
-| Import          | \*.3ds               |
-| Import          | \*.3mf               |
-| Import          | \*.3dm               |
-| Import          | \*.wrl               |
-| Import          | \*.sat, \*.sab       |
-| Import          | \*.dae               |
-| Import          | \*.ifc               |
-| Import          | \*.fbx               |
-| Import          | \*.igs, \*.iges      |
-| Import          | \*.jt                |
-| Import          | \*.stp, \*.step      |
-| Import          | \*.x3d               |
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
