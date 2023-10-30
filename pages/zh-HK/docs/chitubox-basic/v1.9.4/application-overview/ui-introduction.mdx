@@ -1,0 +1,240 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { IconTitle } from "@/components/iconTitle/IconTitle";
+
+export const meta = {
+	title: "用户界面介绍",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v1.9.4/ui-introduction",
+	description: "CHITUBOX 主窗口的UI界面介绍。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 用户界面介绍
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-ui-introduction001--1.png"
+		}
+		style={{ width: "100%", maxWidth: "1300px" }}
+	/>
+</ImageContainer>
+
+<IconTitle icon={"A"} title={"工作视窗"} />
+<IconTitle icon={"B"} title={"左侧工具栏"} />
+
+<div style={{ display: "flex" }}>
+	<div>&emsp;&emsp;&emsp;</div>
+	<div>
+		<div>
+			<AntdImage
+				src={
+					"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-ui-introduction001b1.png"
+				}
+			/>
+		</div>
+		<br />
+		<ImageComparison
+			img1Src={"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/005move.gif"}
+			text1={"移动"}
+			img2Src={
+				"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/006rotate.gif"
+			}
+			text2={"旋转"}
+		/>
+		<ImageComparison
+			img1Src={"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/007scale.gif"}
+			text1={"缩放"}
+			img2Src={
+				"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/008mirror.gif"
+			}
+			text2={"镜像"}
+		/>
+	</div>
+</div>
+
+**移动**：将所选的模型移动到设定的位置。
+
+<AntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-ui-introduction-move.png"
+	}
+/>
+
+-   放在底板上：以模型的最低点为基准点，将所选模型放在底板上。
+
+-   居中：将所选模型居中放置在打印平台上。
+
+-   重置：将所选模型的摆放位置重置。
+
+**旋转**：根据设定的旋转方向和角度旋转所选模型。
+
+<AntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-ui-introduction-rotate.png"
+	}
+/>
+
+-   按面放平：以在模型上所选的面为基准面，将模型按基准面贴合打印平台放平。
+
+-   组合中心：以所选的多个模型的组合的中心为旋转中心。
+
+**缩放**：根据设定的尺寸或缩放比例缩放所选模型。
+
+<AntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-ui-introduction-scale.png"
+	}
+/>
+
+-   锁定比例：锁定所选模型的 X 轴，Y 轴和 Z 轴的比例进行缩放。
+
+-   缩放以适应：对所选模型进行缩放以适应打印平台。
+
+-   重置：重置模型大小。
+
+**镜像**：对模型进行 X 轴镜像，Y 轴镜像或者 Z 轴镜像。
+
+<AntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-ui-introduction-mirror.png"
+	}
+/>
+
+<BilibiliVideoContainer>
+	<iframe
+		src="//player.bilibili.com/player.html?aid=629966975&bvid=BV1cb4y1D7nS&cid=317749405&page=1"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</BilibiliVideoContainer>
+
+<IconTitle icon={"C"} title={"视窗立方"} />
+
+<div style={{ display: "flex" }}>
+	<div>&emsp;&emsp;&emsp;</div>
+	<div>
+		<p>
+			切换透视视角和正交视角。你也可以点击导航面板的{" "}
+			<AntdImage
+				src={
+					"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-setting-and-help00x1x.png"
+				}
+			/>{" "}
+			按钮进行切换。
+			<AntdImage
+				src={
+					"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-setting-and-help00xx.png"
+				}
+			/>
+		</p>
+	</div>
+</div>
+
+<IconTitle icon={"D"} title={"菜单栏"} />
+
+<IconTitle icon={"E"} title={"标题栏"} />
+
+<div style={{ display: "flex" }}>
+	<div>&emsp;&emsp;&emsp;</div>
+	<div>
+		<p>
+			标题栏提供了<b>登录</b>的快捷访问。
+		</p>
+	</div>
+</div>
+
+<IconTitle icon={"F"} title={"切片预览滑块"} />
+
+<IconTitle icon={"G"} title={"切换文件列表或支撑设置"} />
+
+<IconTitle icon={"H"} title={"文件列表或支撑设置"} />
+
+<div style={{ display: "flex" }}>
+	<div>&emsp;&emsp;&emsp;</div>
+	<div>
+		<AntdImage
+			src={
+				"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-ui-introduction001h-1.png"
+			}
+		/>
+
+		<p>
+			你可以在文件列表里 <b>选择/取消选择（全部）文件</b>，
+			<b>显示/隐藏打印尺寸</b>，以及<b>删除文件</b>。
+		</p>
+	</div>
+</div>
+
+<IconTitle icon={"I"} title={"切片设置"} />
+
+<IconTitle icon={"J"} title={"切片按钮"} />
+
+<IconTitle icon={"K"} title={"底部状态栏"} />
+
+<IconTitle icon={"L"} title={"全局坐标系"} />
+
+<div style={{ display: "flex" }}>
+	<div>&emsp;&emsp;&emsp;</div>
+	<div>
+		<p>
+			所有坐标轴中：红色为X轴；绿色为Y轴；蓝色为Z轴。
+			右键拖拽空白处调整工作区域显示视角。
+		</p>
+		<AntdImage
+			src={
+				"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-ui-introduction001l-1.png"
+			}
+		/>
+		<p>
+			如下图，切片设置中 X/Y/Z
+			对应的参考坐标轴为打印平台坐标轴（全局坐标，即屏幕左下角显示的坐标轴），
+			用于调整打印平台 X，Y，Z
+			坐标轴方向的最大打印尺寸大小（有内置机型的打印机请使用默认尺寸，无内置的请严格按照打印机厂商提供的规格填写）。
+		</p>
+		<AntdImage
+			src={
+				"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-ui-introduction001l-2.png"
+			}
+		/>
+	</div>
+</div>
+
+<Admonition type="note" title="注意">
+	缩放面板中记录的模型尺寸为模型自身坐标轴（本地坐标）对应的尺寸，并非平台坐标轴（全局坐标）对应的尺寸，由于旋转模型时自身坐标轴也同步旋转，因此旋转操作不会影响缩放面板中记录的尺寸。
+</Admonition>
+
+## 视频教程
+
+### 视图操控
+
+<BilibiliVideoContainer>
+	<iframe
+		src="//player.bilibili.com/player.html?aid=374942223&bvid=BV1VZ4y1c7VK&cid=318609515&page=1"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</BilibiliVideoContainer>
+
+### 全局坐标轴
+
+<BilibiliVideoContainer>
+	<iframe
+		src="//player.bilibili.com/player.html?aid=247383975&bvid=BV1kv41187pn&cid=318722435&page=1"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</BilibiliVideoContainer>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

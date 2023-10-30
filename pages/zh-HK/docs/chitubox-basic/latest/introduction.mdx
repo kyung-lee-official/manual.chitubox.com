@@ -1,0 +1,97 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { ThemeScrollSlider } from "@/docComponents/themeScrollSlider/ThemeScrollSlider";
+import { DirectX } from "@/docComponents/directX/DirectX";
+import { Rma } from "@/docComponents/rma/Rma";
+import { StandardParts } from "@/docComponents/standardParts/StandardParts";
+
+export const meta = {
+	title: "介绍",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/introduction",
+	description:
+		"CHITUBOX Basic 是一款免费的 3D 打印切片软件，可将 3D 网格文件切片并转换为可打印文件。它旨在让 3D 打印更轻松、更高效，简化整个 3D 打印过程，让用户能够简单快速地将 3D 模型转换为 3D 打印件。软件支持多种 3D 打印机和配置文件，并且提供了丰富的选项来优化 3D 打印模型。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 介绍
+
+CHITUBOX Basic 是一款免费的 3D 打印切片软件，可将 3D 网格文件切片并转换为可打印文件。它旨在让 3D 打印更轻松、更高效，简化整个 3D 打印过程，让用户能够简单快速地将 3D 模型转换为 3D 打印件。软件支持多种 3D 打印机和配置文件，并且提供了丰富的选项来优化 3D 打印模型。
+
+## 新特性 ✨
+
+### 全新的 UI 界面
+
+<ThemeScrollSlider lang={"en"} />
+
+很高兴地宣布 CHITUBOX Basic 2 推出了全新的用户界面。新的 UI 界面让用户体验更轻松、更直观。我们改进了软件的导航和组织方式，使您更容易找到所需的工具和功能。我们还添加了一系列新功能，包括主题、改进的对象操作等等。使用新 UI，您的 3D 打印体验将更快、更高效、更愉悦。
+
+### 支持 DirectX
+
+<DirectX />
+
+通过支持 DirectX，CHITUBOX Basic 现在可以利用一些高级图形功能，例如逼真的光影和菲涅耳效果。DirectX 还提供了更强的性能，可以让您充分发挥显卡的性能。有了这项新支持，您现在可以体验 Windows 平台上可支持的最高水平的图形性能。
+
+### RMA
+
+<Rma />
+
+我们推出了新的 RMA（树脂联盟）功能。此功能使您可以轻松地为不同品牌的树脂材料选择合适的设置，它还支持云存储，因此您可以从任何地方访问您的设置。此外，此功能会不断地更新，因此您始终可以获得最新配置。有了这个新功能，您现在可以快速轻松地设置打印机，以获得最佳 3D 打印结果。
+
+### 基本标准零件
+
+<StandardParts />
+
+此功能提供常用的基本形状零件库，这样您就不必花时间在互联网上搜索。
+
+## 支持的文件
+
+### 项目文件
+
+| 文件类型              | 文件名后缀  |
+| --------------------- | ----------- |
+| CHITUBOX Project File | \*.chitubox |
+
+### 可打印的切片文件
+
+| 文件类型                | 文件名后缀 |
+| ----------------------- | ---------- |
+| CHITUBOX slicer         | \*.cbddlp  |
+| CHITUBOX slicer         | \*.ctb     |
+| Photon 系列             | \*.photon  |
+| Photon 系列             | \*.photons |
+| Halot One 系列          | \*.cxdlp   |
+| ZIP Compress            | \*.zip     |
+| SLC                     | \*.slc     |
+| Fhd                     | \*.fhd     |
+| WoW                     | \*.wow     |
+| CHITUBOX General Format | \*.gf      |
+| Phrozen 文件            | \*.phz     |
+| FlashDLPrint 文件       | \*.svgx    |
+| fdg                     | \*.fdg     |
+| Photon 系列             | \*.pw0     |
+| Photon 系列             | \*.pwmo    |
+| Photon 系列             | \*.pwms    |
+| Photon 系列             | \*.pwmx    |
+| Photon 系列             | \*.pwma    |
+| Photon 系列             | \*.pwmb    |
+| Photon 系列             | \*.pmsq    |
+| Photon 系列             | \*.pwx     |
+| Photon 系列             | \*.pws     |
+| Photon 系列             | \*.pm3     |
+| Photon 系列             | \*.pm3m    |
+| Photon 系列             | \*.dlp     |
+| 插件 1                  | \*.cws     |
+| 插件 2                  | \*.lgs     |
+
+### 3D 网格/CAD 模型文件
+
+| 文件类型    | 文件名后缀 |
+| ----------- | ---------- |
+| 导入 & 导出 | \*.stl     |
+| 导入 & 导出 | \*.obj     |
+| 导入        | \*.3ds     |
+| 导入        | \*.3mf     |
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);
