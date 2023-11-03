@@ -27,12 +27,12 @@ const DynamicFooter = dynamic(() => import("@/components/footer/Footer"), {
 
 export const DocsLayout: React.FC<any> = (props) => {
 	const { meta, children } = props;
-	const {
-		title = "CHITUBOX Docs",
-		description = "CHITUBOX Docs",
-		keywords = "CHITUBOX Docs",
-		ogImage = "/images/pages/logo.svg",
-	} = meta;
+	// const {
+	// 	title = "CHITUBOX Docs",
+	// 	description = "CHITUBOX Docs",
+	// 	keywords = "CHITUBOX Docs",
+	// 	ogImage = "/images/pages/logo.svg",
+	// } = meta;
 	const router = useRouter();
 	const urlLocale = router.pathname.split("/")[1];
 	const docInstance = router.pathname.split("/")[3];
@@ -95,15 +95,15 @@ export const DocsLayout: React.FC<any> = (props) => {
 		>
 			<Head>
 				<link rel="icon" href="/favicon.ico" />
-				<title>{title}</title>
-				<meta name="description" content={description} />
+				<title>{"CHITUBOX Docs"}</title>
+				<meta name="description" content={meta.description} />
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content="CHITUBOX Docs" />
-				<meta property="og:description" content={description} />
-				<meta property="og:image" content={ogImage} />
+				<meta property="og:description" content={meta.description} />
+				<meta property="og:image" content={meta.ogImage} />
 				<meta property="og:image:width" content="400" />
 				<meta property="og:image:height" content="400" />
-				<meta property="og:url" content="https://manual.chitubox.com" />
+				{/* <meta property="og:url" content="https://manual.chitubox.com" /> */}
 			</Head>
 			<DynamicDocsHeader setShowBanner={setShowBanner} />
 			<DynamicDocsContent showBanner={showBanner}>

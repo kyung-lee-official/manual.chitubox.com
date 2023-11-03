@@ -9,6 +9,7 @@ import { DocsDrawer } from "../docsDrawer/DocsDrawer";
 import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
 import { DocContext } from "../docsLayout/DocContext";
 import { Banner } from "@/docComponents/advertisement/Banner";
+import { motion } from "framer-motion";
 
 const DynamicThemeSwitch = dynamic(
 	() => import("@/components/icons/ThemeSwitch"),
@@ -51,9 +52,12 @@ const HeaderContainer = (props: any) => {
 const HeaderItem = (props: any) => {
 	const { children } = props;
 	return (
-		<div className="flex justify-center items-center cursor-pointer">
+		<motion.div
+			className="flex justify-center items-center cursor-pointer"
+			whileHover={{ scale: 1.1 }}
+		>
 			{children}
-		</div>
+		</motion.div>
 	);
 };
 
@@ -99,10 +103,9 @@ export const InstanceTitles = (props: any) => {
 						return (
 							<div
 								key={i}
-								className={`${
-									isActive &&
+								className={`${isActive &&
 									" text-blue-500 dark:text-sky-400"
-								} cursor-pointer`}
+									} cursor-pointer`}
 								onClick={() => {
 									router.push(
 										instance.versionedContexts[0]
