@@ -15,6 +15,7 @@ import {
 	Verified,
 	Store,
 	EmailOutline,
+	TwitterX,
 } from "../icons/Icons";
 
 const ColTitle = (props: any) => {
@@ -114,7 +115,7 @@ const Footer = () => {
 						target={"_blank"}
 						href={t("footer.twitterLink") as string}
 					>
-						<Twitter size={24} />
+						<TwitterX size={24} />
 						{t("footer.twitter")}
 					</Link>
 					<Link
