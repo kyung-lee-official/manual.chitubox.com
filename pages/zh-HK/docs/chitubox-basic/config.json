@@ -1,0 +1,67 @@
+{
+	"docInstanceName": "CHITUBOX Basic",
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "1.9.5",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "介紹"
+				},
+				{
+					"item": "comparison",
+					"label": "比較"
+				},
+				{
+					"item": "requirements",
+					"label": "需求"
+				},
+				{
+					"item": "setting-up",
+					"label": "上手",
+					"subItems": [
+						{
+							"item": "installation",
+							"label": "安裝"
+						},
+						{
+							"item": "update-printer-firmware",
+							"label": "更新印表機韌體"
+						},
+						{
+							"item": "configure-print-parameters",
+							"label": "設定列印參數"
+						},
+						{
+							"item": "configure-support-parameters",
+							"label": "設定支撐參數"
+						}
+					]
+				},
+				{
+					"item": "application-overview",
+					"label": "軟體概況",
+					"subItems": [
+						{
+							"item": "ui-introduction",
+							"label": "使用者介面介紹"
+						},
+						{
+							"item": "file",
+							"label": "檔案"
+						},
+						{
+							"item": "menu-bar",
+							"label": "選單列"
+						},
+						{
+							"item": "slice-preview",
+							"label": "切片預覽"
+						}
+					]
+				}
+			]
+		}
+	]
+}

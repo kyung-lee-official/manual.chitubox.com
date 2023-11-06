@@ -1,0 +1,236 @@
+import { DocsLayout } from "@/components/docsLayout";
+
+export const meta = {
+	title: "支撑",
+	author: "CHITUBOX Team",
+};
+
+# 支撑
+
+## 对称支撑
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support002.png"
+	}
+/>
+
+识别模型的对称面，并按照设定对称面手动添加对称支撑。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support003.png"
+	}
+	style={{ width: "100%", maxWidth: 710 }}
+/>
+
+## 合并支撑
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-merge.png"
+	}
+/>
+
+对选中的全部或部分支撑进行自动合并。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-merge.1.gif"
+	}
+	style={{ width: "100%", maxWidth: 720 }}
+/>
+
+## 悬空检测
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support001.png"
+	}
+/>
+
+根据 **低**，**中**，**高** 三种不同精度检测选定模型的悬空区域，显示出当前排版方位状态下的支撑推荐区域，并可为其一键添加支撑。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/006-application-overview-support001.gif"
+	}
+	style={{ maxWidth: 720 }}
+/>
+
+<Admonition type="tip" title="提示">
+	在悬空检测完成后，可以通过点击{" "}
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support001.3.png"
+		}
+	/>{" "}
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support001.4.png"
+		}
+	/>{" "}
+	或者键盘上的 “←”、“→” 按键快速切换悬空区域。
+</Admonition>
+
+## 左侧工具栏
+
+在**支撑**界面下，左侧工具栏也相应地有所变化。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support020.png"
+	}
+/>
+
+使用这些工具选择特定区域，即可将添加，删除和编辑操作应用于其中的支撑。
+
+以**矩形**为例。
+
+-   添加 <br />
+    选中区域后，点击 “+ 全部” 或 “+ 平台” 即可以对该区域自动添加支撑。<br />
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support020.1.gif"
+	}
+/>
+
+-   删除 <br />
+    删除模式下被选中的支撑呈红色，表示可以被删除。<br />
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support020.4.gif"
+	}
+/>
+
+-   编辑 <br />
+    编辑模式下被选中的支撑呈绿色，表示可以被编辑。<br />
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support020.6.gif"
+	}
+/>
+
+## 支撑类型
+
+在工作视窗底部，支撑种类面板提供了不同种类的支撑以满足你的需求。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support015.png"
+	}
+/>
+
+### 智能
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-type-01.png"
+	}
+/>
+
+这是最常用的支撑，根据您的支持设置自适应。
+
+### 法向
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-type-02.png"
+	}
+/>
+
+这种支撑的顶部平行于模型表面的法线，垂直于模型的表面。
+
+### 竖直
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-type-03.png"
+	}
+/>
+
+这种类型的支撑的顶部垂直于打印平台。
+
+### 直连
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-type-04.png"
+	}
+/>
+
+这是单段支撑，它连接模型和另一个支撑的中间部分。允许两头都添加在支撑上。
+
+### 两点相连
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-type-05.png"
+	}
+/>
+
+这是二段支架，它连接模型和另一个支架的中间部分。
+
+### 小柱子
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-type-06.png"
+	}
+/>
+
+这是一种细支撑，它连接模型和另一个支撑的中间部分或者连接模型表面上的两个点。
+
+<Admonition type="tip" title="提示">
+	直连、两点相连、小柱子这三种支撑类型可开启应用支撑自动吸附功能，并可在
+	“高级” 支撑设置面板中自定义 _吸附半径_ 和 _吸附角度_ 的参数。
+</Admonition>
+
+### 分叉
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-type-07.png"
+	}
+/>
+
+这种支撑的顶部与模型相连，底部分为两段并连接到相邻的两个支撑的中间部分。
+
+### 等高分布
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-type-08.png"
+	}
+/>
+
+这将生成一堆支撑，其顶部以相同的轮廓连接到模型。
+
+### 树状支撑
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-type-09.png"
+	}
+/>
+
+允许您添加树状支撑。
+
+## 支撑操作
+
+### 多选支撑
+
+按住 Ctrl 选择多个需要编辑的同型支撑部分，然后你可以同时修改它们的参数。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-operation-01.gif"
+	}
+/>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);
