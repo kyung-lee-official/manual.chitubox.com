@@ -581,14 +581,14 @@ export const RmaIcon = ({ size, fill }: any) => {
 			width={size}
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 23.98 21.46"
-			className="[filter:drop-shadow(-30px_-10px_3rem_hsla(180,100%,50%,0.8))_drop-shadow(30px_10px_3rem_hsla(269,100%,50%,0.8))]"
+			className="[filter:drop-shadow(-60px_0px_40px_hsla(180,100%,50%,0.5))_drop-shadow(60px_0px_40px_hsla(269,100%,50%,0.5))]"
 		>
 			<defs>
 				<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
 					<stop
 						offset="0%"
 						style={{
-							stopColor: "#0cf",
+							stopColor: "#00ccff",
 							stopOpacity: "1",
 						}}
 					/>
