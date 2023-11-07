@@ -7,17 +7,16 @@ import {
 } from "@/components/icons/Icons";
 
 export const meta = {
-	title: "文件列表",
+	title: "檔案清單",
 	author: "CHITUBOX Team",
 	pageId: "/zh-CN/chitubox-basic/v2.0.0/file-list",
-	description:
-		"所有加载的文件都显示在文件列表中。 本节我们将介绍 CHITUBOX 中的文件列表面板。",
+	description: "所有已載入完成的檔案都會顯示在檔案清單中。",
 	ogImage: "/images/docs/og_logo.png",
 };
 
-# 文件列表
+# 檔案清單
 
-所有加载完成的文件都会显示在文件列表中。你可以同时选择多个文件，还可以通过单击全选按钮来选择所有文件。
+所有已載入完成的檔案都會顯示在檔案清單中。您可以同時選擇多個檔案，也能透過單擊全選按鈕來選擇所有檔案。
 
 <ImageContainer>
 	<AntdImage
@@ -25,13 +24,13 @@ export const meta = {
 	/>
 </ImageContainer>
 
-复选框图标 <ChituboxCheckboxIcon /> 允许您选择该文件。
+點擊複選框圖示 <ChituboxCheckboxIcon /> 複選框圖示可以選擇或取消選擇該檔案。
 
-眼睛图标 <ChituboxEyeIcon /> 允许您隐藏文件。添加图标允许您添加文件。
+點擊眼睛圖示 <ChituboxEyeIcon /> 眼睛圖示可以隱藏或顯示該檔案。點擊添加圖示可以添加檔案到檔案清單。
 
-标尺图标 <ChituboxRulerIcon /> 允许您显示所有文件的<SpanA href={"https://zh.wikipedia.org/wiki/%E5%8C%85%E5%9B%B4%E4%BD%93"}>包围体</SpanA>尺寸。
+點擊標尺圖示 <ChituboxRulerIcon /> 可以顯示所有檔案的<SpanA href={"https://zh.wikipedia.org/zh-hk/%E5%8C%85%E5%9B%B4%E4%BD%93"}>包圍體</SpanA>尺寸。
 
-垃圾桶图标 <ChituboxDeleteIcon /> 允许您删除所选文件。
+點擊垃圾桶圖示 <ChituboxDeleteIcon /> 可以刪除所選檔案。
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

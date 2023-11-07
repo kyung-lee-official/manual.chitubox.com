@@ -36,7 +36,7 @@
 						},
 						{
 							"item": "file-list",
-							"label": "文件列表"
+							"label": "檔案清單"
 						},
 						{
 							"item": "risk-detection",
@@ -44,11 +44,11 @@
 						},
 						{
 							"item": "configure-print-parameters",
-							"label": "設置打印參數"
+							"label": "設定列印參數"
 						},
 						{
 							"item": "configure-support-parameters",
-							"label": "設置支撐參數"
+							"label": "設定支撐參數"
 						},
 						{
 							"item": "preview",

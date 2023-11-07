@@ -19,28 +19,28 @@ export const meta = {
 	author: "CHITUBOX Team",
 	pageId: "/zh-CN/chitubox-basic/v2.0.0/operations",
 	description:
-		"各类操作选项位于主窗口的顶部。它包括打开、保存、截图、复制、自动布局、镂空、挖洞、修复、标准件、树脂材料联盟，消息提醒和登录。",
+		"主視窗的頂部有各種操作選項。包括打開、儲存、截圖、複製、自動排版、鏤空、挖洞、修復、標準件、樹脂材料聯盟、消息提醒和登入。",
 	ogImage: "/images/docs/og_logo.png",
 };
 
 # 操作
 
-各类操作选项位于主窗口的顶部。它包括打开、保存、截图、复制、自动布局、镂空、挖洞、修复、标准件、树脂材料联盟，消息提醒和登录。
+主視窗的頂部有各種操作選項。包括打開、儲存、截圖、複製、自動排版、鏤空、挖洞、修復、標準件、樹脂材料聯盟、消息提醒和登入。
 
-## 打开
+## 打開
 
-<ChituboxOpenIcon /> “打开” 选项允许您打开 3D 网格文件、_.chitubox_
-项目文件或切片文件。
+<ChituboxOpenIcon /> 「打開」選項允許您打開 3D 網格檔案、_.chitubox_
+專案檔案或切片檔案。
 
-## 保存
+## 儲存
 
-<ChituboxSaveIcon /> “保存” 选项允许您将当前项目保存为 _.chitubox_ 文件或 3D
-网格文件。
+<ChituboxSaveIcon /> 「儲存」選項允許您將當前專案儲存為 _.chitubox_ 檔案或 3D
+網格檔案。
 
-## 截图
+## 截圖
 
-<ChituboxScreenshotIcon /> “截图” 选项允许用户快速捕获 CHITUBOX
-软件的图像或录制gif。
+<ChituboxScreenshotIcon /> 「截圖」選項允許用戶快速捕捉 CHITUBOX
+軟體的圖像或錄製 gif。
 
 <ImageContainer>
 	<AntdImage
@@ -50,10 +50,10 @@ export const meta = {
 	/>
 </ImageContainer>
 
-## 复制
+## 複製
 
-<ChituboxCopyIcon /> “复制” 选项允许用户快速制作多个 3D
-模型的副本，这在打印单个模型的多个副本时非常有用。
+<ChituboxCopyIcon /> 「複製」選項允許使用者快速製作多個 3D
+模型的副本，這在列印單一模型的多個副本時非常有用。
 
 <ImageContainer>
 	<AntdImage
@@ -61,11 +61,11 @@ export const meta = {
 	/>
 </ImageContainer>
 
-## 自动布局
+## 自動佈局
 
-<ChituboxAutoLayoutIcon /> “自动布局” 选项允许用户以多种方式快速地将 3D
-模型放置在打印平台上，包括在打印平台的中心、沿打印平台的 X 侧和沿打印平台的 Y
-侧附近布局模型。
+<ChituboxAutoLayoutIcon /> 「自動佈局」選項允許使用者以多種方式快速地將 3D
+模型放置在列印平台上，包括在列印平台的中心、沿列印平台的 X 側和沿列印平台的 Y
+側附近佈局模型。
 
 <ImageContainer>
 	<AntdImage
@@ -75,15 +75,15 @@ export const meta = {
 	/>
 </ImageContainer>
 
-## 镂空
+## 鏤空
 
-<ChituboxHollowIcon /> 镂空选项有 3 种模式：“镂空”、“剥离”和“挖空”。
+<ChituboxHollowIcon /> 鏤空選項有 3 種模式：「鏤空」、「剝離」和「挖空」。
 
-**镂空** 允许用户创建具有空心内部的 3D 模型，同时保留模型的外形。镂空选项可以帮助用户在打印 3D 模型时节省时间和材料成本，因为空心内部只需要更少的材料来打印。该功能还可用于创建具有复杂外形的轻型模型。
+**鏤空** 允許用戶創建具有空心內部的 3D 模型，同時保留模型的外形。鏤空選項可以幫助用戶在列印 3D 模型時節省時間和材料成本，因為空心內部只需要更少的材料來列印。該功能還可用於創建具有複雜外形的輕型模型。
 
-**剥离** 将从模型中剥离指定厚度的壁，就像将模型进行“收缩”一样。
+**剝離** 將從模型中剝離指定厚度的壁，就像將模型進行「收縮」一樣。
 
-**挖空** 与“镂空”非常相似，但会删除室底。
+**挖空** 與「鏤空」非常相似，但會刪除室底。
 
 <ImageContainer>
 	<AntdImage
@@ -93,10 +93,10 @@ export const meta = {
 	/>
 </ImageContainer>
 
-### 镂空参数解释
+### 鏤空參數解釋
 
--   **壁厚**：壁厚决定了墙的总厚度。
--   **精度**：精度决定了内壁上根据设定百分比生成的面数。
+-   **壁厚**：壁厚決定了牆的總厚度。
+-   **精度**：精度決定了內壁上根據設定百分比生成的面數。
     <ImageContainer>
     	<ImageComparison
     		img1Src={
@@ -109,14 +109,14 @@ export const meta = {
     		text2={"高精度"}
     	/>
     </ImageContainer>
--   **填充结构**：填充的类型。
+-   **填充結構**：填充的類型。
 -   **填充密度**：填充的密度。
--   **动画**：启用此选项将显示镂空过程。
+-   **動畫**：啟用此選項將顯示鏤空過程。
 
 ## 挖洞
 
-<ChituboxDigHoleIcon /> “挖洞”功能允许用户在几个简单的点击中创建指定形状或大小的
-3D 模型中的孔。
+<ChituboxDigHoleIcon /> 「挖洞」功能允許用戶在幾個簡單的點擊中創建指定形狀或大小的3D
+模型中的孔。
 
 <ImageContainer>
 	<AntdImage
@@ -126,31 +126,31 @@ export const meta = {
 	/>
 </ImageContainer>
 
-### 挖洞参数解释
+### 挖洞參數解釋
 
--   **形状**：孔的形状，可选择的形状有圆形、六边形和正方形。
--   **直径**：孔的直径。
+-   **形狀**：孔的形狀，可選擇的形狀有圓形、六邊形和正方形。
+-   **直徑**：孔的直徑。
 -   **深度**：孔可以穿透的壁的最大厚度。
 
     <Admonition type="note" title="注意">
-    	此功能旨在穿透模型的墙壁，因此它不会根据您设置的深度挖掘非穿透孔。
+    	此功能旨在穿透模型的牆壁，因此它不會根據您設定的深度挖掘非穿透孔。
     </Admonition>
 
--   **垂直于**：垂直于屏幕或模型的挖掘角度。
+-   **垂直於**：垂直於屏幕或模型的挖掘角度。
 -   **保持塞子**：是否保留打孔塞子。
 
-## 修复
+## 修復
 
-<ChituboxRepairIcon /> 修复选项将尝试修复损坏的模型。
+<ChituboxRepairIcon /> 修復選項會嘗試修復損壞的模型。
 
 <Admonition type="warning" title="警告">
-	如果模型复杂或存在许多错误（如倒置的法向、重叠的面等），修复功能可能无法正常工作。
+	如果模型複雜或存在許多錯誤（例如倒置的法向、重疊的面等），修復功能可能無法正常運作。
 </Admonition>
 
-## 标准件
+## 標準零件
 
-<ChituboxStandardPartsIcon /> 标准件为用户提供了一个预制的 3D
-模型库，可以快速、轻松地将其导入到项目中，包括各种基本几何、测试模型、工具模型、机械零件等。
+<ChituboxStandardPartsIcon /> 標準零件為用戶提供了一個預製的 3D
+模型庫，可以快速、輕鬆地將其導入到項目中，包括各種基本幾何、測試模型、工具模型、機械零件等。
 
 <ImageContainer>
 	<AntdImage
@@ -160,16 +160,16 @@ export const meta = {
 	/>
 </ImageContainer>
 
-## 树脂材料联盟
+## 樹脂材料聯盟
 
 <ChituboxRmaIcon />
 
-## 消息提醒
+## 訊息通知
 
-## 登录
+## 登錄
 
-<ChituboxSignInIcon /> 登录选项允许用户登录到他们的 CHITUBOX
-帐户。登录后，用户可以从云端访问他们的设置。
+<ChituboxSignInIcon /> 登錄選項允許使用者登入到他們的 CHITUBOX
+帳戶。登入後，用戶可以從雲端訪問他們的設定。
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

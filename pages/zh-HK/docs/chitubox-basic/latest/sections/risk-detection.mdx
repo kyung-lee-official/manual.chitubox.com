@@ -7,58 +7,59 @@ import {
 } from "@/components/icons/Icons";
 
 export const meta = {
-	title: "风险检测",
+	title: "風險檢測",
 	author: "CHITUBOX Team",
 	pageId: "/zh-CN/chitubox-basic/v2.0.0/risk-detection",
-	description: "一些可以在 CHITUBOX 中使用的风险检测功能，包括空腔检测、碰撞检测、悬空检测和孤岛检测。",
+	description:
+		"一些可以在 CHITUBOX 中使用的風險檢測功能，包括空腔檢測、碰撞檢測、懸空檢測和孤島檢測。",
 	ogImage: "/images/docs/og_logo.png",
 };
 
-# 风险检测
+# 風險檢測
 
-## 空腔检测
+## 空腔檢測
 
-空腔检测位于主面板右侧，文件列表面板下方。
+空腔檢測位於主面板右側，文件列表面板下方。
 
-空腔检测可以帮助用户识别 3D 打印模型中的任何封闭空腔，例如封闭的口袋或空洞，并且用户可以向模型添加孔以避免真空效应。
+空腔檢測可以幫助用戶識別 3D 列印模型中的任何封閉空腔，例如封閉的口袋或空洞，並且用戶可以向模型添加孔以避免真空效應。
 
-下面是一个空心模型的对比，空腔检测关闭和打开。
+下面是一個空心模型的對比，空腔檢測關閉和打開。
 
 <ImageContainer>
 	<ImageComparison
 		img1Src={
 			"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-cavity-off.png"
 		}
-		text1={"空腔检测关闭"}
+		text1={"空腔檢測關閉"}
 		img2Src={
 			"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-cavity-on.png"
 		}
-		text2={"空腔检测打开"}
+		text2={"空腔檢測打開"}
 	/>
 </ImageContainer>
 
-## 碰撞检测
+## 碰撞檢測
 
-碰撞检测位于主面板右侧，文件列表面板下方。
+碰撞檢測位於主面板右側，文件列表面板下方。
 
-碰撞检测可以帮助用户突出显示 3D 打印模型中的碰撞，用户可以调整模型以避免碰撞。
+碰撞檢測可以幫助用戶突出顯示 3D 列印模型中的碰撞，用戶可以調整模型以避免碰撞。
 
 <ImageContainer>
 	<ImageComparison
 		img1Src={
 			"/images/docs/en-US/chitubox-basic/2.x.x/008-collision-detection-off.png"
 		}
-		text1={"碰撞检测关闭"}
+		text1={"碰撞檢測關閉"}
 		img2Src={
 			"/images/docs/en-US/chitubox-basic/2.x.x/008-collision-detection-on.png"
 		}
-		text2={"碰撞检测打开"}
+		text2={"碰撞檢測打開"}
 	/>
 </ImageContainer>
 
-## 悬空检测
+## 懸空檢測
 
-悬空检测在支撑视图中可用，点击 <ChituboxSupport /> 切换到支撑视图。悬空检测位于支撑视图右侧，支撑视图位于支撑列表面板下方。
+懸空檢測位於支撐視圖中，點擊 <ChituboxSupport /> 切換到支撐視圖。懸空檢測位於支撐視圖右側，支撐視圖位於支撐列表面板下方。
 
 <ImageContainer>
 	<AntdImage
@@ -68,13 +69,15 @@ export const meta = {
 	/>
 </ImageContainer>
 
-它提供了三个准确度级别：低、中和高。 精度等级越高，检测结果越准确，但检测时间越长。 点击“刷新”按钮 <ChituboxRefreshIcon />，可以刷新检测结果。
+懸空檢測功能可以幫助用戶識別 3D 列印模型中任何未加支撐的高風險區域，並且用戶可以向模型添加支撐以避免列印失敗。
 
-单击 “悬空区域” 面板中的箭头将自动放大模型中的相应区域。
+它提供三種精度級別：低、中和高。精度級別越高，檢測結果越準確，但檢測時間越長。通過點擊“刷新”按鈕 <ChituboxRefreshIcon />，您可以刷新檢測結果。
 
-## 孤岛检测
+點擊“懸空區域”面板中的箭頭會自動將模型中的相應區域放大。
 
-孤岛检测与悬空检测类似，但是它是通过迭代 2D 图层而不是 3D 模型的方式来检测孤岛。要使用孤岛检测，需要点击主面板右侧文件列表面板下方的 **切片** 按钮对模型进行切片。
+## 孤島檢測
+
+孤島檢測與懸空檢測類似，但它是通過迭代 2D 圖層而不是 3D 模型的方式來檢測孤島。要使用孤島檢測，需要點擊主面板右側、文件列表面板下方的 **切片** 按鈕對模型進行切片。
 
 <ImageContainer>
 	<AntdImage
@@ -84,11 +87,11 @@ export const meta = {
 	/>
 </ImageContainer>
 
-切片模型后，您会进入预览窗口，并在预览窗口顶部看到 **检测孤岛** 和 **删除孤岛** 按钮。
+切片模型後，您會進入預覽窗口，並在預覽窗口頂部看到 **檢測孤島** 和 **刪除孤島** 按鈕。
 
-<ChituboxIslandsDetectionIcon /> 检测孤岛将检测模型中的孤岛，并在预览窗口中以红色突出显示已检测到的孤岛。
+<ChituboxIslandsDetectionIcon /> 檢測孤島將檢測模型中的孤島，並在預覽窗口中以紅色突出顯示已檢測到的孤島。
 
-<ChituboxDeleteIslandsIcon /> 删除孤岛将删除已检测到的孤岛。通常，您不希望直接使用此功能，而是希望返回并为已检测到的孤岛添加支撑。仅当检测到的孤岛存在于少数连续的几个图层中，并且您想要删除它们时才使用此功能。
+<ChituboxDeleteIslandsIcon /> 刪除孤島將刪除已檢測到的孤島。通常，您不希望直接使用此功能，而是應該返回並為已檢測到的孤島添加支撐。僅當檢測到的孤島僅存在於少數連續的幾個圖層中，並且您想要刪除它們時才使用此功能。
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
