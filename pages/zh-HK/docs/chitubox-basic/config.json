@@ -27,7 +27,7 @@
 						},
 						{
 							"item": "update-printer-firmware",
-							"label": "更新印表機韌體"
+							"label": "更新列印機韌體"
 						},
 						{
 							"item": "configure-print-parameters",
@@ -45,7 +45,7 @@
 					"subItems": [
 						{
 							"item": "ui-introduction",
-							"label": "使用者介面介紹"
+							"label": "用戶界面介紹"
 						},
 						{
 							"item": "file",
