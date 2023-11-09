@@ -28,27 +28,27 @@ export const meta = {
 	title: "小工具",
 	author: "CHITUBOX Team",
 	pageId: "/zh-CN/chitubox-basic/v2.0.0/gadgets",
-	description: "一些可以在 CHITUBOX 软件中使用的小工具。",
+	description: "一些可以在 CHITUBOX 軟體中使用的小工具。",
 	ogImage: "/images/docs/og_logo.png",
 };
 
 # 小工具
 
-在本节中，我们将介绍一些可以在 CHITUBOX 软件中使用的小工具。
+在本節中，我們將介紹一些可以在 CHITUBOX 軟體中使用的小工具。
 
-## 工具栏
+## 工具欄
 
-工具栏位于主窗口左侧。它主要包括选择、移动、旋转、缩放和镜像这五个选项。
+工具欄位於主視窗左側。它主要包括選擇、移動、旋轉、縮放和鏡像這五個選項。
 
-### 选择
+### 選擇
 
-<ChituboxSelectIcon /> 通过点击的方式选择画面中的模型。
+<ChituboxSelectIcon /> 通過點擊的方式選擇畫面中的模型。
 
-<ChituboxSelectBoxIcon /> 通过框选的方式选择画面中的模型。
+<ChituboxSelectBoxIcon /> 通過框選的方式選擇畫面中的模型。
 
-### 移动
+### 移動
 
-<ChituboxMoveIcon /> 用于移动所选模型。你也可以通过在移动面板中输入坐标来精准移动模型。
+<ChituboxMoveIcon /> 用於移動所選模型。您也可以通過在移動面板中輸入座標來精準移動模型。
 
 <ImageContainer>
 	<AntdImage
@@ -58,37 +58,37 @@ export const meta = {
 	/>
 </ImageContainer>
 
--   放在底板上：以模型的最低点为基准点，将所选模型放在底板上。
+-   放在底板上：以模型的最低點為基準點，將所選模型放在底板上。
 
--   居中：将所选模型居中放置在打印平台上。如果多个模型被选择，则以所选多个模型的组合的中心为准进行居中。
+-   居中：將所選模型居中放置在列印平台上。如果多個模型被選擇，則以所選多個模型的組合的中心為準進行居中。
 
-### 旋转
+### 旋轉
 
-<ChituboxRotateIcon /> 用于旋转所选模型。你也可以通过在移动面板中输入角度来精准旋转模型。
+<ChituboxRotateIcon /> 用於旋轉所選模型。您也可以通過在移動面板中輸入角度來精準旋轉模型。
 
--   组合中心：以所选的多个模型的组合的中心为旋转中心。
+-   組合中心：以所選的多個模型的組合的中心為旋轉中心。
 
--   按面放平：将模型按照你所选择的面放置在打印平台上。
+-   按面放平：將模型按照您所選擇的面放置在列印平台上。
 
--   自动定向：模型将被 CHITUBOX 自动定向。
+-   自動定向：模型將被 CHITUBOX 自動定向。
 
-### 缩放
+### 縮放
 
-<ChituboxScaleIcon /> 用于缩放所选模型。你也可以通过在移动面板中输入大小和比例来精准缩放模型。
+<ChituboxScaleIcon /> 用於縮放所選模型。您也可以通過在移動面板中輸入大小和比例來精確縮放模型。
 
-<ChituboxGlobalIcon /> 全局坐标：
+<ChituboxGlobalIcon /> 全局座標：縮放手柄平行於全局座標。
 
-<ChituboxLocalIcon /> 局部坐标：
+<ChituboxLocalIcon /> 局部座標：縮放手柄平行於模型的本地座標。
 
-<ChituboxResetIcon /> 重置比例为 100%
+<ChituboxResetIcon /> 重置：將比例重置為 100%。
 
--   锁定比例：如果启用，所选模型的 X 轴，Y 轴和 Z 轴将按照相同比例进行缩放。
+-   鎖定比例：如果啟用，所選模型的 X 軸、Y 軸和 Z 軸將按照相同比例進行縮放。
 
--   支撑直径不变：如果启用，支撑直径将不会被缩放。
+-   支撐直徑不變：如果啟用，支撐直徑將不會被縮放。
 
-### 镜像
+### 鏡像
 
-<ChituboxMirrorIcon /> 用于镜像平台上的所选模型。
+<ChituboxMirrorIcon /> 用於鏡像平台上的所選模型。
 
 <ImageContainer>
 	<AntdImage
@@ -98,25 +98,25 @@ export const meta = {
 	/>
 </ImageContainer>
 
--   保留原始模型：如果启用，将保留原模型。
+-   保留原始模型：如果啟用，將保留原模型。
 
 ## 信息面板
 
-信息面板位于主窗口左下方，它显示了当前设置的简要信息。
+信息面板位於主視窗左下方，它顯示了當前設定的簡要信息。
 
-## 机器管理栏
+## 機器管理欄
 
-机器管理栏位于主窗口的下方，你可以在这里添加、删除、复制机器。
+機器管理欄位於主視窗的下方，您可以在此處添加、刪除、複製機器。
 
-点击添加机器按钮 <ChituboxAddMachine /> 以添加新的机器。
+點擊添加機器按鈕 <ChituboxAddMachine /> 以添加新的機器。
 
-将鼠标悬停在 <ChituboxMachineBarMenuIcon /> 上，你会看到删除机器按钮 <ChituboxDeleteIcon /> 和 复制机器按钮 <ChituboxCopyAddIcon />。
+將鼠標懸停在 <ChituboxMachineBarMenuIcon /> 上，你会看到刪除機器按鈕 <ChituboxDeleteIcon /> 和 複製機器按鈕 <ChituboxCopyAddIcon />。
 
-## 支撑显示模式
+## 支撐顯示模式
 
-点击 <ChituboxSupport /> 切换到支持视图。 有 3 个按钮允许您在不同的支撑显示模式之间切换。
+點擊 <ChituboxSupport /> 切換到支撐視圖。 有 3 個按鈕允許您在不同的支撐顯示模式之間切換。
 
-<ChituboxSupportDisplayAllIcon /> 显示完整的支撑。
+<ChituboxSupportDisplayAllIcon /> 顯示完整的支撐。
 
 <ImageContainer>
 	<AntdImage
@@ -126,7 +126,7 @@ export const meta = {
 	/>
 </ImageContainer>
 
-<ChituboxSupportDisplayTopIcon /> 显示支撑顶部。
+<ChituboxSupportDisplayTopIcon /> 顯示支撐頂部。
 
 <ImageContainer>
 	<AntdImage
@@ -136,7 +136,7 @@ export const meta = {
 	/>
 </ImageContainer>
 
-<ChituboxSupportDisplayTipIcon /> 显示支撑尖端。
+<ChituboxSupportDisplayTipIcon /> 顯示支撐尖端。
 
 <ImageContainer>
 	<AntdImage
@@ -148,9 +148,9 @@ export const meta = {
 
 ## 渲染模式
 
-渲染模式位于主窗口的右上角。 它包含两种模式：细节和菲涅耳。
+渲染模式位於主視窗的右上角。它包含兩種模式：細節和菲涅耳。
 
-<ChituboxRenderDetailedIcon /> 在细节模式下，模型显示更多表面细节。
+<ChituboxRenderDetailedIcon /> 在細節模式下，模型顯示更多表面細節。
 
 <ImageContainer>
 	<AntdImage
@@ -166,9 +166,9 @@ export const meta = {
 	/>
 </ImageContainer>
 
-## 视窗小工具
+## 視窗小工具
 
-视窗小工具位于主窗口的右上方，它提供了一种快速操作视图的直观方法，使用户能够快速改变视窗的角度或视角，便于检查对象之间的相对位置。
+視窗小工具位於主視窗的右上角，它提供了一種快速操作視圖的直觀方法，使用戶能夠快速改變視窗的角度或視角，便於檢查物體之間的相對位置。
 
 <ImageContainer>
 	<AntdImage
@@ -179,12 +179,12 @@ export const meta = {
 	/>
 </ImageContainer>
 
-<ChituboxHomeIcon /> 图标和透视 <ChituboxPerspectiveIcon /> /
-正交 <ChituboxOthographicIcon /> 图标位于主窗口的右上方，在视窗小工具旁边。
+<ChituboxHomeIcon /> 圖標和透視 <ChituboxPerspectiveIcon /> /
+正交 <ChituboxOthographicIcon /> 圖標位於主視窗的右上角，在視窗小工具旁邊。
 
-主页图标允许用户将视窗重置为默认视图。透视/正交图标允许用户在透视和正交视图之间切换。透视模式提供了一个更真实的场景地壳视图，而正交模式则为用户提供了一个场景的平面视图，它允许用户轻松地评估物体在打印平台上的位置并根据需要进行调整。
+主頁圖標允許用戶將視窗重置為默認視圖。透視/正交圖標允許用戶在透視和正交視圖之間切換。透視模式提供了一個更逼真的場景地殼視圖，而正交模式則為用戶提供了一個場景的平面視圖，它允許用戶輕鬆地評估物體在列印平台上的位置並根據需要進行調整。
 
-## 滑动条
+## 滑動條
 
 <ImageContainer>
 	<AntdImage
@@ -192,7 +192,7 @@ export const meta = {
 	/>
 </ImageContainer>
 
-滑块位于主窗口的右侧，用于预览模型的截面面积（预切片）和模型的层数（后切片）。该功能允许用户在 3D 模型被发送到打印机之前预览其各个部分和层。滑块在顶部和底部分别有两个按钮，用于对滑块位置进行动画处理。底部的重置按钮将把滑块位置重置为默认值。滑块组件可以帮助用户在 3D 模型被送到打印机之前评估其质量，使他们能够根据需要进行调整。
+滑動條位於主視窗的右側，用於預覽模型的截面面積（預切片）和模型的層數（後切片）。該功能允許用戶在 3D 模型被送到列印機之前預覽其各個部分和層。滑動條在頂部和底部分別有兩個按鈕，用於對滑動條位置進行動畫處理。底部的重置按鈕將把滑動條位置重置為默認值。滑動條組件可以幫助用戶在 3D 模型被送到列印機之前評估其質量，使他們能夠根據需要進行調整。
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
