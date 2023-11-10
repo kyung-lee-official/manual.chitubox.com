@@ -1,4 +1,4 @@
-import { LinuxIcon, MacOSIcon, WindowsIcon } from "@/components/icons/Icons";
+import { UbuntuIcon, MacOSIcon, WindowsIcon } from "@/components/icons/Icons";
 import { ResponsiveTable } from "@/components/responsiveTable/ResponsiveTable";
 import React from "react";
 import { Tabs } from "../tabs/Tabs";
@@ -36,7 +36,7 @@ const enItems = [
 					</tr>
 					<tr>
 						<td>OS</td>
-						<td>Windows 7 (64-bit)</td>
+						<td>Windows 8 (64-bit)</td>
 						<td>Windows 10 or Windows 11</td>
 					</tr>
 					<tr>
@@ -96,11 +96,11 @@ const enItems = [
 		),
 	},
 	{
-		key: "linux",
+		key: "ubuntu",
 		label: (
 			<Label>
-				<div>Linux</div>
-				<LinuxIcon size={"24px"} />
+				<div>Ubuntu</div>
+				<UbuntuIcon size={"24px"} />
 			</Label>
 		),
 		children: (
@@ -165,7 +165,7 @@ const zhItems = [
 					</tr>
 					<tr>
 						<td>操作系统</td>
-						<td>Windows 7 (64-bit)</td>
+						<td>Windows 8 (64-bit)</td>
 						<td>Windows 10 或 Windows 11</td>
 					</tr>
 					<tr>
@@ -225,11 +225,11 @@ const zhItems = [
 		),
 	},
 	{
-		key: "linux",
+		key: "ubuntu",
 		label: (
 			<Label>
-				<div>Linux</div>
-				<LinuxIcon size={"24px"} />
+				<div>Ubuntu</div>
+				<UbuntuIcon size={"24px"} />
 			</Label>
 		),
 		children: (

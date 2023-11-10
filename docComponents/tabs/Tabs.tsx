@@ -39,7 +39,7 @@ const Labels = (props: any) => {
 
 export const Tabs = (props: any) => {
 	const { defaultActiveKey, items, onChange } = props;
-	const [activeKey, setActiveKey] = useState<"windows" | "macos" | "linux">(
+	const [activeKey, setActiveKey] = useState<"windows" | "macos" | "ubuntu">(
 		defaultActiveKey
 	);
 

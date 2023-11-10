@@ -117,7 +117,7 @@ The "Trim Translation" option in CHITUBOX allows you to trim the translation err
 
 ## Settings
 
-The "Settings" option in CHITUBOX allows you to modify the settings for the software. By clicking the "Settings" button, you will be able to open a window containing the Appearance, File, System, Function, Render, and Theme Color tabs. This is useful for customizing the settings to fit your needs.
+The "Settings" option in CHITUBOX allows you to modify the settings for the software. By clicking the "Settings" button, you will be able to open a window containing the Appearance, File, System, and Function tabs. This is useful for customizing the settings to fit your needs.
 
 ### Appearance
 
@@ -128,10 +128,6 @@ There are three themes available: Light, Dark, and Classic.
 #### Sectional Area Pattern
 
 This allow you to change the pattern of the sectional area.
-
-#### Theme Color
-
-This allows you to switch the color of theme.
 
 #### UI Display Scale
 
@@ -161,11 +157,11 @@ This automatically suffixes file names by the operations you made. For example, 
 
 #### Project File Naming
 
--   Model Filename Append Sequentially: The filename is composed of the loaded model filename Sequentially.
+-   Append Model Filename Sequentially: The filename is composed of the loaded model filename Sequentially.
 
 #### Slice File Naming
 
-Set the naming rules for the sliced file.
+Set the naming rules for the sliced file. Most rules are self-explanatory, so we will only explain the ones that needs further explanation.
 
 #### Duplicate Name Replacement
 
@@ -173,21 +169,17 @@ Set the naming rule for conflict filenames.
 
 #### Character Replacement
 
+Some operating systems do not allow certain characters in filenames. This allows you to replace those characters with other characters.
+
 #### Custom Character Replacement
+
+You can add your own character replacement rules here.
 
 ### System
 
 #### Max Undos
 
 This allows you to change the maximum number of undo operations that can be performed.
-
-#### Available Memory
-
-Available memory is the amount of memory (RAM) that is available on your computer (MB).
-
-#### Maximum Memory Usage
-
-Maximum Memory Usage is the maximum amount of memory (RAM) that is distributed for CHITUBOX.
 
 #### Graphics Card Backward Compatible
 
@@ -201,9 +193,13 @@ If the model looks strange or the software doesn't behave as expected, you can t
 
 The graphics quality grade of CHITUBOX. The greater the number, the lower the refresh rate and the higher the graphics quality.
 
+#### Rendering Interface
+
+This allows you to change the rendering interface of the software.
+
 ### Function
 
-#### Slice File Volume Calculation
+#### Slicing Model Volume Calculation
 
 This allows you to enable or disable volume calculation during slicing.
 
@@ -238,6 +234,40 @@ The "Example" button allows you to open example 3D models provided by the softwa
 ## Exit
 
 The "Exit" button allows you to close the software.
+
+## Right-click Menu
+
+### New Project
+
+The "New Project" option allows you to create a new project in the software. This is where you will begin importing a 3D model file.
+
+## Export Model
+
+The "Export Model" menu allows you to export all models or only the selected model from the software. You can export models in a variety of file formats. This allows you to share your models with other users or use them with other 3D software.
+
+### Replace Model
+
+This option allows you to select a model that has slight differences from the model with supports added and replace the current model without having to add supports again.
+
+### Select Model
+
+If the cursor is projected on a model that is not selected, this option will select the model. You can also hold down the Ctrl key and click the model to select multiple models.
+
+### Cancel Seleted Model
+
+If the cursor is projected on a model that is already selected, this option will cancel the selection of the model.
+
+### Hide
+
+Hide the model that the cursor is projected on.
+
+### Hide Others
+
+Hide all models except the model that the cursor is projected on.
+
+### Display All Models
+
+Display all hidden models.
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
