@@ -37,19 +37,6 @@ export const meta = {
 <ChituboxSaveIcon /> “保存” 选项允许您将当前项目保存为 _.chitubox_ 文件或 3D
 网格文件。
 
-## 截图
-
-<ChituboxScreenshotIcon /> “截图” 选项允许用户快速捕获 CHITUBOX
-软件的图像或录制gif。
-
-<ImageContainer>
-	<AntdImage
-		src={
-			"/images/docs/zh-CN/chitubox-basic/2.x.x/006-operations-screenshot.png"
-		}
-	/>
-</ImageContainer>
-
 ## 复制
 
 <ChituboxCopyIcon /> “复制” 选项允许用户快速制作多个 3D
@@ -77,13 +64,13 @@ export const meta = {
 
 ## 镂空
 
-<ChituboxHollowIcon /> 镂空选项有 3 种模式：“镂空”、“剥离”和“挖空”。
+<ChituboxHollowIcon /> 镂空选项有 3 种模式：“内镂空”、“外镂空”和“底部贯穿”。
 
-**镂空** 允许用户创建具有空心内部的 3D 模型，同时保留模型的外形。镂空选项可以帮助用户在打印 3D 模型时节省时间和材料成本，因为空心内部只需要更少的材料来打印。该功能还可用于创建具有复杂外形的轻型模型。
+**内镂空** 允许用户创建具有空心内部的 3D 模型，同时保留模型的外形。镂空选项可以帮助用户在打印 3D 模型时节省时间和材料成本，因为空心内部只需要更少的材料来打印。该功能还可用于创建具有复杂外形的轻型模型。
 
-**剥离** 将从模型中剥离指定厚度的壁，就像将模型进行“收缩”一样。
+**外镂空** 将从模型中剥离指定厚度的壁，就像将模型进行“收缩”一样。
 
-**挖空** 与“镂空”非常相似，但会删除室底。
+**底部贯穿** 与“镂空”非常相似，但会删除室底。
 
 <ImageContainer>
 	<AntdImage

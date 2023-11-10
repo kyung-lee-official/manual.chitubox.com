@@ -268,7 +268,7 @@ const zhItems = [
 	},
 ];
 
-const zh_hkItems = [
+const zh_twItems = [
 	{
 		key: "windows",
 		label: (
@@ -411,8 +411,8 @@ export const SystemRequirements = (props: any) => {
 		case "zh":
 			langTable = zhItems;
 			break;
-		case "zh-HK":
-			langTable = zh_hkItems;
+		case "zh-TW":
+			langTable = zh_twItems;
 			break;
 		default:
 			langTable = enItems;

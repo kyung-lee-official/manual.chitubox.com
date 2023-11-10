@@ -121,39 +121,39 @@ export const meta = {
 
 ## 高級
 
-### 底層燈光 PWM
+### 底層光强度 PWM
 
-底層燈光的 <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">PWM</SpanA>，範圍從 `0` 到 `255` 或從 `0%` 到 `100%`，控制底層的 UV 光源功率。
+底層光的 <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">PWM</SpanA>，範圍從 `0` 到 `255` 或從 `0%` 到 `100%`，控制底層的 UV 光源功率。
 
-### 灯光 PWM
+### 光强度 PWM
 
-普通層燈光的 <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">PWM</SpanA>，範圍從 `0` 到 `255` 或從 `0%` 到 `100%`，控制普通層的 UV 光源功率。
+普通層光的 <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">PWM</SpanA>，範圍從 `0` 到 `255` 或從 `0%` 到 `100%`，控制普通層的 UV 光源功率。
 
-### 圖像灰度
+### 圖像灰階
 
-類似於燈光 PWM，範圍從 `0` 到 `255`，但是圖像灰度不是控制 UV 光源的功率，而是控制 LCD 屏幕的透光率。值越大，透光率越高。
+類似於燈光 PWM，範圍從 `0` 到 `255`，但是圖像灰階不是控制 UV 光源的功率，而是控制 LCD 屏幕的透光率。值越大，透光率越高。
 
 ### 抗鋸齒
 
-有兩種抗鋸齒模式：**灰度級別** 和 **抗鋸齒級別（舊）**。
+有兩種抗鋸齒模式：**灰階** 和 **抗鋸齒等級（舊）**。
 
-#### 灰度級別
+#### 灰階
 
 該模式適用於 _.ctb_ 格式。
 
 | 參數         | 描述                                                                                               |
 | ------------ | -------------------------------------------------------------------------------------------------- |
-| 灰度級別     | 範圍：`0` ~ `255`。`0` 代表黑色，`255` 代表白色。它決定了可用于抗鋸齒的灰度範圍。                  |
+| 灰階     | 範圍：`0` ~ `255`。`0` 代表黑色，`255` 代表白色。它決定了可用于抗鋸齒的灰階範圍。                  |
 | 圖像模糊啓用 | 啟用/禁用圖像模糊。                                                                                |
 | 图像模糊像素 | 可用值：`2`、`3`、`4`。決定邊緣過渡的像素數。值越高，邊緣就越柔和。類似於 Photoshop 中的羽化功能。 |
 
-#### 抗鋸齒級別
+#### 抗鋸齒等級
 
 這是舊模式，只適用於 _.cbddlp_ 格式。
 
 | 參數       | 描述                                                                                                                |
 | ---------- | ------------------------------------------------------------------------------------------------------------------- |
-| 抗鋸齒級別 | 可用值：`2`、`4`、`8`。它決定了邊緣的曝光時間。值越高，曝光時間就越長，這將導致邊緣更加銳利，從而降低抗鋸齒的效果。 |
+| 抗鋸齒等級 | 可用值：`2`、`4`、`8`。它決定了邊緣的曝光時間。值越高，曝光時間就越長，這將導致邊緣更加銳利，從而降低抗鋸齒的效果。 |
 
 ### 公差補償
 
@@ -183,7 +183,7 @@ export const meta = {
 	當禁用底層公差補償時，普通層公差補償將對整個模型生效。
 </Admonition>
 
-### 列印時間補償
+### 層列印時間補償
 
 一些高解析度列印機在加載數據時可能會產生額外的延遲，這將導致列印時間預估不准確。您可以設置時間補償來改善這個問題。
 
@@ -197,12 +197,12 @@ export const meta = {
 <ImageContainer>
 	<AntdImage
 		src={
-			"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-print-time-compensation.png"
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/009-configure-print-parameters-print-time-compensation.png"
 		}
 	/>
 </ImageContainer>
 
-$$\text{層列印時間補償} = \frac{\text{實際列印時間} - \text{軟件預測時間}}{\text{層數}}$$
+$$\text{層列印時間補償} = \frac{\text{實際列印時間} - \text{軟件預估列印時間}}{\text{層數}}$$
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
