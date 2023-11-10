@@ -155,5 +155,3 @@ Do this ✅:
 ## Todos
 
 -   [ ] Add description to **Slice File Naming**
-
--	[ ] Add illustrations for "Main Part" in /en-US/docs/chitubox-basic/latest/sections/configure-support-parameters#bottom
