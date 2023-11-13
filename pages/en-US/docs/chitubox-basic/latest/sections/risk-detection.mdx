@@ -99,11 +99,19 @@ After slicing the model, you should enter the preview window and should see the 
 <ChituboxIslandsDetectionIcon /> Detect Islands will detect islands in the model
 and highlight them in red in the preview viewport.
 
-<ChituboxDeleteIslandsIcon /> Delete Islands will delete the islands that have
-been detected. Mostly you don't want to use this function, instead, you probably
-want to go back to add supports to the islands that have been detected. It's
-only used when the detected islands only continuously exist in a few layers and
-you want to delete them.
+<ChituboxDeleteIslandsIcon /> Delete All Islands will delete all islands that have
+been detected for your model. Mostly you don't want to use this function, instead, you probably
+want to go back to add supports to the islands that have been detected.
+
+If you want to delete islands on a specific layer, you can click the **Delete Islands** button on the right of the main panel.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-delete-islands.png"
+		}
+	/>
+</ImageContainer>
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

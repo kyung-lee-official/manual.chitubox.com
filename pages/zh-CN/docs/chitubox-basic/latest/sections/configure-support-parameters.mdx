@@ -589,11 +589,38 @@ CHBITUBOX 提供了 3 种默认的支撑设置：细、中、粗。如果它们�
 
 ## 操作模式
 
-有三种操作模式：**添加**、**删除** 和 **编辑**。
+有三种操作模式：**添加**、**删除** 和 **编辑**，他们的快捷键分别是 **A**、**D** 和 **E**。三种模式下均支持多选, 您可以按住 Ctrl 键然后点击鼠标左键并拖拽来选择操作区域。
 
 ### 添加
 
 <ChituboxAddSupportIcon /> 点击模型添加支撑。
+
+添加支撑有**常规模式**和**直连模式** 2 种，默认为常规模式。
+
+直连模式允许您在模型和支撑主干之间添加支撑。它的规则如下：
+
+* 如果您先点击模型，您可以选择将支撑另一端固定在模型上，或现有支撑的主干上。
+* 如果您先点击支撑，您可以选择将支撑另一端固定在现有支撑的主干上。
+
+如果您需要切换到直连模式，您需要先弹出支撑模式面板，
+
+<ImageContainer className={"max-w-sm"}>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/010-configure-support-parameters-mode-panel.png"
+		}
+	/>
+</ImageContainer>
+
+然后选择直连模式。
+
+<ImageContainer className={"max-w-sm"}>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/010-configure-support-parameters-mode-panel-connection.png"
+		}
+	/>
+</ImageContainer>
 
 ### 删除
 
@@ -604,6 +631,8 @@ Delete 键删除支撑。
 
 <ChituboxEditSupportIcon /> 点击选择想要编辑的支撑，所选支撑将变为绿色，按住
 Ctrl 键可以选择多个支撑，可以调整选中支撑的参数，也可以拖动支撑调整支撑位置。
+
+编辑模式下，您可以双击支撑顶部的节点来添加节点支撑（按 Esc 键退出节点支撑）。
 
 ## 清除全部
 

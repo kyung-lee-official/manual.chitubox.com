@@ -602,11 +602,38 @@ There are 2 modes for auto support: **+All** and **+Platform**.
 
 ## Operation Mode
 
-There are 3 operation modes: **Add**, **Delete**, and **Edit**.
+There are 3 operation modes: **Add**, **Delete**, and **Edit**, the shortcut keys are "A", "D", and "E" respectively. All of the 3 modes support multi-selection by holding Ctrl key and dragging the mouse to select the operation area.
 
 ### Add
 
 <ChituboxAddSupportIcon /> Click the model to add supports.
+
+There are two kinds of modes for adding supports: **Regular** (default) and **Connection**.
+
+The Connection mode allows you to add supports between models and existing support trunks, it complys with the following rules:
+
+* If you first click on a model, then you can fix another side of the support on the model surface or a existing support trunk.
+* If you first click on a support trunk, then you can fix another side of the support on another support trunk.
+
+If you want to switch to the Connection mode, you need to pop out the support mode panel first:
+
+<ImageContainer className={"max-w-sm"}>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mode-panel.png"
+		}
+	/>
+</ImageContainer>
+
+Then select the Connection mode:
+
+<ImageContainer className={"max-w-sm"}>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mode-panel-connection.png"
+		}
+	/>
+</ImageContainer>
 
 ### Delete
 
@@ -619,6 +646,8 @@ red, then click the button again or press Delete key to delete the supports.
 green, hold Ctrl key to select multiple supports, you can then adjust the
 parameters of the selected supports. You can also drag the supports to adjust
 their positions.
+
+In Edit mode, you can double click a support node to add node supports (press Esc to exit).
 
 ## Clear All
 

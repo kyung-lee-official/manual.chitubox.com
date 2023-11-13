@@ -96,7 +96,17 @@ export const meta = {
 
 <ChituboxIslandsDetectionIcon /> 检测孤岛将检测模型中的孤岛，并在预览窗口中以红色突出显示已检测到的孤岛。
 
-<ChituboxDeleteIslandsIcon /> 删除孤岛将删除已检测到的孤岛。通常，您不希望直接使用此功能，而是希望返回并为已检测到的孤岛添加支撑。仅当检测到的孤岛存在于少数连续的几个图层中，并且您想要删除它们时才使用此功能。
+<ChituboxDeleteIslandsIcon /> 删除所有孤岛将删除全部已检测到的孤岛。通常，您不希望直接使用此功能，而是希望返回并为已检测到的孤岛添加支撑。
+
+如果您想删除某一层的孤岛，您可以点击主视窗右侧的 **删除孤岛** 按钮。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/008-risk-detection-delete-islands.png"
+		}
+	/>
+</ImageContainer>
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
