@@ -388,7 +388,7 @@ const zh_twItems = [
 					</tr>
 					<tr>
 						<td>硬盤</td>
-						<td>不低于 10GB 的硬盘存储空间</td>
+						<td>不低於 10GB 的硬盤存儲空間</td>
 						<td>20GB 以上的固態硬盤</td>
 					</tr>
 				</tbody>
