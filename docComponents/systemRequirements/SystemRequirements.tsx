@@ -268,6 +268,135 @@ const zhItems = [
 	},
 ];
 
+const zh_twItems = [
+	{
+		key: "windows",
+		label: (
+			<Label>
+				<div>Windows</div>
+				<WindowsIcon size={"24px"} />
+			</Label>
+		),
+		children: (
+			<ResponsiveTable>
+				<thead>
+					<tr>
+						<th>規格</th>
+						<th>最低配置</th>
+						<th>推荐配置</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>處理器</td>
+						<td>Intel® Core™ i5 6600K 或 AMD Ryzen™ 5 1600</td>
+						<td>Intel Core i7 4790 或 AMD Ryzen 7 2700X</td>
+					</tr>
+					<tr>
+						<td>操作系統</td>
+						<td>Windows 7 (64-bit)</td>
+						<td>Windows 10 或 Windows 11</td>
+					</tr>
+					<tr>
+						<td>内存</td>
+						<td>16GB</td>
+						<td>≥ 32GB</td>
+					</tr>
+					<tr>
+						<td>硬盤</td>
+						<td>不低於 10GB 的硬盤存儲空間</td>
+						<td>20GB 以上的固態硬盤</td>
+					</tr>
+					<tr>
+						<td>顯卡</td>
+						<td>GPU RAM: ≥1GB</td>
+						<td>GPU RAM: ≥4GB</td>
+					</tr>
+					<tr>
+						<td>顯示器分辨率</td>
+						<td>≥ 1280x960</td>
+						<td>≥ 1280x1024</td>
+					</tr>
+				</tbody>
+			</ResponsiveTable>
+		),
+	},
+	{
+		key: "macos",
+		label: (
+			<Label>
+				<div>macOS</div>
+				<MacOSIcon size={"24px"} />
+			</Label>
+		),
+		children: (
+			<ResponsiveTable>
+				<thead>
+					<tr>
+						<th>規格</th>
+						<th>最低配置</th>
+						<th>推荐配置</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>處理器</td>
+						<td>Intel® 或 M1, M2 processors</td>
+						<td>Intel® 或 M1, M2 processors</td>
+					</tr>
+					<tr>
+						<td>操作系統</td>
+						<td>macOS Catalina (10.15 版本)</td>
+						<td>macOS Big Sur (11.6 版本) 或以上</td>
+					</tr>
+				</tbody>
+			</ResponsiveTable>
+		),
+	},
+	{
+		key: "linux",
+		label: (
+			<Label>
+				<div>Linux</div>
+				<LinuxIcon size={"24px"} />
+			</Label>
+		),
+		children: (
+			<ResponsiveTable>
+				<thead>
+					<tr>
+						<th>規格</th>
+						<th>最低配置</th>
+						<th>推荐配置</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>處理器</td>
+						<td>Intel® Core™ i5 6600K 或 AMD Ryzen™ 5 1600</td>
+						<td>Intel Core i7 4790 或 AMD Ryzen 7 2700X</td>
+					</tr>
+					<tr>
+						<td>操作系統</td>
+						<td>Ubuntu 20.04 LTS</td>
+						<td>Ubuntu 22.04 LTS</td>
+					</tr>
+					<tr>
+						<td>内存</td>
+						<td>16GB</td>
+						<td>32GB 或以上</td>
+					</tr>
+					<tr>
+						<td>硬盤</td>
+						<td>不低於 10GB 的硬盤存儲空間</td>
+						<td>20GB 以上的固態硬盤</td>
+					</tr>
+				</tbody>
+			</ResponsiveTable>
+		),
+	},
+];
+
 const onChange = (key: string) => {
 	console.log(key);
 };
@@ -281,6 +410,9 @@ export const SystemRequirements = (props: any) => {
 			break;
 		case "zh":
 			langTable = zhItems;
+			break;
+		case "zh-TW":
+			langTable = zh_twItems;
 			break;
 		default:
 			langTable = enItems;

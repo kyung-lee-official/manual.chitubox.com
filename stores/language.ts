@@ -3,56 +3,57 @@ import { create } from "zustand";
 import { devtools, persist } from "zustand/middleware";
 
 export type LanguageType = {
-    label: string;
-    locale: Language;
-    urlLocale: string;
+	label: string;
+	locale: Language;
+	urlLocale: string;
 };
 
 export const languageList: LanguageType[] = [
-    { label: "English", locale: "en_US", urlLocale: "en-US" },
-    { label: "简体中文", locale: "zh_CN", urlLocale: "zh-CN" }
+	{ label: "English", locale: "en_US", urlLocale: "en-US" },
+	{ label: "简体中文", locale: "zh_CN", urlLocale: "zh-CN" },
+	{ label: "繁体中文", locale: "zh_TW", urlLocale: "zh-TW" }
 ];
 
 export function getLocale(urlLocale: string) {
-    return languageList.find((language: any) => {
-        return language.urlLocale === urlLocale;
-    })?.locale;
+	return languageList.find((language: any) => {
+		return language.urlLocale === urlLocale;
+	})?.locale;
 }
 
 export function getUrlLocale(locale: string) {
-    return languageList.find((language: any) => {
-        return language.locale === locale;
-    })?.urlLocale;
+	return languageList.find((language: any) => {
+		return language.locale === locale;
+	})?.urlLocale;
 }
 
-export type Language = "en_US" | "zh_CN";
+export type Language = "en_US" | "zh_CN" | "zh_TW";
 
 type State = {
-    language: Language;
+	language: Language;
 };
 
 type Action = {
-    setLanguage: (language: Language) => void;
+	setLanguage: (language: Language) => void;
 };
 
 export const useLanguageStore = create<State & Action>()(
-    devtools(
-        persist(
-            (set) => ({
-                language: "en_US",
-                setLanguage: (language: Language) => {
-                    i18n.changeLanguage(language);
-                    return set((state) => {
-                        return { language: language };
-                    });
-                }
-            }),
-            {
-                name: "language-storage"
-            }
-        ),
-        {
-            name: "language"
-        }
-    )
+	devtools(
+		persist(
+			(set) => ({
+				language: "en_US",
+				setLanguage: (language: Language) => {
+					i18n.changeLanguage(language);
+					return set((state) => {
+						return { language: language };
+					});
+				}
+			}),
+			{
+				name: "language-storage"
+			}
+		),
+		{
+			name: "language"
+		}
+	)
 );

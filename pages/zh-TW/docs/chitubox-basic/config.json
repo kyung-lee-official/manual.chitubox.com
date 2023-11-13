@@ -1,0 +1,124 @@
+{
+	"docInstanceName": "CHITUBOX Basic",
+	"isVersioned": true,
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "2.0.0",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "介紹"
+				},
+				{
+					"item": "installation",
+					"label": "安裝"
+				},
+				{
+					"item": "quick-start",
+					"label": "快速入門"
+				},
+				{
+					"item": "sections",
+					"label": "章節",
+					"subItems": [
+						{
+							"item": "menu",
+							"label": "菜單"
+						},
+						{
+							"item": "gadgets",
+							"label": "小工具"
+						},
+						{
+							"item": "operations",
+							"label": "操作"
+						},
+						{
+							"item": "file-list",
+							"label": "檔案列表"
+						},
+						{
+							"item": "risk-detection",
+							"label": "風險檢測"
+						},
+						{
+							"item": "configure-print-parameters",
+							"label": "設定列印參數"
+						},
+						{
+							"item": "configure-support-parameters",
+							"label": "設定支撐參數"
+						},
+						{
+							"item": "preview",
+							"label": "預覽"
+						}
+					]
+				}
+			]
+		},
+		{
+			"versionCode": "v1.9.4",
+			"versionNumber": "1.9.4",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "介紹"
+				},
+				{
+					"item": "comparison",
+					"label": "比較"
+				},
+				{
+					"item": "requirements",
+					"label": "要求"
+				},
+				{
+					"item": "setting-up",
+					"label": "上手",
+					"subItems": [
+						{
+							"item": "installation",
+							"label": "安裝"
+						},
+						{
+							"item": "update-printer-firmware",
+							"label": "更新打印機固件"
+						},
+						{
+							"item": "configure-print-parameters",
+							"label": "設置打印參數"
+						},
+						{
+							"item": "configure-support-parameters",
+							"label": "設置支撐參數"
+						}
+					]
+				},
+				{
+					"item": "application-overview",
+					"label": "軟件概況",
+					"subItems": [
+						{
+							"item": "ui-introduction",
+							"label": "用戶界面介紹"
+						},
+						{
+							"item": "file",
+							"label": "文件"
+						},
+						{
+							"item": "menu-bar",
+							"label": "菜單欄"
+						},
+						{
+							"item": "slice-preview",
+							"label": "切片預覽"
+						}
+					]
+				}
+			]
+		}
+	]
+}
