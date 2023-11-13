@@ -121,7 +121,7 @@ export const meta = {
 在這裡設定你的列印參數。
 
 <Admonition type="note" title="注意">
-	目前只有部分列印機支援 **靜止時間** 等待模式，點擊<SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">此處</SpanA>查看機器相容性表格。
+	目前只有部分列印機支援 **靜止時間** 等待模式，點擊<SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃此處</SpanA>查看機器相容性表格。
 </Admonition>
 
 | 參數                                                             | 說明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -142,10 +142,10 @@ export const meta = {
 | 底層回程速度                                                     | 底層列印過程中，列印平台靠近列印成形面時的運動速度                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | 回程速度                                                         | 正常層列印過程中，列印平台靠近列印成形面時的運動速度                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
-#### 1. 二段运动控制 TSMC
+#### 1. 二段運動控制 TSMC
 
 <Admonition type="note" title="注意">
-	目前只有部分列印機支援 **TSMC**，點擊<SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃此处 </SpanA>查看機器相容性表格。
+	目前只有部分列印機支援 **TSMC**，點擊<SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃此處 </SpanA>查看機器相容性表格。
 </Admonition>
 
 為了縮短列印時間，同時保證較高的列印成功率，CHITUBOX 將原本列印平台單一的上升下降速度分為兩種速度，即**二段運動控制 TSMC (Two-Stage Motion Control)**，列印平台在遠離列印面時，可以以相對較快的速度運動。
@@ -168,23 +168,23 @@ export const meta = {
 當涉及到普通層和底層時，就會有 8 對參數，下表已經高亮出來了：
 
 <Admonition type="warning" title="警告">
-	一下參數僅供説明，請根據實際需求設定參數。
+	以下參數僅供説明，請根據實際需求設定參數。
 </Admonition>
 
 | 子階段                                                                     | 相關參數                                                                                                                  |
 | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>底層慢速擡升</span> | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.1.png"}/> |
-| <span style={{ color: "#00b894", fontWeight: "bold" }}>底層快速擡升</span> | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.2.png"}/> |
+| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>底層慢速抬升</span> | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.1.png"}/> |
+| <span style={{ color: "#00b894", fontWeight: "bold" }}>底層快速抬升</span> | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.2.png"}/> |
 | <span style={{ color: "#00b894", fontWeight: "bold" }}>底層快速回程</span> | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.3.png"}/> |
 | <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>底層慢速回程</span> | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.4.png"}/> |
-| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>慢速擡升</span>     | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.5.png"}/> |
-| <span style={{ color: "#00b894", fontWeight: "bold" }}>快速擡升</span>     | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.6.png"}/> |
+| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>慢速抬升</span>     | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.5.png"}/> |
+| <span style={{ color: "#00b894", fontWeight: "bold" }}>快速抬升</span>     | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.6.png"}/> |
 | <span style={{ color: "#00b894", fontWeight: "bold" }}>快速回程</span>     | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.7.png"}/> |
 | <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>慢速回程</span>     | <StyledAntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.8.png"}/> |
 
 <Admonition type="warning" title="警告">
-	請注意，每個距離都有對應的速度，例如 **底部擡升距離** 對應
-	**底部擡升速度**，如果距離不爲零，則對應的速度也不能為 `0`，反之亦然。
+	請注意，每個距離都有對應的速度，例如 **底部抬升距離** 對應
+	**底部抬升速度**，如果距離不爲零，則對應的速度也不能為 `0`，反之亦然。
 </Admonition>
 
 <Admonition type="note" title="注意">
@@ -263,7 +263,7 @@ export const meta = {
 	/>
 </ImageContainer>
 
-這裏 擡升距離 是 7mm，擡升速度 是 70mm/min (1.167mm/sec)， 因此擡升時間 $T_L$ 為：
+這裏 抬升距離 是 7mm，抬升速度 是 70mm/min (1.167mm/sec)， 因此抬升時間 $T_L$ 為：
 
 $$T_L = \frac{7}{1.167} = 5.998\ \text{秒}$$
 
@@ -326,7 +326,7 @@ $$T_{LOD} \geq 5.998 + 2 + 2 \approx 10\ \text{秒}$$
 
 對圖像邊緣的三角形鋸齒進行柔化處理以實現物體更光滑的表面效果。相鄰三角形鋸齒間通過增加或刪除一定灰度的像素單元可以調控邊緣曝光的連續性和透光強度，進而實現邊緣區域更加光滑的效果。
 
--   _抗锯齿级别_：`2`，`4`，`8`，**適用於 _.cbddlp_ 格式**，控制邊緣曝光時間。等級越高時間越長，邊緣越清晰，抗鋸齒效果越低。
+-   _抗鋸齒級別_：`2`，`4`，`8`，**適用於 _.cbddlp_ 格式**，控制邊緣曝光時間。等級越高時間越長，邊緣越清晰，抗鋸齒效果越低。
 
 -   _灰度級別_：`0` ~ `8`，**適用於 _.ctb_ 格式**，控制可用於抗鋸齒的灰度數量。將 `0`~`255` (`0` 代表黑色，`255` 代表白色) 的灰度範圍劃分為 8 個級別，級別越高，範圍越窄，越接近 `255` (白色)。
 
@@ -334,7 +334,7 @@ $$T_{LOD} \geq 5.998 + 2 + 2 \approx 10\ \text{秒}$$
 
     -   _圖像模糊像素_：`2` ~ `8`，決定了邊緣過渡像素的數量，等級越高，邊緣越模糊。類似於 Photoshop 中的羽化功能。
 
-打開 <SpanA href="https://www.bilibili.com/video/BV1Wg41177jH?share_source=copy_web">📺 這條視頻</SpanA> 和 <SpanA href="https://www.chitubox.com/zh-Hans/article/academy/advanced/pre-/52">📃 這篇文章</SpanA> 了解更多關於**抗鋸齒**，**灰度**，和**圖像模糊**的內容。
+打開 <SpanA href="https://www.bilibili.com/video/BV1Wg41177jH?share_source=copy_web">📺 這條影片</SpanA> 和 <SpanA href="https://www.chitubox.com/zh-Hans/article/academy/advanced/pre-/52">📃 這篇文章</SpanA> 了解更多關於**抗鋸齒**，**灰度**，和**圖像模糊**的內容。
 
 #### 4. 收縮補償
 

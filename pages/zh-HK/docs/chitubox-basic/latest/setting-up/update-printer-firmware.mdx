@@ -40,13 +40,13 @@ export const meta = {
 
 ## 升級方法
 
-將所有檔案，拷貝進 USB 盤中，放置在 USB 盤根目錄下
+將所有檔案，拷貝進 U 盤中，放置在 U 盤**根目錄**下。
 
 <Admonition type="warning" title="警告">
 	只能放在 <b>根目錄</b> 下，不要放在資料夾裏。
 </Admonition>
 
-將機器斷電，並將 USB 盤插入機器的 USB 插口中，隨後機器重新上電開機。
+將機器斷電，並將 U 盤插入機器的 USB 插口中，隨後機器重新上電開機。
 
 <Admonition type="note" title="注意">
 	請使用 USB 2.0, 容量 16GB (包含) 以下的 U 盤。
@@ -55,7 +55,7 @@ export const meta = {
 上電後，
 
 1. 韌體更新 <br />
-   如果 USB 盤內的 update.LCD 的版本，與當前主板上所搭載的版本不一致，則主板會優先並自動進行更新，此時觸控螢幕不會亮屏。 <br />
+   如果 U 盤內的 update.LCD 的版本，與當前主板上所搭載的版本不一致，則主板會優先並自動進行更新，此時觸控螢幕不會亮屏。 <br />
    但是能夠聽到蜂鳴器提示音，蜂鳴器提示音節奏為，嘀—嘀—嘀—嘀—嘀—嘀~~~嘀—嘀。 <br />
    （即 5 短鳴 1 長鳴 2 短鳴） <br />
    韌體更新成功後，觸控螢幕將會亮起，同時程式啟動 <br />
@@ -63,14 +63,13 @@ export const meta = {
 1. 其他檔案更新 <br />
    隨後主板會自動對剩餘的檔案進行更新（UI 檔案、logo 檔案除外），並顯示更新進度情況，當所有待更新的檔案更新完成後，程式將彈出`列印完成`的提示框。
 
-    {" "}
     <StyledAntdImage
     	src={
     		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-update-printer-firmware-002.png"
     	}
     />
+	<br /><br />
 
-    {" "}
     <StyledAntdImage
     	src={
     		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-update-printer-firmware-003.png"
