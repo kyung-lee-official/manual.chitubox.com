@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 
 import translation_en_US from "./en-US.json";
 import translation_zh_CN from "./zh-CN.json";
-import translation_zh_HK from "./zh-HK.json";
+import translation_zh_TW from "./zh-TW.json";
 
 /** the translations
 * (tip move them in a JSON file and import them,
@@ -16,8 +16,8 @@ const resources = {
 	zh_CN: {
 		translation: translation_zh_CN
 	},
-	zh_HK: {
-		translation: translation_zh_HK
+	zh_TW: {
+		translation: translation_zh_TW
 	}
 };
 

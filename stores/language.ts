@@ -11,7 +11,7 @@ export type LanguageType = {
 export const languageList: LanguageType[] = [
 	{ label: "English", locale: "en_US", urlLocale: "en-US" },
 	{ label: "简体中文", locale: "zh_CN", urlLocale: "zh-CN" },
-	{ label: "繁体中文", locale: "zh_HK", urlLocale: "zh-HK" }
+	{ label: "繁体中文", locale: "zh_TW", urlLocale: "zh-TW" }
 ];
 
 export function getLocale(urlLocale: string) {
@@ -26,7 +26,7 @@ export function getUrlLocale(locale: string) {
 	})?.urlLocale;
 }
 
-export type Language = "en_US" | "zh_CN" | "zh_HK";
+export type Language = "en_US" | "zh_CN" | "zh_TW";
 
 type State = {
 	language: Language;
