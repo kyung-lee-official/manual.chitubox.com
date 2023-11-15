@@ -1,13 +1,13 @@
 import { DocsLayout } from "@/components/docsLayout";
 
 export const meta = {
-	title: "修复",
+	title: "修復",
 	author: "CHITUBOX Team",
 };
 
-# 修复
+# 修復
 
-## 修复面板
+## 修復面板
 
 <StyledAntdImage
 	src={
@@ -15,10 +15,11 @@ export const meta = {
 	}
 />
 
-修复面板上的下拉菜单可以选择**按模型显示**或者**按错误类型显示**，检测的错误类型包括**多余壳体**，**孔洞**，**坏边**，**反向**，**相交**。
-如果选中**检测**选项，软件将会自动检测模型，并展示出模型的错误数据。基本修复可以完成绝大多数的修复任务，高级修复是针对清除多余壳体优化的修复。
+修復面板上的下拉菜單可以選擇 **按模型顯示** 或 **按錯誤類型顯示**，檢測的錯誤類型包括 **多餘殼體**、**孔洞**、**壞邊**、**反向**、**相交**。
 
-## 左侧工具栏
+如果選中**檢測**選項，軟體將會自動檢測模型，並展示出模型的錯誤數據。基本修復可以完成絕大多數的修復任務，高級修復是針對清除多餘殼體優化的修復。
+
+## 左側工具欄
 
 <StyledAntdImage
 	src={
@@ -26,9 +27,9 @@ export const meta = {
 	}
 />
 
-在修复模型时，如需对模型局部或者指定区域进行修复，我们可以通过**左侧工具栏**来快捷选取。快捷选择工具包括**线**、**笔刷**、**矩形**、**多边形**和**自由曲线**。
+在修復模型時，如需對模型局部或指定區域進行修復，我們可以通過**左側工具欄**來快速選取。快捷選擇工具包括**線**、**筆刷**、**矩形**、**多邊形**和**自由曲線**。
 
-## 闭合小孔
+## 閉合小孔
 
 <StyledAntdImage
 	src={
@@ -36,20 +37,20 @@ export const meta = {
 	}
 />
 
-将模型上存在损坏的 6 边（含）以下的小孔进行闭合操作。
+將模型上存在損壞的 6 邊（含）以下的小孔進行閉合操作。
 
 <ImageComparison
 	img1Src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair011.png"
 	}
-	text1={"修复小孔前"}
+	text1={"修復小孔前"}
 	img2Src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair012.png"
 	}
-	text2={"修复小孔后"}
+	text2={"修復小孔后"}
 />
 
-## 闭合所有孔
+## 閉合所有孔
 
 <StyledAntdImage
 	src={
@@ -57,20 +58,20 @@ export const meta = {
 	}
 />
 
-将模型上存在损坏的所有孔进行闭合操作。
+將模型上存在損壞的所有孔進行閉合操作。
 
 <ImageComparison
 	img1Src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair021.png"
 	}
-	text1={"闭合所有孔前"}
+	text1={"閉合所有孔前"}
 	img2Src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair022.png"
 	}
-	text2={"闭合所有孔后"}
+	text2={"閉合所有孔后"}
 />
 
-## 方向修复
+## 方向修復
 
 <StyledAntdImage
 	src={
@@ -78,20 +79,20 @@ export const meta = {
 	}
 />
 
-将模型中存在方向性错的三角面进行修复。
+將模型中存在方向性錯的三角面進行修復。
 
 <ImageComparison
 	img1Src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair005.1.png"
 	}
-	text1={"方向修复前"}
+	text1={"方向修復前"}
 	img2Src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair005.2.png"
 	}
-	text2={"方向修复后"}
+	text2={"方向修復后"}
 />
 
-## 包裹外表面
+## 包覆外表面
 
 <StyledAntdImage
 	src={
@@ -99,7 +100,7 @@ export const meta = {
 	}
 />
 
-将模型的三角面包覆方向统一向外，删除矛盾三角面，并将外表面细化闭合。
+將模型的三角面包覆方向統一向外，刪除矛盾三角面，並將外表面細化閉合。
 
 ## 添加三角面
 
@@ -109,9 +110,9 @@ export const meta = {
 	}
 />
 
-当使用**添加三角形**功能时，鼠标左键点击对象不再是三角面数据，而是非封闭三角面的边线。
+當使用**添加三角面**功能時，鼠標左鍵點擊物件不再是三角面數據，而是非封閉三角面的邊線。
 
-## 删除多余壳体
+## 刪除多餘殼體
 
 <StyledAntdImage
 	src={
@@ -119,7 +120,7 @@ export const meta = {
 	}
 />
 
-点击**删除多余壳体**时，会出现显示壳体信息的弹窗。
+點擊**刪除多餘殼體**時，會出現顯示殼體信息的彈窗。
 
 <StyledAntdImage
 	src={
@@ -127,22 +128,22 @@ export const meta = {
 	}
 />
 
-将模型中存在的非连续的多余壳体删除。
+將模型中存在的非連續的多餘殼體刪除。
 
 <ImageComparison
 	img1Src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair013.png"
 	}
-	text1={"删除多余壳体前"}
+	text1={"刪除多餘殼體前"}
 	img2Src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair014.png"
 	}
-	text2={"删除多余壳体后"}
+	text2={"刪除多餘殼體后"}
 />
 
-## 删除三角面
+## 刪除三角面
 
-删除选择的三角面。
+刪除選擇的三角面。
 
 <StyledAntdImage
 	src={
@@ -151,12 +152,12 @@ export const meta = {
 />
 
 <Admonition type="note" title="注意">
-	当没有三角面被选中时，**删除三角形**功能不可被使用。
+	當沒有三角面被選中時，**刪除三角面**功能不可被使用。
 </Admonition>
 
-## 翻转三角面
+## 翻轉三角面
 
-翻转选择的三角面。
+反轉選擇的三角面。
 
 <StyledAntdImage
 	src={
@@ -165,7 +166,7 @@ export const meta = {
 />
 
 <Admonition type="note" title="注意">
-	当没有三角面被选中时，**翻转三角形**功能不可被使用。
+	當沒有三角面被選中時，**翻轉三角形**功能不可被使用。
 </Admonition>
 
 export default ({ children }) => (
