@@ -31,7 +31,7 @@
 						},
 						{
 							"item": "update-printer-firmware",
-							"label": "更新印表機韌體"
+							"label": "更新列印機韌體"
 						},
 						{
 							"item": "configure-print-parameters",
