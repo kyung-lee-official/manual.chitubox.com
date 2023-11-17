@@ -1,49 +1,49 @@
 import { DocsLayout } from "@/components/docsLayout";
 
 export const meta = {
-	title: "常见问题",
+	title: "常見問題",
 	author: "CHITUBOX Team",
 };
 
-# CHITUBOX Basic 常见问题
+# CHITUBOX Basic 常見問題
 
 <Admonition type="tip" title="提示">
-	您可以用 **CTRL + F** 搜索本页内容。
+	您可以用 **CTRL + F** 搜索本頁內容。
 </Admonition>
 
-## Windows 操作系统问题
+## Windows 操作系統問題
 
 <Admonition type="note" title="注意">
-	请确保你已经安装了<NextLink href="/zh-CN/docs/chitubox-basic/latest/requirements">所需运行环境</NextLink>中提到的所有环境。
+	請確保你已經安裝了<NextLink href="/zh-TW/docs/chitubox-basic/latest/requirements">所需運行環境</NextLink>中提到的所有環境。
 </Admonition>
 
-### MSVCR110.dll 丢失
+### MSVCR110.dll 丟失
 
-“MSVCR110.dll Missing”表示您缺少 Visual Studio 2012 的 Visual C++ Redistributable Packages，请从<SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=30679">此处</SpanA>下载所需的环境。
+“MSVCR110.dll Missing”表示您缺少 Visual Studio 2012 的 Visual C++ Redistributable Packages，請從<SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=30679">此處</SpanA>下載所需的環境。
 
-### MSVCR120.dll 丢失
+### MSVCR120.dll 丟失
 
-“MSVCR120.dll Missing”表示您缺少 Visual Studio 2013 的 Visual C++ Redistributable Packages，请从<SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">此处</SpanA>下载所需的环境。
+“MSVCR120.dll Missing”表示您缺少 Visual Studio 2013 的 Visual C++ Redistributable Packages，請從<SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">此處</SpanA>下載所需的環境。
 
-### MSVCR140.dll 丢失
+### MSVCR140.dll 丟失
 
-“MSVCR140.dll Missing”表示您缺少 Visual Studio 2015，2017，和 2019 的 Visual C++ Redistributable Packages，请从<SpanA href="https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170">此处</SpanA>下载所需的环境。
+“MSVCR140.dll Missing”表示您缺少 Visual Studio 2015，2017，和 2019 的 Visual C++ Redistributable Packages，請從<SpanA href="https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170">此處</SpanA>下載所需的環境。
 
-### 其他系统级错误
+### 其他系統級錯誤
 
--   错误代码 -1073741701
+-   錯誤代碼 -1073741701
 
--   错误代码 -1073741515
+-   錯誤代碼 -1073741515
 
--   错误代码 -1073740791
+-   錯誤代碼 -1073740791
 
--   错误代码 -0xc000007b
+-   錯誤代碼 -0xc000007b
 
-出现此类问题的原因可能是某些系统文件损坏或操作系统文件损坏。
+出現此類問題的原因可能是某些系統檔案損壞或操作系統檔案損壞。
 
-您可以尝试以下方法进行修复：
+您可以嘗試以下方法進行修復：
 
-方法 1： 在 PC 上打开 cmd（使用 Win + R 并输入 cmd），输入以下命令：
+方法 1： 在 PC 上打開 cmd（使用 Win + R 並輸入 cmd），輸入以下命令：
 
 ```shell
 DISM.exe /Online /Cleanup-image /Scanhealth
@@ -51,137 +51,139 @@ DISM.exe /Online /Cleanup-image /Scanhealth
 DISM.exe /Online /Cleanup-image /Restorehealth
 ```
 
-方法 2： 在 PC 上打开 cmd（使用 Win + R 并输入 cmd），输入以下命令：
+方法 2： 在 PC 上打開 cmd（使用 Win + R 並輸入 cmd），輸入以下命令：
 
 ```shell
 sfc /scannow
 ```
 
-如果这些方法都不能解决问题，您可能需要从微软官方网站下载并重新安装您的系统。
+如果這些方法都不能解決問題，您可能需要從微軟官方網站下載並重新安裝您的系統。
 
 -   <SpanA href="https://www.microsoft.com/en-us/software-download/windows11">Windows 11</SpanA>
 
 -   <SpanA href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10</SpanA>
 
-### Windows 资源管理器反复重启
+### Windows 檔案總管反復重啟
 
-如果您的 Windows 资源管理器一直反复重启，请通过以下方式修复：
+如果您的 Windows 檔案總管一直反復重啟，請通過以下方式修復：
 
-通过按 Ctrl + Shift + Esc 调出你的 Windows 任务管理器，右击 Windows 资源管理器，然后结束任务（注意不是重新启动）。
+按 Ctrl + Shift + Esc 調出您的 Windows 工作管理員，右鍵點擊 Windows 檔案總管，然後結束工作（注意不是重新啟動）。
 
 <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq002.png"} />
 
-在任务管理器中，点击 文件 > 运行新任务，输入 `cmd`, 勾选 **以系统管理权限创建此任务**, 然后点击 **确定**.
+在工作管理員中，點擊 檔案 > 建立新工作，輸入 `cmd`, 勾選 **以系統管理權限建立此工作**, 然後點擊 **確定**.
 
-输入：
+輸入：
 
 ```shell
 regsvr32 /u "CHITUBOX-Installation-Path\CHITUBOX_Thumbnail.dll"
 ```
 
-注意，这里要把 `CHITUBOX-Installation-Path` 换成你的 CHITUBOX 安装路径，例如：
+注意，這裡要把 `CHITUBOX-Installation-Path` 換成你的 CHITUBOX 安裝路徑，例如：
 
 ```shell
 regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 ```
 
-敲击回车键 Enter 运行命令。
+按下回車鍵 Enter 執行命令。
 
 <Admonition type="note" title="注意">
-	你的 OpenGL 版本不应低于 2.0。
+	你的 OpenGL 版本不應低於 2.0。
 </Admonition>
 
-### 和 Fusion 360 冲突或者 OpenGL 报错 Failed to create OpenGL context for format QSurfaceFormat
+### 和 Fusion 360 衝突或者 OpenGL 報錯 Failed to create OpenGL context for format QSurfaceFormat
 
 <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq001.png"} />
 
-请打开 系统设置 > 关于 > 高级系统设置，删除环境变量 `QT_OPENGL` 。
+請打開 系統設置 > 關於 > 高級系統設置，刪除環境變數 `QT_OPENGL` 。
 
-### 报错：This application failed to start because no Qt platform plugin could be initialized
+### 報錯：This application failed to start because no Qt platform plugin could be initialized
 
 <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq006.png"} />
 
-请打开 系统设置 > 关于 > 高级系统设置，删除 `QT_OPENGL` `QT_PLUGIN_PATH` 这两个环境变量。
+請打開 系統設置 > 關於 > 高級系統設置，刪除 `QT_OPENGL` `QT_PLUGIN_PATH` 這兩個環境變數。
 
-### CHITUBOX 无响应
+### CHITUBOX 無響應
 
 <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq008.png"} />
 
-极有可能是软件冲突问题，请一一退出正在运行的软件，并查找与 CHITUBOX 冲突的软件。 完成此操作后，大多数情况下应该可以解决问题。
-以下软件可能会导致冲突：
+極有可能是軟體衝突問題，請逐一退出正在運行的軟體，並查找與 CHITUBOX 衝突的軟體。完成此操作後，大多數情況下應該可以解決問題。
 
--   杀毒软件，各种管家，卫士，助手，大师
+以下軟體可能會導致衝突：
 
--   Tabtip (任务栏里面叫 Touch Keyboard and Handwriting Panel)
+-   殺毒軟體，各種管家，衛士，助手，大師
+
+-   Tabtip (在工作欄中稱為 Touch Keyboard and Handwriting Panel)
 
 -   PowerToys
 
 -   Google Drive
 
-## 插件问题
+## 插件問題
 
-### Longer 错误代码 -1
+### Longer 錯誤代碼 -1
 
-1. Longer 的控制板对分辨率进行了特殊处理，我们已经确认了正确的分辨率 x：960，y：1708。我们已经仔细检查并确认了这一点，所以请不要更改它。
+1. Longer 的控制板對分辨率進行了特殊處理，我們已經確認了正確的分辨率 x：960，y：1708。我們已經仔細檢查並確認了這一點，所以請不要更改它。
 
-2. `错误代码 -1` 更改分辨率后是插件内码错误。 因为您更改了分辨率，所以发生了报错。
+2. `錯誤代碼 -1` 更改分辨率後是插件內碼錯誤。 因為您更改了分辨率，所以發生了報錯。
 
-点击<SpanA href="https://drive.google.com/drive/u/0/folders/1rPRw68b3Z1oqLwc7hSmP5A9Zx0HjatbE?fbclid=IwAR2XyvSs_jCWwqXymOh9ZEvcuyKNuj-ibnmbLAmfOsZMWzjJdke71kxANwQ">这里</SpanA>下载 Longer 插件。
+點擊<SpanA href="https://drive.google.com/drive/u/0/folders/1rPRw68b3Z1oqLwc7hSmP5A9Zx0HjatbE?fbclid=IwAR2XyvSs_jCWwqXymOh9ZEvcuyKNuj-ibnmbLAmfOsZMWzjJdke71kxANwQ">此處</SpanA>下載 Longer 插件。
 
-## 文件问题
+## 檔案問題
 
-### 缩略图异常
+### 縮略圖異常
 
 <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004.png"} />
 
-按住 Ctrl + Shift + Esc 打开任务管理器，点击 文件 > 运行新任务，输入 `cmd`, 勾选 **以系统管理权限创建此任务**, 然后点击 **确定**。
+按住 Ctrl + Shift + Esc 打開工作管理員，點擊 檔案 > 建立新工作，輸入 `cmd`, 勾選 **以系統管理權限建立此工作**，然後點擊 **確定**。
 
-输入：
+輸入：
 
 ```shell
 regsvr32 /u "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 ```
 
-注意，这里要把 `{CHITUBOX-Installation-Path}` 换成你的 CHITUBOX 安装路径，例如：
+注意，這裡要把 `{CHITUBOX-Installation-Path}` 換成你的 CHITUBOX 安裝路徑，例如：
 
 ```shell
 regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 ```
 
-敲击回车键 Enter 运行命令。
+按下回車鍵 Enter 執行命令。
 
 <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-1.png"} />
 
-输入：
+輸入：
 
 ```shell
 regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 ```
 
-敲击回车键 Enter 运行命令。
+按下回車鍵 Enter 執行命令。
 
 <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-2.png"} />
 
-**清理磁盘**
+**清理磁碟**
 
-找到您的系统磁盘（一般是 C 盘），右击选择属性，点击“磁盘清理”。
+找到您的系統磁碟（一般是 C 磁碟），右鍵選擇内容，點擊“磁碟清理”。
 
-勾选“缩略图”，再点击“清理系统文件”，然后点击“确定”。
+勾選“縮略圖”，再點擊“清理系統檔”，然後點擊“確定”。
 
 <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-4.png"} />
 
-选择“删除文件”。
+選擇“刪除檔案”。
 
 <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-5.png"} />
 
-**重启资源管理器**
+**重新啟動檔案總管**
 
-通过按 Ctrl + Shift + Esc 调出你的 Windows 任务管理器，右击 Windows 资源管理器，然后结束任务（注意不是重新启动）。
+透過按 Ctrl + Shift + Esc 調出你的 Windows 工作管理員，右鍵 Windows 檔案總管，然後結束工作（注意不是重新啟動）。
 
-### 切片文件模型表面粗糙
+### 切片檔案模型表面粗糙
 
-在模型被切片后，大家可能会觉得图像的质量很粗糙，但实际上这是模型在切片后通过立体渲染将每一个体素都表现出来的样子。就如同大家在 Photoshop 中将图像放大可以看到每一个像素的样子一般。<br />
-如图所示，每一个立方体的高是在切片设置中设置的层高，长是屏幕上横向每个像素的长度，宽是屏幕上纵向每个像素的宽度。长，宽，高构成体素的体积。体素是构成打印件的最小单位。
+在模型被切片後，大家可能會覺得圖像的品質很粗糙，但實際上這是模型在切片後透過立體渲染將每一顆體素都表現出來的樣子。就如同大家在 Photoshop 中將圖像放大可以看到每一顆像素的樣子一般。
+
+如圖所示，每一顆立方體的高是在切片設定中設定的層高，長是螢幕上橫向每個像素的長度，寬是螢幕上縱向每個像素的寬度。長、寬、高構成體素的體積。體素是構成列印件的最小單位。
 
 <StyledAntdImage
 	src={"/images/docs/zh-CN/faq/chitubox-basic/faq005.png"}
@@ -189,40 +191,39 @@ regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 />
 
 <Admonition type="note" title="注意">
-	此体素成像在初次切完片预览时无法看到，需要重新将.ctb 文件加载在 CHITUBOX
-	中打开才能看到。
+	此體素成像在初次切完片預覽時無法看到，需要重新將.ctb 檔案載入在 CHITUBOX 中才能看到。
 </Admonition>
 
-### 为什么 STL 文件导入 CHITUBOX 后比例被缩放了？
+### 為什麼 STL 檔案匯入 CHITUBOX 後比例被縮放了？
 
-STL 文件并不包含具体的单位信息，而是使用数字记录。因此，不同的软件读取 STL 文件时使用的单位不一定相同。例如，当使用 STL 时，Blender 中的 1 米相当于 CHITUBOX 中的 1 毫米。您需要先测试您使用的 3D 建模软件和 CHITUBOX 的比例关系后再导出文件。
+STL 檔案並不包含具體的單位資訊，而是使用數字記錄。因此，不同的軟體讀取 STL 檔案時使用的單位不一定相同。例如，當使用 STL 時，Blender 中的 1 公尺相當於 CHITUBOX 中的 1 毫米。您需要先測試您使用的 3D 建模軟體和 CHITUBOX 的比例關係後再匯出檔案。
 
-## 其他问题
+## 其他問題
 
-出于某种原因，您可能会遇到由版本之间的数据损坏引起的其他问题。 您可以尝试以下方法来解决问题：
+出於某種原因，您可能會遇到由版本之間的資料損壞引起的其他問題。您可以嘗試以下方法來解決問題：
 
-### 清除缓存
+### 清除緩存
 
-1. 打开软件日志路径 （设置/帮助 > 打开日志）。<NextLink href="/zh-CN/docs/chitubox-basic/latest/application-overview/file#打开日志路径">📃点击这里</NextLink> 学习如何打开日志。
+1. 開啟軟體日誌路徑（設定/幫助 > 打開日誌路徑）。<NextLink href="/zh-TW/docs/chitubox-basic/latest/application-overview/file#打開日誌路徑">📃點擊這裡</NextLink> 學習如何打開日誌路徑。
 
-1. 关闭 CHITUBOX Basic (**务必先关闭 CHITUBOX Basic**) 。
+1. 關閉 CHITUBOX Basic (**務必先關閉 CHITUBOX Basic**)。
 
-1. 确保已经关闭 CHITUBOX Basic 后，备份 📁*machine* 文件夹到其他路径，删除除了 📄*userLogin.cfg* 以外的所有文件和文件夹。
+1. 確保已經關閉 CHITUBOX Basic 後，備份 📁*machine* 資料夾到其他路徑，刪除除了 📄*userLogin.cfg* 以外的所有檔案和資料夾。
 
     <StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq003.png"} />
 
-1. 重新打开 CHITUBOX Basic。
+1. 重新打開 CHITUBOX Basic。
 
-1. 重新打开软件后，会生成新的 📁*machine* 文件夹，可以将 _.cfg_ 文件复制粘贴到新的 📁*machine* 文件夹中以恢复您的机器。请不要一次性将所有的 _.cfg_ 文件复制到 📁*machine* 文件夹中，因为您遇到的问题有可能是其中的一个文件引起的。
+1. 重新開啟軟體後，會產生新的 📁*machine* 資料夾，可以將 _.cfg_ 檔案複製粘貼到新的 📁 *machine* 資料夾中以恢復您的機器。請不要一次性將所有的 _.cfg_ 檔案複製到 📁 *machine* 資料夾中，因為您遇到的問題有可能是其中一個檔案引起的。
 
-## U 盘问题
+## 隨身碟問題
 
-您可能会发现您的打印机有时无法正确读取您的 U 盘。 这主要是因为您的打印机控制板设计为使用 USB 2.0 且容量等于或小于 16GB。 USB 3.0 使用较大的电流，因此有时会对控制板造成电气干扰。您的 U 盘应满足以下要求：
+您可能會發現您的印表機有時無法正確讀取您的隨身碟。這主要是因為您的印表機控制板設計為使用 USB 2.0 且容量等於或小於 16GB。USB 3.0 使用較大的電流，因此有時會對控制板造成電氣干擾。您的隨身碟應滿足以下要求：
 
 -   FAT32 格式
 -   USB 2.0
 -   ≤ 16GB
--   分配单元大小 = 2048 bytes
+-   分配單元大小 = 2048 bytes
 
 	<StyledAntdImage src={"/images/docs/zh-CN/faq/chitubox-basic/faq009.png"} />
 
