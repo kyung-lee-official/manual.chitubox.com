@@ -354,11 +354,11 @@ const zh_twItems = [
 		),
 	},
 	{
-		key: "linux",
+		key: "ubuntu",
 		label: (
 			<Label>
-				<div>Linux</div>
-				<LinuxIcon size={"24px"} />
+				<div>Ubuntu</div>
+				<UbuntuIcon size={"24px"} />
 			</Label>
 		),
 		children: (
