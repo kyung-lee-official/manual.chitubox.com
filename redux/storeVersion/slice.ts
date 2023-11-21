@@ -5,7 +5,7 @@ interface StoreVersion {
 }
 
 export const initialState: StoreVersion = {
-	storeVersion: 0,
+	storeVersion: 0 + 1,
 };
 
 export const storeVersionSlice = createSlice({

@@ -1,0 +1,140 @@
+import { DocsLayout } from "@/components/docsLayout";
+
+export const meta = {
+	title: "管理你的賬號和許可",
+	author: "CHITUBOX Team",
+};
+
+# 管理你的賬號和許可
+
+## 管理你的賬號和許可
+
+<Admonition type="danger" title="危險">
+	請勿將你的許可序列號告訴任何人，獲取許可序列號后應儘快綁定賬號。
+</Admonition>
+
+<Admonition type="note" title="注意">
+	確保您的電腦已經連接到網路。個人許可證支持在 2
+	台電腦上使用，團隊許可證支持在 5 台電腦上使用。
+</Admonition>
+
+1. 當 CHITUBOX Pro 第一次啟動時，登入視窗會彈出。
+
+    如果你還沒有安裝 CHITUBOX Pro, 請點擊<SpanA href="https://www.chitubox.com/zh-Hans/download/chitubox-pro">此處</SpanA>下載最新版本。
+
+    <ImageContainer>
+    	<StyledAntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-login002.png"
+    		}
+    	/>
+    </ImageContainer>
+
+    如果你還沒有賬戶，點擊 <SpanA href="https://cc.chitubox.com/register">注冊</SpanA> 進行注冊。
+
+    <ImageContainer>
+    	<StyledAntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license001.png"
+    		}
+    	/>
+    </ImageContainer>
+
+    <Admonition type="note" title="注意">
+    	登入完成後將對帳號進行檢測，若帳號不符合試用權限，則<b>開始試用</b>
+    	將不予顯示。
+    </Admonition>
+
+1. 輸入您的許可序列號：
+
+    <ImageContainer>
+    	<StyledAntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license002.png"
+    		}
+    	/>
+    </ImageContainer>
+
+    點擊**下一步**，將激活許可序列號并且將其綁定到您的電腦。
+
+    <ImageContainer>
+    	<StyledAntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license003.png"
+    		}
+    	/>
+    </ImageContainer>
+
+    激活許可證要是和 3D 列印設備關聯，則還需要輸入列印機設備 ID:
+
+    <ImageContainer>
+    	<StyledAntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license004.png"
+    		}
+    	/>
+    </ImageContainer>
+
+    如果您在 CHITUBOX 官網<SpanA href="https://cc.chitubox.com/login">登錄</SpanA>您的帳戶，在 **我的產品** > **我的許可證** 下面應該可以看到您剛剛綁定的許可。
+
+    <ImageContainer>
+    	<StyledAntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-005.png"
+    		}
+    	/>
+    </ImageContainer>
+
+    如果您已經用試用許可進入了 CHITUBOX Pro，點擊<NextLink href="/zh-CN/docs/chitubox-pro/1.x.x/latest/application-overview/setting-and-help#授权">此處</NextLink>查看在哪裡更新您的許可。
+
+## 將 CHITUBOX 遷移到另一台電腦
+
+如果你的電腦意外損壞了，或者您想要將 CHITUBOX 遷移到您的新電腦，您需要先將許可從舊電腦上解綁。
+
+在網頁端<SpanA href="https://cc.chitubox.com/login">登錄</SpanA>你的 CHITUBOX 帳號。
+
+點擊 **我的產品** > **我的許可證**
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-006.png"
+		}
+	/>
+</ImageContainer>
+
+點擊 **已綁 PC 管理** > **解綁**
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-007.png"
+		}
+	/>
+</ImageContainer>
+
+你的許可將從舊電腦上解綁，然後你就可以重新在你的新電腦上激活你的許可。
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);
+
+## 更換許可證
+
+如果許可證過期了，你需要手動更換許可證。
+
+點擊 **激活許可證**：
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license005.png"
+	}
+/>
+
+更換你的許可證序列號，然後點擊 **下一步** ，激活許可證并且將其綁定到您的電腦。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license006.png"
+	}
+/>

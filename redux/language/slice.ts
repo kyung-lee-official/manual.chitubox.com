@@ -8,7 +8,8 @@ interface LanguageState {
 
 export const languageList = [
 	{ label: "English", locale: "en_US", urlLocale: "en-US" },
-	{ label: "简体中文", locale: "zh_CN", urlLocale: "zh-CN" }
+	{ label: "简体中文", locale: "zh_CN", urlLocale: "zh-CN" },
+	{ label: "繁体中文", locale: "zh_HK", urlLocale: "zh-HK" }
 ];
 
 const initialState: LanguageState = {

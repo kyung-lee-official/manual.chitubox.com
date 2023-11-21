@@ -1,0 +1,150 @@
+import { DocsLayout } from "@/components/docsLayout";
+
+export const meta = {
+	title: "開始",
+	author: "CHITUBOX Team",
+};
+
+# 開始
+
+## 新項目
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start001.png"
+	}
+/>
+
+建立新項目。
+
+## 打開專案
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start002.png"
+	}
+/>
+
+打開一個項目文件或將項目文件加載合並於當前項目。
+
+## 打開
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start003.png"
+	}
+/>
+
+開啟專案檔案、三維模型或切片檔案。
+
+<Admonition type="note" title="注意">
+	請注意，_.ctb_
+	檔案是最終的切片檔案，僅在大多數情況下用於列印。您不應該對其應用 3D
+	模型操作，只有一些非模型相關的操作，如曝光時間、升降速度、像素編輯（僅限
+	CHITUBOX Pro）等可用。請始終用未切片的格式（_.stl_、_.obj_
+	等）修改您的模型。
+</Admonition>
+
+## 最近打開
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start004.png"
+	}
+/>
+
+開啟最近成功開啟過的專案檔案、三維模型或切片檔案。
+
+## 保存專案
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start005.png"
+	}
+/>
+
+保存當前工作對象為項目檔案。
+
+## 全部另存爲
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start006.png"
+	}
+/>
+
+另存項目檔案或將項目內所有三維模型（包括支撐）合並和匯出。
+
+## 合併導出
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start008.png"
+	}
+/>
+
+將所選取的檔案合併輸出為一個三維模型檔案。
+
+支持 _.stl_ 和 _.obj_ 格式。
+
+## 分部導出
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start009.png"
+	}
+/>
+
+將所選取的檔案分部輸出為各自獨立的三維模型檔案。
+
+支持 _.stl_ 和 _.obj_ 格式。
+
+## 添加機器
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start010.png"
+	}
+/>
+
+選定並新增選定設備的配置參數資訊於當前作業環境。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start011.png"
+	}
+/>
+
+<p>
+	或者你可以點擊工作視窗底部的{" "}
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start013.png"
+		}
+	/>{" "}
+	按鈕來新增列印機。
+</p>
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start012.png"
+	}
+/>
+
+## 模型替換
+
+選取模型後，點擊滑鼠右鍵，再選擇“替換模型”。您可以對已經新增支撐的模型進行替換，並保留已有的支撐。
+
+<StyledAntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-start001.gif"
+	}
+/>
+
+<Admonition type="note" title="注意">
+	新模型主要是做局部細節的調整，整體性上與舊模型保持相似。
+</Admonition>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

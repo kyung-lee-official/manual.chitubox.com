@@ -1,0 +1,200 @@
+import { DocsLayout } from "@/components/docsLayout";
+
+export const meta = {
+	title: "切片預覽",
+	author: "CHITUBOX Team",
+};
+
+# 切片預覽
+
+## 切片參數編輯
+
+編輯和調整當前需要保存的列印切片相關參數。
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview004.png"
+		}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview008.png"
+		}
+	/>
+</ImageContainer>
+
+此視窗提供了 **切片設定 > 切片配置 > 列印** 的部分快速訪問，無需退出切片預覽介面即可修改部分參數。
+
+<Admonition type="note" title="注意">
+	**切片參數編輯** 僅在**單參數切片**模式下可用。
+</Admonition>
+
+## 檢測孤島
+
+檢測當前切片檔案中是否存在不可成功列印的孤島。
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview005.png"
+		}
+	/>
+</ImageContainer>
+
+<Admonition type="note" title="注意">
+	你必须先点击 **檢測孤島** 才能启用 <NextLink href="#顯示隱藏孤島信息">隐藏孤岛信息</NextLink>, <NextLink href="#刪除孤島">刪除孤島</NextLink>, <NextLink href="#編輯像素">編輯像素</NextLink>, 以及 <NextLink href="#格式刷">格式刷</NextLink>。
+</Admonition>
+
+## 顯示/隱藏孤島信息
+
+單擊此按鈕可以顯示或隱藏孤島資訊。
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview009.png"
+		}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview015.png"
+		}
+	/>
+</ImageContainer>
+
+<Admonition type="tip" title="提示">
+	滑鼠左鍵單擊對應孤島，可切換預覽圖為孤島**局部模式**或**全局模式**。
+</Admonition>
+
+## 刪除孤島
+
+將檔案中的孤島刪除，可選擇刪除當前層孤島或所有層孤島。
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview010.png"
+		}
+	/>
+</ImageContainer>
+
+## 編輯像素
+
+在當前切片檔案中添加或刪除像素點。
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview011.png"
+		}
+	/>
+</ImageContainer>
+
+1. 按住 Ctrl 並滾動滑鼠中鍵來縮放畫筆大小，單擊滑鼠左鍵可增加像素，單擊滑鼠右鍵可刪除像素。
+
+1. 按住 Ctrl 並長按拖動滑鼠左鍵可連續添加像素。按住 Ctrl，並長按拖動滑鼠右鍵可連續刪除像素。
+
+1. 按住 Ctrl 並滾動滑鼠中鍵可調節基本編輯單元的像素個數。
+
+## 格式刷
+
+複製目標像素的格式，應用到其他位置的像素區域中。
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview012.png"
+		}
+	/>
+</ImageContainer>
+
+1. 首先需要使用滑鼠左鍵點擊目標像素指定為目標像素格式。
+
+1. 滾動滑鼠中鍵可調節格式刷基本單元的像素個數。
+
+1. 長按並移動滑鼠左鍵可執行選定的目標像素的格式刷操作，點擊滑鼠右鍵可完成格式刷的執行。
+
+## 放大鏡
+
+使用設定的放大倍率查看切片圖層中的相關切片信息。
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview013.png"
+		}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview014.png"
+		}
+	/>
+</ImageContainer>
+
+## 保存
+
+您可以在保存前選擇 **所有**，**模型**，或者 **支撐**。
+
+點擊 **保存** 按鈕以保存切片檔案。
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview021.png"
+		}
+	/>
+</ImageContainer>
+
+<Admonition type="note" title="注意">
+	對您的模型進行切片後，點擊“保存”，您可以在下拉選單中選擇需要保存的切片格式，再進行列印。
+</Admonition>
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview021-1.png"
+		}
+		style={{ maxwidth: "895px" }}
+	/>
+</ImageContainer>
+
+## 网络发送
+
+<Admonition type="note" title="注意">
+	1. 如果列印機不支持內部存儲，則需要插入一個 U 盤來存儲接收到的文件。
+	1. **網路發送** 功能要求列印機和電腦在同一局域網下。
+	1. 傳輸速率受列印機的網路模塊限制，大多數列印機的網路模塊傳輸速率大約是 8M/s，因此對於大文件，不推薦使用 **網路發送**。
+	1. 目前只有部分列印機支持 **網路發送**，點擊 <SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃此處</SpanA> 查看機器兼容性表格。
+</Admonition>
+
+若列印機支持網路發送，則該介面上會有 **網路發送** 按鈕，此功能可以直接向列印機發送切片數據進行列印。
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview023.png"
+		}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<StyledAntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview024.png"
+		}
+	/>
+</ImageContainer>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);
