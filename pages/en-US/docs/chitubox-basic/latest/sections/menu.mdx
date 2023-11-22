@@ -1,0 +1,274 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { ChituboxMenu } from "@/components/icons/Icons";
+
+export const meta = {
+	title: "Menu",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-basic/v2.0.0/menu",
+	description:
+		"The menu is a list of options that users can select to perform different tasks in software. You can click the Menu Icon on the top left corner of CHITUBOX to open the Menu.",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# Menu
+
+Click the Menu Icon <ChituboxMenu size={24} /> on the top left corner to open the Menu.
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/004-menu-001.png"}
+	/>
+</ImageContainer>
+
+## New Project
+
+The "New Project" option allows you to create a new project in the software. This is where you will begin importing a 3D model file.
+
+## Open Project
+
+The "Open Project" option allows you to open an existing project file or load and merge the project file into the current project.
+
+The file extension name of the project file is _.chitubox_, make sure you don't mix them up with the 3D mesh files or the sliced files.
+
+## Save Project
+
+The "Save Project" option allows you to save your current project to a _.chitubox_ file.
+
+## Open
+
+The "Open" option allows you to open 3D mesh files, _.chitubox_ project files, or sliced files.
+
+<Admonition type="warning">
+	Please note that the .ctb file is the final sliced file, which is for
+	printing only. You **SHOULD NOT** try to modify its 3D structures, only a
+	few non-structure-relative operations like exposure time, lift and retract
+	speed, and layer pixel editing (CHITUBOX Pro only), etc. are available.
+</Admonition>
+
+## Export Model
+
+The "Export Model" menu allows you to export all models or only the selected model from the software. You can export models in a variety of file formats. This allows you to share your models with other users or use them with other 3D software.
+
+## Recently Opened
+
+The "Recently Opened" menu allows you to quickly open projects and 3D model files that you have previously opened in the software. It displays a list of recently opened files and projects, so you can quickly open them without having to search for them again.
+
+## Account
+
+The Account menu allows you to sign in to your CHITUBOX account. You can create an account and log in to access additional features, such as saving your settings across multiple devices.
+
+## Community
+
+The "Community" menu provides quick access to our social communities. This allows you to engage with other users who are using our software and stay up-to-date on the latest news, releases, and updates. Get involved in the community and explore the possibilities of what you can create with CHITUBOX.
+
+## Feedback
+
+The "Feedback" menu allows you to submit any suggestions, ideas, or complaints you have about CHITUBOX to the developers. This helps to ensure that your concerns are heard and taken into consideration when making improvements and updates to CHITUBOX. Your feedback is valuable, so make sure to submit it to help make CHITUBOX the best 3D printing software it can be.
+
+## Language
+
+Users can choose their own language according to their needs. Currently supported languages are: German, English, French, Italian, Hungarian, Dutch, Polish, Portuguese, Finnish, Turkish, Spanish, Czech, Greek, Russian, Arabic, Japanese, Simplified Chinese, Traditional Chinese, Korean.
+
+## Help
+
+### Check for Updates
+
+The "Check for Updates" option allows you to quickly check if there are any new updates available for the software. This ensures that you are always running the latest version of CHITUBOX and taking advantage of all the features and improvements it has to offer.
+
+### Factory Setting
+
+The "Factory Setting" option allows you to quickly restore the software to its factory settings. By clicking the Factory Settings button, you will be able to reset the software to the settings it was originally installed with. This is useful for troubleshooting any issues you may be having with the software or for resetting the software after making significant changes.
+
+### Export configuration
+
+The "Export Configuration" option in CHITUBOX allows you to quickly save the current printer configurations in a _.cfg_ file, which can then be used to restore the settings at any time. This is useful for keeping a backup of your printer configurations, or for sharing your printer settings with other users.
+
+### Import configuration
+
+The "Import Configuration" option in CHITUBOX allows you to quickly restore printer configurations from a _.cfg_ file. You can select a saved _.cfg_ file to restore your printer configurations. This is useful for restoring your printer settings after making changes, or for importing settings from other users.
+
+### About CHITUBOX
+
+The "About" option in CHITUBOX allows you to view information about the software. You will be able to check the current version of the software, as well as other related information such as the copyright information. This is useful for keeping track of the version you are currently running and making sure you are up-to-date with the latest version.
+
+### Open Log Path
+
+The "Open Log Path" option in CHITUBOX allows you to access the folder containing the log file.
+
+### User Manual
+
+The "User Manual" menu provides quick access to this CHITUBOX User Manual, which allows you to quickly learn how to use the software.
+
+### Data Collection
+
+The "Data Collection" option in CHITUBOX allows you to view what data is being collected by CHITUBOX and how it is used. This is useful for ensuring that your data is kept secure and only used for the purpose it was intended.
+
+### Plugins
+
+The "Plugins" option in CHITUBOX allows you to manage plugins for the software. You will be able to import or export plugins to support printers that don't use the Chitu System. This is ensures that you can use CHITUBOX with a variety of printers.
+
+### Shortcut
+
+The "Shortcuts" option in CHITUBOX allows you to view and modify keyboard shortcuts for the software.
+
+### Trim Translation
+
+The "Trim Translation" option in CHITUBOX allows you to trim the translation error in the software.
+
+## Settings
+
+The "Settings" option in CHITUBOX allows you to modify the settings for the software. By clicking the "Settings" button, you will be able to open a window containing the Appearance, File, System, and Function tabs. This is useful for customizing the settings to fit your needs.
+
+### Appearance
+
+#### Theme
+
+There are three themes available: Light, Dark, and Classic.
+
+#### Sectional Area Pattern
+
+This allow you to change the pattern of the sectional area.
+
+#### UI Display Scale
+
+This allows you to change the size of the UI.
+
+#### Grid Width
+
+This allows you to change the width of the grid on the build plate.
+
+### File
+
+#### Sliced File Thumbnail
+
+This allows you to change the view angle in the thumbnail of the sliced file.
+
+#### Auto Save Interval
+
+This allows you to change the interval at which the software automatically saves your project.
+
+#### Auto Save Directory
+
+This allows you to change the directory where the software saves your project.
+
+#### Model Rename
+
+This automatically suffixes file names by the operations you made. For example, `#number`, `hollowed out`, `fixed`, and `mirrored`.
+
+#### Project File Naming
+
+-   Append Model Filename Sequentially: The filename is composed of the loaded model filename Sequentially.
+
+#### Slice File Naming
+
+Set the naming rules for the sliced file. Most rules are self-explanatory, so we will only explain the ones that needs further explanation.
+
+#### Duplicate Name Replacement
+
+Set the naming rule for conflict filenames.
+
+#### Character Replacement
+
+Some operating systems do not allow certain characters in filenames. This allows you to replace those characters with other characters.
+
+#### Custom Character Replacement
+
+You can add your own character replacement rules here.
+
+### System
+
+#### Max Undos
+
+This allows you to change the maximum number of undo operations that can be performed.
+
+#### Graphics Card Backward Compatible
+
+If the model looks strange or the software doesn't behave as expected, you can try to turn this option on. Restart to take effect.
+
+<Admonition type="note">
+	The program will use more memory if this option is turned on.
+</Admonition>
+
+#### Graphics Quality
+
+The graphics quality grade of CHITUBOX. The greater the number, the lower the refresh rate and the higher the graphics quality.
+
+#### Rendering Interface
+
+This allows you to change the rendering interface of the software.
+
+### Function
+
+#### Slicing Model Volume Calculation
+
+This allows you to enable or disable volume calculation during slicing.
+
+<Admonition type="note">
+	Enabling this option may slow down the slicing speed.
+</Admonition>
+
+#### Thumbnail Preview of Desktop
+
+This allows you to enable or disable the thumbnail preview of the desktop.
+
+#### Preview Supports
+
+This allows you to enable or disable the support preview when adding manual supports.
+
+#### Display Support Auxiliary Lines
+
+This allows you to enable or disable the support auxiliary lines.
+
+#### Open Graphics Tooltips
+
+This allows you to enable or disable the graphics tooltips.
+
+#### Support Hidden Angle
+
+The angle between the camera optical axis and the negative Z axis of the build plate, supports will be hidden if the angle is smaller than the value you set.
+
+## Examples
+
+The "Example" button allows you to open example 3D models provided by the software. It contains three example models: a 20x20x20 cube, a cylinder, and a sphere. These models can be opened and used as a starting point for creating your own 3D models.
+
+## Exit
+
+The "Exit" button allows you to close the software.
+
+## Right-click Menu
+
+### New Project
+
+The "New Project" option allows you to create a new project in the software. This is where you will begin importing a 3D model file.
+
+## Export Model
+
+The "Export Model" menu allows you to export all models or only the selected model from the software. You can export models in a variety of file formats. This allows you to share your models with other users or use them with other 3D software.
+
+### Replace Model
+
+This option allows you to select a model that has slight differences from the model with supports added and replace the current model without having to add supports again.
+
+### Select Model
+
+If the cursor is projected on a model that is not selected, this option will select the model. You can also hold down the Ctrl key and click the model to select multiple models.
+
+### Cancel Seleted Model
+
+If the cursor is projected on a model that is already selected, this option will cancel the selection of the model.
+
+### Hide
+
+Hide the model that the cursor is projected on.
+
+### Hide Others
+
+Hide all models except the model that the cursor is projected on.
+
+### Display All Models
+
+Display all hidden models.
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

@@ -43,8 +43,19 @@ for (const absLocalePath of absLocalePaths) {
 	const urlLocale = path.basename(absLocalePath);
 	docsContext.push({ locale: urlLocale, localizedDocInstances: [] });
 	const absDocsPath = path.resolve(absLocalePath, "docs");
-	const docInstances = await readdir(absDocsPath);
-	for (const docInstance of docInstances) {
+    let itemsInDocsFolder = await readdir(absDocsPath);
+    const orderedDocInstanceNameList = JSON.parse(await readFile(path.resolve(absDocsPath, "config.json"), "utf-8"));
+	const docInstances = itemsInDocsFolder.filter(item => item !== "config.json");
+    const orderedDocInstances = [];
+    for (const instanceName of orderedDocInstanceNameList) {
+        for (const docInstance of docInstances) {
+            if (docInstance === instanceName) {
+                orderedDocInstances.push(docInstance);
+            }
+        }
+    }
+
+	for (const docInstance of orderedDocInstances) {
 		const localizedContext = getLocalizedContext(docsContext, urlLocale);
 		localizedContext.localizedDocInstances.push({ docInstance: docInstance });
 		const absDocInstancePath = path.resolve(absDocsPath, docInstance);
@@ -55,9 +66,9 @@ for (const absLocalePath of absLocalePaths) {
 			docInstanceContext.docInstanceName = config.docInstanceName;
 			let items = await readdir(absDocInstancePath);
 			/* Check whether there is a "latest" directory */
-			if (items.indexOf("latest") !== -1) {
+            if (config.isVersioned === true) {
 				/* Is versioned */
-				docInstanceContext.isVersioned = true;
+                docInstanceContext.isVersioned = true;
 				docInstanceContext.versionedContexts = config.versionedContexts;
 				for (const item of items) {
 					if (item !== "config.json") {
@@ -88,10 +99,40 @@ for (const absLocalePath of absLocalePaths) {
 						}
 					}
 				}
-			} else {
-				/* Not versioned */
-				docInstanceContext.isVersioned = false;
-			}
+            } else {
+                /* Not versioned */
+                docInstanceContext.isVersioned = false;
+				docInstanceContext.versionedContexts = config.versionedContexts;
+				for (const item of items) {
+					if (item === "latest") {
+						/* Only parse the "latest" directory */
+						const absVersionedPath = path.resolve(absDocInstancePath, item);
+						const systemPathLength = path.resolve("../pages").split(path.sep).length;
+						const versionedContext = getVersionedContext(docInstanceContext.versionedContexts, item);
+						for (const pageContext of versionedContext.pagesContext) {
+							let urlPath;
+							let absPagePath;
+							if (pageContext.subItems) {
+								/* Is a category */
+								for (const subPageContext of pageContext.subItems) {
+									urlPath = `/${absVersionedPath.split(path.sep).slice(systemPathLength).join(path.posix.sep)}/${pageContext.item}/${subPageContext.item}`;
+									subPageContext.path = urlPath;
+									absPagePath = path.resolve(absVersionedPath, pageContext.item, subPageContext.item + ".mdx");
+									const toc = await getTocContext(absPagePath);
+									subPageContext.toc = toc;
+								}
+							} else {
+								/* Is a page */
+								urlPath = `/${absVersionedPath.split(path.sep).slice(systemPathLength).join(path.posix.sep)}/${pageContext.item}`;
+								pageContext.path = urlPath;
+								absPagePath = path.resolve(absVersionedPath, pageContext.item + ".mdx");
+								const toc = await getTocContext(absPagePath);
+								pageContext.toc = toc;
+							}
+						}
+					}
+				}
+            }
 		} else {
 			const error = new Error(`Doc instance is not a directory, path: ${path.resolve(absLocalePath, docInstance)}`);
 			throw error;

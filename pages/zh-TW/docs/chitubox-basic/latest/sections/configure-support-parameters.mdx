@@ -1,0 +1,637 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import {
+	ChituboxSupport,
+	ChituboxProfileImportIcon,
+	ChituboxProfileExportIcon,
+	ChituboxProfileResetIcon,
+	ChituboxAddSupportIcon,
+	ChituboxDeleteSupportIcon,
+	ChituboxEditSupportIcon,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "設定支撐參數",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/configure-support-parameters",
+	description: "在 CHITUBOX 中設定支撐參數。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 設定支撐參數
+
+點擊主視窗右上方的支撐圖示 <ChituboxSupport /> 即可進入支撐配置介面。
+
+## Z 擡升高度
+
+模型最低點與打印平台之間的高度距離。默認值為 5 mm。
+
+## 支撐設定
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/010-configure-support-parameters-support-settings.png"
+		}
+	/>
+</ImageContainer>
+
+CHBITUBOX 提供了三種預設的支撐設定：細、中、粗。如果這些設定不符合您的模型，您可以自訂支撐設定並導出以供日後使用。您可以在此處 <ChituboxProfileImportIcon /> 導入、<ChituboxProfileExportIcon /> 導出和 <ChituboxProfileResetIcon /> 重設支撐設定。
+
+## 基本設定
+
+### 支撐頂部直徑
+
+支撐頂部的直徑。
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-tip-upper-diameter-0.3.png"
+		}
+		text1={"0.3mm"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-tip-upper-diameter-0.6.png"
+		}
+		text2={"0.6mm"}
+	/>
+</ImageContainer>
+
+### 底筏形狀
+
+可選項：**滑板**、**十字網格**、**六邊形網格**和**底部連接**。
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-shape-skate.png"
+		}
+		text1={"滑板"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-shape-cross-grid.png"
+		}
+		text2={"十字網格"}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-shape-hexagonal-grid.png"
+		}
+		text1={"六邊形網格"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-shape-bottom-connected.png"
+		}
+		text2={"六邊形網格"}
+	/>
+</ImageContainer>
+
+### 接觸點間距
+
+接觸點間距是支撐顶部之間的距离，换句话说，它将影响支撐的密度。
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-touch-tip-distance-4.png"
+		}
+		text1={"1.0mm"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-touch-tip-distance-2.png"
+		}
+		text2={"0.5mm"}
+	/>
+</ImageContainer>
+
+### 支撐角度
+
+支撐角度是允許自動支撐的模型表面（切平面）與平台之間的最大角度。
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-support-angle-40.png"
+		}
+		text1={"30°"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-support-angle-60.png"
+		}
+		text2={"60°"}
+	/>
+</ImageContainer>
+
+## 進階設定
+
+高級設定分爲 4 个部分：**頂部**、**中部**、**底部**和**底筏**。
+
+### 頂部
+
+-   頂部支撐尖端
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>參數</th>
+			<th>説明</th>
+			<th className="w-[350px]">示意圖</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>接觸形狀</td>
+			<td>支撐與模型接觸的形狀。</td>
+			<td>N/A</td>
+		</tr>
+		<tr>
+			<td>接觸直徑</td>
+			<td>支撐與模型接觸的直徑尺寸。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-contact-shape-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>接觸深度</td>
+			<td>支撐與模型接觸的深度尺寸。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-contact-depth.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+-   頂部支撐主體
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>參數</th>
+			<th>説明</th>
+			<th className="w-[350px]">示意圖</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>連接形狀</td>
+			<td>頂部支撐主體的連接形狀。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-connection-shape.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>上端直徑</td>
+			<td>頂部支撐主體上端的直徑尺寸。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-upper-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>下端直徑</td>
+			<td>頂部支撐主體下端的直徑尺寸。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-lower-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>連接长度</td>
+			<td>頂部支撐主體的長度尺寸。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-connection-length.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+### 中部
+
+中部支撐分為三種結構：**常規**、**小柱子** 和 **交叉**。
+
+-   常規
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>參數</th>
+			<th>説明</th>
+			<th className="w-[350px]">示意圖</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>形狀</td>
+			<td>中部支撐主體的形狀。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mid-shape.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>直徑</td>
+			<td>中部支撐主體的直徑尺寸。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mid-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>角度</td>
+			<td>中部支撐主體與頂部支撐主體之間的最大角度。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mid-angle.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+-   小柱子
+
+小柱子是一種用于支撐小空間的支撐結構，小柱子的兩端都與模型表面相連。
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>參數</th>
+			<th>説明</th>
+			<th className="w-[350px]">示意圖</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>小柱子接觸形狀</td>
+			<td>小柱子接觸部分的形狀。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-shape.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>直徑</td>
+			<td>小柱子的直徑尺寸。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>上部深度</td>
+			<td>小柱子的上端與模型接觸的深度尺寸。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-upper-depth.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>下部深度</td>
+			<td>小柱子的下端與模型接觸的深度尺寸。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-lower-depth.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+-   交叉結構
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>參數</th>
+			<th>説明</th>
+			<th className="w-[350px]">示意圖</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>交叉結構最大間距</td>
+			<td>生成交叉結構時，兩個支撐之間的最大間距。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-cross-max-spacing.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>交叉結構起始高度</td>
+			<td>交叉結構起始點的高度。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-cross-start-height.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+### 底部
+
+底部包含平台部分和主要部分。
+
+-   平台
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>參數</th>
+			<th>描述</th>
+			<th className="w-[350px]">示例</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>平台形狀</td>
+			<td>平台的形狀。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-platform-shape.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>平台直徑</td>
+			<td>平台的直徑。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-platform-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>平台厚度</td>
+			<td>平台的厚度。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-platform-thickness.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+-   主要部分
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>參數</th>
+			<th>描述</th>
+			<th className="w-[350px]">示例</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>支撐底部形狀</td>
+			<td>支撐底部的形狀。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-bottom-shape.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>支撐底部直徑</td>
+			<td>支撐底部的直徑。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-bottom-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>支撐底部深度</td>
+			<td>支撐底部的深度。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-bottom-depth.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>支撐底部點数</td>
+			<td>支撐底部的點数。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-bottom-point.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+### 底筏
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>參數</th>
+			<th>描述</th>
+			<th className="w-[350px]">示例</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>底筏形狀</td>
+			<td>底筏的形狀。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-shape.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>底筏面積比例(%)</td>
+			<td>底筏的面積比例。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-area-ratio.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>底筏厚度</td>
+			<td>底筏的厚度。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-thickness.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>底筏高度</td>
+			<td>底筏的高度。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-height.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>底筏斜度(°)</td>
+			<td>底筏邊緣的斜度。</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-slope.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+## 自動支撐
+
+自動支撐有兩種模式：**+全部** 和 **+平台**。
+
+**+全部** 允许支撐在模型表面生成，而 **+平台** 只允许支撐在平台上生成。
+
+## 操作模式
+
+有三種操作模式：**添加**、**刪除** 和 **編輯**。
+
+### 添加
+
+<ChituboxAddSupportIcon /> 點击模型添加支撐。
+
+### 刪除
+
+<ChituboxDeleteSupportIcon /> 點擊選擇想要刪除的支撐，所選支撐將變為紅色，再次點擊按鈕或按下
+Delete 鍵刪除支撐。
+
+### 編輯
+
+<ChituboxEditSupportIcon /> 點擊選擇想要編輯的支撐，所選支撐將變為綠色，按住
+Ctrl 鍵可以選擇多個支撐，可以調整選中支撐的參數，也可以拖動支撐調整支撐位置。
+
+## 清除全部
+
+點擊此按鈕，所有支撐都會被清除。
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

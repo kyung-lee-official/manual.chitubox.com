@@ -1,0 +1,414 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { LightOffDelayCalculator } from "@/docComponents/lightOffDelayCalculator/LightOffDelayCalculator";
+
+export const meta = {
+	title: "Configure Print Parameters",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-basic/v1.9.4/configure-print-parameters",
+	description:
+		"Configure print parameters in CHITUBOX.",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# Configure Print Parameters
+
+To configurate your print parameters, you need to add a printer first, if you have not added a printer yet, click <NextLink href="#add-new-printer">here</NextLink> to see how to add a printer.
+
+One printer can have multiple profiles, you can manage your profiles in the **Slicing Profile Panel**, where you can add, edit, delete, reset, import and export your profiles.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters001.png"
+		}
+	/>
+</ImageContainer>
+
+Click Settings to open the slice profile configuration window.
+
+## Settings
+
+<YouTubeVideoContainer>
+	<iframe
+		src="https://www.youtube.com/embed/py5mqqJqA3w"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</YouTubeVideoContainer>
+
+### Add New Printer
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-start010.png"
+		}
+	/>
+</ImageContainer>
+
+### Machine
+
+Add the configuration parameter information of the selected device.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters005.png"
+		}
+	/>
+</ImageContainer>
+
+| Parameter         | Explanation                                                                                                                      |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Name              | The name of current printer                                                                                                      |
+| Resolution        | X: Number of pixels in X-axis direction <br/> Y: Number of pixels in Y-axis direction                                            |
+| Lock Ratio        | the ratio of the size and resolution of the X and Y axes is equal                                                                |
+| Size              | Maximum print size in X-axis direction <br/> Maximum print size in Y-axis direction <br/> Maximum print size in Z-axis direction |
+| Build Area Offset | Set plot area boundary lines                                                                                                     |
+| Machine Type      | Machine type description                                                                                                         |
+| Mirror            | Mirror mode selection                                                                                                            |
+
+<Admonition type="note">
+	<p>
+		Click <SpanA href="https://www.chitubox.com/en/article/support/howto/chitubox-free/slicing/44">📃here</SpanA> to learn more about **Mirror**.
+	</p>
+	<p>
+		**Build Area Offset** is designed to cure the situation that there are
+		dead pixels on the edge of the screen or the edge of the screen is used
+		as a non-working area. Setting the offset can avoid the dead pixels.
+	</p>
+</Admonition>
+
+### Resin
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters002.png"
+		}
+	/>
+</ImageContainer>
+
+Set your resin type, density, and cost here.
+
+<YouTubeVideoContainer>
+	<iframe
+		src="https://www.youtube.com/embed/o5NED4TrTIs"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</YouTubeVideoContainer>
+
+### Print
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.png"
+		}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters006.png"
+		}
+	/>
+</ImageContainer>
+
+Set your printing parameters here.
+
+<Admonition type="note">
+	Not all printers support **Resting Time** waiting mode. Read the <SpanA href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃full compatibility list</SpanA> here.
+</Admonition>
+
+| Parameter                                                                   | Explanation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Layer Height                                                                | Thickness of each layer printed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Bottom Layer Count                                                          | The start printing layers. When the number of bottom layers is n, the exposure time of the first n layers is the exposure time of the bottom layers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Exposure Time                                                               | Exposure time of normal print layers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Bottom Exposure Time                                                        | Set the exposure time of the bottom layers. Increasing the exposure time of the bottom layers is helpful to increase the bond strength between the printing model and the printing platform                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Transition Layer Count                                                      | The number of transition layers between the print bottom layers and the normal print layers. When printing in transition layers, the exposure time will decrease with the increase of printing layers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Transition Type                                                             | Set the transition type of the exposure time when transiting from the bottom layers to the normal layers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| <a href="#2--waiting-mode-during-printing">Waiting Mode During Printing</a> | <a href="#21-resting-time"><u>Resting time</u></a><br /><ul><li>Rest Time Before Lift: A time interval between light-off and the build plate starts to lift.</li><li>Rest Time After Lift: A time interval between the build plate has lifted to the <b>Lifting Distance</b> and starts to retract.</li><li>Rest Time After Retract: A time interval between the build plete has retracted to the lowest point and light-on. </li></ul><a href="#22-light-off-delay"><u>Light off delay</u></a><br /><p>Light-off delay is the total time of build plate lifts up, wait, and retract. </p><ul><li>Light-off Delay: Light-off delay for normal layers, True machine light-off time = maximum (total time of Z-axis up and down movement, configured light-off delay)</li><li>Bottom Light-off Delay: Light-off delay for bottom layers, True machine light-off time = maximum (total time of Z-axis up and down movement, configured light-off delay)</li></ul> |
+| Bottom Lift Distance                                                        | In the bottom layers printing process, the distance of the printing platform moves away from the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Lifting Distance                                                            | In the normal layers printing process, the distance of the printing platform moves away from the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Bottom Retract Distance                                                     | In the bottom layers printing process, the distance of retract,leave it alone unless you have sufficient reason                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Retract Distance                                                            | In the normal layers printing process, the distance of retract, leave it alone unless you have sufficient reason                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Bottom Lift Speed                                                           | In the bottom layers printing process, the speed of the printing platform moves away from the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Lifting Speed                                                               | In the normal layers printing process, the speed of the printing platform moves away from the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Bottom Retract Speed                                                        | In the bottom layers printing process, the speed of the printing platform moves to the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Retract Speed                                                               | In the normal layers printing process, the speed of the printing platform moves to the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+
+#### 1 TSMC
+
+<Admonition type="note">
+	Not all printers support **TSMC**. Read the <SpanA href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃full compatibility list</SpanA> here.
+</Admonition>
+
+In order to shorten the printing time and ensure a higher printing success rate, CHITUBOX divides the original constant speed into two speed segments, a.k.a **TSMC (Two-Stage Motion Control)**. When the printing platform is moving away from the printing face, it is allowed to move at a relatively faster speed.
+
+Traditionally, there are only 2 sub-stages for a single motion cycle, after TSMC was introduced, we now have 4 sub-stages for a single motion cycle:
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.motion_control_legacy.svg"
+		}
+		text1={"Legacy Motion Control"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.motion_control_tsmc.svg"
+		}
+		text2={"Two-Stage Motion Control"}
+	/>
+</ImageContainer>
+
+When both normal layers and bottom layers are involved, it makes sense that there are 8 pairs of parameters, which are highlighted in the table below:
+
+<Admonition type="warning">
+	All data in the table is only used for the explanation, please adjust the
+	data as per your needs.
+</Admonition>
+
+| Sub-stage                                                                                | Relevant Parameters                                                                                                       |
+| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Bottom layers slow lift</span>    | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.1.png")}/> |
+| <span style={{ color: "#00b894", fontWeight: "bold" }}>Bottom layers fast lift</span>    | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.2.png")}/> |
+| <span style={{ color: "#00b894", fontWeight: "bold" }}>Bottom layers fast retract</span> | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.3.png")}/> |
+| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Bottom layers slow retract</span> | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.4.png")}/> |
+| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Normal layers slow lift</span>    | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.5.png")}/> |
+| <span style={{ color: "#00b894", fontWeight: "bold" }}>Normal layers fast lift</span>    | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.6.png")}/> |
+| <span style={{ color: "#00b894", fontWeight: "bold" }}>Normal layers fast retract</span> | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.7.png")}/> |
+| <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Normal layers slow retract</span> | <AntdImage src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.8.png")}/> |
+
+<Admonition type="warning">
+	Please note that each Distance has its corresponding Speed, for example,
+	<b>Bottom Lift Distance</b> corresponds to <b>Bottom Lift Speed</b>, you
+	can't have a non-zero Distance with a Speed of `0`, vice versa.
+</Admonition>
+
+<Admonition type="note">
+	If you hope to stay in Legacy Motion Control, you can keep the second column
+	all-zero, which will remove ~~B1~~ and ~~B2~~. You might found that
+	the motion control doesn't work as per the parameter you set sometimes, this
+	may be caused by the limitation of the maximum speed in factory parameter.
+	Please contact the printer's manufacturer for details.
+</Admonition>
+
+<YouTubeVideoContainer>
+	<iframe
+		src="https://www.youtube.com/embed/VvofXuRK8FY"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</YouTubeVideoContainer>
+
+#### 2 Waiting Mode During Printing
+
+##### 2.1 Resting Time
+
+In order to simplify the calculation of Light Off Delay, CHITUBOX launched a new Waiting Mode During Printing, **Resting Time**, when using this mode, you simply need to fill in Rest Time Before Lift, Rest Time After Lift, Rest Time After Retract without tedious calculations.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters002.1.png"
+		}
+		style={{ width: "100%", maxWidth: "1050px" }}
+	/>
+</ImageContainer>
+
+<YouTubeVideoContainer>
+	<iframe
+		src="https://www.youtube.com/embed/Ys-XDe6Fqt8"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</YouTubeVideoContainer>
+
+##### 2.2 Light Off Delay
+
+###### 2.2.1 What is Light-off Delay?
+
+**Light-off delay** is the total time of build plate **lifts up**, **wait**, and **retract** during resin 3D printing of one layer.
+
+It's vital for the resin to has sufficient time to be stabilized before the printer starts the process of printing the next layer Mostly, the longer time you set for the light-off delay, the better, sharper, and higher resolution printing results you got. But if you set the light-off delay too long, the printing process gonna take you all day.
+
+The time for **lift up** and **retract** can be various, depend on the distance of lift up, while the **wait** does not, we recommended it for 2\~3 seconds.
+
+###### 2.2.2 Light-off Delay Calculation in CHITUBOX
+
+To calculate the light-off delay, you will need to know lifting distance, lifting speed, and retract speed first. After figure out the total time for lifting and retracting, add additional 2\~3 seconds of wait time, you got the light-off delay.
+
+Light-off delay = Time for lifting + Time for retracting + Wait time
+
+An example is worth a thousand words:
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.2.png"
+		}
+	/>
+</ImageContainer>
+
+Here the **Lifting Distance** is 7mm, **Lifting Speed** is 70mm/min (1.167mm/sec), So the lifting time $T_L$ is:
+
+$T_L = \frac{7}{1.167} = 5.998$ seconds
+
+Similarly, the **Retract Speed** is 210mm/min (3.5mm/sec), the retracting time $T_R$ is:
+
+$T_R = \frac{7}{3.5} = 2$ seconds
+
+If we hope the minimum wait time is longer than 2s, the light-off delay $T_{LOD}$ should:
+
+$T_{LOD} \geq 5.998 + 2 + 2 \approx 10$ seconds
+
+If you put a number less than $T_L + T_R$ to the **Light-off Delay**, it will not work.
+
+###### 2.2.3 Light-off Delay Calculator
+
+Modify editable fields to get **Light-off Delay**.
+
+<LightOffDelayCalculator lang={"en"} />
+
+### Gcode
+
+<Admonition type="warning">
+	Don't edit anything here if you don't know what you're doing.
+</Admonition>
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.1.png"
+		}
+	/>
+</ImageContainer>
+
+<Admonition type="note">
+	Only <em>.zip</em> and its derived formats (ex. <em>.cws</em>) support Gcode
+	editing.
+</Admonition>
+
+### Advanced
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters004.png"
+		}
+	/>
+</ImageContainer>
+
+#### 1. Bottom Light PWM
+
+Light PWM for bottom layers, from ` 0` to ` 255` , controls the power of the UV light source for bottom layers.
+
+Click <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">here</SpanA> to learn more information about PWM.
+
+#### 2. Light PWM
+
+Light PWM for normal layers, from ` 0` to ` 255` , controls the power of the UV light source.
+
+#### 3. Anti-aliasing
+
+The triangular sawtooth of image edge is softened to achieve smoother surface effect. The continuity of edge exposure and the intensity of light transmission can be adjusted by adding or deleting pixel units with certain gray levels between adjacent triangular serrations, so as to achieve a smoother edge area.
+
+-   _Anti-aliasing Level_ : `2` , `4` , `8` , **designed for _.cbddlp_ format**. It determines the edge exposure time. The higher the level you select, the
+    longer the exposure time will be, this will result in sharper edges, thereby decreasing
+    the effect of anti-aliasing.
+
+-   _Gray Level_ : `0` ~ `8`, **designed for _.ctb_ format**. It determines the number of Grayscales that can be used for anti-aliasing.
+    The Grayscales of `0` ~ `255` ( `0` represents black, ` 255` represents white) is divided into
+    8 levels. The higher the level, the fewer grayscales can be used and the range is
+    closer to ` 255` (white).
+
+-   _Image Blur_ : Enable/Disable image blur, **designed for .ctb format**.
+
+    -   <SpanText>_Image Blur Pixel_ : `2` ~ `8` , determines the number of pixels for edge transition, the higher level you select, the softer edge would be. Similar to the feather function in Photoshop.</SpanText>
+
+Open <SpanA href="https://youtu.be/ihITNQetn94">📺this video</SpanA> and <SpanA href="https://www.chitubox.com/en/article/support/indepth/technology/52">📃this article</SpanA> to learn more about **Anti-aliasing**, **Grayscale**, and **Image Blur**.
+
+#### 4. Shrinkage Compensation
+
+Shrinkage compensation of the model in X, Y, and Z directions. The percentage represents the size compared to the original size, the default value is 100%.
+
+When the percentage value is larger, the model body is larger.
+
+When the percentage value is smaller, the model body is smaller.
+
+#### 5. Tolerance Compensation
+
+Inner and outer diameter compensation of normal printing layers.
+
+When a is larger, the inner diameter is shorter, and the model body is larger.
+
+When a is smaller, the inner diameter is longer, and the model body is smaller.
+
+When b is larger, the outer diameter is longer, and the model body is larger.
+
+When b is smaller, the outer diameter is shorter, and the model body is smaller.
+
+Open <SpanA href="https://youtu.be/iYKVPmmoUUo">📺this video</SpanA> and <SpanA href="https://www.chitubox.com/en/article/support/howto/chitubox-free/settings/how-to-use-tolerance-compensation-on-chitubox">📃this article</SpanA> to learn more about **Tolerance Compensation**.
+
+#### 6. Bottom Tolerance Compensation
+
+Inner and outer diameter compensation of bottom printing layers.
+
+When a is larger, the inner diameter is shorter, and the model body is larger.
+
+When a is smaller, the inner diameter is longer, and the model body is smaller.
+
+When b is larger, the outer diameter is longer, and the model body is larger.
+
+When b is smaller, the outer diameter is shorter, and the model body is smaller.
+
+<Admonition type="note">
+	When the bottom layer tolerance compensation is disabled, the normal layer
+	tolerance compensation will be effective for the whole model.
+</Admonition>
+
+#### 7. Print Time Compensation
+
+Some high-resolution printers could have extra delays when loading data and will lead to inaccurate printing time estimation, you can set up a time compensation to improve the issue.
+
+-   **Manual Input**
+
+    Layer Print Time Compensation: a 2-digit number between `-99.99` and `99.99`, default `0` s.
+
+    When enabled, the Estimated Time for A Single Layer = Exposure Time + Waiting Time + Movement Time + Layer Print Time Compensation
+
+-   **Auto Generated**
+
+	<ImageContainer>
+		<AntdImage
+			src={
+				"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters004-1.png"
+			}
+		/>
+	</ImageContainer>
+
+Layer Print Time Compensation = $\frac{\text{Actual Printing Time - Software Forecast Time}}{\text{Layer Count}}$
+
+<Admonition type="note">
+	Remember to click <b>Apply</b> after changing parameters, otherwise, the
+	parameters won't take effect.
+</Admonition>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

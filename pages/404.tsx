@@ -1,28 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Layout } from "../components";
-import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
-
-const StyledContent = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-	color: ${(props) => props.theme.textSecondaryText};
-	background-color: ${(props) => props.theme.background};
-	height: 70vh;
-	padding: 10rem;
-`;
-
-const StyledH1 = styled.h1`
-	font-size: 3rem;
-`;
-
-const StyledH2 = styled.h2`
-	font-size: 1.5rem;
-`;
+import { Layout } from "@/components/layout/Layout";
 
 const PageNotFound: React.FC<any> = () => {
 	const { t } = useTranslation();
@@ -44,14 +23,18 @@ const PageNotFound: React.FC<any> = () => {
 
 	return (
 		<Layout>
-			<StyledContent>
-				<StyledH1>{t("error.pageNotFound")}</StyledH1>
-				<StyledH2>
+			<div
+				className="flex flex-col justify-center items-center h-[70vh]
+                text-gray-600 dark:text-gray-400
+                bg-gray-100 dark:bg-gray-800"
+			>
+				<h1 className="text-2xl">{t("error.pageNotFound")}</h1>
+				<h2 className="text-xl">
 					{t("error.message1")}
 					{countDown}
 					{t("error.message2")}
-				</StyledH2>
-			</StyledContent>
+				</h2>
+			</div>
 		</Layout>
 	);
 };

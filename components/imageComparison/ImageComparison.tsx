@@ -1,26 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-
-const StyledImageComparisonContainer = styled.div`
-	width: 100%;
-	max-width: 1000px;
-`;
-
-const StyledRow = styled.div`
-	display: flex;
-	gap: 1rem;
-`;
-
-const StyledImgContainer = styled.div`
-	flex: 1;
-`;
-
-const StyledText = styled.div`
-	flex: 1;
-	padding: 1rem 1rem;
-	text-align: center;
-	border-top: 1px solid #bfbfbf;
-`;
+import { Image } from "antd";
 
 export const ImageComparison: React.FC<any> = ({
 	img1Src,
@@ -29,23 +8,31 @@ export const ImageComparison: React.FC<any> = ({
 	text2,
 }) => {
 	return (
-		<StyledImageComparisonContainer>
-			<StyledRow>
-				<StyledImgContainer>
-					<picture>
-						<img src={img1Src} alt={text1} width={"100%"} />
-					</picture>
-				</StyledImgContainer>
-				<StyledImgContainer>
-					<picture>
-						<img src={img2Src} alt={text2} width={"100%"} />
-					</picture>
-				</StyledImgContainer>
-			</StyledRow>
-			<StyledRow>
-				<StyledText>{text1}</StyledText>
-				<StyledText>{text2}</StyledText>
-			</StyledRow>
-		</StyledImageComparisonContainer>
+		<div className="w-full max-w-[1000px]">
+			<div className="flex gap-4">
+				<div className="flex-1">
+					<Image
+						src={img1Src}
+						alt={text1}
+						className="m-auto rounded-lg"
+					/>
+				</div>
+				<div className="flex-1">
+					<Image
+						src={img2Src}
+						alt={text2}
+						className="m-auto rounded-lg"
+					/>
+				</div>
+			</div>
+			<div className="flex gap-4 text-gray-500 dark:text-gray-400">
+				<div className="flex-1 p-2 text-center border-t-[1px] border-t-gray-500">
+					{text1}
+				</div>
+				<div className="flex-1 p-2 text-center border-t-[1px] border-t-gray-500">
+					{text2}
+				</div>
+			</div>
+		</div>
 	);
 };

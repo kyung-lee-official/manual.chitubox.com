@@ -1,53 +1,68 @@
 import React, { useContext } from "react";
-import styled from "styled-components";
-import { DocContext } from "../docsLayout";
-import {
-	DocsSearch,
-	DocsSearchResult,
-	LanguageDropdown,
-	ThemeSwitch,
-	VersionDropdown,
-	DocsDrawerInstanceDropdown,
-	DocsSidebar,
-} from "..";
+import { DocContext } from "../docsLayout/DocContext";
+import { LanguageDropdown } from "../languageDropdown/LanguageDropdown";
+import { DocsDrawerInstanceDropdown } from "../docsDrawerInstanceDropdown/DocsDrawerInstanceDropdown";
+import { DocsSidebar } from "../docsSidebar/DocsSidebar";
+import dynamic from "next/dynamic";
 
-const StyledContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-`;
-const StyledPanel = styled.div`
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-`;
-const StyledPanelItem = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-`;
+const DynamicThemeSwitch = dynamic(
+	() => import("@/components/icons/ThemeSwitch"),
+	{
+		ssr: false,
+	}
+);
+
+const DynamicVersionDropdown = dynamic(
+	() => import("@/components/versionDropdown/VersionDropdown"),
+	{
+		ssr: false,
+	}
+);
+
+const DynamicDocsSearch = dynamic(
+	() => import("@/components/docsSearch/DocsSearch"),
+	{
+		ssr: false,
+	}
+);
+
+const DynamicDocsSearchResult = dynamic(
+	() => import("@/components/docsSearchResult/DocsSearchResult"),
+	{
+		ssr: false,
+	}
+);
+
+const PanelItem = (props: any) => {
+	const { children } = props;
+	return (
+		<div className="flex justify-center items-center cursor-pointer">
+			{children}
+		</div>
+	);
+};
+
 export const DocsDrawerContent: React.FC<any> = () => {
 	const { searchResults } = useContext(DocContext);
 	return (
-		<StyledContainer>
-			<StyledPanel>
-				<StyledPanelItem>
-					<VersionDropdown />
-				</StyledPanelItem>
-				<StyledPanelItem>
-					<ThemeSwitch />
-				</StyledPanelItem>
-				<StyledPanelItem>
+		<div className="flex flex-col gap-8">
+			<div className="flex justify-evenly items-center">
+				<PanelItem>
+					<DynamicVersionDropdown />
+				</PanelItem>
+				<PanelItem>
+					<DynamicThemeSwitch />
+				</PanelItem>
+				<PanelItem>
 					<LanguageDropdown />
-				</StyledPanelItem>
-			</StyledPanel>
-			<StyledPanelItem>
-				<DocsSearch />
-			</StyledPanelItem>
-			<DocsSearchResult searchResults={searchResults} />
+				</PanelItem>
+			</div>
+			<PanelItem>
+				<DynamicDocsSearch />
+			</PanelItem>
+			<DynamicDocsSearchResult searchResults={searchResults} />
 			<DocsDrawerInstanceDropdown />
 			<DocsSidebar />
-		</StyledContainer>
+		</div>
 	);
 };

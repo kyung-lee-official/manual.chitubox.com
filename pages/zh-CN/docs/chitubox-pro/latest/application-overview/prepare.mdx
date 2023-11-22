@@ -1,15 +1,19 @@
-import { DocsLayout } from "@/components/docsLayout";
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
 
 export const meta = {
 	title: "准备",
 	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-pro/v1.3.0/prepare",
+	description:
+		"CHITUBOX Pro 中的准备界面。包括复制、拆分模型、自动定向、自动布局、添加标签、布尔操作、切割、镂空和挖洞。",
+	ogImage: "/images/docs/og_logo.png",
 };
 
 # 准备
 
 ## 复制
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare001.png"
 	}
@@ -17,14 +21,14 @@ export const meta = {
 
 复制一个或多个所选定模型，并将指定数量的复制模型添加于当前作业的项目之中。
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/001copy.gif"}
 	style={{ maxWidth: 200 }}
 />
 
 ## 拆分模型
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare002.png"
 	}
@@ -34,7 +38,7 @@ export const meta = {
 
 如果你有一个在结构上不是一个整体的对象，如下图所示，一个对象包含了两个结构上分离的零件。
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare010.png"
 	}
@@ -43,7 +47,7 @@ export const meta = {
 
 拆分模型后，两个零件变为两个**独立**的对象。
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare012.png"
 	}
@@ -52,7 +56,7 @@ export const meta = {
 
 ## 自动定向
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare003.png"
 	}
@@ -60,7 +64,7 @@ export const meta = {
 
 为选定的三维模型在添加支撑前推荐和设定排版方位。在应用自动定向时，在模型表面上具有最长距离的两个点所定义的线将被视为垂直轴。
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/006-application-overview-prepare003.1.gif"
 	}
@@ -69,7 +73,7 @@ export const meta = {
 
 ## 自动布局
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare004.png"
 	}
@@ -81,7 +85,7 @@ export const meta = {
 
 开启**循环布局**后，自动布局时模型会按照循环首尾相连的模式进行自动布局。
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare019.png"
 	}
@@ -91,7 +95,7 @@ export const meta = {
 <br />
 <br />
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare019.1.png"
 	}
@@ -101,14 +105,14 @@ export const meta = {
 <br />
 <br />
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/002auto-layout.gif"}
 	style={{ maxWidth: 200 }}
 />
 
 ## 添加标签
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare005.png"
 	}
@@ -120,7 +124,7 @@ export const meta = {
 
 双击画布空白处以添加文本。
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare013.png"
 	}
@@ -129,7 +133,7 @@ export const meta = {
 
 ## 布尔操作
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare006.png"
 	}
@@ -137,7 +141,7 @@ export const meta = {
 
 为选定相交的模型进行模型间的**联合**、**相交**或**相减**的运算。
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare014.png"
 	}
@@ -147,7 +151,7 @@ export const meta = {
 <br />
 <br />
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare015.png"
 	}
@@ -156,7 +160,7 @@ export const meta = {
 
 ## 切割
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare007.png"
 	}
@@ -166,7 +170,7 @@ export const meta = {
 
 -   你可以以基于坐标轴的面作为切割面来切割模型。
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare016.png"
 	}
@@ -175,7 +179,7 @@ export const meta = {
 
 -   你也可以画一条线段来切割模型:
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare017.png"
 	}
@@ -185,7 +189,7 @@ export const meta = {
 <br />
 <br />
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare018.png"
 	}
@@ -194,7 +198,7 @@ export const meta = {
 
 ## 镂空
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare008.png"
 	}
@@ -202,7 +206,7 @@ export const meta = {
 
 将选定的模型按照设定的镂空参数镂空。
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/003hollow.gif"}
 	style={{ maxWidth: 200 }}
 />
@@ -210,7 +214,7 @@ export const meta = {
 <br />
 <br />
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare008.1.png"
 	}
@@ -226,7 +230,7 @@ export const meta = {
 -   动画：镂空时展示镂空动画（实际镂空进度以底部进度条为准）。
 -   仅保留主腔：在模型镂空时只生成一个主腔体。
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare008.2.png"
 	}
@@ -234,7 +238,7 @@ export const meta = {
 
 ## 挖洞
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare009.png"
 	}
@@ -242,7 +246,7 @@ export const meta = {
 
 将选定的模型按照设定的挖洞参数挖洞。
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare021.png"
 	}
@@ -258,6 +262,18 @@ export const meta = {
 -   角度：以垂直于模型/相机透视角度进行挖洞。
 -   强制挖洞：开启/关闭强制挖洞。
 -   限制深度 B：开启/关闭限制挖洞深度 B。
+
+<Admonition type="note" title="注意">
+	在 CHITUBOX Pro V1.3.0
+	版本中优化了挖洞功能的算法，**取消了壁厚参数B**，软件将自动计算出壁厚并进行挖洞。
+</Admonition>
+
+<AntdImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/006-application-overview-prepare009.gif"
+	}
+	style={{ maxWidth: 720 }}
+/>
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

@@ -1,15 +1,19 @@
-import { DocsLayout } from "@/components/docsLayout";
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
 
 export const meta = {
 	title: "Prepare",
 	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-pro/v1.3.0/prepare",
+	description:
+		"Prepare window in CHITUBOX Pro, it includes Copy, Split Model, Auto Orientation, Auto Layout, Add Tag, Boolean Operation, Cut, Hollow, and Dig Hole.",
+	ogImage: "/images/docs/og_logo.png",
 };
 
 # Prepare
 
 ## Copy
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare001.png"
 	}
@@ -17,14 +21,14 @@ export const meta = {
 
 Copy one or more selected models, and add the specified number of copied models to the current project.
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/001copy.gif"}
 	style={{ maxWidth: 200 }}
 />
 
 ## Split Model
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare002.png"
 	}
@@ -34,7 +38,7 @@ Split the original assembly model into independent part models.
 
 If you have one object that was not a structurally one-piece, for example, the image below shows one object that contains two structurally separated parts.
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare010.png"
 	}
@@ -43,7 +47,7 @@ If you have one object that was not a structurally one-piece, for example, the i
 
 After spliting, two separated parts were sparated into two **independent** objects.
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare012.png"
 	}
@@ -52,7 +56,7 @@ After spliting, two separated parts were sparated into two **independent** objec
 
 ## Auto Orientation
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare003.png"
 	}
@@ -60,7 +64,7 @@ After spliting, two separated parts were sparated into two **independent** objec
 
 Recommend and set the layout orientation for the selected 3D model before support. The line defined by two points with the longest distance on the surface of the model will be considered as the vertical axis when applying auto orientation.
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/gif/006-application-overview-prepare003.1.gif"
 	}
@@ -69,7 +73,7 @@ Recommend and set the layout orientation for the selected 3D model before suppor
 
 ## Auto Layout
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare004.png"
 	}
@@ -82,7 +86,7 @@ If **Model rotation limit** is enabled, the rotation angle will be limited when 
 If **Circular layout** is enabled, the model will be automatically laid out according to the circular end-to-end mode during automatic layout.
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare019.png"
 		}
@@ -91,7 +95,7 @@ If **Circular layout** is enabled, the model will be automatically laid out acco
 </ImageContainer>
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare019.1.png"
 		}
@@ -100,7 +104,7 @@ If **Circular layout** is enabled, the model will be automatically laid out acco
 </ImageContainer>
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/002auto-layout.gif"}
 		style={{ maxWidth: 200 }}
 	/>
@@ -108,7 +112,7 @@ If **Circular layout** is enabled, the model will be automatically laid out acco
 
 ## Add Tag
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare005.png"
 	}
@@ -120,7 +124,7 @@ Here you can tag your 3D models. This function is useful when you planning to pr
 
 Double-click the canvas to add text.
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare013.png"
 	}
@@ -129,7 +133,7 @@ Double-click the canvas to add text.
 
 ## Boolean Operation
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare006.png"
 	}
@@ -138,7 +142,7 @@ Double-click the canvas to add text.
 Perform **union**, **intersection** or **subtraction** operations between models for the selected intersecting model.
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare014.png"
 		}
@@ -147,7 +151,7 @@ Perform **union**, **intersection** or **subtraction** operations between models
 </ImageContainer>
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare015.png"
 		}
@@ -157,7 +161,7 @@ Perform **union**, **intersection** or **subtraction** operations between models
 
 ## Cut
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare007.png"
 	}
@@ -169,7 +173,7 @@ Here you can cut a 3D model into pieces (separated objects).
 
 -   You can choose cut your 3D models with an axis based face:
 
-    <StyledAntdImage
+    <AntdImage
     	src={
     		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare016.png"
     	}
@@ -177,13 +181,13 @@ Here you can cut a 3D model into pieces (separated objects).
 
 -   Or you can cut your 3D model by drawing a line:
 
-    <StyledAntdImage
+    <AntdImage
     	src={
     		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare017.png"
     	}
     />
 
-    <StyledAntdImage
+    <AntdImage
     	src={
     		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare018.png"
     	}
@@ -191,7 +195,7 @@ Here you can cut a 3D model into pieces (separated objects).
 
 ## Hollow
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare008.png"
 	}
@@ -200,14 +204,14 @@ Here you can cut a 3D model into pieces (separated objects).
 The selected models will be hollowed out according to the set hollowing parameters.
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/003hollow.gif"}
 		style={{ maxWidth: 200 }}
 	/>
 </ImageContainer>
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare008.1.png"
 		}
@@ -232,7 +236,7 @@ The selected models will be hollowed out according to the set hollowing paramete
 
 -   Keep the main cavity: Only one main cavity is generated when the model is hollowed out.
 
-    <StyledAntdImage
+    <AntdImage
     	src={
     		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare008.2.png"
     	}
@@ -240,7 +244,7 @@ The selected models will be hollowed out according to the set hollowing paramete
 
 ## Dig Hole
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare009.png"
 	}
@@ -248,7 +252,7 @@ The selected models will be hollowed out according to the set hollowing paramete
 
 The selected model is excavated according to the set hole parameters.
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-prepare009.1.png"
 	}
@@ -273,6 +277,12 @@ The selected model is excavated according to the set hole parameters.
 -   Forced digging hole: Whether to force digging holes or not.
 
 -   Limited Depth B: Whether to limited depth B or not.
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/004-dig-hole.gif"}
+	/>
+</ImageContainer>
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

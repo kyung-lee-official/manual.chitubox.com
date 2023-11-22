@@ -1,98 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { useState } from "react";
-import styled from "styled-components";
-import { SubMenuToggle } from "..";
-
-const StyledLink = styled(Link)`
-	text-decoration: none;
-`;
-
-const StyledOuterUl = styled.ul`
-	display: flex;
-	flex-direction: column;
-	font-size: 1rem;
-	font-weight: 700;
-	list-style-type: none;
-	padding: 0;
-`;
-
-const StyledSubUl = styled(motion.ul)`
-	list-style-type: none;
-	padding: 0;
-`;
-
-interface StyledUlHeadProps {
-	$hasActiveKey: boolean;
-}
-const StyledUlHead = styled.div<StyledUlHeadProps>`
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 23px;
-	color: ${(props) => {
-		if (props.$hasActiveKey) {
-			return props.theme.sidebarActiveItem;
-		} else {
-			return props.theme.textContent;
-		}
-	}};
-	cursor: pointer;
-`;
-
-const StyledToggleWrapper = styled(motion.div)`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-`;
-
-interface StyledItemProps {
-	$isActiveItem: boolean;
-}
-const StyledItem = styled(motion.li)<StyledItemProps>`
-	padding: 10px 23px;
-	color: ${(props) => {
-		if (props.$isActiveItem) {
-			return props.theme.sidebarActiveItem;
-		} else {
-			return props.theme.textContent;
-		}
-	}};
-	background-color: ${(props) => {
-		if (props.$isActiveItem) {
-			return props.theme.sidebarActiveBackground;
-		} else {
-			return null;
-		}
-	}};
-	cursor: pointer;
-`;
-
-interface StyledSubProps {
-	$isActiveItem: boolean;
-}
-const StyledSubItem = styled(motion.li)<StyledSubProps>`
-	padding: 10px 23px 10px 40px;
-	color: ${(props) => {
-		if (props.$isActiveItem) {
-			return "#00aeff";
-		} else {
-			return props.theme.textContent;
-		}
-	}};
-	background-color: ${(props) => {
-		if (props.$isActiveItem) {
-			return props.theme.sidebarActiveBackground;
-		} else {
-			return null;
-		}
-	}};
-	cursor: pointer;
-`;
-
-const StyledWrapperItem = styled.li`
-	padding: 0;
-`;
+import { SubMenuToggle } from "../icons/Icons";
 
 const SubMenu: React.FC<any> = (props) => {
 	const { subItemContext, isDefaultOpen, activeKey } = props;
@@ -130,18 +39,25 @@ const SubMenu: React.FC<any> = (props) => {
 	}
 
 	return (
-		<StyledWrapperItem>
-			<StyledUlHead onClick={onUlHeadClick} $hasActiveKey={hasActiveKey}>
+		<li className="p-0">
+			<ul
+				className={`flex justify-between items-center
+                ${hasActiveKey && "text-blue-500 dark:text-sky-400"}
+                cursor-pointer`}
+				onClick={onUlHeadClick}
+			>
 				<div>{subItemContext.label}</div>
-				<StyledToggleWrapper
+				<motion.div
+					className="flex justify-center items-center"
 					initial={{ rotate: show ? 90 : 0 }}
 					animate={{ rotate: show ? 90 : 0 }}
 				>
 					<SubMenuToggle size={"24px"} />
-				</StyledToggleWrapper>
-			</StyledUlHead>
+				</motion.div>
+			</ul>
 			{show ? (
-				<StyledSubUl
+				<motion.ul
+					className="flex flex-col gap-2 list-none py-2"
 					initial="hidden"
 					animate="visible"
 					variants={hasActiveKey ? {} : subUlVariant}
@@ -150,37 +66,51 @@ const SubMenu: React.FC<any> = (props) => {
 						const isActiveItem: boolean =
 							subItem.path === activeKey;
 						return (
-							<StyledLink href={subItem.path} key={subItem.path}>
-								<StyledSubItem
+							<Link
+								href={subItem.path}
+								key={subItem.path}
+								className="no-underline"
+							>
+								<motion.li
 									variants={
 										hasActiveKey ? {} : subItemVariant
 									}
-									$isActiveItem={isActiveItem}
+									className={`pl-6 ${
+										isActiveItem && "text-blue-500 dark:text-sky-400"
+									}`}
 								>
 									{subItem.label}
-								</StyledSubItem>
-							</StyledLink>
+								</motion.li>
+							</Link>
 						);
 					})}
-				</StyledSubUl>
+				</motion.ul>
 			) : null}
-		</StyledWrapperItem>
+		</li>
 	);
 };
 
 export const DocsMenu: React.FC<any> = (props) => {
 	const { menuItems, defaultOpenKeys, activeKey } = props;
 	return (
-		<StyledOuterUl>
+		<ul
+			className="flex flex-col px-6 gap-2
+            font-medium text-lg
+            list-none"
+		>
 			{menuItems.map((item: any, i: number) => {
 				if (!item.subItems) {
 					const isActiveItem: boolean = item.path === activeKey;
 					return (
-						<StyledLink href={item.path} key={item.path}>
-							<StyledItem $isActiveItem={isActiveItem}>
+						<Link href={item.path} key={item.path}>
+							<motion.li
+								className={`${
+									isActiveItem && "text-blue-500 dark:text-sky-400"
+								}`}
+							>
 								{item.label}
-							</StyledItem>
-						</StyledLink>
+							</motion.li>
+						</Link>
 					);
 				} else {
 					const isDefaultOpen: boolean =
@@ -202,6 +132,6 @@ export const DocsMenu: React.FC<any> = (props) => {
 					);
 				}
 			})}
-		</StyledOuterUl>
+		</ul>
 	);
 };

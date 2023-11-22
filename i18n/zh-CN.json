@@ -10,7 +10,8 @@
 		"searchResult": "个结果"
 	},
 	"docContent": {
-		"onThisPage": "本页目录"
+		"onThisPage": "本页目录",
+		"notLatest": "您正在阅读的不是最新版本的文档。"
 	},
 	"footer": {
 		"relevantDocs": "相关文档",
@@ -22,9 +23,9 @@
 		"community": "社区",
 		"facebook": "脸书",
 		"facebookLink": "https://www.facebook.com/chitubox/",
-		"twitter": "推特",
+		"twitter": "X",
 		"twitterLink": "https://twitter.com/chitubox",
-		"instagram": "Ins",
+		"instagram": "Instagram",
 		"instagramLink": "https://www.instagram.com/chitubox_official/",
 		"youtube": "油管",
 		"youtubeLink": "https://www.youtube.com/channel/UCD4m1SdLs_VokY2133ZqUgQ",
@@ -42,5 +43,21 @@
 		"pageNotFound": "找不到该页面 😢",
 		"message1": "",
 		"message2": " 秒后将跳转回首页..."
+	},
+	"docComponents": {
+		"tsmc": {
+			"bld": "底层抬升距离",
+			"ld": "抬升距离",
+			"brd": "底层回程距离",
+			"rd": "回程距离",
+			"bls": "底层抬升速度",
+			"ls": "抬升速度",
+			"brs": "底层回程速度",
+			"rs": "回程速度"
+		},
+		"isPageUseful": {
+			"question": "本页面是否有用？",
+			"thanks": "感谢您的反馈！"
+		}
 	}
 }

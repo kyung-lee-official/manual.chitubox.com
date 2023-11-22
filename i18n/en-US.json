@@ -10,7 +10,8 @@
 		"searchResult": "Result"
 	},
 	"docContent": {
-		"onThisPage": "On This Page"
+		"onThisPage": "On This Page",
+		"notLatest": "This is an older version of the documentation."
 	},
 	"footer": {
 		"relevantDocs": "Docs",
@@ -22,7 +23,7 @@
 		"community": "Community",
 		"facebook": "Facebook",
 		"facebookLink": "https://www.facebook.com/chitubox",
-		"twitter": "Twitter",
+		"twitter": "X",
 		"twitterLink": "https://twitter.com/chitubox",
 		"instagram": "Instagram",
 		"instagramLink": "https://www.instagram.com/chitubox_official/",
@@ -44,5 +45,21 @@
 		"pageNotFound": "This Page is Not Found 😢",
 		"message1": "We will bring you back to the home page in ",
 		"message2": " second(s)..."
+	},
+	"docComponents": {
+		"tsmc": {
+			"bld": "Bottom Lift Distance",
+			"ld": "Lift Distance",
+			"brd": "Bottom Retract Distance",
+			"rd": "Retract Distance",
+			"bls": "Bottom Lift Speed",
+			"ls": "Lift Speed",
+			"brs": "Bottom Retract Speed",
+			"rs": "Retract Speed"
+		},
+		"isPageUseful": {
+			"question": "Is this page useful?",
+			"thanks": "Thanks for your feedback!"
+		}
 	}
 }

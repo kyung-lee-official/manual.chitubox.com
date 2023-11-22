@@ -1,23 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import styled from "styled-components";
-import { DocsSidebar, MdxContainer, Toc } from "..";
+import { DocsSidebar } from "../docsSidebar/DocsSidebar";
+import { MdxContainer } from "../mdxContainer/MdxContainer";
+import { Toc } from "../toc/Toc";
 
-const StyledContent = styled.div`
-	display: flex;
-	color: ${(props) => props.theme.textContent};
-	min-height: 110vh;
-`;
+const DocsContent: React.FC<any> = (props) => {
+	const { showBanner, children } = props;
 
-export const DocsContent: React.FC<any> = (props) => {
-	const { children } = props;
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
+	useEffect(() => {
+		setIsDesktop(isDesktopOrLaptop);
+	}, [isDesktopOrLaptop]);
 
 	return (
-		<StyledContent>
-			{isDesktopOrLaptop ? <DocsSidebar /> : null}
+		<div
+			className="flex min-h-screen
+            font-sans text-gray-800 dark:text-gray-100
+            bg-slate-50 dark:bg-gray-800"
+		>
+			{isDesktop && <DocsSidebar showBanner={showBanner} />}
 			<MdxContainer>{children}</MdxContainer>
-			{isDesktopOrLaptop ? <Toc /> : null}
-		</StyledContent>
+			{isDesktop && <Toc showBanner={showBanner} />}
+		</div>
 	);
 };
+
+export default DocsContent;

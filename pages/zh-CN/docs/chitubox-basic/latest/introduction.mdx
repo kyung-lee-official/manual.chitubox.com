@@ -1,77 +1,103 @@
-import { DocsLayout } from "@/components/docsLayout";
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { ThemeScrollSlider } from "@/docComponents/themeScrollSlider/ThemeScrollSlider";
+import { DirectXAndMetal } from "@/docComponents/directXAndMetal/DirectXAndMetal";
+import { Rma } from "@/docComponents/rma/Rma";
+import { StandardParts } from "@/docComponents/standardParts/StandardParts";
 
 export const meta = {
 	title: "介绍",
 	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/introduction",
+	description:
+		"CHITUBOX Basic 是一款免费的 3D 打印切片软件，可将 3D 网格文件切片并转换为可打印文件。它旨在让 3D 打印更轻松、更高效，简化整个 3D 打印过程，让用户能够简单快速地将 3D 模型转换为 3D 打印件。软件支持多种 3D 打印机和配置文件，并且提供了丰富的选项来优化 3D 打印模型。",
+	ogImage: "/images/docs/og_logo.png",
 };
 
 # 介绍
 
-## 打印流程
+CHITUBOX Basic 是一款免费的 3D 打印切片软件，可将 3D 网格文件切片并转换为可打印文件。它旨在让 3D 打印更轻松、更高效，简化整个 3D 打印过程，让用户能够简单快速地将 3D 模型转换为 3D 打印件。软件支持多种 3D 打印机和配置文件，并且提供了丰富的选项来优化 3D 打印模型。
 
-<ImageContainer>
-	<StyledAntdImage
-		src={
-			"/images/docs/zh-CN/chitubox-basic/1.x.x/001-introduction000-darkTheme.png"
-		}
-	/>
-</ImageContainer>
+## 新特性 ✨
 
-## 寻求帮助
+### 全新的 UI 界面
 
-<StyledAntdImage
-	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/001-introduction001.png"}
-/>
+<ThemeScrollSlider lang={"en"} />
 
-CHITUBOX Basic 用户手册窗口
+很高兴地宣布 CHITUBOX Basic 2 推出了全新的用户界面。新的 UI 界面让用户体验更轻松、更直观。我们改进了软件的导航和组织方式，使您更容易找到所需的工具和功能。我们还添加了一系列新功能，包括主题、改进的对象操作等等。使用新 UI，您的 3D 打印体验将更快、更高效、更愉悦。
 
-## 法律声明
+### 支持 DirectX 和 Metal
 
-### 规则及本公司网址访问条件
+<DirectXAndMetal />
 
-【 CHITUBOX 网站】指由创必得科技有限公司（以下简称创必得科技）运营的网站，域名为【 https://www.chitubox.com/ 】。以下规则适用于所有访问 CHITUBOX 网站的用户或浏览者，创必得科技保留根据国家法律法规及市场行情等变化修改这些规则的权利。访问 CHITUBOX 网站的权利由创必得科技根据下列条款授予。如果您不同意下列任何条款、请停止使用本网址。如果您使用【 https://www.chitubox.com/ 】服务，您的使用行为将被视为对本声明全部内容的认可。对于违反这些规则的行为，创必得科技有权采取法律和公平的补救措施。
+通过支持 DirectX 和 Metal，CHITUBOX Basic 现在可以渲染更逼真、更复杂的 3D 模型，具有更多细节和更逼真的照明、阴影和菲涅尔效果。这些技术还能提高性能，让您充分发挥显卡的威力。现在，在 Windows 和 macOS 平台上使用 CHITUBOX Basic 时，您可以体验到最高级别的图形性能。
 
-### 不承诺责任声明
+### RMA
 
-CHITUBOX 网站所载的材料和信息，包括但不限于文本、图片、数据、观点、建议、网页或链接，创必得科技力图在网站上提供准确的材料和信息，但创必得科技并不保证这些材料和内容的准确、完整、充分和可靠性，并且明确声明不对这些材料和内容的错误或遗漏承担责任，也不对这些材料和内容作出任何明示或默示的、包括但不限于有关所有权担保、没有侵犯第三方权利、质量和没有计算机病毒的保证。
+<Rma />
 
-创必得科技可以在没有任何通知或提示的情况下随时对 CHITUBOX 网站上的内容进行修改，为了得到最新版本的信息，请您定时访问 CHITUBOX 网站。创必得科技（含其关联公司）在 CHITUBOX 网站上所提及的非创必得科技产品或服务仅仅是为了提供相关信息，并不构成对这些产品、服务的认可或推荐。创必得科技并不就网址上提供的非创必得科技的任何产品、服务或信息做出任何声明、保证或认可，所有销售的产品和服务应受创必得科技的销售合同和条款的约束。
+我们推出了新的 RMA（树脂联盟）功能。此功能使您可以轻松地为不同品牌的树脂材料选择合适的设置，它还支持云存储，因此您可以从任何地方访问您的设置。此外，此功能会不断地更新，因此您始终可以获得最新配置。有了这个新功能，您现在可以快速轻松地设置打印机，以获得最佳 3D 打印结果。
 
-鉴于【 https://www.chitubox.com/ 】提供的部分服务属于电子公告牌（ BBS ）服务，【 https://www.chitubox.com/ 】上关于其会员或其会员发布的相关信息（包括但不限于用户名称、公司名称、 联系人及联络信息，相关图片、视讯等）的信息均是由会员自行提供，会员依法应对其提供的任何信息承担全部责任。
+### 基本标准零件
 
-任何企业或个人认为【 https://www.chitubox.com/ 】网页内容（包括但不限于【 https://www.chitubox.com/ 】会员发布的信息）可能涉嫌侵犯其合法权益，应该及时向创必得科技提出书面权利通知，并提供身份证明、权属证明、具体链接（ URL ）及详细侵权情况证明。创必得科技在收到上述法律文件后，将会依法尽快移除相关涉嫌侵权的内容。
+<StandardParts />
 
-### 著作权说明
+此功能提供常用的基本形状零件库，这样您就不必花时间在互联网上搜索。
 
-CHITUBOX 网站所载的所有材料或内容受版权法的保护，所有版权由创必得科技拥有，但引用其他方的内容除外。未经创必得科技或其他方事先书面许可，任何人不得将 CHITUBOX 网站上的任何内容以任何方式进行复制、经销、翻印、传播、以超级链路连接或传送、以镜像法载入其他服务器上、存储于信息检索系统或者其他任何商业目的的使用，但对于非商业目的的、用户使用的下载或打印（条件是不得修改，且须保留该材料中的版权说明或其他所有权的说明）除外。
+## 支持的文件
 
-### 关于.ctb / .cbddlp / .phz / .fdg / .gf / .photon / .chitubox 格式的特别声明
+### 项目文件
 
-**.ctb / .cbddlp / .phz / .fdg / .gf / .photon / .chitubox**格式的版权为创必得科技有限公司所有，受相关知识产权法律所保护。您可以免费使用 CHITUBOX 免费版本，但任何试图破坏原始版权申明的行为，以及任何对软件及相关文件格式进行反编译、破解的软件逆向工程行为，都是违法行为。如您需要使用相关格式进行商业或非商业开发活动，请在联系创必得科技有限公司获取书面授权后，再进行相关开发活动，以避免侵犯创必得科技有限公司的相关合法权益。
+| 文件类型               | 文件名后缀  | 描述                                             |
+| ---------------------- | ----------- | ------------------------------------------------ |
+| CHITUBOX 项目文件 2023 | \*.ctp      | 包含更多的模型信息                               |
+| CHITUBOX 项目文件      | \*.chitubox | 老版本的项目文件格式，包含基本模型数据和支撑数据 |
 
-<Admonition type="warning" title="警告">
-	创必得科技有限公司将在法律最大范围积极主张所拥有之知识产权，其中包括寻求刑事起诉。
-</Admonition>
+### 可打印的切片文件
 
-### 商标
+| 文件类型                | 文件名后缀 |
+| ----------------------- | ---------- |
+| CHITUBOX slicer         | \*.cbddlp  |
+| CHITUBOX slicer         | \*.ctb     |
+| Photon 系列             | \*.photon  |
+| Photon 系列             | \*.photons |
+| Halot One 系列          | \*.cxdlp   |
+| ZIP Compress            | \*.zip     |
+| SLC                     | \*.slc     |
+| Fhd                     | \*.fhd     |
+| WoW                     | \*.wow     |
+| CHITUBOX General Format | \*.gf      |
+| Phrozen 文件            | \*.phz     |
+| FlashDLPrint 文件       | \*.svgx    |
+| fdg                     | \*.fdg     |
+| Photon 系列             | \*.pw0     |
+| Photon 系列             | \*.pwmo    |
+| Photon 系列             | \*.pwms    |
+| Photon 系列             | \*.pwmx    |
+| Photon 系列             | \*.pwma    |
+| Photon 系列             | \*.pwmb    |
+| Photon 系列             | \*.pmsq    |
+| Photon 系列             | \*.pwx     |
+| Photon 系列             | \*.pws     |
+| Photon 系列             | \*.pm3     |
+| Photon 系列             | \*.pm3m    |
+| Photon 系列             | \*.dlp     |
+| 插件 1                  | \*.cws     |
+| 插件 2                  | \*.lgs     |
 
-CHITUBOX 网站上使用和显示的所有商标、标志皆属本公司所有，但属于其他方拥有的商标、标志、商号除外。本公司网站所载的任何内容不应被视作未经创必得科技或其他方书面许可，以暗示、不反对或其他形式授予使用前述任何商标、标志的许可或权利。未经事先书面许可，任何人不得以任何方式使用 CHITUBOX 名称及创必得科技的商标、标记。
+### 3D 网格/CAD 模型文件
 
-<ImageContainer justifyContent="center">
-	<StyledAntdImage
-		src={
-			"/images/docs/zh-CN/chitubox-basic/1.x.x/001-introduction-logo.png"
-		}
-	/>
-</ImageContainer>
+| 支持操作    | 文件名后缀 |
+| ----------- | ---------- |
+| 导入 & 导出 | \*.stl     |
+| 导入 & 导出 | \*.obj     |
+| 导入        | \*.3mf     |
 
-### 提供的产品或服务
+### 配置文件
 
-由于互联网的国际性或无国界性，因此通过 CHITUBOX 网站所提供信息的亦具有国际性，所以不是所有的在 CHITUBOX 网站上所提到的产品或服务在您的国家或地区都提供，请联系当地的销售代表或代理商了解在您的国家或地区所提供的产品或服务。
-
-### 第三方链接
-
-CHITUBOX 网站可能保留有与第三方网站或网址的链接，访问这些链接将由用户自己作出决定，创必得科技并不保证这些链接上所提供的任何信息、数据、观点、图片、陈述或建议的准确性、完整性、充分性和可靠性。创必得科技提供这些链接仅仅在于提供方便，并不表示创必得科技对这些信息的认可和推荐，也不是用于宣传或广告目的。
+| 文件类型 | 文件名后缀 | 描述                                                 |
+| -------- | ---------- | ---------------------------------------------------- |
+| 配置文件 | \*.cfgx    | 包含更多的可配置参数信息，例如支持自定义的快捷键信息 |
+| 配置文件 | \*.cfg     | 包含打印机配置信息和支撑配置信息                     |
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

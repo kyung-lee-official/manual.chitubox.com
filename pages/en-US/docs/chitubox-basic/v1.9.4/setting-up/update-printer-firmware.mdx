@@ -1,0 +1,138 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+
+export const meta = {
+	title: "Update Printer Firmware",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-basic/v1.9.4/update-printer-firmware",
+	description:
+		"How to update the firmware for your printer?",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# Update Printer Firmware
+
+## Unzip the Files
+
+Unzip all the files inside the update zip package.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-update-printer-firmware-001.png"
+		}
+	/>
+</ImageContainer>
+
+<Admonition type="warning">
+	Except for the UI file and logo file, all the files cannot change their
+	names.
+</Admonition>
+
+## File Types
+
+| File Type                                                | Description                                                                                                                                                                                                           | Auto-read and Update | Updated by Manually Print the File |
+| -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ---------------------------------- |
+| update.LCD, <br/><br/> update.SH4, <br/><br/> update.TWP | update.LCD is the firmware file of the printer's main processor, which includes the firmware program and its version info. <br/> Some ELEGOO printers may use update.SH4. <br/> Some Phrozen printers may update.TWP. | Yes                  | Allow manually update              |
+| chitu_initial_file_autorun                               | Automatically runs the file list. **Some printers' update packages may not contain this file**.                                                                                                                       | Yes                  | Allow manually update              |
+| .gcode                                                   | Printer parameter file, contains parameters of the printer or screen calibration info, etc.                                                                                                                           | ×                    | Yes                                |
+| .bin                                                     | Refers to the touch screen UI file generally.                                                                                                                                                                         | ×                    | Yes                                |
+| .CBD                                                     | FPGA core function file                                                                                                                                                                                               | ×                    | Yes                                |
+| .logo                                                    | Refers to the power on logo file generally.                                                                                                                                                                           | ×                    | Yes                                |
+
+<Admonition type="tip">
+	Most cases, you only need to update the firmware file and the UI file.
+</Admonition>
+
+## How to Update
+
+Copy all the files into the USB drive and place them in the **root directory** of the USB drive.
+
+<Admonition type="warning">
+	Only place all files under the <SpanA href="https://en.wikipedia.org/wiki/Root_directory">root directory</SpanA>, don't put them in any sub-folder.
+</Admonition>
+
+Power off the machine and insert the USB drive into the machine's USB port, followed by re-powering the machine.
+
+<Admonition>
+	Please use USB 2.0 Drive with capacity under (includes) 16GB.
+</Admonition>
+
+After power on:
+
+1. Firmware update
+
+    If the version of update.LCD in the U disk, and the current version on the controller board is not consistent, the controller board will take priority and automatically update this file, the touch screen will not light up at this time. <br />
+    But you can hear the buzzer tone, buzzer tone rhythm for, Di-Di-Di-Di-Di-Di~~~Di-Di.<br />
+    (5 short beeps, 1 long beep, 2 short beeps)<br />
+    After the firmware is updated successfully, the touch screen will light up and the program will start.<br />
+
+1. Other file updates
+
+    Then the controller board will automatically update the remaining files (except UI files, logo files), and display the update progress, when all the files to be updated are updated, the program will pop up [Print Complete] alert dialog.
+
+	<ImageContainer>
+		<AntdImage
+			src={
+				"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-update-printer-firmware-002.png"
+			}
+		/>
+	</ImageContainer>
+
+	<ImageContainer>
+		<AntdImage
+			src={
+				"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-update-printer-firmware-003.png"
+			}
+		/>
+	</ImageContainer>
+
+Click the **Confirm** button, then you will enter the main page of the program, and all files (except UI files and logo files) have been updated at this time.
+
+<Admonition>
+	If you need to update a UI file or a logo file, just print it manually.
+</Admonition>
+
+## Check Firmware Info
+
+Please check the firmware version after the update to confirm if the update is successful.
+
+Click **System**
+
+<AntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-update-printer-firmware-004.png"
+	}
+/>
+
+Click **Information**
+
+<AntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-update-printer-firmware-005.png"
+	}
+/>
+
+Check if the firmware was up-to-date,
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-update-printer-firmware-006.png"
+		}
+	/>
+</ImageContainer>
+
+<AntdImage
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-update-printer-firmware-007.png"
+	}
+	style={{ width: 50 }}
+/> Info after this icon shows the version of the current firmware.
+
+## What You Need To Do After The Update Is Completed
+
+In order to avoid repetitive firmware updates next time you want to use your USB drive on your printer, after you complete the update, you should remove all update files from the USB flash drive.
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

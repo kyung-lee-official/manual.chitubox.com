@@ -1,8 +1,11 @@
-import { DocsLayout } from "@/components/docsLayout";
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
 
 export const meta = {
 	title: "管理你的账号和许可",
 	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-pro/v1.3.0/manage-your-account-and-license",
+	description: "在 CHITUBOX Pro 中激活您的许可证。",
+	ogImage: "/images/docs/og_logo.png",
 };
 
 # 管理你的账号和许可
@@ -23,17 +26,15 @@ export const meta = {
     如果你还没有安装 CHITUBOX Pro， 请点击<SpanA href="https://www.chitubox.com/zh-Hans/download/chitubox-pro">此处</SpanA>下载最新版本。
 
     <ImageContainer>
-    	<StyledAntdImage
-    		src={
-    			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-login002.png"
-    		}
+    	<AntdImage
+    		src={"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-login002.png"}
     	/>
     </ImageContainer>
 
     如果你还没有账号，点击 <SpanA href="https://cc.chitubox.com/register">注册</SpanA> 进行注册。
 
     <ImageContainer>
-    	<StyledAntdImage
+    	<AntdImage
     		src={
     			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license001.png"
     		}
@@ -48,7 +49,7 @@ export const meta = {
 1. 输入你的许可序列号：
 
     <ImageContainer>
-    	<StyledAntdImage
+    	<AntdImage
     		src={
     			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license002.png"
     		}
@@ -58,7 +59,7 @@ export const meta = {
     点击**下一步**，将激活许可序列号并且将其绑定到你的电脑。
 
     <ImageContainer>
-    	<StyledAntdImage
+    	<AntdImage
     		src={
     			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license003.png"
     		}
@@ -68,7 +69,7 @@ export const meta = {
     激活许可证要是和 3D 打印设备关联，则还需要输入打印机设备 ID:
 
     <ImageContainer>
-    	<StyledAntdImage
+    	<AntdImage
     		src={
     			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license004.png"
     		}
@@ -78,7 +79,7 @@ export const meta = {
     如果你在 CHITUBOX 官网<SpanA href="https://cc.chitubox.com/login">登录</SpanA>你的账号，在 **我的产品** > **我的许可证** 下面应该可以看到你刚刚绑定的许可。
 
     <ImageContainer>
-    	<StyledAntdImage
+    	<AntdImage
     		src={
     			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-005.png"
     		}
@@ -96,7 +97,7 @@ export const meta = {
 点击 **我的产品** > **我的许可证**
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-006.png"
 		}
@@ -106,7 +107,7 @@ export const meta = {
 点击 **已绑 PC 管理** > **解绑**
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-007.png"
 		}
@@ -125,7 +126,7 @@ export default ({ children }) => (
 
 点击 **激活许可证**：
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license005.png"
 	}
@@ -133,7 +134,7 @@ export default ({ children }) => (
 
 更换你的许可证序列号，然后点击 **下一步** ，激活许可证并且将其绑定到你的电脑。
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license006.png"
 	}

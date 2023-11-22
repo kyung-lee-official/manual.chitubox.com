@@ -1,0 +1,37 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import {
+	ChituboxCheckboxIcon,
+	ChituboxEyeIcon,
+	ChituboxRulerIcon,
+	ChituboxDeleteIcon,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "檔案列表",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/file-list",
+	description: "所有已載入完成的檔案都會顯示在檔案列表中。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 檔案列表
+
+所有已載入完成的檔案都會顯示在檔案列表中。您可以同時選擇多個檔案，也能透過單擊全選按鈕來選擇所有檔案。
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/zh-TW/chitubox-basic/2.x.x/007-file-list-panel.png"}
+	/>
+</ImageContainer>
+
+點擊複選框圖示 <ChituboxCheckboxIcon /> 複選框圖示可以選擇或取消選擇該檔案。
+
+點擊眼睛圖示 <ChituboxEyeIcon /> 眼睛圖示可以隱藏或顯示該檔案。點擊添加圖示可以添加檔案到檔案列表。
+
+點擊標尺圖示 <ChituboxRulerIcon /> 可以顯示所有檔案的<SpanA href={"https://zh.wikipedia.org/zh-hk/%E5%8C%85%E5%9B%B4%E4%BD%93"}>包圍體</SpanA>尺寸。
+
+點擊垃圾桶圖示 <ChituboxDeleteIcon /> 可以刪除所選檔案。
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

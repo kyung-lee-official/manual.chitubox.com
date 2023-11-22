@@ -1,0 +1,118 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { 
+    ChituboxSupport, 
+    ChituboxRefreshIcon, 
+    ChituboxIslandsDetectionIcon, 
+    ChituboxDeleteIslandsIcon
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "Risk Detection",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-basic/v2.0.0/risk-detection",
+	description: "Some risk detection features that can be used in CHITUBOX, including Cavity Detection, Collision Detection, Suspend Detection, and Island Detection.",
+	ogImage: "/images/docs/og_logo.png",
+};
+ 
+# Risk Detection
+
+## Cavity Detection
+
+Cavity detection is located on the right of the main panel right below the file list panel.
+
+Cavity detection helps users identify any enclosed cavities in their 3D printing model such as enclosed pockets or voids, and users can add holes to the model to avoid vacuum effects.
+
+Here is a comparison of a hollow model with cavity detection off and on.
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-cavity-off.png"
+		}
+		text1={"Cavity Detection Off"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-cavity-on.png"
+		}
+		text2={"Cavity Detection On"}
+	/>
+</ImageContainer>
+
+## Collision Detection
+
+Collision detection is located on the right of the main panel right below the file list panel.
+
+Collision detection helps users highlight collisions in their 3D printing model, and users can adjust the model to avoid collisions.
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/008-collision-detection-off.png"
+		}
+		text1={"Collision Detection Off"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/008-collision-detection-on.png"
+		}
+		text2={"Collision Detection On"}
+	/>
+</ImageContainer>
+
+## Suspend Detection
+
+Suspend Detection is available in the support view, click <ChituboxSupport /> to switch to the support view. Suspend Detection is located on the right of the support view right below the support list panel.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-suspend-detection.png"
+		}
+	/>
+</ImageContainer>
+
+The Suspend Detection function helps users identify any unsupported high-risk areas in their 3D printing model, and users can add supports to the model to avoid print failure.
+
+It provides three accuracy levels: Low, Medium, and High. The higher the accuracy level, the more accurate the detection result, but the longer the detection time. By clicking the "Refresh" button <ChituboxRefreshIcon />, you can refresh the detection result.
+
+Clicking the arrows in the Suspend Areas panel will automatically zoom in the corresponding area in the model.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/008-suspend-cam-switching.gif"
+		}
+	/>
+</ImageContainer>
+
+## Island Detection
+
+Island Detection is similar to Suspend Detection but detects islands by iterating 2D layers instead of 3D models. To use Island Detection, the model need to be sliced by clicking the **Slice** button on the right of the main panel right below the file list panel.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-slice.png"
+		}
+	/>
+</ImageContainer>
+
+After slicing the model, you should enter the preview window and should see the **Detect Islands** and the **Delete Islands** buttons on the top of the preview window.
+
+<ChituboxIslandsDetectionIcon /> Detect Islands will detect islands in the model
+and highlight them in red in the preview viewport.
+
+<ChituboxDeleteIslandsIcon /> Delete All Islands will delete all islands that have
+been detected for your model. Mostly you don't want to use this function, instead, you probably
+want to go back to add supports to the islands that have been detected.
+
+If you want to delete islands on a specific layer, you can click the **Delete Islands** button on the right of the main panel.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-delete-islands.png"
+		}
+	/>
+</ImageContainer>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

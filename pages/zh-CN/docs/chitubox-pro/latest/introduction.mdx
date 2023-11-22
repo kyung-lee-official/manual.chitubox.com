@@ -1,8 +1,12 @@
-import { DocsLayout } from "@/components/docsLayout";
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
 
 export const meta = {
 	title: "介绍",
 	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-pro/v1.3.0/introduction",
+	description:
+		"CHITUBOX Pro 是一款功能强大的3D打印软件，可以将3D网格文件切片并转换为可打印文件。 它提供了广泛的功能和定制选项，可以极大增强您的 3D 打印体验，并大幅提高打印质量并降低打印失败的风险。 它比 Basic 版提供了更多的模型准备工具，例如分割模型、添加标签、布尔运算、添加自定义的孔洞等。",
+	ogImage: "/images/docs/og_logo.png",
 };
 
 # 介绍
@@ -10,7 +14,7 @@ export const meta = {
 ## 打印流程
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/zh-CN/chitubox-pro/1.x.x/001-introduction000-darkTheme.png"
 		}
@@ -21,13 +25,13 @@ export const meta = {
 
 CHITUBOX Pro 用户手册窗口
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/001-introduction001.png"}
 />
 
 CHITUBOX Pro 技术支持窗口
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/001-introduction003.png"}
 	style={{ width: "100%", maxWidth: "810px" }}
 />
@@ -64,8 +68,8 @@ CHITUBOX 网站所载的所有材料或内容受版权法的保护，所有版�
 
 CHITUBOX 网站上使用和显示的所有商标、标志皆属本公司所有，但属于其他方拥有的商标、标志、商号除外。本公司网站所载的任何内容不应被视作未经创必得科技或其他方书面许可，以暗示、不反对或其他形式授予使用前述任何商标、标志的许可或权利。未经事先书面许可，任何人不得以任何方式使用 CHITUBOX 名称及创必得科技的商标、标记。
 
-<ImageContainer justifyContent="center">
-	<StyledAntdImage
+<ImageContainer className={"justify-center"}>
+	<AntdImage
 		src={"/images/docs/zh-CN/chitubox-pro/1.x.x/001-introduction-logo.png"}
 	/>
 </ImageContainer>

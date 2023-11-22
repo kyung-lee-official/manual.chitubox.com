@@ -1,15 +1,19 @@
-import { DocsLayout } from "@/components/docsLayout";
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
 
 export const meta = {
 	title: "Support",
 	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-pro/v1.3.0/support",
+	description:
+		"Support panel, Left-Side Tool Bar, and support types on the Support window of CHITUBOX Pro.",
+	ogImage: "/images/docs/og_logo.png",
 };
 
 # Support
 
 ## Symmetrical Support
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support002.png"
 	}
@@ -17,7 +21,7 @@ export const meta = {
 
 Identify the symmetry plane of the model and manually add symmetry supports according to the set symmetry plane.
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support003.png"
 	}
@@ -26,7 +30,7 @@ Identify the symmetry plane of the model and manually add symmetry supports acco
 
 ## Merge Support
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-merge.png"
 	}
@@ -34,7 +38,7 @@ Identify the symmetry plane of the model and manually add symmetry supports acco
 
 Automatically merge all or part of the selected supports.
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-merge.1.gif"
 	}
@@ -43,7 +47,7 @@ Automatically merge all or part of the selected supports.
 
 ## Suspend Detection
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support001.png"
 	}
@@ -52,7 +56,7 @@ Automatically merge all or part of the selected supports.
 Detect the suspended area of the selected 3D model, and recommend to display the recommended area and location of the support under the current layout orientation.
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-suspend.gif"
 		}
@@ -74,7 +78,7 @@ Detect the suspended area of the selected 3D model, and recommend to display the
 
 In the **Support** interface, the **Left-Side Tool Bar** changed accordingly.
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support020.png"
 	}
@@ -87,7 +91,7 @@ Let's take the **Rectangle** as an example.
 -   Add <br />
     After selecting the area, and click the "+ All" or "+ Platform" button, auto-support will only apply to that area.<br />
 
-    <StyledAntdImage
+    <AntdImage
     	src={
     		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support020.1.gif"
     	}
@@ -96,7 +100,7 @@ Let's take the **Rectangle** as an example.
 -   Delete <br />
     Under delete mode, selected supports turn to red color, indicate they are deletable.<br />
 
-    <StyledAntdImage
+    <AntdImage
     	src={
     		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support020.4.gif"
     	}
@@ -105,7 +109,7 @@ Let's take the **Rectangle** as an example.
 -   Edit <br />
     Under edit mode, selected supports turn to green color, indicate they are editable.<br />
 
-    <StyledAntdImage
+    <AntdImage
     	src={
     		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support020.6.gif"
     	}
@@ -115,7 +119,7 @@ Let's take the **Rectangle** as an example.
 
 On the bottom of the Viewport, the support type panel provides various support types to meets your demands.
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support015.png"
 	}
@@ -123,7 +127,7 @@ On the bottom of the Viewport, the support type panel provides various support t
 
 ### Default
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-01.png"
 	}
@@ -133,7 +137,7 @@ This is the most commonly used support, self-adaptive according to your support 
 
 ### Vertical
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-02.png"
 	}
@@ -143,7 +147,7 @@ The top part of this type of support is parallel to the normal line of the model
 
 ### Upright
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-03.png"
 	}
@@ -153,7 +157,7 @@ The top part of this type of support is perpendicular to the build plate.
 
 ### Connection
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-04.png"
 	}
@@ -163,7 +167,7 @@ This is single-segment support, which connects the model and another support's m
 
 ### Two Points Connection
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-05.png"
 	}
@@ -173,7 +177,7 @@ This is two-segment support, which connects the model and another support's midd
 
 ### Small Pillar
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-06.png"
 	}
@@ -183,7 +187,7 @@ This is a type of thin support, which connects the model and another support's m
 
 ### Branch
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-07.png"
 	}
@@ -193,7 +197,7 @@ This type of support's top part connects to the model, the bottom part was divid
 
 ### Contour
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-08.png"
 	}
@@ -203,7 +207,7 @@ This will generate a bunch of supports whose top parts are connected to the mode
 
 ### Tree-like
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-09.png"
 	}
@@ -217,7 +221,7 @@ This allow you to add tree-like support.
 
 Hold Ctrl to select multiple homotype support parts you need to edit, then you can modify their parameters at the same time.
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-operation-01.gif"
 	}

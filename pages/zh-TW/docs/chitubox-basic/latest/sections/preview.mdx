@@ -1,0 +1,62 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import {
+	ChituboxDetectIslandsIcon,
+	ChituboxDeleteIslandsIcon,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "預覽",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/preview",
+	description:
+		"在切片器中預覽切片檔案對於確保 3D 列印準確並滿足您的期望非常重要。本節我們將介紹 CHITUBOX 中的切片預覽視窗。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 預覽
+
+## 預覽視窗
+
+在切片完成後，將會進入預覽視窗，您可以在預覽視窗中預覽模型。預覽窗口分爲兩部分：左側為模型預覽，右側為切片圖像預覽。
+
+預覽視窗底部的列印設定面板顯示當前模型的列印設定。您可以在此處修改列印設定，然後保存切片檔案。
+
+您可以在預覽視窗右上角查看列印信息。列印信息包括**機型**、**樹脂**、**體積**、**重量**、**價格**和**列印時間**。
+
+## 網路發送
+
+<Admonition type="note" title="注意">
+	1. 列印機需要插入一個 U 盤來儲存接收到的檔案。
+	1. **網絡發送** 功能要求列印機和電腦在同一局域網下。
+	1. 傳輸速率受列印機的網路模組限制，大多數列印機的網路模組傳輸速率大約是 8M/s，因此對於大檔案，不建議使用 **網路發送**。
+	1. 目前只有部分列印機支援 **網路發送**，點擊 <SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃這裡</SpanA> 查看機器相容性表格。
+</Admonition>
+
+若列印機支持網路發送，則該介面上會有 **網路發送** 按鈕，此功能可以直接向列印機發送切片資料進行列印。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/011-preview-network-sending.png"
+		}
+	/>
+</ImageContainer>
+
+## 保存檔案
+
+切片完成後，您可以將切片檔案儲存到電腦上。點擊預覽視窗右下角的**保存**按鈕即可儲存切片檔案。
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/zh-CN/chitubox-basic/2.x.x/011-preview-save.png"}
+	/>
+</ImageContainer>
+
+<Admonition type="note" title="注意">
+    * 檔案儲存對話框僅顯示列印機支持的檔案格式。如果您在下拉式選單中看不到正確的格式，請返回並檢查是否選擇了正確的列印機。
+    * **默認**列印機類型允許您將切片檔案儲存為CHITUBOX支持的任何格式。但是，當您的列印機在CHITUBOX中沒有內建配置檔案時，您應該僅選擇**默認**列印機類型。
+</Admonition>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

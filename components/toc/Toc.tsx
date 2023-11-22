@@ -4,85 +4,23 @@ import React, {
 	useContext,
 	useEffect,
 	useMemo,
+	useRef,
 	useState,
 } from "react";
 import { useTranslation } from "react-i18next";
-import styled from "styled-components";
-import { DocContext } from "../docsLayout";
+import { DocContext } from "../docsLayout/DocContext";
 
-const StyledToc = styled.div`
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: 400px;
-`;
-
-const StyledTocAffix = styled.div`
-	position: -webkit-sticky;
-	position: sticky;
-	top: 160px;
-	overflow-y: auto;
-	height: 100vh;
-	padding: 2rem 1rem;
-	&::-webkit-scrollbar {
-		width: 5px;
-		border-radius: 3px;
-		background-color: ${(props) => props.theme.sidebarScrollbar};
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 3px;
-		background-color: ${(props) => props.theme.sidebarScrollbarThumb};
-	}
-	&::-webkit-scrollbar-thumb {
-		&:hover {
-			border-radius: 3px;
-			background-color: ${(props) => props.theme.sidebarScrollbarHover};
-		}
-	}
-`;
-
-const StyledA = styled.a`
-	text-decoration: none;
-	color: ${(props) => props.theme.tocColor};
-	font-weight: 600;
-`;
-
-interface StyledTocHeadingProps {
-	$isActive: boolean;
-	$depth: number;
-}
-
-const StyledTocHeading = styled.div<StyledTocHeadingProps>`
-	color: ${(props: any) => {
-		return props.$isActive
-			? props.theme.tocColorActive
-			: props.theme.tocColor;
-	}};
-	margin: ${(props: any) => {
-		switch (props.$depth) {
-			case 2:
-				return "1rem 0 1rem 0";
-			case 3:
-				return "1rem 0 1rem 0.7rem";
-			default:
-				break;
-		}
-	}};
-`;
-
-const StyledOnThisPage = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 30px;
-	margin: 0 2rem;
-	font-weight: bold;
-	border-radius: 12px;
-	color: ${(props) => props.theme.versionNumber};
-	background-color: ${(props) => props.theme.versionNumberBackground};
-	box-shadow: -4px -5px 7px ${(props) => props.theme.headerItemHighlight},
-		4px 5px 7px ${(props) => props.theme.headerItemShadow};
-	transition-duration: ${(props) => props.theme.transitionDuration};
-`;
+const TocHeading = (props: any) => {
+	const { isActive, depth, children } = props;
+	return (
+		<div
+			className={`my-4 ${depth === 3 && "ml-6"}
+            ${isActive && "text-blue-500 dark:text-sky-400"}`}
+		>
+			{children}
+		</div>
+	);
+};
 
 const TocHeadings: React.FC<any> = () => {
 	const { pageContext } = useContext(DocContext);
@@ -129,18 +67,19 @@ const TocHeadings: React.FC<any> = () => {
 		[h2H3Toc]
 	);
 
-	const observer = useMemo(() => {
-		return new IntersectionObserver(callback, options);
-	}, [callback, options]);
+	const observer = useRef<IntersectionObserver>();
+	useEffect(() => {
+		observer.current = new IntersectionObserver(callback, options);
+	}, []);
 
 	useEffect(() => {
 		let h2h3Elements: any;
-		if (h2H3Toc) {
+		if (h2H3Toc && observer.current) {
 			h2h3Elements = h2H3Toc.map((heading: any) => {
 				return document.querySelector(`[id="${heading.id}"]`);
 			});
 			for (const element of h2h3Elements) {
-				observer.observe(element);
+				observer.current.observe(element);
 			}
 		}
 	}, [h2H3Toc, observer]);
@@ -153,36 +92,48 @@ const TocHeadings: React.FC<any> = () => {
 			});
 		}
 		return (
-			<>
+			<div className="overflow-y-auto h-[70vh] scrollbar">
 				{h2H3Toc?.map((heading: any) => {
 					return (
-						<StyledA href={`#${heading.id}`} key={heading.id}>
-							<StyledTocHeading
-								$isActive={activeTocItem === heading.id}
-								$depth={heading.depth}
+						<a href={`#${heading.id}`} key={heading.id}>
+							<TocHeading
+								isActive={activeTocItem === heading.id}
+								depth={heading.depth}
 							>
 								{heading.value}
-							</StyledTocHeading>
-						</StyledA>
+							</TocHeading>
+						</a>
 					);
 				})}
-			</>
+			</div>
 		);
 	} else {
 		return null;
 	}
 };
 
-export const Toc: React.FC<any> = () => {
+export const Toc: React.FC<any> = (props: any) => {
+	const { showBanner } = props;
+
 	const { t } = useTranslation();
 	return (
-		<StyledToc>
-			<StyledTocAffix>
-				<StyledOnThisPage>
+		<div className="flex-[0_0_350px]">
+			<div
+				className={`sticky ${
+					showBanner ? "top-[184px]" : "top-24"
+				} h-[70vh] flex flex-col gap-4 px-4`}
+			>
+				<div
+					className="flex justify-center items-center max-w-max h-8 px-8 mx-auto
+                    font-medium 
+                    text-sm text-gray-700 dark:text-gray-300
+                    bg-gray-50 dark:bg-gray-700
+                    shadow rounded-full"
+				>
 					{t("docContent.onThisPage")}
-				</StyledOnThisPage>
+				</div>
 				<TocHeadings />
-			</StyledTocAffix>
-		</StyledToc>
+			</div>
+		</div>
 	);
 };

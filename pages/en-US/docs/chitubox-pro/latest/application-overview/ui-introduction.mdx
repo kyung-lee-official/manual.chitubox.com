@@ -1,14 +1,18 @@
-import { DocsLayout } from "@/components/docsLayout";
-import { IconTitle } from "@/components/iconTitle";
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { IconTitle } from "@/components/iconTitle/IconTitle";
 
 export const meta = {
 	title: "UI Introduction",
 	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-pro/v1.3.0/ui-introduction",
+	description:
+		"CHITUBOX Pro main windown UI interface introduction.",
+	ogImage: "/images/docs/og_logo.png",
 };
 
 # UI Introduction
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction001.png"
 	}
@@ -22,7 +26,7 @@ export const meta = {
 	<div>
 		Right-click the blank area will pop up a Viewport menu
 
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction001a1.png"
 			}
@@ -30,7 +34,7 @@ export const meta = {
 
 		Right-click models will pop up a model menu
 
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction001a3.png"
 			}
@@ -40,7 +44,7 @@ export const meta = {
 		corner of the Viewport that provides a list of frequently-used
 		global and local shortcuts.
 
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction001a2.png"
 			}
@@ -54,7 +58,7 @@ export const meta = {
 	<div style={{flex: "0 0 4rem"}}></div>
 	<div>
 		<ImageContainer>
-			<StyledAntdImage
+			<AntdImage
 				src={
 					"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction001b1.png"
 				}
@@ -77,7 +81,7 @@ export const meta = {
 
 		**Move**: move the selected models to the set position.
 
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction-move.png"
 			}
@@ -91,7 +95,7 @@ export const meta = {
 
 		**Rotate**: rotate the selected models according to the set angles.
 
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction-rotate.png"
 			}
@@ -103,7 +107,7 @@ export const meta = {
 
 		**Scale**: scales the selected models according to the set size or scale.
 
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction-scale.png"
 			}
@@ -119,7 +123,7 @@ export const meta = {
 
 		**Mirror**: mirror the selected models.
 
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction-mirror.png"
 			}
@@ -140,8 +144,7 @@ export const meta = {
 	<div>
 		<p>
 			Title Bar provides quick access for **open file**,{" "}
-			**save file**, **undo**, **redo**, **login**, and{" "}
-			**screenshot/record**.
+			**save file**, **undo**, **redo**, and **login**.
 		</p>
 	</div>
 </div>
@@ -153,7 +156,7 @@ export const meta = {
 <div style={{ display: "flex" }}>
 	<div style={{flex: "0 0 4rem"}}></div>
 	<div>
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction001g1.png"
 			}
@@ -182,7 +185,7 @@ export const meta = {
 			<div style={{ flex: "8" }}>
 				This slider allows you to preview the vertical cross-sections of your objects. Whereas <span style={{ color: "red", fontWeight: "bold" }}>X</span> and <span style={{ color: "lightgreen", fontWeight: "bold" }}>Y</span> buttons allow you to preview the horizontal cross-sections of your objects.
 
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction001j2.png"
 					}
@@ -190,7 +193,7 @@ export const meta = {
 			</div>
 			<div style={{ flex: "0.5" }} />
 			<div style={{ flex: "1.5" }}>
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction001j1.png"
 					}
@@ -213,7 +216,7 @@ export const meta = {
 		Right-click and drag the blank area to adjust the viewing angle of
 		the work area.
 
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction001l-1.png"
 			}
@@ -228,7 +231,7 @@ export const meta = {
 		parameters strictly according to the specifications provided by the
 		printer manufacturer).
 
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-ui-introduction001l-2.png"
 			}

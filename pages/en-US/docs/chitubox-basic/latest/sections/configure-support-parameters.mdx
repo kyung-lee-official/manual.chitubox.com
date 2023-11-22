@@ -1,0 +1,658 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import {
+	ChituboxSupport,
+	ChituboxProfileImportIcon,
+	ChituboxProfileExportIcon,
+	ChituboxProfileResetIcon,
+	ChituboxAddSupportIcon,
+	ChituboxDeleteSupportIcon,
+	ChituboxEditSupportIcon,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "Configure Support Parameters",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-basic/v2.0.0/configure-support-parameters",
+	description:
+		"Configure support parameters in CHITUBOX.",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# Configure Support Parameters
+
+Click <ChituboxSupport /> to switch to the support view. We will go through the support parameters one by one.
+
+## Z Lift Height
+
+The height distance between the lowest point of the model and the platform. The default value is 5mm.
+
+## Support Settings
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-support-settings.png"
+		}
+	/>
+</ImageContainer>
+
+CHBITUBOX Provides 3 default support settings: Light, Medium, and Heavy. If they are not suitable for your model, you can customize the support settings and export them for future use. You can <ChituboxProfileImportIcon /> import, <ChituboxProfileExportIcon /> export, and <ChituboxProfileResetIcon /> reset support settings here.
+
+## Basic Settings
+
+### Tip Upper Diameter
+
+Diameter of the tip of supports.
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-tip-upper-diameter-0.3.png"
+		}
+		text1={"0.3mm"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-tip-upper-diameter-0.6.png"
+		}
+		text2={"0.6mm"}
+	/>
+</ImageContainer>
+
+### Raft Shape
+
+Available options: **Skate**, **Cross grid**, **Hexagonal grid**, and **Bottom connected**.
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-shape-skate.png"
+		}
+		text1={"Skate"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-shape-cross-grid.png"
+		}
+		text2={"Cross grid"}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-shape-hexagonal-grid.png"
+		}
+		text1={"Hexagonal grid"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-shape-bottom-connected.png"
+		}
+		text2={"Bottom connected"}
+	/>
+</ImageContainer>
+
+### Touch Tip Distance
+
+Touch Tip Distance is the distance between the tips of supports, or, in other words, it affects the density of supports.
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-touch-tip-distance-4.png"
+		}
+		text1={"1.0mm"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-touch-tip-distance-2.png"
+		}
+		text2={"0.5mm"}
+	/>
+</ImageContainer>
+
+### Support Angle
+
+The maximum angle (degrees) between the model surface (tangent plane) and the platform that allows auto-support.
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-support-angle-40.png"
+		}
+		text1={"30°"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-support-angle-60.png"
+		}
+		text2={"60°"}
+	/>
+</ImageContainer>
+
+## Advance Settings
+
+Advanced settings are divided into 4 parts: **Top**, **Middle**, **Bottom**, and **Raft**.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-advanced-panel.png"
+		}
+		width={250}
+	/>
+</ImageContainer>
+
+### Top
+
+-   Tip Part
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>Parameters</th>
+			<th>Description</th>
+			<th className="w-[350px]">Illustration</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Contact Shape</td>
+			<td>
+				The shape of the contact point between the support and the
+				model.
+			</td>
+			<td>N/A</td>
+		</tr>
+		<tr>
+			<td>Contact Diameter</td>
+			<td>
+				The diameter of the contact point between the support and the
+				model.
+			</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-contact-shape-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Contact Depth</td>
+			<td>The depth from the tip of the support to the model surface.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-contact-depth.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+-   Main Part
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>Parameters</th>
+			<th>Description</th>
+			<th className="w-[350px]">Illustration</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Connection Shape</td>
+			<td>The shape of the top.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-connection-shape.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Upper Diameter</td>
+			<td>The upper diameter of the top part.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-upper-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Lower Diameter</td>
+			<td>The lower diameter of the top part.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-lower-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Connection Length</td>
+			<td>The length of the top part.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-connection-length.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+### Middle
+
+There are 3 types of structures in the middle part: **Regular**, **Small Pillar**, and **Cross**.
+
+-   Regular
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>Parameters</th>
+			<th>Description</th>
+			<th className="w-[350px]">Illustration</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Shape</td>
+			<td>Shape of the regular part.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mid-shape.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Diameter</td>
+			<td>The diameter of the regular part.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mid-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Angle</td>
+			<td>
+				The maximum angle between the extension line of the middle part
+				and the top part.
+			</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mid-angle.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+-   Small Pillar
+
+Small Pillar is a type of support that is used to hold small spaces, the both sides of the small pillar are connected to the model surface.
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>Parameters</th>
+			<th>Description</th>
+			<th className="w-[350px]">Illustration</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Small Pillar Contact Shape</td>
+			<td>Shape of the small pillar contact part.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-shape.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Diameter</td>
+			<td>The diameter of the small pillar.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Upper Depth</td>
+			<td>The upper depth of the small pillar.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-upper-depth.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Lower Depth</td>
+			<td>The lower depth of the small pillar.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-lower-depth.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+-   Cross
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>Parameters</th>
+			<th>Description</th>
+			<th className="w-[350px]">Illustration</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Maximum Spacing of Cross Structure</td>
+			<td>
+				The maximum spacing between two support for generating cross
+				structure.
+			</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-cross-max-spacing.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Cross Start Height</td>
+			<td>The height of the start point of the cross structure.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-cross-start-height.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+### Bottom
+
+Bottom contains the **Platform** part and the **Main** part.
+
+-   Platform
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>Parameters</th>
+			<th>Description</th>
+			<th className="w-[350px]">Illustration</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Platform Shape</td>
+			<td>Shape of the platform.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-platform-shape.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Platform Diameter</td>
+			<td>The diameter of the platform.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-platform-diameter.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Platform Thickness</td>
+			<td>The thickness of the platform.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-platform-thickness.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+-   Main Part
+
+<Admonition>
+	The following options apply to the bottom of supports which are generated on models, not the platform. That is, the both ends of the supports should touch the model. They are not available in the "Edit" mode, you need to switch to the "Add" mode to use them.
+</Admonition>
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>Parameters</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Model Contact Shape</td>
+			<td>The shape of the support bottom.</td>
+		
+		</tr>
+		<tr>
+			<td>Contact Diameter</td>
+			<td>The diameter of the support bottom.</td>
+		</tr>
+		<tr>
+			<td>Contact Depth</td>
+			<td>The depth of the support bottom.</td>
+		</tr>
+		<tr>
+			<td>Contact Point</td>
+			<td>The number of contact points of the support bottom.</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+### Raft
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>Parameters</th>
+			<th>Description</th>
+			<th className="w-[350px]">Illustration</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Raft Shape</td>
+			<td>The shape of the raft.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-shape.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Raft Area Ratio(%)</td>
+			<td>The area ratio of the raft.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-area-ratio.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Raft Thickness</td>
+			<td>The thickness of the raft.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-thickness.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Raft Height</td>
+			<td>The height of the raft.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-height.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+		<tr>
+			<td>Raft Slope(°)</td>
+			<td>The slope of the raft edge.</td>
+			<td>
+				<ImageContainer className={"max-w-sm"}>
+					<AntdImage
+						src={
+							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-slope.gif"
+						}
+					/>
+				</ImageContainer>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+## Auto Support
+
+There are 2 modes for auto support: **+All** and **+Platform**.
+
+**+All** allows supports to be generated based on model surface, while **+Platform** only allows supports to be generated on the platform.
+
+## Operation Mode
+
+There are 3 operation modes: **Add**, **Delete**, and **Edit**, the shortcut keys are "A", "D", and "E" respectively. All of the 3 modes support multi-selection by holding Ctrl key and dragging the mouse to select the operation area.
+
+### Add
+
+<ChituboxAddSupportIcon /> Click the model to add supports.
+
+There are two kinds of modes for adding supports: **Regular** (default) and **Connection**.
+
+The Connection mode allows you to add supports between models and existing support trunks, it complys with the following rules:
+
+* If you first click on a model, then you can fix another side of the support on the model surface or a existing support trunk.
+* If you first click on a support trunk, then you can fix another side of the support on another support trunk.
+
+If you want to switch to the Connection mode, you need to pop out the support mode panel first:
+
+<ImageContainer className={"max-w-sm"}>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mode-panel.png"
+		}
+	/>
+</ImageContainer>
+
+Then select the Connection mode:
+
+<ImageContainer className={"max-w-sm"}>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mode-panel-connection.png"
+		}
+	/>
+</ImageContainer>
+
+### Delete
+
+<ChituboxDeleteSupportIcon /> Click supports to highlight target supports in
+red, then click the button again or press Delete key to delete the supports.
+
+### Edit
+
+<ChituboxEditSupportIcon /> Click supports to highlight target supports in
+green, hold Ctrl key to select multiple supports, you can then adjust the
+parameters of the selected supports. You can also drag the supports to adjust
+their positions.
+
+In Edit mode, you can double click a support node to add node supports (press Esc to exit).
+
+## Clear All
+
+By clicking this button, all the supports will be cleared.
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

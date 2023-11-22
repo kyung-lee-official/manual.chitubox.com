@@ -1,26 +1,10 @@
 import React from "react";
-import styled from "styled-components";
-
-const StyledVideoContainer = styled.div`
-	overflow: hidden;
-	padding-bottom: 56.25%;
-	position: relative;
-	height: 0;
-	margin: 1rem 0;
-`;
-
-const StyledIframe = styled.iframe`
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-`;
 
 export const YouTubeVideoContainer: React.FC<any> = ({ children }) => {
 	return (
-		<StyledVideoContainer>
-			<StyledIframe
+		<div className="relative h-0 my-4 pb-[56.25%] overflow-hidden">
+			<iframe
+				className="absolute top-0 left-0 w-full h-full"
 				src={children.props.src}
 				width="100%"
 				title="YouTube video player"
@@ -28,6 +12,6 @@ export const YouTubeVideoContainer: React.FC<any> = ({ children }) => {
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowFullScreen
 			/>
-		</StyledVideoContainer>
+		</div>
 	);
 };

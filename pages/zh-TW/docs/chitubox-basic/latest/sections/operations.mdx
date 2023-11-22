@@ -1,0 +1,163 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { ImageComparison } from "@/components/imageComparison/ImageComparison";
+import {
+	ChituboxOpenIcon,
+	ChituboxSaveIcon,
+	ChituboxScreenshotIcon,
+	ChituboxCopyIcon,
+	ChituboxAutoLayoutIcon,
+	ChituboxHollowIcon,
+	ChituboxDigHoleIcon,
+	ChituboxStandardPartsIcon,
+	ChituboxRmaIcon,
+	ChituboxRepairIcon,
+	ChituboxSignInIcon,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "操作",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/operations",
+	description:
+		"主視窗的頂部有各種操作選項。包括打開、儲存、截圖、複製、自動排版、鏤空、挖洞、修復、標準件、樹脂材料聯盟、消息提醒和登入。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 操作
+
+主視窗的頂部有各種操作選項。包括打開、儲存、截圖、複製、自動排版、鏤空、挖洞、修復、標準件、樹脂材料聯盟、消息提醒和登入。
+
+## 打開
+
+<ChituboxOpenIcon /> 「打開」選項允許您打開 3D 網格檔案、_.chitubox_
+專案檔案或切片檔案。
+
+## 儲存
+
+<ChituboxSaveIcon /> 「儲存」選項允許您將當前專案儲存為 _.chitubox_ 檔案或 3D
+網格檔案。
+
+## 複製
+
+<ChituboxCopyIcon /> 「複製」選項允許使用者快速製作多個 3D
+模型的副本，這在列印單一模型的多個副本時非常有用。
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/zh-TW/chitubox-basic/2.x.x/006-operations-copy.png"}
+	/>
+</ImageContainer>
+
+## 自動佈局
+
+<ChituboxAutoLayoutIcon /> 「自動佈局」選項允許使用者以多種方式快速地將 3D
+模型放置在列印平台上，包括在列印平台的中心、沿列印平台的 X 側和沿列印平台的 Y
+側附近佈局模型。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/006-operations-autolayout.png"
+		}
+	/>
+</ImageContainer>
+
+## 鏤空
+
+<ChituboxHollowIcon /> 鏤空選項有 3 種模式：「内鏤空」、「外鏤空」和「底部貫穿」。
+
+**内鏤空** 允許用戶創建具有空心內部的 3D 模型，同時保留模型的外形。鏤空選項可以幫助用戶在列印 3D 模型時節省時間和材料成本，因為空心內部只需要更少的材料來列印。該功能還可用於創建具有複雜外形的輕型模型。
+
+**外鏤空** 將從模型中剝離指定厚度的壁，就像將模型進行「收縮」一樣。
+
+**底部貫穿** 與「鏤空」非常相似，但會刪除室底。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/006-operations-hollow.png"
+		}
+	/>
+</ImageContainer>
+
+### 鏤空參數解釋
+
+-   **壁厚**：壁厚決定了牆的總厚度。
+-   **精度**：精度決定了內壁上根據設定百分比生成的面數。
+    <ImageContainer>
+    	<ImageComparison
+    		img1Src={
+    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-low-precision.png"
+    		}
+    		text1={"低精度"}
+    		img2Src={
+    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-high-precision.png"
+    		}
+    		text2={"高精度"}
+    	/>
+    </ImageContainer>
+-   **填充結構**：填充的類型。
+-   **填充密度**：填充的密度。
+-   **動畫**：啟用此選項將顯示鏤空過程。
+
+## 挖洞
+
+<ChituboxDigHoleIcon /> 「挖洞」功能允許用戶在幾個簡單的點擊中創建指定形狀或大小的3D
+模型中的孔。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/006-operations-dig-hole.png"
+		}
+	/>
+</ImageContainer>
+
+### 挖洞參數解釋
+
+-   **形狀**：孔的形狀，可選擇的形狀有圓形、六邊形和正方形。
+-   **直徑**：孔的直徑。
+-   **深度**：孔可以穿透的壁的最大厚度。
+
+    <Admonition type="note" title="注意">
+    	此功能旨在穿透模型的牆壁，因此它不會根據您設定的深度挖掘非穿透孔。
+    </Admonition>
+
+-   **垂直於**：垂直於屏幕或模型的挖掘角度。
+-   **保持塞子**：是否保留打孔塞子。
+
+## 修復
+
+<ChituboxRepairIcon /> 修復選項會嘗試修復損壞的模型。
+
+<Admonition type="warning" title="警告">
+	如果模型複雜或存在許多錯誤（例如倒置的法向、重疊的面等），修復功能可能無法正常運作。
+</Admonition>
+
+## 標準零件
+
+<ChituboxStandardPartsIcon /> 標準零件為用戶提供了一個預製的 3D
+模型庫，可以快速、輕鬆地將其導入到項目中，包括各種基本幾何、測試模型、工具模型、機械零件等。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/006-operations-standard-parts.png"
+		}
+	/>
+</ImageContainer>
+
+## 樹脂材料聯盟
+
+<ChituboxRmaIcon />
+
+## 訊息通知
+
+## 登錄
+
+<ChituboxSignInIcon /> 登錄選項允許使用者登入到他們的 CHITUBOX
+帳戶。登入後，用戶可以從雲端訪問他們的設定。
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

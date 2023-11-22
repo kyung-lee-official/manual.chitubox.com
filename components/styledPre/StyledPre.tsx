@@ -1,37 +1,20 @@
-import React from "react";
-import styled from "styled-components";
-import Highlight, { defaultProps } from "prism-react-renderer";
-import theme from "prism-react-renderer/themes/nightOwl";
+import React, { useEffect, useState } from "react";
+import { Highlight, themes } from "prism-react-renderer";
 import { useMediaQuery } from "react-responsive";
 
-const Pre = styled.pre.attrs((props: { maxWidth: string }) => props)`
-	margin: 1.5rem 0rem;
-	padding: 0.7em;
-	text-align: left;
-	font-size: 1rem;
-	overflow: auto;
-	border-radius: 0.5rem;
-	max-width: ${(props) => props.maxWidth};
-	&::-webkit-scrollbar {
-		height: 6px;
-		border-radius: 3px;
-		background-color: ${(props) => props.theme.sidebarScrollbar};
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 3px;
-		background-color: ${(props) => props.theme.sidebarScrollbarThumb};
-	}
-	&::-webkit-scrollbar-thumb {
-		&:hover {
-			border-radius: 3px;
-			background-color: ${(props) => props.theme.sidebarScrollbarHover};
-		}
-	}
-`;
+const Pre = (props: any) => {
+	const { children, ...rest } = props;
+	return (
+		<pre {...rest} className={`p-3 my-6 overflow-auto round-sm scrollbar`}>
+			{children}
+		</pre>
+	);
+};
 
-const Line = styled.div`
-	display: table-row;
-`;
+const Line = (props: any) => {
+	const { children } = props;
+	return <div className="table-row">{children}</div>;
+};
 
 // const LineNo = styled.span`
 // 	display: table-cell;
@@ -41,22 +24,24 @@ const Line = styled.div`
 // 	opacity: 0.5;
 // `;
 
-const LineContent = styled.span`
-	display: table-cell;
-`;
+const LineContent = (props: any) => {
+	const { children } = props;
+	return <span className="table-cell">{children}</span>;
+};
 
-export const StyledPre: React.FC<any> = (props) => {
-	const isDesktopOrLaptop = useMediaQuery({
-		query: "(min-width: 1224px)",
-	});
+const StyledPre: React.FC<any> = (props) => {
+	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
+	useEffect(() => {
+		setIsDesktop(isDesktopOrLaptop);
+	}, [isDesktopOrLaptop]);
 
 	const className = props.children.props.className;
 	// This will trim off the "language-" prefix.
 	const language = className.replace(/language-/, "");
 	return (
 		<Highlight
-			{...defaultProps}
-			theme={theme}
+			theme={themes.shadesOfPurple}
 			code={props.children.props.children.trim()}
 			language={language}
 		>
@@ -70,7 +55,7 @@ export const StyledPre: React.FC<any> = (props) => {
 				<Pre
 					className={className}
 					style={style}
-					maxWidth={isDesktopOrLaptop ? "45vw" : "80vw"}
+					maxWidth={isDesktop ? "45vw" : "80vw"}
 				>
 					{tokens.map((line: any, i: number) => (
 						<Line key={i} {...getLineProps({ line, key: i })}>
@@ -90,3 +75,5 @@ export const StyledPre: React.FC<any> = (props) => {
 		</Highlight>
 	);
 };
+
+export default StyledPre;

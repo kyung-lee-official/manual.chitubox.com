@@ -12,7 +12,7 @@ Then run dev script to start the development server:
 npm run dev
 ```
 
-# Conventions
+# Conventions and Pitfalls
 
 ## LaTeX
 
@@ -99,7 +99,7 @@ Workaround ✅:
 ```md
 -   1st level works fine
 
-    -   <SpanText>Wrap the 2nd level list items with a `SpanText` component can fix  the problme.</SpanText>
+    -   <SpanText>Wrap the 2nd level list items with a `SpanText` component can fix the problme.</SpanText>
 ```
 
 ## Indention
@@ -129,3 +129,29 @@ Do this ✅:
 
 ## 2.1 Heading Two-Dot-One
 ```
+
+## ul, ol and li
+
+Don't insert new lines between `<li>`s, which will add `<p>` tags to the `<li>`s and cause unexpected UI problems.
+
+Don't do this ❌:
+
+```md
+-   qwer
+
+-   asdf
+
+-   zxcv
+```
+
+Do this ✅:
+
+```md
+-   qwer
+-   asdf
+-   zxcv
+```
+
+## Todos
+
+-   [ ] Add description to **Slice File Naming**

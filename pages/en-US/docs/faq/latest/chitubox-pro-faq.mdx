@@ -1,8 +1,9 @@
-import { DocsLayout } from "@/components/docsLayout";
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
 
 export const meta = {
 	title: "CHITUBOX Pro FAQ",
 	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-pro-faq",
 };
 
 # CHITUBOX Pro FAQ
@@ -71,7 +72,7 @@ If your Windows Explorer keep reastart repeatedly, please follow these steps to 
 
 Invoke your Task Manager by pressing Ctrl + Shift + Esc, right-click Windows Explorer, then click End Task (not Restart).
 
-<StyledAntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq002.png"} />
+<AntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq002.png"} />
 
 In your Task Manager, click File > Run new task, input `cmd`, check **Create this task with administrative privileges**, then click **OK**.
 
@@ -95,19 +96,19 @@ Hit Enter to run it.
 
 ### Conflict with Fusion 360 or Failed to create OpenGL context for format QSurfaceFormat
 
-<StyledAntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq001.png"} />
+<AntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq001.png"} />
 
 Please open System Settings> About> Advanced System Settings and remove the environment variable `QT_OPENGL`.
 
 ### This application failed to start because no Qt platform plugin could be initialized
 
-<StyledAntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq006.png"} />
+<AntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq006.png"} />
 
 Please open System Settings> About> Advanced System Settings and remove the two environment variables `QT_OPENGL` and `QT_PLUGIN_PATH`.
 
 ### CHITUBOX Pro is Not Responding
 
-<StyledAntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq008.png"} />
+<AntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq008.png"} />
 
 Most likely it is a software conflict issue, please quit your runtime software one by one to track down which software conflicts with CHITUBOX. After this is done, the problem should be solved for most cases.
 The following software may cause the conflict:
@@ -134,7 +135,7 @@ Download Longer plugin <SpanA href="https://drive.google.com/drive/u/0/folders/1
 
 ### Thumbnail Abnormal
 
-<StyledAntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq004.png"} />
+<AntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq004.png"} />
 
 Hold Ctrl + Shift + Esc to open the Task Manager, click File > Run new task, input `cmd`, check **Create this task with administrative privileges**, then click **OK**.
 
@@ -152,7 +153,7 @@ regsvr32 /u "C:\Program Files\CHITUBOXPro V1.0.1\CHITUBOX_Thumbnail.dll"
 
 Hit Enter to run it.
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq004-1.png"}
 />
 
@@ -164,7 +165,7 @@ regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 
 Hit Enter to run it.
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq004-2.png"}
 />
 
@@ -172,19 +173,19 @@ Hit Enter to run it.
 
 Find your system disk (usually C drive), right-click to select properties, and click "Disk Cleanup".
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq004-3.png"}
 />
 
 Check "Thumbnails", then click "Clean up system files", and then click "OK".
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq004-4.png"}
 />
 
 Select "Delete Files".
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq004-5.png"}
 />
 
@@ -198,7 +199,7 @@ After slicing the model, you may think that the quality of the image is rough, b
 
 As shown in the figure, the height of each cube is the layer height set in the slice setting. The length is the length of each pixel in the horizontal direction on the screen. The width is the width of each pixel in the vertical direction on the screen. Length, width, and height constitute the volume of the voxel. A voxel is the smallest unit that constitutes a print.
 
-<StyledAntdImage
+<AntdImage
 	src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq005.png"}
 	style={{ maxwidth: "400px" }}
 />
@@ -224,7 +225,7 @@ For some reason, you might encounter other issues caused by data corruption betw
 
 1. Make sure you already closed CHITUBOX Pro, back up the 📂*machine* folder to another location, then delete all files and folders except 📄*userLogin.cfg* file.
 
-	<StyledAntdImage
+	<AntdImage
 		src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq003.png"}
 	/>
 
@@ -244,27 +245,27 @@ You might found that your printer can't read your USB drive properly sometimes. 
 
 -   Allocation unit size = 2048 bytes
 
-	<StyledAntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq009.png"} />
+	<AntdImage src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq009.png"} />
 
 ## How to Join Our Affiliate
 
 1. Log in your account on www.chitubox.com.
 
-	<StyledAntdImage
+	<AntdImage
 		src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq007-1.png"}
 		style={{ maxwidth: "700px" }}
 	/>
 
 1. Edit your channel information and apply to be an affiliate.
 
-	<StyledAntdImage
+	<AntdImage
 		src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq007-2.png"}
 		style={{ maxwidth: "700px" }}
 	/>
 
 1. You can check more details on your affiliate center when we approval.
 
-	<StyledAntdImage
+	<AntdImage
 		src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq007-3.png"}
 		style={{ maxwidth: "700px" }}
 	/>
@@ -272,14 +273,14 @@ You might found that your printer can't read your USB drive properly sometimes. 
 1. You can input the landing page link here to generate your customized link.
 
 	<ImageContainer>
-		<StyledAntdImage
+		<AntdImage
 			src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq007-4.png"}
 			style={{ maxwidth: "700px" }}
 		/>
 	</ImageContainer>
 
 	<ImageContainer>
-		<StyledAntdImage
+		<AntdImage
 			src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq007-5.png"}
 			style={{ maxwidth: "700px" }}
 		/>

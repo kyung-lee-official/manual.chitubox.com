@@ -1,8 +1,11 @@
-import { DocsLayout } from "@/components/docsLayout";
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
 
 export const meta = {
 	title: "设置支撑参数",
 	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-pro/v1.3.0/configure-support-parameters",
+	description: "在 CHITUBOX Pro 中设置支撑参数。",
+	ogImage: "/images/docs/og_logo.png",
 };
 
 # 设置支撑参数
@@ -23,39 +26,39 @@ export const meta = {
 	/>
 	<p>
 		这是支撑配置面板，你可以在这里添加{" "}
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support005.png"
 			}
 		/>{" "}
 		，删除
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support006.png"
 			}
-		/> ，重置 <StyledAntdImage
+		/> ，重置 <AntdImage
 			src={
 				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support007.png"
 			}
 		/> ，导入
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support008.png"
 			}
 		/>{" "}
 		，导出
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support009.png"
 			}
 		/> ，全部导出
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support010.png"
 			}
 		/>{" "}
 		，保存
-		<StyledAntdImage
+		<AntdImage
 			src={
 				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support010.1.png"
 			}
@@ -64,7 +67,7 @@ export const meta = {
 	<p>
 		<b>模型抬升高度</b>：模型最低点与平台之间的高度距离。
 	</p>
-	<StyledAntdImage
+	<AntdImage
 		src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/009-z-lift-height.gif"}
 		style={{ maxWidth: 200 }}
 	/>
@@ -78,7 +81,7 @@ export const meta = {
 	<br />
 	**可视化编辑面板**
 	提供了更佳的用户体验，在这里你可以直接在图形上修改支撑参数。你也可以通过点击支撑设置面板的{" "}
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support014.png"
 		}
@@ -91,7 +94,7 @@ export const meta = {
 <div style={{ display: "flex", width: "100%" }}>
 	<div style={{ flex: "1" }}></div>
 	<div style={{ display: "flex", flexDirection: "column" }}>
-		<StyledAntdImage
+		<AntdImage
 			style={{ flex: "6" }}
 			src={
 				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support013.png"
@@ -109,7 +112,7 @@ export const meta = {
 	</div>
 	<div style={{ flex: "0.2" }}></div>
 	<div style={{ display: "flex", flexDirection: "column" }}>
-		<StyledAntdImage
+		<AntdImage
 			style={{ flex: "6" }}
 			src={
 				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support013.1.png"
@@ -130,7 +133,7 @@ export const meta = {
 
 ### 顶部
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.top.png"
 	}
@@ -148,7 +151,7 @@ export const meta = {
 
 ### 中部
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.mid.png"
 	}
@@ -167,7 +170,7 @@ export const meta = {
 
 ### 底部
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.bot.png"
 	}
@@ -185,7 +188,7 @@ export const meta = {
 
 ### 底筏
 
-<StyledAntdImage
+<AntdImage
 	src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.raf.png"
 	}
@@ -208,7 +211,7 @@ export const meta = {
 </p>
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={
 			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support017.png"
 		}
@@ -237,7 +240,7 @@ export const meta = {
 			<td>交叉结构的直径</td>
 			<td>
 				交叉结构的直径。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-cross-structure-diameter.gif"
 					}
@@ -251,7 +254,7 @@ export const meta = {
 			<td>小柱子最大长度</td>
 			<td>
 				手动/自动添加支撑两端都落于模型上的支撑时，当两端距离不超过小柱子最大长度时，主干支撑会以小柱子的支撑类型添加对应支撑。当两端距离大于小柱子最大长度时，主干支撑会以中部支撑对应的的上端直径尺寸进行支撑的添加。{" "}
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-maximum-small-pillar-length.gif"
 					}
@@ -265,7 +268,7 @@ export const meta = {
 			<td>支撑底部凸台高度</td>
 			<td>
 				支撑底部凸台的高度尺寸。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-height-of-boss-supporting-bottom.gif"
 					}
@@ -279,7 +282,7 @@ export const meta = {
 			<td>支撑底部凸台直径</td>
 			<td>
 				支撑底部凸台的直径尺寸。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-diameter-of-the-boss-at-the-bottom-of-the-support.gif"
 					}
@@ -294,7 +297,7 @@ export const meta = {
 			<td>启用交叉结构</td>
 			<td>
 				启用/关闭主干支撑之间的交叉结构。 <br />
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-automatic-manual-support-settings.gif"
 					}
@@ -308,7 +311,7 @@ export const meta = {
 			<td>交叉生成起始高度 (相对平台)</td>
 			<td>
 				设定生成交叉结构支撑的最低起始高度值，当支撑顶部接触点相对于平台的距离值大于该设定值时，才会与相邻的支撑之间形成交叉支撑。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-cross-start-height.gif"
 					}
@@ -322,7 +325,7 @@ export const meta = {
 			<td>交叉结构的最小间距 (Z)</td>
 			<td>
 				竖直 Z 方向上相邻交叉结构的最小间距。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-minimum-spacing-of-cross-structure-z.gif"
 					}
@@ -336,7 +339,7 @@ export const meta = {
 			<td>交叉结构的最大间距 (XY)</td>
 			<td>
 				相邻支撑允许自动生成交叉结构时在 XY 水平面上的最大距离值。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-maximum-spacing-of-cross-structure-xy.gif"
 					}
@@ -350,7 +353,7 @@ export const meta = {
 			<td>腔体内生成支撑</td>
 			<td>
 				启用/关闭封闭腔体内生成支撑。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enable-support-in-shell.gif"
 					}
@@ -364,7 +367,7 @@ export const meta = {
 			<td>模型与支撑主干的最小间距</td>
 			<td>
 				支撑主干落于平台时，支撑主干在 XY 水平面与模型的最小允许距离。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-spacing-from-model.gif"
 					}
@@ -378,7 +381,7 @@ export const meta = {
 			<td>支撑主干与触点间最大水平偏移量</td>
 			<td>
 				落于打印平台的支撑，支撑主干与模型触点在XY水平面的最大允许水平偏移量。自动/手动添加支撑时当落于平台的支撑满足该偏移设定值时，会生成落于打印平台的支撑，当不满足时则不会生成落于打印平台的支撑。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-max-offset-from-contact.gif"
 					}
@@ -392,7 +395,7 @@ export const meta = {
 			<td>中部支撑下端直径起始生效高度</td>
 			<td>
 				中部支撑下端直径参数值生效的参数设定，只有当支撑高度值大于该设定值时，下端直径值才会生效。当下端直径设定值不生效时，下端直径尺寸会按照上端直径的设定值执行。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-starting-effective-height-of-lower-end-diameter-of-middle-support.gif"
 					}
@@ -406,7 +409,7 @@ export const meta = {
 			<td>增强自动支撑</td>
 			<td>
 				启用/关闭增强自动支撑。共有三种增强模式：独立强化（IR）、<NextLink href="#增强自动支撑">三角强化（TR）</NextLink>和 <NextLink href="#增强自动支撑">全局强化（GR）</NextLink>。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support.gif"
 					}
@@ -420,7 +423,7 @@ export const meta = {
 			<td>小柱子自动吸附</td>
 			<td>
 				启用/关闭小柱子自动吸附功能。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-small-column-automatically-absorbs.gif"
 					}
@@ -435,7 +438,7 @@ export const meta = {
 			<td>预览支撑 (添加支撑)</td>
 			<td>
 				启用/关闭手动添加支撑时的预览。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-preview-mode-setting.gif"
 					}
@@ -450,7 +453,7 @@ export const meta = {
 			<td>
 				在支撑模式下，当视角向模型向上看到一定角度时，中间和底部支撑将自动隐藏，设置
 				0 以禁止隐藏。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-hidden-angle-0-90.gif"
 					}
@@ -464,7 +467,7 @@ export const meta = {
 			<td>显示支撑点标注线</td>
 			<td>
 				显示/隐藏支撑辅助线，即自动添加支持时的触点位置。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-display-support-auxiliary-line-surface-contact-diameter.gif"
 					}
@@ -478,7 +481,7 @@ export const meta = {
 			<td>选中的模型自动 (视角) 居中</td>
 			<td>
 				在支撑模式下，所选模型将自动放置在透视的中心。
-				<StyledAntdImage
+				<AntdImage
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-select-the-model-to-center.gif"
 					}
@@ -524,7 +527,7 @@ export const meta = {
 </p>
 
 <ImageContainer>
-	<StyledAntdImage
+	<AntdImage
 		src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/020angle.gif"}
 		style={{ maxWidth: 200 }}
 	/>

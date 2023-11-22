@@ -1,0 +1,63 @@
+{
+	"title": {
+		"docLayoutTitle": "CHITUBOX - 文檔"
+	},
+	"header": {
+		"title": "CHITUBOX 文檔",
+		"placeholder": "占位",
+		"about": "關於",
+		"languages": "語言",
+		"searchResult": "項結果"
+	},
+	"docContent": {
+		"onThisPage": "本頁目錄",
+		"notLatest": "您正在閱讀的不是最新版本的文檔。"
+	},
+	"footer": {
+		"relevantDocs": "相關文檔",
+		"chituboxDocs": "CHITUBOX 文檔",
+		"chituboxDocsLink": "https://manual.chitubox.com/zh-tw/",
+		"chituboxBasicDoc": "CHITUBOX Basic",
+		"chituboxProDoc": "CHITUBOX Pro",
+		"faqDoc": "常見問題",
+		"community": "社群",
+		"facebook": "Facebook",
+		"facebookLink": "https://www.facebook.com/chitubox/",
+		"twitter": "Twitter",
+		"twitterLink": "https://twitter.com/chitubox",
+		"instagram": "Instagram",
+		"instagramLink": "https://www.instagram.com/chitubox_official/",
+		"youtube": "YouTube",
+		"youtubeLink": "https://www.youtube.com/channel/UCD4m1SdLs_VokY2133ZqUgQ",
+		"Discord": "Discord",
+		"DiscordLink": "https://discord.com/invite/E45UFqGPZh",
+		"more": "更多",
+		"chituboxSite": "CHITUBOX 官網",
+		"chituboxSiteLink": "https://www.chitubox.com/",
+		"supportEmail": "技術支援電郵",
+		"supportEmailLink": "mailto://support@chitubox.com",
+		"copyright": "版權所有 ©",
+		"companyName": "深圳市創必得科技有限公司"
+	},
+	"error": {
+		"pageNotFound": "找不到該頁面 😢",
+		"message1": "",
+		"message2": " 秒後將跳轉回首頁..."
+	},
+	"docComponents": {
+		"tsmc": {
+			"bld": "底層抬升距離",
+			"ld": "抬升距離",
+			"brd": "底層回程距離",
+			"rd": "回程距離",
+			"bls": "底層抬升速度",
+			"ls": "抬升速度",
+			"brs": "底層回程速度",
+			"rs": "回程速度"
+		},
+		"isPageUseful": {
+			"question": "本頁面是否有用？",
+			"thanks": "感謝您的反饋！"
+		}
+	}
+}
