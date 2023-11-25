@@ -277,6 +277,34 @@ const settingData = {
 		retractS: "回程速度",
 		expectedWT: "期待等待时间",
 	},
+	zh_tw: {
+		settings: "設定",
+		default: "Default",
+		profile: "Profile",
+		machine: "機器",
+		resin: "樹脂",
+		print: "列印",
+		gcode: "Gcode",
+		advanced: "進階",
+		layerH: "層高度",
+		bottomLC: "底層數",
+		exposureT: "曝光時間",
+		bottomET: "底層曝光時間",
+		transitionLC: "過度層數",
+		transitionT: "過渡類型",
+		waitingM: "列印過程等待模式",
+		lightoffD: "燈滅延遲",
+		bottomLoD: "底層燈滅延遲",
+		bottomLD: "底層抬升距離",
+		liftingD: "抬升距離",
+		bottomRD: "底層回程距離",
+		retractD: "回程距離",
+		bottomLS: "底層抬升速度",
+		liftingS: "抬升速度",
+		bottomRS: "底層回程速度",
+		retractS: "回程速度",
+		expectedWT: "期待等待時間",
+	},
 };
 
 type State = {
@@ -374,6 +402,9 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 			break;
 		case "zh":
 			langTable = settingData.zh;
+			break;
+		case "zh_tw":
+			langTable = settingData.zh_tw;
 			break;
 		default:
 			langTable = settingData.en;
@@ -494,7 +525,7 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 						subStageB1Time +
 						subStageA2Time +
 						subStageB2Time) *
-						60 +
+					60 +
 					state.expectedWaitTime
 				).toFixed(2)
 			),
