@@ -10,14 +10,14 @@ export const ImageComparison: React.FC<any> = ({
 	return (
 		<div className="w-full max-w-[1000px]">
 			<div className="flex gap-4">
-				<div className="flex-1">
+				<div className="flex-1 flex justify-center">
 					<Image
 						src={img1Src}
 						alt={text1}
 						className="m-auto rounded-lg"
 					/>
 				</div>
-				<div className="flex-1">
+				<div className="flex-1 flex justify-center">
 					<Image
 						src={img2Src}
 						alt={text2}
