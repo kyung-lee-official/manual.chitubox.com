@@ -43,7 +43,10 @@ const SpanText: React.FC<any> = (props) => {
 const SpanA: React.FC<any> = (props) => {
 	const { children, href } = props;
 	return (
-		<a href={href} className="text-blue-500 dark:text-sky-400 font-medium">
+		<a
+			href={href}
+			target="_blank"
+			className="text-blue-500 dark:text-sky-400 font-medium">
 			{children}
 		</a>
 	);

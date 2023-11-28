@@ -294,7 +294,7 @@ const zh_twItems = [
 					</tr>
 					<tr>
 						<td>操作系統</td>
-						<td>Windows 7 (64-bit)</td>
+						<td>Windows 8 (64-bit)</td>
 						<td>Windows 10 或 Windows 11</td>
 					</tr>
 					<tr>
