@@ -88,8 +88,8 @@ const enItems = [
 					</tr>
 					<tr>
 						<td>OS</td>
-						<td>macOS Catalina (version 10.15)</td>
-						<td>macOS Big Sur (version 11.6) or above</td>
+						<td>macOS Big Sur (version 11.7)</td>
+						<td>macOS Sonoma (version 14.1) or above</td>
 					</tr>
 				</tbody>
 			</ResponsiveTable>
@@ -217,8 +217,8 @@ const zhItems = [
 					</tr>
 					<tr>
 						<td>操作系统</td>
-						<td>macOS Catalina (10.15 版本)</td>
-						<td>macOS Big Sur (11.6 版本) 或以上</td>
+						<td>macOS Big Sur (11.7 版本)</td>
+						<td>macOS Sonoma (14.1 版本) 或以上</td>
 					</tr>
 				</tbody>
 			</ResponsiveTable>
@@ -346,8 +346,8 @@ const zh_twItems = [
 					</tr>
 					<tr>
 						<td>操作系統</td>
-						<td>macOS Catalina (10.15 版本)</td>
-						<td>macOS Big Sur (11.6 版本) 或以上</td>
+						<td>macOS Big Sur (11.7 版本)</td>
+						<td>macOS Sonoma (14.1 版本) 或以上</td>
 					</tr>
 				</tbody>
 			</ResponsiveTable>
