@@ -12,7 +12,7 @@ import {
 export const meta = {
 	title: "設定支撐參數",
 	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitubox-basic/v2.0.0/configure-support-parameters",
+	pageId: "/zh-TW/chitubox-basic/v2.0.0/configure-support-parameters",
 	description: "在 CHITUBOX 中設定支撐參數。",
 	ogImage: "/images/docs/og_logo.png",
 };
@@ -23,7 +23,7 @@ export const meta = {
 
 ## Z 擡升高度
 
-模型最低點與打印平台之間的高度距離。默認值為 5 mm。
+模型最低點與列印平台之間的高度距離。默認值為 5 mm。
 
 ## 支撐設定
 
@@ -123,6 +123,15 @@ CHBITUBOX 提供了三種預設的支撐設定：細、中、粗。如果這些�
 ## 進階設定
 
 高級設定分爲 4 个部分：**頂部**、**中部**、**底部**和**底筏**。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/010-configure-support-parameters-advanced-panel.png"
+		}
+		width={250}
+	/>
+</ImageContainer>
 
 ### 頂部
 
@@ -461,66 +470,33 @@ CHBITUBOX 提供了三種預設的支撐設定：細、中、粗。如果這些�
 
 -   主要部分
 
+<Admonition title="注意">
+	以下選項適用於在模型上生成的支撐的底部，而不是生成在平台上的支撐。也就是說，支撐的兩端都應該與模型接觸。它們在「編輯」模式下不可用，您需要切換到「添加」模式才能使用它們。
+</Admonition>
+
 <ResponsiveTable>
 	<thead>
 		<tr>
 			<th>參數</th>
 			<th>描述</th>
-			<th className="w-[350px]">示例</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>支撐底部形狀</td>
 			<td>支撐底部的形狀。</td>
-			<td>
-				<ImageContainer className={"max-w-sm"}>
-					<AntdImage
-						src={
-							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-bottom-shape.gif"
-						}
-					/>
-				</ImageContainer>
-			</td>
 		</tr>
 		<tr>
 			<td>支撐底部直徑</td>
 			<td>支撐底部的直徑。</td>
-			<td>
-				<ImageContainer className={"max-w-sm"}>
-					<AntdImage
-						src={
-							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-bottom-diameter.gif"
-						}
-					/>
-				</ImageContainer>
-			</td>
 		</tr>
 		<tr>
 			<td>支撐底部深度</td>
 			<td>支撐底部的深度。</td>
-			<td>
-				<ImageContainer className={"max-w-sm"}>
-					<AntdImage
-						src={
-							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-bottom-depth.gif"
-						}
-					/>
-				</ImageContainer>
-			</td>
 		</tr>
 		<tr>
 			<td>支撐底部點数</td>
 			<td>支撐底部的點数。</td>
-			<td>
-				<ImageContainer className={"max-w-sm"}>
-					<AntdImage
-						src={
-							"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-bottom-point.gif"
-						}
-					/>
-				</ImageContainer>
-			</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
@@ -612,11 +588,38 @@ CHBITUBOX 提供了三種預設的支撐設定：細、中、粗。如果這些�
 
 ## 操作模式
 
-有三種操作模式：**添加**、**刪除** 和 **編輯**。
+有三種操作模式：**添加**、**刪除** 和 **編輯**，快捷鍵分別是 **A**、**D** 和 **E**。三種模式均支援多選，您可以按住 Ctrl 鍵後點擊滑鼠左鍵並拖曳來選擇操作區域。
 
 ### 添加
 
 <ChituboxAddSupportIcon /> 點击模型添加支撐。
+
+新增支撐有**常規模式**和**直連模式**兩種，預設為常規模式。
+
+直連模式允許您在模型和支撐主幹之間新增支撐。其規則如下：
+
+-   如果您先點擊模型，您可以選擇將支撐另一端固定在模型上，或現有支撐的主幹上。
+-   如果您先點擊支撐，您可以選擇將支撐另一端固定在現有支撐的主幹上。
+
+如果您需要切換到直連模式，您需要先彈出支撐模式面板，
+
+<ImageContainer className={"max-w-sm"}>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/010-configure-support-parameters-mode-panel.png"
+		}
+	/>
+</ImageContainer>
+
+然後選擇直連模式。
+
+<ImageContainer className={"max-w-sm"}>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/010-configure-support-parameters-mode-panel-connection.png"
+		}
+	/>
+</ImageContainer>
 
 ### 刪除
 
@@ -627,6 +630,8 @@ Delete 鍵刪除支撐。
 
 <ChituboxEditSupportIcon /> 點擊選擇想要編輯的支撐，所選支撐將變為綠色，按住
 Ctrl 鍵可以選擇多個支撐，可以調整選中支撐的參數，也可以拖動支撐調整支撐位置。
+
+編輯模式下，您可以雙擊支撐頂部的節點來新增節點支撐（按 Esc 鍵退出節點支撐）。
 
 ## 清除全部
 

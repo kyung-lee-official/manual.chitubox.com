@@ -59,8 +59,8 @@
 			]
 		},
 		{
-			"versionCode": "v1.9.4",
-			"versionNumber": "1.9.4",
+			"versionCode": "v1.9.5",
+			"versionNumber": "1.9.5",
 			"pagesContext": [
 				{
 					"item": "introduction",
@@ -84,15 +84,15 @@
 						},
 						{
 							"item": "update-printer-firmware",
-							"label": "更新打印機固件"
+							"label": "更新列印機韌體"
 						},
 						{
 							"item": "configure-print-parameters",
-							"label": "設置打印參數"
+							"label": "設定列印參數"
 						},
 						{
 							"item": "configure-support-parameters",
-							"label": "設置支撐參數"
+							"label": "設定支撐參數"
 						}
 					]
 				},

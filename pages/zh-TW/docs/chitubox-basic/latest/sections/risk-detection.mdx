@@ -9,7 +9,7 @@ import {
 export const meta = {
 	title: "風險檢測",
 	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitubox-basic/v2.0.0/risk-detection",
+	pageId: "/zh-TW/chitubox-basic/v2.0.0/risk-detection",
 	description:
 		"一些可以在 CHITUBOX 中使用的風險檢測功能，包括空腔檢測、碰撞檢測、懸空檢測和孤島檢測。",
 	ogImage: "/images/docs/og_logo.png",
@@ -69,11 +69,17 @@ export const meta = {
 	/>
 </ImageContainer>
 
-懸空檢測功能可以幫助用戶識別 3D 列印模型中任何未加支撐的高風險區域，並且用戶可以向模型添加支撐以避免列印失敗。
-
-它提供三種精度級別：低、中和高。精度級別越高，檢測結果越準確，但檢測時間越長。通過點擊“刷新”按鈕 <ChituboxRefreshIcon />，您可以刷新檢測結果。
+它提供了三種精度級別：低、中和高。精度級別越高，檢測結果越準確，但檢測時間越長。通過點擊“刷新”按鈕 <ChituboxRefreshIcon />，您可以刷新檢測結果。
 
 點擊“懸空區域”面板中的箭頭會自動將模型中的相應區域放大。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/008-suspend-cam-switching.gif"
+		}
+	/>
+</ImageContainer>
 
 ## 孤島檢測
 
@@ -91,7 +97,17 @@ export const meta = {
 
 <ChituboxIslandsDetectionIcon /> 檢測孤島將檢測模型中的孤島，並在預覽窗口中以紅色突出顯示已檢測到的孤島。
 
-<ChituboxDeleteIslandsIcon /> 刪除孤島將刪除已檢測到的孤島。通常，您不希望直接使用此功能，而是應該返回並為已檢測到的孤島添加支撐。僅當檢測到的孤島僅存在於少數連續的幾個圖層中，並且您想要刪除它們時才使用此功能。
+<ChituboxDeleteIslandsIcon /> 刪除所有孤島將刪除全部已偵測到的孤島。通常，您不希望直接使用此功能，而是希望返回並為已偵測到的孤島添加支撐。
+
+如果您想刪除某一層的孤島，您可以點擊主視窗右側的 **刪除孤島** 按鈕。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/008-risk-detection-delete-islands.png"
+		}
+	/>
+</ImageContainer>
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

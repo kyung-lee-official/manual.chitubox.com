@@ -4,7 +4,7 @@
 	"versionedContexts": [
 		{
 			"versionCode": "latest",
-			"versionNumber": "1.3.0",
+			"versionNumber": "1.4.0",
 			"pagesContext": [
 				{
 					"item": "introduction",
@@ -32,11 +32,11 @@
 						},
 						{
 							"item": "update-printer-firmware",
-							"label": "更新打印機固件"
+							"label": "更新列印機韌體"
 						},
 						{
 							"item": "configure-print-parameters",
-							"label": "設置打印參數"
+							"label": "設定列印參數"
 						},
 						{
 							"item": "configure-support-parameters",
@@ -75,6 +75,10 @@
 						{
 							"item": "setting-and-help",
 							"label": "設置/幫助"
+						},
+						{
+							"item": "slice",
+							"label": "切片"
 						},
 						{
 							"item": "slice-preview",
