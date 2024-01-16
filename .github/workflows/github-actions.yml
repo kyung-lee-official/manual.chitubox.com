@@ -27,6 +27,8 @@ jobs:
                   cache: "pnpm"
             - name: Install dependencies
               run: pnpm install
+            - name: Preload
+              run: pnpm preload
             - name: Build
               run: pnpm build:export
             - name: Compress build
