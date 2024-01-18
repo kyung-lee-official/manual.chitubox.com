@@ -3,6 +3,9 @@ import { DocsLayout } from "@/components/docsLayout/DocsLayout";
 export const meta = {
 	title: "切片",
 	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-pro/v1.4.0/slice-preview",
+	description: "CHITUBOX Pro 中两种不同的切片模式：单参数切片和多参数切片。",
+	ogImage: "/images/docs/og_logo.png",
 };
 
 # 切片
@@ -13,21 +16,22 @@ export const meta = {
 
 选择 **单参数切片** 或 **多参数切片**，点击切片按钮进入切片预览界面。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview001.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview001.png"
+		}
+	/>
+</ImageContainer>
 
-<br />
-<br />
-
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview002.png"
-	}
-	style={{ width: "100%", maxWidth: 895 }}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview002.png"
+		}
+		style={{ width: "100%", maxWidth: 895 }}
+	/>
+</ImageContainer>
 
 <Admonition type="note" title="注意">
 	树脂体积的计算方法是将 体素（像素面积 × 层高）相加，算法非常简单。
@@ -50,77 +54,90 @@ export const meta = {
 
 不同的模型对象使用不同的打印参数。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.png"
+		}
+	/>
+</ImageContainer>
 
 1. 未指定 Profile 的模型会按照**默认参数配置文件**指定的 Profile 执行。
 
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.1.png"
-    	}
-    />
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.1.png"
+		}
+	/>
+</ImageContainer>
 
 1. 在同一打印机作业环境下修改相同名称的 Profile 文件，其余位置的同一名称的 Profile 文件会同步进行更新。
 
 1. 在编辑差异参数时，不可编辑项（`*` 标识项）及其它未显示打印参数相关项均会按照默认的 Profile 执行。
 
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.png"
-    	}
-    />
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.png"
+		}
+	/>
+</ImageContainer>
 
 #### 2. 高度
 
 不同的高度层使用不同的打印参数。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.png"
-	}
-	style={{ width: "100%", maxWidth: 895 }}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.png"
+		}
+		style={{ width: "100%", maxWidth: 895 }}
+	/>
+</ImageContainer>
 
 1. 未指定 Profile 的高度区间会按照指定的**默认 Profile** 执行。
 
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.1.png"
-    	}
-    />
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.1.png"
+		}
+	/>
+</ImageContainer>
 
 1. 底层和过渡层打印栏的相关参数按照按照**默认 Profile** 执行。
 
 1. 在编辑差异参数时，不可编辑项（`*`标识项）及其它未显示打印参数相关项均会按照默认的 Profile 执行。
 
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.2.png"
-    	}
-    />
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.2.png"
+		}
+	/>
+</ImageContainer>
 
-    <br />
-    <br />
-
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.3.png"
-    	}
-    />
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.3.png"
+		}
+	/>
+</ImageContainer>
 
 #### 3. 横截面面积
 
 不同的横截面面积使用不同的打印参数。此处的百分比指的是横截面相对于平台的总有效面积的百分比。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview018.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview018.png"
+		}
+	/>
+</ImageContainer>
 
 1. 未指定 Profile 的截面区间会按照指定的**默认 Profile** 执行。
 
@@ -128,31 +145,33 @@ export const meta = {
 
 1. 在编辑差异参数时，不可编辑项（`*`标识项）及其它未显示打印参数相关项均会按照默认的 Profile 执行。
 
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview019.png"
-    	}
-    />
-    <br />
-    <br />
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview019.png"
+		}
+	/>
+</ImageContainer>
 
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview020.png"
-    	}
-    />
-    <br />
-    <br />
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview020.png"
+		}
+	/>
+</ImageContainer>
 
 1. 在 **横截面面积** 模式下，使用不同的横截面来区分区间，因此，一个 Profile 是有可能被应用于多个区间的，如下图所示:
-    <img
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview018.1.svg"
-    	}
-    	style={{ maxWidth: 800 }}
-    />
-    <br />
-    <br />
+
+    <ImageContainer>
+    	<AntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview018.1.svg"
+    		}
+    		style={{ maxWidth: "70%" }}
+    	/>
+    </ImageContainer>
+
 <b>底层</b> 和 <b>过渡层</b> 仅在最底下的区间生效。
 
 export default ({ children }) => (

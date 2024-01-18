@@ -4,8 +4,7 @@ export const meta = {
 	title: "切片",
 	author: "CHITUBOX Team",
 	pageId: "/zh-TW/chitubox-pro/v1.4.0/slice-preview",
-	description:
-		"CHITUBOX Pro 中兩種不同的切片模式：單參數切片和多參數切片。",
+	description: "CHITUBOX Pro 中兩種不同的切片模式：單參數切片和多參數切片。",
 	ogImage: "/images/docs/og_logo.png",
 };
 
@@ -65,68 +64,68 @@ export const meta = {
 
 1. 未指定 Profile 的模型會按照**默認參數配置文件**指定的 Profile 執行。
 
-	<ImageContainer>
-		<AntdImage
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.1.png"
-			}
-		/>
-	</ImageContainer>
+    <ImageContainer>
+    	<AntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.1.png"
+    		}
+    	/>
+    </ImageContainer>
 
 1. 在同一列印機作業環境下修改相同名稱的 Profile 文件，其餘位置的相同名稱的 Profile 文件會同步進行更新。
 
 1. 在編輯差異參數時，不可編輯項（`*` 標識項）及其它未顯示列印參數相關項均會按照默認的 Profile 執行。
 
-	<ImageContainer>
-		<AntdImage
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.png"
-			}
-		/>
-	</ImageContainer>
+    <ImageContainer>
+    	<AntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.png"
+    		}
+    	/>
+    </ImageContainer>
 
 #### 2. 高度
 
 不同的高度層使用不同的列印參數。
 
-	<ImageContainer>
-		<AntdImage
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.png"
-			}
-			style={{ width: "100%", maxWidth: 895 }}
-		/>
-	</ImageContainer>
+    <ImageContainer>
+    	<AntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.png"
+    		}
+    		style={{ width: "100%", maxWidth: 895 }}
+    	/>
+    </ImageContainer>
 
 1. 未指定 Profile 的高度區間會按照指定的 **默認 Profile** 執行。
 
-	<ImageContainer>
-		<AntdImage
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.1.png"
-			}
-		/>
-	</ImageContainer>
+    <ImageContainer>
+    	<AntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.1.png"
+    		}
+    	/>
+    </ImageContainer>
 
 1. 底層和過渡層列印欄的相關參數按照按照**默認 Profile** 執行。
 
 1. 編輯差異參數時，不可編輯項（`*`標識項）及其它未顯示列印參數相關項均會按照默認的 Profile 執行。
 
-	<ImageContainer>
-		<AntdImage
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.2.png"
-			}
-		/>
-	</ImageContainer>
+    <ImageContainer>
+    	<AntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.2.png"
+    		}
+    	/>
+    </ImageContainer>
 
-	<ImageContainer>
-		<AntdImage
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.3.png"
-			}
-		/>
-	</ImageContainer>
+    <ImageContainer>
+    	<AntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.3.png"
+    		}
+    	/>
+    </ImageContainer>
 
 #### 3. 橫截面面積
 
@@ -164,12 +163,14 @@ export const meta = {
 
 1. 在 **橫截面面積** 模式下，使用不同的橫截面來區分區間，因此，一個 Profile 是有可能被應用於多個區間的，如下圖所示：
 
-    <img
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview018.1.svg"
-    	}
-    	style={{ maxWidth: 800 }}
-    />
+    <ImageContainer>
+    	<AntdImage
+    		src={
+    			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview018.1.svg"
+    		}
+    		style={{ maxWidth: "70%" }}
+    	/>
+    </ImageContainer>
 
 <b>底層</b> 和 <b>過渡層</b> 僅在最底下的區間生效。
 

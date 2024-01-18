@@ -5,178 +5,31 @@ export const meta = {
 	author: "CHITUBOX Team",
 	pageId: "/zh-CN/chitubox-pro/v1.4.0/slice-preview",
 	description:
-		"CHITUBOX Pro 中两种不同的切片模式：单参数切片和多参数切片。",
+		"在切片器中预览切片文件对于确保 3D 打印准确并满足您的期望非常重要。",
 	ogImage: "/images/docs/og_logo.png",
 };
 
 # 切片预览
 
-## 单参数和多参数
-
-切片是导出可打印文件前的最后一步。
-
-选择 **单参数切片** 或 **多参数切片**，点击切片按钮进入切片预览界面。
-
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview001.png"
-	}
-/>
-
-<br />
-<br />
-
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview002.png"
-	}
-	style={{ width: "100%", maxWidth: 895 }}
-/>
-
-<Admonition type="note" title="注意">
-	树脂体积的计算方法是将 体素（像素面积 × 层高）相加，算法非常简单。
-	然而，这是一个理论值，它可能会受到现实世界中许多其他因素（打印平台和模型表面上的树脂残留、树脂挥发性、固化过程中的密度变化等）的影响。
-</Admonition>
-
-### 单参数切片
-
-**单参数切片** 会根据 **切片设置列表** 中选中的默认 Profile 来对所有打印平台上的打印允许区间内的模型数据进行切片。
-
-### 多参数切片
-
-<Admonition type="note" title="注意">
-	目前只有部分打印机支持多参数切片，点击 <SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃这里</SpanA> 查看机器兼容性表格。
-</Admonition>
-
-**多参数切片**提供了三种模式，**模型**，**高度**和**横截面面积**。
-
-#### 1. 模型
-
-不同的模型对象使用不同的打印参数。
-
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.png"
-	}
-/>
-
-1. 未指定 Profile 的模型会按照**默认参数配置文件**指定的 Profile 执行。
-
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.1.png"
-    	}
-    />
-
-1. 在同一打印机作业环境下修改相同名称的 Profile 文件，其余位置的同一名称的 Profile 文件会同步进行更新。
-
-1. 在编辑差异参数时，不可编辑项（`*` 标识项）及其它未显示打印参数相关项均会按照默认的 Profile 执行。
-
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.png"
-    	}
-    />
-
-#### 2. 高度
-
-不同的高度层使用不同的打印参数。
-
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.png"
-	}
-	style={{ width: "100%", maxWidth: 895 }}
-/>
-
-1. 未指定 Profile 的高度区间会按照指定的**默认 Profile** 执行。
-
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.1.png"
-    	}
-    />
-
-1. 底层和过渡层打印栏的相关参数按照按照**默认 Profile** 执行。
-
-1. 在编辑差异参数时，不可编辑项（**`*`**标识项）及其它未显示打印参数相关项均会按照默认的 Profile 执行。
-
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.2.png"
-    	}
-    />
-
-    <br />
-    <br />
-
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview016.3.png"
-    	}
-    />
-
-#### 3. 横截面面积
-
-不同的横截面面积使用不同的打印参数。
-
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview018.png"
-	}
-/>
-
-1. 未指定 Profile 的截面区间会按照指定的**默认 Profile** 执行。
-
-1. 底层和过渡层打印栏的相关参数按照按照**默认 Profile** 执行。
-
-1. 在编辑差异参数时，不可编辑项（**`*`**标识项）及其它未显示打印参数相关项均会按照默认的 Profile 执行。
-
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview019.png"
-    	}
-    />
-    <br />
-    <br />
-
-    <AntdImage
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview020.png"
-    	}
-    />
-    <br />
-    <br />
-
-1. 在 **横截面面积** 模式下，使用不同的横截面来区分区间，因此，一个 Profile 是有可能被应用于多个区间的，如下图所示:
-    <img
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview018.1.svg"
-    	}
-    	style={{ maxWidth: 800 }}
-    />
-    <br />
-    <br />
-    <b>底层</b> 和 <b>过渡层</b> 仅在最底下的区间生效。
-
 ## 切片参数编辑
 
 编辑和调整当前需要保存的打印切片相关参数。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview004.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview004.png"
+		}
+	/>
+</ImageContainer>
 
-<br />
-<br />
-
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview008.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview008.png"
+		}
+	/>
+</ImageContainer>
 
 此窗口提供了 **切片设置 > 切片配置 > 打印** 的部分快捷访问，无需退出切片预览界面即可修改部分参数。
 
@@ -188,11 +41,13 @@ export const meta = {
 
 检测当前切片文件中是否存在不可成功打印的孤岛。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview005.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview005.png"
+		}
+	/>
+</ImageContainer>
 
 <Admonition type="note" title="注意">
 	你必须先点击 <b>检测孤岛</b> 才能启用 <NextLink href="#显示隐藏孤岛信息">隐藏孤岛信息</NextLink>, <NextLink href="#删除孤岛">删除孤岛</NextLink>, <NextLink href="#编辑像素">编辑像素</NextLink>, 以及 <NextLink href="#格式刷">格式刷</NextLink>。
@@ -202,20 +57,21 @@ export const meta = {
 
 单击此按钮可以显示或隐藏孤岛信息。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview009.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview009.png"
+		}
+	/>
+</ImageContainer>
 
-<br />
-<br />
-
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview015.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview015.png"
+		}
+	/>
+</ImageContainer>
 
 <Admonition type="tip" title="提示">
 	鼠标左键单击对应孤岛，可切换预览图为孤岛<b>局部模式</b>或<b>全局模式</b>。
@@ -225,21 +81,25 @@ export const meta = {
 
 将文件中的孤岛删除，可选择删除当前层孤岛或所有层孤岛。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview010.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview010.png"
+		}
+	/>
+</ImageContainer>
 
 ## 编辑像素
 
 在当前切片文件中添加或删除像素点。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview011.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview011.png"
+		}
+	/>
+</ImageContainer>
 
 1. 按住 Ctrl 并滚动鼠标中键来缩放画笔大小，单击鼠标左键可增加像素，单击鼠标右键可删除像素。
 1. 按住 Ctrl 并长按拖动鼠标左键可连续添加像素。按住 Ctrl，并长按拖动鼠标右键可连续删除像素。
@@ -249,11 +109,13 @@ export const meta = {
 
 复制目标像素的格式，应用到其它位置的像素区域中。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview012.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview012.png"
+		}
+	/>
+</ImageContainer>
 
 1. 首先需要使用鼠标左键点击目标像素指定为目标像素格式。
 1. 滚动鼠标中键可调节格式刷基本单元的像素个数。
@@ -263,20 +125,21 @@ export const meta = {
 
 使用设置的放大倍率查看切片图层中的相关切片信息。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview013.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview013.png"
+		}
+	/>
+</ImageContainer>
 
-<br />
-<br />
-
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview014.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview014.png"
+		}
+	/>
+</ImageContainer>
 
 ## 保存
 
@@ -284,22 +147,26 @@ export const meta = {
 
 点击 **保存** 按钮以保存切片文件。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview021.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview021.png"
+		}
+	/>
+</ImageContainer>
 
 <Admonition type="note" title="注意">
 	对您的模型进行切片后，点击“保存”，您可以在下拉菜单中选择需要保存的切片格式，再进行打印。
 </Admonition>
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview021-1.png"
-	}
-	style={{ maxwidth: "895px" }}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview021-1.png"
+		}
+		style={{ maxwidth: "895px" }}
+	/>
+</ImageContainer>
 
 ## 网络发送
 
@@ -312,20 +179,21 @@ export const meta = {
 
 若打印机支持网络发送，则该界面上会有 **网络发送** 按钮，此功能可以直接向打印机发送切片数据进行打印。
 
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview023.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview023.png"
+		}
+	/>
+</ImageContainer>
 
-<br />
-<br />
-
-<AntdImage
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview024.png"
-	}
-/>
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview024.png"
+		}
+	/>
+</ImageContainer>
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
