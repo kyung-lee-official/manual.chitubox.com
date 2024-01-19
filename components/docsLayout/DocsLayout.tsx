@@ -110,7 +110,7 @@ export const DocsLayout: React.FC<any> = (props) => {
 				{children}
 			</DynamicDocsContent>
 			<DynamicFooter />
-			<IsPageUseful meta={meta} />
+			{/* <IsPageUseful meta={meta} /> */}
 		</DocContext.Provider>
 	);
 };
