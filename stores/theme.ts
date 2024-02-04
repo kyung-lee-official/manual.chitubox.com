@@ -19,7 +19,7 @@ export const useThemeStore = create<State & Action>()(
     devtools(
         persist(
             (set) => ({
-                theme: Theme.LIGHT,
+                theme: Theme.DARK,
                 setTheme: (theme: Theme) => {
                     return set((state) => {
                         return { theme: theme };
