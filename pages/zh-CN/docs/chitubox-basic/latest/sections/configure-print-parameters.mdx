@@ -32,7 +32,7 @@ export const meta = {
 <ImageContainer>
 	<AntdImage
 		src={
-			"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-profile-panel.png"
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/009-configure-print-parameters-profile-panel.png"
 		}
 	/>
 </ImageContainer>
@@ -121,17 +121,17 @@ export const meta = {
 
 ## 高级
 
-### 底层灯光 PWM
+### 底层光强 PWM
 
-底层灯光的 <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">PWM</SpanA>，范围从 `0` 到 `255` 或从 `0%` 到 `100%`，控制底层的 UV 光源功率。
+底层光强的 <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">PWM</SpanA>，范围从 `0` 到 `255` 或从 `0%` 到 `100%`，控制底层的 UV 光源功率。
 
-### 灯光 PWM
+### 光强 PWM
 
-普通层灯光的 <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">PWM</SpanA>，范围从 `0` 到 `255` 或从 `0%` 到 `100%`，控制普通层的 UV 光源功率。
+普通层光强的 <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">PWM</SpanA>，范围从 `0` 到 `255` 或从 `0%` 到 `100%`，控制普通层的 UV 光源功率。
 
-### 图像灰度
+### 图片灰度
 
-类似于灯光 PWM，范围从 `0` 到 `255`，但是图像灰度不是控制 UV 光源的功率，而是控制 LCD 屏幕的透光率。值越大，透光率越高。
+类似于光强 PWM，范围从 `0` 到 `255`，但是图片灰度不是控制 UV 光源的功率，而是控制 LCD 屏幕的透光率。值越大，透光率越高。
 
 ### 抗锯齿
 
@@ -141,11 +141,9 @@ export const meta = {
 
 该模式适用于 _.ctb_ 格式。
 
-| 参数         | 描述                                                                                                         |
-| ------------ | ------------------------------------------------------------------------------------------------------------ |
-| 灰度级别     | 范围：`0` ~ `255`。`0` 代表黑色，`255` 代表白色。它决定了可用于抗锯齿的灰度范围。                            |
-| 图像模糊启用 | 启用/禁用图像模糊                                                                                            |
-| 图像模糊像素 | 可用值：`2`、`3`、`4`。决定边缘过渡的像素数，您选择的级别越高，边缘就越柔和。类似于 Photoshop 中的羽化功能。 |
+| 参数     | 描述                                                                              |
+| -------- | --------------------------------------------------------------------------------- |
+| 灰度级别 | 范围：`0` ~ `255`。`0` 代表黑色，`255` 代表白色。它决定了可用于抗锯齿的灰度范围。 |
 
 #### 抗锯齿级别
 
@@ -154,6 +152,22 @@ export const meta = {
 | 参数       | 描述                                                                                                                          |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | 抗锯齿级别 | 可用值：`2`、`4`、`8`。它决定了边缘的曝光时间。您选择的级别越高，曝光时间就越长，这将导致边缘更加锐利，从而降低抗锯齿的效果。 |
+
+### 图像模糊
+
+该模式适用于 _.ctb_ 格式。
+
+| 参数         | 描述                                                                                                     |
+| ------------ | -------------------------------------------------------------------------------------------------------- |
+| 图像模糊像素 | 可用值：`2` ~ `8`。决定边缘过渡的像素数，您选择的级别越高，边缘就越柔和。类似于 Photoshop 中的羽化功能。 |
+
+### 收缩补偿
+
+模型在 X，Y，Z 方向上按照一定比例进行收缩补偿。百分比是与原始模型相比的大小，默认值为 100%。
+
+百分比数值越大，模型实体越大。
+
+百分比数值越小，模型实体越小。
 
 ### 公差补偿
 
@@ -166,6 +180,8 @@ export const meta = {
 当 b 值较大时，外直径较长，模型体积较大。
 
 当 b 值较小时，外直径较短，模型体积较小。
+
+打开 <SpanA href="https://www.bilibili.com/video/BV1tw411R7QB?share_source=copy_web">📺这条视频</SpanA> 和 <SpanA href="https://www.chitubox.com/zh-Hans/article/support/howto/chitubox-free/settings/how-to-use-tolerance-compensation-on-chitubox">📃这篇文章</SpanA> 了解更多关于**公差补偿**的内容。
 
 ### 底层公差补偿
 

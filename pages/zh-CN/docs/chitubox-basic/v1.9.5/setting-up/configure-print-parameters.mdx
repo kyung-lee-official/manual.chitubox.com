@@ -135,7 +135,7 @@ export const meta = {
 | 底层曝光时间                                                     | 底层的曝光时间。适当增加底层曝光时间有助于增加打印模型与打印平台的粘结强度                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | 过渡层数                                                         | 底层之后的过渡层数，使各层之间的粘合更紧密。除曝光时间外，过渡层的其他参数与正常层一致                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | 过渡类型                                                         | 设置从底层过渡到正常层时曝光时间的过渡类型                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| <NextLink href="#2-打印过程等待模式">打印过程等待模式</NextLink> | <NextLink href="#21-静止时间"><em>静止时间：</em></NextLink><ul><li>抬升前的静止时间:打印曝光结束到打印平台开始远离曝光面的间隔时间差</li><li>抬升后的静止时间:打印平台打印抬升后开始静止到开始回程的间隔时间差</li><li>回程后的静止时间:打印平台运动至打印面开始静止到开始曝光的间隔时间差</li></ul><NextLink href="#22-灯灭延迟"><em>灯灭延迟：</em><br /></NextLink>灯灭延迟等于平台抬升时间，等待时间和回程时间的总时间<ul><li>灯灭延迟: 正常层的灯灭延迟，真正的机器灭灯时间 = max（z 轴上下移动的总时间， 配置的灭灯延迟）</li><li>底层灯灭延迟: 底层的灯灭延迟，真正的机器灭灯时间 =max（z 轴上下移动的总时间， 配置的灭灯延迟）</li></ul> |
+| <NextLink href="#2-打印过程等待模式">打印过程等待模式</NextLink> | <NextLink href="#21-静止时间"><em>静止时间：</em></NextLink><ul><li>抬升前的静止时间:打印曝光结束到打印平台开始远离曝光面的间隔时间差</li><li>抬升后的静止时间:打印平台抬升后开始静止到开始回程的间隔时间差</li><li>回程后的静止时间:打印平台运动至打印面开始静止到开始曝光的间隔时间差</li></ul><NextLink href="#22-灯灭延迟"><em>灯灭延迟：</em><br /></NextLink>灯灭延迟等于平台抬升时间，等待时间和回程时间的总时间<ul><li>灯灭延迟: 正常层的灯灭延迟，真正的机器灭灯时间 = max（z 轴上下移动的总时间， 配置的灭灯延迟）</li><li>底层灯灭延迟: 底层的灯灭延迟，真正的机器灭灯时间 =max（z 轴上下移动的总时间， 配置的灭灯延迟）</li></ul> |
 | 底层抬升距离                                                     | 底层打印过程中，打印平台每次远离打印面的距离                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | 抬升距离                                                         | 正常层打印过程中，打印平台每次远离打印面的距离                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | 底层回程距离                                                     | 底层打印过程中，打印平台的回程距离，没有充足理由的情况下不要改动                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -174,8 +174,8 @@ export const meta = {
 	以下参数仅供说明，请根据实际需求设置参数。
 </Admonition>
 
-| 子阶段                                                                     | 相关参数                                                                                                                  |
-| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| 子阶段                                                                     | 相关参数                                                                                                            |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>底层慢速抬升</span> | <AntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.1.png"}/> |
 | <span style={{ color: "#00b894", fontWeight: "bold" }}>底层快速抬升</span> | <AntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.2.png"}/> |
 | <span style={{ color: "#00b894", fontWeight: "bold" }}>底层快速回程</span> | <AntdImage src={"/images/docs/zh-CN/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.3.png"}/> |
@@ -335,11 +335,17 @@ $$T_{LOD} \geq 5.998 + 2 + 2 \approx 10\ \text{秒}$$
 
 -   _图像模糊_： 启用/关闭图像模糊。**适用于 _.ctb_ 格式**。
 
-    -   _图像模糊像素_：`2`，`3`，`4` 决定了边缘过渡像素的数量，等级越高，边缘越模糊。类似于 Photoshop 中的羽化功能。
+    -   _图像模糊像素_：`2` ~ `8` 决定了边缘过渡像素的数量，等级越高，边缘越模糊。类似于 Photoshop 中的羽化功能。
 
-打开 <SpanA href="https://www.bilibili.com/video/BV1Wg41177jH?share_source=copy_web">📺这条视频</SpanA> 和 <SpanA href="https://www.chitubox.com/zh/article/support/indepth/technology/52">📃这篇文章</SpanA> 了解更多关于**抗锯齿**，**灰度**，和**图像模糊**的内容。
+打开 <SpanA href="https://www.bilibili.com/video/BV1Wg41177jH?share_source=copy_web">📺 这条视频</SpanA> 和 <SpanA href="https://www.chitubox.com/zh/article/support/indepth/technology/52">📃 这篇文章</SpanA> 了解更多关于**抗锯齿**，**灰度**，和**图像模糊**的内容。
 
-#### 4. 公差补偿
+#### 4. 收缩补偿
+
+模型在 X，Y，Z 方向上按照一定比例进行收缩补偿。百分比是与原始模型相比的大小，默认值为 100%。 <br />
+百分比数值越大，模型实体越大。<br />
+百分比数值越小，模型实体越小。<br />
+
+#### 5. 公差补偿
 
 正常打印层的内外径尺寸补偿 <br />
 a 的值越大，内径越小，模型实体越大。<br />
@@ -347,9 +353,9 @@ a 的值越小，内径越大，模型实体越小。<br />
 b 为正值（补偿模型收缩部分），内径减小，模型实体增大。<br />
 b 为负值（补偿模型膨胀部分），内径增大，模型实体减小。
 
-打开 <SpanA href="https://www.bilibili.com/video/BV1tw411R7QB?share_source=copy_web">📺这条视频</SpanA> 和 <SpanA href="https://www.chitubox.com/zh-Hans/article/support/howto/chitubox-free/settings/how-to-use-tolerance-compensation-on-chitubox">📃这篇文章</SpanA> 了解更多关于**公差补偿**的内容。
+打开 <SpanA href="https://www.bilibili.com/video/BV1tw411R7QB?share_source=copy_web">📺 这条视频</SpanA> 和 <SpanA href="https://www.chitubox.com/zh-Hans/article/support/howto/chitubox-free/settings/how-to-use-tolerance-compensation-on-chitubox">📃 这篇文章</SpanA> 了解更多关于**公差补偿**的内容。
 
-#### 5. 底部公差补偿
+#### 6. 底部公差补偿
 
 底部打印层的内外径尺寸补偿 <br />
 a 的值越大，内径越小，模型实体越大。<br />
@@ -361,7 +367,7 @@ b 为负值（补偿模型膨胀部分），内径增大，模型实体减小。
 	添加禁用底层公差补偿时，普通层公差补偿对全模型生效。
 </Admonition>
 
-#### 6. 打印时间补偿
+#### 7. 打印时间补偿
 
 部分高分辨率打印机在加载数据时可能会有额外的延迟，从而导致预估打印时间不准确。可以通过设置打印时间补偿来改善这个问题。
 

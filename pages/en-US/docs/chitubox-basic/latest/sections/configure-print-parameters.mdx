@@ -19,8 +19,7 @@ export const meta = {
 	title: "Configure Print Profiles",
 	author: "CHITUBOX Team",
 	pageId: "/en-US/chitubox-basic/v2.0.0/configure-print-parameters",
-	description:
-		"Configure print parameters in CHITUBOX.",
+	description: "Configure print parameters in CHITUBOX.",
 	ogImage: "/images/docs/og_logo.png",
 };
 
@@ -135,9 +134,9 @@ Light <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">PWM</Sp
 
 Light <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">PWM</SpanA> for normal layers, from `0` to `255` or from `0%` to `100%`, controls the power of the UV light source for normal layers.
 
-### Image Grayscale
+### Picture Grayscale
 
-Similar to Light PWM, from `0` to `255`, instead of controlling the power of the UV light source, Image Grayscale controls the light transmittance of the LCD screen. The higher the value, the higher the light transmittance.
+Similar to Light PWM, from `0` to `255`, instead of controlling the power of the UV light source, picture Grayscale controls the light transmittance of the LCD screen. The higher the value, the higher the light transmittance.
 
 ### Anti-Aliasing
 
@@ -147,11 +146,9 @@ There are two modes of anti-alisaing: **Gray Scale Level** and **Anti-alisaing L
 
 This mode is designed for the _.ctb_ format.
 
-| Parameters        | Description                                                                                                                                                                                |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Grayscale level   | Range: `0` ~ `255`. `0` stands for black, `255` stands for white. It determines the gray range that is available for anti-aliasing.                                                        |
-| Image Blur Enable | Enable/Disable image blur                                                                                                                                                                  |
-| Image Blur Pixel  | Available values: `2`, `3`, `4`. Determines the number of pixels for edge transition, the higher level you select, the softer edge would be. Similar to the feather function in Photoshop. |
+| Parameters      | Description                                                                                                                         |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Grayscale level | Range: `0` ~ `255`. `0` stands for black, `255` stands for white. It determines the gray range that is available for anti-aliasing. |
 
 #### Anti-alisaing Level
 
@@ -160,6 +157,22 @@ This is the legacy mode, designed for the _.cbddlp_ format only.
 | Parameters          | Description                                                                                                                                                                                                                      |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Anti-aliasing Level | Available values: `2`, `4`, `8`. It determines the edge exposure time. The higher the level you select, the longer the exposure time will be, this will result in sharper edges, thereby decreasing the effect of anti-aliasing. |
+
+### Image Blur
+
+This mode is designed for the _.ctb_ format.
+
+| Parameters       | Description                                                                                                                                                                            |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Image Blur Pixel | Available values: `2` ~ `8`. Determines the number of pixels for edge transition, the higher level you select, the softer edge would be. Similar to the feather function in Photoshop. |
+
+### Shrinkage Compensation
+
+Shrinkage compensation of the model in X, Y, and Z directions. The percentage represents the size compared to the original size, the default value is 100%.
+
+When the percentage value is larger, the model body is larger.
+
+When the percentage value is smaller, the model body is smaller.
 
 ### Tolerance Compensation
 
