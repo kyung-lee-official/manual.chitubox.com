@@ -484,7 +484,7 @@ If the **Gray scale unit** was set to 51px, the processed image will be like thi
 The grayscale of the image goes gray gradually from the left to right, this is because the original image was averaged every 51 pixels in the X-axis direction.
 Let's consider the first row. The grayscale of the first 51px is averaged by 50 black pixels and 1 white pixel, so it resulted in a width of 51 pixels section that is a little bit lighter than black, even though the change is not visible. The second 51px is composed of 49 white pixels and 2 black pixels, it resulted in a darker average grayscale than white. The third 51px, composed of 48 black pixels and 3 white pixels, and so forth... until there is a remainder left which is composed of 35 white pixels.
 
-$\frac{800}{51} = 7$, remainder 35
+$\frac{800}{51} = 15$, remainder 35
 
 This part will be averaged by 35 pixels themselves, therefore, the grayscale didn't change.
 
