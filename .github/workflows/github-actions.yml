@@ -53,5 +53,6 @@ jobs:
                   port: ${{ secrets.PORT }}
                   script: |
                       cd /var/www/html/manual.chitubox.com/
+                      ls -l
                       unzip out.zip
                       rm out.zip
