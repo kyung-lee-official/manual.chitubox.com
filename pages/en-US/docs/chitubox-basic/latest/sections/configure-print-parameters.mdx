@@ -140,31 +140,24 @@ Similar to Light PWM, from `0` to `255`, instead of controlling the power of the
 
 ### Anti-Aliasing
 
-There are two modes of anti-alisaing: **Gray Scale Level** and **Anti-alisaing Level (legacy)**.
+There are two modes of anti-aliasing: **Gray Scale Level** and **Anti-aliasing Level (legacy)**.
 
 #### Gray Scale Level
 
 This mode is designed for the _.ctb_ format.
 
-| Parameters      | Description                                                                                                                         |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Grayscale level | Range: `0` ~ `255`. `0` stands for black, `255` stands for white. It determines the gray range that is available for anti-aliasing. |
+| Parameters       | Description                                                                                                                                                                            |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Grayscale level  | Range: `0` ~ `255`. `0` stands for black, `255` stands for white. It determines the gray range that is available for anti-aliasing.                                                    |
+| Image Blur Pixel | Available values: `2` ~ `8`. Determines the number of pixels for edge transition, the higher level you select, the softer edge would be. Similar to the feather function in Photoshop. |
 
-#### Anti-alisaing Level
+#### Anti-aliasing Level
 
 This is the legacy mode, designed for the _.cbddlp_ format only.
 
 | Parameters          | Description                                                                                                                                                                                                                      |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Anti-aliasing Level | Available values: `2`, `4`, `8`. It determines the edge exposure time. The higher the level you select, the longer the exposure time will be, this will result in sharper edges, thereby decreasing the effect of anti-aliasing. |
-
-### Image Blur
-
-This mode is designed for the _.ctb_ format.
-
-| Parameters       | Description                                                                                                                                                                            |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Image Blur Pixel | Available values: `2` ~ `8`. Determines the number of pixels for edge transition, the higher level you select, the softer edge would be. Similar to the feather function in Photoshop. |
 
 ### Shrinkage Compensation
 

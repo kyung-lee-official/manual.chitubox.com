@@ -213,31 +213,17 @@ For some reason, you might encounter other issues caused by data corruption betw
 
 ### Clean the Cache
 
-1. Navigate to the following directory:
-
-    - Windows:
-
-    ```shell
-    C:\Users\{user-name}\AppData\Local
-    ```
-
-    - Mac:
-
-    ```shell
-    Macintosh HD/Users/{user-name}/Library/Application Support
-    ```
+1. Open the log path (Setting/Help > Open Log). <NextLink href="/en-US/docs/chitubox-basic/v1.9.5/application-overview/file#open-log-path">📃Click here</NextLink> to learn how to open the log.
 
 1. Close CHITUBOX Basic (**the order matters**).
 
-1. Locate the folders named 📂"chitubox2_0" and 📂"chituboxResource", delete both folders.
+1. Make sure you already closed CHITUBOX Basic, back up the 📂*machine* folder to another location, then delete all files and folders except 📄*userLogin.cfg* file.
 
-    <AntdImage src={"/images/docs/en-US/faq/chitubox-basic/2.x.x/windows-path.png"} />
+    <AntdImage src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq003.png"} />
 
 1. Restart CHITUBOX Basic.
 
-<Admonition type="warning">
-	Cleaning the cache will erase your machine settings, please make sure you have a backup before cleaning the cache.
-</Admonition>
+1. Optional, after restarting CHITUBOX Basic, a new 📂*machine* folder will be generated, you can restore your machines by copying and pasting _.cfg_ files back to the new 📂*machine* folder. Please do not copy all _.cfg_ files back to the 📂*machine* folder at once given the bug you encountered might be caused by one of them.
 
 ## USB Drive Issues
 
