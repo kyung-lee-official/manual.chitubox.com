@@ -1,0 +1,213 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import {
+	ChituboxSelectIcon,
+	ChituboxSelectBoxIcon,
+	ChituboxMoveIcon,
+	ChituboxRotateIcon,
+	ChituboxScaleIcon,
+	ChituboxMirrorIcon,
+	ChituboxGlobalIcon,
+	ChituboxLocalIcon,
+	ChituboxResetIcon,
+	ChituboxAddMachine,
+	ChituboxMachineBarMenuIcon,
+	ChituboxDeleteIcon,
+	ChituboxCopyAddIcon,
+	ChituboxSupport,
+	ChituboxSupportDisplayAllIcon,
+	ChituboxSupportDisplayTopIcon,
+	ChituboxSupportDisplayTipIcon,
+	ChituboxRenderDetailedIcon,
+	ChituboxRenderFresnelIcon,
+	ChituboxHomeIcon,
+	ChituboxPerspectiveIcon,
+	ChituboxOthographicIcon,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "小工具",
+	author: "CHITUBOX Team",
+	pageId: "/zh-TW/chitubox-basic/v2.0.0/gadgets",
+	description: "一些可以在 CHITUBOX 軟體中使用的小工具。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 小工具
+
+在本節中，我們將介紹一些可以在 CHITUBOX 軟體中使用的小工具。
+
+## 工具欄
+
+工具欄位於主視窗左側。它主要包括選擇、移動、旋轉、縮放和鏡像這五個選項。
+
+### 選擇
+
+<ChituboxSelectIcon /> 通過點擊的方式選擇畫面中的模型。
+
+<ChituboxSelectBoxIcon /> 通過框選的方式選擇畫面中的模型。
+
+### 移動
+
+<ChituboxMoveIcon /> 用於移動所選模型。您也可以通過在移動面板中輸入座標來精準移動模型。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/005-gadgets-move-panel.png"
+		}
+	/>
+</ImageContainer>
+
+-   放在底板上：以模型的最低點為基準點，將所選模型放在底板上。
+
+-   居中：將所選模型居中放置在列印平台上。如果多個模型被選擇，則以所選多個模型的組合的中心為準進行居中。
+
+### 旋轉
+
+<ChituboxRotateIcon /> 用於旋轉所選模型。您也可以通過在移動面板中輸入角度來精準旋轉模型。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/005-gadgets-rotate-panel.png"
+		}
+	/>
+</ImageContainer>
+
+-   組合中心：以所選的多個模型的組合的中心為旋轉中心。
+
+-   按面放平：將模型按照您所選擇的面放置在列印平台上。
+
+-   自動定向：模型將被 CHITUBOX 自動定向。
+
+### 縮放
+
+<ChituboxScaleIcon /> 用於縮放所選模型。您也可以通過在移動面板中輸入大小和比例來精確縮放模型。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/005-gadgets-scale-panel.png"
+		}
+	/>
+</ImageContainer>
+
+<ChituboxGlobalIcon /> 全局座標：縮放手柄平行於全局座標。
+
+<ChituboxLocalIcon /> 局部座標：縮放手柄平行於模型的本地座標。
+
+<ChituboxResetIcon /> 重置：將比例重置為 100%。
+
+-   鎖定比例：如果啟用，所選模型的 X 軸、Y 軸和 Z 軸將按照相同比例進行縮放。
+
+-   支撐直徑不變：如果啟用，支撐直徑將不會被縮放。
+
+### 鏡像
+
+<ChituboxMirrorIcon /> 用於鏡像平台上的所選模型。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-TW/chitubox-basic/2.x.x/005-gadgets-mirror-panel.png"
+		}
+	/>
+</ImageContainer>
+
+-   保留原始模型：如果啟用，將保留原模型。
+
+## 信息面板
+
+信息面板位於主視窗左下方，它顯示了當前設定的簡要信息。
+
+## 機器管理欄
+
+機器管理欄位於主視窗的下方，您可以在此處添加、刪除、複製機器。
+
+點擊添加機器按鈕 <ChituboxAddMachine /> 以添加新的機器。點擊圖標 <ChituboxMachineBarMenuIcon />，你會看到隱藏平臺、<ChituboxCopyAddIcon /> 複製機器和 <ChituboxDeleteIcon /> 刪除機器選項。
+
+## 支撐顯示模式
+
+點擊 <ChituboxSupport /> 切換到支撐視圖。 有 3 個按鈕允許您在不同的支撐顯示模式之間切換。
+
+<ChituboxSupportDisplayAllIcon /> 顯示完整的支撐。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-all.png"
+		}
+	/>
+</ImageContainer>
+
+<ChituboxSupportDisplayTopIcon /> 顯示支撐頂部。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-top.png"
+		}
+	/>
+</ImageContainer>
+
+<ChituboxSupportDisplayTipIcon /> 顯示支撐尖端。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-tip.png"
+		}
+	/>
+</ImageContainer>
+
+## 渲染模式
+
+渲染模式位於主視窗的右上角。它包含兩種模式：細節和菲涅耳。
+
+<ChituboxRenderDetailedIcon /> 在細節模式下，模型顯示更多表面細節。
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-details.png"}
+	/>
+</ImageContainer>
+
+<ChituboxRenderFresnelIcon /> 在菲涅尔模式下，模型在表面上会显得更加平滑。
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-fresnel.png"}
+	/>
+</ImageContainer>
+
+## 視窗小工具
+
+視窗小工具位於主視窗的右上角，它提供了一種快速操作視圖的直觀方法，使用戶能夠快速改變視窗的角度或視角，便於檢查物體之間的相對位置。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadget-viewport_gizmo.svg"
+		}
+		width={200}
+	/>
+</ImageContainer>
+
+<ChituboxHomeIcon /> 圖標和透視 <ChituboxPerspectiveIcon /> /
+正交 <ChituboxOthographicIcon /> 圖標位於主視窗的右上角，在視窗小工具旁邊。
+
+主頁圖標允許用戶將視窗重置為默認視圖。透視/正交圖標允許用戶在透視和正交視圖之間切換。透視模式提供了一個更逼真的場景地殼視圖，而正交模式則為用戶提供了一個場景的平面視圖，它允許用戶輕鬆地評估物體在列印平台上的位置並根據需要進行調整。
+
+## 滑動條
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadget-slider.gif"}
+	/>
+</ImageContainer>
+
+滑動條位於主視窗的右側，用於預覽模型的截面面積（預切片）和模型的層數（後切片）。該功能允許用戶在 3D 模型被送到列印機之前預覽其各個部分和層。滑動條在頂部和底部分別有兩個按鈕，用於對滑動條位置進行動畫處理。底部的重置按鈕將把滑動條位置重置為默認值。滑動條組件可以幫助用戶在 3D 模型被送到列印機之前評估其質量，使他們能夠根據需要進行調整。
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);
