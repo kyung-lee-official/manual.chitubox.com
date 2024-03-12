@@ -3,6 +3,16 @@
 	"isVersioned": true,
 	"versionedContexts": [
 		{
+			"versionCode": "latest",
+			"versionNumber": "2.0",
+			"pagesContext": [
+				{
+					"item": "chitubox-basic-faq",
+					"label": "CHITUBOX Basic 常見問題"
+				}
+			]
+		},
+		{
 			"versionCode": "v1.9.x",
 			"versionNumber": "1.9.x",
 			"pagesContext": [
@@ -13,16 +23,6 @@
 				{
 					"item": "chitubox-pro-faq",
 					"label": "CHITUBOX Pro 常見問題"
-				}
-			]
-		},
-		{
-			"versionCode": "latest",
-			"versionNumber": "2.0",
-			"pagesContext": [
-				{
-					"item": "chitubox-basic-faq",
-					"label": "CHITUBOX Basic 常見問題"
 				}
 			]
 		}

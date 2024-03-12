@@ -14,64 +14,6 @@ export const meta = {
 
 ## Windows Issues
 
-<Admonition type="note">
-	Please make sure you've installed all <NextLink href="/en-US/docs/chitubox-basic/v1.9.5/requirements">required environments</NextLink>.
-</Admonition>
-
-### MSVCR110.dll Missing
-
-"MSVCR110.dll Missing" means you're missing Visual C++ Redistributable Packages for Visual Studio 2012, please download the required environments from <SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=30679">here</SpanA>.
-
-### MSVCR120.dll Missing
-
-"MSVCR120.dll Missing" means you're missing Visual C++ Redistributable Packages for Visual Studio 2013, please download the required environments from <SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">here</SpanA>.
-
-### MSVCR140.dll Missing
-
-"MSVCR140.dll Missing" means you're missing Visual C++ Redistributable Packages for Visual Studio 2015, 2017 and 2019, please download the required environments from <SpanA href="https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170">here</SpanA>.
-
-### Other System-Level Errors
-
--   Error -1073741701
-
--   Error -1073741515
-
--   Error -1073740791
-
--   Error -0xc000007b
-
-These errors might occur due to some corrupted or damaged operating system files.
-
-Please try the following methods:
-
-Method 1:
-Open cmd on your PC (By using Win + R and input cmd), enter following command:
-
-```shell
-DISM.exe /Online /Cleanup-image /Scanhealth
-```
-
-```shell
-DISM.exe /Online /Cleanup-image /Restorehealth
-```
-
-Method 2:
-Open cmd on your PC (by using Win + R and input cmd), enter following command:
-
-```shell
-sfc /scannow
-```
-
-If these method doesn't solve these errors, you might need to download and reinstall your system from Microsoft's official website.
-
--   <SpanA href="https://www.microsoft.com/en-us/software-download/windows11">
-    	Windows 11
-    </SpanA>
-
--   <SpanA href="https://www.microsoft.com/en-us/software-download/windows10">
-    	Windows 10
-    </SpanA>
-
 ### Windows Explorer Keep Restart Repeatedly
 
 If your Windows Explorer keeps restarting repeatedly, please follow these steps to fix it:

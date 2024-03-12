@@ -14,56 +14,6 @@ export const meta = {
 
 ## Windows 操作系统问题
 
-<Admonition type="note" title="注意">
-	请确保你已经安装了<NextLink href="/zh-CN/docs/chitubox-basic/v1.9.5/requirements">所需运行环境</NextLink>中提到的所有环境。
-</Admonition>
-
-### MSVCR110.dll 丢失
-
-“MSVCR110.dll Missing”表示您缺少 Visual Studio 2012 的 Visual C++ Redistributable Packages，请从<SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=30679">此处</SpanA>下载所需的环境。
-
-### MSVCR120.dll 丢失
-
-“MSVCR120.dll Missing”表示您缺少 Visual Studio 2013 的 Visual C++ Redistributable Packages，请从<SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">此处</SpanA>下载所需的环境。
-
-### MSVCR140.dll 丢失
-
-“MSVCR140.dll Missing”表示您缺少 Visual Studio 2015，2017，和 2019 的 Visual C++ Redistributable Packages，请从<SpanA href="https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170">此处</SpanA>下载所需的环境。
-
-### 其他系统级错误
-
--   错误代码 -1073741701
-
--   错误代码 -1073741515
-
--   错误代码 -1073740791
-
--   错误代码 -0xc000007b
-
-出现此类问题的原因可能是某些系统文件损坏或操作系统文件损坏。
-
-您可以尝试以下方法进行修复：
-
-方法 1： 在 PC 上打开 cmd（使用 Win + R 并输入 cmd），输入以下命令：
-
-```shell
-DISM.exe /Online /Cleanup-image /Scanhealth
-
-DISM.exe /Online /Cleanup-image /Restorehealth
-```
-
-方法 2： 在 PC 上打开 cmd（使用 Win + R 并输入 cmd），输入以下命令：
-
-```shell
-sfc /scannow
-```
-
-如果这些方法都不能解决问题，您可能需要从微软官方网站下载并重新安装您的系统。
-
--   <SpanA href="https://www.microsoft.com/en-us/software-download/windows11">Windows 11</SpanA>
-
--   <SpanA href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10</SpanA>
-
 ### Windows 资源管理器反复重启
 
 如果您的 Windows 资源管理器一直反复重启，请通过以下方式修复：
