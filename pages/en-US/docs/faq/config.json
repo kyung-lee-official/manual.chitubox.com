@@ -13,8 +13,8 @@
 			]
 		},
 		{
-			"versionCode": "v1.9.x",
-			"versionNumber": "1.9.x",
+			"versionCode": "v1.x.x",
+			"versionNumber": "1.x.x",
 			"pagesContext": [
 				{
 					"item": "chitubox-basic-faq",
