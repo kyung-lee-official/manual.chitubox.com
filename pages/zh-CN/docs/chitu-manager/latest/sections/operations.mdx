@@ -1,161 +1,70 @@
 import { DocsLayout } from "@/components/docsLayout/DocsLayout";
 import { ImageComparison } from "@/components/imageComparison/ImageComparison";
 import {
-	ChituboxOpenIcon,
-	ChituboxSaveIcon,
-	ChituboxCopyIcon,
-	ChituboxAutoLayoutIcon,
-	ChituboxHollowIcon,
-	ChituboxDigHoleIcon,
-	ChituboxStandardPartsIcon,
-	ChituboxRmaIcon,
-	ChituboxRepairIcon,
-	ChituboxSignInIcon,
+	VideoSurveillance,
+	HistoricalRecords,
+	DeviceFileManagement,
 } from "@/components/icons/Icons";
 
 export const meta = {
 	title: "操作",
 	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitubox-basic/v2.0.0/operations",
-	description:
-		"各类操作选项位于主窗口的顶部。它包括打开、保存、复制、自动布局、镂空、挖洞、修复、标准件、树脂材料联盟，消息提醒和登录。",
+	pageId: "/zh-CN/chitu-manager/v1.0.0/operations",
+	description: "",
 	ogImage: "/images/docs/og_logo.png",
 };
 
 # 操作
 
-各类操作选项位于主窗口的顶部。它包括打开、保存、复制、自动布局、镂空、挖洞、修复、标准件、树脂材料联盟，消息提醒和登录。
+在打印机列表界面可以查看并点击各项功能按键对打印机进行基本的操作。
 
-## 打开
+## 视频
 
-<ChituboxOpenIcon /> “打开” 选项允许您打开 3D 网格文件、_.chitubox_
-项目文件或切片文件。
+### 打开视频
 
-## 保存
+当设备在线且接入了摄像头时，<VideoSurveillance/> 视频图标出现，点击即可打开摄像头并显示视频画面。
 
-<ChituboxSaveIcon /> “保存” 选项允许您将当前项目保存为 _.chitubox_ 文件或 3D
-网格文件。
+### 延时摄影
 
-## 复制
+当设备接入摄像头且支持延迟摄影时，可启用延迟摄影功能。若启用此选项，将对接下来的打印任务进行延时摄影。
 
-<ChituboxCopyIcon /> “复制” 选项允许用户快速制作多个 3D
-模型的副本，这在打印单个模型的多个副本时非常有用。
+打印任务结束后，可以在历史打印记录列表下载延时摄影视频。
 
-<ImageContainer>
-	<AntdImage
-		src={"/images/docs/zh-CN/chitubox-basic/2.x.x/006-operations-copy.png"}
-	/>
-</ImageContainer>
+## 历史记录
 
-## 自动布局
-
-<ChituboxAutoLayoutIcon /> “自动布局” 选项允许用户以多种方式快速地将 3D
-模型放置在打印平台上，包括在打印平台的中心、沿打印平台的 X 侧和沿打印平台的 Y
-侧附近布局模型。
+点击 <HistoricalRecords/> 图标可查看当前设备的历史打印记录。
 
 <ImageContainer>
 	<AntdImage
-		src={
-			"/images/docs/zh-CN/chitubox-basic/2.x.x/006-operations-autolayout.png"
-		}
+		src={"/images/docs/zh-CN/chitu-manager/historical-records.png"}
+		style={{ maxWidth: "400px" }}
 	/>
+
 </ImageContainer>
 
-## 镂空
+历史打印任务所记录的信息包括：图片，名称，状态，进度，材料，实际消耗量，时间，总时长，以及延时摄影视频等。
 
-<ChituboxHollowIcon /> 镂空选项有 3 种模式：“内镂空”、“外镂空”和“底部贯穿”。
+## 访问设备文件
 
-**内镂空** 允许用户创建具有空心内部的 3D 模型，同时保留模型的外形。镂空选项可以帮助用户在打印 3D 模型时节省时间和材料成本，因为空心内部只需要更少的材料来打印。该功能还可用于创建具有复杂外形的轻型模型。
-
-**外镂空** 将从模型中剥离指定厚度的壁，就像将模型进行“收缩”一样。
-
-**底部贯穿** 与“镂空”非常相似，但会删除室底。
+当设备在线并处于空闲状态时，点击 <DeviceFileManagement/> 按钮即可访问当前设备文件。
 
 <ImageContainer>
 	<AntdImage
-		src={
-			"/images/docs/zh-CN/chitubox-basic/2.x.x/006-operations-hollow.png"
-		}
+		src={"/images/docs/zh-CN/chitu-manager/device-files.png"}
 	/>
 </ImageContainer>
 
-### 镂空参数解释
+如果设备文件包含可打印文件，您可以将鼠标停留在对应文件上。当出现 “立即打印” 按钮时，点击此按钮即可开始打印选中文件。
 
--   **壁厚**：壁厚决定了墙的总厚度。
--   **精度**：精度决定了内壁上根据设定百分比生成的面数。
-    <ImageContainer>
-    	<ImageComparison
-    		img1Src={
-    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-low-precision.png"
-    		}
-    		text1={"低精度"}
-    		img2Src={
-    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-high-precision.png"
-    		}
-    		text2={"高精度"}
-    	/>
-    </ImageContainer>
--   **填充结构**：填充的类型。
--   **填充密度**：填充的密度。
--   **动画**：启用此选项将显示镂空过程。
+## 暂停/继续打印
 
-## 挖洞
+当设备正处于打印状态时，打开设备详细状态面板，可以看到暂停打印按钮，点击即可暂停打印。
 
-<ChituboxDigHoleIcon /> “挖洞”功能允许用户在几个简单的点击中创建指定形状或大小的
-3D 模型中的孔。
+如果设备已处于暂停状态，可通过点击继续打印按钮恢复打印。
 
-<ImageContainer>
-	<AntdImage
-		src={
-			"/images/docs/zh-CN/chitubox-basic/2.x.x/006-operations-dig-hole.png"
-		}
-	/>
-</ImageContainer>
+## 停止打印
 
-### 挖洞参数解释
-
--   **形状**：孔的形状，可选择的形状有圆形、六边形和正方形。
--   **直径**：孔的直径。
--   **深度**：孔可以穿透的壁的最大厚度。
-
-    <Admonition type="note" title="注意">
-    	此功能旨在穿透模型的墙壁，因此它不会根据您设置的深度挖掘非穿透孔。
-    </Admonition>
-
--   **垂直于**：垂直于屏幕或模型的挖掘角度。
--   **保持塞子**：是否保留打孔塞子。
-
-## 修复
-
-<ChituboxRepairIcon /> 修复选项将尝试修复损坏的模型。
-
-<Admonition type="warning" title="警告">
-	如果模型复杂或存在许多错误（如倒置的法向、重叠的面等），修复功能可能无法正常工作。
-</Admonition>
-
-## 标准件
-
-<ChituboxStandardPartsIcon /> 标准件为用户提供了一个预制的 3D
-模型库，可以快速、轻松地将其导入到项目中，包括各种基本几何、测试模型、工具模型、机械零件等。
-
-<ImageContainer>
-	<AntdImage
-		src={
-			"/images/docs/zh-CN/chitubox-basic/2.x.x/006-operations-standard-parts.png"
-		}
-	/>
-</ImageContainer>
-
-## 树脂材料联盟
-
-<ChituboxRmaIcon /> 用户可以在这里访问材料中心。
-
-## 消息通知
-
-## 登录
-
-<ChituboxSignInIcon /> 登录选项允许用户登录到他们的 CHITUBOX
-帐户。登录后，用户可以从云端访问他们的设置。
+打开设备详细状态面板，点击停止打印按钮终止当前打印进程。
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
