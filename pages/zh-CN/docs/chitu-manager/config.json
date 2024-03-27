@@ -15,16 +15,16 @@
 					"label": "章节",
 					"subItems": [
 						{
+							"item": "add-printers",
+							"label": "添加设备"
+						},
+						{
 							"item": "printer-list",
 							"label": "打印机列表"
 						},
 						{
 							"item": "operations",
 							"label": "操作"
-						},
-						{
-							"item": "add-printers",
-							"label": "添加设备"
 						}
 					]
 				}

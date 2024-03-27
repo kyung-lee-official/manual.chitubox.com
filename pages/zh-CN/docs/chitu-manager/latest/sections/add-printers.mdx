@@ -21,7 +21,6 @@ export const meta = {
 <ImageContainer>
 	<AntdImage
 		src={"/images/docs/zh-CN/chitu-manager/add-printers.png"}
-		style={{ maxWidth: "800px" }}
 	/>
 </ImageContainer>
 
@@ -29,12 +28,11 @@ export const meta = {
 
 打开添加设备界面时，软件会自动扫描局域网内的所有打印机。
 
-扫描到的未添加设备将出现在列表中。 找到您要添加的设备，点击 “添加设备” 按钮即可添加至 “我的打印机” 列表中。
+扫描到未添加的设备将出现在列表中。 找到您要添加的设备，点击 “添加设备” 按钮即可添加至 “我的打印机” 列表中。
 
 <ImageContainer>
 	<AntdImage
 		src={"/images/docs/zh-CN/chitu-manager/my-printers.png"}
-		style={{ maxWidth: "800px" }}
 	/>
 </ImageContainer>
 
@@ -42,29 +40,29 @@ export const meta = {
 
 已添加的打印机将出现在 “我的打印机” 列表中。
 
-点击列表中的任意设备，即可打开设备基本信息面板。
+点击列表中的任意打印机，即可打开该打印机基本信息面板。
 
 <ImageContainer>
 	<AntdImage
 		src={"/images/docs/zh-CN/chitu-manager/printer-info.png"}
-		style={{ maxWidth: "400px" }}
+		style={{ maxWidth: "500px" }}
 	/>
 </ImageContainer>
 
--   名称：设备名称，可自定义。当设备离线时，不支持修改。
--   型号：设备的型号。
--   品牌：设备的品牌。
--   序列号：设备的序列号。
--   当前设备IP：设备的 IP 地址。
--   协议版本：设备支持的 SDCP 协议版本。
--   固件版本：当前设备的固件版本
+-   名称：打印机的名称，可自定义。当打印机离线时，不支持修改。
+-   型号：打印机的型号。
+-   品牌：打印机的品牌。
+-   序列号：打印机的序列号。
+-   当前打印机IP：打印机的 IP 地址。
+-   协议版本：打印机支持的 SDCP 协议版本。
+-   固件版本：当前打印机的固件版本
 -   曝光屏分辨率：曝光屏的分辨率，单位 px。
--   成型尺寸：设备最大可打印的尺寸。
--   移除设备：点击此选项，即可移除当前设备。
+-   成型尺寸：打印机的最大可打印尺寸。
+-   移除打印机：点击此选项，即可移除当前打印机。
 
 <Admonition type="tip" title="提示">
-	如果您在 CHITUBOX 中登陆了账号，所有已添加的打印机将存储于云端，方便您在不同电脑上管理打印机。
-	如果没有登陆账号，打印机直接保存至本地。
+	如果您在 CHITUBOX 切片软件中登陆了账号，所有已添加的打印机将存储于云端，方便您在不同电脑上管理打印机。
+	如果没有登陆账号，则直接保存至本地。
 </Admonition>
 
 export default ({ children }) => (
