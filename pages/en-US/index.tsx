@@ -149,7 +149,7 @@ const IndexPage = () => {
                     rounded-full"
 					onClick={() => {
 						router.push(
-							`/${urlLocale}/docs/chitubox-basic/latest/introduction`
+							`/${urlLocale}/docs/chitu-manager/latest/introduction`
 						);
 					}}
 				>

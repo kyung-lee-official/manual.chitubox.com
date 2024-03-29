@@ -37,7 +37,7 @@ export const meta = {
 
 <ImageContainer>
 	<AntdImage
-		src={"/images/docs/zh-CN/chitu-manager/historical-records.png"}
+		src={"/images/docs/zh-CN/chitu-manager/004-operations-historical-records.png"}
 		style={{ maxWidth: "400px" }}
 	/>
 
@@ -50,7 +50,7 @@ export const meta = {
 当设备在线并处于空闲状态时，点击 <DeviceFileManagement /> 文件按钮即可访问当前设备文件。
 
 <ImageContainer>
-	<AntdImage src={"/images/docs/zh-CN/chitu-manager/device-files.png"} />
+	<AntdImage src={"/images/docs/zh-CN/chitu-manager/004-operations-device-files.png"} />
 </ImageContainer>
 
 如果设备文件包含可打印文件，您可以将鼠标停留在对应文件上。当出现 “立即打印” 按钮时，点击此按钮即可开始打印选中文件。
@@ -62,12 +62,16 @@ export const meta = {
 如果设备已处于暂停状态，可通过点击继续打印按钮恢复打印。
 
 <ImageContainer>
-	<AntdImage src={"/images/docs/zh-CN/chitu-manager/pause-resume-printing.png"} />
+	<AntdImage src={"/images/docs/zh-CN/chitu-manager/004-operations-pause-printing.png"} />
 </ImageContainer>
 
 ## 停止打印
 
 打开设备详细状态面板，点击停止打印按钮终止当前打印进程。
+
+<ImageContainer>
+	<AntdImage src={"/images/docs/zh-CN/chitu-manager/004-operations-stop-printing.png"} />
+</ImageContainer>
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
