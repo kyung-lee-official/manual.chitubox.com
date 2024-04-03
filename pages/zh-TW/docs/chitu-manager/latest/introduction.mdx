@@ -7,108 +7,74 @@ import { StandardParts } from "@/docComponents/standardParts/StandardParts";
 export const meta = {
 	title: "介紹",
 	author: "CHITUBOX Team",
-	pageId: "/zh-TW/chitubox-basic/v2.0.0/introduction",
+	pageId: "/zh-TW/chitu-manager/v1.0.0/introduction",
 	description:
-		"CHITUBOX Basic 是一款免費的 3D 列印切片軟件，可將 3D 網格檔案切片並轉換為可列印檔案。它旨在讓 3D 列印更輕鬆、更高效，簡化整個 3D 列印過程，讓用戶能夠簡單快速地將 3D 模型轉換為 3D 列印件。軟件支持多種 3D 列印機和配置檔案，並且提供了豐富的選項來優化 3D 列印模型。",
+		"ChituManager 是一款與 CHITUBOX 切片軟體配套使用的 3D 列印機管理軟體，可協助使用者輕鬆實現對 3D 列印機的一站式管理。使用者無需親自前往列印機所在位置，即可透過軟體即時查看列印機狀態、傳輸檔案至列印機、以及遠端啟動列印等操作。此外，Manager 還提供了錯誤回報、歷史紀錄統計與查詢、視訊監控等多項功能，簡化了 3D 列印流程，協助使用者節省時間、提升工作效率。",
 	ogImage: "/images/docs/og_logo.png",
 };
 
 # 介紹
 
-CHITUBOX Basic 是一款免費的 3D 列印切片軟件，可將 3D 網格檔案切片並轉換為可列印檔案。它旨在讓 3D 列印更輕鬆、更高效，簡化整個 3D 列印過程，讓用戶能夠簡單快速地將 3D 模型轉換為 3D 列印件。軟件支持多種 3D 列印機和配置檔案，並且提供了豐富的選項來優化 3D 列印模型。
+ChituManager 是一款與 CHITUBOX 切片軟體配套使用的 3D 列印機管理軟體，可協助使用者輕鬆實現對 3D 列印機的一站式管理。使用者無需親自前往列印機所在位置，即可透過軟體即時查看列印機狀態、傳輸檔案至列印機、以及遠端啟動列印等操作。此外，Manager 還提供了錯誤回報、歷史紀錄統計與查詢、視訊監控等多項功能，簡化了 3D 列印流程，協助使用者節省時間、提升工作效率。
 
-## 新特性 ✨
+## 安装
 
-### 全新的 UI 界面
+點擊 CHITUBOX 切片軟體主介面右上方的 ChituManager 軟體圖示，即可打開下載視窗。或者，當您使用網路傳送功能時，軟體將彈出下載視窗並提示您需要下載 ChituManager 才能繼續。
 
-<ThemeScrollSlider lang={"en"} />
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitu-manager/001-installation-windows-step1.png"
+		}
+		style={{ maxWidth: "600px" }}
+	/>
+</ImageContainer>
 
-很高興地宣布 CHITUBOX Basic 2 推出了全新的用戶界面。新的 UI 界面讓用戶體驗更輕鬆、更直觀。我們改進了軟件的導航和組織方式，使您更容易找到所需的工具和功能。我們還添加了一系列新功能，包括主題、改進的物件操作等等。使用新 UI，您的 3D 列印體驗將更快、更高效、更愉悅。
+點擊 "下載並安裝"。
 
-### 支持 DirectX 和 Metal
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitu-manager/001-installation-windows-step2.png"
+		}
+		style={{ maxWidth: "600px" }}
+	/>
+</ImageContainer>
 
-<DirectXAndMetal />
+等待下載完成。
 
-通過支援 DirectX 和 Metal，讓 CHITUBOX Basic 現在可以渲染更逼真、更複雜的 3D 模型，具有更豐富的細節和更逼真的照明、陰影和菲涅爾效果。這些技術還能提高效能，讓您充分發揮顯示卡的威力。現在在 Windows 和 macOS 平台上使用 CHITUBOX Basic 時，您可以體驗到最高級別的圖形效能。
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitu-manager/001-installation-windows-step3.png"
+		}
+		style={{ maxWidth: "600px" }}
+	/>
+</ImageContainer>
 
-### RMA
+下載完成後將自動進入安裝流程，點擊 "下一步" 繼續。
 
-<Rma />
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitu-manager/001-installation-windows-step4.png"
+		}
+		style={{ maxWidth: "600px" }}
+	/>
+</ImageContainer>
 
-我們推出了新的 RMA（樹脂聯盟）功能。此功能使您可以輕鬆地為不同品牌的樹脂材料選擇合適的設定，它還支持雲儲存，因此您可以從任何地方訪問您的設定。此外，此功能會不斷地更新，因此您始終可以獲得最新配置。有了這個新功能，您現在可以快速輕鬆地設定列印機，以獲得最佳 3D 列印結果。
+選擇安裝路徑，我們建議您使用預設路徑，然後點擊 "下一步" 繼續。
 
-### 基本標準零件
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitu-manager/001-installation-windows-step5.png"
+		}
+		style={{ maxWidth: "600px" }}
+	/>
+</ImageContainer>
 
-<StandardParts />
-
-此功能提供常用的基礎形狀零件庫，這樣您就不必花時間在互聯網上搜尋。
-
-## 支持的檔案
-
-### 項目檔案
-
-| 檔案類型               | 檔案副檔名  | 描述                                             |
-| ---------------------- | ----------- | ------------------------------------------------ |
-| CHITUBOX 專案檔案 2023 | \*.ctp      | 包含更多的模型資訊                               |
-| CHITUBOX 專案檔案      | \*.chitubox | 老版本的專案檔案格式，包含基本模型數據和支撐數據 |
-
-### 可列印的切片檔案
-
-| 檔案類型                | 檔案副檔名 |
-| ----------------------- | ---------- |
-| CHITUBOX slicer         | \*.cbddlp  |
-| CHITUBOX slicer         | \*.ctb     |
-| Halot One 系列          | \*.cxdlp   |
-| ZIP Compress            | \*.zip     |
-| SLC                     | \*.slc     |
-| Fhd                     | \*.fhd     |
-| WoW                     | \*.wow     |
-| Goo                     | \*.goo     |
-| Prz                     | \*.prz     |
-| CHITUBOX General Format | \*.gf      |
-| Phrozen 檔案            | \*.phz     |
-| FlashDLPrint 檔案       | \*.svgx    |
-| fdg                     | \*.fdg     |
-| Qdx                     | \*.qdx     |
-| Qdt                     | \*.qdt     |
-| Photon 系列             | \*.photon  |
-| Photon 系列             | \*.photons |
-| Photon 系列             | \*.pw0     |
-| Photon 系列             | \*.pwmo    |
-| Photon 系列             | \*.pwms    |
-| Photon 系列             | \*.pwmx    |
-| Photon 系列             | \*.pwma    |
-| Photon 系列             | \*.pwmb    |
-| Photon 系列             | \*.pmsq    |
-| Photon 系列             | \*.pwx     |
-| Photon 系列             | \*.pws     |
-| Photon 系列             | \*.pm3     |
-| Photon 系列             | \*.pm3m    |
-| Photon 系列             | \*.pm3n    |
-| Photon 系列             | \*.pm3r    |
-| Photon 系列             | \*.pm5     |
-| Photon 系列             | \*.pm5s    |
-| Photon 系列             | \*.pmx2    |
-| Photon 系列             | \*.px6s    |
-| Photon 系列             | \*.dlp     |
-| Photon 系列             | \*.dl2p    |
-| NOVA3D                  | \*.cws     |
-| longer3d file           | \*.lgs     |
-
-### 3D 网格/CAD 模型檔案
-
-| 檔案類型    | 檔案副檔名 |
-| ----------- | ---------- |
-| 導入 & 導出 | \*.stl     |
-| 導入 & 導出 | \*.obj     |
-| 導入        | \*.3mf     |
-
-### 配置檔案
-
-| 檔案類型 | 檔案副檔名 | 描述                                   |
-| -------- | ---------- | -------------------------------------- |
-| 配置檔案 | \*.cfgx    | 包含更多可配置參數，例如自訂快捷鍵資訊 |
-| 配置檔案 | \*.cfg     | 包含印表機配置資訊和支援配置資訊       |
+等待安裝完成。
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>

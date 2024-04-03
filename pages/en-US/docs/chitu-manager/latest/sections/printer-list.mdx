@@ -1,59 +1,94 @@
 import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import {
+	CameraStatus,
+	UsbDriveStatus,
+	WirelessNetwork,
+	WiredNetwork,
+	ReleaseFilmUsageCount,
+	ExposureScreenUsageTime,
+} from "@/components/icons/Icons";
 
 export const meta = {
-	title: "Preview",
+	title: "Printer List",
 	author: "CHITUBOX Team",
-	pageId: "/en-US/chitubox-basic/v2.0.0/preview",
-	description:
-		"Slice preview window in CHITUBOX. Previewing the sliced file in the slicer is important to ensure that the 3D print is accurate and meets your expectations.",
+	pageId: "/en-US/chitu-manager/v1.0.0/printer-list",
+	description: "",
 	ogImage: "/images/docs/og_logo.png",
 };
 
-# Preview
+# Printer List
 
-## Preview Window
+Click the "Printer" option in the navigation bar on the left side of the software to open the printer list interface.
 
-After slicing, you can preview the model in the preview window. The preview window is divided into two parts: the left part is the model preview, and the right part is the layer preview.
-
-The Print Settings panel on the bottom of the preview window displays the print settings of the current model. You can modify the print settings here before saving the sliced file.
-
-You can check out the print info on the upper right corner of the preview window. The print info includes the **Machine Type**, **Resin**, **Volume**, **Weight**, **Price**, and **Print Time**.
-
-## Network Sending
-
-<Admonition type="note">
-	1. Your printer should have a USB drive plugged in to store received sliced
-	files from your computer. 
-    1. Your printer and computer must under the same LAN. 
-    1. The transmission speed is limited by the printer's network module. Different printers may use different network modules, which can lead to performance differences. If the network speed doesn't meet your expectations, copy the sliced file to a USB drive and let the printer read the file directly from the USB drive.
-    1. Not all printers support Network
-	Sending. Read the <SpanA href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃full compatibility list</SpanA> here.
-</Admonition>
-
-Printers support network sending will have this **Network Sending** button, which can send your sliced data to your printer directly.
+If you have not added a printer yet, directly click the "Add Printer" button to jump to the <NextLink href="/en-US/docs/chitu-manager/latest/sections/add-printers">Add printer</NextLink> interface.
 
 <ImageContainer>
 	<AntdImage
 		src={
-			"/images/docs/en-US/chitubox-basic/2.x.x/011-preview-network-sending.png"
+			"/images/docs/en-US/chitu-manager/003-printer-list-main-printer.png"
 		}
-	/>
-</ImageContainer>
-
-## Save Files
-
-After slicing, you can save the sliced file to your computer. Click the **Save** button on lower-right of the preview window to save the sliced file.
-
-<ImageContainer>
-	<AntdImage
-		src={"/images/docs/en-US/chitubox-basic/2.x.x/011-preview-save.png"}
+		style={{ maxWidth: "1050px" }}
 	/>
 </ImageContainer>
 
 <Admonition type="note">
-	* The file saving dialog only shows the file format supported by your printer. If you don't see the correct format from the drop-down menu, please go back and check if you have selected the correct printer.
-    * The **default** printer type allows you to save the sliced file in any format supported by CHITUBOX. However, you should only select the **default** printer type when your printer doesn't have a built-in profile in CHITUBOX.
+	Please make sure the printer and the computer are on the same LAN.
 </Admonition>
+
+If you have added a printer, you can view all the added printers, the real-time status of the printers, and perform some other simple <NextLink href="/en-US/docs/chitu-manager/latest/sections/operations">operations</NextLink> on this interface.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitu-manager/003-printer-list-printer-list.png"
+		}
+		style={{ maxWidth: "1050px" }}
+	/>
+</ImageContainer>
+
+## Basic Status
+
+### Camera Status
+
+The <CameraStatus /> icon indicates that the printer is connected to a camera.
+
+### USB Drive Status
+
+The <UsbDriveStatus /> icon indicates that the printer is connected to a USB drive.
+
+### Network Status
+
+-   <WiredNetwork /> indicates that the printer is connected to the network
+    using a wired connection.
+
+-   <WirelessNetwork /> indicates that the printer is connected to the network
+    using a wireless connection.
+
+### Device Real-time Status
+
+On this interface, you can also view the real-time status of the device, including offline, standby, connecting, printing, printing completed, paused, and other statuses.
+
+## Detailed Status
+
+You can also click on an individual device to open the detailed status panel for the selected device.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitu-manager/003-printer-list-detailed-list.png"
+		}
+		style={{ maxWidth: "400px" }}
+	/>
+</ImageContainer>
+
+### Release Film Usage Count
+
+<ReleaseFilmUsageCount /> indicates the number of times the release film has
+been used.
+
+### Exposure Screen Usage Time
+
+<ExposureScreenUsageTime /> indicates the usage time of the exposure screen.
 
 export default ({ children }) => (
 	<DocsLayout meta={meta}>{children}</DocsLayout>
