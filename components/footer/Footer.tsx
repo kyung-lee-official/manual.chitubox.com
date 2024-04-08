@@ -86,6 +86,12 @@ const Footer = () => {
 						{t("footer.chituboxProDoc")}
 					</Link>
 					<Link
+						href={`/${urlLocale}/docs/chitu-manager/latest/introduction`}
+					>
+						<FluentUiDocument size={24} />
+						{t("footer.chituManagerDoc")}
+					</Link>
+					<Link
 						href={`/${urlLocale}/docs/faq/latest/chitubox-basic-faq`}
 					>
 						<QuestionCircle size={24} />

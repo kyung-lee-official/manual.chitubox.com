@@ -23,15 +23,20 @@ const IndexPage = () => {
 		useState<string>(buttonBoxShadow);
 	const [buttonProBoxShadow, setButtonProBoxShadow] =
 		useState<string>(buttonBoxShadow);
+	const [buttonManagerShadow, setButtonManagerShadow] =
+		useState<string>(buttonBoxShadow);
 	const [buttonFaqBoxShadow, setButtonFaqBoxShadow] =
 		useState<string>(buttonBoxShadow);
 	const [buttonBasicColor, setButtonBasicColor] =
 		useState<string>(buttonColor);
 	const [buttonProColor, setButtonProColor] = useState<string>(buttonColor);
+	const [buttonManagerColor, setButtonManagerColor] = useState<string>(buttonColor);
 	const [buttonFaqColor, setButtonFaqColor] = useState<string>(buttonColor);
 	const [buttonBasicTransitionDuration, setButtonBasicTransitionDuration] =
 		useState<number>(0.8);
 	const [buttonProTransitionDuration, setButtonProTransitionDuration] =
+		useState<number>(0.8);
+	const [buttonManagerTransitionDuration, setButtonManagerTransitionDuration] =
 		useState<number>(0.8);
 	const [buttonFaqTransitionDuration, setButtonFaqTransitionDuration] =
 		useState<number>(0.8);
@@ -39,8 +44,10 @@ const IndexPage = () => {
 		useState<number>(0.3);
 	const [buttonProTransitionDelay, setButtonProTransitionDelay] =
 		useState<number>(0.5);
-	const [buttonFaqTransitionDelay, setButtonFaqTransitionDelay] =
+	const [buttonManagerTransitionDelay, setButtonManagerTransitionDelay] =
 		useState<number>(0.7);
+	const [buttonFaqTransitionDelay, setButtonFaqTransitionDelay] =
+		useState<number>(0.9);
 
 	return (
 		<Layout>
@@ -122,6 +129,39 @@ const IndexPage = () => {
 					}}
 					animate={{
 						opacity: 1,
+						color: buttonManagerColor,
+						boxShadow: buttonManagerShadow,
+						transition: {
+							delay: buttonManagerTransitionDelay,
+							duration: buttonManagerTransitionDuration,
+						},
+					}}
+					onHoverStart={() => {
+						setButtonManagerColor(buttonHoverColor);
+						setButtonManagerShadow(buttonBoxHoverShadow);
+					}}
+					onHoverEnd={() => {
+						setButtonManagerColor(buttonColor);
+						setButtonManagerShadow(buttonBoxShadow);
+					}}
+					className="flex justify-center items-center w-60 h-12
+                    font-medium text-lg
+                    rounded-full"
+					onClick={() => {
+						router.push(
+							`/${urlLocale}/docs/chitubox-basic/latest/introduction`
+						);
+					}}
+				>
+					ChituManager
+				</motion.button>
+				<motion.button
+					initial={{
+						opacity: 0,
+						boxShadow: initialButtonBoxShadow,
+					}}
+					animate={{
+						opacity: 1,
 						color: buttonFaqColor,
 						boxShadow: buttonFaqBoxShadow,
 						transition: {
@@ -132,9 +172,11 @@ const IndexPage = () => {
 					onAnimationComplete={() => {
 						setButtonBasicTransitionDuration(0.25);
 						setButtonProTransitionDuration(0.25);
+						setButtonManagerTransitionDuration(0.25);
 						setButtonFaqTransitionDuration(0.25);
 						setButtonBasicTransitionDelay(0);
 						setButtonProTransitionDelay(0);
+						setButtonManagerTransitionDelay(0);
 						setButtonFaqTransitionDelay(0);
 					}}
 					onHoverStart={() => {

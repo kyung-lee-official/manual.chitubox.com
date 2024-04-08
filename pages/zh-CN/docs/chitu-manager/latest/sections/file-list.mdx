@@ -1,0 +1,37 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import {
+	ChituboxCheckboxIcon,
+	ChituboxEyeIcon,
+	ChituboxRulerIcon,
+	ChituboxDeleteIcon,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "文件列表",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/file-list",
+	description: "所有加载的文件都显示在文件列表中。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 文件列表
+
+所有加载完成的文件都会显示在文件列表中。你可以同时选择多个文件，还可以通过单击全选按钮来选择所有文件。
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/zh-CN/chitubox-basic/2.x.x/007-file-list-panel.png"}
+	/>
+</ImageContainer>
+
+复选框图标 <ChituboxCheckboxIcon /> 允许您选择该文件。
+
+眼睛图标 <ChituboxEyeIcon /> 允许您隐藏文件。添加图标允许您添加文件。
+
+标尺图标 <ChituboxRulerIcon /> 允许您显示所有文件的<SpanA href={"https://zh.wikipedia.org/wiki/%E5%8C%85%E5%9B%B4%E4%BD%93"}>包围体</SpanA>尺寸。
+
+垃圾桶图标 <ChituboxDeleteIcon /> 允许您删除所选文件。
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

@@ -1,0 +1,226 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import {
+	ChituboxSelectIcon,
+	ChituboxSelectBoxIcon,
+	ChituboxMoveIcon,
+	ChituboxRotateIcon,
+	ChituboxScaleIcon,
+	ChituboxMirrorIcon,
+	ChituboxGlobalIcon,
+	ChituboxLocalIcon,
+	ChituboxResetIcon,
+	ChituboxAddMachine,
+	ChituboxMachineBarMenuIcon,
+	ChituboxDeleteIcon,
+	ChituboxCopyAddIcon,
+	ChituboxSupport,
+	ChituboxSupportDisplayAllIcon,
+	ChituboxSupportDisplayTopIcon,
+	ChituboxSupportDisplayTipIcon,
+	ChituboxRenderDetailedIcon,
+	ChituboxRenderFresnelIcon,
+	ChituboxHomeIcon,
+	ChituboxPerspectiveIcon,
+	ChituboxOthographicIcon,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "Gadgets",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-basic/v2.0.0/gadgets",
+	description:
+		"Some useful gadgets that can be used in the CHITUBOX software.",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# Gadgets
+
+In this section, we will introduce some useful gadgets that can be used in the CHITUBOX software.
+
+## Toolbar
+
+The toolbar is located at the left of the main window. It contains the select, move, rotate, scale, and mirror options.
+
+### Select
+
+<ChituboxSelectIcon /> The select pointer tool is used to select objects in the
+scene by clicking.
+
+<ChituboxSelectBoxIcon /> The select box tool is used to select objects in the
+scene by draging a box.
+
+### Move
+
+<ChituboxMoveIcon /> The move tool is used to move objects in the scene. You can
+also move objects precisely by inputting the coordinates in the move panel.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-move-panel.png"
+		}
+	/>
+</ImageContainer>
+
+-   Put on the plate: The object will be put on the plate.
+
+-   Cetered: The object will be centered on the plate, if multiple objects are selected, the center of the objects will be the center of the plate.
+
+### Rotate
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-rotate-panel.png"
+		}
+	/>
+</ImageContainer>
+
+<ChituboxRotateIcon /> The rotate tool is used to rotate objects in the scene.
+You can also rotate objects precisely by inputting the angles in the rotate
+panel.
+
+-   Combination Center: If enabled,the center of the rotation is the center of the selected objects.
+
+-   Flatten by face: The object will be put on the plate by the face you selected on the object.
+
+-   Auto-orientate Selected: The object will be auto-oriented by CHITUBOX.
+
+### Scale
+
+<ChituboxScaleIcon /> The scale tool is used to scale objects in the scene. You
+can also scale objects precisely by inputting the scale size or ratio in the
+scale panel.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-scale-panel.png"
+		}
+	/>
+</ImageContainer>
+
+<ChituboxGlobalIcon /> Global coordinate: The scale handle parallels to the
+global coordinate.
+
+<ChituboxLocalIcon /> Local coordinate: The scale handle parallels to object's
+local coordinate.
+
+<ChituboxResetIcon /> Reset: Reset the ratio to 100%.
+
+-   Lock Ratio: If enabled, the X, Y and Z dimentioned will be scaled by the same ratio.
+
+-   Lock support diameter: If enabled, the support diameter will not be scaled.
+
+### Mirror
+
+<ChituboxMirrorIcon /> The mirror tool is used to mirror objects in the scene.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-mirror-panel.png"
+		}
+	/>
+</ImageContainer>
+
+-   Keep the original model: If enabled, the original model will be kept.
+
+## Info Panel
+
+The Info Panel is located at the lower left of the main window. It contains the brief information of current settings.
+
+## Machine Management Bar
+
+The Machine Management Bar is located at bottom of the main window. Here you can add, delete, and copy printers.
+
+Click the add machine button <ChituboxAddMachine /> to add a new printer.
+
+Click the menu icon <ChituboxMachineBarMenuIcon />, you can see the Hide Platform, <ChituboxCopyAddIcon /> Copy Machine, and <ChituboxDeleteIcon /> Delete Machine options.
+
+## Support Display Mode
+
+Click <ChituboxSupport /> to switch to the support view. There are 3 buttons allow you to switch between different support display modes.
+
+<ChituboxSupportDisplayAllIcon /> Display full supports.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-all.png"
+		}
+	/>
+</ImageContainer>
+
+<ChituboxSupportDisplayTopIcon /> Display top of supports.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-top.png"
+		}
+	/>
+</ImageContainer>
+
+<ChituboxSupportDisplayTipIcon /> Display tip of supports.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-tip.png"
+		}
+	/>
+</ImageContainer>
+
+## Render Mode
+
+The render mode is located at the upper right of the main window. It contains two modes: Details and Fresnel.
+
+<ChituboxRenderDetailedIcon /> In Details mode, the model shows more details on
+the surface.
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-details.png"}
+	/>
+</ImageContainer>
+
+<ChituboxRenderFresnelIcon /> In Fresnel mode, the model will appear smoother on
+the surface.
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-fresnel.png"}
+	/>
+</ImageContainer>
+
+## Viewport Gizmos
+
+The Viewport Gizmos is located at the upper right of the main window, it provides an intuitive way to quickly manipulate the view and enables users to quickly change the angle or perspective of the viewport, making it easy to check the positions of objects relative to each other.
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/en-US/chitubox-basic/2.x.x/005-gadget-viewport_gizmo.svg"
+		}
+		width={200}
+	/>
+</ImageContainer>
+
+The Home <ChituboxHomeIcon /> icon and the Perspective <ChituboxPerspectiveIcon /> / Orthographic <ChituboxOthographicIcon /> icons are located at the upper-right of the main window beside the viewport gizmos.
+
+The Home icon allows users to reset the viewport to the default view. The Perspective/Orthographic icon allows users to switch between Perspective and Orthographic views. Perspective mode provides a more realistic frustum view of the scene, while Orthographic mode gives users a flat view of the scene, it allows users to easily assess the position of objects on the build plate and make adjustments as needed.
+
+## Slider
+
+<ImageContainer>
+	<AntdImage
+		src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadget-slider.gif"}
+	/>
+</ImageContainer>
+
+The slider is located at the right of the main window which is used to preview the sectional area of models (pre-sliced) and layers of models (post-sliced). This feature allows users to preview the various sections and layers of the 3D model before it is sent to the printer. The slider has two buttons on the top and bottom separately, which are used to animate the slider position. The reset button on the bottom will reset the slider position to the default value. The slider component can help users assess the quality of the 3D model before it is sent to the printer, allowing them to make adjustments as needed.
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

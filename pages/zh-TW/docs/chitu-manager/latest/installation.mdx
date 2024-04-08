@@ -1,0 +1,88 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import { SystemRequirements } from "@/docComponents/systemRequirements/SystemRequirements";
+
+export const meta = {
+	title: "安装",
+	author: "CHITUBOX Team",
+	pageId: "/zh-TW/chitubox-basic/v2.0.0/installation",
+	description:
+		"在安裝軟件之前，仔細檢查系統需求非常重要。在本節中，我們將介紹 CHITUBOX 的系統需求",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 安装
+
+## 系统要求
+
+<SystemRequirements lang={"zh-TW"} />
+
+## Windows
+
+從我們的 <SpanA href="https://www.chitubox.com/zh-Hans/download/chitubox-free">官網</SpanA> 下載安裝包，雙擊下載的安裝程序開始安裝過程。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/002-installation-windows-step1.png"
+		}
+		style={{ maxWidth: "600px" }}
+	/>
+</ImageContainer>
+
+點擊「下一步」繼續。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/002-installation-windows-step2.png"
+		}
+		style={{ maxWidth: "600px" }}
+	/>
+</ImageContainer>
+
+閱讀最終使用者許可協議，如果您同意條款，請勾選「我接受許可協議」選項，然後點擊「下一步」繼續。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/002-installation-windows-step3.png"
+		}
+		style={{ maxWidth: "600px" }}
+	/>
+</ImageContainer>
+
+選擇安裝路徑，我們建議您使用預設路徑，然後點擊「下一步」繼續。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/002-installation-windows-step4.png"
+		}
+		style={{ maxWidth: "600px" }}
+	/>
+</ImageContainer>
+
+點擊「安裝」開始安裝程序。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitubox-basic/2.x.x/002-installation-windows-step5.png"
+		}
+		style={{ maxWidth: "600px" }}
+	/>
+</ImageContainer>
+
+等待安裝完成。
+
+## macOS
+
+在 macOS 上使用 CHITUBOX Basic 無需安裝流程，因為它是以可攜式 (portable) 的形式提供的。您只需下載 CHITUBOX Basic 的最新版本，然後將其拖放到「應用程式」資料夾中即可。
+
+## Ubuntu
+
+在 Ubuntu 上使用 CHITUBOX Basic 無需安裝流程，因為它是以可攜式 (portable) 的形式提供的。您只需下載 CHITUBOX Basic 的最新版本，解壓縮並執行可執行檔即可。
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

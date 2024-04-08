@@ -1,0 +1,62 @@
+{
+	"docInstanceName": "ChituManager",
+	"isVersioned": true,
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "1.0.0",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "介紹"
+				},
+				{
+					"item": "installation",
+					"label": "安裝"
+				},
+				{
+					"item": "quick-start",
+					"label": "快速入門"
+				},
+				{
+					"item": "sections",
+					"label": "章節",
+					"subItems": [
+						{
+							"item": "menu",
+							"label": "菜單"
+						},
+						{
+							"item": "gadgets",
+							"label": "小工具"
+						},
+						{
+							"item": "operations",
+							"label": "操作"
+						},
+						{
+							"item": "file-list",
+							"label": "檔案列表"
+						},
+						{
+							"item": "risk-detection",
+							"label": "風險檢測"
+						},
+						{
+							"item": "configure-print-parameters",
+							"label": "設定列印參數"
+						},
+						{
+							"item": "configure-support-parameters",
+							"label": "設定支撐參數"
+						},
+						{
+							"item": "preview",
+							"label": "預覽"
+						}
+					]
+				}
+			]
+		}
+	]
+}
