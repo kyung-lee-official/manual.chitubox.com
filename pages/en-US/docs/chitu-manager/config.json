@@ -11,48 +11,20 @@
 					"label": "Introduction"
 				},
 				{
-					"item": "installation",
-					"label": "Installation"
-				},
-				{
-					"item": "quick-start",
-					"label": "Quick Start"
-				},
-				{
 					"item": "sections",
 					"label": "Sections",
 					"subItems": [
 						{
-							"item": "menu",
-							"label": "Menu"
+							"item": "add-printers",
+							"label": "Add Printer"
 						},
 						{
-							"item": "gadgets",
-							"label": "Gadgets"
+							"item": "printer-list",
+							"label": "Printer List"
 						},
 						{
 							"item": "operations",
 							"label": "Operations"
-						},
-						{
-							"item": "file-list",
-							"label": "File List"
-						},
-						{
-							"item": "risk-detection",
-							"label": "Risk Detection"
-						},
-						{
-							"item": "configure-print-parameters",
-							"label": "Configure Print Parameters"
-						},
-						{
-							"item": "configure-support-parameters",
-							"label": "Configure Support Parameters"
-						},
-						{
-							"item": "preview",
-							"label": "Preview"
 						}
 					]
 				}

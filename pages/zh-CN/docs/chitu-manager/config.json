@@ -11,48 +11,20 @@
 					"label": "介绍"
 				},
 				{
-					"item": "installation",
-					"label": "安装"
-				},
-				{
-					"item": "quick-start",
-					"label": "快速入门"
-				},
-				{
 					"item": "sections",
 					"label": "章节",
 					"subItems": [
 						{
-							"item": "menu",
-							"label": "菜单"
+							"item": "add-printers",
+							"label": "添加设备"
 						},
 						{
-							"item": "gadgets",
-							"label": "小工具"
+							"item": "printer-list",
+							"label": "打印机列表"
 						},
 						{
 							"item": "operations",
 							"label": "操作"
-						},
-						{
-							"item": "file-list",
-							"label": "文件列表"
-						},
-						{
-							"item": "risk-detection",
-							"label": "风险检测"
-						},
-						{
-							"item": "configure-print-parameters",
-							"label": "设置打印参数"
-						},
-						{
-							"item": "configure-support-parameters",
-							"label": "设置支撑参数"
-						},
-						{
-							"item": "preview",
-							"label": "预览"
 						}
 					]
 				}

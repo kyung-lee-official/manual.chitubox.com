@@ -1,0 +1,79 @@
+import { DocsLayout } from "@/components/docsLayout/DocsLayout";
+import {
+	ChituboxCheckboxIcon,
+	ChituboxEyeIcon,
+	ChituboxRulerIcon,
+	ChituboxDeleteIcon,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "添加設備",
+	author: "CHITUBOX Team",
+	pageId: "/zh-TW/chitu-manager/v1.0.0/add-printers",
+	description: "",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 添加設備
+
+點擊軟體左側導航欄的「添加設備」選項打開添加設備介面。共分為兩部分：添加列印機和我的列印機。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitu-manager/002-add-printers-add-printers.png"
+		}
+		style={{ maxWidth: "1050px" }}
+	/>
+</ImageContainer>
+
+## 添加列印機
+
+打開添加設備介面時，軟體會自動掃描局域網內的所有列印機。
+
+掃描到未添加的設備將出現在列表中。找到您要添加的設備，點擊「添加設備」按鈕即可添加至「我的列印機」列表中。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitu-manager/002-add-printers-my-printers.png"
+		}
+		style={{ maxWidth: "1050px" }}
+	/>
+</ImageContainer>
+
+## 我的列印機
+
+已添加的列印機將出現在「我的列印機」列表中。
+
+點擊列表中的任意列印機，即可打開該列印機基本信息面板。
+
+<ImageContainer>
+	<AntdImage
+		src={
+			"/images/docs/zh-CN/chitu-manager/002-add-printers-printer-info.png"
+		}
+		style={{ maxWidth: "400px" }}
+	/>
+</ImageContainer>
+
+-   名稱：列印機的名稱，可自定義。當列印機離線時，不支持修改。
+-   型號：列印機的型號。
+-   品牌：列印機的品牌。
+-   序列號：列印機的序列號。
+-   當前列印機 IP：列印機的 IP 地址。
+-   協議版本：列印機支持的 SDCP 協議版本。
+-   固件版本：當前列印機的固件版本
+-   曝光屏分辨率 (px)：曝光屏的分辨率。
+-   成型尺寸 (mm)：列印機的最大可列印尺寸。
+-   移除列印機：點擊此按鈕，即可移除當前列印機。
+
+<Admonition type="tip" title="提示">
+	如果您在 CHITUBOX
+	切片軟體中登入了帳號，所有已添加的列印機將儲存在雲端，方便您在不同電腦上管理列印機。
+	如果沒有登入帳號，則直接儲存至本地。
+</Admonition>
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);
