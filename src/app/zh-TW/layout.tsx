@@ -7,6 +7,7 @@ import { UrlHashPilot } from "@/components/urlHashPilot/UrlHashPilot";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
 import dynamic from "next/dynamic";
+import KatexHtmlSanitizer from "@/components/katexHtmlSanitizer/KatexHtmlSanitizer";
 
 const DynamicDocsSidebar = dynamic(
 	() => import("@/components/docsSidebar/DocsSidebar"),
@@ -67,6 +68,7 @@ export default function RootLayout({
 						text-neutral-900 dark:text-neutral-200
 						dark:bg-black"
 					>
+						<KatexHtmlSanitizer />
 						<DynamicDocsSidebar />
 						<div className="flex flex-col w-full min-w-0 max-w-[900px] p-4 mx-auto">
 							<DynamicVersionTag />
