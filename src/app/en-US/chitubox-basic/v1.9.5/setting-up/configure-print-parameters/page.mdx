@@ -1,5 +1,4 @@
 import { LightOffDelayCalculator } from "@/docComponents/lightOffDelayCalculator/LightOffDelayCalculator";
-
 export const meta = {
 	title: "Configure Print Parameters",
 	author: "CHITUBOX Team",
@@ -8,6 +7,7 @@ export const meta = {
 	ogImage: "/images/docs/og_logo.png",
 };
 import { YouTubeVideoContainer } from "@/components/videoContainer/YouTubeVideoContainer";
+import { ImageComparison } from "@/components/imageComparison/ImageComparison";
 
 # Configure Print Parameters
 
@@ -145,7 +145,7 @@ In order to shorten the printing time and ensure a higher printing success rate,
 Traditionally, there are only 2 sub-stages for a single motion cycle, after TSMC was introduced, we now have 4 sub-stages for a single motion cycle:
 
 <ImageContainer>
-	<ImageComprison
+	<ImageComparison
 		img1Src={
 			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.motion_control_legacy.svg"
 		}
@@ -164,8 +164,8 @@ When both normal layers and bottom layers are involved, it makes sense that ther
 	data as per your needs.
 </Admonition>
 
-| Sub-stage                                                                                | Relevant Parameters                                                                                      |
-| ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Sub-stage                                                                                | Relevant Parameters                                                                                                      |
+| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Bottom layers slow lift</span>    | <ImageContainer src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.1.png")}/> |
 | <span style={{ color: "#00b894", fontWeight: "bold" }}>Bottom layers fast lift</span>    | <ImageContainer src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.2.png")}/> |
 | <span style={{ color: "#00b894", fontWeight: "bold" }}>Bottom layers fast retract</span> | <ImageContainer src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.3.png")}/> |
@@ -277,9 +277,9 @@ Modify editable fields to get **Light-off Delay**.
 </Admonition>
 
 <ImageContainer
-   	src={
-   		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.1.png"
-   	}
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.1.png"
+	}
 />
 
 <Admonition type="note">
@@ -290,9 +290,9 @@ Modify editable fields to get **Light-off Delay**.
 ### Advanced
 
 <ImageContainer
-   	src={
-   		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters004.png"
-   	}
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters004.png"
+	}
 />
 
 #### 1. Bottom Light PWM
@@ -320,11 +320,7 @@ The triangular sawtooth of image edge is softened to achieve smoother surface ef
 
 -   _Image Blur_ : Enable/Disable image blur, **designed for .ctb format**.
 
-    -   <SpanText>
-        	_Image Blur Pixel_ : `2` ~ `8` , determines the number of pixels for
-        	edge transition, the higher level you select, the softer edge would
-        	be. Similar to the feather function in Photoshop.
-        </SpanText>
+    -   _Image Blur Pixel_ : `2` ~ `8` , determines the number of pixels for edge transition, the higher level you select, the softer edge would be. Similar to the feather function in Photoshop.
 
 Open <SpanA href="https://youtu.be/ihITNQetn94">📺this video</SpanA> and <SpanA href="https://www.chitubox.com/en/article/support/indepth/technology/52">📃this article</SpanA> to learn more about **Anti-aliasing**, **Grayscale**, and **Image Blur**.
 
@@ -380,10 +376,10 @@ Some high-resolution printers could have extra delays when loading data and will
 -   **Auto Generated**
 
     <ImageContainer
-        	src={
-        		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters004-1.png"
-        	}
-        />
+    	src={
+    		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters004-1.png"
+    	}
+    />
 
 Layer Print Time Compensation = $\frac{\text{Actual Printing Time - Software Forecast Time}}{\text{Layer Count}}$
 

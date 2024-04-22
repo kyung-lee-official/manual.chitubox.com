@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.yarn/install-state.gz
 
 # testing
 /coverage
@@ -38,6 +39,6 @@ yarn-error.log*
 next-env.d.ts
 
 # preload
-/preload/out
-/preload/node_modules
-/preload/docsContext.json
+/src/preload/out
+/src/preload/node_modules
+/src/preload/docsContext.json
