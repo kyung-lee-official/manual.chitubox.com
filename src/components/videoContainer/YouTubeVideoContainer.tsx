@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 
 export const YouTubeVideoContainer: React.FC<any> = ({ children }) => {
 	return (

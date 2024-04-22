@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 
 export const BilibiliVideoContainer: React.FC<any> = ({ children }) => {
 	return (

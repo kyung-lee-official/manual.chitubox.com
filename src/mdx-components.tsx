@@ -6,6 +6,12 @@ import { ResponsiveTable } from "./components/responsiveTable/ResponsiveTable";
 import { ImageContainer } from "./components/imageContainer/ImageContainer";
 import { Admonition } from "./components/admonition/Admonition";
 import { ImageComparison } from "@/components/imageComparison/ImageComparison";
+import dynamic from "next/dynamic";
+
+const FacebookVideoContainer = dynamic(
+	() => import("./components/videoContainer/FacebookVideoContainer"),
+	{ ssr: false }
+);
 
 const HeadingAnchor = (props: any) => {
 	const { ...rest } = props;
@@ -96,9 +102,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		);
 	};
 
-	const p = (props: any) => (
-		<p {...props} className="my-4" />
-	);
+	const p = (props: any) => <p {...props} className="my-4" />;
 
 	const ul = ({ children }: any) => {
 		return (
@@ -164,6 +168,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		ol: ol,
 		SpanA: SpanA,
 		NextLink: NextLink,
+		FacebookVideoContainer: FacebookVideoContainer,
 		table: ResponsiveTable,
 		Admonition: Admonition,
 		ImageContainer: ImageContainer,
