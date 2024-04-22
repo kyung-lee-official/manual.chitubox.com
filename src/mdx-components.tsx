@@ -169,6 +169,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		SpanA: SpanA,
 		NextLink: NextLink,
 		FacebookVideoContainer: FacebookVideoContainer,
+		ResponsiveTable: ResponsiveTable,
 		table: ResponsiveTable,
 		Admonition: Admonition,
 		ImageContainer: ImageContainer,

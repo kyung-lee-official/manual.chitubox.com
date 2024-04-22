@@ -42,7 +42,7 @@ const DocsSearch = () => {
 	}, [searchIconRef]);
 
 	useEffect(() => {
-		if (searchTerm !== "" && docInstanceContext) {
+		if (searchTerm !== "" && docInstanceContext && flattenPagesContext) {
 			const searchResults = flattenPagesContext.filter(
 				(flattenPagesContext: any) => {
 					if (

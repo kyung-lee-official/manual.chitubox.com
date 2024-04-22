@@ -18,7 +18,7 @@ export const DocsSearch = (props: {
 	}
 
 	useEffect(() => {
-		if (searchTerm !== "" && docInstanceContext) {
+		if (searchTerm !== "" && docInstanceContext && flattenPagesContext) {
 			const searchResults = flattenPagesContext.filter(
 				(flattenPagesContext: any) => {
 					if (
