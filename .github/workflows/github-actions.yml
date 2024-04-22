@@ -1,4 +1,4 @@
-name: NextJS Static CI CD
+name: NextJS Docker CI CD for China Mainland
 
 on:
     push:
@@ -8,43 +8,8 @@ jobs:
     build:
         runs-on: ubuntu-latest
 
-        strategy:
-            matrix:
-                node-version: [lts/*]
-                # See supported Node.js release at https://github.com/actions/setup-node
-
         steps:
-            - name: Checkout Repo
-              uses: actions/checkout@v4
-            - name: Use pnpm
-              uses: pnpm/action-setup@v2
-              with:
-                  version: 8
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
-              with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: "pnpm"
-            - name: Install dependencies
-              run: pnpm install
-            - name: Preload
-              run: pnpm preload
-            - name: Build
-              run: pnpm build:export
-            - name: Compress build
-              run: |
-                  zip -r out.zip out
-                  ls -l
-            - name: Transfer zip file to server
-              uses: appleboy/scp-action@master
-              with:
-                  host: ${{ vars.HOST }}
-                  username: ${{ secrets.USERNAME }}
-                  key: ${{ secrets.PRIVATE_KEY }}
-                  port: ${{ secrets.PORT }}
-                  source: out.zip
-                  target: /var/www/html/manual.chitubox.com/
-            - name: Unzip file on server
+            - name: Build Docker Image and Run Container 🚀
               uses: appleboy/ssh-action@v1.0.0
               with:
                   host: ${{ vars.HOST }}
@@ -52,8 +17,11 @@ jobs:
                   key: ${{ secrets.PRIVATE_KEY }}
                   port: ${{ secrets.PORT }}
                   script: |
-                      cd /var/www/html/manual.chitubox.com/
-                      rm -rf out
-                      ls -l
-                      unzip out.zip
-                      rm out.zip
+                      cd /home/bitnami/projects/manual.chitubox.com
+                      git pull origin main
+                      sudo docker stop c-manual.chitubox.com
+                      sudo docker rm c-manual.chitubox.com
+                      sudo docker rmi i-manual.chitubox.com
+                      sudo docker build -t i-manual.chitubox.com .
+                      sudo docker images
+                      sudo docker run --name c-manual.chitubox.com -p 3003:3000 -d i-manual.chitubox.com
