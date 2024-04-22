@@ -1,0 +1,69 @@
+import { ImageComparison } from "@/components/imageComparison/ImageComparison";
+import {
+	VideoSurveillance,
+	HistoricalRecords,
+	DeviceFileManagement,
+	DownloadTimelapseVideos,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "Operations",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitu-manager/v1.0.0/operations",
+	description: "",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# Operations
+
+The printer list interface allows you to view and click on various function buttons to perform basic operations on the printer.
+
+## Video
+
+### Open Video
+
+When the device is online and a camera is connected, the <VideoSurveillance /> video icon appears, click on it to open the camera and display the video feed.
+
+### Time-lapse Photography
+
+When a camera is connected to the device and supports time-lapse photography, the "Time-lapse Photography" function option will be available when opening the device's <NextLink href="/en-US/docs/chitu-manager/latest/ui-and-features/printer-list#detailed-status">detailed status</NextLink> panel. Enabling this option will record a time-lapse video of the subsequent printing task.
+
+After the printing task is complete, you can open the historical print record list, find the corresponding print task, and click the <DownloadTimelapseVideos /> icon to download the time-lapse photography video.
+
+## Historical Records
+
+Click the <HistoricalRecords/> icon to view the historical print records for the current device.
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitu-manager/004-operations-historical-records.png"
+	}
+	style={{ maxWidth: "400px" }}
+/>
+
+The information recorded for historical print tasks includes: image, name, status, progress, material, actual consumption, time, total time, and time-lapse photography videos.
+
+## View Device Files
+
+When the device is online and idle, click the <DeviceFileManagement /> file button to view the current device files.
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/004-operations-device-files.png"}
+/>
+
+If the device files contain printable files, you can hover your mouse over the file. When the "Print Immediately" button appears, click it to start printing the selected file.
+
+## Pause/Resume Printing
+
+When the device is in the printing state, open the device detailed status panel and you will see the Pause Printing button. Click the button to pause printing.
+
+If the device is already paused, you can resume printing by clicking the Resume Printing button.
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/004-operations-pause-printing.png"}
+	style={{ maxWidth: "400px" }}
+/>
+
+## Stop Printing
+
+Open the device detailed status panel and click the Stop Printing button to terminate the current printing process.

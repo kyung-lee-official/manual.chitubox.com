@@ -1,0 +1,155 @@
+export const meta = {
+	title: "Slice",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-pro/v1.4.0/slice-preview",
+	description:
+		"Two different slice modes in CHITUBOX Pro: Single Parameter Slice and Multi-parameter Slice.",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# Slice
+
+## Single Parameter and Multi-parameter
+
+Slice is the final step before your sliced file is generated.
+
+Choose a **Single Parameter Slice** or **Multi-parameter Slice** to and click the button to enter slice preview.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview001.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview002.png"
+	}
+	style={{ maxWidth: 895 }}
+/>
+
+<Admonition type="note">
+	Resin Volume is calculated by summing up voxels (area of pixel $\times$
+	layer height), the algorithm is pretty simple. However, this is a
+	theoretical value, it could be affected by many other factors (resin residue
+	on the build plate and model surface, volatility, density change during
+	curing, etc.) in the real world.
+</Admonition>
+
+### Single Parameter Slice
+
+**Single Parameter Slice** slices your models with the selected default profile in the **Slicing Profile Panel**. Applied to all your models inside the printable space on the platform.
+
+### Multi-parameter Slice
+
+<Admonition type="note">
+	Not all printers support **Multi-parameter**.
+</Admonition>
+
+**Multi-parameter Slice** provides 3 modes, **Model**, **Height**, and **Cross-sectional Area**.
+
+#### 1. Model
+
+Different parameters for separate models. <br />
+
+<ImageContainer
+    src={
+    	"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview017.png"
+    }
+
+/>
+
+1.  Models without specified Profile comply with the Profile specified by **Default Profile**.
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.1.png"
+    	}
+    />
+
+1.  All parameters that follow the currently selected profile or unavailable will turn grey and filled with non-editable asterisks **`*`** as the pictures shown below.
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview017.1.png"
+    	}
+    />
+
+#### 2. Height
+
+Different profiles for layers respectively.
+
+<ImageContainer
+    src={
+    	"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview016.png"
+    }
+    style={{ maxWidth: 895 }}
+
+/>
+
+1.  Height sections without specified Profiles comply with the Profile specified by **Default Profile**.
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview016.1.png"
+    	}
+    />
+
+1.  Parameters of bottom layers and transition layers comply with the Profile specified by **Default Profile**.
+
+1.  All parameters that follow the currently selected profile or unavailable will turn grey and filled with non-editable asterisks **`*`** as the pictures shown below.
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview016.2.png"
+    	}
+    />
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview016.3.png"
+    	}
+    />
+
+#### 3. Cross-sectional Area
+
+Different parameters for graded cross-sectional areas. The percentage here refers to the percentage of the total effective area of the cross-section relative to the platform.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview018.png"
+	}
+/>
+
+1. Sections without specified Profile comply with the Profile specified by **Default Profile**.
+
+1. Parameters of bottom layers and transition layers comply with the Profile specified by **Default Profile**.
+
+1. When editing exclusive parameters, non editable items (marked by **`*`**) will use default Profile.
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview019.png"
+    	}
+    />
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview020.png"
+    	}
+    />
+
+1. In **Cross-sectional Area** mode, sections are devided by the area of cross-sectional areas, therefore, it's possible that one profile is applied to multiple sections, as the picture shown below:
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-slice-preview018.1.svg"
+    	}
+    	style={{ maxWidth: "70%" }}
+    />
+
+**Bottom layers** and **Transition layers** can only be applied to the lowest section.
+
+export default ({ children }) => (
+	<DocsLayout meta={meta}>{children}</DocsLayout>
+);

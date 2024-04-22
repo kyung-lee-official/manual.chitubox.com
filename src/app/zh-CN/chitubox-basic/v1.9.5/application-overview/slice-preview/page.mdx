@@ -1,0 +1,119 @@
+export const meta = {
+	title: "切片预览",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v1.9.5/slice-preview",
+	description:
+		"CHITUBOX 中的切片预览窗口。在切片器中预览切片文件对于确保 3D 打印准确并满足您的期望非常重要。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 切片预览
+
+## 切片
+
+切片是导出可打印文件前的最后一步。
+单击切片按钮进入切片预览。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-slice-preview001.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-slice-preview002--1.png"
+	}
+	style={{ maxWidth: "1050px" }}
+/>
+
+使用切片配置文件面板中选定的默认配置文件对您的模型进行切片。 应用于平台上可打印空间内的所有模型。
+
+<Admonition type="note" title="注意">
+	树脂体积的计算方法是将 体素（像素面积 × 层高）相加，算法非常简单。
+	然而，这是一个理论值，它可能会受到现实世界中许多其他因素（打印平台和模型表面上的树脂残留、树脂挥发性、固化过程中的密度变化等）的影响。
+</Admonition>
+
+## 切片参数编辑
+
+编辑和调整当前需要保存的打印切片相关参数。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-slice-preview004.png"
+	}
+/>
+
+## 检测孤岛
+
+检测当前切片文件中是否存在不可成功打印的孤岛。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-slice-preview005.png"
+	}
+/>
+
+## 删除孤岛
+
+将文件中的孤岛删除，可选择删除当前层孤岛或所有层孤岛。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-slice-preview010.png"
+	}
+/>
+
+## 网络发送
+
+<Admonition type="note" title="注意">
+	1. 如果打印机不支持内部存储，则需要插入一个 U 盘来存储接收到的文件。 
+	1. <b>网络发送</b> 功能要求打印机和电脑在同一局域网下。 
+	1. 传输速率受打印机的网络模块限制，大多数打印机的网络模块传输速率大约是8M/s，因此对于大文件，不推荐使用 <b>网络发送</b>。 
+	1. 目前只有部分打印机支持**网络发送**，点击<SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃这里</SpanA>查看机器兼容性表格。
+</Admonition>
+
+若打印机支持网络发送，则该界面上会有 **网络发送** 按钮，此功能可以直接向打印机发送切片数据进行打印。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-slice-preview023.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-slice-preview024.png"
+	}
+/>
+
+## 保存
+
+保存切片文件。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-slice-preview012.png"
+	}
+/>
+
+<Admonition type="note" title="注意">
+	对您的模型进行切片后，点击“保存”，您可以在下拉菜单中选择需要保存的切片格式，再进行打印。
+</Admonition>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-slice-preview012-1--1.png"
+	}
+	style={{ maxWidth: "1000px" }}
+/>
+
+## 返回
+
+返回上一界面。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-slice-preview013.png"
+	}
+/>

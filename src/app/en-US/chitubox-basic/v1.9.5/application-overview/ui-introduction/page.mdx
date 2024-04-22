@@ -1,0 +1,255 @@
+import { IconTitle } from "@/components/iconTitle/IconTitle";
+
+export const meta = {
+	title: "UI Introduction",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-basic/v1.9.5/ui-introduction",
+	description: "CHITUBOX Basic main window UI interface introduction.",
+	ogImage: "/images/docs/og_logo.png",
+};
+import { ImageComparison } from "@/components/imageComparison/ImageComparison";
+import { YouTubeVideoContainer } from "@/components/videoContainer/YouTubeVideoContainer";
+
+# UI Introduction
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-ui-introduction001--1.png"
+	}
+	style={{ width: "100%", maxWidth: "1300px" }}
+/>
+
+<IconTitle icon={"A"} title={"Viewport"} />
+
+<IconTitle icon={"B"} title={"Left-Side Tool Bar"} />
+
+<div style={{ display: "flex" }}>
+	<div style={{flex: "0 0 4rem"}}></div>
+	<div>
+		<div>
+			<ImageContainer
+				src={
+					"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-ui-introduction001b1.png"
+				}
+			/>
+		</div>
+		<br />
+		<ImageComparison
+			img1Src={"/images/docs/en-US/chitubox-basic/1.x.x/gif/005move.gif"}
+			text1={"Move"}
+			img2Src={
+				"/images/docs/en-US/chitubox-basic/1.x.x/gif/006rotate.gif"
+			}
+			text2={"Rotate"}
+		/>
+		<br />
+		<ImageComparison
+			img1Src={"/images/docs/en-US/chitubox-basic/1.x.x/gif/007scale.gif"}
+			text1={"Scale"}
+			img2Src={
+				"/images/docs/en-US/chitubox-basic/1.x.x/gif/008mirror.gif"
+			}
+			text2={"Mirror"}
+		/>
+
+    	**Move**: move the selected models to the set position.
+
+    	<ImageContainer
+    		src={
+    			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-ui-introduction-move.png"
+    		}
+    	/>
+
+    	-   Put on the plate: use the lowest point of the model as the reference point, and put the selected model on the build plate.
+
+    	-   Centered: center the selected model on the printing platform.
+
+    	-   Reset: reset the placement position of the selected model.
+
+    	**Rotate**: rotate the selected models according to the set angles.
+
+    	<ImageContainer
+    		src={
+    			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-ui-introduction-rotate.png"
+    		}
+    	/>
+
+    	-   Flatten by face: use the selected surface on the model as the reference surface, and lay the model against the printing platform according to the reference surface.
+
+    	-   Combination center: take the center of the selected combination of multiple models as the center of rotation.
+
+    	**Scale**: scales the selected models according to the set size or scale.
+
+    	<ImageContainer
+    		src={
+    			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-ui-introduction-scale.png"
+    		}
+    	/>
+
+    	-   Lock ratio: lock the ratio of the selected model's X-axis, Y-axis and Z-axis for scaling.
+
+    	-   Scale to fit: scale the selected model to fit the printing platform.
+
+    	-   Reset: reset the model size.
+
+    	**Mirror**: mirror the selected models.
+
+    	<ImageContainer
+    		src={
+    			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-ui-introduction-mirror.png"
+    		}
+    	/>
+
+    	-   Keep the original model: If enabled, the original model will be kept.
+
+    	<YouTubeVideoContainer>
+    		<iframe
+    			src="https://www.youtube.com/embed/EmGABeAby4o"
+    			scrolling="no"
+    			border="0"
+    			frameborder="no"
+    			framespacing="0"
+    			allowfullscreen="true"
+    		></iframe>
+    	</YouTubeVideoContainer>
+    </div>
+
+</div>
+
+<IconTitle icon={"C"} title={"Viewport Cube"} />
+
+<div style={{ display: "flex" }}>
+	<div style={{flex: "0 0 4rem"}}></div>
+	<div>
+		Switch between perspective view or orthogonal view. You can click the 
+		<ImageContainer
+			src={
+				"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-setting-and-help00x1x.png"
+			}
+			style={{
+				width: 27,
+			}}
+		/> button on the upper-right corner of the Viewport to switch.
+
+    	<ImageContainer
+    		src={
+    			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-setting-and-help00xx.png"
+    		}
+    		style={{
+    			margin: "auto",
+    			width: 160,
+    		}}
+    	/>
+    </div>
+
+</div>
+
+<IconTitle icon={"D"} title={"Menu Panel"} />
+
+<IconTitle icon={"E"} title={"Title Bar"} />
+
+<div style={{ display: "flex" }}>
+	<div style={{ flex: "0 0 4rem" }}></div>
+	<div>Title Bar provides quick access for **login**.</div>
+</div>
+
+<IconTitle icon={"F"} title={"Sliced Preview Slider"} />
+
+<IconTitle icon={"G"} title={"Switch File List or Support Setting"} />
+
+<IconTitle icon={"H"} title={"File List or Support Setting"} />
+
+<div style={{ display: "flex" }}>
+	<div style={{flex: "0 0 4rem"}}></div>
+	<div>
+		<ImageContainer
+			src={
+				"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-ui-introduction001h-1.png"
+			}
+		/>
+
+    	This panel allow you to **select/unselect (all) files**, **display/hide printing size**, and **delete files**.
+    </div>
+
+</div>
+
+<IconTitle icon={"I"} title={"Setting"} />
+
+<IconTitle icon={"J"} title={"Slicing Profile Panel"} />
+
+<IconTitle icon={"K"} title={"Bottom Status Bar"} />
+
+<IconTitle icon={"L"} title={"Global Axis"} />
+
+<div style={{ display: "flex" }}>
+	<div style={{flex: "0 0 4rem"}}></div>
+	<div>
+		<p>
+			Among the Global Axis: red is the X-axis; green is the Y-axis; blue
+			is the Z-axis.
+			<br />
+			Right-click and drag the blank area to adjust the viewing angle of
+			the work area.
+		</p>
+
+    	<ImageContainer
+    		src={
+    			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-ui-introduction001l-1.png"
+    		}
+    	/>
+
+    	<p>
+    		As shown below, the reference coordinate axis corresponding to X/Y/Z
+    		in the slice setting is the print platform coordinate axis (Global
+    		Coordinate, displayed in the bottom left of the screen), used to
+    		adjust the maximum print size of the X, Y, and Z-axis of the
+    		printing platform (For built-in printers, please use the default
+    		size; for those non-built-in printers, please fill in dimension
+    		parameters strictly according to the specifications provided by the
+    		printer manufacturer).
+    	</p>
+
+    	<ImageContainer
+    		src={
+    			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-ui-introduction001l-2.png"
+    		}
+    	/>
+    </div>
+
+</div>
+
+<Admonition type="note">
+	The size of the model recorded in the zoom panel is the size corresponding
+	to the model's coordinate axis (Local Coordinate), not the size
+	corresponding to the platform's coordinate axis (Global Coordinate). The
+	coordinate axis rotates synchronously when the model is rotated, so the
+	rotation operation will not affect the size recorded in the zoom panel.
+</Admonition>
+
+## Video Tutorial
+
+### View Navigation in CHITUBOX
+
+<YouTubeVideoContainer>
+	<iframe
+		src="https://www.youtube.com/embed/TEH9Aq2prBk"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</YouTubeVideoContainer>
+
+### Global Axis in CHITUBOX
+
+<YouTubeVideoContainer>
+	<iframe
+		src="https://www.youtube.com/embed/trTCEQylr1I"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</YouTubeVideoContainer>

@@ -1,0 +1,222 @@
+export const meta = {
+	title: "Configure Support Parameters",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-basic/v1.9.5/configure-support-parameters",
+	description: "Configure support parameters in CHITUBOX.",
+	ogImage: "/images/docs/og_logo.png",
+};
+import { ImageComparison } from "@/components/imageComparison/ImageComparison";
+import { YouTubeVideoContainer } from "@/components/videoContainer/YouTubeVideoContainer";
+
+# Configure Support Parameters
+
+<div style={{ width: "100%", overflow: "auto" }}>
+	<img
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support004.png"
+		}
+		style={{ float: "right", paddingLeft: "1em", maxWidth: "50%" }}
+	/>
+	<p>
+		This is Support Configuration Panel, where you can import{" "}
+		<ImageContainer
+			src={
+				"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support008.png"
+			}
+		/>{" "}
+		, export{" "}
+		<ImageContainer
+			src={
+				"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support009.png"
+			}
+		/>{" "}
+		, and reset{" "}
+		<ImageContainer
+			src={
+				"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support007.png"
+			}
+		/>{" "}
+		your support profiles.
+	</p>
+	<p>
+		<b>Z Lift Height</b>: The height distance between the lowest point of
+		the model and the platform. <br />
+	</p>
+	<br />
+	<ImageContainer
+		src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/gif/009-z-lift-height.gif"
+		}
+		style={{ maxWidth: "200px" }}
+	/>
+	<br />
+</div>
+
+## Support Settings
+
+You can edit <b>Top</b>, <b>Middle</b>, <b>Bottom</b>and <b>Raft</b> of your supports respectively.
+
+### Top
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support004.top.png"
+	}
+/>
+
+| Parameter             | Explanation                                                            |
+| --------------------- | ---------------------------------------------------------------------- |
+| Contact Shape         | Selection of top shape of support in contact with model                |
+| Contact Diameter(mm)  | Diameter dimension of the top of the support in contact with the model |
+| Contact Depth(mm)     | Depth dimension of the top of the support in contact with the model    |
+| Connection Shape      | Connection shape of the top support body                               |
+| Upper Diameter(mm)    | The diameter of the upper end of the top support body                  |
+| Lower Diameter(mm)    | The diameter of the lower end of the top support body                  |
+| Connection Length(mm) | Length of top support body                                             |
+
+### Middle
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support004.mid.png"
+	}
+/>
+
+| Parameter          | Explanation                                                                   |
+| ------------------ | ----------------------------------------------------------------------------- |
+| Shape              | Selection of the shape of the central support body                            |
+| Diameter(mm)       | Diameter of the central support body                                          |
+| Angle(°)           | Maximum angle between middle part of support and top part of support          |
+| Small Pillar Shape | The shape of the contact part of the column support in contact with the model |
+| Diameter(mm)       | Diameter size of small column support body                                    |
+| Upper Depth(mm)    | The size of the upper end of the column support in-depth model                |
+| Lower Depth(mm)    | The size of the lower end of the column support in-depth model                |
+
+### Bottom
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support004.bot.png"
+	}
+/>
+
+| Parameter            | Explanation                                                                                                                              |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Platform Touch Shape | Selection of support shape in contact with printing platform                                                                             |
+| Touch Diameter(mm)   | Diameter dimension of support in contact area with printing platform                                                                     |
+| Thickness            | Thickness dimension of support in contact area with printing platform                                                                    |
+| Model Contact Shape  | The contact shape of the lower end of the support in contact with the model when the bottom of the support falls on the model            |
+| Contact Diameter(mm) | The diameter of the lower part of the support in contact with the model when the bottom of the support falls on the model                |
+| Contact Depth(mm)    | Depth dimension of the lower part of the support in contact with the model when the bottom of the support falls on the model             |
+| Contact Point        | The number of contact points at the lower end of the support in contact with the model when the bottom of the support falls on the model |
+
+### Raft
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support004.raf.png"
+	}
+/>
+
+| Parameter          | Explanation                                                                                                                                                                  |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Raft Shape         | Selection of the shape of bottom valve in contact with printing platform                                                                                                     |
+| Raft Area Ratio(%) | Sets the area scale of the bottom valve, which is the ratio of the total area of the bottom valve relative to the total area projected by the model to the printing platform |
+| Raft Thickness(mm) | The thickness of the bottom valve                                                                                                                                            |
+| Raft Height(mm)    | Height dimension of bottom valve                                                                                                                                             |
+| Raft Slope(°)      | Tilt angle between bottom valve side and printing platform                                                                                                                   |
+
+## Auto/Manual Support
+
+**Cross Width (mm)**: When manually adding supports, whether adjacent
+supports add the maximum distance value of the cross structure, when the
+distance between adjacent supports exceeds this value, the cross structure
+is not added.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-basic/1.x.x/gif/41Cross Width.gif"}
+	style={{ maxWidth: "200px" }}
+/>
+
+**Cross Start Hight (mm)**: When the support height exceeds this value, a
+cross structure will be added between adjacent supports.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/gif/18Staggered starting height.gif"
+	}
+	style={{ maxWidth: "200px" }}
+/>
+
+**Density (%)**: When automatically adding supports, the density of supports.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-basic/1.x.x/gif/19density.gif"}
+	style={{ maxWidth: "200px" }}
+/>
+
+**Angle (°)**: The model is allowed to add support to the maximum tilt
+angle, which is the angle between the model surface and the platform.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-basic/1.x.x/gif/020angle.gif"}
+	style={{ maxWidth: "200px" }}
+/>
+
+<Admonition type="note">
+	To improve the accuracy of distances between supports, the **Density(%)**
+	parameter in CHITUBOX Basic was replaced by the **Middle Distance(mm)** in
+	CHITUBOX Pro.
+</Admonition>
+
+<button style={{ padding: "0.5rem 0.5rem", borderRadius: "10px", border: "0px", width: "100px", fontWeight: "bold", backgroundColor: "#dbdbdb"}}><span>+Platform</span></button> This button automatically adds supports based on platform only.
+
+<button style={{ padding: "0.5rem 0.5rem", borderRadius: "10px", border: "0px", width: "100px", fontWeight: "bold", backgroundColor: "#dbdbdb"}}><span>+All</span></button> This button automatically adds supports (supports on model allowed).
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support011.png"
+		}
+		text1={"+Platform"}
+		img2Src={
+			"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support012.png"
+		}
+		text2={"+All"}
+	/>
+</ImageContainer>
+
+## Tree support
+
+Double-click the sphere in edit support mode to generate tree support.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support013.png"
+	}
+	style={{ maxWidth: "1040px" }}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/006-application-overview-support014.gif"
+	}
+	style={{ maxWidth: "1040px" }}
+/>
+
+<Admonition type="note">
+	Only v1.7.0 and subsequent versions support this function.
+</Admonition>
+
+## Video tutorial
+
+<YouTubeVideoContainer>
+	<iframe
+		src="https://www.youtube.com/embed/PO6vf6duepg"
+		scrolling="no"
+		border="0"
+		frameborder="no"
+		framespacing="0"
+		allowfullscreen="true"
+	></iframe>
+</YouTubeVideoContainer>

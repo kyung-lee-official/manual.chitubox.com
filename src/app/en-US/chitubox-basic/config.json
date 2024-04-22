@@ -1,0 +1,124 @@
+{
+	"docInstanceName": "CHITUBOX Basic",
+	"isVersioned": true,
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "2.0.0",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "Introduction"
+				},
+				{
+					"item": "installation",
+					"label": "Installation"
+				},
+				{
+					"item": "quick-start",
+					"label": "Quick Start"
+				},
+				{
+					"item": "ui-and-features",
+					"label": "Application Overview",
+					"subItems": [
+						{
+							"item": "menu",
+							"label": "Menu"
+						},
+						{
+							"item": "gadgets",
+							"label": "Gadgets"
+						},
+						{
+							"item": "operations",
+							"label": "Operations"
+						},
+						{
+							"item": "file-list",
+							"label": "File List"
+						},
+						{
+							"item": "risk-detection",
+							"label": "Risk Detection"
+						},
+						{
+							"item": "configure-print-parameters",
+							"label": "Configure Print Parameters"
+						},
+						{
+							"item": "configure-support-parameters",
+							"label": "Configure Support Parameters"
+						},
+						{
+							"item": "preview",
+							"label": "Preview"
+						}
+					]
+				}
+			]
+		},
+		{
+			"versionCode": "v1.9.5",
+			"versionNumber": "1.9.5",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "Introduction"
+				},
+				{
+					"item": "comparison",
+					"label": "Comparison"
+				},
+				{
+					"item": "requirements",
+					"label": "Requirements"
+				},
+				{
+					"item": "setting-up",
+					"label": "Setting Up",
+					"subItems": [
+						{
+							"item": "installation",
+							"label": "Installation"
+						},
+						{
+							"item": "update-printer-firmware",
+							"label": "Update Printer Firmware"
+						},
+						{
+							"item": "configure-print-parameters",
+							"label": "Configure Print Parameters"
+						},
+						{
+							"item": "configure-support-parameters",
+							"label": "Configure Support Parameters"
+						}
+					]
+				},
+				{
+					"item": "application-overview",
+					"label": "Application Overview",
+					"subItems": [
+						{
+							"item": "ui-introduction",
+							"label": "UI Introduction"
+						},
+						{
+							"item": "file",
+							"label": "File"
+						},
+						{
+							"item": "menu-bar",
+							"label": "Menu Bar"
+						},
+						{
+							"item": "slice-preview",
+							"label": "Slice Preview"
+						}
+					]
+				}
+			]
+		}
+	]
+}

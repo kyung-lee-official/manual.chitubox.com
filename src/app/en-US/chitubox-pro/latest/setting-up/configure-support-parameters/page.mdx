@@ -1,0 +1,570 @@
+export const meta = {
+	title: "Configure Support Parameters",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-pro/v1.4.0/configure-support-parameters",
+	description: "Configure support parameters in CHITUBOX Pro.",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# Configure Support Parameters
+
+<Admonition type="note">
+	This page describes Support Settings, click <NextLink href="/en-US/docs/chitubox-pro/latest/application-overview/support">here</NextLink> to learn more about support operations.
+</Admonition>
+
+To open **Support Configuration Panel**, you need to enter the <NextLink href="/en-US/docs/chitubox-pro/latest/application-overview/support">Support</NextLink> tab first.
+
+<div style={{ maxwidth: "100%", overflow: "auto" }}>
+	<ImageContainer
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support004.png"
+		}
+		style={{ float: "right", paddingLeft: "1em", maxWidth: "50%" }}
+	/>
+	This is Suspanport Configuration Panel, where you can add 
+	<ImageContainer
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support005.png"
+		}
+	/> , delete 
+		<ImageContainer
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support006.png"
+		}
+	/>, reset 
+		<ImageContainer
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support007.png"
+		}
+	/>, import 
+		<ImageContainer
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support008.png"
+		}
+	/>, export 
+		<ImageContainer
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support009.png"
+		}
+	/>, export all 
+		<ImageContainer
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support010.png"
+		}
+	/>, save 
+		<ImageContainer
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support010.1.png"
+		}
+	/>, and rename your support profiles, where "save" supports _Auto Save_ and _Manual Save_.
+
+    **Z Lift Height**: The height distance
+    between the lowest point of the model and the platform.
+
+    	<ImageContainer
+    	src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/009-z-lift-height.gif"}
+    	style={{ maxWidth: "200px" }}
+    />
+
+</div>
+
+## Support Settings
+
+You can edit **Top**, **Middle**, and **Bottom** of your supports respectively.
+
+**Visualized editing panel** is also
+provided for better user experience, where you can modify support parameters directly
+on the visualized graph. You can also turn it off by clicking the
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support014.png"
+	}
+/> button on the Support Settings panel.
+
+<div style={{ display: "flex", maxwidth: "100%" }}>
+	<div style={{ flex: "1" }}></div>
+	<div style={{ display: "flex", flexDirection: "column" }}>
+		style={{ flex: "6" }}
+		<ImageContainer
+			src={
+				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support013.png"
+			}
+		/>
+		<div
+			style={{
+				flex: "1",
+				paddingTop: "0.5em",
+				textAlign: "center",
+			}}
+		>
+			Visualized editing panel
+		</div>
+	</div>
+	<div style={{ flex: "0.2" }}></div>
+	<div style={{ display: "flex", flexDirection: "column" }}>
+		style={{ flex: "6" }}
+		<ImageContainer
+			src={
+				"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support013.1.png"
+			}
+		/>
+		<div
+			style={{
+				flex: "1",
+				paddingTop: "0.5em",
+				textAlign: "center",
+			}}
+		>
+			&nbsp;
+		</div>
+	</div>
+	<div style={{ flex: "1" }}></div>
+</div>
+
+### Top
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support004.top.png"
+	}
+/>
+
+| Parameter             | Explanation                                                            |
+| --------------------- | ---------------------------------------------------------------------- |
+| Contact Shape         | Selection of top shape of support in contact with model                |
+| Contact Diameter(mm)  | Diameter dimension of the top of the support in contact with the model |
+| Contact Depth(mm)     | Depth dimension of the top of the support in contact with the model    |
+| Connection Shape      | Connection shape of the top support body                               |
+| Upper Diameter(mm)    | The diameter of the upper end of the top support body                  |
+| Lower Diameter(mm)    | The diameter of the lower end of the top support body                  |
+| Connection Length(mm) | Length of top support body                                             |
+
+### Middle
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support004.mid.png"
+	}
+/>
+
+| Parameter          | Explanation                                                                   |
+| ------------------ | ----------------------------------------------------------------------------- |
+| Shape              | Selection of the shape of the central support body                            |
+| Upper Diameter(mm) | The upper diameter(mm) of the central support body                            |
+| Lower Diameter(mm) | The lower diameter(mm) of the central support body                            |
+| Angle(°)           | Maximum angle between middle part of support and top part of support          |
+| Small Pillar Shape | The shape of the contact part of the column support in contact with the model |
+| Diameter(mm)       | Diameter size of small column support body                                    |
+| Upper Depth(mm)    | The size of the upper end of the column support in-depth model                |
+| Lower Depth(mm)    | The size of the lower end of the column support in-depth model                |
+
+### Bottom
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support004.bot.png"
+	}
+/>
+
+| Parameter            | Explanation                                                                                                                              |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Platform Touch Shape | Selection of support shape in contact with printing platform                                                                             |
+| Touch Diameter(mm)   | Diameter dimension of support in contact area with printing platform                                                                     |
+| Thickness            | Thickness dimension of support in contact area with printing platform                                                                    |
+| Model Contact Shape  | The contact shape of the lower end of the support in contact with the model when the bottom of the support falls on the model            |
+| Contact Diameter(mm) | The diameter of the lower part of the support in contact with the model when the bottom of the support falls on the model                |
+| Contact Depth(mm)    | Depth dimension of the lower part of the support in contact with the model when the bottom of the support falls on the model             |
+| Contact Point        | The number of contact points at the lower end of the support in contact with the model when the bottom of the support falls on the model |
+
+### Raft
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support004.raf.png"
+	}
+/>
+
+| Parameter            | Explanation                                                                                                                                                                  |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Raft Shape           | Selection of the shape of bottom valve in contact with printing platform                                                                                                     |
+| Raft Area Ratio(%)   | Sets the area scale of the bottom valve, which is the ratio of the total area of the bottom valve relative to the total area projected by the model to the printing platform |
+| Raft Thickness(mm)   | The thickness of the bottom valve                                                                                                                                            |
+| Raft Height(mm)      | Height dimension of bottom valve                                                                                                                                             |
+| Raft Slope(°)        | Tilt angle between bottom valve side and printing platform                                                                                                                   |
+| Grid Side Length(mm) | Grid side length                                                                                                                                                             |
+| Grid Width(mm)       | Grid stroke width                                                                                                                                                            |
+
+### Advanced
+
+The **Advance** button below provides more flexibility for your supports.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support017.png"
+	}
+/>
+
+<Admonition type="note">
+	Starting from CHITUBOX Basic v1.8.1, to improve user experience, we disabled
+	support auxiliary lines calculation when loading models, this makes the
+	loading process faster. If you wanna bring them back, auto support will
+	calculate auxiliary lines (they will show up if you remove auto-added
+	supports, but only on critical areas compared to Basic V1.8.1). We encourage
+	you to judge risky areas using the red highlight instead.
+</Admonition>
+
+<table>
+	<thead>
+		<tr>
+			<th>Parameter Group</th>
+			<th>Parameter</th>
+			<th>Explanation</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowSpan={4}>Size setting</td>
+			<td>Cross Structure Diameter</td>
+			<td>
+				The diameter of cross structure between supports <br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-cross-structure-diameter.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>Maximum Small Pillar Length</td>
+			<td>
+				Maximum length of small pillars, small pillars are literally
+				slender supports that are designed for supporting delicate
+				structures. Both ends of small pillars can only be attached to
+				models. <br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-maximum-small-pillar-length.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>Height of boss supporting bottom</td>
+			<td>
+				Height of the lowest circular truncated cone structures of
+				supports. <br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-height-of-boss-supporting-bottom.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>Diameter of the boss at the bottom of the support</td>
+			<td>
+				Diameter of the lowest circular truncated cone structures of
+				supports. <br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-diameter-of-the-boss-at-the-bottom-of-the-support.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td rowSpan={10}>Automatic/manual support settings</td>
+			<td>Cross Enable</td>
+			<td>
+				Enable/Disable cross structures between supports. <br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-automatic-manual-support-settings.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>Cross start height</td>
+			<td>
+				Set the minimum height of cross structures between supports.{" "}
+				<br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-cross-start-height.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>Minimum Spacing Of Cross Structure(Z)</td>
+			<td>
+				Set the minimum vertical space of two cross structures. <br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-minimum-spacing-of-cross-structure-z.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>Maximum Spacing Of Cross Structure(XY)</td>
+			<td>
+				Set the maximum horizontal space of structures between supports.{" "}
+				<br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-maximum-spacing-of-cross-structure-xy.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>Enable Support in Shell</td>
+			<td>
+				Enable/Disable support inside closed-chamber structures when
+				applying auto-supporting. <br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-enable-support-in-shell.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>Spacing From Model</td>
+			<td>
+				The minimum horizontal distance allowed between any point on the
+				surface of models and trunk supports (middle of supports).{" "}
+				<br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-spacing-from-model.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>Max offset from contact</td>
+			<td>
+				The maximum horizontal offset allowed from a support trunk to
+				its contact point with the model. <br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-max-offset-from-contact.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Starting Effective Height Of Lower End Diameter Of Middle
+				Support
+			</td>
+			<td>
+				Lower end diameter of middle supports only takes effect on
+				supports that are higher than this value. <br />
+				<br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-starting-effective-height-of-lower-end-diameter-of-middle-support.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>Enhanced Automatic Support</td>
+			<td>
+				Enable/Disable enhanced automatic support. <br />
+				There are three modes: Independent Reinforcement (IR), <NextLink href="#enhanced-automatic-support">
+					Triangular Reinforcement (TR)
+				</NextLink>, <NextLink href="#enhanced-automatic-support">
+					Global Reinforcement (GR)
+				</NextLink>.
+				<br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>Small Column Automatically Absorbs</td>
+			<td>
+				Enable/Disable automatic adsorption of small columns. <br />
+				<br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-small-column-automatically-absorbs.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td rowSpan={4}>Preview mode setting</td>
+			<td>Preview support (add support)</td>
+			<td>
+				Enable/Disable preview when adding supports manually. <br />
+				<br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-preview-mode-setting.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>Support Hidden Angle(0-90°)</td>
+			<td>
+				In the support mode, when the viewing angle looks up to the
+				model to a certain angle, the middle and bottom supports will be
+				hidden automatically, set 0 to prohibit hiding. <br />
+				<br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-hidden-angle-0-90.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>Display support auxiliary line (surface contact diameter)</td>
+			<td>
+				Display/Hide support auxiliary line, which are contact positions
+				if auto-supporting is applied. <br />
+				<br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-display-support-auxiliary-line-surface-contact-diameter.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>Select the model to center</td>
+			<td>
+				In the support mode, the selected model is automatically placed
+				in the center of the perspective. <br />
+				<br />
+				<ImageContainer
+					src={
+						"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-select-the-model-to-center.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Enhanced Automatic Support
+
+When adding automatic supports, some isolated trunk supports are automatically added auxiliary supports and will generate connecting structures.
+
+-   Triangular Reinforcement (TR): When adding automatic supports, some isolated trunk supports will be automatically connected to form stable triangular structures.
+
+-   Global Reinforcement (GR): When adding automatic supports, a more stable structure composed of triangular structures will be automatically formed to better assist the stability of the support.
+
+<ImageContainer
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-tr.png"
+	}
+	text1={"Triangular Reinforcement (TR)"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-gr.png"
+	}
+	text2={"Global Reinforcement (GR)"}
+/>
+
+<Admonition type="note">
+	**Enable automatic adsorption of small columns**: You can freely set the
+	size of the adsorption radius. The software will automatically attach the
+	lower end of the small column to the appropriate support when adding the
+	small column support according to the algorithm.
+</Admonition>
+
+## Auto/Manual Support
+
+**Angle (°)**: The maximum tilt angle between the model surface and
+the platform allowed for auto-support.{" "}
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/020angle.gif"}
+	style={{ maxWidth: 200 }}
+/>
+
+**Touch Tip Distance (mm)**: The minimum horizontal distance
+between any two middle supports.
+
+<ImageContainer
+	img1Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support011.1b.png"
+	}
+	text1={"Touch tip distance set to 2 mm"}
+	img2Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support011.1a.png"
+	}
+	text2={"Touch tip distance set to 5 mm"}
+/>
+
+**Middle Distance (mm)**: The minimum horizontal distance between any two middle supports.
+
+To improve the accuracy of distances between supports, the **Density(%)** parameter in CHITUBOX Basic was replaced by the **Middle Distance(mm)** in CHITUBOX Pro.
+
+<ImageContainer
+	img1Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support012.1b.png"
+	}
+	text1={"Middle distance set to 2 mm"}
+	img2Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support012.1a.png"
+	}
+	text2={"Middle distance set to 8 mm"}
+/>
+
+<button style={{ padding: "0.5rem 0.5rem", borderRadius: "10px", border: "0px", width: "100px", fontWeight: "bold", backgroundColor: "#dbdbdb"}}><span>+Platform</span></button> This button automatically adds supports based on platform only.
+
+<button style={{ padding: "0.5rem 0.5rem", borderRadius: "10px", border: "0px", width: "100px", fontWeight: "bold", backgroundColor: "#dbdbdb"}}><span>+All</span></button> This button automatically adds supports (supports on model allowed).
+
+<ImageContainer
+	img1Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support011.png"
+	}
+	text1={"+Platform"}
+	img2Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support012.png"
+	}
+	text2={"+All"}
+/>

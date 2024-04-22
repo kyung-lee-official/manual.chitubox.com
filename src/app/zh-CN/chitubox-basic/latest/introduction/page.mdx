@@ -1,0 +1,111 @@
+import { ThemeScrollSlider } from "@/docComponents/themeScrollSlider/ThemeScrollSlider";
+import { DirectXAndMetal } from "@/docComponents/directXAndMetal/DirectXAndMetal";
+import { Rma } from "@/docComponents/rma/Rma";
+import { StandardParts } from "@/docComponents/standardParts/StandardParts";
+
+export const meta = {
+	title: "介绍",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-basic/v2.0.0/introduction",
+	description:
+		"CHITUBOX Basic 是一款免费的 3D 打印切片软件，可将 3D 网格文件切片并转换为可打印文件。它旨在让 3D 打印更轻松、更高效，简化整个 3D 打印过程，让用户能够简单快速地将 3D 模型转换为 3D 打印件。软件支持多种 3D 打印机和配置文件，并且提供了丰富的选项来优化 3D 打印模型。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 介绍
+
+CHITUBOX Basic 是一款免费的 3D 打印切片软件，可将 3D 网格文件切片并转换为可打印文件。它旨在让 3D 打印更轻松、更高效，简化整个 3D 打印过程，让用户能够简单快速地将 3D 模型转换为 3D 打印件。软件支持多种 3D 打印机和配置文件，并且提供了丰富的选项来优化 3D 打印模型。
+
+## 新特性 ✨
+
+### 全新的 UI 界面
+
+<ThemeScrollSlider lang={"en"} />
+
+很高兴地宣布 CHITUBOX Basic 2 推出了全新的用户界面。新的 UI 界面让用户体验更轻松、更直观。我们改进了软件的导航和组织方式，使您更容易找到所需的工具和功能。我们还添加了一系列新功能，包括主题、改进的对象操作等等。使用新 UI，您的 3D 打印体验将更快、更高效、更愉悦。
+
+### 支持 DirectX 和 Metal
+
+<DirectXAndMetal />
+
+通过支持 DirectX 和 Metal，CHITUBOX Basic 现在可以渲染更逼真、更复杂的 3D 模型，具有更多细节和更逼真的照明、阴影和菲涅尔效果。这些技术还能提高性能，让您充分发挥显卡的威力。现在，在 Windows 和 macOS 平台上使用 CHITUBOX Basic 时，您可以体验到最高级别的图形性能。
+
+### RMA
+
+<Rma />
+
+我们推出了新的 RMA（树脂联盟）功能。此功能使您可以轻松地为不同品牌的树脂材料选择合适的设置，它还支持云存储，因此您可以从任何地方访问您的设置。此外，此功能会不断地更新，因此您始终可以获得最新配置。有了这个新功能，您现在可以快速轻松地设置打印机，以获得最佳 3D 打印结果。
+
+### 基本标准零件
+
+<StandardParts />
+
+此功能提供常用的基本形状零件库，这样您就不必花时间在互联网上搜索。
+
+## 支持的文件
+
+### 项目文件
+
+| 文件类型               | 文件名后缀  | 描述                                             |
+| ---------------------- | ----------- | ------------------------------------------------ |
+| CHITUBOX 项目文件 2023 | \*.ctp      | 包含更多的模型信息                               |
+| CHITUBOX 项目文件      | \*.chitubox | 老版本的项目文件格式，包含基本模型数据和支撑数据 |
+
+### 可打印的切片文件
+
+| 文件类型                | 文件名后缀 |
+| ----------------------- | ---------- |
+| CHITUBOX slicer         | \*.cbddlp  |
+| CHITUBOX slicer         | \*.ctb     |
+| Halot One 系列          | \*.cxdlp   |
+| ZIP Compress            | \*.zip     |
+| SLC                     | \*.slc     |
+| Fhd                     | \*.fhd     |
+| WoW                     | \*.wow     |
+| Goo                     | \*.goo     |
+| Prz                     | \*.prz     |
+| CHITUBOX General Format | \*.gf      |
+| Phrozen 文件            | \*.phz     |
+| FlashDLPrint 文件       | \*.svgx    |
+| fdg                     | \*.fdg     |
+| Qdx                     | \*.qdx     |
+| Qdt                     | \*.qdt     |
+| Photon 系列             | \*.photon  |
+| Photon 系列             | \*.photons |
+| Photon 系列             | \*.pw0     |
+| Photon 系列             | \*.pwmo    |
+| Photon 系列             | \*.pwms    |
+| Photon 系列             | \*.pwmx    |
+| Photon 系列             | \*.pwma    |
+| Photon 系列             | \*.pwmb    |
+| Photon 系列             | \*.pmsq    |
+| Photon 系列             | \*.pwx     |
+| Photon 系列             | \*.pws     |
+| Photon 系列             | \*.pm3     |
+| Photon 系列             | \*.pm3m    |
+| Photon 系列             | \*.pm3n    |
+| Photon 系列             | \*.pm3r    |
+| Photon 系列             | \*.pm5     |
+| Photon 系列             | \*.pm5s    |
+| Photon 系列             | \*.pmx2    |
+| Photon 系列             | \*.px6s    |
+| Photon 系列             | \*.dlp     |
+| Photon 系列             | \*.dl2p    |
+| NOVA3D                  | \*.cws     |
+| longer3d 文件           | \*.lgs     |
+
+### 3D 网格/CAD 模型文件
+
+| 支持操作    | 文件名后缀 |
+| ----------- | ---------- |
+| 导入 & 导出 | \*.stl     |
+| 导入 & 导出 | \*.obj     |
+| 导入        | \*.3mf     |
+
+### 配置文件
+
+| 文件类型 | 文件名后缀 | 描述                                                 |
+| -------- | ---------- | ---------------------------------------------------- |
+| 配置文件 | \*.cfgx    | 包含更多的可配置参数信息，例如支持自定义的快捷键信息 |
+| 配置文件 | \*.cfg     | 包含打印机配置信息和支撑配置信息                     |
+

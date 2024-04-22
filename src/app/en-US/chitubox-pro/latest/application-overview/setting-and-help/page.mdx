@@ -1,0 +1,407 @@
+export const meta = {
+	title: "Setting/Help",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-pro/v1.4.0/setting-and-help",
+	description: "Setting/Help window in CHITUBOX Pro.",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# Setting/Help
+
+## Setting
+
+Open the setting window.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help000-1.png"
+	}
+/>
+
+### Normal
+
+General settings for CHITUBOX Pro.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help001.png"
+	}
+	style={{ width: "100%", maxWidth: 817 }}
+/>
+
+-   Language <br />
+    Users can choose their own language according to their needs. Currently supported languages list:
+
+    -   Deutsch (<span style={{ color: "grey" }}>German</span>)
+
+    -   English (<span style={{ color: "grey" }}>English</span>)
+
+    -   Français (<span style={{ color: "grey" }}>French</span>)
+
+    -   Italiano (<span style={{ color: "grey" }}>Italian</span>)
+
+    -   Magyar (<span style={{ color: "grey" }}>Hungarian</span>)
+
+    -   Nederlands (<span style={{ color: "grey" }}>Dutch</span>)
+
+    -   Polskie (<span style={{ color: "grey" }}>Polish</span>)
+
+    -   Português (<span style={{ color: "grey" }}>Portuguese</span>)
+
+    -   Suomalainen (<span style={{ color: "grey" }}>Finnish</span>)
+
+    -   Türk (<span style={{ color: "grey" }}>Turkish</span>)
+
+    -   Española (<span style={{ color: "grey" }}>Spanish</span>)
+
+    -   Čeština (<span style={{ color: "grey" }}>Czech</span>)
+
+    -   Ελληνικά (<span style={{ color: "grey" }}>Greek</span>)
+
+    -   Pусский (<span style={{ color: "grey" }}>Russian</span>)
+
+    -   Arabic (<span style={{ color: "grey" }}>Arabic</span>)
+
+    -   日本語 (<span style={{ color: "grey" }}>Japanese</span>)
+
+    -   简体中文 (<span style={{ color: "grey" }}>Simplified Chinese</span>)
+
+    -   繁體中文(<span style={{ color: "grey" }}>Traditional Chinese</span>)
+
+    -   한국어(<span style={{ color: "grey" }}>Korean</span>)
+
+<br />
+
+-   Font <br />
+    Change UI font style.
+
+-   Perspective <br />
+    Switch between perspective view or orthogonal view. You can also click the
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help00x1x.png"
+    	}
+    /> button on the top-right corner of the Viewport to switch. <br />
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help00xx.png"
+    	}
+    />
+
+<br />
+
+-   Move distance box <br />
+    Check this to visualize the distance 3D models traveled when moving them.
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help013.png"
+    	}
+    	style={{ width: "100%", maxWidth: 817 }}
+    />
+
+<br />
+
+-   Hide platform in **Repair** page <br />
+
+    <ImageComparison
+    	img1Src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help004.png"
+    	}
+    	text1={"Hide platform in Repair page off"}
+    	img2Src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help005.png"
+    	}
+    	text2={"Hide platform in Repair page on"}
+    />
+
+-   Display Scale <br />
+    Change UI font size, restart CHITUBOX to take effect.
+
+-   Subscript <br />
+    Check this This will display the outline frame of selected 3D models.
+
+    <ImageComparison
+    	img1Src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help014.png"
+    	}
+    	text1={"Subscript On"}
+    	img2Src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help015.png"
+    	}
+    	text2={"Subscript Off"}
+    />
+
+-   Platform Coordinate System
+    <ImageComparison
+    	img1Src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help002.png"
+    	}
+    	text1={"Platform Coordinate System On"}
+    	img2Src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help003.png"
+    	}
+    	text2={"Platform Coordinate System Off"}
+    />
+
+### Appearance
+
+You can change your UI relative settings here.
+
+<ImageContainer
+    src={
+    	"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help006.png"
+    }
+
+/>
+
+Graphics quality: the refresh rate grade of CHITUBOX, the higher the number, the lower the refresh rate.
+
+### File
+
+You can change your file relative settings here.
+
+<ImageContainer
+    src={
+    	"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help007.png"
+    }
+
+/>
+
+-   Auto Save Interval <br />
+    The interval of auto-saving. CHITUBOX will generate a temporary _.chitubox_ project file under the **Auto Save Path** (log path by default). If CHITUBOX exits normally, the temporary project file will be removed.
+
+-   Auto Save Directory <br />
+    You can manually enter the directory to be saved, or click <button className="button button--secondary">...</button> to select a folder as the auto-save directory.
+
+-   File Name Format <br />
+    File Name Format should starts with `%{f}_`, appended with `%{date_format}`.
+
+-   Duplicate Format <br />
+    Duplicate Name should starts with `%{f}_`, appended with `%{nnn:0:1}`. <br />
+    Where: <br />
+    `nnn` represents the field width, in this case, `000`. <br />
+    `0` represents the start value.<br />
+    `1` represents the increase step.
+
+### Function
+
+<Admonition type="note">
+
+Enabling the **calculate the volume when slicing** option might slow down slicing.
+
+</Admonition>
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help008.png"
+	}
+/>
+
+### Update
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help009.png"
+	}
+/>
+
+## License
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help000-2.png"
+	}
+/>
+
+Display your license information.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help00x.png"
+	}
+/>
+
+## Check Update
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help000-3.png"
+	}
+/>
+
+Check for updates: check if the current version is up to date.
+
+## Manual
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help000-4.png"
+	}
+/>
+
+Open the link to user manuals.
+
+## Factory Setting
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help000-5.png"
+	}
+/>
+
+Reset CHITUBOX to factory settings.
+
+## Shortcut
+
+Display shortcuts.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help000-6.png"
+	}
+/>
+
+### File
+
+| Function     | Shortcut         |
+| ------------ | ---------------- |
+| Open...      | Ctrl + O         |
+| Open Project | Ctrl + P         |
+| Save Project | Ctrl + S         |
+| Save As      | Shift + Ctrl + S |
+| Last Opened  | Ctrl + L         |
+| Delete File  | Delete           |
+
+### Select
+
+| Function            | Shortcut           |
+| ------------------- | ------------------ |
+| Select/Deselect All | Ctrl + A           |
+| Reverse Selection   | Shift + A          |
+| Multiple Selection  | Ctrl + Left-button |
+
+### Edit
+
+| Function       | Shortcut       |
+| -------------- | -------------- |
+| Undo           | Ctrl + Z       |
+| Redo           | Ctrl + Y       |
+| Paste          | Ctrl + V       |
+| Move           | Ctrl + M       |
+| Rotate         | Ctrl + R       |
+| Scale          | Ctrl + Alt + S |
+| Mirror         | Ctrl + I       |
+| Record Screen  | Ctrl + F1      |
+| Stop Record    | Ctrl + F2      |
+| Capture Record | Ctrl + F3      |
+
+### View
+
+| Function         | Shortcut                      |
+| ---------------- | ----------------------------- |
+| Default View     | Shift + H                     |
+| Front View       | Shift + F                     |
+| Back View        | Shift + B                     |
+| Left View        | Shift + L                     |
+| Right View       | Shift + R                     |
+| Top View         | Shift + T                     |
+| Bottom View      | Shift + G                     |
+| Perspective View | Shift + P                     |
+| Orthogonal View  | Shift + O                     |
+| Move Slowly      | Ctrl + Left-button (Press)    |
+| Scale Record     | Ctrl + Middle-button (Scroll) |
+
+### Support
+
+| Function                        | Shortcut                       |
+| ------------------------------- | ------------------------------ |
+| Adjust the touch point distance | Shift + Middle-button (Scroll) |
+| Add support mode                | A                              |
+| Delete support mode             | D                              |
+| Edit support mode               | E                              |
+| Toggle support profile          | Tab                            |
+
+### Help
+
+| Function          | Shortcut         |
+| ----------------- | ---------------- |
+| Setting           | Ctrl + Shift + M |
+| Technical Support | Ctrl + Shift + P |
+
+## Plugin
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help000-7.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help010.png"
+	}
+/>
+
+Import, build or delete third-party plugins.
+
+The standard plugin file extension name is _.CHplugin_
+
+## Open Log
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help000-8.png"
+	}
+/>
+
+The **Open Log** file will prompt out the path of CHITUBOX log file in a File Explorer.
+
+In case you have trouble open the path from CHITUBOX, please open Windows File Explorer, access the path directly. <br />
+Replace `{Your-PC-User-Name}` with your PC's user name:
+
+```shell
+C:\Users\{Your-PC-User-Name}\AppData\Local\CHITUBOXPro
+```
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help000-8-1.png"
+	}
+/>
+
+## Technical Support
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help000-9.png"
+	}
+/>
+
+Input your issues and your file links (if provided), Click **Apply** to submit your issues. <br />
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help011.png"
+	}
+/>
+
+Or you can email your issues to <SpanA href="mailto:support@chitubox.com">📧support@chitubox.com</SpanA>
+
+## About CHITUBOX Pro
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help000-10.png"
+	}
+/>
+
+You can check out CHITUBOX Pro and your device related information here.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-setting-and-help012.png"
+	}
+/>

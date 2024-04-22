@@ -1,0 +1,70 @@
+import { ImageComparison } from "@/components/imageComparison/ImageComparison";
+import {
+	VideoSurveillance,
+	HistoricalRecords,
+	DeviceFileManagement,
+	DownloadTimelapseVideos,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "操作",
+	author: "CHITUBOX Team",
+	pageId: "/zh-TW/chitu-manager/v1.0.0/operations",
+	description:
+		"主視窗的頂部有各種操作選項。包括打開、儲存、複製、自動排版、鏤空、挖洞、修復、標準件、樹脂材料聯盟、消息提醒和登入。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 操作
+
+在列印機列表界面可以查看並點擊各项功能按键對列印機進行基本的操作。
+
+## 視訊
+
+## 打開視訊
+
+當設備在線且接入了攝像頭時，<VideoSurveillance /> 視訊圖示出現，點擊即可打開攝像頭並顯示視訊畫面。
+
+### 延時攝影
+
+當設備接入攝像頭且支持延時攝影時，在打開設備<NextLink href="/zh-TW/docs/chitu-manager/latest/sections/printer-list#詳細狀態">詳細狀態</NextLink>面板時可以看到“延時攝影”功能選項。若啟用該選項，將對接下來的列印任務進行延時攝影。
+
+列印任務結束後，可以打開歷史列印記錄列表，找到對應的列印任務，點擊 <DownloadTimelapseVideos /> 圖示下載延時攝影視訊。
+
+## 歷史記錄
+
+點擊 <HistoricalRecords/> 圖示可查看當前設備的歷史列印記錄。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitu-manager/004-operations-historical-records.png"
+	}
+	style={{ maxWidth: "400px" }}
+/>
+
+歷史列印任務所記錄的信息包括：圖片，名稱，狀態，進度，材料，實際消耗量，時間，總時長，以及延時攝影視訊等。
+
+## 訪問設備檔案
+
+當設備連線並處於空閒狀態時，點擊 <DeviceFileManagement /> 檔案按鈕即可訪問當前設備檔案。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/004-operations-device-files.png"}
+/>
+
+如果設備檔案包含可列印檔案，您可以將滑鼠停留在對應檔案上。當出現「立即列印」按鈕時，點擊此按鈕即可開始列印選中的檔案。
+
+## 暫停/繼續列印
+
+當設備正處於列印狀態時，打開設備詳細狀態面板，可以看到暫停列印按鈕，點擊即可暫停列印。
+
+如果設備已處於暫停狀態，可通過點擊繼續列印按鈕恢復列印。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/004-operations-pause-printing.png"}
+	style={{ maxWidth: "400px" }}
+/>
+
+## 停止列印
+
+打開設備詳細狀態面板，點擊停止列印按鈕終止當前列印進程。

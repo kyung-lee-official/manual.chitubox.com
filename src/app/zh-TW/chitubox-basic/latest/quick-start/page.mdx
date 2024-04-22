@@ -1,0 +1,116 @@
+import {
+	ChituboxMenu,
+	ChituboxAddMachine,
+	ChituboxSupport,
+	ChituboxFileConfig,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "快速入門",
+	author: "CHITUBOX Team",
+	pageId: "/zh-TW/chitubox-basic/v2.0.0/quick-start",
+	description:
+		"本節將帶您了解 CHITUBOX 的基本使用方法，讓您快速上手 CHITUBOX。 我們將從加載模型開始，然後為模型添加支撐、對模型進行切片，最後導出可列印文件到您的列印機。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 快速入門
+
+本節將帶您了解 CHITUBOX 的基本使用方法，讓您快速上手 CHITUBOX。 我們將從加載模型開始，然後為模型添加支撐、對模型進行切片，最後導出可列印文件到您的列印機。
+
+## 添加機器
+
+首次啟動 CHITUBOX 時，您將根據需要添加您的列印機。假設我們想添加 ELEGOO Jupiter。單擊機器管理欄上的加號按鈕 <ChituboxAddMachine size={24} />，然後從列表中選擇 ELEGOO Jupiter。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-TW/chitubox-basic/2.x.x/003-quick-start-add-machines.png"
+	}
+/>
+
+點擊 “下一步”。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-TW/chitubox-basic/2.x.x/003-quick-start-configurations.png"
+	}
+/>
+
+您可以在此處更改列印機的配置。為方便起見，我們將使用默認設置。單擊 “應用”。
+
+<Admonition type="warning" title="警告">
+	切勿更改預設列印機配置文件的**分辨率**和**尺寸**，這可能會導致列印機在讀取文件時報告錯誤。
+</Admonition>
+
+## 加載文件
+
+您可以通過對話窗的方式或者拖拽的方式將現有文件加載到 CHITUBOX 中。現在讓我們嘗試通過對話窗口的方式打開一個文件。
+
+單擊主窗口左上角的菜單按鈕 <ChituboxMenu size={24} />。如果要加載現有項目，請單擊 “打開項目”。如果您想打開 3D 模型文件，請單擊 “打開...”。 您可以點擊 <NextLink href="/zh-TW/docs/chitubox-basic/latest/introduction#支持的檔案">🔗 此鏈接</NextLink> 查看支持的 3D 模型文件類型。
+
+從電腦中選擇一個想要切片的 3D 模型文件。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/2.x.x/003-quick-start-open-files.png"
+	}
+/>
+
+打開文件。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-TW/chitubox-basic/2.x.x/003-quick-start-open-files-2.png"
+	}
+/>
+
+## 添加支撐
+
+如果不加支撐，我們的模型很可能無法列印成功，因為它在列印平台上只有一個接觸點，并且模型的重心高於該點，處於極不穩定的狀態。點擊主視窗右上方的支撐圖標 <ChituboxSupport size={24} />，進入支撐配置視窗。
+
+<ImageContainer
+	src={"/images/docs/zh-TW/chitubox-basic/2.x.x/003-quick-start-support.png"}
+/>
+
+本章節為了盡可能保持簡單，將使用自動加支撐功能。點擊 “自動支撐” 按鈕。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-TW/chitubox-basic/2.x.x/003-quick-start-supported.png"
+	}
+/>
+
+不錯，現在我們可以繼續對檔案進行切片了。
+
+## 切片
+
+點擊右上方檔案配置按鈕 <ChituboxFileConfig size={24} /> 回到主視窗。
+
+<ImageContainer
+	src={"/images/docs/zh-TW/chitubox-basic/2.x.x/003-quick-start-slice.png"}
+/>
+
+然後點擊右下方的 “切片” 按鈕，對檔案進行切片。這個過程需要一段時間，具體時間取決於模型的大小和支撐的複雜程度。
+
+<ImageContainer
+	src={"/images/docs/zh-TW/chitubox-basic/2.x.x/003-quick-start-slice-2.png"}
+/>
+
+## 導出可列印檔案
+
+這是最後一步，按下右下方的 “儲存” 按鈕以開啟儲存切片檔案視窗。
+
+<Admonition type="warning" title="警告">
+	請勿將切好的檔案直接儲存到 USB 隨身碟，這樣容易造成檔案錯誤。
+	建議的工作流程是先將檔案儲存至您的電腦硬碟上，然後再將檔案複製到 USB
+	隨身碟。 此外，如果您打算列印較大的模型，強烈建議將切片檔案載入回 CHITUBOX
+	並預覽檔案，檢查是否存在任何可以直觀發現的錯誤，這樣就不會浪費時間和樹脂列印一個損壞的檔案。
+</Admonition>
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-basic/2.x.x/003-quick-start-save-as.png"}
+/>
+
+您可以在此處命名檔案並選擇檔案儲存的位置。確保在 “儲存類型” 下拉選單中選擇 .ctb 格式。按下 “儲存” 以儲存檔案，之後將檔案複製到 USB 隨身碟。
+
+恭喜您完成 CHITUBOX 基礎入門教程，祝列印一切順利！ 🎉🎉🎉

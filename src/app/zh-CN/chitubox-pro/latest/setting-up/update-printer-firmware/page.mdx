@@ -1,0 +1,128 @@
+
+export const meta = {
+	title: "更新打印机固件",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitubox-pro/v1.4.0/update-printer-firmware",
+	description: "如何更新打印机固件?",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 更新打印机固件
+
+## 解压缩文件
+
+将更新压缩包内的所有文件，解压出来。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-update-printer-firmware-001.png"
+	}
+/>
+
+<Admonition type="warning" title="警告">
+	除了 UI 文件、logo 文件，其余文件均不可更改名称。
+</Admonition>
+
+## 文件类型
+
+| 文件类型                                                     | 说明                                                                                                                                                        | 上电能否自动读取更新 | 通过打印文件更新 |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ---------------- |
+| update.LCD, <br /><br /> update.SH4, <br /><br /> update.TWP | update.LCD，是主控芯片的固件文件，包含有固件程序及版本号信息。<br /> 部分 ELEGOO 打印机可能会用 update.SH4, <br /> 部分 Phrozen 打印机可能会用 update.TWP。 | 是                   | 可手动升级       |
+| chitu_initial_file_autorun                                   | 自动运行文件列表程序，包含需要自动更新的文件列表。**部分打印机的升级包可能不包含此文件**。                                                                  | 是                   | 可手动升级       |
+| .gcode                                                       | 机器参数类文件，包含机器参数或屏幕校准参数等等。                                                                                                            | 否                   | 是               |
+| .bin                                                         | 一般情况下，指触摸屏 UI 文件                                                                                                                                | 否                   | 是               |
+| .CBD                                                         | FPGA 核心功能文件。                                                                                                                                         | 否                   | 是               |
+| .logo                                                        | 一般情况下，指打印机开机 logo 文件。                                                                                                                        | 否                   | 是               |
+
+<Admonition type="tip" title="提示">
+	大多数情况，您只需要更新固件文件和 UI 文件。
+</Admonition>
+
+## 升级方法
+
+将所有文件，拷贝进 U 盘中，放置在 U 盘**根目录**下。
+
+<Admonition type="warning" title="警告">
+	只能放置在 <b>根目录</b> 下，不要放在文件夹里。
+</Admonition>
+
+将机器断电，并将 U 盘插入机器的 USB 口中，随后机器重新上电开机。
+
+<Admonition type="note" title="注意">
+	请使用 USB 2.0, 容量 16GB (包含) 以下的 U 盘。
+</Admonition>
+
+上电后，
+
+1. 固件更新 <br />
+   如果 U 盘内的 update.LCD 的版本，与当前主板上所搭载的版本不一致，则主板会优先并自动进行更新，此时触摸屏不会亮屏。 <br />
+   但是能够听到蜂鸣器提示音，蜂鸣器提示音节奏为，嘀—嘀—嘀—嘀—嘀—嘀~~~嘀—嘀。 <br />
+   （即 5 短鸣 1 长鸣 2 短鸣） <br />
+   固件更新成功后，触摸屏将会亮起，同时程序启动。 <br />
+
+1. 其他文件更新 <br />
+   随后主板会自动对剩余的文件进行更新（UI 文件、logo 文件除外），并显示更新进度情况，当所有待更新的文件更新完成后，程序将弹出【打印完成】的提示框。 <br />
+
+    <ImageContainer
+    	src={
+    		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-update-printer-firmware-002.png"
+    	}
+    />
+
+    <br />
+    <br />
+
+    <ImageContainer
+    	src={
+    		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-update-printer-firmware-003.png"
+    	}
+    />
+
+点击 **Confirm** 按钮，随后将进入程序主页面，此时所有文件（UI 文件、logo 文件除外）都已更新完毕。
+
+<Admonition type="note" title="注意">
+	如果需要更新 UI 文件或 logo 文件，则只要对其进行手动打印即可。
+</Admonition>
+
+## 检查固件信息
+
+完成更新后，请查看系统信息，检查固件版本，确认是否更新成功。
+
+点击 **系统**，
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-update-printer-firmware-004.png"
+	}
+/>
+
+点击 **系统信息**，
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-update-printer-firmware-005.png"
+	}
+/>
+
+检查固件版本是否已经更新，
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-update-printer-firmware-006.png"
+	}
+/>
+
+<p>
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-update-printer-firmware-007.png"
+		}
+		style={{ width: 50 }}
+	/>{" "}
+	此图标后的信息显示的是当前固件的版本。
+</p>
+
+## 更新后处理
+
+更新完成后，先将 U 盘拔出，随后再重新给机器上电。为了避免在打印机上使用 U 盘时不必要的反复自动更新固件，完成更新后请将 U 盘内的所有更新文件从 U 盘内移除。
+

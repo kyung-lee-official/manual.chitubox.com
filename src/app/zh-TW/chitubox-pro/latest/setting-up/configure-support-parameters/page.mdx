@@ -1,0 +1,581 @@
+export const meta = {
+	title: "設定支撐參數",
+	author: "CHITUBOX Team",
+	pageId: "/zh-TW/chitubox-pro/v1.4.0/configure-support-parameters",
+	description: "在 CHITUBOX Pro 中設定支撐參數。",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 設定支撐參數
+
+<Admonition type="note" title="注意">
+	本頁內容描述的是支撐設定，請點<NextLink href="/zh-TW/docs/chitubox-pro/latest/application-overview/support">此處</NextLink>瞭解更多關於支撐操作。
+</Admonition>
+
+要打開**支撐配置面板**，你需要先打開<NextLink href="/zh-TW/docs/chitubox-pro/latest/application-overview/support">支撐菜單</NextLink>。
+
+<div style={{ width: "100%", overflow: "auto" }}>
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.png"
+		}
+		style={{ float: "right", paddingLeft: "1em", maxWidth: "50%" }}
+	/>
+	<p>
+		這是支撐配置面板，你可以在這裡添加{" "}
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support005.png"
+			}
+		/>{" "}
+		，刪除
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support006.png"
+			}
+		/> ，重置 
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support007.png"
+			}
+		/> ，匯入
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support008.png"
+			}
+		/>{" "}
+		，匯出
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support009.png"
+			}
+		/> ，匯出全部
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support010.png"
+			}
+		/>{" "}
+		，保存
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support010.1.png"
+			}
+		/> ，以及重命名你的支撐配置，其中保存支持自動模式和手動模式。
+	</p>
+	<p>
+		<b>Z抬升高度</b>：模型最低點與平台之間的高度距離。
+	</p>
+	<ImageContainer
+		src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/009-z-lift-height.gif"}
+		style={{ maxWidth: 200 }}
+	/>
+</div>
+<br />
+
+## 支撑設定
+
+<p>
+	你可以分别編輯支撑的<b>頂部</b>，<b>中部</b>，底部以及<b>底筏</b>。
+	<br />
+	**可視化編輯面板**
+	提供了更佳的使用者體驗，在這裡，你可以直接在圖形上修改支撐參數。你也可以透過點擊支撐設定面板的{" "}
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support014.png"
+		}
+	/>{" "}
+	按鈕來關閉這個面板。
+</p>
+
+<br />
+
+<div style={{ display: "flex", width: "100%" }}>
+	<div style={{ flex: "1" }}></div>
+	<div style={{ display: "flex", flexDirection: "column" }}>
+		<ImageContainer
+			style={{ flex: "6" }}
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support013.png"
+			}
+		/>
+		<div
+			style={{
+				flex: "1",
+				paddingTop: "0.5em",
+				textAlign: "center",
+			}}
+		>
+			<p>可視化編輯面板</p>
+		</div>
+	</div>
+	<div style={{ flex: "0.2" }}></div>
+	<div style={{ display: "flex", flexDirection: "column" }}>
+		<ImageContainer
+			style={{ flex: "6" }}
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support013.1.png"
+			}
+		/>
+		<div
+			style={{
+				flex: "1",
+				paddingTop: "0.5em",
+				textAlign: "center",
+			}}
+		>
+			&nbsp;
+		</div>
+	</div>
+	<div style={{ flex: "1" }}></div>
+</div>
+
+### 頂部
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.top.png"
+	}
+/>
+
+| 參數                 | 説明                             |
+| -------------------- | -------------------------------- |
+| 接觸形狀             | 支撐頂部與模型接觸形狀的選擇     |
+| 接觸形狀直徑（毫米） | 支撐頂部與模型接觸部位的直徑尺寸 |
+| 接觸深度（毫米）     | 支撐頂部與模型接觸的深度尺寸     |
+| 連接形狀             | 頂部支撐主体的連接形狀           |
+| 上端直徑（毫米）     | 頂部支撐主体上端的直徑尺寸       |
+| 下端直徑（毫米）     | 頂部支撐主体下端的直徑尺寸       |
+| 連接長度（毫米）     | 頂部支撐主体的長度尺寸           |
+
+### 中部
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.mid.png"
+	}
+/>
+
+| 參數                 | 説明                             |
+| -------------------- | -------------------------------- |
+| 形狀                 | 中部支撐主体的形狀選擇           |
+| 上端直徑             | 中部支撐主体的上端直徑           |
+| 下端直徑             | 中部支撐主体的下端直徑           |
+| 角度 (°)             | 中部支撐與頂部支撐的最大夾角     |
+| 小柱子形狀           | 小柱支撐主体的形狀               |
+| 直徑                 | 小柱支撐主体的直徑尺寸           |
+| 上端接觸深度（毫米） | 小柱支撐上端與模型的接觸深度尺寸 |
+| 下端接觸深度（毫米） | 小柱支撐下端與模型的接觸深度尺寸 |
+
+### 底部
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.bot.png"
+	}
+/>
+
+| 參數             | 説明                                                     |
+| ---------------- | -------------------------------------------------------- |
+| 平台接觸形狀     | 選擇支撐與列印平台的接觸形狀                             |
+| 接觸直徑（毫米） | 與列印平台接觸的支撐部位的直徑尺寸                       |
+| 厚度             | 與列印平台接觸的支撐部位的厚度尺寸                       |
+| 模型接觸形狀     | 當支撐底部落於模型上時，支撐下端部位與模型的接觸形狀     |
+| 接觸直徑（毫米） | 當支撐底部落於模型上時，支撐下端部位與模型接觸的直徑尺寸 |
+| 接觸深度（毫米） | 當支撐底部落於模型上時，支撐下端部位與模型接觸的深度尺寸 |
+| 接觸點           | 當支撐底部落於模型上時，支撐下端部位與模型接觸點的數量   |
+
+### 底筏
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.raf.png"
+	}
+/>
+
+| 參數             | 説明                                                                     |
+| ---------------- | ------------------------------------------------------------------------ |
+| 底筏形狀         | 選擇與列印平台接觸底筏的形狀                                             |
+| 底筏面積比例 (%) | 設定底筏的面積比例，該值為底筏總面積相對於模型向列印平台投影總面積的比例 |
+| 底筏厚度（毫米） | 底筏的厚度尺寸                                                           |
+| 底筏高度（毫米） | 底筏的高度尺寸                                                           |
+| 底筏坡度 (°)     | 底筏側面與列印平台的傾斜角度                                             |
+| 網格邊長（毫米） | 網格型底座的單個網格邊長                                                 |
+| 網格寬度（毫米） | 網格型底座的網格邊橫向寬度                                               |
+
+### 進階
+
+<p>
+	<b>進階</b>按鈕打開進階設定面板，提供更靈活的支撐設定。
+</p>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support017.png"
+	}
+/>
+
+<Admonition type="note" title="注意">
+	CHITUBOX Basic V1.8.1
+	開始，為了提升使用者體驗，我們在載入模型時禁用了支撐輔助線計算，這使得載入過程更快。
+	如果你想開啟該功能，自動支撐將計算輔助線（如果刪除自動添加的支撐，輔助線會顯示出來，但是與
+	Basic V1.8.1
+	相比，只在高風險區域顯示）。我們推薦您使用紅色高亮部分來判斷風險區域。
+</Admonition>
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th width="120px">參數組</th>
+			<th>參數</th>
+			<th>説明</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowSpan={4}>尺寸設定</td>
+			<td>交叉結構的直徑</td>
+			<td>
+				交叉結構的直徑。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-cross-structure-diameter.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>小柱子最大長度</td>
+			<td>
+				手動/自動添加支撐兩端都落於模型上的支撐時，當兩端距離不超過小柱子最大長度時，主幹支撐會以小柱子的支撐類型添加對應支撐。當兩端距離大於小柱子最大長度時，主幹支撐會以中部支撐對應的上端直徑尺寸進行支撐的添加。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-maximum-small-pillar-length.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>支撐底部凸台高度</td>
+			<td>
+				支撐底部凸台的高度尺寸。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-height-of-boss-supporting-bottom.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>支撐底部凸台直徑</td>
+			<td>
+				支撐底部凸台的直徑尺寸。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-diameter-of-the-boss-at-the-bottom-of-the-support.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td rowSpan={10}>自動/手動支撐</td>
+			<td>啓用交叉結構</td>
+			<td>
+				啟用/關閉主幹支撐之間的交叉結構。 <br />
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-automatic-manual-support-settings.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>交叉生成起始高度 (相對平台)</td>
+			<td>
+				設定生成交叉結構支撐的最低起始高度值，當支撐頂部接觸點相對於平台的距離值大於該設定值時，才會與相鄰的支撐之間形成交叉支撐。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-cross-start-height.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>交叉結構的最小間距（Z）</td>
+			<td>
+				垂直 Z 方向上相鄰交叉結構的最小間距。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-minimum-spacing-of-cross-structure-z.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>交叉結構的最小間距（XY）</td>
+			<td>
+				相鄰支撐允許自動生成交叉結構時在 XY 水平面上的最大距離值。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-maximum-spacing-of-cross-structure-xy.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>腔體內生成支撐</td>
+			<td>
+				啟用/關閉封閉腔體內生成支撐。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enable-support-in-shell.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>模型與支撐主幹的最小間距</td>
+			<td>
+				支撐主幹落於平台時，支撐主幹在 XY 水平面與模型的最小允許距離。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-spacing-from-model.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>支撐主幹與觸點間最大水平偏移量</td>
+			<td>
+				落於列印平台的支撐，支撐主幹與模型觸點在 XY
+				水平面的最大允許水平偏移量。自動/手動添加支撐時當落於平台的支撐滿足該偏移設定值時，會生成落於列印平台的支撐，當不滿足時則不會生成落於列印平台的支撐。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-max-offset-from-contact.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>中部支撐下端直徑起始生效高度</td>
+			<td>
+				中部支撐下端直徑參數值生效的參數設定，只有當支撐高度值大於該設定值時，下端直徑值才會生效。當下端直徑設定值不生效時，下端直徑尺寸會按照上端直徑的設定值執行。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-starting-effective-height-of-lower-end-diameter-of-middle-support.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>增强自動支撐</td>
+			<td>
+				啟用/關閉增強自動支撐。共有三種增強模式：獨立強化（IR）、
+				<NextLink href="#增强自動支撐">三角強化（TR）</NextLink>和
+				<NextLink href="#增强自動支撐">全局強化（GR）</NextLink>。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>小柱子自動吸附</td>
+			<td>
+				啟用/關閉小柱子自動吸附功能。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-small-column-automatically-absorbs.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td rowSpan={4}>預覽模式設定</td>
+			<td>預覽支撐 (添加支撐)</td>
+			<td>
+				啓用/關閉手動添加支撐時的預覽。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-preview-mode-setting.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>支撐隱藏角度 (0-90°)</td>
+			<td>
+				在支撐模式下，當視角向模型向上看到一定角度時，中間和底部支撐將自動隱藏，設置
+				0 以禁止隱藏。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-hidden-angle-0-90.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>顯示支撐點標注線</td>
+			<td>
+				顯示/隱藏支撐輔助線，即自動添加支持時的觸點位置。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-display-support-auxiliary-line-surface-contact-diameter.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>選中的模型自動 (視角) 居中</td>
+			<td>
+				在支撐模式下，所選模型將自動放置在透視的中心。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-select-the-model-to-center.gif"
+					}
+					style={{ width: 180 }}
+				/>
+				<br />
+				<br />
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+#### 增强自動支撐
+
+當添加自動支撐時，一些孤立的支撐主幹會自動增加輔助支撐，並生成連接結構。
+
+-   三角強化（TR）：當選中三角強化模式，添加自動支撐時，將自動連接相鄰的三個孤立的支撐主幹，從而形成穩定的三角結構。
+
+-   全局強化（GR）：當選中全局強化模式，添加自動支撐時，將全面強化所有孤立的支撐主幹，自動形成由三角結構組合而成的更加穩定的結構，將所有支撐關聯起來以更好地輔助支撐的穩定性。
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-tr.png"
+		}
+		text1={"三角強化（TR）"}
+		img2Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-gr.png"
+		}
+		text2={"全局強化（GR）"}
+	/>
+</ImageContainer>
+
+<Admonition type="note" title="注意">
+	啟用小柱子自動吸附功能：可以自由設定吸附半徑的大小。切片軟體會根據算法在添加小柱子支撐時，將小柱子的下端自動吸附在合適的支撐上。
+</Admonition>
+
+## 自動/手動支撐
+
+<p>
+	<b>角度 (°)</b>：
+	模型被允許添加支撐的最大傾斜角度，該角度值為模型表面與平台的夾角。
+</p>
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/020angle.gif"}
+	style={{ maxWidth: 200 }}
+/>
+
+<p>
+	<b>接觸點間距（毫米）</b>：任意兩個觸點之間的最小水平距離。
+</p>
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.1b.png"
+		}
+		text1={"接觸點間距設爲 2mm"}
+		img2Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.1a.png"
+		}
+		text2={"接觸點間距設爲 5mm"}
+	/>
+</ImageContainer>
+
+**中部支撐間距（毫米）**：任意兩個中部支撐之間的最小水平距離。
+
+為了更精確地控制支撐間距，CHITUBOX Basic 中 <b>密度(%)</b> 參數在 CHITUBOXPro 中被替換為 <b>中部支撐間距</b>。
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.1b.png"
+		}
+		text1={"中部支撐間距設爲 2mm"}
+		img2Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.1a.png"
+		}
+		text2={"中部支撐間距設爲 8mm"}
+	/>
+</ImageContainer>
+
+<button className="button button--secondary">+平台</button> 按鈕僅基於平台自動添加支撐。
+<button className="button button--secondary">+所有</button> 按鈕基於平台和模型自動添加支撐。
+
+<ImageContainer>
+	<ImageComparison
+		img1Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.png"
+		}
+		text1={"+平台"}
+		img2Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.png"
+		}
+		text2={"+所有"}
+	/>
+</ImageContainer>

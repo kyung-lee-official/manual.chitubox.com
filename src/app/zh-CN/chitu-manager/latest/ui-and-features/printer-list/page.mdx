@@ -1,0 +1,75 @@
+import {
+	CameraStatus,
+	UsbDriveStatus,
+	WirelessNetwork,
+	WiredNetwork,
+	ReleaseFilmUsageCount,
+	ExposureScreenUsageTime,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "打印机列表",
+	author: "CHITUBOX Team",
+	pageId: "/zh-CN/chitu-manager/v1.0.0/printer-list",
+	description: "",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# 打印机列表
+
+点击软件左侧导航栏的 “打印机” 选项，打开打印机列表界面。
+
+如果还未添加打印机，直接点击 “添加打印机” 按钮跳转至<NextLink href="/zh-CN/chitu-manager/latest/sections/add-printers">管理设备</NextLink>界面。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/003-printer-list-main-printer.png"}
+	style={{ maxWidth: "1050px" }}
+/>
+
+<Admonition type="note" title="注意">
+	请确保打印机和电脑在同一局域网下。
+</Admonition>
+
+如果您已添加打印机，可以在此界面查看所有已添加的打印机、打印机的实时状态，以及进行其他的一些简单的<NextLink href="/zh-CN/chitu-manager/latest/sections/operations">操作</NextLink>。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/003-printer-list-printer-list.png"}
+	style={{ maxWidth: "1050px" }}
+/>
+
+## 基础状态
+
+### 摄像头接入状态
+
+出现 <CameraStatus /> 表示打印机已接入摄像头。
+
+### U 盘接入状态
+
+出现 <UsbDriveStatus /> 表示打印机已接入 U 盘。
+
+### 网络连接状态
+
+-   <WiredNetwork /> 表示打印机使用有线连接网络。
+
+-   <WirelessNetwork /> 表示打印机使用无线连接网络。
+
+### 设备实时状态
+
+您还可以在此界面查看设备的实时状态，共有离线、待机、连接中、打印中、打印完成、已暂停等状态。
+
+## 详细状态
+
+除了在列表中查看所有打印机的基础状态，还能点击单个设备卡片，打开选中设备的详细状态面板。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/003-printer-list-detailed-list.png"}
+	style={{ maxWidth: "400px" }}
+/>
+
+### 离型膜使用次数
+
+<ReleaseFilmUsageCount /> 表示离型膜的使用次数。
+
+### 曝光屏使用时长
+
+<ExposureScreenUsageTime /> 表示曝光屏的使用时长。

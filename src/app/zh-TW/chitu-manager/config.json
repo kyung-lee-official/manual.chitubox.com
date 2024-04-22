@@ -1,0 +1,34 @@
+{
+	"docInstanceName": "ChituManager",
+	"isVersioned": true,
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "1.0.0",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "介绍"
+				},
+				{
+					"item": "ui-and-features",
+					"label": "界面和功能",
+					"subItems": [
+						{
+							"item": "add-printers",
+							"label": "添加设备"
+						},
+						{
+							"item": "printer-list",
+							"label": "打印机列表"
+						},
+						{
+							"item": "operations",
+							"label": "操作"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,150 @@
+import { ImageComparison } from "@/components/imageComparison/ImageComparison";
+import {
+	ChituboxOpenIcon,
+	ChituboxSaveIcon,
+	ChituboxCopyIcon,
+	ChituboxAutoLayoutIcon,
+	ChituboxHollowIcon,
+	ChituboxDigHoleIcon,
+	ChituboxStandardPartsIcon,
+	ChituboxRmaIcon,
+	ChituboxRepairIcon,
+	ChituboxSignInIcon,
+} from "@/components/icons/Icons";
+
+export const meta = {
+	title: "Operations",
+	author: "CHITUBOX Team",
+	pageId: "/en-US/chitubox-basic/v2.0.0/operations",
+	description:
+		"Operations are located at the top of the main window. It includes Open, Save, Copy, Auto Layout, Hollow, Dig Hole, Repair, Standard Parts, Resin Material Alliance, Message Remind and Login.",
+	ogImage: "/images/docs/og_logo.png",
+};
+
+# Operations
+
+Operations are located at the top of the main window. It includes Open, Save, Copy, Auto Layout, Hollow, Dig Hole, Repair, Standard Parts, Resin Material Alliance, Message Remind and Login.
+
+## Open
+
+<ChituboxOpenIcon /> The "Open" option allows you to open 3D mesh files,
+_.chitubox_ project files, or sliced files.
+
+## Save
+
+<ChituboxSaveIcon /> The "Save" option allows you to save your current project
+to a _.chitubox_ file or a 3D mesh file.
+
+## Copy
+
+<ChituboxCopyIcon /> The Copy option allows users to quickly make multiple
+copies of a 3D model which can be helpful when printing multiple copies of a
+single model.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-copy.png"}
+/>
+
+## Auto Layout
+
+<ChituboxAutoLayoutIcon /> The Auto Layout option allows users to quickly and
+easily position 3D models on the build plate in a variety of ways includes
+layout models at the center of the build plate, near the X side of the build
+plate, and near the Y side of the build plate.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-autolayout.png"
+	}
+/>
+
+## Hollow
+
+<ChituboxHollowIcon /> The Hollow option has 3 modes: "Hollow out", "Peel", and
+"Dig out".
+
+**Hollow out** allows users to create 3D models with hollow interiors, while retaining the outer shape of the model. The Hollow option can help users save time and material costs when printing 3D models, as the hollow interior will require less material to print. This feature can also be used to create lightweight models with a complex outer shape.
+
+**Peel** will peel off a designated thickness of wall from the model, just like shrinking the model down.
+
+**Dig out** is pretty much like "Hollow out" but removes the bottom of the chamber.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-hollow.png"}
+/>
+
+### Hollow Parameters Explained
+
+-   **Wall Thickness**: wall thickness determines the overall thickness of the walls.
+-   **Precision**: precision determines the number of faces generated on the inside wall as per the given percentage.
+    <ImageContainer>
+    	<ImageComparison
+    		img1Src={
+    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-low-precision.png"
+    		}
+    		text1={"Low Precision"}
+    		img2Src={
+    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-high-precision.png"
+    		}
+    		text2={"High Precision"}
+    	/>
+    </ImageContainer>
+-   **Infill Structure**: infill structure determines the type of pattern used for the infill.
+-   **Infill Density**: infill density determines how dense the infill will be.
+-   **Animation**: enabling this option will show the hollowing process.
+
+## Dig Hole
+
+<ChituboxDigHoleIcon /> The "Dig Hole" function allows users to create holes of
+designated shape or size in 3D models with a few simple clicks.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-dig-hole.png"}
+/>
+
+### Dig Hole Parameters Explained
+
+-   **Shape**: the shape of the hole, available shapes are Circular, Hexagon, and Square.
+-   **Diameter**: the diameter of the hole.
+-   **Depth**: the maximum thickness of the wall that the hole can dig through.
+
+    <Admonition type="note">
+    	This function is designed to penetrate walls of models, so it will not
+    	dig a non-penetrate hole as per the depth you set.
+    </Admonition>
+
+-   **Perpendicular to**: digging angle perpendicular to screen or to model.
+-   **Keep the cork**: whether to Keep the cork or not.
+
+## Repair
+
+<ChituboxRepairIcon /> The Repair option will try to fix broken models.
+
+<Admonition type="warning">
+	The repair function may not function correctly if the model is complex or
+	has a lot of errors like inverted normals, overlapping faces, etc.
+</Admonition>
+
+## Standard Parts
+
+<ChituboxStandardPartsIcon /> The Standard Parts provides users with a library
+of pre-made 3D models that can be quickly and easily imported into their
+project, includes a wide selection of Basic Geometry, Testing models, Tool
+models, Mechanical Parts, and more.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-standard-parts.png"
+	}
+/>
+
+## Resin Material Alliance
+
+<ChituboxRmaIcon /> Users can access the Material Center here.
+
+## Message Remind
+
+## Login
+
+<ChituboxSignInIcon /> The Login option allows users to login to their CHITUBOX
+account. Once logged in, users can access their settings from cloud.

@@ -1,0 +1,34 @@
+{
+	"docInstanceName": "ChituManager",
+	"isVersioned": true,
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "1.0.0",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "Introduction"
+				},
+				{
+					"item": "ui-and-features",
+					"label": "Sections",
+					"subItems": [
+						{
+							"item": "add-printers",
+							"label": "Add Printer"
+						},
+						{
+							"item": "printer-list",
+							"label": "Printer List"
+						},
+						{
+							"item": "operations",
+							"label": "Operations"
+						}
+					]
+				}
+			]
+		}
+	]
+}
