@@ -45,7 +45,7 @@ export default async function RootLayout({
 				<UrlHashPilot />
 				<div id="root-portal"></div>
 				<Header />
-				{children}
+				<main className="dark:bg-black">{children}</main>
 				<Footer />
 			</body>
 		</html>

@@ -1,11 +1,23 @@
-import { MainPage } from "./home/Home";
 import { Locale } from "../../../messages/Locale";
-import { ImageContainer } from "@/components/imageContainer/ImageContainer";
+import dynamic from "next/dynamic";
+import DocsLinks from "./DocsLinks";
+import { useTranslations } from "next-intl";
 
-export default function Home(props: { params: { locale: Locale; }; }) {
+const DynamicHero = dynamic(() => import("./hero/Hero"), {
+	ssr: false,
+});
+
+export default function Page(props: { params: { locale: Locale } }) {
+	const t = useTranslations("footer");
 	return (
-		<ImageContainer
-			src={"/images/docs/docs.png"}
-		/>
+		<div className="flex flex-col">
+			<DynamicHero />
+			<DocsLinks
+				chituboxBasic={"CHITUBOX Basic"}
+				chituboxPro={"CHITUBOX Pro"}
+				chituManager="ChituManager"
+				faq={t("faqDoc")}
+			/>
+		</div>
 	);
 }
