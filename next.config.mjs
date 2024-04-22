@@ -1,26 +1,18 @@
+import createMDX from "@next/mdx";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
-import createMDX from "@next/mdx";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import withNextIntl from "next-intl/plugin";
 
-/** 
- * @type {import('next').NextConfig} 
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-	compiler: {
-		styledComponents: true
-	},
-	reactStrictMode: true,
-	swcMinify: true,
-	// i18n: {
-	// 	locales: ['en-US', 'zh-CN'],
-	// 	defaultLocale: 'en-US',
-	// },
-	/* Append the default value with md extensions */
-	pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+	/* Configure `pageExtensions` to include MDX files */
+	pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 };
+
+const withNextIntlConfig = withNextIntl()(nextConfig);
 
 const withMDX = createMDX({
 	extension: /\.mdx?$/,
@@ -31,11 +23,9 @@ const withMDX = createMDX({
 		 */
 		remarkPlugins: [remarkGfm, remarkMath],
 		rehypePlugins: [rehypeKatex, rehypeSlug, rehypeAutolinkHeadings],
-		/**
-		 * If you use `MDXProvider`, uncomment the following line.
-		 */
-		providerImportSource: "@mdx-js/react",
 	},
 });
 
-export default withMDX(nextConfig);
+const withMDXConfig = withMDX(withNextIntlConfig);
+
+export default withMDXConfig;
