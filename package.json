@@ -5,7 +5,7 @@
 		"preload": "cd src/preload && tsc && node ./out/preload.js",
 		"dev": "next dev -H 0.0.0.0",
 		"dev:turbo": "next dev --turbo",
-		"build": "next build",
+		"build": "next build -H 0.0.0.0",
 		"build:export": "next build && next export",
 		"start": "next start",
 		"lint": "next lint"

@@ -24,4 +24,4 @@ jobs:
                       sudo docker rmi i-manual.chitubox.com
                       sudo docker build -t i-manual.chitubox.com .
                       sudo docker images
-                      sudo docker run --name c-manual.chitubox.com -p 3003:3000 -d i-manual.chitubox.com
+                      sudo docker run --name c-manual.chitubox.com -p 3000:3000 -d i-manual.chitubox.com
