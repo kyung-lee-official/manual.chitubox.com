@@ -18,7 +18,7 @@ export async function generateMetadata({
 	const t = await getTranslations({ locale });
 	return {
 		icons: {
-			icon: "/favicon.ico",
+			icon: "/logo.png",
 		},
 		title: {
 			template: "%s | " + t("title"),
