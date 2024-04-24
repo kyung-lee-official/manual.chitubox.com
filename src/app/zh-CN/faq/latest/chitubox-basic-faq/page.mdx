@@ -1,6 +1,6 @@
-export const meta = {
+export const metadata = {
 	title: "常见问题",
-	author: "CHITUBOX Team",
+	authors: [{ name: "CHITUBOX Team" }],
 	pageId: "/zh-CN/chitubox-basic-faq",
 };
 
@@ -209,3 +209,19 @@ STL 文件并不包含具体的单位信息，而是使用数字记录。因此�
     <ImageContainer
     	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq009.png"}
     />
+
+## 网络发送问题
+
+如果您在使用网络发送功能时遇到问题，例如找不到打印机、文件发送失败、传输进度条缓慢等，可以检查以下原因：
+
+-   网络连接：
+
+    确保您的电脑和打印机连接到同一局域网 (LAN)。
+
+-   防火墙设置：
+
+    检查您的防火墙是否拦截了 ChituManager， 如果被拦截，将无法识别到您的打印机。
+
+-   文件名字符：
+
+    避免在文件名中使用非英文、非数字的字符。 否则，有可能导致文件传输失败。

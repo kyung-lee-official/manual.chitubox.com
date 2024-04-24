@@ -1,7 +1,13 @@
-export const meta = {
+export const metadata = {
 	title: "CHITUBOX Basic FAQ",
-	author: "CHITUBOX Team",
-	pageId: "/en-US/chitubox-basic-faq",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/en-US/chitubox-basic-faq",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # CHITUBOX Basic FAQ
@@ -214,3 +220,19 @@ You might found that your printer can't read your USB drive properly sometimes. 
     <ImageContainer
     	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq009.png"}
     />
+
+## Network Sending Issues
+
+If you're experiencing problems with network sending features, such as not finding printers, file sending failure, or a sluggish transfer progress bar, you can check the following reasons:
+
+-   Network Connection:
+
+    Ensure both your computer and the printer are connected to the same local area network (LAN).
+
+-   Firewall Settings:
+
+    Check if your firewall is blocking ChituManager. If that happens, it will not be able to detect your printer.
+
+-   Filename Characters:
+
+    Avoid using non-English or non-numeric characters in filenames. These characters can sometimes cause problems when sending files.
