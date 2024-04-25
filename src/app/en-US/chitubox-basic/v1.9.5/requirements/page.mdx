@@ -1,11 +1,14 @@
-
-export const meta = {
+export const metadata = {
 	title: "Requirements",
-	author: "CHITUBOX Team",
-	pageId: "/en-US/chitubox-basic/v1.9.5/requirements",
+	authors: [{ name: "CHITUBOX Team" }],
 	description:
 		"It is important to carefully review the system requirements before installing the software. In this section, we will introduce the system requirements for CHITUBOX.",
-	ogImage: "/images/docs/og_logo.png",
+	other: {
+		pageId: "/en-US/chitubox-basic/v1.9.5/requirements",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # Requirements
@@ -50,11 +53,11 @@ export const meta = {
 
 ### macOS
 
-| Specification | Mininum                           | Recommended                           |
-| ------------- | --------------------------------- | ------------------------------------- |
-| CPU           | Intel® or M1 processors           | Intel® or M1 processors               |
+| Specification | Mininum                        | Recommended                           |
+| ------------- | ------------------------------ | ------------------------------------- |
+| CPU           | Intel® or M1 processors        | Intel® or M1 processors               |
 | OS            | macOS Catalina (version 10.15) | macOS Big Sur (version 11.6) or above |
-| RAM           | 16GB                              | ≥ 32GB                                |
+| RAM           | 16GB                           | ≥ 32GB                                |
 
 <Admonition type="note">
 	Theoretically, you can run CHITUBOX on an Apple Silicon Mac by using Rosetta
@@ -133,4 +136,3 @@ CHITUBOX Basic has minimum supported firmware versions requirements for printers
 | --------------- | -------------------- |
 | Import & Export | \*.stl               |
 | Import & Export | \*.obj               |
-

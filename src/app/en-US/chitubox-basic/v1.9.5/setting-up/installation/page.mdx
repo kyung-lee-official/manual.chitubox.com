@@ -1,11 +1,16 @@
-export const meta = {
-	title: "Installation",
-	author: "CHITUBOX Team",
-	pageId: "/en-US/chitubox-basic/v1.9.5/installation",
-	description: "How to install CHITUBOX Basic?",
-	ogImage: "/images/docs/og_logo.png",
-};
 import { YouTubeVideoContainer } from "@/components/videoContainer/YouTubeVideoContainer";
+
+export const metadata = {
+	title: "Installation",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "How to install CHITUBOX Basic?",
+	other: {
+		pageId: "/en-US/chitubox-basic/v1.9.5/installation",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
 
 # Installation
 
@@ -100,5 +105,9 @@ Click **Finish**, you're done!
 <Admonition type="note">
 	If you found issues that were claimed fixed in the update log but still
 	exist after updating CHITUBOX Pro, please clean the cache and try again.
-	Click <NextLink href="/en-US/faq/latest/chitubox-basic-faq#clean-the-cache">here</NextLink> to learn more about cache cleaning.
+	Click{" "}
+	<NextLink href="/en-US/faq/latest/chitubox-basic-faq#clean-the-cache">
+		here
+	</NextLink>{" "}
+	to learn more about cache cleaning.
 </Admonition>

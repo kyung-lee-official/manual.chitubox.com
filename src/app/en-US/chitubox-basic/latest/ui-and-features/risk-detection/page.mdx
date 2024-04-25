@@ -6,12 +6,16 @@ import {
 } from "@/components/icons/Icons";
 import { ImageComparison } from "@/components/imageComparison/ImageComparison";
 
-export const meta = {
+export const metadata = {
 	title: "Risk Detection",
-	author: "CHITUBOX Team",
-	pageId: "/en-US/chitubox-basic/v2.0.0/risk-detection",
+	authors: [{ name: "CHITUBOX Team" }],
 	description: "Some risk detection features that can be used in CHITUBOX, including Cavity Detection, Collision Detection, Suspension Detection, and Island Detection.",
-	ogImage: "/images/docs/og_logo.png",
+	other: {
+		pageId: "/en-US/chitubox-basic/v2.0.0/risk-detection",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
  
 # Risk Detection
