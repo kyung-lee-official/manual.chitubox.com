@@ -1,16 +1,22 @@
 import { BilibiliVideoContainer } from "@/components/videoContainer/BilibiliVideoContainer";
+
 export const meta = {
-	title: "菜单栏",
+	title: "菜單欄",
 	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitubox-basic/v1.9.5/menu-bar",
 	description:
-		"菜单栏位于主窗口的顶部。 它包括打开文件、保存项目、屏幕截图和记录、撤销或重做、复制、自动布局、镂空、挖洞和修复",
-	ogImage: "/images/docs/og_logo.png",
+		"菜單列位於主視窗的頂部。它包括開啟檔案、儲存專案、螢幕擷取和錄影、撤銷或重做、複製、自動佈局、鏤空、挖洞和修復。",
+	other: {
+		pageId: "/zh-TW/chitubox-basic/v1.9.5/menu-bar",
+		pageId: "/en-US/chitu-manager/v1.0.0/introduction",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
-# 菜单栏
+# 菜單欄
 
-## 打开文件
+## 打開檔案
 
 <ImageContainer
 	src={
@@ -18,9 +24,9 @@ export const meta = {
 	}
 />
 
-打开项目文件、导入三维模型或切片文件。
+打開項目檔案、匯入三維模型或切片檔案。
 
-## 保存项目
+## 保存項目
 
 <ImageContainer
 	src={
@@ -28,7 +34,7 @@ export const meta = {
 	}
 />
 
-保存全部或所选模型。
+保存全部或所選模型。
 
 <BilibiliVideoContainer>
 	<iframe
@@ -41,7 +47,7 @@ export const meta = {
 	></iframe>
 </BilibiliVideoContainer>
 
-## 屏幕截图和记录
+## 屏幕截圖和紀錄
 
 <ImageContainer
 	src={
@@ -49,7 +55,7 @@ export const meta = {
 	}
 />
 
-截屏或录制屏幕动态视频。
+截圖或錄製螢幕動態影片。
 
 <BilibiliVideoContainer>
 	<iframe
@@ -62,7 +68,7 @@ export const meta = {
 	></iframe>
 </BilibiliVideoContainer>
 
-## 撤销或重做
+## 撤銷或重做
 
 <ImageContainer
 	src={
@@ -70,9 +76,9 @@ export const meta = {
 	}
 />
 
-撤销上一步操作或重做上一步撤销的操作。
+撤銷上一步操作或重做上一步撤銷的操作。
 
-## 复制
+## 複製
 
 <ImageContainer
 	src={
@@ -80,7 +86,7 @@ export const meta = {
 	}
 />
 
-复制一个或多个所选定模型，并将指定数量的复制模型添加于当前作业的项目之中。
+複製一個或多個所選定模型，並將指定數量的複製模型添加於當前作业的項目之中。
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/001copy.gif"}
@@ -98,7 +104,7 @@ export const meta = {
 	></iframe>
 </BilibiliVideoContainer>
 
-## 自动布局
+## 自動佈局
 
 <ImageContainer
 	src={
@@ -106,7 +112,7 @@ export const meta = {
 	}
 />
 
-将作业项目内的模型按照设定的排布规律快速排版布局。
+將作業項目內的模型按照設定的排列規律快速排版佈局。
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/002auto-layout.gif"}
@@ -124,7 +130,7 @@ export const meta = {
 	></iframe>
 </BilibiliVideoContainer>
 
-## 镂空
+## 鏤空
 
 <ImageContainer
 	src={
@@ -132,29 +138,23 @@ export const meta = {
 	}
 />
 
-将选定的模型按照设定的镂空参数镂空。
+將選定的模型按照設定的鏤空參數鏤空。
 
-<div>
-	<ImageContainer
-		src={"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/003hollow.gif"}
-		width="20%"
-	/>
-</div>
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/003hollow.gif"}
+	width="20%"
+/>
 
-<br />
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-prepare008.1.png"
+	}
+/>
 
-<div>
-	<ImageContainer
-		src={
-			"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-prepare008.1.png"
-		}
-	/>
-</div>
-
--   壁厚：镂空时被操作对象剩余的腔体厚度。
--   精度：被镂空面生成的三角面数量。
--   填充结构：开启/关闭生成内部填充结构。
--   镂空过程动画：镂空时展示镂空动画（实际镂空进度以底部进度条为准）。
+-   壁厚：鏤空時被操作對象剩餘的腔體厚度。
+-   精度：被鏤空面生成的三角面數量。
+-   填充結構：開啟/關閉生成內部填充結構。
+-   鏤空過程動畫：鏤空時展示鏤空動畫（實際鏤空進度以底部進度條為準）。
 
 <BilibiliVideoContainer>
 	<iframe
@@ -167,7 +167,7 @@ export const meta = {
 	></iframe>
 </BilibiliVideoContainer>
 
-## 挖洞
+## 挖孔
 
 <ImageContainer
 	src={
@@ -175,24 +175,18 @@ export const meta = {
 	}
 />
 
-将选定的模型按照设定的挖洞参数挖洞。
+將選定的模型按照設定的鏤空參數鏤空。
 
-<div>
-	<ImageContainer
-		src={
-			"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-prepare020.png"
-		}
-	/>
-</div>
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-prepare020.png"
+	}
+/>
 
-<br />
-
-<div>
-	<ImageContainer
-		src={"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/004dig-hole.gif"}
-		width="20%"
-	/>
-</div>
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/004dig-hole.gif"}
+	width="20%"
+/>
 
 <BilibiliVideoContainer>
 	<iframe
@@ -205,35 +199,29 @@ export const meta = {
 	></iframe>
 </BilibiliVideoContainer>
 
-## 修复
+## 修復
 
-<div>
-	<ImageContainer
-		src={
-			"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-menubar005.png"
-		}
-	/>
-</div>
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-menubar005.png"
+	}
+/>
 
-<br />
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-repair020.png"
+	}
+/>
 
-<div>
-	<ImageContainer
-		src={
-			"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-repair020.png"
-		}
-	/>
-</div>
+修復面板上的下拉菜單可以選擇**反轉法線**或者**自動修復**。
 
-修复面板上的下拉菜单可以选择**反转法线**或者**自动修复**。
+### 反轉法線
 
-### 反转法线
+將模型中所有面的法線進行翻轉。
 
-将模型中所有面的法线进行翻转。
+### 自動修復
 
-### 自动修复
-
-自动检测并修复模型上的瑕疵例如：法线翻转、破损等。
+自動檢測並修復模型上的瑕疵例如：法線翻轉、破損等。
 
 <BilibiliVideoContainer>
 	<iframe

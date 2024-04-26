@@ -1,12 +1,16 @@
 import { IconTitle } from "@/components/iconTitle/IconTitle";
 import { BilibiliVideoContainer } from "@/components/videoContainer/BilibiliVideoContainer";
 
-export const meta = {
+export const metadata = {
 	title: "用户界面介绍",
-	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitubox-basic/v1.9.5/ui-introduction",
+	authors: [{ name: "CHITUBOX Team" }],
 	description: "CHITUBOX 主窗口的UI界面介绍。",
-	ogImage: "/images/docs/og_logo.png",
+	other: {
+		pageId: "/zh-CN/chitubox-basic/v1.9.5/ui-introduction",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # 用户界面介绍
@@ -159,11 +163,11 @@ export const meta = {
 				"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-ui-introduction001h-1.png"
 			}
 		/>
-    	<p>
-    		你可以在文件列表里 <b>选择/取消选择（全部）文件</b>，
-    		<b>显示/隐藏打印尺寸</b>，以及<b>删除文件</b>。
-    	</p>
-    </div>
+		<p>
+			你可以在文件列表里 <b>选择/取消选择（全部）文件</b>，
+			<b>显示/隐藏打印尺寸</b>，以及<b>删除文件</b>。
+		</p>
+	</div>
 </div>
 
 <IconTitle icon={"I"} title={"切片设置"} />

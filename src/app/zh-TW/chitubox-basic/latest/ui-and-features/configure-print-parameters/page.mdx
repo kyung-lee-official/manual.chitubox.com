@@ -14,12 +14,16 @@ import {
 } from "@/components/icons/Icons";
 import { Tsmc } from "@/docComponents/tsmc/Tsmc";
 
-export const meta = {
+export const metadata = {
 	title: "設定列印參數",
-	author: "CHITUBOX Team",
-	pageId: "/zh-TW/chitubox-basic/v2.0.0/configure-print-parameters",
+	authors: [{ name: "CHITUBOX Team" }],
 	description: "在 CHITUBOX 中設定列印參數。",
-	ogImage: "/images/docs/og_logo.png",
+	other: {
+		pageId: "/zh-TW/chitubox-basic/v2.0.0/configure-print-parameters",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # 設定列印參數
@@ -33,7 +37,6 @@ export const meta = {
 		"/images/docs/zh-CN/chitubox-basic/2.x.x/009-configure-print-parameters-profile-panel.png"
 	}
 />
-
 
 ## 機器
 
@@ -207,6 +210,4 @@ export const meta = {
 	}
 />
 
-
 $$\text{層列印時間補償} = \frac{\text{實際列印時間} - \text{軟件預估列印時間}}{\text{層數}}$$
-

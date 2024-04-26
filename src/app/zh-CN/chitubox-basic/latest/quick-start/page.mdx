@@ -5,13 +5,17 @@ import {
 	ChituboxFileConfig,
 } from "@/components/icons/Icons";
 
-export const meta = {
+export const metadata = {
 	title: "快速入门",
-	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitubox-basic/v2.0.0/quick-start",
+	authors: [{ name: "CHITUBOX Team" }],
 	description:
 		"本节将带您了解 CHITUBOX 最基本的使用方法，让您尽快上手 CHITUBOX。我们将从加载模型开始，然后给模型添加支撑、对模型进行切片，最后导出可打印文件到您的打印机。",
-	ogImage: "/images/docs/og_logo.png",
+	other: {
+		pageId: "/zh-CN/chitubox-basic/v2.0.0/quick-start",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # 快速入门

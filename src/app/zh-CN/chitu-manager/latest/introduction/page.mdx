@@ -3,13 +3,17 @@ import { DirectXAndMetal } from "@/docComponents/directXAndMetal/DirectXAndMetal
 import { Rma } from "@/docComponents/rma/Rma";
 import { StandardParts } from "@/docComponents/standardParts/StandardParts";
 
-export const meta = {
+export const metadata = {
 	title: "介绍",
-	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitu-manager/v1.0.0/introduction",
+	authors: [{ name: "CHITUBOX Team" }],
 	description:
 		"ChituManager 是与 CHITUBOX 切片软件配套使用的一款 3D 打印机管理软件，可以帮助用户轻松实现对 3D 打印机一站式管理。无需前往打印机即可实现实时查看打印机状态、远程传输文件、远程打印等操作，不仅如此，软件还支持错误上报、历史记录统计与查看、视频监控等一系列功能，简化了 3D 打印过程，帮助用户节省时间，提高效率。",
-	ogImage: "/images/docs/og_logo.png",
+	other: {
+		pageId: "/zh-CN/chitu-manager/v1.0.0/introduction",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # 介绍

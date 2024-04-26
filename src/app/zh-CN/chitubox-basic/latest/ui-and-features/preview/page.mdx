@@ -3,13 +3,17 @@ import {
 	ChituboxDeleteIslandsIcon,
 } from "@/components/icons/Icons";
 
-export const meta = {
+export const metadata = {
 	title: "预览",
-	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitubox-basic/v2.0.0/preview",
+	authors: [{ name: "CHITUBOX Team" }],
 	description:
 		"在切片器中预览切片文件对于确保 3D 打印准确并满足您的期望非常重要。 本节我们将介绍 CHITUBOX 中的切片预览窗口。",
-	ogImage: "/images/docs/og_logo.png",
+	other: {
+		pageId: "/zh-CN/chitubox-basic/v2.0.0/preview",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # 预览
@@ -39,7 +43,6 @@ export const meta = {
 	}
 />
 
-
 ## 保存文件
 
 切片完成后，您可以将切片文件保存到计算机上。单击预览窗口右下角的**保存**按钮即可保存切片文件。
@@ -47,7 +50,6 @@ export const meta = {
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-basic/2.x.x/011-preview-save.png"}
 />
-
 
 <Admonition type="note" title="注意">
     * 文件保存对话框仅显示打印机支持的文件格式。如果您在下拉菜单中看不到正确的格式，请返回并检查是否选择了正确的打印机。

@@ -1,11 +1,14 @@
-
-export const meta = {
+export const metadata = {
 	title: "要求",
-	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitubox-basic/v1.9.5/requirements",
+	authors: [{ name: "CHITUBOX Team" }],
 	description:
 		"在安装软件之前仔细检查系统要求非常重要。 在本节中，我们将介绍 CHITUBOX 的系统要求。",
-	ogImage: "/images/docs/og_logo.png",
+	other: {
+		pageId: "/zh-CN/chitubox-basic/v1.9.5/requirements",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # 要求
@@ -49,11 +52,11 @@ export const meta = {
 
 ### macOS
 
-|          | 最低配置                       | 推荐配置                         |
-| -------- | ------------------------------ | -------------------------------- |
-| 处理器   | Intel® 或 M1 处理器            | Intel® 或 M1 处理器              |
+|          | 最低配置                    | 推荐配置                         |
+| -------- | --------------------------- | -------------------------------- |
+| 处理器   | Intel® 或 M1 处理器         | Intel® 或 M1 处理器              |
 | 操作系统 | macOS Catalina (10.15 版本) | macOS Big Sur (11.6 版本) 或以上 |
-| 内存     | 16GB                           | ≥ 32GB                           |
+| 内存     | 16GB                        | ≥ 32GB                           |
 
 <Admonition type="note" title="注意">
 	理论上，您可以使用 Rosetta 2 在 M1 处理器的 Mac 上运行 CHITUBOX（确保您的
@@ -121,8 +124,7 @@ export const meta = {
 
 ### 3D 网格/CAD 模型文件
 
-| 文件类型    | 文件名后缀      |
-| ----------- | --------------- |
-| 导入 & 导出 | \*.stl          |
-| 导入 & 导出 | \*.obj          |
-
+| 文件类型    | 文件名后缀 |
+| ----------- | ---------- |
+| 导入 & 导出 | \*.stl     |
+| 导入 & 导出 | \*.obj     |

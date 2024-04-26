@@ -2,12 +2,16 @@ import { ColorTag } from "@/docComponents/colorTag/ColorTag";
 import { LightOffDelayCalculator } from "@/docComponents/lightOffDelayCalculator/LightOffDelayCalculator";
 import { BilibiliVideoContainer } from "@/components/videoContainer/BilibiliVideoContainer";
 
-export const meta = {
+export const metadata = {
 	title: "設定列印參數",
-	author: "CHITUBOX Team",
-	pageId: "/zh-TW/chitubox-pro/v1.4.0/configure-print-parameters",
+	authors: [{ name: "CHITUBOX Team" }],
 	description: "在 CHITUBOX Pro 中設定列印參數。",
-	ogImage: "/images/docs/og_logo.png",
+	other: {
+		pageId: "/zh-TW/chitubox-pro/v1.4.0/configure-print-parameters",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # 設定列印參數
@@ -97,8 +101,8 @@ export const meta = {
 	以下參數僅供説明，請根據實際需求設定參數。
 </Admonition>
 
-| 子階段                                                                     | 相關參數                                                                                                 |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| 子階段                                                                     | 相關參數                                                                                                                 |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>底層慢速抬升</span> | <ImageContainer src={("/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.1.png")}/> |
 | <span style={{ color: "#00b894", fontWeight: "bold" }}>底層快速抬升</span> | <ImageContainer src={("/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.2.png")}/> |
 | <span style={{ color: "#00b894", fontWeight: "bold" }}>底層快速回程</span> | <ImageContainer src={("/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.3.png")}/> |

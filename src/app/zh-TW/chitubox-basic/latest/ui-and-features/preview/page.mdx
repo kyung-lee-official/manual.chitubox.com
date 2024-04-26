@@ -3,13 +3,17 @@ import {
 	ChituboxDeleteIslandsIcon,
 } from "@/components/icons/Icons";
 
-export const meta = {
+export const metadata = {
 	title: "預覽",
-	author: "CHITUBOX Team",
-	pageId: "/zh-TW/chitubox-basic/v2.0.0/preview",
+	authors: [{ name: "CHITUBOX Team" }],
 	description:
 		"在切片器中預覽切片檔案對於確保 3D 列印準確並滿足您的期望非常重要。本節我們將介紹 CHITUBOX 中的切片預覽視窗。",
-	ogImage: "/images/docs/og_logo.png",
+	other: {
+		pageId: "/zh-TW/chitubox-basic/v2.0.0/preview",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # 預覽
@@ -51,4 +55,3 @@ export const meta = {
     * 檔案儲存對話框僅顯示列印機支持的檔案格式。如果您在下拉式選單中看不到正確的格式，請返回並檢查是否選擇了正確的列印機。
     * **默認**列印機類型允許您將切片檔案儲存為CHITUBOX支持的任何格式。但是，當您的列印機在CHITUBOX中沒有內建配置檔案時，您應該僅選擇**默認**列印機類型。
 </Admonition>
-

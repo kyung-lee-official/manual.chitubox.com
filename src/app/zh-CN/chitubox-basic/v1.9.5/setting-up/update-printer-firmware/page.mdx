@@ -1,10 +1,13 @@
-
-export const meta = {
+export const metadata = {
 	title: "安装",
-	author: "CHITUBOX Team",
-	pageId: "/zh-CN/chitubox-basic/v1.9.5/update-printer-firmware",
+	authors: [{ name: "CHITUBOX Team" }],
 	description: "如何更新打印机固件？",
-	ogImage: "/images/docs/og_logo.png",
+	other: {
+		pageId: "/zh-CN/chitubox-basic/v1.9.5/update-printer-firmware",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # 更新打印机固件
@@ -125,4 +128,3 @@ export const meta = {
 ## 更新后处理
 
 更新完成后，先将 U 盘拔出，随后再重新给机器上电。为了避免在打印机上使用 U 盘时不必要的反复自动更新固件，完成更新后请将 U 盘内的所有更新文件从 U 盘内移除。
-
