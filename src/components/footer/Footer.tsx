@@ -62,9 +62,9 @@ export const Footer = () => {
 							{t("footer.software.chitubox-basic.title")}
 						</Flink>
 						<Flink
-							href={t("footer.software.chitubox-manager.link")}
+							href={t("footer.software.chitu-manager.link")}
 						>
-							{t("footer.software.chitubox-manager.title")}
+							{t("footer.software.chitu-manager.title")}
 						</Flink>
 					</FooterCol>
 					<FooterCol title={t("footer.customer.title")}>
