@@ -8,6 +8,7 @@ import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
 import dynamic from "next/dynamic";
 import KatexHtmlSanitizer from "@/components/katexHtmlSanitizer/KatexHtmlSanitizer";
+import { NotLatestHint } from "@/components/notLatestHint/NotLatestHint";
 
 const DynamicDocsSidebar = dynamic(
 	() => import("@/components/docsSidebar/DocsSidebar"),
@@ -40,9 +41,14 @@ export async function generateMetadata({
 		icons: {
 			icon: "/logo.png",
 		},
-		title: {
-			template: "%s | " + t("title"),
-			default: t("description") + " | " + t("title"),
+		description: t("description"),
+		openGraph: {
+			title: {
+				template: "%s | " + t("title"),
+				default: t("title"),
+			},
+			description: t("description"),
+			images: "/logo.png",
 		},
 	};
 }
@@ -72,6 +78,7 @@ export default function RootLayout({
 						<DynamicDocsSidebar />
 						<div className="flex flex-col w-full min-w-0 max-w-[900px] p-4 mx-auto">
 							<DynamicVersionTag />
+							<NotLatestHint />
 							{children}
 						</div>
 						<DynamicToc />
