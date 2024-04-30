@@ -149,18 +149,16 @@ In order to shorten the printing time and ensure a higher printing success rate,
 
 Traditionally, there are only 2 sub-stages for a single motion cycle, after TSMC was introduced, we now have 4 sub-stages for a single motion cycle:
 
-<ImageContainer>
-	<ImageComparison
-		img1Src={
-			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.motion_control_legacy.svg"
-		}
-		text1={"Legacy Motion Control"}
-		img2Src={
-			"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.motion_control_tsmc.svg"
-		}
-		text2={"Two-Stage Motion Control"}
-	/>
-</ImageContainer>
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.motion_control_legacy.svg"
+	}
+	text1={"Legacy Motion Control"}
+	img2Src={
+		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters003.0.motion_control_tsmc.svg"
+	}
+	text2={"Two-Stage Motion Control"}
+/>
 
 When both normal layers and bottom layers are involved, it makes sense that there are 8 pairs of parameters, which are highlighted in the table below:
 
@@ -212,12 +210,10 @@ When both normal layers and bottom layers are involved, it makes sense that ther
 In order to simplify the calculation of Light Off Delay, CHITUBOX launched a new Waiting Mode During Printing, **Resting Time**, when using this mode, you simply need to fill in Rest Time Before Lift, Rest Time After Lift, Rest Time After Retract without tedious calculations.
 
 <ImageContainer
-
     	src={
     		"/images/docs/en-US/chitubox-basic/1.x.x/004-setting-up-configure-printer-parameters002.1.png"
     	}
-    	style={{ width: "100%", maxWidth: "1050px" }}
-    />
+/>
 
 <YouTubeVideoContainer>
 	<iframe

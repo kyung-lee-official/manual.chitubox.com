@@ -14,49 +14,42 @@ export const metadata = {
 
 # 設定支撐參數
 
-<div style={{ width: "100%", overflow: "auto" }}>
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-support004.png"
+	}
+/>
+
+<span className="flex flex-wrap justify-start items-center gap-x-1">
+	這是支撐配置面板，你可以在這裡匯入
 	<ImageContainer
 		src={
-			"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-support004.png"
+			"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-support008.png"
 		}
-		style={{
-			float: "right",
-			paddingLeft: "1em",
-			paddingBottom: "1em",
-			maxWidth: "50%",
-		}}
 	/>
-	<p>
-		這是支撐配置面板，你可以在這裡匯入{" "}
-		<ImageContainer
-			src={
-				"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-support008.png"
-			}
-		/>{" "}
-		, 匯出{" "}
-		<ImageContainer
-			src={
-				"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-support009.png"
-			}
-		/>{" "}
-		以及重置{" "}
-		<ImageContainer
-			src={
-				"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-support007.png"
-			}
-		/>{" "}
-		你的支撐配置檔案。
-	</p>
-	<p>
-		<b>Z抬升高度</b>：模型最低點與平台之間的高度距離。
-	</p>
+	, 匯出
 	<ImageContainer
 		src={
-			"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/009-z-lift-height.gif"
+			"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-support009.png"
 		}
-		style={{ maxWidth: "200px" }}
 	/>
-</div>
+	以及重置
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-support007.png"
+		}
+	/>
+	你的支撐配置檔案。
+</span>
+
+<b>Z抬升高度</b>：模型最低點與平台之間的高度距離。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/009-z-lift-height.gif"
+	}
+	style={{ maxWidth: "200px" }}
+/>
 
 ## 支撑設定
 
@@ -134,20 +127,14 @@ export const metadata = {
 
 ## 自動/手動支撐
 
-<p>
-	<b>交叉寬度（毫米）</b>
-	：手動添加支撐時，相鄰支撐是否添加交叉結構的最大距離值，當相鄰支撐距離超過該值，則不添加交叉結構。
-</p>
+**交叉寬度（毫米）**：手動添加支撐時，相鄰支撐是否添加交叉結構的最大距離值，當相鄰支撐距離超過該值，則不添加交叉結構。
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/41Cross Width.gif"}
 	style={{ maxWidth: "200px" }}
 />
 
-<p>
-	<b>交錯起始高度（毫米）</b>
-	：支撐高度超過該值時會在相鄰支撐之間添加交叉結構。
-</p>
+**交錯起始高度（毫米）**：支撐高度超過該值時會在相鄰支撐之間添加交叉結構。
 
 <ImageContainer
 	src={
@@ -156,18 +143,14 @@ export const metadata = {
 	style={{ maxWidth: "200px" }}
 />
 
-<p>
-	<b>密度 (%)</b>：自動添加支撐時，支撐的密集程度。
-</p>
+**密度** (%)：自動添加支撐時，支撐的密集程度。
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/19density.gif"}
 	style={{ maxWidth: "200px" }}
 />
 
-<p>
-	<b>角度 (°)</b>	：模型被允許添加支撐的最大傾斜角度，該角度值為模型表面與平台的夾角。
-</p>
+**角度** (°)：模型被允許添加支撐的最大傾斜角度，該角度值為模型表面與平台的夾角。
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-basic/1.x.x/gif/020angle.gif"}
@@ -179,11 +162,8 @@ export const metadata = {
 	Pro 被替換為 <b>中部支撐間距</b>。
 </Admonition>
 
-<p>
-	<button className="button button--secondary">+平台</button>{" "}
-	按鈕僅基於平台自動添加支撐。
-	<button className="button button--secondary">+所有</button> 按鈕基於平台和模型自動添加支撐。
-</p>
+<button className="button button--secondary">+平台</button>按鈕僅基於平台自動添加支撐。
+<button className="button button--secondary">+所有</button> 按鈕基於平台和模型自動添加支撐。
 
 <ImageComparison
 	img1Src={
@@ -204,14 +184,12 @@ export const metadata = {
 	src={
 		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-support013.png"
 	}
-	style={{ maxwidth: 1040 }}
 />
 
 <ImageContainer
 	src={
 		"/images/docs/zh-CN/chitubox-basic/1.x.x/006-application-overview-support014.gif"
 	}
-	style={{ maxwidth: 1040 }}
 />
 
 <Admonition type="note" title="注意">

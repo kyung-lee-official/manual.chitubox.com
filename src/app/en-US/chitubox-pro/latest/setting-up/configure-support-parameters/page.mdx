@@ -18,73 +18,81 @@ export const metadata = {
 
 To open **Support Configuration Panel**, you need to enter the <NextLink href="/en-US/chitubox-pro/latest/application-overview/support">Support</NextLink> tab first.
 
-<div style={{ maxwidth: "100%", overflow: "auto" }}>
-	<ImageContainer
-		src={
-			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support004.png"
-		}
-		style={{ float: "right", paddingLeft: "1em", maxWidth: "50%" }}
-	/>
-	This is Suspanport Configuration Panel, where you can add 
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support004.png"
+	}
+/>
+
+<span className="flex flex-wrap justify-start items-center gap-x-1">
+	This is Support Configuration Panel, where you can add
 	<ImageContainer
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support005.png"
 		}
-	/> , delete 
-		<ImageContainer
+	/>
+	, delete
+	<ImageContainer
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support006.png"
 		}
-	/>, reset 
-		<ImageContainer
+	/>
+	, reset
+	<ImageContainer
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support007.png"
 		}
-	/>, import 
-		<ImageContainer
+	/>
+	, import
+	<ImageContainer
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support008.png"
 		}
-	/>, export 
-		<ImageContainer
+	/>
+	, export
+	<ImageContainer
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support009.png"
 		}
-	/>, export all 
-		<ImageContainer
+	/>
+	, export all
+	<ImageContainer
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support010.png"
 		}
-	/>, save 
-		<ImageContainer
+	/>
+	, save
+	<ImageContainer
 		src={
 			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support010.1.png"
 		}
-	/>, and rename your support profiles, where "save" supports _Auto Save_ and _Manual Save_.
+	/>
+	, and rename your support profiles, where "save" supports _Auto Save_ and _Manual Save_.
+</span>
 
-    **Z Lift Height**: The height distance
-    between the lowest point of the model and the platform.
+**Z Lift Height**: The height distance
+between the lowest point of the model and the platform.
 
-    	<ImageContainer
-    	src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/009-z-lift-height.gif"}
-    	style={{ maxWidth: "200px" }}
-    />
-
-</div>
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/009-z-lift-height.gif"}
+	style={{ maxWidth: "200px" }}
+/>
 
 ## Support Settings
 
 You can edit **Top**, **Middle**, and **Bottom** of your supports respectively.
 
-**Visualized editing panel** is also
-provided for better user experience, where you can modify support parameters directly
-on the visualized graph. You can also turn it off by clicking the
-
-<ImageContainer
-	src={
-		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support014.png"
-	}
-/> button on the Support Settings panel.
+<span className="flex flex-wrap justify-start items-center gap-x-1">
+	**Visualized editing panel** is also
+	provided for better user experience, where you can modify support parameters directly
+	on the visualized graph. You can also turn it off by clicking the
+	<ImageContainer
+		src={
+			"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support014.png"
+		}
+	/>
+	button on the Support Settings panel.
+</span>
 
 <div style={{ display: "flex", maxwidth: "100%" }}>
 	<div style={{ flex: "1" }}></div>
@@ -494,7 +502,7 @@ When adding automatic supports, some isolated trunk supports are automatically a
 
 -   Global Reinforcement (GR): When adding automatic supports, a more stable structure composed of triangular structures will be automatically formed to better assist the stability of the support.
 
-<ImageContainer
+<ImageComparison
 	img1Src={
 		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-tr.png"
 	}
@@ -525,7 +533,7 @@ the platform allowed for auto-support.{" "}
 **Touch Tip Distance (mm)**: The minimum horizontal distance
 between any two middle supports.
 
-<ImageContainer
+<ImageComparison
 	img1Src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support011.1b.png"
 	}
@@ -540,7 +548,7 @@ between any two middle supports.
 
 To improve the accuracy of distances between supports, the **Density(%)** parameter in CHITUBOX Basic was replaced by the **Middle Distance(mm)** in CHITUBOX Pro.
 
-<ImageContainer
+<ImageComparison
 	img1Src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support012.1b.png"
 	}
@@ -555,7 +563,7 @@ To improve the accuracy of distances between supports, the **Density(%)** parame
 
 <button style={{ padding: "0.5rem 0.5rem", borderRadius: "10px", border: "0px", width: "100px", fontWeight: "bold", backgroundColor: "#dbdbdb"}}><span>+All</span></button> This button automatically adds supports (supports on model allowed).
 
-<ImageContainer
+<ImageComparison
 	img1Src={
 		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support011.png"
 	}

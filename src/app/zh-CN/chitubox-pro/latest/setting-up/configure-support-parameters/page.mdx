@@ -18,66 +18,70 @@ export const metadata = {
 
 要打开**支撑配置面板**，你需要先打开<NextLink href="/zh-CN/chitubox-pro/latest/application-overview/support">支撑菜单</NextLink>。
 
-<div style={{ width: "100%", overflow: "auto" }}>
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.png"
+	}
+	style={{ maxWidth: "80%" }}
+/>
+
+<span className="flex flex-wrap justify-start items-center gap-x-1">
+	这是支撑配置面板，你可以在这里添加
 	<ImageContainer
 		src={
-			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.png"
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support005.png"
 		}
-		style={{ float: "right", paddingLeft: "1em", maxWidth: "50%" }}
 	/>
-	<p>
-		这是支撑配置面板，你可以在这里添加{" "}
-		<ImageContainer
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support005.png"
-			}
-		/>{" "}
-		，删除
-		<ImageContainer
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support006.png"
-			}
-		/> ，重置 
-		<ImageContainer
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support007.png"
-			}
-		/> ，导入
-		<ImageContainer
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support008.png"
-			}
-		/>{" "}
-		，导出
-		<ImageContainer
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support009.png"
-			}
-		/> ，全部导出
-		<ImageContainer
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support010.png"
-			}
-		/>{" "}
-		，保存
-		<ImageContainer
-			src={
-				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support010.1.png"
-			}
-		/> ，以及重命名你的支撑配置，其中保存支持自动模式和手动模式。
-	</p>
-	<p>
-		<b>模型抬升高度</b>：模型最低点与平台之间的高度距离。
-	</p>
+	，删除
 	<ImageContainer
-		src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/009-z-lift-height.gif"}
-		style={{ maxWidth: 200 }}
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support006.png"
+		}
 	/>
-</div>
+	 ，重置 
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support007.png"
+		}
+	/>
+	 ，导入
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support008.png"
+		}
+	/>
+	，导出
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support009.png"
+		}
+	/> 
+	，全部导出
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support010.png"
+		}
+	/>
+	，保存
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support010.1.png"
+		}
+	/>
+	 ，以及重命名你的支撑配置，其中保存支持自动模式和手动模式。
+</span>
+
+<b>模型抬升高度</b>：模型最低点与平台之间的高度距离。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/009-z-lift-height.gif"}
+	style={{ maxWidth: 200 }}
+/>
+
 
 ## 支撑设置
 
-<p>
+<span className="flex flex-wrap justify-start items-center gap-x-1">
 	你可以分别编辑支撑的<b>顶部</b>，<b>中部</b>，以及<b>底部</b>。
 	<br />
 	**可视化编辑面板**
@@ -88,9 +92,7 @@ export const metadata = {
 		}
 	/>
 	按钮来关闭这个面板。
-</p>
-
-<br />
+</span>
 
 <div style={{ display: "flex", width: "100%" }}>
 	<div style={{ flex: "1" }}></div>
@@ -207,9 +209,7 @@ export const metadata = {
 
 ### 高级
 
-<p>
-	<b>高级</b>按钮打开高级设置面板，提供更灵活的支撑设置。
-</p>
+<b>高级</b>按钮打开高级设置面板，提供更灵活的支撑设置。
 
 <ImageContainer
 	src={
@@ -245,22 +245,18 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
 			<td>小柱子最大长度</td>
 			<td>
-				手动/自动添加支撑两端都落于模型上的支撑时，当两端距离不超过小柱子最大长度时，主干支撑会以小柱子的支撑类型添加对应支撑。当两端距离大于小柱子最大长度时，主干支撑会以中部支撑对应的的上端直径尺寸进行支撑的添加。{" "}
+				手动/自动添加支撑两端都落于模型上的支撑时，当两端距离不超过小柱子最大长度时，主干支撑会以小柱子的支撑类型添加对应支撑。当两端距离大于小柱子最大长度时，主干支撑会以中部支撑对应的的上端直径尺寸进行支撑的添加。
 				<ImageContainer
 					src={
 						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-maximum-small-pillar-length.gif"
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -273,8 +269,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -287,8 +281,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -302,8 +294,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -316,8 +306,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -330,8 +318,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -344,8 +330,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -358,8 +342,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -372,8 +354,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -386,8 +366,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -400,8 +378,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -414,8 +390,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -428,8 +402,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -443,8 +415,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -458,8 +428,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -472,8 +440,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 		<tr>
@@ -486,8 +452,6 @@ export const metadata = {
 					}
 					style={{ width: 180 }}
 				/>
-				<br />
-				<br />
 			</td>
 		</tr>
 	</tbody>
@@ -501,18 +465,16 @@ export const metadata = {
 
 -   全局强化（GR）：当选中全局强化模式，添加自动支撑时，将全面强化所有孤立支撑主干，自动形成由三角结构组合而成的更加稳定的结构，将所有支撑关联起来以更好地辅助支撑的稳定性。
 
-<ImageContainer>
-	<ImageComparison
-		img1Src={
-			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-tr.png"
-		}
-		text1={"三角强化（TR）"}
-		img2Src={
-			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-gr.png"
-		}
-		text2={"全局强化（GR）"}
-	/>
-</ImageContainer>
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-tr.png"
+	}
+	text1={"三角强化（TR）"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-gr.png"
+	}
+	text2={"全局强化（GR）"}
+/>
 
 <Admonition type="note" title="注意">
 	启用小柱子自动吸附功能：可以自由设置吸附半径的大小。切片软件会根据算法在添加小柱子支撑时，将小柱子的下端自动吸附在合适的支撑上。
@@ -520,61 +482,51 @@ export const metadata = {
 
 ## 自动/手动支撑
 
-<p>
-	<b>角度 (°)</b>：模型被允许添加支撑的最大倾斜角度，该角度值为模型表面与平台的夹角。
-</p>
+<b>角度 (°)</b>：模型被允许添加支撑的最大倾斜角度，该角度值为模型表面与平台的夹角。
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/020angle.gif"}
 	style={{ maxWidth: 200 }}
 />
 
-<p>
-	<b>接触点间距（毫米）</b>：任意两个接触点之间的最小水平距离。
-</p>
+<b>接触点间距（毫米）</b>：任意两个接触点之间的最小水平距离。
 
-<ImageContainer>
-	<ImageComparison
-		img1Src={
-			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.1b.png"
-		}
-		text1={"接触点间距设为 2mm"}
-		img2Src={
-			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.1a.png"
-		}
-		text2={"接触点间距设为 5mm"}
-	/>
-</ImageContainer>
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.1b.png"
+	}
+	text1={"接触点间距设为 2mm"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.1a.png"
+	}
+	text2={"接触点间距设为 5mm"}
+/>
 
 **中部支撑间距（毫米）**：任意两个中部支撑之间的最小水平距离。
 
 为了更精确地控制支撑间距，CHITUBOX Basic 中 <b>密度(%)</b> 参数在 CHITUBOXPro 中被替换为 <b>中部支撑间距</b>。
 
-<ImageContainer>
-	<ImageComparison
-		img1Src={
-			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.1b.png"
-		}
-		text1={"中部支撑间距设为 2mm"}
-		img2Src={
-			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.1a.png"
-		}
-		text2={"中部支撑间距设为 8mm"}
-	/>
-</ImageContainer>
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.1b.png"
+	}
+	text1={"中部支撑间距设为 2mm"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.1a.png"
+	}
+	text2={"中部支撑间距设为 8mm"}
+/>
 
 <button className="button button--secondary">+平台</button> 按钮仅基于平台自动添加支撑。
 <button className="button button--secondary">+所有</button> 按钮基于平台和模型自动添加支撑。
 
-<ImageContainer>
-	<ImageComparison
-		img1Src={
-			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.png"
-		}
-		text1={"+平台"}
-		img2Src={
-			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.png"
-		}
-		text2={"+所有"}
-	/>
-</ImageContainer>
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.png"
+	}
+	text1={"+平台"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.png"
+	}
+	text2={"+所有"}
+/>
