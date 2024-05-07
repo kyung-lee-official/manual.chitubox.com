@@ -108,7 +108,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		return (
 			<ul
 				className="list-outside list-disc my-3 pl-4
-				text-neutral-400
                 [&_>_li_>_ul]:list-outside
                 [&_>_li_>_ul]:pl-4 [&_>_li_>_ul]:my-2
                 [&_>_li_>_ul]:list-[circle]"
@@ -122,7 +121,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		return (
 			<ol
 				className="list-outside list-decimal my-3 pl-4
-				text-neutral-400
                 [&_>_li]:my-2"
 			>
 				{children}
@@ -135,8 +133,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		return (
 			<a
 				{...rest}
-				className="hover:text-neutral-200
-				underline"
+				target="_blank"
+				className="text-blue-500 dark:text-sky-400 font-medium"
 			>
 				{children}
 			</a>
@@ -148,15 +146,32 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		return (
 			<Link
 				{...rest}
-				className="hover:text-neutral-200
-				underline"
+				className="text-blue-500 dark:text-sky-400 font-medium"
 			>
 				{children}
 			</Link>
 		);
 	};
 
+	const InlineCode = (props: any) => {
+		const { children } = props;
+		return (
+			<code className="px-1 border-2 rounded border-gray-400">
+				{children}
+			</code>
+		);
+	};
+
 	return {
+
+		code: ({ children }: any) => {
+			return <InlineCode>{children}</InlineCode>;
+		},
+
+		table: ({ children }: any) => {
+			return <ResponsiveTable>{children}</ResponsiveTable>;
+		},
+
 		h1: h1,
 		h2: h2,
 		h3: h3,
@@ -170,7 +185,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		NextLink: NextLink,
 		FacebookVideoContainer: FacebookVideoContainer,
 		ResponsiveTable: ResponsiveTable,
-		table: ResponsiveTable,
 		Admonition: Admonition,
 		ImageContainer: ImageContainer,
 		ImageComparison: ImageComparison,
