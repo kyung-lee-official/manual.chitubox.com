@@ -12,6 +12,7 @@ export const NotLatestHint = () => {
 	return (
 		<div>
 			{pathname.split("/")[3] !== "latest" &&
+				pathname.split("/")[4] !== "latest" &&
 				<div
 					className="w-full py-2 px-4 mb-8 
 					text-yellow-600 dark:text-yellow-500 text-lg font-bold
