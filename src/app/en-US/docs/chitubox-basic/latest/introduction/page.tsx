@@ -3,11 +3,7 @@
 import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export default function Page() {
 
 	const router = useRouter();
 	useEffect(() => {
