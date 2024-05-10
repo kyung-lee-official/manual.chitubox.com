@@ -21,7 +21,7 @@ export const metadata = {
 	}
 />
 
-Identify the symmetry plane of the model and manually add symmetry supports according to the set symmetry plane.
+Identify symmetrical planes of the model and manually add symetrical supports based on the chosen reference plane.
 
 <ImageContainer
 	src={
@@ -38,7 +38,7 @@ Identify the symmetry plane of the model and manually add symmetry supports acco
 	}
 />
 
-Automatically merge all or part of the selected supports.
+Automatically merge all applicable supports within selection.
 
 <ImageContainer
 	src={
@@ -55,7 +55,7 @@ Automatically merge all or part of the selected supports.
 	}
 />
 
-Detect the suspended area of the selected 3D model, and recommend to display the recommended area and location of the support under the current layout orientation.
+Detect the suspended area of the selected 3D model, and display suggested areas that need supports at the current part orientation.
 
 <ImageContainer
 	src={
@@ -76,7 +76,7 @@ Detect the suspended area of the selected 3D model, and recommend to display the
 
 ## Left-Side Tool Bar
 
-In the **Support** interface, the **Left-Side Tool Bar** changed accordingly.
+Under the **Support** interface, the **Left-Side Tool Bar** would change accordingly.
 
 <ImageContainer
 	src={
@@ -84,12 +84,12 @@ In the **Support** interface, the **Left-Side Tool Bar** changed accordingly.
 	}
 />
 
-These tools are provided for selecting a specific area, and apply add, delete, and edit operations to supports inside of it.
+Selecting specific areas with these tools allows adding, deleting, and editings supports applied on the areas.
 
-Let's take the **Rectangle** as an example.
+Take the **Rectangle** tool as an example.
 
 -   Add <br />
-    After selecting the area, and click the "+ All" or "+ Platform" button, auto-support will only apply to that area.<br />
+    By selecting the area and clicking the "+ All" or "+ Platform" button, users can apply auto-support only to that area.<br />
 
     <ImageContainer
     	src={
@@ -98,7 +98,7 @@ Let's take the **Rectangle** as an example.
     />
 
 -   Delete <br />
-    Under delete mode, selected supports turn to red color, indicate they are deletable.<br />
+    Deletable supports within selection would turn to red  under Delete Mode.<br />
 
     <ImageContainer
     	src={
@@ -107,7 +107,7 @@ Let's take the **Rectangle** as an example.
     />
 
 -   Edit <br />
-    Under edit mode, selected supports turn to green color, indicate they are editable.<br />
+    Editable supports within selection would turn to green under Edit Mode.<br />
 
     <ImageContainer
     	src={
@@ -117,7 +117,7 @@ Let's take the **Rectangle** as an example.
 
 ## Support Types
 
-On the bottom of the Viewport, the support type panel provides various support types to meets your demands.
+The Support Type Panel at the bottom of the Viewport provides various support types to meets user needs.
 
 <ImageContainer
 	src={
@@ -133,7 +133,7 @@ On the bottom of the Viewport, the support type panel provides various support t
 	}
 />
 
-This is the most commonly used support, self-adaptive according to your support settings.
+This is the most commonly used support type, self-adaptive according customized support settings.
 
 ### Vertical
 
@@ -143,7 +143,7 @@ This is the most commonly used support, self-adaptive according to your support 
 	}
 />
 
-The top part of this type of support is parallel to the normal line of the model's surface and perpendicular to the model's surface.
+The top segment of this type of support is parallel to the normal line of the attached surface and perpendicular to the attached surface.
 
 ### Upright
 
@@ -153,7 +153,7 @@ The top part of this type of support is parallel to the normal line of the model
 	}
 />
 
-The top part of this type of support is perpendicular to the build plate.
+The top segment of this type of support is perpendicular to the build plate.
 
 ### Connection
 
@@ -163,7 +163,7 @@ The top part of this type of support is perpendicular to the build plate.
 	}
 />
 
-This is single-segment support, which connects the model and another support's middle part. Allow both ends to be added to the support.
+This is for single-segment supports connecting the model and another support's middle segment. Both ends of this type of support can be attached to another support element.
 
 ### Two Points Connection
 
@@ -173,7 +173,7 @@ This is single-segment support, which connects the model and another support's m
 	}
 />
 
-This is two-segment support, which connects the model and another support's middle part.
+This is for two-segment supports connecting the model and another support's middle segment.
 
 ### Small Pillar
 
@@ -183,7 +183,7 @@ This is two-segment support, which connects the model and another support's midd
 	}
 />
 
-This is a type of thin support, which connects the model and another support's middle part or connects two points on the surface of a model.
+This is a type of thin support connecting the model and another support's middle segment or connecting two points on the surfaces of a model.
 
 ### Branch
 
@@ -193,7 +193,7 @@ This is a type of thin support, which connects the model and another support's m
 	}
 />
 
-This type of support's top part connects to the model, the bottom part was divided into two segments and connect to the adjacent two support's middle part.
+This type of support's top segment would connect to the model, and the bottom segment would branch into two segments and connect to two adjacent supports' middle segment.
 
 ### Contour
 
@@ -203,7 +203,7 @@ This type of support's top part connects to the model, the bottom part was divid
 	}
 />
 
-This will generate a bunch of supports whose top parts are connected to the model at the same contour.
+This will generate supports with top segments connecting to the model at the same elevation contour.
 
 ### Tree-like
 
@@ -213,13 +213,13 @@ This will generate a bunch of supports whose top parts are connected to the mode
 	}
 />
 
-This allow you to add tree-like support.
+This option is for tree-like supports.
 
 ## Support Operation
 
 ### Multi-select Supports
 
-Hold Ctrl to select multiple homotype support parts you need to edit, then you can modify their parameters at the same time.
+Hold Ctrl to select multiple support parts of the same type allows modifying their parameters in batch.
 
 <ImageContainer
 	src={
