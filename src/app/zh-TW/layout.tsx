@@ -41,6 +41,10 @@ export async function generateMetadata({
 		icons: {
 			icon: "/logo.png",
 		},
+		title: {
+			template: "%s | " + t("title"),
+			default: t("title"),
+		},
 		description: t("description"),
 		openGraph: {
 			title: {

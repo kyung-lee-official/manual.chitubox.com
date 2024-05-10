@@ -22,7 +22,16 @@ export async function generateMetadata({
 		},
 		title: {
 			template: "%s | " + t("title"),
-			default: t("description") + " | " + t("title"),
+			default: t("title"),
+		},
+		description: t("description"),
+		openGraph: {
+			title: {
+				template: "%s | " + t("title"),
+				default: t("title"),
+			},
+			description: t("description"),
+			images: "/logo.png",
 		},
 	};
 }
@@ -32,7 +41,7 @@ export default async function RootLayout({
 	params: { locale },
 }: {
 	children: React.ReactNode;
-	params: { locale: Locale };
+	params: { locale: Locale; };
 }) {
 	/* Validate that the incoming `locale` parameter is valid */
 	if (!locales.includes(locale)) notFound();
