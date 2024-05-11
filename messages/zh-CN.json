@@ -32,7 +32,7 @@
 			},
 			"chitu-manager": {
 				"title": "ChituManager",
-				"link": "https://www.chitubox.com/zh-Hans/page/chitubox-manager"
+				"link": "https://manual.chitubox.com/zh-CN/chitu-manager/latest/introduction"
 			}
 		},
 		"customer": {
@@ -112,9 +112,8 @@
 		"companyName": "CHITUBOX"
 	},
 	"error": {
-		"pageNotFound": "找不到该页面 😢",
-		"message1": "",
-		"message2": " 秒后将跳转回首页..."
+		"pageNotFound": "找不到该页面。",
+		"backHome": "返回首页"
 	},
 	"docComponents": {
 		"tsmc": {
