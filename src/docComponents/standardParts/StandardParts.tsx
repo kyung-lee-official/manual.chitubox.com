@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { PerspectiveCamera } from "three";
+import { Mesh, PerspectiveCamera } from "three";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, useTexture } from "@react-three/drei";
 import { animate, motion, useInView } from "framer-motion";
@@ -40,17 +40,17 @@ const Scene = () => {
 	const { nodes } = useGLTF("/models/standardParts.glb") as any;
 
 	const rotationFactor = 0.3;
-	const mesh0 = useRef<THREE.Mesh>(null!);
-	const mesh1 = useRef<THREE.Mesh>(null!);
-	const mesh2 = useRef<THREE.Mesh>(null!);
-	const mesh3 = useRef<THREE.Mesh>(null!);
-	const mesh4 = useRef<THREE.Mesh>(null!);
-	const mesh5 = useRef<THREE.Mesh>(null!);
-	const mesh6 = useRef<THREE.Mesh>(null!);
-	const mesh7 = useRef<THREE.Mesh>(null!);
-	const mesh8 = useRef<THREE.Mesh>(null!);
-	const mesh9 = useRef<THREE.Mesh>(null!);
-	const mesh10 = useRef<THREE.Mesh>(null!);
+	const mesh0 = useRef<Mesh>(null!);
+	const mesh1 = useRef<Mesh>(null!);
+	const mesh2 = useRef<Mesh>(null!);
+	const mesh3 = useRef<Mesh>(null!);
+	const mesh4 = useRef<Mesh>(null!);
+	const mesh5 = useRef<Mesh>(null!);
+	const mesh6 = useRef<Mesh>(null!);
+	const mesh7 = useRef<Mesh>(null!);
+	const mesh8 = useRef<Mesh>(null!);
+	const mesh9 = useRef<Mesh>(null!);
+	const mesh10 = useRef<Mesh>(null!);
 
 	useFrame((state, delta, xrFrame) => {
 		// This function runs at the native refresh rate inside of a shared render-loop
@@ -178,7 +178,7 @@ export const StandardParts = () => {
 		<motion.div
 			ref={ref}
 			id="standardParts"
-            initial={{ opacity: 0 }}
+			initial={{ opacity: 0 }}
 			className="h-48 xl:h-[480px]"
 		>
 			<Canvas className="h-48 xl:h-[480px]">

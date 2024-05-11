@@ -24,7 +24,7 @@ const NotFound = () => {
 			</div>
 			<Link
 				href={"/"}
-				className="p-2 mt-4 bg-blue-500 text-white transition-colors hover:bg-blue-400
+				className="p-2 mt-4
 				border-[1px] border-neutral-900 dark:border-neutral-200
 				rounded-lg"
 			>
