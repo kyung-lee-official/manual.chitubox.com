@@ -20,7 +20,7 @@ export const metadata = {
 	}
 />
 
-New project file.
+Create a new project file.
 
 ## Open Project
 
@@ -43,7 +43,7 @@ Open a project file or load and merge the project file into the current project.
 <Admonition type="note">
 	Please note that the .ctb file is the final sliced file, which is for
 	printing only under most circumstances. You SHOULD NOT apply 3D model
-	operations to it, only a few non-model-dependent operations like exposure
+	operations to it. Only a few non-model-dependent operations like exposure
 	time, lift and retract speed, layer pixel editing (CHITUBOX Pro only), etc.
 	are available. Please ALWAYS modify your models on unsliced formats (.stl,
 	.obj, etc.).
@@ -59,7 +59,7 @@ Open project files, import 3D models or slice files.
 	}
 />
 
-Open the project file, 3D model or slice file that has been successfully opened recently.
+Open project files, 3D models or slice files successfully opened recently.
 
 ## Save Project
 
@@ -89,11 +89,11 @@ Save the project file or merge and export all 3D models (Including supports) in 
 	}
 />
 
-Combine the selected files and export to a 3D model file.
+Combine selected files and export to a 3D model file.
 
 Here you can export multiple selected files as a single 3D model file.
 
-_.stl_ and _.obj_ formats supported.
+_.stl_ and _.obj_ formats are supported.
 
 ## Section Export
 
@@ -103,11 +103,11 @@ _.stl_ and _.obj_ formats supported.
 	}
 />
 
-Export the selected file sections as separate 3D model files.
+Export selected file sections as separate 3D model files.
 
 Here you can export multiple selected files as separated 3D model files at once.
 
-_.stl_ and _.obj_ formats supported.
+_.stl_ and _.obj_ formats are supported.
 
 ## Add Machine
 
@@ -117,7 +117,7 @@ _.stl_ and _.obj_ formats supported.
 	}
 />
 
-Select and add the configuration parameter information of the selected device and the current operating environment.
+Select and apply the configuration parameters of selected device to the current operating environment.
 
 <ImageContainer
 	src={
@@ -139,7 +139,7 @@ Select and add the configuration parameter information of the selected device an
 
 ## Replace model
 
-After selecting the model, right-click the mouse and select "Replace model". You can replace the model without change or remove the supports.
+Replace the model without changing or removing placed supports by selecting the model, right-click and selecting "Replace model". 
 
 <ImageContainer
 	src={
@@ -148,5 +148,5 @@ After selecting the model, right-click the mouse and select "Replace model". You
 />
 
 <Admonition type="note">
-	The model still needs to remain the same look but only detail modified.
+	The replacing model has to have the same general configuration with only minor detail differences.
 </Admonition>
