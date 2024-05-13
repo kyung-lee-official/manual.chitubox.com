@@ -16,9 +16,9 @@ import { YouTubeVideoContainer } from "@/components/videoContainer/YouTubeVideoC
 
 # Configure Print Parameters
 
-To configurate your print parameters, you need to add a printer first, if you have not added a printer yet, click <NextLink href="/en-US/chitubox-pro/latest/application-overview/start#add-machine">here</NextLink> to see how to add a printer.
+Add a printer before configure your print parameters. See <NextLink href="/en-US/chitubox-pro/latest/application-overview/start#add-machine">here</NextLink> on how to add a printer.
 
-One printer can have multiple profiles, you can manage your profiles in the **Slicing Profile Panel**, where you can add, delete, import, export, and reset your profiles.
+One printer can store multiple slicing configuration profiles. You can manage your profiles in the **Slicing Profile Panel**, where you can add, delete, import, export, and reset your profiles.
 
 <ImageContainer
 	src={
@@ -57,20 +57,20 @@ Set your print parameters here.
 | Parameter                                                                     | Explanation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Layer Height                                                                  | Thickness of each layer printed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Bottom Layer Count                                                            | The start printing layers. when the number of bottom layers is n, the exposure time of the first n layers is the exposure time of the bottom layers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Bottom Layer Count                                                            | Number of layers at the beginning of the print. The Bottom Exposure Time applies to the first number of layers set by this parameter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Exposure Time                                                                 | Exposure time of normal print layers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Bottom Exposure Time                                                          | Set the exposure time of the bottom layers. increasing the exposure time of the bottom layers is helpful to increase the bond strength between the printing model and the printing platform                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Transition Layer Count                                                        | The number of transition layers between the print bottom layers and the normal print layers. when printing in transition layers, the exposure time will decrease with the increase of printing layers.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Transition Type                                                               | Set the transition type of the exposure time when transiting from the bottom layers to the normal layers.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| <a href="#2--waiting-mode-during-printing"> Waiting Mode During Printing </a> | <a href="#2-1-resting-time"> <em>Resting time:</em> </a> <br /> <ul> <li> Rest Time Before Lift: A time interval between light-off and the build plate starts to lift. </li> <li> Rest Time After Lift: A time interval between the build plate has lifted to the <em>Lifting Distance</em> and starts to retract. </li> <li> Rest Time After Retract: A time interval between the build plete has retracted to the lowest point and light-on. </li> </ul> <a href="#2-2-light-off-delay"> <em>Light off delay: </em> </a> <br /> Light-off delay is the total time of build plate lifts up, wait, and retract. <ul> <li> Light-off Delay: Light-off delay for normal layers, True machine light-off time = maximum (total time of Z-axis up and down movement, configured light-off delay) </li> <li> Bottom Light-off Delay: Light-off delay for bottom layers, True machine light-off time = maximum (total time of Z-axis up and down movement, configured light-off delay) </li> </ul> |
-| Bottom Lift Distance                                                          | In the bottom layers printing process, the distance of the printing platform moves away from the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Lifting Distance                                                              | In the normal layers printing process, the distance of the printing platform moves away from the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Bottom Retract Distance                                                       | In the bottom layers printing process, the distance of retract, leave it alone unless you have sufficient reason                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Retract Distance                                                              | In the normal layers printing process, the distance of retract, leave it alone unless you have sufficient reason                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Bottom Lift Speed                                                             | In the bottom layers printing process, the speed of the printing platform moves away from the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Lifting Speed                                                                 | In the normal layers printing process, the speed of the printing platform moves away from the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Bottom Retract Speed                                                          | In the bottom layers printing process, the speed of the printing platform moves to the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Retract Speed                                                                 | In the normal layers printing process, the speed of the printing platform moves to the printing surface each time                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Bottom Exposure Time                                                          | Set the exposure time of the bottom layers. increasing the exposure time of the bottom layers helps increase the bond strength between the printing model and the printing platform                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Transition Layer Count                                                        | The number of transition layers between the print bottom layers and the normal print layers. when printing in transition layers, the exposure time will decrease with the increase of printing layers. Other printing settings in the transition layers are the same as normal layers.      |
+| Transition Type                                                               | Set the transition type of the exposure time for the transition layers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| <a href="#2--waiting-mode-during-printing"> Waiting Mode During Printing </a> | <a href="#2-1-resting-time"> <em>Resting time:</em> </a> <br /> <ul> <li> Rest Time Before Lift: A time interval between light-off and the build plate starts to lift. </li> <li> Rest Time After Lift: A time interval between the build plate lifts to the <em>Lifting Distance</em> and starts to retract. </li> <li> Rest Time After Retract: A time interval between the build plete retracts to the lowest point and light-on. </li> </ul> <a href="#2-2-light-off-delay"> <em>Light off delay: </em> </a> <br /> Light-off delay is the total time of build plate lifts up, wait, and retract. <ul> <li> Light-off Delay: Light-off delay for normal layers, Actual machine light-off time = maximum (total time of Z-axis up and down movement, configured light-off delay) </li> <li> Bottom Light-off Delay: Light-off delay for bottom layers, Actual machine light-off time = maximum (total time of Z-axis up and down movement, configured light-off delay) </li> </ul> |
+| Bottom Lift Distance                                                          | The distance of the printing platform moves away from the printing surface each time during bottom layers printing process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Lifting Distance                                                              | The distance of the printing platform moves away from the printing surface each time during normal layers printing process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Bottom Retract Distance                                                       | The distance of retract, leave it alone unless you have sufficient reason during bottom layers printing process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Retract Distance                                                              | The distance of retract, leave it alone unless you have sufficient reason during normal layers printing process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Bottom Lift Speed                                                             | The speed of the printing platform moves away from the printing surface each time during bottom layers printing process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Lifting Speed                                                                 | The speed of the printing platform moves away from the printing surface each time during normal layers printing process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Bottom Retract Speed                                                          | The speed of the printing platform moves to the printing surface each time during bottom layers printing process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Retract Speed                                                                 | The speed of the printing platform moves to the printing surface each time during normal layers printing process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 #### 1 TSMC
 
@@ -78,9 +78,9 @@ Set your print parameters here.
 	Not all printers support **TSMC**. Read the <SpanA href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃full compatibility list</SpanA> here.
 </Admonition>
 
-In order to shorten the printing time and ensure a higher printing success rate, CHITUBOX divides the original constant speed into two speed segments, a.k.a **TSMC (Two-Stage Motion Control)**. When the printing platform is moving away from the printing face, it is allowed to move at a relatively faster speed.
+In order to shorten the printing time and ensure a higher printing success rate, CHITUBOX divides the original constant speed into two speed segments, a.k.a **TSMC (Two-Stage Motion Control)**. When the printing platform is moving away from the printing face, it is allowed to move at a faster speed.
 
-Traditionally, there are only 2 sub-stages for a single motion cycle, after TSMC was introduced, we now have 4 sub-stages for a single motion cycle:
+Traditionally, there are only 2 sub-stages for a single motion cycle. With TSMC was introduced, we now have 4 sub-stages for a single motion cycle:
 
 <ImageComparison
 	img1Src={
@@ -93,11 +93,10 @@ Traditionally, there are only 2 sub-stages for a single motion cycle, after TSMC
 	text2={"Two-Stage Motion Control"}
 />
 
-When both normal layers and bottom layers are involved, it makes sense that there are 8 pairs of parameters, which are highlighted in the table below:
+With the difference between normal layers and bottom layers, there are 8 pairs of parameters, as highlighted in the table below:
 
 <Admonition type="warning">
-	All data in the table is only used for the explanation, please adjust the
-	data as per your needs.
+	Data in the table is for demonstration purposes only. Please adjust the settings as per your needs.
 </Admonition>
 
 | Sub-stage                                                                                | Relevant Parameters                                                                                                      |
@@ -112,16 +111,14 @@ When both normal layers and bottom layers are involved, it makes sense that ther
 | <span style={{ color: "#fdcb6e", fontWeight: "bold" }}>Normal layers slow retract</span> | <ImageContainer src={("/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters003.0.8.png")}/> |
 
 <Admonition type="warning">
-	Please note that each Distance has its corresponding Speed, for example,
-	**Bottom Lift Distance** corresponds to **Bottom Lift Speed**, you can't
-	have a non-zero Distance with a Speed of `0`, vice versa.
+	Please note that each Distance has its corresponding Speed. For example,
+	**Bottom Lift Distance** corresponds to **Bottom Lift Speed**, The speed for a non-zero Distance with cannot be `0`, vice versa.
 </Admonition>
 
 <Admonition type="note">
 	If you hope to stay in Legacy Motion Control, you can keep the second column all-zero, which will remove ~~B1~~ and ~~B2~~.
 
-    You might found that the motion control doesn't work as per the parameter you set sometimes, this may be caused by the limitation of the maximum speed in factory parameter. Please contact the printer's manufacturer for details.
-
+    You may find that the motion control doesn't work as per the parameter you set sometimes. This be caused by the limitation of the maximum speed in the printer's factory preset. Please contact the printer's manufacturer for details.
 </Admonition>
 
 <YouTubeVideoContainer>
@@ -139,7 +136,7 @@ When both normal layers and bottom layers are involved, it makes sense that ther
 
 ##### 2.1 Resting Time
 
-In order to simplify the calculation of Light Off Delay, CHITUBOX launched a new Waiting Mode During Printing, **Resting Time**, when using this mode, you simply need to fill in Rest Time Before Lift, Rest Time After Lift, Rest Time After Retract without tedious calculations.
+In order to simplify the calculation of Light Off Delay, CHITUBOX launched a new Waiting Mode During Printing, **Resting Time**, with which you simply need to fill in Rest Time Before Lift, Rest Time After Lift, Rest Time After Retract without tedious calculations.
 
 <ImageContainer
 	src={
@@ -167,17 +164,17 @@ In order to simplify the calculation of Light Off Delay, CHITUBOX launched a new
 
 **Light-off delay** is the total time of build plate **lifts up**, **wait**, and **retract** during resin 3D printing of one layer.
 
-It's vital for the resin to has sufficient time to be stabilized before the printer starts the process of printing the next layer. Mostly, the longer time you set for the light-off delay, the better, sharper, and higher resolution printing results you got. But if you set the light-off delay too long, the printing process gonna take you all day.
+It's vital to leave the resin sufficient time to be stabilized before the printer starts printing the next layer. Usually the longer time you set for the light-off delay, the better, sharper, and higher-resolution printing results you got. However setting a prolonged light-off delay also means the entire print process would be unnecessarily long.
 
-The time for **lift up** and **retract** can be various, depend on the distance of lift up, while the **wait** does not, we recommended it for 2\~3 seconds.
+The time for **lift up** and **retract** depends on the distance of lift up, while **wait** does not have dependencies. We recommended a 2\~3 seconds **wait** for general print purposes.
 
 ###### 2.2.2 Light-off Delay Calculation in CHITUBOX
 
-To calculate the light-off delay, you will need to know lifting distance, lifting speed, and retract speed first. After figure out the total time for lifting and retracting, add additional 2\~3 seconds of wait time, you got the light-off delay.
+To calculate the light-off delay, you will need to know lifting distance, lifting speed, and retract speed first. Adding additional 2\~3 seconds of wait time to the total time for lifting and retracting gives you the light-off delay.
 
 Light-off delay = Time for lifting + Time for retracting + Wait time
 
-An example is worth a thousand words:
+Here is an example:
 
 <ImageContainer
 	src={
@@ -193,11 +190,11 @@ Similarly, the **Retract Speed** is 210mm/min (3.5mm/sec), the retracting time $
 
 $$T_R = \frac{7}{3.5} = 2\ \text{ seconds}$$
 
-If we hope the minimum wait time is longer than 2s, the light-off dela $T_{LOD}$ should:
+If we want a minimum wait time longer than 2s, the light-off delay $T_{LOD}$ should:
 
 $$T_{LOD} \geq 5.998 + 2 + 2 \approx 10\ \text{ seconds}$$
 
-If you put a number less than$T_L + T_R$ to the **Light-off Delay**, it will not work.
+Inputing a number less than $T_L + T_R$ for **Light-off Delay** will not work.
 
 ###### 2.2.3 Light-off Delay Calculator
 
@@ -221,7 +218,7 @@ Modify editable fields to get **Light-off Delay**.
 	Only _.zip_ and its derived formats (ex. _.cws_) support Gcode editing.
 </Admonition>
 
-### Advanced
+### Advanced Settings
 
 <ImageContainer
 	src={
@@ -241,11 +238,11 @@ Light PWM for normal layers, from ` 0` to ` 255` , controls the power of the UV 
 
 #### 3. Image Gray
 
-Image gray levels, similar to Light PWM, instead of controlling the power of the UV light source, Image Gray controls the light transmittance of the LCD screen.
+Image gray levels, similar to Light PWM, controls the light transmittance of the LCD screen instead of controlling the power of the UV light source.
 
 #### 4. Anti-aliasing
 
-The triangular sawtooth of image edge is softened to achieve smoother surface effect. The continuity of edge exposure and the intensity of light transmission can be adjusted by adding or deleting pixel units with certain gray levels between adjacent triangular serrations, so as to achieve a smoother edge area.
+Anti-aliasting softens the triangular sawtooth of image edge to achieve smoother surface effect. The continuity of edge exposure and the intensity of light transmission can be adjusted by adding or deleting pixel units with certain gray levels between adjacent triangular serrations to achieve smoother edge areas.
 
 -   _Gray Range_ : ` 0` ~ ` 255` , ` 0` stands for black, ` 255` stands for white, **designed for _.ctb_ format**. It determines the gray range that is available for anti-aliasing.
 
@@ -286,11 +283,11 @@ Open <SpanA href="https://youtu.be/ihITNQetn94">📺this video</SpanA> and <Span
 
 #### 5. Shrinkage Compensation
 
-Shrinkage compensation of the model in X, Y, and Z directions. The percentage represents the size compared to the original size, the default value is 100%.
+Shrinkage compensation of the model in X, Y, and Z directions. The percentage represents the size compared to the original size. The default value is 100%.
 
-When the percentage value is larger, the model body is larger.
+The model body is larger with a larger percentage value.
 
-When the percentage value is smaller, the model body is smaller.
+The model body is smaller with a smaller percentage value.
 
 #### 6. Tolerance Compensation
 
@@ -328,15 +325,15 @@ When b is smaller, the outer diameter is shorter, and the model body is smaller.
 
 #### 8. Print Time Compensation
 
-Some high-resolution printers could have extra delays when loading data and will lead to inaccurate printing time estimation, you can set up a time compensation to improve the issue.
+Some high-resolution printers can have extra delays when loading data and will lead to inaccurate printing time estimation. You can set up a time compensation to improve the issue.
 
 -   **Manual Input**
 
-    Layer Print Time Compensation: a 2-digit number between `-99.99` and `99.99`, default `0` s.
+    Layer Print Time Compensation: a 2-digit number between `-99.99` and `99.99`, with default set at `0` s.
 
     When enabled, the Estimated Time For A Single Layer = Exposure Time + Waiting Time + Movement Time + Layer Print Time Compensation
 
--   **Auto Generated**
+-   **Auto Generation**
 
     <ImageContainer
     	src={
@@ -353,7 +350,7 @@ Some high-resolution printers could have extra delays when loading data and will
 
 #### 9. Mask
 
-Mask is designed for a commonly seen issue that is uneven light strength from points to points on the screen and is mostly caused by improper light sources. The purpose of the mask is to provide a correction layer on the screen by adjusting the transmittance on different areas of the screen respectively, make the uneven light homogeneous.
+Mask is designed to solve a common light source issue of uneven light strength at different spots of the screen. The issue is usually caused by improper light sources. The purpose of the mask is to provide a correction layer on the screen by adjusting the transmittance on different areas of the screen respectively, making the uneven light homogeneous.
 
 _Mask File_ : You can select an existing image by clicking `...` icon or create a new one using CHITUBOX's built-in <NextLink href="#91-mask-generator">mask generator</NextLink> by clicking the gear icon.
 
@@ -363,9 +360,9 @@ _Gray scale unit_ : click <NextLink href="#92-gray-scale-unit">here</NextLink> t
 
 ###### 9.1.1 Hub-and-Spoke
 
-**Hub-and-Spoke** generate a ripple-like pattern. The number of circles is set by **Number of equal parts**. Radius of circles are arithmetic sequence, increases by **Equal radius**.
+**Hub-and-Spoke** generate a ripple-like pattern. The number of circles is set by **Number of equal parts**. Radius of circles are arithmetic sequence with a delta set by **Equal radius**.
 
-The range of **Gray Parameter** is available from `0` (black) to `255` (white).
+The range of **Gray Parameter** is from `0` (black) to `255` (white).
 
 <ImageContainer
 	src={
@@ -377,7 +374,7 @@ For example, if **Number of equal parts** is set to 5, **Equal radius** is set t
 
 $$5 \times 3 = 15 \text{mm}$$
 
-here is a comparison for different **Equal radius**:
+Here is a comparison for different **Equal radius**:
 
 <table style={{ width: "100%", maxWidth: 800 }}>
 	<tbody>
@@ -424,8 +421,8 @@ here is a comparison for different **Equal radius**:
 
 ###### 9.1.2 Matrix Mode
 
-**Matrix Mode** generate a matrix-like pattern. Rows and columns are set by `m` and `n` respectively.
-The range of **Gray Parameter** is available from `0` (black) to `255` (white).
+**Matrix Mode** generates a matrix-like pattern. Rows and columns are set by `m` and `n` respectively.
+The range of **Gray Parameter** is from `0` (black) to `255` (white).
 For example, here is a 2 $\times$ 3 matrix with different grayscales.
 
 <ImageContainer
@@ -443,7 +440,7 @@ For example, here is a 2 $\times$ 3 matrix with different grayscales.
 
 ##### 9.2 Gray scale unit
 
-The way **Gray scale unit** work is to average the grey value of specified number of pixels in X-axis direction, and apply averaged grayscale to pixels in corresponding position of the original image.
+**Gray scale unit** is used to average the grey value of specified number of pixels in X-axis direction, and apply averaged grayscale to pixels in corresponding position of the original image.
 
 Example:
 
@@ -467,12 +464,11 @@ If the **Gray scale unit** was set to 51px, the processed image will be like thi
 	style={{ width: 400 }}
 />
 
-The grayscale of the image goes gray gradually from the left to right, this is because the original image was averaged every 51 pixels in the X-axis direction.
-Let's consider the first row. The grayscale of the first 51px is averaged by 50 black pixels and 1 white pixel, so it resulted in a width of 51 pixels section that is a little bit lighter than black, even though the change is not visible. The second 51px is composed of 49 white pixels and 2 black pixels, it resulted in a darker average grayscale than white. The third 51px, composed of 48 black pixels and 3 white pixels, and so forth... until there is a remainder left which is composed of 35 white pixels.
+The greyscale increases from left to right as a result of averaging out every 51 pixels. Take the first row as an example: The first 51 pixels include 50 black pixels and 1 white pixel. The resulting average value is a tint lighter than pure black, barely noticeable to the naked eyes.  The second group of 51 pixels contains 49 white pixels and 2 black pixels, averaging out to a color slightly darker than white. The third group of 51 pixels will be masked to the average greyscale of 48 dark pixels and 3 white pixels and so on, until we reach the remaining 35 odd pixels.
 
 $\frac{800}{51} = 15$, remainder 35
 
-This part will be averaged by 35 pixels themselves, therefore, the grayscale didn't change.
+This remaining pixels' grey sclae will be the average of 35 pixels of the same shade. Therefore, the resulting grayscale doesn't change.
 
 ## Printer
 
@@ -495,5 +491,6 @@ This part will be averaged by 35 pixels themselves, therefore, the grayscale did
 
 <Admonition type="note">
 	Learn more about **Mirror** <SpanA href="https://www.chitubox.com/docs/en-US/chitubox/howto/chitubox-free/slicing/44">📃here</SpanA>. <br />
-    **Build Area Offset** is designed for the case when there are bad points in the edge area of your printer's curing screen, or parts of the edge are non-working area, you will need to offset the print area to avoid the thoes cases.
+
+    **Build Area Offset** is designed for the case when there are bad points in the edge area of your printer's curing screen, or when parts of the edge are non-working areas. Build Area Offset is used to avoid those areas.
 </Admonition>

@@ -25,7 +25,7 @@ export const metadata = {
 <div style={{ display: "flex" }}>
 	<div style={{flex: "0 0 4rem"}}></div>
 	<div>
-		Right-click the blank area will pop up a Viewport menu
+		Right-clicking the blank area will bring up the Viewport menu
 
     	<ImageContainer
     		src={
@@ -33,7 +33,8 @@ export const metadata = {
     		}
     	/>
 
-    	Right-click models will pop up a model menu
+    	Right-clicking on models will bring up the model menu
+
 
     	<ImageContainer
     		src={
@@ -87,7 +88,7 @@ export const metadata = {
     		}
     	/>
 
-    	-   Put on the plate: use the lowest point of the model as the reference point, and put the selected model on the build plate.
+    	-   Put on the plate: set the selected model on the build plate using the lowest point of the model as the reference point.
 
     	-   Centered: center the selected model on the printing platform.
 
@@ -101,11 +102,11 @@ export const metadata = {
     		}
     	/>
 
-    	-   Flatten by face: use the selected surface on the model as the reference surface, and lay the model against the printing platform according to the reference surface.
+    	-   Flatten by face: set the model against the printing platform by aligning the selected surface to the platform.
 
     	-   Combination center: take the center of the selected combination of multiple models as the center of rotation.
 
-    	**Scale**: scales the selected models according to the set size or scale.
+    	**Scale**: scale the selected models based on set dimension or scale percentage.
 
     	<ImageContainer
     		src={
@@ -115,7 +116,7 @@ export const metadata = {
 
     	-   Lock ratio: lock the ratio of the selected model's X-axis, Y-axis and Z-axis for scaling.
 
-    	-   Support diameter unchanged: scales the same as the model while keeping the support diameter unchanged.
+    	-   Support diameter unchanged: scale supports with the model while keeping support columns' diameter unchanged.
 
     	-   Scale to fit: scale the selected model to fit the printing platform.
 
@@ -143,10 +144,8 @@ export const metadata = {
 <div style={{ display: "flex" }}>
 	<div style={{ flex: "0 0 4rem" }}></div>
 	<div>
-		<p>
-			Title Bar provides quick access for **open file**, **save file**,
-			**undo**, **redo**, and **login**.
-		</p>
+		Title Bar provides quick access to **open file**, **save file**,
+		**undo**, **redo**, **login** and **screenshot/screen recording**.
 	</div>
 </div>
 
@@ -163,7 +162,7 @@ export const metadata = {
 			}
 		/>
 
-    	This panel allow you to **add files**, **select/unselect (all) files**, **reverse select files**, **(automatically) coloring objects**, **display/hide printing size**, **delete files**, and **display/hide files**.
+    	This panel allow you to **add files**, **select/unselect (all) files**, **reverse select files**, **auto/manually color objects**, **display/hide printing size**, **delete files**, and **display/hide files**.
     </div>
 
 </div>
@@ -185,7 +184,7 @@ export const metadata = {
 			}}
 		>
 			<div style={{ flex: "8" }}>
-				This slider allows you to preview the vertical cross-sections of your objects. Whereas <span style={{ color: "red", fontWeight: "bold" }}>X</span> and <span style={{ color: "lightgreen", fontWeight: "bold" }}>Y</span> buttons allow you to preview the horizontal cross-sections of your objects.
+				This slider allows you to preview the vertical cross-sections of your objects. Whereas <span style={{ color: "red", fontWeight: "bold" }}>X</span> and <span style={{ color: "lightgreen", fontWeight: "bold" }}>Y</span> sliders allow you to preview the horizontal cross-sections of your objects.
 
     			<ImageContainer
     				src={
@@ -213,7 +212,7 @@ export const metadata = {
 <div style={{ display: "flex" }}>
 	<div style={{flex: "0 0 4rem"}}></div>
 	<div>
-		Among the Global Axis: red is the X-axis; green is the Y-axis; blue
+		For all Axes: red is the X-axis; green is the Y-axis; blue
 		is the Z-axis.
 		
 		Right-click and drag the blank area to adjust the viewing angle of
@@ -225,14 +224,7 @@ export const metadata = {
     		}
     	/>
 
-    	As shown below, the reference coordinate axis corresponding to X/Y/Z
-    	in the slice setting is the print platform coordinate axis (Global
-    	Coordinate, displayed in the bottom left of the screen), used to
-    	adjust the maximum print size of the X, Y, and Z-axis of the
-    	printing platform (For built-in printers, please use the default
-    	size; for those non-built-in printers, please fill in dimension
-    	parameters strictly according to the specifications provided by the
-    	printer manufacturer).
+    	As shown below, the X/Y/Z in the slice setting correpond to the print platform's coordinate axes (Global Coordinate, displayed in the bottom left of the screen). They are used to adjust the maximum print size in the directions of the X, Y, and Z-axis on the printing platform (For built-in printers, please use the default size. for those other printers, please fill in dimension parameters strictly according to the specifications provided by the printer manufacturer).
 
     	<ImageContainer
     		src={
@@ -241,7 +233,7 @@ export const metadata = {
     	/>
 
     	<Admonition type="note">
-    		The size of the model recorded in the zoom panel is the size corresponding to the model's coordinate axis (Local Coordinate), not the size corresponding to the platform's coordinate axis (Global Coordinate). The coordinate axis rotates synchronously when the model is rotated, so the rotation operation will not affect the size recorded in the zoom panel.
+    		The dimensions of the model displayed in the zoom panel are the dimensions corresponding to the model's coordinate axes (Local Coordinate), not the dimensions corresponding to the platform's coordinate axes (Global Coordinate). The local coordinate system rotates with the model, not affecting the dimensions displayed in the zoom panel.
     	</Admonition>
     </div>
 
