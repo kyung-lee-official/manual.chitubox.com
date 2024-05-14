@@ -1,19 +1,11 @@
-"use client";
-
-import { useRouter } from "next/navigation";
-import React, { useEffect } from "react";
+import { redirect } from "@/navigation";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 export default function Page() {
 
-	const router = useRouter();
-	useEffect(() => {
-		const interval = setInterval(() => {
-			router.push("/zh-CN/chitubox-basic/latest/introduction");
-		}, 1000);
-		return () => {
-			clearInterval(interval);
-		};
-	}, [router]);
+	unstable_setRequestLocale("zh-CN");
+	redirect("/chitubox-basic/latest/introduction");
+
 	return (
 		<div
 			className="flex justify-center items-center h-70vh
