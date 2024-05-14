@@ -68,6 +68,14 @@ regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 
 -   Google Drive
 
+## 授權碼問題
+
+### 錯誤碼 “SSL handshake failed”
+
+當系統時間與目前實際日期不符時，激活授權碼操作可能會受到影響並出現 “SSL handshake failed” 錯誤提示。
+
+要解決此問題，您可以自動（推薦）或手動設定系統時間。然後重新啟動軟體並激活授權碼即可。
+
 ## 插件問題
 
 ### Longer 錯誤代碼 -1
@@ -198,19 +206,3 @@ STL 檔案並不包含具體的單位資訊，而是使用數字記錄。因此�
 -   分配單元大小 = 2048 bytes
 
     <ImageContainer src={"/images/docs/zh-CN/faq/chitubox-basic/faq009.png"} />
-
-## 網路傳送問題
-
-如果您在使用網路傳送功能時遇到問題，例如找不到列印機、檔案傳送失敗、傳輸進度條緩慢等，可以檢查以下原因：
-
--   網路連線：
-
-    確保您的電腦和列印機連接到同一區域網路 (LAN)。
-
--   防火牆設定：
-
-    檢查您的防火牆是否攔截了 ChituManager， 如果被攔截，將無法識別到您的列印機。
-
--   檔案名稱字元：
-
-    避免在檔案名稱中使用非英文、非數字的字元。 否則，有可能導致檔案傳輸失敗。

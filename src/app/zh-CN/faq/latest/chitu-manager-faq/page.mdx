@@ -1,0 +1,85 @@
+export const metadata = {
+	title: "ChituManager 常见问题",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/zh-CN/chitu-manager-faq",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# ChituManager 常见问题
+
+## Dll 文件缺失问题
+
+如果在启动软件时出现 "xxx.dll Missing" 错误提示，请尝试以下步骤解决：
+
+1. 关闭 CHITUBOX。
+
+1. 打开电脑的控制面版，点击**程序**选项，然后点击**程序和功能**。
+
+1. 找到 ChituManager 并将其卸载。如果发现有多个 ChituManager 程序，您需要全部卸载。
+
+1. 关闭电脑上的所有第三方杀毒软件。
+
+1. 打开 CHITUBOX 软件，在右上角找到 ChituManager 下载入口，重新下载并安装。
+
+1. (未及时退出杀毒软件的情况) 如果下载过程中杀毒软件提示要拦截文件，选择"允许本次操作"。
+
+## 无法打开软件
+
+若点击网络发送按钮或 ChituManager 图标时，没有像预期那样打开 ChituManager 程序，可以按照以下步骤解决问题：
+
+1. 关闭 CHITUBOX。
+
+1. 按住 Ctrl + Shift + Esc 打开任务管理器。
+
+1. 结束所有运行中的 ChituManager 程序进程。
+
+1. 重新打开 CHITUBOX 软件。
+
+重启软件后，就可以正常使用网络管理和网络发送功能了。
+
+## 软件启动后一片空白
+
+在启动 ChituManager 后，如果页面一片空白，可能是数据损坏了，清理软件数据以解决此问题：
+
+1. 请打开以下路径：
+
+    - Windows:
+
+    ```shell
+    C:\Users\{user-name}\AppData\Local\ChituManager
+    ```
+
+    - Mac:
+
+    ```shell
+    Macintosh HD/Users/{user-name}/Library/Application Support/ChituManager
+    ```
+
+1. 删除文件夹下的 📁"cbdsa-chitubox-network" 和 📁"DataBase" 文件夹。
+
+1. 重新打开 ChituManager。
+
+<Admonition type="note" title="提示">
+	此操作将删除已添加机器，您可以重新添加。
+</Admonition>
+
+## 网络发送问题
+
+如果您在使用网络发送功能时遇到问题，例如找不到打印机、文件发送失败、传输进度条缓慢等，可以检查以下原因：
+
+-   网络连接：
+
+    确保您的电脑和打印机连接到同一局域网 (LAN)。
+
+-   防火墙设置：
+
+    检查您的防火墙是否拦截了 ChituManager， 如果被拦截，将无法识别到您的打印机。
+
+-   文件名字符：
+
+    避免在文件名中使用非英文、非数字的字符。 否则，有可能导致文件传输失败。

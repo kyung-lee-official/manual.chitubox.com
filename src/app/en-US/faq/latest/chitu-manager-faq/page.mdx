@@ -1,0 +1,80 @@
+export const metadata = {
+	title: "ChituManager FAQ",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/en-US/chitu-manager-faq",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# ChituManager FAQ
+
+## Dll File Missing
+
+If you encounter an error message "xxx.dll Missing" when launching the software, follow these steps:
+
+1. Open Control Panel, click on **Programs** option and then click **Programs and Features**.
+
+1. Locate ChituManager and uninstall it. If you find multiple ChituManager programs, you need to uninstall all of them.
+
+1. Close all third-party antivirus software on your computer. 
+
+1. Open CHITUBOX slicer, find the ChituManager icon in the top right corner, and click the icon to download and install it.
+
+1. (For cases where antivirus software is not disabled promptly) If the antivirus software prompts to block files during the download process, select "Allow this operation".
+
+## Unable To Open ChituManager
+
+If clicking the Network Sending button or the ChituManager icon doesn't open the program like it's supposed to, you can follow these steps to troubleshoot the problem:
+
+1. Close CHITUBOX slicer.
+
+1. Invoke the Task Manager by pressing Ctrl + Shift + Esc.
+
+1. Locate and end all running ChituManager task.
+
+1. Restart the CHITUBOX slicer.
+
+Once you restart the software, the Network Management and Network Sending features should work as expected.
+
+## Software Launches with a Blank Screen
+
+If you find that the page is blank after launching ChituManager, the data may be corrupted. Clean up the software data to resolve this issue:
+
+1. Navigate to the following file path:
+
+    - Windows:
+
+    ```shell
+    C:\Users\{user-name}\AppData\Local\ChituManager
+    ```
+
+    - Mac:
+
+    ```shell
+    Macintosh HD/Users/{user-name}/Library/Application Support/ChituManager
+    ```
+
+1. Delete the 📁"cbdsa-chitubox-network" and 📁"DataBase" folders inside the folder.
+
+1. Restart ChituManager.
+
+## Network Sending Issues
+
+If you're experiencing problems with network sending features, such as not finding printers, file sending failure, or a sluggish transfer progress bar, you can check the following reasons:
+
+-   Network Connection:
+
+    Ensure both your computer and the printer are connected to the same local area network (LAN).
+
+-   Firewall Settings:
+
+    Check if your firewall is blocking ChituManager. If that happens, it will not be able to detect your printer.
+
+-   Filename Characters:
+
+    Avoid using non-English or non-numeric characters in filenames. These characters can sometimes cause problems when sending files.
+

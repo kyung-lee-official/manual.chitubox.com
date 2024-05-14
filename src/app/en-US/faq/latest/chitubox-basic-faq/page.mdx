@@ -81,6 +81,14 @@ The following software may cause the conflict:
 
 -   Google Drive
 
+## Authorization Code Issues
+
+### Error "SSL handshake failed"
+
+If the system time does not match the current actual date, activating an authorization code may be affected and result in an "SSL handshake failed" error message.
+
+To resolve this issue, you can set the system time automatically (recommended) or manually. Then restart the software and activate the code.
+
 ## Plugin Issues
 
 ### Longer Error -1
@@ -226,19 +234,3 @@ You might found that your printer can't read your USB drive properly sometimes. 
     <ImageContainer
     	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq009.png"}
     />
-
-## Network Sending Issues
-
-If you're experiencing problems with network sending features, such as not finding printers, file sending failure, or a sluggish transfer progress bar, you can check the following reasons:
-
--   Network Connection:
-
-    Ensure both your computer and the printer are connected to the same local area network (LAN).
-
--   Firewall Settings:
-
-    Check if your firewall is blocking ChituManager. If that happens, it will not be able to detect your printer.
-
--   Filename Characters:
-
-    Avoid using non-English or non-numeric characters in filenames. These characters can sometimes cause problems when sending files.

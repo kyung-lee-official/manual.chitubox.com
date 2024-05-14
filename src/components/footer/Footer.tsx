@@ -61,6 +61,9 @@ export const Footer = () => {
 						<Flink href={t("footer.software.chitubox-basic.link")}>
 							{t("footer.software.chitubox-basic.title")}
 						</Flink>
+						<Flink href={t("footer.software.chitubox-dental.link")}>
+							{t("footer.software.chitubox-dental.title")}
+						</Flink>
 						<Flink
 							href={t("footer.software.chitu-manager.link")}
 						>
