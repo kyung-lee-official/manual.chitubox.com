@@ -52,7 +52,7 @@ export async function generateMetadata({
 				default: t("title"),
 			},
 			description: t("description"),
-			images: "/logo.png",
+			images: "https://manual.chitubox.com/images/docs/og_logo.png",
 		},
 	};
 }
