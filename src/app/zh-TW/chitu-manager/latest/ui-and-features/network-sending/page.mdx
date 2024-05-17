@@ -1,0 +1,48 @@
+export const metadata = {
+	title: "網絡發送",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/zh-CN/chitu-manager/v1.0.0/network-sending",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 網絡發送
+
+<Admonition type="note" title="注意">
+	1. 如果列印機不支持內部存儲，則需要插入一個 U 盤來存儲接收到的文件。
+	1. **網路發送** 功能要求列印機和電腦在同一局域網下。
+	1. 傳輸速率受列印機的網路模塊限制，大多數列印機的網路模塊傳輸速率大約是8M/s，因此對於大文件，不推薦使用 **網路發送**。
+	1. 目前只有部分列印機支持**網路發送**，點擊<SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃此處</SpanA>查看機器兼容性表格。
+</Admonition>
+
+切片完成後，點擊「網路傳送」按鈕打開網路傳送視窗。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/network-sending-01.png"}
+/>
+
+修改檔案名稱並選擇好切片檔案的格式之後，從掃描到的列印機列表或「我的列印機」列表中選擇您要使用的機器。然後點擊右下角的「傳送」按鈕，開始保存及傳輸檔案。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/network-sending-02.png"}
+/>
+
+傳輸檔案之前會保存一個臨時檔案。該檔案用於傳輸過程，當您關閉 CHITUBOX 切片軟體時會自動刪除。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/network-sending-03.png"}
+/>
+
+保存後，開始傳輸檔案至列印機。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/network-sending-04.png"}
+/>
+
+檔案傳輸完成後，點擊「立即列印」按鈕開始列印。
+
+如果在網路傳送過程中遇到任何問題，可以點擊<NextLink href="/zh-TW/faq/latest/chitu-manager-faq">此處</NextLink>查看 FAQ。

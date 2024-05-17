@@ -15,6 +15,10 @@
 					"label": "界面和功能",
 					"subItems": [
 						{
+							"item": "network-sending",
+							"label": "網絡傳送"
+						},
+						{
 							"item": "add-printers",
 							"label": "添加设备"
 						},

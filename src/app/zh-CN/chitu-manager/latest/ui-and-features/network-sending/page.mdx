@@ -1,0 +1,48 @@
+export const metadata = {
+	title: "网络发送",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/zh-CN/chitu-manager/v1.0.0/network-sending",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 网络发送
+
+<Admonition type="note" title="注意">
+	1. 如果打印机不支持内部存储，则需要插入一个 U 盘来存储接收到的文件。
+	1. <b>网络发送</b> 功能要求打印机和电脑在同一局域网下。
+	1. 传输速率受打印机的网络模块限制，不同打印机的网络模块性能有所差异，若传输速度较慢，建议将切片文件存入 U 盘让打印机直接读取。
+	1. 目前只有部分打印机支持 **网络发送**，点击 <SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃这里</SpanA> 查看机器兼容性表格。
+</Admonition>
+
+切片完成后，点击**网络发送**按钮打开网络发送窗口。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/network-sending-01.png"}
+/>
+
+修改文件名并选择好切片文件的格式之后，从扫描到的打印机列表或“我的打印机”列表中选择您要使用的机器。然后点击右下角的“**发送**”按钮，开始保存及传输文件。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/network-sending-02.png"}
+/>
+
+传输文件之前会保存一个临时文件。 该文件用于传输过程，当您关闭 CHITUBOX 切片软件时会自动删除。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/network-sending-03.png"}
+/>
+
+保存后，开始传输文件至打印机。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitu-manager/network-sending-04.png"}
+/>
+
+文件传输完成后，点击**立即打印**按钮开始打印。
+
+如果在网络发送过程中遇到任何问题，可以点击<NextLink href="/zh-CN/faq/latest/chitu-manager-faq">此处</NextLink>查看 FAQ。

@@ -1,0 +1,48 @@
+export const metadata = {
+	title: "Network Sending",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/en-US/chitu-manager/v1.0.0/network-sending",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Network Sending
+
+<Admonition type="note">
+	1. If your printer does not support internal storage, you need to have a USB drive plugged in to store received sliced files from your computer. 
+	1. Your printer and computer must under the same LAN.
+	1. The transmission speed is limited by printer's network module, for most printers, it's around 8M/s, therefore for large size files, **Network Sending** is not recommended. 
+	1. Not all printers support **Network Sending**. Read the <SpanA href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃full compatibility list</SpanA> here.
+</Admonition>
+
+After slicing your model, click the "Network Sending" button to open the network sending window. 
+
+<ImageContainer
+	src={"/images/docs/en-US/chitu-manager/network-sending-01.png"}
+/>
+
+Once you've modified the file name and selected the appropriate format for the sliced file, pick the printer you want to use from the scanned printer list or "My Printer" list. Then, click the "**Send**" button in the bottom right corner to start saving and transferring the file.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitu-manager/network-sending-02.png"}
+/>
+
+A temporary file is saved before transferring the file. This file is used for the transfer process and is automatically deleted when you close the CHITUBOX slicer.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitu-manager/network-sending-03.png"}
+/>
+
+Once saved, the file will be transferred to the printer.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitu-manager/network-sending-04.png"}
+/>
+
+When the file transfer is complete, click the "Print Now" button to start printing.
+
+If you run into any issues during the network sending, we have a handy FAQ section available. Click <NextLink href="/en-US/faq/latest/chitu-manager-faq">here</NextLink> to view it and troubleshoot any problems you might encounter.

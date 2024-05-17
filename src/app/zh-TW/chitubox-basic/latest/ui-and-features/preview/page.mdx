@@ -28,20 +28,17 @@ export const metadata = {
 
 ## 網路發送
 
-<Admonition type="note" title="注意">
-	1. 列印機需要插入一個 U 盤來儲存接收到的檔案。
-	1. **網絡發送** 功能要求列印機和電腦在同一局域網下。
-	1. 傳輸速率受列印機的網路模組限制，不同印表機的網路模組效能有所差異，若傳輸速度較慢，建議將切片檔案存入 U 盤讓印表機直接讀取。
-	1. 目前只有部分列印機支援 **網路發送**，點擊 <SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃這裡</SpanA> 查看機器相容性表格。
-</Admonition>
-
-若列印機支持網路發送，則該介面上會有 **網路發送** 按鈕，此功能可以直接向列印機發送切片資料進行列印。
+若列印機支持網路發送，該介面上會有 **網路發送** 按鈕，此功能可以直接向列印機發送切片資料進行列印。點選此按鈕打開<NextLink href="/zh-TW/chitu-manager/latest/ui-and-features/network-sending">網路發送視窗</NextLink>。
 
 <ImageContainer
 	src={
 		"/images/docs/zh-CN/chitubox-basic/2.x.x/011-preview-network-sending.png"
 	}
 />
+
+<Admonition type="note" title="注意">
+	需要安裝 ChituManager 以使用網路傳送功能。若電腦上尚未安裝 ChituManager，點擊**網路發送**按鈕後，可按照提示步驟進行下載與安裝。
+</Admonition>
 
 ## 保存檔案
 
