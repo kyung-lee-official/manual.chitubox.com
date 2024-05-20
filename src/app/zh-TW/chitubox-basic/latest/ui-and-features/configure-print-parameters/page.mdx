@@ -179,7 +179,7 @@ export const metadata = {
 
 ### 底層公差補償
 
-底層內外直徑補償。
+底層內外直徑補償。通常此設置用於解決“大象腿”問題。
 
 當 a 值較大時，內直徑較短，模型體積較大。
 
@@ -190,7 +190,42 @@ export const metadata = {
 當 b 值較小時，外直徑較短，模型體積較小。
 
 <Admonition type="note" title="注意">
-	當禁用底層公差補償時，普通層公差補償將對整個模型生效。
+	1. 當禁用底層公差補償時，普通層公差補償將對整個模型生效。
+	1. 底層公差補償僅作用於底層，當過渡層和底層公差補償同時啟用時，打印結果可能不如預期。
+	<div className="flex">
+		<div className="flex-1 flex justify-center">
+		<img
+			src={
+				"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-transition_layers.png"
+			}
+		/>
+		</div>
+		<div className="flex-1 flex justify-center">
+		<img
+			src={
+				"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-tc.png"
+			}
+		/>
+		</div>
+		<div className="flex-1 flex justify-center">
+		<img
+			src={
+				"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-tc_transition_layers.png"
+			}
+		/>
+		</div>
+	</div>
+	<div className="flex text-gray-500 p-4 text-sm">
+		<div className="flex-1 text-center">
+			僅設置過渡層
+		</div>
+		<div className="flex-1 text-center">
+			僅開啟底部公差補償
+		</div>
+		<div className="flex-1 text-center">
+			同時啟用過渡層與底層公差補償
+		</div>
+	</div>
 </Admonition>
 
 ### 層列印時間補償

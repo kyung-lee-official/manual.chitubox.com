@@ -194,7 +194,7 @@ When b is smaller, the outer diameter is shorter, and the model body is smaller.
 
 ### Bottom Tolerance Compensation
 
-Inner and outer diameter compensation of bottom printing layers
+Inner and outer diameter compensation of bottom printing layers. This setting is often enabled to address the "elephant's foot" issue.
 
 When a is larger, the inner diameter is shorter, and the model body is larger.
 
@@ -205,8 +205,42 @@ When b is larger, the outer diameter is longer, and the model body is larger.
 When b is smaller, the outer diameter is shorter, and the model body is smaller.
 
 <Admonition type="note">
-	When the bottom layer tolerance compensation is disabled, the normal layer
-	tolerance compensation will be effective for the whole model.
+	1. When the bottom layer tolerance compensation is disabled, the normal layer tolerance compensation will be effective for the whole model.
+	1. Bottom Tolerance Compensation only applies to bottom layers. Enabling both layer transition and Bottom Tolerance compensation can lead to unexpected printing results.
+	<div className="flex">
+		<div className="flex-1 flex justify-center">
+			<img
+				src={
+					"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-transition_layers.png"
+				}
+			/>
+		</div>
+		<div className="flex-1 flex justify-center">
+			<img
+				src={
+					"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-tc.png"
+				}
+			/>
+		</div>
+		<div className="flex-1 flex justify-center">
+			<img
+				src={
+					"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-tc_transition_layers.png"
+				}
+			/>
+		</div>
+	</div>
+	<div className="flex text-gray-500 p-4 text-sm">
+		<div className="flex-1 text-center">
+			Set Transition Layer Only
+		</div>
+		<div className="flex-1 text-center">
+			Enabled Bottom Tolerance Compensation Only
+		</div>
+		<div className="flex-1 text-center">
+			Enabled Both Transition Layer And Bottom Tolerance Compensation
+		</div>
+	</div>
 </Admonition>
 
 ### Print Time Compensation
