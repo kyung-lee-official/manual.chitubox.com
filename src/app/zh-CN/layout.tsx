@@ -38,6 +38,7 @@ export async function generateMetadata({
 }: any): Promise<Metadata> {
 	const t = await getTranslations({ locale });
 	return {
+		metadataBase: new URL('https://manual.chitubox.com'),
 		icons: {
 			icon: "/logo.png",
 		},
