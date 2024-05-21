@@ -22,7 +22,7 @@ export const metadata = {
 
 />
 
-Copy one or more selected models, and add the specified number of copied models to the current project.
+Copy one or more selected models, and add specified number of copied models to the current project.
 
 <ImageContainer
     src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/001copy.gif"}
@@ -41,7 +41,7 @@ Copy one or more selected models, and add the specified number of copied models 
 
 Split the original assembly model into independent part models.
 
-If you have one object that was not a structurally one-piece, for example, the image below shows one object that contains two structurally separated parts.
+If you have an object that are assembled with several parts, for example, the image below shows one object that contains two structurally separated parts,
 
 <ImageContainer
     src={
@@ -51,7 +51,7 @@ If you have one object that was not a structurally one-piece, for example, the i
 
 />
 
-After spliting, two separated parts were sparated into two **independent** objects.
+after spliting, the model is disassembled into **independent** objects.
 
 <ImageContainer
     src={
@@ -70,7 +70,7 @@ After spliting, two separated parts were sparated into two **independent** objec
 
 />
 
-Recommend and set the layout orientation for the selected 3D model before support. The line defined by two points with the longest distance on the surface of the model will be considered as the vertical axis when applying auto orientation.
+Set the orientation for the selected 3D model automatically before adding supports. The line defined by two points with the longest distance on the surface of the model will be considered as the vertical axis when applying auto orientation.
 
 <ImageContainer
     src={
@@ -91,9 +91,9 @@ Recommend and set the layout orientation for the selected 3D model before suppor
 
 Quickly layout the models in the project according to the set arrangement rule.
 
-If **Model rotation limit** is enabled, the rotation angle will be limited when auto layout is applied.
+Enabling **Model rotation limit** restricts a model's rotation angle during auto layout.
 
-If **Circular layout** is enabled, the model will be automatically laid out according to the circular end-to-end mode during automatic layout.
+Enabling **Circular layout** will arrange models end-to-end during auto layout.
 
 <ImageContainer
 	src={
@@ -123,11 +123,11 @@ If **Circular layout** is enabled, the model will be automatically laid out acco
 
 />
 
-Add a set text label to the specified position of the model.
+Add a text label to a specified spot on the model.
 
-Here you can tag your 3D models. This function is useful when you planning to print dozens of instances from the same 3D model but using different parameters or resins or any variate that could possibly causes differences on printing results. You can mark your 3D Models by adding tags on their surface, so you won't mixed up with printing results those are similar to each others.
+This function allows adding tags to 3D models. Tagging can be helpful when printing multiple copies of the same 3D model using different parameters, types of resin or any variance that may lead to different printing results, by marking model surfaces with different tags.
 
-Double-click the canvas to add text.
+Double-click on the canvas to add text.
 
 <ImageContainer
     src={
@@ -146,7 +146,7 @@ Double-click the canvas to add text.
 
 />
 
-Perform **union**, **intersection** or **subtraction** operations between models for the selected intersecting model.
+Perform **union**, **intersection** or **subtraction** operations between intersected models within selection.
 
 <ImageContainer
 	src={
@@ -170,11 +170,9 @@ Perform **union**, **intersection** or **subtraction** operations between models
 	}
 />
 
-Split the model according to the set cutting plane.
+Split the model based on a chose cut plane.
 
-Here you can cut a 3D model into pieces (separated objects).
-
--   You can choose cut your 3D models with an axis based face:
+-   A cut plane can be based on global axes.
 
     <ImageContainer
     	src={
@@ -182,7 +180,7 @@ Here you can cut a 3D model into pieces (separated objects).
     	}
     />
 
--   Or you can cut your 3D model by drawing a line:
+-   A cut plane can be based on a line drawn across the model.
 
     <ImageContainer
     	src={
@@ -204,7 +202,7 @@ Here you can cut a 3D model into pieces (separated objects).
 	}
 />
 
-The selected models will be hollowed out according to the set hollowing parameters.
+Hollow out selected models according to the set hollowing parameters.
 
 <ImageContainer
 	src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/003hollow.gif"}
@@ -217,21 +215,21 @@ The selected models will be hollowed out according to the set hollowing paramete
 	}
 />
 
--   Wall Thickness: The thickness of the chamber structure after an object was hollowed (the thickness of peeled-off part under **Outer** mode).
+-   Wall Thickness: Thickness of the chamber wall after an object is hollowed (thickness of peeled-off part under **Outer** mode).
 
 -   Mode:
 
-    -   _Inner_: A closed chamber left after hollowing.
+    -   _Inner_: hollowing the object into a closed chamber.
 
-    -   _Outer_: peel off the outside of an object with the thickness of **Wall Thickness**.
+    -   _Outer_: peel off the a layer set by **Wall Thickness**.
 
-    -   _Bottom through_: Similar to _Inner_, but does not keep the bottom part.
+    -   _Bottom through_: similar to _Inner mode_, but also removes the bottom part of the model.
 
 -   Infill: Enable/Disable generating infill structures.
 
 -   Precision: Number of triangles generated on the hollowed face.
 
--   Hollowing process animation: Play the animation when hollowing (the real progress of hollowing subjects to the progress bar in the bottom).
+-   Hollowing process animation: Play the animation when hollowing (refer to progress bar at the bottom for the real progress).
 
 -   Keep the main cavity: Only one main cavity is generated when the model is hollowed out.
 
@@ -249,7 +247,7 @@ The selected models will be hollowed out according to the set hollowing paramete
 	}
 />
 
-The selected model is excavated according to the set hole parameters.
+Generate holes on selected models with custom-set parameters.
 
 <ImageContainer
 	src={
@@ -257,25 +255,25 @@ The selected model is excavated according to the set hole parameters.
 	}
 />
 
--   Hole Mode: Digging a penetration or non-penetration hole.
+-   Hole Mode: Choose between generating Penerating or Non-penetrating hole.
 
--   Edge Number: As increasing the edges, the shape of the hole will get close to a circle.
+-   Edge Number: As number of edge increases, the shape of the hole will get close to a circle.
 
 -   Φ: The diameter of the hole.
 
--   B: The maximum thickness of the wall that the hole can dig through.
+-   B: The maximum depth of the hole for non-penetrating holes.
 
--   C: The angle between the hole and the bottom of the hole.
+-   C: The angle between the side wall of the hole and the bottom plane of the hole.
 
 -   Rotate: The rotation angle of the hole.
 
--   Keep Hole: Whether to keep the cork or not.
+-   Keep Hole: Whether to keep the excavated material as a separate part.
 
 -   Angle: Digging angle perpendicular to the screen or to the model.
 
--   Forced digging hole: Whether to force digging holes or not.
+-   Forced digging hole: Turning On/Off Forced Hole Generation.
 
--   Limited Depth B: Whether to limited depth B or not.
+-   Limited Depth B: Turning On/Off limiting hole depth as defined by B under Penetrating Model.
 
 <ImageContainer
 	src={"/images/docs/en-US/chitubox-pro/1.x.x/gif/004-dig-hole.gif"}
