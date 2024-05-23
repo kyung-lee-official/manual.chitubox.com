@@ -1,7 +1,14 @@
 export const metadata = {
 	title: "常见问题",
 	authors: [{ name: "CHITUBOX Team" }],
-	pageId: "/zh-CN/chitubox-pro-faq",
+	description:
+		"Check out our CHITUBOX Pro FAQ (Frequently Asked Questions) to find answers to common questions.",
+	other: {
+		pageId: "/zh-CN/chitubox-pro-faq",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # CHITUBOX Pro 常见问题
@@ -253,13 +260,11 @@ STL 文件并不包含具体的单位信息，而是使用数字记录。因此�
 
 1. 您可以输入登录页面链接以生成您的自定义链接。
 
-    {" "}
     <ImageContainer
     	src={"/images/docs/zh-CN/faq/chitubox-pro/faq007-4.png"}
     	style={{ maxwidth: "700px" }}
     />
 
-    {" "}
     <ImageContainer
     	src={"/images/docs/zh-CN/faq/chitubox-pro/faq007-5.png"}
     	style={{ maxwidth: "700px" }}

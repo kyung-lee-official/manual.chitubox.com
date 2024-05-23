@@ -19,12 +19,12 @@
 							"label": "网络发送"
 						},
 						{
-							"item": "add-printers",
-							"label": "添加设备"
-						},
-						{
 							"item": "printer-list",
 							"label": "打印机列表"
+						},
+						{
+							"item": "management",
+							"label": "管理"
 						},
 						{
 							"item": "operations",

@@ -19,12 +19,12 @@
 							"label": "Network Sending"
 						},
 						{
-							"item": "add-printers",
-							"label": "Add Printer"
-						},
-						{
 							"item": "printer-list",
 							"label": "Printer List"
+						},
+						{
+							"item": "management",
+							"label": "Management"
 						},
 						{
 							"item": "operations",
