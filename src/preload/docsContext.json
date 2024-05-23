@@ -96,6 +96,11 @@
 											},
 											{
 												"depth": 2,
+												"value": "Plugin Requirements",
+												"id": "plugin-requirements"
+											},
+											{
+												"depth": 2,
 												"value": "Windows",
 												"id": "windows"
 											},
@@ -384,8 +389,8 @@
 																	},
 																	{
 																		"depth": 4,
-																		"value": "Rendering Interface",
-																		"id": "rendering-interface"
+																		"value": "Render Engine",
+																		"id": "render-engine"
 																	}
 																]
 															},
@@ -1993,8 +1998,8 @@
 															},
 															{
 																"depth": 3,
-																"value": "Advanced",
-																"id": "advanced",
+																"value": "Advanced Settings",
+																"id": "advanced-settings",
 																"children": [
 																	{
 																		"depth": 4,
@@ -2763,26 +2768,14 @@
 								"label": "UI and Features",
 								"subItems": [
 									{
-										"item": "add-printers",
-										"label": "Add Printer",
-										"path": "/en-US/chitu-manager/latest/ui-and-features/add-printers",
+										"item": "network-sending",
+										"label": "Network Sending",
+										"path": "/en-US/chitu-manager/latest/ui-and-features/network-sending",
 										"toc": [
 											{
 												"depth": 1,
-												"value": "Add Printers",
-												"id": "add-printers",
-												"children": [
-													{
-														"depth": 2,
-														"value": "Add Printer",
-														"id": "add-printer"
-													},
-													{
-														"depth": 2,
-														"value": "Added Printer",
-														"id": "added-printer"
-													}
-												]
+												"value": "Network Sending",
+												"id": "network-sending"
 											}
 										]
 									},
@@ -2839,6 +2832,30 @@
 																"id": "exposure-screen-usage-time"
 															}
 														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "management",
+										"label": "Management",
+										"path": "/en-US/chitu-manager/latest/ui-and-features/management",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Management",
+												"id": "management",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Add Printers",
+														"id": "add-printers"
+													},
+													{
+														"depth": 2,
+														"value": "Added Printer",
+														"id": "added-printer"
 													}
 												]
 											}
@@ -2916,7 +2933,7 @@
 				"versionedContexts": [
 					{
 						"versionCode": "latest",
-						"versionNumber": "2.0",
+						"versionNumber": "latest",
 						"pagesContext": [
 							{
 								"item": "chitubox-basic-faq",
@@ -2952,6 +2969,18 @@
 														"depth": 3,
 														"value": "CHITUBOX is Not Responding",
 														"id": "chitubox-is-not-responding"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Authorization Code Issues",
+												"id": "authorization-code-issues",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Error \"SSL handshake failed\"",
+														"id": "error-ssl-handshake-failed"
 													}
 												]
 											},
@@ -3005,6 +3034,152 @@
 												"depth": 2,
 												"value": "USB Drive Issues",
 												"id": "usb-drive-issues"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "chitubox-pro-faq",
+								"label": "CHITUBOX Pro FAQ",
+								"path": "/en-US/faq/latest/chitubox-pro-faq",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "CHITUBOX Pro FAQ",
+										"id": "chitubox-pro-faq",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Windows Issues",
+												"id": "windows-issues",
+												"children": [
+													{
+														"depth": 3,
+														"value": "MSVCR110.dll Missing",
+														"id": "msvcr110dll-missing"
+													},
+													{
+														"depth": 3,
+														"value": "MSVCR120.dll Missing",
+														"id": "msvcr120dll-missing"
+													},
+													{
+														"depth": 3,
+														"value": "MSVCR140.dll Missing",
+														"id": "msvcr140dll-missing"
+													},
+													{
+														"depth": 3,
+														"value": "Other System-Level Errors",
+														"id": "other-system-level-errors"
+													},
+													{
+														"depth": 3,
+														"value": "Windows Explorer Keep Restart Repeatedly",
+														"id": "windows-explorer-keep-restart-repeatedly"
+													},
+													{
+														"depth": 3,
+														"value": "Conflict with Fusion 360 or Failed to create OpenGL context for format QSurfaceFormat",
+														"id": "conflict-with-fusion-360-or-failed-to-create-opengl-context-for-format-qsurfaceformat"
+													},
+													{
+														"depth": 3,
+														"value": "This application failed to start because no Qt platform plugin could be initialized",
+														"id": "this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized"
+													},
+													{
+														"depth": 3,
+														"value": "CHITUBOX Pro is Not Responding",
+														"id": "chitubox-pro-is-not-responding"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Plugin Issues",
+												"id": "plugin-issues",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Longer Error -1",
+														"id": "longer-error--1"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "File Issues",
+												"id": "file-issues",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Thumbnail Abnormal",
+														"id": "thumbnail-abnormal"
+													},
+													{
+														"depth": 3,
+														"value": "Surface of Models Go Rough after Slicing",
+														"id": "surface-of-models-go-rough-after-slicing"
+													},
+													{
+														"depth": 3,
+														"value": "Why STL files were scaled after importing to CHITUBOX?",
+														"id": "why-stl-files-were-scaled-after-importing-to-chitubox"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Other Issues",
+												"id": "other-issues",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Clean the Cache",
+														"id": "clean-the-cache"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "USB Drive Issues",
+												"id": "usb-drive-issues"
+											},
+											{
+												"depth": 2,
+												"value": "How to Join Our Affiliate",
+												"id": "how-to-join-our-affiliate"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "chitu-manager-faq",
+								"label": "ChituManager FAQ",
+								"path": "/en-US/faq/latest/chitu-manager-faq",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "ChituManager FAQ",
+										"id": "chitumanager-faq",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Dll File Missing",
+												"id": "dll-file-missing"
+											},
+											{
+												"depth": 2,
+												"value": "Unable To Open ChituManager",
+												"id": "unable-to-open-chitumanager"
+											},
+											{
+												"depth": 2,
+												"value": "Software Launches with a Blank Screen",
+												"id": "software-launches-with-a-blank-screen"
 											},
 											{
 												"depth": 2,
@@ -3132,123 +3307,6 @@
 										]
 									}
 								]
-							},
-							{
-								"item": "chitubox-pro-faq",
-								"label": "CHITUBOX Pro FAQ",
-								"path": "/en-US/faq/v1.x.x/chitubox-pro-faq",
-								"toc": [
-									{
-										"depth": 1,
-										"value": "CHITUBOX Pro FAQ",
-										"id": "chitubox-pro-faq",
-										"children": [
-											{
-												"depth": 2,
-												"value": "Windows Issues",
-												"id": "windows-issues",
-												"children": [
-													{
-														"depth": 3,
-														"value": "MSVCR110.dll Missing",
-														"id": "msvcr110dll-missing"
-													},
-													{
-														"depth": 3,
-														"value": "MSVCR120.dll Missing",
-														"id": "msvcr120dll-missing"
-													},
-													{
-														"depth": 3,
-														"value": "MSVCR140.dll Missing",
-														"id": "msvcr140dll-missing"
-													},
-													{
-														"depth": 3,
-														"value": "Other System-Level Errors",
-														"id": "other-system-level-errors"
-													},
-													{
-														"depth": 3,
-														"value": "Windows Explorer Keep Restart Repeatedly",
-														"id": "windows-explorer-keep-restart-repeatedly"
-													},
-													{
-														"depth": 3,
-														"value": "Conflict with Fusion 360 or Failed to create OpenGL context for format QSurfaceFormat",
-														"id": "conflict-with-fusion-360-or-failed-to-create-opengl-context-for-format-qsurfaceformat"
-													},
-													{
-														"depth": 3,
-														"value": "This application failed to start because no Qt platform plugin could be initialized",
-														"id": "this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized"
-													},
-													{
-														"depth": 3,
-														"value": "CHITUBOX Pro is Not Responding",
-														"id": "chitubox-pro-is-not-responding"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "Plugin Issues",
-												"id": "plugin-issues",
-												"children": [
-													{
-														"depth": 3,
-														"value": "Longer Error -1",
-														"id": "longer-error--1"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "File Issues",
-												"id": "file-issues",
-												"children": [
-													{
-														"depth": 3,
-														"value": "Thumbnail Abnormal",
-														"id": "thumbnail-abnormal"
-													},
-													{
-														"depth": 3,
-														"value": "Surface of Models Go Rough after Slicing",
-														"id": "surface-of-models-go-rough-after-slicing"
-													},
-													{
-														"depth": 3,
-														"value": "Why STL files were scaled after importing to CHITUBOX?",
-														"id": "why-stl-files-were-scaled-after-importing-to-chitubox"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "Other Issues",
-												"id": "other-issues",
-												"children": [
-													{
-														"depth": 3,
-														"value": "Clean the Cache",
-														"id": "clean-the-cache"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "USB Drive Issues",
-												"id": "usb-drive-issues"
-											},
-											{
-												"depth": 2,
-												"value": "How to Join Our Affiliate",
-												"id": "how-to-join-our-affiliate"
-											}
-										]
-									}
-								]
 							}
 						]
 					}
@@ -3350,6 +3408,11 @@
 												"depth": 2,
 												"value": "系统要求",
 												"id": "系统要求"
+											},
+											{
+												"depth": 2,
+												"value": "插件要求",
+												"id": "插件要求"
 											},
 											{
 												"depth": 2,
@@ -3648,8 +3711,8 @@
 																	},
 																	{
 																		"depth": 4,
-																		"value": "渲染接口",
-																		"id": "渲染接口"
+																		"value": "渲染引擎",
+																		"id": "渲染引擎"
 																	}
 																]
 															},
@@ -6021,26 +6084,14 @@
 								"label": "界面和功能",
 								"subItems": [
 									{
-										"item": "add-printers",
-										"label": "添加设备",
-										"path": "/zh-CN/chitu-manager/latest/ui-and-features/add-printers",
+										"item": "network-sending",
+										"label": "网络发送",
+										"path": "/zh-CN/chitu-manager/latest/ui-and-features/network-sending",
 										"toc": [
 											{
 												"depth": 1,
-												"value": "添加设备",
-												"id": "添加设备",
-												"children": [
-													{
-														"depth": 2,
-														"value": "添加打印机",
-														"id": "添加打印机"
-													},
-													{
-														"depth": 2,
-														"value": "我的打印机",
-														"id": "我的打印机"
-													}
-												]
+												"value": "网络发送",
+												"id": "网络发送"
 											}
 										]
 									},
@@ -6097,6 +6148,30 @@
 																"id": "曝光屏使用时长"
 															}
 														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "management",
+										"label": "管理",
+										"path": "/zh-CN/chitu-manager/latest/ui-and-features/management",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "管理",
+												"id": "管理",
+												"children": [
+													{
+														"depth": 2,
+														"value": "添加打印机",
+														"id": "添加打印机"
+													},
+													{
+														"depth": 2,
+														"value": "我的打印机",
+														"id": "我的打印机"
 													}
 												]
 											}
@@ -6174,7 +6249,7 @@
 				"versionedContexts": [
 					{
 						"versionCode": "latest",
-						"versionNumber": "2.0",
+						"versionNumber": "latest",
 						"pagesContext": [
 							{
 								"item": "chitubox-basic-faq",
@@ -6210,6 +6285,18 @@
 														"depth": 3,
 														"value": "CHITUBOX 无响应",
 														"id": "chitubox-无响应"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "授权码问题",
+												"id": "授权码问题",
+												"children": [
+													{
+														"depth": 3,
+														"value": "错误码 “SSL handshake failed”",
+														"id": "错误码-ssl-handshake-failed"
 													}
 												]
 											},
@@ -6263,6 +6350,152 @@
 												"depth": 2,
 												"value": "U 盘问题",
 												"id": "u-盘问题"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "chitubox-pro-faq",
+								"label": "CHITUBOX Pro 常见问题",
+								"path": "/zh-CN/faq/latest/chitubox-pro-faq",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "CHITUBOX Pro 常见问题",
+										"id": "chitubox-pro-常见问题",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Windows 操作系统问题",
+												"id": "windows-操作系统问题",
+												"children": [
+													{
+														"depth": 3,
+														"value": "MSVCR110.dll 丢失",
+														"id": "msvcr110dll-丢失"
+													},
+													{
+														"depth": 3,
+														"value": "MSVCR120.dll 丢失",
+														"id": "msvcr120dll-丢失"
+													},
+													{
+														"depth": 3,
+														"value": "MSVCR140.dll 丢失",
+														"id": "msvcr140dll-丢失"
+													},
+													{
+														"depth": 3,
+														"value": "其他系统级错误",
+														"id": "其他系统级错误"
+													},
+													{
+														"depth": 3,
+														"value": "Windows 资源管理器反复重启",
+														"id": "windows-资源管理器反复重启"
+													},
+													{
+														"depth": 3,
+														"value": "和 Fusion 360 冲突或者 OpenGL 报错 Failed to create OpenGL context for format QSurfaceFormat",
+														"id": "和-fusion-360-冲突或者-opengl-报错-failed-to-create-opengl-context-for-format-qsurfaceformat"
+													},
+													{
+														"depth": 3,
+														"value": "报错：This application failed to start because no Qt platform plugin could be initialized",
+														"id": "报错this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized"
+													},
+													{
+														"depth": 3,
+														"value": "CHITUBOX Pro 无响应",
+														"id": "chitubox-pro-无响应"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "插件问题",
+												"id": "插件问题",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Longer 错误代码 -1",
+														"id": "longer-错误代码--1"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "文件问题",
+												"id": "文件问题",
+												"children": [
+													{
+														"depth": 3,
+														"value": "缩略图异常",
+														"id": "缩略图异常"
+													},
+													{
+														"depth": 3,
+														"value": "切片文件模型表面粗糙",
+														"id": "切片文件模型表面粗糙"
+													},
+													{
+														"depth": 3,
+														"value": "为什么 STL 文件导入 CHITUBOX 后比例被缩放了？",
+														"id": "为什么-stl-文件导入-chitubox-后比例被缩放了"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "其他问题",
+												"id": "其他问题",
+												"children": [
+													{
+														"depth": 3,
+														"value": "清除缓存",
+														"id": "清除缓存"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "U 盘问题",
+												"id": "u-盘问题"
+											},
+											{
+												"depth": 2,
+												"value": "如何成为我们的分销商",
+												"id": "如何成为我们的分销商"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "chitu-manager-faq",
+								"label": "ChituManager 常见问题",
+								"path": "/zh-CN/faq/latest/chitu-manager-faq",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "ChituManager 常见问题",
+										"id": "chitumanager-常见问题",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Dll 文件缺失问题",
+												"id": "dll-文件缺失问题"
+											},
+											{
+												"depth": 2,
+												"value": "无法打开软件",
+												"id": "无法打开软件"
+											},
+											{
+												"depth": 2,
+												"value": "软件启动后一片空白",
+												"id": "软件启动后一片空白"
 											},
 											{
 												"depth": 2,
@@ -6390,123 +6623,6 @@
 										]
 									}
 								]
-							},
-							{
-								"item": "chitubox-pro-faq",
-								"label": "CHITUBOX Pro 常见问题",
-								"path": "/zh-CN/faq/v1.x.x/chitubox-pro-faq",
-								"toc": [
-									{
-										"depth": 1,
-										"value": "CHITUBOX Pro 常见问题",
-										"id": "chitubox-pro-常见问题",
-										"children": [
-											{
-												"depth": 2,
-												"value": "Windows 操作系统问题",
-												"id": "windows-操作系统问题",
-												"children": [
-													{
-														"depth": 3,
-														"value": "MSVCR110.dll 丢失",
-														"id": "msvcr110dll-丢失"
-													},
-													{
-														"depth": 3,
-														"value": "MSVCR120.dll 丢失",
-														"id": "msvcr120dll-丢失"
-													},
-													{
-														"depth": 3,
-														"value": "MSVCR140.dll 丢失",
-														"id": "msvcr140dll-丢失"
-													},
-													{
-														"depth": 3,
-														"value": "其他系统级错误",
-														"id": "其他系统级错误"
-													},
-													{
-														"depth": 3,
-														"value": "Windows 资源管理器反复重启",
-														"id": "windows-资源管理器反复重启"
-													},
-													{
-														"depth": 3,
-														"value": "和 Fusion 360 冲突或者 OpenGL 报错 Failed to create OpenGL context for format QSurfaceFormat",
-														"id": "和-fusion-360-冲突或者-opengl-报错-failed-to-create-opengl-context-for-format-qsurfaceformat"
-													},
-													{
-														"depth": 3,
-														"value": "报错：This application failed to start because no Qt platform plugin could be initialized",
-														"id": "报错this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized"
-													},
-													{
-														"depth": 3,
-														"value": "CHITUBOX Pro 无响应",
-														"id": "chitubox-pro-无响应"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "插件问题",
-												"id": "插件问题",
-												"children": [
-													{
-														"depth": 3,
-														"value": "Longer 错误代码 -1",
-														"id": "longer-错误代码--1"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "文件问题",
-												"id": "文件问题",
-												"children": [
-													{
-														"depth": 3,
-														"value": "缩略图异常",
-														"id": "缩略图异常"
-													},
-													{
-														"depth": 3,
-														"value": "切片文件模型表面粗糙",
-														"id": "切片文件模型表面粗糙"
-													},
-													{
-														"depth": 3,
-														"value": "为什么 STL 文件导入 CHITUBOX 后比例被缩放了？",
-														"id": "为什么-stl-文件导入-chitubox-后比例被缩放了"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "其他问题",
-												"id": "其他问题",
-												"children": [
-													{
-														"depth": 3,
-														"value": "清除缓存",
-														"id": "清除缓存"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "U 盘问题",
-												"id": "u-盘问题"
-											},
-											{
-												"depth": 2,
-												"value": "如何成为我们的分销商",
-												"id": "如何成为我们的分销商"
-											}
-										]
-									}
-								]
 							}
 						]
 					}
@@ -6608,6 +6724,11 @@
 												"depth": 2,
 												"value": "系统要求",
 												"id": "系统要求"
+											},
+											{
+												"depth": 2,
+												"value": "插件要求",
+												"id": "插件要求"
 											},
 											{
 												"depth": 2,
@@ -9279,26 +9400,14 @@
 								"label": "界面和功能",
 								"subItems": [
 									{
-										"item": "add-printers",
-										"label": "添加设备",
-										"path": "/zh-TW/chitu-manager/latest/ui-and-features/add-printers",
+										"item": "network-sending",
+										"label": "網絡傳送",
+										"path": "/zh-TW/chitu-manager/latest/ui-and-features/network-sending",
 										"toc": [
 											{
 												"depth": 1,
-												"value": "添加設備",
-												"id": "添加設備",
-												"children": [
-													{
-														"depth": 2,
-														"value": "添加列印機",
-														"id": "添加列印機"
-													},
-													{
-														"depth": 2,
-														"value": "我的列印機",
-														"id": "我的列印機"
-													}
-												]
+												"value": "網絡發送",
+												"id": "網絡發送"
 											}
 										]
 									},
@@ -9355,6 +9464,30 @@
 																"id": "曝光屏使用時長"
 															}
 														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "management",
+										"label": "管理",
+										"path": "/zh-TW/chitu-manager/latest/ui-and-features/management",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "添加設備",
+												"id": "添加設備",
+												"children": [
+													{
+														"depth": 2,
+														"value": "添加列印機",
+														"id": "添加列印機"
+													},
+													{
+														"depth": 2,
+														"value": "我的列印機",
+														"id": "我的列印機"
 													}
 												]
 											}
@@ -9432,7 +9565,7 @@
 				"versionedContexts": [
 					{
 						"versionCode": "latest",
-						"versionNumber": "2.0",
+						"versionNumber": "latest",
 						"pagesContext": [
 							{
 								"item": "chitubox-basic-faq",
@@ -9449,6 +9582,130 @@
 												"value": "Windows 操作系統問題",
 												"id": "windows-操作系統問題",
 												"children": [
+													{
+														"depth": 3,
+														"value": "Windows 檔案總管反復重啟",
+														"id": "windows-檔案總管反復重啟"
+													},
+													{
+														"depth": 3,
+														"value": "和 Fusion 360 衝突或者 OpenGL 報錯 Failed to create OpenGL context for format QSurfaceFormat",
+														"id": "和-fusion-360-衝突或者-opengl-報錯-failed-to-create-opengl-context-for-format-qsurfaceformat"
+													},
+													{
+														"depth": 3,
+														"value": "報錯：This application failed to start because no Qt platform plugin could be initialized",
+														"id": "報錯this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized"
+													},
+													{
+														"depth": 3,
+														"value": "CHITUBOX 無響應",
+														"id": "chitubox-無響應"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "授權碼問題",
+												"id": "授權碼問題",
+												"children": [
+													{
+														"depth": 3,
+														"value": "錯誤碼 “SSL handshake failed”",
+														"id": "錯誤碼-ssl-handshake-failed"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "插件問題",
+												"id": "插件問題",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Longer 錯誤代碼 -1",
+														"id": "longer-錯誤代碼--1"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "檔案問題",
+												"id": "檔案問題",
+												"children": [
+													{
+														"depth": 3,
+														"value": "縮略圖異常",
+														"id": "縮略圖異常"
+													},
+													{
+														"depth": 3,
+														"value": "切片檔案模型表面粗糙",
+														"id": "切片檔案模型表面粗糙"
+													},
+													{
+														"depth": 3,
+														"value": "為什麼 STL 檔案匯入 CHITUBOX 後比例被縮放了？",
+														"id": "為什麼-stl-檔案匯入-chitubox-後比例被縮放了"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "其他問題",
+												"id": "其他問題",
+												"children": [
+													{
+														"depth": 3,
+														"value": "清除緩存",
+														"id": "清除緩存"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "隨身碟問題",
+												"id": "隨身碟問題"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "chitubox-pro-faq",
+								"label": "CHITUBOX Pro 常見問題",
+								"path": "/zh-TW/faq/latest/chitubox-pro-faq",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "CHITUBOX Pro 常見問題",
+										"id": "chitubox-pro-常見問題",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Windows 操作系統問題",
+												"id": "windows-操作系統問題",
+												"children": [
+													{
+														"depth": 3,
+														"value": "MSVCR110.dll 丟失",
+														"id": "msvcr110dll-丟失"
+													},
+													{
+														"depth": 3,
+														"value": "MSVCR120.dll 丟失",
+														"id": "msvcr120dll-丟失"
+													},
+													{
+														"depth": 3,
+														"value": "MSVCR140.dll 丟失",
+														"id": "msvcr140dll-丟失"
+													},
+													{
+														"depth": 3,
+														"value": "其他系統級錯誤",
+														"id": "其他系統級錯誤"
+													},
 													{
 														"depth": 3,
 														"value": "Windows 檔案總管反復重啟",
@@ -9521,6 +9778,40 @@
 												"depth": 2,
 												"value": "隨身碟問題",
 												"id": "隨身碟問題"
+											},
+											{
+												"depth": 2,
+												"value": "如何成為我們的分銷商",
+												"id": "如何成為我們的分銷商"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "chitu-manager-faq",
+								"label": "ChituManager 常見問題",
+								"path": "/zh-TW/faq/latest/chitu-manager-faq",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "ChituManager 常見問題",
+										"id": "chitumanager-常見問題",
+										"children": [
+											{
+												"depth": 2,
+												"value": "DLL 文件遺失問題",
+												"id": "dll-文件遺失問題"
+											},
+											{
+												"depth": 2,
+												"value": "無法打開程式",
+												"id": "無法打開程式"
+											},
+											{
+												"depth": 2,
+												"value": "軟體啟動後一片空白",
+												"id": "軟體啟動後一片空白"
 											},
 											{
 												"depth": 2,
@@ -9644,123 +9935,6 @@
 												"depth": 2,
 												"value": "隨身碟問題",
 												"id": "隨身碟問題"
-											}
-										]
-									}
-								]
-							},
-							{
-								"item": "chitubox-pro-faq",
-								"label": "CHITUBOX Pro 常見問題",
-								"path": "/zh-TW/faq/v1.x.x/chitubox-pro-faq",
-								"toc": [
-									{
-										"depth": 1,
-										"value": "CHITUBOX Pro 常見問題",
-										"id": "chitubox-pro-常見問題",
-										"children": [
-											{
-												"depth": 2,
-												"value": "Windows 操作系統問題",
-												"id": "windows-操作系統問題",
-												"children": [
-													{
-														"depth": 3,
-														"value": "MSVCR110.dll 丟失",
-														"id": "msvcr110dll-丟失"
-													},
-													{
-														"depth": 3,
-														"value": "MSVCR120.dll 丟失",
-														"id": "msvcr120dll-丟失"
-													},
-													{
-														"depth": 3,
-														"value": "MSVCR140.dll 丟失",
-														"id": "msvcr140dll-丟失"
-													},
-													{
-														"depth": 3,
-														"value": "其他系統級錯誤",
-														"id": "其他系統級錯誤"
-													},
-													{
-														"depth": 3,
-														"value": "Windows 檔案總管反復重啟",
-														"id": "windows-檔案總管反復重啟"
-													},
-													{
-														"depth": 3,
-														"value": "和 Fusion 360 衝突或者 OpenGL 報錯 Failed to create OpenGL context for format QSurfaceFormat",
-														"id": "和-fusion-360-衝突或者-opengl-報錯-failed-to-create-opengl-context-for-format-qsurfaceformat"
-													},
-													{
-														"depth": 3,
-														"value": "報錯：This application failed to start because no Qt platform plugin could be initialized",
-														"id": "報錯this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized"
-													},
-													{
-														"depth": 3,
-														"value": "CHITUBOX 無響應",
-														"id": "chitubox-無響應"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "插件問題",
-												"id": "插件問題",
-												"children": [
-													{
-														"depth": 3,
-														"value": "Longer 錯誤代碼 -1",
-														"id": "longer-錯誤代碼--1"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "檔案問題",
-												"id": "檔案問題",
-												"children": [
-													{
-														"depth": 3,
-														"value": "縮略圖異常",
-														"id": "縮略圖異常"
-													},
-													{
-														"depth": 3,
-														"value": "切片檔案模型表面粗糙",
-														"id": "切片檔案模型表面粗糙"
-													},
-													{
-														"depth": 3,
-														"value": "為什麼 STL 檔案匯入 CHITUBOX 後比例被縮放了？",
-														"id": "為什麼-stl-檔案匯入-chitubox-後比例被縮放了"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "其他問題",
-												"id": "其他問題",
-												"children": [
-													{
-														"depth": 3,
-														"value": "清除緩存",
-														"id": "清除緩存"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "隨身碟問題",
-												"id": "隨身碟問題"
-											},
-											{
-												"depth": 2,
-												"value": "如何成為我們的分銷商",
-												"id": "如何成為我們的分銷商"
 											}
 										]
 									}

@@ -106,9 +106,15 @@ Here you can configure the resin's basic information, including the resin's name
 
 ### TSMC (Two-Stage Motion Control)
 
+<Admonition type="tip">
+	Migrating from Anycubic Photon Workshop? Heads up! The order of TSMC parameters in the UI is different.
+
+	In Photon Workshop, [0] refers to the motion stage closer to the screen, while [1] represents the stage farther away. CHITUBOX, however, follows the motion order when laying out the input text boxes. This can be confusing at first.
+</Admonition>
+
 You might have noticed that there are two sets of lifting and retracting parameters in the print settings, this is where you can set up TSMC.
 
-And you might think what TSMC is and why it is needed. Let me explain.
+And you might wonder what TSMC is and why it is needed. Let me explain.
 
 When the build plate starts lifting, the model will be pulled up by the build plate. This is called the "suction effect". The suction effect is more obvious when the contact area with the build plate is large and when the build plate is pulled away quickly. The suction effect can cause the model to deform, and even cause the model to fall off the build plate. So you have to keep it slow at first. But once the model is lifted off the FEP film, the suction effect will disappear. At this time, you can speed up the lifting speed to improve the printing efficiency. The principle acts similarly in the retracting stage.
 
