@@ -88,6 +88,400 @@ export const BasicLogo2022 = ({ size, fill }: any) => {
 	);
 };
 
+export const HeroLight = ({ size, fill }: any) => {
+	return (
+		<svg xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			version="1.1"
+			width="2400"
+			height="720"
+			viewBox="0 0 2400 720">
+			<defs>
+				<clipPath id="master_svg0_171_7978">
+					<rect
+						x="0"
+						y="0"
+						width="2400"
+						height="720"
+						rx="0"
+					/>
+				</clipPath>
+				<filter
+					id="master_svg1_171_7981"
+					filterUnits="objectBoundingBox"
+					color-interpolation-filters="sRGB"
+					x="-16"
+					y="-16"
+					width="2844"
+					height="897">
+					<feFlood
+						flood-opacity="0"
+						result="BackgroundImageFix"
+					/>
+					<feBlend
+						mode="normal"
+						in="SourceGraphic"
+						in2="BackgroundImageFix"
+						result="shape"
+					/>
+					<feGaussianBlur stdDeviation="4"
+						result="effect1_foregroundBlur" />
+				</filter>
+				<filter
+					id="master_svg2_171_8063"
+					filterUnits="objectBoundingBox"
+					color-interpolation-filters="sRGB"
+					x="-286"
+					y="-286"
+					width="1060"
+					height="1059">
+					<feFlood
+						flood-opacity="0"
+						result="BackgroundImageFix" />
+					<feBlend
+						mode="normal"
+						in="SourceGraphic"
+						in2="BackgroundImageFix"
+						result="shape" />
+					<feGaussianBlur
+						stdDeviation="71.5"
+						result="effect1_foregroundBlur" />
+				</filter>
+				<filter
+					id="master_svg3_171_8064"
+					filterUnits="objectBoundingBox"
+					color-interpolation-filters="sRGB"
+					x="-286"
+					y="-286"
+					width="1060"
+					height="1059">
+					<feFlood flood-opacity="0"
+						result="BackgroundImageFix"
+					/>
+					<feBlend
+						mode="normal"
+						in="SourceGraphic"
+						in2="BackgroundImageFix"
+						result="shape"
+					/>
+					<feGaussianBlur
+						stdDeviation="71.5"
+						result="effect1_foregroundBlur"
+					/>
+				</filter>
+				<filter
+					id="master_svg4_171_8065"
+					filterUnits="objectBoundingBox"
+					color-interpolation-filters="sRGB"
+					x="-400"
+					y="-396"
+					width="1185"
+					height="1183">
+					<feFlood
+						flood-opacity="0"
+						result="BackgroundImageFix"
+					/>
+					<feColorMatrix
+						in="SourceAlpha"
+						type="matrix"
+						values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+					/>
+					<feOffset dy="4" dx="0" />
+					<feGaussianBlur stdDeviation="100" />
+					<feColorMatrix
+						type="matrix"
+						values="0 0 0 0 0.3333333432674408 0 0 0 0 0.8352941274642944 0 0 0 0 1 0 0 0 0.6000000238418579 0"
+					/>
+					<feBlend
+						mode="normal"
+						in2="BackgroundImageFix"
+						result="effect1_dropShadow"
+					/>
+					<feBlend
+						mode="normal"
+						in="SourceGraphic"
+						in2="effect1_dropShadow"
+						result="shape"
+					/>
+				</filter>
+				<linearGradient
+					x1="1.3116883039474487"
+					y1="0.16449086368083954"
+					x2="0.26753246784210205"
+					y2="0.20626631379127502"
+					id="master_svg5_166_8194"
+				>
+					<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+					<stop offset="0%" stop-color="#F9FDFF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#D9F4FD" stop-opacity="1" />
+				</linearGradient>
+				<linearGradient
+					x1="0.03896103799343109"
+					y1="0.2480417788028717"
+					x2="0.9740259647369385"
+					y2="0.3315926790237427"
+					id="master_svg6_166_8196"
+				>
+					<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+				</linearGradient>
+				<filter
+					id="master_svg7_171_8066"
+					filterUnits="objectBoundingBox"
+					color-interpolation-filters="sRGB"
+					x="-286"
+					y="-286"
+					width="1072"
+					height="1071"
+				>
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+					<feGaussianBlur stdDeviation="71.5" result="effect1_foregroundBlur" />
+				</filter>
+				<filter
+					id="master_svg8_171_8067" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB"
+					x="-358" y="-356" width="949" height="947"
+				>
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+					<feOffset dy="4" dx="2" />
+					<feGaussianBlur stdDeviation="90" />
+					<feColorMatrix type="matrix" values="0 0 0 0 0.29411765933036804 0 0 0 0 0.8235294222831726 0 0 0 0 1 0 0 0 0.6000000238418579 0" />
+					<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+					<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+				</filter>
+				<linearGradient x1="1.3116883039474487" y1="0.16449086368083954" x2="0.26753246784210205" y2="0.20626631379127502"
+					id="master_svg9_166_8202">
+					<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+					<stop offset="0%" stop-color="#F9FDFF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#D9F4FD" stop-opacity="1" />
+				</linearGradient>
+				<linearGradient x1="0.03896103799343109" y1="0.2480417788028717" x2="0.9740259647369385"
+					y2="0.3315926790237427" id="master_svga_166_8196">
+					<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+				</linearGradient>
+				<radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" id="master_svgb_166_8346"
+					gradientTransform="translate(378.6918029785156 358.5) rotate(0) scale(143.69180297851562 99.50522526851351)">
+					<stop offset="0%" stop-color="#12D2C7" stop-opacity="1" />
+					<stop offset="99.52375292778015%" stop-color="#93FFFC" stop-opacity="1" />
+				</radialGradient>
+				<filter id="master_svgc_171_8071" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB" x="-40" y="-40" width="367.38360595703125" height="495">
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+					<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur" />
+				</filter>
+				<linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="master_svgd_166_8040">
+					<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+				</linearGradient>
+				<linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="master_svge_166_8336">
+					<stop offset="0%" stop-color="#3DD4FB" stop-opacity="1" />
+					<stop offset="99.52375292778015%" stop-color="#89E7FF" stop-opacity="1" />
+				</linearGradient>
+				<radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" id="master_svgf_166_8333"
+					gradientTransform="translate(752.1169204711914 408.5958061218262) rotate(90) scale(56.22170639038086 44.82019805908203)">
+					<stop offset="0%" stop-color="#3DD4FB" stop-opacity="1" />
+					<stop offset="99.52375292778015%" stop-color="#89E7FF" stop-opacity="1" />
+				</radialGradient>
+				<linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="master_svgg_166_8336">
+					<stop offset="0%" stop-color="#3DD4FB" stop-opacity="1" />
+					<stop offset="99.52375292778015%" stop-color="#89E7FF" stop-opacity="1" />
+				</linearGradient>
+				<linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="master_svgh_166_8313">
+					<stop offset="0%" stop-color="#F776FF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#FFDDFC" stop-opacity="1" />
+				</linearGradient>
+				<linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="master_svgi_166_8320">
+					<stop offset="0%" stop-color="#FE924A" stop-opacity="1" />
+					<stop offset="100%" stop-color="#FFE2D2" stop-opacity="1" />
+				</linearGradient>
+				<radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" id="master_svgj_166_8317"
+					gradientTransform="translate(1214.313362121582 366.4224166870117) rotate(90) scale(138.55767822265625 44.82019805908203)">
+					<stop offset="0%" stop-color="#FE924A" stop-opacity="1" />
+					<stop offset="100%" stop-color="#FFE2D2" stop-opacity="1" />
+				</radialGradient><linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="master_svgk_166_8324">
+					<stop offset="0%" stop-color="#FB5D95" stop-opacity="1" />
+					<stop offset="100%" stop-color="#FFDFE7" stop-opacity="1" />
+				</linearGradient>
+				<linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="master_svgl_166_8329">
+					<stop offset="0%" stop-color="#FFDFE7" stop-opacity="1" />
+					<stop offset="100%" stop-color="#FB5D95" stop-opacity="1" />
+				</linearGradient><radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" id="master_svgm_166_8309"
+					gradientTransform="translate(1766.117172241211 259.45631951093674) rotate(0) scale(71.11717224121094 48.85914197203951)">
+					<stop offset="0%" stop-color="#2F92FE" stop-opacity="1" />
+					<stop offset="99.52375292778015%" stop-color="#C0DAFF" stop-opacity="1" />
+				</radialGradient><radialGradient cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" id="master_svgn_166_8309"
+					gradientTransform="translate(1766.117172241211 466.4856643676758) rotate(0) scale(71.11717224121094 48.85914197203951)">
+					<stop offset="0%" stop-color="#2F92FE" stop-opacity="1" />
+					<stop offset="99.52375292778015%" stop-color="#C0DAFF" stop-opacity="1" />
+				</radialGradient>
+				<linearGradient x1="0.5" y1="0.34549519419670105" x2="0.5" y2="1" id="master_svgo_166_8074">
+					<stop offset="0%" stop-color="#2F92FE" stop-opacity="1" />
+					<stop offset="99.52375292778015%" stop-color="#C0DAFF" stop-opacity="1" />
+				</linearGradient>
+				<radialGradient
+					cx="0"
+					cy="0"
+					r="1"
+					gradientUnits="userSpaceOnUse"
+					id="master_svgp_166_8340"
+					gradientTransform="translate(1783.3858337402344 408.11253356933594) rotate(90) scale(161.88597106933594 161.62948608398438)"
+				>
+					<stop offset="0%" stop-color="#2024FE" stop-opacity="1" />
+					<stop offset="100%" stop-color="#D5D9FF" stop-opacity="1" />
+				</radialGradient>
+				<linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="master_svgq_166_8302">
+					<stop offset="0%" stop-color="#911DFF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#EAD4FF" stop-opacity="1" />
+				</linearGradient>
+				<linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="master_svgr_166_8302">
+					<stop offset="0%" stop-color="#911DFF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#EAD4FF" stop-opacity="1" />
+				</linearGradient>
+			</defs>
+			<g clip-path="url(#master_svg0_171_7978)">
+				<rect x="0" y="0" width="2400" height="720" rx="0" fill="#EAF4FF" fill-opacity="1" />
+				<g>
+					<g filter="url(#master_svg1_171_7981)">
+						<g>
+							<g><rect x="-205.5" y="-77.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="10.5" y="-77.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="226.5" y="-77.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="442.5" y="-77.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="659.5" y="-77.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="876.5" y="-77.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1093.5" y="-77.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1309.5" y="-77.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1525.5" y="-77.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1741.5" y="-77.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1957.5" y="-77.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="2173.5" y="-77.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="2389.5" y="-77.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+						</g>
+						<g>
+							<g><rect x="-205.5" y="138.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="10.5" y="138.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="226.5" y="138.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="442.5" y="138.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="659.5" y="138.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="876.5" y="138.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1093.5" y="138.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1309.5" y="138.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1525.5" y="138.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1741.5" y="138.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1957.5" y="138.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="2173.5" y="138.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="2389.5" y="138.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+						</g>
+						<g>
+							<g><rect x="-205.5" y="354.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="10.5" y="354.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="226.5" y="354.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="442.5" y="354.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="659.5" y="354.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="876.5" y="354.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1093.5" y="354.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1309.5" y="354.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1525.5" y="354.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1741.5" y="354.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1957.5" y="354.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="2173.5" y="354.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+						</g>
+						<g>
+							<g><rect x="-205.5" y="570.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="10.5" y="570.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="226.5" y="570.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="442.5" y="570.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="659.5" y="570.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="876.5" y="570.5" width="217" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1093.5" y="570.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1309.5" y="570.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1525.5" y="570.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1741.5" y="570.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="1957.5" y="570.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+							<g><rect x="2173.5" y="570.5" width="216" height="216" rx="0" fill-opacity="0" stroke-opacity="0.20000000298023224" stroke="#0084FF" fill="none" stroke-width="1" /></g>
+						</g>
+					</g>
+					<g filter="url(#master_svg2_171_8063)">
+						<ellipse cx="284" cy="805.5" rx="244" ry="243.5" fill="#FF96F5" fill-opacity="0.4000000059604645" />
+					</g>
+					<g filter="url(#master_svg3_171_8064)">
+						<ellipse cx="1654" cy="805.5" rx="244" ry="243.5" fill="#6CE9E5" fill-opacity="0.30000001192092896" />
+					</g>
+					<g filter="url(#master_svg4_171_8065)">
+						<ellipse cx="1005.5" cy="835.5" rx="192.5" ry="191.5" fill="url(#master_svg5_166_8194)" fill-opacity="0.6000000238418579" />
+						<ellipse cx="1005.5" cy="835.5" rx="191.5" ry="190.5" stroke="url(#master_svg6_166_8196)" fill-opacity="0" fill="none" stroke-width="2" />
+					</g>
+					<g filter="url(#master_svg7_171_8066)">
+						<ellipse cx="973" cy="-59.5" rx="250" ry="249.5" fill="#FF96F5" fill-opacity="0.5" />
+					</g>
+					<g filter="url(#master_svg8_171_8067)">
+						<ellipse cx="1684.5" cy="-25.5" rx="114.5" ry="113.5" fill="url(#master_svg9_166_8202)" fill-opacity="1" />
+						<ellipse cx="1684.5" cy="-25.5" rx="113.5" ry="112.5" stroke="url(#master_svga_166_8196)" fill-opacity="0" fill="none" stroke-width="2" />
+					</g>
+					<g>
+						<g>
+							<path d="M654.1831999999999,133L666.2365,133L666.2365,200.796L651.0998,200.796L651.0998,160.6L635.6828,182.4577L627.5538,182.4577L611.9499,160.4148L611.9499,200.796L597,200.796L597,133L609.3336,133L631.8519,165.69400000000002L654.1831999999999,133ZM714.543,133L742.294,200.796L725.475,200.796L720.2429999999999,187.08859999999999L694.3609,187.08859999999999L689.3154,200.796L673.4312,200.796L700.434,133L714.543,133ZM715.197,173.8443L707.068,152.7275L699.313,173.8443L715.197,173.8443ZM762.383,133L793.404,174.1221L793.404,133L807.98,133L807.98,200.796L795.179,200.796L764.158,159.5812L764.158,200.796L749.582,200.796L749.582,133L762.383,133ZM864.883,133L880.861,133L880.861,173.3812Q880.861,182.0873,877.2629999999999,188.5705Q873.6659999999999,195.0537,866.892,198.5269Q860.1179999999999,202,850.774,202Q841.4300000000001,202,834.656,198.5269Q827.8820000000001,195.0537,824.285,188.5705Q820.687,182.0873,820.687,173.3812L820.687,133L836.665,133L836.665,169.2135Q836.665,178.6604,840.402,183.1061Q844.14,187.55169999999998,850.774,187.55169999999998Q857.408,187.55169999999998,861.145,183.1061Q864.883,178.6604,864.883,169.2135L864.883,133ZM925.99,133L953.741,200.796L936.922,200.796L931.69,187.08859999999999L905.808,187.08859999999999L900.762,200.796L884.8779999999999,200.796L911.881,133L925.99,133ZM926.644,173.8443L918.515,152.7275L910.76,173.8443L926.644,173.8443ZM961.029,133L977.0070000000001,133L977.0070000000001,186.7181L1007,186.7181L1007,200.796L961.029,200.796L961.029,133Z"
+								fill="#303133"
+								fill-opacity="1"
+							/>
+						</g>
+						<g style={{ opacity: 0.800000011920929 }}>
+							<path d="M442.473,566C327.88890000000004,566,235,473.099,235,358.5C235,243.90089999999998,327.88890000000004,151,442.473,151L522.384,151L522.384,566L442.473,566Z" fill-rule="evenodd" fill="url(#master_svgb_166_8346)" fill-opacity="1" />
+						</g>
+						<g style={{ opacity: 0.800000011920929 }} filter="url(#master_svgc_171_8071)">
+							<path d="M442.473,566C327.88890000000004,566,235,473.099,235,358.5C235,243.90089999999998,327.88890000000004,151,442.473,151L522.384,151L522.384,566L442.473,566ZM442.473,155.00002L518.384,155L518.384,562L442.473,562Q421.664,562,401.462,557.866Q381.777,553.837,363.274,546.01Q345.105,538.3240000000001,328.7123,527.248Q312.4735,516.2760000000001,298.5961,502.396Q284.7182,488.517,273.7478,472.276Q262.673,455.881,254.9883,437.71Q247.1622,419.205,243.13392,399.517Q239,379.312,239,358.5Q239,337.688,243.13393,317.483Q247.1622,297.79499999999996,254.9884,279.28999999999996Q262.673,261.119,273.7478,244.72379999999998Q284.7184,228.48309999999998,298.5961,214.6036Q312.4739,200.724,328.7123,189.75209999999998Q345.105,178.6759,363.274,170.9903Q381.777,163.1632,401.462,159.13444Q421.664,155.00001,442.473,155.00002Z" fill-rule="evenodd" fill="url(#master_svgd_166_8040)" fill-opacity="1" />
+						</g>
+						<g>
+							<g style={{ opacity: 0.800000011920929 }}>
+								<rect x="505.2270202636719" y="227.6885528564453" width="89.49836730957031" height="339.13525390625" rx="0" fill="url(#master_svge_166_8336)" fill-opacity="1" /></g><g transform="matrix(0,1,-1,0,1059.6708221435547,-354.92262268066406)" style={{ opacity: 0.800000011920929 }}>
+								<rect x="707.2967224121094" y="352.3740997314453" width="89.64039611816406" height="112.44341278076172" rx="0" fill="url(#master_svgf_166_8333)" fill-opacity="1" /></g><g style={{ opacity: 0.800000011920929 }}>
+								<rect x="707.0004577636719" y="227.9990997314453" width="89.49836730957031" height="339.13525390625" rx="0" fill="url(#master_svgg_166_8336)" fill-opacity="1" /></g></g><g style={{ opacity: 0.800000011920929 }}>
+							<rect x="823.721435546875" y="228.0703125" width="89.49837493896484" height="339.13525390625" rx="0" fill="url(#master_svgh_166_8313)" fill-opacity="1" /></g>
+						<g>
+							<g style={{ opacity: 0.800000011920929 }}>
+								<rect x="989.0028076171875" y="227.99950408935547" width="90" height="342" rx="0" fill="url(#master_svgi_166_8320)" fill-opacity="1" /></g>
+							<g transform="matrix(0,1,-1,0,1397.3579025268555,-941.6284255981445)" style={{ opacity: 0.800000011920929 }}>
+								<rect x="1169.4931640625" y="227.86473846435547" width="89.64039611816406" height="277.1153564453125" rx="0" fill="url(#master_svgj_166_8317)" fill-opacity="1" /></g></g><g style={{ opacity: 0.800000011920929 }}>
+							<g><path d="M1285.0023803710938,227.99950408935547L1139.0023803710938,227.99950408935547L1139.0023803710938,423.99950408935547L1139.0293712710939,423.99950408935547C1139.5818613710937,504.1765040893555,1204.6380803710938,569.0015040893554,1284.8093803710938,569.0015040893554C1365.3233803710937,569.0015040893554,1430.5923803710937,503.6215040893555,1430.5923803710937,422.9705040893555L1285.0023803710938,422.9705040893555L1285.0023803710938,227.99950408935547Z" fill-rule="evenodd" fill="url(#master_svgk_166_8324)" fill-opacity="1" /></g>
+							<g><rect x="1285.0023803710938" y="227.99950408935547" width="146" height="196" rx="0" fill="url(#master_svgl_166_8329)" fill-opacity="1" />
+							</g>
+						</g>
+						<g>
+							<g transform="matrix(-1,0,0,1,3390,0)" style={{ opacity: 0.800000011920929 }}>
+								<path d="M1797.684,362.97135826826093C1740.9734,362.97135826826093,1695,316.62635826826096,1695,259.45635826826094C1695,202.28655826826096,1740.9734,155.94135826826096,1797.684,155.94135826826096L1837.234,155.94135826826096L1837.234,362.97135826826093L1797.684,362.97135826826093Z"
+									fill-rule="evenodd"
+									fill="url(#master_svgm_166_8309)"
+									fill-opacity="1"
+								/>
+							</g>
+							<g transform="matrix(-1,0,0,1,3390,0)"
+								style={{ opacity: 0.800000011920929 }}>
+								<path d="M1797.684,570.000703125C1740.9734,570.000703125,1695,523.655703125,1695,466.485703125C1695,409.315903125,1740.9734,362.970703125,1797.684,362.970703125L1837.234,362.970703125L1837.234,570.000703125L1797.684,570.000703125Z"
+									fill-rule="evenodd"
+									fill="url(#master_svgn_166_8309)"
+									fill-opacity="1" />
+							</g>
+							<g style={{ opacity: 0.800000011920929 }}>
+								<rect x="1374" y="155" width="178.7644805908203" height="414.9987487792969" rx="0" fill="url(#master_svgo_166_8074)" fill-opacity="1" />
+							</g>
+						</g>
+						<g style={{ opacity: 0.800000011920929 }}><ellipse cx="1783.3858337402344" cy="408.11253356933594" rx="161.62948608398438" ry="161.88597106933594" fill="url(#master_svgp_166_8340)" fill-opacity="1" /></g>
+						<g>
+							<g style={{ opacity: 0.800000011920929 }}><path d="M1826.90966796875,230.86473846435547L2066.50366796875,569.9997384643555L2165.99966796875,569.9997384643555L1926.40806796875,230.86473846435547L1826.90966796875,230.86473846435547Z" fill="url(#master_svgq_166_8302)" fill-opacity="1" />
+							</g>
+							<g transform="matrix(-1,0,0,1,4351.99853515625,0)" style={{ opacity: 0.800000011920929 }}>
+								<path d="M2175.999267578125,230.86473846435547L2415.593267578125,569.9997384643555L2515.089267578125,569.9997384643555L2275.497667578125,230.86473846435547L2175.999267578125,230.86473846435547Z" fill="url(#master_svgr_166_8302)" fill-opacity="1" />
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</svg>
+	);
+};
+
 export const Shop = ({ size, fill }: any) => {
 	return (
 		<svg
@@ -1646,11 +2040,11 @@ export const ChituboxOpenIcon = ({ size, fill }: any) => {
 						<path
 							d="M20.5,652H1.5A1.5,1.5,0,0,1,0,650.5v-9A1.5,1.5,0,0,1,1.5,640h19a1.5,1.5,0,0,1,1.5,1.5v9A1.5,1.5,0,0,1,20.5,652Z"
 							transform="translate(0 -630)"
-							className="fill-gray-300"
+							className="fill-gray-400"
 						/>
 						<path
 							d="M20.5,2H13.311a.75.75,0,0,1-.53-.22L11.294.292A1,1,0,0,0,10.586,0H1.5A1.5,1.5,0,0,0,0,1.5v5A1.5,1.5,0,0,0,1.5,8h19A1.5,1.5,0,0,0,22,6.5v-3A1.5,1.5,0,0,0,20.5,2Z"
-							className="fill-gray-400"
+							fill="currentColor"
 						/>
 					</g>
 				</g>
@@ -1672,12 +2066,12 @@ export const ChituboxSaveIcon = ({ size, fill }: any) => {
 					<g transform="translate(91 32)">
 						<path
 							d="M21.227,3.188,18.813.773A2.635,2.635,0,0,0,16.947,0H1.5A1.5,1.5,0,0,0,0,1.5v19A1.5,1.5,0,0,0,1.5,22H2V13.25A2.251,2.251,0,0,1,4.25,11h13.5A2.251,2.251,0,0,1,20,13.25V22h.5A1.5,1.5,0,0,0,22,20.5V5.053A2.635,2.635,0,0,0,21.227,3.188ZM16,6.68A1.286,1.286,0,0,1,14.75,8H7.25A1.286,1.286,0,0,1,6,6.68V2.28A1.286,1.286,0,0,1,7.25.959h7.5A1.286,1.286,0,0,1,16,2.28Z"
-							className="fill-gray-300"
+							className="fill-gray-400"
 						/>
 						<path
 							d="M270,841H256v-8.25a.75.75,0,0,1,.75-.75h12.5a.75.75,0,0,1,.75.75Z"
 							transform="translate(-252 -819)"
-							className="fill-gray-400"
+							fill="currentColor"
 						/>
 						<rect
 							width="3"
@@ -1702,7 +2096,7 @@ export const ChituboxScreenshotIcon = ({ size, fill }: any) => {
 				viewBox="0 0 28 28"
 			>
 				<g transform="translate(-88 -29)">
-					<g transform="translate(90 31)" className="fill-gray-400">
+					<g transform="translate(90 31)" fill="currentColor">
 						<rect width="5" height="2" transform="translate(0 1)" />
 						<rect width="4" height="2" transform="translate(7 1)" />
 						<rect
@@ -1749,7 +2143,7 @@ export const ChituboxScreenshotIcon = ({ size, fill }: any) => {
 						<path
 							d="M462.5,578H460l-1.249-1.561A1.093,1.093,0,0,0,457.9,576H454.1a1.093,1.093,0,0,0-.849.439L452,578h-2.5a1.5,1.5,0,0,0-1.5,1.5v9a1.5,1.5,0,0,0,1.5,1.5h13a1.5,1.5,0,0,0,1.5-1.5v-9A1.5,1.5,0,0,0,462.5,578Zm-6.5,9.125A3.125,3.125,0,1,1,459.125,584,3.125,3.125,0,0,1,456,587.125Z"
 							transform="translate(-441 -567)"
-							className="fill-gray-300"
+							className="fill-gray-400"
 						/>
 					</g>
 				</g>
@@ -1772,12 +2166,12 @@ export const ChituboxCopyIcon = ({ size, fill }: any) => {
 						<path
 							d="M526.5,0h-13A1.5,1.5,0,0,0,512,1.5V6h7.5A2.5,2.5,0,0,1,522,8.5V16h4.5a1.5,1.5,0,0,0,1.5-1.5V1.5A1.5,1.5,0,0,0,526.5,0Z"
 							transform="translate(-504)"
-							className="fill-gray-400"
+							fill="currentColor"
 						/>
 						<path
 							d="M14.5,512H1.5A1.5,1.5,0,0,0,0,513.5v13A1.5,1.5,0,0,0,1.5,528h13a1.5,1.5,0,0,0,1.5-1.5v-13A1.5,1.5,0,0,0,14.5,512ZM11,521H9v2a1,1,0,0,1-2,0v-2H5a1,1,0,0,1,0-2H7v-2a1,1,0,0,1,2,0v2h2a1,1,0,0,1,0,2Z"
 							transform="translate(0 -504)"
-							className="fill-gray-300"
+							className="fill-gray-400"
 						/>
 					</g>
 				</g>
@@ -1796,7 +2190,7 @@ export const ChituboxAutoLayoutIcon = ({ size, fill }: any) => {
 				viewBox="0 0 28 28"
 			>
 				<g transform="translate(-88 -29)">
-					<g transform="translate(91 32)" className="fill-gray-300">
+					<g transform="translate(91 32)" className="fill-gray-400">
 						<path
 							d="M260.5,270h-3a1.5,1.5,0,0,1-1.5-1.5v-11a1.5,1.5,0,0,1,1.5-1.5h3a1.5,1.5,0,0,1,1.5,1.5v11A1.5,1.5,0,0,1,260.5,270Z"
 							transform="translate(-252 -252)"
@@ -1811,7 +2205,7 @@ export const ChituboxAutoLayoutIcon = ({ size, fill }: any) => {
 						/>
 						<path
 							d="M20.5,22H1.5A1.5,1.5,0,0,1,0,20.5V1.5A1.5,1.5,0,0,1,1.5,0h19A1.5,1.5,0,0,1,22,1.5v19A1.5,1.5,0,0,1,20.5,22ZM2,20H20V2H2Z"
-							className="fill-gray-400"
+							fill="currentColor"
 						/>
 					</g>
 				</g>
@@ -1833,11 +2227,11 @@ export const ChituboxHollowIcon = ({ size, fill }: any) => {
 					<path
 						d="M279.746,194a15.092,15.092,0,0,1,4.123.53,6.62,6.62,0,0,1,1.2.47,6.62,6.62,0,0,1-1.2.47,16.3,16.3,0,0,1-8.246,0,6.621,6.621,0,0,1-1.2-.47,6.621,6.621,0,0,1,1.2-.47,15.093,15.093,0,0,1,4.123-.53m0-2c-4.278,0-7.746,1.343-7.746,3s3.468,3,7.746,3,7.746-1.343,7.746-3-3.468-3-7.746-3Z"
 						transform="translate(-204.751 -189)"
-						className="fill-gray-400"
+						fill="currentColor"
 					/>
 					<path
 						d="M85.99,16.954V6.261a3.431,3.431,0,0,1-.16.8A3.6,3.6,0,0,0,85.99,6a3.648,3.648,0,0,0-.278-1.386,4.538,4.538,0,0,0-.744-1.206A7.669,7.669,0,0,0,82.51,1.57a18.769,18.769,0,0,0-15.029,0,7.669,7.669,0,0,0-2.458,1.838,4.539,4.539,0,0,0-.744,1.206A3.648,3.648,0,0,0,64,6V17.247h.01C64.01,20.977,68.933,24,75.005,24S86,20.977,86,17.247Q86,17.1,85.99,16.954ZM68.374,3.359a16.808,16.808,0,0,1,13.241,0c1.509.755,2.375,1.718,2.375,2.641s-.866,1.886-2.375,2.641A15.171,15.171,0,0,1,74.995,10a15.171,15.171,0,0,1-6.621-1.359C66.865,7.886,66,6.923,66,6S66.865,4.114,68.374,3.359ZM75,12h0Zm.579-.008h0Zm-.1,0L75.4,12Zm-.106,0-.243,0Z"
-						className="fill-gray-300"
+						className="fill-gray-400"
 					/>
 				</g>
 			</svg>
@@ -1858,12 +2252,12 @@ export const ChituboxDigHoleIcon = ({ size, fill }: any) => {
 					<path
 						d="M1801.108,12.456,1791.68,7.1a1.593,1.593,0,0,0-1.571,0l-8.818,5.01,10.462,5.749a1.318,1.318,0,0,1,.688,1.153V30.774l8.668-4.925a1.542,1.542,0,0,0,.786-1.339V13.8A1.542,1.542,0,0,0,1801.108,12.456Z"
 						transform="translate(-83.894)"
-						className="fill-gray-300"
+						className="fill-gray-400"
 					/>
 					<path
 						d="M1706.463,441.971l-8.9-4.893a1.048,1.048,0,0,0-1.558.9v9.906a1.028,1.028,0,0,0,.521.891l8.9,5.1a1.048,1.048,0,0,0,1.575-.891V442.871A1.028,1.028,0,0,0,1706.463,441.971Zm-3.151,5.442c-.515,1.891-1.919,2.452-3.137,1.253a6.289,6.289,0,0,1-1.273-5.594c.515-1.891,1.919-2.452,3.137-1.253A6.29,6.29,0,0,1,1703.313,447.412Z"
 						transform="translate(0 -423.125)"
-						className="fill-gray-400"
+						fill="currentColor"
 					/>
 				</g>
 			</svg>
@@ -1881,7 +2275,7 @@ export const ChituboxRepairIcon = ({ size, fill }: any) => {
 				viewBox="0 0 28 28"
 			>
 				<g transform="translate(-88 -29)">
-					<g transform="translate(90 31)" className="fill-gray-300">
+					<g transform="translate(90 31)" className="fill-gray-400">
 						<path
 							d="M139.93,741.058l-7.372,7.371a1.5,1.5,0,0,1-2.122,0l-2.122-2.122a1.5,1.5,0,0,1,0-2.122l7.372-7.371a1.5,1.5,0,0,1,2.122,0l2.122,2.122A1.5,1.5,0,0,1,139.93,741.058Z"
 							transform="translate(-125.877 -724.87)"
@@ -1895,7 +2289,7 @@ export const ChituboxRepairIcon = ({ size, fill }: any) => {
 							d="M1090.636,134.881l-1.4-.6a1,1,0,0,1-.525-.525l-.6-1.4a1,1,0,0,1,.3-1.18l4.134-3a1,1,0,0,1,1.327.078l.866.866a1,1,0,0,1,.078,1.326l-3,4.134A1,1,0,0,1,1090.636,134.881Z"
 							transform="translate(-1071.027 -125.963)"
 						/>
-						<g transform="translate(0)" className="fill-gray-400">
+						<g transform="translate(0)" fill="currentColor">
 							<path
 								d="M8.45,10.479A3.5,3.5,0,0,1,12.1,9.657l3.648-3.65A8,8,0,0,0,4.394.858L8.55,5.014a1,1,0,0,1,.258.967l-.452,1.67a1,1,0,0,1-.7.7l-1.67.452a1,1,0,0,1-.967-.258L.858,4.393A8,8,0,0,0,4,14.929Z"
 								transform="translate(0)"
@@ -1925,7 +2319,7 @@ export const ChituboxStandardPartsIcon = ({ size, fill }: any) => {
 					<g transform="translate(90.037 31)">
 						<g
 							transform="translate(-0.037 8.163)"
-							className="fill-gray-300"
+							className="fill-gray-400"
 						>
 							<path
 								d="M8.01,851.832a2.154,2.154,0,0,1-2.17-.009l-5.877-3.457v6.244a1.078,1.078,0,0,0,.539.933l5.923,3.42a1.077,1.077,0,0,0,1.077,0l5.923-3.42a1.078,1.078,0,0,0,.539-.933v-6.216Z"
@@ -1939,7 +2333,7 @@ export const ChituboxStandardPartsIcon = ({ size, fill }: any) => {
 						<path
 							d="M148,0H130a2,2,0,0,0-2,2V9.639l2-1.155V6h18V18H141.01v2H148a2,2,0,0,0,2-2V2A2,2,0,0,0,148,0Z"
 							transform="translate(-126.036)"
-							className="fill-gray-400"
+							fill="currentColor"
 						/>
 					</g>
 				</g>
@@ -1956,7 +2350,7 @@ export const ChituboxRmaIcon = ({ size, fill }: any) => {
 				height="36"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 23.98 21.46"
-				className="fill-gray-300"
+				fill="currentColor"
 			>
 				<g>
 					<path
@@ -2003,7 +2397,7 @@ export const ChituboxSignInIcon = ({ size, fill }: any) => {
 				width="36"
 				height="36"
 				viewBox="0 0 28 28"
-				className="fill-gray-300"
+				fill="currentColor"
 			>
 				<g transform="translate(-88 -29)">
 					<g transform="translate(90 31)">
