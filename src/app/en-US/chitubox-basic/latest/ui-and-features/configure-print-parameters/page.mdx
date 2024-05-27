@@ -107,9 +107,11 @@ Here you can configure the resin's basic information, including the resin's name
 ### TSMC (Two-Stage Motion Control)
 
 <Admonition type="tip">
-	Migrating from Anycubic Photon Workshop? Heads up! The order of TSMC parameters in the UI is different.
+	Migrating from Anycubic Photon Workshop? Heads up!
 
-	In Photon Workshop, [0] refers to the motion stage closer to the screen, while [1] represents the stage farther away. CHITUBOX, however, follows the motion order when laying out the input text boxes. This can be confusing at first.
+	* Because Anycubic Photon Workshop offers both Basic and Advanced settings, and CHITUBOX's format lacks a dedicated field to differentiate them, CHITUBOX displays Basic parameters only for printers incompatible with Advanced settings. Conversely, it displays Advanced parameters only for printers that support both. However, if your printer supports Advanced settings but you don't want to use the TSMC feature, you can simply enter the same speed for both stages, and ensure the total lift distance remains the same as your desired distance.
+
+	* The order of TSMC parameters in the UI is different. In Photon Workshop, [0] refers to the motion stage closer to the screen, while [1] represents the stage farther away. CHITUBOX, however, follows the motion order when laying out the input text boxes. This can be confusing at first.
 </Admonition>
 
 You might have noticed that there are two sets of lifting and retracting parameters in the print settings, this is where you can set up TSMC.

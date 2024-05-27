@@ -101,9 +101,11 @@ export const metadata = {
 ### TSMC（二段運動控制）
 
 <Admonition type="tip">
-	從 Anycubic Photon Workshop 而來？小心！ UI 中 TSMC 參數的順序不同。
+	從 Anycubic Photon Workshop 而來？小心！
 
-	在 Photon Workshop 中，[0] 表示距離螢幕較近的運動階段，而 [1] 表示距離螢幕較遠的階段。然而，CHITUBOX 在版面配置輸入文字方塊時遵循運動順序。一開始這可能會令人困惑。
+	* 由於 Anycubic Photon Workshop 提供基本和高級設置，而 CHITUBOX 的格式缺少專門的字段來區分它們，因此，對於不相容高級設置的印表機，CHITUBOX 僅顯示基本參數。相反，對於同時支援兩者的印表機，CHITUBOX 僅顯示進階參數。如果您的印表機支援進階設置，但您不想使用 TSMC 功能，您只需為兩個階段輸入相同的速度，並確保總升降距離與所需距離保持一致。
+
+	* UI 中 TSMC 參數的順序不同。在 Photon Workshop 中，[0] 表示距離螢幕較近的運動階段，而 [1] 表示距離螢幕較遠的階段。然而，CHITUBOX 在版面配置輸入文字方塊時遵循運動順序。一開始這可能會令人困惑。
 </Admonition>
 
 你可能已經注意到列印設定中有兩組抬升和回縮參數，這裡是設定 TSMC 的地方。
