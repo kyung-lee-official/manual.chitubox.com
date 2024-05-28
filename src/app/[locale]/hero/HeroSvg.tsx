@@ -4,8 +4,7 @@ export const HeroLight = ({ size, fill }: any) => {
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
 			version="1.1"
-			width="2400"
-			height="720"
+			width="100%"
 			viewBox="0 0 2400 720"
 		>
 			<defs>
@@ -303,8 +302,31 @@ export const HeroLight = ({ size, fill }: any) => {
 					<stop offset="0%" stopColor="#911DFF" stopOpacity="1" />
 					<stop offset="100%" stopColor="#EAD4FF" stopOpacity="1" />
 				</linearGradient>
+				<linearGradient
+					id="mask-gradient"
+					x1="0"
+					y1="0"
+					x2="2400"
+					y2="0"
+					gradientUnits="userSpaceOnUse"
+				>
+					<stop stopColor="black" offset={0} />
+					<stop stopColor="white" offset={0.1} />
+					<stop stopColor="white" offset={0.9} />
+					<stop stopColor="black" offset={1} />
+				</linearGradient>
 			</defs>
-			<g>
+			<mask
+				id="mask-container"
+				maskUnits="userSpaceOnUse"
+				x="0"
+				y="0"
+				width="2400"
+				height="720"
+			>
+				<rect fill="url(#mask-gradient)" width={2400} height={720} />
+			</mask>
+			<g mask="url(#mask-container)">
 				<rect
 					x="0"
 					y="0"

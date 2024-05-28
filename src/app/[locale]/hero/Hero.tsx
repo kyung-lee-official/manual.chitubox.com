@@ -24,7 +24,7 @@ const Hero = () => {
 			);
 		} else {
 			return (
-				<div className="flex w-full justify-center items-center">
+				<div className="w-full max-w-[2400px] mx-auto">
 					<HeroLight />
 				</div>
 			);
