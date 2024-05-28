@@ -4,6 +4,7 @@ import { Theme, useThemeStore } from "@/stores/theme";
 import { MediaQuery } from "@/utils/types";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
+import { HeroLight } from "./HeroSvg";
 
 const Hero = () => {
 	const { theme } = useThemeStore();
@@ -24,12 +25,7 @@ const Hero = () => {
 		} else {
 			return (
 				<div className="flex w-full justify-center items-center">
-					<Image
-						src="/images/pages/hero/hero-light.jpg"
-						width={1920}
-						height={720}
-						alt="hero"
-					/>
+					<HeroLight />
 				</div>
 			);
 		}
