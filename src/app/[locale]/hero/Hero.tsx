@@ -4,7 +4,7 @@ import { Theme, useThemeStore } from "@/stores/theme";
 import { MediaQuery } from "@/utils/types";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
-import { HeroLight } from "./HeroSvg";
+import { HeroDark, HeroLight } from "./HeroSvg";
 
 const Hero = () => {
 	const { theme } = useThemeStore();
@@ -13,13 +13,8 @@ const Hero = () => {
 	if (isLg) {
 		if (theme === Theme.DARK) {
 			return (
-				<div className="flex w-full justify-center items-center">
-					<Image
-						src="/images/pages/hero/hero-dark.jpg"
-						width={1920}
-						height={720}
-						alt="hero"
-					/>
+				<div className="w-full max-w-[2400px] mx-auto">
+					<HeroDark />
 				</div>
 			);
 		} else {
@@ -32,24 +27,14 @@ const Hero = () => {
 	} else {
 		if (theme === Theme.DARK) {
 			return (
-				<div className="flex w-full justify-center items-center">
-					<Image
-						src="/images/pages/hero/mobile-hero-dark.png"
-						width={700}
-						height={320}
-						alt="hero"
-					/>
+				<div className="w-full max-w-[2400px] mx-auto">
+					<HeroDark />
 				</div>
 			);
 		} else {
 			return (
-				<div className="flex w-full justify-center items-center">
-					<Image
-						src="/images/pages/hero/mobile-hero-light.png"
-						width={700}
-						height={320}
-						alt="hero"
-					/>
+				<div className="w-full max-w-[2400px] mx-auto">
+					<HeroLight />
 				</div>
 			);
 		}
