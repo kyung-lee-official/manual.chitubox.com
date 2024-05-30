@@ -1,7 +1,8 @@
 export const metadata = {
 	title: "CHITUBOX Basic FAQ",
 	authors: [{ name: "CHITUBOX Team" }],
-	description: "Check out our CHITUBOX Basic FAQ (Frequently Asked Questions) to find answers to common questions.",
+	description:
+		"Check out our CHITUBOX Basic FAQ (Frequently Asked Questions) to find answers to common questions.",
 	other: {
 		pageId: "/en-US/chitubox-basic-faq",
 	},
@@ -63,6 +64,23 @@ Please open System Settings> About> Advanced System Settings and remove the envi
 />
 
 Please open System Settings> About> Advanced System Settings and remove the two environment variables `QT_OPENGL` and `QT_PLUGIN_PATH`.
+
+### The code execution cannot process because CbdXXXX.dll was not found
+
+Stuck installing software due to a missing CbdXXXX.dll error? This could be caused by permission issues. Here's a quick fix:
+
+1. Click on the Search bar on your taskbar or press the Windows key on your keyboard.
+1. Type "UAC" in the search field.
+1. Click on "Change User Account Control settings" in the search results.
+1. Reset your User Account Control (UAC) settings to the **Notify me only when apps try to make changes to my computer (default)** option.
+
+After resetting UAC, try to install the software again.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/faq/chitubox-basic/2.x.x/user-account-control-settings.png"
+	}
+/>
 
 ### CHITUBOX is Not Responding
 
@@ -199,11 +217,15 @@ For some reason, you might encounter other issues caused by data corruption betw
     Macintosh HD/Users/{user-name}/Library/Application Support
     ```
 
-	- Ubuntu:
+    - Ubuntu:
 
     ```shell
     ~/.local/share
     ```
+
+	_If you can't find AppData or Library folder, they may be hidden. Here's how to reveal them:_<br />
+	_Windows: Open File Explorer, go to the View tab, and tick the checkbox for Hidden items._ <br />
+	_Mac: In Finder, navigate to the desired location, and press Command + Shift + . (period key)._
 
 1. Close CHITUBOX Basic (**the order matters**).
 

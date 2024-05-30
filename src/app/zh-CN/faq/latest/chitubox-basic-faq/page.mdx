@@ -1,7 +1,8 @@
 export const metadata = {
 	title: "常见问题",
 	authors: [{ name: "CHITUBOX Team" }],
-	description: "Check out our CHITUBOX Basic FAQ (Frequently Asked Questions) to find answers to common questions.",
+	description:
+		"Check out our CHITUBOX Basic FAQ (Frequently Asked Questions) to find answers to common questions.",
 	other: {
 		pageId: "/zh-CN/chitubox-basic-faq",
 	},
@@ -63,6 +64,23 @@ regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 />
 
 请打开 系统设置 > 关于 > 高级系统设置，删除 `QT_OPENGL` `QT_PLUGIN_PATH` 这两个环境变量。
+
+### 报错：无法启动此程序，因为计算机中缺少 CbdXXXX.dll
+
+由于缺少 CbdXXXX.dll 文件而无法安装软件？这可能是权限问题造成的。以下是快速解决方法：
+
+1.  点击任务栏上的搜索栏，或按下键盘上的 Windows 键。
+1.  在搜索栏中输入“用户账户控制”或“UAC”。
+1.  在搜索结果中点击“更改用户账户控制设置”。
+1.  将用户账户控制设置改为 **仅当应用尝试更改我的计算机时通知我（默认）** 选项。
+
+重置后，请再次尝试安装软件。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/faq/chitubox-basic/2.x.x/user-account-control-settings.png"
+	}
+/>
 
 ### CHITUBOX 无响应
 
@@ -198,7 +216,7 @@ STL 文件并不包含具体的单位信息，而是使用数字记录。因此�
     Macintosh HD/Users/{user-name}/Library/Application Support
     ```
 
-	- Ubuntu:
+    - Ubuntu:
 
     ```shell
     ~/.local/share
