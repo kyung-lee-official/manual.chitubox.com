@@ -25,7 +25,9 @@ export const metadata = {
 
 按 Ctrl + Shift + Esc 調出您的 Windows 工作管理員，右鍵點擊 Windows 檔案總管，然後單擊重新啟動。
 
-<ImageContainer src={"/images/docs/zh-CN/faq/chitubox-basic/faq002.png"} />
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq002.png"}
+/>
 
 在工作管理員中，點擊 檔案 > 建立新工作，輸入 `cmd`, 勾選 **以系統管理權限建立此工作**, 然後點擊 **確定**.
 
@@ -49,13 +51,17 @@ regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 
 ### 和 Fusion 360 衝突或者 OpenGL 報錯 Failed to create OpenGL context for format QSurfaceFormat
 
-<ImageContainer src={"/images/docs/zh-CN/faq/chitubox-basic/faq001.png"} />
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq001.png"}
+/>
 
 請打開 系統設置 > 關於 > 高級系統設置，刪除環境變數 `QT_OPENGL` 。
 
 ### 報錯：This application failed to start because no Qt platform plugin could be initialized
 
-<ImageContainer src={"/images/docs/zh-CN/faq/chitubox-basic/faq006.png"} />
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq006.png"}
+/>
 
 請打開 系統設置 > 關於 > 高級系統設置，刪除 `QT_OPENGL` `QT_PLUGIN_PATH` 這兩個環境變數。
 
@@ -78,7 +84,9 @@ regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 
 ### CHITUBOX 無響應
 
-<ImageContainer src={"/images/docs/zh-CN/faq/chitubox-basic/faq008.png"} />
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq008.png"}
+/>
 
 極有可能是軟體衝突問題，請逐一退出正在運行的軟體，並查找與 CHITUBOX 衝突的軟體。完成此操作後，大多數情況下應該可以解決問題。
 
@@ -114,7 +122,9 @@ regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 
 ### 縮略圖異常
 
-<ImageContainer src={"/images/docs/zh-CN/faq/chitubox-basic/faq004.png"} />
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq004.png"}
+/>
 
 按住 Ctrl + Shift + Esc 打開工作管理員，點擊 檔案 > 建立新工作，輸入 `cmd`, 勾選 **以系統管理權限建立此工作**，然後點擊 **確定**。
 
@@ -132,7 +142,9 @@ regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 
 按下回車鍵 Enter 執行命令。
 
-<ImageContainer src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-1.png"} />
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq004-1.png"}
+/>
 
 輸入：
 
@@ -142,7 +154,9 @@ regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 
 按下回車鍵 Enter 執行命令。
 
-<ImageContainer src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-2.png"} />
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq004-2.png"}
+/>
 
 **清理磁碟**
 
@@ -150,11 +164,15 @@ regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 
 勾選“縮略圖”，再點擊“清理系統檔”，然後點擊“確定”。
 
-<ImageContainer src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-4.png"} />
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq004-4.png"}
+/>
 
 選擇“刪除檔案”。
 
-<ImageContainer src={"/images/docs/zh-CN/faq/chitubox-basic/faq004-5.png"} />
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq004-5.png"}
+/>
 
 **重新啟動檔案總管**
 
@@ -167,7 +185,7 @@ regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 如圖所示，每一顆立方體的高是在切片設定中設定的層高，長是螢幕上橫向每個像素的長度，寬是螢幕上縱向每個像素的寬度。長、寬、高構成體素的體積。體素是構成列印件的最小單位。
 
 <ImageContainer
-	src={"/images/docs/zh-CN/faq/chitubox-basic/faq005.png"}
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq005.png"}
 	style={{ maxwidth: "400px" }}
 />
 
@@ -211,7 +229,9 @@ STL 檔案並不包含具體的單位資訊，而是使用數字記錄。因此�
 1. 確保已經關閉 CHITUBOX Basic 後，找到該目錄下的 📂chitubox2_0 和 📂chituboxResource 文件夾，將這兩個文件夾刪除。
 
     <ImageContainer
-    	src={"/images/docs/zh-CN/faq/chitubox-basic/2.x.x/windows-path.png"}
+    	src={
+    		"/images/docs/zh-CN/faq/chitubox-basic/2.x.x/windows-path.png"
+    	}
     />
 
 1. 重新打開 CHITUBOX Basic。
@@ -229,4 +249,6 @@ STL 檔案並不包含具體的單位資訊，而是使用數字記錄。因此�
 -   ≤ 16GB
 -   分配單元大小 = 2048 bytes
 
-    <ImageContainer src={"/images/docs/zh-CN/faq/chitubox-basic/faq009.png"} />
+    <ImageContainer
+    	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq009.png"}
+    />
