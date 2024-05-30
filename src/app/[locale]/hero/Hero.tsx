@@ -2,9 +2,10 @@
 
 import { Theme, useThemeStore } from "@/stores/theme";
 import { MediaQuery } from "@/utils/types";
-import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import { HeroDark, HeroLight } from "./HeroSvg";
+import { MobileHeroLight } from "./MobileHeroLight";
+import { MobileHeroDark } from "./MobileHeroDark";
 
 const Hero = () => {
 	const { theme } = useThemeStore();
@@ -28,13 +29,13 @@ const Hero = () => {
 		if (theme === Theme.DARK) {
 			return (
 				<div className="w-full max-w-[2400px] mx-auto">
-					<HeroDark />
+					<MobileHeroDark />
 				</div>
 			);
 		} else {
 			return (
 				<div className="w-full max-w-[2400px] mx-auto">
-					<HeroLight />
+					<MobileHeroLight />
 				</div>
 			);
 		}

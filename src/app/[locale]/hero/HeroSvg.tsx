@@ -1319,7 +1319,8 @@ export const HeroLight = ({ size, fill }: any) => {
 
 export const HeroDark = ({ size, fill }: any) => {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg"
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
 			version="1.1"
 			width="100%"
@@ -1328,13 +1329,7 @@ export const HeroDark = ({ size, fill }: any) => {
 		>
 			<defs>
 				<clipPath id="master_svg0_171_8093">
-					<rect
-						x="0"
-						y="0"
-						width="2400"
-						height="720"
-						rx="0"
-					/>
+					<rect x="0" y="0" width="2400" height="720" rx="0" />
 				</clipPath>
 				<filter
 					id="master_svg1_171_8095"
@@ -1345,11 +1340,9 @@ export const HeroDark = ({ size, fill }: any) => {
 					width="2628"
 					height="897"
 				>
-					<feFlood
-						flood-opacity="0"
-						result="BackgroundImageFix"
-					/>
-					<feBlend mode="normal"
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feBlend
+						mode="normal"
 						in="SourceGraphic"
 						in2="BackgroundImageFix"
 						result="shape"
@@ -1389,10 +1382,7 @@ export const HeroDark = ({ size, fill }: any) => {
 					width="1060"
 					height="1059"
 				>
-					<feFlood
-						flood-opacity="0"
-						result="BackgroundImageFix"
-					/>
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -1413,16 +1403,15 @@ export const HeroDark = ({ size, fill }: any) => {
 					width="1060"
 					height="1059"
 				>
-					<feFlood
-						flood-opacity="0"
-						result="BackgroundImageFix"
-					/>
-					<feBlend mode="normal"
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feBlend
+						mode="normal"
 						in="SourceGraphic"
 						in2="BackgroundImageFix"
 						result="shape"
 					/>
-					<feGaussianBlur stdDeviation="71.5"
+					<feGaussianBlur
+						stdDeviation="71.5"
 						result="effect1_foregroundBlur"
 					/>
 				</filter>
@@ -1433,20 +1422,15 @@ export const HeroDark = ({ size, fill }: any) => {
 					x="-400"
 					y="-396"
 					width="1185"
-					height="1183">
-					<feFlood
-						flood-opacity="0"
-						result="BackgroundImageFix"
-					/>
+					height="1183"
+				>
+					<feFlood flood-opacity="0" result="BackgroundImageFix" />
 					<feColorMatrix
 						in="SourceAlpha"
 						type="matrix"
 						values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
 					/>
-					<feOffset
-						dy="4"
-						dx="0"
-					/>
+					<feOffset dy="4" dx="0" />
 					<feGaussianBlur stdDeviation="100" />
 					<feColorMatrix
 						type="matrix"
@@ -1471,16 +1455,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="0.20626631379127502"
 					id="master_svg6_166_8420"
 				>
-					<stop
-						offset="0%"
-						stop-color="#131516"
-						stop-opacity="1"
-					/>
-					<stop
-						offset="100%"
-						stop-color="#141414"
-						stop-opacity="1"
-					/>
+					<stop offset="0%" stop-color="#131516" stop-opacity="1" />
+					<stop offset="100%" stop-color="#141414" stop-opacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.03896103799343109"
@@ -1489,16 +1465,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="0.3315926790237427"
 					id="master_svg7_166_8422"
 				>
-					<stop
-						offset="0%"
-						stop-color="#FFFFFF"
-						stop-opacity="1"
-					/>
-					<stop
-						offset="100%"
-						stop-color="#FFFFFF"
-						stop-opacity="0"
-					/>
+					<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
 				</linearGradient>
 				<filter
 					id="master_svg8_171_8180"
@@ -1515,19 +1483,23 @@ export const HeroDark = ({ size, fill }: any) => {
 						type="matrix"
 						values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
 					/>
-					<feOffset
-						dy="4"
-						dx="0"
-					/>
+					<feOffset dy="4" dx="0" />
 					<feGaussianBlur stdDeviation="100" />
 					<feColorMatrix
 						type="matrix"
 						values="0 0 0 0 0.022210003808140755 0 0 0 0 0.12051991373300552 0 0 0 0 0.15277789533138275 0 0 0 0.6000000238418579 0"
 					/>
-					<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-					<feBlend mode="normal"
+					<feBlend
+						mode="normal"
+						in2="BackgroundImageFix"
+						result="effect1_dropShadow"
+					/>
+					<feBlend
+						mode="normal"
 						in="SourceGraphic"
-						in2="effect1_dropShadow" result="shape" />
+						in2="effect1_dropShadow"
+						result="shape"
+					/>
 				</filter>
 				<linearGradient
 					x1="1.0415583848953247"
@@ -1536,16 +1508,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="0.20626631379127502"
 					id="master_svg9_166_8420"
 				>
-					<stop
-						offset="0%"
-						stop-color="#131516"
-						stop-opacity="1"
-					/>
-					<stop
-						offset="100%"
-						stop-color="#141414"
-						stop-opacity="1"
-					/>
+					<stop offset="0%" stop-color="#131516" stop-opacity="1" />
+					<stop offset="100%" stop-color="#141414" stop-opacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.03896103799343109"
@@ -1554,16 +1518,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="0.3315926790237427"
 					id="master_svga_166_8422"
 				>
-					<stop
-						offset="0%"
-						stop-color="#FFFFFF"
-						stop-opacity="1"
-					/>
-					<stop
-						offset="100%"
-						stop-color="#FFFFFF"
-						stop-opacity="0"
-					/>
+					<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
 				</linearGradient>
 				<filter
 					id="master_svgb_171_8181"
@@ -1572,15 +1528,27 @@ export const HeroDark = ({ size, fill }: any) => {
 					x="-286"
 					y="-286"
 					width="1072"
-					height="1071">
+					height="1071"
+				>
 					<feFlood flood-opacity="0" result="BackgroundImageFix" />
-					<feBlend mode="normal"
+					<feBlend
+						mode="normal"
 						in="SourceGraphic"
-						in2="BackgroundImageFix" result="shape" />
-					<feGaussianBlur stdDeviation="71.5" result="effect1_foregroundBlur" />
+						in2="BackgroundImageFix"
+						result="shape"
+					/>
+					<feGaussianBlur
+						stdDeviation="71.5"
+						result="effect1_foregroundBlur"
+					/>
 				</filter>
 				<linearGradient
-					x1="0.5" y1="0" x2="0.5" y2="1" id="master_svgd_166_8410">
+					x1="0.5"
+					y1="0"
+					x2="0.5"
+					y2="1"
+					id="master_svgd_166_8410"
+				>
 					<stop
 						offset="20.952323079109192%"
 						stop-color="#3DD4FB"
@@ -1617,16 +1585,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgg_166_8406"
 				>
-					<stop
-						offset="0%"
-						stop-color="#F77BFE"
-						stop-opacity="1"
-					/>
-					<stop
-						offset="100%"
-						stop-color="#220327"
-						stop-opacity="1"
-					/>
+					<stop offset="0%" stop-color="#F77BFE" stop-opacity="1" />
+					<stop offset="100%" stop-color="#220327" stop-opacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.5"
@@ -1635,16 +1595,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgh_166_8386"
 				>
-					<stop
-						offset="0%"
-						stop-color="#FFA76D"
-						stop-opacity="1"
-					/>
-					<stop
-						offset="100%"
-						stop-color="#301801"
-						stop-opacity="1"
-					/>
+					<stop offset="0%" stop-color="#FFA76D" stop-opacity="1" />
+					<stop offset="100%" stop-color="#301801" stop-opacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.5"
@@ -1653,16 +1605,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgj_166_8401"
 				>
-					<stop
-						offset="0%"
-						stop-color="#FF82AE"
-						stop-opacity="1"
-					/>
-					<stop
-						offset="100%"
-						stop-color="#33001C"
-						stop-opacity="1"
-					/>
+					<stop offset="0%" stop-color="#FF82AE" stop-opacity="1" />
+					<stop offset="100%" stop-color="#33001C" stop-opacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.5"
@@ -1671,16 +1615,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgk_166_8398"
 				>
-					<stop
-						offset="0%"
-						stop-color="#2D0019"
-						stop-opacity="1"
-					/>
-					<stop
-						offset="100%"
-						stop-color="#FF8AB3"
-						stop-opacity="1"
-					/>
+					<stop offset="0%" stop-color="#2D0019" stop-opacity="1" />
+					<stop offset="100%" stop-color="#FF8AB3" stop-opacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.5"
@@ -1689,11 +1625,7 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgn_166_8371"
 				>
-					<stop
-						offset="0%"
-						stop-color="#509CEF"
-						stop-opacity="1"
-					/>
+					<stop offset="0%" stop-color="#509CEF" stop-opacity="1" />
 					<stop
 						offset="99.52375292778015%"
 						stop-color="#001D33"
@@ -1707,16 +1639,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgp_166_8390"
 				>
-					<stop
-						offset="0%"
-						stop-color="#B970FF"
-						stop-opacity="1"
-					/>
-					<stop
-						offset="100%"
-						stop-color="#20003F"
-						stop-opacity="1"
-					/>
+					<stop offset="0%" stop-color="#B970FF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#20003F" stop-opacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.5"
@@ -1725,19 +1649,11 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgq_166_8390"
 				>
-					<stop
-						offset="0%"
-						stop-color="#B970FF"
-						stop-opacity="1"
-					/>
-					<stop
-						offset="100%"
-						stop-color="#20003F"
-						stop-opacity="1"
-					/>
+					<stop offset="0%" stop-color="#B970FF" stop-opacity="1" />
+					<stop offset="100%" stop-color="#20003F" stop-opacity="1" />
 				</linearGradient>
 			</defs>
-			<g clip-path="url(#master_svg0_171_8093)">
+			<g clipPath="url(#master_svg0_171_8093)">
 				<rect
 					x="0"
 					y="0"
@@ -1919,7 +1835,6 @@ export const HeroDark = ({ size, fill }: any) => {
 						</g>
 					</g>
 					<g>
-
 						<g>
 							<rect
 								x="-97.5"
@@ -2772,18 +2687,19 @@ export const HeroDark = ({ size, fill }: any) => {
 						</g>
 					</g>
 					<g>
-						<g><rect
-							x="-104.5"
-							y="347.5"
-							width="216"
-							height="216"
-							rx="0"
-							fill-opacity="0"
-							stroke-opacity="1"
-							stroke="#1E2021"
-							fill="none"
-							stroke-width="1"
-						/>
+						<g>
+							<rect
+								x="-104.5"
+								y="347.5"
+								width="216"
+								height="216"
+								rx="0"
+								fill-opacity="0"
+								stroke-opacity="1"
+								stroke="#1E2021"
+								fill="none"
+								stroke-width="1"
+							/>
 						</g>
 						<g>
 							<rect
@@ -2942,7 +2858,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					</g>
 					<g>
 						<g>
-							<rect x="-104.5"
+							<rect
+								x="-104.5"
 								y="563.5"
 								width="216"
 								height="216"
@@ -3143,9 +3060,11 @@ export const HeroDark = ({ size, fill }: any) => {
 						cx="1005.5"
 						cy="835.5"
 						rx="191.5"
-						ry="190.5" stroke="url(#master_svg7_166_8422)"
+						ry="190.5"
+						stroke="url(#master_svg7_166_8422)"
 						fill-opacity="0"
-						fill="none" stroke-width="2"
+						fill="none"
+						stroke-width="2"
 					/>
 				</g>
 				<g filter="url(#master_svg8_171_8180)">
@@ -3173,7 +3092,8 @@ export const HeroDark = ({ size, fill }: any) => {
 						cx="973"
 						cy="-59.5"
 						rx="250"
-						ry="249.5" fill="#702268"
+						ry="249.5"
+						fill="#702268"
 						fill-opacity="0.20000000298023224"
 					/>
 				</g>
@@ -3206,12 +3126,16 @@ export const HeroDark = ({ size, fill }: any) => {
 									x="505.2265625"
 									y="227.689453125"
 									width="89.49836730957031"
-									height="339.13525390625" rx="0"
+									height="339.13525390625"
+									rx="0"
 									fill="url(#master_svgd_166_8410)"
 									fill-opacity="1"
 								/>
 							</g>
-							<g transform="matrix(0,1,-1,0,1059.6712646484375,-354.9212646484375)" style={{ opacity: 0.8999999761581421 }}>
+							<g
+								transform="matrix(0,1,-1,0,1059.6712646484375,-354.9212646484375)"
+								style={{ opacity: 0.8999999761581421 }}
+							>
 								<foreignObject
 									x="707.2962646484375"
 									y="352.375"
@@ -3241,7 +3165,8 @@ export const HeroDark = ({ size, fill }: any) => {
 								height="339.13525390625"
 								rx="0"
 								fill="url(#master_svgg_166_8406)"
-								fill-opacity="1" />
+								fill-opacity="1"
+							/>
 						</g>
 						<g>
 							<g style={{ opacity: 0.8999999761581421 }}>
@@ -3252,9 +3177,13 @@ export const HeroDark = ({ size, fill }: any) => {
 									height="342"
 									rx="0"
 									fill="url(#master_svgh_166_8386)"
-									fill-opacity="1" />
+									fill-opacity="1"
+								/>
 							</g>
-							<g transform="matrix(0,1,-1,0,1397.35546875,-941.625)" style={{ opacity: 0.8999999761581421 }}>
+							<g
+								transform="matrix(0,1,-1,0,1397.35546875,-941.625)"
+								style={{ opacity: 0.8999999761581421 }}
+							>
 								<foreignObject
 									x="1169.490234375"
 									y="227.865234375"
@@ -3318,7 +3247,8 @@ export const HeroDark = ({ size, fill }: any) => {
 									x="1374"
 									y="155"
 									width="179"
-									height="414" rx="0"
+									height="414"
+									rx="0"
 									fill="url(#master_svgn_166_8371)"
 									fill-opacity="1"
 								/>
@@ -3345,13 +3275,18 @@ export const HeroDark = ({ size, fill }: any) => {
 								<div className="bg-[conic-gradient(from_180deg,#001779,#9CAAFF);] w-full h-full"></div>
 							</foreignObject>
 						</g>
-						<g><g style={{ opacity: 0.8999999761581421 }}>
-							<path d="M1826.90625,230.865234375L2066.50025,570.000234375L2165.99625,570.000234375L1926.40465,230.865234375L1826.90625,230.865234375Z"
-								fill="url(#master_svgp_166_8390)"
-								fill-opacity="1"
-							/>
-						</g>
-							<g transform="matrix(-1,0,0,1,4351.99169921875,0)" style={{ opacity: 0.8999999761581421 }}>
+						<g>
+							<g style={{ opacity: 0.8999999761581421 }}>
+								<path
+									d="M1826.90625,230.865234375L2066.50025,570.000234375L2165.99625,570.000234375L1926.40465,230.865234375L1826.90625,230.865234375Z"
+									fill="url(#master_svgp_166_8390)"
+									fill-opacity="1"
+								/>
+							</g>
+							<g
+								transform="matrix(-1,0,0,1,4351.99169921875,0)"
+								style={{ opacity: 0.8999999761581421 }}
+							>
 								<path
 									d="M2175.995849609375,230.865234375L2415.589849609375,570.000234375L2515.085849609375,570.000234375L2275.494249609375,230.865234375L2175.995849609375,230.865234375Z"
 									fill="url(#master_svgq_166_8390)"
@@ -3362,8 +3297,6 @@ export const HeroDark = ({ size, fill }: any) => {
 					</g>
 				</g>
 			</g>
-		</svg >
+		</svg>
 	);
 };
-
-
