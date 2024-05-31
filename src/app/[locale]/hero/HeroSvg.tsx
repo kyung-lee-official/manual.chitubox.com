@@ -1334,13 +1334,13 @@ export const HeroDark = ({ size, fill }: any) => {
 				<filter
 					id="master_svg1_171_8095"
 					filterUnits="objectBoundingBox"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 					x="-16"
 					y="-16"
 					width="2628"
 					height="897"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -1355,13 +1355,13 @@ export const HeroDark = ({ size, fill }: any) => {
 				<filter
 					id="master_svg2_171_8136"
 					filterUnits="objectBoundingBox"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 					x="-2"
 					y="-2"
 					width="2600"
 					height="869"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -1376,13 +1376,13 @@ export const HeroDark = ({ size, fill }: any) => {
 				<filter
 					id="master_svg3_171_8177"
 					filterUnits="objectBoundingBox"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 					x="-286"
 					y="-286"
 					width="1060"
 					height="1059"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -1397,13 +1397,13 @@ export const HeroDark = ({ size, fill }: any) => {
 				<filter
 					id="master_svg4_171_8178"
 					filterUnits="objectBoundingBox"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 					x="-286"
 					y="-286"
 					width="1060"
 					height="1059"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -1418,13 +1418,13 @@ export const HeroDark = ({ size, fill }: any) => {
 				<filter
 					id="master_svg5_171_8179"
 					filterUnits="objectBoundingBox"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 					x="-400"
 					y="-396"
 					width="1185"
 					height="1183"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feColorMatrix
 						in="SourceAlpha"
 						type="matrix"
@@ -1455,8 +1455,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="0.20626631379127502"
 					id="master_svg6_166_8420"
 				>
-					<stop offset="0%" stop-color="#131516" stop-opacity="1" />
-					<stop offset="100%" stop-color="#141414" stop-opacity="1" />
+					<stop offset="0%" stopColor="#131516" stopOpacity="1" />
+					<stop offset="100%" stopColor="#141414" stopOpacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.03896103799343109"
@@ -1465,19 +1465,19 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="0.3315926790237427"
 					id="master_svg7_166_8422"
 				>
-					<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
-					<stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+					<stop offset="0%" stopColor="#424040" stopOpacity="1" />
+					<stop offset="100%" stopColor="#1E2021" stopOpacity="0" />
 				</linearGradient>
 				<filter
 					id="master_svg8_171_8180"
 					filterUnits="objectBoundingBox"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 					x="-400"
 					y="-396"
 					width="1029"
 					height="1027.8103790283203"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feColorMatrix
 						in="SourceAlpha"
 						type="matrix"
@@ -1508,8 +1508,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="0.20626631379127502"
 					id="master_svg9_166_8420"
 				>
-					<stop offset="0%" stop-color="#131516" stop-opacity="1" />
-					<stop offset="100%" stop-color="#141414" stop-opacity="1" />
+					<stop offset="0%" stopColor="#131516" stopOpacity="1" />
+					<stop offset="100%" stopColor="#141414" stopOpacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.03896103799343109"
@@ -1518,19 +1518,19 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="0.3315926790237427"
 					id="master_svga_166_8422"
 				>
-					<stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
-					<stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+					<stop offset="0%" stopColor="#424040" stopOpacity="1" />
+					<stop offset="100%" stopColor="#1E2021" stopOpacity="0" />
 				</linearGradient>
 				<filter
 					id="master_svgb_171_8181"
 					filterUnits="objectBoundingBox"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 					x="-286"
 					y="-286"
 					width="1072"
 					height="1071"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -1551,13 +1551,13 @@ export const HeroDark = ({ size, fill }: any) => {
 				>
 					<stop
 						offset="20.952323079109192%"
-						stop-color="#3DD4FB"
-						stop-opacity="1"
+						stopColor="#3DD4FB"
+						stopOpacity="1"
 					/>
 					<stop
 						offset="99.52375292778015%"
-						stop-color="#001F25"
-						stop-opacity="1"
+						stopColor="#001F25"
+						stopOpacity="1"
 					/>
 				</linearGradient>
 				<linearGradient
@@ -1569,13 +1569,13 @@ export const HeroDark = ({ size, fill }: any) => {
 				>
 					<stop
 						offset="20.952323079109192%"
-						stop-color="#3DD4FB"
-						stop-opacity="1"
+						stopColor="#3DD4FB"
+						stopOpacity="1"
 					/>
 					<stop
 						offset="99.52375292778015%"
-						stop-color="#001F25"
-						stop-opacity="1"
+						stopColor="#001F25"
+						stopOpacity="1"
 					/>
 				</linearGradient>
 				<linearGradient
@@ -1585,8 +1585,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgg_166_8406"
 				>
-					<stop offset="0%" stop-color="#F77BFE" stop-opacity="1" />
-					<stop offset="100%" stop-color="#220327" stop-opacity="1" />
+					<stop offset="0%" stopColor="#F77BFE" stopOpacity="1" />
+					<stop offset="100%" stopColor="#220327" stopOpacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.5"
@@ -1595,8 +1595,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgh_166_8386"
 				>
-					<stop offset="0%" stop-color="#FFA76D" stop-opacity="1" />
-					<stop offset="100%" stop-color="#301801" stop-opacity="1" />
+					<stop offset="0%" stopColor="#FFA76D" stopOpacity="1" />
+					<stop offset="100%" stopColor="#301801" stopOpacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.5"
@@ -1605,8 +1605,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgj_166_8401"
 				>
-					<stop offset="0%" stop-color="#FF82AE" stop-opacity="1" />
-					<stop offset="100%" stop-color="#33001C" stop-opacity="1" />
+					<stop offset="0%" stopColor="#FF82AE" stopOpacity="1" />
+					<stop offset="100%" stopColor="#33001C" stopOpacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.5"
@@ -1615,8 +1615,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgk_166_8398"
 				>
-					<stop offset="0%" stop-color="#2D0019" stop-opacity="1" />
-					<stop offset="100%" stop-color="#FF8AB3" stop-opacity="1" />
+					<stop offset="0%" stopColor="#2D0019" stopOpacity="1" />
+					<stop offset="100%" stopColor="#FF8AB3" stopOpacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.5"
@@ -1625,11 +1625,11 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgn_166_8371"
 				>
-					<stop offset="0%" stop-color="#509CEF" stop-opacity="1" />
+					<stop offset="0%" stopColor="#509CEF" stopOpacity="1" />
 					<stop
 						offset="99.52375292778015%"
-						stop-color="#001D33"
-						stop-opacity="1"
+						stopColor="#001D33"
+						stopOpacity="1"
 					/>
 				</linearGradient>
 				<linearGradient
@@ -1639,8 +1639,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgp_166_8390"
 				>
-					<stop offset="0%" stop-color="#B970FF" stop-opacity="1" />
-					<stop offset="100%" stop-color="#20003F" stop-opacity="1" />
+					<stop offset="0%" stopColor="#B970FF" stopOpacity="1" />
+					<stop offset="100%" stopColor="#20003F" stopOpacity="1" />
 				</linearGradient>
 				<linearGradient
 					x1="0.5"
@@ -1649,8 +1649,8 @@ export const HeroDark = ({ size, fill }: any) => {
 					y2="1"
 					id="master_svgq_166_8390"
 				>
-					<stop offset="0%" stop-color="#B970FF" stop-opacity="1" />
-					<stop offset="100%" stop-color="#20003F" stop-opacity="1" />
+					<stop offset="0%" stopColor="#B970FF" stopOpacity="1" />
+					<stop offset="100%" stopColor="#20003F" stopOpacity="1" />
 				</linearGradient>
 			</defs>
 			<g clipPath="url(#master_svg0_171_8093)">
@@ -1661,7 +1661,7 @@ export const HeroDark = ({ size, fill }: any) => {
 					height="720"
 					rx="0"
 					fill="#0D0D0D"
-					fill-opacity="1"
+					fillOpacity="1"
 				/>
 				<g filter="url(#master_svg1_171_8095)">
 					<g>
@@ -1672,11 +1672,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1686,11 +1686,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1700,11 +1700,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1714,11 +1714,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1728,11 +1728,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1742,11 +1742,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1756,11 +1756,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1770,11 +1770,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1784,11 +1784,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1798,11 +1798,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1812,11 +1812,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1826,11 +1826,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 					</g>
@@ -1842,11 +1842,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1856,11 +1856,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1870,11 +1870,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1884,11 +1884,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1898,11 +1898,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1912,11 +1912,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1926,11 +1926,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1940,11 +1940,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1954,11 +1954,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1968,11 +1968,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1982,11 +1982,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -1996,11 +1996,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 					</g>
@@ -2012,11 +2012,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2026,11 +2026,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2040,11 +2040,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2054,11 +2054,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2068,11 +2068,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2082,11 +2082,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2096,11 +2096,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2110,11 +2110,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2124,11 +2124,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2138,11 +2138,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2152,11 +2152,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2166,11 +2166,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 					</g>
@@ -2182,11 +2182,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2196,11 +2196,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2210,11 +2210,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2224,11 +2224,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2238,11 +2238,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2252,11 +2252,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2266,11 +2266,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2280,11 +2280,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2294,11 +2294,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2308,11 +2308,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2322,11 +2322,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2336,11 +2336,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#000000"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 					</g>
@@ -2354,11 +2354,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2368,11 +2368,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2382,11 +2382,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2396,11 +2396,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2410,11 +2410,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2424,11 +2424,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2438,11 +2438,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2452,11 +2452,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2466,11 +2466,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2480,11 +2480,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2494,11 +2494,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2508,11 +2508,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 					</g>
@@ -2524,11 +2524,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2538,11 +2538,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2552,11 +2552,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2566,11 +2566,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2580,11 +2580,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2594,11 +2594,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2608,11 +2608,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2622,11 +2622,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2636,11 +2636,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2650,11 +2650,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2664,11 +2664,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2678,11 +2678,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 					</g>
@@ -2694,11 +2694,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2708,11 +2708,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2722,11 +2722,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2736,11 +2736,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2750,11 +2750,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2764,11 +2764,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2778,11 +2778,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2792,11 +2792,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2806,11 +2806,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2820,11 +2820,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2834,11 +2834,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2848,11 +2848,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 					</g>
@@ -2864,11 +2864,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2878,11 +2878,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2892,11 +2892,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2906,11 +2906,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2920,11 +2920,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2934,11 +2934,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="217"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2948,11 +2948,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2962,11 +2962,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2976,11 +2976,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -2990,11 +2990,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -3004,11 +3004,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 						<g>
@@ -3018,11 +3018,11 @@ export const HeroDark = ({ size, fill }: any) => {
 								width="216"
 								height="216"
 								rx="0"
-								fill-opacity="0"
-								stroke-opacity="1"
+								fillOpacity="0"
+								strokeOpacity="1"
 								stroke="#1E2021"
 								fill="none"
-								stroke-width="1"
+								strokeWidth="1"
 							/>
 						</g>
 					</g>
@@ -3034,7 +3034,7 @@ export const HeroDark = ({ size, fill }: any) => {
 						rx="244"
 						ry="243.5"
 						fill="#702268"
-						fill-opacity="0.20000000298023224"
+						fillOpacity="0.20000000298023224"
 					/>
 				</g>
 				<g filter="url(#master_svg4_171_8178)">
@@ -3044,7 +3044,7 @@ export const HeroDark = ({ size, fill }: any) => {
 						rx="244"
 						ry="243.5"
 						fill="#0D3841"
-						fill-opacity="0.30000001192092896"
+						fillOpacity="0.30000001192092896"
 					/>
 				</g>
 				<g filter="url(#master_svg5_171_8179)">
@@ -3054,7 +3054,7 @@ export const HeroDark = ({ size, fill }: any) => {
 						rx="192.5"
 						ry="191.5"
 						fill="url(#master_svg6_166_8420)"
-						fill-opacity="1"
+						fillOpacity="1"
 					/>
 					<ellipse
 						cx="1005.5"
@@ -3062,9 +3062,9 @@ export const HeroDark = ({ size, fill }: any) => {
 						rx="191.5"
 						ry="190.5"
 						stroke="url(#master_svg7_166_8422)"
-						fill-opacity="0"
+						fillOpacity="0"
 						fill="none"
-						stroke-width="2"
+						strokeWidth="2"
 					/>
 				</g>
 				<g filter="url(#master_svg8_171_8180)">
@@ -3074,7 +3074,7 @@ export const HeroDark = ({ size, fill }: any) => {
 						rx="114.5"
 						ry="113.90518951416016"
 						fill="url(#master_svg9_166_8420)"
-						fill-opacity="1"
+						fillOpacity="1"
 					/>
 					<ellipse
 						cx="1684.5"
@@ -3082,9 +3082,9 @@ export const HeroDark = ({ size, fill }: any) => {
 						rx="113.5"
 						ry="112.90518951416016"
 						stroke="url(#master_svga_166_8422)"
-						fill-opacity="0"
+						fillOpacity="0"
 						fill="none"
-						stroke-width="2"
+						strokeWidth="2"
 					/>
 				</g>
 				<g filter="url(#master_svgb_171_8181)">
@@ -3094,7 +3094,7 @@ export const HeroDark = ({ size, fill }: any) => {
 						rx="250"
 						ry="249.5"
 						fill="#702268"
-						fill-opacity="0.20000000298023224"
+						fillOpacity="0.20000000298023224"
 					/>
 				</g>
 				<g>
@@ -3102,7 +3102,7 @@ export const HeroDark = ({ size, fill }: any) => {
 						<path
 							d="M654.1831999999999,133L666.2365,133L666.2365,200.796L651.0998,200.796L651.0998,160.6L635.6828,182.4577L627.5538,182.4577L611.9499,160.4148L611.9499,200.796L597,200.796L597,133L609.3336,133L631.8519,165.69400000000002L654.1831999999999,133ZM714.543,133L742.294,200.796L725.475,200.796L720.2429999999999,187.08859999999999L694.3609,187.08859999999999L689.3154,200.796L673.4312,200.796L700.434,133L714.543,133ZM715.197,173.8443L707.068,152.7275L699.313,173.8443L715.197,173.8443ZM762.383,133L793.404,174.1221L793.404,133L807.98,133L807.98,200.796L795.179,200.796L764.158,159.5812L764.158,200.796L749.582,200.796L749.582,133L762.383,133ZM864.883,133L880.861,133L880.861,173.3812Q880.861,182.0873,877.2629999999999,188.5705Q873.6659999999999,195.0537,866.892,198.5269Q860.1179999999999,202,850.774,202Q841.4300000000001,202,834.656,198.5269Q827.8820000000001,195.0537,824.285,188.5705Q820.687,182.0873,820.687,173.3812L820.687,133L836.665,133L836.665,169.2135Q836.665,178.6604,840.402,183.1061Q844.14,187.55169999999998,850.774,187.55169999999998Q857.408,187.55169999999998,861.145,183.1061Q864.883,178.6604,864.883,169.2135L864.883,133ZM925.99,133L953.741,200.796L936.922,200.796L931.69,187.08859999999999L905.808,187.08859999999999L900.762,200.796L884.8779999999999,200.796L911.881,133L925.99,133ZM926.644,173.8443L918.515,152.7275L910.76,173.8443L926.644,173.8443ZM961.029,133L977.0070000000001,133L977.0070000000001,186.7181L1007,186.7181L1007,200.796L961.029,200.796L961.029,133Z"
 							fill="#E4EBFA"
-							fill-opacity="0.8999999761581421"
+							fillOpacity="0.8999999761581421"
 						/>
 					</g>
 					<g style={{ opacity: 0.8999999761581421 }}>
@@ -3129,7 +3129,7 @@ export const HeroDark = ({ size, fill }: any) => {
 									height="339.13525390625"
 									rx="0"
 									fill="url(#master_svgd_166_8410)"
-									fill-opacity="1"
+									fillOpacity="1"
 								/>
 							</g>
 							<g
@@ -3153,7 +3153,7 @@ export const HeroDark = ({ size, fill }: any) => {
 									height="339.13525390625"
 									rx="0"
 									fill="url(#master_svgf_166_8410)"
-									fill-opacity="1"
+									fillOpacity="1"
 								/>
 							</g>
 						</g>
@@ -3165,7 +3165,7 @@ export const HeroDark = ({ size, fill }: any) => {
 								height="339.13525390625"
 								rx="0"
 								fill="url(#master_svgg_166_8406)"
-								fill-opacity="1"
+								fillOpacity="1"
 							/>
 						</g>
 						<g>
@@ -3177,7 +3177,7 @@ export const HeroDark = ({ size, fill }: any) => {
 									height="342"
 									rx="0"
 									fill="url(#master_svgh_166_8386)"
-									fill-opacity="1"
+									fillOpacity="1"
 								/>
 							</g>
 							<g
@@ -3198,9 +3198,9 @@ export const HeroDark = ({ size, fill }: any) => {
 							<g>
 								<path
 									d="M1285,228L1139,228L1139,424L1139.0269909,424C1139.579481,504.177,1204.6357,569.002,1284.807,569.002C1365.321,569.002,1430.59,503.622,1430.59,422.971L1285,422.971L1285,228Z"
-									fill-rule="evenodd"
+									fillRule="evenodd"
 									fill="url(#master_svgj_166_8401)"
-									fill-opacity="1"
+									fillOpacity="1"
 								/>
 							</g>
 							<g>
@@ -3211,7 +3211,7 @@ export const HeroDark = ({ size, fill }: any) => {
 									height="196"
 									rx="0"
 									fill="url(#master_svgk_166_8398)"
-									fill-opacity="1"
+									fillOpacity="1"
 								/>
 							</g>
 						</g>
@@ -3250,7 +3250,7 @@ export const HeroDark = ({ size, fill }: any) => {
 									height="414"
 									rx="0"
 									fill="url(#master_svgn_166_8371)"
-									fill-opacity="1"
+									fillOpacity="1"
 								/>
 							</g>
 						</g>
@@ -3262,7 +3262,7 @@ export const HeroDark = ({ size, fill }: any) => {
 									rx="161.62948608398438"
 									ry="161.88597106933594"
 									fill="red"
-									fill-opacity="1"
+									fillOpacity="1"
 								/>
 							</clipPath>
 							<foreignObject
@@ -3280,7 +3280,7 @@ export const HeroDark = ({ size, fill }: any) => {
 								<path
 									d="M1826.90625,230.865234375L2066.50025,570.000234375L2165.99625,570.000234375L1926.40465,230.865234375L1826.90625,230.865234375Z"
 									fill="url(#master_svgp_166_8390)"
-									fill-opacity="1"
+									fillOpacity="1"
 								/>
 							</g>
 							<g
@@ -3290,7 +3290,7 @@ export const HeroDark = ({ size, fill }: any) => {
 								<path
 									d="M2175.995849609375,230.865234375L2415.589849609375,570.000234375L2515.085849609375,570.000234375L2275.494249609375,230.865234375L2175.995849609375,230.865234375Z"
 									fill="url(#master_svgq_166_8390)"
-									fill-opacity="1"
+									fillOpacity="1"
 								/>
 							</g>
 						</g>
