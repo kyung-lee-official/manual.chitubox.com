@@ -1,0 +1,489 @@
+
+export const meta = {
+	title: "Printing Preparation Conditions",
+	authors: [{ name: "CHITUBOX Team" }],
+	pageId: "/en-US/print-testing-instructions/v1.0.0/printing-preparation-conditions",
+	description:
+		"Printing preparation conditions. Good print preparation conditions lead to better printing results and quality by removing potential factors.",
+	ogImage: "/images/docs/og_image.png",
+};
+
+# Printing Preparation Conditions
+
+## Printing Environment
+
+1. Printing verification The indoor ambient temperature should be stably controlled at 18~ 28 ℃.
+1. Printing verification The indoor ambient humidity should be controlled not to exceed 60%.
+1. Printing verification process The printer needs to be kept away from heat sources, water sources and vibration sources.
+1. During the printing verification process, it is necessary to ensure regular air circulation in the room to reduce and avoid the odor emitted by the resin liquid inhaled by the personnel in the printing room.
+1. During the printing verification process, no light or weak blue light should be kept in the room. It is recommended to use a yellow light source for low-light light sources. During the whole printing process, it is necessary to ensure that the hood of the printer is completely closed.
+1. During the printing verification process, the power supply must meet the grounding requirements, and cannot share the wiring circuit with high-current equipment. The printing process needs to ensure the stability of the power supply voltage.
+1. During the printing verification process, do not place volatile solvents such as water and alcohol in the printing room to avoid interfering quality problems during the printing and molding process.
+1. The power supply voltage and current of the printing verification process need to be strictly implemented in accordance with the power supply requirements of the printer equipment.
+
+## Printer
+
+1. The printer needs to be installed and placed in a hard level area.
+1. Detect and confirm that the release film is not damaged, the release film is clean, and the release film is normally tensioned.
+1. Detect and confirm that the light source and image display device are normal.
+1. Detect and confirm the corresponding light intensity value after the light source and imaging area are fully lit during normal printing use.
+1. Detect and confirm that the imaging work area bonded with the release film is clean and free of impurities.
+1. Detect and confirm that the printer printing platform is locked normally.
+1. Detect and confirm that there are no residual objects on the printing platform.
+1. Check and confirm that the printing platform is leveled normally.
+1. Check and confirm that the resin tank is properly installed and locked.
+
+When confirming the printer, it is necessary to confirm the sampling test of the corresponding light intensity of the printer through Article 4 of the above precautions.
+
+The light intensity measurement device selected for the corresponding light intensity sampling test verification needs to use the following equipment and strictly follow the corresponding instructions to complete the test of the corresponding light intensity value.
+
+<Admonition type={"warning"}>
+	The light intensity measuring device needs to be uniformly measured
+	according to the use band of the corresponding printer.
+</Admonition>
+
+For the selected printer product, it is necessary to measure and record the corresponding light intensity value at a fixed interval according to the following diagram. The corresponding area does not fully specify the corresponding measurement position, and it is necessary to satisfy the complete fit between the light intensity measuring device and the image forming surface. The light intensity values need to be measured and recorded 5 times respectively, and the corresponding average value is obtained according to the corresponding point measurement value.
+
+<ImageContainer
+	src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/front-of-printer.svg"
+/>
+
+<Admonition type={"note"}>
+	The above content is mainly for the preparation process of pull-up
+	photocurable 3D printing, and does not include the preparation instructions
+	of the sink printer, which are hereby described.
+</Admonition>
+
+## Printing Materials
+
+1. Check and confirm that the printing material is normal and not expired.
+1. Detect and confirm that the printing materials added in the resin tank are evenly mixed without impurities.
+1. Detect and confirm that the printing material added in the resin tank is sufficient and will not overflow during the printing process.
+
+## Preparation of Printing Documents
+
+### Model Layout Preprocessing Preparation
+
+#### Single Model Layout
+
+<Admonition type={"note"}>
+	A single model is repeated many times to adjust the parameter layout test
+	verification. It is necessary to ensure that the printing model is in the
+	same position relative to the same printer. The example position is as
+	follows.
+</Admonition>
+
+<ImageContainer
+	src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/single-model_001.png"
+/>
+
+<Admonition type={"tip"}>
+	The position of the corresponding model relative to the platform can select
+	the corresponding model, trigger the move button, and click the
+	corresponding model to view and confirm.
+</Admonition>
+
+#### Multi-Model Typography
+
+<Admonition type={"note"}>
+	When multiple models are repeated multiple times for print test
+	verification, it is necessary to ensure that the position of the print
+	models relative to the same printer remains the same.
+</Admonition>
+
+#### Adjustment Of Support Parameters
+
+Part of the test verification model has three types of support models corresponding to CHITUBOX, which can effectively test the parameter effectiveness of the corresponding contact point spacing when the corresponding coarse, medium and fine supports are supported. The test of the support structure of other parameters can also be passed. The secondary editing and setting of the model support structure are tested and verified.
+
+### Printing Parameter Setting And Preparation
+
+Detailed printing parameter setting instructions can be seen on <SpanA href="https://manual.chitubox.com/user-manual-pro/setting-up/configure-print-parameters">📖 user manual</SpanA>.
+
+The following table records the description of the effect of different printing parameter settings of CHITUBOX Pro software on the printing file and printing effect, which can be used as a guide for optimal printing parameter adaptation and adjustment.
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>Settings</th>
+			<th>Parameters</th>
+			<th>Print effect effect description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowSpan="8"><div className="flex">Printer</div></td>
+			<td>Name</td>
+			<td>/</td>
+		</tr>
+		<tr>
+			<td>Machine type</td>
+			<td>/</td>
+		</tr>
+		<tr>
+			<td>Mirror image</td>
+			<td>
+				*.ctb format support Printers can affect the symmetry of
+				printed files.
+				<SpanA href="https://www.chitubox.com/zh/article/support/howto/chitubox-free/slicing/44">
+					📖 More.
+				</SpanA>
+			</td>
+		</tr>
+		<tr>
+			<td>Resolution</td>
+			<td>
+				The resolution needs to be consistent with the hardware
+				parameters of the corresponding printer, otherwise the
+				print file cannot be parsed and identified normally.
+				<br />
+				Resolution is the core index of extreme printing
+				accuracy. Under the same printing area, higher
+				resolution can effectively improve the extreme printing
+				accuracy.
+			</td>
+		</tr>
+		<tr>
+			<td>Lock ratio</td>
+			<td>/</td>
+		</tr>
+		<tr>
+			<td>Size X</td>
+			<td>
+				The X/Y print size needs to be consistent with the
+				hardware parameters of the corresponding printer,
+				otherwise it will cause the size error and shape
+				deformation of the print file.
+				<br />
+				The same resolution, the corresponding print size is
+				smaller, can effectively improve the limit of printing
+				accuracy.
+				<br />
+				The Z size setting needs to be set according to the
+				actual hardware of the printer. The Z size will not
+				affect the actual printer accuracy, but will affect the
+				Z-direction printing height size.
+			</td>
+		</tr>
+		<tr>
+			<td>Build region offset</td>
+			<td>
+				The setting of the effective print boundary area in the X/Y
+				direction. The corresponding offset is performed based on the
+				value of the X/Y print size.
+			</td>
+		</tr>
+		<tr>
+			<td>Display correction</td>
+			<td>
+			<ul>
+			<li>
+				Some DLP printers are suitable.
+					</li>
+					<li>
+						It is used for the correction of the offset of the
+						optical and mechanical installation structure of the
+						printer. Unreasonable parameter settings will lead to
+						printing size errors and shape deformation.
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td rowSpan="3">Resin</td>
+			<td>Resin type</td>
+			<td>/</td>
+		</tr>
+		<tr>
+			<td>Resin density</td>
+			<td>/</td>
+		</tr>
+		<tr>
+			<td>Resin price</td>
+			<td>/</td>
+		</tr>
+		<tr>
+			<td rowSpan="21">Print</td>
+			<td>Layer thickness (mm)</td>
+			<td>
+			<ul>
+			<li>
+						The thinner the layer thickness, the finer the slice
+						data (X/Y/Z) and the longer the printing time.
+					</li>
+					<li>
+						The printing effect of too thin slice files is not
+						necessarily the best, which is mainly affected by the
+						printing penetration ability of the material and the
+						sensitivity of the material to light.
+				</li>
+					<li>
+						Too thick slice files will not only reduce the quality
+						of the printed surface, but also further increase the
+						risk of printing faults and printing failures.
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Number of bottom layers (mm)</td>
+			<td>
+			<ul>
+			<li>
+				The combination of the number of bottom layers and the exposure
+				time of the bottom layer together affects the adhesion effect of
+				the print model and the print platform. A certain number of
+				bottom layers contributes to the adhesion strength of the print
+				model and the print platform. However, too many bottom layers
+				will aggravate the effect of over-curing at the bottom of the
+				printed model, which will lead to too large solid size at the
+				bottom of the model; too many bottom layers will also increase
+				the printing completion time. 
+				</li>
+					<li>
+				Mitigation or elimination of underlayer overcuring can be achieved
+				through the underside tolerance compensation function in the Advanced
+				Settings bar.
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Exposure time (s)</td>
+			<td>
+			<ul>
+			<li>
+						The appropriate exposure time can ensure the sufficient
+						reaction of the resin material and achieve more accurate
+						printing size and detail effect.
+					</li>
+					<li>
+						The exposure time is too short, which will lead to
+						insufficient printing performance and increase the risk
+						of printing failure (fault or no connection between
+						layers).
+					</li>
+					<li>
+						If the exposure time is too long, the printing
+						dimensional accuracy and details will be reduced. In
+						serious cases, the printing layer will be overcured and
+						the model cannot be accurately identified, and the
+						curing residue will remain in the resin tank.
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Bottom exposure time (s)</td>
+			<td>
+			<ul>
+			<li>
+				The combination of the bottom exposure time and the number of
+				bottom layers jointly affects the adhesion effect of the
+				printing model and the printing platform. Excessive bottom
+				exposure time will lead to serious overcuring of the bottom
+				layer.
+				</li>
+					<li>
+				Mitigation or elimination of underlayer overcuring can be achieved
+				through the underside tolerance compensation function in the Advanced
+				Settings bar.
+			</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Number of transition layers</td>
+			<td rowSpan="3">
+				Reasonable transition layer settings can effectively control the
+				occurrence of printing faults and other phenomena caused by
+				sudden changes in the exposure time from the bottom layer to the
+				normal layer.
+			</td>
+		</tr>
+		<tr>
+			<td>Transition type</td>
+		</tr>
+		<tr>
+			<td>Transition layer interval time difference</td>
+		</tr>
+		<tr>
+			<td>Printing process waiting mode</td>
+			<td rowSpan="6">
+			<ul>
+			<li>
+						The waiting mode of the printing process is
+						preferentially recommended to adapt to the stationary
+						time mode.
+					</li>
+					<li>
+						Excessive rest time after lifting may cause printing
+						faults and increase the risk of printing failure.
+					</li>
+					<li>
+						The setting of the appropriate light-off delay/rest time
+						after the return trip helps to improve the effective
+						flow of the resin during printing and control the
+						fluctuation of the liquid on the printing surface.
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Light off delay</td>
+		</tr>
+		<tr>
+			<td>Bottom light off delay</td>
+		</tr>
+		<tr>
+			<td>Stasis time before lift</td>
+		</tr>
+		<tr>
+			<td>Stasis time after lift</td>
+		</tr>
+		<tr>
+			<td>The rest time after the return trip</td>
+		</tr>
+		<tr>
+			<td>Bottom lifting distance (mm)</td>
+			<td rowSpan="2">
+				Appropriate bottom lifting distance and lifting distance can
+				better assist printing release, avoid printing layer release
+				failure, resulting in printing failure, and can effectively
+				control printing time.
+			</td>
+		</tr>
+		<tr>
+			<td>Lifting distance (mm)</td>
+		</tr>
+		<tr>
+			<td>Bottom return distance</td>
+			<td>/</td>
+		</tr>
+		<tr>
+			<td>Return distance</td>
+			<td>/</td>
+		</tr>
+		<tr>
+			<td>Bottom lifting speed (mm/min)</td>
+			<td rowSpan="2">
+				Appropriate bottom lifting speed and lifting speed can
+				effectively realize the successful release of various types of
+				printing sections, avoid the failure of printing layer release,
+				cause printing failure, and can effectively control the printing
+				time.
+			</td>
+		</tr>
+		<tr>
+			<td>Lifting speed (mm/min)</td>
+		</tr>
+		<tr>
+			<td>Bottom return speed (mm/min)</td>
+			<td rowSpan="2">
+				Appropriate return speed can effectively realize the accurate
+				repetitive positioning of the printing platform and the
+				effective control of the printing time, and avoid the spillage
+				of resin liquid due to the excessive movement speed of the
+				printing platform.
+			</td>
+		</tr>
+		<tr>
+			<td>Return speed (mm/min)</td>
+		</tr>
+		<tr>
+			<td rowSpan="21">Advanced</td>
+			<td>Bottom Light Intensity (PWM)</td>
+			<td rowSpan="2">
+			<ul>
+			<li>
+				Appropriate light intensity can not only ensure the accuracy and
+				performance of the printing model, but also control the printing
+				time
+				</li>
+					<li>
+				<b>
+					Remarks: Some machines do not have light intensity
+					adjustment function, which requires special attention.
+				</b>
+			</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Light Intensity (PWM)</td>
+		</tr>
+		<tr>
+			<td>Image canary release</td>
+			<td>
+				A suitable picture canary release not only ensures the accuracy
+				and performance of the printed model, but also forms a
+				significant difference with the picture canary release of the
+				support structure and strengthens the strength of the support
+				structure.
+			</td>
+		</tr>
+		<tr>
+			<td>Anti-aliasing</td>
+			<td>
+			<ul>
+			<li>
+				Appropriate edge canary release and blurred pixel settings can
+				effectively eliminate lamination and aliasing on the outer
+				surface of the model
+				</li>
+					<li>
+				<b>
+					The anti-aliasing level is used for * .cbddlp model
+					adaptability, and other types of models such as * .ctb do
+					not take effect
+				</b>
+			</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Tolerance compensation</td>
+			<td>
+				The setting of reasonable tolerance compensation parameters can
+				accurately adjust the boundary size of the inner and outer
+				contours of the model.
+			</td>
+		</tr>
+		<tr>
+			<td>Parity layer difference</td>
+			<td>
+				Appropriate numerical setting of parity layer parameters can
+				strengthen the delamination phenomenon of odd-numbered layers
+				and even-numbered layers, thereby realizing the printing effect
+				of layered structure, which can be widely used in invisible
+				orthodontics and other fields
+			</td>
+		</tr>
+		<tr>
+			<td>Bottom tolerance compensation</td>
+			<td>
+				Appropriate setting of the bottom tolerance compensation value
+				can effectively alleviate the phenomenon of light curing of the
+				bottom model.
+			</td>
+		</tr>
+		<tr>
+			<td>Print time compensation</td>
+			<td>
+				The setting of the appropriate print time compensation value can
+				more accurately realize the consistency between the estimated
+				print time and the actual print time.
+			</td>
+		</tr>
+		<tr>
+			<td>Mask</td>
+			<td>
+				Using the correct mask file can effectively improve model size
+				and fine print consistency across the full print format.
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+### Slice Preprocessing
+
+CHITUBOX Pro software has two slicing modes: single-parameter and multi-parameter slicing. Effective use of multi-parameter slicing can obtain better printing parameters more quickly when testing and confirming the best printing parameters, and further obtain better printing actual results. The specific details The settings of printing parameters can be learned in detail through <SpanA href="https://manual.chitubox.com/zh/user-manual-pro/setting-up/configure-print-parameters/"> 📖 the following links</SpanA>.

@@ -8,7 +8,7 @@ const DynamicHero = dynamic(() => import("./hero/Hero"), {
 	ssr: false,
 });
 
-export default function Page(props: { params: { locale: Locale } }) {
+export default function Page(props: { params: { locale: Locale; }; }) {
 	const { locale } = props.params;
 	unstable_setRequestLocale(locale);
 
@@ -20,7 +20,8 @@ export default function Page(props: { params: { locale: Locale } }) {
 			<DocsLinks
 				chituboxBasic={"CHITUBOX Basic"}
 				chituboxPro={"CHITUBOX Pro"}
-				chituManager="ChituManager"
+				chituManager={"ChituManager"}
+				chituboxPrintingTest={t("chituboxPrintingTestDoc")}
 				faq={t("faqDoc")}
 			/>
 		</div>

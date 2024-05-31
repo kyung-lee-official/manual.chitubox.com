@@ -3265,3 +3265,51 @@ export const DownloadTimelapseVideos = ({ size, fill }: any) => {
 		</span>
 	);
 };
+
+/* CHITUBOX Printing Test icons */
+
+export const Load = ({ size, fill }: any) => {
+	return (
+		<svg
+			height={size}
+			width={size}
+			viewBox="0 0 24 24"
+			focusable="false"
+			role="img"
+			fill="currentColor"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<circle cx="12" cy="20" r="2"></circle>
+			<circle cx="12" cy="4" r="2"></circle>
+			<circle cx="6.343" cy="17.657" r="2"></circle>
+			<circle cx="17.657" cy="6.343" r="2"></circle>
+			<circle cx="4" cy="12" r="2.001"></circle>
+			<circle cx="20" cy="12" r="2"></circle>
+			<circle cx="6.343" cy="6.344" r="2"></circle>
+			<circle cx="17.657" cy="17.658" r="2"></circle>
+		</svg>
+	);
+};
+
+export const DocumentDownload = ({ size, fill }: any) => {
+	return (
+		<svg
+			viewBox="0 0 24 24"
+			height={size}
+			width={size}
+			focusable="false"
+			role="img"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			stroke="currentColor"
+		>
+			<path
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				strokeWidth="2"
+				d="M12 10v6m0 0-3-3m3 3 3-3m2 8H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"
+			></path>
+		</svg>
+	);
+};
+

@@ -162,6 +162,20 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		);
 	};
 
+
+	const Blockquote: React.FC<any> = (props) => {
+		const { children } = props;
+		return (
+			<blockquote
+				className="pl-4 border-l-4 my-4
+				text-gray-400
+				border-l-gray-400"
+			>
+				{children}
+			</blockquote>
+		);
+	};
+
 	return {
 
 		code: ({ children }: any) => {
@@ -170,6 +184,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 
 		table: ({ children }: any) => {
 			return <ResponsiveTable>{children}</ResponsiveTable>;
+		},
+
+		blockquote: ({ children }: any) => {
+			return <Blockquote>{children}</Blockquote>;
 		},
 
 		h1: h1,

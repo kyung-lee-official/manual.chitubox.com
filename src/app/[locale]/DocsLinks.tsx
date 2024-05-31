@@ -3,7 +3,7 @@
 import { useLocale } from "next-intl";
 import Link from "next/link";
 
-const LinkWrapper = (props: { href: string; children: React.ReactNode }) => {
+const LinkWrapper = (props: { href: string; children: React.ReactNode; }) => {
 	const { href, children } = props;
 	return (
 		<Link
@@ -22,9 +22,10 @@ const DocsLinks = (props: {
 	chituboxBasic: string;
 	chituboxPro: string;
 	chituManager: string;
+	chituboxPrintingTest: string;
 	faq: string;
 }) => {
-	const { chituboxBasic, chituboxPro, chituManager, faq } = props;
+	const { chituboxBasic, chituboxPro, chituManager, chituboxPrintingTest, faq } = props;
 	const locale = useLocale();
 	return (
 		<div
@@ -43,6 +44,9 @@ const DocsLinks = (props: {
 			</LinkWrapper>
 			<LinkWrapper href={`/${locale}/chitu-manager/latest/introduction`}>
 				{chituManager}
+			</LinkWrapper>
+			<LinkWrapper href={`/${locale}/chitubox-printing-test/latest/overview-of-the-standard-model`}>
+				{chituboxPrintingTest}
 			</LinkWrapper>
 			<LinkWrapper href={`/${locale}/faq/latest/chitubox-basic-faq`}>
 				{faq}

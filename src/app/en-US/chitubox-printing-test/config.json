@@ -1,0 +1,48 @@
+{
+	"docInstanceName": "CHITUBOX Printing Test",
+	"isVersioned": true,
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "1.0.0",
+			"pagesContext": [
+				{
+					"item": "overview-of-the-standard-model",
+					"label": "Overview of the Standard Model"
+				},
+				{
+					"item": "test-preparation",
+					"label": "Test Preparation",
+					"subItems": [
+						{
+							"item": "printing-preparation-conditions",
+							"label": "Printing Preparation Conditions"
+						},
+						{
+							"item": "model-printing-and-post-print-processing",
+							"label": "Model Printing And Post-Print Processing"
+						},
+						{
+							"item": "data-recording",
+							"label": "Data Recording"
+						}
+					]
+				},
+				{
+					"item": "analysis",
+					"label": "Analysis",
+					"subItems": [
+						{
+							"item": "printing-preparation",
+							"label": "Printing Preparation"
+						},
+						{
+							"item": "result-assessment",
+							"label": "Result Assessment"
+						}
+					]
+				}
+			]
+		}
+	]
+}
