@@ -1,4 +1,3 @@
-
 export const meta = {
 	title: "Printing Preparation Conditions",
 	authors: [{ name: "CHITUBOX Team" }],
@@ -44,9 +43,7 @@ The light intensity measurement device selected for the corresponding light inte
 
 For the selected printer product, it is necessary to measure and record the corresponding light intensity value at a fixed interval according to the following diagram. The corresponding area does not fully specify the corresponding measurement position, and it is necessary to satisfy the complete fit between the light intensity measuring device and the image forming surface. The light intensity values need to be measured and recorded 5 times respectively, and the corresponding average value is obtained according to the corresponding point measurement value.
 
-<ImageContainer
-	src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/front-of-printer.svg"
-/>
+<ImageContainer src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/front-of-printer.svg" />
 
 <Admonition type={"note"}>
 	The above content is mainly for the preparation process of pull-up
@@ -73,9 +70,7 @@ For the selected printer product, it is necessary to measure and record the corr
 	follows.
 </Admonition>
 
-<ImageContainer
-	src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/single-model_001.png"
-/>
+<ImageContainer src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/single-model_001.png" />
 
 <Admonition type={"tip"}>
 	The position of the corresponding model relative to the platform can select
@@ -97,7 +92,7 @@ Part of the test verification model has three types of support models correspond
 
 ### Printing Parameter Setting And Preparation
 
-Detailed printing parameter setting instructions can be seen on <SpanA href="https://manual.chitubox.com/user-manual-pro/setting-up/configure-print-parameters">📖 user manual</SpanA>.
+Detailed printing parameter setting instructions can be seen on <SpanA href="https://manual.chitubox.com/en-US/chitubox-pro/latest/setting-up/configure-print-parameters">📖user manual</SpanA>.
 
 The following table records the description of the effect of different printing parameter settings of CHITUBOX Pro software on the printing file and printing effect, which can be used as a guide for optimal printing parameter adaptation and adjustment.
 
@@ -111,19 +106,13 @@ The following table records the description of the effect of different printing 
 	</thead>
 	<tbody>
 		<tr>
-			<td rowSpan="8"><div className="flex">Printer</div></td>
-			<td>Name</td>
-			<td>/</td>
-		</tr>
-		<tr>
-			<td>Machine type</td>
-			<td>/</td>
-		</tr>
-		<tr>
+			<td rowSpan="5">
+				<div className="flex">Printer</div>
+			</td>
 			<td>Mirror image</td>
 			<td>
-				*.ctb format support Printers can affect the symmetry of
-				printed files.
+				*.ctb format support Printers can affect the symmetry of printed
+				files.
 				<SpanA href="https://www.chitubox.com/zh/article/support/howto/chitubox-free/slicing/44">
 					📖 More.
 				</SpanA>
@@ -133,35 +122,35 @@ The following table records the description of the effect of different printing 
 			<td>Resolution</td>
 			<td>
 				The resolution needs to be consistent with the hardware
-				parameters of the corresponding printer, otherwise the
-				print file cannot be parsed and identified normally.
-				<br />
-				Resolution is the core index of extreme printing
-				accuracy. Under the same printing area, higher
-				resolution can effectively improve the extreme printing
-				accuracy.
+				parameters of the corresponding printer, otherwise the print
+				file cannot be parsed and identified normally.
+				<span>
+					Resolution is the core index of extreme printing accuracy.
+					Under the same printing area, higher resolution can
+					effectively improve the extreme printing accuracy.
+				</span>
 			</td>
 		</tr>
 		<tr>
-			<td>Lock ratio</td>
-			<td>/</td>
-		</tr>
-		<tr>
-			<td>Size X</td>
+			<td>Size</td>
 			<td>
-				The X/Y print size needs to be consistent with the
-				hardware parameters of the corresponding printer,
-				otherwise it will cause the size error and shape
-				deformation of the print file.
-				<br />
-				The same resolution, the corresponding print size is
-				smaller, can effectively improve the limit of printing
-				accuracy.
-				<br />
-				The Z size setting needs to be set according to the
-				actual hardware of the printer. The Z size will not
-				affect the actual printer accuracy, but will affect the
-				Z-direction printing height size.
+				<span>
+					The X/Y print size needs to be consistent with the hardware
+					parameters of the corresponding printer, otherwise it will
+					cause the size error and shape deformation of the print
+					file.
+				</span>
+				<span>
+					The same resolution, the corresponding print size is
+					smaller, can effectively improve the limit of printing
+					accuracy.
+				</span>
+				<span>
+					The Z size setting needs to be set according to the actual
+					hardware of the printer. The Z size will not affect the
+					actual printer accuracy, but will affect the Z-direction
+					printing height size.
+				</span>
 			</td>
 		</tr>
 		<tr>
@@ -175,120 +164,95 @@ The following table records the description of the effect of different printing 
 		<tr>
 			<td>Display correction</td>
 			<td>
-			<ul>
-			<li>
 				Some DLP printers are suitable.
-					</li>
-					<li>
-						It is used for the correction of the offset of the
-						optical and mechanical installation structure of the
-						printer. Unreasonable parameter settings will lead to
-						printing size errors and shape deformation.
-				</li>
-			</ul>
+				<span>
+					It is used for the correction of the offset of the optical
+					and mechanical installation structure of the printer.
+					Unreasonable parameter settings will lead to printing size
+					errors and shape deformation.
+				</span>
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Resin</td>
-			<td>Resin type</td>
-			<td>/</td>
-		</tr>
-		<tr>
-			<td>Resin density</td>
-			<td>/</td>
-		</tr>
-		<tr>
-			<td>Resin price</td>
-			<td>/</td>
-		</tr>
-		<tr>
-			<td rowSpan="21">Print</td>
+			<td rowSpan="14">Print</td>
 			<td>Layer thickness (mm)</td>
 			<td>
-			<ul>
-			<li>
-						The thinner the layer thickness, the finer the slice
-						data (X/Y/Z) and the longer the printing time.
-					</li>
-					<li>
-						The printing effect of too thin slice files is not
-						necessarily the best, which is mainly affected by the
-						printing penetration ability of the material and the
-						sensitivity of the material to light.
-				</li>
-					<li>
-						Too thick slice files will not only reduce the quality
-						of the printed surface, but also further increase the
-						risk of printing faults and printing failures.
-				</li>
-			</ul>
+				<span>
+					The thinner the layer thickness, the finer the slice data
+					(X/Y/Z) and the longer the printing time.
+				</span>
+				<span>
+					The printing effect of too thin slice files is not
+					necessarily the best, which is mainly affected by the
+					printing penetration ability of the material and the
+					sensitivity of the material to light.
+				</span>
+				<span>
+					Too thick slice files will not only reduce the quality of
+					the printed surface, but also further increase the risk of
+					printing faults and printing failures.
+				</span>
 			</td>
 		</tr>
 		<tr>
 			<td>Number of bottom layers (mm)</td>
 			<td>
-			<ul>
-			<li>
-				The combination of the number of bottom layers and the exposure
-				time of the bottom layer together affects the adhesion effect of
-				the print model and the print platform. A certain number of
-				bottom layers contributes to the adhesion strength of the print
-				model and the print platform. However, too many bottom layers
-				will aggravate the effect of over-curing at the bottom of the
-				printed model, which will lead to too large solid size at the
-				bottom of the model; too many bottom layers will also increase
-				the printing completion time. 
-				</li>
-					<li>
-				Mitigation or elimination of underlayer overcuring can be achieved
-				through the underside tolerance compensation function in the Advanced
-				Settings bar.
-				</li>
-			</ul>
+				<span>
+					The combination of the number of bottom layers and the
+					exposure time of the bottom layer together affects the
+					adhesion effect of the print model and the print platform. A
+					certain number of bottom layers contributes to the adhesion
+					strength of the print model and the print platform. However,
+					too many bottom layers will aggravate the effect of
+					over-curing at the bottom of the printed model, which will
+					lead to too large solid size at the bottom of the model; too
+					many bottom layers will also increase the printing
+					completion time.
+				</span>
+				<span>
+					Mitigation or elimination of underlayer overcuring can be
+					achieved through the underside tolerance compensation
+					function in the Advanced Settings bar.
+				</span>
 			</td>
 		</tr>
 		<tr>
 			<td>Exposure time (s)</td>
 			<td>
-			<ul>
-			<li>
-						The appropriate exposure time can ensure the sufficient
-						reaction of the resin material and achieve more accurate
-						printing size and detail effect.
-					</li>
-					<li>
-						The exposure time is too short, which will lead to
-						insufficient printing performance and increase the risk
-						of printing failure (fault or no connection between
-						layers).
-					</li>
-					<li>
-						If the exposure time is too long, the printing
-						dimensional accuracy and details will be reduced. In
-						serious cases, the printing layer will be overcured and
-						the model cannot be accurately identified, and the
-						curing residue will remain in the resin tank.
-				</li>
-			</ul>
+				<span>
+					The appropriate exposure time can ensure the sufficient
+					reaction of the resin material and achieve more accurate
+					printing size and detail effect.
+				</span>
+				<span>
+					The exposure time is too short, which will lead to
+					insufficient printing performance and increase the risk of
+					printing failure (fault or no connection between layers).
+				</span>
+				<span>
+					If the exposure time is too long, the printing dimensional
+					accuracy and details will be reduced. In serious cases, the
+					printing layer will be overcured and the model cannot be
+					accurately identified, and the curing residue will remain in
+					the resin tank.
+				</span>
 			</td>
 		</tr>
 		<tr>
 			<td>Bottom exposure time (s)</td>
 			<td>
-			<ul>
-			<li>
-				The combination of the bottom exposure time and the number of
-				bottom layers jointly affects the adhesion effect of the
-				printing model and the printing platform. Excessive bottom
-				exposure time will lead to serious overcuring of the bottom
-				layer.
-				</li>
-					<li>
-				Mitigation or elimination of underlayer overcuring can be achieved
-				through the underside tolerance compensation function in the Advanced
-				Settings bar.
-			</li>
-			</ul>
+				<span>
+					The combination of the bottom exposure time and the number
+					of bottom layers jointly affects the adhesion effect of the
+					printing model and the printing platform. Excessive bottom
+					exposure time will lead to serious overcuring of the bottom
+					layer.
+				</span>
+				<span>
+					Mitigation or elimination of underlayer overcuring can be
+					achieved through the underside tolerance compensation
+					function in the Advanced Settings bar.
+				</span>
 			</td>
 		</tr>
 		<tr>
@@ -308,40 +272,20 @@ The following table records the description of the effect of different printing 
 		</tr>
 		<tr>
 			<td>Printing process waiting mode</td>
-			<td rowSpan="6">
-			<ul>
-			<li>
-						The waiting mode of the printing process is
-						preferentially recommended to adapt to the stationary
-						time mode.
-					</li>
-					<li>
-						Excessive rest time after lifting may cause printing
-						faults and increase the risk of printing failure.
-					</li>
-					<li>
-						The setting of the appropriate light-off delay/rest time
-						after the return trip helps to improve the effective
-						flow of the resin during printing and control the
-						fluctuation of the liquid on the printing surface.
-				</li>
-			</ul>
+			<td>
+				The waiting mode of the printing process is preferentially
+				recommended to adapt to the stationary time mode.
+				<span>
+					Excessive rest time after lifting may cause printing faults
+					and increase the risk of printing failure.
+				</span>
+				<span>
+					The setting of the appropriate light-off delay/rest time
+					after the return trip helps to improve the effective flow of
+					the resin during printing and control the fluctuation of the
+					liquid on the printing surface.
+				</span>
 			</td>
-		</tr>
-		<tr>
-			<td>Light off delay</td>
-		</tr>
-		<tr>
-			<td>Bottom light off delay</td>
-		</tr>
-		<tr>
-			<td>Stasis time before lift</td>
-		</tr>
-		<tr>
-			<td>Stasis time after lift</td>
-		</tr>
-		<tr>
-			<td>The rest time after the return trip</td>
 		</tr>
 		<tr>
 			<td>Bottom lifting distance (mm)</td>
@@ -354,14 +298,6 @@ The following table records the description of the effect of different printing 
 		</tr>
 		<tr>
 			<td>Lifting distance (mm)</td>
-		</tr>
-		<tr>
-			<td>Bottom return distance</td>
-			<td>/</td>
-		</tr>
-		<tr>
-			<td>Return distance</td>
-			<td>/</td>
 		</tr>
 		<tr>
 			<td>Bottom lifting speed (mm/min)</td>
@@ -390,22 +326,18 @@ The following table records the description of the effect of different printing 
 			<td>Return speed (mm/min)</td>
 		</tr>
 		<tr>
-			<td rowSpan="21">Advanced</td>
+			<td rowSpan="9">Advanced</td>
 			<td>Bottom Light Intensity (PWM)</td>
 			<td rowSpan="2">
-			<ul>
-			<li>
 				Appropriate light intensity can not only ensure the accuracy and
 				performance of the printing model, but also control the printing
 				time
-				</li>
-					<li>
-				<b>
-					Remarks: Some machines do not have light intensity
-					adjustment function, which requires special attention.
-				</b>
-			</li>
-			</ul>
+				<span>
+					<b>
+						Remarks: Some machines do not have light intensity
+						adjustment function, which requires special attention.
+					</b>
+				</span>
 			</td>
 		</tr>
 		<tr>
@@ -424,20 +356,16 @@ The following table records the description of the effect of different printing 
 		<tr>
 			<td>Anti-aliasing</td>
 			<td>
-			<ul>
-			<li>
 				Appropriate edge canary release and blurred pixel settings can
 				effectively eliminate lamination and aliasing on the outer
 				surface of the model
-				</li>
-					<li>
-				<b>
-					The anti-aliasing level is used for * .cbddlp model
-					adaptability, and other types of models such as * .ctb do
-					not take effect
-				</b>
-			</li>
-			</ul>
+				<span>
+					<b>
+						The anti-aliasing level is used for * .cbddlp model
+						adaptability, and other types of models such as * .ctb
+						do not take effect
+					</b>
+				</span>
 			</td>
 		</tr>
 		<tr>
@@ -486,4 +414,4 @@ The following table records the description of the effect of different printing 
 
 ### Slice Preprocessing
 
-CHITUBOX Pro software has two slicing modes: single-parameter and multi-parameter slicing. Effective use of multi-parameter slicing can obtain better printing parameters more quickly when testing and confirming the best printing parameters, and further obtain better printing actual results. The specific details The settings of printing parameters can be learned in detail through <SpanA href="https://manual.chitubox.com/zh/user-manual-pro/setting-up/configure-print-parameters/"> 📖 the following links</SpanA>.
+CHITUBOX Pro software has two slicing modes: single-parameter and multi-parameter slicing. Effective use of multi-parameter slicing can obtain better printing parameters more quickly when testing and confirming the best printing parameters, and further obtain better printing actual results. The specific details The settings of printing parameters can be learned in detail through <SpanA href="https://manual.chitubox.com/en-US/chitubox-pro/latest/setting-up/configure-print-parameters"> 📖 the following links</SpanA>.
