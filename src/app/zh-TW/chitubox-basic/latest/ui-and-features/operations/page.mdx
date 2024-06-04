@@ -72,25 +72,25 @@ export const metadata = {
 **底部貫穿** 與「鏤空」非常相似，但會刪除室底。
 
 <ImageContainer
-	src={"/images/docs/zh-TW/chitubox-basic/2.x.x/006-operations-hollow.png"}
+	src={"/images/docs/zh-CN/chitubox-basic/2.x.x/006-operations-hollow.png"}
 />
 
 ### 鏤空參數解釋
 
 -   **壁厚**：壁厚決定了牆的總厚度。
--   **精度**：精度決定了內壁上根據設定百分比生成的面數。
-    <ImageContainer>
-    	<ImageComparison
-    		img1Src={
-    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-low-precision.png"
-    		}
-    		text1={"低精度"}
-    		img2Src={
-    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-high-precision.png"
-    		}
-    		text2={"高精度"}
-    	/>
-    </ImageContainer>
+-   **精度**：生成的三角面的密度。0 表示最小密度，1 表示最大密度。
+
+        <ImageComparison
+        	img1Src={
+        		"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-low-precision.png"
+        	}
+        	text1={"低精度"}
+        	img2Src={
+        		"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-high-precision.png"
+        	}
+        	text2={"高精度"}
+        />
+
 -   **填充結構**：填充的類型。
 -   **填充密度**：填充的密度。
 -   **動畫**：啟用此選項將顯示鏤空過程。
