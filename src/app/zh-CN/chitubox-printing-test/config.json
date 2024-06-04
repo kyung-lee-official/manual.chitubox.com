@@ -1,0 +1,48 @@
+{
+	"docInstanceName": "CHITUBOX 打印测试",
+	"isVersioned": true,
+	"versionedContexts": [
+		{
+			"versionCode": "latest",
+			"versionNumber": "1.0.0",
+			"pagesContext": [
+				{
+					"item": "overview-of-the-standard-model",
+					"label": "标准模型概述"
+				},
+				{
+					"item": "test-preparation",
+					"label": "打印测试",
+					"subItems": [
+						{
+							"item": "printing-preparation-conditions",
+							"label": "打印准备条件"
+						},
+						{
+							"item": "model-printing-and-post-print-processing",
+							"label": "模型打印及打印后处理"
+						},
+						{
+							"item": "data-recording",
+							"label": "数据记录"
+						}
+					]
+				},
+				{
+					"item": "analysis",
+					"label": "分析",
+					"subItems": [
+						{
+							"item": "printing-preparation",
+							"label": "打印前准备"
+						},
+						{
+							"item": "result-assessment",
+							"label": "打印效果评定"
+						}
+					]
+				}
+			]
+		}
+	]
+}
