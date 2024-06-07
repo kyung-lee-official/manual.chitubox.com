@@ -38,6 +38,10 @@ export const metadata = {
 	}
 />
 
+在設定參數面板，你可以 <ChituboxProfileDownloadIcon /> **下載設定參數** (材質庫或自訂), <ChituboxProfileUploadIcon /> **上傳所有設定參數** (自訂), <ChituboxProfileAddIcon /> **新增設定參數**, <ChituboxProfileImportIcon /> **匯入設定參數** (本地), <ChituboxProfileExportAllIcon /> **匯出所有設定參數** (本地).
+
+將滑鼠懸浮在配置參數的圖示 <ChituboxProfileMenuIcon /> 上將彈出對於該配置的可用操作, 包括 <ChituboxProfileUploadIcon /> 上傳, <ChituboxProfileRenameIcon /> 重新命名, <ChituboxProfileExportIcon /> 匯出, <ChituboxProfileResetIcon /> 重置, <ChituboxProfileDeleteIcon /> 刪除。
+
 ## 機器
 
 在這裡您可以配置列印機的基本信息，包括列印機的名稱、機器解析度、尺寸等。
@@ -110,9 +114,7 @@ export const metadata = {
 
 你可能已經注意到列印設定中有兩組抬升和回縮參數，這裡是設定 TSMC 的地方。
 
-你可能會想 TSMC 是什麼，為什麼需要它。讓我來解釋一下。
-
-當列印平台開始抬升時，模型會被列印平台拉起。這就是所謂的 “吸附效應”。當與列印平台的接觸面積較大且列印平台迅速拉開時，吸附效應更為明顯。吸附效應會導致模型變形，甚至導致模型從列印平台上掉下來。因此，一開始時您必須保持較慢速度。但是一旦模型離開了 FEP 薄膜，吸附效應就會消失。此時，您可以加快抬升速度以提高列印效率。類似原理也適用於回程階段。
+當列印平台開始帶著模型升起時，樹脂料槽底部的離型膜會將剛固化的層向下拉，直到脫離，這稱為「吸力效應」。當與離型膜接觸面積較大，且列印平台以較高速度拉開時，吸力效應較為明顯。吸力效應會導致模型變形，甚至導致模型從列印平台上脫落。我們建議保持緩慢的升起速度，直到模型脫離離型膜。當吸力效應不再是問題時，隨後加快升起速度可以提高列印效率。收回階段的原理類似。
 
 您可以調整以下參數以熟悉 TSMC。
 

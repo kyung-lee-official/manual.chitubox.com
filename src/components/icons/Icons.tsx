@@ -1104,6 +1104,26 @@ export const ChituboxCheckboxIcon = ({ size, fill }: any) => {
 	);
 };
 
+export const ChituboxAddFileIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				width="20"
+				height="20"
+				viewBox="0 0 16 16"
+				xmlns="http://www.w3.org/2000/svg"
+				stroke="currentColor"
+				fill="none"
+			>
+				<path d="M4.5 7.5H10.5" />
+				<path d="M7.5 4.5V10.5" />
+				<path d="M1.5 2C1.5 1.72386 1.72386 1.5 2 1.5H13C13.2761 1.5 13.5 1.72386 13.5 2V10.7929L10.7929 13.5H2C1.72386 13.5 1.5 13.2761 1.5 13V2Z" />
+				<path d="M13.5 10.5H10.5V13.5" />
+			</svg>
+		</span>
+	);
+};
+
 export const ChituboxEyeIcon = ({ size, fill }: any) => {
 	return (
 		<span className="inline-block align-middle">

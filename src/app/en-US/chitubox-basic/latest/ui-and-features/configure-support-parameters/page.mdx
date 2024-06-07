@@ -23,7 +23,7 @@ export const metadata = {
 
 # Configure Support Parameters
 
-Click <ChituboxSupport /> to switch to the support view. We will go through the support parameters one by one.
+Click <ChituboxSupport /> to switch to the support view.
 
 ## Z Lift Height
 
@@ -37,15 +37,15 @@ The height distance between the lowest point of the model and the platform. The 
 	}
 />
 
-Here you can <ChituboxProfileImportIcon /> **import**, <ChituboxProfileExportIcon /> **export**, and <ChituboxProfileResetIcon /> **reset** support settings here.
+Here you can <ChituboxProfileImportIcon /> **import**, <ChituboxProfileExportIcon /> **export**, and <ChituboxProfileResetIcon /> **reset** support settings.
 
-CHITUBOX Provides 3 default support settings: Light, Medium, and Heavy. If they are not suitable for your model, you can customize the support settings and export them for future use. 
+CHITUBOX Provides 3 default support settings: Light, Medium, and Heavy. You can also create customized support settings and export them for future use.
 
 ## Basic Settings
 
 ### Tip Upper Diameter
 
-Diameter of the tip of supports.
+Diameter for the tip of supports.
 
 <ImageComparison
 	img1Src={
@@ -75,7 +75,7 @@ Available options: **Skate**, **Cross grid**.
 
 ### Touch Tip Distance
 
-Touch Tip Distance is the distance between the tips of supports, or, in other words, it affects the density of supports.
+Touch Tip Distance is the distance between the tips of supports, controlling the density of supports.
 
 <ImageComparison
 	img1Src={
@@ -90,7 +90,7 @@ Touch Tip Distance is the distance between the tips of supports, or, in other wo
 
 ### Support Angle
 
-The maximum angle (degrees) between the model surface (tangent plane) and the platform that allows auto-support.
+The maximum angle (degrees) between the model surface (tangent plane) and the platform for auto-support to generate.
 
 <ImageComparison
 	img1Src={
@@ -103,9 +103,9 @@ The maximum angle (degrees) between the model surface (tangent plane) and the pl
 	text2={"60°"}
 />
 
-## Advance Settings
+## Advanced Settings
 
-Advanced settings are divided into 4 parts: **Top**, **Middle**, **Bottom**, and **Raft**.
+Advanced settings contain settings for four segments: **Top**, **Middle**, **Bottom**, and **Raft**.
 
 <ImageContainer
 	src={
@@ -116,7 +116,7 @@ Advanced settings are divided into 4 parts: **Top**, **Middle**, **Bottom**, and
 
 ### Top
 
--   Tip Part
+-   Tip Segment
 
 <ResponsiveTable>
 	<thead>
@@ -130,16 +130,14 @@ Advanced settings are divided into 4 parts: **Top**, **Middle**, **Bottom**, and
 		<tr>
 			<td>Contact Shape</td>
 			<td>
-				The shape of the contact point between the support and the
-				model.
+				Shape of the support's contact point on the model surface.
 			</td>
 			<td>N/A</td>
 		</tr>
 		<tr>
 			<td>Contact Diameter</td>
 			<td>
-				The diameter of the contact point between the support and the
-				model.
+				Diameter of the support's contact point on the model surface.
 			</td>
 			<td>
 				<ImageContainer
@@ -152,7 +150,7 @@ Advanced settings are divided into 4 parts: **Top**, **Middle**, **Bottom**, and
 		</tr>
 		<tr>
 			<td>Contact Depth</td>
-			<td>The depth from the tip of the support to the model surface.</td>
+			<td>Depth of the support tip contacting the model surface.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -165,7 +163,7 @@ Advanced settings are divided into 4 parts: **Top**, **Middle**, **Bottom**, and
 	</tbody>
 </ResponsiveTable>
 
--   Main Part
+-   Top Segment
 
 <ResponsiveTable>
 	<thead>
@@ -178,7 +176,7 @@ Advanced settings are divided into 4 parts: **Top**, **Middle**, **Bottom**, and
 	<tbody>
 		<tr>
 			<td>Connection Shape</td>
-			<td>The shape of the top.</td>
+			<td>Shape of the top segment.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -190,7 +188,7 @@ Advanced settings are divided into 4 parts: **Top**, **Middle**, **Bottom**, and
 		</tr>
 		<tr>
 			<td>Upper Diameter</td>
-			<td>The upper diameter of the top part.</td>
+			<td>Upper end diameter of the top segment.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -202,7 +200,7 @@ Advanced settings are divided into 4 parts: **Top**, **Middle**, **Bottom**, and
 		</tr>
 		<tr>
 			<td>Lower Diameter</td>
-			<td>The lower diameter of the top part.</td>
+			<td>Lower end diameter of the top segment.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -214,7 +212,7 @@ Advanced settings are divided into 4 parts: **Top**, **Middle**, **Bottom**, and
 		</tr>
 		<tr>
 			<td>Connection Length</td>
-			<td>The length of the top part.</td>
+			<td>Length of the top segment.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -229,7 +227,7 @@ Advanced settings are divided into 4 parts: **Top**, **Middle**, **Bottom**, and
 
 ### Middle
 
-There are 3 types of structures in the middle part: **Regular**, **Small Pillar**, and **Cross**.
+The middle segment contains settings for three types of structures: **Regular**, **Small Pillar**, and **Cross**.
 
 -   Regular
 
@@ -244,7 +242,7 @@ There are 3 types of structures in the middle part: **Regular**, **Small Pillar*
 	<tbody>
 		<tr>
 			<td>Shape</td>
-			<td>Shape of the regular part.</td>
+			<td>Shape of supports' main pillars.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -256,7 +254,7 @@ There are 3 types of structures in the middle part: **Regular**, **Small Pillar*
 		</tr>
 		<tr>
 			<td>Diameter</td>
-			<td>The diameter of the regular part.</td>
+			<td>Diamter of supports' main pillars.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -269,8 +267,7 @@ There are 3 types of structures in the middle part: **Regular**, **Small Pillar*
 		<tr>
 			<td>Angle</td>
 			<td>
-				The maximum angle between the extension line of the middle part
-				and the top part.
+				The maximum angle between the extension line of the middle segment and the top segment.
 			</td>
 			<td>
 				<ImageContainer
@@ -286,7 +283,7 @@ There are 3 types of structures in the middle part: **Regular**, **Small Pillar*
 
 -   Small Pillar
 
-Small Pillar is a type of support that is used to hold small spaces, the both sides of the small pillar are connected to the model surface.
+Small Pillar is used to support small spaces, with both ends of the small pillar connected to model surfaces.
 
 <ResponsiveTable>
 	<thead>
@@ -299,7 +296,7 @@ Small Pillar is a type of support that is used to hold small spaces, the both si
 	<tbody>
 		<tr>
 			<td>Small Pillar Contact Shape</td>
-			<td>Shape of the small pillar contact part.</td>
+			<td>Shape of the small pillar's contact tips.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -311,7 +308,7 @@ Small Pillar is a type of support that is used to hold small spaces, the both si
 		</tr>
 		<tr>
 			<td>Diameter</td>
-			<td>The diameter of the small pillar.</td>
+			<td>Diameter of the small pillar.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -323,7 +320,7 @@ Small Pillar is a type of support that is used to hold small spaces, the both si
 		</tr>
 		<tr>
 			<td>Upper Depth</td>
-			<td>The upper depth of the small pillar.</td>
+			<td>Depth of the small pillar's upper end contacting model surface.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -335,7 +332,7 @@ Small Pillar is a type of support that is used to hold small spaces, the both si
 		</tr>
 		<tr>
 			<td>Lower Depth</td>
-			<td>The lower depth of the small pillar.</td>
+			<td>Depth of the small pillar's lower end contacting model surface.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -348,7 +345,7 @@ Small Pillar is a type of support that is used to hold small spaces, the both si
 	</tbody>
 </ResponsiveTable>
 
--   Cross
+-   Cross Bracing
 
 <ResponsiveTable>
 	<thead>
@@ -362,8 +359,7 @@ Small Pillar is a type of support that is used to hold small spaces, the both si
 		<tr>
 			<td>Maximum Spacing of Cross Structure</td>
 			<td>
-				The maximum spacing between two support for generating cross
-				structure.
+				The maximum spacing between two supports for cross bracing to be successfully generated.
 			</td>
 			<td>
 				<ImageContainer
@@ -376,7 +372,7 @@ Small Pillar is a type of support that is used to hold small spaces, the both si
 		</tr>
 		<tr>
 			<td>Cross Start Height</td>
-			<td>The height of the start point of the cross structure.</td>
+			<td>The minimum height of support cross bracing.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -391,7 +387,7 @@ Small Pillar is a type of support that is used to hold small spaces, the both si
 
 ### Bottom
 
-Bottom contains the **Platform** part and the **Main** part.
+Bottom contains settings for the **Platform** and the support's **Main segment**.
 
 -   Platform
 
@@ -406,7 +402,7 @@ Bottom contains the **Platform** part and the **Main** part.
 	<tbody>
 		<tr>
 			<td>Platform Shape</td>
-			<td>Shape of the platform.</td>
+			<td>Shape of the support platform.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -418,7 +414,7 @@ Bottom contains the **Platform** part and the **Main** part.
 		</tr>
 		<tr>
 			<td>Platform Diameter</td>
-			<td>The diameter of the platform.</td>
+			<td>Diameter of the Support platform.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -430,7 +426,7 @@ Bottom contains the **Platform** part and the **Main** part.
 		</tr>
 		<tr>
 			<td>Platform Thickness</td>
-			<td>The thickness of the platform.</td>
+			<td>Thickness of the support platform.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -443,13 +439,10 @@ Bottom contains the **Platform** part and the **Main** part.
 	</tbody>
 </ResponsiveTable>
 
--   Main Part
+-   Main Segment
 
 <Admonition>
-	The following options apply to the bottom of supports which are generated on
-	models, not the platform. That is, the both ends of the supports should
-	touch the model. They are not available in the "Edit" mode, you need to
-	switch to the "Add" mode to use them.
+	The following settings apply to the bottom of supports generated on models, with both ends of the supports touching the model. This type of supports are not available in the "Edit" mode. Switch to the "Add" mode to use them.
 </Admonition>
 
 <ResponsiveTable>
@@ -462,19 +455,19 @@ Bottom contains the **Platform** part and the **Main** part.
 	<tbody>
 		<tr>
 			<td>Model Contact Shape</td>
-			<td>The shape of the support bottom.</td>
+			<td>Shape of the support's bottom.</td>
 		</tr>
 		<tr>
 			<td>Contact Diameter</td>
-			<td>The diameter of the support bottom.</td>
+			<td>Diameter of the support's bottom.</td>
 		</tr>
 		<tr>
 			<td>Contact Depth</td>
-			<td>The depth of the support bottom.</td>
+			<td>Depth of the support's bottom.</td>
 		</tr>
 		<tr>
 			<td>Contact Point</td>
-			<td>The number of contact points of the support bottom.</td>
+			<td>Number of contact points of the support bottom.</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
@@ -492,7 +485,7 @@ Bottom contains the **Platform** part and the **Main** part.
 	<tbody>
 		<tr>
 			<td>Raft Shape</td>
-			<td>The shape of the raft.</td>
+			<td>Shape of the raft.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -504,7 +497,7 @@ Bottom contains the **Platform** part and the **Main** part.
 		</tr>
 		<tr>
 			<td>Raft Area Ratio(%)</td>
-			<td>The area ratio of the raft.</td>
+			<td>Ratio for the area of the raft to the projected area of the model.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -516,7 +509,7 @@ Bottom contains the **Platform** part and the **Main** part.
 		</tr>
 		<tr>
 			<td>Raft Thickness</td>
-			<td>The thickness of the raft.</td>
+			<td>Thickness of the raft.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -528,7 +521,7 @@ Bottom contains the **Platform** part and the **Main** part.
 		</tr>
 		<tr>
 			<td>Raft Height</td>
-			<td>The height of the raft.</td>
+			<td>Overall height of the raft.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -540,7 +533,7 @@ Bottom contains the **Platform** part and the **Main** part.
 		</tr>
 		<tr>
 			<td>Raft Slope(°)</td>
-			<td>The slope of the raft edge.</td>
+			<td>Slope of the raft's wall.</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -557,7 +550,7 @@ Bottom contains the **Platform** part and the **Main** part.
 
 There are 2 modes for auto support: **+All** and **+Platform**.
 
-**+All** allows supports to be generated based on model surface, while **+Platform** only allows supports to be generated on the platform.
+**+All** allows supports to be generated based on all model surfaces, while **+Platform** only allows supports to be generated on the platform.
 
 <ImageComparison
 	img1Src={
@@ -570,22 +563,22 @@ There are 2 modes for auto support: **+All** and **+Platform**.
 	text2={"+Platform"}
 />
 
-## Operation Mode
+## Manual Support Operation
 
-There are 3 operation modes: **Add**, **Delete**, and **Edit**, the shortcut keys are "A", "D", and "E" respectively. All of the 3 modes support multi-selection by holding Ctrl key and dragging the mouse to select the operation area.
+Manual Support Operation allows: **Add**, **Delete**, and **Edit** of supports, with corresponding shortcut keys "A", "D", and "E". Hold down the Ctrl key and drag the mouse to select all supports within the frame and batch **Add**, **Delete** and **Edit** supports.
 
 ### Add
 
 <ChituboxAddSupportIcon /> Click the model to add supports.
 
-There are two kinds of modes for adding supports: **Regular** (default) and **Connection**.
+There are two modes for adding supports: **Regular** (default) and **Connection**.
 
-The Connection mode allows you to add supports between models and existing support trunks, it complys with the following rules:
+The Connection mode allows you to add supports between models and existing support trunks, when complying to the following rules:
 
--   If you first click on a model, then you can fix another side of the support on the model surface or a existing support trunk.
--   If you first click on a support trunk, then you can fix another side of the support on another support trunk.
+-   After first clicking on a model surface, you can click and attach the other end of the support on the same model's surface or an existing support trunk.
+-   After first clicking on a support trunk, you can click and attach the other side of the support on another existing support trunk.
 
-If you want to switch to the Connection mode, you need to pop out the support mode panel first:
+In order to use Connection model, pop out the support mode panel first:
 
 <ImageContainer
 	className={"max-w-sm"}
@@ -594,7 +587,7 @@ If you want to switch to the Connection mode, you need to pop out the support mo
 	}
 />
 
-Then select the Connection mode:
+Then select Connection mode on the panel:
 
 <ImageContainer
 	className={"max-w-sm"}
@@ -605,18 +598,15 @@ Then select the Connection mode:
 
 ### Delete
 
-<ChituboxDeleteSupportIcon /> Click supports to highlight target supports in
-red, then click the button again or press Delete key to delete the supports.
+<ChituboxDeleteSupportIcon /> Click supports to highlight target supports in red, and then click the button again or press Delete key to delete selected supports.
 
 ### Edit
 
 <ChituboxEditSupportIcon /> Click supports to highlight target supports in
-green, hold Ctrl key to select multiple supports, you can then adjust the
-parameters of the selected supports. You can also drag the supports to adjust
-their positions.
+green, or hold down Ctrl key to select multiple supports. You can then adjust parameters of the selected supports. You can also drag supports to adjust their positions.
 
-In Edit mode, you can double click a support node to add node supports (press Esc to exit).
+Under Edit mode, double click a support node to generate support segments originated from the note (press Esc to exit).
 
 ## Clear All
 
-By clicking this button, all the supports will be cleared.
+Delete all supports by clicking this button.

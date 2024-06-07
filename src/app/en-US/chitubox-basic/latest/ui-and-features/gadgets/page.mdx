@@ -38,32 +38,29 @@ export const metadata = {
 
 # Gadgets
 
-In this section, we will introduce some useful gadgets that can be used in the CHITUBOX software.
+In this section, we will introduce some useful gadgets in CHITUBOX.
 
 ## Toolbar
 
-The toolbar is located at the left of the main window. It contains the select, move, rotate, scale, and mirror options.
+The toolbar is located on the left side of the main window. It contains five tools: select, move, rotate, scale, and mirror.
 
 ### Select
 
-<ChituboxSelectIcon /> The select pointer tool is used to select objects in the
-scene by clicking.
+<ChituboxSelectIcon /> Select objects on the screen by clicking.
 
-<ChituboxSelectBoxIcon /> The select box tool is used to select objects in the
-scene by draging a box.
+<ChituboxSelectBoxIcon /> Select objects in the scene by draging-selecting.
 
 ### Move
 
-<ChituboxMoveIcon /> The move tool is used to move objects in the scene. You can
-also move objects precisely by inputting the coordinates in the move panel.
+<ChituboxMoveIcon /> The move tool is used to move selected models. Move objects precisely by entering coordinates in the move panel.
 
 <ImageContainer
 	src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-move-panel.png"}
 />
 
--   Put on the plate: The object will be put on the plate.
+-   Put on the plate: Place the selected model on the print platform based on its lowest point.
 
--   Cetered: The object will be centered on the plate, if multiple objects are selected, the center of the objects will be the center of the plate.
+-   Cetered: Center the selected model on the print platform. Multiple objects within selection will be centered based on the center of the group.
 
 ### Rotate
 
@@ -71,51 +68,45 @@ also move objects precisely by inputting the coordinates in the move panel.
 	src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-rotate-panel.png"}
 />
 
-<ChituboxRotateIcon /> The rotate tool is used to rotate objects in the scene.
-You can also rotate objects precisely by inputting the angles in the rotate
-panel.
+<ChituboxRotateIcon /> Rotate selected models. Rotate objects precisely by entering angles in the rotate panel.
 
--   Combination Center: If enabled,the center of the rotation is the center of the selected objects.
+-   Combination Center: Rotate around the center of the group of selected models.
 
--   Flatten by face: The object will be put on the plate by the face you selected on the object.
+-   Flatten by face: Place the model on the platform based on the selected face.
 
--   Auto-orientate Selected: The object will be auto-oriented by CHITUBOX.
+-   Auto-orient selected models based on built-in algorithm.
 
 ### Scale
 
-<ChituboxScaleIcon /> The scale tool is used to scale objects in the scene. You
-can also scale objects precisely by inputting the scale size or ratio in the
-scale panel.
+<ChituboxScaleIcon /> Scale selected models. Scale objects precisely by inputting the scale size or ratio in the scale panel.
 
 <ImageContainer
 	src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-scale-panel.png"}
 />
 
-<ChituboxGlobalIcon /> Global coordinate: The scale handle parallels to the
-global coordinate.
+<ChituboxGlobalIcon /> Global coordinate: Scale handles are parallels to the global coordinates.
 
-<ChituboxLocalIcon /> Local coordinate: The scale handle parallels to object's
-local coordinate.
+<ChituboxLocalIcon /> Local coordinate: Scales handle are parallel to the model's local coordinates.
 
-<ChituboxResetIcon /> Reset: Reset the ratio to 100%.
+<ChituboxResetIcon /> Reset: Reset the scale to 100%.
 
--   Lock Ratio: If enabled, the X, Y and Z dimentioned will be scaled by the same ratio.
+-   Lock Ratio: If enabled, the X, Y and Z dimentioned will be scaled proportionally.
 
 -   Lock support diameter: If enabled, the support diameter will not be scaled.
 
 ### Mirror
 
-<ChituboxMirrorIcon /> The mirror tool is used to mirror objects in the scene.
+<ChituboxMirrorIcon /> Mirror selected models on the platform.
 
 <ImageContainer
 	src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-mirror-panel.png"}
 />
 
--   Keep the original model: If enabled, the original model will be kept.
+-   Keep the original model: Preserve the original model in the mirror action.
 
 ## Info Panel
 
-The Info Panel is located at the lower left of the main window. It contains the brief information of current settings.
+The Info Panel is located in the lower left of the main window. It contains basic information of current print settings.
 
 ## Machine Management Bar
 
@@ -123,11 +114,11 @@ The Machine Management Bar is located at bottom of the main window. Here you can
 
 Click the add machine button <ChituboxAddMachine /> to add a new printer.
 
-Click the menu icon <ChituboxMachineBarMenuIcon />, you can see the Hide Platform, <ChituboxCopyAddIcon /> Copy Machine, and <ChituboxDeleteIcon /> Delete Machine options.
+Click the menu icon <ChituboxMachineBarMenuIcon />, and you can see options to Hide Platform, <ChituboxCopyAddIcon /> Copy Machine, and <ChituboxDeleteIcon /> Delete Machine.
 
 ## Support Display Mode
 
-Click <ChituboxSupport /> to switch to the support view. There are 3 buttons allow you to switch between different support display modes.
+Click <ChituboxSupport /> to switch to the support view. There are 3 buttons allowing you to switch between different support display modes.
 
 <ChituboxSupportDisplayAllIcon /> Display full supports.
 
@@ -155,7 +146,7 @@ Click <ChituboxSupport /> to switch to the support view. There are 3 buttons all
 
 ## Render Mode
 
-The render mode is located at the upper right of the main window. It contains two modes: Details and Fresnel.
+Rending mode options are located in the upper right of the main window. It contains two modes: Details and Fresnel.
 
 <ChituboxRenderDetailedIcon /> In Details mode, the model shows more details on
 the surface.
@@ -164,7 +155,7 @@ the surface.
 	src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-details.png"}
 />
 
-<ChituboxRenderFresnelIcon /> In Fresnel mode, the model will appear smoother on
+<ChituboxRenderFresnelIcon /> In Fresnel mode, the model appears smoother on
 the surface.
 
 <ImageContainer
@@ -173,7 +164,7 @@ the surface.
 
 ## Viewport Gizmos
 
-The Viewport Gizmos is located at the upper right of the main window, it provides an intuitive way to quickly manipulate the view and enables users to quickly change the angle or perspective of the viewport, making it easy to check the positions of objects relative to each other.
+Viewport Gizmos are located in the upper right corner of the main window, providing an intuitive way to quickly manipulate the view, enabling users to quickly change the angle or perspective of the viewport, and facilitating the inspection of the relative position of objects.
 
 <ImageContainer
 	src={
@@ -182,9 +173,9 @@ The Viewport Gizmos is located at the upper right of the main window, it provide
 	width={200}
 />
 
-The Home <ChituboxHomeIcon /> icon and the Perspective <ChituboxPerspectiveIcon /> / Orthographic <ChituboxOthographicIcon /> icons are located at the upper-right of the main window beside the viewport gizmos.
+The Home <ChituboxHomeIcon /> icon and the Perspective <ChituboxPerspectiveIcon /> / Orthographic <ChituboxOthographicIcon /> icons are located at the upper-right of the main window, next to the viewport gizmos.
 
-The Home icon allows users to reset the viewport to the default view. The Perspective/Orthographic icon allows users to switch between Perspective and Orthographic views. Perspective mode provides a more realistic frustum view of the scene, while Orthographic mode gives users a flat view of the scene, it allows users to easily assess the position of objects on the build plate and make adjustments as needed.
+The Home icon allows users to reset the viewport to the default view. The Perspective/Orthographic icon allows users to switch between Perspective and Orthographic views. Perspective mode provides a more realistic view of the scene, while Orthographic mode gives users a flat view of the scene. Changing the view model can help users to assess the position of objects on the build plate and make adjustments as needed.
 
 ## Slider
 
@@ -192,4 +183,4 @@ The Home icon allows users to reset the viewport to the default view. The Perspe
 	src={"/images/docs/en-US/chitubox-basic/2.x.x/005-gadget-slider.gif"}
 />
 
-The slider is located at the right of the main window which is used to preview the sectional area of models (pre-sliced) and layers of models (post-sliced). This feature allows users to preview the various sections and layers of the 3D model before it is sent to the printer. The slider has two buttons on the top and bottom separately, which are used to animate the slider position. The reset button on the bottom will reset the slider position to the default value. The slider component can help users assess the quality of the 3D model before it is sent to the printer, allowing them to make adjustments as needed.
+The slider is located at the right of the main window, used to preview the sectional area of models (pre-slice) and layers of models (post-slice). The slider has two buttons on the top and bottom for animating the slider position. The reset button on the bottom resets the slider position to the default levels. The slider component can help users assess the quality of the 3D model before it is sent to the printer, allowing them to make adjustments as needed.
