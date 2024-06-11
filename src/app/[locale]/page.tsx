@@ -1,6 +1,6 @@
 import { Locale } from "../../../messages/Locale";
 import dynamic from "next/dynamic";
-import DocsLinks from "./DocsLinks";
+import Docsboard from "./Docsboard/Docsboard";
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 
@@ -17,7 +17,7 @@ export default function Page(props: { params: { locale: Locale; }; }) {
 	return (
 		<div className="flex flex-col">
 			<DynamicHero />
-			<DocsLinks
+			<Docsboard
 				chituboxBasic={"CHITUBOX Basic"}
 				chituboxPro={"CHITUBOX Pro"}
 				chituManager={"ChituManager"}
