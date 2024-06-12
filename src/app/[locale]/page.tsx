@@ -8,14 +8,17 @@ const DynamicHero = dynamic(() => import("./hero/Hero"), {
 	ssr: false,
 });
 
-export default function Page(props: { params: { locale: Locale; }; }) {
+export default function Page(props: { params: { locale: Locale } }) {
 	const { locale } = props.params;
 	unstable_setRequestLocale(locale);
 
 	const t = useTranslations("footer");
 
 	return (
-		<div className="flex flex-col">
+		<div
+			className="flex flex-col 
+			bg-neutral-100 dark:bg-black"
+		>
 			<DynamicHero />
 			<Docsboard
 				chituboxBasic={"CHITUBOX Basic"}

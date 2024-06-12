@@ -30,7 +30,7 @@ const Subtitle = (props: { docInstanceName: string }) => {
 
 	return (
 		<div
-			className="flex flex-col w-full min-h-44 p-5 gap-2
+			className="flex flex-col w-full min-h-44 px-5 py-3 gap-2
 			text-sm
 			text-neutral-500
 			dark:text-neutral-400"

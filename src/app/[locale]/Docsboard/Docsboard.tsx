@@ -9,14 +9,13 @@ const DocsCard = (props: { href: string; title: string }) => {
 	return (
 		<div
 			className="flex flex-col items-start
-			border-[1px] border-neutral-400 dark:border-neutral-600
-			rounded-xl duration-200"
+			bg-white dark:bg-neutral-800
+			rounded-xl hover:shadow-lg duration-200"
 		>
 			<Link
 				href={href}
 				className="flex justify-start items-center w-full px-5 py-3
 				dark:text-neutral-300 dark:hover:text-neutral-200
-				border-b-[1px] border-neutral-400 dark:border-neutral-600
 				duration-200"
 			>
 				{title}
@@ -42,13 +41,13 @@ const Docsboard = (props: {
 	} = props;
 	const locale = useLocale();
 	return (
-		<div className="flex justify-center dark:bg-black">
+		<div className="flex justify-center">
 			<div
 				className="grid
 				grid-cols-1
 				md:grid-cols-2
 				lg:grid-cols-3
-				w-full max-w-[1200px] px-4 py-16 gap-12"
+				w-full max-w-[1200px] px-4 py-16 gap-10"
 			>
 				<DocsCard
 					href={`/${locale}/chitubox-basic/latest/introduction`}
