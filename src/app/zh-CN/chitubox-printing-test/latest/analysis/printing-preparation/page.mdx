@@ -1,77 +1,65 @@
 export const meta = {
-	title: "Printing Preparation",
+	title: "打印前准备",
 	authors: [{ name: "CHITUBOX Team" }],
-	pageId: "/en-US/print-testing-instructions/v1.0.0/printing-preparation",
+	pageId: "/zh-CN/print-testing-instructions/v1.0.0/printing-preparation",
 	description: "Printing preparation record table.",
 	ogImage: "/images/docs/og_image.png",
 };
 
-# Printing Preparation
+# 打印前准备
 
-## Printing Environment Data Record Table
+## 打印环境数据记录表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th>Project</th>
-			<th>Requirementd</th>
-			<th>Measured record</th>
+			<th>项目</th>
+			<th>要求</th>
+			<th>实测记录</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Ambient temperature</td>
+			<td>环境温度</td>
 			<td>18-28℃</td>
 			<td>19 ℃</td>
 		</tr>
 		<tr>
-			<td>Ambient humidity</td>
+			<td>环境湿度</td>
 			<td>≤60%</td>
 			<td>≤40%</td>
 		</tr>
 		<tr>
-			<td>Stay away from interference sources</td>
-			<td>Keep away from heat, water and vibration sources (Yes/No)</td>
-			<td>Yes</td>
+			<td>远离干扰源</td>
+			<td>远离热源、水源及振动源（是/否）</td>
+			<td>是</td>
 		</tr>
 		<tr>
-			<td>Air circulation</td>
+			<td>空气流通</td>
+			<td>定期空气流通，室内无明显异味（具体的措施）</td>
+			<td>通风系统</td>
+		</tr>
+		<tr>
+			<td>室内光强</td>
+			<td>保持无光或者弱蓝光状态（具体措施）</td>
+			<td>遮光帘</td>
+		</tr>
+		<tr>
+			<td>稳压</td>
 			<td>
-				Regular air circulation, no obvious odor in the room (specific
-				measures)
+				供电电源需满足接地要求，且不能和大电流设备共享接线电路，打印过程需要确保供电电压的稳定性（是/否）
 			</td>
-			<td>Ventilation system</td>
+			<td>是</td>
 		</tr>
 		<tr>
-			<td>Indoor light intensity</td>
-			<td>Keep no light or weak blue light state (specific measures)</td>
-			<td>Blackout curtain</td>
+			<td>干扰挥发性物体</td>
+			<td>不将水和酒精等挥发性溶剂放置于打印室内（是/否）</td>
+			<td>是</td>
 		</tr>
 		<tr>
-			<td>Voltage regulation</td>
+			<td>供电</td>
 			<td>
-				The power supply must meet the grounding requirements, and
-				cannot share the wiring circuit with high-current equipment. The
-				printing process needs to ensure the stability of the power
-				supply voltage (Yes/No)
-			</td>
-			<td>Yes</td>
-		</tr>
-		<tr>
-			<td>Interfering with volatile objects</td>
-			<td>
-				Do not place volatile solvents such as water and alcohol in the
-				printing room (Yes/No)
-			</td>
-			<td>Yes</td>
-		</tr>
-		<tr>
-			<td>Power supply</td>
-			<td>
-				The power supply voltage and current need to be executed in
-				strict accordance with the power supply requirements of the
-				printer equipment (record the specific power supply voltage and
-				current)
+				供电电压和电流需要严格按照打印机设备的供电要求进行执行（记录具体供电电压和电流）
 			</td>
 			<td>INPUT:100-240V~50/60Hz2.0A OUTPUT:24.0V3.0A72.0W</td>
 		</tr>
@@ -80,294 +68,252 @@ export const meta = {
 
 <br />
 
-## Printer Readiness Confirmation Form
+## 打印机准备确认表
 
 <ResponsiveTable>
 	<tbody>
 		<tr>
 			<td>
-				<b>Printer name</b>
+				<b>打印机名称</b>
 			</td>
 			<td colSpan="2">Default</td>
 		</tr>
 		<tr>
 			<td>
-				<b>Project</b>
+				<b>项目</b>
 			</td>
 			<td>
-				<b>Requirementd</b>
+				<b>要求</b>
 			</td>
 			<td>
-				<b>Measured record</b>
+				<b>实测记录</b>
 			</td>
 		</tr>
 	</tbody>
 	<tbody>
 		<tr>
-			<td>Installation location</td>
-			<td>
-				Need to install and place to hard level area (specific measures)
-			</td>
-			<td style={{ minWidth: "170px" }}>Horizontal desktop</td>
+			<td>安装位置</td>
+			<td>需要安装放置到坚硬水平的区域（具体措施）</td>
+			<td style={{ minWidth: "170px" }}>水平桌面</td>
 		</tr>
 		<tr>
-			<td>Release working structure</td>
-			<td>
-				The release film is not damaged, the release film is clean, and
-				the tension of the release film is normal (whether it is
-				normal/with a real picture)
-			</td>
-			<td>Yes</td>
+			<td>离型工作结构</td>
+			<td>离型膜无破损、离型膜干净、离型膜张紧正常（是/否，附实拍图）</td>
+			<td>是</td>
 		</tr>
 		<tr>
-			<td>Image shaping structure</td>
-			<td>
-				The light source and image display device are normal (whether it
-				is normal/with a real picture of the full-screen lighting state)
-			</td>
-			<td>Yes</td>
+			<td>图像成形结构</td>
+			<td>光源和图像显示装置正常（是/否，附全屏点亮状态实拍图）</td>
+			<td>是</td>
 		</tr>
 		<tr>
-			<td>Image shaping area</td>
-			<td>
-				Image forming printing screen/imaging glass surface is clean and
-				free of impurities (whether it is normal, with real pictures)
-			</td>
-			<td>Yes</td>
+			<td>图像成形区域</td>
+			<td>图像成形打印屏/成像玻璃面干净无杂质（是/否，附实拍图）</td>
+			<td>是</td>
 		</tr>
 		<tr>
-			<td>Print platform installation</td>
-			<td>The printing platform is locked normally (Yes/No Normal)</td>
-			<td>Yes</td>
+			<td>打印平台安装</td>
+			<td>打印平台锁紧正常（是/否，附实拍图）</td>
+			<td>是</td>
 		</tr>
 		<tr>
-			<td>Residual objects on the printing platform</td>
-			<td>No residue on the printing platform (Yes/No Residue)</td>
-			<td>No</td>
+			<td>打印平台残留物体</td>
+			<td>打印平台上无残留物体（是/否）</td>
+			<td>否</td>
 		</tr>
 		<tr>
-			<td>Print platform leveling</td>
-			<td>Print platform leveling normal (Yes/No Normal)</td>
-			<td>Yes</td>
+			<td>打印平台调平</td>
+			<td>打印平台调平正常（是/否）</td>
+			<td>是</td>
 		</tr>
 		<tr>
-			<td>Resin tank locking</td>
-			<td>Resin tank is properly installed and locked (yes/no normal)</td>
-			<td>Yes</td>
+			<td>树脂槽锁紧</td>
+			<td>树脂槽正确安装锁紧（是/否）</td>
+			<td>是</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-<br />
-
-## Light Intensity Numerical Measurement Record Table
+## 光强数值测量记录表
 
 <ResponsiveTable>
 	<tbody>
 		<tr>
 			<td rowSpan="2"></td>
 			<td>
-				<b>Measuring equipment name</b>
+				<b>测量仪器名称</b>
 			</td>
 			<td>Default</td>
 			<td>
-				<b>Specification model</b>
+				<b>规格型号</b>
 			</td>
 			<td colSpan="2">Default</td>
 		</tr>
 		<tr>
 			<td>
-				<b>Zone 1 (μw/cm2)</b>
+				<b>区域 1 (μw/cm2)</b>
 			</td>
 			<td>
-				<b>Zone 2 (μw/cm2)</b>
+				<b>区域 2 (μw/cm2)</b>
 			</td>
 			<td>
-				<b>Zone 3 (μw/cm2)</b>
+				<b>区域 3 (μw/cm2)</b>
 			</td>
 			<td>
-				<b>Zone 4 (μw/cm2)</b>
+				<b>区域 4 (μw/cm2)</b>
 			</td>
 			<td>
-				<b>Zone 5 (μw/cm2)</b>
+				<b>区域 5 (μw/cm2)</b>
 			</td>
 		</tr>
 	</tbody>
 	<tbody>
 		<tr>
 			<td>
-				<b>First time</b>
+				<b>第1次</b>
 			</td>
 			<td>4649</td>
-			<td> 5791</td>
-			<td> 5523</td>
-			<td> 4477</td>
-			<td> 4615</td>
+			<td>5791</td>
+			<td>5523</td>
+			<td>4477</td>
+			<td>4615</td>
 		</tr>
 		<tr>
 			<td>
-				<b>2nd time</b>
+				<b>第2次</b>
 			</td>
 			<td>4516</td>
-			<td> 5679</td>
-			<td> 5400</td>
-			<td> 4665</td>
-			<td> 4504</td>
+			<td>5679</td>
+			<td>5400</td>
+			<td>4665</td>
+			<td>4504</td>
 		</tr>
 		<tr>
 			<td>
-				<b>The 3th time</b>
+				<b>第3次</b>
 			</td>
 			<td>4362</td>
-			<td> 5554</td>
-			<td> 5319</td>
-			<td> 4549</td>
-			<td> 4487</td>
+			<td>5554</td>
+			<td>5319</td>
+			<td>4549</td>
+			<td>4487</td>
 		</tr>
 		<tr>
 			<td>
-				<b>The 4th time</b>
+				<b>第4次</b>
 			</td>
 			<td>4435</td>
-			<td> 5561</td>
-			<td> 5398</td>
-			<td> 4650</td>
-			<td> 4540</td>
+			<td>5561</td>
+			<td>5398</td>
+			<td>4650</td>
+			<td>4540</td>
 		</tr>
 		<tr>
 			<td>
-				<b>5th meeting</b>
+				<b>第5次</b>
 			</td>
 			<td>4999</td>
-			<td> 5553</td>
-			<td> 5787</td>
-			<td> 4936</td>
-			<td> 5551</td>
+			<td>5553</td>
+			<td>5787</td>
+			<td>4936</td>
+			<td>5551</td>
 		</tr>
 		<tr>
 			<td>
 				<b>Average</b>
 			</td>
 			<td>4592</td>
-			<td> 5628</td>
-			<td> 5485</td>
-			<td> 4655</td>
-			<td> 4739</td>
+			<td>5628</td>
+			<td>5485</td>
+			<td>4655</td>
+			<td>4739</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-<div
-	style={{
-		display: "flex",
-		justifyContent: "center",
-		alignItem: "center",
-	}}
->
-	<ImageContainer src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/front-of-printer.svg" />
+<div className="flex justify-center items-center">
+	<ImageContainer src="/images/docs/zh-CN/chitubox-printing-test/1.x.x/test-preparation/front-of-printer.svg" />
 </div>
 
-## Printing Material Preparation Record Form
+## 打印材料准备记录表
 
 <ResponsiveTable>
 	<tbody>
 		<tr>
 			<td>
-				<b>Material name</b>
+				<b>材料名称</b>
 			</td>
 			<td>Default</td>
 			<td>
-				<b>Date of manufacture (shelf life)</b>
+				<b>生产日期 （保质期）</b>
 			</td>
-			<td>2021/7/26 (18 montds)</td>
+			<td>2021/7/26 (18个月)</td>
 		</tr>
 		<tr>
 			<td>
-				<b>Serial number</b>
+				<b>序号</b>
 			</td>
 			<td>
-				<b>Project</b>
+				<b>项目</b>
 			</td>
 			<td>
-				<b>Requirement</b>
+				<b>要求</b>
 			</td>
 			<td>
-				<b>Measured record</b>
+				<b>实测记录</b>
 			</td>
 		</tr>
 	</tbody>
 	<tbody>
 		<tr>
 			<td>1</td>
-			<td>Valid period</td>
-			<td>
-				Printing materials are normal and not expired (Yes/No Normal)
-			</td>
-			<td>Yes</td>
+			<td>有效期</td>
+			<td>打印材料正常无过期（是/否）</td>
+			<td>是</td>
 		</tr>
 		<tr>
 			<td>2</td>
-			<td>Impurities</td>
-			<td>
-				The printing material added in the resin tank is evenly mixed
-				without impurities (Yes/No Normal)
-			</td>
-			<td>Yes</td>
+			<td>杂质</td>
+			<td>树脂槽内加入的打印材料均匀混合无杂质（是/否）</td>
+			<td>是</td>
 		</tr>
 		<tr>
 			<td>3</td>
-			<td>Printing material usage</td>
+			<td>打印材料使用量</td>
 			<td>
-				The printing material is sufficient and will not overflow during
-				the printing process (whether it is within the allowable scale
-				range of the mark, if the resin tank has no marked tick, record
-				whether there is resin overflow during the first complete
-				release process)
+				打印材料充足并不会在打印过程溢出（是否在标记允许刻度范围内，若树脂槽无标记刻度线则记录首次完整离型过程是否有树脂外溢）
 			</td>
-			<td>Yes</td>
+			<td>是</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-<br />
-
-## Print Document (TMA) Preparation Record Form
+## 打印文件（TMA）准备记录表
 
 <Admonition type={"tip"}>
-	Different exposure effects are achieved by adjusting the exposure time of
-	the print parameters and the canary release of the picture
+	不同的曝光效果通过调整打印参数的曝光时间和图片灰度实现
 </Admonition>
 
 <ResponsiveTable>
 	<thead>
 		<tr>
 			<th colSpan="2" rowSpan="2">
-				Project
+				项目
 			</th>
-			<th colSpan="3">Screenshot or record</th>
+			<th colSpan="3">截图或记录</th>
 		</tr>
 		<tr>
-			<th>Under exposure</th>
-			<th>Normal exposure</th>
-			<th>Overexposure</th>
+			<th>欠曝光</th>
+			<th>正常曝光</th>
+			<th>过度曝光</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td rowSpan="3">
-				<b>Screenshot of model layout in CHITUBOX software interface</b>
-			</td>
-			<td style={{ minWidth: "150px" }}>
-				<b>Main view</b>
-			</td>
+			<td rowSpan="3">模型在 CHITUBOX 软件界面排版截图</td>
+			<td style={{ minWidth: "150px" }}>主视图</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tma-front.png"
 						width={"60%"}
@@ -376,17 +322,9 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Left view</b>
-			</td>
+			<td>左视图</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						width={"60%"}
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tma-left.png"
@@ -395,17 +333,9 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Top view</b>
-			</td>
+			<td>俯视图</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tma-top.png"
 						width={"60%"}
@@ -414,26 +344,16 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="4">
-				<b>
-					Screenshot of CHITUBOX software printing parameter interface
-				</b>
-			</td>
-			<td>
-				<b>Printer</b>
-			</td>
+			<td rowSpan="4">CHITUBOX Pro 软件打印参数界面截图</td>
+			<td>打印机</td>
 			<td colSpan="3">Default</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Resin</b>
-			</td>
+			<td>树脂</td>
 			<td colSpan="3">Default</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Print</b>
-			</td>
+			<td>打印</td>
 			<td>
 				<ImageContainer
 					src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tma-print_001.png"
@@ -454,9 +374,7 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Advanced</b>
-			</td>
+			<td>高级</td>
 			<td>
 				<ImageContainer
 					src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tma-advanced_001.png"
@@ -478,23 +396,11 @@ export const meta = {
 		</tr>
 		<tr>
 			<td rowSpan="3">
-				<b>
-					Screenshot of the support parameter interface (Note: If the
-					support parameters of the corresponding print model are
-					manually adjusted, record the current direction item)
-				</b>
+				支撑参数界面截图（注意：若手动调整了对应打印模型的支撑参数时，记录在此项）
 			</td>
-			<td>
-				<b>Support parameter 1</b>
-			</td>
+			<td>支撑参数 1</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tma-support_001.png"
 						width={"35%"}
@@ -503,17 +409,9 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Support parameter 2</b>
-			</td>
+			<td>支撑参数 2</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tma-support_002.png"
 						width={"35%"}
@@ -522,17 +420,9 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Support parameter 3</b>
-			</td>
+			<td>支撑参数 3</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tma-support_003.png"
 						width={"35%"}
@@ -541,9 +431,7 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td colSpan="2">
-				<b>Print estimated time</b>
-			</td>
+			<td colSpan="2">打印预估时间</td>
 			<td>26m30s</td>
 			<td>23m56s</td>
 			<td>26m30s</td>
@@ -553,38 +441,28 @@ export const meta = {
 
 <br />
 
-## Print File (TMB) Preparation Record Form
+## 打印文件（TMB）准备记录表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
 			<th colSpan="2" rowSpan="2">
-				Project
+				项目记录
 			</th>
-			<th colSpan="3">Screenshot or record</th>
+			<th colSpan="3">截图或记录</th>
 		</tr>
 		<tr>
-			<th>Under exposure</th>
-			<th>Normal exposure</th>
-			<th>Overexposure</th>
+			<th>欠曝光</th>
+			<th>正常曝光</th>
+			<th>过度曝光</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td rowSpan="3">
-				<b>Screenshot of model layout in CHITUBOX software interface</b>
-			</td>
-			<td style={{ minWidth: "150px" }}>
-				<b>Main view</b>
-			</td>
+			<td rowSpan="3">模型在 CHITUBOX 软件界面排版截图</td>
+			<td style={{ minWidth: "150px" }}>主视图</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmb-front.png"
 						width={"60%"}
@@ -593,17 +471,9 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Left view</b>
-			</td>
+			<td>左视图</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmb-left.png"
 						width={"60%"}
@@ -612,17 +482,9 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Top view</b>
-			</td>
+			<td>俯视图</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmb-top.png"
 						width={"60%"}
@@ -631,26 +493,16 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="4">
-				<b>
-					Screenshot of CHITUBOX software printing parameter interface
-				</b>
-			</td>
-			<td>
-				<b>Printer</b>
-			</td>
+			<td rowSpan="4">CHITUBOX Pro 软件打印参数界面截图</td>
+			<td>打印机</td>
 			<td colSpan="3">Default</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Resin</b>
-			</td>
+			<td>树脂</td>
 			<td colSpan="3">Default</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Print</b>
-			</td>
+			<td>打印</td>
 			<td>
 				<ImageContainer
 					src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmb-print_001.png"
@@ -671,9 +523,7 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Advanced</b>
-			</td>
+			<td>高级</td>
 			<td>
 				<ImageContainer
 					src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmb-advanced_001.png"
@@ -695,23 +545,11 @@ export const meta = {
 		</tr>
 		<tr>
 			<td rowSpan="3">
-				<b>
-					Screenshot of the support parameter interface (Note: If the
-					support parameters of the corresponding print model are
-					manually adjusted, record the current direction item)
-				</b>
+				支撑参数界面截图（注意：若手动调整了对应打印模型的支撑参数时，记录在此项）
 			</td>
-			<td>
-				<b>Support parameter 1</b>
-			</td>
+			<td>支撑参数 1</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmb-support_001.png"
 						width={"35%"}
@@ -720,17 +558,9 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Support parameter 2</b>
-			</td>
+			<td>支撑参数 2</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmb-support_002.png"
 						width={"35%"}
@@ -739,17 +569,9 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Support parameter 3</b>
-			</td>
+			<td>支撑参数 3</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmb-support_003.png"
 						width={"35%"}
@@ -758,9 +580,7 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td colSpan="2">
-				<b>Print estimated time</b>
-			</td>
+			<td colSpan="2">打印预估时间</td>
 			<td>30m46s</td>
 			<td>27m42s</td>
 			<td>30m46s</td>
@@ -770,38 +590,28 @@ export const meta = {
 
 <br />
 
-## Print Document (TMC) Preparation Record Form
+## 打印文件（TMC）准备记录表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
 			<th colSpan="2" rowSpan="2">
-				Project
+				项目
 			</th>
-			<th colSpan="3">Screenshot or record</th>
+			<th colSpan="3">截图或记录</th>
 		</tr>
 		<tr>
-			<th>Under exposure</th>
-			<th>Normal exposure</th>
-			<th>Overexposure</th>
+			<th>欠曝光</th>
+			<th>正常曝光</th>
+			<th>过度曝光</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td rowSpan="3">
-				<b>Screenshot of model layout in CHITUBOX software interface</b>
-			</td>
-			<td style={{ minWidth: "150px" }}>
-				<b>Main view</b>
-			</td>
+			<td rowSpan="3">模型在 CHITUBOX 软件界面排版截图</td>
+			<td style={{ minWidth: "150px" }}>主视图</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-front.png"
 						width={"60%"}
@@ -810,17 +620,9 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Left view</b>
-			</td>
+			<td>左视图</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-left.png"
 						width={"60%"}
@@ -829,17 +631,9 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Top view</b>
-			</td>
+			<td>俯视图</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-top.png"
 						width={"60%"}
@@ -848,26 +642,16 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="4">
-				<b>
-					Screenshot of CHITUBOX software printing parameter interface
-				</b>
-			</td>
-			<td>
-				<b>Printer</b>
-			</td>
+			<td rowSpan="4">CHITUBOX Pro 软件打印参数界面截图</td>
+			<td>打印机</td>
 			<td colSpan="3">Default</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Resin</b>
-			</td>
+			<td>树脂</td>
 			<td colSpan="3">Default</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Print</b>
-			</td>
+			<td>打印</td>
 			<td>
 				<ImageContainer
 					src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-print_001.png"
@@ -888,9 +672,7 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Advanced</b>
-			</td>
+			<td>高级</td>
 			<td>
 				<ImageContainer
 					src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-advanced_001.png"
@@ -912,23 +694,11 @@ export const meta = {
 		</tr>
 		<tr>
 			<td rowSpan="3">
-				<b>
-					Screenshot of the support parameter interface (Note: If the
-					support parameters of the corresponding print model are
-					manually adjusted, record the current direction item)
-				</b>
+				支撑参数界面截图（注意：若手动调整了对应打印模型的支撑参数时，记录在此项）
 			</td>
-			<td>
-				<b>Support parameters 1</b>
-			</td>
+			<td>支撑参数 1</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-support_001.png"
 						width={"35%"}
@@ -937,47 +707,29 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Support parameters 2</b>
-			</td>
+			<td>支撑参数 2</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
-						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-support_001.png"
+						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-support_002.png"
 						width={"35%"}
 					/>
 				</div>
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<b>Support parameters 3</b>
-			</td>
+			<td>支撑参数 3</td>
 			<td colSpan="3">
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "center",
-						alignItem: "center",
-					}}
-				>
+				<div className="flex justify-center items-center">
 					<ImageContainer
-						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-support_001.png"
+						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-support_003.png"
 						width={"35%"}
 					/>
 				</div>
 			</td>
 		</tr>
 		<tr>
-			<td colSpan="2">
-				<b>Print estimated time</b>
-			</td>
+			<td colSpan="2">打印预估时间</td>
 			<td>1h33m57s</td>
 			<td>1h23m24s</td>
 			<td>1h33m57s</td>
@@ -987,80 +739,71 @@ export const meta = {
 
 <br />
 
-## Printing And Post-Printing Processing Record Sheet
+## 打印及打印后处理记录表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th>Project</th>
-			<th>Description</th>
-			<th>Measured record</th>
+			<th>项目</th>
+			<th>说明</th>
+			<th>实测记录</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td rowSpan="2">Model and platform separation</td>
-			<td>
-				Whether the bottom area of the model is intact and bonded to the
-				printing platform
-			</td>
-			<td>
-				The bottom area of the model is fully bonded to the printing
-				platform
-			</td>
+			<td rowSpan="2">模型与平台分离</td>
+			<td>模型底部区域是否完整与打印平台粘结</td>
+			<td>模型底部区域与打印平台完整粘结</td>
 		</tr>
 		<tr>
-			<td>
-				Model separation difficulty from printing platform
-				(hard/normal/easy)
-			</td>
-			<td>Can be easily separated using a separating blade</td>
+			<td>模型从打印平台分离难度（困难/正常/容易）</td>
+			<td>可以使用分离铲刀轻松分离</td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Model cleaning</td>
-			<td>Cleaning equipment brand/specification</td>
-			<td>Ultrasonic cleaning machine/GB0203</td>
+			<td rowSpan="3">模型清洗</td>
+			<td>清洗设备品牌/规格</td>
+			<td>冠博仕超声波清洗机/GB0203</td>
 		</tr>
 		<tr>
-			<td>Cleaning equipment gear selection</td>
-			<td>No gear</td>
+			<td>清洗设备档位选择</td>
+			<td>无挡位</td>
 		</tr>
 		<tr>
-			<td>Cleaning time</td>
+			<td>清洗时长</td>
 			<td>2min</td>
 		</tr>
 		<tr>
-			<td rowSpan="4">Model post-curing</td>
-			<td>Post-curing equipment brand/specification</td>
+			<td rowSpan="4">模型后固化</td>
+			<td>后固化设备品牌/规格</td>
 			<td>AnyCubic Photon</td>
 		</tr>
 		<tr>
-			<td>Post-curing equipment gear selection</td>
-			<td>No gear/</td>
+			<td>后固化设备档位选择</td>
+			<td>无挡位</td>
 		</tr>
 		<tr>
-			<td>Post curing mode</td>
-			<td>Natural air curing</td>
+			<td>后固化模式</td>
+			<td>自然空气固化</td>
 		</tr>
 		<tr>
-			<td>Post curing time</td>
+			<td>后固化时长</td>
 			<td>2min</td>
 		</tr>
 		<tr>
-			<td rowSpan="4">Model storage</td>
-			<td>Whether the model surface is post-processed</td>
-			<td rowSpan="2">No surface finishing</td>
+			<td rowSpan="4">模型存储</td>
+			<td>模型表面是否后处理</td>
+			<td rowSpan="2">无表面后处理</td>
 		</tr>
 		<tr>
-			<td>Description of model surface post-treatment method</td>
+			<td>模型表面后处理方式说明</td>
 		</tr>
 		<tr>
-			<td>Model storage temperature</td>
+			<td>模型储存温度</td>
 			<td>16℃ to 20℃</td>
 		</tr>
 		<tr>
-			<td>Model Storage Ambient Light</td>
-			<td>Store in a sealed bag in a dark environment</td>
+			<td>模型存储环境光</td>
+			<td>装入密封袋放置于无光环境储存</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
