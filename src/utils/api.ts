@@ -1,7 +1,14 @@
 import axios from "axios";
 import qs from "qs";
 
-export const getBannerInfo = async (lang: "en" | "zh-Hans"): Promise<any> => {
+export const getBannerInfo = async (locale: string): Promise<any> => {
+	let lang: "en" | "zh-Hans" = "en";
+	if (locale === "en-US") {
+		lang = "en";
+	} else {
+		lang = "zh-Hans";
+	}
+
 	const query = qs.stringify(
 		{
 			dataType: "chitubox-activity-page",
@@ -16,7 +23,7 @@ export const getBannerInfo = async (lang: "en" | "zh-Hans"): Promise<any> => {
 	const res = await axios.get(
 		`https://cms.chitubox.com/page/data/getPageDataDetail.do2?${query}`
 	);
-	// const res = await axios.get(`http://localhost:3001/activities`);
+	// const res = await axios.get(`http://localhost:3001/chitubox-tests/activities`);
 
 	return res.data.data;
 };
