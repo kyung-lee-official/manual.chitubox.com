@@ -121,7 +121,7 @@ export const TocHeadings = (props: any) => {
 			<div
 				className="overflow-y-auto scrollbar"
 				style={{
-					height: `calc(100vh - ${headerHeight})`,
+					height: `calc(100vh - ${headerHeight} - 16px - 32px - 16px)`,
 				}}
 			>
 				{h2H3Toc &&
