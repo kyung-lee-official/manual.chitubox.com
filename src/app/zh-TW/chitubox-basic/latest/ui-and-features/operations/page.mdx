@@ -62,35 +62,32 @@ export const metadata = {
 
 ## 鏤空
 
-<ChituboxHollowIcon /> 鏤空選項有 3
-種模式：「内鏤空」、「外鏤空」和「底部貫穿」。
+<ChituboxHollowIcon /> 鏤空選項有 2 種模式：「内鏤空」 和 「外鏤空」。
 
 **内鏤空** 允許用戶創建具有空心內部的 3D 模型，同時保留模型的外形。鏤空選項可以幫助用戶在列印 3D 模型時節省時間和材料成本，因為空心內部只需要更少的材料來列印。該功能還可用於創建具有複雜外形的輕型模型。
 
 **外鏤空** 將從模型中剝離指定厚度的壁，就像將模型進行「收縮」一樣。
 
-**底部貫穿** 與「鏤空」非常相似，但會刪除室底。
-
 <ImageContainer
-	src={"/images/docs/zh-TW/chitubox-basic/2.x.x/006-operations-hollow.png"}
+	src={"/images/docs/zh-CN/chitubox-basic/2.x.x/006-operations-hollow.png"}
 />
 
 ### 鏤空參數解釋
 
 -   **壁厚**：壁厚決定了牆的總厚度。
--   **精度**：精度決定了內壁上根據設定百分比生成的面數。
-    <ImageContainer>
-    	<ImageComparison
-    		img1Src={
-    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-low-precision.png"
-    		}
-    		text1={"低精度"}
-    		img2Src={
-    			"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-high-precision.png"
-    		}
-    		text2={"高精度"}
-    	/>
-    </ImageContainer>
+-   **精度**：生成的三角面的密度。0 表示最小密度，1 表示最大密度。
+
+        <ImageComparison
+        	img1Src={
+        		"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-low-precision.png"
+        	}
+        	text1={"低精度"}
+        	img2Src={
+        		"/images/docs/en-US/chitubox-basic/2.x.x/006-operations-high-precision.png"
+        	}
+        	text2={"高精度"}
+        />
+
 -   **填充結構**：填充的類型。
 -   **填充密度**：填充的密度。
 -   **動畫**：啟用此選項將顯示鏤空過程。

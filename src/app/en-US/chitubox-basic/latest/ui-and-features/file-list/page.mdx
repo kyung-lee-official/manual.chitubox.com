@@ -3,6 +3,7 @@ import {
 	ChituboxEyeIcon,
 	ChituboxRulerIcon,
 	ChituboxDeleteIcon,
+	ChituboxAddFileIcon,
 } from "@/components/icons/Icons";
 
 export const metadata = {
@@ -20,16 +21,18 @@ export const metadata = {
 
 # File List
 
-All loaded files are displayed in the file list. You can select multiple files at the same time. You can also select all files by clicking the select all button.
+All loaded files are displayed in the file list. You can select multiple files at the same time or select all files by clicking the select all button.
 
 <ImageContainer
 	src={"/images/docs/en-US/chitubox-basic/2.x.x/007-file-list-panel.png"}
 />
 
-The checkbox icon <ChituboxCheckboxIcon /> allows you to select the file.
+Click the checkbox icon <ChituboxCheckboxIcon /> to select/deselect the file.
 
-The eye icon <ChituboxEyeIcon /> allows you to hide the file. The add icon allows you to add files.
+Click the eye icon <ChituboxEyeIcon /> display/hide the file.
 
-The ruler icon <ChituboxRulerIcon /> allows you to display the <SpanA href={"https://computersciencewiki.org/index.php/Bounding_boxes"}>bounding box</SpanA> dimension of all files.
+Click the add icon <ChituboxAddFileIcon /> to add files.
 
-The trash icon <ChituboxDeleteIcon /> allows you to delete the selected files.
+Click the ruler icon <ChituboxRulerIcon /> to display the the <SpanA href={"https://computersciencewiki.org/index.php/Bounding_boxes"}>bounding box</SpanA> dimension of all files.
+
+Click the trash icon <ChituboxDeleteIcon /> to delete the selected files.

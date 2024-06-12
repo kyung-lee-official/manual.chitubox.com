@@ -22,7 +22,7 @@ export const metadata = {
 
 ## Cavity Detection
 
-Cavity detection is located on the right of the main panel right below the file list panel.
+The Cavity Detection button is located on the right side of the main panel, below the file list panel.
 
 Cavity detection helps users identify any enclosed cavities in their 3D printing model such as enclosed pockets or voids, and users can add holes to the model to avoid vacuum effects.
 
@@ -41,9 +41,9 @@ Here is a comparison of a hollow model with cavity detection off and on.
 
 ## Collision Detection
 
-Collision detection is located on the right of the main panel right below the file list panel.
+Collision detection is located on the right side of the main panel, below the file list panel.
 
-Collision detection helps users highlight collisions in their 3D printing model, and users can adjust the model to avoid collisions.
+Collision detection helps users highlight collisions in their 3D printing model, allowing users to adjust the model to avoid collisions.
 
 <ImageComparison
 	img1Src={
@@ -58,7 +58,7 @@ Collision detection helps users highlight collisions in their 3D printing model,
 
 ## Suspension Detection
 
-Suspension Detection is available in the support view, click <ChituboxSupport /> to switch to the support view. Suspension Detection is located on the right of the support view right below the support list panel.
+Suspension Detection is available in the support view. Click <ChituboxSupport /> to switch to the support view. Suspension Detection is located on the right side of the support view right below the support list panel.
 
 <ImageContainer
 	src={
@@ -66,11 +66,11 @@ Suspension Detection is available in the support view, click <ChituboxSupport />
 	}
 />
 
-The Suspension Detection function helps users identify any unsupported high-risk areas in their 3D printing model, and users can add supports to the model to avoid print failure.
+Suspension Detection function helps users identify any unsupported high-risk areas in their 3D printing model, allowing users to add supports to the model to avoid print failure.
 
-It provides three accuracy levels: Low, Medium, and High. The higher the accuracy level, the more accurate the detection result, but the longer the detection time. By clicking the "Refresh" button <ChituboxRefreshIcon />, you can refresh the detection result.
+It offers three accuracy levels: Low, Medium, and High. Higher accuracy levels produce more accurate detections result, but take longer to finish detection. Click the "Refresh" button <ChituboxRefreshIcon /> to refresh the detection result.
 
-Clicking the arrows in the Suspended Area panel will automatically zoom in the corresponding area in the model.
+Click the arrow in the Suspended Area panel to navigate through the detected overhangs and zoom into the corresponding area of the model.
 
 <ImageContainer
 	src={
@@ -80,23 +80,20 @@ Clicking the arrows in the Suspended Area panel will automatically zoom in the c
 
 ## Island Detection
 
-Island Detection is similar to Suspension Detection but detects islands by iterating 2D layers instead of 3D models. To use Island Detection, the model need to be sliced by clicking the **Slice** button on the right of the main panel right below the file list panel.
+Island Detection is similar to Suspension Detection but detects islands by iterating 2D layers instead of 3D models. To use Island Detection, slice the model first by clicking the **Slice** button on the right side of the main panel below the file list panel.
 
 <ImageContainer
 	src={"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-slice.png"}
 />
 
-After slicing the model, you should enter the preview window and should see the **Detect Islands** and the **Delete Islands** buttons on the top of the preview window.
+After slicing the model, you will enter the preview window and see the **Detect Islands** and the **Delete Islands** buttons at the top of the preview window.
 
 <ChituboxIslandsDetectionIcon /> Detect Islands will detect islands in the model
 and highlight them in red in the preview viewport.
 
-<ChituboxDeleteIslandsIcon /> Delete All Islands will delete all islands that
-have been detected for your model. Mostly you don't want to use this function,
-instead, you probably want to go back to add supports to the islands that have
-been detected.
+<ChituboxDeleteIslandsIcon /> Delete All Islands will delete all detected islands. Typlically you would not use this function but go back to add supports to the islands.
 
-If you want to delete islands on a specific layer, you can click the **Delete Islands** button on the right of the main panel.
+Click the **Delete Islands** button on the right of the main panel to delete islands on a specific layer.
 
 <ImageContainer
 	src={

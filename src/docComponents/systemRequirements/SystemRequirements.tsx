@@ -43,12 +43,12 @@ const enItems = [
 					<tr>
 						<td>RAM</td>
 						<td>16GB</td>
-						<td>32GB or larger</td>
+						<td>≥32GB</td>
 					</tr>
 					<tr>
 						<td>Hard Drive</td>
-						<td>Larger than 10GB</td>
-						<td>Larger than 20GB SSD</td>
+						<td>At least 10GB of Storage Space</td>
+						<td>SSD with more than 20 GB of Storage</td>
 					</tr>
 					<tr>
 						<td>GPU</td>
@@ -127,12 +127,12 @@ const enItems = [
 					<tr>
 						<td>RAM</td>
 						<td>16GB</td>
-						<td>32GB or larger</td>
+						<td>≥32GB</td>
 					</tr>
 					<tr>
 						<td>Hard Drive</td>
-						<td>Larger than 10GB</td>
-						<td>Larger than 20GB SSD</td>
+						<td>At least 10GB of Storage Space</td>
+						<td>SSD with more than 20 GB of Storage</td>
 					</tr>
 				</tbody>
 			</ResponsiveTable>

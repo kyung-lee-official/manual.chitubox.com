@@ -201,6 +201,20 @@ $$T_{LOD} \geq 5.998 + 2 + 2 \approx 10\ \text{秒}$$
 
 <LightOffDelayCalculator lang={"zh"} />
 
+#### 缓冲层
+
+<Admonition type="note" title="注意">
+	此设置目前仅适用于部分具有较大打印平台的 Creality 打印机。例如：HALOT-MAGE S，HALOT-MAGE PRO。
+</Admonition>
+
+设置缓冲层，可以减缓平台快速下降时的冲击力，避免树脂飞溅的问题。
+
+| 参数           | 说明                     |
+| -------------- | ------------------------ |
+| 缓冲层高度     | 缓冲层的高度。           |
+| 缓冲层电机速度 | 经过缓冲层时的电机速度。 |
+| 缓冲层灯灭延时 | 缓冲层的灯灭延时时长。   |
+
 ### Gcode
 
 <Admonition type="warning" title="警告">
@@ -356,50 +370,18 @@ $$ 5 \times 3 = 15 \text{mm}$$
 
 下图为不同**等分半径**的对比图：
 
-<table style={{ width: "100%", maxWidth: 800 }}>
-	<tbody>
-		<tr style={{ width: "100%" }}>
-			<th style={{ width: "50%" }}>
-				<figure style={{ alignContent: "center" }}>
-					<ImageContainer
-						src={
-							"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.equal_radius_1.png"
-						}
-						style={{
-							margin: "auto",
-							paddingRight: "0.5em",
-							maxWidth: "350px",
-						}}
-					/>
-					<figcaption>
-						<br />
-						等分数量设为 5, <br />
-						等分半径设为 1mm
-					</figcaption>
-				</figure>
-			</th>
-			<th style={{ width: "50%" }}>
-				<figure style={{ alignContent: "center" }}>
-					<ImageContainer
-						src={
-							"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.equal_radius_3.png"
-						}
-						style={{
-							margin: "auto",
-							paddingLeft: "0.5em",
-							maxWidth: "350px",
-						}}
-					/>
-					<figcaption>
-						<br />
-						等分数量设为 5, <br />
-						等分半径设为 3mm
-					</figcaption>
-				</figure>
-			</th>
-		</tr>
-	</tbody>
-</table>
+<div className="max-w-screen-sm">
+	<ImageComparison
+		img1Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.equal_radius_1.png"
+		}
+		text1={"等分數量設為 5, 等分半徑設為 1mm"}
+		img2Src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.equal_radius_3.png"
+		}
+		text2={"等分數量設為 5, 等分半徑設為 3mm"}
+	/>
+</div>
 
 ###### 9.1.2 矩阵模式
 
@@ -474,10 +456,7 @@ $$\frac{800}{51} = 15$$，余数 35
 | 显示校正     | 为 DLP 打印机设计的功能，补偿校正由于光机安装方位偏差导致的投影图片的变形          |
 
 <Admonition type="note" title="注意">
-	<p>
-		点击<SpanA href="https://www.chitubox.com/zh/article/support/howto/chitubox-free/slicing/44">📃这里</SpanA>了解更多关于<b>镜像</b>的内容。
-	</p>
-	<p>
-		**构建区域偏移**是为固化屏幕边缘存在坏点或者屏幕边缘部分作为非工作区域的情况设计的，设置偏移可以避开坏点。
-	</p>
+	点击<SpanA href="https://www.chitubox.com/zh/article/support/howto/chitubox-free/slicing/44">📃这里</SpanA>了解更多关于<b>镜像</b>的内容。
+
+	**构建区域偏移**是为固化屏幕边缘存在坏点或者屏幕边缘部分作为非工作区域的情况设计的，设置偏移可以避开坏点。
 </Admonition>
