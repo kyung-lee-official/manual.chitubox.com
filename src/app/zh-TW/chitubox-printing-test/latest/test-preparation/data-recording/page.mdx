@@ -2,217 +2,181 @@ import { DocumentDownload } from "@/components/icons/Icons";
 import { Button } from "@/components/button/Button";
 
 export const meta = {
-	title: "Data Recording",
+	title: "數據記錄",
 	authors: [{ name: "CHITUBOX Team" }],
-	pageId: "/en-US/print-testing-instructions/v1.0.0/data-recording",
+	pageId: "/zh-TW/print-testing-instructions/v1.0.0/data-recording",
 	description:
 		"Some data recording tables that you might need, which you can download and record the data on.",
 	ogImage: "/images/docs/og_image.png",
 };
 
-# Data Recording
+# 數據記錄
 
 <Button
 	buttonType={"link"}
 	href="/docs/CHITUBOX_standard_model_test_data_record_form.xlsx"
 >
 	<DocumentDownload size={32} />
-	Download All Tables
+	下載所有表格
 </Button>
 
-## Printing Environment Data Record Table
+## 列印環境數據記錄表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th>Project</th>
-			<th>Requirementd</th>
-			<th>Measured record</th>
+			<th>項目</th>
+			<th>要求</th>
+			<th>實測記錄</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Ambient temperature</td>
+			<td>環境溫度</td>
 			<td>18-28℃</td>
 			<td style={{ minWidth: "170px" }}></td>
 		</tr>
 		<tr>
-			<td>Ambient humidity</td>
+			<td>環境濕度</td>
 			<td>≤60%</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Stay away from interference sources</td>
-			<td>Keep away from heat, water and vibration sources (Yes / No)</td>
+			<td>遠離干擾源</td>
+			<td>远离熱源、水源及振動源（是/否）</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Air circulation</td>
+			<td>空氣濕度</td>
+			<td>定期空氣流通，室內無明顯異味（具體的措施）</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>室内光强</td>
+			<td>保持無光或者弱藍光狀態（具體措施）</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>穩壓</td>
 			<td>
-				Regular air circulation, no obvious odor in the room (specific
-				measures)
+				供電電源需滿足接地要求，且不能和大電流設備共享接線電路，列印過程需要確保供電電壓的穩定性（是/否）
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Indoor light intensity</td>
-			<td>Keep no light or weak blue light state (specific measures)</td>
+			<td>干擾揮發性物體</td>
+			<td>不將水和酒精等揮發性溶劑放置於列印室內（是/否）</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Voltage regulation</td>
+			<td>供電</td>
 			<td>
-				The power supply must meet the grounding requirements, and
-				cannot share the wiring circuit with high-current equipment. The
-				printing process needs to ensure the stability of the power
-				supply voltage (Yes / No)
-			</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Interfering with volatile objects</td>
-			<td>
-				Do not place volatile solvents such as water and alcohol in the
-				printing room (Yes / No)
-			</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Power supply</td>
-			<td>
-				The power supply voltage and current need to be executed in
-				strict accordance with the power supply requirements of the
-				printer equipment (record the specific power supply voltage and
-				current)
+				供電電壓和電流需要嚴格按照列印機設備的供電要求進行執行（記錄具體供電電壓和電流）
 			</td>
 			<td></td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-## Printer Readiness Confirmation Form
+## 列印機準備確認表
 
 <ResponsiveTable>
 	<tbody>
 		<tr>
 			<td colSpan="2">
-				<b>Printer name</b>
+				<b>列印機名稱</b>
 			</td>
 			<td colSpan="2"></td>
 		</tr>
 		<tr>
 			<td>
-				<b>Project</b>
+				<b>項目</b>
 			</td>
 			<td>
-				<b>Requirementd</b>
+				<b>要求</b>
 			</td>
 			<td>
-				<b>Measured record</b>
+				<b>實測記錄</b>
 			</td>
 		</tr>
 		<tr>
-			<td>Installation location</td>
-			<td>
-				Need to install and place to hard level area (specific measures)
-			</td>
+			<td>安裝位置</td>
+			<td>需要安裝放置到堅硬水平的區域（具體措施）</td>
 			<td style={{ minWidth: "170px" }}></td>
 		</tr>
 		<tr>
-			<td>Release working structure</td>
-			<td>
-				The release film is not damaged, the release film is clean, and
-				the tension of the release film is normal (whether it is
-				normal/with a real picture)
-			</td>
+			<td>離型工作結構</td>
+			<td>離型膜無破損、離型膜乾淨、離型膜張緊正常（是/否，附實拍圖）</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Image shaping structure</td>
-			<td>
-				The light source and image display device are normal (whether it
-				is normal/with a real picture of the full-screen lighting state)
-			</td>
+			<td>圖像成形結構</td>
+			<td>光源和圖像顯示裝置正常（是/否，附全屏點亮狀態實拍圖）</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Image shaping area</td>
-			<td>
-				Image forming printing screen/imaging glass surface is clean and
-				free of impurities (whether it is normal, with real pictures)
-			</td>
+			<td>圖像成形區域</td>
+			<td>圖像成形列印屏/成像玻璃面乾淨無雜質（是/否，附實拍圖）</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Print platform installation</td>
-			<td>The printing platform is locked normally (Yes / No Normal)</td>
+			<td>列印平台安裝</td>
+			<td>列印平台鎖緊正常（是/否）</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Residual objects on the printing platform</td>
-			<td>No residue on the printing platform (Yes / No Residue)</td>
+			<td>列印平台殘留物體</td>
+			<td>列印平台上無殘留物體（是/否）</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Print platform leveling</td>
-			<td>Print platform leveling normal (Yes / No Normal)</td>
+			<td>列印平台調平</td>
+			<td>列印平台調平正常（是/否）</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Resin tank locking</td>
-			<td>
-				Resin tank is properly installed and locked (Yes / No Normal)
-			</td>
+			<td>樹脂槽縮緊</td>
+			<td>樹脂槽正確安裝鎖緊（是/否）</td>
 			<td></td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-## Light Intensity Numerical Measurement Record Table
+## 光强數值測量記錄表
 
 <ResponsiveTable>
 	<tbody>
 		<tr>
 			<td rowSpan="2"></td>
 			<td>
-				<b>Measuring equipment name</b>
+				<b>測量儀器名稱</b>
 			</td>
 			<td></td>
 			<td>
-				<b>Specification model</b>
+				<b>規格型號</b>
 			</td>
 			<td colSpan="2"></td>
 		</tr>
 		<tr>
 			<td>
-				<b>Area 1</b>
+				<b>區域 1</b>
 			</td>
 			<td>
-				<b>Area 2</b>
+				<b>區域 2</b>
 			</td>
 			<td>
-				<b>Area 3</b>
+				<b>區域 3</b>
 			</td>
 			<td>
-				<b>Area 4</b>
+				<b>區域 4</b>
 			</td>
 			<td>
-				<b>Area 5</b>
+				<b>區域 5</b>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<b>1st time</b>
-			</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>
-				<b>2nd time</b>
+				<b>第 1 次</b>
 			</td>
 			<td></td>
 			<td></td>
@@ -222,7 +186,7 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<b>The 3th time</b>
+				<b>第 2 次</b>
 			</td>
 			<td></td>
 			<td></td>
@@ -232,7 +196,7 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<b>The 4th time</b>
+				<b>第 3 次</b>
 			</td>
 			<td></td>
 			<td></td>
@@ -242,7 +206,7 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<b>5th meeting</b>
+				<b>第 4 次</b>
 			</td>
 			<td></td>
 			<td></td>
@@ -252,7 +216,17 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<b>Average</b>
+				<b>第 5 次</b>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+				<b>平均值</b>
 			</td>
 			<td></td>
 			<td></td>
@@ -265,1111 +239,755 @@ export const meta = {
 
 <div className="flex justify-center items-center">
 	<ImageContainer
-		src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/front-of-printer.svg"
+		src="/images/docs/zh-CN/chitubox-printing-test/1.x.x/test-preparation/front-of-printer.svg"
 		width={450}
 	/>
 </div>
 
-## Printing Material Preparation Record Form
+## 列印材料準備記錄表
 
 <ResponsiveTable>
 	<tbody>
 		<tr>
 			<td>
-				<b>Material name</b>
+				<b>材料名稱</b>
 			</td>
 			<td></td>
 			<td>
-				<b>Date of manufacture (shelf life)</b>
+				<b>生產日期 (保質期)</b>
 			</td>
 			<td style={{ minWidth: "100px" }}></td>
 		</tr>
 		<tr>
 			<td>
-				<b>Project</b>
+				<b>項目</b>
 			</td>
 			<td>
-				<b>Requirement</b>
+				<b>要求</b>
 			</td>
 			<td colSpan="2">
-				<b>Measured record</b>
+				<b>實測記錄</b>
 			</td>
 		</tr>
 		<tr>
-			<td>Valid period</td>
-			<td>
-				Printing materials are normal and not expired (Yes / No Normal)
-			</td>
+			<td>有效期</td>
+			<td>列印材料正常無過期（是/否）</td>
 			<td colSpan="2"></td>
 		</tr>
 		<tr>
-			<td>Impurities</td>
-			<td>
-				The printing material added in the resin tank is evenly mixed
-				without impurities (Yes / No Normal)
-			</td>
+			<td>雜質</td>
+			<td>樹脂槽內加入的列印材料均勻混合無雜質（是/否）</td>
 			<td colSpan="2"></td>
 		</tr>
 		<tr>
-			<td>Printing material usage</td>
+			<td>列印材料使用量</td>
 			<td>
-				The printing material is sufficient and will not overflow during
-				the printing process (whether it is within the allowable scale
-				range of the mark, if the resin tank has no marked tick, record
-				whether there is resin overflow during the first complete
-				release process)
+				列印材料充足並不會在列印過程溢出（是否在標記允許刻度範圍內，若樹脂槽無標記刻度線則記錄首次完整離型過程是否有樹脂外溢）
 			</td>
 			<td></td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-## Printing Document Preparation Record Form
+## 列印文檔準備記錄表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th colSpan="2">Project</th>
-			<th>Screenshot or record</th>
+			<th colSpan="2">項目</th>
+			<th>截圖或記錄</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td rowSpan="3">
-				<b>
-					Screenshot of model typesetting in CHITUBOX software
-					interface
-				</b>
-			</td>
-			<td>
-				<b>Main view</b>
-			</td>
+			<td rowSpan="3">模型在CHITUBOX軟體介面排版截圖</td>
+			<td>主視圖</td>
 			<td style={{ minWidth: "200px" }}></td>
 		</tr>
 		<tr>
-			<td>
-				<b>Main view</b>
-			</td>
+			<td style={{ minWidth: "100px" }}>左視圖</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>
-				<b>Main view</b>
-			</td>
+			<td>俯視圖</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowSpan="4">
-				<b>
-					Screenshot of CHITUBOX Pro software printing parameter
-					interface
-				</b>
-			</td>
-			<td>
-				<b>Printer</b>
-			</td>
+			<td rowSpan="4">CHITUBOX Pro軟體列印參數介面截圖</td>
+			<td>列印機</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>
-				<b>Resin</b>
-			</td>
+			<td>樹脂</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>
-				<b>Print</b>
-			</td>
+			<td>列印</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>
-				<b>Advanced</b>
-			</td>
+			<td>高級</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td rowSpan="3">
-				<b>
-					Screenshot of the support parameter interface (Note: If the
-					support parameters of the corresponding print model are
-					manually adjusted, record the current direction item)
-				</b>
+				支撐參數介面截圖（注意：若手動調整了對應列印模型的支撐參數時，記錄在此項）
 			</td>
-			<td>
-				<b>Support parameter 1</b>
-			</td>
+			<td>支撐參數 1</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>
-				<b>Support parameter 2</b>
-			</td>
+			<td>支撐參數 2</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>
-				<b>...</b>
-			</td>
+			<td>...</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td colSpan="2">
-				<b>Print estimated time</b>
-			</td>
+			<td colSpan="2">列印預估時間</td>
 			<td></td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-> Remarks: The support parameter record can be displayed on the visual support parameter display interface.
+> 備註：支撐參數可直接展示可視化支撐參數顯示介面。
 >
 > <ImageContainer
 > 	src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/model-support_001.png"
 > 	width={300}
 > />
 
-## Printing And Post-Printing Processing Record Sheet
+## 列印及列印後處理記錄表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th>Project</th>
-			<th>Description</th>
-			<th>Remarks</th>
-			<th>Measured record</th>
+			<th>項目</th>
+			<th>说明</th>
+			<th>備注</th>
+			<th>實測記錄</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td rowSpan="2" style={{ minWidth: "170px" }}>
-				Model and platform separation
+				模型與平台分離
 			</td>
-			<td>
-				Whether the bottom area of the model is intact and bonded to the
-				printing platform
-			</td>
+			<td>模型底部區域是否完整與列印平台黏結</td>
 			<td></td>
 			<td style={{ minWidth: "170px" }}></td>
 		</tr>
 		<tr>
+			<td>模型從列印平台分離難度（困難/正常/容易）</td>
 			<td>
-				Model separation difficulty from printing platform
-				(hard/normal/easy)
-			</td>
-			<td>
-				<b>Difficulty</b>: When the model is separated from the
-				platform, it requires a lot of effort, or it is easy to
-				damage the printed model when it is separated;
-			
-				<b>Normal</b>: The model can be separated without
-				excessive force, and no damage to the model occurs.
-			
-				<b>Easy</b>: The model can be easily detached from the
-				printingplatform, and the printing model is intact.
+				困難：模型從平台分離時需要較大的力量，或者分離時容易損壞列印模型；<br />
+				正常：無需過度用力即可分離模型，模型無損壞現象發生。<br />
+				容易：模型可以便捷的從列印平台分離獲取，列印模型完好無損。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Model cleaning</td>
-			<td>Cleaning equipment brand/specification</td>
+			<td rowSpan="3">模型清洗</td>
+			<td>清洗設備品牌/規格</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Cleaning equipment gear selection</td>
-			<td>Ignore this if there is only one gear</td>
+			<td>清洗設備檔位選擇</td>
+			<td>若只有一個檔位則忽略此項</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Cleaning time</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td rowSpan="4">Model post-curing</td>
-			<td>Post-curing equipment brand/specification</td>
+			<td>清潔時長</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Post-curing equipment gear selection</td>
+			<td rowSpan="4">模型後固化</td>
+			<td>後固化設備品牌/規格</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Post curing mode</td>
-			<td>Water bath curing / Natural air curing / Others</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Post-curing time</td>
+			<td>後固化設備檔位選擇</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowSpan="4">Model storage</td>
-			<td>Whether the surface of the model is post-processed</td>
-			<td rowSpan="2">
-				When the first item is Yes, it is necessary to further record
-				the description of the surface post-treatment method of the
-				model
+			<td>後固化模式</td>
+			<td>水浴固化/自然空氣固化/其它等</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>後固化時長</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowSpan="4">模型儲存</td>
+			<td>模型表面是否後處理</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>模型表面後處理方式說明</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>模型儲存溫度</td>
+			<td>
+				恒溫儲存需記錄對應溫度；<br />
+				若無儲存溫度要求則記錄無溫度要求。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Description of model surface post-treatment method</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Model storage temperature</td>
+			<td>模型存儲環境光</td>
 			<td>
-				Constant temperature storage needs to record the corresponding
-				temperature; if there is no storage temperature requirement,
-				record no temperature requirement
-			</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Model Storage Ambient Light</td>
-			<td>
-				The specific method of shading preservation should be
-				explained;
-			
-				Record if there is no light storage requirement No
-				storage ambient light requirement
+				遮光保持需說明遮光保存的具體方式；<br />
+				若無光照儲存要求則記錄無儲存環境光要求。
 			</td>
 			<td></td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-## CHITUBOX TMA V1 Model Printing Effect Evaluation Table
+## CHITUBOX TMA V1 模型列印效果評定表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th>Module</th>
-			<th>Project</th>
-			<th>Remarks</th>
-			<th>Measured record</th>
+			<th>模塊</th>
+			<th>項目</th>
+			<th>備注</th>
+			<th>實測記錄</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Overall effect</td>
-			<td>Top view photo</td>
+			<td>整體效果</td>
+			<td>俯視圖拍照</td>
 			<td>
-				The corresponding top view requires a complete top view of the
-				recording model, and it is necessary to ensure that the printing
-				status of the corresponding details can be clearly seen when the
-				picture is enlarged
+				需要完整拍攝模型的俯視圖，並需要保證圖片在放大具體區域時可以清晰可見對應的細節的列印狀況。
 			</td>
 			<td style={{ minWidth: "170px" }}></td>
 		</tr>
 	</tbody>
 	<tbody>
 		<tr>
-			<td rowSpan="3">Primary baseplate</td>
-			<td>Whether it is deformed (0)</td>
+			<td rowSpan="3">主底板</td>
+			<td rowSpan="3">是否變形</td>
 			<td>
-				Record after printing and processing are completed;
-					
-				The baseplate of the model is squared to the horizontal
-				plane and perpendicular to the design surface of the
-				baseplate.
+				列印後處理完成后記錄；<br />
+				將模型底板平方于水平面並垂直于底板設計面實拍記錄；
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Whether it is deformed (1)</td>
 			<td>
-				Test records within 24-30h after printing;
-					
-				The baseplate of the model is squared to the horizontal
-				plane and perpendicular to the design surface of the
-				baseplate.
+				列印完成后 24-30 小時內測試記錄；<br />
+				將模型底板平方于水平面並垂直于底板設計面實拍記錄；
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Whether it is deformed (2)</td>
 			<td>
-				Test records within 72-78h after printing;
-
-				Test records within 72-78h after printing;
+				列印完成后 72-78 小時內測試記錄；<br />
+				將模型底板平方于水平面並垂直于底板設計面實拍記錄；
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Möbius ring evolution model</td>
-			<td>Transition lamination</td>
+			<td>莫比烏斯環演變模型</td>
+			<td>過渡層數</td>
 			<td>
-				The layer pattern visible to the naked eye is recorded:
-				visible to the naked eye;
-			
-				If you cannot observe and see the corresponding layer
-				pattern, record: no obvious layer pattern
+				肉眼可見層紋則記錄：肉眼可見；<br />
+				無法觀察看到對應的層紋則記錄：無明顯層紋。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Detailed representation model</td>
-			<td>Detail printing capability</td>
+			<td>細節表徵模型</td>
+			<td>細節列印能力</td>
 			<td>
-				All details are consistent with the design model, and if
-				they are clearly visible, they are recorded: the details
-				can be completely printed , and the corresponding
-				high-definition partial shots of the four detailed model
-				parts are attached;
-			
-				If the print definition part or all of the detail model
-				is not successfully printed, record: the details cannot
-				be completely printed , and attach the high definition
-				partial shots of the corresponding four detail model
-				parts
+				所有的細節與設計模型一致，均清晰可見則記錄：細節可完整列印，並附對應的四個細節模型部分的高清局部拍攝圖；<br />
+				細節模型的列印清晰度部分或者所有均沒有成功列印則記錄：細節不可完整列印，並附對應的四個細節模型部分的高清局部拍攝圖。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Gradual change hole axis</td>
-			<td>Gradual change hole printing capability</td>
+			<td rowSpan="2">漸變孔軸</td>
+			<td>漸變打孔列印能力</td>
 			<td>
-				The sizes of the corresponding holes are from small to
-				large: φ0.5, φ1, φ2, φ2.5;
-			
-				It is necessary to record the size corresponding to the
-				minimum hole that can be completely printed: the minimum
-				hole for complete printing is: ** ;
-			
-				It is necessary to record the actual state of other
-				smaller holes that are not completely printed: ** The
-				bottom of the hole is blocked; ** The hole has hole
-				printing traces; ** The hole has no obvious hole signs.
+				對應孔的尺寸從小到大依次為：φ0.5，φ1，φ2，φ2.5；<br />
+				需要記錄可完整列印的最小孔所對應的尺寸：完整列印最小孔為： ** ；<br />
+				需要記錄未完整列印其它更小的孔的實際狀態： ** 孔底部堵塞； **
+				孔有孔列印痕跡； ** 孔無明顯孔跡象。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Gradual change axis printing capability</td>
+			<td>漸變軸列印能力</td>
 			<td>
-				The dimensions of the corresponding axes are from small
-				to large: φ0.5, φ1, φ2, φ2.5;
-			
-				It is necessary to record the size corresponding to the
-				smallest axis that can be completely printed: the
-				smallest axis for complete printing is: ** ;
-			
-				It is necessary to record the actual state of other
-				smaller axes that are not completely printed: ** The
-				shaft part is printed deformed; ** The shaft part is
-				printed successfully; ** The shaft has no obvious signs
-				of printing.
+				對應軸的尺寸從小到大依次為：φ0.5，φ1，φ2，φ2.5；<br />
+				需要記錄可完整列印的最小軸所對應的尺寸：完整列印最小軸為：** ； <br />
+				需要記錄未完整列印其它更小的軸的實際狀態： ** 軸部分列印變形；**
+				軸部分列印成功；** 軸無明顯列印成型跡象。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Gradual change boss</td>
-			<td>Gradual change boss printing capability</td>
+			<td>漸變凸台</td>
+			<td>漸變凸台列印能力</td>
 			<td>
-				The size of the corresponding boss is from small to
-				large: 0.1mm, 0.2mm, 0.3mm, 0.4mm, 0.5mm, 0.6mm, 0.7mm,
-				0.8mm;
-			
-				It is necessary to record the size corresponding to the
-				smallest axis that can be completely printed: the
-				minimum boss for complete printing is: ** ;
-			
-				It is necessary to record the actual state of other
-				smaller bosses that are not completely printed: ** boss
-				part printing deformation; ** boss part printing
-				success; ** boss no obvious signs of printing molding.
+				對應凸台的尺寸從小到大依次爲：0.1mm、0.2mm、0.3mm、0.4mm、0.5mm、0.6mm、0.7mm、0.8mm；<br />
+				需要記錄可完整列印的最小凸台所對應的尺寸：完整列印最小凸台為：** ；<br />
+				需要記錄未完整列印其它更小的凸台的實際狀態：**
+				凸台部分列印變形；** 凸台部分列印成功；**
+				凸台無明顯列印成型跡象。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Gradual change groove</td>
-			<td>Gradual change groove printing capability</td>
+			<td>漸變凹槽</td>
+			<td>漸變凹槽列印能力</td>
 			<td>
-				The size of the corresponding groove is from small to
-				large: 0.1mm, 0.2mm, 0.3mm, 0.4mm, 0.5mm, 0.6mm, 0.7mm,
-				0.8mm;
-			
-				It is necessary to record the size corresponding to the
-				smallest groove that can be completely printed: The
-				smallest groove for complete printing is: ** ;
-			
-				It is necessary to record the actual state of incomplete
-				printing of other smaller grooves: ** groove part
-				printing deformation; ** groove part printing success;
-				** groove no obvious signs of printing molding.
+				對應凹槽的尺寸從小到大依次為：0.1mm、0.2mm、0.3mm、0.4mm、0.5mm、0.6mm、0.7mm、0.8mm；<br />
+				需要記錄可完整列印的最小凹槽所對應的尺寸：完整列印最小凹槽為：** ；<br />
+				需要記錄未完整列印其它更小的凹槽的實際狀態：** 凹槽部分列印變形；**
+				凹槽部分列印成功；** 凹槽無明顯列印成型跡象。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Logo elements</td>
-			<td>Large cross-section interlayer transition capability</td>
+			<td rowSpan="2">Logo 元素</td>
+			<td>大截面層間過渡能力</td>
 			<td>
-				The layer pattern visible to the naked eye is recorded:
-				visible to the naked eye;
-			
-				If you cannot observe and see the corresponding layer
-				pattern, record: no obvious layer pattern
+				肉眼可見層紋則記錄：肉眼可見；<br />
+				無法觀察看到對應的層紋則記錄：無明顯層紋
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>0.4Mm section cutting hole printing capacity</td>
+			<td>0.4mm截面切割孔列印能力</td>
 			<td>
-				If the corresponding hole is fully printable, then the
-				record: fully printable;
-			
-				If the corresponding hole is partially or completely
-				blocked, it is recorded: it cannot be printed
-				completely.
+				對應孔完全可列印則記錄：完整可列印；<br />
+				對應孔部分或全部被堵塞則記錄：不可完整列印。
 			</td>
 			<td></td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-## CHITUBOX TMB V1 Model Printing Effect Evaluation Table
+## CHITUBOX TMB V1 模型列印效果評定表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th>Module</th>
-			<th>Project</th>
-			<th>Remarks</th>
-			<th>Measured record</th>
+			<th>模塊</th>
+			<th>項目</th>
+			<th>備注</th>
+			<th>實測記錄</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Overall effect</td>
-			<td>Overall effect</td>
+			<td>整體效果</td>
+			<td>俯視圖拍照</td>
 			<td>
-				The corresponding top view requires a complete top view of the
-				recording model, and it is necessary to ensure that the printing
-				status of the corresponding details can be clearly seen when the
-				picture is enlarged
+				需要完整拍攝記錄模型俯視圖，並需確保圖片在放大局部區域時，能夠清晰可見對應細節的列印狀況。
 			</td>
 			<td style={{ minWidth: "170px" }}></td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Primary baseplate</td>
-			<td>Whether it is deformed (0)</td>
+			<td rowSpan="3">主底板</td>
+			<td rowSpan="3">是否變形</td>
 			<td>
-				Record after printing and processing;
-					
-				The baseplate of the model is squared to the horizontal
-				plane and perpendicular to the design surface of the
-				baseplate.
+				列印後處理完成后記錄；<br />
+				將模型底板平方于水平面並垂直于底板設計面實拍記錄；
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Whether it is deformed (1)</td>
 			<td>
-				Test records within 24-30h after printing;
-					
-				The baseplate of the model is squared to the horizontal
-				plane and perpendicular to the design surface of the
-				baseplate.
+				列印完成后 24-30 小時內測試記錄；<br />
+				將模型底板平方于水平面並垂直于底板設計面實拍記錄；
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Whether it is deformed (2)</td>
 			<td>
-				Test records within 72-78h after printing;
-					
-				Place the model baseplate flat on the horizontal plane
-				and take a real shot perpendicular to the baseplate
-				design surface;
+				列印完成后 72-78 小時內測試記錄；<br />
+				將模型底板平方于水平面並垂直于底板設計面實拍記錄；
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Möbius ring evolution model</td>
-			<td>Transition lamination</td>
+			<td>莫比烏斯環演變模型</td>
+			<td>過渡層紋</td>
 			<td>
-				The layer pattern visible to the naked eye is recorded:
-				visible to the naked eye;
-			
-				If you cannot observe and see the corresponding layer
-				pattern, record: no obvious layer pattern
+				肉眼可見層紋則記錄：肉眼可見；<br />
+				無法觀察看到對應的層紋則記錄：無明顯層紋。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Detailed representation model</td>
-			<td>Detail printing capability</td>
+			<td>細節表徵模型</td>
+			<td>細節列印能力</td>
 			<td>
-				All details are consistent with the design model, and if
-				they are clearly visible, they are recorded: the details
-				can be completely printed , and the corresponding
-				high-definition partial shots of the four detailed model
-				parts are attached;
-			
-				If the print definition part or all of the detail model
-				is not successfully printed, record: the details cannot
-				be completely printed , and attach the high definition
-				partial shots of the corresponding four detail model
-				parts
+				所有的細節與設計模型一致，均清晰可見則記錄：細節可完整列印，並附對應的四個細節模型部分的高清局部拍攝圖；<br />
+				細節模型的列印清晰度部分或者所有均沒有成功列印則記錄：細節不可完整列印，並附對應的四個細節模型部分的高清局部拍攝圖。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Gradual change hole axis</td>
-			<td>Gradual change hole printing capability</td>
+			<td rowSpan="2">漸變孔軸</td>
+			<td>漸變打孔列印能力</td>
 			<td>
-				The sizes of the corresponding holes are from small to
-				large: φ0.5, φ1, φ2, φ2.5;
-			
-				It is necessary to record the size corresponding to the
-				minimum hole that can be completely printed: the minimum
-				hole for complete printing is: **;
-			
-				It is necessary to record the size corresponding to the
-				minimum hole that can be completely printed: the minimum
-				hole for complete printing is: **;
+				對應孔的尺寸從小到大依次為：φ0.5，φ1，φ2，φ2.5；<br />
+				需要記錄可完整列印的最小孔所對應的尺寸：完整列印最小孔為：**；<br />
+				需要記錄未完整列印其它更小的孔的實際狀態： ** 孔底部堵塞； **
+				孔有孔列印痕跡； ** 孔無明顯孔跡象。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Gradual change axis printing capability</td>
+			<td>漸變軸列印能力</td>
 			<td>
-				The dimensions of the corresponding shafts are from
-				small to large: φ0.5, φ1, φ2, φ2.5;
-			
-				It is necessary to record the size corresponding to the
-				smallest axis that can be completely printed: the
-				smallest axis for complete printing is: **;
-			
-				It is necessary to record the actual state of other
-				smaller axes that are not completely printed: ** The
-				shaft part is printed deformed; ** The shaft part is
-				printed successfully; ** The shaft has no obvious signs
-				of printing.
+				對應軸的尺寸從小到大依次為：φ0.5，φ1，φ2，φ2.5；<br />
+				需要記錄可完整列印的最小軸所對應的尺寸：完整列印最小軸為：**；<br />
+				需要記錄未完整列印其它更小的軸的實際狀態： ** 軸部分列印變形； **
+				軸部分列印成功； ** 軸無明顯列印成型跡象。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Gradual change boss</td>
-			<td>Gradual change boss printing capability</td>
+			<td>漸變凸台</td>
+			<td>漸變凸台列印能力</td>
 			<td>
-				The size of the corresponding boss is from small to
-				large: 0.1mm, 0.2mm, 0.3mm, 0.4mm, 0.5mm, 0.6mm, 0.7mm,
-				0.8mm;
-			
-				It is necessary to record the size corresponding to the
-				smallest axis that can be completely printed: the
-				minimum boss for complete printing is: **;
-			
-				It is necessary to record the actual state of other
-				smaller bosses that are not completely printed: ** boss
-				part printing deformation; ** boss part printing
-				success; ** boss no obvious signs of printing molding.
+				對應凸台的尺寸從小到大依次爲：0.1mm、0.2mm、0.3mm、0.4mm、0.5mm、0.6mm、0.7mm、0.8mm；<br />
+				需要記錄可完整列印的最小凸台所對應的尺寸：完整列印最小凸台為： **； <br />
+				需要記錄未完整列印其它更小的凸台的實際狀態： **
+				凸台部分列印變形； ** 凸台部分列印成功； **
+				凸台無明顯列印成型跡象。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Gradual change groove</td>
-			<td>Gradual change groove printing capability</td>
+			<td>漸變凹槽</td>
+			<td>漸變凹槽列印能力</td>
 			<td>
-				The size of the corresponding groove is from small to
-				large: 0.1mm, 0.2mm, 0.3mm, 0.4mm, 0.5mm, 0.6mm, 0.7mm,
-				0.8mm;
-			
-				It is necessary to record the size corresponding to the
-				smallest groove that can be completely printed: the
-				smallest groove for complete printing is: **;
-			
-				It is necessary to record the actual state of incomplete
-				printing of other smaller grooves: ** groove part
-				printing deformation; ** groove part printing success;
-				** groove no obvious signs of printing molding.
+				對應凹槽的尺寸從小到大依次為：0.1mm、0.2mm、0.3mm、0.4mm、0.5mm、0.6mm、0.7mm、0.8mm；<br />
+				需要記錄可完整列印的最小凹槽所對應的尺寸：完整列印最小凹槽為：**；<br />
+				需要記錄未完整列印其它更小的凹槽的實際狀態： ** 凹槽部分列印變形； **
+				凹槽部分列印成功； ** 凹槽無明顯列印成型跡象。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Tilt wings</td>
-			<td>Tilt angle</td>
+			<td rowSpan="3">傾斜雙翼</td>
+			<td>傾斜角度</td>
 			<td>
-				The three transition inclination angles of the
-				corresponding wings of the inclined wings and the angle
-				between the main baseplate are: 45 °, 30 °, and 15 °,
-				respectively.
-			
-				Record when the corresponding wings can be completely
-				printed: complete printing;
-			
-				Record when the corresponding wing part can be printed:
-				**°、**° wing can be completely printed, ** wing
-				printing deformation, ** ° wing is not completely
-				printed.
+				傾斜雙翼的對應雙翼的三個過渡傾斜角度與主底板夾角分別為：45°、30°、15°。<br />
+				當對應雙翼可完整列印時記錄：完整列印；<br />
+				當對應雙翼部分可列印時記錄：**°、 **°機翼可完整列印，
+				**°機翼列印变形， **°機翼未完整列印。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Limit wall thickness</td>
+			<td>极限壁厚</td>
 			<td>
-				The three transition wall thicknesses of the
-				corresponding wings of the inclined wings are: 0.4mm,
-				0.3mm, and 0.2mm.
-			
-				The three transition wall thicknesses of the
-				corresponding wings of the inclined wings are: 0.4mm,
-				0.3mm, and 0.2mm.
-			
-				When the corresponding wing part can be printed, record:
-				**, ** wings can be printed completely, ** wings are
-				printed deformed, ** wings are not completely printed.
+				倾斜双翼的对应双翼的三个过渡壁厚分别为：0.4mm、0.3mm、0.2mm。<br />
+				當對應雙翼可完整列印時記錄：完整列印；<br />
+				當對應雙翼部分可列印時記錄：**、** 機翼可完整列印，**
+				機翼列印变形，** 機翼未完整列印。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Transition lamination</td>
+			<td>過渡層紋</td>
 			<td>
-				** ° wing visible layer pattern is recorded: ** ° wing
-				layer pattern visible to the naked eye;
-			
-				Can not observe the corresponding layer pattern is
-				recorded: ** ° wing no obvious layer pattern
+				** 機翼肉眼可見層紋則記錄：** 機翼層紋肉眼可見；<br />
+				無法觀察看到對應的層紋則記錄：** 機翼無明顯層紋
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Ball head cabin</td>
-			<td>Transition lamination</td>
+			<td rowSpan="2">球頭機艙</td>
+			<td>過渡層紋</td>
 			<td>
-				The transition circular section at the top of the ball
-				head nacelle is visible to the naked eye and the
-				lamination is recorded: the transition circular
-				lamination at the top of the ball head is visible to the
-				naked eye;
-			
-				If the transition circle section at the top of the ball
-				head nacelle is not visible to the naked eye, the
-				lamination is recorded: the transition circle at the top
-				of the ball head has no obvious lamination;
+				球頭機艙頂部過渡圓截面肉眼可見層紋則記錄：球頭頂部過渡圓層紋肉眼可見；<br />
+				球頭機艙頂部過渡圓截面肉眼不可見層紋則記錄：球頭頂部過渡圓無明顯層紋；
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Macroporous roundness</td>
+			<td>大孔圓度</td>
 			<td>
-				The positive observation of the large hole is a perfect
-				circle, then the record: the large hole is a perfect
-				circle;
-			
-				If the positive observation of the macrohole is a
-				non-complete perfect circle, it is recorded: the
-				macrohole is a non-perfect circle
+				大孔正向觀察為正圓則記錄：大孔為正圓<br />
+				大孔正向觀察為非完整的正圓則記錄：大孔為非正圓
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowSpan="4">Gradual change support</td>
-			<td>Rough support</td>
+			<td rowSpan="4">漸變支撐</td>
+			<td>粗支撐</td>
 			<td>
-				The thick support corresponds to the thick support of
-				CHITUBOX software; a total of support areas covered by
-				2mm, 3mm, and 4mm radii are included.
-			
-				Record the maximum section radius of the coarse support
-				that can fully print the support section area: the
-				maximum * mm radius coverage area that can be fully
-				printed.
+				粗支撑為對應CHITUBOX軟體粗支撑；共包括2mm、3mm、4mm半徑覆蓋的支撑區域。<br />
+				記錄粗支撑可完整列印支撑截面區域的最大截面半徑：最大可完整列印*mm半徑覆蓋區域。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Middle support</td>
+			<td>中支撐</td>
 			<td>
-				The middle support is the corresponding thick support of
-				CHITUBOX software; a total of support areas covered by
-				2mm, 3mm, and 4mm radii are included.
-			
-				Maximum section radius of the support section area that
-				can be fully printed in the record: Maximum * mm radius
-				coverage area that can be fully printed.
+				中支撑為對應CHITUBOX軟體中支撑；共包括2mm、3mm、4mm半徑覆蓋的支撑區域。<br />
+				記錄中支撑可完整列印支撑截面區域的最大截面半徑：最大可完整列印*mm半徑覆蓋區域。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Fine support</td>
+			<td>細支撐</td>
 			<td>
-				The thin support is the corresponding thin support of
-				CHITUBOX software; a total of support areas covered by
-				2mm, 3mm and 4mm radii are included.
-			
-				Record the maximum cross-sectional radius of the support
-				cross-sectional area that can be fully printed: the
-				maximum * mm radius coverage area that can be fully
-				printed.
+				細支撑為對應CHITUBOX軟體細支撑；共包括2mm、3mm、4mm半徑覆蓋的支撑區域。<br />
+				記錄細支撑可完整列印支撑截面區域的最大截面半徑：最大可完整列印*mm半徑覆蓋區域。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Other support</td>
+			<td>其他支撐</td>
 			<td>
-				If part of the support parameters are adjusted, the
-				support parameter data corresponding to the CHITUBOX
-				software is recorded; a total of support areas covered
-				by 2mm, 3mm, and 4mm radii are included.
-			
-				Record the maximum cross-sectional radius of the support
-				cross-sectional area that can be fully printed: the
-				maximum * mm radius coverage area that can be fully
-				printed.
+				若調整部分支撐參數則記錄對應 CHITUBOX
+				軟件的支撐參數數據；共包括2mm、3mm、4mm半徑覆蓋的支撑區域。<br />
+				記錄其他支撑可完整列印支撑截面區域的最大截面半徑：最大可完整列印*mm半徑覆蓋區域。
 			</td>
 			<td></td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-## CHITUBOX TMC V1 Model Printing Effect Evaluation Table
+## CHITUBOX TMC V1 模型列印效果評定表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th>Module</th>
-			<th>Project</th>
-			<th>Remarks</th>
-			<th>Measured record</th>
+			<th>模塊</th>
+			<th>項目</th>
+			<th>備注</th>
+			<th>實測記錄</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td rowSpan="5">Overall effect</td>
-			<td>Top view photo</td>
+			<td rowSpan="5" className="min-w-20">整體效果</td>
+			<td>俯視圖拍照</td>
 			<td>
-				The corresponding top view requires a complete top view of the
-				recording model, and it is necessary to ensure that the printing
-				status of the corresponding details can be clearly seen when the
-				picture is enlarged
+				需要完整拍攝記錄模型俯視圖，並需確保圖片在放大局部區域時，能夠清晰可見對應細節的列印狀況。
 			</td>
 			<td style={{ minWidth: "170px" }}></td>
 		</tr>
 		<tr>
-			<td>Primary baseplate</td>
+			<td>正視圖拍照</td>
 			<td>
-				Corresponding to the front view requires a complete top view of
-				the recording model, and it is necessary to ensure that the
-				printing status of the corresponding details can be clearly seen
-				when the picture is enlarged
+				对应正視圖需要完整拍摄记录模型俯視圖，并需要保证图片在放大具备区域时可以清晰可见对应的细节的列印状况。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Rear view photo</td>
+			<td>后視圖拍照</td>
 			<td>
-				Corresponding to the rear view requires a complete top view of
-				the recording model, and it is necessary to ensure that the
-				printing status of the corresponding details can be clearly seen
-				when the picture is enlarged
+				对应后視圖需要完整拍摄记录模型俯視圖，并需要保证图片在放大具备区域时可以清晰可见对应的细节的列印状况。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Left view photo</td>
+			<td>左視圖拍照</td>
 			<td>
-				Corresponding to the left view requires a complete top view of
-				the recording model, and it is necessary to ensure that the
-				printing status of the corresponding details can be clearly seen
-				when the picture is enlarged
+				对应左視圖需要完整拍摄记录模型俯視圖，并需要保证图片在放大具备区域时可以清晰可见对应的细节的列印状况。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Right view photo</td>
+			<td>右視圖拍照</td>
 			<td>
-				Corresponding to the right view requires a complete top view of
-				the recording model, and it is necessary to ensure that the
-				printing status of the corresponding details can be clearly seen
-				when the picture is enlarged
+				对应右視圖需要完整拍摄记录模型俯視圖，并需要保证图片在放大具备区域时可以清晰可见对应的细节的列印状况。
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Primary baseplate</td>
-			<td>Whether it is deformed (0)</td>
+			<td rowSpan="3">主底板</td>
+			<td>是否變形 (0)</td>
 			<td>
-				Record after printing and processing;
-				
-				The baseplate of the model is squared to the horizontal plane
-				and perpendicular to the design surface of the baseplate.
+				列印後處理完成后記錄；<br />
+				將模型底板平方于水平面並垂直于底板設計面實拍記錄；
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Whether it is deformed (1)</td>
+			<td>是否變形 (1)</td>
 			<td>
-				Test records within 24-30h after printing;
-				
-				The baseplate of the model is squared to the horizontal plane
-				and perpendicular to the design surface of the baseplate.
+				列印完成后 24-30 小時內測試記錄；<br />
+				將模型底板平方于水平面並垂直于底板設計面實拍記錄；
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>Whether it is deformed (2)</td>
+			<td>是否變形 (2)</td>
 			<td>
-				Test records within 72-78h after printing;
-				
-				Place the model baseplate flat on the horizontal plane and take
-				a real shot perpendicular to the baseplate design surface;
+				列印完成后 72-78 小時內測試記錄；<br />
+				將模型底板平方于水平面並垂直于底板設計面實拍記錄；
 			</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td rowSpan="4">Uniform lattice</td>
-			<td>Integrity</td>
+			<td rowSpan="4">均一性晶格</td>
+			<td>完整性</td>
 			<td>
-    			The homogeneous lattice can be completely printed and recorded:
-    			it can be completely printed;
-
-    			If the homogeneity lattice is not completely printed, it is
-    			recorded: it cannot be completely printed.
+    			均一性晶格可完整列印則記錄：可完整列印；<br />
+    			均一性晶格不可完整列印則記錄：不可完整列印。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Compression deformation (0)</td>
+    		<td>按壓變形 (0)</td>
     		<td>
-    			Record after printing and processing;
-
-    			se your finger to lightly press the entire top area of the
-    			lattice (controlled to the extent that it does not destroy the
-    			lattice) to record whether the lattice can be pressed and
-    			bounced.
-
-    			Compressible deformation is recorded: compressible deformation;
-
-    			Incompressible deformation is recorded: Incompressible
-    			deformation.
+    			列印後處理完成后記錄；<br />
+    			使用手指輕壓晶格整體頂部區域（控制到不破壞晶格的力度），記錄晶格是否可以壓動并反彈。<br />
+    			可壓縮變形則記錄：可壓縮變形；<br />
+    			不可壓縮變形則記錄：不可壓縮變形。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Compression deformation (3)</td>
+    		<td>按壓變形 (1)</td>
     		<td>
-    			Test records within 72-78h after printing;
-
-    			Use your finger to lightly press the entire top area of the
-    			lattice (controlled to the extent that it does not destroy the
-    			lattice) to record whether the lattice can be pressed and
-    			bounced.
-
-    			Compressible deformation is recorded: compressible deformation;
-
-    			Compressible deformation is recorded: compressible deformation;
+    			列印完成后 72-78 小時內測試記錄；<br />
+    			使用手指輕壓晶格整體頂部區域（控制到不破壞晶格的力度），記錄晶格是否可以壓動并反彈。<br />
+    			可壓縮變形則記錄：可壓縮變形；<br />
+				不可壓縮變形則記錄：不可壓縮變形。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Compression deformation (7)</td>
+    		<td>按壓變形 (2)</td>
     		<td>
-    			Test records within 7-8 days after printing is completed;
-
-    			Use your finger to lightly press the entire top area of the
-    			lattice (controlled to the extent that it does not destroy the
-    			lattice) to record whether the lattice can be pressed and
-    			bounced.
-
-    			Compressible deformation is recorded: compressible deformation;
-
-    			Incompressible deformation is recorded: Incompressible
-    			deformation.
+    			列印完成后 7-8 天內測試記錄；<br />
+				使用手指輕壓晶格整體頂部區域（控制到不破壞晶格的力度），記錄晶格是否可以壓動并反彈。<br />
+    			可壓縮變形則記錄：可壓縮變形；<br />
+    			不可壓縮變形則記錄：不可壓縮變形。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td rowSpan="4">Gradual change support</td>
-    		<td>Coarse support</td>
+    		<td rowSpan="4">漸變支撐</td>
+    		<td>粗支撐</td>
     		<td>
-    			The thick support corresponds to the thick support of CHITUBOX
-    			software; a total of support areas covered by 2mm, 3mm, 4mm, and
-    			5mm radii are included.
-
-    			Record the maximum section radius of the coarse support that can
-    			fully print the support section area: the maximum * mm radius
-    			coverage area that can be fully printed.
+    			粗支撑為對應CHITUBOX軟體粗支撑；共包括2mm、3mm、4mm半徑覆蓋的支撑區域。<br />
+    			記錄粗支撑可完整列印支撑截面區域的最大截面半徑：最大可完整列印*mm半徑覆蓋區域。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Middle support</td>
+    		<td>中支撐</td>
     		<td>
-    			The middle support is the corresponding thick support of
-    			CHITUBOX software; a total of support areas covered by 2mm, 3mm,
-    			4mm, and 5mm radii are included.
-
-    			Maximum section radius of the support section area that can be
-    			fully printed in the record: Maximum * mm radius coverage area
-    			that can be fully printed.
+    			中支撑為對應CHITUBOX軟體中支撑；共包括2mm、3mm、4mm半徑覆蓋的支撑區域。<br />
+    			記錄中支撑可完整列印支撑截面區域的最大截面半徑：最大可完整列印*mm半徑覆蓋區域。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Fine support</td>
+    		<td>細支撐</td>
     		<td>
-    			The thin support is the corresponding thin support of CHITUBOX
-    			software; a total of support areas covered by 2mm, 3mm and 4mm
-    			radii are included.
-
-    			Record the maximum cross-sectional radius of the support
-    			cross-sectional area that can be fully printed: the maximum * mm
-    			radius coverage area that can be fully printed.
+    			細支撑為對應CHITUBOX軟體細支撑；共包括2mm、3mm、4mm半徑覆蓋的支撑區域。<br />
+    			記錄細支撑可完整列印支撑截面區域的最大截面半徑：最大可完整列印*mm半徑覆蓋區域。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Other support</td>
+    		<td>其他支撐</td>
     		<td>
-    			If part of the support parameters are adjusted, the support
-    			parameter data corresponding to the CHITUBOX software is
-    			recorded; a total of support areas covered by 2mm, 3mm, and 4mm
-    			radii are included.
-
-    			Record the maximum cross-sectional radius of the support
-    			cross-sectional area that can be fully printed: the maximum * mm
-    			radius coverage area that can be fully printed.
+    			若調整部分支撐參數則記錄對應 CHITUBOX 軟件的支撐參數數據；共包括2mm、3mm、4mm半徑覆蓋的支撑區域。<br />
+    			記錄其他支撑可完整列印支撑截面區域的最大截面半徑：最大可完整列印*mm半徑覆蓋區域。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Gradual change hole shaft fit</td>
-    		<td>Hole shaft matching effect</td>
+    		<td>漸變孔軸配合</td>
+    		<td>孔軸配合效果</td>
     		<td>
-    			Remove the axis model of φ6, use the corrected vernier caliper
-    			or micrometer to measure and record the diameter of the
-    			corresponding axis and record: φ6 design axis measured size is φ
-    			*. **.
-
-    			Use the φ6 diameter shaft to cooperate with the holes with the
-    			corresponding deviations of + 0.05mm, + 0.025mm, 0, -0.025mm,
-    			and -0.05mm to install, and record the installation effect of
-    			the corresponding deviation holes: *** deviation ( unable to
-    			install, tight, moderate, loose ).
+    			取下φ6軸模型，使用校正過的游標卡尺或千分尺測量記錄對應軸的直徑尺寸並記錄：φ6設計軸實測尺寸為φ*.**。<br />
+    			使用φ6直徑軸分別與對應偏差為+0.05mm、+0.025mm、0、-0.025mm、-0.05mm的孔進行配合安裝，記錄對應偏差孔所適配的安裝效果：***偏差（無法安裝、緊、適中、松）。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Gradual change of wall thickness</td>
-    		<td>Thin wall formability</td>
+    		<td>漸變壁厚</td>
+    		<td>薄壁可成型性</td>
     		<td>
-    			The corresponding design wall thicknesses are: 0.5mm, 0.4mm,
-    			0.3mm, 0.2mm.
-
-    			Record: Minimum complete moldable wall thickness: *. * mm.
-
-    			Wall thickness structures that are not fully printed need to be
-    			clearly documented: *. * mm wall thickness prints successfully
-    			but deforms or *. * wall thickness structures print part or all
-    			of the area missing.
+    			對應的設計壁厚分別為：0.5mm、0.4mm、0.3mm、0.2mm。<br />
+    			記錄：最小完整可成型壁厚為：**mm。<br />
+    			未完全列印的壁厚結構需要明確記錄： ** mm壁厚列印成功但發生變形或 ** 壁厚結構列印部分或全部區域缺失。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Gradual change plane inclination</td>
-    		<td>Transition lamination</td>
+    		<td>漸變平面傾角</td>
+    		<td>過渡層紋</td>
     		<td>
-    			Gradually change the plane inclination from 15 ° to 45 ° at 5 °
-    			intervals.
-
-    			It is necessary to record the description of the lamination
-    			effect and the detailed high definition diagram when the
-    			corresponding angle state is recorded.
-
-    			The corresponding lamination effect needs to be recorded: no
-    			obvious lamination; uniform transition lamination; there are
-    			three types of lamination.
+    			漸變平面傾角以5°的間隔角度從15°逐步過渡到45°。<br />
+    			需記錄對應角度狀態時的層紋效果描述及細節高清圖示。<br />
+    			對應的層紋效果需記錄：無明顯層紋；均一性過渡層紋；有突變形層紋三種類型。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Gradual change hole axis</td>
-    		<td>Hole Shaft Forming Accuracy</td>
+    		<td>漸變孔軸</td>
+    		<td>孔軸成型準確性</td>
     		<td>
-    			The gradual change hole shaft structure includes 6
-    			specifications such as φ0.025, φ0.5, φ1, φ3, φ5, φ10, etc.
-
-    			Items that can be measured and recorded using vernier calipers
-    			or micrometers need to record accurate measured parameter items:
-    			φ * The measured size of the design axis is φ *. **
-
-    			Record formability that cannot be measured by too small hole
-    			shaft: Shaft record: φ * (complete molding/molding but
-    			deformed/incomplete molding) ; hole record: φ * hole bottom is
-    			blocked; φ * hole has hole printing traces; φ * hole has no
-    			obvious hole signs
+    			漸變孔軸結構共包括φ0.025、φ0.5、φ1、φ3、φ5、φ10等6個規格尺寸。<br />
+    			可使用游標卡尺或千分尺測量記錄的項目需要記錄準確的實測參數項：φ* 設計軸實測尺寸為 φ*.** <br />
+    			過小的孔軸無法測量的記錄成型性：軸記錄：φ*（完整成型/成型但變形/未完整成型）；孔記錄：φ* 孔底部堵塞；φ* 孔有孔列印痕迹；φ* 孔無明顯孔跡象。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td rowSpan="2">Gradual change inclined cylinder</td>
-    		<td>Bottom drift</td>
+    		<td rowSpan="2">漸變傾斜圓柱</td>
+    		<td>底部漂移</td>
     		<td>
-    			The gradual change inclined cylinder is a 0 ° -45 ° inclined
-    			cylindrical structure.
-
-    			The drift phenomenon is prone to occur when the section of the
-    			inclined structure model transitions.
-
-    			When the bottom drift phenomenon occurs, record: bottom drift
-    			occurs, and attach the high definition detail map of the
-    			corresponding area;
-
-    			Record when the bottom drift phenomenon does not occur: no
-    			bottom drift occurs, and a high definition detail map of the
-    			corresponding area is attached.
+    			漸變傾斜圓柱為0°-45°傾斜圓柱結構。<br />
+    			傾斜結構模型截面過渡時易發生漂移現象。<br />
+    			當發生底部漂移現象時記錄：發生底部漂移，並附對應區域高清細節圖；<br />
+    			當未發生底部漂移現象時記錄：未發生底部漂移，並附對應區域高清細節圖。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Tilt cylindrical layer transition effect</td>
+    		<td>傾斜圓柱層過渡效果</td>
     		<td>
-    			When all models produced obvious transition lamination, it was
-    			recorded that there was no obvious transition lamination;
-
-    			When the partial inclination state is to produce obvious
-    			transition lamination then record: ** ° inclined cylindrical
-    			lamination visible to the naked eye.
+    			當所有模型均為產生明顯的過渡層紋時記錄：均無明顯過渡層紋；<br />
+    			當部分傾角狀態是產生明顯的過渡層紋則記錄： **°傾斜圓柱層紋肉眼可見。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Gradual change groove</td>
-    		<td>Gradual change groove printing capability</td>
+    		<td>漸變凹槽</td>
+    		<td>漸變凹槽列印能力</td>
     		<td>
-    			The dimensions of the corresponding grooves are from small to
-    			large: 0.1mm, 0.2mm, 0.3mm, 0.4mm, 0.5mm, 0.6mm, 0.7mm, 0.8mm
-    			(horizontal and vertical);
-
-    			It is necessary to record the size corresponding to the smallest
-    			groove that can be completely printed: The smallest groove for
-    			complete printing is: **;
-
-    			It is necessary to record the actual state of incomplete
-    			printing of other smaller grooves: ** groove part printing
-    			deformation; ** groove part printing success; ** groove no
-    			obvious signs of printing molding.
+    			對應凹槽的尺寸從小到大依次為：0.1mm、0.2mm、0.3mm、0.4mm、0.5mm、0.6mm、0.7mm、0.8mm（橫向和垂直向）；<br />
+    			需要記錄可完整列印的最小凹槽所對應的尺寸：完整列印最小凹槽為：**；<br />
+    			需要記錄未完整列印其它更小的凹槽的實際狀態： **凹槽部分列印變形； **凹槽部分列印成功； **凹槽無明顯列印成型跡象。
     		</td>
     		<td></td>
     	</tr>
     	<tr>
-    		<td>Ladder of gradual change</td>
-    		<td>Printability of cross wall structures</td>
+    		<td>漸變階梯</td>
+    		<td>跨壁結構可列印性</td>
     		<td>
-    			The gradual change ladder structure is set from the gradual
-    			change ladder structure of 1mm-8mm
-
-    			Need to record: * mm cross-wall structure can be completely
-    			printed; * mm cross-wall structure printing bottom deformation
-    			or part of the cross-wall area is missing; * Mm cross wall
-    			structure not successfully printed
+    			漸變階梯結構設定了從1mm至8mm的漸變階梯結構 <br />
+    			需要記錄： *mm跨壁結構可完整列印； *mm跨壁結構列印底層變形或部分跨壁區域缺失； *mm跨壁結構未成功列印
     		</td>
     		<td></td>
     	</tr>
