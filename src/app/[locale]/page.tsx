@@ -16,17 +16,28 @@ export default function Page(props: { params: { locale: Locale } }) {
 
 	return (
 		<div
-			className="flex flex-col 
-			bg-neutral-100 dark:bg-black"
+			className="flex flex-col
+			bg-neutral-100 dark:bg-neutral-900"
 		>
-			<DynamicHero />
-			<Docsboard
-				chituboxBasic={"CHITUBOX Basic"}
-				chituboxPro={"CHITUBOX Pro"}
-				chituManager={"ChituManager"}
-				chituboxPrintingTest={t("chituboxPrintingTestDoc")}
-				faq={t("faqDoc")}
-			/>
+			<div
+				className="p-4
+				sm:p-6
+				md:p-10
+				lg:p-10
+				xl:p-20
+				bg-[radial-gradient(circle_at_20%_20%,#f5d0fe80,transparent_600px),radial-gradient(circle_at_80%_20%,#67e8f955,transparent_600px)]
+				dark:bg-[radial-gradient(circle_at_20%_20%,#d946ef88,transparent_500px),radial-gradient(circle_at_80%_20%,#0369a1aa,transparent_600px)]"
+			>
+				<DynamicHero />
+				<Docsboard
+					chituboxBasic={"CHITUBOX Basic"}
+					chituboxPro={"CHITUBOX Pro"}
+					chituManager={"ChituManager"}
+					chituboxPrintingTest={t("chituboxPrintingTestDoc")}
+					faq={t("faqDoc")}
+				/>
+			</div>
 		</div>
 	);
 }
+//

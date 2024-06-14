@@ -43,7 +43,11 @@ export const Navigator = (props: any) => {
 	return (
 		<div
 			className={`flex justify-between items-center h-16
-			px-4 lg:px-16
+			px-4 
+			sm:px-6
+			md:px-10
+			lg:px-10
+			xl:px-20
 			gap-4 lg:gap-10
 			text-neutral-800 dark:text-neutral-200
 			bg-white dark:bg-black

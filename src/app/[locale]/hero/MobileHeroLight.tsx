@@ -5,7 +5,7 @@ export const MobileHeroLight = ({ size, fill }: any) => {
 			fill="none"
 			version="1.1"
 			width="100%"
-			viewBox="0 -80 2400 880"
+			viewBox="200 -80 2000 880"
 		>
 			<defs>
 				<filter
@@ -332,7 +332,9 @@ export const MobileHeroLight = ({ size, fill }: any) => {
 					height={880}
 				/>
 			</mask>
-			<g mask="url(#mask-container)">
+			<g
+			// mask="url(#mask-container)"
+			>
 				<rect
 					x="0"
 					y="-80"

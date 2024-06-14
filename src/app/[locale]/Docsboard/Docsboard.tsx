@@ -8,13 +8,14 @@ const DocsCard = (props: { href: string; title: string }) => {
 	const { href, title } = props;
 	return (
 		<div
-			className="flex flex-col items-start
+			className="flex flex-col items-start p-8 gap-4
 			bg-white dark:bg-neutral-800
 			rounded-xl hover:shadow-lg duration-200"
 		>
 			<Link
 				href={href}
-				className="flex justify-start items-center w-full px-5 py-3
+				className="flex justify-start items-center w-full
+				text-lg font-bold
 				dark:text-neutral-300 dark:hover:text-neutral-200
 				duration-200"
 			>
@@ -41,13 +42,25 @@ const Docsboard = (props: {
 	} = props;
 	const locale = useLocale();
 	return (
-		<div className="flex justify-center">
+		<div
+			className="flex justify-center
+			my-4
+			sm:my-6
+			md:my-10
+			lg:my-10
+			xl:my-20"
+		>
 			<div
 				className="grid
 				grid-cols-1
+				sm:grid-cols-2
 				md:grid-cols-2
 				lg:grid-cols-3
-				w-full max-w-[1200px] px-4 py-16 gap-10"
+				xl:grid-cols-4
+				w-full max-w-[2400px]
+				gap-4
+				sm:gap-6
+				md:gap-10"
 			>
 				<DocsCard
 					href={`/${locale}/chitubox-basic/latest/introduction`}
@@ -62,12 +75,12 @@ const Docsboard = (props: {
 					title={chituManager}
 				/>
 				<DocsCard
-					href={`/${locale}/chitubox-printing-test/latest/overview-of-the-standard-model`}
-					title={chituboxPrintingTest}
-				/>
-				<DocsCard
 					href={`/${locale}/faq/latest/chitubox-basic-faq`}
 					title={faq}
+				/>
+				<DocsCard
+					href={`/${locale}/chitubox-printing-test/latest/overview-of-the-standard-model`}
+					title={chituboxPrintingTest}
 				/>
 			</div>
 		</div>

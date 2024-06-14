@@ -20,7 +20,7 @@ const FooterTop = () => {
 			<div className="flex justify-between flex-wrap w-full gap-8">
 				<div className="flex items-center h-8 gap-4">
 					<FooterLogo />
-					<div className="text-white text-nowrap">
+					<div className="text-neutral-600 dark:text-neutral-100 text-nowrap">
 						CHITUBOX Docs
 					</div>
 				</div>

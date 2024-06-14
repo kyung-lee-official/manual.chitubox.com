@@ -11,7 +11,7 @@ const FooterLogoLg = ({ size, fill }: any) => {
 		return (
 			<div className="flex items-center h-8 gap-4">
 				<FooterLogo />
-				<div className="text-white text-nowrap">CHITUBOX Docs</div>
+				<div className="text-neutral-600 dark:text-white text-nowrap">CHITUBOX Docs</div>
 			</div>
 		);
 	} else {

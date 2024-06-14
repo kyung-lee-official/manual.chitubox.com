@@ -14,13 +14,19 @@ const Hero = () => {
 	if (isLg) {
 		if (theme === Theme.DARK) {
 			return (
-				<div className="w-full max-w-[2400px] mx-auto">
+				<div
+					className="w-full max-w-[2400px] mx-auto
+					rounded-xl shadow-[0px_0px_100px_#0369a13c] overflow-hidden"
+				>
 					<HeroDark />
 				</div>
 			);
 		} else {
 			return (
-				<div className="w-full max-w-[2400px] mx-auto">
+				<div
+					className="w-full max-w-[2400px] mx-auto
+					rounded-xl shadow-[0px_0px_100px_#0369a13c] overflow-hidden"
+				>
 					<HeroLight />
 				</div>
 			);
@@ -28,13 +34,19 @@ const Hero = () => {
 	} else {
 		if (theme === Theme.DARK) {
 			return (
-				<div className="w-full max-w-[2400px] mx-auto">
+				<div
+					className="w-full max-w-[2400px] mx-auto
+					rounded-xl shadow-[0px_0px_100px_#0369a13c] overflow-hidden"
+				>
 					<MobileHeroDark />
 				</div>
 			);
 		} else {
 			return (
-				<div className="w-full max-w-[2400px] mx-auto">
+				<div
+					className="w-full max-w-[2400px] mx-auto
+					rounded-xl shadow-[0px_0px_100px_#0369a13c] overflow-hidden"
+				>
 					<MobileHeroLight />
 				</div>
 			);

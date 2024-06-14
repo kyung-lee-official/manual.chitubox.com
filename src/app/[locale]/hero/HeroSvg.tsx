@@ -326,7 +326,9 @@ export const HeroLight = ({ size, fill }: any) => {
 			>
 				<rect fill="url(#mask-gradient)" width={2400} height={720} />
 			</mask>
-			<g mask="url(#mask-container)">
+			<g
+			// mask="url(#mask-container)"
+			>
 				<rect
 					x="0"
 					y="0"

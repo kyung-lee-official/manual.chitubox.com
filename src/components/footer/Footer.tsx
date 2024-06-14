@@ -19,7 +19,9 @@ const FooterCol = (props: any) => {
 	const { title, children } = props;
 	return (
 		<div className="flex flex-col min-w-32 gap-4">
-			<div className="text-neutral-100">{title}</div>
+			<div className="text-neutral-600 dark:text-neutral-100">
+				{title}
+			</div>
 			<div className="flex flex-col gap-3">{children}</div>
 		</div>
 	);
@@ -28,7 +30,11 @@ const FooterCol = (props: any) => {
 const Flink = (props: any) => {
 	const { href, children } = props;
 	return (
-		<Link href={href} className="hover:text-white duration-200">
+		<Link
+			href={href}
+			className="hover:text-neutral-500 dark:hover:text-white
+			duration-200"
+		>
 			{children}
 		</Link>
 	);
@@ -40,9 +46,9 @@ export const Footer = () => {
 		<footer
 			className="w-full
 			text-neutral-400
-			bg-black"
+			dark:bg-black"
 		>
-			<hr className="border-neutral-800" />
+			<hr className="dark:border-neutral-800" />
 			<div
 				className="flex flex-col items-center max-w-[1200px] py-[36px] px-4 mx-auto gap-12
 				text-sm"
@@ -64,9 +70,7 @@ export const Footer = () => {
 						<Flink href={t("footer.software.chitubox-dental.link")}>
 							{t("footer.software.chitubox-dental.title")}
 						</Flink>
-						<Flink
-							href={t("footer.software.chitu-manager.link")}
-						>
+						<Flink href={t("footer.software.chitu-manager.link")}>
 							{t("footer.software.chitu-manager.title")}
 						</Flink>
 					</FooterCol>
@@ -109,7 +113,10 @@ export const Footer = () => {
 						</Flink>
 					</FooterCol>
 				</div>
-				<div className="flex flex-col items-start w-full gap-4">
+				<div
+					className="flex flex-col items-start w-full gap-4
+					text-neutral-600 dark:text-inherit"
+				>
 					<div>
 						&copy; <Year /> <span>{t("footer.companyName")}</span>
 					</div>

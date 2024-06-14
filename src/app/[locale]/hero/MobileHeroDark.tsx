@@ -5,7 +5,7 @@ export const MobileHeroDark = ({ size, fill }: any) => {
 			fill="none"
 			version="1.1"
 			width="100%"
-			viewBox="0 -80 2400 880"
+			viewBox="200 -80 2000 880"
 		>
 			<defs>
 				<clipPath id="master_svg0_171_8093">
@@ -362,7 +362,9 @@ export const MobileHeroDark = ({ size, fill }: any) => {
 					height={880}
 				/>
 			</mask>
-			<g  mask="url(#mask-container)">
+			<g
+			// mask="url(#mask-container)"
+			>
 				<rect
 					x="0"
 					y="-80"
