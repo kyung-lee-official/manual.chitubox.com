@@ -2,17 +2,17 @@ import { DocumentDownload } from "@/components/icons/Icons";
 import { Button } from "@/components/button/Button";
 
 export const meta = {
-	title: "Overview of The Standard Model",
+	title: "標準模型",
 	authors: [{ name: "CHITUBOX Team" }],
-	pageId: "/en-US/print-testing-instructions/v1.0.0/overview-of-the-standard-model",
+	pageId: "/zh-TW/print-testing-instructions/v1.0.0/overview-of-the-standard-model",
 	description:
 		"Overview of the standard model. Currently, CHITUBOX has three test models: CHITUBOX TMA V1, CHITUBOX TMB V1, and CHITUBOX TMC V1",
 	ogImage: "/images/docs/og_image.png",
 };
 
-# Overview of The Standard Model
+# 標準模型
 
-> More complete test model, more convenient method, more accurate parameters, better printing effect.
+> 更完整的測試模型，更便捷的方法，更準確的參數，更好的列印效果。
 
 ## CHITUBOX TMA V1
 
@@ -20,14 +20,14 @@ export const meta = {
 
 <Button buttonType={"link"} href="/models/CHITUBOX_TMA_V1.chitubox">
 	<DocumentDownload size={32} />
-	Download CHITUBOX TMA V1
+	下載 CHITUBOX TMA V1 模型
 </Button>
 
-<Admonition type="tip">
-	CHITUBOX TMA V1 is used to assist in testing the best print details
+<Admonition type="tip" title="提示">
+	CHITUBOX TMA V1 用於輔助測試最佳列印細節效果。
 </Admonition>
 
-CHITUBOX TMA V1 model mainly includes the following contents:
+CHITUBOX TMA V1 模型主要包括以下内容：
 
 <ResponsiveTable>
 	<tbody>
@@ -35,28 +35,28 @@ CHITUBOX TMA V1 model mainly includes the following contents:
 			<td rowSpan="8">
 				<ImageContainer src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/tma-v1_002.png" />
 			</td>
-			<td>01. the main baseplate</td>
+			<td>01. 主底板</td>
 		</tr>
 		<tr>
-			<td>02. Möbius ring evolution model</td>
+			<td>02. 莫比烏斯環演變模型</td>
 		</tr>
 		<tr>
-			<td>03. Detailed representation model</td>
+			<td>03. 細節表征模型</td>
 		</tr>
 		<tr>
-			<td>04. gradual change hole axis</td>
+			<td>04. 漸變孔軸</td>
 		</tr>
 		<tr>
-			<td>05. gradual change boss</td>
+			<td>05. 漸變凸台</td>
 		</tr>
 		<tr>
-			<td>06. gradual change groove</td>
+			<td>06. 漸變凹槽</td>
 		</tr>
 		<tr>
-			<td>07. LOGO elements</td>
+			<td>07. LOGO 元素</td>
 		</tr>
 		<tr>
-			<td>08. model edge sealing</td>
+			<td>08. 模型封邊</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
@@ -64,77 +64,71 @@ CHITUBOX TMA V1 model mainly includes the following contents:
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th>Serial number</th>
-			<th>Parameters</th>
-			<th>Parameter description</th>
-			<th>Effect description</th>
+			<th>序號</th>
+			<th>元素</th>
+			<th>參數說明</th>
+			<th>效果說明</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>01</td>
-			<td>Primary baseplate</td>
-			<td>L () * W () = 51mm * 51mm</td>
+			<td>主底板</td>
+			<td>L(長) * W(寬)=51mm * 51mm</td>
 			<td>
-				Assist in judging the deformation resistance of the printed
-				model
+				輔助判斷列印模型的抗變形能力
 			</td>
 		</tr>
 		<tr>
 			<td>02</td>
-			<td>Möbius ring evolution model</td>
+			<td>莫比烏斯環演變模型</td>
 			<td>
-				The spaced suspended slice layer is 0-4 layers (0.025mm-0.15mm
-				layer thickness)
+				間隔懸空切片層為 0-4層（0.25mm-0.15mm層厚）
 			</td>
-			<td>Assist in judging the ability of interlayer bonding</td>
+			<td>輔助判斷層閒結合能力</td>
 		</tr>
 		<tr>
 			<td>03</td>
-			<td>Detailed representation model</td>
-			<td>Different types of detail structures</td>
+			<td>細節表征模型</td>
+			<td>不同類型的細節結構</td>
 			<td>
-				Assist in judging the printing effect of the limit detail
-				structure
+				輔助判斷極限細節結構的列印效果
 			</td>
 		</tr>
 		<tr>
 			<td>04</td>
-			<td>Gradual change hole axis</td>
-			<td>Hole and shaft with diameter dimensions: φ0.5, φ1, φ2, φ2.5</td>
+			<td>漸變孔軸</td>
+			<td>直徑尺寸為：φ0.5，φ1，φ2，φ2.5的孔和軸</td>
 			<td rowSpan="3">
-				Assist in judging the printing effect of structural details such
-				as holes, shafts, bosses, etc
+				輔助判斷孔、軸、凸台等結構細節的列印效果
 			</td>
 		</tr>
 		<tr>
 			<td>05</td>
-			<td>Gradual change boss</td>
+			<td>漸變凸台</td>
 			<td>
-				The thickness dimensions of the boss are: 0.1mm, 0.2mm, 0.3mm,
-				0.4mm, 0.5mm, 0.6mm, 0.7mm, 0.8mm.
+				凸台厚度尺寸為：0.1mm、0.2mm、0.3mm、0.4mm、0.5mm、0.6mm、0.7mm、0.8mm。
 			</td>
 		</tr>
 		<tr>
 			<td>06</td>
-			<td>Gradual change boss</td>
+			<td>漸變凹槽</td>
 			<td>
-				Gradual change groove size: 0.1mm, 0.2mm, 0.3mm, 0.4mm, 0.5mm,
-				0.6mm, 0.7mm, 0.8mm.
+				漸變凹槽尺寸為：0.1mm、0.2mm、0.3mm、0.4mm、0.5mm、0.6mm、0.7mm、0.8mm。
 			</td>
 		</tr>
 		<tr>
 			<td>07</td>
-			<td>LOGO elements</td>
-			<td>0.4Mm section width ring</td>
+			<td>LOGO 元素</td>
+			<td>0.4mm 截面寬度圓環</td>
 			<td>
-				Assist in judging the printing effect of large section solid gap
+				輔助判斷大截面實體間隙的列印效果
 			</td>
 		</tr>
 		<tr>
 			<td>08</td>
-			<td>Model edge banding</td>
-			<td>Edge banding of design models</td>
+			<td>模型封邊</td>
+			<td>設計模型的封邊</td>
 			<td>/</td>
 		</tr>
 	</tbody>
@@ -146,16 +140,14 @@ CHITUBOX TMA V1 model mainly includes the following contents:
 
 <Button buttonType={"link"} href="/models/CHITUBOX_TMB_V1.chitubox">
 	<DocumentDownload size={32} />
-	Download CHITUBOX TMB V1
+	下載 CHITUBOX TMB V1 模型
 </Button>
 
-<Admonition type="tip">
-	CHITUBOX TMB V1 is used to assist in testing the best printing details,
-	limit support printing feasibility, layer gradual change, wall thickness,
-	vertical hole position and other related printing effect confirmation
+<Admonition type="tip" title="提示">
+	CHITUBOX TMB V1 用於輔助測試最佳列印細節、極限支撐列印可行性、層漸變、壁厚、豎直孔位等相關列印效果的確認。
 </Admonition>
 
-CHITUBOX TMB V1 model mainly includes the following contents:
+CHITUBOX TMB V1 模型主要包括以下内容：
 
 <ResponsiveTable>
 	<tbody>
@@ -163,40 +155,40 @@ CHITUBOX TMB V1 model mainly includes the following contents:
 			<td rowSpan="12">
 				<ImageContainer src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/tma-v2_002.png" />
 			</td>
-			<td>01. the main baseplate</td>
+			<td>01. 主底板</td>
 		</tr>
 		<tr>
-			<td>02. Möbius ring evolution model</td>
+			<td>02. 莫比烏斯環演變模型</td>
 		</tr>
 		<tr>
-			<td>03. Detailed representation model</td>
+			<td>03. 細節表征模型</td>
 		</tr>
 		<tr>
-			<td>04. gradual change hole axis</td>
+			<td>04. 漸變孔軸</td>
 		</tr>
 		<tr>
-			<td>05. gradual change boss</td>
+			<td>05. 漸變凸台</td>
 		</tr>
 		<tr>
-			<td>06. gradual change groove</td>
+			<td>06. 漸變凹槽</td>
 		</tr>
 		<tr>
-			<td>07. LOGO elements</td>
+			<td>07. LOGO 元素</td>
 		</tr>
 		<tr>
-			<td>08. Model edge sealing</td>
+			<td>08. 模型封邊</td>
 		</tr>
 		<tr>
-			<td>09. CHITUBOX icon</td>
+			<td>09. CHITUBOX 圖標</td>
 		</tr>
 		<tr>
-			<td>10. Tilt the wings</td>
+			<td>10. 傾斜雙翼</td>
 		</tr>
 		<tr>
-			<td>11. Ball body cabin</td>
+			<td>11. 球頭機艙</td>
 		</tr>
 		<tr>
-			<td>12. gradual change support</td>
+			<td>12. 漸變支撐</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
@@ -204,137 +196,112 @@ CHITUBOX TMB V1 model mainly includes the following contents:
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th>Serial number</th>
-			<th>Parameters</th>
-			<th>Parameter description</th>
-			<th>Effect description</th>
+			<th>序號</th>
+			<th>元素</th>
+			<th>參數說明</th>
+			<th>效果說明</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>01</td>
-			<td>Primary baseplate</td>
-			<td>L ( ) * W ( ) = 51mm * 51mm</td>
+			<td>主底板</td>
+			<td>L(長) * W(寬)=51mm * 51mm</td>
 			<td>
-				Assist in judging the deformation resistance of the printed
-				model
+				輔助判斷列印模型的抗變形能力
 			</td>
 		</tr>
 		<tr>
 			<td>02</td>
-			<td>Möbius ring evolution model</td>
+			<td>莫比烏斯環演變模型</td>
 			<td>
-				The spaced suspended slice layer is 0-4 layers (0.025mm-0.15mm
-				layer thickness)
+				間隔懸空切片層為 0-4層（0.25mm-0.15mm層厚）
 			</td>
-			<td>Assist in judging the ability of interlayer bonding</td>
+			<td>輔助判斷層閒結合能力</td>
 		</tr>
 		<tr>
 			<td>03</td>
-			<td>Detailed representation model</td>
-			<td>Different types of detail structures</td>
+			<td>細節表征模型</td>
+			<td>不同類型的細節結構</td>
 			<td>
-				Assist in judging the printing effect of the limit detail
-				structure
+				輔助判斷極限細節結構的列印效果
 			</td>
 		</tr>
 		<tr>
 			<td>04</td>
-			<td>Gradual change hole axis</td>
-			<td>Hole and shaft with diameter dimensions: φ0.5, φ1, φ2, φ2.5</td>
+			<td>漸變孔軸</td>
+			<td>直徑尺寸為：φ0.5，φ1，φ2，φ2.5的孔和軸</td>
 			<td rowSpan="3">
-				Assist in judging the printing effect of structural details such
-				as holes, shafts, bosses, etc
+				輔助判斷孔、軸、凸台等結構細節的列印效果
 			</td>
 		</tr>
 		<tr>
 			<td>05</td>
-			<td>Gradual change boss</td>
+			<td>漸變凸台</td>
 			<td>
-				The thickness dimensions of the boss are: 0.1mm, 0.2mm, 0.3mm,
-				0.4mm, 0.5mm, 0.6mm, 0.7mm, 0.8mm.
+				凸台厚度尺寸為：0.1mm、0.2mm、0.3mm、0.4mm、0.5mm、0.6mm、0.7mm、0.8mm
 			</td>
 		</tr>
 		<tr>
 			<td>06</td>
-			<td>Gradual change groove</td>
+			<td>漸變凹槽</td>
 			<td>
-				Gradual change groove size: 0.1mm, 0.2mm, 0.3mm, 0.4mm, 0.5mm,
-				0.6mm, 0.7mm, 0.8mm.
+				漸變凹槽尺寸為：0.1mm、0.2mm、0.3mm、0.4mm、0.5mm、0.6mm、0.7mm、0.8mm
 			</td>
 		</tr>
 		<tr>
 			<td>07</td>
-			<td>Logo elements</td>
-			<td>Logo identification, the base of the ball body cabin</td>
+			<td>Logo 元素</td>
+			<td>Logo 識別，球頭機艙的基底</td>
 			<td>/</td>
 		</tr>
 		<tr>
 			<td>08</td>
-			<td>Model edge banding</td>
-			<td>Edge banding of design models</td>
+			<td>模型封邊</td>
+			<td>設計模型的封邊</td>
 			<td>
-				Non-evaluation item, not completely and continuously connected
-				to the surrounding edge sealing to avoid the formation of a
-				closed cavity structure
+				非評估項，未完整連續連接四周封邊，避免形成封閉空腔結構
 			</td>
 		</tr>
 		<tr>
 			<td>09</td>
-			<td>CHITUBOX icon</td>
-			<td>Brand identity</td>
+			<td>CHITUBOX 圖標</td>
+			<td>品牌標識</td>
 			<td>/</td>
 		</tr>
 		<tr>
 			<td>10</td>
-			<td>Tilt wings</td>
+			<td>傾斜雙翼</td>
 			<td>
-				The gradual change of the inclined wing structure includes: wing
-				width size (6mm), transition wall thickness (0.4mm, 0.3mm,
-				0.2mm), inclination angle (45 °, 30 °, 15 °) and other elements.
+				漸變的傾斜機翼結構包括：翼寬尺寸（6mm）、過渡壁厚（0.4mm、0.3mm、0.2mm）、傾角（45°、30°、15°）等元素
 			</td>
 			<td>
-				<ul>
-					Assist in judging the printing effect of different tilt
-					angles;
-					<br />
-					Assist in judging the printing effect of different wall
-					thicknesses;
-					<br />
-					Assist in judging the corresponding lamellar transition
-					effect when different inclination angle states
-				</ul>
+				輔助判斷不同傾斜角度的列印效果；<br />
+				輔助判斷不同壁厚的列印效果；<br />
+				輔助判斷不同傾斜角狀態時對應的層紋過渡效果
 			</td>
 		</tr>
 		<tr>
 			<td>11</td>
-			<td>Ball body cabin</td>
-			<td>Hemispherical structure with forward straight hole</td>
+			<td>球頭機艙</td>
+			<td>帶正向直孔的半球結構</td>
 			<td>
-				<ul>
-					Assist in judging the transition effect of surface layer
-					pattern;
-					<br />
-					Assist in judging whether the vertical round hole is printed
-					as a perfect circle
-				</ul>
+				輔助判斷表面層紋過渡效果；<br />
+				輔助判斷垂直圓孔是否列印為正圓
 			</td>
 		</tr>
 		<tr>
 			<td>12</td>
-			<td>Gradual change support</td>
-			<td>CHITUBOX software: coarse, medium and fine support</td>
+			<td>漸變支撐</td>
+			<td>CHITUBOX 軟體的：粗、中、細支撐</td>
 			<td>
-				Assist in judging the limit support parameters of the suspended
-				area to ensure successful printing (The coverage area
-				corresponds to the<b> contact point spacing</b> parameter of the
-				CHITUBOX software)
+				輔助判斷懸空區域保證可成功列印的極限支撐參數（覆蓋區域對應於 CHITUBOX 軟件的<b>接觸點間距</b>參數）
 			</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-**Remarks**: The size specifications corresponding to the inclined wings are shown in the figure below.
+**註釋**：傾斜雙翼對應的尺寸規格如下圖所示。
 
 <ImageContainer src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/tma-v2_003.png" />
 
@@ -344,12 +311,11 @@ CHITUBOX TMB V1 model mainly includes the following contents:
 
 <Button buttonType={"link"} href="/models/CHITUBOX_TMC_V1.chitubox">
 	<DocumentDownload size={32} />
-	Download CHITUBOX TMC V1
+	下載 CHITUBOX TMC V1 模型
 </Button>
 
-<Admonition type="tip">
-	The corresponding parameter information of CHITUBOX TMC V1 is calibrated in
-	detail around the corresponding model.
+<Admonition type="tip" title="提示">
+	CHITUBOX TMC V1 模型對應參數信息在對應模型的周邊有做詳細的標定。
 </Admonition>
 
 <ResponsiveTable>
@@ -358,40 +324,40 @@ CHITUBOX TMB V1 model mainly includes the following contents:
 			<td rowSpan={12}>
 				<ImageContainer src="/images/docs/en-US/chitubox-printing-test/1.x.x/test-preparation/tma-v3_002.png" />
 			</td>
-			<td>01. the main baseplate</td>
+			<td>01. 主底板</td>
 		</tr>
 		<tr>
-			<td>02. uniform lattice</td>
+			<td>02. 均一性晶格</td>
 		</tr>
 		<tr>
-			<td>03. gradual change support</td>
+			<td>03. 漸變支撐</td>
 		</tr>
 		<tr>
-			<td>04. gradual change hole shaft fit</td>
+			<td>04. 漸變孔軸配合</td>
 		</tr>
 		<tr>
-			<td>05. gradual change of wall thickness</td>
+			<td>05. 漸變壁厚</td>
 		</tr>
 		<tr>
-			<td>06. gradual change plane inclination</td>
+			<td>06. 漸變平面傾角</td>
 		</tr>
 		<tr>
-			<td>07. Klein bottle</td>
+			<td>07. 克萊因瓶</td>
 		</tr>
 		<tr>
-			<td>08. gradual change hole axis</td>
+			<td>08. 漸變孔軸</td>
 		</tr>
 		<tr>
-			<td>09. gradual change inclined cylinder</td>
+			<td>09. 漸變傾斜圓柱</td>
 		</tr>
 		<tr>
-			<td>10. CHITUBOX icon</td>
+			<td>10. CHITUBOX 圖標</td>
 		</tr>
 		<tr>
-			<td>11. gradual change groove</td>
+			<td>11. 漸變凹槽</td>
 		</tr>
 		<tr>
-			<td>12. The ladder of gradual change</td>
+			<td>12. 漸變階梯</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
@@ -399,142 +365,117 @@ CHITUBOX TMB V1 model mainly includes the following contents:
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th>Serial number</th>
-			<th>Parameters</th>
-			<th>Parameter description</th>
-			<th>Effect description</th>
+			<th>序號</th>
+			<th>元素</th>
+			<th>參數說明</th>
+			<th>效果說明</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>01</td>
-			<td>Primary baseplate</td>
-			<td>L ( ) * W ( ) = 115mm * 50mm</td>
+			<td>主底板</td>
+			<td>L(長) * W(寬)=51mm * 51mm</td>
 			<td>
-				Assist in judging the deformation resistance of the printed
-				model
+				輔助判斷列印模型的抗變形能力
 			</td>
 		</tr>
 		<tr>
 			<td>02</td>
-			<td>Uniform lattice</td>
-			<td>Regular hexagonal backbone with circumscribed circle φ0.5</td>
+			<td>均一性晶格</td>
+			<td>外接圓為φ0.5的正六邊形網格結構</td>
 			<td>
-				Press the lattice to assist in judging the deformation effect of
-				the lattice mesh structure
+				按壓晶格，輔助判斷晶格網狀結構的變形效果
 			</td>
 		</tr>
 		<tr>
 			<td>03</td>
-			<td>Gradual change support</td>
-			<td>CHITUBOX software: coarse, medium and fine support</td>
+			<td>漸變支撐</td>
+			<td>CHITUBOX 軟體的：粗、中、細支撐</td>
 			<td>
-				Assist in judging the limit support parameters of the suspended
-				area to ensure successful printing (The coverage area
-				corresponds to the<b> contact point spacing</b> parameter of the
-				CHITUBOX software)
+				輔助判斷懸空區域保證可成功列印的極限支撐參數
+				（覆蓋區域對應於 CHITUBOX 軟體的<b>接觸點間距</b>參數）
 			</td>
 		</tr>
 		<tr>
 			<td>04</td>
-			<td>Gradual change hole shaft fit</td>
+			<td>漸變孔軸配合</td>
 			<td>
-				<ul>
-					Cylinder diameter: φ6;
-					<br />
-					Hole radius deviation: + 0.05mm, + 0.025mm, 0, -0.025mm,
-					-0.05mm.
-				</ul>
+				圓柱直徑：φ6；<br />
+				圓孔<b>半徑</b>偏差：+0.05mm、+0.025mm、0、-0.025mm、-0.05mm
 			</td>
-			<td>Assist in judging the best hole and shaft fitting clearance</td>
+			<td>輔助判斷最佳孔軸配合間隙</td>
 		</tr>
 		<tr>
 			<td>05</td>
-			<td>Gradual change of wall thickness</td>
-			<td>Wall thickness dimensions: 0.5mm, 0.4mm, 0.3mm, 0.2mm.</td>
+			<td>漸變壁厚</td>
+			<td>壁厚尺寸：0.5mm、0.4mm、0.3mm、0.2mm</td>
 			<td>
-				Assist in judging the printing effect of different wall
-				thickness structures
+				輔助判斷不同壁厚結構的列印效果
 			</td>
 		</tr>
 		<tr>
 			<td>06</td>
-			<td>Gradual change plane inclination</td>
+			<td>漸變平面傾角</td>
 			<td>
-				Gradual change inclination: 15 °, 20 °, 25 °, 30 °, 35 °, 40 °,
-				45 °
+				漸變傾角：15°、20°、25°、30°、35°、40°、45°
 			</td>
 			<td rowSpan="2">
-				Assist in judging the corresponding printing layered gradient
-				effect when different inclination states.
+				輔助判斷不同傾角狀態時對應的列印分層漸變效果
 			</td>
 		</tr>
 		<tr>
 			<td>07</td>
-			<td>Klein bottle</td>
-			<td>Continuous gradual change curvature model</td>
+			<td>克萊因瓶</td>
+			<td>連續漸變曲率模型</td>
 		</tr>
 		<tr>
 			<td>08</td>
-			<td>Gradual change hole axis</td>
+			<td>漸變孔軸</td>
 			<td>
-				Gradual change hole shaft size: φ0.025, φ0.5, φ1, φ3, φ5, φ10
+				漸變孔軸尺寸：φ0.025、φ0.5、φ1、φ3、φ5、φ10
 			</td>
 			<td>
-				Assist in judging the complete printability and printing
-				dimensional accuracy of different types of hole shaft
-				structures.
+				輔助判斷不同類型孔軸結構的完整可列印性和列印尺寸精度
 			</td>
 		</tr>
 		<tr>
 			<td>09</td>
-			<td>Gradual change inclined cylinder</td>
+			<td>漸變傾斜圓柱</td>
 			<td>
-				Gradually change the inclination angle of the inclined cylinder:
-				0 °, 15 °, 30 °, 45 °.
+				漸變傾斜圓柱傾斜角度：0°、15°、30°、45°
 			</td>
 			<td>
-				<ul>
-					Assist in judging the transition layered gradient effect
-					when the curvature structure has different cut bevel angles;
-					<br />
-					Combined with the bottom valve structure to assist in
-					judging the bottom slip effect of the transition state of
-					the size section between layers.
-				</ul>
+				輔助判斷曲率結構不同切斜角時的過渡分層漸變效果；<br />
+				結合底閥結構輔助判斷層間大小截面過渡狀態時底部滑移效果
 			</td>
 		</tr>
 		<tr>
 			<td>10</td>
-			<td>CHITUBOX icon</td>
+			<td>CHITUBOX 圖標</td>
 			<td>
-				The logo icon element of CHITUBOX, which is the copyright
-				marker.
+				CHITUBOX 的Logo圖標元素，為版權標記符
 			</td>
 			<td>/</td>
 		</tr>
 		<tr>
 			<td>11</td>
-			<td>Gradual change groove</td>
+			<td>漸變凹槽</td>
 			<td>
-				Gradual change groove size: 0.1mm, 0.2mm, 0.3mm, 0.4mm, 0.5mm,
-				0.6mm, 0.7mm, 0.8mm.
+				漸變凹槽尺寸：0.1mm、0.2mm、0.3mm、0.4mm、0.5mm、0.6mm、0.7mm、0.8mm
 			</td>
 			<td>
-				Assist in judging the printing ability of structural details
-				such as holes, shafts, bosses, etc.
+				輔助判斷孔、軸、凸台等結構細節結構的列印能力
 			</td>
 		</tr>
 		<tr>
 			<td>12</td>
-			<td>Ladder of gradual change</td>
+			<td>漸變階梯</td>
 			<td>
-				Gradual change step structure: 1mm, 2mm, 3mm, 4mm, 5mm, 6mm,
-				7mm, 8mm.
+				漸變階梯結構：1mm、2mm、3mm、4mm、5mm、6mm、7mm、8mm
 			</td>
 			<td>
-				Assist in judging the printing effect of different cross-wall
-				structures
+				輔助判斷不同跨壁結構的列印效果
 			</td>
 		</tr>
 	</tbody>

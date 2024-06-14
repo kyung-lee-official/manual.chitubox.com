@@ -2,42 +2,42 @@ import { DocumentDownload } from "@/components/icons/Icons";
 import { Button } from "@/components/button/Button";
 
 export const meta = {
-	title: "Result Assessment",
+	title: "列印效果評定",
 	authors: [{ name: "CHITUBOX Team" }],
-	pageId: "/en-US/print-testing-instructions/v1.0.0/result-assessment",
+	pageId: "/zh-TW/print-testing-instructions/v1.0.0/result-assessment",
 	description: "Printing effect evaluation of CHITUBOX printing test models.",
 	ogImage: "/images/docs/og_image.png",
 };
 
-# Result Assessment
+# 列印效果評定
 
 <Button
 	buttonType={"link"}
-	href="/docs/CHITUBOX standard model test data record form.xlsx"
+	href="/docs/CHITUBOX_standard_model_test_data_record_form.xlsx"
 >
 	<DocumentDownload size={32} />
-	Download All Tables
+	下載所有表格
 </Button>
 
-## CHITUBOX TMA V1 Model Printing Effect Evaluation Table
+## CHITUBOX TMA V1 模型列印效果評定表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
-			<th rowSpan="2">Module</th>
-			<th rowSpan="2">Project</th>
-			<th colSpan="3">Measured record</th>
+			<th rowSpan="2">模塊</th>
+			<th rowSpan="2">項目</th>
+			<th colSpan="3">實測記錄</th>
 		</tr>
 		<tr>
-			<th>Under exposure</th>
-			<th>Normal exposure</th>
-			<th>Over exposure</th>
+			<th>欠曝光</th>
+			<th>正常曝光</th>
+			<th>過度曝光</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Overall effect</td>
-			<td>Top view photo</td>
+			<td>整體效果</td>
+			<td>俯視圖拍照</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -64,8 +64,8 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="5">Möbius ring evolution model</td>
-			<td rowSpan="5">Transition lamination</td>
+			<td rowSpan="5">莫比烏斯環演變模型</td>
+			<td rowSpan="5">過渡層紋</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -170,16 +170,13 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				There is an obvious phenomenon that the printing layers
-				connected up and down are not fully successfully combined
-			</td>
-			<td>Can be printed completely</td>
-			<td>Can be printed completely</td>
+			<td>出現明顯的上下相連的列印層未完全成功結合的現象。</td>
+			<td>可完整列印</td>
+			<td>可完整列印</td>
 		</tr>
 		<tr>
-			<td rowSpan="5">Detailed representation model</td>
-			<td rowSpan="5">Detail printing capability</td>
+			<td rowSpan="5">細節表徵模型</td>
+			<td rowSpan="5">細節列印能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -285,20 +282,15 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>The details of the hole are complete and clear.</li>
-					<li>
-						The hole is too large and the solid wall thickness is
-						too small
-					</li>
-				</ul>
+				孔洞細節完整清晰。<br />
+				孔洞偏大，實體壁厚偏小。<br />
 			</td>
-			<td>Print details are complete and accurate</td>
-			<td>Some details are visible, not all details are fully printed</td>
+			<td>列印細節完整準確。</td>
+			<td>部分細節可見，但未完整列印所有細節。</td>
 		</tr>
 		<tr>
-			<td rowSpan="6">Gradual change hole axis</td>
-			<td rowSpan="3">Gradual change hole printing capability</td>
+			<td rowSpan="6">漸變孔軸</td>
+			<td rowSpan="3">漸變孔列印能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -352,51 +344,21 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>
-						φ2, φ2.5 holes can be completely printed including the
-						bottom part
-					</li>
-					<li>
-						The minimum hole that can be printed is: φ0.5 (there is
-						a certain degree of bottom overcuring leading to bottom
-						blockage)
-					</li>
-				</ul>
+				φ2，φ2.5孔包括底層部分均可完整列印<br />
+				可列印最小孔为：φ0.5（有一定程度的底部過固化導致底部堵塞）
 			</td>
 			<td>
-				<ul>
-					<li>
-						φ2, φ2.5 holes can be completely printed including the
-						bottom part
-					</li>
-					<li>
-						The minimum hole that can be printed is: φ0.5 (there is
-						a certain degree of bottom overcuring leading to bottom
-						blockage)
-					</li>
-				</ul>
+				φ2，φ2.5孔包括底層部分均可完整列印<br />
+				可列印最小孔为：φ0.5（有一定程度的底部過固化導致底部堵塞）
 			</td>
 			<td>
-				<ul>
-					<li>
-						φ2.5 holes can be completely printed including the
-						bottom part
-					</li>
-					<li>
-						Minimum hole that can be printed is: φ1 (there is a
-						certain degree of bottom overcuring leading to bottom
-						blockage)
-					</li>
-					<li>
-						The φ0.5 hole cannot be printed completely, and there
-						are certain traces of printing holes
-					</li>
-				</ul>
+				φ2，φ2.5孔包括底層部分均可完整列印<br />
+				可列印最小孔为：φ1（有一定程度的底部過固化導致底部堵塞）<br />
+				φ0.5孔無法完整列印，但可見一定的列印孔痕跡
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Gradual change axis printing capability</td>
+			<td rowSpan="3">漸變軸列印能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -450,17 +412,15 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>The minimum axis for complete printing is: φ1</li>
-					<li>The φ0.5 axis is not stable and prints successfully</li>
-				</ul>
+				完整列印最小軸為：φ1<br />
+				φ0.5軸無法穩定成功列印
 			</td>
-			<td>The minimum axis for complete printing is: φ0.5</td>
-			<td>The minimum axis for complete printing is: φ0.5</td>
+			<td>完整列印最小軸為：φ0.5</td>
+			<td>完整列印最小軸為：φ0.5</td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Gradual change boss</td>
-			<td rowSpan="3">Gradual change boss printing capability</td>
+			<td rowSpan="3">漸變凸台</td>
+			<td rowSpan="3">漸變凸台列印能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -514,27 +474,18 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>The minimum boss for complete printing is: 0.2mm.</li>
-					<li>
-						The 0.1mm boss part cannot be successfully printed
-						without obvious printing marks.
-					</li>
-				</ul>
+				完整列印最小凸台為：0.2mm<br />
+				0.1mm 凸台部分無法成功列印，且沒有明顯的列印痕跡
 			</td>
 			<td>
-				<ul>
-					<li>The minimum boss for complete printing is: 0.2mm.</li>
-					<li>
-						The partial printing of the 0.1mm boss part is deformed.
-					</li>
-				</ul>
+				完整列印最小凸台為：0.2mm<br />
+				0.1mm 凸台部分局部列印發生變形
 			</td>
-			<td>The minimum boss for complete printing is: 0.1mm.</td>
+			<td>完整列印最小凸台為：0.1mm</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Gradual change groove</td>
-			<td rowSpan="2">Gradual change groove printing capability</td>
+			<td rowSpan="2">漸變凹槽</td>
+			<td rowSpan="2">漸變凹槽列印能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -562,37 +513,21 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>The minimum groove for complete printing is: 0.2mm;</li>
-					<li>
-						Bonding occurs locally in a small area of the 0.1mm
-						groove.
-					</li>
-				</ul>
+				完整列印最小凹槽為：0.2mm；<br />
+				0.1mm 凹槽局部小區域局部出現粘結
 			</td>
 			<td>
-				<ul>
-					<li>The minimum groove for complete printing is: 0.2mm;</li>
-					<li>
-						Bonding occurs in the small area of the 0.1mm groove.
-					</li>
-				</ul>
+				完整列印最小凹槽為：0.2mm；<br />
+				0.1mm 凹槽局部小區域位置出現粘結
 			</td>
 			<td>
-				<ul>
-					<li>The minimum groove for complete printing is: 0.3mm;</li>
-					<li>
-						Bonding occurs in the small area of the 0.1mm/0.2mm
-						groove.
-					</li>
-				</ul>
+				完整列印最小凹槽為：0.3mm；<br />
+				0.1mm/0.2mm 凹槽局部小區域位置出現粘結
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="4">LOGO elements</td>
-			<td rowSpan="2">
-				Large cross-section interlayer transition capability
-			</td>
+			<td rowSpan="4">LOGO 元素</td>
+			<td rowSpan="2">大截面層間過渡能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -619,12 +554,12 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>Printed layering visible to the naked eye</td>
-			<td>Printed layering visible to the naked eye</td>
-			<td>Printed layering visible to the naked eye</td>
+			<td>肉眼可見的列印層紋</td>
+			<td>肉眼可見的列印層紋</td>
+			<td>肉眼可見的列印層紋</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">0.4mm section cutting hole printing capacity</td>
+			<td rowSpan="2">0.4mm截面切割孔列印能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -652,48 +587,44 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				Can be successfully printed (section size greater than 0.4mm)
-			</td>
-			<td>Fully printable</td>
-			<td>There is blockage in some cross-sectional areas</td>
+			<td>可成功列印（截面尺寸大於0.4mm）</td>
+			<td>完整可列印</td>
+			<td>部分截面區域存在堵塞狀況</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-<br />
-
-## CHITUBOX TMB V1 Model Printing Effect Evaluation Table
+## CHITUBOX TMB V1 模型列印效果評定表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
 			<th rowSpan="2">
-				<b>Module</b>
+				<b>模塊</b>
 			</th>
 			<th rowSpan="2">
-				<b>Project</b>
+				<b>項目</b>
 			</th>
 			<th colSpan="3">
-				<b>Measured record</b>
+				<b>實測記錄</b>
 			</th>
 		</tr>
 		<tr>
 			<th>
-				<b>Under exposure</b>
+				<b>欠曝光</b>
 			</th>
 			<th>
-				<b>Normal exposure</b>
+				<b>正常曝光</b>
 			</th>
 			<th>
-				<b>Over exposure</b>
+				<b>過度曝光</b>
 			</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Overall effect</td>
-			<td>Top view photo</td>
+			<td>整體效果</td>
+			<td>俯視圖</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -720,8 +651,8 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="5">Möbius ring evolution model</td>
-			<td rowSpan="5">Transition lamination</td>
+			<td rowSpan="5">莫比烏斯環演變模型</td>
+			<td rowSpan="5">過渡層紋</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -826,16 +757,13 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				There is an obvious phenomenon that the printing layers
-				connected up and down are not fully successfully combined
-			</td>
-			<td>Can be printed completely</td>
-			<td>Can be printed completely</td>
+			<td>出現明顯的上下相連的打印層未完全成功結合的現象。</td>
+			<td>可完整列印</td>
+			<td>可完整列印</td>
 		</tr>
 		<tr>
-			<td rowSpan="5">Detailed representation model</td>
-			<td rowSpan="5">Detail printing capability</td>
+			<td rowSpan="5">細節表徵模型</td>
+			<td rowSpan="5">細節列印能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -941,20 +869,15 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>The details of the hole are complete and clear.</li>
-					<li>
-						The hole is too large, the solid wall thickness is too
-						small, and some solid and hole structures are missing
-					</li>
-				</ul>
+				孔洞細節完整清晰。<br />
+				孔洞偏大，實體壁厚偏小，部分實體和孔洞結構缺失
 			</td>
-			<td>Print details are complete and accurate</td>
-			<td>Some details are visible, not all details are fully printed</td>
+			<td>列印細節完整準確。</td>
+			<td>部分細節可見，但未完整列印所有細節。</td>
 		</tr>
 		<tr>
-			<td rowSpan="6">Gradual change hole axis</td>
-			<td rowSpan="3">Gradual change hole printing capability</td>
+			<td rowSpan="6">漸變孔軸</td>
+			<td rowSpan="3">漸變孔列印能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1008,51 +931,21 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>
-						φ2, φ2.5 holes can be completely printed including the
-						bottom part
-					</li>
-					<li>
-						The minimum hole that can be printed is: φ0.5 (there is
-						a certain degree of bottom overcuring leading to bottom
-						blockage)
-					</li>
-				</ul>
+				φ2，φ2.5孔包括底層部分均可完整列印<br />
+				可列印最小孔为：φ0.5（有一定程度的底部過固化導致底部堵塞）
 			</td>
 			<td>
-				<ul>
-					<li>
-						φ2, φ2.5 holes can be completely printed including the
-						bottom part
-					</li>
-					<li>
-						The minimum hole that can be printed is: φ0.5 (there is
-						a certain degree of bottom overcuring leading to bottom
-						blockage)
-					</li>
-				</ul>
+				φ2，φ2.5孔包括底層部分均可完整列印<br />
+				可列印最小孔为：φ0.5（有一定程度的底部過固化導致底部堵塞）
 			</td>
 			<td>
-				<ul>
-					<li>
-						φ2.5 holes can be completely printed including the
-						bottom part
-					</li>
-					<li>
-						Minimum hole that can be printed is: φ1 (there is a
-						certain degree of bottom overcuring leading to bottom
-						blockage)
-					</li>
-					<li>
-						The φ0.5 hole cannot be printed completely, and there
-						are certain traces of printing holes
-					</li>
-				</ul>
+				φ2.5孔包括底層部分均可完整列印<br />
+				可列印最小孔为：φ1（有一定程度的底部過固化導致底部堵塞）<br />
+				φ0.5孔無法完整列印，但可見一定的列印孔痕跡
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Gradual change axis printing capability</td>
+			<td rowSpan="3">漸變軸列印能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1106,19 +999,15 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>The minimum axis for complete printing is: φ1</li>
-					<li>
-						The φ0.5 axis print is too small and slightly deformed
-					</li>
-				</ul>
+				完整列印最小軸為：φ1<br />
+				φ0.5軸列印偏小，並出現輕度的變形
 			</td>
-			<td>The minimum axis for complete printing is: φ0.5</td>
-			<td>The minimum axis for complete printing is: φ0.5</td>
+			<td>完整列印最小軸為：φ0.5</td>
+			<td>完整列印最小軸為：φ0.5</td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Gradual change boss</td>
-			<td rowSpan="3">Gradual change boss printing capability</td>
+			<td rowSpan="3">漸變凸台</td>
+			<td rowSpan="3">漸變凸台列印能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1172,20 +1061,15 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>The minimum boss for complete printing is: 0.2mm.</li>
-					<li>
-						The 0.1mm boss part cannot be successfully printed
-						without obvious printing marks.
-					</li>
-				</ul>
+				完整列印最小凸台為：0.2mm<br />
+				0.1mm 凸台部分無法成功列印，没有明顯的列印痕跡
 			</td>
-			<td>The minimum boss for complete printing is: 0.1mm.</td>
-			<td>The minimum boss for complete printing is: 0.1mm.</td>
+			<td>完整列印最小凸台為：0.1mm</td>
+			<td>完整列印最小凸台為：0.1mm</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Gradual change groove</td>
-			<td rowSpan="2">Gradual change groove printing capability</td>
+			<td rowSpan="2">漸變凹槽</td>
+			<td rowSpan="2">漸變凹槽列印能力</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1213,35 +1097,21 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>The minimum groove for complete printing is: 0.2mm;</li>
-					<li>
-						Bonding occurs locally in a small area of the 0.1mm
-						groove.
-					</li>
-				</ul>
+				完整列印最小凹槽為：0.2mm；<br />
+				0.1mm 凹槽局部小區域局部出現粘結
 			</td>
 			<td>
-				<ul>
-					<li>The minimum groove for complete printing is: 0.2mm;</li>
-					<li>
-						Bonding occurs in the small area of the 0.1mm groove.
-					</li>
-				</ul>
+				完整列印最小凹槽為：0.2mm；<br />
+				1mm 凹槽局部小區域位置出現粘結
 			</td>
 			<td>
-				<ul>
-					<li>The minimum groove for complete printing is: 0.3mm;</li>
-					<li>
-						Bonding occurs in the small area of the 0.1mm/0.2mm
-						groove.
-					</li>
-				</ul>
+				完整列印最小凹槽為：0.3mm；<br />
+				0.1mm/0.2mm 凹槽局部小區域位置出現粘結
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="5">Tilt wings</td>
-			<td rowSpan="3">Tilt angle</td>
+			<td rowSpan="5">傾斜雙翼</td>
+			<td rowSpan="3">傾斜角度</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1294,46 +1164,25 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				The double wing structure is soft, and the bending deformation
-				and wing wall fracture occur.
-			</td>
-			<td>Can completely print the corresponding inclined structure</td>
-			<td>Can completely print the corresponding inclined structure</td>
+			<td>雙翼結構偏軟，發生了彎曲變形及翼壁斷裂的情況</td>
+			<td>可完整列印對應傾斜結構</td>
+			<td>可完整列印對應傾斜結構</td>
 		</tr>
 		<tr>
-			<td>Limit wall thickness</td>
-			<td>
-				The 0.4mm wing wall is broken, and the overall structure of both
-				wings is bent and deformed
-			</td>
-			<td>
-				The corresponding wall thickness of the wing can be completely
-				printed
-			</td>
-			<td>
-				The corresponding wall thickness of the wing can be completely
-				printed
-			</td>
+			<td>極限壁厚</td>
+			<td>0.4mm翼壁存在斷裂情況，雙翼整體結構均發彎曲變形</td>
+			<td>機翼對應壁厚均可完整列印</td>
+			<td>機翼對應壁厚均可完整列印</td>
 		</tr>
 		<tr>
-			<td>Transition lamination</td>
-			<td>
-				The 45 °, 30 °, and 15 ° wings are clearly layered and visible
-				to the naked eye (blurred image without opening)
-			</td>
-			<td>
-				The 45 °, 30 °, and 15 ° wings are clearly layered and visible
-				to the naked eye (blurred image without opening)
-			</td>
-			<td>
-				The 45 °, 30 °, and 15 ° wings are clearly layered and visible
-				to the naked eye (blurred image without opening)
-			</td>
+			<td>過渡層紋</td>
+			<td>45°、30°、15°機翼層紋明顯，均肉眼可見（未開啟圖像模糊）</td>
+			<td>45°、30°、15°機翼層紋明顯，均肉眼可見（未開啟圖像模糊）</td>
+			<td>45°、30°、15°機翼層紋明顯，均肉眼可見（未開啟圖像模糊）</td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Ball head cabin</td>
-			<td rowSpan="2">Transition lamination</td>
+			<td rowSpan="3">球頭機艙</td>
+			<td rowSpan="2">過渡層紋</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1360,28 +1209,19 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				The transition circle layer pattern on the top of the ball is
-				visible to the naked eye (the image is blurred without opening)
-			</td>
-			<td>
-				The transition circle layer pattern on the top of the ball is
-				visible to the naked eye (the image is blurred without opening)
-			</td>
-			<td>
-				The transition circle layer pattern on the top of the ball is
-				visible to the naked eye (the image is blurred without opening)
-			</td>
+			<td>球頭頂部過渡圓層紋肉眼可見（未開啟圖像模糊）</td>
+			<td>球頭頂部過渡圓層紋肉眼可見（未開啟圖像模糊）</td>
+			<td>球頭頂部過渡圓層紋肉眼可見（未開啟圖像模糊）</td>
 		</tr>
 		<tr>
-			<td>Macroporous roundness</td>
-			<td>Large hole is perfect circle</td>
-			<td>Large hole is perfect circle</td>
-			<td>Large hole is perfect circle</td>
+			<td>大孔圓度</td>
+			<td>大孔為正園</td>
+			<td>大孔為正園</td>
+			<td>大孔為正園</td>
 		</tr>
 		<tr>
-			<td rowSpan="7">Gradual change support</td>
-			<td rowSpan="2">Coarse support</td>
+			<td rowSpan="7">漸變支撐</td>
+			<td rowSpan="2">粗支撐</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1408,12 +1248,12 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>Up to 4mm diameter coverage area can be fully printed</td>
-			<td>Up to 4mm diameter coverage area can be fully printed</td>
-			<td>Up to 4mm diameter coverage area can be fully printed</td>
+			<td>最大可完整列印 4mm 直徑覆蓋區域</td>
+			<td>最大可完整列印 4mm 直徑覆蓋區域</td>
+			<td>最大可完整列印 4mm 直徑覆蓋區域</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Middle support</td>
+			<td rowSpan="2">中支撐</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1441,16 +1281,13 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				The maximum diameter coverage area that can be completely
-				printed is 4mm (under-exposure corresponds to the 4mm coverage
-				area that can be completely printed. The main reason is the
-				exposure strategy of support and model difference)
+				最大可完整列印4mm直徑覆蓋區域（欠曝光對應可完整列印4mm覆蓋區域主要原因為支撐和模型差異化的曝光策略決定的）
 			</td>
-			<td>Up to 3mm diameter coverage area can be completely printed</td>
-			<td>Up to 4mm diameter coverage area can be fully printed</td>
+			<td>最大可完整列印 3mm 直徑覆蓋區域</td>
+			<td>最大可完整列印 4mm 直徑覆蓋區域</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Fine support</td>
+			<td rowSpan="2">细支撐</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1478,56 +1315,51 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				Maximum complete printing 3mm diameter coverage area
-				(under-exposure corresponding to complete printing 3mm. The main
-				reason for the coverage area is the exposure strategy of support
-				and model difference)
+				最大可完整列印 3mm 直徑覆蓋區域（欠曝光對應可完整列印3mm覆蓋區域主要原因為支撐和模型差異化的曝光策略決定的）
 			</td>
-			<td>Up to 2mm diameter coverage area can be fully printed</td>
-			<td>Up to 4mm diameter coverage area can be fully printed</td>
+			<td>最大可完整列印 2mm 直徑覆蓋區域</td>
+			<td>最大可完整列印 4mm 直徑覆蓋區域</td>
 		</tr>
 		<tr>
-			<td>Other support</td>
-			<td>none</td>
-			<td>none</td>
-			<td>none</td>
+			<td>其他支撐</td>
+			<td>無</td>
+			<td>無</td>
+			<td>無</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
 
-<br />
-
-## CHITUBOX TMC V1 Model Printing Effect Evaluation Table
+## CHITUBOX TMC V1 模型列印效果評定表
 
 <ResponsiveTable>
 	<thead>
 		<tr>
 			<th rowSpan="2">
-				<b>Module</b>
+				<b>模塊</b>
 			</th>
 			<th rowSpan="2">
-				<b>Project</b>
+				<b>項目</b>
 			</th>
 			<th colSpan="3">
-				<b>Measured record</b>
+				<b>實測記錄</b>
 			</th>
 		</tr>
 		<tr>
 			<th>
-				<b>Under exposure</b>
+				<b>欠曝光</b>
 			</th>
 			<th>
-				<b>Normal exposure</b>
+				<b>正常曝光</b>
 			</th>
 			<th>
-				<b>Over exposure</b>
+				<b>過度曝光</b>
 			</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td style={{ minWidth: "160px" }}>Overall effect</td>
-			<td style={{ minWidth: "150px" }}>Oblique view to take pictures</td>
+			<td style={{ minWidth: "160px" }}>整體效果</td>
+			<td style={{ minWidth: "150px" }}>俯視圖拍照</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1555,7 +1387,7 @@ export const meta = {
 		</tr>
 		<tr>
 			<td></td>
-			<td>Top view photo</td>
+			<td>正視圖</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1582,8 +1414,8 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="5">Uniform lattice</td>
-			<td rowSpan="2">Integrity</td>
+			<td rowSpan="5">均一性晶格</td>
+			<td rowSpan="2">完整性</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1610,31 +1442,31 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>an be printed completely</td>
-			<td>an be printed completely</td>
-			<td>an be printed completely</td>
+			<td>可完整列印</td>
+			<td>可完整列印</td>
+			<td>可完整列印</td>
 		</tr>
 		<tr>
-			<td>Compression deformation (0)</td>
-			<td>Compressible deformation (slight deformation)</td>
-			<td>Compressible deformation (slight deformation)</td>
-			<td>Compressible deformation (slight deformation)</td>
+			<td>按壓變形 (0)</td>
+			<td>可壓縮變形（輕微變形）</td>
+			<td>可壓縮變形（輕微變形）</td>
+			<td>可壓縮變形（輕微變形）</td>
 		</tr>
 		<tr>
-			<td>Compression deformation (3)</td>
-			<td>Incompressible deformation</td>
-			<td>Incompressible deformation</td>
-			<td>Incompressible deformation</td>
+			<td>按壓變形 (1)</td>
+			<td>不可壓縮變形</td>
+			<td>不可壓縮變形</td>
+			<td>不可壓縮變形</td>
 		</tr>
 		<tr>
-			<td>Compression deformation (7)</td>
-			<td>Incompressible deformation</td>
-			<td>Incompressible deformation</td>
-			<td>Incompressible deformation</td>
+			<td>按壓變形 (2)</td>
+			<td>不可壓縮變形</td>
+			<td>不可壓縮變形</td>
+			<td>不可壓縮變形</td>
 		</tr>
 		<tr>
-			<td rowSpan="7">Gradual change support</td>
-			<td rowSpan="2">Coarse support</td>
+			<td rowSpan="7">漸變支撐</td>
+			<td rowSpan="2">粗支撐</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1662,16 +1494,13 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				The maximum complete printing radius coverage area of 5mm
-				(under-exposure corresponds to a complete printing 5mm coverage
-				area mainly due to the exposure strategy of support and model
-				difference)
+				最大可完整列印 5mm 半徑覆蓋區域（欠曝光對應可完整列印5mm覆蓋區域主要原因為支撐和模型差異化的曝光策略決定的）
 			</td>
-			<td>Up to 4mm radius coverage area can be fully printed</td>
-			<td>Up to 5mm radius coverage area can be completely printed</td>
+			<td>最大可完整列印 4mm 半徑覆蓋區域</td>
+			<td>最大可完整列印 5mm 半徑覆蓋區域</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Middle support</td>
+			<td rowSpan="2">中支撐</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1698,12 +1527,12 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>Up to 3mm radius coverage area can be completely printed</td>
-			<td>The maximum complete printing radius of 2mm coverage area</td>
-			<td>Up to 5mm radius coverage area can be completely printed</td>
+			<td>最大可完整列印 3mm 半徑覆蓋區域</td>
+			<td>最大可完整列印 2mm 半徑覆蓋區域</td>
+			<td>最大可完整列印 5mm 半徑覆蓋區域</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Thin support</td>
+			<td rowSpan="2">细支撐</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1731,19 +1560,19 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>Could not be successfully printed</td>
-			<td>Could not be successfully printed</td>
-			<td>Up to 3mm radius coverage area can be completely printed</td>
+			<td>均不可成功列印</td>
+			<td>均不可成功列印</td>
+			<td>最大可完整列印 3mm 半徑覆蓋區域</td>
 		</tr>
 		<tr>
-			<td>Other support</td>
-			<td>None</td>
-			<td>None</td>
-			<td>None</td>
+			<td>其他支撐</td>
+			<td>無</td>
+			<td>無</td>
+			<td>無</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Gradual change hole shaft fit</td>
-			<td rowSpan="2">Hole shaft matching effect</td>
+			<td rowSpan="2">漸變孔軸配合</td>
+			<td rowSpan="2">孔軸配合效果</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1773,36 +1602,30 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>+0.05mm (loose)</li>
-					<li>+0.025mm (loose)</li>
-					<li>0 (loose)</li>
-					<li>-0.025mm (moderate)</li>
-					<li>-0.05Mm (tight)</li>
-				</ul>
+				+0.05mm (松)<br />
+				+0.025mm (松)<br />
+				0 (松)<br />
+				-0.025mm (適中)<br />
+				-0.05Mm (緊)
 			</td>
 			<td>
-				<ul>
-					<li>+0.05mm (loose)</li>
-					<li>+0.025mm (moderate)</li>
-					<li>0 (tight)</li>
-					<li>-0.025mm (tight)</li>
-					<li>-0.05mm (cannot be installed)</li>
-				</ul>
+				+0.05mm (松)<br />
+				+0.025mm (適中)<br />
+				0 (緊)<br />
+				-0.025mm (緊)<br />
+				-0.05mm (無法安裝)
 			</td>
 			<td>
-				<ul>
-					<li>+0.05mm (cannot be installed)</li>
-					<li>+0.025mm (cannot be installed)</li>
-					<li>0 (cannot be installed)</li>
-					<li>-0.025mm (cannot be installed)</li>
-					<li>-0.05mm (cannot be installed)</li>
-				</ul>
+				+0.05mm (無法安裝)<br />
+				+0.025mm (無法安裝)<br />
+				0 (無法安裝)<br />
+				-0.025mm (無法安裝)<br />
+				-0.05mm (無法安裝)
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Gradual change of wall thickness</td>
-			<td rowSpan="2">Thin wall formability</td>
+			<td rowSpan="2">漸變壁厚</td>
+			<td rowSpan="2">薄壁可成型性</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1830,28 +1653,18 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>
-						The minimum complete moldable wall thickness is: 0.3mm;
-					</li>
-					<li>Significant deformation of 0.2mm wall thickness</li>
-				</ul>
+				最小完整可成型壁厚為：0.3mm；<br />
+				0.2mm壁厚發生明顯的變形
 			</td>
 			<td>
-				<ul>
-					<li>
-						The minimum complete moldable wall thickness is: 0.3mm;
-					</li>
-					<li>Slight deformation of 0.2mm wall thickness</li>
-				</ul>
+				最小完整可成型壁厚為：0.3mm；<br />
+				0.2mm壁厚發生輕度的變形
 			</td>
-			<td>
-				The minimum complete moldable wall thickness is: 0.2mm (thick)
-			</td>
+			<td>最小完整可成型壁厚為：0.2mm（偏厚）</td>
 		</tr>
 		<tr>
-			<td>Gradual change plane inclination</td>
-			<td>Transition lamination</td>
+			<td>漸變平面傾角</td>
+			<td>過渡層紋</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1878,8 +1691,8 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Gradual change hole axis</td>
-			<td rowSpan="2">Accuracy of hole shaft forming</td>
+			<td rowSpan="2">漸變孔軸</td>
+			<td rowSpan="2">孔軸成型準確性</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1908,57 +1721,49 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>Shaft size record:</li>
-					<li>φ0.025 (unsuccessful printing)</li>
-					<li>φ0.5 (c0.36)</li>
-					<li>φ1 (cφ0.87)</li>
-					<li>φ3 (cφ2.91)</li>
-					<li>φ5 (cφ4.88)</li>
-					<li>φ10 (cφ9.88)</li>
-					<li></li>
-					<li>
-						Hole size Remarks: The bottom of φ1 and φ0.5 holes is
-						blocked; The bottom of φ1 and φ0.5 holes is blocked;
-					</li>
-					<li>φ0.025 holes No obvious signs of holes</li>
-				</ul>
+				軸尺寸記錄：<br />
+				φ0.025 (未成功列印)<br />
+				φ0.5 (c0.36)<br />
+				φ1 (cφ0.87)<br />
+				φ3 (cφ2.91)<br />
+				φ5 (cφ4.88)<br />
+				φ10 (cφ9.88)<br />
+				<br />
+				孔尺寸備注：<br /> 
+				φ1、φ0.5孔底部堵塞；<br />
+				φ0.025孔無明顯孔跡象
 			</td>
 			<td>
-				<ul>
-					<li>Shaft size record:</li>
-					<li>φ0.025 (c0.021)</li>
-					<li>φ0.5 (c0.47)</li>
-					<li>φ1 (cφ0.97)</li>
-					<li>φ3 (cφ2.99)</li>
-					<li>φ5 (cφ4.98)</li>
-					<li>φ10 (cφ9.96)</li>
-					<li></li>
-					<li>Hole size Remarks:</li>
-					<li>The bottom of φ1 and φ0.5 holes is blocked;</li>
-					<li>φ0.025 holes No obvious signs of holes</li>
-				</ul>
+				軸尺寸記錄：<br />
+				φ0.025 (c0.021)<br />
+				φ0.5 (c0.47)<br />
+				φ1 (cφ0.97)<br />
+				φ3 (cφ2.99)<br />
+				φ5 (cφ4.98)<br />
+				φ10 (cφ9.96)<br />
+				<br />
+				孔尺寸備注：<br />
+				φ1、φ0.5孔底部堵塞；<br />
+				φ0.025孔無明顯孔跡象
 			</td>
 			<td>
-				<ul>
-					<li>Shaft size record:</li>
-					<li>φ0.025 (c0.025)</li>
-					<li>φ0.5 (c0.48)</li>
-					<li>φ1 (cφ1.0)</li>
-					<li>φ3 (cφ3.06)</li>
-					<li>φ5 (cφ5.06)</li>
-					<li>φ10 (cφ10.0)）</li>
-					<li></li>
-					<li>Hole size Remarks:</li>
-					<li>The bottom of the φ1 hole is blocked;</li>
-					<li>φ0.5 hole printing marks with holes</li>
-					<li>φ0.025 holes No obvious signs of holes</li>
-				</ul>
+				軸尺寸記錄：<br />
+				φ0.025 (c0.025)<br />
+				φ0.5 (c0.48)<br />
+				φ1 (cφ1.0)<br />
+				φ3 (cφ3.06)<br />
+				φ5 (cφ5.06)<br />
+				φ10 (cφ10.0)<br />
+				<br />
+				孔尺寸備注：<br />
+				φ1孔底部堵塞；<br />
+				φ0.5孔有孔列印痕跡<br />
+				φ0.025孔無明顯孔跡象
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="4">Gradual change inclined cylinder</td>
-			<td rowSpan="2">Bottom drift</td>
+			<td rowSpan="4">漸變傾斜圓柱</td>
+			<td rowSpan="2">底部漂移</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -1986,38 +1791,20 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>30 read inclined cylinder triggers bottom drift;</li>
-					<li>
-						The 45 ° inclined cylinder has a certain degree of
-						drift. (The main reason for the drift is the leveling
-						and motion properties of the printing platform)
-					</li>
-				</ul>
+				30°傾斜圓柱觸發底部漂移；<br />
+				45°傾斜圓柱有一定程度的漂移（發生漂移主要原因為列印平台的調平和運動屬性決定）
 			</td>
 			<td>
-				<ul>
-					<li>30 read inclined cylinder triggers bottom drift;</li>
-					<li>
-						The 45 ° inclined cylinder has a certain degree of
-						drift. (The main reason for the drift is the leveling
-						and motion properties of the printing platform)
-					</li>
-				</ul>
+				30°傾斜圓柱觸發底部漂移；<br />
+				45°傾斜圓柱有一定程度的漂移（發生漂移主要原因為列印平台的調平和運動屬性決定）
 			</td>
 			<td>
-				<ul>
-					<li>30 read inclined cylinder triggers bottom drift;</li>
-					<li>
-						The 45 ° inclined cylinder has a certain degree of
-						drift. (The main reason for the drift is the leveling
-						and motion properties of the printing platform)
-					</li>
-				</ul>
+				30°傾斜圓柱觸發底部漂移；<br />
+				45°傾斜圓柱有一定程度的漂移（發生漂移主要原因為列印平台的調平和運動屬性決定）
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Tilt cylindrical layer transition effect</td>
+			<td rowSpan="2">傾斜圓柱層過渡效果</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -2044,16 +1831,15 @@ export const meta = {
 			</td>
 		</tr>
 		<tr>
-			<td>No obvious transition lamination</td>
-			<td>No obvious transition lamination</td>
-			<td>No obvious transition lamination</td>
+			<td>均無明顯過渡層紋</td>
+			<td>均無明顯過渡層紋</td>
+			<td>均無明顯過渡層紋</td>
 		</tr>
 		<tr>
-			<td rowSpan="3">Gradual change groove</td>
-			<td rowSpan="3">Gradual change groove printing capability</td>
+			<td rowSpan="3">漸變凹槽</td>
+			<td rowSpan="3">漸變凹槽列印能力</td>
 			<td>
-				Level
-				<br />
+				水平
 				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-v1-groove_001.png"
@@ -2062,8 +1848,7 @@ export const meta = {
 				</div>
 			</td>
 			<td>
-				Level
-				<br />
+				水平
 				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-v1-groove_002.png"
@@ -2072,8 +1857,7 @@ export const meta = {
 				</div>
 			</td>
 			<td>
-				Level
-				<br />
+				水平
 				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-v1-groove_003.png"
@@ -2084,8 +1868,7 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				Vertical
-				<br />
+				垂直
 				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-v1-groove_004.png"
@@ -2094,8 +1877,7 @@ export const meta = {
 				</div>
 			</td>
 			<td>
-				Vertical
-				<br />
+				垂直
 				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-v1-groove_005.png"
@@ -2104,8 +1886,7 @@ export const meta = {
 				</div>
 			</td>
 			<td>
-				Vertical
-				<br />
+				垂直
 				<div className="flex justify-center items-center">
 					<ImageContainer
 						src="/images/docs/en-US/chitubox-printing-test/1.x.x/analysis/tmc-v1-groove_006.png"
@@ -2116,54 +1897,23 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>The minimum groove for complete printing is: 0.2mm;</li>
-					<li>
-						The 0.1mm groove part is successfully printed, there is
-						a certain degree of blockage, and the horizontal
-						orientation has obvious influence.
-					</li>
-				</ul>
+				完整列印最小凹槽為：0.2mm；<br />
+				0.1mm 凹槽部分列印成功，有一定程度的堵塞，水平方位影響明顯
 			</td>
 			<td>
-				<ul>
-					<li>The minimum groove for complete printing is: 0.3mm;</li>
-					<li>
-						The 0.2mm groove part is successfully printed, there is
-						a certain degree of blockage, the horizontal orientation
-						has obvious influence, and the vertical orientation can
-						be completely printed.
-					</li>
-					<li>
-						The 0.1mm groove part has obvious printing marks and a
-						large degree of blockage, and the degree of blockage in
-						the horizontal orientation is greater than that in the
-						vertical orientation.
-					</li>
-				</ul>
+				完整列印最小凹槽為：0.3mm；<br />
+				0.2mm凹槽部分列印成功，有一定程度的堵塞，水平方位影響明顯，豎直方位可完整列印<br />
+				0.1mm凹槽部分有明顯的列印痕跡，有較大程度的堵塞，水平方位堵塞程度大於豎直方位
 			</td>
 			<td>
-				<ul>
-					<li>The minimum groove for complete printing is: 0.6mm;</li>
-					<li>
-						The 0.5mm-0.2mm groove part is successfully printed, the
-						severity of sequential blockage is strengthened, the
-						horizontal orientation has obvious influence, and the
-						vertical orientation 0.3mm-0.5mm can be completely
-						printed.
-					</li>
-					<li>
-						The 0.2mm-0.1mm groove part has obvious printing marks,
-						and there is a large degree of blockage, and the degree
-						of blockage in the horizontal orientation is greater
-						than that in the vertical orientation.
-					</li>
-				</ul>
+				完整列印最小凹槽為：0.6mm；<br />
+				0.5mm-0.2mm凹槽部分列印成功，順序堵塞嚴重程度加強，水平方位影響明顯，豎直方位0.3mm-0.5mm均可完整列印<br />
+				0.2mm-0.1mm凹槽部分有明顯的列印痕跡，有較大程度的堵塞，水平方位堵塞程度大於豎直方位
 			</td>
 		</tr>
 		<tr>
-			<td rowSpan="2">Ladder of gradual change</td>
-			<td rowSpan="2">Printability of cross wall structures</td>
+			<td rowSpan="2">漸變階梯</td>
+			<td rowSpan="2">跨壁結構可列印性</td>
 			<td>
 				<div className="flex justify-center items-center">
 					<ImageContainer
@@ -2191,19 +1941,11 @@ export const meta = {
 		</tr>
 		<tr>
 			<td>
-				<ul>
-					<li>
-						1Mm-4mm cross-wall structure can be completely printed;
-					</li>
-					<li>
-						The 5mm-8mm cross-wall structure prints the bottom layer
-						deformation and has a certain degree of fault
-						separation.
-					</li>
-				</ul>
+				1mm-4mm跨壁結構可完整列印；<br />
+				5mm-8mm跨壁結構列印底層變形，並有一定程度的斷層分離
 			</td>
-			<td>1Mm-8mm cross-wall structure can be completely printed</td>
-			<td>1Mm-8mm cross-wall structure can be completely printed</td>
+			<td>1mm-8mm跨壁結構可完整列印</td>
+			<td>1mm-8mm跨壁結構可完整列印</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
