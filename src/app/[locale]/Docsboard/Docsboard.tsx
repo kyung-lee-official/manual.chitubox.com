@@ -12,15 +12,23 @@ const DocsCard = (props: { href: string; title: string }) => {
 			bg-white dark:bg-neutral-800
 			rounded-xl hover:shadow-lg duration-200"
 		>
-			<Link
-				href={href}
-				className="flex justify-start items-center w-full
-				text-lg font-bold
-				dark:text-neutral-300 dark:hover:text-neutral-200
-				duration-200"
-			>
-				{title}
-			</Link>
+			<div className="flex items-center gap-4">
+				<div
+					className="w-2 h-10
+					bg-[#0C88E0]
+					rounded-full"
+				></div>
+				<Link
+					href={href}
+					className="flex justify-start items-center w-full
+					text-lg font-bold
+					text-neutral-600 hover:text-neutral-900
+					dark:text-neutral-200 dark:hover:text-neutral-50
+					duration-200"
+				>
+					{title}
+				</Link>
+			</div>
 			<Subtitle docInstanceName={title} />
 		</div>
 	);
