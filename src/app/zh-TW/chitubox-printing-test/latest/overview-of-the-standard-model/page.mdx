@@ -1,13 +1,17 @@
 import { DocumentDownload } from "@/components/icons/Icons";
 import { Button } from "@/components/button/Button";
 
-export const meta = {
+export const metadata = {
 	title: "標準模型",
 	authors: [{ name: "CHITUBOX Team" }],
-	pageId: "/zh-TW/print-testing-instructions/v1.0.0/overview-of-the-standard-model",
 	description:
 		"Overview of the standard model. Currently, CHITUBOX has three test models: CHITUBOX TMA V1, CHITUBOX TMB V1, and CHITUBOX TMC V1",
-	ogImage: "/images/docs/og_image.png",
+	other:{
+		pageId: "/zh-TW/print-testing-instructions/v1.0.0/overview-of-the-standard-model",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # 標準模型

@@ -1,10 +1,14 @@
-export const meta = {
+export const metadata = {
 	title: "Printing Preparation Conditions",
 	authors: [{ name: "CHITUBOX Team" }],
-	pageId: "/en-US/print-testing-instructions/v1.0.0/printing-preparation-conditions",
 	description:
 		"Printing preparation conditions. Good print preparation conditions lead to better printing results and quality by removing potential factors.",
-	ogImage: "/images/docs/og_image.png",
+	other:{
+		pageId: "/en-US/print-testing-instructions/v1.0.0/printing-preparation-conditions",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
 };
 
 # Printing Preparation Conditions
@@ -370,7 +374,3 @@ The following table records the description of the effect of different printing 
 		</tr>
 	</tbody>
 </ResponsiveTable>
-
-### Slice Preprocessing
-
-CHITUBOX Pro software has two slicing modes: single-parameter and multi-parameter slicing. Effective use of multi-parameter slicing can obtain better printing parameters more quickly when testing and confirming the best printing parameters, and further obtain better printing actual results. The specific details The settings of printing parameters can be learned in detail through <SpanA href="https://manual.chitubox.com/en-US/chitubox-pro/latest/setting-up/configure-print-parameters"> 📖 the following links</SpanA>.
