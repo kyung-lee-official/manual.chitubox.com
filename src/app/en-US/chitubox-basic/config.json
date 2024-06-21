@@ -4,7 +4,7 @@
 	"versionedContexts": [
 		{
 			"versionCode": "latest",
-			"versionNumber": "2.0.0",
+			"versionNumber": "2.1.0",
 			"pagesContext": [
 				{
 					"item": "introduction",
@@ -20,7 +20,7 @@
 				},
 				{
 					"item": "ui-and-features",
-					"label": "Application Overview",
+					"label": "UI And Features",
 					"subItems": [
 						{
 							"item": "menu",
