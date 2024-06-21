@@ -65,7 +65,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 			<h4
 				id={children[0].props.href.slice(1)}
 				className={`flex justify-start items-center gap-4 my-6
-                font-bold text-2xl
+                text-2xl
 				scroll-mt-20`}
 			>
 				{children[1]}
@@ -162,7 +162,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		);
 	};
 
-
 	const Blockquote: React.FC<any> = (props) => {
 		const { children } = props;
 		return (
@@ -177,7 +176,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 	};
 
 	return {
-
 		code: ({ children }: any) => {
 			return <InlineCode>{children}</InlineCode>;
 		},
