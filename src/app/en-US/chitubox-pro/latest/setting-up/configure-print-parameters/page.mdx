@@ -1,5 +1,7 @@
 import { ColorTag } from "@/docComponents/colorTag/ColorTag";
 import { LightOffDelayCalculator } from "@/docComponents/lightOffDelayCalculator/LightOffDelayCalculator";
+import { YouTubeVideoContainer } from "@/components/videoContainer/YouTubeVideoContainer";
+import { Collapse } from "@/components/collapse/Collapse";
 
 export const metadata = {
 	title: "Configure Print Parameters",
@@ -12,7 +14,6 @@ export const metadata = {
 		images: ["/images/docs/og_logo.png"],
 	},
 };
-import { YouTubeVideoContainer } from "@/components/videoContainer/YouTubeVideoContainer";
 
 # Configure Print Parameters
 
@@ -206,18 +207,20 @@ Modify editable fields to get **Light-off Delay**.
 
 #### Buffer
 
-<Admonition type="note">
-	This setting is currently only available on some Creality printers with
-	large build platform. For example, HALOT-MAGE S and HALOT-MAGE PRO.
-</Admonition>
+<Collapse title={"The setting is only available for Creality printers."}>
+	<Admonition type="note">
+		This setting is currently only available on some Creality printers with
+		large build platform. For example, HALOT-MAGE S and HALOT-MAGE PRO.
+	</Admonition>
 
-Setting a buffer layer can help reduce the impact force when the platform descends quickly, preventing resin splashes.
+	Setting a buffer layer can help reduce the impact force when the platform descends quickly, preventing resin splashes.
 
-| Parameter              | Description                                        |
-| ---------------------- | -------------------------------------------------- |
-| Buffer Height          | Height of the buffer layer.                        |
-| Buffer Motor Speed     | Motor speed when passing through the buffer layer. |
-| Buffer Light-off Delay | Time of light-off delay for the buffer layer.      |
+	| Parameter              | Description                                        |
+	| ---------------------- | -------------------------------------------------- |
+	| Buffer Height          | Height of the buffer layer.                        |
+	| Buffer Motor Speed     | Motor speed when passing through the buffer layer. |
+	| Buffer Light-off Delay | Time of light-off delay for the buffer layer.      |
+</Collapse>
 
 ### Gcode
 

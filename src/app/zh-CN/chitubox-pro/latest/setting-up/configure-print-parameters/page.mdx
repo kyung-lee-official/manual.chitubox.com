@@ -1,6 +1,7 @@
 import { ColorTag } from "@/docComponents/colorTag/ColorTag";
 import { LightOffDelayCalculator } from "@/docComponents/lightOffDelayCalculator/LightOffDelayCalculator";
 import { BilibiliVideoContainer } from "@/components/videoContainer/BilibiliVideoContainer";
+import { Collapse } from "@/components/collapse/Collapse";
 
 export const metadata = {
 	title: "设置打印参数",
@@ -203,17 +204,19 @@ $$T_{LOD} \geq 5.998 + 2 + 2 \approx 10\ \text{秒}$$
 
 #### 缓冲层
 
-<Admonition type="note" title="注意">
-	此设置目前仅适用于部分具有较大打印平台的 Creality 打印机。例如：HALOT-MAGE S，HALOT-MAGE PRO。
-</Admonition>
+<Collapse title={"此设置仅适用于 Creality 打印机。"}>
+	<Admonition type="note" title="注意">
+		此设置目前仅适用于部分具有较大打印平台的 Creality 打印机。例如：HALOT-MAGE S，HALOT-MAGE PRO。
+	</Admonition>
 
-设置缓冲层，可以减缓平台快速下降时的冲击力，避免树脂飞溅的问题。
+	设置缓冲层，可以减缓平台快速下降时的冲击力，避免树脂飞溅的问题。
 
-| 参数           | 说明                     |
-| -------------- | ------------------------ |
-| 缓冲层高度     | 缓冲层的高度。           |
-| 缓冲层电机速度 | 经过缓冲层时的电机速度。 |
-| 缓冲层灯灭延时 | 缓冲层的灯灭延时时长。   |
+	| 参数           | 说明                     |
+	| -------------- | ------------------------ |
+	| 缓冲层高度     | 缓冲层的高度。           |
+	| 缓冲层电机速度 | 经过缓冲层时的电机速度。 |
+	| 缓冲层灯灭延时 | 缓冲层的灯灭延时时长。   |
+</Collapse>
 
 ### Gcode
 

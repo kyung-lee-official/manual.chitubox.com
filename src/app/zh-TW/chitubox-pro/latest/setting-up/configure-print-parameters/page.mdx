@@ -1,6 +1,7 @@
 import { ColorTag } from "@/docComponents/colorTag/ColorTag";
 import { LightOffDelayCalculator } from "@/docComponents/lightOffDelayCalculator/LightOffDelayCalculator";
 import { BilibiliVideoContainer } from "@/components/videoContainer/BilibiliVideoContainer";
+import { Collapse } from "@/components/collapse/Collapse";
 
 export const metadata = {
 	title: "設定列印參數",
@@ -204,17 +205,19 @@ $$T_{LOD} \geq 5.998 + 2 + 2 \approx 10\ \text{秒}$$
 
 #### 緩衝層
 
-<Admonition type="note" title="注意">
-	此設定目前僅適用于部分具有較大尺寸列印平臺的 Creality 列印機。例如：HALOT-MAGE S，HALOT-MAGE PRO。
-</Admonition>
+<Collapse title={"此設定僅適用於 Creality 的列印機。"}>
+	<Admonition type="note" title="注意">
+		此設定目前僅適用于部分具有較大尺寸列印平臺的 Creality 列印機。例如：HALOT-MAGE S，HALOT-MAGE PRO。
+	</Admonition>
 
-設定緩衝層，可以減緩平台快速下降時的衝擊力，避免樹脂飛濺的問題。
+	設定緩衝層，可以減緩平台快速下降時的衝擊力，避免樹脂飛濺的問題。
 
-| 參數           | 説明                     |
-| -------------- | ------------------------ |
-| 緩衝層高度     | 緩衝層的高度。           |
-| 緩衝層電機速度 | 經過緩衝層時的電機速度。 |
-| 緩衝層燈滅延時 | 緩衝層的燈滅延時時長。   |
+	| 參數           | 説明                     |
+	| -------------- | ------------------------ |
+	| 緩衝層高度     | 緩衝層的高度。           |
+	| 緩衝層電機速度 | 經過緩衝層時的電機速度。 |
+	| 緩衝層燈滅延時 | 緩衝層的燈滅延時時長。   |
+</Collapse>
 
 ### Gcode
 

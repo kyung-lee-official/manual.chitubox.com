@@ -13,6 +13,7 @@ import {
 	ChituboxProfileLinkIcon,
 } from "@/components/icons/Icons";
 import { Tsmc } from "@/docComponents/tsmc/Tsmc";
+import { Collapse } from "@/components/collapse/Collapse";
 
 export const metadata = {
 	title: "设置打印参数",
@@ -105,13 +106,13 @@ export const metadata = {
 
 ### TSMC（二段运动控制）
 
-<Admonition type="tip">
+<Collapse title="Anycubic 用户须知！">
 	从 Anycubic Photon Workshop 而来？注意！
 
 	* 由于 Anycubic Photon Workshop 提供基本和高级设置，而 CHITUBOX 的格式缺少专门的字段来区分它们，因此，对于不兼容高级设置的打印机，CHITUBOX 仅显示基本参数。相反，对于同时支持两者的打印机，CHITUBOX 仅显示高级参数。如果您的打印机支持高级设置，但您不想使用 TSMC 功能，您只需为两个阶段输入相同的速度，并确保总升降距离与所需距离保持一致。
 
 	* 用户界面中 TSMC 参数的顺序不同。在 Photon Workshop 中，[0] 表示靠近屏幕的运动阶段，而 [1] 表示较远的运动阶段。然而，CHITUBOX 在布局输入文本框时遵循运动顺序。这起初可能会令人困惑。
-</Admonition>
+</Collapse>
 
 你可能已经注意到打印设置中有两组抬升和回缩参数，这里是设置 TSMC 的地方。
 
