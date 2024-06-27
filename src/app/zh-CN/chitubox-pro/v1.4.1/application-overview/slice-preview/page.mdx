@@ -1,0 +1,172 @@
+export const metadata = {
+	title: "切片预览",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"在切片器中预览切片文件对于确保 3D 打印准确并满足您的期望非常重要。",
+	other: {
+		pageId: "/zh-CN/chitubox-pro/v1.4.0/slice-preview",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 切片预览
+
+## 切片参数编辑
+
+编辑和调整当前需要保存的打印切片相关参数。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview004.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview008.png"
+	}
+/>
+
+此窗口提供了 **切片设置 > 切片配置 > 打印** 的部分快捷访问，无需退出切片预览界面即可修改部分参数。
+
+<Admonition type="note" title="注意">
+	<b>切片参数编辑</b> 仅在<b>单参数切片</b>模式下可用。
+</Admonition>
+
+## 检测孤岛
+
+检测当前切片文件中是否存在不可成功打印的孤岛。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview005.png"
+	}
+/>
+
+<Admonition type="note" title="注意">
+	你必须先点击 <b>检测孤岛</b> 才能启用<NextLink href="#显示隐藏孤岛信息">隐藏孤岛信息</NextLink>,<NextLink href="#删除孤岛">删除孤岛</NextLink>,<NextLink href="#编辑像素">编辑像素</NextLink>, 以及<NextLink href="#格式刷">格式刷</NextLink>。
+</Admonition>
+
+## 显示/隐藏孤岛信息
+
+单击此按钮可以显示或隐藏孤岛信息。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview009.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview015.png"
+	}
+/>
+
+<Admonition type="tip" title="提示">
+	鼠标左键单击对应孤岛，可切换预览图为孤岛<b>局部模式</b>或<b>全局模式</b>。
+</Admonition>
+
+## 删除孤岛
+
+将文件中的孤岛删除，可选择删除当前层孤岛或所有层孤岛。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview010.png"
+	}
+/>
+
+## 编辑像素
+
+在当前切片文件中添加或删除像素点。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview011.png"
+	}
+/>
+
+1. 按住 Ctrl 并滚动鼠标中键来缩放画笔大小，单击鼠标左键可增加像素，单击鼠标右键可删除像素。
+
+1. 按住 Ctrl 并长按拖动鼠标左键可连续添加像素。按住 Ctrl，并长按拖动鼠标右键可连续删除像素。
+
+## 格式刷
+
+复制目标像素的格式，应用到其它位置的像素区域中。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview012.png"
+	}
+/>
+
+1. 首先需要使用鼠标左键点击目标像素指定为目标像素格式。
+
+1. 滚动鼠标中键可调节格式刷基本单元的像素个数。
+
+1. 长按并移动鼠标左键可执行选定目标像素的格式刷操作，点击鼠标右键可完成格式刷的执行。
+
+## 放大镜
+
+使用设置的放大倍率查看切片图层中的相关切片信息。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview013.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview014.png"
+	}
+/>
+
+## 保存
+
+你可以在保存前选择 **所有**，**模型**，或者 **支撑**。
+
+点击 **保存** 按钮以保存切片文件。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview021.png"
+	}
+/>
+
+<Admonition type="note" title="注意">
+	对您的模型进行切片后，点击“保存”，您可以在下拉菜单中选择需要保存的切片格式，再进行打印。
+</Admonition>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview021-1.png"
+	}
+	style={{ maxwidth: "895px" }}
+/>
+
+## 网络发送
+
+<Admonition type="note" title="注意">
+	1. 如果打印机不支持内部存储，则需要插入一个 U 盘来存储接收到的文件。
+	1. <b>网络发送</b> 功能要求打印机和电脑在同一局域网下。 
+	1. 传输速率受打印机的网络模块限制，大多数打印机的网络模块传输速率大约是 8M/s，因此对于大文件，不推荐使用<b>网络发送</b>。 
+	1. 目前只有部分打印机支持**网络发送**，点击<SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃这里</SpanA>查看机器兼容性表格。
+</Admonition>
+
+若打印机支持网络发送，则该界面上会有 **网络发送** 按钮，此功能可以直接向打印机发送切片数据进行打印。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview023.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-slice-preview024.png"
+	}
+/>

@@ -1,0 +1,544 @@
+export const metadata = {
+	title: "设置支撑参数",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "在 CHITUBOX Pro 中设置支撑参数。",
+	other: {
+		pageId: "/zh-CN/chitubox-pro/v1.4.0/configure-support-parameters",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 设置支撑参数
+
+<Admonition type="note" title="注意">
+	本页内容描述的是支撑设置， 点击<NextLink href="/zh-CN/chitubox-pro/latest/application-overview/support">此处</NextLink>了解更多关于支撑操作。
+</Admonition>
+
+要打开**支撑配置面板**，你需要先打开<NextLink href="/zh-CN/chitubox-pro/latest/application-overview/support">支撑菜单</NextLink>。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.png"
+	}
+	style={{ maxWidth: "80%" }}
+/>
+
+<span className="flex flex-wrap justify-start items-center gap-x-1">
+	这是支撑配置面板，你可以在这里添加
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support005.png"
+		}
+	/>
+	，删除
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support006.png"
+		}
+	/>
+	 ，重置 
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support007.png"
+		}
+	/>
+	 ，导入
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support008.png"
+		}
+	/>
+	，导出
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support009.png"
+		}
+	/> 
+	，全部导出
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support010.png"
+		}
+	/>
+	，保存
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support010.1.png"
+		}
+	/>
+	 ，以及重命名你的支撑配置，其中保存支持自动模式和手动模式。
+</span>
+
+<b>模型抬升高度</b>：模型最低点与平台之间的高度距离。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/009-z-lift-height.gif"}
+	style={{ maxWidth: 200 }}
+/>
+
+
+## 支撑设置
+
+<span className="flex flex-wrap justify-start items-center gap-x-1">
+	你可以分别编辑支撑的<b>顶部</b>，<b>中部</b>，以及<b>底部</b>。
+	<br />
+	**可视化编辑面板**
+	提供了更佳的用户体验，在这里你可以直接在图形上修改支撑参数。你也可以通过点击支撑设置面板的
+	<ImageContainer
+		src={
+			"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support014.png"
+		}
+	/>
+	按钮来关闭这个面板。
+</span>
+
+<div style={{ display: "flex", width: "100%" }}>
+	<div style={{ flex: "1" }}></div>
+	<div style={{ display: "flex", flexDirection: "column" }}>
+		<ImageContainer
+			style={{ flex: "6" }}
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support013.png"
+			}
+		/>
+		<div
+			style={{
+				flex: "1",
+				paddingTop: "0.5em",
+				textAlign: "center",
+			}}
+		>
+			<p>可视化编辑面板</p>
+		</div>
+	</div>
+	<div style={{ flex: "0.2" }}></div>
+	<div style={{ display: "flex", flexDirection: "column" }}>
+		<ImageContainer
+			style={{ flex: "6" }}
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support013.1.png"
+			}
+		/>
+		<div
+			style={{
+				flex: "1",
+				paddingTop: "0.5em",
+				textAlign: "center",
+			}}
+		>
+			&nbsp;
+		</div>
+	</div>
+	<div style={{ flex: "1" }}></div>
+</div>
+
+### 顶部
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.top.png"
+	}
+/>
+
+| 参数                 | 说明                             |
+| -------------------- | -------------------------------- |
+| 接触形状             | 支撑顶部与模型接触形状的选择     |
+| 接触形状直径（毫米） | 支撑顶部和模型接触部位的直径尺寸 |
+| 接触深度（毫米）     | 支撑顶部与模型接触的深度尺寸     |
+| 连接形状             | 顶部支撑主体的连接形状           |
+| 上端直径（毫米）     | 顶部支撑主体上端的直径尺寸       |
+| 下端直径（毫米）     | 顶部支撑主体下端的直径尺寸       |
+| 连接长度（毫米）     | 顶部支撑主体的长度尺寸           |
+
+### 中部
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.mid.png"
+	}
+/>
+
+| 参数                 | 说明                             |
+| -------------------- | -------------------------------- |
+| 形状                 | 中部支撑主体的形状选择           |
+| 上端直径             | 中部支撑主体的上端直径           |
+| 下端直径             | 中部支撑主体的下端直径           |
+| 角度 (°)             | 中部支撑与顶部支撑的最大夹角     |
+| 小柱子形状           | 小柱支撑主体的形状               |
+| 直径                 | 小柱支撑主体的直径尺寸           |
+| 上端接触深度（毫米） | 小柱支撑上端与模型的接触深度尺寸 |
+| 下端接触深度（毫米） | 小柱支撑下端与模型的接触深度尺寸 |
+
+### 底部
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.bot.png"
+	}
+/>
+
+| 参数                 | 说明                                                     |
+| -------------------- | -------------------------------------------------------- |
+| 平台接触形状         | 选择支撑与打印平台的接触形状                             |
+| 接触直径（毫米）     | 与打印平台接触的支撑部位的直径尺寸                       |
+| 厚度                 | 与打印平台接触的支撑部位的厚度尺寸                       |
+| 模型接触形状         | 当支撑底部落于模型上时，支撑下端部位与模型的接触形状     |
+| 接触形状直径（毫米） | 当支撑底部落于模型上时，支撑下端部位与模型接触的直径尺寸 |
+| 接触深度（毫米）     | 当支撑底部落于模型上时，支撑下端部位与模型的接触深度尺寸 |
+| 接触点               | 当支撑底部落于模型上时，支撑下端部位与模型接触点的数量   |
+
+### 底筏
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support004.raf.png"
+	}
+/>
+
+| 参数             | 说明                                                                     |
+| ---------------- | ------------------------------------------------------------------------ |
+| 底筏形状         | 选择与打印平台接触底阀的形状                                             |
+| 底筏面积比例 (%) | 设定底阀的面积比例，该值为底阀总面积相对于模型向打印平台投影总面积的比例 |
+| 底筏厚度（毫米） | 底阀的厚度尺寸                                                           |
+| 底筏高度（毫米） | 底阀的高度尺寸                                                           |
+| 底筏坡度 (°)     | 底阀侧面与打印平台的倾斜角度                                             |
+| 网格边长（毫米） | 网格型底筏的单个网格边长                                                 |
+| 网格宽度（毫米） | 网格型底筏的网格边横向宽度                                               |
+
+### 高级
+
+<b>高级</b>按钮打开高级设置面板，提供更灵活的支撑设置。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support017.png"
+	}
+/>
+
+<Admonition type="note" title="注意">
+	CHITUBOX Basic V1.8.1
+	开始，为了提升用户体验，我们在加载模型时禁用了支撑辅助线计算，这使得加载过程更快。
+	如果你想开启该功能，自动支撑将计算辅助线（如果删除自动添加的支撑，辅助线会显示出来，但是与
+	Basic V1.8.1
+	相比，只在高危区域显示）。我们推荐您使用红色高亮部分来判断风险区域。
+</Admonition>
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th width="120px">参数组</th>
+			<th>参数</th>
+			<th>说明</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowSpan={4}>尺寸设置</td>
+			<td>交叉结构的直径</td>
+			<td>
+				交叉结构的直径。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-cross-structure-diameter.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>小柱子最大长度</td>
+			<td>
+				手动/自动添加支撑两端都落于模型上的支撑时，当两端距离不超过小柱子最大长度时，主干支撑会以小柱子的支撑类型添加对应支撑。当两端距离大于小柱子最大长度时，主干支撑会以中部支撑对应的的上端直径尺寸进行支撑的添加。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-maximum-small-pillar-length.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>支撑底部凸台高度</td>
+			<td>
+				支撑底部凸台的高度尺寸。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-height-of-boss-supporting-bottom.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>支撑底部凸台直径</td>
+			<td>
+				支撑底部凸台的直径尺寸。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-diameter-of-the-boss-at-the-bottom-of-the-support.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td rowSpan={11}>自动/手动支撑</td>
+			<td>启用交叉结构</td>
+			<td>
+				启用/关闭主干支撑之间的交叉结构。 
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-automatic-manual-support-settings.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>交叉生成起始高度 (相对平台)</td>
+			<td>
+				设定生成交叉结构支撑的最低起始高度值，当支撑顶部接触点相对于平台的距离值大于该设定值时，才会与相邻的支撑之间形成交叉支撑。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-cross-start-height.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>交叉结构的最小间距 (Z)</td>
+			<td>
+				竖直 Z 方向上相邻交叉结构的最小间距。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-minimum-spacing-of-cross-structure-z.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>交叉结构的最大间距 (XY)</td>
+			<td>
+				相邻支撑允许自动生成交叉结构时在 XY 水平面上的最大距离值。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-maximum-spacing-of-cross-structure-xy.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>双向生成交叉结构</td>
+			<td>
+				手动添加的支撑时，所加支撑与其两侧相邻的支撑之间自动生成交叉结构。
+				{/* <ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-maximum-spacing-of-cross-structure-xy.gif"
+					}
+					style={{ width: 180 }}
+				/> */}
+			</td>
+		</tr>
+		<tr>
+			<td>腔体内生成支撑</td>
+			<td>
+				启用/关闭封闭腔体内生成支撑。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enable-support-in-shell.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>模型与支撑主干的最小间距</td>
+			<td>
+				支撑主干落于平台时，支撑主干在 XY 水平面与模型的最小允许距离。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-spacing-from-model.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>支撑主干与触点间最大水平偏移量</td>
+			<td>
+				落于打印平台的支撑，支撑主干与模型触点在XY水平面的最大允许水平偏移量。自动/手动添加支撑时当落于平台的支撑满足该偏移设定值时，会生成落于打印平台的支撑，当不满足时则不会生成落于打印平台的支撑。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-max-offset-from-contact.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>中部支撑下端直径起始生效高度</td>
+			<td>
+				中部支撑下端直径参数值生效的参数设定，只有当支撑高度值大于该设定值时，下端直径值才会生效。当下端直径设定值不生效时，下端直径尺寸会按照上端直径的设定值执行。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-starting-effective-height-of-lower-end-diameter-of-middle-support.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>增强自动支撑</td>
+			<td>
+				启用/关闭增强自动支撑。共有三种增强模式：独立强化（IR）、<NextLink href="#增强自动支撑">三角强化（TR）</NextLink>和	<NextLink href="#增强自动支撑">全局强化（GR）</NextLink>。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>小柱子自动吸附</td>
+			<td>
+				启用/关闭小柱子自动吸附功能。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-small-column-automatically-absorbs.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td rowSpan={4}>预览模式设置</td>
+			<td>预览支撑 (添加支撑)</td>
+			<td>
+				启用/关闭手动添加支撑时的预览。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-preview-mode-setting.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>支撑隐藏角度 (0-90°)</td>
+			<td>
+				在支撑模式下，当视角向模型向上看到一定角度时，中间和底部支撑将自动隐藏，设置
+				0 以禁止隐藏。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support-hidden-angle-0-90.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>显示支撑点标注线</td>
+			<td>
+				显示/隐藏支撑辅助线，即自动添加支持时的触点位置。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-display-support-auxiliary-line-surface-contact-diameter.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>选中的模型自动 (视角) 居中</td>
+			<td>
+				在支撑模式下，所选模型将自动放置在透视的中心。
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-select-the-model-to-center.gif"
+					}
+					style={{ width: 180 }}
+				/>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+#### 增强自动支撑
+
+添加自动支撑时，一些孤立支撑主干会自动增加辅助支撑，并生成连接结构。
+
+-   三角强化（TR）：当选中三角强化模式，添加自动支撑时，将自动连接相邻的三个孤立支撑主干，从而形成稳定的三角结构。
+
+-   全局强化（GR）：当选中全局强化模式，添加自动支撑时，将全面强化所有孤立支撑主干，自动形成由三角结构组合而成的更加稳定的结构，将所有支撑关联起来以更好地辅助支撑的稳定性。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-tr.png"
+	}
+	text1={"三角强化（TR）"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-enhanced-automatic-support-gr.png"
+	}
+	text2={"全局强化（GR）"}
+/>
+
+<Admonition type="note" title="注意">
+	启用小柱子自动吸附功能：可以自由设置吸附半径的大小。切片软件会根据算法在添加小柱子支撑时，将小柱子的下端自动吸附在合适的支撑上。
+</Admonition>
+
+## 自动/手动支撑
+
+<b>角度 (°)</b>：模型被允许添加支撑的最大倾斜角度，该角度值为模型表面与平台的夹角。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/020angle.gif"}
+	style={{ maxWidth: 200 }}
+/>
+
+<b>接触点间距（毫米）</b>：任意两个接触点之间的最小水平距离。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.1b.png"
+	}
+	text1={"接触点间距设为 2mm"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.1a.png"
+	}
+	text2={"接触点间距设为 5mm"}
+/>
+
+**中部支撑间距（毫米）**：任意两个中部支撑之间的最小水平距离。
+
+为了更精确地控制支撑间距，CHITUBOX Basic 中 <b>密度(%)</b> 参数在 CHITUBOXPro 中被替换为 <b>中部支撑间距</b>。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.1b.png"
+	}
+	text1={"中部支撑间距设为 2mm"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.1a.png"
+	}
+	text2={"中部支撑间距设为 8mm"}
+/>
+
+<button className="button button--secondary">+平台</button> 按钮仅基于平台自动添加支撑。
+<button className="button button--secondary">+所有</button> 按钮基于平台和模型自动添加支撑。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support011.png"
+	}
+	text1={"+平台"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-support012.png"
+	}
+	text2={"+所有"}
+/>

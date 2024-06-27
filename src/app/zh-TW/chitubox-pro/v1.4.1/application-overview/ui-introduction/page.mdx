@@ -1,0 +1,255 @@
+import { IconTitle } from "@/components/iconTitle/IconTitle";
+
+export const metadata = {
+	title: "用戶介面介紹",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "CHITUBOX Pro 主窗口的UI界面介紹。",
+	other: {
+		pageId: "/zh-TW/chitubox-pro/v1.4.0/ui-introduction",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 用戶介面介紹
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction001.png"
+	}
+/>
+
+<IconTitle icon={"A"} title={"工作視窗"} />
+
+<div style={{ display: "flex" }}>
+	<div>&emsp;&emsp;&emsp;</div>
+	<div>
+		<p>右擊空白處可以彈出工作視窗菜單</p>
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction001a1.png"
+			}
+		/>
+		<p>右擊模型可以彈出模型菜單</p>
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction001a3.png"
+			}
+		/>
+		<p>
+			工作視窗的右下角還有一個很小的白色三角形按鈕，提供了高頻次使用的全局或局部功能的快捷鍵提示列表。
+		</p>
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction001a2.png"
+			}
+		/>
+	</div>
+</div>
+
+<IconTitle icon={"B"} title={"左側工具欄"} />
+
+<div style={{ display: "flex" }}>
+	<div>&emsp;&emsp;&emsp;</div>
+	<div>
+		<div>
+			<ImageContainer
+				src={
+					"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction001b1.png"
+				}
+			/>
+		</div>
+		<br />
+		<ImageComparison
+			img1Src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/005move.gif"}
+			text1={"移動"}
+			img2Src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/006rotate.gif"}
+			text2={"旋轉"}
+		/>
+		<ImageComparison
+			img1Src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/007scale.gif"}
+			text1={"縮放"}
+			img2Src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/008mirror.gif"}
+			text2={"鏡像"}
+		/>
+	</div>
+</div>
+
+<p>
+	<b>移動</b>：將所選的模型移動到指定的位置。
+</p>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction-move.png"
+	}
+/>
+
+-   放在底板上：以模型的最低點為基準點，將所選模型放在底板上。
+
+-   居中：將所選模型居中放置在列印平台上。
+
+-   重置：將所選模型的擺放位置重置。
+
+<p>
+	<b>旋轉</b>：根據指定的旋轉方向和角度旋轉所選模型。
+</p>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction-rotate.png"
+	}
+/>
+
+-   按面放平：以在模型上選定的面為基準面，將模型按基準面貼合列印平台放平。
+
+-   組合中心：以所選的多個模型的組合的中心為旋轉中心。
+
+<p>
+	<b>縮放</b>：根據指定的尺寸或縮放比例縮放所選模型。
+</p>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction-scale.png"
+	}
+/>
+
+-   鎖定比例：鎖定所選模型的 X 軸、Y 軸和 Z 軸的比例進行縮放。
+
+-   支撐直徑不變：在保持支撐直徑不變的情況下實現和模型同比例縮放。
+
+-   縮放以適應：對所選模型進行縮放以適應列印平台。
+
+-   重置：重置模型大小。
+
+<p>
+	<b>鏡像</b>：對所選模型進行鏡像操作。
+</p>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction-mirror.png"
+	}
+/>
+
+-   保留原始模型：如果啓用此選項，鏡像後會保留原始模型。
+
+<IconTitle icon={"C"} title={"視窗立方"} />
+
+<IconTitle icon={"D"} title={"菜單欄"} />
+
+<IconTitle icon={"E"} title={"標題欄"} />
+
+<div style={{ display: "flex" }}>
+	<div>&emsp;&emsp;&emsp;</div>
+	<div>
+		<p>
+			標題欄提供了 <b>打開文件</b>, <b>保存文件</b>，<b>上一步</b>,
+		<b>下一步</b>、<b>登入</b>，以及 <b>截圖/錄影</b> 的快速存取。
+		</p>
+	</div>
+</div>
+
+<IconTitle icon={"F"} title={"機器欄"} />
+
+<IconTitle icon={"G"} title={"檔案列表"} />
+
+<div style={{ display: "flex" }}>
+	<div>&emsp;&emsp;&emsp;</div>
+	<div>
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction001g1.png"
+			}
+		/>
+		<p>
+			你可以在檔案清單中 <b>新增檔案</b>、<b>選擇/取消選擇（全部）檔案</b>、
+            <b>反選檔案</b>、<b>自動/手動添加物件顔色</b>，<b>
+				顯示/隱藏列印尺寸
+			</b>，<b>刪除檔案</b>，以及 <b>顯示/隱藏檔案</b>。
+		</p>
+	</div>
+</div>
+
+<IconTitle icon={"H"} title={"切片設定按鈕"} />
+
+<IconTitle icon={"I"} title={"切片按鈕"} />
+
+<IconTitle icon={"J"} title={"切片預覽滑塊"} />
+
+<div style={{ display: "flex" }}>
+	<div>&emsp;&emsp;&emsp;</div>
+	<div>
+		<div
+			style={{
+				width: "100%",
+				overflow: "auto",
+				display: "flex",
+			}}
+		>
+			<div style={{ flex: "8" }}>
+				<p>
+					你可以使用這個滑塊在工作視窗中查看對象在垂直方向上的橫截面。
+					<br />
+					同時你也可以點擊
+					<span style={{ color: "red", fontWeight: "bold" }}>X</span>
+					和
+					<span style={{ color: "lightgreen", fontWeight: "bold" }}>Y</span>
+					以便在這兩個維度上查看對象的橫截面。
+				</p>
+				<p>
+					<ImageContainer
+						src={
+							"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction001j2.png"
+						}
+					/>
+				</p>
+			</div>
+			<div style={{ flex: "0.5" }} />
+			<div style={{ flex: "1.5" }}>
+				<ImageContainer
+					src={
+						"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction001j1.png"
+					}
+				/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<IconTitle icon={"K"} title={"底部狀態欄"} />
+
+<IconTitle icon={"L"} title={"全局坐標系"} />
+
+<div style={{ display: "flex" }}>
+	<div>&emsp;&emsp;&emsp;</div>
+	<div>
+		<p>
+			所有坐標軸中：紅色為X軸；綠色為Y軸；藍色為Z軸。
+			<br />
+			右鍵拖曳空白處調整工作區域顯示視角。
+		</p>
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction001l-1.png"
+			}
+		/>
+		<p>
+			如下圖，切片設定中 X/Y/Z
+			對應的參考坐標軸為列印平台坐標軸（全局坐標，即螢幕左下角顯示的坐標軸），
+			用於調整列印平台 X，Y，Z
+			坐標軸方向的最大列印尺寸大小（有內置機型的列印機請使用預設尺寸，無內置的請嚴格按照列印機廠商提供的規格填寫）。
+		</p>
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-ui-introduction001l-2.png"
+			}
+		/>
+	</div>
+</div>
+
+<Admonition type="note" title="注意">
+	縮放面板中記錄的模型尺寸為模型自身坐標軸（本地坐標）對應的尺寸，並非平台坐標軸（全局坐標）對應的尺寸，由於旋轉模型時自身坐標軸也同步旋轉，因此旋轉操作不會影響縮放面板中記錄的尺寸。
+</Admonition>

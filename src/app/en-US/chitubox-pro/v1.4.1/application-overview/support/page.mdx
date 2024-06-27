@@ -1,0 +1,228 @@
+export const metadata = {
+	title: "Support",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"Support panel, Left-Side Tool Bar, and support types on the Support window of CHITUBOX Pro.",
+	other: {
+		pageId: "/en-US/chitubox-pro/v1.4.0/support",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Support
+
+## Symmetrical Support
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support002.png"
+	}
+/>
+
+Identify symmetrical planes of the model and manually add symetrical supports based on the chosen reference plane.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support003.png"
+	}
+	style={{ width: "100%", maxWidth: 710 }}
+/>
+
+## Merge Support
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-merge.png"
+	}
+/>
+
+Automatically merge all applicable supports within selection.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-merge.1.gif"
+	}
+	style={{ width: "100%", maxWidth: 720 }}
+/>
+
+## Suspend Detection
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support001.png"
+	}
+/>
+
+Detect the suspended area of the selected 3D model, and display suggested areas that need supports at the current part orientation.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-suspend.gif"
+	}
+/>
+
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support001.1.png"
+	}
+	text1={"Before suspend detection"}
+	img2Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support001.2.png"
+	}
+	text2={"After suspend detection"}
+/>
+
+## Left-Side Tool Bar
+
+Under the **Support** interface, the **Left-Side Tool Bar** would change accordingly.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support020.png"
+	}
+/>
+
+Selecting specific areas with these tools allows adding, deleting, and editings supports applied on the areas.
+
+Take the **Rectangle** tool as an example.
+
+-   Add <br />
+    By selecting the area and clicking the "+ All" or "+ Platform" button, users can apply auto-support only to that area.<br />
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support020.1.gif"
+    	}
+    />
+
+-   Delete <br />
+    Deletable supports within selection would turn to red  under Delete Mode.<br />
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support020.4.gif"
+    	}
+    />
+
+-   Edit <br />
+    Editable supports within selection would turn to green under Edit Mode.<br />
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support020.6.gif"
+    	}
+    />
+
+## Support Types
+
+The Support Type Panel at the bottom of the Viewport provides various support types to meets user needs.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support015.png"
+	}
+/>
+
+### Default
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-01.png"
+	}
+/>
+
+This is the most commonly used support type, self-adaptive according customized support settings.
+
+### Vertical
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-02.png"
+	}
+/>
+
+The top segment of this type of support is parallel to the normal line of the attached surface and perpendicular to the attached surface.
+
+### Upright
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-03.png"
+	}
+/>
+
+The top segment of this type of support is perpendicular to the build plate.
+
+### Connection
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-04.png"
+	}
+/>
+
+This is for single-segment supports connecting the model and another support's middle segment. Both ends of this type of support can be attached to another support element.
+
+### Two Points Connection
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-05.png"
+	}
+/>
+
+This is for two-segment supports connecting the model and another support's middle segment.
+
+### Small Pillar
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-06.png"
+	}
+/>
+
+This is a type of thin support connecting the model and another support's middle segment or connecting two points on the surfaces of a model.
+
+### Branch
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-07.png"
+	}
+/>
+
+This type of support's top segment would connect to the model, and the bottom segment would branch into two segments and connect to two adjacent supports' middle segment.
+
+### Contour
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-08.png"
+	}
+/>
+
+This will generate supports with top segments connecting to the model at the same elevation contour.
+
+### Tree-like
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-type-09.png"
+	}
+/>
+
+This option is for tree-like supports.
+
+## Support Operation
+
+### Multi-select Supports
+
+Hold Ctrl to select multiple support parts of the same type allows modifying their parameters in batch.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-support-operation-01.gif"
+	}
+/>

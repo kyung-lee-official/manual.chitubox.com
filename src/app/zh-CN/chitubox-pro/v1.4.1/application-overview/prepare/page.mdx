@@ -1,0 +1,263 @@
+export const metadata = {
+	title: "准备",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"CHITUBOX Pro 中的准备界面。包括复制、拆分模型、自动定向、自动布局、添加标签、布尔操作、切割、镂空和挖洞。",
+	other: {
+		pageId: "/zh-CN/chitubox-pro/v1.4.0/prepare",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 准备
+
+## 复制
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare001.png"
+	}
+/>
+
+复制一个或多个所选定模型，并将指定数量的复制模型添加于当前作业的项目之中。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/001copy.gif"}
+	style={{ maxWidth: 200 }}
+/>
+
+## 拆分模型
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare002.png"
+	}
+/>
+
+将原组合装配模型拆分为独立的零件模型。
+
+如果你有一个在结构上不是一个整体的对象，如下图所示，一个对象包含了两个结构上分离的零件。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare010.png"
+	}
+	style={{ width: "100%", maxWidth: 721 }}
+/>
+
+拆分模型后，两个零件变为两个**独立**的对象。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare012.png"
+	}
+	style={{ width: "100%", maxWidth: 721 }}
+/>
+
+## 自动定向
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare003.png"
+	}
+/>
+
+为选定的三维模型在添加支撑前推荐和设定排版方位。在应用自动定向时，在模型表面上具有最长距离的两个点所定义的线将被视为垂直轴。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/006-application-overview-prepare003.1.gif"
+	}
+	style={{ maxWidth: 200 }}
+/>
+
+## 自动布局
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare004.png"
+	}
+/>
+
+将作业项目内的模型按照设定的排布规律快速排版布局。
+
+开启**模型旋转限制**后，将限制自动布局时模型旋转的角度。
+
+开启**循环布局**后，自动布局时模型会按照循环首尾相连的模式进行自动布局。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare019.png"
+	}
+	style={{ width: "100%", maxWidth: 721 }}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare019.1.png"
+	}
+	style={{ width: "100%", maxWidth: 721 }}
+/>
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/002auto-layout.gif"}
+	style={{ maxWidth: 200 }}
+/>
+
+## 添加标签
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare005.png"
+	}
+/>
+
+为模型指定位置添加设定的文字标签。
+
+你可以在这里为你的三维模型添加标签。当你打算用同一个三维模型打印很多个实例，但使用不同参数、树脂或存在其他任何可能导致打印结果不同的因素时，你可以通过在模型表面添加标签来区分相似的打印结果。
+
+双击画布空白处以添加文本。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare013.png"
+	}
+	style={{ width: "100%", maxWidth: 721 }}
+/>
+
+## 布尔操作
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare006.png"
+	}
+/>
+
+为选定相交的模型进行模型间的**联合**、**相交**或**相减**的运算。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare014.png"
+	}
+	style={{ width: "100%", maxWidth: 721 }}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare015.png"
+	}
+	style={{ width: "100%", maxWidth: 721 }}
+/>
+
+## 切割
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare007.png"
+	}
+/>
+
+将模型按照设定的切割面进行分割操作。
+
+-   你可以以基于坐标轴的面作为切割面来切割模型。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare016.png"
+	}
+	style={{ maxWidth: 721 }}
+/>
+
+-   你也可以画一条线段来切割模型:
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare017.png"
+	}
+	style={{ maxWidth: 721 }}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare018.png"
+	}
+	style={{ maxWidth: 721 }}
+/>
+
+## 镂空
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare008.png"
+	}
+/>
+
+将选定的模型按照设定的镂空参数镂空。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/003hollow.gif"}
+	style={{ maxWidth: 200 }}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare008.1.png"
+	}
+/>
+
+-   壁厚：镂空时被操作对象剩余的腔体厚度（**外镂空** 模式下时为被削去的厚度）。
+-   模式：
+    -   _内镂空_：镂空后剩余一个封闭腔体。
+    -   _外镂空_：削去对对象外层，厚度为**壁厚**。
+    -   _底部贯穿_：和*内镂空*类似，但不保留底部。
+-   填充：开启/关闭生成内部填充结构。
+-   精度：生成的三角面的密度。0 表示最小密度，1 表示最大密度。
+-   动画：镂空时展示镂空动画（实际镂空进度以底部进度条为准）。
+-   仅保留主腔：在模型镂空时只生成一个主腔体。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare008.2.png"
+	}
+/>
+
+## 挖洞
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare009.png"
+	}
+/>
+
+将选定的模型按照设定的挖洞参数挖洞。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-prepare021.png"
+	}
+/>
+
+-   挖洞模式：有贯穿和非贯穿模式两种。
+-   多边形边数：边数越大，孔的形状将越接近圆形。
+-   Φ：孔的直径。
+-   B：孔能够穿透的最大深度。
+-   C：孔与孔底部形成的夹角。
+-   旋转：孔的旋转角度。
+-   保留孔：开启/关闭保留打孔塞子。
+-   角度：以垂直于模型/相机透视角度进行挖洞。
+-   强制挖洞：开启/关闭强制挖洞。
+-   限制深度 B：开启/关闭限制挖洞深度 B。
+
+<Admonition type="note" title="注意">
+	在 CHITUBOX Pro V1.3.0
+	版本中优化了挖洞功能的算法，**取消了壁厚参数B**，软件将自动计算出壁厚并进行挖洞。
+</Admonition>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/gif/006-application-overview-prepare009.gif"
+	}
+	style={{ maxWidth: 720 }}
+/>

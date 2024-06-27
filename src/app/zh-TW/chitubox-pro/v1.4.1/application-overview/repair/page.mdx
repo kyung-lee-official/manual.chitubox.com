@@ -1,0 +1,176 @@
+export const metadata = {
+	title: "修復",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"CHITUBOX Pro 中的修復界面，包括閉合小孔、閉合所有孔、方向修復、包裹外表面、添加三角面、刪除多餘殼體、刪除三角面和翻轉三角面。",
+	other: {
+		pageId: "/zh-TW/chitubox-pro/v1.4.0/repair",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 修復
+
+## 修復面板
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair020.png"
+	}
+/>
+
+修復面板上的下拉菜單可以選擇 **按模型顯示** 或 **按錯誤類型顯示**，檢測的錯誤類型包括 **多餘殼體**、**孔洞**、**壞邊**、**反向**、**相交**。
+
+如果選中**檢測**選項，軟體將會自動檢測模型，並展示出模型的錯誤數據。基本修復可以完成絕大多數的修復任務，高級修復是針對清除多餘殼體優化的修復。
+
+## 左側工具欄
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair023.png"
+	}
+/>
+
+在修復模型時，如需對模型局部或指定區域進行修復，我們可以通過**左側工具欄**來快速選取。快捷選擇工具包括**線**、**筆刷**、**矩形**、**多邊形**和**自由曲線**。
+
+## 閉合小孔
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair001.png"
+	}
+/>
+
+將模型上存在損壞的 6 邊（含）以下的小孔進行閉合操作。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair011.png"
+	}
+	text1={"修復小孔前"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair012.png"
+	}
+	text2={"修復小孔后"}
+/>
+
+## 閉合所有孔
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair002.png"
+	}
+/>
+
+將模型上存在損壞的所有孔進行閉合操作。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair021.png"
+	}
+	text1={"閉合所有孔前"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair022.png"
+	}
+	text2={"閉合所有孔后"}
+/>
+
+## 方向修復
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair005.png"
+	}
+/>
+
+將模型中存在方向性錯的三角面進行修復。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair005.1.png"
+	}
+	text1={"方向修復前"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair005.2.png"
+	}
+	text2={"方向修復后"}
+/>
+
+## 包覆外表面
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair010.png"
+	}
+/>
+
+將模型的三角面包覆方向統一向外，刪除矛盾三角面，並將外表面細化閉合。
+
+## 添加三角面
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair024.png"
+	}
+/>
+
+當使用**添加三角面**功能時，鼠標左鍵點擊物件不再是三角面數據，而是非封閉三角面的邊線。
+
+## 刪除多餘殼體
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair025.png"
+	}
+/>
+
+點擊**刪除多餘殼體**時，會出現顯示殼體信息的彈窗。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair027.png"
+	}
+/>
+
+將模型中存在的非連續的多餘殼體刪除。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair013.png"
+	}
+	text1={"刪除多餘殼體前"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair014.png"
+	}
+	text2={"刪除多餘殼體后"}
+/>
+
+## 刪除三角面
+
+刪除選擇的三角面。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair008.png"
+	}
+/>
+
+<Admonition type="note" title="注意">
+	當沒有三角面被選中時，**刪除三角面**功能不可被使用。
+</Admonition>
+
+## 翻轉三角面
+
+反轉選擇的三角面。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-repair026.png"
+	}
+/>
+
+<Admonition type="note" title="注意">
+	當沒有三角面被選中時，**翻轉三角形**功能不可被使用。
+</Admonition>

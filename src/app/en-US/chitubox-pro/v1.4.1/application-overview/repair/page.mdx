@@ -1,0 +1,178 @@
+export const metadata = {
+	title: "Repair",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"Repair window in CHITUBOX Pro, it includes Close Small Holes, Close All Holes, Orientation Repair, Coated Outer Surface, Add Triangle, Remove Redundant Shells, Delete Triangle, and Reverse Triangle.",
+	other: {
+		pageId: "/en-US/chitubox-pro/v1.4.0/repair",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Repair
+
+## Repair Panel
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair020.png"
+	}
+/>
+
+The drop-down menu on the repair panel allows you to list errors **By Model** or **By Error Type**, Error Types including **Excess Shell**, **Hole**, **Bad Side**, **Reverse**, and **Intersect**.
+
+If **Detect** is chosen, the software will automatically detect the model and error data will also be displayed. Basic Repair is sufficient for most circumstances, whereas Advanced Repair is optimized for removing excess shells.
+
+## Tool Bar on the left
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair023.png"
+	}
+/>
+
+When repairing a model, if you need to repair a part of the model or a specified area, we can quickly select it through the **Tool Bar on the left**. Quick selection tools including **Line**, **Brush**, **Rectangle**, **Polygon**, and **Free-form**.
+
+## Close Small Holes
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair001.png"
+	}
+/>
+
+Close holes less than or equal to 6 edges on the model.
+
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair011.png"
+	}
+	text1={"Before close small holes"}
+	img2Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair012.png"
+	}
+	text2={"After close small holes"}
+/>
+
+## Close All Holes
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair002.png"
+	}
+/>
+
+Close all the damaged holes on the model.
+
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair021.png"
+	}
+	text1={"Before close all holes"}
+	img2Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair022.png"
+	}
+	text2={"After close all holes"}
+/>
+
+## Orientation Repair
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair005.png"
+	}
+/>
+
+Repair the triangles with wrong directions in the model.
+
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair005.1.png"
+	}
+	text1={"Before orientation repair"}
+	img2Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair005.2.png"
+	}
+	text2={"After orientation repair"}
+/>
+
+## Coated Outer Surface
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair010.png"
+	}
+/>
+
+Unify the wrapping direction of the triangles of the model outwards, delete the contradictory triangles, and refine the outer surface to close.
+
+## Add Triangle
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair024.png"
+	}
+/>
+
+When using the **Add Triangle** function, the left mouse button clicked object is no longer the triangle data, but the edge of the non-closed triangle.
+
+## Remove Redundant Shells
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair003.png"
+	}
+/>
+
+When you click to **Remove Redundant Shells**, a pop-up window showing shell information will appear.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair027.png"
+	}
+/>
+
+Delete non-continuous non-body shells in the model.
+
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair013.png"
+	}
+	text1={"Before removing redundant shells"}
+	img2Src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair014.png"
+	}
+	text2={"After removing redundant shells"}
+/>
+
+## Delete Triangle
+
+Delete selected triangle.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair008.png"
+	}
+/>
+
+<Admonition type="note">
+	The **Delete Triangle** function cannot be used when no triangle are
+	selected.
+</Admonition>
+
+## Reverse Triangle
+
+Reverse selected triangle.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/006-application-overview-repair026.png"
+	}
+/>
+
+<Admonition type="note">
+	The **Reverse Triangle** function cannot be used when no triangle are
+	selected.
+</Admonition>
