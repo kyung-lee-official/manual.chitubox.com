@@ -2957,18 +2957,18 @@
 										"children": [
 											{
 												"depth": 2,
-												"value": "Windows Issues",
-												"id": "windows-issues",
+												"value": "Issues with the Windows Operating System",
+												"id": "issues-with-the-windows-operating-system",
 												"children": [
 													{
 														"depth": 3,
-														"value": "Windows Explorer Keep Restart Repeatedly",
-														"id": "windows-explorer-keep-restart-repeatedly"
+														"value": "Windows Explorer Keep Repeatedly Restarting",
+														"id": "windows-explorer-keep-repeatedly-restarting"
 													},
 													{
 														"depth": 3,
-														"value": "Conflict with Fusion 360 or Failed to create OpenGL context for format QSurfaceFormat",
-														"id": "conflict-with-fusion-360-or-failed-to-create-opengl-context-for-format-qsurfaceformat"
+														"value": "Conflicts with Fusion 360 or OpenGL error \"Failed to create OpenGL context for format QSurfaceFormat\"",
+														"id": "conflicts-with-fusion-360-or-opengl-error-failed-to-create-opengl-context-for-format-qsurfaceformat"
 													},
 													{
 														"depth": 3,
@@ -3018,18 +3018,18 @@
 												"children": [
 													{
 														"depth": 3,
-														"value": "Thumbnail Abnormal",
-														"id": "thumbnail-abnormal"
+														"value": "Thumbnail Abnormalities",
+														"id": "thumbnail-abnormalities"
 													},
 													{
 														"depth": 3,
-														"value": "Surface of Models Go Rough after Slicing",
-														"id": "surface-of-models-go-rough-after-slicing"
+														"value": "Rough Model Surface after Slicing",
+														"id": "rough-model-surface-after-slicing"
 													},
 													{
 														"depth": 3,
-														"value": "Why STL files were scaled after importing to CHITUBOX?",
-														"id": "why-stl-files-were-scaled-after-importing-to-chitubox"
+														"value": "Why are STL files scaled when imported into CHITUBOX?",
+														"id": "why-are-stl-files-scaled-when-imported-into-chitubox"
 													}
 												]
 											},
@@ -3040,8 +3040,8 @@
 												"children": [
 													{
 														"depth": 3,
-														"value": "Clean the Cache",
-														"id": "clean-the-cache"
+														"value": "Clear Cache",
+														"id": "clear-cache"
 													}
 												]
 											},
