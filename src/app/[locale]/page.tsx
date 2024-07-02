@@ -40,4 +40,3 @@ export default function Page(props: { params: { locale: Locale } }) {
 		</div>
 	);
 }
-//
