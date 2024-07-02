@@ -127,6 +127,10 @@
 			"brs": "底層回程速度",
 			"rs": "回程速度"
 		},
+		"collapse": {
+			"expand": "點擊展開",
+			"hide": "點擊隱藏"
+		},
 		"isPageUseful": {
 			"question": "本页面是否有用？",
 			"thanks": "感謝您的反饋！"

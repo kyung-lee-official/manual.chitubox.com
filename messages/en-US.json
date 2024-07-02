@@ -129,6 +129,10 @@
 			"brs": "Bottom Retract Speed",
 			"rs": "Retract Speed"
 		},
+		"collapse": {
+			"expand": "Click to expand",
+			"hide": "Click to hide"
+		},
 		"isPageUseful": {
 			"question": "Is this page useful?",
 			"thanks": "Thanks for your feedback!"
