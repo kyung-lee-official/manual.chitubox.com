@@ -9,7 +9,7 @@ const DocsCard = (props: { href: string; title: string }) => {
 	return (
 		<div
 			className="flex flex-col items-start p-8 gap-4
-			bg-white dark:bg-neutral-800
+			bg-white/50 dark:bg-neutral-800/60
 			rounded-xl hover:shadow-lg duration-200"
 		>
 			<div className="flex items-center gap-4">
