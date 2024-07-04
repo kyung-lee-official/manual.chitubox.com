@@ -3066,8 +3066,8 @@
 										"children": [
 											{
 												"depth": 2,
-												"value": "Windows Issues",
-												"id": "windows-issues",
+												"value": "Issues with the Windows Operating System",
+												"id": "issues-with-the-windows-operating-system",
 												"children": [
 													{
 														"depth": 3,
@@ -3091,13 +3091,13 @@
 													},
 													{
 														"depth": 3,
-														"value": "Windows Explorer Keep Restart Repeatedly",
-														"id": "windows-explorer-keep-restart-repeatedly"
+														"value": "Windows Explorer Repeatedly Restarting",
+														"id": "windows-explorer-repeatedly-restarting"
 													},
 													{
 														"depth": 3,
-														"value": "Conflict with Fusion 360 or Failed to create OpenGL context for format QSurfaceFormat",
-														"id": "conflict-with-fusion-360-or-failed-to-create-opengl-context-for-format-qsurfaceformat"
+														"value": "Conflicts with Fusion 360 or OpenGL error \"Failed to create OpenGL context for format QSurfaceFormat\"",
+														"id": "conflicts-with-fusion-360-or-opengl-error-failed-to-create-opengl-context-for-format-qsurfaceformat"
 													},
 													{
 														"depth": 3,
@@ -3130,18 +3130,18 @@
 												"children": [
 													{
 														"depth": 3,
-														"value": "Thumbnail Abnormal",
-														"id": "thumbnail-abnormal"
+														"value": "Thumbnail Abnormalities",
+														"id": "thumbnail-abnormalities"
 													},
 													{
 														"depth": 3,
-														"value": "Surface of Models Go Rough after Slicing",
-														"id": "surface-of-models-go-rough-after-slicing"
+														"value": "Rough Model Surface after Slicing",
+														"id": "rough-model-surface-after-slicing"
 													},
 													{
 														"depth": 3,
-														"value": "Why STL files were scaled after importing to CHITUBOX?",
-														"id": "why-stl-files-were-scaled-after-importing-to-chitubox"
+														"value": "Why are STL files scaled when imported into CHITUBOX?",
+														"id": "why-are-stl-files-scaled-when-imported-into-chitubox"
 													}
 												]
 											},
@@ -3152,8 +3152,8 @@
 												"children": [
 													{
 														"depth": 3,
-														"value": "Clean the Cache",
-														"id": "clean-the-cache"
+														"value": "Clear Cache",
+														"id": "clear-cache"
 													}
 												]
 											},
@@ -3183,8 +3183,8 @@
 										"children": [
 											{
 												"depth": 2,
-												"value": "Dll File Missing",
-												"id": "dll-file-missing"
+												"value": "Missing Dll files",
+												"id": "missing-dll-files"
 											},
 											{
 												"depth": 2,
@@ -3386,8 +3386,8 @@
 													},
 													{
 														"depth": 2,
-														"value": "Printer",
-														"id": "printer"
+														"value": "Printer Setup",
+														"id": "printer-setup"
 													},
 													{
 														"depth": 2,
@@ -3401,8 +3401,8 @@
 														"children": [
 															{
 																"depth": 3,
-																"value": "Model Layout Preprocessing Preparation",
-																"id": "model-layout-preprocessing-preparation",
+																"value": "Model Layout Preparation",
+																"id": "model-layout-preparation",
 																"children": [
 																	{
 																		"depth": 4,
@@ -3411,8 +3411,8 @@
 																	},
 																	{
 																		"depth": 4,
-																		"value": "Multi-Model Typography",
-																		"id": "multi-model-typography"
+																		"value": "Multi-Model Layout",
+																		"id": "multi-model-layout"
 																	},
 																	{
 																		"depth": 4,
@@ -3423,8 +3423,8 @@
 															},
 															{
 																"depth": 3,
-																"value": "Printing Parameter Setting And Preparation",
-																"id": "printing-parameter-setting-and-preparation"
+																"value": "Printing Parameter Settings And Preparation",
+																"id": "printing-parameter-settings-and-preparation"
 															}
 														]
 													}
@@ -3444,8 +3444,8 @@
 												"children": [
 													{
 														"depth": 2,
-														"value": "Separation of Model And Printing Platform",
-														"id": "separation-of-model-and-printing-platform"
+														"value": "Separating the Model from the Print Platform",
+														"id": "separating-the-model-from-the-print-platform"
 													},
 													{
 														"depth": 2,
@@ -3478,18 +3478,18 @@
 												"children": [
 													{
 														"depth": 2,
-														"value": "Printing Environment Data Record Table",
-														"id": "printing-environment-data-record-table"
+														"value": "Printing Environment Data Recording Table",
+														"id": "printing-environment-data-recording-table"
 													},
 													{
 														"depth": 2,
-														"value": "Printer Readiness Confirmation Form",
-														"id": "printer-readiness-confirmation-form"
+														"value": "Printer Preparation Confirmation Form",
+														"id": "printer-preparation-confirmation-form"
 													},
 													{
 														"depth": 2,
-														"value": "Light Intensity Numerical Measurement Record Table",
-														"id": "light-intensity-numerical-measurement-record-table"
+														"value": "Light Intensity Measurement Record Table",
+														"id": "light-intensity-measurement-record-table"
 													},
 													{
 														"depth": 2,
@@ -3508,18 +3508,18 @@
 													},
 													{
 														"depth": 2,
-														"value": "CHITUBOX TMA V1 Model Printing Effect Evaluation Table",
-														"id": "chitubox-tma-v1-model-printing-effect-evaluation-table"
+														"value": "CHITUBOX TMA V1 Model Printing Quality Evaluation Table",
+														"id": "chitubox-tma-v1-model-printing-quality-evaluation-table"
 													},
 													{
 														"depth": 2,
-														"value": "CHITUBOX TMB V1 Model Printing Effect Evaluation Table",
-														"id": "chitubox-tmb-v1-model-printing-effect-evaluation-table"
+														"value": "CHITUBOX TMB V1 Model Printing Quality Evaluation Table",
+														"id": "chitubox-tmb-v1-model-printing-quality-evaluation-table"
 													},
 													{
 														"depth": 2,
-														"value": "CHITUBOX TMC V1 Model Printing Effect Evaluation Table",
-														"id": "chitubox-tmc-v1-model-printing-effect-evaluation-table"
+														"value": "CHITUBOX TMC V1 Model Printing Quality Evaluation Table",
+														"id": "chitubox-tmc-v1-model-printing-quality-evaluation-table"
 													}
 												]
 											}
@@ -3556,13 +3556,13 @@
 													},
 													{
 														"depth": 2,
-														"value": "Printer Readiness Confirmation Form",
-														"id": "printer-readiness-confirmation-form"
+														"value": "Printer Preparation Confirmation Form",
+														"id": "printer-preparation-confirmation-form"
 													},
 													{
 														"depth": 2,
-														"value": "Light Intensity Numerical Measurement Record Table",
-														"id": "light-intensity-numerical-measurement-record-table"
+														"value": "Light Intensity Measurement Record Table",
+														"id": "light-intensity-measurement-record-table"
 													},
 													{
 														"depth": 2,
@@ -3610,8 +3610,8 @@
 													},
 													{
 														"depth": 2,
-														"value": "CHITUBOX TMB V1 Model Printing Effect Evaluation Table",
-														"id": "chitubox-tmb-v1-model-printing-effect-evaluation-table"
+														"value": "CHITUBOX TMB V1 Model Printing Quality Evaluation Table",
+														"id": "chitubox-tmb-v1-model-printing-quality-evaluation-table"
 													},
 													{
 														"depth": 2,
