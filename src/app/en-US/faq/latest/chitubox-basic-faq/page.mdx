@@ -14,42 +14,42 @@ export const metadata = {
 # CHITUBOX Basic FAQ
 
 <Admonition type="tip">
-	You can use <b>CTRL + F</b> to search content on this page.
+	You can search contents on this page using <b>CTRL + F</b>.
 </Admonition>
 
-## Windows Issues
+## Issues with the Windows Operating System
 
-### Windows Explorer Keep Restart Repeatedly
+### Windows Explorer Keep Repeatedly Restarting
 
-If your Windows Explorer keeps restarting repeatedly, please follow these steps to fix it:
+If your Windows Explorer keeps restarting, please follow these steps to fix it:
 
-Invoke your Task Manager by pressing Ctrl + Shift + Esc, right-click Windows Explorer, then click Restart.
+Press Ctrl + Shift + Esc to bring up your Windows Task Manager, right-click on Windows Explorer, and then click Restart.
 
 <ImageContainer
 	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq002.png"}
 />
 
-In your Task Manager, click File > Run new task, input `cmd`, check **Create this task with administrative privileges**, then click **OK**.
+In your Task Manager, click File > Run new task, input `cmd`, check **Create this task with administrative privileges**, and then click **OK**.
 
-Input:
+Enter:
 
 ```shell
 regsvr32 /u "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 ```
 
-Note you need to replace `{CHITUBOX-Installation-Path}` with your CHITUBOX's installation path, for example:
+Note that you need to replace `{CHITUBOX-Installation-Path}` with your CHITUBOX's installation path, for example:
 
 ```shell
 regsvr32 /u "C:\Program Files\ChiTubox\CHITUBOX_Thumbnail.dll"
 ```
 
-Hit Enter to run it.
+Hit Enter to run the command.
 
 <Admonition type="note">
-	Your OpenGL version should not older than 2.0.
+	Your OpenGL version should not be lower than 2.0.
 </Admonition>
 
-### Conflict with Fusion 360 or Failed to create OpenGL context for format QSurfaceFormat
+### Conflicts with Fusion 360 or OpenGL error "Failed to create OpenGL context for format QSurfaceFormat"
 
 <ImageContainer
 	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq001.png"}
@@ -67,14 +67,14 @@ Please open System Settings> About> Advanced System Settings and remove the two 
 
 ### The code execution cannot process because CbdXXXX.dll was not found
 
-Stuck installing software due to a missing CbdXXXX.dll error? This could be caused by permission issues. Here's a quick fix:
+Installing failure due to a missing CbdXXXX.dll error could be caused by permission issues. Here's a quick fix:
 
 1. Click on the Search bar on your taskbar or press the Windows key on your keyboard.
 1. Type "UAC" in the search field.
 1. Click on "Change User Account Control settings" in the search results.
-1. Reset your User Account Control (UAC) settings to the **Notify me only when apps try to make changes to my computer (default)** option.
+1. Reset your User Account Control (UAC) settings to the option **Notify me only when apps try to make changes to my computer (default)**.
 
-After resetting UAC, try to install the software again.
+After resetting, try installing the software again.
 
 <ImageContainer
 	src={
@@ -88,8 +88,7 @@ After resetting UAC, try to install the software again.
 	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq008.png"}
 />
 
-Most likely it is a software conflict issue, please quit your runtime software one by one to track down which software conflicts with CHITUBOX. After this is done, the problem should be solved for most cases.
-The following software may cause the conflict:
+It is very likely a software conflict issue. Please exit all running software one by one and look for any software that conflicts with CHITUBOX. This should resolve the issue in most cases. The following software might cause conflicts:
 
 -   Anti-virus software
 
@@ -103,7 +102,7 @@ The following software may cause the conflict:
 
 ### Error "SSL handshake failed"
 
-If the system time does not match the current actual date, activating an authorization code may be affected and result in an "SSL handshake failed" error message.
+Authorization code activation may be affected and result in an "SSL handshake failed" error message if the system time does not match the current actual date.
 
 To resolve this issue, you can set the system time automatically (recommended) or manually. Then restart the software and activate the code.
 
@@ -111,23 +110,23 @@ To resolve this issue, you can set the system time automatically (recommended) o
 
 ### Longer Error -1
 
-1. Longer's control board process the resolution specially, we have confirmed the correct resolution x: 960, y: 1708. We have double-check and confirmed this, so please don't change it.
+1. Longer's control board process the resolution specially, we have confirmed the correct resolution to be x: 960, y: 1708. We have have carefully checked and confirmed this, so please don't change it.
 
-2. `Error code -1` After changing the resolution is an error in the internal code of the plug-in. Because you changed the resolution, an error was reported.
+2. `Error code -1` is an internal error of the plug-in due to changing of the resolution.
 
 Download Longer plugin <SpanA href="https://drive.google.com/drive/u/0/folders/1rPRw68b3Z1oqLwc7hSmP5A9Zx0HjatbE?fbclid=IwAR2XyvSs_jCWwqXymOh9ZEvcuyKNuj-ibnmbLAmfOsZMWzjJdke71kxANwQ">here</SpanA>.
 
 ## File Issues
 
-### Thumbnail Abnormal
+### Thumbnail Abnormalities
 
 <ImageContainer
 	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004.png"}
 />
 
-Hold Ctrl + Shift + Esc to open the Task Manager, click File > Run new task, input `cmd`, check **Create this task with administrative privileges**, then click **OK**.
+Hold down Ctrl + Shift + Esc to open the Task Manager, click File > Run new task, enter `cmd`, check **Create this task with administrative privileges**, then click **OK**.
 
-Input:
+Enter:
 
 ```shell
 regsvr32 /u "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
@@ -145,7 +144,7 @@ Hit Enter to run it.
 	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004-1.png"}
 />
 
-Input:
+Enter:
 
 ```shell
 regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
@@ -175,11 +174,11 @@ Select "Delete Files".
 
 **Restart Explorer**
 
-Invoke your Task Manager by pressing Ctrl + Shift + Esc , right-click Windows Explorer, then click Restart.
+Open Task Manager by pressing Ctrl + Shift + Esc , right-click Windows Explorer, and then click Restart.
 
-### Surface of Models Go Rough after Slicing
+### Rough Model Surface after Slicing
 
-When you load a CTB file back to CHITUBOX, you may notice that the surface of the model is rough, in fact, this is because each voxel of the model was rendered after sliced. As if you can clearly see the each pixel after you zoom in an image in Photoshop.
+The displayed surface quality of a sliced model may appear rough. This is because each voxel of the model is rendered after slicing, similarly to zooming into each pixel after of an image in Photoshop.
 
 As it is shown in the figure, the height of each voxel is the layer height set in the slice setting. The length of each voxel is the length of each pixel on the screen, while the width of each voxel is the width of each pixel on the screen. A voxel is the smallest unit that constitutes a print.
 
@@ -189,19 +188,18 @@ As it is shown in the figure, the height of each voxel is the layer height set i
 />
 
 <Admonition type="note">
-	This voxel image cannot be seen during the preview after the slicing. You
-	need to reload the .ctb file in CHITUBOX to see it.
+	Note: This voxel imaging is not visible upon the initial slice preview. You need to reload the .ctb file in CHITUBOX to view it.
 </Admonition>
 
-### Why STL files were scaled after importing to CHITUBOX?
+### Why are STL files scaled when imported into CHITUBOX?
 
-An STL file doesn't contain the exact unit, it only contains numbers. Therefore, different software read an STL in different units. For example, when using STL file, 1m exported from Blender will be read as 1mm in CHITUBOX. You need to test the corresponding proportion of your 3D modeling software and CHITUBOX before you export your models.
+STL files do not contain specific unit information but use numerical records. Therefore, different software may use different units to read STL files. For example, 1 meter in Blender might equate to 1 millimeter in CHITUBOX. You need to test the scale relationship between your 3D modeling software and CHITUBOX before exporting files.
 
 ## Other Issues
 
-For some reason, you might encounter other issues caused by data corruption between versions. You can try the following ways to solve issues:
+You may encounter other issues caused by data corruption between versions in certain cases. You can try the following ways to resolve the issue:
 
-### Clean the Cache
+### Clear Cache
 
 1. Navigate to the following directory:
 
@@ -223,13 +221,13 @@ For some reason, you might encounter other issues caused by data corruption betw
     ~/.local/share
     ```
 
-	_If you can't find AppData or Library folder, they may be hidden. Here's how to reveal them:_<br />
+	_If you can't find the AppData or Library folder, they may be hidden. Follow steps below to show hidden files:_<br />
 	_Windows: Open File Explorer, go to the View tab, and tick the checkbox for Hidden items._ <br />
 	_Mac: In Finder, navigate to the desired location, and press Command + Shift + . (period key)._
 
-1. Close CHITUBOX Basic (**the order matters**).
+1. Close CHITUBOX Basic (**make sure to close CHITUBOX Basic first**).
 
-1. Locate the folders named 📂"chitubox2_0" and 📂"chituboxResource", delete both folders.
+1. Ensure that CHITUBOX Basic is closed, find and delete the 📂"chitubox2_0" and 📂"chituboxResource" folders.
 
     <ImageContainer
     	src={"/images/docs/en-US/faq/chitubox-basic/2.x.x/windows-path.png"}
@@ -238,13 +236,12 @@ For some reason, you might encounter other issues caused by data corruption betw
 1. Restart CHITUBOX Basic.
 
 <Admonition type="warning">
-	Cleaning the cache will erase your machine settings, please make sure you
-	have a backup before cleaning the cache.
+	Cleaning the cache will erase your machine settings, Please make sure you have backed up before clearing the cache.
 </Admonition>
 
 ## USB Drive Issues
 
-You might found that your printer can't read your USB drive properly sometimes. Mostly this is because your printer's control board was designed to work with USB 2.0 and FAT32 format with a volume equals to or lower than 16GB. USB 3.0 uses a larger current therefore can cause electrical interference to the control board sometimes. In summary, your USB drive should meet following requirements:
+Printers may fail to read certain USB drives sometimes. Usually this is because your printer's control board was designed to work with USB 2.0 with a capacity of 16GB or less. USB 3.0 uses a larger current, which can cause electrical interference with the control board. Your USB drive should meet the following requirements:
 
 -   FAT32 format
 

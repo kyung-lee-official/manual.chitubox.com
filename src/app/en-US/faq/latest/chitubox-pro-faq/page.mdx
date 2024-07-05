@@ -14,10 +14,10 @@ export const metadata = {
 # CHITUBOX Pro FAQ
 
 <Admonition type="tip">
-	You can use **CTRL + F** to search content on this page.
+	You can search contents on this page using CTRL + F.
 </Admonition>
 
-## Windows Issues
+## Issues with the Windows Operating System
 
 <Admonition type="note">
 	Please make sure you've installed all <NextLink href="/en-US/chitubox-pro/latest/requirements">required environments</NextLink>.
@@ -25,15 +25,15 @@ export const metadata = {
 
 ### MSVCR110.dll Missing
 
-"MSVCR110.dll Missing" means you're missing Visual C++ Redistributable Packages for Visual Studio 2012, please download the required environments from <SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=30679">here</SpanA>.
+"MSVCR110.dll Missing" means you are missing Visual C++ Redistributable Packages for Visual Studio 2012. Please download the required environments from <SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=30679">here</SpanA>.
 
 ### MSVCR120.dll Missing
 
-"MSVCR120.dll Missing" means you're missing Visual C++ Redistributable Packages for Visual Studio 2013, please download the required environments from <SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">here</SpanA>.
+"MSVCR120.dll Missing" means you are missing Visual C++ Redistributable Packages for Visual Studio 2013. Please download the required environments from <SpanA href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">here</SpanA>.
 
 ### MSVCR140.dll Missing
 
-"MSVCR140.dll Missing" means you're missing Visual C++ Redistributable Packages for Visual Studio 2015, 2017 and 2019, please download the required environments from <SpanA href="https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170">here</SpanA>.
+"MSVCR140.dll Missing" means you are missing Visual C++ Redistributable Packages for Visual Studio 2015, 2017 and 2019. Please download the required environments from <SpanA href="https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170">here</SpanA>.
 
 ### Other System-Level Errors
 
@@ -50,7 +50,7 @@ These errors might occur due to some corrupted or damaged operating system files
 Please try the following methods:
 
 Method 1:
-Open cmd on your PC (By using Win + R and input cmd), enter following command:
+Open cmd on your PC (By using Win + R and enter cmd) and enter following command:
 
 ```shell
 DISM.exe /Online /Cleanup-image /Scanhealth
@@ -61,13 +61,13 @@ DISM.exe /Online /Cleanup-image /Restorehealth
 ```
 
 Method 2:
-Open cmd on your PC (by using Win + R and input cmd), enter following command:
+Open cmd on your PC (by using Win + R and enter cmd) and enter following command:
 
 ```shell
 sfc /scannow
 ```
 
-If these method doesn't solve these errors, you might need to download and reinstall your system from Microsoft's official website.
+If these methods do not solve the problem, you may need to download and reinstall your system from Microsoft's official website.
 
 -   <SpanA href="https://www.microsoft.com/en-us/software-download/windows11">
     	Windows 11
@@ -77,35 +77,35 @@ If these method doesn't solve these errors, you might need to download and reins
     	Windows 10
     </SpanA>
 
-### Windows Explorer Keep Restart Repeatedly
+### Windows Explorer Repeatedly Restarting
 
-If your Windows Explorer keep restart repeatedly, please follow these steps to fix it:
+If your Windows Explorer keep restart, please follow these steps to fix it:
 
-Invoke your Task Manager by pressing Ctrl + Shift + Esc, right-click Windows Explorer, then click Restart.
+Press Ctrl + Shift + Esc to bring up your Windows Task Manager, right-click on Windows Explorer, and then click Restart.
 
 <ImageContainer src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq002.png"} />
 
-In your Task Manager, click File > Run new task, input `cmd`, check **Create this task with administrative privileges**, then click **OK**.
+In your Task Manager, click File > Run new task, input `cmd`, check **Create this task with administrative privileges**, and then click **OK**.
 
-Input:
+Enter:
 
 ```shell
 regsvr32 /u "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
 ```
 
-Note you need to replace `{CHITUBOX-Installation-Path}` with your CHITUBOX's installation path, for example:
+Note that you need to replace `{CHITUBOX-Installation-Path}` with your CHITUBOX's installation path, for example:
 
 ```shell
 regsvr32 /u "C:\Program Files\CHITUBOXPro V1.0.1\CHITUBOX_Thumbnail.dll"
 ```
 
-Hit Enter to run it.
+Hit Enter to run the command.
 
 <Admonition type="note">
-	Your OpenGL version should not older than 2.0.
+	Your OpenGL version should not be lower than 2.0.
 </Admonition>
 
-### Conflict with Fusion 360 or Failed to create OpenGL context for format QSurfaceFormat
+### Conflicts with Fusion 360 or OpenGL error "Failed to create OpenGL context for format QSurfaceFormat"
 
 <ImageContainer src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq001.png"} />
 
@@ -121,12 +121,11 @@ Please open System Settings> About> Advanced System Settings and remove the two 
 
 <ImageContainer src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq008.png"} />
 
-Most likely it is a software conflict issue, please quit your runtime software one by one to track down which software conflicts with CHITUBOX. After this is done, the problem should be solved for most cases.
-The following software may cause the conflict:
+It is very likely a software conflict issue. Please exit all running software one by one and look for any software that conflicts with CHITUBOX. This should resolve the issue in most cases. The following software might cause conflicts:
 
 -   Anti-virus software
 
--   Tabtip (In Windows Task Manager it is called Touch Keyboard and Handwriting Panel)
+-   Tabtip (Touch Keyboard and Handwriting Panel in Windows Task Manager)
 
 -   PowerToys
 
@@ -136,21 +135,21 @@ The following software may cause the conflict:
 
 ### Longer Error -1
 
-1. Longer's control board process the resolution specially, we have confirmed the correct resolution x: 960, y: 1708. We have double-check and confirmed this, so please don't change it.
+1. Longer's control board process the resolution specially, we have confirmed the correct resolution to be x: 960, y: 1708. We have carefully checked and confirmed, so please don't change it.
 
-2. `Error code -1` After changing the resolution is an error in the internal code of the plug-in. Because you changed the resolution, an error was reported.
+2. `Error code -1` is an internal error of the plug-in due to changing of the resolution.
 
 Download Longer plugin <SpanA href="https://drive.google.com/drive/u/0/folders/1rPRw68b3Z1oqLwc7hSmP5A9Zx0HjatbE?fbclid=IwAR2XyvSs_jCWwqXymOh9ZEvcuyKNuj-ibnmbLAmfOsZMWzjJdke71kxANwQ">here</SpanA>.
 
 ## File Issues
 
-### Thumbnail Abnormal
+### Thumbnail Abnormalities
 
 <ImageContainer src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq004.png"} />
 
-Hold Ctrl + Shift + Esc to open the Task Manager, click File > Run new task, input `cmd`, check **Create this task with administrative privileges**, then click **OK**.
+Hold down Ctrl + Shift + Esc to open the Task Manager, click File > Run new task, enter `cmd`, check **Create this task with administrative privileges**, and then click **OK**.
 
-Input:
+Enter:
 
 ```shell
 regsvr32 /u "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
@@ -168,7 +167,7 @@ Hit Enter to run it.
 	src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq004-1.png"}
 />
 
-Input:
+Enter:
 
 ```shell
 regsvr32 "{CHITUBOX-Installation-Path}\CHITUBOX_Thumbnail.dll"
@@ -202,11 +201,11 @@ Select "Delete Files".
 
 **Restart Explorer**
 
-Invoke your Task Manager by pressing `Ctrl + Shift + Esc` , right-click Windows Explorer, then click Restart.
+Open Task Manager by pressing `Ctrl + Shift + Esc` , right-click Windows Explorer, and then click Restart.
 
-### Surface of Models Go Rough after Slicing
+### Rough Model Surface after Slicing
 
-After slicing the model, you may think that the quality of the image is rough, but in fact, this is the model shows every voxel through stereo rendering after sliced. As if you can see the appearance of each pixel after you zoom on image in Photoshop.
+The displayed surface quality of a sliced model may appear rough. This is because each voxel of the model is rendered after slicing, similarly to zooming into each pixel after of an image in Photoshop.
 
 As shown in the figure, the height of each cube is the layer height set in the slice setting. The length is the length of each pixel in the horizontal direction on the screen. The width is the width of each pixel in the vertical direction on the screen. Length, width, and height constitute the volume of the voxel. A voxel is the smallest unit that constitutes a print.
 
@@ -216,25 +215,24 @@ As shown in the figure, the height of each cube is the layer height set in the s
 />
 
 <Admonition type="note">
-	This voxel image cannot be seen during the preview after the slicing. You
-	need to reload the .ctb file in CHITUBOX to see it.
+	This voxel imaging is not visible upon the initial slice preview. You need to reload the .ctb file in CHITUBOX to view it.
 </Admonition>
 
-### Why STL files were scaled after importing to CHITUBOX?
+### Why are STL files scaled when imported into CHITUBOX?
 
-An STL file doesn't contain the exact unit, it only contains numbers. Therefore, different software read an STL in different units. For example, when using STL file, 1m exported from Blender will be read as 1mm in CHITUBOX. You need to test the corresponding proportion of your 3D modeling software and CHITUBOX before you export your models.
+STL files do not contain specific unit information but use numerical records. Therefore, different software may use different units to read STL files. For example, 1 meter in Blender might equate to 1 millimeter in CHITUBOX. You need to test the scale relationship between your 3D modeling software and CHITUBOX before exporting files.
 
 ## Other Issues
 
-For some reason, you might encounter other issues caused by data corruption between versions. You can try the following ways to solve issues:
+You may encounter other issues caused by data corruption between versions in certain cases. You can try the following ways to resolve the issue:
 
-### Clean the Cache
+### Clear Cache
 
 1. Open the log path (Setting/Help > Open Log). <NextLink href="/en-US/chitubox-pro/latest/application-overview/setting-and-help#open-log">📃Click here</NextLink> to learn how to open the log.
 
-1. Close CHITUBOX Pro (**the order matters**).
+1. Close CHITUBOX Pro (**make sure to close the software first**).
 
-1. Make sure you already closed CHITUBOX Pro, back up the 📂*machine* folder to another location, then delete all files and folders except 📄*userLogin.cfg* file.
+1. Ensure that CHITUBOX Pro is closed, back up the 📂*machine* folder to another location, and then delete all files and folders except the 📄*userLogin.cfg* file.
 
     <ImageContainer
     	src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq003.png"}
@@ -242,11 +240,11 @@ For some reason, you might encounter other issues caused by data corruption betw
 
 1. Restart CHITUBOX Pro.
 
-1. Optional, after restarting CHITUBOX Pro, a new 📂*machine* folder will be generated, you can restore your machines by copying and pasting _.cfg_ files back to the new 📂*machine* folder. Please do not copy all _.cfg_ files back to the 📂*machine* folder at once given the bug you encountered might be caused by one of them.
+1. After restarting CHITUBOX Pro, a new 📂*machine* folder will be generated. You can restore your machines by copying and pasting _.cfg_ files back to the new 📂*machine* folder. Please do not copy all _.cfg_ files back to the 📂*machine* folder at once as the issue you encountered might be caused by one of them.
 
 ## USB Drive Issues
 
-You might found that your printer can't read your USB drive properly sometimes. Mostly this is because your printer's control board was designed to work with USB 2.0 and FAT32 format with a volume equals to or lower than 16GB. USB 3.0 uses a larger current therefore can cause electrical interference to the control board sometimes. In summary, your USB drive should meet following ments:
+Printers may fail to read certain USB drives sometimes. Usually this is because your printer's control board was designed to work with USB 2.0 with a capacity of 16GB or less. USB 3.0 uses a larger current, which can cause electrical interference with the control board. Your USB drive should meet the following requirements:
 
 -   FAT32 format
 
@@ -275,14 +273,14 @@ You might found that your printer can't read your USB drive properly sometimes. 
     	style={{ maxwidth: "700px" }}
     />
 
-1. You can check more details on your affiliate center when we approval.
+1. You can check more details on your affiliate center after being approved.
 
     <ImageContainer
     	src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq007-3.png"}
     	style={{ maxwidth: "700px" }}
     />
 
-1. You can input the landing page link here to generate your customized link.
+1. You can enter the landing page link here to generate your customized link.
 
     <ImageContainer
     	src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq007-4.png"}

@@ -14,7 +14,7 @@ export const metadata = {
 
 <Admonition type="note">
 	1. Some printers may require a USB drive to store sliced files if internal storage is not supported.
-	1. Network sending requires the printer and the computer to be under the same LAN.
+	1. Network sending requires the printer and the computer to be under the same local area network (LAN).
 	1. The transmission speed is limited by printer's network module. Most printers limit the transimission speed to 8M/s. Large files are not recommended for **Network Sending**. 
 	1. Only some printers support Network Sending. Read the <SpanA href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃full compatibility list</SpanA> here.
 </Admonition>
@@ -25,13 +25,13 @@ After slicing your model, click the "Network Sending" button to open the network
 	src={"/images/docs/en-US/chitu-manager/network-sending-01.png"}
 />
 
-Once you've modified the file name and selected the appropriate format for the sliced file, pick the printer you want to use from the scanned printer list or "My Printer" list. Then, click the "**Send**" button in the bottom right corner to start saving and transferring the file.
+Edit the file name and choose the format for the sliced file. Then choose the printer you want to use from the printer list or the "My Printer" list. Click the "**Send**" button at the bottom right corner to start saving and transferring the file.
 
 <ImageContainer
 	src={"/images/docs/en-US/chitu-manager/network-sending-02.png"}
 />
 
-A temporary file is saved before transferring the file. This file is used for the transfer process and is automatically deleted when you close the CHITUBOX slicer.
+A temporary file is saved before transfer starts. This file is used during the transfer process and is automatically deleted when you close the CHITUBOX slicer.
 
 <ImageContainer
 	src={"/images/docs/en-US/chitu-manager/network-sending-03.png"}
