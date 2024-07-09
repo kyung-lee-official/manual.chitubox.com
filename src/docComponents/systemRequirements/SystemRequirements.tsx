@@ -25,7 +25,7 @@ const enItems = [
 				<thead>
 					<tr>
 						<th>Specification</th>
-						<th>Mininum</th>
+						<th>Minimum</th>
 						<th>Recommended</th>
 					</tr>
 				</thead>
@@ -77,7 +77,7 @@ const enItems = [
 				<thead>
 					<tr>
 						<th>Specification</th>
-						<th>Mininum</th>
+						<th>Minimum</th>
 						<th>Recommended</th>
 					</tr>
 				</thead>
@@ -109,7 +109,7 @@ const enItems = [
 				<thead>
 					<tr>
 						<th>Specification</th>
-						<th>Mininum</th>
+						<th>Minimum</th>
 						<th>Recommended</th>
 					</tr>
 				</thead>
