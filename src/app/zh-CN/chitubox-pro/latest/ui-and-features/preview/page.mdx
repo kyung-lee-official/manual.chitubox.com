@@ -1,0 +1,55 @@
+import {
+	ChituboxDetectIslandsIcon,
+	ChituboxDeleteIslandsIcon,
+} from "@/components/icons/Icons";
+
+export const metadata = {
+	title: "预览",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"在切片器中预览切片文件对于确保 3D 打印准确并满足您的期望非常重要。 本节我们将介绍 CHITUBOX 中的切片预览窗口。",
+	other: {
+		pageId: "/zh-CN/chitubox-basic/v2.0.0/preview",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 预览
+
+## 预览窗口
+
+切片完成后，您可以在预览窗口中预览模型。预览窗口分为两部分：左侧为模型预览，右侧为层预览。
+
+预览窗口底部的打印设置面板显示当前模型的打印设置。您可以在此处修改打印设置，然后保存切片文件。
+
+您可以在预览窗口右上角查看打印信息。打印信息包括**机型**、**树脂**、**体积**、**重量**、**价格**和**打印时间**。
+
+## 网络发送
+
+若打印机支持网络发送，该界面上会有 **网络发送** 按钮，此功能可以直接向打印机发送切片数据进行打印。单击此按钮打开<NextLink href="/zh-CN/chitu-manager/latest/ui-and-features/network-sending">网络发送窗口</NextLink>。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/2.x.x/011-preview-network-sending.png"
+	}
+/>
+
+<Admonition type="note" title="注意">
+	需要安装 ChituManager 以使用网络发送功能。若电脑上还未安装 ChituManager，点击**网络发送**按钮后，可按照提示步骤进行下载与安装。
+</Admonition>
+
+## 保存文件
+
+切片完成后，您可以将切片文件保存到计算机上。单击预览窗口右下角的**保存**按钮即可保存切片文件。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-basic/2.x.x/011-preview-save.png"}
+/>
+
+<Admonition type="note" title="注意">
+    * 文件保存对话框仅显示打印机支持的文件格式。如果您在下拉菜单中看不到正确的格式，请返回并检查是否选择了正确的打印机。
+    * **默认**打印机类型允许您将切片文件保存为CHITUBOX支持的任何格式。但是，当您的打印机在CHITUBOX中没有内置配置文件时，您应该仅选择**默认**打印机类型。
+</Admonition>
+

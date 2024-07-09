@@ -30,7 +30,7 @@ export const Collapse = ({ children, title }: CollapseProps) => {
 					setHide(!hide);
 				}}
 			>
-				<div className=" flex flex-auto items-center">
+				<div className="flex flex-auto items-center">
 					<div
 						className={`px-3 ${rotate && `transform rotate-90`} duration-100`}>
 						<CollapseIcon />

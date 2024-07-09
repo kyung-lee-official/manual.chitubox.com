@@ -11,50 +11,20 @@
 					"label": "介绍"
 				},
 				{
-					"item": "comparison",
-					"label": "比较"
+					"item": "installation",
+					"label": "安装"
 				},
 				{
-					"item": "requirements",
-					"label": "要求"
+					"item": "manage-your-account-and-license",
+					"label": "管理你的账号和许可"
 				},
 				{
-					"item": "setting-up",
-					"label": "上手",
+					"item": "ui-and-features",
+					"label": "界面和功能",
 					"subItems": [
 						{
-							"item": "installation",
-							"label": "安装"
-						},
-						{
-							"item": "manage-your-account-and-license",
-							"label": "管理你的账号和许可"
-						},
-						{
-							"item": "update-printer-firmware",
-							"label": "更新打印机固件"
-						},
-						{
-							"item": "configure-print-parameters",
-							"label": "设置打印参数"
-						},
-						{
-							"item": "configure-support-parameters",
-							"label": "设置支撑参数"
-						}
-					]
-				},
-				{
-					"item": "application-overview",
-					"label": "软件概述",
-					"subItems": [
-						{
-							"item": "ui-introduction",
-							"label": "用户界面介绍"
-						},
-						{
-							"item": "start",
-							"label": "开始"
+							"item": "menu",
+							"label": "菜单"
 						},
 						{
 							"item": "prepare",
@@ -65,24 +35,36 @@
 							"label": "修复"
 						},
 						{
-							"item": "support",
-							"label": "支撑"
-						},
-						{
 							"item": "analyze-and-measure",
 							"label": "分析/测量"
 						},
 						{
-							"item": "setting-and-help",
-							"label": "设置/帮助"
+							"item": "gadgets",
+							"label": "小工具"
+						},
+						{
+							"item": "file-list",
+							"label": "文件列表"
+						},
+						{
+							"item": "risk-detection",
+							"label": "风险检测"
+						},
+						{
+							"item": "configure-print-parameters",
+							"label": "设置打印参数"
+						},
+						{
+							"item": "configure-support-parameters",
+							"label": "设置支撑参数"
 						},
 						{
 							"item": "slice",
 							"label": "切片"
 						},
 						{
-							"item": "slice-preview",
-							"label": "切片预览"
+							"item": "preview",
+							"label": "预览"
 						}
 					]
 				}
