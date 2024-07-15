@@ -12,10 +12,7 @@ type BubbleType = {
 
 const Row = (props: { type: "q" | "a"; children: React.ReactNode }) => {
 	return (
-		<div
-			className={`flex flex-col gap-2
-			`}
-		>
+		<div className={`flex flex-col gap-2`}>
 			<div
 				className={`flex ${
 					props.type === "q" ? "justify-end" : "justify-start"
@@ -23,8 +20,12 @@ const Row = (props: { type: "q" | "a"; children: React.ReactNode }) => {
 			>
 				<div
 					className={`max-w-96 p-2
-					${props.type === "q" ? "bg-blue-200" : "bg-green-200"}
-					rounded`}
+					${
+						props.type === "q"
+							? "bg-gradient-to-br from-blue-500/30 to-purple-500/30"
+							: "bg-gradient-to-br from-cyan-500/30 bg-lime-500/30"
+					}
+					rounded overflow-x-auto`}
 				>
 					{props.children}
 				</div>
@@ -46,11 +47,7 @@ export const Bubble = (props: BubbleType) => {
 			const resultWithLinks = result
 				.toString()
 				.replace("<a", "<a class='text-blue-500'")
-				.replace(
-					"<code",
-					`<code class='w-80 p-1
-					overflow-x-auto'`
-				);
+				.replace("<code", `<code class='w-80 p-1'`);
 			setMdxContent({ __html: resultWithLinks });
 		}
 	}
@@ -67,7 +64,24 @@ export const Bubble = (props: BubbleType) => {
 			break;
 		case "a":
 			if (state === "pending") {
-				return <Row type="a">...</Row>;
+				return (
+					<Row type="a">
+						<div
+							className="flex flex-col w-64 p-2 gap-4
+							animate-pulse"
+						>
+							<div className="grid grid-cols-3 gap-4">
+								<div className="h-2 bg-neutral-700/30 rounded"></div>
+								<div className="h-2 bg-neutral-700/30 rounded col-span-2"></div>
+							</div>
+							<div className="grid grid-cols-3 gap-4">
+								<div className="h-2 bg-neutral-700/30 rounded col-span-2"></div>
+								<div className="h-2 bg-neutral-700/30 rounded col-span-1"></div>
+							</div>
+							<div className="h-2 bg-neutral-700/30 rounded"></div>
+						</div>
+					</Row>
+				);
 			}
 			if (state === "error") {
 				return <Row type="a">❗{content}❗</Row>;

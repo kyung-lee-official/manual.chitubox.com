@@ -19,7 +19,7 @@ export const DialogContent = forwardRef(function DialogContent(
 	return (
 		<div
 			ref={dialogBgRef}
-			className="flex flex-col w-[600px] max-w-[800px] p-4 gap-2"
+			className="flex flex-col p-4 gap-2"
 		>
 			<Chat ref={dialogRef} setShowDialog={setShowDialog} />
 		</div>

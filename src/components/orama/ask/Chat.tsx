@@ -12,6 +12,7 @@ import {
 import { oramaClient } from "../orama-client";
 import { Bubble } from "./Bubble";
 import { nanoid } from "nanoid";
+import CannotBeEmpty from "./CannotBeEmpty";
 
 export const Chat = forwardRef(function Chat(
 	props: { setShowDialog: Dispatch<SetStateAction<boolean>> },
@@ -29,6 +30,7 @@ export const Chat = forwardRef(function Chat(
 	const conversationRef = useRef<HTMLDivElement>(null);
 	const dialogRef = ref as MutableRefObject<HTMLDialogElement | null>;
 	const { setShowDialog } = props;
+	const [showCannotBeEmpty, setShowCannotBeEmpty] = useState(false);
 
 	const cachedAnswerSession = useMemo(() => {
 		return oramaClient.createAnswerSession({
@@ -56,6 +58,10 @@ export const Chat = forwardRef(function Chat(
 	const askQuestion = async (e: any) => {
 		e.preventDefault();
 		const cachedQuestion = question;
+		if (!!!cachedQuestion) {
+			setShowCannotBeEmpty(true);
+			return;
+		}
 		setQuestion("");
 		setConversation((conversation) => [
 			...conversation,
@@ -114,7 +120,7 @@ export const Chat = forwardRef(function Chat(
 				ref={conversationRef}
 				className="flex flex-col h-96 p-4 gap-6
 				bg-white/50
-				rounded overflow-y-auto scrollbar"
+				rounded overflow-y-auto scrollbar overscroll-contain"
 			>
 				{conversation.map((bubble, i) => {
 					return (
@@ -135,26 +141,27 @@ export const Chat = forwardRef(function Chat(
 					className="w-full h-32 p-4
 					bg-white/50
 					rounded outline-none resize-none
-					scrollbar"
+					scrollbar overscroll-contain"
 					onChange={(e) => {
 						setQuestion(e.target.value);
 					}}
 					value={question}
 					onKeyDown={(e) => {
-						if (
-							e.key === "Enter" &&
-							!e.shiftKey &&
-							question.trim()
-						) {
-							e.preventDefault();
-							askQuestion(e);
+						if (e.key === "Enter" && !e.shiftKey) {
+							if (!!question.trim()) {
+								e.preventDefault();
+								askQuestion(e);
+							} else {
+								e.preventDefault();
+								setShowCannotBeEmpty(true);
+							}
 						}
 					}}
 					placeholder="Enter to send"
 				/>
 				<div className="flex gap-4">
 					<button
-						className="px-2 py-1
+						className="w-20 px-2 py-1
 						bg-white hover:bg-white/80
 						rounded-md"
 						onClick={() => {
@@ -168,12 +175,17 @@ export const Chat = forwardRef(function Chat(
 					</button>
 					<button
 						type="submit"
-						className="w-20 p-2
+						className="relative w-20 p-2
 						text-white
 						bg-blue-500 hover:bg-blue-500/80
 						rounded"
 					>
 						Send
+						{showCannotBeEmpty && (
+							<CannotBeEmpty
+								setShowCannotBeEmpty={setShowCannotBeEmpty}
+							/>
+						)}
 					</button>
 				</div>
 			</form>

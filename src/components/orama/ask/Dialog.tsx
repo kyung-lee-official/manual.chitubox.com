@@ -49,7 +49,10 @@ export const Dialog = forwardRef(function Dialog(
 	return (
 		<dialog
 			ref={dialogRef}
-			className="bg-gradient-to-br from-sky-300/20 to-purple-500/20
+			className="w-full
+			lg:w-[600px]
+			xl:w-[800px]
+			bg-gradient-to-br from-sky-300/20 to-purple-500/20
 			rounded-lg backdrop:bg-black/50
 			backdrop:[backdrop-filter:blur(2px)]"
 		>

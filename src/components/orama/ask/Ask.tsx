@@ -13,8 +13,8 @@ const Ask = () => {
 				className="fixed right-4 bottom-4
 				flex flex-col items-center p-2
 				text-neutral-100
-				bg-gradient-to-br from-sky-300/60 to-purple-500/60
-				rounded-lg shadow-md outline-none"
+				bg-gradient-to-br from-sky-300/40 to-purple-500/40
+				rounded-lg shadow outline-none backdrop-blur"
 				onClick={() => {
 					if (dialogRef.current) {
 						dialogRef.current.showModal();
@@ -27,7 +27,7 @@ const Ask = () => {
 					height={40}
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="20 20 260 260"
-					className="drop-shadow-lg"
+					className="drop-shadow-md"
 				>
 					<defs>
 						<linearGradient
