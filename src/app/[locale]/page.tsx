@@ -26,7 +26,7 @@ export default function Page(props: { params: { locale: Locale } }) {
 				lg:p-10
 				xl:p-20
 				bg-[radial-gradient(circle_at_20%_20%,#f5d0fe80,transparent_600px),radial-gradient(circle_at_80%_20%,#67e8f955,transparent_600px)]
-				dark:bg-[radial-gradient(circle_at_20%_20%,#d946ef88,transparent_500px),radial-gradient(circle_at_80%_20%,#0369a1aa,transparent_600px)]"
+				dark:bg-[radial-gradient(circle_at_20%_20%,#d946ef33,transparent_500px),radial-gradient(circle_at_80%_20%,#0369a144,transparent_600px)]"
 			>
 				<DynamicHero />
 				<Docsboard
