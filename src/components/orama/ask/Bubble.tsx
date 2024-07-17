@@ -22,8 +22,10 @@ const Row = (props: { type: "q" | "a"; children: React.ReactNode }) => {
 					className={`max-w-96 p-2
 					${
 						props.type === "q"
-							? "bg-gradient-to-br from-blue-500/30 to-purple-500/30"
-							: "bg-gradient-to-br from-cyan-500/30 bg-lime-500/30"
+							? `text-purple-950 bg-gradient-to-br from-[#0094F7]/30 to-[#911DFF]/40
+								dark:text-purple-200 dark:bg-gradient-to-br dark:from-[#0094F7]/70 dark:to-[#911DFF]/60`
+							: `text-cyan-950 bg-gradient-to-br from-[#0094F7]/30 bg-[#00A38F]/30
+								dark:text-cyan-200 dark:bg-gradient-to-br dark:from-[#0094F7]/30 dark:to-[#00A38F]/30`
 					}
 					rounded overflow-x-auto`}
 				>

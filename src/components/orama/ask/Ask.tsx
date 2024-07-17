@@ -14,9 +14,10 @@ const Ask = () => {
 				<button
 					className="flex flex-col items-center p-2
 					text-neutral-100
-					bg-gradient-to-br from-sky-300 to-purple-500
-					hover:bg-[linear-gradient(-45deg,#FFA63D,#FF3D77,#338AFF,#3CF0C5)]
-					opacity-60 hover:opacity-70 transition-all duration-300
+					bg-gradient-to-br from-[#0094F7] to-[#A961FF]
+					hover:bg-[linear-gradient(-45deg,#E17200,#FF3338,#657BFF,#00A38F)]
+					opacity-60 hover:opacity-90 dark:opacity-80 dark:hover:opacity-100
+					transition-all duration-300
 					rounded-lg shadow outline-none
 					hover:animate-[bg-pos_10s_ease-in-out_infinite]
 					hover:bg-[length:400px_100px]"

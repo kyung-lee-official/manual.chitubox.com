@@ -17,10 +17,7 @@ export const DialogContent = forwardRef(function DialogContent(
 	const dialogBgRef = useRef<HTMLDivElement | null>(null);
 
 	return (
-		<div
-			ref={dialogBgRef}
-			className="flex flex-col p-4 gap-2"
-		>
+		<div ref={dialogBgRef} className="flex flex-col p-4 gap-2">
 			<Chat ref={dialogRef} setShowDialog={setShowDialog} />
 		</div>
 	);

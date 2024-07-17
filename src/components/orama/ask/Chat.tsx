@@ -119,7 +119,7 @@ export const Chat = forwardRef(function Chat(
 			<div
 				ref={conversationRef}
 				className="flex flex-col h-96 p-4 gap-6
-				bg-white/50
+				bg-white/50 dark:bg-neutral-900/50
 				rounded overflow-y-auto scrollbar overscroll-contain"
 			>
 				{conversation.map((bubble, i) => {
@@ -139,7 +139,8 @@ export const Chat = forwardRef(function Chat(
 			>
 				<textarea
 					className="w-full h-32 p-4
-					bg-white/50
+					dark:text-neutral-300
+					bg-white/50 dark:bg-neutral-900/50
 					rounded outline-none resize-none
 					scrollbar overscroll-contain"
 					onChange={(e) => {
@@ -163,6 +164,8 @@ export const Chat = forwardRef(function Chat(
 					<button
 						className="w-20 px-2 py-1
 						bg-white hover:bg-white/80
+						dark:text-white
+						dark:bg-white/40 dark:hover:bg-white/30
 						rounded-md"
 						onClick={() => {
 							if (dialogRef.current) {
