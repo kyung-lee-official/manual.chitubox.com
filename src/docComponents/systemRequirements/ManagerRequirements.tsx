@@ -377,9 +377,7 @@ const zh_twItems = [
 	},
 ];
 
-const onChange = (key: string) => {
-	console.log(key);
-};
+const onChange = (key: string) => {};
 
 export const ManagerRequirements = (props: any) => {
 	const { lang } = props;
