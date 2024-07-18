@@ -1272,6 +1272,130 @@
 		"content": "After slicing, you can save the sliced file to your computer. Click the Save button on the lower-right side of the preview window to save the sliced file. NOTE: The file saving dialog only shows the file format supported by your printer. If you do not see the correct format from the drop-down menu, please go back and check if you have selected the correct printer. The default printer type allows you to save the sliced file in any format supported by CHITUBOX. However, you should only select the default printer type when your printer does not have a built-in profile in CHITUBOX."
 	},
 	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Issues with the Windows Operating System",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#issues-with-the-windows-operating-system",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Windows Explorer Keep Repeatedly Restarting",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#windows-explorer-keep-repeatedly-restarting",
+		"level": 3,
+		"content": "If your Windows Explorer keeps restarting, please follow these steps to fix it: Press Ctrl + Shift + Esc to bring up your Windows Task Manager, right-click on Windows Explorer, and then click Restart. In your Task Manager, click File > Run new task, enter `cmd`, check Create this task with administrative privileges, and then click OK. Enter: `regsvr32 /u \"{CHITUBOX-Installation-Path}\\CHITUBOX_Thumbnail.dll\"`, Note that you need to replace {CHITUBOX-Installation-Path} with your CHITUBOX's installation path, for example: `regsvr32 /u \"C:\\Program Files\\ChiTubox\\CHITUBOX_Thumbnail.dll\"` Hit Enter to run the command. NOTE: Your OpenGL version should not be lower than 2.0."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Conflicts with Fusion 360 or OpenGL error \"Failed to create OpenGL context for format QSurfaceFormat\"",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#conflicts-with-fusion-360-or-opengl-error-failed-to-create-opengl-context-for-format-qsurfaceformat",
+		"level": 3,
+		"content": "Check out this link for detailed information: https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#conflicts-with-fusion-360-or-opengl-error-failed-to-create-opengl-context-for-format-qsurfaceformat"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "This application failed to start because no Qt platform plugin could be initialized",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized",
+		"level": 3,
+		"content": "Check out this link for detailed information: https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "The code execution cannot process because CbdXXXX.dll was not found",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#the-code-execution-cannot-process-because-cbdxxxxdll-was-not-found",
+		"level": 3,
+		"content": "Installing failure due to a missing CbdXXXX.dll error could be caused by permission issues. Check out this link for detailed information: https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#the-code-execution-cannot-process-because-cbdxxxxdll-was-not-found"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "CHITUBOX is Not Responding",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#chitubox-is-not-responding",
+		"level": 3,
+		"content": "It is very likely a software conflict issue. Please exit all running software one by one and look for any software that conflicts with CHITUBOX. This should resolve the issue in most cases. The following software might cause conflicts: * Anti-virus software * Tabtip (In Windows Task Manager it is called Touch Keyboard and Handwriting Panel) * PowerToys * Google Drive"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Authorization Code Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#authorization-code-issues",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Error 'SSL handshake failed'",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#error-ssl-handshake-failed",
+		"level": 3,
+		"content": "Authorization code activation may be affected and result in an 'SSL handshake failed' error message if the system time does not match the current actual date. To resolve this issue, you can set the system time automatically (recommended) or manually. Then restart the software and activate the code."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Plugin Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#plugin-issues",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Longer Error -1",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#longer-error--1",
+		"level": 3,
+		"content": "1. Longer's control board process the resolution specially, we have confirmed the correct resolution to be x: 960, y: 1708. We have have carefully checked and confirmed this, so please don't change it. 2. `Error code -1` is an internal error of the plug-in due to changing of the resolution. Download Longer plugin [here](https://drive.google.com/drive/u/0/folders/1rPRw68b3Z1oqLwc7hSmP5A9Zx0HjatbE?fbclid=IwAR2XyvSs_jCWwqXymOh9ZEvcuyKNuj-ibnmbLAmfOsZMWzjJdke71kxANwQ)."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "File Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#file-issues",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Thumbnail Abnormalities",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#thumbnail-abnormalities",
+		"level": 3,
+		"content": "Check out this link for detailed information: https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#thumbnail-abnormalities"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Rough Model Surface after Slicing",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#rough-model-surface-after-slicing",
+		"level": 3,
+		"content": "The displayed surface quality of a sliced model may appear rough. This is because each voxel of the model is rendered after slicing, similarly to zooming into each pixel after of an image in Photoshop. As it is shown in the figure, the height of each voxel is the layer height set in the slice setting. The length of each voxel is the length of each pixel on the screen, while the width of each voxel is the width of each pixel on the screen. A voxel is the smallest unit that constitutes a print. Note: This voxel imaging is not visible upon the initial slice preview. You need to reload the .ctb file in CHITUBOX to view it."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Why are STL files scaled when imported into CHITUBOX?",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#why-are-stl-files-scaled-when-imported-into-chitubox",
+		"level": 3,
+		"content": "STL files do not contain specific unit information but use numerical records. Therefore, different software may use different units to read STL files. For example, 1 meter in Blender might equate to 1 millimeter in CHITUBOX. You need to test the scale relationship between your 3D modeling software and CHITUBOX before exporting files."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Clear Cache",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#clear-cache",
+		"level": 3,
+		"content": "You may encounter other issues caused by data corruption between versions in certain cases. You can try clearing cache: Navigate to the following directory: Windows: `C:\\Users\\{user-name}\\AppData\\Local` macOS: `Macintosh HD/Users/{user-name}/Library/Application Support` Ubuntu: `~/.local/share` If you cannot find the AppData or Library folder, they may be hidden. Follow steps below to show hidden files: Windows: Open File Explorer, go to the View tab, and tick the checkbox for Hidden items. macOS: In Finder, navigate to the desired location, and press Command + Shift + . (period key). 2. Close CHITUBOX Basic (make sure to close CHITUBOX Basic first). 3. Ensure that CHITUBOX Basic is closed, find and delete the 📂'chitubox2_0' and 📂'chituboxResource' folders. 4. Restart CHITUBOX Basic. WARNING: Clearing the cache will erase your machine settings, Please make sure you have backed up before clearing the cache."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "USB Drive Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#usb-drive-issues",
+		"level": 3,
+		"content": "Printers may fail to read certain USB drives sometimes. Usually this is because your printer's control board was designed to work with USB 2.0 with a capacity of 16GB or less. USB 3.0 uses a larger current, which can cause electrical interference with the control board. Your USB drive should meet the following requirements: * FAT32 format * USB 2.0 * ≤ 16GB * Allocation unit size = 2048 bytes"
+	},
+	{
 		"name": "ChituManager",
 		"version": "1.0.20",
 		"title": "Introduction",
