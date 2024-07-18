@@ -1270,5 +1270,203 @@
 		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/preview#save-files",
 		"level": 2,
 		"content": "After slicing, you can save the sliced file to your computer. Click the Save button on the lower-right side of the preview window to save the sliced file. NOTE: The file saving dialog only shows the file format supported by your printer. If you do not see the correct format from the drop-down menu, please go back and check if you have selected the correct printer. The default printer type allows you to save the sliced file in any format supported by CHITUBOX. However, you should only select the default printer type when your printer does not have a built-in profile in CHITUBOX."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Introduction",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/introduction",
+		"level": 1,
+		"content": "ChituManager is a 3D printer management software designed to work with CHITUBOX slicing software, providing users with a comprehensive solution for managing 3D printers. With ChituManager, you can view the status of your printers in real time, transfer files remotely, and initiate prints without having to be physically present at the printer. ChituManager also supports error reporting, historical record summarization and viewing, video monitoring and other features that simplify the 3D printing process, helping users save time and improve efficiency."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "System Requirements",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/introduction#system-requirements",
+		"level": 2,
+		"content": "ChituManager is compatible with Windows (10 and later versions), macOS (11.7 and later versions), and Ubuntu (LTS versions), and requires the following system specifications: https://manual.chitubox.com/en-US/chitu-manager/latest/introduction#system-requirements"
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Installation",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/introduction#installation",
+		"level": 2,
+		"content": "Click the ChituManager icon at the top right corner of the CHITUBOX slicer's main interface. Alternatively, the software will display a download window and prompt you to download ChituManager before proceeding when you use the Network Sending function. Click 'Download and Install', Wait for the download to finish. Once the download is complete, the installation process will automatically start. Click 'Next' to proceed. Select the installation path, we recommend you to use the default path, and click 'Next' to continue. Wait for the installation to complete."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Network Sending",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/network-sending",
+		"level": 1,
+		"content": "After slicing your model, click the 'Network Sending' button to open the network sending window. Edit the file name and choose the format for the sliced file. Then choose the printer you want to use from the printer list or the 'My Printer' list. Click the 'Send' button at the bottom right corner to start saving and transferring the file. A temporary file is saved before transfer starts. This file is used during the transfer process and is automatically deleted when you close the CHITUBOX slicer. Once saved, the file will be transferred to the printer. When the file transfer is complete, click the 'Print' button to start printing. If you run into any issues during the network sending, we have a handy FAQ section available. Click [here](https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq) to view it and troubleshoot any problems you might encounter. Note: 1. Some printers may require a USB drive to store sliced files if internal storage is not supported. 2. Network sending requires the printer and the computer to be under the same local area network (LAN). 3. The transmission speed is limited by printer's network module. Most printers limit the transimission speed to 8M/s. Large files are not recommended for Network Sending."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Printer List",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list",
+		"level": 1,
+		"content": "Click the 'Printer' option in the left navigation bar to open the printer list interface. If you have not added a printer yet, click the 'Add Printer' button to jump to the [Management](https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/management) interface. Note: Please make sure the printer and the computer are on the same LAN. You can view all the added printers and their real-time status, and perform some other simple operations on this interface."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Basic Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#basic-status",
+		"level": 2
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Camera Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#camera-status",
+		"level": 3,
+		"content": "The icon indicates that the printer is connected to a camera."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "USB Drive Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#usb-drive-status",
+		"level": 3,
+		"content": "The icon indicates that the printer is connected to a USB drive."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Network Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#network-status",
+		"level": 3,
+		"content": "Check out this link for detailed information: https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#network-status"
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Device Real-time Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#device-real-time-status",
+		"level": 3,
+		"content": "On this interface, you can also view the real-time status of the device, including offline, standby, connecting, printing, printing completed, paused, and other statuses."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Detailed Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#detailed-status",
+		"level": 2,
+		"content": "You can also click on an individual device to open the detailed status panel for the selected device."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Release Film Usage Count",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#release-film-usage-count",
+		"level": 3,
+		"content": "indicates the number of times the release film has been used."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Exposure Screen Usage Time",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#exposure-screen-usage-time",
+		"level": 3,
+		"content": "indicates the usage time of the exposure screen."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Exposure Screen Usage Time",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#exposure-screen-usage-time",
+		"level": 3,
+		"content": "indicates the usage time of the exposure screen."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Management",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/management",
+		"level": 1,
+		"content": "Click the 'Manage' button in the left navigation bar of the software to open the Device Management interface. It consists of two sections: Add Printer and Added Printer."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Add Printers",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/management#add-printers",
+		"level": 2,
+		"content": "When you open the device management interface, the software will automatically scan all the printers on your local network. Printers detected but have not been added will appear in the list. Find the device you want to add and click the 'Add Printer' button to add it to the 'Added Printer' list."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Added Printer",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/management#added-printer",
+		"level": 2,
+		"content": "Added printers will appear in the 'Added Printer' list. Click on any printer in the list to open its basic information panel. Name: Customizable name of the printer. Can only be modified when the printer is online. Type: The model of the printer. Brand: The brand of the printer. Device Serial Number: The serial number of the printer. Current Device IP: The IP address of the printer. Protocol Version: The SDCP protocol version supported by the printer. Firmware Version: The current firmware version of the printer. Exposure Screen Resolution (px): The resolution of the exposure screen. Printed Size (mm): The maximum printable size of the printer. Delete Printer: Click this button to remove the current printer. Tip: If you log in to your account in the CHITUBOX slicer, all added printers will be stored in the cloud, making it easy for you to manage printers on different computers. Otherwise, your printers will be saved directly to the local computer."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Operations",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations",
+		"level": 1,
+		"content": "The printer list interface allows you to view and perform vairous basic operations on the printer."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Video",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#video",
+		"level": 2
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Open Video",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#open-video",
+		"level": 2,
+		"content": "When the device is online and a camera is connected, the  video icon will appear. click on it to open the camera and display the video feed."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Time-lapse Photography",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#time-lapse-photography",
+		"level": 2,
+		"content": "When a camera is connected to the device and supports time-lapse photography, the 'Time-lapse Photography' function option will be available when opening the device's detailed status panel. Enabling this option will record a time-lapse video of the subsequent printing task. After the printing task is complete, you can open the historical print record list, find the corresponding print task, and click the  icon to download the time-lapse photography video."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Historical Records",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#historical-records",
+		"level": 2,
+		"content": "Click the  icon to view the historical print records for the current device. Information recorded for historical print tasks includes: image, name, status, progress, material, actual consumption, time, total time, and time-lapse photography videos."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "View Device Files",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#view-device-files",
+		"level": 2,
+		"content": "When the device is online and idle, click the  file button to view the current device files. If the device files contain printable files, you can hover your mouse over the file. When the 'Print Immediately' button appears, click it to start printing the selected file."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Pause/Resume Printing",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#pauseresume-printing",
+		"level": 2,
+		"content": "When the device is printing, open the device detailed status panel and you will see the Pause Printing button. Click the button to pause printing. If the printing is already paused, you can resume printing by clicking the Resume Printing button."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Stop Printing",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#stop-printing",
+		"level": 2,
+		"content": "Open the device's Detailed Status panel and click the Stop Printing button to terminate the current printing process."
 	}
 ]
