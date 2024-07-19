@@ -1274,6 +1274,13 @@
 	{
 		"name": "CHITUBOX Basic",
 		"version": "2.1.0",
+		"title": "CHITUBOX Basic FAQ",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq",
+		"level": 1
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
 		"title": "Issues with the Windows Operating System",
 		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#issues-with-the-windows-operating-system",
 		"level": 2
@@ -1392,6 +1399,155 @@
 		"version": "2.1.0",
 		"title": "USB Drive Issues",
 		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#usb-drive-issues",
+		"level": 3,
+		"content": "Printers may fail to read certain USB drives sometimes. Usually this is because your printer's control board was designed to work with USB 2.0 with a capacity of 16GB or less. USB 3.0 uses a larger current, which can cause electrical interference with the control board. Your USB drive should meet the following requirements: * FAT32 format * USB 2.0 * ≤ 16GB * Allocation unit size = 2048 bytes"
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "CHITUBOX Pro FAQ",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq",
+		"level": 1
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Issues with the Windows Operating System",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#issues-with-the-windows-operating-system",
+		"level": 2,
+		"content": "Please make sure you've installed all [required environments](https://manual.chitubox.com/en-US/chitubox-pro/latest/requirements)."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "MSVCR110.dll Missing",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#msvcr110dll-missing",
+		"level": 3,
+		"content": "'MSVCR110.dll Missing' means you are missing Visual C++ Redistributable Packages for Visual Studio 2012. Please download the required environments from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30679)."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "MSVCR120.dll Missing",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#msvcr120dll-missing",
+		"level": 3,
+		"content": "'MSVCR120.dll Missing' means you are missing Visual C++ Redistributable Packages for Visual Studio 2013. Please download the required environments from [here](https://www.microsoft.com/en-us/download/details.aspx?id=40784)."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "MSVCR140.dll Missing",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#msvcr140dll-missing",
+		"level": 3,
+		"content": "'MSVCR140.dll Missing' means you are missing Visual C++ Redistributable Packages for Visual Studio 2015, 2017 and 2019. Please download the required environments from [here](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Other System-Level Errors",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#other-system-level-errors",
+		"level": 3,
+		"content": "* Error -1073741701 * Error -1073741515 * Error -1073740791 * Error -0xc000007b These errors might occur due to some corrupted or damaged operating system files. Please try the following methods: Method 1: Open cmd on your PC (By using Win + R and enter cmd) and enter following command: `DISM.exe /Online /Cleanup-image /Scanhealth` `DISM.exe /Online /Cleanup-image /Restorehealth` Method 2: Open cmd on your PC (by using Win + R and enter cmd) and enter following command: `sfc /scannow` If these methods do not solve the problem, you may need to download and reinstall your system from Microsoft's official website. [Windows 11](https://www.microsoft.com/en-us/software-download/windows11) [Windows 10](https://www.microsoft.com/en-us/software-download/windows10)"
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Windows Explorer Repeatedly Restarting",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#windows-explorer-repeatedly-restarting",
+		"level": 3,
+		"content": "If your Windows Explorer keep restart, please follow these steps to fix it: Press Ctrl + Shift + Esc to bring up your Windows Task Manager, right-click on Windows Explorer, and then click Restart. In your Task Manager, click File > Run new task, enter `cmd`, check Create this task with administrative privileges, and then click OK. Enter: `regsvr32 /u '{CHITUBOX-Installation-Path}\\CHITUBOX_Thumbnail.dll'` Note that you need to replace {CHITUBOX-Installation-Path} with your CHITUBOX's installation path, for example: `regsvr32 /u 'C:\\Program Files\\CHITUBOXPro V1.0.1\\CHITUBOX_Thumbnail.dll'` Hit Enter to run the command. NOTE: Your OpenGL version should not be lower than 2.0."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Conflicts with Fusion 360 or OpenGL error 'Failed to create OpenGL context for format QSurfaceFormat'",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#conflicts-with-fusion-360-or-opengl-error-failed-to-create-opengl-context-for-format-qsurfaceformat",
+		"level": 3,
+		"content": "Please open System Settings> About> Advanced System Settings and remove the environment variable `QT_OPENGL`."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Conflicts with Fusion 360 or OpenGL error 'Failed to create OpenGL context for format QSurfaceFormat'",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#conflicts-with-fusion-360-or-opengl-error-failed-to-create-opengl-context-for-format-qsurfaceformat",
+		"level": 3,
+		"content": "Please open System Settings> About> Advanced System Settings and remove the environment variable `QT_OPENGL`."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "This application failed to start because no Qt platform plugin could be initialized",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized",
+		"level": 3,
+		"content": "Please open System Settings> About> Advanced System Settings and remove the two environment variables `QT_OPENGL` and `QT_PLUGIN_PATH`."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "CHITUBOX Pro is Not Responding",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#chitubox-pro-is-not-responding",
+		"level": 3,
+		"content": "It is very likely a software conflict issue. Please exit all running software one by one and look for any software that conflicts with CHITUBOX. This should resolve the issue in most cases. The following software might cause conflicts: * Anti-virus software  * Tabtip (Touch Keyboard and Handwriting Panel in Windows Task Manager) * PowerToys * Google Drive."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Plugin Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#plugin-issues",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Longer Error -1",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#longer-error--1",
+		"level": 3,
+		"content": "1. Longer's control board process the resolution specially, we have confirmed the correct resolution to be x: 960, y: 1708. We have carefully checked and confirmed, so please don't change it. 2. `Error code -1` is an internal error of the plug-in due to changing of the resolution. Download Longer plugin [here](https://drive.google.com/drive/u/0/folders/1rPRw68b3Z1oqLwc7hSmP5A9Zx0HjatbE?fbclid=IwAR2XyvSs_jCWwqXymOh9ZEvcuyKNuj-ibnmbLAmfOsZMWzjJdke71kxANwQ)."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "File Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#file-issues",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Thumbnail Abnormalities",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#thumbnail-abnormalities",
+		"level": 3,
+		"content": "Check out this link for detailed information: https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#thumbnail-abnormalities"
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Rough Model Surface after Slicing",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#rough-model-surface-after-slicing",
+		"level": 3,
+		"content": "The displayed surface quality of a sliced model may appear rough. This is because each voxel of the model is rendered after slicing, similarly to zooming into each pixel after of an image in Photoshop. As it is shown in the figure, the height of each voxel is the layer height set in the slice setting. The length of each voxel is the length of each pixel on the screen, while the width of each voxel is the width of each pixel on the screen. A voxel is the smallest unit that constitutes a print. Note: This voxel imaging is not visible upon the initial slice preview. You need to reload the .ctb file in CHITUBOX to view it."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Why are STL files scaled when imported into CHITUBOX?",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#why-are-stl-files-scaled-when-imported-into-chitubox",
+		"level": 3,
+		"content": "STL files do not contain specific unit information but use numerical records. Therefore, different software may use different units to read STL files. For example, 1 meter in Blender might equate to 1 millimeter in CHITUBOX. You need to test the scale relationship between your 3D modeling software and CHITUBOX before exporting files."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Clear Cache",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#clear-cache",
+		"level": 3,
+		"content": "1. Open the log path (Setting/Help > Open Log). [📃Click here](https://manual.chitubox.com/en-US/chitubox-pro/latest/application-overview/setting-and-help#open-log) to learn how to open the log. 2. Close CHITUBOX Pro (make sure to close the software first). 3. Ensure that CHITUBOX Pro is closed, back up the 📂machine folder to another location, and then delete all files and folders except the 📄userLogin.cfg file. 4. Restart CHITUBOX Pro. 5. After restarting CHITUBOX Pro, a new 📂machine folder will be generated. You can restore your machines by copying and pasting .cfg files back to the new 📂machine folder. Please do not copy all .cfg files back to the 📂machine folder at once as the issue you encountered might be caused by one of them."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "USB Drive Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#usb-drive-issues",
 		"level": 3,
 		"content": "Printers may fail to read certain USB drives sometimes. Usually this is because your printer's control board was designed to work with USB 2.0 with a capacity of 16GB or less. USB 3.0 uses a larger current, which can cause electrical interference with the control board. Your USB drive should meet the following requirements: * FAT32 format * USB 2.0 * ≤ 16GB * Allocation unit size = 2048 bytes"
 	},
