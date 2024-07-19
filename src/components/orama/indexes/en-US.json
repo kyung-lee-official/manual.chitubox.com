@@ -1748,5 +1748,44 @@
 		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#stop-printing",
 		"level": 2,
 		"content": "Open the device's Detailed Status panel and click the Stop Printing button to terminate the current printing process."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "ChituManager FAQ",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq",
+		"level": 1
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Missing Dll files",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq#missing-dll-files",
+		"level": 2,
+		"content": "If you encounter an error message 'xxx.dll Missing' when launching the software, follow these steps: 1. Close CHITUBOX 2. Open Control Panel on your computer, click on Programs and then click Programs and Features. 3. Find ChituManager and uninstall it. Uninstall all ChituManager programs if multiple are found. 4. Close all third-party antivirus software on your computer.  5. Open CHITUBOX slicer, find the ChituManager icon at the top right corner, and click the icon to download and install it. 6. (For cases where antivirus software is not disabled) If the antivirus software prompts to block files during the download process, select 'Allow this operation'."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Unable To Open ChituManager",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq#unable-to-open-chitumanager",
+		"level": 2,
+		"content": "If clicking the Network Send button or the ChituManager icon does not open the ChituManager program as expected, follow these steps to resolve the issue: 1. Close CHITUBOX slicer. 2. Hold down Ctrl + Shift + Esc to open Task Manager. 3. End all running ChituManager program processes. 4. Restart the CHITUBOX slicer.  Once you restart the software, the Network Management and Network Sending features should work as expected."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Software Launches with a Blank Screen",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq#software-launches-with-a-blank-screen",
+		"level": 2,
+		"content": "1. Navigate to the following file path: Windows: `C:\\Users\\{user-name}\\AppData\\Local\\ChituManager` macOS: `Macintosh HD/Users/{user-name}/Library/Application Support/ChituManager` 2. Delete the 📁'cbdsa-chitubox-network' and 📁'DataBase' folders. 3. Restart ChituManager."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Network Sending Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq#network-sending-issues",
+		"level": 2,
+		"content": "If you experience problems with the network sending function, such as not finding the printer, file sending failures, or slow transmission speeds, consider the following checks: * Network Connection: Ensure that your computer and the printer are connected to the same local area network (LAN). * Firewall Settings: Verify that your firewall is not blocking ChituManager. If it is blocked, the software will be unable to detect your printer. * Filename Characters: Avoid using non-English or non-numeric characters in filenames. These characters can sometimes cause file transfer failures."
 	}
 ]
