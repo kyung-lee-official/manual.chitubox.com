@@ -138,7 +138,8 @@
 			"mainMenu": "Main Menu",
 			"tabMenu": "Tab Menu",
 			"machineTab": "Machine Tab",
-			"toolbar": "Toolbar"
+			"toolbar": "Toolbar",
+			"shortcut": "Shortcut"
 		},
 		"isPageUseful": {
 			"question": "Is this page useful?",

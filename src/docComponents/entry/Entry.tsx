@@ -10,10 +10,11 @@ type EntryType = {
 	toolbar?: string[];
 	machineTab?: string;
 	mode?: "add" | "edit" | "delete";
+	shortcut?: string[];
 };
 
 export const Entry = (props: EntryType) => {
-	const { mainMenu, tabMenu, toolbar, machineTab, mode } = props;
+	const { mainMenu, tabMenu, toolbar, machineTab, mode, shortcut } = props;
 
 	const t = useTranslations("docComponents.entry");
 
@@ -146,6 +147,37 @@ export const Entry = (props: EntryType) => {
 								<Link href={""}>{t("mode")}</Link>
 							</td>
 							<td className="p-2">{mode}</td>
+						</tr>
+					)}
+					{shortcut && (
+						<tr>
+							<td
+								className="w-28 p-2
+								font-bold
+								whitespace-nowrap"
+							>
+								<Link href={""}>{t("shortcut")}</Link>
+							</td>
+							<td className="p-2">
+							<div className="flex items-center gap-3">
+									{shortcut.map((item, index) => {
+										if (index === 0) {
+											return (
+												<div key={index}>{item}</div>
+											);
+										} else {
+											return (
+												<div className="flex items-center gap-3">
+													<div>+</div>
+													<div key={index}>
+														{item}
+													</div>
+												</div>
+											);
+										}
+									})}
+								</div>
+							</td>
 						</tr>
 					)}
 				</tbody>

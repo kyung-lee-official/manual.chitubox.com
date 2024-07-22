@@ -136,7 +136,8 @@
 			"mainMenu": "主菜單",
 			"tabMenu": "標籤菜單",
 			"machineTab": "機器標籤",
-			"toolbar": "工具欄"
+			"toolbar": "工具欄",
+			"shortcut": "快捷鍵"
 		},
 		"isPageUseful": {
 			"question": "本页面是否有用？",
