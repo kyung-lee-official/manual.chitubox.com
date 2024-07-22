@@ -133,6 +133,13 @@
 			"expand": "Click to expand",
 			"hide": "Click to hide"
 		},
+		"entry": {
+			"title": "Entry",
+			"mainMenu": "Main Menu",
+			"tabMenu": "Tab Menu",
+			"machineTab": "Machine Tab",
+			"toolbar": "Toolbar"
+		},
 		"isPageUseful": {
 			"question": "Is this page useful?",
 			"thanks": "Thanks for your feedback!"

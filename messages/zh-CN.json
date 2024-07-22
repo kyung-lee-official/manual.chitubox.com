@@ -131,6 +131,13 @@
 			"expand": "点击展开",
 			"hide": "点击收起"
 		},
+		"entry": {
+			"title": "入口",
+			"mainMenu": "主菜单",
+			"tabMenu": "标签菜单",
+			"machineTab": "机器标签",
+			"toolbar": "工具栏"
+		},
 		"isPageUseful": {
 			"question": "本页面是否有用？",
 			"thanks": "感谢您的反馈！"

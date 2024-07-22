@@ -131,6 +131,13 @@
 			"expand": "點擊展開",
 			"hide": "點擊隱藏"
 		},
+		"entry": {
+			"title": "入口",
+			"mainMenu": "主菜單",
+			"tabMenu": "標籤菜單",
+			"machineTab": "機器標籤",
+			"toolbar": "工具欄"
+		},
 		"isPageUseful": {
 			"question": "本页面是否有用？",
 			"thanks": "感謝您的反饋！"
