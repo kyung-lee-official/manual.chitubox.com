@@ -1,3 +1,5 @@
+"use client";
+
 import { Nav } from "@/components/icons/Icons";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
