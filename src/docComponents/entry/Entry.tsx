@@ -3,12 +3,13 @@
 import { Nav } from "@/components/icons/Icons";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { ReactNode } from "react";
 
 type EntryType = {
 	mainMenu?: string[];
-	tabMenu?: string[];
-	toolbar?: string[];
-	machineTab?: string;
+	tabMenu?:  ReactNode[];
+	toolbar?: ReactNode[];
+	machineTab?: ReactNode;
 	mode?: "add" | "edit" | "delete";
 	shortcut?: string[];
 };
@@ -89,7 +90,7 @@ export const Entry = (props: EntryType) => {
 											return (
 												<div className="flex items-center gap-3">
 													<div>&gt;</div>
-													<div key={index}>
+													<div key={index} className="whitespace-nowrap">
 														{item}
 													</div>
 												</div>
