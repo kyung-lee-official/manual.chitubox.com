@@ -457,14 +457,12 @@
 																"depth": 3,
 																"value": "New Project",
 																"id": "new-project-1"
-															}
-														]
-													},
-													{
-														"depth": 2,
-														"value": "Export Model",
-														"id": "export-model-1",
-														"children": [
+															},
+															{
+																"depth": 3,
+																"value": "Export Model",
+																"id": "export-model-1"
+															},
 															{
 																"depth": 3,
 																"value": "Replace Model",
@@ -648,8 +646,8 @@
 													},
 													{
 														"depth": 2,
-														"value": "Message Remind",
-														"id": "message-remind"
+														"value": "Notifications",
+														"id": "notifications"
 													},
 													{
 														"depth": 2,
@@ -3819,6 +3817,11 @@
 										"children": [
 											{
 												"depth": 2,
+												"value": "System Requirements",
+												"id": "system-requirements"
+											},
+											{
+												"depth": 2,
 												"value": "Installation",
 												"id": "installation"
 											}
@@ -6584,6 +6587,105 @@
 								]
 							},
 							{
+								"item": "printer-management",
+								"label": "打印机管理",
+								"path": "/zh-CN/chitubox-pro/latest/printer-management",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "打印机管理",
+										"id": "打印机管理",
+										"children": [
+											{
+												"depth": 2,
+												"value": "添加机器",
+												"id": "添加机器"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "file",
+								"label": "文件",
+								"path": "/zh-CN/chitubox-pro/latest/file",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "文件",
+										"id": "文件",
+										"children": [
+											{
+												"depth": 2,
+												"value": "项目文件",
+												"id": "项目文件",
+												"children": [
+													{
+														"depth": 3,
+														"value": "保存和打开项目文件",
+														"id": "保存和打开项目文件"
+													},
+													{
+														"depth": 3,
+														"value": "文件命名",
+														"id": "文件命名"
+													},
+													{
+														"depth": 3,
+														"value": "兼容性",
+														"id": "兼容性"
+													},
+													{
+														"depth": 3,
+														"value": "临时文件",
+														"id": "临时文件"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "3D 网格文件",
+												"id": "3d-网格文件",
+												"children": [
+													{
+														"depth": 3,
+														"value": "支持的 3D 网格文件格式",
+														"id": "支持的-3d-网格文件格式"
+													},
+													{
+														"depth": 3,
+														"value": "导入和导出 3D 网格文件",
+														"id": "导入和导出-3d-网格文件"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "切片文件",
+												"id": "切片文件",
+												"children": [
+													{
+														"depth": 3,
+														"value": "支持的切片文件格式",
+														"id": "支持的切片文件格式"
+													},
+													{
+														"depth": 3,
+														"value": "导入和导出切片文件",
+														"id": "导入和导出切片文件"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "配置文件",
+												"id": "配置文件"
+											}
+										]
+									}
+								]
+							},
+							{
 								"item": "model-preparation",
 								"label": "模型准备",
 								"subItems": [
@@ -6597,11 +6699,6 @@
 												"value": "准备",
 												"id": "准备",
 												"children": [
-													{
-														"depth": 2,
-														"value": "添加机器",
-														"id": "添加机器"
-													},
 													{
 														"depth": 2,
 														"value": "历史记录",
@@ -8732,6 +8829,11 @@
 										"value": "介绍",
 										"id": "介绍",
 										"children": [
+											{
+												"depth": 2,
+												"value": "系统要求",
+												"id": "系统要求"
+											},
 											{
 												"depth": 2,
 												"value": "安装",
@@ -13418,6 +13520,11 @@
 										"value": "介紹",
 										"id": "介紹",
 										"children": [
+											{
+												"depth": 2,
+												"value": "系統要求",
+												"id": "系統要求"
+											},
 											{
 												"depth": 2,
 												"value": "安装",

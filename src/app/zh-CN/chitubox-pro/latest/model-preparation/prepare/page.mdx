@@ -1,19 +1,19 @@
 import {
-	AddMachineIcon,
-	HistoryIcon,
 	ChituboxOpenIcon,
-	ExportIcon,
 	ChituboxSaveIcon,
-	CopyIcon,
-	SplitModelIcon,
 	ChituboxAutoLayoutIcon,
-	AddTapIcon,
-	BooleanIcon,
-	CutIcon,
 	ChituboxHollowIcon,
 	ChituboxDigHoleIcon,
 } from "@/components/icons/Icons";
-import { Entry } from "@/docComponents/entry/Entry";
+import { 
+	HistoryIcon, 
+	ExportIcon, 
+	CopyIcon, 
+	SplitModelIcon, 
+	AddTapIcon, 
+	BooleanIcon,
+	CutIcon
+} from "@/components/icons/ChituboxProIcons";
 
 export const metadata = {
 	title: "准备",
@@ -31,13 +31,6 @@ export const metadata = {
 # 准备
 
 点击主顶部的 “准备” 标签打开准备界面。
-
-## 添加机器
-
-<Entry tabMenu={["准备", <div className="flex items-center gap-1"><HistoryIcon width={10} />添加机器</div>]} 
-	machineTab={"点击添加 +"} />
-
-在添加机器面板中选择你的机器型号，然后点击“下一步”按钮，设置机器参数，点击“应用”完成添加。
 
 ## 历史记录
 
