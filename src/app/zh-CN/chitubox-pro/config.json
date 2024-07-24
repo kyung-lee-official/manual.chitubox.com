@@ -24,33 +24,37 @@
 				},
 				{
 					"item": "printer-management",
-					"label": "打印机管理"
+					"label": "打印机管理",
+					"subItems": [
+						{
+							"item": "add-and-delete-printers",
+							"label": "添加和删除打印机"
+						},
+						{
+							"item": "printer-configuration",
+							"label": "打印机设置"
+						}
+					]
 				},
 				{
 					"item": "file",
 					"label": "文件"
 				},
 				{
-					"item": "model-preparation",
-					"label": "模型准备",
-					"subItems": [
-						{
-							"item": "prepare",
-							"label": "准备"
-						},
-						{
-							"item": "repair",
-							"label": "修复"
-						},
-						{
-							"item": "analyze-and-measure",
-							"label": "分析/测量"
-						}
-					]
+					"item": "model-processing",
+					"label": "模型处理"
+				},
+				{
+					"item": "analyze-and-measure",
+					"label": "分析/测量"
 				},
 				{
 					"item": "add-supports",
 					"label": "添加支撑"
+				},
+				{
+					"item": "risk-detection",
+					"label": "风险检测"
 				},
 				{
 					"item": "slice",
@@ -60,7 +64,6 @@
 							"item": "slice-settings",
 							"label": "切片设置"
 						},
-
 						{
 							"item": "slice-mode",
 							"label": "切片模式"
@@ -76,24 +79,24 @@
 					"label": "ChituAction"
 				},
 				{
-					"item": "others",
-					"label": "其他",
+					"item": "user-interface",
+					"label": "用户界面",
 					"subItems": [
 						{
-							"item": "menu",
-							"label": "菜单"
+							"item": "main-menu",
+							"label": "主菜单"
+						},
+						{
+							"item": "tab-menu",
+							"label": "标签菜单"
 						},
 						{
 							"item": "gadgets",
 							"label": "小工具"
 						},
 						{
-							"item": "file-list",
-							"label": "文件列表"
-						},
-						{
-							"item": "risk-detection",
-							"label": "风险检测"
+							"item": "model-list",
+							"label": "模型列表"
 						}
 					]
 				}

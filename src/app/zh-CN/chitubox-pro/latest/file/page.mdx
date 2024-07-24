@@ -1,4 +1,6 @@
 import { Entry } from "@/docComponents/entry/Entry";
+import { ChituboxOpenIcon, ChituboxSaveIcon } from "@/components/icons/Icons";
+import { HistoryIcon, ExportIcon } from "@/components/icons/ChituboxProIcons";
 
 export const metadata = {
 	title: "文件",
@@ -16,7 +18,11 @@ export const metadata = {
 
 ## 项目文件
 
-### 保存和打开项目文件
+### 打开和保存项目文件
+
+<ChituboxOpenIcon /> 打开项目文件、模型文件或切片文件。
+
+<ChituboxSaveIcon /> 保存为项目文件或模型文件。
 
 ### 文件命名
 
@@ -30,10 +36,18 @@ export const metadata = {
 
 ### 导入和导出 3D 网格文件
 
+<ExportIcon /> 导出文件，共有全部导出、合并导出、分部导出可选。
+
+### 打开最近的文件
+
+<HistoryIcon /> 打开在软件中加载过的项目文件、模型文件或切片文件。
+
 ## 切片文件
 
 ### 支持的切片文件格式
 
 ### 导入和导出切片文件
+
+### 使用插件导出切片文件
 
 ## 配置文件

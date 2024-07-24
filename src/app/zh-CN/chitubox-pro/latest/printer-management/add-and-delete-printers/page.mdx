@@ -4,7 +4,7 @@ import { AddMachineIcon } from "@/components/icons/ChituboxProIcons";
 export const metadata = {
 	title: "打印机管理",
 	authors: [{ name: "CHITUBOX Team" }],
-	description: "本节介绍了如何在 CHITUBOX 中添加、配置和删除打印机。",
+	description: "本节介绍了如何在 CHITUBOX 中添加、编辑和删除打印机。",
 	other: {
 		pageId: "/zh-CN/chitubox-pro/v2.0.0/printer-management",
 	},
@@ -13,6 +13,19 @@ export const metadata = {
 	},
 };
 
-# 打印机管理
+# 添加和删除打印机
 
-本节介绍了如何在 CHITUBOX 中添加、配置和删除打印机。
+## 添加打印机
+
+<Entry
+	tabMenu={[
+		"准备",
+		<div className="flex items-center gap-1">
+			<AddMachineIcon />
+			添加机器
+		</div>,
+	]}
+	machineTab={"点击添加 +"}
+/>
+
+## 删除打印机
