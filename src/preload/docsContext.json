@@ -6419,53 +6419,7 @@
 											{
 												"depth": 2,
 												"value": "系统要求",
-												"id": "系统要求",
-												"children": [
-													{
-														"depth": 3,
-														"value": "Windows",
-														"id": "windows",
-														"children": [
-															{
-																"depth": 4,
-																"value": "所需运行环境",
-																"id": "所需运行环境"
-															}
-														]
-													},
-													{
-														"depth": 3,
-														"value": "macOS",
-														"id": "macos"
-													},
-													{
-														"depth": 3,
-														"value": "Linux",
-														"id": "linux"
-													}
-												]
-											},
-											{
-												"depth": 2,
-												"value": "支持的文件",
-												"id": "支持的文件",
-												"children": [
-													{
-														"depth": 3,
-														"value": "项目文件",
-														"id": "项目文件"
-													},
-													{
-														"depth": 3,
-														"value": "可打印的切片文件",
-														"id": "可打印的切片文件"
-													},
-													{
-														"depth": 3,
-														"value": "3D 网格/CAD 模型文件",
-														"id": "3d-网格cad-模型文件"
-													}
-												]
+												"id": "系统要求"
 											}
 										]
 									}
