@@ -136,8 +136,10 @@
 			"mainMenu": "主菜單",
 			"tabMenu": "標籤菜單",
 			"machineTab": "機器標籤",
+			"modelList": "模型列表",
 			"toolbar": "工具欄",
-			"shortcut": "快捷鍵"
+			"shortcut": "快捷鍵",
+			"supportSettingsPanel": "支撐設定面板"
 		},
 		"isPageUseful": {
 			"question": "本页面是否有用？",

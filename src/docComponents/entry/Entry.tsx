@@ -7,15 +7,17 @@ import { ReactNode } from "react";
 
 type EntryType = {
 	mainMenu?: string[];
-	tabMenu?:  ReactNode[];
+	tabMenu?: ReactNode[];
 	toolbar?: ReactNode[];
 	machineTab?: ReactNode;
 	mode?: "add" | "edit" | "delete";
 	shortcut?: string[];
+	modelList?: ReactNode[];
+	supportSettingsPanel?: ReactNode[];
 };
 
 export const Entry = (props: EntryType) => {
-	const { mainMenu, tabMenu, toolbar, machineTab, mode, shortcut } = props;
+	const { mainMenu, tabMenu, toolbar, machineTab, modelList, mode, shortcut, supportSettingsPanel } = props;
 
 	const t = useTranslations("docComponents.entry");
 
@@ -138,6 +140,68 @@ export const Entry = (props: EntryType) => {
 							<td className="p-2">{machineTab}</td>
 						</tr>
 					)}
+					{modelList && (
+						<tr>
+							<td
+								className="w-28 p-2
+								font-bold
+								whitespace-nowrap"
+							>
+								<Link href={""}>{t("modelList")}</Link>
+							</td>
+							<td className="p-2">
+								<div className="flex items-center gap-3">
+									{modelList.map((item, index) => {
+										if (index === 0) {
+											return (
+												<div key={index}>{item}</div>
+											);
+										} else {
+											return (
+												<div className="flex items-center gap-3">
+													<div>&gt;</div>
+													<div key={index} className="whitespace-nowrap">
+														{item}
+													</div>
+												</div>
+											);
+										}
+									})}
+								</div>
+							</td>
+						</tr>
+					)}
+					{supportSettingsPanel && (
+						<tr>
+							<td
+								className="w-28 p-2
+								font-bold
+								whitespace-nowrap"
+							>
+								<Link href={""}>{t("supportSettingsPanel")}</Link>
+							</td>
+							<td className="p-2">
+								<div className="flex items-center gap-3">
+									{supportSettingsPanel.map((item, index) => {
+										if (index === 0) {
+											return (
+												<div key={index}>{item}</div>
+											);
+										} else {
+											return (
+												<div className="flex items-center gap-3">
+													<div>&gt;</div>
+													<div key={index} className="whitespace-nowrap">
+														{item}
+													</div>
+												</div>
+											);
+										}
+									})}
+								</div>
+							</td>
+						</tr>
+					)}
 					{mode && (
 						<tr>
 							<td
@@ -160,7 +224,7 @@ export const Entry = (props: EntryType) => {
 								<Link href={""}>{t("shortcut")}</Link>
 							</td>
 							<td className="p-2">
-							<div className="flex items-center gap-3">
+								<div className="flex items-center gap-3">
 									{shortcut.map((item, index) => {
 										if (index === 0) {
 											return (

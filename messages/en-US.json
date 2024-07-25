@@ -138,8 +138,10 @@
 			"mainMenu": "Main Menu",
 			"tabMenu": "Tab Menu",
 			"machineTab": "Machine Tab",
+			"modelList": "Model List",
 			"toolbar": "Toolbar",
-			"shortcut": "Shortcut"
+			"shortcut": "Shortcut",
+			"supportSettingsPanel": "Support Settings Panel"
 		},
 		"isPageUseful": {
 			"question": "Is this page useful?",
