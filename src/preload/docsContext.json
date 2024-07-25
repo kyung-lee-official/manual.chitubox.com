@@ -7401,6 +7401,30 @@
 								]
 							},
 							{
+								"item": "standard-library",
+								"label": "标准库",
+								"path": "/zh-CN/chitubox-pro/latest/standard-library",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "标准库",
+										"id": "标准库"
+									}
+								]
+							},
+							{
+								"item": "rma",
+								"label": "材料联盟",
+								"path": "/zh-CN/chitubox-pro/latest/rma",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "材料联盟",
+										"id": "材料联盟"
+									}
+								]
+							},
+							{
 								"item": "user-interface",
 								"label": "用户界面",
 								"subItems": [

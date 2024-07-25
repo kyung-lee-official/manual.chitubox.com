@@ -135,13 +135,33 @@
 		},
 		"entry": {
 			"title": "Entry",
-			"mainMenu": "Main Menu",
-			"tabMenu": "Tab Menu",
-			"machineTab": "Machine Tab",
-			"modelList": "Model List",
-			"toolbar": "Toolbar",
-			"shortcut": "Shortcut",
-			"supportSettingsPanel": "Support Settings Panel"
+			"mainMenu": {
+				"title": "Main Menu",
+				"link": "/en-US/chitubox-pro/latest/user-interface/main-menu"
+			},
+			"tabMenu": {
+				"title": "Tab Menu",
+				"link": "/en-US/chitubox-pro/latest/user-interface/tab-menu"
+			},
+			"machineTab": {
+				"title": "Machine Tab",
+				"link": "/en-US/chitubox-pro/latest/user-interface/machine-tab"
+			},
+			"toolbar": {
+				"title": "Toolbar",
+				"link": "/en-US/chitubox-pro/latest/user-interface/toolbar"
+			},
+			"shortcut": {
+				"title": "Shortcut"
+			},
+			"modelList": {
+				"title": "Model List",
+				"link": ""
+			},
+			"supportSettingsPanel": {
+				"title": "Support Settings Panel",
+				"link": ""
+			}
 		},
 		"isPageUseful": {
 			"question": "Is this page useful?",

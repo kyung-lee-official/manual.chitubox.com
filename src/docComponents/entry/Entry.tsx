@@ -10,14 +10,13 @@ type EntryType = {
 	tabMenu?: ReactNode[];
 	toolbar?: ReactNode[];
 	machineTab?: ReactNode;
-	mode?: "add" | "edit" | "delete";
 	shortcut?: string[];
 	modelList?: ReactNode[];
 	supportSettingsPanel?: ReactNode[];
 };
 
 export const Entry = (props: EntryType) => {
-	const { mainMenu, tabMenu, toolbar, machineTab, modelList, mode, shortcut, supportSettingsPanel } = props;
+	const { mainMenu, tabMenu, toolbar, machineTab, modelList, shortcut, supportSettingsPanel } = props;
 
 	const t = useTranslations("docComponents.entry");
 
@@ -48,7 +47,9 @@ export const Entry = (props: EntryType) => {
 								font-bold
 								whitespace-nowrap"
 							>
-								<Link href={""}>{t("mainMenu")}</Link>
+								<Link href={t("mainMenu.link")}>
+									{t("mainMenu.title")}
+								</Link>
 							</td>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
@@ -79,7 +80,9 @@ export const Entry = (props: EntryType) => {
 								font-bold
 								whitespace-nowrap"
 							>
-								<Link href={""}>{t("tabMenu")}</Link>
+								<Link href={t("tabMenu.link")}>
+									{t("tabMenu.title")}
+								</Link>
 							</td>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
@@ -92,7 +95,10 @@ export const Entry = (props: EntryType) => {
 											return (
 												<div className="flex items-center gap-3">
 													<div>&gt;</div>
-													<div key={index} className="whitespace-nowrap">
+													<div
+														key={index}
+														className="whitespace-nowrap"
+													>
 														{item}
 													</div>
 												</div>
@@ -110,7 +116,9 @@ export const Entry = (props: EntryType) => {
 								font-bold
 								whitespace-nowrap"
 							>
-								<Link href={""}>{t("toolbar")}</Link>
+								<Link href={t("toolbar.link")}>
+									{t("toolbar.title")}
+								</Link>
 							</td>
 							<td className="p-2">
 								{toolbar.map((item, index) => {
@@ -135,7 +143,9 @@ export const Entry = (props: EntryType) => {
 								font-bold
 								whitespace-nowrap"
 							>
-								<Link href={""}>{t("machineTab")}</Link>
+								<Link href={t("machineTab.link")}>
+									{t("machineTab.title")}
+								</Link>
 							</td>
 							<td className="p-2">{machineTab}</td>
 						</tr>
@@ -202,18 +212,6 @@ export const Entry = (props: EntryType) => {
 							</td>
 						</tr>
 					)}
-					{mode && (
-						<tr>
-							<td
-								className="w-28 p-2
-								font-bold
-								whitespace-nowrap"
-							>
-								<Link href={""}>{t("mode")}</Link>
-							</td>
-							<td className="p-2">{mode}</td>
-						</tr>
-					)}
 					{shortcut && (
 						<tr>
 							<td
@@ -224,6 +222,7 @@ export const Entry = (props: EntryType) => {
 								<Link href={""}>{t("shortcut")}</Link>
 							</td>
 							<td className="p-2">
+								<div className="flex items-center gap-3">
 								<div className="flex items-center gap-3">
 									{shortcut.map((item, index) => {
 										if (index === 0) {
