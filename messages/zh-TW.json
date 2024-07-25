@@ -153,12 +153,12 @@
 				"title": "快捷鍵"
 			},
 			"modelList": {
-				"title": "Model List",
-				"link": "模型列表"
+				"title": "模型列表",
+				"link": ""
 			},
 			"supportSettingsPanel": {
-				"title": "Support Settings Panel",
-				"link": "支撐設定面板"
+				"title": "支撐設定面板",
+				"link": ""
 			}
 		},
 		"isPageUseful": {

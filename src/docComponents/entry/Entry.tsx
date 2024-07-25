@@ -165,7 +165,9 @@ export const Entry = (props: EntryType) => {
 								font-bold
 								whitespace-nowrap"
 							>
-								<Link href={""}>{t("modelList.title")}</Link>
+								<Link href={t("modelList.link")}>
+									{t("modelList.title")}
+								</Link>
 							</td>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
@@ -199,7 +201,7 @@ export const Entry = (props: EntryType) => {
 								font-bold
 								whitespace-nowrap"
 							>
-								<Link href={""}>
+								<Link href={t("supportSettingsPanel.link")}>
 									{t("supportSettingsPanel.title")}
 								</Link>
 							</td>
@@ -235,7 +237,9 @@ export const Entry = (props: EntryType) => {
 								font-bold
 								whitespace-nowrap"
 							>
-								<Link href={""}>{t("shortcut.title")}</Link>
+								<Link href={t("shortcut.link")}>
+									{t("shortcut.title")}
+								</Link>
 							</td>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
