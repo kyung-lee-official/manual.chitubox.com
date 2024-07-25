@@ -223,7 +223,6 @@ export const Entry = (props: EntryType) => {
 							</td>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
-								<div className="flex items-center gap-3">
 									{shortcut.map((item, index) => {
 										if (index === 0) {
 											return (
