@@ -2,6 +2,15 @@ import {
 	ChituboxAutoLayoutIcon,
 	ChituboxHollowIcon,
 	ChituboxDigHoleIcon,
+	ChituboxSelectIcon,
+	ChituboxSelectBoxIcon,
+	ChituboxMoveIcon,
+	ChituboxRotateIcon,
+	ChituboxScaleIcon,
+	ChituboxGlobalIcon,
+	ChituboxLocalIcon,
+	ChituboxResetIcon,
+	ChituboxMirrorIcon,
 } from "@/components/icons/Icons";
 import {
 	CopyIcon,
@@ -17,7 +26,7 @@ export const metadata = {
 	description:
 		"CHITUBOX Pro 中的模型处理功能。包括选择、移动、旋转、缩放、镜像、复制、拆分模型、自动布局、添加标签、布尔操作、切割、镂空、挖洞等",
 	other: {
-		pageId: "/zh-CN/chitubox-pro/v2.x/processing",
+		pageId: "/zh-CN/chitubox-pro/v2.0.0/processing",
 	},
 	openGraph: {
 		images: ["/images/docs/og_logo.png"],
@@ -30,18 +39,51 @@ export const metadata = {
 
 点击主顶部的 “准备” 标签打开准备界面。
 
-
 ## 选择
+
+<ChituboxSelectIcon /> 通过点击的方式选择画面中的模型。
+
+<ChituboxSelectBoxIcon /> 通过框选的方式选择画面中的模型。
 
 ## 变换
 
 ### 移动
 
+<ChituboxMoveIcon /> 用于移动所选模型。你也可以通过在移动面板中输入坐标来精准移动模型。
+
+-   居中：将所选模型居中放置在打印平台上。如果多个模型被选择，则以所选多个模型的组合的中心为准进行居中。
+
+-   放在底板上：以模型的最低点为基准点，将所选模型放在底板上。
+
 ### 旋转
+
+<ChituboxRotateIcon /> 用于旋转所选模型。你也可以通过在移动面板中输入角度来精准旋转模型。
+
+-   组合中心：以所选的多个模型的组合的中心为旋转中心。
+
+-   按面放平：将模型按照你所选择的面放置在打印平台上。
+
+-   自动定向已选：将模型旋转至合适的摆放角度。
 
 ### 缩放
 
+<ChituboxScaleIcon /> 用于缩放所选模型。你也可以通过在移动面板中输入大小和比例来精准缩放模型。
+
+<ChituboxGlobalIcon /> 全局坐标：缩放手柄平行于全局坐标。
+
+<ChituboxLocalIcon /> 局部坐标：缩放手柄平行于模型的本地坐标。
+
+<ChituboxResetIcon /> 重置：重置比例为 100%。
+
+-   锁定比例：启用此选项后，模型的 X、Y、Z 三轴将以相同的比例进行缩放。这有助于保持模型的整体比例，避免变形。
+
+-   缩放以适应：自动调整模型的大小，使其尺寸能够适配打印平台。
+
 ## 镜像
+
+<ChituboxMirrorIcon /> 将所选模型沿指定轴线镜像。
+
+-   保留原始模型：启用此选项后，可同时保留原始模型和镜像模型。
 
 ## 复制
 
