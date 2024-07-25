@@ -135,11 +135,25 @@
 		},
 		"entry": {
 			"title": "Entry",
-			"mainMenu": "Main Menu",
-			"tabMenu": "Tab Menu",
-			"machineTab": "Machine Tab",
-			"toolbar": "Toolbar",
-			"shortcut": "Shortcut"
+			"mainMenu": {
+				"title": "Main Menu",
+				"link": "/en-US/chitubox-pro/latest/user-interface/main-menu"
+			},
+			"tabMenu": {
+				"title": "Tab Menu",
+				"link": "/en-US/chitubox-pro/latest/user-interface/tab-menu"
+			},
+			"machineTab": {
+				"title": "Machine Tab",
+				"link": "/en-US/chitubox-pro/latest/user-interface/machine-tab"
+			},
+			"toolbar": {
+				"title": "Toolbar",
+				"link": "/en-US/chitubox-pro/latest/user-interface/toolbar"
+			},
+			"shortcut": {
+				"title": "Shortcut"
+			}
 		},
 		"isPageUseful": {
 			"question": "Is this page useful?",

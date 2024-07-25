@@ -133,11 +133,25 @@
 		},
 		"entry": {
 			"title": "入口",
-			"mainMenu": "主菜單",
-			"tabMenu": "標籤菜單",
-			"machineTab": "機器標籤",
-			"toolbar": "工具欄",
-			"shortcut": "快捷鍵"
+			"mainMenu": {
+				"title": "主菜單",
+				"link": "/zh-TW/chitubox-pro/latest/user-interface/main-menu"
+			},
+			"tabMenu": {
+				"title": "標籤菜單",
+				"link": "/zh-TW/chitubox-pro/latest/user-interface/tab-menu"
+			},
+			"machineTab": {
+				"title": "機器標籤",
+				"link": "/zh-TW/chitubox-pro/latest/user-interface/machine-tab"
+			},
+			"toolbar": {
+				"title": "工具欄",
+				"link": "/zh-TW/chitubox-pro/latest/user-interface/toolbar"
+			},
+			"shortcut": {
+				"title": "快捷鍵"
+			}
 		},
 		"isPageUseful": {
 			"question": "本页面是否有用？",
