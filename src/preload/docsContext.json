@@ -6472,9 +6472,9 @@
 								]
 							},
 							{
-								"item": "account-and-license-management",
-								"label": "管理账号和密钥",
-								"path": "/zh-CN/chitubox-pro/latest/account-and-license-management",
+								"item": "manage-your-account-and-license",
+								"label": "管理你的账号和许可",
+								"path": "/zh-CN/chitubox-pro/latest/manage-your-account-and-license",
 								"toc": [
 									{
 										"depth": 1,
@@ -6928,11 +6928,6 @@
 										"children": [
 											{
 												"depth": 2,
-												"value": "碰撞检测",
-												"id": "碰撞检测"
-											},
-											{
-												"depth": 2,
 												"value": "显示大小",
 												"id": "显示大小"
 											},
@@ -7084,157 +7079,150 @@
 										"toc": [
 											{
 												"depth": 1,
-												"value": "设置打印参数",
-												"id": "设置打印参数",
+												"value": "切片设置",
+												"id": "切片设置",
 												"children": [
 													{
 														"depth": 2,
-														"value": "切片设置",
-														"id": "切片设置",
+														"value": "机器",
+														"id": "机器"
+													},
+													{
+														"depth": 2,
+														"value": "树脂",
+														"id": "树脂"
+													},
+													{
+														"depth": 2,
+														"value": "打印",
+														"id": "打印",
 														"children": [
 															{
 																"depth": 3,
-																"value": "树脂",
-																"id": "树脂"
+																"value": "1. 二段运动控制 TSMC",
+																"id": "1-二段运动控制-tsmc"
 															},
 															{
 																"depth": 3,
-																"value": "打印",
-																"id": "打印",
+																"value": "2. 打印过程等待模式",
+																"id": "2-打印过程等待模式",
 																"children": [
 																	{
 																		"depth": 4,
-																		"value": "1. 二段运动控制 TSMC",
-																		"id": "1-二段运动控制-tsmc"
+																		"value": "2.1 静止时间",
+																		"id": "21-静止时间"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "2. 打印过程等待模式",
-																		"id": "2-打印过程等待模式",
+																		"value": "2.2 灯灭延迟",
+																		"id": "22-灯灭延迟",
 																		"children": [
 																			{
 																				"depth": 5,
-																				"value": "2.1 静止时间",
-																				"id": "21-静止时间"
+																				"value": "2.2.1 什么是灯灭延迟",
+																				"id": "221-什么是灯灭延迟"
 																			},
 																			{
 																				"depth": 5,
-																				"value": "2.2 灯灭延迟",
-																				"id": "22-灯灭延迟",
-																				"children": [
-																					{
-																						"depth": 6,
-																						"value": "2.2.1 什么是灯灭延迟",
-																						"id": "221-什么是灯灭延迟"
-																					},
-																					{
-																						"depth": 6,
-																						"value": "CHITUBOX 中的灯灭延迟计算",
-																						"id": "chitubox-中的灯灭延迟计算"
-																					},
-																					{
-																						"depth": 6,
-																						"value": "2.2.2 计算器",
-																						"id": "222-计算器"
-																					}
-																				]
-																			}
-																		]
-																	},
-																	{
-																		"depth": 4,
-																		"value": "缓冲层",
-																		"id": "缓冲层"
-																	}
-																]
-															},
-															{
-																"depth": 3,
-																"value": "Gcode",
-																"id": "gcode"
-															},
-															{
-																"depth": 3,
-																"value": "高级",
-																"id": "高级",
-																"children": [
-																	{
-																		"depth": 4,
-																		"value": "1. 底层光强 PWM",
-																		"id": "1-底层光强-pwm"
-																	},
-																	{
-																		"depth": 4,
-																		"value": "2. 光强 PWM",
-																		"id": "2-光强-pwm"
-																	},
-																	{
-																		"depth": 4,
-																		"value": "3. 图像灰度",
-																		"id": "3-图像灰度"
-																	},
-																	{
-																		"depth": 4,
-																		"value": "4. 抗锯齿",
-																		"id": "4-抗锯齿"
-																	},
-																	{
-																		"depth": 4,
-																		"value": "5. 收缩补偿",
-																		"id": "5-收缩补偿"
-																	},
-																	{
-																		"depth": 4,
-																		"value": "6. 公差补偿",
-																		"id": "6-公差补偿"
-																	},
-																	{
-																		"depth": 4,
-																		"value": "7. 底部公差补偿",
-																		"id": "7-底部公差补偿"
-																	},
-																	{
-																		"depth": 4,
-																		"value": "8. 打印时间补偿",
-																		"id": "8-打印时间补偿"
-																	},
-																	{
-																		"depth": 4,
-																		"value": "9. 蒙版",
-																		"id": "9-蒙版",
-																		"children": [
-																			{
-																				"depth": 5,
-																				"value": "9.1 蒙版生成器",
-																				"id": "91-蒙版生成器",
-																				"children": [
-																					{
-																						"depth": 6,
-																						"value": "9.1.1 中心辐射",
-																						"id": "911-中心辐射"
-																					},
-																					{
-																						"depth": 6,
-																						"value": "9.1.2 矩阵模式",
-																						"id": "912-矩阵模式"
-																					}
-																				]
+																				"value": "CHITUBOX 中的灯灭延迟计算",
+																				"id": "chitubox-中的灯灭延迟计算"
 																			},
 																			{
 																				"depth": 5,
-																				"value": "9.2 灰度单位",
-																				"id": "92-灰度单位"
+																				"value": "2.2.2 计算器",
+																				"id": "222-计算器"
 																			}
 																		]
 																	}
 																]
+															},
+															{
+																"depth": 3,
+																"value": "缓冲层",
+																"id": "缓冲层"
 															}
 														]
 													},
 													{
 														"depth": 2,
-														"value": "打印机",
-														"id": "打印机"
+														"value": "Gcode",
+														"id": "gcode"
+													},
+													{
+														"depth": 2,
+														"value": "高级",
+														"id": "高级",
+														"children": [
+															{
+																"depth": 3,
+																"value": "1. 底层光强 PWM",
+																"id": "1-底层光强-pwm"
+															},
+															{
+																"depth": 3,
+																"value": "2. 光强 PWM",
+																"id": "2-光强-pwm"
+															},
+															{
+																"depth": 3,
+																"value": "3. 图像灰度",
+																"id": "3-图像灰度"
+															},
+															{
+																"depth": 3,
+																"value": "4. 抗锯齿",
+																"id": "4-抗锯齿"
+															},
+															{
+																"depth": 3,
+																"value": "5. 收缩补偿",
+																"id": "5-收缩补偿"
+															},
+															{
+																"depth": 3,
+																"value": "6. 公差补偿",
+																"id": "6-公差补偿"
+															},
+															{
+																"depth": 3,
+																"value": "7. 底部公差补偿",
+																"id": "7-底部公差补偿"
+															},
+															{
+																"depth": 3,
+																"value": "8. 打印时间补偿",
+																"id": "8-打印时间补偿"
+															},
+															{
+																"depth": 3,
+																"value": "9. 蒙版",
+																"id": "9-蒙版",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "9.1 蒙版生成器",
+																		"id": "91-蒙版生成器",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "9.1.1 中心辐射",
+																				"id": "911-中心辐射"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "9.1.2 矩阵模式",
+																				"id": "912-矩阵模式"
+																			}
+																		]
+																	},
+																	{
+																		"depth": 4,
+																		"value": "9.2 灰度单位",
+																		"id": "92-灰度单位"
+																	}
+																]
+															}
+														]
 													}
 												]
 											}

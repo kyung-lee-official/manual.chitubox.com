@@ -1,9 +1,18 @@
+import {
+	DisplaySize,
+	TwoPointDistance,
+	PointToPlaneDistance,
+	ParallelPlaneDistance,
+} from "@/components/icons/ChituboxProIcons";
+import { ChituboxRulerIcon } from "@/components/icons/Icons";
+import { Entry } from "@/docComponents/entry/Entry";
+
 export const metadata = {
 	title: "分析/测量",
 	authors: [{ name: "CHITUBOX Team" }],
 	description: "CHITUBOX Pro 中的分析/测量界面。",
 	other: {
-		pageId: "/zh-CN/chitubox-pro/v1.4.0/analyze-and-measure",
+		pageId: "/zh-CN/chitubox-pro/v2.0.0/analyze-and-measure",
 	},
 	openGraph: {
 		images: ["/images/docs/og_logo.png"],
@@ -12,91 +21,33 @@ export const metadata = {
 
 # 分析/测量
 
-## 碰撞检测
-
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure001.png"
-	}
-/>
-
-检测排版模型是否存在碰撞现象，若存在碰撞现象，则重新排列模型以避免碰撞。
-
-<ImageComparison
-	img1Src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure006.png"
-	}
-	text1={"碰撞避让前"}
-	img2Src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure007.png"
-	}
-	text2={"碰撞避让后"}
-/>
-
 ## 显示大小
 
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure002.png"
-	}
+<Entry
+	tabMenu={[
+		"分析测量",
+		<div className="flex items-center gap-1">
+			<DisplaySize />
+			显示大小
+		</div>,
+	]}
+	modelList={[
+		<div className="flex items-center gap-1">
+			<ChituboxRulerIcon /> 
+		</div>,
+	]}
 />
 
-自动测量并显示选定模型的包络长、宽、高尺寸值。
-
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure008.png"
-	}
-	style={{ width: "100%", maxWidth: 710 }}
-/>
+<DisplaySize /> 自动测量并显示选定模型的<SpanA href={"https://zh.wikipedia.org/wiki/%E5%8C%85%E5%9B%B4%E4%BD%93"}>包围体</SpanA>尺寸。
 
 ## 两点距离
 
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure003.png"
-	}
-/>
-
-测量并显示模型两点之间的距离值。
-
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure009.png"
-	}
-	style={{ width: "100%", maxWidth: 710 }}
-/>
+<TwoPointDistance /> 测量并显示模型两点之间的距离值。
 
 ## 点到平面距离
 
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure004.png"
-	}
-/>
-
-测量并显示模型上点到平面的距离值。
-
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure010.png"
-	}
-	style={{ width: "100%", maxWidth: 710 }}
-/>
+<PointToPlaneDistance /> 测量并显示模型上点到平面的距离值。
 
 ## 平行平面距离
 
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure005.png"
-	}
-/>
-
-测量并显示模型上两平面的距离值。
-
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/006-application-overview-analyze-and-measure011.png"
-	}
-	style={{ width: "100%", maxWidth: 710 }}
-/>
+<ParallelPlaneDistance /> 测量并显示模型上两平面的距离值。
