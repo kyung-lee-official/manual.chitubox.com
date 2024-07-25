@@ -6399,55 +6399,8 @@
 										"children": [
 											{
 												"depth": 2,
-												"value": "打印流程",
-												"id": "打印流程"
-											},
-											{
-												"depth": 2,
-												"value": "寻求帮助",
-												"id": "寻求帮助"
-											},
-											{
-												"depth": 2,
-												"value": "法律声明",
-												"id": "法律声明",
-												"children": [
-													{
-														"depth": 3,
-														"value": "规则及本公司网址访问条件",
-														"id": "规则及本公司网址访问条件"
-													},
-													{
-														"depth": 3,
-														"value": "不承诺责任声明",
-														"id": "不承诺责任声明"
-													},
-													{
-														"depth": 3,
-														"value": "著作权说明",
-														"id": "著作权说明"
-													},
-													{
-														"depth": 3,
-														"value": "关于.ctb / .cbddlp / .phz / .fdg / .gf / .photon / .chitubox 格式的特别声明",
-														"id": "关于ctb--cbddlp--phz--fdg--gf--photon--chitubox-格式的特别声明"
-													},
-													{
-														"depth": 3,
-														"value": "商标",
-														"id": "商标"
-													},
-													{
-														"depth": 3,
-														"value": "提供的产品或服务",
-														"id": "提供的产品或服务"
-													},
-													{
-														"depth": 3,
-														"value": "第三方链接",
-														"id": "第三方链接"
-													}
-												]
+												"value": "主要特性",
+												"id": "主要特性"
 											}
 										]
 									}
@@ -6519,19 +6472,19 @@
 								]
 							},
 							{
-								"item": "manage-your-account-and-license",
-								"label": "管理你的账号和许可",
-								"path": "/zh-CN/chitubox-pro/latest/manage-your-account-and-license",
+								"item": "account-and-license-management",
+								"label": "管理账号和密钥",
+								"path": "/zh-CN/chitubox-pro/latest/account-and-license-management",
 								"toc": [
 									{
 										"depth": 1,
-										"value": "管理你的账号和许可",
-										"id": "管理你的账号和许可",
+										"value": "管理账号和密钥",
+										"id": "管理账号和密钥",
 										"children": [
 											{
 												"depth": 2,
-												"value": "管理你的账号和许可",
-												"id": "管理你的账号和许可-1"
+												"value": "管理你的账号和密钥",
+												"id": "管理你的账号和密钥"
 											},
 											{
 												"depth": 2,
@@ -6557,6 +6510,11 @@
 										"value": "快速入门",
 										"id": "快速入门",
 										"children": [
+											{
+												"depth": 2,
+												"value": "打印流程",
+												"id": "打印流程"
+											},
 											{
 												"depth": 2,
 												"value": "添加机器",
@@ -6850,9 +6808,41 @@
 								"toc": [
 									{
 										"depth": 1,
-										"value": "准备",
-										"id": "准备",
+										"value": "模型处理",
+										"id": "模型处理",
 										"children": [
+											{
+												"depth": 2,
+												"value": "选择",
+												"id": "选择"
+											},
+											{
+												"depth": 2,
+												"value": "变换",
+												"id": "变换",
+												"children": [
+													{
+														"depth": 3,
+														"value": "移动",
+														"id": "移动"
+													},
+													{
+														"depth": 3,
+														"value": "旋转",
+														"id": "旋转"
+													},
+													{
+														"depth": 3,
+														"value": "缩放",
+														"id": "缩放"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "镜像",
+												"id": "镜像"
+											},
 											{
 												"depth": 2,
 												"value": "复制",
@@ -6966,9 +6956,35 @@
 								]
 							},
 							{
-								"item": "add-supports",
-								"label": "添加支撑",
-								"path": "/zh-CN/chitubox-pro/latest/add-supports",
+								"item": "support",
+								"label": "支撑",
+								"subItems": [
+									{
+										"item": "add-edit-delete",
+										"label": "添加，编辑和删除",
+										"path": "/zh-CN/chitubox-pro/latest/support/add-edit-delete",
+										"toc": []
+									},
+									{
+										"item": "support-configuration",
+										"label": "支撑设置",
+										"path": "/zh-CN/chitubox-pro/latest/support/support-configuration",
+										"toc": []
+									},
+									{
+										"item": "magic-support",
+										"label": "魔法支撑",
+										"path": "/zh-CN/chitubox-pro/latest/support/magic-support",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "ChituMagic Support",
+												"id": "chitumagic-support"
+											}
+										]
+									}
+								],
+								"path": "/zh-CN/chitubox-pro/latest/support",
 								"toc": [
 									{
 										"depth": 1,
@@ -8172,6 +8188,18 @@
 										"depth": 1,
 										"value": "用户界面",
 										"id": "用户界面"
+									}
+								]
+							},
+							{
+								"item": "help-and-feedback",
+								"label": "帮助和反馈",
+								"path": "/zh-CN/chitubox-pro/latest/help-and-feedback",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "帮助和反馈",
+										"id": "帮助和反馈"
 									}
 								]
 							}

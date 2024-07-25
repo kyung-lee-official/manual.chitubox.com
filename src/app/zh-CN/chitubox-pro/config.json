@@ -15,8 +15,8 @@
 					"label": "安装"
 				},
 				{
-					"item": "manage-your-account-and-license",
-					"label": "管理你的账号和许可"
+					"item": "account-and-license-management",
+					"label": "管理账号和密钥"
 				},
 				{
 					"item": "quick-start",
@@ -49,8 +49,22 @@
 					"label": "分析/测量"
 				},
 				{
-					"item": "add-supports",
-					"label": "添加支撑"
+					"item": "support",
+					"label": "支撑",
+					"subItems": [
+						{
+							"item": "add-edit-delete",
+							"label": "添加，编辑和删除"
+						},
+						{
+							"item": "support-configuration",
+							"label": "支撑设置"
+						},
+						{
+							"item": "magic-support",
+							"label": "魔法支撑"
+						}
+					]
 				},
 				{
 					"item": "risk-detection",
@@ -99,6 +113,10 @@
 							"label": "模型列表"
 						}
 					]
+				},
+				{
+					"item": "help-and-feedback",
+					"label": "帮助和反馈"
 				}
 			]
 		},
