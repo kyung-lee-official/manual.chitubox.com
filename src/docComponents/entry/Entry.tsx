@@ -16,7 +16,15 @@ type EntryType = {
 };
 
 export const Entry = (props: EntryType) => {
-	const { mainMenu, tabMenu, toolbar, machineTab, modelList, shortcut, supportSettingsPanel } = props;
+	const {
+		mainMenu,
+		tabMenu,
+		toolbar,
+		machineTab,
+		modelList,
+		shortcut,
+		supportSettingsPanel,
+	} = props;
 
 	const t = useTranslations("docComponents.entry");
 
@@ -170,7 +178,10 @@ export const Entry = (props: EntryType) => {
 											return (
 												<div className="flex items-center gap-3">
 													<div>&gt;</div>
-													<div key={index} className="whitespace-nowrap">
+													<div
+														key={index}
+														className="whitespace-nowrap"
+													>
 														{item}
 													</div>
 												</div>
@@ -188,7 +199,9 @@ export const Entry = (props: EntryType) => {
 								font-bold
 								whitespace-nowrap"
 							>
-								<Link href={""}>{t("supportSettingsPanel")}</Link>
+								<Link href={""}>
+									{t("supportSettingsPanel")}
+								</Link>
 							</td>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
@@ -201,7 +214,10 @@ export const Entry = (props: EntryType) => {
 											return (
 												<div className="flex items-center gap-3">
 													<div>&gt;</div>
-													<div key={index} className="whitespace-nowrap">
+													<div
+														key={index}
+														className="whitespace-nowrap"
+													>
 														{item}
 													</div>
 												</div>
