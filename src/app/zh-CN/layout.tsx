@@ -81,7 +81,7 @@ export default function RootLayout({
 					>
 						<KatexHtmlSanitizer />
 						<DynamicDocsSidebar />
-						<div className="flex flex-col w-full min-w-0 max-w-[900px] p-4 mx-auto">
+						<div className="w-full min-w-0 max-w-[900px] p-4 mx-auto">
 							<DynamicVersionTag />
 							<NotLatestHint />
 							{children}

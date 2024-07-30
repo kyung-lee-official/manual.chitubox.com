@@ -9,10 +9,22 @@ type EntryType = {
 	mainMenu?: string[];
 	tabMenu?: ReactNode[];
 	toolbar?: ReactNode[];
-	machineTab?: ReactNode;
+	machineTab?: ReactNode[];
 	shortcut?: string[];
 	modelList?: ReactNode[];
 	supportSettingsPanel?: ReactNode[];
+};
+
+const Td1 = (props: { children: ReactNode }) => {
+	return (
+		<td
+			className="w-28 p-2
+			font-bold
+			whitespace-nowrap"
+		>
+			{props.children}
+		</td>
+	);
 };
 
 export const Entry = (props: EntryType) => {
@@ -30,7 +42,7 @@ export const Entry = (props: EntryType) => {
 
 	return (
 		<div
-			className="flex flex-col
+			className="flex flex-col my-8
 			rounded overflow-hidden"
 		>
 			<table>
@@ -50,15 +62,11 @@ export const Entry = (props: EntryType) => {
 				<tbody className="bg-neutral-200/50 dark:bg-neutral-600/50">
 					{mainMenu && (
 						<tr>
-							<td
-								className="w-28 p-2
-								font-bold
-								whitespace-nowrap"
-							>
+							<Td1>
 								<Link href={t("mainMenu.link")}>
 									{t("mainMenu.title")}
 								</Link>
-							</td>
+							</Td1>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
 									{mainMenu.map((item, index) => {
@@ -83,15 +91,11 @@ export const Entry = (props: EntryType) => {
 					)}
 					{tabMenu && (
 						<tr>
-							<td
-								className="w-28 p-2
-								font-bold
-								whitespace-nowrap"
-							>
+							<Td1>
 								<Link href={t("tabMenu.link")}>
 									{t("tabMenu.title")}
 								</Link>
-							</td>
+							</Td1>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
 									{tabMenu.map((item, index) => {
@@ -119,15 +123,11 @@ export const Entry = (props: EntryType) => {
 					)}
 					{toolbar && (
 						<tr>
-							<td
-								className="w-28 p-2
-								font-bold
-								whitespace-nowrap"
-							>
+							<Td1>
 								<Link href={t("toolbar.link")}>
 									{t("toolbar.title")}
 								</Link>
-							</td>
+							</Td1>
 							<td className="p-2">
 								{toolbar.map((item, index) => {
 									if (index === 0) {
@@ -146,29 +146,40 @@ export const Entry = (props: EntryType) => {
 					)}
 					{machineTab && (
 						<tr>
-							<td
-								className="w-28 p-2
-								font-bold
-								whitespace-nowrap"
-							>
+							<Td1>
 								<Link href={t("machineTab.link")}>
 									{t("machineTab.title")}
 								</Link>
+							</Td1>
+							<td className="p-2">
+								<div className="flex items-center gap-3">
+									{machineTab.map((item, index) => {
+										if (index === 0) {
+											return (
+												<div key={index}>{item}</div>
+											);
+										} else {
+											return (
+												<div className="flex items-center gap-3">
+													<div>&gt;</div>
+													<div key={index}>
+														{item}
+													</div>
+												</div>
+											);
+										}
+									})}
+								</div>
 							</td>
-							<td className="p-2">{machineTab}</td>
 						</tr>
 					)}
 					{modelList && (
 						<tr>
-							<td
-								className="w-28 p-2
-								font-bold
-								whitespace-nowrap"
-							>
+							<Td1>
 								<Link href={t("modelList.link")}>
 									{t("modelList.title")}
 								</Link>
-							</td>
+							</Td1>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
 									{modelList.map((item, index) => {
@@ -196,15 +207,11 @@ export const Entry = (props: EntryType) => {
 					)}
 					{supportSettingsPanel && (
 						<tr>
-							<td
-								className="w-28 p-2
-								font-bold
-								whitespace-nowrap"
-							>
+							<Td1>
 								<Link href={t("supportSettingsPanel.link")}>
 									{t("supportSettingsPanel.title")}
 								</Link>
-							</td>
+							</Td1>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
 									{supportSettingsPanel.map((item, index) => {
@@ -232,15 +239,11 @@ export const Entry = (props: EntryType) => {
 					)}
 					{shortcut && (
 						<tr>
-							<td
-								className="w-28 p-2
-								font-bold
-								whitespace-nowrap"
-							>
+							<Td1>
 								<Link href={t("shortcut.link")}>
 									{t("shortcut.title")}
 								</Link>
-							</td>
+							</Td1>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
 									{shortcut.map((item, index) => {

@@ -6612,9 +6612,14 @@
 																"children": [
 																	{
 																		"depth": 4,
-																		"value": "灰度级别",
-																		"id": "灰度级别",
+																		"value": "灰度抗锯齿",
+																		"id": "灰度抗锯齿",
 																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "灰度范围",
+																				"id": "灰度范围"
+																			},
 																			{
 																				"depth": 5,
 																				"value": "图像模糊",

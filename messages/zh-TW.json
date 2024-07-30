@@ -161,6 +161,7 @@
 				"link": ""
 			}
 		},
+		"imageGray": "圖片灰度",
 		"isPageUseful": {
 			"question": "本页面是否有用？",
 			"thanks": "感謝您的反饋！"
