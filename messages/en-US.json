@@ -139,9 +139,9 @@
 				"title": "Main Menu",
 				"link": "/en-US/chitubox-pro/latest/user-interface/main-menu"
 			},
-			"tabMenu": {
-				"title": "Tab Menu",
-				"link": "/en-US/chitubox-pro/latest/user-interface/tab-menu"
+			"functionMenu": {
+				"title": "Function Menu",
+				"link": "/en-US/chitubox-pro/latest/user-interface/function-menu"
 			},
 			"machineTab": {
 				"title": "Machine Tab",
@@ -155,9 +155,9 @@
 				"title": "Shortcut",
 				"link": ""
 			},
-			"modelList": {
-				"title": "Model List",
-				"link": "/en-US/chitubox-pro/latest/user-interface/model-list"
+			"componentList": {
+				"title": "Component List",
+				"link": "/en-US/chitubox-pro/latest/user-interface/component-list"
 			},
 			"supportSettingsPanel": {
 				"title": "Support Settings Panel",

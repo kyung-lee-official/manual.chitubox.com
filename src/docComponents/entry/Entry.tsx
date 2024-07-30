@@ -7,11 +7,11 @@ import { ReactNode } from "react";
 
 type EntryType = {
 	mainMenu?: string[];
-	tabMenu?: ReactNode[];
+	functionMenu?: ReactNode[];
 	toolbar?: ReactNode[];
 	machineTab?: ReactNode[];
 	shortcut?: string[];
-	modelList?: ReactNode[];
+	componentList?: ReactNode[];
 	supportSettingsPanel?: ReactNode[];
 };
 
@@ -30,10 +30,10 @@ const Td1 = (props: { children: ReactNode }) => {
 export const Entry = (props: EntryType) => {
 	const {
 		mainMenu,
-		tabMenu,
+		functionMenu,
 		toolbar,
 		machineTab,
-		modelList,
+		componentList,
 		shortcut,
 		supportSettingsPanel,
 	} = props;
@@ -89,16 +89,16 @@ export const Entry = (props: EntryType) => {
 							</td>
 						</tr>
 					)}
-					{tabMenu && (
+					{functionMenu && (
 						<tr>
 							<Td1>
-								<Link href={t("tabMenu.link")}>
-									{t("tabMenu.title")}
+								<Link href={t("functionMenu.link")}>
+									{t("functionMenu.title")}
 								</Link>
 							</Td1>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
-									{tabMenu.map((item, index) => {
+									{functionMenu.map((item, index) => {
 										if (index === 0) {
 											return (
 												<div key={index}>{item}</div>
@@ -173,16 +173,16 @@ export const Entry = (props: EntryType) => {
 							</td>
 						</tr>
 					)}
-					{modelList && (
+					{componentList && (
 						<tr>
 							<Td1>
-								<Link href={t("modelList.link")}>
-									{t("modelList.title")}
+								<Link href={t("componentList.link")}>
+									{t("componentList.title")}
 								</Link>
 							</Td1>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
-									{modelList.map((item, index) => {
+									{componentList.map((item, index) => {
 										if (index === 0) {
 											return (
 												<div key={index}>{item}</div>

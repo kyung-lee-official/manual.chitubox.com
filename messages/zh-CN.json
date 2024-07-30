@@ -137,9 +137,9 @@
 				"title": "主菜单",
 				"link": "/zh-CN/chitubox-pro/latest/user-interface/main-menu"
 			},
-			"tabMenu": {
-				"title": "标签菜单",
-				"link": "/zh-CN/chitubox-pro/latest/user-interface/tab-menu"
+			"functionMenu": {
+				"title": "功能菜单",
+				"link": "/zh-CN/chitubox-pro/latest/user-interface/function-menu"
 			},
 			"machineTab": {
 				"title": "机器标签",
@@ -153,8 +153,8 @@
 				"title": "快捷键",
 				"link": ""
 			},
-			"modelList": {
-				"title": "模型列表",
+			"componentList": {
+				"title": "组件列表",
 				"link": ""
 			},
 			"supportSettingsPanel": {
