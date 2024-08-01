@@ -51,7 +51,7 @@ const AdmonitionContainer = (props: any) => {
 
 	return (
 		<div
-			className={`flex flex-col gap-4 p-4 my-4
+			className={`flex flex-col p-4 my-4
             border-l-4 ${dynamicClassName}
             rounded-lg`}
 		>

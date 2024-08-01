@@ -1,48 +1,49 @@
+import { LicenseCard } from "@/components/icons/ChituboxProIcons"
+
 export const metadata = {
-	title: "管理你的账号和密钥",
+	title: "账号和密钥",
 	authors: [{ name: "CHITUBOX Team" }],
-	description: "在 CHITUBOX Pro 中激活您的密钥。",
+	description: "CHITUBOX Pro 中的账号和密钥管理。",
 	other: {
-		pageId: "/zh-CN/chitubox-pro/v1.4.0/manage-your-account-and-license",
+		pageId: "/zh-CN/chitubox-pro/v2.0.0/manage-your-account-and-license",
 	},
 	openGraph: {
 		images: ["/images/docs/og_logo.png"],
 	},
 };
 
-# 管理账号和密钥
+# 账号和密钥
 
-## 管理你的账号和密钥
+## 注册账号
+
+如果您还未注册 CHITUBOX 账号，请点击<NextLink href="https://cc.chitubox.com/register">此处</NextLink>注册。
+
+## 密钥
+
+一个账号可以拥有多个密钥，当您购买密钥时，密钥会自动和您的账号绑定。密钥和账号之间不可解绑。
+
+个人版密钥支持在 2 台计算机上使用，团队版密钥支持在 5 台计算机上使用，您可以随时登录用户中心解绑已绑定的计算机。
 
 <Admonition type="danger" title="危险">
-	请勿将你的密钥告诉任何人，获取密钥后应尽快绑定账号。
+	请勿将您的密钥告诉任何人，获取密钥后应尽快绑定账号。
 </Admonition>
 
 <Admonition type="note" title="注意">
-	确保你的电脑已经连接网络。个人密钥支持在 2 台电脑上使用，团队密钥支持在
-	5 台电脑上使用。
+	CHITUBOX Pro 使用在线鉴权，请确保您的计算机已经连接网络。
 </Admonition>
 
-1. 当 CHITUBOX Pro 第一次启动时，登录窗口会弹出。
+### 激活和绑定密钥
 
-    如果你还没有安装 CHITUBOX Pro， 请点击<SpanA href="https://www.chitubox.com/zh-Hans/download/chitubox-pro">此处</SpanA>下载最新版本。
-
-    <ImageContainer
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-login002.png"
-    	}
-    />
-
-    如果你还没有账号，点击 <SpanA href="https://cc.chitubox.com/register">注册</SpanA> 进行注册。
+1. 当 CHITUBOX Pro 首次启动时，登录窗口会弹出。
 
     <ImageContainer
     	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license001.png"
+    		"/images/docs/zh-CN/chitubox-pro/2.x.x/account-and-license-management-001.png"
     	}
     />
 
     <Admonition type="note" title="注意">
-    	登录完成后将对账号进行检测，若账号不符合试用权限，则<b>开始试用</b>
+    	登录完成后将对账号进行检测，若账号不符合试用条件（账号或设备已试用），则<b>开始试用</b>
     	将不予显示。
     </Admonition>
 
@@ -50,19 +51,15 @@ export const metadata = {
 
     <ImageContainer
     	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license002.png"
+    		"/images/docs/zh-CN/chitubox-pro/2.x.x/account-and-license-management-002.png"
     	}
     />
 
-    点击**下一步**，将激活密钥并且将其绑定到你的电脑。
-
-    <ImageContainer
-    	src={
-    		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license003.png"
-    	}
-    />
+    点击**确认授权**，将激活密钥并且将其绑定到您的计算机。密钥的有效期从激活日开始计算。
 
     如果密钥是由打印机厂商发行的，您可能需要还需要输入您的打印机 ID 进行关联:
+
+	<LicenseCard size={430} />
 
     <ImageContainer
     	src={
@@ -70,7 +67,7 @@ export const metadata = {
     	}
     />
 
-    如果你在 CHITUBOX 官网<SpanA href="https://cc.chitubox.com/login">登录</SpanA>你的账号，在 **我的产品** > **我的许可证** 下面应该可以看到你刚刚绑定的许可。
+    如果您在 CHITUBOX 官网<NextLink href="https://cc.chitubox.com/login">登录</NextLink>您的账号，在 **我的产品** > **我的密钥** 下面应该可以看到您刚刚绑定的密钥。
 
     <ImageContainer
     	src={
@@ -78,15 +75,13 @@ export const metadata = {
     	}
     />
 
-    如果你已经用试用许可进入了 CHITUBOX Pro，点击<NextLink href="/zh-CN/chitubox-pro/1.x.x/latest/application-overview/setting-and-help#授权">这里</NextLink>查看在哪里更新你的许可。
+### 将密钥和设备解绑
 
-## 将 CHITUBOX 迁移到另一台电脑
+如果您的计算机意外损坏了，或者您想要将 CHITUBOX 迁移到您的新计算机，您需要先将密钥从旧计算机上解绑。
 
-如果你的电脑意外损坏了，或者你想要将 CHITUBOX 迁移到你的新电脑，你需要先将许可从旧电脑上解绑。
+在网页端<NextLink href="https://cc.chitubox.com/login">登录</NextLink>您的 CHITUBOX 账号。
 
-在网页端<SpanA href="https://cc.chitubox.com/login">登录</SpanA>你的 CHITUBOX 账号。
-
-点击 **我的产品** > **我的许可证**
+点击 **我的产品** > **我的密钥**
 
 <ImageContainer
 	src={
@@ -102,13 +97,13 @@ export const metadata = {
 	}
 />
 
-你的许可将从旧电脑上解绑，然后你就可以重新在你的新电脑上激活你的许可。
+您的密钥将从旧计算机上解绑，然后您就可以重新在您的新计算机上激活您的密钥。
 
-## 更换许可证
+### 更换密钥
 
-如果许可证过期了，你需要手动更换许可证。
+如果密钥证过期了，您需要手动更换密钥。
 
-点击 **激活许可证**：
+点击 **激活密钥**：
 
 <ImageContainer
 	src={
@@ -116,7 +111,7 @@ export const metadata = {
 	}
 />
 
-更换你的许可证序列号，然后点击 **下一步** ，激活许可证并且将其绑定到你的电脑。
+更换您的密钥，然后点击 **下一步** ，激活密钥并且将其绑定到您的计算机。
 
 <ImageContainer
 	src={
