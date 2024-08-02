@@ -1,4 +1,6 @@
-import { LicenseCard } from "@/components/icons/ChituboxProIcons"
+import { Entry } from "@/docComponents/entry/Entry";
+import { MaskedImage } from "@/docComponents/maskedImage/MaskedImage";
+import { LicenseCard } from "@/components/icons/ChituboxProIcons";
 
 export const metadata = {
 	title: "账号和密钥",
@@ -43,7 +45,8 @@ export const metadata = {
     />
 
     <Admonition type="note" title="注意">
-    	登录完成后将对账号进行检测，若账号不符合试用条件（账号或设备已试用），则<b>开始试用</b>
+    	登录完成后将对账号进行检测，若账号不符合试用条件（账号或设备已试用），则
+    	<b>开始试用</b>
     	将不予显示。
     </Admonition>
 
@@ -59,7 +62,7 @@ export const metadata = {
 
     如果密钥是由打印机厂商发行的，您可能需要还需要输入您的打印机 ID 进行关联:
 
-	<LicenseCard size={430} />
+    <LicenseCard size={420} />
 
     <ImageContainer
     	src={
@@ -77,9 +80,9 @@ export const metadata = {
 
 ### 将密钥和设备解绑
 
-如果您的计算机意外损坏了，或者您想要将 CHITUBOX 迁移到您的新计算机，您需要先将密钥从旧计算机上解绑。
+如果您想要将 CHITUBOX 迁移到您的新计算机，您需要先将密钥从旧计算机上解绑。
 
-在网页端<NextLink href="https://cc.chitubox.com/login">登录</NextLink>您的 CHITUBOX 账号。
+在网页端<NextLink href="https://cc.chitubox.com/login">登录您的 CHITUBOX 账号</NextLink>。
 
 点击 **我的产品** > **我的密钥**
 
@@ -99,22 +102,33 @@ export const metadata = {
 
 您的密钥将从旧计算机上解绑，然后您就可以重新在您的新计算机上激活您的密钥。
 
+您也可以直接在 CHITUBOX 客户端内进行计算机解绑操作。
+
+<Entry mainMenu={["账户", "授权", "解绑当前计算机"]} />
+
+<MaskedImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/account-and-license-management-002.png"
+	}
+	width={571}
+	height={406}
+	vWidth={121}
+	vHeight={28}
+	vX={435}
+	vY={240}
+	rx={5}
+/>
+
 ### 更换密钥
 
-如果密钥证过期了，您需要手动更换密钥。
+如果密钥证过期了，您需要在软件中手动更换新密钥。
 
-点击 **激活密钥**：
-
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license005.png"
-	}
-/>
-
-更换您的密钥，然后点击 **下一步** ，激活密钥并且将其绑定到您的计算机。
+<Entry mainMenu={["账户", "授权"]} />
 
 <ImageContainer
 	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license006.png"
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/account-and-license-management-002.png"
 	}
 />
+
+将密钥更换为您的新密钥，然后点击 **确认授权**，激活密钥并且将其绑定到您的计算机。
