@@ -160,6 +160,10 @@
 			"supportSettingsPanel": {
 				"title": "支撐設定面板",
 				"link": ""
+			},
+			"manualSupportOptions": {
+				"title": "手動支撐選項欄",
+				"link": ""
 			}
 		},
 		"imageGray": "圖片灰度",

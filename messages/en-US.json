@@ -162,6 +162,10 @@
 			"supportSettingsPanel": {
 				"title": "Support Settings Panel",
 				"link": "/en-US/chitubox-pro/latest/user-interface/support-settings-panel"
+			},
+			"manualSupportOptions": {
+				"title": "Manual Support Options",
+				"link": ""
 			}
 		},
 		"imageGray": "Image Gray",
