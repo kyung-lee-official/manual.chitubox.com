@@ -160,6 +160,10 @@
 			"supportSettingsPanel": {
 				"title": "支撑设置面板",
 				"link": ""
+			},
+			"manualSupportOptions": {
+				"title": "手动支撑选项栏",
+				"link": ""
 			}
 		},
 		"imageGray": "图片灰度",

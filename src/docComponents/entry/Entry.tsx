@@ -13,6 +13,7 @@ type EntryType = {
 	shortcut?: string[];
 	componentList?: ReactNode[];
 	supportSettingsPanel?: ReactNode[];
+	manualSupportOptions?: ReactNode[];
 };
 
 const Td1 = (props: { children: ReactNode }) => {
@@ -36,6 +37,7 @@ export const Entry = (props: EntryType) => {
 		componentList,
 		shortcut,
 		supportSettingsPanel,
+		manualSupportOptions,
 	} = props;
 
 	const t = useTranslations("docComponents.entry");
@@ -215,6 +217,38 @@ export const Entry = (props: EntryType) => {
 							<td className="p-2">
 								<div className="flex items-center gap-3">
 									{supportSettingsPanel.map((item, index) => {
+										if (index === 0) {
+											return (
+												<div key={index}>{item}</div>
+											);
+										} else {
+											return (
+												<div className="flex items-center gap-3">
+													<div>&gt;</div>
+													<div
+														key={index}
+														className="whitespace-nowrap"
+													>
+														{item}
+													</div>
+												</div>
+											);
+										}
+									})}
+								</div>
+							</td>
+						</tr>
+					)}
+					{manualSupportOptions && (
+						<tr>
+							<Td1>
+								<Link href={t("manualSupportOptions.link")}>
+									{t("manualSupportOptions.title")}
+								</Link>
+							</Td1>
+							<td className="p-2">
+								<div className="flex items-center gap-3">
+									{manualSupportOptions.map((item, index) => {
 										if (index === 0) {
 											return (
 												<div key={index}>{item}</div>
