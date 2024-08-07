@@ -3077,3 +3077,39 @@ export const GlobalReinforcement = ({ size, fill }: any) => {
 		</span>
 	);
 };
+
+export const ProfileExportAllIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				width="16"
+				height="16"
+				viewBox="0 0 16 16"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M9.5 12V14C9.5 14.2761 9.27609 14.5 9 14.5H1C0.723906 14.5 0.5 14.2761 0.5 14V5C0.5 4.72391 0.723906 4.5 1 4.5H4"
+					stroke="currentColor"
+					stroke-linejoin="round"
+				/>
+				<path
+					d="M7.5 9.5V8.5C7.5 7.39547 8.39547 6.5 9.5 6.5H14.5"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+				<path
+					d="M13.5019 4.49812L15.5 6.49625L13.4982 8.49812"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+				<path
+					d="M11.5 5V2C11.5 1.72386 11.2761 1.5 11 1.5H4C3.72386 1.5 3.5 1.72386 3.5 2V11C3.5 11.2761 3.72386 11.5 4 11.5H11C11.2761 11.5 11.5 11.2761 11.5 11V8"
+					stroke="currentColor"
+				/>
+			</svg>
+		</span>
+	);
+};
