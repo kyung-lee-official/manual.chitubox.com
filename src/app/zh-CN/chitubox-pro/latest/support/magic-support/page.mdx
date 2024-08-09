@@ -3,7 +3,12 @@ import {
 	ChituboxProfileAddIcon,
 	ChituboxProfileDeleteIcon,
 } from "@/components/icons/Icons";
-import { ProfileExportAllIcon } from "@/components/icons/ChituboxProIcons";
+import {
+	ProfileExportAllIcon,
+	MagicSupport,
+} from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
+
 export const metadata = {
 	title: "魔法支撑",
 	authors: [{ name: "CHITUBOX Team" }],
@@ -17,6 +22,16 @@ export const metadata = {
 };
 
 # 魔法支撑
+
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			魔法支撑
+			<MagicSupport />
+		</div>,
+	]}
+	shortcut={["Alt", "M"]}
+/>
 
 魔法支撑是一种智能化的支撑生成算法，能够一键执行多个添加自动支撑命令，意味着您只需点击一个按钮，就可以完成一系列的支撑生成操作。
 
