@@ -97,10 +97,6 @@
 					"label": "标准库"
 				},
 				{
-					"item": "rma",
-					"label": "材料联盟"
-				},
-				{
 					"item": "user-interface",
 					"label": "用户界面",
 					"subItems": [

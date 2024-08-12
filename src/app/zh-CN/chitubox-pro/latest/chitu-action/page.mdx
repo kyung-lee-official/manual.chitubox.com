@@ -1,3 +1,9 @@
+import {
+	ChituActionIcon,
+	SettingsIcon,
+} from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
+
 export const metadata = {
 	title: "ChituAction",
 	authors: [{ name: "CHITUBOX Team" }],
@@ -11,3 +17,56 @@ export const metadata = {
 };
 
 # ChituAction
+
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			<ChituActionIcon />
+			ChituAction
+		</div>,
+	]}
+	shortcut={["Ctrl", "D"]}
+/>
+
+ChituAction 是一个集成了模型准备、添加支撑、自动布局和切片生成的自动化工具。
+
+只需导入模型文件，点击 <SettingsIcon /> 按钮打开 ChituAction 流程配置列表，设置好参数和保存路径，点击“**应用**”按钮，即可一键自动生成切片文件，并导出项目文件，方便后续管理。
+
+您还可以直接点击单个流程按钮，单独进行某项操作。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/017-chitu-action.png"}
+/>
+
+## 准备
+
+### 缩放
+
+启用此项，将按照设定的缩放比率对所有模型进行自动缩放。
+
+### 定向
+
+启用此项，将按照设定的定向模式对模型进行定向。
+
+定向模式：
+
+-   固定旋转角度：手动设置旋转角度，让所有模型按照指定方向摆放。
+-   自动定向：CHITUBOX 自动计算出适合模型的打印角度进行摆放。
+
+## 支撑
+
+按照您所设置的魔法支撑添加步骤，为所有模型添加魔法支撑。
+
+## 布局
+
+当你打印多个模型时，可以启用此选项将所有在打印平台上模型进行合理布局，最大化利用打印空间，减少手动排版操作。
+
+## 导出/保存
+
+在所有流程完成之后，可以直接保存为模型文件、项目文件或切片文件。
+
+-   导出模型：可保存的格式有 .stl, .obj, .3mf。
+
+-   保存项目：可保存的项目文件格式有 .ctp, .chitubox。
+
+-   保存切片：切片文件格式默认为当前所选机器的默认切片格式。
