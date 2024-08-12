@@ -1,9 +1,5 @@
-import {
-	ChituboxSupport,
-	ChituboxRefreshIcon,
-	ChituboxIslandsDetectionIcon,
-	ChituboxDeleteIslandsIcon,
-} from "@/components/icons/Icons";
+import { Entry } from "@/docComponents/entry/Entry";
+import { ChituboxStandardPartsIcon } from "@/components/icons/Icons";
 
 export const metadata = {
 	title: "标准库",
@@ -11,7 +7,7 @@ export const metadata = {
 	description:
 		"CHITUBOX Pro 标准库提供了大量的模型，用户可以通过标准库下载模型。",
 	other: {
-		pageId: "/zh-CN/chitubox-basic/v2.0.0/rma",
+		pageId: "/zh-CN/chitubox-basic/v2.0.0/standard-library",
 	},
 	openGraph: {
 		images: ["/images/docs/og_logo.png"],
@@ -19,3 +15,20 @@ export const metadata = {
 };
 
 # 标准库
+
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			<ChituboxStandardPartsIcon />
+			标准库
+		</div>,
+	]}
+/>
+
+标准库含有各种各样的模型零件，您可以直接下载使用。
+
+提供 5 种类型的标准模型供您选择：标准几何、测试验证、辅助工具、机械零件及 3D 数学。将鼠标悬停在模型展示图上，点击“使用”即可下载模型。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/018-standard-library.png"}
+/>
