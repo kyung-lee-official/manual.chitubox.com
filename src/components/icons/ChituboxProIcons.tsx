@@ -3231,3 +3231,78 @@ export const SliceParameterEditor = ({ size, fill }: any) => {
 		</span>
 	);
 };
+
+export const HidePlatform = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				width="16"
+				height="16"
+				viewBox="0 0 16 16"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g clip-path="url(#clip0_1128_4103)">
+					<path
+						d="M10 14H6"
+						stroke="currentColor"
+						strokeWidth="2"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+					/>
+					<path
+						d="M1 1L15 15"
+						stroke="currentColor"
+						strokeWidth="2"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+					/>
+					<path
+						fillRule="evenodd"
+						clipRule="evenodd"
+						d="M5.01257 7.841C5.0043 7.89278 5 7.94589 5 8V11C5 11.5523 5.44772 12 6 12H9.17157L7.17157 10H7V9.82843L5.01257 7.841ZM11 8.17157V8C11 7.44772 10.5523 7 10 7H9.82843L11 8.17157Z"
+						fill="currentColor"
+					/>
+					<path
+						fillRule="evenodd"
+						clipRule="evenodd"
+						d="M1.25233 4.08075L0.051324 7.68377C-0.0503253 7.98872 0.000813854 8.32394 0.188765 8.58471C0.376716 8.84548 0.678564 9 1.00001 9H6.17158L4.17158 7H2.38743L2.83347 5.66189L1.25233 4.08075ZM9.82843 7H13.6126L12.2792 3H5.82843L3.82843 1H13C13.4304 1 13.8126 1.27543 13.9487 1.68377L15.9487 7.68377C16.0503 7.98872 15.9992 8.32394 15.8112 8.58471C15.6233 8.84548 15.3215 9 15 9H11.8284L9.82843 7Z"
+						fill="currentColor"
+					/>
+				</g>
+				<defs>
+					<clipPath id="clip0_1128_4103">
+						<rect width="16" height="16" fill="white" />
+					</clipPath>
+				</defs>
+			</svg>
+		</span>
+	);
+};
+
+export const DeleteMachine = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				width="16"
+				height="16"
+				viewBox="0 0 16 16"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M2 2L14 14M14 2L2 14"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+				/>
+				<path
+					fillRule="evenodd"
+					clipRule="evenodd"
+					d="M1.29289 1.29289C1.68342 0.902369 2.31658 0.902369 2.70711 1.29289L8 6.58579L13.2929 1.29289C13.6834 0.902369 14.3166 0.902369 14.7071 1.29289C15.0976 1.68342 15.0976 2.31658 14.7071 2.70711L9.41421 8L14.7071 13.2929C15.0976 13.6834 15.0976 14.3166 14.7071 14.7071C14.3166 15.0976 13.6834 15.0976 13.2929 14.7071L8 9.41421L2.70711 14.7071C2.31658 15.0976 1.68342 15.0976 1.29289 14.7071C0.902369 14.3166 0.902369 13.6834 1.29289 13.2929L6.58579 8L1.29289 2.70711C0.902369 2.31658 0.902369 1.68342 1.29289 1.29289Z"
+					fill="currentColor"
+				/>
+			</svg>
+		</span>
+	);
+};

@@ -75,10 +75,6 @@
 					"label": "切片",
 					"subItems": [
 						{
-							"item": "slice-settings",
-							"label": "切片设置"
-						},
-						{
 							"item": "slice-mode",
 							"label": "切片模式"
 						},
@@ -105,16 +101,8 @@
 							"label": "主菜单"
 						},
 						{
-							"item": "tab-menu",
-							"label": "标签菜单"
-						},
-						{
 							"item": "gadgets",
 							"label": "小工具"
-						},
-						{
-							"item": "model-list",
-							"label": "模型列表"
 						}
 					]
 				},
