@@ -164,6 +164,10 @@
 			"manualSupportOptions": {
 				"title": "手動支撐選項欄",
 				"link": ""
+			},
+			"profileList": {
+				"title": "配置列表",
+				"link": ""
 			}
 		},
 		"imageGray": "圖片灰度",

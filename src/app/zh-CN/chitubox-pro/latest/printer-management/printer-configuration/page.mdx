@@ -1,6 +1,8 @@
 import { Entry } from "@/docComponents/entry/Entry";
 import { ImageGray } from "@/docComponents/imageGray/ImageGray";
 import { AddMachineIcon } from "@/components/icons/ChituboxProIcons";
+import { Collapse } from "@/components/collapse/Collapse";
+import { Tsmc } from "@/docComponents/tsmc/Tsmc";
 
 export const metadata = {
 	title: "设置打印机参数",
@@ -20,7 +22,7 @@ export const metadata = {
 
 其中 “机器” 部分是通用的，作用于当前打印机的所有打印机配置，而 “树脂”，“打印”，“高级” 部分是独立的， 您可以单独设置。
 
-<Entry machineTab={[<div>打印机菜单</div>, <div>删除机器</div>]} />
+<Entry profileList={["双击单个配置文件"]} />
 
 ## 机器
 
@@ -56,9 +58,49 @@ CHITUBOX 内置的机型已经预设了匹配的镜像模式，您可以根据�
 
 ## 打印
 
+在这里设置你的打印参数。
+
 ### 参数解释
 
+<Admonition type="note" title="注意">
+	目前只有部分打印机支持 **静止时间** 等待模式，点击<SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃这里</SpanA>查看机器兼容性表格。
+</Admonition>
+
+| 参数             | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 层厚             | 每打印一层的厚度                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| 底层数           | 起始打印层数。当底层数为 n 时，前 n 层的曝光时间均为底层曝光时间                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| 曝光时间         | 正常打印层的曝光时间                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| 底层曝光时间     | 底层的曝光时间。适当增加底层曝光时间有助于增加打印模型与打印平台的粘结强度                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 过渡层数         | 底层之后的过渡层数，使各层之间的粘合更紧密。除曝光时间外，过渡层的其他参数与正常层一致                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| 过渡类型         | 设置从底层过渡到正常层时曝光时间的过渡类型                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 打印过程等待模式 | <em>静止时间：</em><ul><li>抬升前的静止时间: 打印曝光结束到打印平台开始远离曝光面的间隔时间差</li><li>抬升后的静止时间: 打印平台打印抬升后开始静止到开始回程的间隔时间差</li><li>回程后的静止时间: 打印平台运动至打印面开始静止到开始曝光的间隔时间差</li></ul><em>灯灭延迟：</em><br />灯灭延迟等于平台抬升时间，等待时间和回程时间的总时间<ul><li>灯灭延迟: 正常层的灯灭延迟，真正的机器灭灯时间 = max（z 轴上下移动的总时间， 配置的灭灯延迟）</li><li>底层灯灭延迟: 底层的灯灭延迟，真正的机器灭灯时间 = max（z 轴上下移动的总时间， 配置的灭灯延迟）</li></ul> |
+| 底层抬升距离     | 底层打印过程中，打印平台每次远离打印面的距离                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| 抬升距离         | 正常层打印过程中，打印平台每次远离打印面的距离                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| 底层回程距离     | 底层打印过程中，打印平台的回程距离，没有充足理由的情况下不要改动                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| 回程距离         | 正常层打印过程中，打印平台的回程距离，没有充足理由的情况下不要改动                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 底层抬升速度     | 底层打印过程中，打印平台每次远离打印面的运动速度                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| 抬升速度         | 正常层打印过程中，打印平台每次远离打印面的运动速度                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 底层回程速度     | 底层打印过程中，打印平台靠近打印成形面时的运动速度                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 回程速度         | 正常层打印过程中，打印平台靠近打印成形面时的运动速度                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+
 ### 二段运动控制 (TSMC)
+
+<Collapse title="Anycubic 用户须知！">
+	从 Anycubic Photon Workshop 而来？注意！
+
+    * 由于 Anycubic Photon Workshop 提供基本和高级设置，而 CHITUBOX 的格式缺少专门的字段来区分它们，因此，对于不兼容高级设置的打印机，CHITUBOX 仅显示基本参数。相反，对于同时支持两者的打印机，CHITUBOX 仅显示高级参数。如果您的打印机支持高级设置，但您不想使用 TSMC 功能，您只需为两个阶段输入相同的速度，并确保总升降距离与所需距离保持一致。
+
+    * 用户界面中 TSMC 参数的顺序不同。在 Photon Workshop 中，[0] 表示靠近屏幕的运动阶段，而 [1] 表示较远的运动阶段。然而，CHITUBOX 在布局输入文本框时遵循运动顺序。这起初可能会令人困惑。
+</Collapse>
+
+打印设置中有两组抬升和回程参数，这里是设置 TSMC 的地方。
+
+当打印平台开始带着模型升起时，树脂料槽底部的离型膜会将刚固化的层向下拉，直至脱离，这称为“吸力效应”。当与离型膜接触面积较大，且打印平台以较高速度拉开时，吸力效应更为明显。吸力效应会导致模型变形，甚至导致模型从打印平台上脱落。我们建议保持缓慢的升起速度，直到模型脱离离型膜。当吸力效应不再是问题时，随后加快升起速度可以提高打印效率。回程阶段的原理类似。
+
+您可以调整以下参数以熟悉 TSMC。
+
+<Tsmc />
 
 ## 高级
 
@@ -118,40 +160,33 @@ b 值为正数时，周长扩大，b 值为负数时，周长缩小。
 	* 底层公差补偿仅作用于底层，当过渡层和底层公差补偿同时启用时，打印结果可能不如预期。
 	<div className="flex">
 		<div className="flex-1 flex justify-center">
-		<img
-			src={
-				"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-transition_layers.png"
-			}
-		/>
+			<img
+				src={
+					"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-transition_layers.png"
+				}
+			/>
 		</div>
 		<div className="flex-1 flex justify-center">
-		<img
-			src={
-				"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-tc.png"
-			}
-		/>
+			<img
+				src={
+					"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-tc.png"
+				}
+			/>
 		</div>
 		<div className="flex-1 flex justify-center">
-		<img
-			src={
-				"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-tc_transition_layers.png"
-			}
-		/>
+			<img
+				src={
+					"/images/docs/en-US/chitubox-basic/2.x.x/009-configure-print-parameters-tc_transition_layers.png"
+				}
+			/>
 		</div>
 	</div>
 	<div className="flex text-gray-500 text-sm">
-		<div className="flex-1 text-center">
-			仅设置过渡层
-		</div>
-		<div className="flex-1 text-center">
-			仅开启底部公差补偿
-		</div>
-		<div className="flex-1 text-center">
-			同时启用过渡层与底层公差补偿
-		</div>
+		<div className="flex-1 text-center">仅设置过渡层</div>
+		<div className="flex-1 text-center">仅开启底部公差补偿</div>
+		<div className="flex-1 text-center">同时启用过渡层与底层公差补偿</div>
 	</div>
 </Admonition>
-
 
 ### 层打印时间补偿
 
@@ -164,14 +199,13 @@ b 值为正数时，周长扩大，b 值为负数时，周长缩小。
 
 -   自动生成
 
-	<ImageContainer
-		src={
-			"/images/docs/zh-CN/chitubox-basic/2.x.x/009-configure-print-parameters-print-time-compensation.png"
-		}
-	/>
+    <ImageContainer
+    	src={
+    		"/images/docs/zh-CN/chitubox-pro/2.x.x/014-slice-settings-print-time-compensation.png"
+    	}
+    />
 
-	$$\text{层打印时间补偿} = \frac{\text{实际打印时间} - \text{软件预测时间}}{\text{层数}}$$
-
+    $$\text{层打印时间补偿} = \frac{\text{实际打印时间} - \text{软件预测时间}}{\text{层数}}$$
 
 ### 蒙板
 
@@ -193,7 +227,7 @@ CHITUBOX 的模板生成器支持两种模式：**中心辐射** 和 **矩阵模
 
 <ImageContainer
 	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.1.png"
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/014-slice-settings-hub-and-spoke.png"
 	}
 />
 
@@ -225,7 +259,7 @@ $$ 5 \times 3 = 15 \text{mm}$$
 
 <ImageContainer
 	src={
-		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.2.png"
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/014-slice-settings-matrix-mode.png"
 	}
 />
 
@@ -268,4 +302,3 @@ $$ 5 \times 3 = 15 \text{mm}$$
 $$\frac{800}{51} = 15$$，余数 35
 
 这个部分则由它们自己取平均值，因此灰度没有变化。
-
