@@ -166,6 +166,10 @@
 			"manualSupportOptions": {
 				"title": "Manual Support Options",
 				"link": ""
+			},
+			"profileList": {
+				"title": "Profile List",
+				"link": ""
 			}
 		},
 		"imageGray": "Image Gray",
