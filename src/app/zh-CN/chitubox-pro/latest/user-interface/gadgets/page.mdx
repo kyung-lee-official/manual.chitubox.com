@@ -22,6 +22,7 @@ import {
 	ChituboxPerspectiveIcon,
 	ChituboxOthographicIcon,
 } from "@/components/icons/Icons";
+import { Entry } from "@/docComponents/entry/Entry";
 
 import {
 	MagnifierIcon,
@@ -56,6 +57,16 @@ export const metadata = {
 <ChituboxSelectBoxIcon /> 通过框选的方式选择画面中的模型。
 
 ### 移动
+
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			<ChituboxMoveIcon />
+			移动
+		</div>,
+	]}
+	shortcut={["Ctrl", "M"]}
+/>
 
 <ChituboxMoveIcon /> 用于移动所选模型。你也可以通过在移动面板中输入坐标来精准移动模型。
 
@@ -184,7 +195,7 @@ export const metadata = {
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadget-slider.png"}
 />
 
-滑块位于主窗口的右侧，用于预览模型的截面面积（预切片）和模型的层数（后切片）。您可以移动滑块观察在 Z 轴方向的模型各个部分和层。或者点击滑块上方的 “X” 和 “Y” 来观察x或y轴方向的横截面。
+滑块位于主窗口的右侧，用于预览模型的截面面积（预切片）和模型的层数（后切片）。您可以移动滑块观察在 Z 轴方向的模型各个部分和层。或者点击滑块上方的 “X” 和 “Y” 来观察 x 或 y 轴方向的横截面。
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadget-slider-xy.png"}
