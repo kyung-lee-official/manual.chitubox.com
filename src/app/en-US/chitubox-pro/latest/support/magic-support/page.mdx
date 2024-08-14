@@ -1,0 +1,75 @@
+import {
+	ChituboxProfileImportIcon,
+	ChituboxProfileAddIcon,
+	ChituboxProfileDeleteIcon,
+} from "@/components/icons/Icons";
+import {
+	ProfileExportAllIcon,
+	MagicSupport,
+} from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
+
+export const metadata = {
+	title: "魔法支撑",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "CHITUBOX Pro 魔法支撑",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/support/magic-support",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 魔法支撑
+
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			魔法支撑
+			<MagicSupport />
+		</div>,
+	]}
+	shortcut={["Alt", "M"]}
+/>
+
+魔法支撑是一种智能化的支撑生成算法，能够一键执行多个添加自动支撑命令，意味着您只需点击一个按钮，就可以完成一系列的支撑生成操作。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/012-magic-support.png"}
+/>
+
+点击**应用**按钮将按照设定的步骤顺序，从上至下添加设定支撑。
+
+## 魔法支撑配置管理
+
+<ChituboxProfileAddIcon /> 添加新的魔法支撑配置。
+<ChituboxProfileImportIcon /> 导入魔法支撑配置文件。
+<ProfileExportAllIcon /> 导出所有魔法支撑配置。
+<ChituboxProfileDeleteIcon /> 删除当前的魔法支撑配置。
+
+展开下拉菜单可以查看您的所有魔法支撑配置。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/012-magic-support-profiles.png"}
+/>
+
+## 流程管理
+
+### 添加/删除步骤
+
+-   添加步骤：点击步骤卡片底部的加号 **+** ，添加新的自动支撑步骤。
+
+-   删除步骤：点击单个步骤卡片右侧的减号 **-**， 删除不需要的步骤。
+
+### 步骤设置
+
+| 参数         | 说明                   |
+| ------------ | ---------------------- |
+| 支撑参数     | 选择支撑参数配置文件。 |
+| 自动支撑模式 | 选择自动支撑模式。     |
+| 自动支撑类型 | 选择自动支撑类型。     |
+
+### 合并支撑
+
+开启合并支撑选项后，将自动合并已添加的支撑。

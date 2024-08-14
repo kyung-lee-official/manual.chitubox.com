@@ -22,40 +22,68 @@ const enItems = [
 			</Label>
 		),
 		children: (
-			<ResponsiveTable>
-				<thead>
-					<tr>
-						<th>Specification</th>
-						<th>Mininum</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>CPU</td>
-						<td>Intel® Core™ i5 6600K or AMD Ryzen™ 5 1600</td>
-					</tr>
-					<tr>
-						<td>OS</td>
-						<td>Windows 10 (64-bit)</td>
-					</tr>
-					<tr>
-						<td>RAM</td>
-						<td>4GB</td>
-					</tr>
-					<tr>
-						<td>Hard Drive</td>
-						<td>At least 10GB of Storage Space</td>
-					</tr>
-					<tr>
-						<td>GPU</td>
-						<td>GPU RAM: ≥1GB</td>
-					</tr>
-					<tr>
-						<td>Display Resolution </td>
-						<td>≥ 1280x960</td>
-					</tr>
-				</tbody>
-			</ResponsiveTable>
+			<div className="flex flex-col gap-8">
+				<ResponsiveTable>
+					<thead>
+						<tr>
+							<th>Specification</th>
+							<th>Mininum</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>CPU</td>
+							<td>Intel® Core™ i5 6600K or AMD Ryzen™ 5 1600</td>
+						</tr>
+						<tr>
+							<td>OS</td>
+							<td>Windows 10 (64-bit)</td>
+						</tr>
+						<tr>
+							<td>RAM</td>
+							<td>4GB</td>
+						</tr>
+						<tr>
+							<td>Hard Drive</td>
+							<td>At least 10GB of Storage Space</td>
+						</tr>
+						<tr>
+							<td>GPU</td>
+							<td>GPU RAM: ≥1GB</td>
+						</tr>
+						<tr>
+							<td>Display Resolution </td>
+							<td>≥ 1280x960</td>
+						</tr>
+					</tbody>
+				</ResponsiveTable>
+				<h3 className="text-2xl">Required Environments</h3>
+				<Link
+					href="https://www.microsoft.com/en-us/download/details.aspx?id=30653"
+					className="text-blue-400"
+				>
+					.NET Framework 4.5
+				</Link>
+				<Link
+					href="https://www.microsoft.com/en-us/download/details.aspx?id=30679"
+					className="text-blue-400"
+				>
+					Visual C++ Redistributable Packages for Visual Studio 2012
+				</Link>
+				<Link
+					href="https://www.microsoft.com/en-us/download/details.aspx?id=40784"
+					className="text-blue-400"
+				>
+					Visual C++ Redistributable Packages for Visual Studio 2013
+				</Link>
+				<Link
+					href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0"
+					className="text-blue-400"
+				>
+					Visual C++ Redistributable for Visual Studio 2015, 2017 and
+					2019
+				</Link>
+			</div>
 		),
 	},
 	{
@@ -67,24 +95,33 @@ const enItems = [
 			</Label>
 		),
 		children: (
-			<ResponsiveTable>
-				<thead>
-					<tr>
-						<th>Specification</th>
-						<th>Mininum</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>CPU</td>
-						<td>Intel® or M1, M2 processors</td>
-					</tr>
-					<tr>
-						<td>OS</td>
-						<td>macOS Big Sur (version 11.7)</td>
-					</tr>
-				</tbody>
-			</ResponsiveTable>
+			// <ResponsiveTable>
+			// 	<thead>
+			// 		<tr>
+			// 			<th>Specification</th>
+			// 			<th>Mininum</th>
+			// 		</tr>
+			// 	</thead>
+			// 	<tbody>
+			// 		<tr>
+			// 			<td>CPU</td>
+			// 			<td>Intel® or M1, M2 processors</td>
+			// 		</tr>
+			// 		<tr>
+			// 			<td>OS</td>
+			// 			<td>macOS Big Sur (version 11.7)</td>
+			// 		</tr>
+			// 	</tbody>
+			// </ResponsiveTable>
+			<div
+				className="flex justify-center items-center p-4 my-8
+				text-neutral-500 text-2xl
+				bg-neutral-100
+				border border-neutral-200
+				rounded-md"
+			>
+				macOS version is coming soon. Stay tuned...
+			</div>
 		),
 	},
 	{
@@ -96,40 +133,49 @@ const enItems = [
 			</Label>
 		),
 		children: (
-			<ResponsiveTable>
-				<thead>
-					<tr>
-						<th>Specification</th>
-						<th>Mininum</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>CPU</td>
-						<td>Intel® Core™ i5 6600K or AMD Ryzen™ 5 1600</td>
-					</tr>
-					<tr>
-						<td>OS</td>
-						<td>Ubuntu 20.04 LTS</td>
-					</tr>
-					<tr>
-						<td>RAM</td>
-						<td>4GB</td>
-					</tr>
-					<tr>
-						<td>Hard Drive</td>
-						<td>At least 10GB of Storage Space</td>
-					</tr>
-					<tr>
-						<td>GPU</td>
-						<td>GPU RAM: ≥1GB</td>
-					</tr>
-					<tr>
-						<td>Display Resolution </td>
-						<td>≥ 1280x960</td>
-					</tr>
-				</tbody>
-			</ResponsiveTable>
+			// <ResponsiveTable>
+			// 	<thead>
+			// 		<tr>
+			// 			<th>Specification</th>
+			// 			<th>Mininum</th>
+			// 		</tr>
+			// 	</thead>
+			// 	<tbody>
+			// 		<tr>
+			// 			<td>CPU</td>
+			// 			<td>Intel® Core™ i5 6600K or AMD Ryzen™ 5 1600</td>
+			// 		</tr>
+			// 		<tr>
+			// 			<td>OS</td>
+			// 			<td>Ubuntu 20.04 LTS</td>
+			// 		</tr>
+			// 		<tr>
+			// 			<td>RAM</td>
+			// 			<td>4GB</td>
+			// 		</tr>
+			// 		<tr>
+			// 			<td>Hard Drive</td>
+			// 			<td>At least 10GB of Storage Space</td>
+			// 		</tr>
+			// 		<tr>
+			// 			<td>GPU</td>
+			// 			<td>GPU RAM: ≥1GB</td>
+			// 		</tr>
+			// 		<tr>
+			// 			<td>Display Resolution </td>
+			// 			<td>≥ 1280x960</td>
+			// 		</tr>
+			// 	</tbody>
+			// </ResponsiveTable>
+			<div
+				className="flex justify-center items-center p-4 my-8
+				text-neutral-500 text-2xl
+				bg-neutral-100
+				border border-neutral-200
+				rounded-md"
+			>
+				Ubuntu version is coming soon. Stay tuned...
+			</div>
 		),
 	},
 ];

@@ -1,0 +1,233 @@
+import { Entry } from "@/docComponents/entry/Entry";
+import { ChituboxOpenIcon, ChituboxSaveIcon } from "@/components/icons/Icons";
+import { HistoryIcon, ExportIcon } from "@/components/icons/ChituboxProIcons";
+
+export const metadata = {
+	title: "文件",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/printer-management",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 文件
+
+## 项目文件
+
+| 文件类型               | 文件名后缀  | 描述                                                  |
+| ---------------------- | ----------- | ----------------------------------------------------- |
+| CHITUBOX 项目文件 2023 | \*.ctp      | 包含更多的模型信息 (位置，旋转等，支持更大的文件大小) |
+| CHITUBOX 项目文件      | \*.chitubox | 老版本的项目文件格式，包含基本模型数据和支撑数据      |
+
+### 新建项目文件
+
+<Entry mainMenu={["新项目"]} shortcut={["Ctrl", "N"]} />
+
+### 打开项目文件
+
+<Entry mainMenu={["打开项目"]} shortcut={["Ctrl", "O"]} />
+
+### 保存项目文件
+
+<Entry
+	functionMenu={[
+		"准备",
+		<div className="flex items-center gap-1">
+			<ChituboxSaveIcon />
+			保存
+		</div>,
+	]}
+	shortcut={["Ctrl", "S"]}
+/>
+
+## 3D 网格文件
+
+### 支持的 3D 网格文件格式
+
+| 文件类型    | 文件名后缀      |
+| ----------- | --------------- |
+| 导入 & 导出 | \*.stl          |
+| 导入 & 导出 | \*.obj          |
+| 导入        | \*.3ds          |
+| 导入        | \*.3mf          |
+| 导入        | \*.3dm          |
+| 导入        | \*.wrl          |
+| 导入        | \*.sat, \*.sab  |
+| 导入        | \*.dae          |
+| 导入        | \*.ifc          |
+| 导入        | \*.igs, \*.iges |
+| 导入        | \*.jt           |
+| 导入        | \*.stp, \*.step |
+| 导入        | \*.x3d          |
+
+### 导入 3D 网格文件
+
+<Entry
+	functionMenu={[
+		"准备",
+		<div className="flex items-center gap-1">
+			<ChituboxOpenIcon />
+			打开
+		</div>,
+	]}
+	mainMenu={["打开"]}
+	shortcut={["Ctrl", "O"]}
+/>
+
+### 导出 3D 网格文件
+
+<Entry
+	functionMenu={[
+		"准备",
+		<div className="flex items-center gap-1">
+			<ExportIcon />
+			导出
+		</div>,
+	]}
+	mainMenu={["导出模型"]}
+/>
+
+### 打开最近的文件
+
+<Entry
+	functionMenu={[
+		"准备",
+		<div className="flex items-center gap-1">
+			<HistoryIcon />
+			历史记录
+		</div>,
+	]}
+	mainMenu={["最近打开"]}
+	shortcut={["Ctrl", "L"]}
+/>
+
+## 切片文件
+
+### 支持的切片文件格式
+
+| 文件类型                | 文件名后缀 |
+| ----------------------- | ---------- |
+| CHITUBOX slicer         | \*.cbddlp  |
+| CHITUBOX slicer         | \*.ctb     |
+| Halot One 系列          | \*.cxdlp   |
+| ZIP Compress            | \*.zip     |
+| SLC                     | \*.slc     |
+| Fhd                     | \*.fhd     |
+| WoW                     | \*.wow     |
+| Goo                     | \*.goo     |
+| Prz                     | \*.prz     |
+| Photon 系列             | \*.photon  |
+| Photon 系列             | \*.photons |
+| CHITUBOX General Format | \*.gf      |
+| Phrozen 文件            | \*.phz     |
+| FlashDLPrint 文件       | \*.svgx    |
+| fdg                     | \*.fdg     |
+| Photon 系列             | \*.pw0     |
+| Photon 系列             | \*.pwmo    |
+| Photon 系列             | \*.pwms    |
+| Photon 系列             | \*.pwmx    |
+| Photon 系列             | \*.pwma    |
+| Photon 系列             | \*.pwmb    |
+| Photon 系列             | \*.pmsq    |
+| Photon 系列             | \*.pwx     |
+| Photon 系列             | \*.pws     |
+| Photon 系列             | \*.pm3     |
+| Photon 系列             | \*.pm3m    |
+| Photon 系列             | \*.pm3n    |
+| Photon 系列             | \*.pm3r    |
+| Photon 系列             | \*.pm5     |
+| Photon 系列             | \*.pm5s    |
+| Photon 系列             | \*.pmx2    |
+| Photon 系列             | \*.px6s    |
+| Photon 系列             | \*.dlp     |
+| Photon 系列             | \*.dl2p    |
+| 插件 1                  | \*.cws     |
+| 插件 2                  | \*.lgs     |
+
+### 导入和导出切片文件
+
+<Entry
+	functionMenu={[
+		"准备",
+		<div className="flex items-center gap-1">
+			<ChituboxOpenIcon />
+			打开
+		</div>,
+		"选择切片文件格式",
+	]}
+	mainMenu={["打开", "选择切片文件格式"]}
+	shortcut={["Ctrl", "O", "选择切片文件格式"]}
+/>
+
+<Admonition type="tip" title="提示">
+	除了上述导入文件的方式，您还可以直接将模型文件、项目文件或切片文件直接拖拽到软件窗口，即可快速打开。
+</Admonition>
+
+### 使用插件导出切片文件
+
+在 CHITUBOX 中，有些打印机是通过插件的形式支持的。因此，您需要在保存切片前下载并导入对应的插件文件。
+
+| 打印机型号         | 插件                                                                                                                                                                                            |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Longer 3D Orange10 | <SpanA href="/plugins/Longer3d-Orange10-Windows64bit-V1.4.CHplugin" download>Windows 版本</SpanA> <br /> <SpanA href="/plugins/Longer3d-Orange10-macOS-V1.4.CHplugin" download>Mac 版本</SpanA> |
+| Longer 3D Orange30 | <SpanA href="/plugins/Longer3d-Orange30-Windows64bit-V1.4.CHplugin" download>Windows 版本</SpanA> <br /> <SpanA href="/plugins/Longer3d-Orange30-macOS-V1.4.CHplugin" download>Mac 版本</SpanA> |
+| Longer 3D Orange4K | <SpanA href="/plugins/Longer3D-Orange4K-Windows64bit-V1.5.CHplugin" download>Windows 版本</SpanA> <br /> <SpanA href="/plugins/Longer3d-Orange4K-macOS-V1.5.CHplugin" download>Mac 版本</SpanA> |
+
+下载完成后，您可以通过 **左上角主菜单 > 帮助 > 插件** 打开插件窗口，然后导入插件文件。
+
+### 切片文件缩略图
+
+<Entry mainMenu={["设置", "文件", "切片文件缩略图视图"]} />
+
+可在设置中更改切片文件的缩略图视图。支持三种视图模式：放置视图、Home 视图和前视图。
+
+## 配置文件
+
+| 文件类型 | 文件名后缀 | 描述                                                 |
+| -------- | ---------- | ---------------------------------------------------- |
+| 配置文件 | \*.cfgx    | 包含更多的可配置参数信息，例如支持自定义的快捷键信息 |
+| 配置文件 | \*.cfg     | 包含打印机配置信息和支撑配置信息                     |
+
+## 文件命名设置
+
+### 模型文件
+
+<Entry mainMenu={["设置", "文件", "模型重命名"]} />
+
+自动根据您所做的操作为文件名添加后缀。 例如，“#number”、“镂空”、“修复”和“镜像”。
+
+### 项目文件
+
+<Entry mainMenu={["设置", "文件", "项目文件命名"]} />
+
+-   模型文件顺序叠加：按模型加载顺序生成文件名。
+
+### 切片文件
+
+<Entry mainMenu={["设置", "文件", "切片文件命名"]} />
+
+设置切片文件名的命名规则。
+
+### 名字替换
+
+#### 重复名称替换
+
+<Entry mainMenu={["设置", "文件", "启用重复名称替换"]} />
+
+设置冲突文件名的命名规则。
+
+#### 字符替换
+
+<Entry mainMenu={["设置", "文件", "字符替换"]} />
+
+部分操作系统不允许使用特殊字符作为文件名，内置字符替换规则将为您自动替换这些字符。
+
+#### 自定义字符替换
+
+<Entry mainMenu={["设置", "文件", "自定义字符替换"]} />
+
+您可以自定义字符替换规则。

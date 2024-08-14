@@ -1,0 +1,53 @@
+import {
+	DisplaySize,
+	TwoPointDistance,
+	PointToPlaneDistance,
+	ParallelPlaneDistance,
+} from "@/components/icons/ChituboxProIcons";
+import { ChituboxRulerIcon } from "@/components/icons/Icons";
+import { Entry } from "@/docComponents/entry/Entry";
+
+export const metadata = {
+	title: "分析/测量",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "CHITUBOX Pro 中的分析/测量界面。",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/analyze-and-measure",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 分析/测量
+
+## 显示大小
+
+<Entry
+	functionMenu={[
+		"分析测量",
+		<div className="flex items-center gap-1">
+			<DisplaySize />
+			显示大小
+		</div>,
+	]}
+	componentList={[
+		<div className="flex items-center gap-1">
+			<ChituboxRulerIcon /> 
+		</div>,
+	]}
+/>
+
+<DisplaySize /> 自动测量并显示选定模型的<SpanA href={"https://zh.wikipedia.org/wiki/%E5%8C%85%E5%9B%B4%E4%BD%93"}>包围体</SpanA>尺寸。
+
+## 两点距离
+
+<TwoPointDistance /> 测量并显示模型两点之间的距离值。
+
+## 点到平面距离
+
+<PointToPlaneDistance /> 测量并显示模型上点到平面的距离值。
+
+## 平行平面距离
+
+<ParallelPlaneDistance /> 测量并显示模型上两平面的距离值。
