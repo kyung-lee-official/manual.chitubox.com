@@ -3306,3 +3306,40 @@ export const DeleteMachine = ({ size, fill }: any) => {
 		</span>
 	);
 };
+
+export const InvertSelection = ({ size, fil }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				width="16"
+				height="16"
+				viewBox="0 0 16 16"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g clip-path="url(#clip0_1108_7610)">
+					<rect
+						x="6.5"
+						y="6.5"
+						width="9"
+						height="9"
+						rx="0.5"
+						stroke="currentColor"
+						strokeLinejoin="round"
+					/>
+					<path
+						d="M8.5 5V1.5C8.5 0.947715 8.05228 0.5 7.5 0.5H1.5C0.947715 0.5 0.5 0.947715 0.5 1.5V7.5C0.5 8.05228 0.947715 8.5 1.5 8.5H5"
+						stroke="currentColor"
+						strokeLinejoin="round"
+					/>
+					<rect x="9" y="9" width="4" height="4" fill="currentColor" />
+				</g>
+				<defs>
+					<clipPath id="clip0_1108_7610">
+						<rect width="16" height="16" fill="white" />
+					</clipPath>
+				</defs>
+			</svg>
+		</span>
+	);
+};

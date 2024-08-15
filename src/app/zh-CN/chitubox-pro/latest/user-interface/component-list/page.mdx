@@ -2,33 +2,39 @@ import {
 	ChituboxCheckboxIcon,
 	ChituboxEyeIcon,
 	ChituboxRulerIcon,
-	ChituboxDeleteIcon,
+	ChituboxProfileDeleteIcon,
+	ChituboxProfileAddIcon,
 } from "@/components/icons/Icons";
+import { InvertSelection } from "@/components/icons/ChituboxProIcons";
 
 export const metadata = {
-	title: "文件列表",
+	title: "组件列表",
 	authors: [{ name: "CHITUBOX Team" }],
-	description: "所有加载的文件都显示在文件列表中。",
+	description: "",
 	other: {
-		pageId: "/zh-CN/chitubox-basic/v2.0.0/file-list",
+		pageId: "/zh-CN/chitubox-pro/v2.0.0/component-list",
 	},
 	openGraph: {
 		images: ["/images/docs/og_logo.png"],
 	},
 };
 
-# 文件列表
+# 组件列表
 
 所有加载完成的文件都会显示在文件列表中。你可以同时选择多个文件，还可以通过单击全选按钮来选择所有文件。
 
 <ImageContainer
-	src={"/images/docs/zh-CN/chitubox-basic/2.x.x/007-file-list-panel.png"}
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/component-list-panel.png"}
 />
 
 复选框图标 <ChituboxCheckboxIcon /> 允许您选择该文件。
 
-眼睛图标 <ChituboxEyeIcon /> 允许您隐藏文件。添加图标允许您添加文件。
+反选图标 <InvertSelection /> 允许您反选文件。
 
 标尺图标 <ChituboxRulerIcon /> 允许您显示所有文件的<SpanA href={"https://zh.wikipedia.org/wiki/%E5%8C%85%E5%9B%B4%E4%BD%93"}>包围体</SpanA>尺寸。
 
-垃圾桶图标 <ChituboxDeleteIcon /> 允许您删除所选文件。
+添加图标 <ChituboxProfileAddIcon /> 允许您添加文件，也可以通过双击列表空白处导入文件。
+
+垃圾桶图标 <ChituboxProfileDeleteIcon /> 允许您删除所选文件。
+
+眼睛图标 <ChituboxEyeIcon /> 允许您隐藏文件。

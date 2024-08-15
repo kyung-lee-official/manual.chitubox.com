@@ -15,7 +15,7 @@
 					"label": "安装"
 				},
 				{
-					"item": "account-and-license-management",
+					"item": "account-and-license",
 					"label": "账号和密钥"
 				},
 				{
@@ -103,6 +103,14 @@
 						{
 							"item": "gadgets",
 							"label": "小工具"
+						},
+						{
+							"item": "component-list",
+							"label": "组件列表"
+						},
+						{
+							"item": "function-menu",
+							"label": "功能菜单"
 						}
 					]
 				},

@@ -15,8 +15,8 @@
 					"label": "Installation"
 				},
 				{
-					"item": "account-and-license-management",
-					"label": "Account and License Management"
+					"item": "account-and-license",
+					"label": "Account and License"
 				},
 				{
 					"item": "quick-start",
