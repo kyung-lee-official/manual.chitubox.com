@@ -149,11 +149,10 @@
 			},
 			"toolbar": {
 				"title": "Toolbar",
-				"link": "/en-US/chitubox-pro/latest/user-interface/toolbar"
+				"link": "/en-US/chitubox-pro/latest/user-interface/gadgets#工具栏"
 			},
 			"shortcut": {
-				"title": "Shortcut",
-				"link": ""
+				"title": "Shortcut"
 			},
 			"componentList": {
 				"title": "Component List",
@@ -164,8 +163,7 @@
 				"link": "/en-US/chitubox-pro/latest/user-interface/support-settings-panel"
 			},
 			"manualSupportOptions": {
-				"title": "Manual Support Options",
-				"link": ""
+				"title": "Manual Support Options"
 			},
 			"profileList": {
 				"title": "Profile List",

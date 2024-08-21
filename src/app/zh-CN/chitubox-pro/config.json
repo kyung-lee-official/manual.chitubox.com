@@ -101,16 +101,16 @@
 							"label": "主菜单"
 						},
 						{
-							"item": "gadgets",
-							"label": "小工具"
+							"item": "function-menu",
+							"label": "功能菜单"
 						},
 						{
 							"item": "component-list",
 							"label": "组件列表"
 						},
 						{
-							"item": "function-menu",
-							"label": "功能菜单"
+							"item": "gadgets",
+							"label": "小工具"
 						}
 					]
 				},

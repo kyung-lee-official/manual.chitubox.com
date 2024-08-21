@@ -147,23 +147,21 @@
 			},
 			"toolbar": {
 				"title": "工具栏",
-				"link": "/zh-CN/chitubox-pro/latest/user-interface/toolbar"
+				"link": "/zh-CN/chitubox-pro/latest/user-interface/gadgets#工具栏"
 			},
 			"shortcut": {
-				"title": "快捷键",
-				"link": ""
+				"title": "快捷键"
 			},
 			"componentList": {
 				"title": "组件列表",
-				"link": ""
+				"link": "/zh-CN/chitubox-pro/latest/user-interface/component-list"
 			},
 			"supportSettingsPanel": {
 				"title": "支撑设置面板",
 				"link": ""
 			},
 			"manualSupportOptions": {
-				"title": "手动支撑选项栏",
-				"link": ""
+				"title": "手动支撑选项栏"
 			},
 			"profileList": {
 				"title": "配置列表",

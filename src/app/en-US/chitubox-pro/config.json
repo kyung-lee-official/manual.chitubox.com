@@ -101,16 +101,16 @@
 							"label": "Main Menu"
 						},
 						{
-							"item": "gadgets",
-							"label": "Gadgets"
+							"item": "function-menu",
+							"label": "Function Menu"
 						},
 						{
 							"item": "component-list",
 							"label": "Component List"
 						},
 						{
-							"item": "function-menu",
-							"label": "Function Menu"
+							"item": "gadgets",
+							"label": "Gadgets"
 						}
 					]
 				},

@@ -39,7 +39,7 @@ export const Entry = (props: EntryType) => {
 		shortcut,
 		supportSettingsPanel,
 		manualSupportOptions,
-		profileList
+		profileList,
 	} = props;
 
 	const t = useTranslations("docComponents.entry");
@@ -150,11 +150,7 @@ export const Entry = (props: EntryType) => {
 					)}
 					{machineTab && (
 						<tr>
-							<Td1>
-								<Link href={t("machineTab.link")}>
-									{t("machineTab.title")}
-								</Link>
-							</Td1>
+							<Td1>{t("machineTab.title")}</Td1>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
 									{machineTab.map((item, index) => {
@@ -243,11 +239,7 @@ export const Entry = (props: EntryType) => {
 					)}
 					{manualSupportOptions && (
 						<tr>
-							<Td1>
-								<Link href={t("manualSupportOptions.link")}>
-									{t("manualSupportOptions.title")}
-								</Link>
-							</Td1>
+							<Td1>{t("manualSupportOptions.title")}</Td1>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
 									{manualSupportOptions.map((item, index) => {
@@ -307,11 +299,7 @@ export const Entry = (props: EntryType) => {
 					)}
 					{shortcut && (
 						<tr>
-							<Td1>
-								<Link href={t("shortcut.link")}>
-									{t("shortcut.title")}
-								</Link>
-							</Td1>
+							<Td1>{t("shortcut.title")}</Td1>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
 									{shortcut.map((item, index) => {

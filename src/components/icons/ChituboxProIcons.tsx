@@ -3242,7 +3242,7 @@ export const HidePlatform = ({ size, fill }: any) => {
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 			>
-				<g clip-path="url(#clip0_1128_4103)">
+				<g clipPath="url(#clip0_1128_4103)">
 					<path
 						d="M10 14H6"
 						stroke="currentColor"
@@ -3307,7 +3307,7 @@ export const DeleteMachine = ({ size, fill }: any) => {
 	);
 };
 
-export const InvertSelection = ({ size, fil }: any) => {
+export const InvertSelection = ({ size, fill }: any) => {
 	return (
 		<span className="inline-block align-middle">
 			<svg
@@ -3317,7 +3317,7 @@ export const InvertSelection = ({ size, fil }: any) => {
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 			>
-				<g clip-path="url(#clip0_1108_7610)">
+				<g clipPath="url(#clip0_1108_7610)">
 					<rect
 						x="6.5"
 						y="6.5"
@@ -3332,13 +3332,76 @@ export const InvertSelection = ({ size, fil }: any) => {
 						stroke="currentColor"
 						strokeLinejoin="round"
 					/>
-					<rect x="9" y="9" width="4" height="4" fill="currentColor" />
+					<rect
+						x="9"
+						y="9"
+						width="4"
+						height="4"
+						fill="currentColor"
+					/>
 				</g>
 				<defs>
 					<clipPath id="clip0_1108_7610">
 						<rect width="16" height="16" fill="white" />
 					</clipPath>
 				</defs>
+			</svg>
+		</span>
+	);
+};
+
+export const ResetSliderIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M10.9997 13.9997L7.99999 16.9994L5.00031 13.9997"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M5 19H11"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M8 7V16.9994"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M13.0003 10.0003L16 7.00063L18.9997 10.0003"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M19 5H13"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M16 17V7.00063"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
 			</svg>
 		</span>
 	);
