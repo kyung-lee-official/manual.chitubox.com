@@ -8,6 +8,7 @@ import {
 	AddSupportToSuspendedArea,
 	CollisionDetection,
 	CavityDetection,
+	DeleteIslandsIcon,
 } from "@/components/icons/ChituboxProIcons";
 import { Entry } from "@/docComponents/entry/Entry";
 
@@ -47,7 +48,7 @@ export const metadata = {
 
 ## 碰撞检测
 
-<CollisionDetection /> 碰撞检测位于主面板右侧。
+<CollisionDetection /> 碰撞检测位于机器标签右侧。
 
 碰撞检测可以帮助用户突出显示 3D 打印模型中的碰撞，用户可以调整模型以避免碰撞。
 
@@ -64,7 +65,12 @@ export const metadata = {
 
 ## 悬空检测
 
-悬空检测在支撑视图中可用，点击功能菜单的“支撑”选项切换到支撑视图。悬空检测位于支撑视图右侧，支撑视图位于支撑列表面板下方。
+悬空检测在支撑视图中可用，点击功能菜单的“支撑”选项切换到支撑视图。悬空检测面板在支撑功能面板上。
+
+<Entry
+	functionMenu={["支撑", "悬空检测面板"]}
+	shortcut={["Ctrl", "Shift", "D"]}
+/>
 
 <ImageContainer
 	src={
@@ -78,17 +84,25 @@ export const metadata = {
 
 ## 孤岛检测
 
-孤岛检测与悬空检测类似，但是它是通过迭代 2D 图层而不是 3D 模型的方式来检测孤岛。要使用孤岛检测，需要先点击主面板右侧文件列表面板下方的 **切片** 按钮对模型进行切片。
-
-<ImageContainer
-	src={"/images/docs/zh-CN/chitubox-basic/2.x.x/008-risk-detection-slice.png"}
+<Entry
+	functionMenu={["切片功能面板", "孤岛检测"]}
+	islandsDetectionPanel={["孤岛信息", "开始检测"]}
+	shortcut={["Ctrl", "Shift", "D"]}
 />
 
-切片模型后，您会进入预览窗口，并在预览窗口顶部看到 **孤岛检测** 和 **删除所有孤岛** 按钮。
+孤岛检测与悬空检测类似，但是它是通过迭代 2D 图层而不是 3D 模型的方式来检测孤岛。要使用孤岛检测，需要先点击主面板右侧的 **单参数切片** 按钮对模型进行切片。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/single-parameter-slice-button.png"
+	}
+/>
+
+切片模型后，您会进入预览窗口，并在预览窗口顶部看到 **孤岛检测** 按钮。
 
 ### 查看孤岛
 
-<ChituboxIslandsDetectionIcon /> 检测孤岛将检测模型中的孤岛。
+点击预览窗口顶部的 <ChituboxIslandsDetectionIcon /> 检测孤岛按钮或右侧的“开始检测”按钮将自动检测模型中的孤岛。
 
 如果检测出孤岛，在孤岛检测面板中将显示孤岛信息列表，孤岛信息包括孤岛所在层数、坐标。
 
@@ -104,12 +118,8 @@ export const metadata = {
 
 ### 删除孤岛
 
-<ChituboxDeleteIslandsIcon /> 删除所有孤岛将删除全部已检测到的孤岛。通常，您不希望直接使用此功能，而是希望返回并为已检测到的孤岛添加支撑。
+点击右侧孤岛检测面板上的 **删除所有孤岛** 按钮可一次性将所有孤岛全部删除。
 
-如果您想删除某一层的孤岛，选中对应孤岛后点击孤岛检测面板中的 **删除孤岛** 按钮。
+点击删除按钮 <DeleteIslandsIcon /> 删除所选层数的所有孤岛或删除单个已检测到的孤岛。通常，您不希望直接使用此功能，而是希望返回并为已检测到的孤岛添加支撑。
 
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-basic/2.x.x/008-risk-detection-delete-islands.png"
-	}
-/>
+删除孤岛后，点击“刷新”按钮 <ChituboxRefreshIcon />，可以刷新检测结果。

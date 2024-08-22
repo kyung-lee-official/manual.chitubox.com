@@ -168,6 +168,9 @@
 			"profileList": {
 				"title": "Profile List",
 				"link": ""
+			},
+			"islandsDetectionPanel": {
+				"title": "lslands Detection Panel"
 			}
 		},
 		"imageGray": "Image Gray",

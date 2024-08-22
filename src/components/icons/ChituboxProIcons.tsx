@@ -3406,3 +3406,31 @@ export const ResetSliderIcon = ({ size, fill }: any) => {
 		</span>
 	);
 };
+
+export const DeleteIslandsIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				width="16"
+				height="16"
+				viewBox="0 0 16 16"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g clipPath="url(#clip0_7649_12335)">
+					<path
+						fillRule="evenodd"
+						clipRule="evenodd"
+						d="M5 1.25C5 0.559747 5.55975 0 6.25 0H9.75C10.4403 0 11 0.559747 11 1.25V2H15C15.5523 2 16 2.44772 16 3C16 3.55228 15.5523 4 15 4H11H10H6H5H1C0.447715 4 0 3.55228 0 3C0 2.44772 0.447715 2 1 2H5V1.25ZM14 6H2V14C2 15.1039 2.89609 16 4 16H12C13.1039 16 14 15.1039 14 14V6Z"
+						fill="currentColor"
+					/>
+				</g>
+				<defs>
+					<clipPath id="clip0_7649_12335">
+						<rect width="16" height="16" fill="white" />
+					</clipPath>
+				</defs>
+			</svg>
+		</span>
+	);
+};

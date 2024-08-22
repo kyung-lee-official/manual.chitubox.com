@@ -166,6 +166,9 @@
 			"profileList": {
 				"title": "配置列表",
 				"link": ""
+			},
+			"islandsDetectionPanel": {
+				"title": "孤島檢測面板"
 			}
 		},
 		"imageGray": "圖片灰度",
