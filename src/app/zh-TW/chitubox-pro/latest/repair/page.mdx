@@ -1,0 +1,73 @@
+import {
+	CloseSmallHoles,
+	CloseAllHoles,
+	OrientationRepair,
+	CoatOuterSurface,
+	AddTriangle,
+	RemoveRedundantShells,
+	DeleteTriangle,
+	ReverseTriangle,
+} from "@/components/icons/ChituboxProIcons";
+
+export const metadata = {
+	title: "修复",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"CHITUBOX Pro 的修复界面包含了闭合小孔、闭合所有孔、方向修复、包裹外表面、添加三角面、删除多余壳体、删除三角面和翻转三角面等多种功能，用于修复 3D 模型中的错误和缺陷，以确保模型能够顺利打印。",
+	other: {
+		pageId: "/zh-TW/chitubox-pro/v2.0.0/repair",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 修复
+
+点击软件最上方的“修复”按钮打开修复界面。修复界面包含了多种功能用于检测和修复 3D 模型中的错误，以确保模型能够顺利打印。
+
+## 错误列表
+
+在右上角的错误列表可以查看检测出来的模型错误，支持检测的错误类型包括**多余壳体**，**孔洞**，**坏边**，**反向**，**相交**。
+
+点击**检测**选项，软件将会自动检测模型，并展示出模型的错误数据。基本修复可以完成绝大多数的修复任务，高级修复是针对清除多余壳体优化的修复。
+
+## 左侧工具栏
+
+通过**左侧工具栏**的多种选择工具可以快速选取模型局部区域进行修复。快捷选择工具包括**笔刷**、**线**、**矩形**、**多边形**和**自由曲线**。
+
+## 闭合小孔
+
+<CloseSmallHoles /> 将模型上存在损坏的 6 边（含）以下的小孔进行闭合操作。
+
+## 闭合所有孔
+
+<CloseAllHoles /> 将模型上存在损坏的所有孔进行闭合操作。
+
+## 方向修复
+
+<OrientationRepair /> 修复模型中存在方向错误的三角面。
+
+## 包裹外表面
+
+<CoatOuterSurface /> 将模型的三角面包覆方向统一向外，删除矛盾三角面，并去除交叉关联模型部分的重叠部分，确保模型的完整性。
+
+## 添加三角面
+
+<AddTriangle /> 当使用**添加三角形**功能时，鼠标左键点击对象不再是三角面数据，而是非封闭三角面的边线。
+
+## 删除多余壳体
+
+<RemoveRedundantShells /> 检测并删除模型多余壳体数。
+
+## 删除三角面
+
+<DeleteTriangle /> 删除所选的三角面。
+
+## 翻转三角面
+
+<ReverseTriangle /> 翻转所选的三角面。
+
+<Admonition type="note" title="注意">
+	当没有三角面被选中时，**删除三角形**和**翻转三角形**功能不可被使用。
+</Admonition>

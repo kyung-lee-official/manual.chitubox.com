@@ -1,0 +1,125 @@
+import {
+	ChituboxSupport,
+	ChituboxRefreshIcon,
+	ChituboxIslandsDetectionIcon,
+	ChituboxDeleteIslandsIcon,
+} from "@/components/icons/Icons";
+import {
+	AddSupportToSuspendedArea,
+	CollisionDetection,
+	CavityDetection,
+	DeleteIslandsIcon,
+} from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
+
+export const metadata = {
+	title: "风险检测",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"一些可以在 CHITUBOX 中使用的风险检测功能，包括空腔检测、碰撞检测、悬空检测和孤岛检测。",
+	other: {
+		pageId: "/zh-CN/chitubox-basic/v2.0.0/risk-detection",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 风险检测
+
+## 空腔检测
+
+<CavityDetection /> 空腔检测位于机器标签右侧。
+
+空腔检测可以帮助用户识别 3D 打印模型中的任何封闭空腔，例如封闭的口袋或空洞，并且用户可以向模型添加孔以避免真空效应。
+
+下面是一个空心模型的对比，空腔检测关闭和打开。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-cavity-off.png"
+	}
+	text1={"空腔检测关闭"}
+	img2Src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-cavity-on.png"
+	}
+	text2={"空腔检测打开"}
+/>
+
+## 碰撞检测
+
+<CollisionDetection /> 碰撞检测位于机器标签右侧。
+
+碰撞检测可以帮助用户突出显示 3D 打印模型中的碰撞，用户可以调整模型以避免碰撞。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/008-collision-detection-off.png"
+	}
+	text1={"碰撞检测关闭"}
+	img2Src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/008-collision-detection-on.png"
+	}
+	text2={"碰撞检测打开"}
+/>
+
+## 悬空检测
+
+悬空检测在支撑视图中可用，点击功能菜单的“支撑”选项切换到支撑视图。悬空检测面板在支撑功能面板上。
+
+<Entry
+	functionMenu={["支撑", "悬空检测面板"]}
+	shortcut={["Ctrl", "Shift", "D"]}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/risk-detection-suspend-detection.png"
+	}
+/>
+
+它提供了三个准确度级别：低、中和高。 精度等级越高，检测结果越准确，但检测时间越长。 点击“刷新”按钮 <ChituboxRefreshIcon />，可以刷新检测结果。
+
+单击 “悬空区域” 面板中的箭头将自动放大模型中的相应区域。单击<AddSupportToSuspendedArea /> 按钮可以为悬空区域自动添加支撑。
+
+## 孤岛检测
+
+<Entry
+	functionMenu={["切片功能面板", "孤岛检测"]}
+	islandsDetectionPanel={["孤岛信息", "开始检测"]}
+	shortcut={["Ctrl", "Shift", "D"]}
+/>
+
+孤岛检测与悬空检测类似，但是它是通过迭代 2D 图层而不是 3D 模型的方式来检测孤岛。要使用孤岛检测，需要先点击主面板右侧的 **单参数切片** 按钮对模型进行切片。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/single-parameter-slice-button.png"
+	}
+/>
+
+切片模型后，您会进入预览窗口，并在预览窗口顶部看到 **孤岛检测** 按钮。
+
+### 查看孤岛
+
+点击预览窗口顶部的 <ChituboxIslandsDetectionIcon /> 检测孤岛按钮或右侧的“开始检测”按钮将自动检测模型中的孤岛。
+
+如果检测出孤岛，在孤岛检测面板中将显示孤岛信息列表，孤岛信息包括孤岛所在层数、坐标。
+
+点击单个孤岛坐标将在预览窗口中以红色突出显示已检测到的孤岛。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/risk-detection-islands.png"}
+/>
+
+<Admonition type="tip" title="提示">
+	鼠标左键单击对应孤岛坐标，可切换预览图为孤岛**局部模式**或**全局模式**。
+</Admonition>
+
+### 删除孤岛
+
+点击右侧孤岛检测面板上的 **删除所有孤岛** 按钮可一次性将所有孤岛全部删除。
+
+点击删除按钮 <DeleteIslandsIcon /> 删除所选层数的所有孤岛或删除单个已检测到的孤岛。通常，您不希望直接使用此功能，而是希望返回并为已检测到的孤岛添加支撑。
+
+删除孤岛后，点击“刷新”按钮 <ChituboxRefreshIcon />，可以刷新检测结果。

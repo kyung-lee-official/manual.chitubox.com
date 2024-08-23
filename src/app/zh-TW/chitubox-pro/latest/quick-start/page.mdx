@@ -1,0 +1,119 @@
+import {
+	ChituboxMenu,
+	ChituboxAddMachine,
+	ChituboxSupport,
+	ChituboxFileConfig,
+} from "@/components/icons/Icons";
+import { MagicSupport } from "@/components/icons/ChituboxProIcons";
+
+export const metadata = {
+	title: "快速入门",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"本节将带您了解 CHITUBOX Pro 最基本的使用方法，让您尽快上手 CHITUBOX。我们将从加载模型开始，然后给模型添加支撑、对模型进行切片，最后导出可打印文件到您的打印机。",
+	other: {
+		pageId: "/zh-TW/chitubox-pro/v2.0.0/quick-start",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 快速入门
+
+本节将带您了解 CHITUBOX Pro 最基本的使用方法，让您尽快上手。 我们将从加载模型开始，然后给模型添加支撑、对模型进行切片，最后导出可打印文件到您的打印机。
+
+## 添加机器
+
+首次启动 CHITUBOX Pro 时，您将根据需要添加您的打印机。假设我们想添加 ELEGOO Jupiter。单击机器标签栏上的加号按钮 <ChituboxAddMachine size={24} />或点击功能面板的添加机器功能，然后从列表中选择 ELEGOO Jupiter。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-add-machines.png"
+	}
+/>
+
+点击 “下一步”。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-configurations.png"
+	}
+/>
+
+您可以在此处更改打印机的配置。为方便起见，我们将使用默认设置。单击 “应用”。
+
+<Admonition type="warning" title="警告">
+	切勿更改预设打印机配置文件的**分辨率**和**尺寸**，这可能会导致打印机在读取文件时报告错误。
+</Admonition>
+
+## 加载文件
+
+您可以通过对话窗的方式或者拖拽的方式将现有文件加载到软件中。现在让我们尝试通过对话窗口的方式打开一个文件。
+
+单击主窗口左上角的菜单按钮 <ChituboxMenu size={24} />。如果要加载现有项目，请单击 “打开项目”。如果您想打开 3D 模型文件，请单击 “打开”。 您可以点击 <NextLink href="/zh-CN/chitubox-pro/latest/file#3d-网格文件">🔗 此链接</NextLink> 查看支持的 3D 模型文件类型。
+
+从电脑中选择一个想要切片的 3D 模型文件。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/2.x.x/003-quick-start-open-files.png"
+	}
+/>
+
+打开文件。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-open-files-2.png"
+	}
+/>
+
+## 添加支撑
+
+如果不加支撑，我们的模型很可能无法打印成功，因为它在打印平台上只有一个接触点，并且模型的重心高于该点，处于极不稳定的状态。点击上方功能菜单的“支撑”选项，进入支撑配置窗口。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-support.png"}
+/>
+
+本章节为了尽可能保持简单，将使用“魔法支撑”的自动加支撑功能。点击左侧的 <MagicSupport />魔法支撑图标，然后点击 “应用” 按钮即可自动为模型添加支撑。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-supported.png"}
+/>
+
+不错，现在我们可以继续对文件进行切片了。
+
+## 切片
+
+点击功能菜单的“准备”选项回到主窗口。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-slice.png"}
+/>
+
+然后点击右下方的 “单参数切片” 按钮，对文件进行切片。这个过程需要一段时间，具体时间取决于模型的大小和支撑的复杂程度。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-slice-2.png"}
+/>
+
+## 导出可打印文件
+
+这是最后一步，单击右下方的 “保存切片” 按钮以打开保存切片文件窗口。
+
+<Admonition type="warning" title="警告">
+	请不要将切好的文件直接保存到U盘，这样容易造成文件错误。
+	推荐的工作流程是先将文件保存至您的计算机硬盘上，然后再将文件复制到 U 盘。
+	此外，如果您打算打印较大的模型，强烈建议将切片文件加载回 CHITUBOX
+	并预览文件，检查是否存在任何可以直观发现的错误，这样就不会浪费时间和树脂打印一个损坏的文件。
+</Admonition>
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-basic/2.x.x/003-quick-start-save-as.png"}
+/>
+
+您可以在此处命名文件并选择文件保存的位置。确保在 “保存类型” 下拉菜单中选择 _.ctb_ 格式。单击 “保存” 以保存文件，之后将文件复制到 U 盘。
+
+恭喜您完成 CHITUBOX 基础入门教程，祝打印一切顺利！ 🎉🎉🎉

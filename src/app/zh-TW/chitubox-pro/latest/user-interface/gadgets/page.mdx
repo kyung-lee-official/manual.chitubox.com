@@ -1,0 +1,169 @@
+import {
+	ChituboxSelectIcon,
+	ChituboxSelectBoxIcon,
+	ChituboxMoveIcon,
+	ChituboxRotateIcon,
+	ChituboxScaleIcon,
+	ChituboxMirrorIcon,
+	ChituboxGlobalIcon,
+	ChituboxLocalIcon,
+	ChituboxResetIcon,
+	ChituboxAddMachine,
+	ChituboxMachineBarMenuIcon,
+	ChituboxDeleteIcon,
+	ChituboxCopyAddIcon,
+	ChituboxSupport,
+	ChituboxSupportDisplayAllIcon,
+	ChituboxSupportDisplayTopIcon,
+	ChituboxSupportDisplayTipIcon,
+	ChituboxRenderDetailedIcon,
+	ChituboxRenderFresnelIcon,
+	ChituboxHomeIcon,
+	ChituboxPerspectiveIcon,
+	ChituboxOthographicIcon,
+	ChituboxEyeIcon,
+} from "@/components/icons/Icons";
+import { ResetSliderIcon } from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
+
+import {
+	MagnifierIcon,
+	HidePlatform,
+	DeleteMachine,
+} from "@/components/icons/ChituboxProIcons";
+
+export const metadata = {
+	title: "小工具",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "一些可以在 CHITUBOX 软件中使用的小工具。",
+	other: {
+		pageId: "/zh-TW/chitubox-pro/v2.0.0/gadgets",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 小工具
+
+在本节中，我们将介绍一些可以在 CHITUBOX 软件中使用的小工具。
+
+## 工具栏
+
+<ImageContainer src="/images/docs/zh-CN/chitubox-pro/2.x.x/toolbar.png" />
+
+工具栏位于主窗口左侧。它主要包括<NextLink href="/zh-CN/chitubox-pro/latest/model-processing#选择">选择</NextLink>、<NextLink href="/zh-CN/chitubox-pro/latest/model-processing#移动">移动</NextLink>、<NextLink href="/zh-CN/chitubox-pro/latest/model-processing#旋转">旋转</NextLink>、<NextLink href="/zh-CN/chitubox-pro/latest/model-processing#缩放">缩放</NextLink>和<NextLink href="/zh-CN/chitubox-pro/latest/model-processing#镜像">镜像</NextLink>这五个选项。
+
+## 信息面板
+
+信息面板位于主窗口左下方，它显示了当前设置的简要信息。
+
+## 机器管理栏
+
+机器管理栏位于主窗口的下方，你可以在这里添加、删除、复制机器。
+
+点击添加机器按钮 <ChituboxAddMachine /> 以添加新的机器。点击机器旁边的图标 <ChituboxMachineBarMenuIcon />，你会看到 <ChituboxEyeIcon /> 隐藏平台/网格、<ChituboxCopyAddIcon /> 复制机器和 <DeleteMachine /> 删除机器选项。
+
+## 支撑显示模式
+
+点击功能菜单的“支撑”选项切换到支撑视图。 有 3 个按钮允许您在不同的支撑显示模式之间切换。
+
+<ChituboxSupportDisplayAllIcon /> 显示完整的支撑。
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-all.png"
+	}
+/>
+
+<ChituboxSupportDisplayTopIcon /> 显示支撑顶部。
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-top.png"
+	}
+/>
+
+<ChituboxSupportDisplayTipIcon /> 显示支撑尖端。
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-tip.png"
+	}
+/>
+
+## 渲染模式
+
+渲染模式位于主窗口的右上角。 它包含两种模式：细节和菲涅耳。
+
+<ChituboxRenderDetailedIcon /> 在细节模式下，模型显示更多表面细节。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-details.png"}
+/>
+
+<ChituboxRenderFresnelIcon /> 在菲涅尔模式下，模型在表面上会显得更加平滑。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-fresnel.png"}
+/>
+
+## 视窗小工具
+
+视窗小工具位于主窗口的右上方，它提供了一种快速操作视图的直观方法，使用户能够快速改变视窗的角度或视角，便于检查对象之间的相对位置。
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/005-gadget-viewport_gizmo.svg"
+	}
+/>
+
+<ChituboxHomeIcon /> 图标和透视 <ChituboxPerspectiveIcon /> /
+正交 <ChituboxOthographicIcon /> 图标位于主窗口的右上方，在视窗小工具旁边。
+
+主页图标允许用户将视窗重置为默认视图。透视/正交图标允许用户在透视和正交视图之间切换。透视模式提供了一个更真实的场景地壳视图，而正交模式则为用户提供了一个场景的平面视图，它允许用户轻松地评估物体在打印平台上的位置并根据需要进行调整。
+
+## 滑动条
+
+滑块位于主窗口的右侧，用于预览模型的截面面积（预切片）和模型的层数（后切片）。您可以移动滑块观察在 Z 轴方向的模型各个部分和层。还可以点击滑块上方的 “X” 和 “Y” 展开 x 和 y 轴方向的滑动条来观察对应轴方向的横截面。
+
+<div className="flex justify-center items-center">
+	<div className="flex-1 p-2">
+		<ImageContainer
+			src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadget-slider-xy.png"}
+			style={{ width: "400px" }}
+		/>
+	</div>
+	<div className="flex-1">
+		<ImageContainer
+			src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadget-slider.png"}
+			style={{ height: "600px" }}
+		/>
+	</div>
+	<div className="flex-1">
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/2.x.x/gadget-slider-after-slicing.png"
+			}
+			style={{ height: "600px" }}
+		/>
+	</div>
+</div>
+
+-   切片前
+
+滑块在顶部和底部分别有两个按钮，用于对滑块位置进行动画处理。移动滑块后，可点击底部的<ResetSliderIcon />按钮将滑块位置恢复到初始位置。滑块组件可以帮助用户在 3D 模型被送到打印机之前评估其质量，使他们能够根据需要及时进行调整。
+
+-   切片后
+
+切片后将在滑动条顶部显示切片总层数，输入层数可快速跳转。
+
+## 放大镜
+
+切片完成后，在切片预览视图下方有 <MagnifierIcon /> 放大镜工具。
+
+点击放大镜图标，您可以设置放大倍率，将鼠标移动到切片上对当前层的切片进行局部放大，以便更仔细地检查切片的质量和精度。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-magnifier-02.png"}
+/>
