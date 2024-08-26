@@ -21,7 +21,7 @@ import {
 } from "@/components/icons/ChituboxProIcons";
 
 export const metadata = {
-	title: "模型处理",
+	title: "Model Processing",
 	authors: [{ name: "CHITUBOX Team" }],
 	description:
 		"CHITUBOX Pro 中的模型处理功能。包括选择、移动、旋转、缩放、镜像、复制、拆分模型、自动布局、添加标签、布尔操作、切割、镂空、挖洞等",
@@ -33,158 +33,151 @@ export const metadata = {
 	},
 };
 
-# 模型处理
+# Model Processing
 
-本节介绍 CHITUBOX Pro 中的模型处理功能。包括选择、移动、旋转、缩放、镜像、复制、拆分模型、自动布局、添加标签、布尔操作、切割、镂空、挖洞等。
+This chapter introduces model processing functions of CHITUBOX Pro, including selection, moving, rotating, scaling, mirroring, copying, splitting models, automatic layout, adding labels, boolean operations, cutting, hollowing and hole creation.
 
-点击主顶部的 “准备” 标签打开准备界面。
+Click on the “Prepare” tab at the top of the function menu to open the prepare menu.
 
-## 选择
+## Select
 
-<ChituboxSelectIcon /> 通过点击的方式选择画面中的模型。
+<ChituboxSelectIcon /> Click to select the model in the canvas.
 
-<ChituboxSelectBoxIcon /> 通过框选的方式选择画面中的模型。
+<ChituboxSelectBoxIcon /> Drag and select all models within the selection box.
 
-## 变换
+## Transform
 
-### 移动
+### Move
 
-<ChituboxMoveIcon /> 用于移动所选模型。你也可以通过在移动面板中输入坐标来精准移动模型。
+<ChituboxMoveIcon /> moves selected models. You can also enter coordinates in the move panel to accurately move models.
 
--   居中：将所选模型居中放置在打印平台上。如果多个模型被选择，则以所选多个模型的组合的中心为准进行居中。
+-   Center：Place selected model at the center of the print platform. Multiple model wihtin selection will be centered based on the center of the model group.
 
--   放在底板上：以模型的最低点为基准点，将所选模型放在底板上。
+-   On Platform：Place selected model on the print plateform based on the lowest point of the model.
 
-### 旋转
+### Rotate
 
-<ChituboxRotateIcon /> 用于旋转所选模型。你也可以通过在移动面板中输入角度来精准旋转模型。
+<ChituboxRotateIcon /> rotates selected models. You can also enter degree angles in the rotate panel to accurately rotate models.
 
--   组合中心：以所选的多个模型的组合的中心为旋转中心。
+-   Combination Center：Set the center of rotation at the combination center of multiple selected models.
 
--   按面放平：将模型按照你所选择的面放置在打印平台上。
+-   Orient to Face：Place selected models on the platform by aligning a model surface to the platform.
 
--   自动定向已选：将模型旋转至合适的摆放角度。
+-   Auto Orientation：Rotate selected models to the optimal position.
 
-### 缩放
+### Scale
 
-<ChituboxScaleIcon /> 用于缩放所选模型。你也可以通过在移动面板中输入大小和比例来精准缩放模型。
+<ChituboxScaleIcon /> scales selected models. You can also input the exact size or scale ratio to accurately scale models.
 
-<ChituboxGlobalIcon /> 全局坐标：缩放手柄平行于全局坐标。
+<ChituboxGlobalIcon /> Global Coordinates：Align the scale controller to the global coordinates.
 
-<ChituboxLocalIcon /> 局部坐标：缩放手柄平行于模型的本地坐标。
+<ChituboxLocalIcon /> Local Coordinates：Align the scale controller to the model's local coordinates.
 
-<ChituboxResetIcon /> 重置：重置比例为 100%。
+<ChituboxResetIcon /> Reset：Reset the model scale to 100% of the original size.
 
--   锁定比例：启用此选项后，模型的 X、Y、Z 三轴将以相同的比例进行缩放。这有助于保持模型的整体比例，避免变形。
+-   Lock Ratio：when enabled，selected models will be scaled at the same ratio in the X,Y and Z directions, in order to keep the overall ratio of the model and avoid deformation.
 
--   缩放以适应：自动调整模型的大小，使其尺寸能够适配打印平台。
+-   Scale to Fit：automatically adjust the size of selected models to fit on the print platform.
 
-## 镜像
+## Mirror
 
-<ChituboxMirrorIcon /> 将所选模型沿指定轴线镜像。
+<ChituboxMirrorIcon /> mirrors selected models based on a selected axis.
 
--   保留原始模型：启用此选项后，可同时保留原始模型和镜像模型。
+-   Keep the Original Model：when enabled, both of the original model and the mirrored model will be kept.
 
-## 复制
+## Copy
 
-<CopyIcon /> 复制一个或多个所选定模型，并将指定数量的复制模型添加于当前作业的项目之中。
+<CopyIcon /> copies one or multiple selected models，and add specified number of copied models to the current project.
 
-## 拆分模型
+## Split Model
 
-<SplitModelIcon /> 将原组合装配模型拆分为独立的零件模型。
+<SplitModelIcon /> splits the original assembly model into independent part models.
 
-## 自动布局
+## Auto Layout
 
-<ChituboxAutoLayoutIcon /> 将多个模型按照设定的方式进行快速排版布局，包括在打印平台的中心、沿打印平台的
-X 侧和沿打印平台的 Y 侧自动布局模型。
+<ChituboxAutoLayoutIcon /> quickly layouts the models in the project according to the set arrangement rule, including auto-layout at the center of the print platform, and arrange along the X-edge or Y-edge of the platform.
 
--   允许底阀重叠：自动布局时允许底阀重叠。
--   锁定模型旋转：锁定模型的旋转方向，使其在自动布局过程中保持固定的方向。
--   循环布局：模型会按照循环首尾相连的模式进行自动布局。
--   布局范围：指定自动布局的范围。
+-   Allow Raft Overlapping：allow rafts of models to overlap during auto layout.
+-   Lock Model Rotation (Z)：lock the rotation angle of models to keep a fixed orientation during rotation.
+-   Loop Layout: automatically arrange models in a loop.
+-   Layout Scope：set the scope for the auto layout operation.
 
-## 添加标签
+## Add Tag
 
-<AddTapIcon /> 为模型添加设定的文本标签。
+<AddTapIcon /> adds custom text tag to models.
 
-你可以在这里设置文本样式、对齐方式，单击文本输入框即可输入文字。
+You can control the text style and alignment in the panel. Click on the text box to input tag text.
 
--   字高(mm)：标签文本的高度， 默认为 5。
--   旋转角度：文字顺时针方向旋转的角度。
--   厚度(mm)：标签的厚度。
--   添加模式：有凸起和内凹两种模式可选。
+-   Height(mm)：the text height for the tag with default at 5mm.
+-   Angle：the angle at which the text is rotated clockwise.
+-   Depth(mm)：thickness/depth of the tag.
+-   Mode：choose between extrusion tag or engraving tag.
 
-## 布尔操作
+## Boolean Operation
 
-<BooleanIcon /> 为选定相交的模型进行模型间的**联合**、**相交**或**相减**的运算。
+<BooleanIcon /> executes **Join**、**Intersect**or**Subtraction** operations between selected models.
 
-## 切割
+## Cut
 
-<CutIcon /> 将模型按照设定的切割面进行分割操作。
+<CutIcon /> cuts models based on a set cut plane.
 
--   你可以以基于坐标轴的面作为切割面来切割模型。
+-  You can cut models using a cut plane based on coordinate planes.
 
-## 镂空
+## Hollow
 
-<ChituboxHollowIcon /> 将选定的模型按照设定的镂空参数镂空。
+<ChituboxHollowIcon /> hollows selected models based on custom parameters.
 
--   壁厚：镂空时被操作对象剩余的腔体厚度（**外镂空** 模式下时为被削去的厚度）。
--   精度：生成的三角面的密度。0 表示最小密度，1 表示最大密度。
--   模式：
-    -   _内镂空_：镂空后剩余一个封闭腔体。
-    -   _外镂空_：削去对对象外层，厚度为**壁厚**。
-    -   _底部贯穿_：和*内镂空*类似，但不保留底部。
--   填充：镂空的同时在模型内部生成选定的填充结构。
--   镂空过程动画：镂空时展示镂空动画（实际镂空进度以底部进度条为准）。
--   仅保留主腔：在模型镂空时只生成一个主腔体。
+-   Wall Thickness：the remaining wall thickness for the hollowed object(the shaved off thickness under **Outter Hollow** mode).
+-   Precision：the density of triangles generated for the hollowing surfaces. 0 represents the minimum precision and 1 is the maximum precision.
+-   Mode：
+    -   _Inner Hollow_：leaves an enclosed cavity after hollowing.
+    -   _Outter Hollow_：shave off material from the outter surface based on **Wall Thickness**.
+    -   _Bottom Through_：similar effect to *Inner Hollow* without keeping the bottom of the object.
+-   Infill：generate preset infill strucutre during the hollowing operation.
+-   Animation：displays animation showing the hollowing process(refer to the progress bar for the actual process)。
+-   Keep the Main Cavity：generates one single cavity during the hollowing operation.
 
-<Admonition type="note" title="注意">
-	当填充类型为实体模式时，不会执行镂空操作，而是填实模型的腔体。
+
+### Infill Type
+
+
+#### Scaffold
+
+Infill cavities with scaffold structures.
+
+-   Infill Density (%): the density of the infill structure.
+
+#### Hive
+
+Infill cavities with hive structures. The hive structures shall be perpendicular to the platform.
+
+-   Hexagon Diameter(mm)：the diameter of each hive hexagon's circumscribled circle.
+-   Wall Thickness(mm)：the distance between each adjacent hexagons.
+-   Crossing Hole Starting Height(mm)：the minimum height of holes cross the hexagon structures.
+
+#### Grid
+
+Infill cavities with grid structures. The grid structures shall be perpendicular to the platform.
+
+-   Grid Width(mm)：the width of each square grid.
+-   Wall Thickness(mm)：the distance between each adjacent grids.
+-   Crossing Hole Starting Height(mm)：the minimum height of holes cross the grid structures.
+
+<Admonition type="note" title="Note">
+	Round crossing holes are automatically generated between adjacent holes in order to relieve pressure during printing for hive and grid structures. The diameter of the crossing holes is 1/6 of the hexagons' circumscribed diameter or grid width.
+	The starting height of the crossing holes is based on the centerline of the holes and user-set height. Additional groups of crossing holes are generated with equal spacing of The center of the the hexagons' circumscribed diameter or grid width.
 </Admonition>
 
-### 填充类型
+## Hole
 
-#### 实体
+<ChituboxDigHoleIcon /> Create holes on selected models based on custom parameters.
 
-将腔体填实。
-
-#### 立体框架
-
-为腔体填充立体框架。
-
--   填充密度(%): 立体框架的密度。
-
-#### 蜂窝结构
-
-为腔体填充蜂窝结构，蜂窝结构将与平台垂直。
-
--   蜂窝孔径(mm)：六边形蜂窝孔的外接圆直径尺寸。
--   壁厚(mm)：相邻蜂窝孔之间的距离。
--   通孔起始高度(mm)：最低连接孔的高度。
-
-#### 网格结构
-
-为腔体填充网格结构，网格结构将与平台垂直。
-
--   网格边长：正方形网格的边长。
--   壁厚：相邻孔洞之间的距离。
--   通孔起始高度：最低连接孔的高度。
-
-<Admonition type="note" title="提示">
-	为了满足蜂窝结构和网格结构的泄压需求，相邻孔洞之间会自动生成圆形连通孔。直径为蜂窝孔径（或网格结构）的六分之一。
-	通孔位置以圆心为基准，并以定义的高度作为起始高度，每经过一个蜂窝孔径（或网格结构）的长度增加一组连通孔。
-</Admonition>
-
-## 挖洞
-
-<ChituboxDigHoleIcon /> 将选定的模型按照设定的挖洞参数挖洞。
-
--   挖洞模式：有贯穿和非贯穿两种模式可选。
--   多边形边数：边数越大，孔的形状将越接近圆形。
--   Φ：多边形外接圆的直径。
--   B：孔能够穿透的最大深度。
--   C：打孔倾斜角度。
--   旋转：多边形的旋转角度。
--   保留孔销：开启/关闭保留打孔塞子。
--   打孔角度：以垂直于模型/相机透视角度进行挖洞。
--   限制深度 B：开启/关闭限制挖洞深度 B。
+-   Hole Mode：Choose between generating Penerating or Non-penetrating holes.
+-   Edge Numner：As number of edge increases, the shape of the hole will get close to a circle.
+-   Φ：The diameter of the hole.
+-   B：The maximum depth of the hole for non-penetrating holes.
+-   C：The angle between the side wall of the hole and the bottom plane of the hole.
+-   Rotation: The rotation angle of the hole.
+-   Retain Plug：Whether to keep the excavated material as a separate part.
+-   Angle：Digging angle perpendicular to the screen or to the model.
+-   Limited Depth B: Turning On/Off limiting hole depth as defined by B under Penetrating Model.

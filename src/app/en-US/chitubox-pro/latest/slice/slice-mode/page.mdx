@@ -1,7 +1,7 @@
 import { Entry } from "@/docComponents/entry/Entry";
 
 export const metadata = {
-	title: "切片模式",
+	title: "Slice Mode",
 	authors: [{ name: "CHITUBOX Team" }],
 	description: "CHITUBOX Pro 中两种不同的切片模式：单参数切片和多参数切片。",
 	other: {
@@ -12,58 +12,58 @@ export const metadata = {
 	},
 };
 
-# 切片模式
+# Slice Mode
 
-## 单参数/多参数切片
+## Single Parameter/Multi-parameter Slice
 
 <Entry shortcut={["Ctrl", "Shift", "S"]} />
 
-切片是导出可打印文件前的最后一步。
+Slice is the final step before exporting a printable file.
 
-点击主界面的右下方的切片模式按钮，选择 **单参数切片** 或 **多参数切片**模式，点击切片按钮进入切片预览界面。
+Click the Slice Mode button at the bottom， choose **Single Parameter Slice** or **Multi-parameter Slice**，and then click the slice button to enter slicing preview.
 
-### 单参数切片
+### Single Parameter Slice
 
-**单参数切片** 会根据 **配置列表** 中选中的配置文件来对所有打印平台上的模型进行切片。
+**Single Parameter Slice** uses the configuration file selected from the **Configuration List** to slice all modeles on the print platform.
 
-### 多参数切片
+### Multi-parameter Slice
 
-多参数切片是一种高级的切片功能，它允许您为不同的**模型**、不同**高度**或者不同的**横截面面积**设置不同的打印参数，从而实现更精细的控制和更高的打印质量。
+Multi-parameter Slice is an advanced slicing option，allowing you to set diffrent print parameters for different **models**, **heights** or different **cross-sectional areas**, to achieve more accurate control and heigher print qualities.
 
-<Admonition type="note" title="注意">
-	目前只有 CTB 格式支持多参数切片。
+<Admonition type="note" title="Note">
+	Currently only CTB files support multi-parameter slice.
 </Admonition>
 
-#### 模型
+#### Model
 
-不同的模型对象使用不同的打印参数。
+Different model object uses different print parameters.
 
-1. 未指定 Profile 的模型会按照**默认参数配置文件**指定的 Profile 执行。
+1. Models without specified profiles will be sliced according to the profile set by the **Default Configruation File**.
 
-1. 在同一打印机作业环境下修改相同名称的 Profile 文件，其余位置的同一名称的 Profile 文件会同步进行更新。
+1. Changes to profiles with the same name in the same printer environment will be synchronized.
 
-1. 在编辑差异参数时，不可编辑项（`*` 标识项）及其它未显示打印参数相关项均会按照默认的 Profile 执行。
+1. When editing differential parameters，Uneditable items（marked by `*`）and other non-displayed printing parameters will follow the default profile.
 
-#### 高度
+#### Height
 
-不同的高度层使用不同的打印参数。
+Layers at different heights use different printing parameters.
 
-1. 未指定 Profile 的高度区间会按照指定的**默认 Profile** 执行。
+1. Height sections without specified Profiles comply with the Profile use the **Default Profile**.
 
-1. 底层和过渡层打印栏的相关参数按照按照**默认 Profile** 执行。
+1. Parameters for bottom layers and transition layers follow the **Default Profile**.
 
-1. 在编辑差异参数时，不可编辑项（`*`标识项）及其它未显示打印参数相关项均会按照默认的 Profile 执行。
+1. When editing differential parameters，Uneditable items（marked by `*`）and other non-displayed printing parameters will follow the default profile.
 
-#### 横截面面积
+#### Cross-sectional Area
 
-不同的横截面面积使用不同的打印参数。此处的百分比指的是横截面相对于平台的总有效面积的百分比。
+Different cross-sectional areas use different parameters. The percentage refers to the the cross-section relative to the total effective area of the platform.
 
-1. 未指定 Profile 的截面区间会按照指定的**默认 Profile** 执行。
+1. Sections without specified Profile use the **Default Profile**. 
 
-1. 底层和过渡层打印栏的相关参数按照按照**默认 Profile** 执行。
+1. Parameters for bottom layers and transition layers follow the **Default Profile**.
 
-1. 在编辑差异参数时，不可编辑项（`*`标识项）及其它未显示打印参数相关项均会按照默认的 Profile 执行。
+1. When editing differential parameters，Uneditable items（marked by `*`）and other non-displayed printing parameters will follow the default profile.
 
-1. 在 **横截面面积** 模式下，使用不同的横截面来区分区间，因此，一个 Profile 是有可能被应用于多个区间的。
+1. In the **Cross-sectional Area** mode, intervals are determined by the cross section areas. So a profile may be used by several intervals, as shown below:
 
-**底层** 和 **过渡层** 相关的设置仅在最底下的区间生效。
+**Bottom Layers** and **Transition Layers** only apply to the lowest sections.

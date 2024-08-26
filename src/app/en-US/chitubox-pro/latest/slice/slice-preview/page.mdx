@@ -4,7 +4,7 @@ import {
 } from "@/components/icons/ChituboxProIcons";
 
 export const metadata = {
-	title: "切片预览",
+	title: "Slice Preview",
 	authors: [{ name: "CHITUBOX Team" }],
 	description:
 		"在切片软件中预览切片文件对于确保 3D 打印准确并满足您的期望非常重要。",
@@ -16,24 +16,24 @@ export const metadata = {
 	},
 };
 
-# 切片预览
+# Slice Preview
 
-切片完成后，主窗口被分为模型视图和切片预览视图两部分。**模型视图**用于展示模型，**切片预览视图**用于预览每层的切片。
+The main window will be split into model view and slice preview when the slice process is done.**Model View** displays sliced models, and **Slice Preview** shows a preview of every sliced layer.
 
-## 信息预览
+## Information Preview
 
-### 基本信息预览
+### Basic Information Preview
 
-您可以在右上方的预估面板查看基本的打印信息。打印信息包括机型、树脂、体积、重量、价格和打印时间。
+You can check basic print information on the top right estimation panel. Print information includes machine model, resin, volume, weight, cost, and estimated print time.
 
-<Admonition type="note" title="注意">
-	树脂体积的计算方法是将 体素（像素面积 × 层高）相加，算法非常简单。
-	然而，这是一个理论值，它可能会受到现实世界中许多其他因素（构建板和模型表面上的树脂残留、树脂挥发性、固化过程中的密度变化等）的影响。
+<Admonition type="note" title="Note">
+	The volume of resin is a simple calculation of summing up of all voxels (area of pixels x layer height).
+	This is, however, a theoretic value, that can be affected by many other factores in reality, such as residual resin on the build plate or the model, resin volatility, density change during curing etc.
 </Admonition>
 
-### 打印参数预览
+### Print Parameter Preview
 
--   打印参数预览栏： 展示切片文件的预览图、当前打印机的详细信息和当前预览层的部分打印参数设置。
+-   Print Parameter Preview Panel: displays the preview of the slice file, detailed information of the current printer and certain print parameters for the viewed layer.
 
 <ImageContainer
 	src={
@@ -41,11 +41,11 @@ export const metadata = {
 	}
 />
 
-## 切片编辑
+## Slice Editor
 
-### 切片参数编辑
+### Slice Parameter Editor
 
-<SliceParameterEditor /> 编辑和调整当前切片的相关打印参数。
+<SliceParameterEditor /> Edit and adjust printer parameters of the sliced models.
 
 <ImageContainer
 	src={
@@ -53,46 +53,46 @@ export const metadata = {
 	}
 />
 
-此窗口提供了 **切片设置 > 打印** 的部分快捷访问，无需退出切片预览界面即可修改部分打印参数。
+This window provides quick access to some parameters found under **Slice Settings > Print**, allowing users to change these parameters without quiting the slice preview window.
 
-<Admonition type="note" title="注意">
-	**切片参数编辑** 仅在**单参数切片**模式下可用。
+<Admonition type="note" title="Note">
+	**Slicing Parameter Editing** is only available under **Single Parameter Slice** mode.
 </Admonition>
 
-### 孤岛检测
+### Island Detection
 
-#### 检测孤岛
+#### Detect Islands
 
-使用<NextLink href="/zh-CN/chitubox-pro/latest/risk-detection#孤岛检测">孤岛检测</NextLink>工具检测当前切片文件中是否存在不可成功打印的孤岛。
+Use <NextLink href="/zh-CN/chitubox-pro/latest/risk-detection#孤岛检测">Island Detection</NextLink> tools to check for unprintable islands.
 
-<Admonition type="note" title="注意">
-	你必须先点击 <b>检测孤岛</b> 才能启用
-	<NextLink href="/zh-CN/chitubox-pro/latest/risk-detection#删除孤岛">删除所有孤岛</NextLink>和<NextLink href="#编辑像素">编辑像素</NextLink> 功能。
+<Admonition type="note" title="Note">
+	Run <b>Detect Islands</b> first to use the functions
+	<NextLink href="/zh-CN/chitubox-pro/latest/risk-detection#删除孤岛">Delete All Islands</NextLink> and <NextLink href="#编辑像素">Edit Pixels </NextLink>.
 </Admonition>
 
-### 编辑像素
+### Edit Pixels
 
-<EditPixels /> 在当前切片文件中添加或删除像素点。
+<EditPixels /> adds or deletes pixels in the current slice file.
 
-#### 添加像素
+#### Add Pixels
 
-1. 在切片预览窗口单击鼠标左键可增加像素。
+1. Left click in the slice preview window to add pixels.
 
-1. 按住 Ctrl 并长按拖动鼠标左键可连续添加像素。
+1. Hold Ctrl and drag Left-button of the mouse to add continuous pixels. 
 
-#### 删除像素
+#### Delete Pixels
 
-1. 在切片预览窗口单击鼠标右键可删除像素。
+1. Right click in the slice preview window to delete pixels.
 
-1. 按住 Ctrl，并长按拖动鼠标右键可连续删除像素。
+1. Hold Ctrl and drag Right-button of the mouse to erase pixels continously.
 
-<Admonition type="tip" title="提示">
-	可以通过按住 Ctrl 并滚动鼠标中键来缩放画笔大小
+<Admonition type="tip" title="Note">
+	Hold Ctrl and scroll the Middle-button of the mouse to resize the pen
 </Admonition>
 
-## 保存切片
+## Save Slice
 
-点击 **保存切片** 按钮即可保存切片文件。
+Click the **Save Slice** button to save the slice file.
 
 <ImageContainer
 	src={
@@ -100,14 +100,14 @@ export const metadata = {
 	}
 />
 
-<Admonition type="note" title="注意">
-	* 文件保存对话框仅显示打印机支持的文件格式。如果您在下拉菜单中看不到正确的格式，请返回并检查是否选择了正确的打印机。
-    * **默认**打印机类型允许您将切片文件保存为CHITUBOX支持的任何格式。但当您的打印机在CHITUBOX中没有内置配置文件时，您应该仅选择**默认**打印机类型。
+<Admonition type="note" title="Note">
+	* Only file formats supported by the current printer are displayed in the save file dialog. Please go back and check if the right printer is seleted if no appropriate file format is available.
+    * The **Default** printer allows you to save the slice file to any format supported by CHITUBOX. You should choose the **Default** printer type when no configuration file for your printer is loaded into CHITUBOX.
 </Admonition>
 
-## 网络发送
+## Network Sending
 
-**网络发送** 按钮仅在打印机支持网络发送功能时才会显示，此功能可以直接向打印机发送切片数据进行打印。单击此按钮打开<NextLink href="/zh-CN/chitu-manager/latest/ui-and-features/network-sending">网络发送窗口</NextLink>。
+The **Network Sending** button is only available when your printer supports the function. Network Sending allows direct sending of print data to the machine for quick printing. Click on the button to open the <NextLink href="/zh-CN/chitu-manager/latest/ui-and-features/network-sending"> Network Sending Window </NextLink>。
 
 <ImageContainer
 	src={
@@ -115,7 +115,6 @@ export const metadata = {
 	}
 />
 
-<Admonition type="note" title="注意">
-	需要安装 ChituManager 以使用网络发送功能。若电脑上还未安装
-	ChituManager，点击**网络发送**按钮后，可按照提示步骤进行下载与安装。
-</Admonition>
+<Admonition type="note" title="Note">
+	Installation of ChituManager is required for Network Sending. Please follow the suggested steps after clicking on the **Network Sending** button to download and install ChituManager if it has not been installed.
+	</Admonition>

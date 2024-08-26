@@ -3,7 +3,7 @@ import { AddMachineIcon } from "@/components/icons/ChituboxProIcons";
 import { ChituboxAddMachine } from "@/components/icons/Icons";
 
 export const metadata = {
-	title: "添加和删除打印机",
+	title: "Add and Delete Printers",
 	authors: [{ name: "CHITUBOX Team" }],
 	description: "本节介绍了如何在 CHITUBOX 中添加、编辑和删除打印机。",
 	other: {
@@ -14,38 +14,38 @@ export const metadata = {
 	},
 };
 
-# 添加和删除打印机
+# Add and Delete Printers
 
-## 添加打印机
+## Add Printers
 
 <Entry
 	functionMenu={[
-		"准备",
+		"Prepare",
 		<div className="flex items-center gap-1">
 			<AddMachineIcon />
-			添加机器
+			Add Machine
 		</div>,
 	]}
 	machineTab={[
 		<div>
-			点击添加 <ChituboxAddMachine />
+			Click icon <ChituboxAddMachine /> to add new printers.
 		</div>,
 	]}
 />
 
-选择您的打印机品牌和型号，点击“下一步”按钮。
+Choose your printer's make and model. Click "Next".
 
-<NextLink href="/zh-CN/chitubox-pro/latest/printer-management/printer-configuration">设置您的打印机</NextLink>，然后点击“应用”， 完成打印机添加。
+<NextLink href="/zh-CN/chitubox-pro/latest/printer-management/printer-configuration">Configure your printer</NextLink>，and click “Apply” to finish adding a printer.
 
-## 删除打印机
+## Delete Printers
 
 <Entry
 	machineTab={[
 		<div>
-			打印机菜单
+			Printer Menu
 		</div>,
 		<div>
-			删除机器
+			Delete Machine
 		</div>
 	]}
 />

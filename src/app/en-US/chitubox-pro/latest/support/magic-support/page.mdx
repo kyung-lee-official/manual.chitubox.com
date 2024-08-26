@@ -10,7 +10,7 @@ import {
 import { Entry } from "@/docComponents/entry/Entry";
 
 export const metadata = {
-	title: "魔法支撑",
+	title: "Magic Support",
 	authors: [{ name: "CHITUBOX Team" }],
 	description: "CHITUBOX Pro 魔法支撑",
 	other: {
@@ -21,55 +21,55 @@ export const metadata = {
 	},
 };
 
-# 魔法支撑
+# Magic Support
 
 <Entry
 	toolbar={[
 		<div className="flex items-center gap-1">
-			魔法支撑
+			Magic Support
 			<MagicSupport />
 		</div>,
 	]}
 	shortcut={["Alt", "M"]}
 />
 
-魔法支撑是一种智能化的支撑生成算法，能够一键执行多个添加自动支撑命令，意味着您只需点击一个按钮，就可以完成一系列的支撑生成操作。
+Magic Support is a intelligent support generation algorithm that can execute several support creation commands with just one click. You can press one button to achieve a series of support actions.
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/012-magic-support.png"}
 />
 
-点击**应用**按钮将按照设定的步骤顺序，从上至下添加设定支撑。
+Click **Apply** to create supports based on the order of support settings from top to bottom. 
 
-## 魔法支撑配置管理
+## Manage Magice Support Profiles
 
-<ChituboxProfileAddIcon /> 添加新的魔法支撑配置。
-<ChituboxProfileImportIcon /> 导入魔法支撑配置文件。
-<ProfileExportAllIcon /> 导出所有魔法支撑配置。
-<ChituboxProfileDeleteIcon /> 删除当前的魔法支撑配置。
+<ChituboxProfileAddIcon /> Add new Magic Support profiles.
+<ChituboxProfileImportIcon /> Import Magic Support profiles.
+<ProfileExportAllIcon /> Export all Magic Support profiles.
+<ChituboxProfileDeleteIcon /> Delete current Magic Support profile.
 
-展开下拉菜单可以查看您的所有魔法支撑配置。
+Expand the dropdown menu to see all your Magic Support profiles. 
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/012-magic-support-profiles.png"}
 />
 
-## 流程管理
+## Workflow Management
 
-### 添加/删除步骤
+### Add/Delete a Step
 
--   添加步骤：点击步骤卡片底部的加号 **+** ，添加新的自动支撑步骤。
+-  Add a step: click the **+** sign at the bottom of a step card to add a new auto support step below.
 
--   删除步骤：点击单个步骤卡片右侧的减号 **-**， 删除不需要的步骤。
+-  Delete a step: click the **-** sign at the right side of a step to delete an unnecessary step.
 
-### 步骤设置
+### Step Settings
 
-| 参数         | 说明                   |
+| Parameters        | Description                   |
 | ------------ | ---------------------- |
-| 支撑参数     | 选择支撑参数配置文件。 |
-| 自动支撑模式 | 选择自动支撑模式。     |
-| 自动支撑类型 | 选择自动支撑类型。     |
+| Support Parameter     | Choose a support parameter file |
+| Auto Support Mode | Choose a mode for how auto support is generated     |
+| Auto Support Type | Choose the type of auto support generated     |
 
-### 合并支撑
+### Merge Supports
 
-开启合并支撑选项后，将自动合并已添加的支撑。
+When enabled, added supports will be automatically merged at the end.

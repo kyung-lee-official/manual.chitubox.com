@@ -11,7 +11,7 @@ import {
 } from "@/components/icons/ChituboxProIcons";
 
 export const metadata = {
-	title: "风险检测",
+	title: "Risk Detection",
 	authors: [{ name: "CHITUBOX Team" }],
 	description:
 		"一些可以在 CHITUBOX 中使用的风险检测功能，包括空腔检测、碰撞检测、悬空检测和孤岛检测。",
@@ -23,47 +23,47 @@ export const metadata = {
 	},
 };
 
-# 风险检测
+# Risk Detection
 
-## 空腔检测
+## Cavity Detection
 
-<CavityDetection /> 空腔检测位于机器标签右侧。
+<CavityDetection /> The cavity detection button is located on the right side of the machine tabs.
 
-空腔检测可以帮助用户识别 3D 打印模型中的任何封闭空腔，例如封闭的口袋或空洞，并且用户可以向模型添加孔以避免真空效应。
+Cavity Detection can help users identify any enclosed cavities within 3D models, such as closed pockets or holes. Users can add holes to models to avoid vaccum effects during printing. 
 
-下面是一个空心模型的对比，空腔检测关闭和打开。
+Shown below is a hollowed model, with cavity detection turned off and on.
 
 <ImageComparison
 	img1Src={
 		"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-cavity-off.png"
 	}
-	text1={"空腔检测关闭"}
+	text1={"Cavity Detection Off"}
 	img2Src={
 		"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-cavity-on.png"
 	}
-	text2={"空腔检测打开"}
+	text2={"Cavity Detection On"}
 />
 
-## 碰撞检测
+## Collision Detection
 
-<CollisionDetection /> 碰撞检测位于主面板右侧。
+<CollisionDetection /> The collision detection button is located on the right side of the machine tabs.
 
-碰撞检测可以帮助用户突出显示 3D 打印模型中的碰撞，用户可以调整模型以避免碰撞。
+Collision detection can help users highlight collisions among 3D models. Users can adjust models to avoid such collisions.
 
 <ImageComparison
 	img1Src={
 		"/images/docs/en-US/chitubox-basic/2.x.x/008-collision-detection-off.png"
 	}
-	text1={"碰撞检测关闭"}
+	text1={"Collision Detection Off"}
 	img2Src={
 		"/images/docs/en-US/chitubox-basic/2.x.x/008-collision-detection-on.png"
 	}
-	text2={"碰撞检测打开"}
+	text2={"Collision Detection On"}
 />
 
-## 悬空检测
+## Overhang Detection
 
-悬空检测在支撑视图中可用，点击功能菜单的“支撑”选项切换到支撑视图。悬空检测位于支撑视图右侧，支撑视图位于支撑列表面板下方。
+Suspension Detection can be used in the support window. Click the "Support" tab to go to the support window. The <ChituboxRefreshIcon />overhang detection button is located on the function menu.
 
 <ImageContainer
 	src={
@@ -71,41 +71,41 @@ export const metadata = {
 	}
 />
 
-它提供了三个准确度级别：低、中和高。 精度等级越高，检测结果越准确，但检测时间越长。 点击“刷新”按钮 <ChituboxRefreshIcon />，可以刷新检测结果。
+Three detection accuracy levels are provided: low, medium and high.  Higher accuracy renders more precise results but would take longer to finish.  Clcik on <ChituboxRefreshIcon /> to refresh detection results.
 
-单击 “悬空区域” 面板中的箭头将自动放大模型中的相应区域。单击<AddSupportToSuspendedArea /> 按钮可以为悬空区域自动添加支撑。
+Cycle through and zoom into the detected areas by clicking on the arrows inside the "Overhang Area" Panel. Click on the <AddSupportToSuspendedArea /> button to automatically add supports to detected overhang areas.
 
-## 孤岛检测
+## Island Detection
 
-孤岛检测与悬空检测类似，但是它是通过迭代 2D 图层而不是 3D 模型的方式来检测孤岛。要使用孤岛检测，需要先点击主面板右侧文件列表面板下方的 **切片** 按钮对模型进行切片。
+Island Detection is similar to Overhang Detection. but it looks for island by iterate through 2D layers instead of 3D shapes. Users will need to slice the model first by clicking on the **Slice** button in order to use Island Detection.
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-basic/2.x.x/008-risk-detection-slice.png"}
 />
 
-切片模型后，您会进入预览窗口，并在预览窗口顶部看到 **孤岛检测** 和 **删除所有孤岛** 按钮。
+You will see the slice preview window after slicing is complete. The **Island Detection** and **Delete All Islands** buttons are located on the top of the preview window.
 
-### 查看孤岛
+### Check Islands
 
-<ChituboxIslandsDetectionIcon /> 检测孤岛将检测模型中的孤岛。
+<ChituboxIslandsDetectionIcon /> Island Detection looks for all islands in the model.
 
-如果检测出孤岛，在孤岛检测面板中将显示孤岛信息列表，孤岛信息包括孤岛所在层数、坐标。
+A list of information of detected lslands will be displayed in the island detection panel. Island information includes the layer count and coordiates of the island.
 
-点击单个孤岛坐标将在预览窗口中以红色突出显示已检测到的孤岛。
+Clicking on the coordinates of an island would highlight the detected island in the preview window.
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/risk-detection-islands.png"}
 />
 
-<Admonition type="tip" title="提示">
-	鼠标左键单击对应孤岛坐标，可切换预览图为孤岛**局部模式**或**全局模式**。
+<Admonition type="tip" title="Tip">
+	You can switch between viewing the island in **Local Mode**or**Overall View** by clicking on the coordinates of the island in the island detection panel.
 </Admonition>
 
-### 删除孤岛
+### Delete Islands
 
-<ChituboxDeleteIslandsIcon /> 删除所有孤岛将删除全部已检测到的孤岛。通常，您不希望直接使用此功能，而是希望返回并为已检测到的孤岛添加支撑。
+<ChituboxDeleteIslandsIcon /> Detele All Islands will tell the program to ignore all detected islands. Usually you would not use the function upon island detection, but go back to add supports to detected islands.
 
-如果您想删除某一层的孤岛，选中对应孤岛后点击孤岛检测面板中的 **删除孤岛** 按钮。
+You can delete island on certain layers by selecting the island in the island detection panel and click on the **Delete Island** button.
 
 <ImageContainer
 	src={

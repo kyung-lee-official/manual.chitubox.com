@@ -8,7 +8,7 @@ import { ChituboxRulerIcon } from "@/components/icons/Icons";
 import { Entry } from "@/docComponents/entry/Entry";
 
 export const metadata = {
-	title: "分析/测量",
+	title: "Analyze/Measure",
 	authors: [{ name: "CHITUBOX Team" }],
 	description: "CHITUBOX Pro 中的分析/测量界面。",
 	other: {
@@ -19,16 +19,16 @@ export const metadata = {
 	},
 };
 
-# 分析/测量
+# Analyze/Measure
 
-## 显示大小
+## Display Size
 
 <Entry
 	functionMenu={[
-		"分析测量",
+		"Analyze/Measure",
 		<div className="flex items-center gap-1">
 			<DisplaySize />
-			显示大小
+			Display Size
 		</div>,
 	]}
 	componentList={[
@@ -38,16 +38,16 @@ export const metadata = {
 	]}
 />
 
-<DisplaySize /> 自动测量并显示选定模型的<SpanA href={"https://zh.wikipedia.org/wiki/%E5%8C%85%E5%9B%B4%E4%BD%93"}>包围体</SpanA>尺寸。
+<DisplaySize /> Automatically measures and displays the size of the model's <SpanA href={"https://zh.wikipedia.org/wiki/%E5%8C%85%E5%9B%B4%E4%BD%93"}>enclosure</SpanA>.
 
-## 两点距离
+## Two Point Distance
 
-<TwoPointDistance /> 测量并显示模型两点之间的距离值。
+<TwoPointDistance /> Measures and displays the distance between two points on the model.
 
-## 点到平面距离
+## Point to Plane Distance
 
-<PointToPlaneDistance /> 测量并显示模型上点到平面的距离值。
+<PointToPlaneDistance /> Measures and displays the distance between a point and a plane on the model.
 
-## 平行平面距离
+## Parrallel Plane Distance
 
-<ParallelPlaneDistance /> 测量并显示模型上两平面的距离值。
+<ParallelPlaneDistance /> Measures and displays the distance between two parrallel planes on the model.

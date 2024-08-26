@@ -7,7 +7,7 @@ import {
 import { MagicSupport } from "@/components/icons/ChituboxProIcons";
 
 export const metadata = {
-	title: "快速入门",
+	title: "Quick Start",
 	authors: [{ name: "CHITUBOX Team" }],
 	description:
 		"本节将带您了解 CHITUBOX Pro 最基本的使用方法，让您尽快上手 CHITUBOX。我们将从加载模型开始，然后给模型添加支撑、对模型进行切片，最后导出可打印文件到您的打印机。",
@@ -19,13 +19,13 @@ export const metadata = {
 	},
 };
 
-# 快速入门
+# Quick Start
 
-本节将带您了解 CHITUBOX Pro 最基本的使用方法，让您尽快上手。 我们将从加载模型开始，然后给模型添加支撑、对模型进行切片，最后导出可打印文件到您的打印机。
+This chapter will guide you through the basic functions of CHITUBOX Pro to get you started. We will begin with introducing model loading, and then adding supports, slicing models and finally exporting printable files to your printer.
 
-## 添加机器
+## Add Machine
 
-首次启动 CHITUBOX Pro 时，您将根据需要添加您的打印机。假设我们想添加 ELEGOO Jupiter。单击机器标签栏上的加号按钮 <ChituboxAddMachine size={24} />或点击功能面板的添加机器功能，然后从列表中选择 ELEGOO Jupiter。
+Upon starting up CHITUBOX Pro for the first time. you will be asked to add your printer. Take ELEGOO Jupiter as an example, single click on the plus icon <ChituboxAddMachine size={24} /> on the machine tab or click Add Machine on the Function Menu, and then choose ELEGOO Jupiter from the printer list.
 
 <ImageContainer
 	src={
@@ -33,7 +33,7 @@ export const metadata = {
 	}
 />
 
-点击 “下一步”。
+Click "Next".
 
 <ImageContainer
 	src={
@@ -41,19 +41,19 @@ export const metadata = {
 	}
 />
 
-您可以在此处更改打印机的配置。为方便起见，我们将使用默认设置。单击 “应用”。
+You can change the printer configuration here. For convinience purposes, we are using the default settings here. Click "Apply".
 
-<Admonition type="warning" title="警告">
-	切勿更改预设打印机配置文件的**分辨率**和**尺寸**，这可能会导致打印机在读取文件时报告错误。
+<Admonition type="warning" title="Warning">
+	Please do not change the **Resolution**and**Size** or the built-in printer configuration file, which may lead to errors when printers read the files.
 </Admonition>
 
-## 加载文件
+## Load Files
 
-您可以通过对话窗的方式或者拖拽的方式将现有文件加载到软件中。现在让我们尝试通过对话窗口的方式打开一个文件。
+You can open the file selection dialog or drag existing files directly to the program to load them. Now we will try to open a file with the file selection dialog.
 
-单击主窗口左上角的菜单按钮 <ChituboxMenu size={24} />。如果要加载现有项目，请单击 “打开项目”。如果您想打开 3D 模型文件，请单击 “打开”。 您可以点击 <NextLink href="/zh-CN/chitubox-pro/latest/file#3d-网格文件">🔗 此链接</NextLink> 查看支持的 3D 模型文件类型。
+Click on the main menu <ChituboxMenu size={24} /> located at the top left corner. Click "Open Project" to load an existing project. Click "Open" to load in 3D model files. You can click <NextLink href="/zh-CN/chitubox-pro/latest/file#3d-网格文件">🔗 this link </NextLink> to see supported 3D file formats.
 
-从电脑中选择一个想要切片的 3D 模型文件。
+Choose a 3D model file that you want to slice from your computer.
 
 <ImageContainer
 	src={
@@ -61,7 +61,7 @@ export const metadata = {
 	}
 />
 
-打开文件。
+Open file.
 
 <ImageContainer
 	src={
@@ -69,51 +69,50 @@ export const metadata = {
 	}
 />
 
-## 添加支撑
+## Add Supports
 
-如果不加支撑，我们的模型很可能无法打印成功，因为它在打印平台上只有一个接触点，并且模型的重心高于该点，处于极不稳定的状态。点击上方功能菜单的“支撑”选项，进入支撑配置窗口。
+Our model. may not be printed successfully without supports. The model is very unstable with just one contact point with the print platform and its center of weight higher than the contact point. Click the "Support" tab one the function tabs to go into the support configuration window.
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-support.png"}
 />
 
-本章节为了尽可能保持简单，将使用“魔法支撑”的自动加支撑功能。点击左侧的 <MagicSupport />魔法支撑图标，然后点击 “应用” 按钮即可自动为模型添加支撑。
+We will use "Magic Support" to automatically add supports in this chapter to stay concise. Click the <MagicSupport />Magic Support icon on the left side, and then click "Apply" to automaticall add suports to the model.
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-supported.png"}
 />
 
-不错，现在我们可以继续对文件进行切片了。
+Great! Now we can continue to slicing the model.
 
-## 切片
+## Slice
 
-点击功能菜单的“准备”选项回到主窗口。
+Click the "Prepare" tab above the function menu to go back to the main window.
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-slice.png"}
 />
 
-然后点击右下方的 “单参数切片” 按钮，对文件进行切片。这个过程需要一段时间，具体时间取决于模型的大小和支撑的复杂程度。
+And then click the "Single Parameter Slic" button on the bottom right corner to slice the file. The slicing process can take some time, depending on the size of the model and the level of complexity of the supports.
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-slice-2.png"}
 />
 
-## 导出可打印文件
+## Export Printable Files
 
-这是最后一步，单击右下方的 “保存切片” 按钮以打开保存切片文件窗口。
+As a last step, click "Save Slice" on the bottom right corner to open the save slice file window. 
 
 <Admonition type="warning" title="警告">
-	请不要将切好的文件直接保存到U盘，这样容易造成文件错误。
-	推荐的工作流程是先将文件保存至您的计算机硬盘上，然后再将文件复制到 U 盘。
-	此外，如果您打算打印较大的模型，强烈建议将切片文件加载回 CHITUBOX
-	并预览文件，检查是否存在任何可以直观发现的错误，这样就不会浪费时间和树脂打印一个损坏的文件。
+	Please do not save the slice file directly to a thumb drive，which may lead to file corruptions.
+	It is recommended to save the slice file to your computer's hard drive first and then copy the file to a USB Drive.
+	Furthermore, we strongly recommend loading a slice file back to CHITUBOX first and previewing the file to check for obvious errors when printing larger models, in order to avoid wasting time and resin on a corrupted file.	并预览文件，检查是否存在任何可以直观发现的错误，这样就不会浪费时间和树脂打印一个损坏的文件。
 </Admonition>
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-basic/2.x.x/003-quick-start-save-as.png"}
 />
 
-您可以在此处命名文件并选择文件保存的位置。确保在 “保存类型” 下拉菜单中选择 _.ctb_ 格式。单击 “保存” 以保存文件，之后将文件复制到 U 盘。
+You can name the file and choose the saving directly for the file here. Please make sure to choose the _.ctb_ format under the "Save Type" dropdown menu. Click "Save" to save the file and then copy the file to a USB Drive.
 
-恭喜您完成 CHITUBOX 基础入门教程，祝打印一切顺利！ 🎉🎉🎉
+Congratulations on finishing the basic tutorials for CHITUBOX and enjoy printing! 🎉🎉🎉

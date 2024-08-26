@@ -3,7 +3,7 @@ import { MaskedImage } from "@/docComponents/maskedImage/MaskedImage";
 import { LicenseCard } from "@/components/icons/ChituboxProIcons";
 
 export const metadata = {
-	title: "账号和密钥",
+	title: "Account and License Key",
 	authors: [{ name: "CHITUBOX Team" }],
 	description: "CHITUBOX Pro 中的账号和密钥管理。",
 	other: {
@@ -14,29 +14,29 @@ export const metadata = {
 	},
 };
 
-# 账号和密钥
+# Account and License Key
 
-## 注册账号
+## Account Registration
 
-如果您还未注册 CHITUBOX 账号，请点击<NextLink href="https://cc.chitubox.com/register">此处</NextLink>注册。
+Please click<NextLink href="https://cc.chitubox.com/register"> here </NextLink>and sign up if you have not registered a CHITUBOX account.
 
-## 密钥
+## License Key
 
-一个账号可以拥有多个密钥，当您购买密钥时，密钥会自动和您的账号绑定。密钥和账号之间不可解绑。
+An account can have multiple license keys. The license key will be automatically linked to your account when you make a purchase. This license key cannot be unbound from the account.
 
-个人版密钥支持在 2 台计算机上使用，团队版密钥支持在 5 台计算机上使用，您可以随时登录用户中心解绑已绑定的计算机。
+A personal version of license key can be used on up to two computers. A team version of the license key can be used on up to 5 computers. You can log onto user center anytime to unlink your computers.
 
-<Admonition type="danger" title="危险">
-	请勿将您的密钥告诉任何人，获取密钥后应尽快绑定账号。
+<Admonition type="danger" title="Warning">
+	Please do not share your license key with anybody and bind it to your account right after you receive it.
 </Admonition>
 
-<Admonition type="note" title="注意">
-	CHITUBOX Pro 使用在线鉴权，请确保您的计算机已经连接网络。
+<Admonition type="note" title="Attention">
+	CHITUBOX Pro uses online account verification. Please ensure that your computer is connected to the internet.
 </Admonition>
 
-### 激活和绑定密钥
+### Activating and Binding License Keys
 
-1. 当 CHITUBOX Pro 首次启动时，登录窗口会弹出。
+1. A pop-up window will appear when CHITUBOX Pro starts up for the first time.
 
     <ImageContainer
     	src={
@@ -44,13 +44,13 @@ export const metadata = {
     	}
     />
 
-    <Admonition type="note" title="注意">
-    	登录完成后将对账号进行检测，若账号不符合试用条件（账号或设备已试用），则
-    	<b>开始试用</b>
-    	将不予显示。
+    <Admonition type="note" title="Attention">
+    	A license check shall starts after user login. The
+    	<b>Start Program</b> 
+    	dialog will not appear if the account does not meet the requirements (the account or the computer is already in use)
     </Admonition>
 
-1. 输入您的密钥：
+1. Enter your license key：
 
     <ImageContainer
     	src={
@@ -58,9 +58,9 @@ export const metadata = {
     	}
     />
 
-    点击**确认授权**，将激活密钥并且将其绑定到您的计算机。密钥的有效期从激活日开始计算。
+    Clicking on the **Confirm Authorization** button activates the license key and binds it to your computer. The effective period of the key starts from the day the key is activated.
 
-    如果密钥是由打印机厂商发行的，您可能需要还需要输入您的打印机 ID 进行关联:
+    For license keys issued by a printer manufacturer, you may need to enter your printer ID to finish binding:
 
     <LicenseCard size={420} />
 
@@ -70,7 +70,7 @@ export const metadata = {
     	}
     />
 
-    如果您在 CHITUBOX 官网<NextLink href="https://cc.chitubox.com/login">登录</NextLink>您的账号，在 **我的产品** > **我的密钥** 下面应该可以看到您刚刚绑定的密钥。
+    You can log into  <NextLink href="https://cc.chitubox.com/login"> your account </NextLink> on the official CHITUBOX website，and go to **My Products** > **My License Key** to view your linked license keys.
 
     <ImageContainer
     	src={
@@ -78,13 +78,13 @@ export const metadata = {
     	}
     />
 
-### 将密钥和设备解绑
+### Unbinding License Keys
 
-如果您想要将 CHITUBOX 迁移到您的新计算机，您需要先将密钥从旧计算机上解绑。
+You will need to unbind your license key from your current computer if you want to migrate CHITUBOX to a new machine.
 
-在网页端<NextLink href="https://cc.chitubox.com/login">登录您的 CHITUBOX 账号</NextLink>。
+Log into your <NextLink href="https://cc.chitubox.com/login">CHITUBOX account</NextLink> on web.
 
-点击 **我的产品** > **我的密钥**
+Click on **My Products** > **My License Keys**
 
 <ImageContainer
 	src={
@@ -92,7 +92,7 @@ export const metadata = {
 	}
 />
 
-点击 **已绑 PC 管理** > **解绑**
+Click on **Managed Linked PC** > **Unlink**
 
 <ImageContainer
 	src={
@@ -100,11 +100,11 @@ export const metadata = {
 	}
 />
 
-您的密钥将从旧计算机上解绑，然后您就可以重新在您的新计算机上激活您的密钥。
+Your license key will be unbound from your current computer，and then you can re-activate the key on a new machine.
 
-您也可以直接在 CHITUBOX 客户端内进行计算机解绑操作。
+You can also perform unbinding in the CHITUBOX software.
 
-<Entry mainMenu={["账户", "授权", "解绑当前计算机"]} />
+<Entry mainMenu={["Account", "Authorization", "Unbind the Current Computer"]} />
 
 <MaskedImage
 	src={
@@ -119,11 +119,11 @@ export const metadata = {
 	rx={5}
 />
 
-### 更换密钥
+### Replace License Key
 
-如果密钥证过期了，您需要在软件中手动更换新密钥。
+You will need to manually replace a license key upon expiration.
 
-<Entry mainMenu={["账户", "授权"]} />
+<Entry mainMenu={["Account", "Authorization"]} />
 
 <ImageContainer
 	src={
@@ -131,4 +131,4 @@ export const metadata = {
 	}
 />
 
-将密钥更换为您的新密钥，然后点击 **确认授权**，激活密钥并且将其绑定到您的计算机。
+Replace the license key with a new one，and click on **Confirm Authorization** to activate the key and bind it to your computer.
