@@ -3242,7 +3242,7 @@ export const HidePlatform = ({ size, fill }: any) => {
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 			>
-				<g clip-path="url(#clip0_1128_4103)">
+				<g clipPath="url(#clip0_1128_4103)">
 					<path
 						d="M10 14H6"
 						stroke="currentColor"
@@ -3307,7 +3307,7 @@ export const DeleteMachine = ({ size, fill }: any) => {
 	);
 };
 
-export const InvertSelection = ({ size, fil }: any) => {
+export const InvertSelection = ({ size, fill }: any) => {
 	return (
 		<span className="inline-block align-middle">
 			<svg
@@ -3317,7 +3317,7 @@ export const InvertSelection = ({ size, fil }: any) => {
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
 			>
-				<g clip-path="url(#clip0_1108_7610)">
+				<g clipPath="url(#clip0_1108_7610)">
 					<rect
 						x="6.5"
 						y="6.5"
@@ -3332,10 +3332,101 @@ export const InvertSelection = ({ size, fil }: any) => {
 						stroke="currentColor"
 						strokeLinejoin="round"
 					/>
-					<rect x="9" y="9" width="4" height="4" fill="currentColor" />
+					<rect
+						x="9"
+						y="9"
+						width="4"
+						height="4"
+						fill="currentColor"
+					/>
 				</g>
 				<defs>
 					<clipPath id="clip0_1108_7610">
+						<rect width="16" height="16" fill="white" />
+					</clipPath>
+				</defs>
+			</svg>
+		</span>
+	);
+};
+
+export const ResetSliderIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M10.9997 13.9997L7.99999 16.9994L5.00031 13.9997"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M5 19H11"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M8 7V16.9994"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M13.0003 10.0003L16 7.00063L18.9997 10.0003"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M19 5H13"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+				<path
+					d="M16 17V7.00063"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+				/>
+			</svg>
+		</span>
+	);
+};
+
+export const DeleteIslandsIcon = ({ size, fill }: any) => {
+	return (
+		<span className="inline-block align-middle">
+			<svg
+				width="16"
+				height="16"
+				viewBox="0 0 16 16"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g clipPath="url(#clip0_7649_12335)">
+					<path
+						fillRule="evenodd"
+						clipRule="evenodd"
+						d="M5 1.25C5 0.559747 5.55975 0 6.25 0H9.75C10.4403 0 11 0.559747 11 1.25V2H15C15.5523 2 16 2.44772 16 3C16 3.55228 15.5523 4 15 4H11H10H6H5H1C0.447715 4 0 3.55228 0 3C0 2.44772 0.447715 2 1 2H5V1.25ZM14 6H2V14C2 15.1039 2.89609 16 4 16H12C13.1039 16 14 15.1039 14 14V6Z"
+						fill="currentColor"
+					/>
+				</g>
+				<defs>
+					<clipPath id="clip0_7649_12335">
 						<rect width="16" height="16" fill="white" />
 					</clipPath>
 				</defs>

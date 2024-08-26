@@ -1,0 +1,133 @@
+import { Entry } from "@/docComponents/entry/Entry";
+import { MaskedImage } from "@/docComponents/maskedImage/MaskedImage";
+import { LicenseCard } from "@/components/icons/ChituboxProIcons";
+
+export const metadata = {
+	title: "賬號和密鑰",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "CHITUBOX Pro 中的賬號和密鑰管理。",
+	other: {
+		pageId: "/zh-TW/chitubox-pro/v2.0.0/account-and-license",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 賬號和密鑰
+
+## 註冊帳號
+
+如果您尚未註冊 CHITUBOX 帳號，請點擊<SpanA href="https://cc.chitubox.com/register">此處</SpanA>注冊。
+
+## 密鑰
+
+一個帳號可以擁有多個密鑰，當您購買密鑰時，密鑰會自動和您的帳號綁定。密鑰和帳號之間不可解綁。
+
+個人版密鑰支持在 2 台電腦上使用，團隊版密鑰支持在 5 台電腦上使用，您可以隨時登錄用戶中心解綁已綁定的電腦。
+
+<Admonition type="danger" title="危險">
+	請勿將您的密鑰告訴任何人，取得密鑰後應儘快綁定帳號。
+</Admonition>
+
+<Admonition type="note" title="注意">
+	CHITUBOX Pro 使用線上鑑權，請確保您的電腦已經連接網路。
+</Admonition>
+
+### 激活和綁定密鑰
+
+1. 當 CHITUBOX Pro 首次啟動時，登入窗口會彈出。
+
+    <ImageContainer
+    	src={
+    		"/images/docs/zh-CN/chitubox-pro/2.x.x/account-and-license-management-001.png"
+    	}
+    />
+
+    <Admonition type="note" title="注意">
+    	登入完成後將對帳號進行檢測，若帳號不符合試用權限，則<b>開始試用</b>
+    	將不予顯示。
+    </Admonition>
+
+1. 輸入您的密鑰：
+
+    <ImageContainer
+    	src={
+    		"/images/docs/zh-CN/chitubox-pro/2.x.x/account-and-license-management-002.png"
+    	}
+    />
+
+    點擊**確認授權**，將激活密鑰並將其綁定至您的電腦。密鑰的有效期自啟用日起算。
+
+    若授權碼是由列印機廠商發行的，您可能還需要輸入您的列印機 ID 以進行關聯：
+
+    <LicenseCard size={420} />
+
+    <ImageContainer
+    	src={
+    		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-activate-license004.png"
+    	}
+    />
+
+    如果您在 CHITUBOX 官網<SpanA href="https://cc.chitubox.com/login">登錄</SpanA>您的帳戶，在 **我的產品** > **我的密鑰** 下面應該可以看到您剛剛綁定的密鑰。
+
+    <ImageContainer
+    	src={
+    		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-005.png"
+    	}
+    />
+
+### 將密鑰和設備解綁
+
+若您想將 CHITUBOX 遷移至您的新電腦，您需要先將密鑰從舊電腦上解除綁定。
+
+在網頁端<SpanA href="https://cc.chitubox.com/login">登錄你的 CHITUBOX 帳號</SpanA>。
+
+點擊 **我的產品** > **我的密鑰**
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-006.png"
+	}
+/>
+
+點擊 **已綁 PC 管理** > **解綁**
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-007.png"
+	}
+/>
+
+你的密鑰將從舊電腦上解綁，然後你就可以重新在你的新電腦上激活你的密鑰。
+
+您也可以直接在 CHITUBOX 客戶端內進行電腦解除綁定操作。
+
+<Entry mainMenu={["賬戶", "授權", "解綁當前電腦"]} />
+
+<MaskedImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/account-and-license-management-002.png"
+	}
+	width={571}
+	height={406}
+	vWidth={121}
+	vHeight={28}
+	vX={435}
+	vY={240}
+	rx={5}
+/>
+
+### 更換密鑰
+
+如果密鑰過期了，您需要在軟體中手動更換新密鑰。
+
+<Entry mainMenu={["賬戶", "授權"]} />
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/account-and-license-management-002.png"
+	}
+/>
+
+將密鑰更換為您的新密鑰，然後點擊 **確認授權**，激活密鑰並將其綁定到您的電腦。

@@ -1,0 +1,693 @@
+import {
+	ChituboxProfileImportIcon,
+	ChituboxProfileExportIcon,
+	ChituboxProfileAddIcon,
+	ChituboxProfileMenuIcon,
+	ChituboxProfileRenameIcon,
+	ChituboxProfileResetIcon,
+	ChituboxProfileDeleteIcon,
+	ChituboxAddSupportIcon,
+	ChituboxDeleteSupportIcon,
+	ChituboxEditSupportIcon,
+} from "@/components/icons/Icons";
+import {
+	ChituboxProfileSaveIcon,
+	GlobalReinforcement,
+} from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
+
+export const metadata = {
+	title: "支撑设置",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "CHITUBOX Pro 支撑设置",
+	other: {
+		pageId: "/zh-TW/chitubox-pro/v2.0.0/support/support-configuration",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 支撑设置
+
+## 底阀设置
+
+### 模型抬升高度
+
+模型最低点与平台之间的高度距离。
+
+### 底阀形状
+
+#### 滑板
+
+| 参数             | 说明                                                                     |
+| ---------------- | ------------------------------------------------------------------------ |
+| 底筏面积比例 (%) | 设定底阀的面积比例，该值为底阀总面积相对于模型向打印平台投影总面积的比例 |
+| 底筏厚度（毫米） | 底阀的厚度尺寸                                                           |
+| 底筏高度（毫米） | 底阀的高度尺寸                                                           |
+| 底筏坡度 (°)     | 底阀侧面与打印平台的倾斜角度                                             |
+
+#### 十字网络
+
+| 参数             | 说明                                                                     |
+| ---------------- | ------------------------------------------------------------------------ |
+| 底筏面积比例 (%) | 设定底阀的面积比例，该值为底阀总面积相对于模型向打印平台投影总面积的比例 |
+| 底筏厚度（毫米） | 底阀的厚度尺寸                                                           |
+| 网格边长（毫米） | 网格型底筏的单个网格边长                                                 |
+| 网格宽度（毫米） | 网格型底筏的网格边横向宽度                                               |
+
+#### 六角网格
+
+| 参数             | 说明                                                                     |
+| ---------------- | ------------------------------------------------------------------------ |
+| 底筏面积比例 (%) | 设定底阀的面积比例，该值为底阀总面积相对于模型向打印平台投影总面积的比例 |
+| 底筏厚度（毫米） | 底阀的厚度尺寸                                                           |
+| 网格边长（毫米） | 网格型底筏的单个网格边长                                                 |
+| 网格宽度（毫米） | 网格型底筏的网格边横向宽度                                               |
+
+#### 底部相连
+
+| 参数             | 说明           |
+| ---------------- | -------------- |
+| 底筏厚度（毫米） | 底阀的厚度尺寸 |
+
+## 支撑设置
+
+### 支撑配置
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/011-support-configuration-support-profile.png"
+	}
+/>
+
+您可以在此处 <ChituboxProfileAddIcon /> **添加**、<ChituboxProfileImportIcon />**导入**、<ChituboxProfileExportIcon /> **导出**、<ChituboxProfileSaveIcon /> **保存**支撑设置。
+
+点击 <GlobalReinforcement /> 图标可直接打开<NextLink href="#增强自动支撑">“增强自动支撑”</NextLink>设置的对应位置。把鼠标悬浮在配置参数的图标 <ChituboxProfileMenuIcon /> 上，将弹出对于该配置的可用操作, <ChituboxProfileRenameIcon /> 重命名, <ChituboxProfileExportIcon /> 导出, <ChituboxProfileResetIcon /> 重置, <ChituboxProfileDeleteIcon /> 删除。
+
+### 基础设置
+
+#### 顶部接触直径
+
+支撑顶部的直径。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-tip-upper-diameter-0.3.png"
+	}
+	text1={"0.3mm"}
+	img2Src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-tip-upper-diameter-0.6.png"
+	}
+	text2={"0.6mm"}
+/>
+
+#### 角度
+
+允许自动支撑的模型表面（切平面）与平台之间的最大角度。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-support-angle-40.png"
+	}
+	text1={"30°"}
+	img2Src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-support-angle-60.png"
+	}
+	text2={"60°"}
+/>
+
+#### 接触点间距
+
+接触点间距是支撑顶部之间的距离。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-touch-tip-distance-4.png"
+	}
+	text1={"1.0mm"}
+	img2Src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-touch-tip-distance-2.png"
+	}
+	text2={"0.5mm"}
+/>
+
+#### 中部支撑间距
+
+任意两个中部支撑之间的最小水平距离。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/011-support-configuration-middle-support-distance-1.png"
+	}
+	text1={"10mm"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/011-support-configuration-middle-support-distance-2.png"
+	}
+	text2={"5mm"}
+/>
+
+<Admonition type="tip" title="提示">
+	接触点间距和中部支撑间距是影响支撑密度的两个重要参数。他们的值越小，支撑越密集。
+</Admonition>
+
+### 高级设置
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/011-support-configuration-advanced-settings.png"
+	}
+/>
+
+#### 顶部
+
+-   顶部支撑尖端
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>参数</th>
+			<th>说明</th>
+			<th className="w-[350px]">示意图</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>接触形状</td>
+			<td>支撑与模型接触的形状。</td>
+			<td>N/A</td>
+		</tr>
+		<tr>
+			<td>接触直径</td>
+			<td>支撑与模型接触的直径尺寸。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-contact-shape-diameter.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>接触深度</td>
+			<td>支撑与模型接触的深度尺寸。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-contact-depth.gif"
+					}
+				/>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+-   顶部支撑主体
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>参数</th>
+			<th>说明</th>
+			<th className="w-[350px]">示意图</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>连接形状</td>
+			<td>顶部支撑主体的连接形状。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-connection-shape.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>顶部接触直径</td>
+			<td>顶部支撑主体上端的直径尺寸。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-upper-diameter.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>底部接触直径</td>
+			<td>顶部支撑主体下端的直径尺寸。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-lower-diameter.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>连接长度</td>
+			<td>顶部支撑主体的长度尺寸。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-top-connection-length.gif"
+					}
+				/>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+#### 中部
+
+-   常规
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>参数</th>
+			<th>说明</th>
+			<th className="w-[350px]">示意图</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>形状</td>
+			<td>中部支撑主体的形状。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mid-shape.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>上端直径</td>
+			<td>中部支撑主体上端的直径尺寸。</td>
+			<td>N/A</td>
+		</tr>
+		<tr>
+			<td>下端直径</td>
+			<td>中部支撑主体下端的直径尺寸。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-mid-diameter.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>角度</td>
+			<td>中部支撑主体与顶部支撑主体之间的最大角度。</td>
+			<td>N/A</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+-   小柱子
+
+小柱子是一种用于支撑小空间的支撑结构，小柱子的两端都与模型表面相连。
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>参数</th>
+			<th>说明</th>
+			<th className="w-[350px]">示意图</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>小柱子接触形状</td>
+			<td>小柱子接触部分的形状。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-shape.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>直径</td>
+			<td>小柱子的直径尺寸。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-diameter.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>上端接触深度</td>
+			<td>小柱子的上端与模型接触的深度尺寸。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-upper-depth.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>下端接触深度</td>
+			<td>小柱子的下端与模型接触的深度尺寸。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-pillar-lower-depth.gif"
+					}
+				/>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+#### 底部
+
+底部支撑包含在平台上生成的部分和在模型上生成的部分。
+
+-   在平台上生成的部分
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>参数</th>
+			<th>描述</th>
+			<th className="w-[350px]">示例</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>平台接触形状</td>
+			<td>底部支撑与打印平台接触的形状。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-platform-shape.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>接触直径</td>
+			<td>底部支撑与打印平台接触的直径。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-platform-diameter.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>厚度</td>
+			<td>底部支撑与打印平台的厚度。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-platform-thickness.gif"
+					}
+				/>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+-   在模型上生成的部分
+
+<Admonition title="注意">
+	以下选项用于在模型上生成的支撑的底部，也就是说，支撑的两端都与模型接触。它们在“编辑”模式下不可用，您需要切换到“添加”模式才能使用它们。
+</Admonition>
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>参数</th>
+			<th>描述</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>模型接触形状</td>
+			<td>支撑底部与模型接触的形状。</td>
+		</tr>
+		<tr>
+			<td>接触直径</td>
+			<td>支撑底部与模型接触的直径。</td>
+		</tr>
+		<tr>
+			<td>接触深度</td>
+			<td>支撑底部与模型接触的深度。</td>
+		</tr>
+		<tr>
+			<td>接触点</td>
+			<td>支撑底部的接触点数。</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+#### 底筏
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>参数</th>
+			<th>描述</th>
+			<th className="w-[350px]">示例</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>底筏形状</td>
+			<td>底筏的形状。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-shape.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>底筏面积比例(%)</td>
+			<td>
+				底阀的面积比例，该值为底阀总面积占模型向打印平台投影总面积的比例。
+			</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-area-ratio.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>底筏厚度</td>
+			<td>底筏的厚度。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-thickness.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>底筏高度</td>
+			<td>底筏边缘的高度。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-height.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>底筏坡度(°)</td>
+			<td>底阀侧面与打印平台的倾斜角度。</td>
+			<td>
+				<ImageContainer
+					className={"max-w-sm"}
+					src={
+						"/images/docs/en-US/chitubox-basic/2.x.x/010-configure-support-parameters-raft-slope.gif"
+					}
+				/>
+			</td>
+		</tr>
+		<tr>
+			<td>网格边长</td>
+			<td>网格型底筏的单个网格边长。</td>
+			<td>N/A</td>
+		</tr>
+		<tr>
+			<td>网格宽度</td>
+			<td>网格型底筏的网格边横向宽度。</td>
+			<td>N/A</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+#### 更多支撑设置
+
+<Entry
+	supportSettingsPanel={["支撑设置", "基础设置", "高级设置", "更多设置"]}
+/>
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th width="120px">参数组</th>
+			<th>参数</th>
+			<th>说明</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowSpan={4}>尺寸设置</td>
+			<td>交叉结构直径</td>
+		</tr>
+		<tr>
+			<td>小柱子最大长度</td>
+			<td>
+				小柱子的最大长度。当支撑的总长度不超过小柱子最大长度时，两端都接触模型表面的支撑将按小柱子直径确定尺寸。否则，支撑的尺寸将基于顶部接触直径。
+			</td>
+		</tr>
+		<tr>
+			<td>支撑底部凸台高度</td>
+			<td>支撑底部凸台的高度尺寸。</td>
+		</tr>
+		<tr>
+			<td>支撑底部凸台直径</td>
+			<td>支撑底部凸台的直径尺寸。</td>
+		</tr>
+		<tr>
+			<td rowSpan={15}>自动/手动支撑</td>
+			<td>启用交叉结构</td>
+			<td>启用/关闭主干支撑之间的交叉结构。</td>
+		</tr>
+		<tr>
+			<td>交叉生成起始高度 (相对平台)</td>
+			<td>
+				生成交叉结构支撑的最低起始高度值。当支撑顶部接触点相对于平台的距离值大于该设定值时，才会与相邻的支撑形成交叉支撑。
+			</td>
+		</tr>
+		<tr>
+			<td>交叉结构的最小间距 (Z)</td>
+			<td>在 Z 方向上相邻交叉结构的最小间距。</td>
+		</tr>
+		<tr>
+			<td>交叉结构的最大间距 (XY)</td>
+			<td>相邻支撑允许自动生成交叉结构时在 XY 水平面上的最大距离值。</td>
+		</tr>
+		<tr>
+			<td>双向生成交叉结构</td>
+			<td>
+				手动添加的支撑时，所加支撑与其两侧相邻的支撑之间自动生成交叉结构。
+			</td>
+		</tr>
+		<tr>
+			<td>腔体内生成支撑</td>
+			<td>启用/关闭封闭腔体内生成支撑。</td>
+		</tr>
+		<tr>
+			<td>模型与支撑主干的最小间距</td>
+			<td>
+				当支撑主干落于平台时，支撑主干在 XY 水平面与模型的最小间距。
+			</td>
+		</tr>
+		<tr>
+			<td>支撑主干与触点间最大水平偏移量</td>
+			<td>
+				落于打印平台的支撑的主干与模型触点在XY水平面的最大水平偏移量。自动/手动添加支撑时当落于平台的支撑满足该偏移设定值时，会生成落于打印平台的支撑，当不满足时则不会生成落于打印平台的支撑。
+			</td>
+		</tr>
+		<tr>
+			<td>中部支撑下端直径起始生效高度</td>
+			<td>
+				中部支撑下端直径参数值生效的参数设定，只有当支撑高度值大于该设定值时，下端直径值才会生效。当下端直径设定值不生效时，下端直径尺寸会按照上端直径的设定值执行。
+			</td>
+		</tr>
+		<tr>
+			<td>增强自动支撑</td>
+			<td>
+				启用/关闭增强自动支撑。共有三种增强模式：独立强化（IR）、
+				<NextLink href="#增强自动支撑">三角强化（TR）</NextLink>和
+				<NextLink href="#增强自动支撑">全局强化（GR）</NextLink>。
+			</td>
+		</tr>
+		<tr>
+			<td>支撑间距分布模式</td>
+			<td>
+				根据支撑点间距和中部支撑间距设置，按照圆形或方形的排列模式自动生成支撑。
+			</td>
+		</tr>
+		<tr>
+			<td>自动吸附</td>
+			<td>启用/关闭小柱子自动吸附功能。</td>
+		</tr>
+		<tr>
+			<td>吸附半径</td>
+			<td>自动吸附的最大半径。</td>
+		</tr>
+		<tr>
+			<td>吸附角度</td>
+			<td>自动吸附的角度范围。</td>
+		</tr>
+		<tr>
+			<td>边界支撑添加模式</td>
+			<td>
+				选择边界支撑的添加模式。边缘相切：支撑的边缘与模型边缘相切。中心重合：支撑的中心与模型边缘重合。
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+##### 增强自动支撑
+
+添加自动支撑时，一些孤立支撑主干会自动增加辅助支撑，并生成连接结构。
+
+-   三角强化（TR）：当选中三角强化模式，添加自动支撑时，将自动连接相邻的三个孤立支撑主干，从而形成稳定的三角结构。
+
+-   全局强化（GR）：当选中全局强化模式，添加自动支撑时，将全面强化所有孤立支撑主干，自动形成由三角结构组合而成的更加稳定的结构，将所有支撑关联起来以更好地辅助支撑的稳定性。
+
+## 自动支撑
+
+### 自动支撑模式
+
+<Entry shortcut={["Ctrl", "TAB"]} />
+
+自动支撑有三种模式：**+全部**、**+平台** 和 **+悬空**。
+
+**+全部** 允许支撑在模型表面生成，而 **+平台** 只允许支撑在平台上生成，**+悬空** 则可以在悬空区域添加支撑。
+
+### 自动支撑类型
+
+自动支撑类型有：树杈、关节、自适应、垂直、竖直和小柱。
+
+从中选择您想要的支撑类型，点击“自动添加支撑”按钮，将自动生成对应的支撑类型。

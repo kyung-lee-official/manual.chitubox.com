@@ -19,12 +19,13 @@ import {
 	BooleanIcon,
 	CutIcon,
 } from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
 
 export const metadata = {
 	title: "Model Processing",
 	authors: [{ name: "CHITUBOX Team" }],
 	description:
-		"CHITUBOX Pro 中的模型处理功能。包括选择、移动、旋转、缩放、镜像、复制、拆分模型、自动布局、添加标签、布尔操作、切割、镂空、挖洞等",
+		"CHITUBOX Pro 中的模型处理功能。包括选择、移动、旋转、缩放、镜像、复制、拆分模型、自动布局、添加标签、布尔操作、镂空、挖洞等",
 	other: {
 		pageId: "/en-US/chitubox-pro/v2.0.0/processing",
 	},
@@ -35,9 +36,15 @@ export const metadata = {
 
 # Model Processing
 
+<<<<<<< HEAD
 This chapter introduces model processing functions of CHITUBOX Pro, including selection, moving, rotating, scaling, mirroring, copying, splitting models, automatic layout, adding labels, boolean operations, cutting, hollowing and hole creation.
 
 Click on the “Prepare” tab at the top of the function menu to open the prepare menu.
+=======
+本节介绍 CHITUBOX Pro 中的模型处理功能。包括选择、移动、旋转、缩放、镜像、复制、拆分模型、自动布局、添加标签、布尔操作、镂空、挖洞等。
+
+点击功能菜单的 “准备” 标签打开准备界面。
+>>>>>>> e1b58e2ab427d3fa8f30827a3a865585724afb86
 
 ## Select
 
@@ -49,15 +56,53 @@ Click on the “Prepare” tab at the top of the function menu to open the prepa
 
 ### Move
 
+<<<<<<< HEAD
 <ChituboxMoveIcon /> moves selected models. You can also enter coordinates in the move panel to accurately move models.
 
 -   Center：Place selected model at the center of the print platform. Multiple model wihtin selection will be centered based on the center of the model group.
+=======
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			<ChituboxMoveIcon />
+			移动
+		</div>,
+	]}
+	shortcut={["Ctrl", "M"]}
+/>
+
+<ChituboxMoveIcon /> 用于移动所选模型。你也可以通过在移动面板中输入坐标来精准移动模型。
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-pro/2.x.x/gadgets-move-panel.png"}
+/>
+
+-   居中：将所选模型居中放置在打印平台上。如果多个模型被选择，则以所选多个模型的组合的中心为准进行居中。
+>>>>>>> e1b58e2ab427d3fa8f30827a3a865585724afb86
 
 -   On Platform：Place selected model on the print plateform based on the lowest point of the model.
 
 ### Rotate
 
+<<<<<<< HEAD
 <ChituboxRotateIcon /> rotates selected models. You can also enter degree angles in the rotate panel to accurately rotate models.
+=======
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			<ChituboxRotateIcon />
+			旋转
+		</div>,
+	]}
+	shortcut={["Ctrl", "R"]}
+/>
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-pro/2.x.x/gadgets-rotate-panel.png"}
+/>
+
+<ChituboxRotateIcon /> 用于旋转所选模型。你也可以通过在移动面板中输入角度来精准旋转模型。
+>>>>>>> e1b58e2ab427d3fa8f30827a3a865585724afb86
 
 -   Combination Center：Set the center of rotation at the combination center of multiple selected models.
 
@@ -67,9 +112,29 @@ Click on the “Prepare” tab at the top of the function menu to open the prepa
 
 ### Scale
 
+<<<<<<< HEAD
 <ChituboxScaleIcon /> scales selected models. You can also input the exact size or scale ratio to accurately scale models.
 
 <ChituboxGlobalIcon /> Global Coordinates：Align the scale controller to the global coordinates.
+=======
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			<ChituboxScaleIcon />
+			缩放
+		</div>,
+	]}
+	shortcut={["Ctrl", "Alt", "S"]}
+/>
+
+<ChituboxScaleIcon /> used to resize seleted models. You can also 用于缩放所选模型。你也可以通过在移动面板中输入大小和比例来精准缩放模型。
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-pro/2.x.x/gadgets-scale-panel.png"}
+/>
+
+<ChituboxGlobalIcon /> Global Coordinates: Align the scale controller to the global coordinates.
+>>>>>>> e1b58e2ab427d3fa8f30827a3a865585724afb86
 
 <ChituboxLocalIcon /> Local Coordinates：Align the scale controller to the model's local coordinates.
 
@@ -81,21 +146,87 @@ Click on the “Prepare” tab at the top of the function menu to open the prepa
 
 ## Mirror
 
+<<<<<<< HEAD
 <ChituboxMirrorIcon /> mirrors selected models based on a selected axis.
 
 -   Keep the Original Model：when enabled, both of the original model and the mirrored model will be kept.
+=======
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			<ChituboxMirrorIcon />
+			镜像
+		</div>,
+	]}
+	shortcut={["Ctrl", "I"]}
+/>
+
+<ChituboxMirrorIcon /> 将所选模型沿指定轴线镜像。
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-pro/2.x.x/gadgets-mirror-panel.png"}
+/>
+
+-   保留原始模型：启用此选项后，可同时保留原始模型和镜像模型。
+>>>>>>> e1b58e2ab427d3fa8f30827a3a865585724afb86
 
 ## Copy
 
+<<<<<<< HEAD
 <CopyIcon /> copies one or multiple selected models，and add specified number of copied models to the current project.
+=======
+<Entry
+	functionMenu={[
+		"准备",
+		<div className="flex items-center gap-1">
+			<CopyIcon />
+			复制
+		</div>,
+	]}
+	shortcut={["Ctrl", "V"]}
+/>
+
+<CopyIcon /> 复制一个或多个所选定模型，并将指定数量的复制模型添加于当前作业的项目之中。
+>>>>>>> e1b58e2ab427d3fa8f30827a3a865585724afb86
 
 ## Split Model
 
+<<<<<<< HEAD
 <SplitModelIcon /> splits the original assembly model into independent part models.
+=======
+<Entry
+	functionMenu={[
+		"准备",
+		<div className="flex items-center gap-1">
+			<SplitModelIcon />
+			拆分模型
+		</div>,
+	]}
+	shortcut={["Shift", "U"]}
+/>
+
+<SplitModelIcon /> 将原组合装配模型拆分为独立的零件模型。
+>>>>>>> e1b58e2ab427d3fa8f30827a3a865585724afb86
 
 ## Auto Layout
 
+<<<<<<< HEAD
 <ChituboxAutoLayoutIcon /> quickly layouts the models in the project according to the set arrangement rule, including auto-layout at the center of the print platform, and arrange along the X-edge or Y-edge of the platform.
+=======
+<Entry
+	functionMenu={[
+		"准备",
+		<div className="flex items-center gap-1">
+			<ChituboxAutoLayoutIcon />
+			自动布局
+		</div>,
+	]}
+	shortcut={["Shift", "A"]}
+/>
+
+<ChituboxAutoLayoutIcon /> 将多个模型按照设定的方式进行快速排版布局，包括在打印平台的中心、沿打印平台的
+X 侧和沿打印平台的 Y 侧自动布局模型。
+>>>>>>> e1b58e2ab427d3fa8f30827a3a865585724afb86
 
 -   Allow Raft Overlapping：allow rafts of models to overlap during auto layout.
 -   Lock Model Rotation (Z)：lock the rotation angle of models to keep a fixed orientation during rotation.
@@ -117,6 +248,7 @@ You can control the text style and alignment in the panel. Click on the text box
 
 <BooleanIcon /> executes **Join**、**Intersect**or**Subtraction** operations between selected models.
 
+<<<<<<< HEAD
 ## Cut
 
 <CutIcon /> cuts models based on a set cut plane.
@@ -126,6 +258,22 @@ You can control the text style and alignment in the panel. Click on the text box
 ## Hollow
 
 <ChituboxHollowIcon /> hollows selected models based on custom parameters.
+=======
+## 镂空
+
+<Entry
+	functionMenu={[
+		"准备",
+		<div className="flex items-center gap-1">
+			<ChituboxHollowIcon />
+			镂空
+		</div>,
+	]}
+	shortcut={["Shift", "H"]}
+/>
+
+<ChituboxHollowIcon /> 将选定的模型按照设定的镂空参数镂空。
+>>>>>>> e1b58e2ab427d3fa8f30827a3a865585724afb86
 
 -   Wall Thickness：the remaining wall thickness for the hollowed object(the shaved off thickness under **Outter Hollow** mode).
 -   Precision：the density of triangles generated for the hollowing surfaces. 0 represents the minimum precision and 1 is the maximum precision.
@@ -172,6 +320,7 @@ Infill cavities with grid structures. The grid structures shall be perpendicular
 
 <ChituboxDigHoleIcon /> Create holes on selected models based on custom parameters.
 
+<<<<<<< HEAD
 -   Hole Mode：Choose between generating Penerating or Non-penetrating holes.
 -   Edge Numner：As number of edge increases, the shape of the hole will get close to a circle.
 -   Φ：The diameter of the hole.
@@ -181,3 +330,58 @@ Infill cavities with grid structures. The grid structures shall be perpendicular
 -   Retain Plug：Whether to keep the excavated material as a separate part.
 -   Angle：Digging angle perpendicular to the screen or to the model.
 -   Limited Depth B: Turning On/Off limiting hole depth as defined by B under Penetrating Model.
+=======
+将腔体填实。
+
+#### 立体框架
+
+为腔体填充立体框架。
+
+-   填充密度(%): 立体框架的密度。
+
+#### 蜂窝结构
+
+为腔体填充蜂窝结构，蜂窝结构将与平台垂直。
+
+-   蜂窝孔径(mm)：六边形蜂窝孔的外接圆直径尺寸。
+-   壁厚(mm)：相邻蜂窝孔之间的距离。
+-   通孔起始高度(mm)：最低连接孔的高度。
+
+#### 网格结构
+
+为腔体填充网格结构，网格结构将与平台垂直。
+
+-   网格边长：正方形网格的边长。
+-   壁厚：相邻孔洞之间的距离。
+-   通孔起始高度：最低连接孔的高度。
+
+<Admonition type="note" title="提示">
+	为了满足蜂窝结构和网格结构的泄压需求，相邻孔洞之间会自动生成圆形连通孔。直径为蜂窝孔径（或网格结构）的六分之一。
+	通孔位置以圆心为基准，并以定义的高度作为起始高度，每经过一个蜂窝孔径（或网格结构）的长度增加一组连通孔。
+</Admonition>
+
+## 挖洞
+
+<Entry
+	functionMenu={[
+		"准备",
+		<div className="flex items-center gap-1">
+			<ChituboxDigHoleIcon />
+			挖洞
+		</div>,
+	]}
+	shortcut={["Shift", "D"]}
+/>
+
+<ChituboxDigHoleIcon /> 将选定的模型按照设定的挖洞参数挖洞。
+
+-   挖洞模式：有贯穿和非贯穿两种模式可选。
+-   多边形边数：边数越大，孔的形状将越接近圆形。
+-   Φ：多边形外接圆的直径。
+-   B：孔能够穿透的最大深度。
+-   C：打孔倾斜角度。
+-   旋转：多边形的旋转角度。
+-   保留孔销：开启/关闭保留打孔塞子。
+-   打孔角度：以垂直于模型/相机透视角度进行挖洞。
+-   限制深度 B：开启/关闭限制挖洞深度 B。
+>>>>>>> e1b58e2ab427d3fa8f30827a3a865585724afb86
