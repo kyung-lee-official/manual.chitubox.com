@@ -41,7 +41,7 @@ export const Entry = (props: EntryType) => {
 		supportSettingsPanel,
 		manualSupportOptions,
 		profileList,
-		islandsDetectionPanel
+		islandsDetectionPanel,
 	} = props;
 
 	const t = useTranslations("docComponents.entry");
@@ -82,11 +82,12 @@ export const Entry = (props: EntryType) => {
 											);
 										} else {
 											return (
-												<div className="flex items-center gap-3">
+												<div
+													key={index}
+													className="flex items-center gap-3"
+												>
 													<div>&gt;</div>
-													<div key={index}>
-														{item}
-													</div>
+													<div>{item}</div>
 												</div>
 											);
 										}
@@ -111,12 +112,12 @@ export const Entry = (props: EntryType) => {
 											);
 										} else {
 											return (
-												<div className="flex items-center gap-3">
+												<div
+													key={index}
+													className="flex items-center gap-3"
+												>
 													<div>&gt;</div>
-													<div
-														key={index}
-														className="whitespace-nowrap"
-													>
+													<div className="whitespace-nowrap">
 														{item}
 													</div>
 												</div>
@@ -140,9 +141,12 @@ export const Entry = (props: EntryType) => {
 										return <div key={index}>{item}</div>;
 									} else {
 										return (
-											<div className="flex items-center gap-3">
+											<div
+												key={index}
+												className="flex items-center gap-3"
+											>
 												<div>⇒</div>
-												<div key={index}>{item}</div>
+												<div>{item}</div>
 											</div>
 										);
 									}
@@ -162,11 +166,12 @@ export const Entry = (props: EntryType) => {
 											);
 										} else {
 											return (
-												<div className="flex items-center gap-3">
+												<div
+													key={index}
+													className="flex items-center gap-3"
+												>
 													<div>&gt;</div>
-													<div key={index}>
-														{item}
-													</div>
+													<div>{item}</div>
 												</div>
 											);
 										}
@@ -191,12 +196,12 @@ export const Entry = (props: EntryType) => {
 											);
 										} else {
 											return (
-												<div className="flex items-center gap-3">
+												<div
+													key={index}
+													className="flex items-center gap-3"
+												>
 													<div>&gt;</div>
-													<div
-														key={index}
-														className="whitespace-nowrap"
-													>
+													<div className="whitespace-nowrap">
 														{item}
 													</div>
 												</div>
@@ -223,12 +228,12 @@ export const Entry = (props: EntryType) => {
 											);
 										} else {
 											return (
-												<div className="flex items-center gap-3">
+												<div
+													key={index}
+													className="flex items-center gap-3"
+												>
 													<div>&gt;</div>
-													<div
-														key={index}
-														className="whitespace-nowrap"
-													>
+													<div className="whitespace-nowrap">
 														{item}
 													</div>
 												</div>
@@ -251,12 +256,12 @@ export const Entry = (props: EntryType) => {
 											);
 										} else {
 											return (
-												<div className="flex items-center gap-3">
+												<div
+													key={index}
+													className="flex items-center gap-3"
+												>
 													<div>&gt;</div>
-													<div
-														key={index}
-														className="whitespace-nowrap"
-													>
+													<div className="whitespace-nowrap">
 														{item}
 													</div>
 												</div>
@@ -272,25 +277,29 @@ export const Entry = (props: EntryType) => {
 							<Td1>{t("islandsDetectionPanel.title")}</Td1>
 							<td className="p-2">
 								<div className="flex items-center gap-3">
-									{islandsDetectionPanel.map((item, index) => {
-										if (index === 0) {
-											return (
-												<div key={index}>{item}</div>
-											);
-										} else {
-											return (
-												<div className="flex items-center gap-3">
-													<div>&gt;</div>
-													<div
-														key={index}
-														className="whitespace-nowrap"
-													>
+									{islandsDetectionPanel.map(
+										(item, index) => {
+											if (index === 0) {
+												return (
+													<div key={index}>
 														{item}
 													</div>
-												</div>
-											);
+												);
+											} else {
+												return (
+													<div
+														key={index}
+														className="flex items-center gap-3"
+													>
+														<div>&gt;</div>
+														<div className="whitespace-nowrap">
+															{item}
+														</div>
+													</div>
+												);
+											}
 										}
-									})}
+									)}
 								</div>
 							</td>
 						</tr>
@@ -311,12 +320,12 @@ export const Entry = (props: EntryType) => {
 											);
 										} else {
 											return (
-												<div className="flex items-center gap-3">
+												<div
+													key={index}
+													className="flex items-center gap-3"
+												>
 													<div>&gt;</div>
-													<div
-														key={index}
-														className="whitespace-nowrap"
-													>
+													<div className="whitespace-nowrap">
 														{item}
 													</div>
 												</div>
@@ -339,11 +348,12 @@ export const Entry = (props: EntryType) => {
 											);
 										} else {
 											return (
-												<div className="flex items-center gap-3">
+												<div
+													key={index}
+													className="flex items-center gap-3"
+												>
 													<div>+</div>
-													<div key={index}>
-														{item}
-													</div>
+													<div>{item}</div>
 												</div>
 											);
 										}
