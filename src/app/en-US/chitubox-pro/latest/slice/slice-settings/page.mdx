@@ -9,7 +9,7 @@ import { GearIcon } from "@/components/icons/ChituboxProIcons";
 export const metadata = {
 	title: "Slice Settings",
 	authors: [{ name: "CHITUBOX Team" }],
-	description: "在 CHITUBOX Pro 中设置打印参数。",
+	description: "Set print parameters in CHITUBOX Pro.",
 	other: {
 		pageId: "/en-US/chitubox-pro/v2.0.0/slice-settings",
 	},
@@ -46,7 +46,7 @@ You can configure the basic properties for resin here, including name, type, col
 
 Set your print parameters here.
 
-<Admonition type="note" title="注意">
+<Admonition type="note" title="Note">
 	Not all printers support **Resting Time** waiting mode. Read the <SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃full compatibility list </SpanA> here.
 </Admonition>
 
@@ -138,7 +138,7 @@ This mode applies to the _.ctb_ format.
 
 | Parameters         | Descriptions                                                                                                     |
 | ------------ | -------------------------------------------------------------------------------------------------------- |
-| Grey Scale Level     | Range：`0` ~ `255`. `0` stands for black, `255` stands for white. It determines the gray range that is available for anti-aliasing.                        |
+| Grey Scale Level     | Range:  `0` ~ `255`. `0` stands for black, `255` stands for white. It determines the gray range that is available for anti-aliasing.                        |
 | Image Blur Pixel | Available values: `2` ~ `8`. It determines the number of pixels for edge transition, the higher level you select, the softer edge would be. Similar to the feather function in Photoshop.|
 
 #### Anti-aliasing Level
@@ -256,7 +256,7 @@ _Grey Scale Unit_: click <NextLink href="#灰度单位">here</NextLink> to learn
 
 **Hub-and-Spoke** generate a ripple-like pattern. The number of circles is set by **Number of equal parts**. Radius of circles are arithmetic sequence with a delta set by **Equal radius**. 
 
-The range of **Gray Parameter** 的范围为 `0` (black) to `255` (white)。
+The range of **Gray Parameter** is between `0` (black) to `255` (white)。
 
 <ImageContainer
 	src={
@@ -279,7 +279,7 @@ Here is a comparison for different **Equal radius**:
 		img2Src={
 			"/images/docs/zh-CN/chitubox-pro/1.x.x/004-setting-up-configure-printer-parameters004.equal_radius_3.png"
 		}
-		text2={"Number of equal parts set to 5, Equal radius set to 1mm"}
+		text2={"Number of equal parts set to 5, Equal radius set to 3mm"}
 	/>
 </div>
 
@@ -331,6 +331,6 @@ If the **Gray scale** unit was set to 51px, the processed image will be like thi
 
 The greyscale increases from left to right as a result of averaging out every 51 pixels. Take the first row as an example: The first 51 pixels include 50 black pixels and 1 white pixel. The resulting average value is a tint lighter than pure black, barely noticeable to the naked eyes. The second group of 51 pixels contains 49 white pixels and 2 black pixels, averaging out to a color slightly darker than white. The third group of 51 pixels will be masked to the average greyscale of 48 dark pixels and 3 white pixels and so on, until we reach the remaining 35 odd pixels.
 
-$$\frac{800}{51} = 15$$，remainder 35
+$$\frac{800}{51} = 15$$, remainder 35
 
 This remaining pixels' grey sclae will be the average of 35 pixels of the same shade. Therefore, the resulting grayscale doesn't change.

@@ -33,9 +33,9 @@ import {
 } from "@/components/icons/ChituboxProIcons";
 
 export const metadata = {
-	title: "小工具",
+	title: "Gadgets",
 	authors: [{ name: "CHITUBOX Team" }],
-	description: "一些可以在 CHITUBOX 软件中使用的小工具。",
+	description: "Helpful gadgets used in CHITUBOX.",
 	other: {
 		pageId: "/en-US/chitubox-pro/v2.0.0/gadgets",
 	},
@@ -44,31 +44,31 @@ export const metadata = {
 	},
 };
 
-# 小工具
+# Gadgets
 
-在本节中，我们将介绍一些可以在 CHITUBOX 软件中使用的小工具。
+We will introduce some useful gadgest in CHITUBOX Pro in this chapter.
 
-## 工具栏
+## Toolbar
 
 <ImageContainer src="/images/docs/zh-CN/chitubox-pro/2.x.x/toolbar.png" />
 
-工具栏位于主窗口左侧。它主要包括<NextLink href="/zh-CN/chitubox-pro/latest/model-processing#选择">选择</NextLink>、<NextLink href="/zh-CN/chitubox-pro/latest/model-processing#移动">移动</NextLink>、<NextLink href="/zh-CN/chitubox-pro/latest/model-processing#旋转">旋转</NextLink>、<NextLink href="/zh-CN/chitubox-pro/latest/model-processing#缩放">缩放</NextLink>和<NextLink href="/zh-CN/chitubox-pro/latest/model-processing#镜像">镜像</NextLink>这五个选项。
+Toolbar is located on the left side of the main window. It contains five tools: <NextLink href="/zh-CN/chitubox-pro/latest/model-processing#选择">Selection</NextLink>, <NextLink href="/zh-CN/chitubox-pro/latest/model-processing#移动">Move</NextLink>, <NextLink href="/zh-CN/chitubox-pro/latest/model-processing#旋转">Rotate</NextLink>, <NextLink href="/zh-CN/chitubox-pro/latest/model-processing#缩放">Scale</NextLink> and<NextLink href="/zh-CN/chitubox-pro/latest/model-processing#镜像">Mirror</NextLink>.
 
-## 信息面板
+## Information Panel
 
-信息面板位于主窗口左下方，它显示了当前设置的简要信息。
+Information Panel is located at the bottom left corner of the main window, providing brief information for current settings.
 
-## 机器管理栏
+## Machine Management Bar
 
-机器管理栏位于主窗口的下方，你可以在这里添加、删除、复制机器。
+Machine Management Bar is located at the bottom of the main window, where you can add, delete and copy machines.
 
-点击添加机器按钮 <ChituboxAddMachine /> 以添加新的机器。点击机器旁边的图标 <ChituboxMachineBarMenuIcon />，你会看到 <ChituboxEyeIcon /> 隐藏平台/网格、<ChituboxCopyAddIcon /> 复制机器和 <DeleteMachine /> 删除机器选项。
+Click the <ChituboxAddMachine />Add Machine button to add a new machine. Click the icon <ChituboxMachineBarMenuIcon /> next to a machine, you will see the <ChituboxEyeIcon /> Hide Platform/Grid, <ChituboxCopyAddIcon /> Copy Machine and <DeleteMachine /> Delete Machine options.
 
-## 支撑显示模式
+## Support Display Mode
 
-点击功能菜单的“支撑”选项切换到支撑视图。 有 3 个按钮允许您在不同的支撑显示模式之间切换。
+Click “Support" on the Function Menu to switch to the support view. There are three buttons allowing you to switch to different support display model. 
 
-<ChituboxSupportDisplayAllIcon /> 显示完整的支撑。
+<ChituboxSupportDisplayAllIcon /> Display complete supports.
 
 <ImageContainer
 	src={
@@ -76,7 +76,7 @@ export const metadata = {
 	}
 />
 
-<ChituboxSupportDisplayTopIcon /> 显示支撑顶部。
+<ChituboxSupportDisplayTopIcon /> Display top segments of supports.
 
 <ImageContainer
 	src={
@@ -84,7 +84,7 @@ export const metadata = {
 	}
 />
 
-<ChituboxSupportDisplayTipIcon /> 显示支撑尖端。
+<ChituboxSupportDisplayTipIcon /> Display support tips.
 
 <ImageContainer
 	src={
@@ -92,25 +92,25 @@ export const metadata = {
 	}
 />
 
-## 渲染模式
+## Render Mode
 
-渲染模式位于主窗口的右上角。 它包含两种模式：细节和菲涅耳。
+Render Mode is located on the top right corner of the main window, including two mode: Detail and Shadow modes.
 
-<ChituboxRenderDetailedIcon /> 在细节模式下，模型显示更多表面细节。
+<ChituboxRenderDetailedIcon /> More model details are shown under Detail Mode. 
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-details.png"}
 />
 
-<ChituboxRenderFresnelIcon /> 在菲涅尔模式下，模型在表面上会显得更加平滑。
+<ChituboxRenderFresnelIcon /> Model surfaces appear more smooth under Shadow Mode.
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-fresnel.png"}
 />
 
-## 视窗小工具
+## View Cube
 
-视窗小工具位于主窗口的右上方，它提供了一种快速操作视图的直观方法，使用户能够快速改变视窗的角度或视角，便于检查对象之间的相对位置。
+View Cube is located on the top right corner of the main window, providing quick ways to manipulate the view angle or perspective, in order to check relative positions between objects.
 
 <ImageContainer
 	src={
@@ -118,14 +118,14 @@ export const metadata = {
 	}
 />
 
-<ChituboxHomeIcon /> 图标和透视 <ChituboxPerspectiveIcon /> /
-正交 <ChituboxOthographicIcon /> 图标位于主窗口的右上方，在视窗小工具旁边。
+The <ChituboxHomeIcon /> icon and Perspective <ChituboxPerspectiveIcon /> /
+Orthographic <ChituboxOthographicIcon /> icons are located on the top right corner of the main window next to View Cube. 
 
-主页图标允许用户将视窗重置为默认视图。透视/正交图标允许用户在透视和正交视图之间切换。透视模式提供了一个更真实的场景地壳视图，而正交模式则为用户提供了一个场景的平面视图，它允许用户轻松地评估物体在打印平台上的位置并根据需要进行调整。
+The Home View icon allows users to reset the view to the default view. The Perspective/Orthographic icons allow users to switch between perspective view and Orthographic view mode. The perspective view mode provides a more realistic scene, whereas the orthographic view mode provides plans views for a scene, allowing for easy evaluation of the relative positions between objects on the platform and making adjustments accordingly.
 
-## 滑动条
+## Slider
 
-滑块位于主窗口的右侧，用于预览模型的截面面积（预切片）和模型的层数（后切片）。您可以移动滑块观察在 Z 轴方向的模型各个部分和层。还可以点击滑块上方的 “X” 和 “Y” 展开 x 和 y 轴方向的滑动条来观察对应轴方向的横截面。
+Slider is located on the right side of the main window. It is used to preview the cross sectional areas of models (pre-slice), and layers of models (post-slice). You can move the slider block to observe every part or layer of the model along the z-axis. You can also expand the x-axis and y-axis sliders by clicking the "X" and "Y" icons above the slider, allowing the observation of cross sections along the x and y axes.
 
 <div className="flex justify-center items-center">
 	<div className="flex-1 p-2">
@@ -150,19 +150,19 @@ export const metadata = {
 	</div>
 </div>
 
--   切片前
+-   Pre-Slice
 
-滑块在顶部和底部分别有两个按钮，用于对滑块位置进行动画处理。移动滑块后，可点击底部的<ResetSliderIcon />按钮将滑块位置恢复到初始位置。滑块组件可以帮助用户在 3D 模型被送到打印机之前评估其质量，使他们能够根据需要及时进行调整。
+There are two buttons above and below the slicer to run annimation of moving the slider postions. Clicking the <ResetSliderIcon /> Reset button at the bottom returns the slider to the original positions. The Slider component can help users evaluate model quality before sending it to the printer and make adjustments as needed.
 
--   切片后
+-   Post-Slice
 
-切片后将在滑动条顶部显示切片总层数，输入层数可快速跳转。
+Layer number will be displayed on top of the slider post-slice. Entering a layer number will bring up the exact layer.
 
-## 放大镜
+## Magnifier
 
-切片完成后，在切片预览视图下方有 <MagnifierIcon /> 放大镜工具。
+After model slicing, a <MagnifierIcon /> Magnifier too will be available below the slice preview window.
 
-点击放大镜图标，您可以设置放大倍率，将鼠标移动到切片上对当前层的切片进行局部放大，以便更仔细地检查切片的质量和精度。
+You can set the magnification scale upon clicking the Magnifier icon. Move the pointer to the slice preview to magnify certain parts of the layer to check for slice quality and details.
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-magnifier-02.png"}

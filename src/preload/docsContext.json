@@ -1757,13 +1757,13 @@
 												"children": [
 													{
 														"depth": 3,
-														"value": "Activating and Binding License Keys",
-														"id": "activating-and-binding-license-keys"
+														"value": "Activate and Bind License Keys",
+														"id": "activate-and-bind-license-keys"
 													},
 													{
 														"depth": 3,
-														"value": "Unbinding License Keys",
-														"id": "unbinding-license-keys"
+														"value": "Unbind License Keys",
+														"id": "unbind-license-keys"
 													},
 													{
 														"depth": 3,
@@ -1850,148 +1850,148 @@
 										"toc": [
 											{
 												"depth": 1,
-												"value": "打印机设置",
-												"id": "打印机设置",
+												"value": "Printer Configuration",
+												"id": "printer-configuration",
 												"children": [
 													{
 														"depth": 2,
-														"value": "机器",
-														"id": "机器",
+														"value": "Machine",
+														"id": "machine",
 														"children": [
 															{
 																"depth": 3,
-																"value": "机器名称",
-																"id": "机器名称"
+																"value": "Name",
+																"id": "name"
 															},
 															{
 																"depth": 3,
-																"value": "机器类型",
-																"id": "机器类型"
+																"value": "Machine Type",
+																"id": "machine-type"
 															},
 															{
 																"depth": 3,
-																"value": "镜像",
-																"id": "镜像"
+																"value": "Mirror",
+																"id": "mirror"
 															},
 															{
 																"depth": 3,
-																"value": "分辨率和大小",
-																"id": "分辨率和大小"
+																"value": "Resolution and Size",
+																"id": "resolution-and-size"
 															},
 															{
 																"depth": 3,
-																"value": "构建区域偏移",
-																"id": "构建区域偏移"
+																"value": "Build Area Offset",
+																"id": "build-area-offset"
 															}
 														]
 													},
 													{
 														"depth": 2,
-														"value": "树脂",
-														"id": "树脂"
+														"value": "Resin",
+														"id": "resin"
 													},
 													{
 														"depth": 2,
-														"value": "打印",
-														"id": "打印",
+														"value": "Print",
+														"id": "print",
 														"children": [
 															{
 																"depth": 3,
-																"value": "参数解释",
-																"id": "参数解释"
+																"value": "Parameter Description",
+																"id": "parameter-description"
 															},
 															{
 																"depth": 3,
-																"value": "二段运动控制 (TSMC)",
-																"id": "二段运动控制-tsmc"
+																"value": "Two-Stage Motion Control (TSMC)",
+																"id": "two-stage-motion-control-tsmc"
 															}
 														]
 													},
 													{
 														"depth": 2,
-														"value": "高级",
-														"id": "高级",
+														"value": "Advanced",
+														"id": "advanced",
 														"children": [
 															{
 																"depth": 3,
-																"value": "光强 PWM",
-																"id": "光强-pwm"
+																"value": "Light PWM",
+																"id": "light-pwm"
 															},
 															{
 																"depth": 3,
-																"value": "图片灰度",
-																"id": "图片灰度"
+																"value": "Pictue Grayscale",
+																"id": "pictue-grayscale"
 															},
 															{
 																"depth": 3,
-																"value": "抗锯齿",
-																"id": "抗锯齿",
+																"value": "Anti-aliasing",
+																"id": "anti-aliasing",
 																"children": [
 																	{
 																		"depth": 4,
-																		"value": "灰度抗锯齿",
-																		"id": "灰度抗锯齿",
+																		"value": "Grey Scale Level",
+																		"id": "grey-scale-level",
 																		"children": [
 																			{
 																				"depth": 5,
-																				"value": "灰度范围",
-																				"id": "灰度范围"
+																				"value": "Anti-aliasing Level",
+																				"id": "anti-aliasing-level"
 																			},
 																			{
 																				"depth": 5,
-																				"value": "图像模糊",
-																				"id": "图像模糊"
+																				"value": "Image Blurring",
+																				"id": "image-blurring"
 																			}
 																		]
 																	},
 																	{
 																		"depth": 4,
-																		"value": "抗锯齿等级（遗留）",
-																		"id": "抗锯齿等级遗留"
+																		"value": "Anti-aliasing Level (legacy)",
+																		"id": "anti-aliasing-level-legacy"
 																	}
 																]
 															},
 															{
 																"depth": 3,
-																"value": "缩放补偿",
-																"id": "缩放补偿"
+																"value": "Shrinkage Compensation",
+																"id": "shrinkage-compensation"
 															},
 															{
 																"depth": 3,
-																"value": "公差补偿",
-																"id": "公差补偿"
+																"value": "Tolerance Compensation",
+																"id": "tolerance-compensation"
 															},
 															{
 																"depth": 3,
-																"value": "层打印时间补偿",
-																"id": "层打印时间补偿"
+																"value": "Print Time Compensation",
+																"id": "print-time-compensation"
 															},
 															{
 																"depth": 3,
-																"value": "蒙板",
-																"id": "蒙板",
+																"value": "Mask",
+																"id": "mask",
 																"children": [
 																	{
 																		"depth": 4,
-																		"value": "蒙版生成器",
-																		"id": "蒙版生成器",
+																		"value": "Mask Generator",
+																		"id": "mask-generator",
 																		"children": [
 																			{
 																				"depth": 5,
-																				"value": "中心辐射",
-																				"id": "中心辐射"
+																				"value": "Hub-and-Spoke",
+																				"id": "hub-and-spoke"
 																			},
 																			{
 																				"depth": 5,
-																				"value": "矩阵模式",
-																				"id": "矩阵模式"
+																				"value": "Matrix Mode",
+																				"id": "matrix-mode"
 																			}
 																		]
 																	},
 																	{
 																		"depth": 4,
-																		"value": "灰度单位",
-																		"id": "灰度单位"
+																		"value": "Gray scale unit",
+																		"id": "gray-scale-unit"
 																	}
 																]
 															}
@@ -2871,293 +2871,283 @@
 										"toc": [
 											{
 												"depth": 1,
-												"value": "主菜单",
-												"id": "主菜单",
+												"value": "Main Menu",
+												"id": "main-menu",
 												"children": [
 													{
 														"depth": 2,
-														"value": "新项目",
-														"id": "新项目"
+														"value": "New Project",
+														"id": "new-project"
 													},
 													{
 														"depth": 2,
-														"value": "打开项目",
-														"id": "打开项目"
+														"value": "Open Project",
+														"id": "open-project"
 													},
 													{
 														"depth": 2,
-														"value": "保存项目",
-														"id": "保存项目"
+														"value": "Save Project",
+														"id": "save-project"
 													},
 													{
 														"depth": 2,
-														"value": "打开",
-														"id": "打开"
+														"value": "Open",
+														"id": "open"
 													},
 													{
 														"depth": 2,
-														"value": "导出模型",
-														"id": "导出模型"
+														"value": "Export Model",
+														"id": "export-model"
 													},
 													{
 														"depth": 2,
-														"value": "最近打开",
-														"id": "最近打开"
+														"value": "Recently Opened",
+														"id": "recently-opened"
 													},
 													{
 														"depth": 2,
-														"value": "账户",
-														"id": "账户"
+														"value": "Account",
+														"id": "account"
 													},
 													{
 														"depth": 2,
-														"value": "社区",
-														"id": "社区"
+														"value": "Community",
+														"id": "community"
 													},
 													{
 														"depth": 2,
-														"value": "反馈",
-														"id": "反馈"
+														"value": "Feedback",
+														"id": "feedback"
 													},
 													{
 														"depth": 2,
-														"value": "语言",
-														"id": "语言"
+														"value": "Language",
+														"id": "language"
 													},
 													{
 														"depth": 2,
-														"value": "帮助",
-														"id": "帮助",
+														"value": "Help",
+														"id": "help",
 														"children": [
 															{
 																"depth": 3,
-																"value": "检查更新",
-																"id": "检查更新"
+																"value": "Check for Updates",
+																"id": "check-for-updates"
 															},
 															{
 																"depth": 3,
-																"value": "更新日志",
-																"id": "更新日志"
+																"value": "Update Log",
+																"id": "update-log"
 															},
 															{
 																"depth": 3,
-																"value": "更新语言",
-																"id": "更新语言"
+																"value": "Update Language",
+																"id": "update-language"
 															},
 															{
 																"depth": 3,
-																"value": "出厂设置",
-																"id": "出厂设置"
+																"value": "Factory Settings",
+																"id": "factory-settings"
 															},
 															{
 																"depth": 3,
-																"value": "导出配置",
-																"id": "导出配置"
+																"value": "Export Configuration",
+																"id": "export-configuration"
 															},
 															{
 																"depth": 3,
-																"value": "导入配置",
-																"id": "导入配置"
+																"value": "Import Configuration",
+																"id": "import-configuration"
 															},
 															{
 																"depth": 3,
-																"value": "关于 CHITUBOX",
-																"id": "关于-chitubox"
+																"value": "About CHITUBOX",
+																"id": "about-chitubox"
 															},
 															{
 																"depth": 3,
-																"value": "质量改进计划",
-																"id": "质量改进计划"
+																"value": "Quality Improvement",
+																"id": "quality-improvement"
 															},
 															{
 																"depth": 3,
-																"value": "打开日志路径",
-																"id": "打开日志路径"
+																"value": "Open Log Path",
+																"id": "open-log-path"
 															},
 															{
 																"depth": 3,
-																"value": "用户手册",
-																"id": "用户手册"
+																"value": "User Manual",
+																"id": "user-manual"
 															},
 															{
 																"depth": 3,
-																"value": "插件",
-																"id": "插件"
+																"value": "Plugins",
+																"id": "plugins"
 															},
 															{
 																"depth": 3,
-																"value": "修正翻译",
-																"id": "修正翻译"
+																"value": "Correct Translation",
+																"id": "correct-translation"
 															}
 														]
 													},
 													{
 														"depth": 2,
-														"value": "快捷键",
-														"id": "快捷键"
+														"value": "Shortcut",
+														"id": "shortcut"
 													},
 													{
 														"depth": 2,
-														"value": "设置",
-														"id": "设置",
+														"value": "Settings",
+														"id": "settings",
 														"children": [
 															{
 																"depth": 3,
-																"value": "外观",
-																"id": "外观",
+																"value": "Appearance",
+																"id": "appearance",
 																"children": [
 																	{
 																		"depth": 4,
-																		"value": "主题",
-																		"id": "主题"
+																		"value": "Theme",
+																		"id": "theme"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "UI 显示比例",
-																		"id": "ui-显示比例"
+																		"value": "UI Display Scale",
+																		"id": "ui-display-scale"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Model Projection",
+																		"id": "model-projection"
 																	}
 																]
 															},
 															{
 																"depth": 3,
-																"value": "文件",
-																"id": "文件",
+																"value": "File",
+																"id": "file",
 																"children": [
 																	{
 																		"depth": 4,
-																		"value": "切片文件缩略图视图",
-																		"id": "切片文件缩略图视图"
+																		"value": "Slice File Thumbnail",
+																		"id": "slice-file-thumbnail"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "默认视角",
-																		"id": "默认视角"
+																		"value": "Default View",
+																		"id": "default-view"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "设置默认保存路径",
-																		"id": "设置默认保存路径"
+																		"value": "Default Save Directory",
+																		"id": "default-save-directory"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "设置默认打开路径",
-																		"id": "设置默认打开路径"
+																		"value": "Default Open Directory",
+																		"id": "default-open-directory"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "文件保存目录和打开目录一致",
-																		"id": "文件保存目录和打开目录一致",
+																		"value": "Use same directory for saving and opening",
+																		"id": "use-same-directory-for-saving-and-opening",
 																		"children": [
 																			{
 																				"depth": 5,
-																				"value": "模型重命名",
-																				"id": "模型重命名"
+																				"value": "Model Naming",
+																				"id": "model-naming"
 																			}
 																		]
 																	},
 																	{
 																		"depth": 4,
-																		"value": "项目文件命名",
-																		"id": "项目文件命名"
+																		"value": "Project File Rename",
+																		"id": "project-file-rename"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "切片文件命名",
-																		"id": "切片文件命名"
+																		"value": "Slice File Naming",
+																		"id": "slice-file-naming"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "重复名称替换",
-																		"id": "重复名称替换"
+																		"value": "Duplicate Name Replacement",
+																		"id": "duplicate-name-replacement"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "字符替换",
-																		"id": "字符替换"
+																		"value": "Character Replacement",
+																		"id": "character-replacement"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "自定义字符替换",
-																		"id": "自定义字符替换"
+																		"value": "Custom Character Replacement",
+																		"id": "custom-character-replacement"
 																	}
 																]
 															},
 															{
 																"depth": 3,
-																"value": "系统",
-																"id": "系统",
+																"value": "System",
+																"id": "system",
 																"children": [
 																	{
 																		"depth": 4,
-																		"value": "撤销次数",
-																		"id": "撤销次数"
-																	},
-																	{
-																		"depth": 4,
-																		"value": "显卡向后兼容",
-																		"id": "显卡向后兼容"
-																	},
-																	{
-																		"depth": 4,
-																		"value": "图形质量",
-																		"id": "图形质量"
-																	},
-																	{
-																		"depth": 4,
-																		"value": "渲染引擎",
-																		"id": "渲染引擎"
+																		"value": "Max Undos",
+																		"id": "max-undos"
 																	}
 																]
 															},
 															{
 																"depth": 3,
-																"value": "功能",
-																"id": "功能",
+																"value": "Function",
+																"id": "function",
 																"children": [
 																	{
 																		"depth": 4,
-																		"value": "切片模型体积计算",
-																		"id": "切片模型体积计算"
+																		"value": "Desktop Thumbnail Preview",
+																		"id": "desktop-thumbnail-preview"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "桌面缩略图预览",
-																		"id": "桌面缩略图预览"
+																		"value": "Support Preview (for manual supports)",
+																		"id": "support-preview-for-manual-supports"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "预览支撑",
-																		"id": "预览支撑"
+																		"value": "Support Auxillary Line",
+																		"id": "support-auxillary-line"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "显示支撑辅助线",
-																		"id": "显示支撑辅助线"
+																		"value": "Graphic Tooltip",
+																		"id": "graphic-tooltip"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "打开图形工具提示",
-																		"id": "打开图形工具提示"
+																		"value": "Print Estimation Panel",
+																		"id": "print-estimation-panel"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "打开打印预估辅助提示",
-																		"id": "打开打印预估辅助提示"
+																		"value": "Allow Raft Overlap in Collision Detection",
+																		"id": "allow-raft-overlap-in-collision-detection"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "碰撞检测允许底阀重叠",
-																		"id": "碰撞检测允许底阀重叠"
+																		"value": "Support Hidden Angle",
+																		"id": "support-hidden-angle"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "支撑隐藏角度",
-																		"id": "支撑隐藏角度"
+																		"value": "Network Transmission Integrity Check",
+																		"id": "network-transmission-integrity-check"
 																	},
 																	{
 																		"depth": 4,
-																		"value": "验证网络传输文件的完整性",
-																		"id": "验证网络传输文件的完整性"
+																		"value": "Prompt for Model Generation when Loading Slice Files",
+																		"id": "prompt-for-model-generation-when-loading-slice-files"
 																	}
 																]
 															}
@@ -3165,33 +3155,33 @@
 													},
 													{
 														"depth": 2,
-														"value": "示例",
-														"id": "示例"
+														"value": "Examples",
+														"id": "examples"
 													},
 													{
 														"depth": 2,
-														"value": "退出",
-														"id": "退出"
+														"value": "Exit Software",
+														"id": "exit-software"
 													},
 													{
 														"depth": 2,
-														"value": "右键菜单",
-														"id": "右键菜单",
+														"value": "Right-click Menu",
+														"id": "right-click-menu",
 														"children": [
 															{
 																"depth": 3,
-																"value": "通用选项",
-																"id": "通用选项"
+																"value": "General Options",
+																"id": "general-options"
 															},
 															{
 																"depth": 3,
-																"value": "在模型上触发",
-																"id": "在模型上触发"
+																"value": "Options for Right-click on Models",
+																"id": "options-for-right-click-on-models"
 															},
 															{
 																"depth": 3,
-																"value": "在空白处触发",
-																"id": "在空白处触发"
+																"value": "Options for Right-click on Black Spaces in the Canvas",
+																"id": "options-for-right-click-on-black-spaces-in-the-canvas"
 															}
 														]
 													}
@@ -3206,102 +3196,102 @@
 										"toc": [
 											{
 												"depth": 1,
-												"value": "功能菜单",
-												"id": "功能菜单",
+												"value": "Function Menu",
+												"id": "function-menu",
 												"children": [
 													{
 														"depth": 2,
-														"value": "准备功能面板",
-														"id": "准备功能面板",
+														"value": "Prepare Function Tab",
+														"id": "prepare-function-tab",
 														"children": [
 															{
 																"depth": 3,
-																"value": "添加机器",
-																"id": "添加机器"
+																"value": "Add Machine",
+																"id": "add-machine"
 															},
 															{
 																"depth": 3,
-																"value": "历史记录",
-																"id": "历史记录"
+																"value": "History",
+																"id": "history"
 															},
 															{
 																"depth": 3,
-																"value": "打开",
-																"id": "打开"
+																"value": "Open",
+																"id": "open"
 															},
 															{
 																"depth": 3,
-																"value": "导出",
-																"id": "导出"
+																"value": "Export",
+																"id": "export"
 															},
 															{
 																"depth": 3,
-																"value": "保存",
-																"id": "保存"
+																"value": "Save",
+																"id": "save"
 															},
 															{
 																"depth": 3,
-																"value": "复制",
-																"id": "复制"
+																"value": "Copy",
+																"id": "copy"
 															},
 															{
 																"depth": 3,
-																"value": "拆分模型",
-																"id": "拆分模型"
+																"value": "Split Model",
+																"id": "split-model"
 															},
 															{
 																"depth": 3,
-																"value": "自动布局",
-																"id": "自动布局"
+																"value": "Auto Layout",
+																"id": "auto-layout"
 															},
 															{
 																"depth": 3,
-																"value": "添加标签",
-																"id": "添加标签"
+																"value": "Add Tag",
+																"id": "add-tag"
 															},
 															{
 																"depth": 3,
-																"value": "布尔操作",
-																"id": "布尔操作"
+																"value": "Boolean Operation",
+																"id": "boolean-operation"
 															},
 															{
 																"depth": 3,
-																"value": "镂空",
-																"id": "镂空"
+																"value": "Hollow",
+																"id": "hollow"
 															},
 															{
 																"depth": 3,
-																"value": "挖洞",
-																"id": "挖洞"
+																"value": "Hole",
+																"id": "hole"
 															}
 														]
 													},
 													{
 														"depth": 2,
-														"value": "支撑功能面板",
-														"id": "支撑功能面板",
+														"value": "Support Function Tab",
+														"id": "support-function-tab",
 														"children": [
 															{
 																"depth": 3,
-																"value": "对称支撑",
-																"id": "对称支撑"
+																"value": "Symmetrical Support",
+																"id": "symmetrical-support"
 															},
 															{
 																"depth": 3,
-																"value": "合并支撑",
-																"id": "合并支撑"
+																"value": "Merge Supports",
+																"id": "merge-supports"
 															},
 															{
 																"depth": 3,
-																"value": "悬空检测",
-																"id": "悬空检测"
+																"value": "Overhang Detection",
+																"id": "overhang-detection"
 															}
 														]
 													},
 													{
 														"depth": 2,
-														"value": "分析/测量功能面板",
-														"id": "分析测量功能面板"
+														"value": "Analyze/Measure Function Tab",
+														"id": "analyzemeasure-function-tab"
 													}
 												]
 											}
@@ -3326,48 +3316,48 @@
 										"toc": [
 											{
 												"depth": 1,
-												"value": "小工具",
-												"id": "小工具",
+												"value": "Gadgets",
+												"id": "gadgets",
 												"children": [
 													{
 														"depth": 2,
-														"value": "工具栏",
-														"id": "工具栏"
+														"value": "Toolbar",
+														"id": "toolbar"
 													},
 													{
 														"depth": 2,
-														"value": "信息面板",
-														"id": "信息面板"
+														"value": "Information Panel",
+														"id": "information-panel"
 													},
 													{
 														"depth": 2,
-														"value": "机器管理栏",
-														"id": "机器管理栏"
+														"value": "Machine Management Bar",
+														"id": "machine-management-bar"
 													},
 													{
 														"depth": 2,
-														"value": "支撑显示模式",
-														"id": "支撑显示模式"
+														"value": "Support Display Mode",
+														"id": "support-display-mode"
 													},
 													{
 														"depth": 2,
-														"value": "渲染模式",
-														"id": "渲染模式"
+														"value": "Render Mode",
+														"id": "render-mode"
 													},
 													{
 														"depth": 2,
-														"value": "视窗小工具",
-														"id": "视窗小工具"
+														"value": "View Cube",
+														"id": "view-cube"
 													},
 													{
 														"depth": 2,
-														"value": "滑动条",
-														"id": "滑动条"
+														"value": "Slider",
+														"id": "slider"
 													},
 													{
 														"depth": 2,
-														"value": "放大镜",
-														"id": "放大镜"
+														"value": "Magnifier",
+														"id": "magnifier"
 													}
 												]
 											}

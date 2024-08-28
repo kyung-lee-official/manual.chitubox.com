@@ -25,7 +25,7 @@ export const metadata = {
 	title: "Model Processing",
 	authors: [{ name: "CHITUBOX Team" }],
 	description:
-		"CHITUBOX Pro 中的模型处理功能。包括选择、移动、旋转、缩放、镜像、复制、拆分模型、自动布局、添加标签、布尔操作、镂空、挖洞等",
+		"This chapter introduces model processing functions of CHITUBOX Pro, including selection, moving, rotating, scaling, mirroring, copying, splitting models, automatic layout, adding labels, boolean operations, cutting, hollowing and hole creation.",
 	other: {
 		pageId: "/en-US/chitubox-pro/v2.0.0/processing",
 	},
@@ -38,7 +38,7 @@ export const metadata = {
 
 This chapter introduces model processing functions of CHITUBOX Pro, including selection, moving, rotating, scaling, mirroring, copying, splitting models, automatic layout, adding labels, boolean operations, cutting, hollowing and hole creation.
 
-Click on the “Prepare” tab at the top of the function menu to open the prepare menu.
+Click on the "Prepare" tab at the top of the function menu to open the prepare menu.
 
 ## Select
 
@@ -66,9 +66,9 @@ Click on the “Prepare” tab at the top of the function menu to open the prepa
 	src={"/images/docs/en-US/chitubox-pro/2.x.x/gadgets-move-panel.png"}
 />
 
--   Center：Place selected model at the center of the print platform. Multiple model wihtin selection will be centered based on the center of the model group.
+-   Center: Place selected model at the center of the print platform. Multiple model wihtin selection will be centered based on the center of the model group.
 
--   On Platform：Place selected model on the print plateform based on the lowest point of the model.
+-   On Platform: Place selected model on the print platform based on the lowest point of the model.
 
 ### Rotate
 
@@ -88,11 +88,11 @@ Click on the “Prepare” tab at the top of the function menu to open the prepa
 	src={"/images/docs/en-US/chitubox-pro/2.x.x/gadgets-rotate-panel.png"}
 />
 
--   Combination Center：Set the center of rotation at the combination center of multiple selected models.
+-   Combination Center: Set the center of rotation at the combination center of multiple selected models.
 
--   Orient to Face：Place selected models on the platform by aligning a model surface to the platform.
+-   Orient to Face: Place selected models on the platform by aligning a model surface to the platform.
 
--   Auto Orientation：Rotate selected models to the optimal position.
+-   Auto Orientation: Rotate selected models to the optimal position.
 
 ### Scale
 
@@ -114,13 +114,13 @@ Click on the “Prepare” tab at the top of the function menu to open the prepa
 
 <ChituboxGlobalIcon /> Global Coordinates: Align the scale controller to the global coordinates.
 
-<ChituboxLocalIcon /> Local Coordinates：Align the scale controller to the model's local coordinates.
+<ChituboxLocalIcon /> Local Coordinates: Align the scale controller to the model's local coordinates.
 
-<ChituboxResetIcon /> Reset：Reset the model scale to 100% of the original size.
+<ChituboxResetIcon /> Reset: Reset the model scale to 100% of the original size.
 
--   Lock Ratio：when enabled，selected models will be scaled at the same ratio in the X,Y and Z directions, in order to keep the overall ratio of the model and avoid deformation.
+-   Lock Ratio: when enabled, selected models will be scaled at the same ratio in the X,Y and Z directions, in order to keep the overall ratio of the model and avoid deformation.
 
--   Scale to Fit：automatically adjust the size of selected models to fit on the print platform.
+-   Scale to Fit: automatically adjust the size of selected models to fit on the print platform.
 
 ## Mirror
 
@@ -140,7 +140,7 @@ Click on the “Prepare” tab at the top of the function menu to open the prepa
 	src={"/images/docs/en-US/chitubox-pro/2.x.x/gadgets-mirror-panel.png"}
 />
 
--   Keep the Original Model：when enabled, both of the original model and the mirrored model will be kept.
+-   Keep the Original Model: when enabled, both of the original model and the mirrored model will be kept.
 
 ## Copy
 
@@ -155,7 +155,7 @@ Click on the “Prepare” tab at the top of the function menu to open the prepa
 	shortcut={["Ctrl", "V"]}
 />
 
-<CopyIcon /> copies one or multiple selected models，and add specified number of copied models to the current project.
+<CopyIcon /> copies one or multiple selected models, and add specified number of copied models to the current project.
 
 ## Split Model
 
@@ -187,10 +187,10 @@ Click on the “Prepare” tab at the top of the function menu to open the prepa
 
 <ChituboxAutoLayoutIcon /> quickly layouts the models in the project according to the set arrangement rule, including auto-layout at the center of the print platform, and arrange along the X-edge or Y-edge of the platform.
 
--   Allow Raft Overlapping：allow rafts of models to overlap during auto layout.
--   Lock Model Rotation (Z)：lock the rotation angle of models to keep a fixed orientation during rotation.
+-   Allow Raft Overlapping: allow rafts of models to overlap during auto layout.
+-   Lock Model Rotation (Z): lock the rotation angle of models to keep a fixed orientation during rotation.
 -   Loop Layout: automatically arrange models in a loop.
--   Layout Scope：set the scope for the auto layout operation.
+-   Layout Scope: set the scope for the auto layout operation.
 
 ## Add Tag
 
@@ -198,14 +198,14 @@ Click on the “Prepare” tab at the top of the function menu to open the prepa
 
 You can control the text style and alignment in the panel. Click on the text box to input tag text.
 
--   Height(mm)：the text height for the tag with default at 5mm.
--   Angle：the angle at which the text is rotated clockwise.
--   Depth(mm)：thickness/depth of the tag.
--   Mode：choose between extrusion tag or engraving tag.
+-   Height(mm): the text height for the tag with default at 5mm.
+-   Angle: the angle at which the text is rotated clockwise.
+-   Depth(mm): thickness/depth of the tag.
+-   Mode: choose between extrusion tag or engraving tag.
 
 ## Boolean Operation
 
-<BooleanIcon /> executes **Join**、**Intersect**or**Subtraction** operations between selected models.
+<BooleanIcon /> executes **Join**, **Intersect**or**Subtraction** operations between selected models.
 
 ## Hollow
 
@@ -222,15 +222,15 @@ You can control the text style and alignment in the panel. Click on the text box
 
 <ChituboxHollowIcon /> hollows selected models based on custom parameters.
 
--   Wall Thickness：the remaining wall thickness for the hollowed object(the shaved off thickness under **Outter Hollow** mode).
--   Precision：the density of triangles generated for the hollowing surfaces. 0 represents the minimum precision and 1 is the maximum precision.
--   Mode：
-    -   _Inner Hollow_：leaves an enclosed cavity after hollowing.
-    -   _Outter Hollow_：shave off material from the outter surface based on **Wall Thickness**.
-    -   _Bottom Through_：similar effect to *Inner Hollow* without keeping the bottom of the object.
--   Infill：generate preset infill strucutre during the hollowing operation.
--   Animation：displays animation showing the hollowing process(refer to the progress bar for the actual process)。
--   Keep the Main Cavity：generates one single cavity during the hollowing operation.
+-   Wall Thickness: the remaining wall thickness for the hollowed object(the shaved off thickness under **Outter Hollow** mode).
+-   Precision: the density of triangles generated for the hollowing surfaces. 0 represents the minimum precision and 1 is the maximum precision.
+-   Mode: 
+    -   _Inner Hollow_: leaves an enclosed cavity after hollowing.
+    -   _Outter Hollow_: shave off material from the outter surface based on **Wall Thickness**.
+    -   _Bottom Through_: similar effect to *Inner Hollow* without keeping the bottom of the object.
+-   Infill: generate preset infill strucutre during the hollowing operation.
+-   Animation: displays animation showing the hollowing process(refer to the progress bar for the actual process)。
+-   Keep the Main Cavity: generates one single cavity during the hollowing operation.
 
 ### Infill Type
 
@@ -244,17 +244,17 @@ Infill cavities with scaffold structures.
 
 Infill cavities with hive structures. The hive structures shall be perpendicular to the platform.
 
--   Hexagon Diameter(mm)：the diameter of each hive hexagon's circumscribled circle.
--   Wall Thickness(mm)：the distance between each adjacent hexagons.
--   Crossing Hole Starting Height(mm)：the minimum height of holes cross the hexagon structures.
+-   Hexagon Diameter(mm): the diameter of each hive hexagon's circumscribled circle.
+-   Wall Thickness(mm): the distance between each adjacent hexagons.
+-   Crossing Hole Starting Height(mm): the minimum height of holes cross the hexagon structures.
 
 #### Grid
 
 Infill cavities with grid structures. The grid structures shall be perpendicular to the platform.
 
--   Grid Width(mm)：the width of each square grid.
--   Wall Thickness(mm)：the distance between each adjacent grids.
--   Crossing Hole Starting Height(mm)：the minimum height of holes cross the grid structures.
+-   Grid Width(mm): the width of each square grid.
+-   Wall Thickness(mm): the distance between each adjacent grids.
+-   Crossing Hole Starting Height(mm): the minimum height of holes cross the grid structures.
 
 <Admonition type="note" title="Note">
 	Round crossing holes are automatically generated between adjacent holes in order to relieve pressure during printing for hive and grid structures. The diameter of the crossing holes is 1/6 of the hexagons' circumscribed diameter or grid width.
@@ -276,12 +276,12 @@ Infill cavities with grid structures. The grid structures shall be perpendicular
 
 <ChituboxDigHoleIcon /> Create holes on selected models based on custom parameters.
 
--   Hole Mode：Choose between generating Penerating or Non-penetrating holes.
--   Edge Numner：As number of edge increases, the shape of the hole will get close to a circle.
--   Φ：The diameter of the hole.
--   B：The maximum depth of the hole for non-penetrating holes.
--   C：The angle between the side wall of the hole and the bottom plane of the hole.
+-   Hole Mode: Choose between generating Penerating or Non-penetrating holes.
+-   Edge Numner: As number of edge increases, the shape of the hole will get close to a circle.
+-   Φ: The diameter of the hole.
+-   B: The maximum depth of the hole for non-penetrating holes.
+-   C: The angle between the side wall of the hole and the bottom plane of the hole.
 -   Rotation: The rotation angle of the hole.
--   Retain Plug：Whether to keep the excavated material as a separate part.
--   Angle：Digging angle perpendicular to the screen or to the model.
+-   Retain Plug: Whether to keep the excavated material as a separate part.
+-   Angle: Digging angle perpendicular to the screen or to the model.
 -   Limited Depth B: Turning On/Off limiting hole depth as defined by B under Penetrating Model.
