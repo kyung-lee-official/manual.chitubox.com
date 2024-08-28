@@ -3,7 +3,7 @@ import { Entry } from "@/docComponents/entry/Entry";
 export const metadata = {
 	title: "Slice Mode",
 	authors: [{ name: "CHITUBOX Team" }],
-	description: "CHITUBOX Pro 中两种不同的切片模式:  单参数切片和多参数切片。",
+	description: "Two differen slice modes in CHITUBOX Pro: Signle Parameter Slice and Multi-parameter Slice",
 	other: {
 		pageId: "/en-US/chitubox-pro/v2.0.0/slice-mode",
 	},
@@ -24,11 +24,11 @@ Click the Slice Mode button at the bottom,  choose **Single Parameter Slice** or
 
 ### Single Parameter Slice
 
-**Single Parameter Slice** uses the configuration file selected from the **Configuration List** to slice all modeles on the print platform.
+**Single Parameter Slice** uses the configuration file selected from the **Configuration List** to slice all models on the print platform.
 
 ### Multi-parameter Slice
 
-Multi-parameter Slice is an advanced slicing option, allowing you to set diffrent print parameters for different **models**, **heights** or different **cross-sectional areas**, to achieve more accurate control and heigher print qualities.
+Multi-parameter Slice is an advanced slicing option, allowing you to set different print parameters for different **models**, **heights** or different **cross-sectional areas**, to achieve more accurate control and higher print qualities.
 
 <Admonition type="note" title="Note">
 	Currently only CTB files support multi-parameter slice.
@@ -38,11 +38,11 @@ Multi-parameter Slice is an advanced slicing option, allowing you to set diffren
 
 Different model object uses different print parameters.
 
-1. Models without specified profiles will be sliced according to the profile set by the **Default Configruation File**.
+1. Models without specified profiles will be sliced according to the profile set by the **Default Configuration File**.
 
 1. Changes to profiles with the same name in the same printer environment will be synchronized.
 
-1. When editing differential parameters, Uneditable items (marked by `*`) and other non-displayed printing parameters will follow the default profile.
+1. When editing differential parameters, Items cannot be edited (marked by `*`) and other non-displayed printing parameters will follow the default profile.
 
 #### Height
 
@@ -52,7 +52,7 @@ Layers at different heights use different printing parameters.
 
 1. Parameters for bottom layers and transition layers follow the **Default Profile**.
 
-1. When editing differential parameters, Uneditable items (marked by `*`) and other non-displayed printing parameters will follow the default profile.
+1. When editing differential parameters, Items cannot be edited (marked by `*`) and other non-displayed printing parameters will follow the default profile.
 
 #### Cross-sectional Area
 
@@ -62,7 +62,7 @@ Different cross-sectional areas use different parameters. The percentage refers 
 
 1. Parameters for bottom layers and transition layers follow the **Default Profile**.
 
-1. When editing differential parameters, Uneditable items (marked by `*`) and other non-displayed printing parameters will follow the default profile.
+1. When editing differential parameters, Items cannot be edited (marked by `*`) and other non-displayed printing parameters will follow the default profile.
 
 1. In the **Cross-sectional Area** mode, intervals are determined by the cross section areas. So a profile may be used by several intervals, as shown below:
 

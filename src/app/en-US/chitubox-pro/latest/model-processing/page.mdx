@@ -25,7 +25,7 @@ export const metadata = {
 	title: "Model Processing",
 	authors: [{ name: "CHITUBOX Team" }],
 	description:
-		"This chapter introduces model processing functions of CHITUBOX Pro, including selection, moving, rotating, scaling, mirroring, copying, splitting models, automatic layout, adding labels, boolean operations, cutting, hollowing and hole creation.",
+		"This chapter introduces model processing functions of CHITUBOX Pro, including selection, moving, rotating, scaling, mirroring, copying, splitting models, automatic layout, adding labels, Boolean operations, cutting, hollowing and hole creation.",
 	other: {
 		pageId: "/en-US/chitubox-pro/v2.0.0/processing",
 	},
@@ -36,7 +36,7 @@ export const metadata = {
 
 # Model Processing
 
-This chapter introduces model processing functions of CHITUBOX Pro, including selection, moving, rotating, scaling, mirroring, copying, splitting models, automatic layout, adding labels, boolean operations, cutting, hollowing and hole creation.
+This chapter introduces model processing functions of CHITUBOX Pro, including selection, moving, rotating, scaling, mirroring, copying, splitting models, automatic layout, adding labels, Boolean operations, cutting, hollowing and hole creation.
 
 Click on the "Prepare" tab at the top of the function menu to open the prepare menu.
 
@@ -66,7 +66,7 @@ Click on the "Prepare" tab at the top of the function menu to open the prepare m
 	src={"/images/docs/en-US/chitubox-pro/2.x.x/gadgets-move-panel.png"}
 />
 
--   Center: Place selected model at the center of the print platform. Multiple model wihtin selection will be centered based on the center of the model group.
+-   Center: Place selected model at the center of the print platform. Multiple model within selection will be centered based on the center of the model group.
 
 -   On Platform: Place selected model on the print platform based on the lowest point of the model.
 
@@ -205,7 +205,7 @@ You can control the text style and alignment in the panel. Click on the text box
 
 ## Boolean Operation
 
-<BooleanIcon /> executes **Join**, **Intersect**or**Subtraction** operations between selected models.
+<BooleanIcon /> executes **Join**, **Intersect** or **Subtraction** operations between selected models.
 
 ## Hollow
 
@@ -222,13 +222,13 @@ You can control the text style and alignment in the panel. Click on the text box
 
 <ChituboxHollowIcon /> hollows selected models based on custom parameters.
 
--   Wall Thickness: the remaining wall thickness for the hollowed object(the shaved off thickness under **Outter Hollow** mode).
+-   Wall Thickness: the remaining wall thickness for the hollowed object(the shaved off thickness under **Outer Hollow** mode).
 -   Precision: the density of triangles generated for the hollowing surfaces. 0 represents the minimum precision and 1 is the maximum precision.
 -   Mode: 
     -   _Inner Hollow_: leaves an enclosed cavity after hollowing.
-    -   _Outter Hollow_: shave off material from the outter surface based on **Wall Thickness**.
+    -   _Outer Hollow_: shave off material from the outer surface based on **Wall Thickness**.
     -   _Bottom Through_: similar effect to *Inner Hollow* without keeping the bottom of the object.
--   Infill: generate preset infill strucutre during the hollowing operation.
+-   Infill: generate preset infill structure during the hollowing operation.
 -   Animation: displays animation showing the hollowing process(refer to the progress bar for the actual process)。
 -   Keep the Main Cavity: generates one single cavity during the hollowing operation.
 
@@ -244,7 +244,7 @@ Infill cavities with scaffold structures.
 
 Infill cavities with hive structures. The hive structures shall be perpendicular to the platform.
 
--   Hexagon Diameter(mm): the diameter of each hive hexagon's circumscribled circle.
+-   Hexagon Diameter(mm): the diameter of each hive hexagon's circumscribed circle.
 -   Wall Thickness(mm): the distance between each adjacent hexagons.
 -   Crossing Hole Starting Height(mm): the minimum height of holes cross the hexagon structures.
 
@@ -258,7 +258,7 @@ Infill cavities with grid structures. The grid structures shall be perpendicular
 
 <Admonition type="note" title="Note">
 	Round crossing holes are automatically generated between adjacent holes in order to relieve pressure during printing for hive and grid structures. The diameter of the crossing holes is 1/6 of the hexagons' circumscribed diameter or grid width.
-	The starting height of the crossing holes is based on the centerline of the holes and user-set height. Additional groups of crossing holes are generated with equal spacing of The center of the the hexagons' circumscribed diameter or grid width.
+	The starting height of the crossing holes is based on the centerline of the holes and user-set height. Additional groups of crossing holes are generated with equal spacing of The center of the hexagons' circumscribed diameter or grid width.
 </Admonition>
 
 ## Hole
@@ -276,12 +276,12 @@ Infill cavities with grid structures. The grid structures shall be perpendicular
 
 <ChituboxDigHoleIcon /> Create holes on selected models based on custom parameters.
 
--   Hole Mode: Choose between generating Penerating or Non-penetrating holes.
--   Edge Numner: As number of edge increases, the shape of the hole will get close to a circle.
+-   Hole Mode: Choose between generating Penetrating or Non-penetrating holes.
+-   Edge Number: As number of edge increases, the shape of the hole will get close to a circle.
 -   Φ: The diameter of the hole.
 -   B: The maximum depth of the hole for non-penetrating holes.
 -   C: The angle between the side wall of the hole and the bottom plane of the hole.
 -   Rotation: The rotation angle of the hole.
 -   Retain Plug: Whether to keep the excavated material as a separate part.
 -   Angle: Digging angle perpendicular to the screen or to the model.
--   Limited Depth B: Turning On/Off limiting hole depth as defined by B under Penetrating Model.
+-   Limited Depth B: Turning On/Off limiting hole depth as defined by B under Penetrating mode.

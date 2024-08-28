@@ -41,7 +41,7 @@ Printer's mirror mode for exposing images, including Normal, LCD_mirror and DLP_
 Machines built into CHITUBOX have been preset with matching Mirror Modes. You can also choose suitable mirror modes based on your own case.
 
 <Admonition type="note" title="Note">
-	Screen installations issues on some printers may lead to image mirroring. We suggest that you observe the exposure pattenr with UV protections glasses before printing. For pull-up LCD printers, printed models are normal (not mirrored) when the exposure pattern is mirrored. You will need to try other options when the exposure image is not mirrored.
+	Screen installations issues on some printers may lead to image mirroring. We suggest that you observe the exposure patten with UV protections glasses before printing. For pull-up LCD printers, printed models are normal (not mirrored) when the exposure pattern is mirrored. You will need to try other options when the exposure image is not mirrored.
 </Admonition>
 
 ### Resolution and Size
@@ -76,7 +76,7 @@ Set print parameters here.
 | Bottom Exposure Time     | Set the exposure time of the bottom layers. increasing the exposure time of the bottom layers helps increase the bond strength between the printing model and the printing platform                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Transition Layer Count         | The number of transition layers between the print bottom layers and the normal print layers. when printing in transition layers, the exposure time will decrease with the increase of printing layers. Other printing settings in the transition layers are the same as normal layers                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Transition Type         | Set the transition type of the exposure time for the transition layers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Waiting Mode During Printing | <em>Resting Time: </em><ul><li>Rest Time Before Lift: A time interval between light-off and the build plate starts to lift. </li><li>Rest Time After Lift: A time interval between the build plate lifts to the Lifting Distance and starts to retract. </li><li>Rest Time After Retract: A time interval between the build plete retracts to the lowest point and light-on. </li></ul><em>Light off Delay: </em><br />Light-off delay is the total time of build plate lifts up, wait, and retract. <ul><li>Light-off delay is the total time of build plate lifts up, wait, and retract. Light-off Delay: Light-off delay for normal layers, Actual machine light-off time = maximum (total time of Z-axis up and down movement, configured light-off delay) </li><li>Bottom Light-off Delay: Light-off delay for bottom layers, Actual machine light-off time = maximum (total time of Z-axis up and down movement, configured light-off delay)</li></ul> |
+| Waiting Mode During Printing | <em>Resting Time: </em><ul><li>Rest Time Before Lift: A time interval between light-off and the build plate starts to lift. </li><li>Rest Time After Lift: A time interval between the build plate lifts to the Lifting Distance and starts to retract. </li><li>Rest Time After Retract: A time interval between the build plate retracts to the lowest point and light-on. </li></ul><em>Light off Delay: </em><br />Light-off delay is the total time of build plate lifts up, wait, and retract. <ul><li>Light-off delay is the total time of build plate lifts up, wait, and retract. Light-off Delay: Light-off delay for normal layers, Actual machine light-off time = maximum (total time of Z-axis up and down movement, configured light-off delay) </li><li>Bottom Light-off Delay: Light-off delay for bottom layers, Actual machine light-off time = maximum (total time of Z-axis up and down movement, configured light-off delay)</li></ul> |
 | Bottom Lift Distance     | The distance of the printing platform moves away from the printing surface each time during bottom layers printing process                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Lifting Distance         | The distance of the printing platform moves away from the printing surface each time during normal layers printing process                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Bottom Retract Distance     | The distance of retract, leave it alone unless you have sufficient reason during bottom layers printing process                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -112,7 +112,7 @@ PWM is abbreviation for Pulse Width Modulation. The principle is to control the 
 
 **Light PWM** and **Bottom Light PWM** control printers' light intensity for normal layers and bottom layers respectively. You can adjust the parameters based on your own cases.
 
-### Pictue Grayscale
+### Picture Grayscale
 
 Picture Gray Scale
 
@@ -124,11 +124,11 @@ For LCD printers, the whiter the exposed area of the slice image, the higher the
 
 ### Anti-aliasing
 
-Anti-aliasing has two modes: **Grey Scale Level** and **Anti-aliasing Level**。
+Anti-aliasing has two modes: **Gray Scale Level** and **Anti-aliasing Level**。
 
-#### Grey Scale Level
+#### Gray Scale Level
 
-Grey Scale Level reduces triangular sawtooth by grayscale feathering the edges of the sliced image for LCD printers.
+Gray Scale Level reduces triangular sawtooth by grayscale feathering the edges of the sliced image for LCD printers.
 
 ##### Anti-aliasing Level
 
@@ -150,7 +150,7 @@ Shrinkage Compensate uses a percentage to scale from the original size with the 
 
 ### Tolerance Compensation
 
-**Tolerance Compensation** and **Bottom Tolerance Compensation** control compensation for printers' normal layers and bottom layers respectively, typically used to resolve the fit of workpieces such as bolts and nuts, mortise and tenon construction. Bottom Tolerance Compensation is sually used to resolve the "elephant trunk" effect due to long exposure time.
+**Tolerance Compensation** and **Bottom Tolerance Compensation** control compensation for printers' normal layers and bottom layers respectively, typically used to resolve the fit of workpieces such as bolts and nuts, mortise and tenon construction. Bottom Tolerance Compensation is usually used to resolve the "elephant trunk" effect due to long exposure time.
 
 Tolerance compensation works by labeling the inner diameter (a) and outer diameter (b) of each layer of the exposed image, and then adjusting the size of the inner and outer diameters according to the tolerance compensation values.
 
@@ -161,7 +161,7 @@ When b is larger, the outer diameter is longer. When b is smaller, the outer dia
 <Admonition type="note" title="Note">
 	* When the bottom layer tolerance compensation is disabled, the normal layer tolerance compensation will be effective for the whole model.
 	* Tolerance compensation works by check the inner diameter (a) and outer diameter (b) of each layer, not by scaling 3D models directly.  As a result your models should not have sudden changes in inner and outer diameters (i.e. inner diameter changes to outer diameter or vice versa at a certain height). For example, such changes to a slice file may happen for a vertical tube with an horizontal hole at a certain height.
-	* Bottom tolerace compensates only affects bottom layers. When transition layer compensation and bottom tolerance compensation are both enabled, the print result may be not be as good as expected.
+	* Bottom tolerance compensates only affects bottom layers. When transition layer compensation and bottom tolerance compensation are both enabled, the print result may be not be as good as expected.
 	<div className="flex">
 		<div className="flex-1 flex justify-center">
 			<img
@@ -217,7 +217,7 @@ Some high-resolution printers can have extra delays when loading data and will l
 Mask is designed to solve a common light source issue of uneven light strength at different spots of the screen. The issue is usually caused by improper light sources. The purpose of the mask is to provide a correction layer on the screen by adjusting the transmittance on different areas of the screen respectively, making the uneven light homogeneous.
 
 _Mask File_: You can select an existing image by clicking the `...` icon, or click the gear icon to create a new one using CHITUBOX's built-in <NextLink href="#蒙版生成器">mask generator</NextLink>. <br />
-_Grey Scale Unit_: click <NextLink href="#灰度单位">here</NextLink> to learn more about gray scale unit.
+_Gray Scale Unit_: click <NextLink href="#灰度单位">here</NextLink> to learn more about gray scale unit.
 
 #### Mask Generator
 
@@ -276,7 +276,7 @@ For example, here is a 2 × 3 matrix with different grayscales.
 
 #### Gray scale unit
 
-**Gray scale** unit is used to average the grey value of specified number of pixels in X-axis direction, and apply averaged grayscale to pixels in corresponding position of the original image.
+**Gray scale** unit is used to average the gray value of specified number of pixels in X-axis direction, and apply averaged grayscale to pixels in corresponding position of the original image.
 
 Example: 
 
@@ -300,8 +300,8 @@ If the **Gray scale** unit was set to 51px, the processed image will be like thi
 	style={{ width: 400 }}
 />
 
-The greyscale increases from left to right as a result of averaging out every 51 pixels. Take the first row as an example: The first 51 pixels include 50 black pixels and 1 white pixel. The resulting average value is a tint lighter than pure black, barely noticeable to the naked eyes. The second group of 51 pixels contains 49 white pixels and 2 black pixels, averaging out to a color slightly darker than white. The third group of 51 pixels will be masked to the average greyscale of 48 dark pixels and 3 white pixels and so on, until we reach the remaining 35 odd pixels.
+The grayscale increases from left to right as a result of averaging out every 51 pixels. Take the first row as an example: The first 51 pixels include 50 black pixels and 1 white pixel. The resulting average value is a tint lighter than pure black, barely noticeable to the naked eyes. The second group of 51 pixels contains 49 white pixels and 2 black pixels, averaging out to a color slightly darker than white. The third group of 51 pixels will be masked to the average grayscale of 48 dark pixels and 3 white pixels and so on, until we reach the remaining 35 odd pixels.
 
 $$\frac{800}{51} = 15$$, remainder 35
 
-This remaining pixels' grey sclae will be the average of 35 pixels of the same shade. Therefore, the resulting grayscale doesn't change.
+This remaining pixels' gray scale will be the average of 35 pixels of the same shade. Therefore, the resulting grayscale doesn't change.

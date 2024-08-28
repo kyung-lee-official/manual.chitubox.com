@@ -919,7 +919,7 @@ const TsmcParams = (props: any) => {
 						</td>
 
 						<td>
-							<Unit>mm/mim</Unit>
+							<Unit>mm/min</Unit>
 						</td>
 					</tr>
 					<tr>
@@ -949,7 +949,7 @@ const TsmcParams = (props: any) => {
 							/>
 						</td>
 						<td>
-							<Unit>mm/mim</Unit>
+							<Unit>mm/min</Unit>
 						</td>
 					</tr>
 					<tr>
@@ -979,7 +979,7 @@ const TsmcParams = (props: any) => {
 							/>
 						</td>
 						<td>
-							<Unit>mm/mim</Unit>
+							<Unit>mm/min</Unit>
 						</td>
 					</tr>
 					<tr>
@@ -1009,7 +1009,7 @@ const TsmcParams = (props: any) => {
 							/>
 						</td>
 						<td>
-							<Unit>mm/mim</Unit>
+							<Unit>mm/min</Unit>
 						</td>
 					</tr>
 				</tbody>
