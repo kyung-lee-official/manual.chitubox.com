@@ -24,7 +24,7 @@
 				},
 				{
 					"item": "printer-management",
-					"label": "列以機管理",
+					"label": "列印機管理",
 					"subItems": [
 						{
 							"item": "add-and-delete-printers",

@@ -13,10 +13,10 @@ import {
 import { Entry } from "@/docComponents/entry/Entry";
 
 export const metadata = {
-	title: "风险检测",
+	title: "風險檢測",
 	authors: [{ name: "CHITUBOX Team" }],
 	description:
-		"一些可以在 CHITUBOX 中使用的风险检测功能，包括空腔检测、碰撞检测、悬空检测和孤岛检测。",
+		"一些可以在 CHITUBOX 中使用的风险检测功能，包括空腔檢測、碰撞檢測、懸空檢測和孤島檢測。",
 	other: {
 		pageId: "/zh-CN/chitubox-basic/v2.0.0/risk-detection",
 	},
@@ -25,50 +25,50 @@ export const metadata = {
 	},
 };
 
-# 风险检测
+# 風險檢測
 
-## 空腔检测
+## 空腔檢測
 
-<CavityDetection /> 空腔检测位于机器标签右侧。
+<CavityDetection /> 空腔檢測位於機器標籤右側。
 
-空腔检测可以帮助用户识别 3D 打印模型中的任何封闭空腔，例如封闭的口袋或空洞，并且用户可以向模型添加孔以避免真空效应。
+空腔檢測可以幫助用戶識別 3D 列印模型中的任何封閉空腔，例如封閉的口袋或空洞，並且用戶可以向模型添加孔以避免真空效應。
 
-下面是一个空心模型的对比，空腔检测关闭和打开。
+下面是一個空心模型的對比，空腔檢測關閉和打開。
 
 <ImageComparison
 	img1Src={
 		"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-cavity-off.png"
 	}
-	text1={"空腔检测关闭"}
+	text1={"空腔檢測關閉"}
 	img2Src={
 		"/images/docs/en-US/chitubox-basic/2.x.x/008-risk-detection-cavity-on.png"
 	}
-	text2={"空腔检测打开"}
+	text2={"空腔檢測打開"}
 />
 
-## 碰撞检测
+## 碰撞檢測
 
-<CollisionDetection /> 碰撞检测位于机器标签右侧。
+<CollisionDetection /> 碰撞檢測位於機器標籤右側。
 
-碰撞检测可以帮助用户突出显示 3D 打印模型中的碰撞，用户可以调整模型以避免碰撞。
+碰撞檢測可以幫助用戶突顯顯示 3D 列印模型中的碰撞，用戶可以調整模型以避免碰撞。
 
 <ImageComparison
 	img1Src={
 		"/images/docs/en-US/chitubox-basic/2.x.x/008-collision-detection-off.png"
 	}
-	text1={"碰撞检测关闭"}
+	text1={"碰撞檢測關閉"}
 	img2Src={
 		"/images/docs/en-US/chitubox-basic/2.x.x/008-collision-detection-on.png"
 	}
-	text2={"碰撞检测打开"}
+	text2={"碰撞檢測打開"}
 />
 
-## 悬空检测
+## 懸空檢測
 
-悬空检测在支撑视图中可用，点击功能菜单的“支撑”选项切换到支撑视图。悬空检测面板在支撑功能面板上。
+懸空檢測在支撐視圖中可用，點擊功能選單的「支撐」選項切換到支撐視圖。懸空檢測面板在支撐功能面板上。
 
 <Entry
-	functionMenu={["支撑", "悬空检测面板"]}
+	functionMenu={["支撐", "懸空檢測面板"]}
 	shortcut={["Ctrl", "Shift", "D"]}
 />
 
@@ -78,19 +78,19 @@ export const metadata = {
 	}
 />
 
-它提供了三个准确度级别：低、中和高。 精度等级越高，检测结果越准确，但检测时间越长。 点击“刷新”按钮 <ChituboxRefreshIcon />，可以刷新检测结果。
+它提供了三個準確度等級：低、中和高。 精度等級越高，檢測結果越準確，但檢測時間越長。 點擊「刷新」按鈕 <ChituboxRefreshIcon />，可以刷新檢測結果。
 
-单击 “悬空区域” 面板中的箭头将自动放大模型中的相应区域。单击<AddSupportToSuspendedArea /> 按钮可以为悬空区域自动添加支撑。
+點擊 「懸空區域」 面板中的箭頭將自動放大模型中的相應區域。點擊<AddSupportToSuspendedArea /> 按鈕可以為懸空區域自動添加支撐。
 
-## 孤岛检测
+## 孤島檢測
 
 <Entry
-	functionMenu={["切片功能面板", "孤岛检测"]}
-	islandsDetectionPanel={["孤岛信息", "开始检测"]}
+	functionMenu={["切片功能面板", "孤島檢測"]}
+	islandsDetectionPanel={["孤島信息", "開始檢測"]}
 	shortcut={["Ctrl", "Shift", "D"]}
 />
 
-孤岛检测与悬空检测类似，但是它是通过迭代 2D 图层而不是 3D 模型的方式来检测孤岛。要使用孤岛检测，需要先点击主面板右侧的 **单参数切片** 按钮对模型进行切片。
+孤島檢測與懸空檢測類似，但是它是通過迭代 2D 圖層而不是 3D 模型的方式來檢測孤島。要使用孤島檢測，需要先點擊主面板右側的 **單參數切片** 按鈕對模型進行切片。
 
 <ImageContainer
 	src={
@@ -98,28 +98,28 @@ export const metadata = {
 	}
 />
 
-切片模型后，您会进入预览窗口，并在预览窗口顶部看到 **孤岛检测** 按钮。
+切片模型後，您會進入預覽窗口，並在預覽窗口頂部看到 **孤島檢測** 按鈕。
 
-### 查看孤岛
+### 查看孤島
 
-点击预览窗口顶部的 <ChituboxIslandsDetectionIcon /> 检测孤岛按钮或右侧的“开始检测”按钮将自动检测模型中的孤岛。
+點擊預覽窗口頂部的 <ChituboxIslandsDetectionIcon /> 檢測孤島按鈕或右側的「開始檢測」按鈕將自動檢測模型中的孤島。
 
-如果检测出孤岛，在孤岛检测面板中将显示孤岛信息列表，孤岛信息包括孤岛所在层数、坐标。
+如果檢測出孤島，在孤島檢測面板中將顯示孤島信息列表，孤島信息包括孤島所在層數、座標。
 
-点击单个孤岛坐标将在预览窗口中以红色突出显示已检测到的孤岛。
+點擊單個孤島座標將在預覽窗口中以紅色突出顯示已檢測到的孤島。
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/risk-detection-islands.png"}
 />
 
 <Admonition type="tip" title="提示">
-	鼠标左键单击对应孤岛坐标，可切换预览图为孤岛**局部模式**或**全局模式**。
+	滑鼠左鍵點擊對應孤島座標，可切換預覽圖為孤島**局部模式**或**全局模式**。
 </Admonition>
 
-### 删除孤岛
+### 刪除孤島
 
-点击右侧孤岛检测面板上的 **删除所有孤岛** 按钮可一次性将所有孤岛全部删除。
+點擊右側孤島檢測面板上的**刪除所有孤島**按鈕可一次性將所有孤島全部刪除。
 
-点击删除按钮 <DeleteIslandsIcon /> 删除所选层数的所有孤岛或删除单个已检测到的孤岛。通常，您不希望直接使用此功能，而是希望返回并为已检测到的孤岛添加支撑。
+點擊刪除按鈕 <DeleteIslandsIcon /> 刪除所選層數的所有孤島或刪除單個已檢測到的孤島。通常，您不希望直接使用此功能，而是希望返回並為已檢測到的孤島添加支撐。
 
-删除孤岛后，点击“刷新”按钮 <ChituboxRefreshIcon />，可以刷新检测结果。
+刪除孤島後，點擊「刷新」按鈕 <ChituboxRefreshIcon />，可以刷新檢測結果。

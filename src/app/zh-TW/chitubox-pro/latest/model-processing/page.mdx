@@ -22,61 +22,61 @@ import {
 import { Entry } from "@/docComponents/entry/Entry";
 
 export const metadata = {
-	title: "模型处理",
+	title: "模型處理",
 	authors: [{ name: "CHITUBOX Team" }],
 	description:
-		"CHITUBOX Pro 中的模型处理功能。包括选择、移动、旋转、缩放、镜像、复制、拆分模型、自动布局、添加标签、布尔操作、镂空、挖洞等",
+		"CHITUBOX Pro 中的模型處理功能。包括選擇、移動、旋轉、縮放、鏡像、複製、分割模型、自動佈局、添加標籤、布爾運算、鏤空、挖洞等。",
 	other: {
-		pageId: "/zh-TW/chitubox-pro/v2.0.0/processing",
+		pageId: "/zh-TW/chitubox-pro/v2.0.0/model-processing",
 	},
 	openGraph: {
 		images: ["/images/docs/og_logo.png"],
 	},
 };
 
-# 模型处理
+# 模型處理
 
-本节介绍 CHITUBOX Pro 中的模型处理功能。包括选择、移动、旋转、缩放、镜像、复制、拆分模型、自动布局、添加标签、布尔操作、镂空、挖洞等。
+本節介紹 CHITUBOX Pro 中的模型處理功能。包括選擇、移動、旋轉、縮放、鏡像、複製、分割模型、自動佈局、添加標籤、布爾運算、鏤空、挖洞等。
 
-点击功能菜单的 “准备” 标签打开准备界面。
+點擊功能選單的「準備」標籤打開準備介面。
 
 ## 选择
 
-<ChituboxSelectIcon /> 通过点击的方式选择画面中的模型。
+<ChituboxSelectIcon /> 通過點擊的方式選擇畫面中的模型。
 
-<ChituboxSelectBoxIcon /> 通过框选的方式选择画面中的模型。
+<ChituboxSelectBoxIcon /> 通過框選的方式選擇畫面中的模型。
 
-## 变换
+## 變換
 
-### 移动
+### 移動
 
 <Entry
 	toolbar={[
 		<div className="flex items-center gap-1">
 			<ChituboxMoveIcon />
-			移动
+			移動
 		</div>,
 	]}
 	shortcut={["Ctrl", "M"]}
 />
 
-<ChituboxMoveIcon /> 用于移动所选模型。你也可以通过在移动面板中输入坐标来精准移动模型。
+<ChituboxMoveIcon /> 用於移動所選模型。您也可以通過在移動面板中輸入座標來精準移動模型。
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-move-panel.png"}
 />
 
--   居中：将所选模型居中放置在打印平台上。如果多个模型被选择，则以所选多个模型的组合的中心为准进行居中。
+-   居中：將所選模型居中放置在列印平台上。如果多個模型被選擇，則以所選多個模型的組合的中心為準進行居中。
 
--   放在底板上：以模型的最低点为基准点，将所选模型放在底板上。
+-   放在底板上：以模型的最低點為基準點，將所選模型放在底板上。
 
-### 旋转
+### 旋轉
 
 <Entry
 	toolbar={[
 		<div className="flex items-center gap-1">
 			<ChituboxRotateIcon />
-			旋转
+			旋轉
 		</div>,
 	]}
 	shortcut={["Ctrl", "R"]}
@@ -86,82 +86,82 @@ export const metadata = {
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-rotate-panel.png"}
 />
 
-<ChituboxRotateIcon /> 用于旋转所选模型。你也可以通过在旋转面板中输入角度来精准旋转模型。
+<ChituboxRotateIcon /> 用於旋轉所選模型。您也可以通過在移動面板中輸入角度來精準旋轉模型。
 
--   组合中心：以所选的多个模型的组合的中心为旋转中心。
+-   組合中心：以所選的多個模型的組合的中心為旋轉中心。
 
--   按面放平：将模型按照你所选择的面放置在打印平台上。
+-   按面放平：將模型按照您所選擇的面放置在列印平台上。
 
--   自动定向已选：将模型旋转至合适的摆放角度。
+-   自動定向已選：將模型旋轉至合適的擺放角度。
 
-### 缩放
+### 縮放
 
 <Entry
 	toolbar={[
 		<div className="flex items-center gap-1">
 			<ChituboxScaleIcon />
-			缩放
+			縮放
 		</div>,
 	]}
 	shortcut={["Ctrl", "Alt", "S"]}
 />
 
-<ChituboxScaleIcon /> 用于缩放所选模型。你也可以通过在缩放面板中输入大小和比例来精准缩放模型。
+<ChituboxScaleIcon /> 用於縮放所選模型。您也可以通過在移動面板中輸入大小和比例來精確縮放模型。
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-scale-panel.png"}
 />
 
-<ChituboxGlobalIcon /> 全局坐标：缩放手柄平行于全局坐标。
+<ChituboxGlobalIcon /> 全局座標：縮放手柄平行於全局座標。
 
-<ChituboxLocalIcon /> 局部坐标：缩放手柄平行于模型的本地坐标。
+<ChituboxLocalIcon /> 局部座標：縮放手柄平行於模型的本地座標。
 
-<ChituboxResetIcon /> 重置：重置比例为 100%。
+<ChituboxResetIcon /> 重置：將比例重置為 100%。
 
--   锁定比例：启用此选项后，模型的 X、Y、Z 三轴将以相同的比例进行缩放。这有助于保持模型的整体比例，避免变形。
+-   鎖定比例： 啟用此選項後，模型的 X、Y、Z 三軸將以相同的比例進行縮放。這有助於保持模型的整體比例，避免變形。
 
--   缩放以适应：自动调整模型的大小，使其尺寸能够适配打印平台。
+-   縮放以適應： 自動調整模型的大小，使其尺寸能夠適應列印平台。
 
-## 镜像
+## 鏡像
 
 <Entry
 	toolbar={[
 		<div className="flex items-center gap-1">
 			<ChituboxMirrorIcon />
-			镜像
+			鏡像
 		</div>,
 	]}
 	shortcut={["Ctrl", "I"]}
 />
 
-<ChituboxMirrorIcon /> 将所选模型沿指定轴线镜像。
+<ChituboxMirrorIcon /> 將所選模型沿指定軸線鏡像。
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-mirror-panel.png"}
 />
 
--   保留原始模型：启用此选项后，可同时保留原始模型和镜像模型。
+-   保留原始模型： 啟用此選項後，可同時保留原始模型與鏡像模型。
 
-## 复制
+## 複製
 
 <Entry
 	functionMenu={[
-		"准备",
+		"準備",
 		<div className="flex items-center gap-1">
 			<CopyIcon />
-			复制
+			複製
 		</div>,
 	]}
 	shortcut={["Ctrl", "V"]}
 />
 
-<CopyIcon /> 复制一个或多个所选定模型，并将指定数量的复制模型添加于当前作业的项目之中。
+<CopyIcon /> 複製一個或多個所選定的模型，並將指定數量的複製模型新增於當前工作項目之中。
 
 ## 拆分模型
 
 <Entry
 	functionMenu={[
-		"准备",
+		"準備",
 		<div className="flex items-center gap-1">
 			<SplitModelIcon />
 			拆分模型
@@ -170,74 +170,104 @@ export const metadata = {
 	shortcut={["Shift", "U"]}
 />
 
-<SplitModelIcon /> 将原组合装配模型拆分为独立的零件模型。
+<SplitModelIcon /> 將原組合裝配模型拆分為獨立的零件模型。
 
-## 自动布局
+## 自動佈局
 
 <Entry
 	functionMenu={[
-		"准备",
+		"準備",
 		<div className="flex items-center gap-1">
 			<ChituboxAutoLayoutIcon />
-			自动布局
+			自動佈局
 		</div>,
 	]}
 	shortcut={["Shift", "A"]}
 />
 
-<ChituboxAutoLayoutIcon /> 将多个模型按照设定的方式进行快速排版布局，包括在打印平台的中心、沿打印平台的
-X 侧和沿打印平台的 Y 侧自动布局模型。
+<ChituboxAutoLayoutIcon /> 將多個模型依照設定的方式進行快速排版佈局，包括在列印平台的中心、沿列印平台的
+X 軸和沿列印平台的 Y 軸自動佈局模型。
 
--   允许底阀重叠：自动布局时允许底阀重叠。
--   锁定模型旋转：锁定模型的旋转方向，使其在自动布局过程中保持固定的方向。
--   循环布局：模型会按照循环首尾相连的模式进行自动布局。
--   布局范围：指定自动布局的范围。
+-   允許底閥重疊：自動佈局時允許底閥重疊。
+-   鎖定模型旋轉：鎖定模型的旋轉方向，使其在自動佈局過程中保持固定的方向。
+-   循環佈局：模型會依照循環首尾相連的模式進行自動佈局.
+-   佈局範圍：指定自動佈局的範圍。
 
-## 添加标签
+## 添加標簽
 
-<AddTapIcon /> 为模型添加设定的文本标签。
+<AddTapIcon /> 為模型新增設定的文字標籤。
 
-你可以在这里设置文本样式、对齐方式，单击文本输入框即可输入文字。
+您可以在這裡設置文本樣式、對齊方式。點擊文本輸入框即可輸入文字。
 
--   字高(mm)：标签文本的高度， 默认为 5。
--   旋转角度：文字顺时针方向旋转的角度。
--   厚度(mm)：标签的厚度。
--   添加模式：有凸起和内凹两种模式可选。
+-   字高(mm)：標籤文字的高度，預設值為 5。
+-   旋轉角度：文字順時針方向旋轉的角度。
+-   厚度(mm)：標簽的厚度。
+-   添加模式：有凸起和內凹兩種模式可選。
 
-## 布尔操作
+## 布爾操作
 
-<BooleanIcon /> 为选定相交的模型进行模型间的**联合**、**相交**或**相减**的运算。
+<BooleanIcon /> 為選定相交的模型進行模型間 **聯合**、**相交** 或 **相減**
+的運算。
 
-## 镂空
+## 鏤空
 
 <Entry
 	functionMenu={[
-		"准备",
+		"準備",
 		<div className="flex items-center gap-1">
 			<ChituboxHollowIcon />
-			镂空
+			鏤空
 		</div>,
 	]}
 	shortcut={["Shift", "H"]}
 />
 
-<ChituboxHollowIcon /> 将选定的模型按照设定的镂空参数镂空。
+<ChituboxHollowIcon /> 將選定的模型按照設定的鏤空參數鏤空。
 
--   壁厚：镂空时被操作对象剩余的腔体厚度（**外镂空** 模式下时为被削去的厚度）。
--   精度：生成的三角面的密度。0 表示最小密度，1 表示最大密度。
+-   壁厚：鏤空時被操作物件剩餘的腔體厚度（**外鏤空** 模式下時為被削去的厚度）。
+-   精度：生成的三角面的密度。共有低，中，高三種精度選項。
 -   模式：
-    -   _内镂空_：镂空后剩余一个封闭腔体。
-    -   _外镂空_：削去对对象外层，厚度为**壁厚**。
-    -   _底部贯穿_：和*内镂空*类似，但不保留底部。
--   填充：镂空的同时在模型内部生成填充结构。
--   镂空过程动画：镂空时展示镂空动画（实际镂空进度以底部进度条为准）。
--   仅保留主腔：在模型镂空时只生成一个主腔体。
+    -   _内鏤空_：鏤空後剩餘一個封閉腔體。
+    -   _外鏤空_：削去對物件外層，厚度為**壁厚**。
+    -   _底部貫穿_：和*内鏤空*類似，但不保留底部。
+-   填充：鏤空的同时在模型内部生成選定的填充結構。
+-   動畫：鏤空時展示鏤空動畫（實際鏤空進度以底部進度條為準）。
+-   僅保留主腔：在模型鏤空時只生成一個主腔體。
+
+### 填充類型
+
+#### 立體框架
+
+為腔體填充立體框架。
+
+-   填充密度(%): 立體框架的密度。
+
+#### 蜂窩結構
+
+為腔體填充蜂窩結構，蜂窩結構將與平台垂直。
+
+-   蜂窩孔徑(mm)：六邊形蜂窩孔的外接圓直徑尺寸。
+-   壁厚(mm)：相鄰蜂窩孔之間的距離。
+-   通孔起始高度(mm)：最低連接孔的高度。
+
+#### 網格結構
+
+為腔體填充網格結構，網格結構將與平台垂直。
+
+-   網格邊長：正方形網格的邊長。
+-   壁厚：相鄰孔洞之間的距離。
+-   通孔起始高度：最低連接孔的高度。
+
+<Admonition type="note" title="提示">
+	為滿足蜂巢結構和網格結構的泄壓需求，相鄰孔洞之間會自動生成圓形連通孔。直徑為蜂巢孔徑（或網格結構）的六分之一。
+	通孔位置以圓心為基準，並以定義的高度作為起始高度，每經過一個蜂巢孔徑（或網格結構）的長度增加一組連通孔。
+</Admonition>
 
 ## 挖洞
 
 <Entry
 	functionMenu={[
-		"准备",
+		"準備",
 		<div className="flex items-center gap-1">
 			<ChituboxDigHoleIcon />
 			挖洞
@@ -246,14 +276,14 @@ X 侧和沿打印平台的 Y 侧自动布局模型。
 	shortcut={["Shift", "D"]}
 />
 
-<ChituboxDigHoleIcon /> 将选定的模型按照设定的挖洞参数挖洞。
+<ChituboxDigHoleIcon /> 將選定的模型按照設定的挖洞參數挖洞。
 
--   挖洞模式：有贯穿和非贯穿两种模式可选。
--   多边形边数：边数越大，孔的形状将越接近圆形。
--   Φ：多边形外接圆的直径。
--   B：孔能够穿透的最大深度。
--   C：打孔倾斜角度。
--   旋转：多边形的旋转角度。
--   保留孔销：开启/关闭保留打孔塞子。
--   打孔角度：以垂直于模型/相机透视角度进行挖洞。
--   限制深度 B：开启/关闭限制挖洞深度 B。
+-   挖洞模式：有貫穿和非貫穿模式兩種。
+-   多邊形邊數：邊數越大，孔的形狀將越接近圓形。
+-   頂部直徑 Φ：孔的直徑。
+-   B：孔能夠穿透的最大深度。
+-   C：孔洞柱體與孔底部形成的夾角。
+-   旋轉：孔的旋轉角度。
+-   保留孔銷：開啟/關閉保留打孔塞子。
+-   打孔角度：以垂直於模型/相機透視角度進行挖洞。
+-   限制深度 B：開啟/關閉限制挖洞深度 B。

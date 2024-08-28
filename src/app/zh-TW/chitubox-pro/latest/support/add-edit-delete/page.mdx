@@ -11,9 +11,9 @@ import {
 import { Entry } from "@/docComponents/entry/Entry";
 
 export const metadata = {
-	title: "添加，编辑和删除",
+	title: "添加、編輯和刪除",
 	authors: [{ name: "CHITUBOX Team" }],
-	description: "CHITUBOX Pro 添加，编辑和删除支撑",
+	description: "CHITUBOX Pro 添加、編輯和刪除支撐",
 	other: {
 		pageId: "/zh-TW/chitubox-pro/v2.0.0/support/add-edit-delete",
 	},
@@ -22,233 +22,233 @@ export const metadata = {
 	},
 };
 
-# 添加，编辑和删除
+# 添加、編輯和刪除
 
-## 添加支撑
+## 添加支撐
 
-### 自动支撑
+### 自動支撐
 
 <Entry
-	supportSettingsPanel={["自动支撑", "自动添加支撑"]}
+	supportSettingsPanel={["自動支撐", "自動添加支撐"]}
 	shortcut={["Shift", "S"]}
 />
 
-根据支撑参数及模型的几何特征，自动生成支撑结构，大大节省了用户的时间。
+根據支撐參數及模型的幾何特徵，自動生成支撐結構，大大節省了用戶的時間。
 
-### 手动支撑
+### 手動支撐
 
 <Entry
 	supportSettingsPanel={[
-		"自动支撑",
+		"自動支撐",
 		<div className="flex items-center gap-1">
 			<ChituboxAddSupportIcon />
-			添加支撑
+			添加支撐
 		</div>,
 	]}
 	shortcut={["A"]}
 />
 
-您可以根据自己的经验和对模型的理解，手动添加支撑，以获得最佳的打印效果。
+您可以根據自己的經驗和對模型的理解，手動添加支撐，以獲得最佳的列印效果。
 
-#### 支撑类型
+#### 支撐類型
 
-##### 自适应支撑
+##### 自適應支撐
 
-<Entry manualSupportOptions={["第1个选项"]} shortcut={["1"]} />
+<Entry manualSupportOptions={["第1個選項"]} shortcut={["1"]} />
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/adaptive-support.png"}
 	style={{ width: 65 }}
 />
 
-自适应支撑能够根据模型的具体情况，智能地生成合适的支撑。
+自適應支撐能夠根據模型的具體情況，智能地生成合適的支撐。
 
-##### 垂直支撑
+##### 垂直支撐
 
-<Entry manualSupportOptions={["第2个选项"]} shortcut={["2"]} />
+<Entry manualSupportOptions={["第2個選項"]} shortcut={["2"]} />
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/vertical-support.png"}
 	style={{ width: 65 }}
 />
 
-垂直于模型表面的支撑。
+垂直於模型表面的支撐。
 
-##### 竖直支撑
+##### 豎直支撐
 
-<Entry manualSupportOptions={["第3个选项"]} shortcut={["3"]} />
+<Entry manualSupportOptions={["第3個選項"]} shortcut={["3"]} />
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/upright-support.png"}
 	style={{ width: 65 }}
 />
 
-垂直与打印平台的支撑。
+垂直與列印平台的支撐。
 
-##### 树杈支撑
+##### 樹杈支撐
 
-<Entry manualSupportOptions={["第4个选项"]} shortcut={["4"]} />
+<Entry manualSupportOptions={["第4個選項"]} shortcut={["4"]} />
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/branch-support.png"}
 	style={{ width: 65 }}
 />
 
-树杈支撑是一种单端支撑，通常用于连接模型和另一个支撑的中间部分，或者连接两个支撑，起到稳固模型的作用。
+樹杈支撐是一種單端支撐，通常用於連接模型和另一個支撐的中間部分，或是連接兩個支撐，起到穩固模型的作用。
 
-##### 关节支撑
+##### 關節支撐
 
-<Entry manualSupportOptions={["第5个选项"]} shortcut={["5"]} />
+<Entry manualSupportOptions={["第5個選項"]} shortcut={["5"]} />
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/joint-support.png"}
 	style={{ width: 65 }}
 />
 
-关节支撑由两个支撑段组成，它与树杈支撑类似，都可用于连接模型与支撑。
+關節支撐由兩個支撐段組成，它與樹杈支撐類似，都可用於連接模型與支撐。
 
-##### 小柱支撑
+##### 小柱支撐
 
-<Entry manualSupportOptions={["第6个选项"]} shortcut={["6"]} />
+<Entry manualSupportOptions={["第6個選項"]} shortcut={["6"]} />
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/small-pillar.png"}
 	style={{ width: 65 }}
 />
 
-这是一种细支撑，它连接模型和另一个支撑的中间部分或者连接模型表面上的两个点。适用于悬空部分较小、细节较多的模型，能够提供更精细的支撑。
+這是一種細支撐，它連接模型和另一個支撐的中間部分或是連接模型表面上的兩個點。適用於懸空部分較小、細節較多的模型，能夠提供更精細的支撐。
 
 <Admonition type="tip" title="提示">
-	树杈、关节、小柱这三种支撑类型可开启应用支撑自动吸附功能，并可在
-	“高级”支撑设置面板的**更多设置**中自定义 _吸附半径_ 和 _吸附角度_ 的参数。
+	樹杈、關節、小柱這三種支撐類型可開啟應用支撐自動吸附功能，並可在
+	「高級」支撐設置面板的**更多設置**中自訂 _吸附半徑_ 和 _吸附角度_ 的參數。
 </Admonition>
 
-##### 分叉支撑
+##### 分叉支撐
 
-<Entry manualSupportOptions={["第7个选项"]} shortcut={["7"]} />
+<Entry manualSupportOptions={["第7個選項"]} shortcut={["7"]} />
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/forked-support.png"}
 	style={{ width: 65 }}
 />
 
-分叉支撑的顶部与模型相连，底部分叉连接到相邻支撑的中间部分，形成稳定的支撑网络结构。
+分叉支撐的頂部與模型相連，底部分叉連接到相鄰支撐的中間部分，形成穩定的支撐網絡結構。
 
-##### 树状支撑
+##### 樹狀支撐
 
-<Entry manualSupportOptions={["第8个选项"]} shortcut={["8"]} />
+<Entry manualSupportOptions={["第8個選項"]} shortcut={["8"]} />
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/tree-support.png"}
 	style={{ width: 65 }}
 />
 
-从主支撑分出多个分支的支撑结构，类似于树枝。树状支撑能够提供更均匀的支撑力，能够有效地防止模型变形。
+從主支撐分出多个分支的支撐結構，類似於樹枝。樹狀支撐能夠提供更均勻的支撐力，能夠有效地防止模型變形。
 
-##### 等高支撑
+##### 等高支撐
 
-<Entry manualSupportOptions={["第9个选项"]} shortcut={["9"]} />
+<Entry manualSupportOptions={["第9個選項"]} shortcut={["9"]} />
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/contour-support.png"}
 	style={{ width: 65 }}
 />
 
-为模型的特定高度添加支撑。
+為模型的特定高度添加支撐。
 
-##### 法面支撑
+##### 法面支撐
 
-<Entry manualSupportOptions={["第10个选项"]} shortcut={["0"]} />
+<Entry manualSupportOptions={["第10個選項"]} shortcut={["0"]} />
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/facial-support.png"}
 	style={{ width: 65 }}
 />
 
-为模型的选定面添加支撑。
+為模型的選定面添加支撐。
 
-##### 边界支撑
+##### 邊界支撐
 
-<Entry manualSupportOptions={["第11个选项"]} shortcut={["-"]} />
+<Entry manualSupportOptions={["第11個選項"]} shortcut={["-"]} />
 
 <ImageContainer
 	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/boundary-support.png"}
 	style={{ width: 65 }}
 />
 
-为模型选定面的外边缘生成支撑，以防止悬空部分在打印过程中翘曲或断裂。
+為模型選定面的外邊緣生成支撐，以防止懸空部分在列印過程中翹曲或斷裂。
 
-### 对称支撑
+### 對稱支撐
 
 <Entry
 	functionMenu={[
-		"支撑",
+		"支撐",
 		<div className="flex items-center gap-1">
 			<SymmetricalSupport />
-			添加对称支撑
+			添加对称支撐
 		</div>,
 	]}
 	shortcut={["Ctrl", "Shift", "S"]}
 />
 
-选择模型对称面，并在所选对称面两侧添加镜像对称的支撑。
+選擇模型對稱面，並在所選對稱面兩側添加鏡像對稱的支撐。
 
-### 合并支撑
+### 合併支撐
 
 <Entry
 	functionMenu={[
-		"支撑",
+		"支撐",
 		<div className="flex items-center gap-1">
 			<MergeSupport />
-			合并支撑
+			合併支撐
 		</div>,
 	]}
 	shortcut={["Ctrl", "Shift", "M"]}
 />
 
-将全部或部分支撑进行自动合并，简化支撑结构，降低打印成本。
+將全部或部分支撐進行自動合併，簡化支撐結構，降低列印成本。
 
-### 悬空支撑
+### 懸空支撐
 
 <Entry
 	functionMenu={[
-		"支撑",
-		"悬空检测",
+		"支撐",
+		"懸空檢測",
 		<div className="flex items-center gap-1">
 			<AddSupportToSuspendedArea />
-			添加悬空支撑
+			添加懸空支撐
 		</div>,
 	]}
 />
 
-<NextLink href="/zh-CN/chitubox-pro/latest/risk-detection#悬空检测">悬空检测</NextLink>后，为悬空区域手动或自动添加支撑结构，以防止悬空部分在打印过程中变形或断裂。
+<NextLink href="/zh-CN/chitubox-pro/latest/risk-detection#懸空檢測">懸空檢測</NextLink>後，為懸空區域手動或自動添加支撐結構，以防止懸空部分在列印過程中變形或斷裂。
 
-## 编辑支撑
+## 編輯支撐
 
 <Entry
 	supportSettingsPanel={[
-		"自动支撑",
+		"自動支撐",
 		<div className="flex items-center gap-1">
 			<ChituboxEditSupportIcon />
-			编辑支撑
+			編輯支撐
 		</div>,
 	]}
 	shortcut={["E"]}
 />
 
-对已添加的支撑进行调整，包括修改支撑的大小、密度和位置，以优化打印效果。
+對已添加的支撐進行調整，包括修改支撐的大小、密度和位置，以優化列印效果。
 
-## 删除支撑
+## 刪除支撐
 
 <Entry
 	supportSettingsPanel={[
-		"自动支撑",
+		"自動支撐",
 		<div className="flex items-center gap-1">
 			<ChituboxDeleteSupportIcon />
-			删除支撑
+			刪除支撐
 		</div>,
 	]}
 	shortcut={["D"]}
 />
 
-删除不需要的支撑结构，以减少材料消耗。
+刪除不需要的支撐結構，以減少材料消耗。

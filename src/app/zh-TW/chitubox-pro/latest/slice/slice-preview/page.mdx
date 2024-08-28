@@ -4,10 +4,10 @@ import {
 } from "@/components/icons/ChituboxProIcons";
 
 export const metadata = {
-	title: "切片预览",
+	title: "切片預覽",
 	authors: [{ name: "CHITUBOX Team" }],
 	description:
-		"在切片软件中预览切片文件对于确保 3D 打印准确并满足您的期望非常重要。",
+		"在切片软件中預覽切片文件对于确保 3D 列印准确并满足您的期望非常重要。",
 	other: {
 		pageId: "/zh-TW/chitubox-pro/v2.0.0/slice-preview",
 	},
@@ -16,24 +16,24 @@ export const metadata = {
 	},
 };
 
-# 切片预览
+# 切片預覽
 
-切片完成后，主窗口被分为模型视图和切片预览视图两部分。**模型视图**用于展示模型，**切片预览视图**用于预览每层的切片。
+切片完成后，主窗口被分为模型視圖和切片預覽視圖兩部分。**模型視圖**用于展示模型，**切片預覽視圖**用于預覽每層的切片。
 
-## 信息预览
+## 信息預覽
 
-### 基本信息预览
+### 基本信息預覽
 
-您可以在右上方的预估面板查看基本的打印信息。打印信息包括机型、树脂、体积、重量、价格和打印时间。
+您可以在右上方的預估面板查看基本的列印信息。列印信息包括機型、樹脂、體積、重量、價格和列印時間。
 
 <Admonition type="note" title="注意">
-	树脂体积的计算方法是将 体素（像素面积 × 层高）相加，算法非常简单。
-	然而，这是一个理论值，它可能会受到现实世界中许多其他因素（构建板和模型表面上的树脂残留、树脂挥发性、固化过程中的密度变化等）的影响。
+	樹脂體積的計算方法是將體素（像素面積 × 層高）相加，算法非常簡單。
+	然而，這只是一個理論值，它可能會受到現實世界中許多其他因素（構建板和模型表面上的樹脂殘留、樹脂揮發性、固化過程中的密度變化等）的影響。
 </Admonition>
 
-### 打印参数预览
+### 列印參數預覽
 
--   打印参数预览栏： 展示切片文件的预览图、当前打印机的详细信息和当前预览层的部分打印参数设置。
+-   列印參數預覽栏： 展示切片文件的預覽图、當前列印机的詳細信息和當前預覽层的部分列印參數設定。
 
 <ImageContainer
 	src={
@@ -41,11 +41,11 @@ export const metadata = {
 	}
 />
 
-## 切片编辑
+## 切片編輯
 
-### 切片参数编辑
+### 切片參數編輯
 
-<SliceParameterEditor /> 编辑和调整当前切片的相关打印参数。
+<SliceParameterEditor /> 編輯和調整當前切片的相關列印參數。
 
 <ImageContainer
 	src={
@@ -53,46 +53,46 @@ export const metadata = {
 	}
 />
 
-此窗口提供了 **切片设置 > 打印** 的部分快捷访问，无需退出切片预览界面即可修改部分打印参数。
+此窗口提供了 **切片設置 > 列印** 的部分快捷訪問，無需退出切片預覽界面即可修改部分列印參數。
 
 <Admonition type="note" title="注意">
-	**切片参数编辑** 仅在**单参数切片**模式下可用。
+	**切片參數編輯** 僅在**单參數切片**模式下可用。
 </Admonition>
 
-### 孤岛检测
+### 孤島檢測
 
-#### 检测孤岛
+#### 檢測孤島
 
-使用<NextLink href="/zh-CN/chitubox-pro/latest/risk-detection#孤岛检测">孤岛检测</NextLink>工具检测当前切片文件中是否存在不可成功打印的孤岛。
+使用<NextLink href="/zh-CN/chitubox-pro/latest/risk-detection#孤島檢測">孤島檢測</NextLink>工具檢測當前切片文件中是否存在不可成功列印的孤島。
 
 <Admonition type="note" title="注意">
-	你必须先点击 <b>检测孤岛</b> 才能启用
-	<NextLink href="/zh-CN/chitubox-pro/latest/risk-detection#删除孤岛">删除所有孤岛</NextLink>和<NextLink href="#编辑像素">编辑像素</NextLink> 功能。
+	你必須點擊 <b>檢測孤島</b> 才能啓用
+	<NextLink href="/zh-CN/chitubox-pro/latest/risk-detection#刪除孤島">刪除所有孤島</NextLink>和<NextLink href="#編輯像素">編輯像素</NextLink> 功能。
 </Admonition>
 
-### 编辑像素
+### 編輯像素
 
-<EditPixels /> 在当前切片文件中添加或删除像素点。
+<EditPixels /> 在當前切片文件中添加或刪除像素點。
 
 #### 添加像素
 
-1. 在切片预览窗口单击鼠标左键可增加像素。
+1. 在切片預覽窗口單擊鼠標左键可增加像素。
 
-1. 按住 Ctrl 并长按拖动鼠标左键可连续添加像素。
+1. 按住 Ctrl 並長按拖動鼠標左鍵可連續添加像素。
 
-#### 删除像素
+#### 刪除像素
 
-1. 在切片预览窗口单击鼠标右键可删除像素。
+1. 在切片預覽窗口單擊鼠標右键可刪除像素。
 
-1. 按住 Ctrl，并长按拖动鼠标右键可连续删除像素。
+1. 按住 Ctrl，並長按拖動鼠標右鍵可連續刪除像素。
 
 <Admonition type="tip" title="提示">
-	可以通过按住 Ctrl 并滚动鼠标中键来缩放画笔大小
+	可以通過按住 Ctrl 並滾動鼠標中鍵来縮放畫筆大小。
 </Admonition>
 
 ## 保存切片
 
-点击 **保存切片** 按钮即可保存切片文件。
+點擊「保存切片」按鈕即可保存切片檔案。
 
 <ImageContainer
 	src={
@@ -101,13 +101,13 @@ export const metadata = {
 />
 
 <Admonition type="note" title="注意">
-	* 文件保存对话框仅显示打印机支持的文件格式。如果您在下拉菜单中看不到正确的格式，请返回并检查是否选择了正确的打印机。
-    * **默认**打印机类型允许您将切片文件保存为CHITUBOX支持的任何格式。但当您的打印机在CHITUBOX中没有内置配置文件时，您应该仅选择**默认**打印机类型。
+	* 文件保存對話框僅顯示列印機支援的檔案格式。如果您在下拉式選單中看不到正確的格式，請返回並檢查是否已選擇正確的列印機。
+    * **默認**列印機類型允許您將切片檔案儲存為CHITUBOX支援的任何格式。但當您的列印機在 CHITUBOX 中沒有內建配置文件時，您應該僅選擇默認列印機類型。
 </Admonition>
 
-## 网络发送
+## 網路發送
 
-**网络发送** 按钮仅在打印机支持网络发送功能时才会显示，此功能可以直接向打印机发送切片数据进行打印。单击此按钮打开<NextLink href="/zh-CN/chitu-manager/latest/ui-and-features/network-sending">网络发送窗口</NextLink>。
+**網路發送** 按鈕僅在列印機支援網路傳送功能時才會顯示，此功能可以直接向列印機傳送切片數據進行列印。單擊此按鈕打開<NextLink href="/zh-CN/chitu-manager/latest/ui-and-features/network-sending">網路發送視窗</NextLink>。
 
 <ImageContainer
 	src={
@@ -116,6 +116,6 @@ export const metadata = {
 />
 
 <Admonition type="note" title="注意">
-	需要安装 ChituManager 以使用网络发送功能。若电脑上还未安装
-	ChituManager，点击**网络发送**按钮后，可按照提示步骤进行下载与安装。
+	需要安装 ChituManager 以使用网络发送功能。若電腦上尚未安裝
+	ChituManager，點擊**網路發送**按鈕後，可按照提示步驟進行下載與安裝。
 </Admonition>
