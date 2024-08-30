@@ -40,36 +40,36 @@ The height distance between the lowest point on the model and the print platform
 
 #### Plate
 
-| Parameters             | Description                                                                     |
-| ---------------- | ------------------------------------------------------------------------ |
+| Parameters          | Description                                                                                                                                                             |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Raft Area Ratio (%) | Controls the size of the supporting raft, by setting the ratio of the total area of the raft relative to the total area projected by the model to the printing platform |
-| Raft Thickness (mm) | Wall thickness of the supporting raft                                                           |
-| Raft Height (mm) | Overall height of the supporting raft                                                           |
-| Raft Slope (°)     | Angle between raft's side wall and the printing platform                                             |
+| Raft Thickness (mm) | Wall thickness of the supporting raft                                                                                                                                   |
+| Raft Height (mm)    | Overall height of the supporting raft                                                                                                                                   |
+| Raft Slope (°)      | Angle between raft's side wall and the printing platform                                                                                                                |
 
 #### Cross Grid
 
-| Parameters             | Description                                                                     |
-| ---------------- | ------------------------------------------------------------------------ |
-| Raft Area Ratio (%) | Controls the size of the supporting raft, by setting the ratio of the total area of the raft relative to the total area projected by the model to the printing platform |
-| Raft Thickness(mm) | Thickness of the raft                                                           |
-| Grid Opening Width (mm) | Width of a single square grid opening                                                 |
-| Grid Spacing (mm) | Distance between two adjacent grids                                               |
+| Parameters              | Description                                                                                                                                                             |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Raft Area Ratio (%)     | Controls the size of the supporting raft, by setting the ratio of the total area of the raft relative to the total area projected by the model to the printing platform |
+| Raft Thickness(mm)      | Thickness of the raft                                                                                                                                                   |
+| Grid Opening Width (mm) | Width of a single square grid opening                                                                                                                                   |
+| Grid Spacing (mm)       | Distance between two adjacent grids                                                                                                                                     |
 
 #### Hexagonal Grid
 
-| Parameters             | Description                                                                     |
-| ---------------- | ------------------------------------------------------------------------ |
-| Raft Area Ratio (%) | Controls the size of the supporting raft, by setting the ratio of the total area of the raft relative to the total area projected by the model to the printing platform |
-| Raft Thickness(mm) | Thickness of the raft                                                           |
-| Grid Opening Width (mm) | Side width of a single hexagon grid opening                                                 |
-| Grid Spacing (mm) | Distance between two adjacent grids                                               |
+| Parameters              | Description                                                                                                                                                             |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Raft Area Ratio (%)     | Controls the size of the supporting raft, by setting the ratio of the total area of the raft relative to the total area projected by the model to the printing platform |
+| Raft Thickness(mm)      | Thickness of the raft                                                                                                                                                   |
+| Grid Opening Width (mm) | Side width of a single hexagon grid opening                                                                                                                             |
+| Grid Spacing (mm)       | Distance between two adjacent grids                                                                                                                                     |
 
 #### Linear Connection
 
-| Parameters             | Description           |
-| ---------------- | -------------- |
-| Raft Thickness (mm)| Thickness of rafts |
+| Parameters          | Description        |
+| ------------------- | ------------------ |
+| Raft Thickness (mm) | Thickness of rafts |
 
 ## Support Settings
 
@@ -83,7 +83,7 @@ The height distance between the lowest point on the model and the print platform
 
 You can <ChituboxProfileAddIcon /> **Add**, <ChituboxProfileImportIcon />**Import**, <ChituboxProfileExportIcon />**Export**, and <ChituboxProfileSaveIcon /> **Save** support profiles here.
 
-Click the <GlobalReinforcement /> icon to directly open the settings dialog and navigate to <NextLink href="#增强自动支撑">“Enhance Auto Support”</NextLink>. Hovering over the icon <ChituboxProfileMenuIcon /> following each profile brings up available actions, including <ChituboxProfileRenameIcon /> Rename, <ChituboxProfileExportIcon /> Export, <ChituboxProfileResetIcon /> Reset, and <ChituboxProfileDeleteIcon /> Delete.
+Click the <GlobalReinforcement /> icon to directly open the settings dialog and navigate to <NextLink href="#enhanced-automatic-support">"Enhance Auto Support"</NextLink>. Hovering over the icon <ChituboxProfileMenuIcon /> following each profile brings up available actions, including <ChituboxProfileRenameIcon /> Rename, <ChituboxProfileExportIcon /> Export, <ChituboxProfileResetIcon /> Reset, and <ChituboxProfileDeleteIcon /> Delete.
 
 ### Basic Settings
 
@@ -148,7 +148,9 @@ The minimum horizontal distance between any two supports' mid segments.
 />
 
 <Admonition type="tip" title="Tip">
-	Contact Point Spacing and Main Pillar Spacing are two important parameters affecting support density. The smaller the values are, the denser the supports.
+	Contact Point Spacing and Main Pillar Spacing are two important parameters
+	affecting support density. The smaller the values are, the denser the
+	supports.
 </Admonition>
 
 ### Advanced Settings
@@ -310,7 +312,10 @@ The minimum horizontal distance between any two supports' mid segments.
 		</tr>
 		<tr>
 			<td>Angle</td>
-			<td>Maximum angle between the middle main support pillar and the top segment</td>
+			<td>
+				Maximum angle between the middle main support pillar and the top
+				segment
+			</td>
 			<td>N/A</td>
 		</tr>
 	</tbody>
@@ -409,7 +414,9 @@ Support Bottom includes settings for segments rested on the print platform and s
 		</tr>
 		<tr>
 			<td>Contact Diameter</td>
-			<td>Diameter of the support bottom segment contacting the platform</td>
+			<td>
+				Diameter of the support bottom segment contacting the platform
+			</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -421,7 +428,9 @@ Support Bottom includes settings for segments rested on the print platform and s
 		</tr>
 		<tr>
 			<td>Thickness</td>
-			<td>Thickness of the support bottom segment contacting the platform</td>
+			<td>
+				Thickness of the support bottom segment contacting the platform
+			</td>
 			<td>
 				<ImageContainer
 					className={"max-w-sm"}
@@ -437,7 +446,10 @@ Support Bottom includes settings for segments rested on the print platform and s
 -   Bottom segment on model surfaces
 
 <Admonition title="Note">
-	Below options applies to bottom segments rested on model surfaces, in other words, when both ends of a supports contact model surfaces. These settings are no applicable during "Edit" model. Switch to "Add" model to edit the settings.
+	Below options applies to bottom segments rested on model surfaces, in other
+	words, when both ends of a supports contact model surfaces. These settings
+	are no applicable during "Edit" model. Switch to "Add" model to edit the
+	settings.
 </Admonition>
 
 <ResponsiveTable>
@@ -462,7 +474,10 @@ Support Bottom includes settings for segments rested on the print platform and s
 		</tr>
 		<tr>
 			<td>Contact Point</td>
-			<td>Number of contacts points for support bottom segments on model surfaces</td>
+			<td>
+				Number of contacts points for support bottom segments on model
+				surfaces
+			</td>
 		</tr>
 	</tbody>
 </ResponsiveTable>
@@ -493,7 +508,9 @@ Support Bottom includes settings for segments rested on the print platform and s
 		<tr>
 			<td>Raft Area Ratio (%)</td>
 			<td>
-				Controls the size of the supporting raft, by setting the ratio of the total area of the raft relative to the total area projected by the model to the printing platform
+				Controls the size of the supporting raft, by setting the ratio
+				of the total area of the raft relative to the total area
+				projected by the model to the printing platform
 			</td>
 			<td>
 				<ImageContainer
@@ -547,7 +564,10 @@ Support Bottom includes settings for segments rested on the print platform and s
 		</tr>
 		<tr>
 			<td>Grid Spacing</td>
-			<td>Spacing between two adjacent grid openings for grid type supporting raft</td>
+			<td>
+				Spacing between two adjacent grid openings for grid type
+				supporting raft
+			</td>
 			<td>N/A</td>
 		</tr>
 	</tbody>
@@ -556,7 +576,11 @@ Support Bottom includes settings for segments rested on the print platform and s
 #### More Support Settings
 
 <Entry
-	supportSettingsPanel={["Support Settings", "Support Settings", "Advanced Settings", "More Settings"]}
+	supportSettingsPanel={[
+		"Support Settings",
+		"Advanced Settings",
+		"More Settings",
+	]}
 />
 
 <ResponsiveTable>
@@ -571,20 +595,31 @@ Support Bottom includes settings for segments rested on the print platform and s
 		<tr>
 			<td rowSpan={4}>Size Setting</td>
 			<td>Cross Structure Diameter</td>
+			<td>Diameter of cross structure.</td>
 		</tr>
 		<tr>
 			<td>Max. Small Pillar Length</td>
 			<td>
-				Maximum length of small pillars. Supports with both ends contacting model surfaces would be sized at Diameter of Small Pillar, when the total length of the supports do not exceed Maximum Small Pillar Length. Otherwise the size of the supports would be based on Upper Diameter of the Top segment.
+				Maximum length of small pillars. Supports with both ends
+				contacting model surfaces would be sized at Diameter of Small
+				Pillar, when the total length of the supports do not exceed
+				Maximum Small Pillar Length. Otherwise the size of the supports
+				would be based on Upper Diameter of the Top segment.
 			</td>
 		</tr>
 		<tr>
 			<td>Support Bottom Boss Height</td>
-			<td>Height of the bottom cone structure connecting the support bottom to the main supporting column.</td>
+			<td>
+				Height of the bottom cone structure connecting the support
+				bottom to the main supporting column.
+			</td>
 		</tr>
 		<tr>
 			<td>Support Bottom Diameter</td>
-			<td>Diameter of the bottom cone structure connecting the support bottom to the main supporting column.</td>
+			<td>
+				Diameter of the bottom cone structure connecting the support
+				bottom to the main supporting column.
+			</td>
 		</tr>
 		<tr>
 			<td rowSpan={15}>Automatic/Manual Support</td>
@@ -594,7 +629,9 @@ Support Bottom includes settings for segments rested on the print platform and s
 		<tr>
 			<td>Cross Bracing Starting Height (Relative to the Platform)</td>
 			<td>
-				Set cross bracings' minimum offset from the printing platform. Cross bracings would only generate on supports with total heights larger than the value of this parameter.
+				Set cross bracings' minimum offset from the printing platform.
+				Cross bracings would only generate on supports with total
+				heights larger than the value of this parameter.
 			</td>
 		</tr>
 		<tr>
@@ -603,46 +640,68 @@ Support Bottom includes settings for segments rested on the print platform and s
 		</tr>
 		<tr>
 			<td>Max. Cross Bracing Spacing (XY)</td>
-			<td>Maximum lateral offsets between supports for cross bracing generation.</td>
+			<td>
+				Maximum lateral offsets between supports for cross bracing
+				generation.
+			</td>
 		</tr>
 		<tr>
 			<td>Bidirectional Cross Bracing</td>
 			<td>
-				When manually adding supports, cross structures are automatically generated between the new support and its adjacent supports on both sides.
+				When manually adding supports, cross structures are
+				automatically generated between the new support and its adjacent
+				supports on both sides.
 			</td>
 		</tr>
 		<tr>
 			<td>Support in Cavities</td>
-			<td>Enable/Disable interior support generation for closed-chamber structures when applying auto-supporting.</td>
+			<td>
+				Enable/Disable interior support generation for closed-chamber
+				structures when applying auto-supporting.
+			</td>
 		</tr>
 		<tr>
 			<td>Spacing from Model</td>
 			<td>
-				The minimum lateral offset allowed between the main column of a support to any point on the model surface when the support bottom is on the platform.
+				The minimum lateral offset allowed between the main column of a
+				support to any point on the model surface when the support
+				bottom is on the platform.
 			</td>
 		</tr>
 		<tr>
 			<td>Max. Contact Point Offset</td>
 			<td>
-				The maximum lateral offset allowed between a support's model contact point and its main column's centerline. Supports rooted on the print platform would only generate when the lateral offset is within limit set by this parameter during manual support placement.
+				The maximum lateral offset allowed between a support's model
+				contact point and its main column's centerline. Supports rooted
+				on the print platform would only generate when the lateral
+				offset is within limit set by this parameter during manual
+				support placement.
 			</td>
 		</tr>
 		<tr>
-			<td>Min. Effective Support Height (for middle segment bottom diameter)</td>
 			<td>
-				Minimum support height for the Lower End Diameter of Middle Support parameter to set the size of the support's main column. The support's main column will be sized at the Upper End Diameter if the height of the support is less than this value.
+				Min. Effective Support Height (for middle segment bottom
+				diameter)
+			</td>
+			<td>
+				Minimum support height for the Lower End Diameter of Middle
+				Support parameter to set the size of the support's main column.
+				The support's main column will be sized at the Upper End
+				Diameter if the height of the support is less than this value.
 			</td>
 		</tr>
 		<tr>
 			<td>Enhanced Auto Support</td>
 			<td>
-			      Enable/Disable Enhanced Automatic Support.There are three modes: Independent Reinforcement (IR), <NextLink href="#增强自动支撑">Triangular Reinforcement (TR)</NextLink>and <NextLink href="#增强自动支撑">Global Refinforcement (GR)</NextLink>.
+				Enable/Disable Enhanced Automatic Support.There are three modes: Independent Reinforcement (IR), <NextLink href="#enhanced-automatic-support">Triangular Reinforcement (TR)</NextLink>and <NextLink href="#enhanced-automatic-support">Global Refinforcement (GR)</NextLink>.
 			</td>
 		</tr>
 		<tr>
 			<td>Contact Points Pattern</td>
 			<td>
-				Generate auto supports contacting model surfaces in circular patterns or square patterns, based on contact point spacing and main support pillar spacing settings.
+				Generate auto supports contacting model surfaces in circular
+				patterns or square patterns, based on contact point spacing and
+				main support pillar spacing settings.
 			</td>
 		</tr>
 		<tr>
@@ -660,7 +719,10 @@ Support Bottom includes settings for segments rested on the print platform and s
 		<tr>
 			<td>Boundary Contact Mode</td>
 			<td>
-				Choose how boundary supports are added. Edge Tangent: edge of supports contact points are tangent to model surface edges. Center Coincide: center of support contact points fall on model surface edges.
+				Choose how boundary supports are added. Edge Tangent: edge of
+				supports contact points are tangent to model surface edges.
+				Center Coincide: center of support contact points fall on model
+				surface edges.
 			</td>
 		</tr>
 	</tbody>
@@ -674,13 +736,24 @@ Auxillary supports with cross bracings will be added automatically to certain is
 
 -   Global Reinforcement (GR): The program will try to inter-connect all adjacent support columns to form a more stable structure composed of small triangular structures under Global Reinforcement during Auto Support.
 
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/support-configuration-enhanced-automatic-support-tr.png"
+	}
+	text1={"Triangular Reinforcement (TR)"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/support-configuration-enhanced-automatic-support-gr.png"
+	}
+	text2={"Global Reinforcement (GR)"}
+/>
+
 ## Auto Support
 
 ### Auto Support Mode
 
 <Entry shortcut={["Ctrl", "TAB"]} />
 
-There are three modes for auto support:  **+All**, **+Platform** and **+Overhang**.
+There are three modes for auto support: **+All**, **+Platform** and **+Overhang**.
 
 **+All** allows support generation on model surface, **+Platform** allows support generation on the platform, and **+Overhang** generates support on all overhangs.
 
@@ -688,4 +761,4 @@ There are three modes for auto support:  **+All**, **+Platform** and **+Overhang
 
 Auto Support type includes: Branch, Joint, Adaptive, Vertical, Upright and Small Pillar.
 
-Choose applicable options from the support types, click the "Auto Add Support" button to generate corresponding support types. 
+Choose applicable options from the support types, click the "Auto Add Support" button to generate corresponding support types.

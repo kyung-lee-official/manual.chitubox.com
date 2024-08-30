@@ -29,7 +29,11 @@ export const metadata = {
 ### Auto Support
 
 <Entry
-	supportSettingsPanel={["Support Settings Panel", "Auto Support", "Add Auto Support"]}
+	supportSettingsPanel={[
+		"Support Settings Panel",
+		"Auto Support",
+		"Add Auto Support",
+	]}
 	shortcut={["Shift", "S"]}
 />
 
@@ -86,7 +90,7 @@ Place supports with contacting segments perpendicular to model surfaces.
 
 Place supports that are perpendicular to the print platform.
 
-##### Branch Support 
+##### Branch Support
 
 <Entry manualSupportOptions={["Option 4"]} shortcut={["4"]} />
 
@@ -95,7 +99,7 @@ Place supports that are perpendicular to the print platform.
 	style={{ width: 65 }}
 />
 
-Branch Supports are single-segment supports, usually used to connect model surface with the mid-segment of another support or connect two supports, in order to further stabilize a model. 
+Branch Supports are single-segment supports, usually used to connect model surface with the mid-segment of another support or connect two supports, in order to further stabilize a model.
 
 ##### Joint Support
 
@@ -118,8 +122,12 @@ Joint Supports consists of two support segments. Similar to branch supports, the
 />
 
 This is a type of thin support connecting the model and another support's middle segment or connecting two points on the surfaces of a model. Smaller pillars are ideal of models with small overhangs and many details by providing fine supports to small areas.
+
 <Admonition type="tip" title="Tip">
-	Users can enable the Automatic Attachment option when using Branch, Joint and Small Pillar supports and customize the parameters _Attachment Radius_ and _Attachment Angle_ in the **More Support Settings** panel under the "Advanced Settings" window.
+	Users can enable the Automatic Attachment option when using Branch, Joint
+	and Small Pillar supports and customize the parameters _Attachment Radius_
+	and _Attachment Angle_ in the **More Support Settings** panel under the
+	"Advanced Settings" window.
 </Admonition>
 
 ##### Forked Support
@@ -220,7 +228,7 @@ Automatically merge some or all supports to simplify support structures and lowe
 	]}
 />
 
-Manually or automatically add supports to overhang areas after running <NextLink href="/zh-CN/chitubox-pro/latest/risk-detection#悬空检测">Overhang Detection</NextLink> can prevent overhangs from deforming or breaking during printing.
+Manually or automatically add supports to overhang areas after running <NextLink href="/en-US/chitubox-pro/latest/risk-detection#overhang-detection">Overhang Detection</NextLink> can prevent overhangs from deforming or breaking during printing.
 
 ## Edit Support
 

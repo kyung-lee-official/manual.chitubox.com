@@ -8,6 +8,7 @@ import {
 	AddSupportToSuspendedArea,
 	CollisionDetection,
 	CavityDetection,
+	DeleteIslandsIcon,
 } from "@/components/icons/ChituboxProIcons";
 import { Entry } from "@/docComponents/entry/Entry";
 
@@ -30,7 +31,7 @@ export const metadata = {
 
 <CavityDetection /> The cavity detection button is located on the right side of the machine tabs.
 
-Cavity Detection can help users identify any enclosed cavities within 3D models, such as closed pockets or holes. Users can add holes to models to avoid vacuum effects during printing. 
+Cavity Detection can help users identify any enclosed cavities within 3D models, such as closed pockets or holes. Users can add holes to models to avoid vacuum effects during printing.
 
 Shown below is a hollowed model, with cavity detection turned off and on.
 
@@ -72,7 +73,7 @@ Suspension Detection can be used in the support window. Click the "Support" tab 
 	}
 />
 
-Three detection accuracy levels are provided: low, medium and high.  Higher accuracy renders more precise results but would take longer to finish.  Click on <ChituboxRefreshIcon /> to refresh detection results.
+Three detection accuracy levels are provided: low, medium and high. Higher accuracy renders more precise results but would take longer to finish. Click on <ChituboxRefreshIcon /> to refresh detection results.
 
 Cycle through and zoom into the detected areas by clicking on the arrows inside the "Overhang Area" Panel. Click on the <AddSupportToSuspendedArea /> button to automatically add supports to detected overhang areas.
 
@@ -81,7 +82,9 @@ Cycle through and zoom into the detected areas by clicking on the arrows inside 
 Island Detection is similar to Overhang Detection. but it looks for island by iterate through 2D layers instead of 3D shapes. Users will need to slice the model first by clicking on the **Slice** button in order to use Island Detection.
 
 <ImageContainer
-	src={"/images/docs/zh-CN/chitubox-basic/2.x.x/008-risk-detection-slice.png"}
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/single-parameter-slice-button.png"
+	}
 />
 
 You will see the slice preview window after slicing is complete. The **Island Detection** and **Delete All Islands** buttons are located on the top of the preview window.
@@ -95,21 +98,19 @@ A list of information of detected islands will be displayed in the island detect
 Clicking on the coordinates of an island would highlight the detected island in the preview window.
 
 <ImageContainer
-	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/risk-detection-islands.png"}
+	src={"/images/docs/en-US/chitubox-pro/2.x.x/risk-detection-islands.png"}
 />
 
 <Admonition type="tip" title="Tip">
-	You can switch between viewing the island in **Local Mode** or **Overall View** by clicking on the coordinates of the island in the island detection panel.
+	You can switch between viewing the island in **Local Mode** or **Overall
+	View** by clicking on the coordinates of the island in the island detection
+	panel.
 </Admonition>
 
 ### Delete Islands
 
-<ChituboxDeleteIslandsIcon /> Detele All Islands will tell the program to ignore all detected islands. Usually you would not use the function upon island detection, but go back to add supports to detected islands.
+The **Detele All Islands** button in the island detection panel will tell the program to ignore all detected islands. Usually you would not use the function upon island detection, but go back to add supports to detected islands.
 
-You can delete island on certain layers by selecting the island in the island detection panel and click on the **Delete Island** button.
+You can delete island on certain layers by selecting the island in the island detection panel and click on the Delete button <DeleteIslandsIcon />.
 
-<ImageContainer
-	src={
-		"/images/docs/zh-CN/chitubox-basic/2.x.x/008-risk-detection-delete-islands.png"
-	}
-/>
+Click on <ChituboxRefreshIcon /> to refresh detection results.

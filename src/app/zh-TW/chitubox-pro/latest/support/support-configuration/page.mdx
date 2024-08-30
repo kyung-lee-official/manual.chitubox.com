@@ -556,7 +556,7 @@ export const metadata = {
 #### 更多支撐設定
 
 <Entry
-	supportSettingsPanel={["支撐設定", "基礎設定", "高級設定", "更多設定"]}
+	supportSettingsPanel={["支撐設定", "高級設定", "更多設定"]}
 />
 
 <ResponsiveTable>
@@ -571,6 +571,7 @@ export const metadata = {
 		<tr>
 			<td rowSpan={4}>尺寸設定</td>
 			<td>交叉結構直徑</td>
+			<td>交叉結構的直徑</td>
 		</tr>
 		<tr>
 			<td>小柱子最大長度</td>
@@ -675,6 +676,17 @@ export const metadata = {
 -   三角强化（TR）：當選中三角強化模式，添加自動支撐時，將自動連接相鄰的三個孤立支撐主幹，從而形成穩定的三角結構。
 
 -   全局强化（GR）：當選中全局強化模式，添加自動支撐時，將全面強化所有孤立支撐主幹，自動形成由三角結構組合而成的更加穩定的結構，將所有支撐關聯起來以更好地輔助支撐的穩定性。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/support-configuration-enhanced-automatic-support-tr.png"
+	}
+	text1={"三角强化 (TR)"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/support-configuration-enhanced-automatic-support-gr.png"
+	}
+	text2={"全局强化 (GR)"}
+/>
 
 ## 自動支撐
 
