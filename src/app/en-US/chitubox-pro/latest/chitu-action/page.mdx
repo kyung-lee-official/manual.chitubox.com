@@ -1,0 +1,73 @@
+import {
+	ChituActionIcon,
+	SettingsIcon,
+} from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
+
+export const metadata = {
+	title: "ChituAction",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"ChituAction is an automated tool integrating model preparation, support creation, auto-layout and model slicing.",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/chitu-action",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# ChituAction
+
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			<ChituActionIcon />
+			ChituAction
+		</div>,
+	]}
+	shortcut={["Ctrl", "D"]}
+/>
+
+ChituAction is an automated tool integrating model preparation, support creation, auto-layout and model slicing.
+
+Click on the icon <SettingsIcon /> after loading models into the program to bring up the ChituAction sequence list. Click on the "**Apply**" button after configuring all necessary parameters and choosing paths for file saving. A slicing file and a project file can then be automatically generated with just one click.
+
+You can also click on one of the actions within the sequence to execute a single command.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-pro/2.x.x/017-chitu-action.png"}
+/>
+
+## Prepare
+
+### Scale
+
+When enabled, ChituAction automatically scales all models based on the preset ratio.
+
+### Orient
+
+When enabled, ChituAction automatically orients all models based on the preset orientation pattern.
+
+Orientation Pattern:
+
+-   Fixed Angle: Manually set the angle of orientation to rotate all models to the same angle.
+-   Auto Orientation: Rotates all models to the orientation optimized for printing as calculated by CHITUBOX.
+
+## Support
+
+Add Magic Supports to all models based on your Magic Support settings.
+
+## Layout
+
+When printing multiple models, you can optimize the models' layout with this option to best utilize the print platform area and minimize manual model movements.
+
+## Export/Save
+
+Allows direct creation and saving of model files, project files and slice files upon finishing all other actions.
+
+-   Export Model: Supported file formats include .stl, .obj, and .3mf.
+
+-   Save Project: Supported file formats include .ctp, and .chitubox.
+
+-   Save Slice: The default slice file format is the default format for the chosen printer.

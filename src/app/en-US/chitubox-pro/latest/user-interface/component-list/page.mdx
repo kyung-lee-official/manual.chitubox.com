@@ -1,0 +1,40 @@
+import {
+	ChituboxCheckboxIcon,
+	ChituboxEyeIcon,
+	ChituboxRulerIcon,
+	ChituboxProfileDeleteIcon,
+	ChituboxProfileAddIcon,
+} from "@/components/icons/Icons";
+import { InvertSelection } from "@/components/icons/ChituboxProIcons";
+
+export const metadata = {
+	title: "Component List",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/component-list",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Component List
+
+All loaded files will be displayed in the Component List. You can select multiple files or click on the select all button to pick all files.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-pro/2.x.x/component-list-panel.png"}
+/>
+
+The Check Box Icon <ChituboxCheckboxIcon /> lets you to select the file.
+
+The Invert Selection Icon <InvertSelection /> lets you invert-select the file.
+
+The Ruler Icon <ChituboxRulerIcon /> lets you to turn on displaying the <SpanA href={"https://computersciencewiki.org/index.php/Bounding_boxes"}>enclosure</SpanA> size of all models.
+
+The Add Icon <ChituboxProfileAddIcon /> lets you add files. You can also double click on blank space of the list to add a file.
+
+The Delete Icon <ChituboxProfileDeleteIcon /> lets you delete the selected file.
+
+The Eye Icon <ChituboxEyeIcon /> lets you hide a file.

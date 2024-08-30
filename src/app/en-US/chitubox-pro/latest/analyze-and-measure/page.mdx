@@ -1,0 +1,53 @@
+import {
+	DisplaySize,
+	TwoPointDistance,
+	PointToPlaneDistance,
+	ParallelPlaneDistance,
+} from "@/components/icons/ChituboxProIcons";
+import { ChituboxRulerIcon } from "@/components/icons/Icons";
+import { Entry } from "@/docComponents/entry/Entry";
+
+export const metadata = {
+	title: "Analyze/Measure",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "Analyze/Meaure in CHITUBOX Pro",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/analyze-and-measure",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Analyze/Measure
+
+## Display Size
+
+<Entry
+	functionMenu={[
+		"Analyze/Measure",
+		<div className="flex items-center gap-1">
+			<DisplaySize />
+			Display Size
+		</div>,
+	]}
+	componentList={[
+		<div className="flex items-center gap-1">
+			<ChituboxRulerIcon />
+		</div>,
+	]}
+/>
+
+<DisplaySize /> Automatically measures and displays the size of the model's <SpanA href={"https://computersciencewiki.org/index.php/Bounding_boxes"}>enclosure</SpanA>.
+
+## Two Point Distance
+
+<TwoPointDistance /> Measures and displays the distance between two points on the model.
+
+## Point to Plane Distance
+
+<PointToPlaneDistance /> Measures and displays the distance between a point and a plane on the model.
+
+## Parallel Plane Distance
+
+<ParallelPlaneDistance /> Measures and displays the distance between two parallel planes on the model.

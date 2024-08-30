@@ -1,0 +1,131 @@
+import { Entry } from "@/docComponents/entry/Entry";
+import { MaskedImage } from "@/docComponents/maskedImage/MaskedImage";
+import { LicenseCard } from "@/components/icons/ChituboxProIcons";
+
+export const metadata = {
+	title: "Account and License Key",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "Manage Account and License Keys in CHITUBOX Pro",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/manage-your-account-and-license",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Account and License Key
+
+## Account Registration
+
+Please click<SpanA href="https://cc.chitubox.com/register"> here </SpanA>and sign up if you have not registered a CHITUBOX account.
+
+## License Key
+
+An account can have multiple license keys. The license key will be automatically linked to your account when you make a purchase. This license key cannot be unbound from the account.
+
+A personal version of license key can be used on up to two computers. A team version of the license key can be used on up to 5 computers. You can log onto user center anytime to unlink your computers.
+
+<Admonition type="danger" title="Warning">
+	Please do not share your license key with anybody and bind it to your
+	account right after you receive it.
+</Admonition>
+
+<Admonition type="note" title="Attention">
+	CHITUBOX Pro uses online account verification. Please ensure that your
+	computer is connected to the internet.
+</Admonition>
+
+### Activate and Bind License Keys
+
+1. A pop-up window will appear when CHITUBOX Pro starts up for the first time.
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/2.x.x/account-and-license-management-001.png"
+    	}
+    />
+
+    <Admonition type="note" title="Attention">
+    	A license check shall starts after user login. The
+    	<b>Start Program</b>
+    	dialog will not appear if the account does not meet the requirements
+    	(the account or the computer is already in use)
+    </Admonition>
+
+1. Enter your license key:
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/2.x.x/account-and-license-management-002.png"
+    	}
+    />
+
+    Clicking on the **Confirm Authorization** button activates the license key and binds it to your computer. The effective period of the key starts from the day the key is activated.
+
+    For license keys issued by a printer manufacturer, you may need to enter your printer ID to finish binding:
+
+    <LicenseCard size={420} />
+
+    You can log into <SpanA href="https://cc.chitubox.com/login"> your account </SpanA> on the official CHITUBOX website, and go to **My Products** > **My License Key** to view your linked license keys.
+
+    <ImageContainer
+    	src={
+    		"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-005.png"
+    	}
+    />
+
+### Unbind License Keys
+
+You will need to unbind your license key from your current computer if you want to migrate CHITUBOX to a new machine.
+
+Log into your <SpanA href="https://cc.chitubox.com/login">CHITUBOX account</SpanA> on web.
+
+Click on **My Products** > **My License Keys**
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-006.png"
+	}
+/>
+
+Click on **Managed Linked PC** > **Unlink**
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/1.x.x/004-setting-up-add-your-license-to-your-account-007.png"
+	}
+/>
+
+Your license key will be unbound from your current computer, and then you can re-activate the key on a new machine.
+
+You can also perform unbinding in the CHITUBOX software.
+
+<Entry mainMenu={["Account", "Authorization", "Unbind the Current Computer"]} />
+
+<MaskedImage
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/account-and-license-management-002.png"
+	}
+	width={571}
+	height={406}
+	vWidth={121}
+	vHeight={28}
+	vX={435}
+	vY={240}
+	rx={5}
+/>
+
+### Replace License Key
+
+You will need to manually replace a license key upon expiration.
+
+<Entry mainMenu={["Account", "Authorization"]} />
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/account-and-license-management-002.png"
+	}
+/>
+
+Replace the license key with a new one, and click on **Confirm Authorization** to activate the key and bind it to your computer.

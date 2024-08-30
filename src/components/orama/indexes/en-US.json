@@ -1,0 +1,1791 @@
+[
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Introduction",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction",
+		"level": 1,
+		"content": "CHITUBOX Basic is a free 3D printing software (slicer) that slices and converts 3D mesh files into printable files. It aims to make 3D printing easier and more efficient, by simplifying the entire 3D printing process, allowing users to quickly and easily convert 3D models into 3D printed parts. The software supports a variety of 3D printing machines and profiles and offers a rich set of options for optimizing 3d print models."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "What's New ✨",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#whats-new-",
+		"level": 2,
+		"content": ""
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Brand New UI",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#brand-new-ui",
+		"level": 2,
+		"content": "We are excited to announce the launch of CHITUBOX Basic 2 with a brand new user interface, aiming to provide an easier and more intuitive user experience. The improved navigation and layout should better help you locate the tools and functions you need. We also added a range of new features, including themes, improved object handling, and more. With our new UI, your 3D printing experience will be faster, more efficient, and more enjoyable."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Support for DirectX and Metal",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#support-for-directx-and-metal",
+		"level": 2,
+		"content": "By supporting DirectX and Metal, CHITUBOX Basic can now render more realistic and complex 3D models, with more detail and more realistic lighting, shadows, and Fresnel effect. These technologies also improve performance, allowing you to fully leverage the power of your graphics card. You can now experience the highest level of graphical performance on Windows and macOS platforms when working with CHITUBOX Basic."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "RMA",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#rma",
+		"level": 2,
+		"content": "We are excited to announce the launch of our new RMA (Resin Material Alliance) feature. This feature allows you to easily select the appropriate settings for different brands of resin materials. It also supports cloud storage. So you can access your settings from anywhere. Additionally, the library is constantly being updated to provide the latest configurations. With RMA, you can now quickly and easily set up your printer for optimal 3D printing results."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Supported File Formats",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#supported-file-formats",
+		"level": 2,
+		"content": ""
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Project File",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#supported-file-formats",
+		"level": 3,
+		"content": "Check out this link for more information on the supported file formats: https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#project-file"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Printable Sliced Files",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#printable-sliced-files",
+		"level": 3,
+		"content": "Check out this link for supported printable sliced file formats: https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#printable-sliced-files"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "3D Mesh / Model Files",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#3d-mesh--model-files",
+		"level": 3,
+		"content": "Check out this link for supported 3D mesh/model file formats: https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#3d-mesh--model-files"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Configuration Files",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#configuration-files",
+		"level": 3,
+		"content": "Check out this link for supported configuration file formats: https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#configuration-files"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Installation",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/installation",
+		"level": 1
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "System Requirements",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/installation#system-requirements",
+		"level": 2,
+		"content": "CHITUBOX Basic is available for Windows, macOS and Ubuntu (LTS versions), and requires the following system specifications: https://manual.chitubox.com/en-US/chitubox-basic/latest/installation#system-requirements"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Plugin Requirements",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/installation#system-requirements",
+		"level": 2,
+		"content": "Some printers are supported in CHITUBOX through plugins. Therefore, you need to download and import the corresponding plugin files before saving sliced files. Once the download is complete, you can open the plugin window by going to the drop-down menu at the upper left corner > Help > Plugins, and then import the plugin file."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Windows Installation",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/installation#windows",
+		"level": 2,
+		"content": "To install CHITUBOX Basic on Windows, follow these steps: https://manual.chitubox.com/en-US/chitubox-basic/latest/installation#windows"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "macOS Installation",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/installation#macos",
+		"level": 2,
+		"content": "CHITUBOX Basic for macOS doesn't require an installation process since it is a portable application. Simply download the latest version of CHITUBOX Basic and drag and drop the CHITUBOX icon to the 'Applications' folder."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Ubuntu Installation",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/installation#ubuntu",
+		"level": 2,
+		"content": "To install CHITUBOX Basic on Ubuntu, follow these steps: https://manual.chitubox.com/en-US/chitubox-basic/latest/installation#ubuntu"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Quick Start",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/quick-start",
+		"level": 1,
+		"content": "This section will guide you through the basic usage of CHITUBOX helping you to get started quickly. We will start by loading a model, and then add supports, slice the model, and finally export the printable file to your printer."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Add a printer",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/quick-start#add-a-printer",
+		"level": 2,
+		"content": "You will need to add the printer you need when you first launch CHITUBOX. Taking ELEGOO Jupiter as an example: click the plus button  on the machine management bar, and select ELEGOO Jupiter from the list. Click 'Next'. Here you can change the configurations of the printer. We will use the default settings for convenience. Click 'Apply'. "
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Load Files",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/quick-start#add-a-printer",
+		"level": 2,
+		"content": "You can load existing files into CHITUBOX via the dialog window or by dragging and dropping the file into CHITUBOX. Let's try opening a file through the dialog window. Click the menu button on the upper left corner of the main window. If you want to load up an existing project, click Open Project. If you want to open a 3D mesh file instead, click Open.... You can click 🔗this link (https://manual.chitubox.com/en-US/chitubox-basic/latest/introduction#supported-file-formats) to see the supported 3D mesh file types. Select a 3D mesh file you want to slice from your computer."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Add Supports",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/quick-start#add-supports",
+		"level": 2,
+		"content": "Without supports, a model will likely fail to print successfully with only a single point on the build plate. And the model will be very unstable state as the model's center of gravity is above the contact point. Click the support icon  on the upper right corner of the main window to enter the support configuration window. We will use auto-support here for simplicity. Click the 'Auto Support' button. Great! Now we're can go ahead to slice the file."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Slicing",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/quick-start#add-supports",
+		"level": 2,
+		"content": "Click the file configuration button  in the upper right corner to get back to the main window. Then click the 'Slice' button in the lower right corner to slice the file. This process takes some time, depending on the size of the model and the complexity of the supports."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Exporting the Printable File",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/quick-start#add-supports",
+		"level": 2,
+		"content": "This is the final step. Click the 'Save' button in the lower right to open up the save slice file window."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Menu",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu",
+		"level": 1,
+		"content": "Click the Menu Icon  on the top left corner to open the Menu."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "New Project",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#new-project",
+		"level": 2,
+		"content": "Open an existing project file or load and merge the project file into the current project. Project files have the extension .chitubox. Please make sure not to confuse them with 3D mesh files or slice files."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Save Project",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#save-project",
+		"level": 2,
+		"content": "Save all models on the print platform as a project file."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Open",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#save-project",
+		"level": 2,
+		"content": "Open a project file, import a 3D model, or slice file."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Save As",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#save-as",
+		"level": 2,
+		"content": "Save all models on the print platform as a project file."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Export Model",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#export-model",
+		"level": 2,
+		"content": "Export all or selected 3D models (including supports). You can export models in a variety of file formats, allowing you to share your models with other users or use them with other 3D software."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Recently Opened",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#recently-opened",
+		"level": 2,
+		"content": "Open previously successfully opened projects and 3D model files."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Account",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#account",
+		"level": 2,
+		"content": "Log in to your CHITUBOX account. You can create an account and log in to access additional features, such as saving your settings across multiple devices."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Community",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#community",
+		"level": 2,
+		"content": "Quickly access the CHITUBOX official community. You can interact with other users using our software and stay up-to-date with the latest news, releases, and updates. Join community to create endless possibilities with CHITUBOX together."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Feedback",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#feedback",
+		"level": 2,
+		"content": "Here you can submit any ideas, suggestions, or comments about CHITUBOX to the developers."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Language",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#language",
+		"level": 2,
+		"content": "Users can choose the displayed language as needed. Currently supported languages are: German, English, French, Italian, Hungarian, Dutch, Polish, Portuguese, Finnish, Turkish, Spanish, Czech, Greek, Russian, Arabic, Japanese, Simplified Chinese, Traditional Chinese, Korean."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Help",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#help",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Check for Updates",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#check-for-updates",
+		"level": 3,
+		"content": "Check if the current version needs updating and display the update log for different versions of the softwareFactory Setting."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Factory Setting",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#factory-setting",
+		"level": 3,
+		"content": "Restore factory settings. This can help solve software issues you may encounter or reset the software."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Export configuration",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#export-configuration",
+		"level": 3,
+		"content": "Export the current machine's configuration and save it as a .cfg file. This can help back up your print settings or share your print settings with other users."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Import configuration",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#import-configuration",
+		"level": 3,
+		"content": "Select a .cfg file and import it into the current machine configuration. This can help restore print settings or import print settings from other users"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "About CHITUBOX",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#about-chitubox",
+		"level": 3,
+		"content": "View software information such as current version of the software and copyright information. This can help to keep track of the version and stay up to date with the latest version."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Open Log Path",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#open-log-path",
+		"level": 3,
+		"content": "Access the folder containing log files. You can directly access the log folder if the program crashes and cannot be opened: Windows: C:\\Users\\{user-name}\\AppData\\Local\\chitubox2_0\\Log macOS: Macintosh HD/Users/{user-name}/Library/Application Support/chitubox2_0/Log Ubuntu: ~/.local/share/chitubox2_0/Log"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "User Manual",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#user-manual",
+		"level": 3,
+		"content": "Visit the CHITUBOX user manual."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Data Collection",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#data-collection",
+		"level": 3,
+		"content": "See what data CHITUBOX is collecting and how it is used."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Plugins",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#plugins",
+		"level": 3,
+		"content": "Manage software plugins. You can import or export plugins to use support printers that do not use the Chitu system."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Shortcut",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#shortcut",
+		"level": 3,
+		"content": "View and modify keyboard shortcuts for the software."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Trim Translation",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#trim-translation",
+		"level": 3,
+		"content": "The 'Trim Translation' option in CHITUBOX allows you to trim the translation error in the software."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Settings",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#settings",
+		"level": 2,
+		"content": "General settings for CHITUBOX Basic."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Appearance",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#appearance",
+		"level": 3
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Theme",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#theme",
+		"level": 4,
+		"content": "There are three themes available: Light, Dark, and Classic."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Sectional Area Pattern",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#sectional-area-pattern",
+		"level": 4,
+		"content": "Change the displayed pattern of the sectional area."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "UI Display Scale",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#ui-display-scale",
+		"level": 4,
+		"content": "Change the size of the UI."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Grid Width",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#grid-width",
+		"level": 4,
+		"content": "Change the width of the grid on the build plate shown in the model view."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "File",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#file",
+		"level": 3
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Sliced File Thumbnail",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#sliced-file-thumbnail",
+		"level": 4,
+		"content": "Change the perspective in the thumbnail of the sliced file."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Auto Save Interval",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#auto-save-interval",
+		"level": 4,
+		"content": "Change the interval at which the software automatically saves projects."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Auto Save Directory",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#auto-save-directory",
+		"level": 4,
+		"content": "Change the directory where the software saves projects."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Model Rename",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#model-rename",
+		"level": 4,
+		"content": "Automatically add custom suffixes to file names. For example, '#number', 'hollowed out', 'fixed', and 'mirrored'."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Project File Naming",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#project-file-naming",
+		"level": 4,
+		"content": "Append Model Filename Sequentially: The filename is composed of the loaded model filename Sequentially."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Slice File Naming",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#slice-file-naming",
+		"level": 4,
+		"content": "Set the naming rules for sliced files. Most rules are self-explanatory. Only a few special rules are explained below."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Duplicate Name Replacement",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#duplicate-name-replacement",
+		"level": 4,
+		"content": "Set the naming rule for conflicting file names."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Custom Character Replacement",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#custom-character-replacement",
+		"level": 4,
+		"content": "Define custom character replacement rules."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "System",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#system",
+		"level": 3
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Max Undos",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#max-undos",
+		"level": 4,
+		"content": "This allows you to change the maximum number of undo operations that can be performed."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Graphics Card Backward Compatible",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#graphics-card-backward-compatible",
+		"level": 4,
+		"content": "Turn on this option if the model preview appears abnormal or the software does not run as expected. Restart the software for the option to take effect."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Graphics Quality",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#graphics-quality",
+		"level": 4,
+		"content": "The graphics quality grade of CHITUBOX. Increase the value to decrease the refresh rate and improve the graphics quality."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Render Engine",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#render-engine",
+		"level": 4,
+		"content": "Change the render engine of the software. On Windows, you can choose Direct3D or OpenGL as the rendering engine. On macOS, you can choose Metal or OpenGL as the rendering engine."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Render Engine",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#render-engine",
+		"level": 4,
+		"content": "Change the render engine of the software. On Windows, you can choose Direct3D or OpenGL as the rendering engine. On macOS, you can choose Metal or OpenGL as the rendering engine."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Function",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#function",
+		"level": 3
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Slicing Model Volume Calculation",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#slicing-model-volume-calculation",
+		"level": 4,
+		"content": "Enable or disable volume calculation during slicing."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Preview Supports",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#preview-supports",
+		"level": 4,
+		"content": "Enable or disable support preview when adding manual supports."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Display Support Auxiliary Lines",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#display-support-auxiliary-lines",
+		"level": 4,
+		"content": "Enable or disable support auxiliary lines."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Open Graphics Tooltips",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#open-graphics-tooltips",
+		"level": 4,
+		"content": "Enable or disable the graphic tooltips."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Support Hidden Angle",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#support-hidden-angle",
+		"level": 4,
+		"content": "The angle between the camera optical axis and the negative Z axis of the build plate, supports will be hidden if the angle is smaller than the value you set."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Examples",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#examples",
+		"level": 3,
+		"content": "Open sample models included with the software."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Exit",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#exit",
+		"level": 3,
+		"content": "Quit the software."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Right-click Menu",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#right-click-menu",
+		"level": 3
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Right-click Menu",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#right-click-menu",
+		"level": 3
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "New Project",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#new-project-1",
+		"level": 4,
+		"content": "Create a new project."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Export Model",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#export-model-1",
+		"level": 4,
+		"content": "Export all models or selected models (including supports). You can export models in a variety of file formats allowing you to share your models with other users or use them with other 3D software."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Replace Model",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#replace-model",
+		"level": 4,
+		"content": "Replace the current model with another model that has slight differences without having to add supports again."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Select Model",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#select-model",
+		"level": 4,
+		"content": "Select the model under the mouse cursor if not already selected. Hold down the Ctrl key and click to select multiple models."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Cancel Seleted Model",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#cancel-seleted-model",
+		"level": 4,
+		"content": "Deselect a selected model under the mouse cursor."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Hide",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#hide",
+		"level": 4,
+		"content": "Hide the model under the mouse cursor."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Hide Others",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#hide-others",
+		"level": 4,
+		"content": "Hide all models except the one under the mouse cursor."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Display All Models",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/menu#hide-others",
+		"level": 4,
+		"content": "Display all hidden models."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Gadgets",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets",
+		"level": 1,
+		"content": "In this section, we will introduce some useful gadgets in CHITUBOX."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Toolbar",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#toolbar",
+		"level": 2,
+		"content": "The toolbar is located on the left side of the main window. It contains five tools: select, move, rotate, scale, and mirror."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Select",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#toolbar",
+		"level": 3,
+		"content": "The toolbar is located on the left side of the main window. It contains five tools: select, move, rotate, scale, and mirror."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Move",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#move",
+		"level": 3,
+		"content": "The move tool is used to move selected models. Move objects precisely by entering coordinates in the move panel. Put on the plate: Place the selected model on the print platform based on its lowest point. Cetered: Center the selected model on the print platform. Multiple objects within selection will be centered based on the center of the group."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Rotate",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#rotate",
+		"level": 3,
+		"content": "Rotate selected models. Rotate objects precisely by entering angles in the rotate panel. Combination Center: Rotate around the center of the group of selected models. Flatten by face: Place the model on the platform based on the selected face. Auto-orient selected models based on built-in algorithm."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Scale",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#scale",
+		"level": 3,
+		"content": "Scale selected models. Scale objects precisely by inputting the scale size or ratio in the scale panel. Global coordinate: Scale handles are parallels to the global coordinates. Local coordinate: Scales handle are parallel to the model's local coordinates. Reset: Reset the scale to 100%. Lock Ratio: If enabled, the X, Y and Z dimentioned will be scaled proportionally. Lock support diameter: If enabled, the support diameter will not be scaled."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Mirror",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#mirror",
+		"level": 3,
+		"content": "Mirror selected models on the platform. Keep the original model: Preserve the original model in the mirror action."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Info Panel",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#info-panel",
+		"level": 2,
+		"content": "The Info Panel is located in the lower left of the main window. It contains basic information of current print settings."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Machine Management Bar",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#machine-management-bar",
+		"level": 2,
+		"content": "The Machine Management Bar is located at bottom of the main window. Here you can add, delete, and copy printers. Click the add machine button to add a new printer. Click the menu icon, and you can see options to Hide Platform, Copy Machine, and Delete Machine."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Support Display Mode",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#support-display-mode",
+		"level": 2,
+		"content": "Click to switch to the support view. There are 3 buttons allowing you to switch between different support display modes."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Render Mode",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#render-mode",
+		"level": 2,
+		"content": "Rending mode options are located in the upper right of the main window. It contains two modes: Details and Fresnel. In Details mode, the model shows more details on the surface. In Fresnel mode, the model appears smoother on the surface."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Viewport Gizmos",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#viewport-gizmos",
+		"level": 2,
+		"content": "Viewport Gizmos are located in the upper right corner of the main window, providing an intuitive way to quickly manipulate the view, enabling users to quickly change the angle or perspective of the viewport, and facilitating the inspection of the relative position of objects. The Home  icon and the Perspective/Orthographic icons are located at the upper-right of the main window, next to the viewport gizmos. The Home icon allows users to reset the viewport to the default view. The Perspective/Orthographic icon allows users to switch between Perspective and Orthographic views. Perspective mode provides a more realistic view of the scene, while Orthographic mode gives users a flat view of the scene. Changing the view model can help users to assess the position of objects on the build plate and make adjustments as needed."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Slider",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/gadgets#slider",
+		"level": 2,
+		"content": "The slider is located at the right of the main window, used to preview the sectional area of models (pre-slice) and layers of models (post-slice). The slider has two buttons on the top and bottom for animating the slider position. The reset button on the bottom resets the slider position to the default levels. The slider component can help users assess the quality of the 3D model before it is sent to the printer, allowing them to make adjustments as needed."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Operations",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations",
+		"level": 1,
+		"content": "Various Operation Options are located at the top of the main window, including Open, Save, Copy, Auto Layout, Hollow, Dig Hole, Repair, Standard Parts, Resin Material Alliance, Notifications and Account Management."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Open",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#open",
+		"level": 2,
+		"content": "Open 3D mesh files, .chitubox project files, or slice files."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Save",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#save",
+		"level": 2,
+		"content": "Save your current project to a .chitubox file or a 3D mesh file."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Auto Layout",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#auto-layout",
+		"level": 2,
+		"content": "The Auto Layout function gives users multiple options to quickly and easily position 3D models on the print platform, including center of the build plate, near the X side of the build plate, and near the Y side of the build plate."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Hollow",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#hollow",
+		"level": 2,
+		"content": "The Hollow function has 2 modes: 'Hollow out' and 'Peel'. Hollow out allows users to create 3D models with hollow interiors, while retaining the outer shape of the model. The Hollow option can help users save time and material costs when printing 3D models, as the hollow interior will require less material to print. This feature can also be used to create lightweight models with a complex outer shape. Peel will peel off a designated thickness of wall from the model, just like shrinking the model down."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Hollow Parameters Explained",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#hollow-parameters-explained",
+		"level": 3,
+		"content": "Wall Thickness: wall thickness determines the overall thickness of the walls. Precision: Density of the generated triangles. A value of 0 represents the minimum density, and 1 represents the maximum. Infill Structure: Pattern of the infill. Infill Density: Density of the infill. Animation: enabling this option will show the hollowing process."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Dig Hole",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#dig-hole",
+		"level": 2,
+		"content": "The 'Hole' function allows users to create holes of specified shape or size in a 3D model with just a few clicks."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Hole Parameters Explained",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#hole-parameters-explained",
+		"level": 3,
+		"content": "Shape: The shape of the hole; available shapes are Circular, Hexagon, and Square. Diameter: The diameter of the hole. Depth: The maximum thickness of the wall that the hole can penetrate. Perpendicular to: Choose the digging angle: perpendicular to the screen or to the model. Keep the cork: Whether to Keep the hole plug."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Repair",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#repair",
+		"level": 3,
+		"content": "The Repair function will try to fix broken models. The repair function may not function correctly if the model is complex or has a lot of errors like inverted normals, overlapping faces, etc."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Standard Parts",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#standard-parts",
+		"level": 3,
+		"content": "Standard Parts provides users with a library of pre-made 3D models that can be quickly and easily imported into their project, including a various basic geometries, testing models, tool models, mechanical parts, and more."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Resin Material Alliance",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#resin-material-alliance",
+		"level": 3,
+		"content": "Users can access Material Center here."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Notifications",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#notifications",
+		"level": 3,
+		"content": "Users can view notifications from CHITUBOX here."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Login",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/operations#login",
+		"level": 3,
+		"content": " Users can log in to their CHITUBOX account. After logging in, users can access their settings from the cloud."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "File List",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/file-list",
+		"level": 1,
+		"content": "All loaded files are displayed in the file list. You can select multiple files at the same time or select all files by clicking the select all button. Click the checkbox icon to select/deselect the file. Click the eye icon display/hide the file. Click the add icon to add files. Click the ruler icon  to display the the bounding box dimension of all files. Click the trash icon to delete the selected files."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Risk Detection",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/risk-detection",
+		"level": 1
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Cavity Detection",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/risk-detection#cavity-detection",
+		"level": 2,
+		"content": "Collision detection is located on the right side of the main panel, below the file list panel. Collision detection helps users highlight collisions in their 3D printing model, allowing users to adjust the model to avoid collisions."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Suspension Detection",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/risk-detection#suspension-detection",
+		"level": 2,
+		"content": "Suspension Detection is available in the support view. Click  to switch to the support view. Suspension Detection is located on the right side of the support view right below the support list panel. Suspension Detection function helps users identify any unsupported high-risk areas in their 3D printing model, allowing users to add supports to the model to avoid print failure. It offers three accuracy levels: Low, Medium, and High. Higher accuracy levels produce more accurate detections result, but take longer to finish detection. Click the 'Refresh' button  to refresh the detection result. Click the arrow in the Suspended Area panel to navigate through the detected overhangs and zoom into the corresponding area of the model."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Island Detection",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/risk-detection#island-detection",
+		"level": 2,
+		"content": "Island Detection is similar to Suspension Detection but detects islands by iterating 2D layers instead of 3D models. To use Island Detection, slice the model first by clicking the Slice button on the right side of the main panel below the file list panel. After slicing the model, you will enter the preview window and see the Detect Islands and the Delete Islands buttons at the top of the preview window. Detect Islands will detect islands in the model and highlight them in red in the preview viewport. Delete All Islands will delete all detected islands. Typlically you would not use this function but go back to add supports to the islands. Click the Delete Islands button on the right of the main panel to delete islands on a specific layer."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Configure Print Parameters",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters",
+		"level": 1,
+		"content": "Before setting the print parameters, add a new printer by clicking the add button  on the machine management bar located at the bottom of the main window. Choose a printer brand to expand the available printers, and then select the printer you want to add. Click the Next button to add the printer. You can then configure print parameters for the added printer. One printer can have multiple profiles, which you can manage in the Profile Panel. In the Profile Panel you can  download profiles (from RMA or custom library),  upload all profiles (to custom library),  add a profile,  import profiles (from local),  export all profiles (to local). By hovering each configuration's menu icon, you can see the available operations for the configuration, including  upload,  rename,  export,  reset,  delete."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Machine",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#machine",
+		"level": 2,
+		"content": "Here you can configure the printer's basic information, including the printer's name, machine resolution, dimensions, etc."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Name",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#name",
+		"level": 3,
+		"content": "The printer's name, editable, printer model type by default."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Type",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#type",
+		"level": 3,
+		"content": "The model of the printer, not editable."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Mirror",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#mirror",
+		"level": 3,
+		"content": "Exposure image mirror mode. You do not need to change this setting in most circumstances unless you are using the default printer type (Other > default)."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Resolution and Size",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#resolution-and-size",
+		"level": 3,
+		"content": "The resolution and size of the print screen. You do not need to change this setting in most circumstances unless you are using the default printer type (Other > default). The Link/Unlink buttons  allow you to link/unlink the size and resolution or X and Y. Any linked value will be updated automatically when the other value is changed. If dimensions are not linked to the resolution (resolution stays unchanged), the smaller the screen size, the larger the actual print will be, and vice versa."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Build Area Offset",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#build-area-offset",
+		"level": 3,
+		"content": "The offset of the build area. Enabling this option allows the adjustment of the offset to the edge of the print screen. Offset areas will not print. This option can be used to avoid bad points on the edge."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Resin",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#resin",
+		"level": 2,
+		"content": "Here you can configure data for the resin you are using, including the resin's name, type, density, unit price, etc. CHITUBOX will use this information to calculate the resin usage and cost."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Print",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#print",
+		"level": 2,
+		"content": "Check out all print parameters here: https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#print"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "TSMC (Two-Stage Motion Control)",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#tsmc-two-stage-motion-control",
+		"level": 3,
+		"content": "Migrating from Anycubic Photon Workshop? Heads up! * Because Anycubic Photon Workshop offers both Basic and Advanced settings, and CHITUBOX's format lacks a dedicated field to differentiate them, CHITUBOX only displays Basic parameters for printers that do not support Advanced settings. Conversely, CHITUBOX displays only Advanced parameters for printers that support both settings. If your printer supports Advanced settings but you do not want to use the TSMC feature, simply enter the same speed for both stages, and ensure the total lift distance is consistent with the desired distance. * The order of TSMC parameters in the UI is different. In Photon Workshop, [0] refers to the motion stage closer to the screen, while [1] represents the stage farther away. However, CHITUBOX follows the motion order in layout input boxes. There are two sets of lifting and retracting parameters in the print settings, where you can set up TSMC. \n There are two sets of lifting and retracting parameters in the print settings, where you can set up TSMC. When the build plate starts lifting with the model, the FEP film at the bottom of the resin vat will pull down the newly solidified layer until it is detached from the layer. This is called the 'suction effect'. The suction effect is more prominent when the contact area with the FEP film is large and when the build plate pulls away at higher speeds. The suction effect can cause the model to deform, and even cause the model to fall off the build plate. We recommend keeping the lifting speed slow until the model is detached from the FEP film. As the suction effect is no longer a concern, speeding up the lifting speed afterwards can improve the printing efficiency. The principle acts similarly in the retracting stage. You can adjust the following parameters below to get familiar with TSMC: https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#tsmc-two-stage-motion-control"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "GCode",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#gcode",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Advance Settings",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#advance-settings",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Bottom Light PWM",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#bottom-light-pwm",
+		"level": 3
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Light PWM",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#light-pwm",
+		"level": 3
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Picture Grayscale",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#picture-grayscale",
+		"level": 3,
+		"content": "Picture Grayscale is similar to Light PWM, ranging from 0 to 255. But picture Grayscale controls the light transmittance of the LCD screen Instead of the power of the UV light source."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Picture Grayscale",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#picture-grayscale",
+		"level": 3,
+		"content": "Picture Grayscale is similar to Light PWM, ranging from 0 to 255. But picture Grayscale controls the light transmittance of the LCD screen Instead of the power of the UV light source."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Anti-Aliasing",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#anti-aliasing",
+		"level": 3,
+		"content": "There are two anti-aliasing modes: Gray Scale Level and Anti-aliasing Level (legacy)."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Gray Scale Level",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#gray-scale-level",
+		"level": 3,
+		"content": "This mode is designed for the .ctb format. Grayscale level: Range: 0 ~ 255. 0 stands for black, 255 stands for white. Determines the gray range available for anti-aliasing. Image Blur Pixel: Available values: 2 ~ 8. Determines the number of pixels for edge transition. A higher value setting results in softer edges. It is similar to the feather function in Photoshop."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Anti-aliasing Level",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#anti-aliasing-level",
+		"level": 3,
+		"content": "This is the legacy mode, designed for the .cbddlp format only. Anti-aliasing Level: Available values: 2, 4, 8. It determines the edge exposure time. The higher the level you select, the longer the exposure time, resulting in sharper edges and decreasing the anti-aliasing effects."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Shrinkage Compensation",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#shrinkage-compensation",
+		"level": 3,
+		"content": "Model shrinkage compensation in the X, Y, and Z directions as a percentage of the original model size. The default value is 100%. Large percentage value results in larger model entities and vice versa."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Tolerance Compensation",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#tolerance-compensation",
+		"level": 3,
+		"content": "Inner and outer diameter compensation of normal printing layers. When a is larger, the inner diameter is shorter, and the model body is larger. When a is smaller, the inner diameter is longer, and the model body is smaller. When b is larger, the outer diameter is longer, and the model body is larger. When b is smaller, the outer diameter is shorter, and the model body is smaller. https://youtu.be/iYKVPmmoUUo"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Bottom Tolerance Compensation",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#bottom-tolerance-compensation",
+		"level": 3,
+		"content": "Inner and outer diameter compensation of bottom printing layers. This setting is often enabled to address the 'elephant's foot' issue. When a is larger, the inner diameter is shorter, and the model body is larger. When a is smaller, the inner diameter is longer, and the model body is smaller. When b is larger, the outer diameter is longer, and the model body is larger. When b is smaller, the outer diameter is shorter, and the model body is smaller. Note: 1.When the bottom layer tolerance compensation is disabled, the normal layer tolerance compensation will be effective for the whole model. 2.Bottom Tolerance Compensation only applies to bottom layers. Enabling both layer transition and Bottom Tolerance compensation can lead to unexpected printing results."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Print Time Compensation",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#print-time-compensation",
+		"level": 3,
+		"content": "Some high-resolution printers can have extra delays when loading data and will lead to inaccurate printing time estimation. You can set up a time compensation to improve the issue. * Manual Input Layer Print Time Compensation: a 2-digit number between -99.99 and 99.99, with default set at 0 s. When enabled, the Estimated Time For A Single Layer = Exposure Time + Waiting Time + Movement Time + Layer Print Time Compensation * Auto Generation"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Configure Support Parameters",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters",
+		"level": 1
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Z Lift Height",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#z-lift-height",
+		"level": 1,
+		"content": "The height distance between the lowest point of the model and the platform. The default value is 5mm."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Support Settings",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#support-settings",
+		"level": 1,
+		"content": "Here you can import, export, and reset support settings. CHITUBOX Provides 3 default support settings: Light, Medium, and Heavy. You can also create customized support settings and export them for future use."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Basic Settings",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#basic-settings",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Tip Upper Diameter",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#tip-upper-diameter",
+		"level": 3,
+		"content": "Diameter for the tip of supports."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Raft Shape",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#raft-shape",
+		"level": 3,
+		"content": "Available options: Skate, Cross grid."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Touch Tip Distance",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#touch-tip-distance",
+		"level": 3,
+		"content": "Touch Tip Distance is the distance between the tips of supports, controlling the density of supports."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Support Angle",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#support-angle",
+		"level": 3,
+		"content": "The maximum angle (degrees) between the model surface (tangent plane) and the platform for auto-support to generate."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Advanced Settings",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#advanced-settings",
+		"level": 2,
+		"content": "Advanced settings contain settings for four segments: Top, Middle, Bottom, and Raft."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Top",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#top",
+		"level": 3,
+		"content": "Check out this table for detailed information: https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#top"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Middle",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#middle",
+		"level": 3,
+		"content": "Check out this table for detailed information: https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#middle"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Bottom",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#bottom",
+		"level": 3,
+		"content": "Check out this table for detailed information: https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#bottom"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Raft",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#raft",
+		"level": 3,
+		"content": "Check out this table for detailed information: https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#raft"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Auto Support",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#auto-support",
+		"level": 2,
+		"content": "There are 2 modes for auto support: +All and +Platform. +All allows supports to be generated based on all model surfaces, while +Platform only allows supports to be generated on the platform."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Manual Support Operation",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#manual-support-operation",
+		"level": 2,
+		"content": "Manual Support Operation allows: Add, Delete, and Edit of supports, with corresponding shortcut keys 'A', 'D', and 'E'. Hold down the Ctrl key and drag the mouse to select all supports within the frame and batch Add, Delete and Edit supports."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Add",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#add",
+		"level": 3,
+		"content": "Click the model to add supports. There are two modes for adding supports: Regular (default) and Connection. The Connection mode allows you to add supports between models and existing support trunks, when complying to the following rules: * After first clicking on a model surface, you can click and attach the other end of the support on the same model's surface or an existing support trunk. * After first clicking on a support trunk, you can click and attach the other side of the support on another existing support trunk. In order to use Connection model, pop out the support mode panel first, then select Connection mode on the panel."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Delete",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#delete",
+		"level": 3,
+		"content": "Click supports to highlight target supports in red, and then click the button again or press Delete key to delete selected supports."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Edit",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#edit",
+		"level": 3,
+		"content": "Click supports to highlight target supports in green, or hold down Ctrl key to select multiple supports. You can then adjust parameters of the selected supports. You can also drag supports to adjust their positions. Under Edit mode, double click a support node to generate support segments originated from the note (press Esc to exit)."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Clear All",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-support-parameters#clear-all",
+		"level": 2,
+		"content": "Delete all supports by clicking this button."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Preview",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/preview",
+		"level": 1
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Preview Window",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/preview#preview-window",
+		"level": 2,
+		"content": "After slicing, you can preview the model in the preview window. The preview window is divided into two sections: the left side for model preview, and the right side for layer preview. The Print Settings panel at the bottom of the preview window displays print settings for the current model. You can modify the print settings here before saving the sliced file. You can view the print information the upper right corner of the preview window. Available print information includes the Machine Type, Resin, Volume, Weight, Price, and Print Time."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Network Sending",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/preview#network-sending",
+		"level": 2,
+		"content": "The Network Sending button will be available for printers that support network printing. This feature allows you to directly send sliced data to the printer for printing. Clicking this button to open the Network Sending window. Note: You need to install ChituManager to use the Network Sending function. Click the Network Sending button and follow the prompted steps tp download and install ChituManager."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Save Files",
+		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/preview#save-files",
+		"level": 2,
+		"content": "After slicing, you can save the sliced file to your computer. Click the Save button on the lower-right side of the preview window to save the sliced file. NOTE: The file saving dialog only shows the file format supported by your printer. If you do not see the correct format from the drop-down menu, please go back and check if you have selected the correct printer. The default printer type allows you to save the sliced file in any format supported by CHITUBOX. However, you should only select the default printer type when your printer does not have a built-in profile in CHITUBOX."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "CHITUBOX Basic FAQ",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq",
+		"level": 1
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Issues with the Windows Operating System",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#issues-with-the-windows-operating-system",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Windows Explorer Keep Repeatedly Restarting",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#windows-explorer-keep-repeatedly-restarting",
+		"level": 3,
+		"content": "If your Windows Explorer keeps restarting, please follow these steps to fix it: Press Ctrl + Shift + Esc to bring up your Windows Task Manager, right-click on Windows Explorer, and then click Restart. In your Task Manager, click File > Run new task, enter `cmd`, check Create this task with administrative privileges, and then click OK. Enter: `regsvr32 /u \"{CHITUBOX-Installation-Path}\\CHITUBOX_Thumbnail.dll\"`, Note that you need to replace {CHITUBOX-Installation-Path} with your CHITUBOX's installation path, for example: `regsvr32 /u \"C:\\Program Files\\ChiTubox\\CHITUBOX_Thumbnail.dll\"` Hit Enter to run the command. NOTE: Your OpenGL version should not be lower than 2.0."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Conflicts with Fusion 360 or OpenGL error \"Failed to create OpenGL context for format QSurfaceFormat\"",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#conflicts-with-fusion-360-or-opengl-error-failed-to-create-opengl-context-for-format-qsurfaceformat",
+		"level": 3,
+		"content": "Check out this link for detailed information: https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#conflicts-with-fusion-360-or-opengl-error-failed-to-create-opengl-context-for-format-qsurfaceformat"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "This application failed to start because no Qt platform plugin could be initialized",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized",
+		"level": 3,
+		"content": "Check out this link for detailed information: https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "The code execution cannot process because CbdXXXX.dll was not found",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#the-code-execution-cannot-process-because-cbdxxxxdll-was-not-found",
+		"level": 3,
+		"content": "Installing failure due to a missing CbdXXXX.dll error could be caused by permission issues. Check out this link for detailed information: https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#the-code-execution-cannot-process-because-cbdxxxxdll-was-not-found"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "CHITUBOX is Not Responding",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#chitubox-is-not-responding",
+		"level": 3,
+		"content": "It is very likely a software conflict issue. Please exit all running software one by one and look for any software that conflicts with CHITUBOX. This should resolve the issue in most cases. The following software might cause conflicts: * Anti-virus software * Tabtip (In Windows Task Manager it is called Touch Keyboard and Handwriting Panel) * PowerToys * Google Drive"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Authorization Code Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#authorization-code-issues",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Error 'SSL handshake failed'",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#error-ssl-handshake-failed",
+		"level": 3,
+		"content": "Authorization code activation may be affected and result in an 'SSL handshake failed' error message if the system time does not match the current actual date. To resolve this issue, you can set the system time automatically (recommended) or manually. Then restart the software and activate the code."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Plugin Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#plugin-issues",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Longer Error -1",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#longer-error--1",
+		"level": 3,
+		"content": "1. Longer's control board process the resolution specially, we have confirmed the correct resolution to be x: 960, y: 1708. We have have carefully checked and confirmed this, so please don't change it. 2. `Error code -1` is an internal error of the plug-in due to changing of the resolution. Download Longer plugin [here](https://drive.google.com/drive/u/0/folders/1rPRw68b3Z1oqLwc7hSmP5A9Zx0HjatbE?fbclid=IwAR2XyvSs_jCWwqXymOh9ZEvcuyKNuj-ibnmbLAmfOsZMWzjJdke71kxANwQ)."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "File Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#file-issues",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Thumbnail Abnormalities",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#thumbnail-abnormalities",
+		"level": 3,
+		"content": "Check out this link for detailed information: https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#thumbnail-abnormalities"
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Rough Model Surface after Slicing",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#rough-model-surface-after-slicing",
+		"level": 3,
+		"content": "The displayed surface quality of a sliced model may appear rough. This is because each voxel of the model is rendered after slicing, similarly to zooming into each pixel after of an image in Photoshop. As it is shown in the figure, the height of each voxel is the layer height set in the slice setting. The length of each voxel is the length of each pixel on the screen, while the width of each voxel is the width of each pixel on the screen. A voxel is the smallest unit that constitutes a print. Note: This voxel imaging is not visible upon the initial slice preview. You need to reload the .ctb file in CHITUBOX to view it."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Why are STL files scaled when imported into CHITUBOX?",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#why-are-stl-files-scaled-when-imported-into-chitubox",
+		"level": 3,
+		"content": "STL files do not contain specific unit information but use numerical records. Therefore, different software may use different units to read STL files. For example, 1 meter in Blender might equate to 1 millimeter in CHITUBOX. You need to test the scale relationship between your 3D modeling software and CHITUBOX before exporting files."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "Clear Cache",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#clear-cache",
+		"level": 3,
+		"content": "You may encounter other issues caused by data corruption between versions in certain cases. You can try clearing cache: Navigate to the following directory: Windows: `C:\\Users\\{user-name}\\AppData\\Local` macOS: `Macintosh HD/Users/{user-name}/Library/Application Support` Ubuntu: `~/.local/share` If you cannot find the AppData or Library folder, they may be hidden. Follow steps below to show hidden files: Windows: Open File Explorer, go to the View tab, and tick the checkbox for Hidden items. macOS: In Finder, navigate to the desired location, and press Command + Shift + . (period key). 2. Close CHITUBOX Basic (make sure to close CHITUBOX Basic first). 3. Ensure that CHITUBOX Basic is closed, find and delete the 📂'chitubox2_0' and 📂'chituboxResource' folders. 4. Restart CHITUBOX Basic. WARNING: Clearing the cache will erase your machine settings, Please make sure you have backed up before clearing the cache."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "USB Drive Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#usb-drive-issues",
+		"level": 3,
+		"content": "Printers may fail to read certain USB drives sometimes. Usually this is because your printer's control board was designed to work with USB 2.0 with a capacity of 16GB or less. USB 3.0 uses a larger current, which can cause electrical interference with the control board. Your USB drive should meet the following requirements: * FAT32 format * USB 2.0 * ≤ 16GB * Allocation unit size = 2048 bytes"
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "CHITUBOX Pro FAQ",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq",
+		"level": 1
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Issues with the Windows Operating System",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#issues-with-the-windows-operating-system",
+		"level": 2,
+		"content": "Please make sure you've installed all [required environments](https://manual.chitubox.com/en-US/chitubox-pro/latest/requirements)."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "MSVCR110.dll Missing",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#msvcr110dll-missing",
+		"level": 3,
+		"content": "'MSVCR110.dll Missing' means you are missing Visual C++ Redistributable Packages for Visual Studio 2012. Please download the required environments from [here](https://www.microsoft.com/en-us/download/details.aspx?id=30679)."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "MSVCR120.dll Missing",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#msvcr120dll-missing",
+		"level": 3,
+		"content": "'MSVCR120.dll Missing' means you are missing Visual C++ Redistributable Packages for Visual Studio 2013. Please download the required environments from [here](https://www.microsoft.com/en-us/download/details.aspx?id=40784)."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "MSVCR140.dll Missing",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#msvcr140dll-missing",
+		"level": 3,
+		"content": "'MSVCR140.dll Missing' means you are missing Visual C++ Redistributable Packages for Visual Studio 2015, 2017 and 2019. Please download the required environments from [here](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Other System-Level Errors",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#other-system-level-errors",
+		"level": 3,
+		"content": "* Error -1073741701 * Error -1073741515 * Error -1073740791 * Error -0xc000007b These errors might occur due to some corrupted or damaged operating system files. Please try the following methods: Method 1: Open cmd on your PC (By using Win + R and enter cmd) and enter following command: `DISM.exe /Online /Cleanup-image /Scanhealth` `DISM.exe /Online /Cleanup-image /Restorehealth` Method 2: Open cmd on your PC (by using Win + R and enter cmd) and enter following command: `sfc /scannow` If these methods do not solve the problem, you may need to download and reinstall your system from Microsoft's official website. [Windows 11](https://www.microsoft.com/en-us/software-download/windows11) [Windows 10](https://www.microsoft.com/en-us/software-download/windows10)"
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Windows Explorer Repeatedly Restarting",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#windows-explorer-repeatedly-restarting",
+		"level": 3,
+		"content": "If your Windows Explorer keep restart, please follow these steps to fix it: Press Ctrl + Shift + Esc to bring up your Windows Task Manager, right-click on Windows Explorer, and then click Restart. In your Task Manager, click File > Run new task, enter `cmd`, check Create this task with administrative privileges, and then click OK. Enter: `regsvr32 /u '{CHITUBOX-Installation-Path}\\CHITUBOX_Thumbnail.dll'` Note that you need to replace {CHITUBOX-Installation-Path} with your CHITUBOX's installation path, for example: `regsvr32 /u 'C:\\Program Files\\CHITUBOXPro V1.0.1\\CHITUBOX_Thumbnail.dll'` Hit Enter to run the command. NOTE: Your OpenGL version should not be lower than 2.0."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Conflicts with Fusion 360 or OpenGL error 'Failed to create OpenGL context for format QSurfaceFormat'",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#conflicts-with-fusion-360-or-opengl-error-failed-to-create-opengl-context-for-format-qsurfaceformat",
+		"level": 3,
+		"content": "Please open System Settings> About> Advanced System Settings and remove the environment variable `QT_OPENGL`."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Conflicts with Fusion 360 or OpenGL error 'Failed to create OpenGL context for format QSurfaceFormat'",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#conflicts-with-fusion-360-or-opengl-error-failed-to-create-opengl-context-for-format-qsurfaceformat",
+		"level": 3,
+		"content": "Please open System Settings> About> Advanced System Settings and remove the environment variable `QT_OPENGL`."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "This application failed to start because no Qt platform plugin could be initialized",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized",
+		"level": 3,
+		"content": "Please open System Settings> About> Advanced System Settings and remove the two environment variables `QT_OPENGL` and `QT_PLUGIN_PATH`."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "CHITUBOX Pro is Not Responding",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#chitubox-pro-is-not-responding",
+		"level": 3,
+		"content": "It is very likely a software conflict issue. Please exit all running software one by one and look for any software that conflicts with CHITUBOX. This should resolve the issue in most cases. The following software might cause conflicts: * Anti-virus software  * Tabtip (Touch Keyboard and Handwriting Panel in Windows Task Manager) * PowerToys * Google Drive."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Plugin Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#plugin-issues",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Longer Error -1",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#longer-error--1",
+		"level": 3,
+		"content": "1. Longer's control board process the resolution specially, we have confirmed the correct resolution to be x: 960, y: 1708. We have carefully checked and confirmed, so please don't change it. 2. `Error code -1` is an internal error of the plug-in due to changing of the resolution. Download Longer plugin [here](https://drive.google.com/drive/u/0/folders/1rPRw68b3Z1oqLwc7hSmP5A9Zx0HjatbE?fbclid=IwAR2XyvSs_jCWwqXymOh9ZEvcuyKNuj-ibnmbLAmfOsZMWzjJdke71kxANwQ)."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "File Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#file-issues",
+		"level": 2
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Thumbnail Abnormalities",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#thumbnail-abnormalities",
+		"level": 3,
+		"content": "Check out this link for detailed information: https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#thumbnail-abnormalities"
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Rough Model Surface after Slicing",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#rough-model-surface-after-slicing",
+		"level": 3,
+		"content": "The displayed surface quality of a sliced model may appear rough. This is because each voxel of the model is rendered after slicing, similarly to zooming into each pixel after of an image in Photoshop. As it is shown in the figure, the height of each voxel is the layer height set in the slice setting. The length of each voxel is the length of each pixel on the screen, while the width of each voxel is the width of each pixel on the screen. A voxel is the smallest unit that constitutes a print. Note: This voxel imaging is not visible upon the initial slice preview. You need to reload the .ctb file in CHITUBOX to view it."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Why are STL files scaled when imported into CHITUBOX?",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#why-are-stl-files-scaled-when-imported-into-chitubox",
+		"level": 3,
+		"content": "STL files do not contain specific unit information but use numerical records. Therefore, different software may use different units to read STL files. For example, 1 meter in Blender might equate to 1 millimeter in CHITUBOX. You need to test the scale relationship between your 3D modeling software and CHITUBOX before exporting files."
+	},
+	{
+		"name": "CHITUBOX Pro",
+		"version": "1.9.5",
+		"title": "Clear Cache",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#clear-cache",
+		"level": 3,
+		"content": "1. Open the log path (Setting/Help > Open Log). [📃Click here](https://manual.chitubox.com/en-US/chitubox-pro/latest/application-overview/setting-and-help#open-log) to learn how to open the log. 2. Close CHITUBOX Pro (make sure to close the software first). 3. Ensure that CHITUBOX Pro is closed, back up the 📂machine folder to another location, and then delete all files and folders except the 📄userLogin.cfg file. 4. Restart CHITUBOX Pro. 5. After restarting CHITUBOX Pro, a new 📂machine folder will be generated. You can restore your machines by copying and pasting .cfg files back to the new 📂machine folder. Please do not copy all .cfg files back to the 📂machine folder at once as the issue you encountered might be caused by one of them."
+	},
+	{
+		"name": "CHITUBOX Basic",
+		"version": "2.1.0",
+		"title": "USB Drive Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-pro-faq#usb-drive-issues",
+		"level": 3,
+		"content": "Printers may fail to read certain USB drives sometimes. Usually this is because your printer's control board was designed to work with USB 2.0 with a capacity of 16GB or less. USB 3.0 uses a larger current, which can cause electrical interference with the control board. Your USB drive should meet the following requirements: * FAT32 format * USB 2.0 * ≤ 16GB * Allocation unit size = 2048 bytes"
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Introduction",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/introduction",
+		"level": 1,
+		"content": "ChituManager is a 3D printer management software designed to work with CHITUBOX slicing software, providing users with a comprehensive solution for managing 3D printers. With ChituManager, you can view the status of your printers in real time, transfer files remotely, and initiate prints without having to be physically present at the printer. ChituManager also supports error reporting, historical record summarization and viewing, video monitoring and other features that simplify the 3D printing process, helping users save time and improve efficiency."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "System Requirements",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/introduction#system-requirements",
+		"level": 2,
+		"content": "ChituManager is compatible with Windows (10 and later versions), macOS (11.7 and later versions), and Ubuntu (LTS versions), and requires the following system specifications: https://manual.chitubox.com/en-US/chitu-manager/latest/introduction#system-requirements"
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Installation",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/introduction#installation",
+		"level": 2,
+		"content": "Click the ChituManager icon at the top right corner of the CHITUBOX slicer's main interface. Alternatively, the software will display a download window and prompt you to download ChituManager before proceeding when you use the Network Sending function. Click 'Download and Install', Wait for the download to finish. Once the download is complete, the installation process will automatically start. Click 'Next' to proceed. Select the installation path, we recommend you to use the default path, and click 'Next' to continue. Wait for the installation to complete."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Network Sending",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/network-sending",
+		"level": 1,
+		"content": "After slicing your model, click the 'Network Sending' button to open the network sending window. Edit the file name and choose the format for the sliced file. Then choose the printer you want to use from the printer list or the 'My Printer' list. Click the 'Send' button at the bottom right corner to start saving and transferring the file. A temporary file is saved before transfer starts. This file is used during the transfer process and is automatically deleted when you close the CHITUBOX slicer. Once saved, the file will be transferred to the printer. When the file transfer is complete, click the 'Print' button to start printing. If you run into any issues during the network sending, we have a handy FAQ section available. Click [here](https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq) to view it and troubleshoot any problems you might encounter. Note: 1. Some printers may require a USB drive to store sliced files if internal storage is not supported. 2. Network sending requires the printer and the computer to be under the same local area network (LAN). 3. The transmission speed is limited by printer's network module. Most printers limit the transimission speed to 8M/s. Large files are not recommended for Network Sending."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Printer List",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list",
+		"level": 1,
+		"content": "Click the 'Printer' option in the left navigation bar to open the printer list interface. If you have not added a printer yet, click the 'Add Printer' button to jump to the [Management](https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/management) interface. Note: Please make sure the printer and the computer are on the same LAN. You can view all the added printers and their real-time status, and perform some other simple operations on this interface."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Basic Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#basic-status",
+		"level": 2
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Camera Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#camera-status",
+		"level": 3,
+		"content": "The icon indicates that the printer is connected to a camera."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "USB Drive Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#usb-drive-status",
+		"level": 3,
+		"content": "The icon indicates that the printer is connected to a USB drive."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Network Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#network-status",
+		"level": 3,
+		"content": "Check out this link for detailed information: https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#network-status"
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Device Real-time Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#device-real-time-status",
+		"level": 3,
+		"content": "On this interface, you can also view the real-time status of the device, including offline, standby, connecting, printing, printing completed, paused, and other statuses."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Detailed Status",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#detailed-status",
+		"level": 2,
+		"content": "You can also click on an individual device to open the detailed status panel for the selected device."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Release Film Usage Count",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#release-film-usage-count",
+		"level": 3,
+		"content": "indicates the number of times the release film has been used."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Exposure Screen Usage Time",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#exposure-screen-usage-time",
+		"level": 3,
+		"content": "indicates the usage time of the exposure screen."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Exposure Screen Usage Time",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/printer-list#exposure-screen-usage-time",
+		"level": 3,
+		"content": "indicates the usage time of the exposure screen."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Management",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/management",
+		"level": 1,
+		"content": "Click the 'Manage' button in the left navigation bar of the software to open the Device Management interface. It consists of two sections: Add Printer and Added Printer."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Add Printers",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/management#add-printers",
+		"level": 2,
+		"content": "When you open the device management interface, the software will automatically scan all the printers on your local network. Printers detected but have not been added will appear in the list. Find the device you want to add and click the 'Add Printer' button to add it to the 'Added Printer' list."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Added Printer",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/management#added-printer",
+		"level": 2,
+		"content": "Added printers will appear in the 'Added Printer' list. Click on any printer in the list to open its basic information panel. Name: Customizable name of the printer. Can only be modified when the printer is online. Type: The model of the printer. Brand: The brand of the printer. Device Serial Number: The serial number of the printer. Current Device IP: The IP address of the printer. Protocol Version: The SDCP protocol version supported by the printer. Firmware Version: The current firmware version of the printer. Exposure Screen Resolution (px): The resolution of the exposure screen. Printed Size (mm): The maximum printable size of the printer. Delete Printer: Click this button to remove the current printer. Tip: If you log in to your account in the CHITUBOX slicer, all added printers will be stored in the cloud, making it easy for you to manage printers on different computers. Otherwise, your printers will be saved directly to the local computer."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Operations",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations",
+		"level": 1,
+		"content": "The printer list interface allows you to view and perform vairous basic operations on the printer."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Video",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#video",
+		"level": 2
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Open Video",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#open-video",
+		"level": 2,
+		"content": "When the device is online and a camera is connected, the  video icon will appear. click on it to open the camera and display the video feed."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Time-lapse Photography",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#time-lapse-photography",
+		"level": 2,
+		"content": "When a camera is connected to the device and supports time-lapse photography, the 'Time-lapse Photography' function option will be available when opening the device's detailed status panel. Enabling this option will record a time-lapse video of the subsequent printing task. After the printing task is complete, you can open the historical print record list, find the corresponding print task, and click the  icon to download the time-lapse photography video."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Historical Records",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#historical-records",
+		"level": 2,
+		"content": "Click the  icon to view the historical print records for the current device. Information recorded for historical print tasks includes: image, name, status, progress, material, actual consumption, time, total time, and time-lapse photography videos."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "View Device Files",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#view-device-files",
+		"level": 2,
+		"content": "When the device is online and idle, click the  file button to view the current device files. If the device files contain printable files, you can hover your mouse over the file. When the 'Print Immediately' button appears, click it to start printing the selected file."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Pause/Resume Printing",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#pauseresume-printing",
+		"level": 2,
+		"content": "When the device is printing, open the device detailed status panel and you will see the Pause Printing button. Click the button to pause printing. If the printing is already paused, you can resume printing by clicking the Resume Printing button."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Stop Printing",
+		"path": "https://manual.chitubox.com/en-US/chitu-manager/latest/ui-and-features/operations#stop-printing",
+		"level": 2,
+		"content": "Open the device's Detailed Status panel and click the Stop Printing button to terminate the current printing process."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "ChituManager FAQ",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq",
+		"level": 1
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Missing Dll files",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq#missing-dll-files",
+		"level": 2,
+		"content": "If you encounter an error message 'xxx.dll Missing' when launching the software, follow these steps: 1. Close CHITUBOX 2. Open Control Panel on your computer, click on Programs and then click Programs and Features. 3. Find ChituManager and uninstall it. Uninstall all ChituManager programs if multiple are found. 4. Close all third-party antivirus software on your computer.  5. Open CHITUBOX slicer, find the ChituManager icon at the top right corner, and click the icon to download and install it. 6. (For cases where antivirus software is not disabled) If the antivirus software prompts to block files during the download process, select 'Allow this operation'."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Unable To Open ChituManager",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq#unable-to-open-chitumanager",
+		"level": 2,
+		"content": "If clicking the Network Send button or the ChituManager icon does not open the ChituManager program as expected, follow these steps to resolve the issue: 1. Close CHITUBOX slicer. 2. Hold down Ctrl + Shift + Esc to open Task Manager. 3. End all running ChituManager program processes. 4. Restart the CHITUBOX slicer.  Once you restart the software, the Network Management and Network Sending features should work as expected."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Software Launches with a Blank Screen",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq#software-launches-with-a-blank-screen",
+		"level": 2,
+		"content": "1. Navigate to the following file path: Windows: `C:\\Users\\{user-name}\\AppData\\Local\\ChituManager` macOS: `Macintosh HD/Users/{user-name}/Library/Application Support/ChituManager` 2. Delete the 📁'cbdsa-chitubox-network' and 📁'DataBase' folders. 3. Restart ChituManager."
+	},
+	{
+		"name": "ChituManager",
+		"version": "1.0.20",
+		"title": "Network Sending Issues",
+		"path": "https://manual.chitubox.com/en-US/faq/latest/chitu-manager-faq#network-sending-issues",
+		"level": 2,
+		"content": "If you experience problems with the network sending function, such as not finding the printer, file sending failures, or slow transmission speeds, consider the following checks: * Network Connection: Ensure that your computer and the printer are connected to the same local area network (LAN). * Firewall Settings: Verify that your firewall is not blocking ChituManager. If it is blocked, the software will be unable to detect your printer. * Filename Characters: Avoid using non-English or non-numeric characters in filenames. These characters can sometimes cause file transfer failures."
+	}
+]

@@ -1,0 +1,69 @@
+import {
+	ChituboxProfileImportIcon,
+	ChituboxProfileAddIcon,
+	ChituboxProfileDeleteIcon,
+} from "@/components/icons/Icons";
+import {
+	ProfileExportAllIcon,
+	MagicSupport,
+} from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
+
+export const metadata = {
+	title: "魔法支撐",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "CHITUBOX Pro 魔法支撐",
+	other: {
+		pageId: "/zh-TW/chitubox-pro/v2.0.0/support/magic-support",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 魔法支撐
+
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			魔法支撐
+			<MagicSupport />
+		</div>,
+	]}
+	shortcut={["Alt", "M"]}
+/>
+
+魔法支撐是一種智能化的支撐生成算法，能夠一鍵執行多個添加自動支撐命令，意味著您只需點擊一個按鈕，就可以完成一系列的支撐生成操作。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/012-magic-support.png"}
+/>
+
+點擊**應用**按鈕將按照設定的步驟順序，從上至下添加設定支撐。
+
+## 魔法支撐配置管理
+
+<ChituboxProfileAddIcon /> 新增魔法支撐配置。
+<ChituboxProfileImportIcon /> 導入魔法支撐配置文件。
+<ProfileExportAllIcon /> 導出所有魔法支撐配置。
+<ChituboxProfileDeleteIcon /> 刪除目前的魔法支撐配置。
+
+## 流程管理
+
+### 新增/刪除步驟
+
+-   新增步驟：點擊步驟卡片底部的加號 **+** ，新增新的自動支撐步驟。
+
+-   刪除步驟：點擊單個步驟卡片右側的減號 **-**， 刪除不需要的步驟。
+
+### 步驟設定
+
+| 參數         | 説明                   |
+| ------------ | ---------------------- |
+| 支撐參數     | 選擇支撐參數配置文件。 |
+| 自動支撐模式 | 選擇自動支撐模式。     |
+| 自動支撐類型 | 選擇自動支撐類型。     |
+
+### 合併支撐
+
+開啟合併支撐選項後，將自動合併已添加的支撐。

@@ -2,6 +2,8 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { BasicLogo2022 } from "../icons/Icons";
 import ThemeSwitch from "../icons/ThemeSwitch";
+import { usePathname } from "next/navigation";
+import { OramaSearch } from "../orama/search/OramaSearch";
 
 const DynamicInstanceTitles = dynamic(
 	() => import("@/components/header/InstanceTitles"),
@@ -39,6 +41,11 @@ const DynamicMobileMenuEntry = dynamic(
 );
 
 export const Navigator = (props: any) => {
+	const pathname = usePathname();
+
+	const oramaRules =
+		pathname === "/en-US" ||
+		pathname.includes("/en-US/chitubox-basic/latest");
 
 	return (
 		<div
@@ -65,7 +72,7 @@ export const Navigator = (props: any) => {
 			<DynamicInstanceTitles />
 			<div className="flex-1" /> {/* Placeholder */}
 			<div className="flex gap-6">
-				<DynamicDocsSearch />
+				{oramaRules ? <OramaSearch /> : <DynamicDocsSearch />}
 				<DynamicVersionDropdown />
 				<ThemeSwitch />
 				<DynamicLanguageMenu />

@@ -4,6 +4,124 @@
 	"versionedContexts": [
 		{
 			"versionCode": "latest",
+			"versionNumber": "2.0.0",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "Introduction"
+				},
+				{
+					"item": "installation",
+					"label": "Installation"
+				},
+				{
+					"item": "account-and-license",
+					"label": "Account and License"
+				},
+				{
+					"item": "quick-start",
+					"label": "Quick Start"
+				},
+				{
+					"item": "printer-management",
+					"label": "Printer Management",
+					"subItems": [
+						{
+							"item": "add-and-delete-printers",
+							"label": "Add and Delete Printers"
+						},
+						{
+							"item": "printer-configuration",
+							"label": "Printer Configuration"
+						}
+					]
+				},
+				{
+					"item": "file",
+					"label": "File"
+				},
+				{
+					"item": "model-processing",
+					"label": "Model Processing"
+				},
+				{
+					"item": "analyze-and-measure",
+					"label": "Analyze/Measure"
+				},
+				{
+					"item": "support",
+					"label": "Support",
+					"subItems": [
+						{
+							"item": "add-edit-delete",
+							"label": "Add, Edit, and Delete"
+						},
+						{
+							"item": "support-configuration",
+							"label": "Support Configuration"
+						},
+						{
+							"item": "magic-support",
+							"label": "Magic Support"
+						}
+					]
+				},
+				{
+					"item": "risk-detection",
+					"label": "Risk Detection"
+				},
+				{
+					"item": "slice",
+					"label": "Slice",
+					"subItems": [
+						{
+							"item": "slice-mode",
+							"label": "Slice Mode"
+						},
+						{
+							"item": "slice-preview",
+							"label": "Slice Preview"
+						}
+					]
+				},
+				{
+					"item": "chitu-action",
+					"label": "ChituAction"
+				},
+				{
+					"item": "standard-library",
+					"label": "Standard Library"
+				},
+				{
+					"item": "user-interface",
+					"label": "User Interface",
+					"subItems": [
+						{
+							"item": "main-menu",
+							"label": "Main Menu"
+						},
+						{
+							"item": "function-menu",
+							"label": "Function Menu"
+						},
+						{
+							"item": "component-list",
+							"label": "Component List"
+						},
+						{
+							"item": "gadgets",
+							"label": "Gadgets"
+						}
+					]
+				},
+				{
+					"item": "help-and-feedback",
+					"label": "Help and Feedback"
+				}
+			]
+		},
+		{
+			"versionCode": "v1.4.1",
 			"versionNumber": "1.4.1",
 			"pagesContext": [
 				{

@@ -6,6 +6,7 @@ import { Locale, locales } from "../../../messages/Locale";
 import { UrlHashPilot } from "@/components/urlHashPilot/UrlHashPilot";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
+import Ask from "@/components/orama/ask/Ask";
 
 /* https://nextjs.org/docs/app/api-reference/functions/generate-static-params */
 export function generateStaticParams() {
@@ -17,7 +18,7 @@ export async function generateMetadata({
 }: any): Promise<Metadata> {
 	const t = await getTranslations({ locale });
 	return {
-		metadataBase: new URL('https://manual.chitubox.com'),
+		metadataBase: new URL("https://manual.chitubox.com"),
 		icons: {
 			icon: "/logo.png",
 		},
@@ -42,7 +43,7 @@ export default async function RootLayout({
 	params: { locale },
 }: {
 	children: React.ReactNode;
-	params: { locale: Locale; };
+	params: { locale: Locale };
 }) {
 	/* Validate that the incoming `locale` parameter is valid */
 	if (!locales.includes(locale)) notFound();
@@ -57,6 +58,7 @@ export default async function RootLayout({
 				<Header />
 				<main className="dark:bg-black">{children}</main>
 				<Footer />
+				<Ask />
 			</body>
 		</html>
 	);

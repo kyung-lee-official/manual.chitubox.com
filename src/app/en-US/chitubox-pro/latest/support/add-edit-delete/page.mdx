@@ -1,0 +1,256 @@
+import {
+	ChituboxAddSupportIcon,
+	ChituboxDeleteSupportIcon,
+	ChituboxEditSupportIcon,
+} from "@/components/icons/Icons";
+import {
+	AddSupportToSuspendedArea,
+	SymmetricalSupport,
+	MergeSupport,
+} from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
+
+export const metadata = {
+	title: "Add, Edit and Delete",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "Learn how to add, edit, and delete supports in CHITUBOX Pro.",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/support/add-edit-delete",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Add, Edit and Delete
+
+## Add Supports
+
+### Auto Support
+
+<Entry
+	supportSettingsPanel={["Auto Support", "Add Auto Support"]}
+	shortcut={["Shift", "S"]}
+/>
+
+Automatically generates support structures based on support parameters and models' geometric features to save users' time and effort.
+
+### Manual Support
+
+<Entry
+	supportSettingsPanel={[
+		"Auto Support",
+		<div className="flex items-center gap-1">
+			<ChituboxAddSupportIcon />
+			Add Support
+		</div>,
+	]}
+	shortcut={["A"]}
+/>
+
+You can manually add supports based on your own experience and understanding of models to achieve best printing results.
+
+#### Support Types
+
+##### Adaptive Support
+
+<Entry manualSupportOptions={["Option 1"]} shortcut={["1"]} />
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/adaptive-support.png"}
+	style={{ width: 65 }}
+/>
+
+Adaptive supports would generate suitable support intelligently to match model features.
+
+##### Vertical Support
+
+<Entry manualSupportOptions={["Option 2"]} shortcut={["2"]} />
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/vertical-support.png"}
+	style={{ width: 65 }}
+/>
+
+Place supports with contacting segments perpendicular to model surfaces.
+
+##### Upright Support
+
+<Entry manualSupportOptions={["Option 3"]} shortcut={["3"]} />
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/upright-support.png"}
+	style={{ width: 65 }}
+/>
+
+Place supports that are perpendicular to the print platform.
+
+##### Branch Support
+
+<Entry manualSupportOptions={["Option 4"]} shortcut={["4"]} />
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/branch-support.png"}
+	style={{ width: 65 }}
+/>
+
+Branch Supports are single-segment supports, usually used to connect model surface with the mid-segment of another support or connect two supports, in order to further stabilize a model.
+
+##### Joint Support
+
+<Entry manualSupportOptions={["Option 5"]} shortcut={["5"]} />
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/joint-support.png"}
+	style={{ width: 65 }}
+/>
+
+Joint Supports consists of two support segments. Similar to branch supports, they can be connected to models or other supports.
+
+##### Small Pillar
+
+<Entry manualSupportOptions={["Option 6"]} shortcut={["6"]} />
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/small-pillar.png"}
+	style={{ width: 65 }}
+/>
+
+This is a type of thin support connecting the model and another support's middle segment or connecting two points on the surfaces of a model. Smaller pillars are ideal of models with small overhangs and many details by providing fine supports to small areas.
+
+<Admonition type="tip" title="Tip">
+	Users can enable the Automatic Attachment option when using Branch, Joint
+	and Small Pillar supports and customize the parameters _Attachment Radius_
+	and _Attachment Angle_ in the **More Support Settings** panel under the
+	"Advanced Settings" window.
+</Admonition>
+
+##### Forked Support
+
+<Entry manualSupportOptions={["Option 7"]} shortcut={["7"]} />
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/forked-support.png"}
+	style={{ width: 65 }}
+/>
+
+Branch Supports connect with models on top and branch off to connect to the mid-segments of adjacent supports to form stable support grids.
+
+##### Tree Support
+
+<Entry manualSupportOptions={["Option 8"]} shortcut={["8"]} />
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/tree-support.png"}
+	style={{ width: 65 }}
+/>
+
+Tree Supports has several branching supports from the main pilar, similar to tree branch structures. Tree Supports can provide even support forces to effectively prevent model deformation.
+
+##### Contour Support
+
+<Entry manualSupportOptions={["Option 9"]} shortcut={["9"]} />
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/contour-support.png"}
+	style={{ width: 65 }}
+/>
+
+Add supports at a given height on a model.
+
+##### Face Support
+
+<Entry manualSupportOptions={["Option 10"]} shortcut={["0"]} />
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/facial-support.png"}
+	style={{ width: 65 }}
+/>
+
+Add supports to a selected face on a model.
+
+##### Boundary Support
+
+<Entry manualSupportOptions={["Option 11"]} shortcut={["-"]} />
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/boundary-support.png"}
+	style={{ width: 65 }}
+/>
+
+Add supports to the boundary of a selected face on a model, to avoid overhang warping or breaking during printing.
+
+### Symmetrical Support
+
+<Entry
+	functionMenu={[
+		"Support",
+		<div className="flex items-center gap-1">
+			<SymmetricalSupport />
+			Symmetrical Support
+		</div>,
+	]}
+	shortcut={["Ctrl", "Shift", "S"]}
+/>
+
+Detect symmetrical surfaces on a model and add mirrored supports to both sides of selected symmetrical planes.
+
+### Merge Supports
+
+<Entry
+	functionMenu={[
+		"Support",
+		<div className="flex items-center gap-1">
+			<MergeSupport />
+			Merge Supports
+		</div>,
+	]}
+	shortcut={["Ctrl", "Shift", "M"]}
+/>
+
+Automatically merge some or all supports to simplify support structures and lower print cost.
+
+### Add Supports to Overhangs
+
+<Entry
+	functionMenu={[
+		"Support",
+		"Overhang Detection",
+		<div className="flex items-center gap-1">
+			<AddSupportToSuspendedArea />
+			Add Supports to Overhangs
+		</div>,
+	]}
+/>
+
+Manually or automatically add supports to overhang areas after running <NextLink href="/en-US/chitubox-pro/latest/risk-detection#overhang-detection">Overhang Detection</NextLink> can prevent overhangs from deforming or breaking during printing.
+
+## Edit Support
+
+<Entry
+	supportSettingsPanel={[
+		"Auto Support",
+		<div className="flex items-center gap-1">
+			<ChituboxEditSupportIcon />
+			Edit Support
+		</div>,
+	]}
+	shortcut={["E"]}
+/>
+
+Modify added supports, including adjusting support size, density and locations to optimize print results.
+
+## Delete Support
+
+<Entry
+	supportSettingsPanel={[
+		"Auto Support",
+		<div className="flex items-center gap-1">
+			<ChituboxDeleteSupportIcon />
+			Delete Support
+		</div>,
+	]}
+	shortcut={["D"]}
+/>
+
+Remove unnecessary support structures to save material.

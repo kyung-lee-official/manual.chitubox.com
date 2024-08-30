@@ -1,0 +1,236 @@
+import { Entry } from "@/docComponents/entry/Entry";
+import { ChituboxOpenIcon, ChituboxSaveIcon } from "@/components/icons/Icons";
+import { HistoryIcon, ExportIcon } from "@/components/icons/ChituboxProIcons";
+
+export const metadata = {
+	title: "File",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/printer-management",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# File
+
+## Project File
+
+| File Type                  | File Suffix | Description                                                                |
+| -------------------------- | ----------- | -------------------------------------------------------------------------- |
+| CHITUBOX Project File 2023 | \*.ctp      | Includes more model data (location, angle, and supports larger file sizes) |
+| CHITUBOX Project File      | \*.chitubox | Legacy file format; includes basic model data and support data             |
+
+### New Project
+
+<Entry mainMenu={["New Project"]} shortcut={["Ctrl", "N"]} />
+
+### Open Project
+
+<Entry mainMenu={["Open Project"]} shortcut={["Ctrl", "O"]} />
+
+### Save Project
+
+<Entry
+	functionMenu={[
+		"Prepare",
+		<div className="flex items-center gap-1">
+			<ChituboxSaveIcon />
+			Save
+		</div>,
+	]}
+	shortcut={["Ctrl", "S"]}
+/>
+
+## 3D Mesh File
+
+### Supported 3D Mesh File Format
+
+| Supported Actions | File Suffix     |
+| ----------------- | --------------- |
+| Import & Export   | \*.stl          |
+| Import & Export   | \*.obj          |
+| Import            | \*.3ds          |
+| Import            | \*.3mf          |
+| Import            | \*.3dm          |
+| Import            | \*.wrl          |
+| Import            | \*.sat, \*.sab  |
+| Import            | \*.dae          |
+| Import            | \*.ifc          |
+| Import            | \*.igs, \*.iges |
+| Import            | \*.jt           |
+| Import            | \*.stp, \*.step |
+| Import            | \*.x3d          |
+
+### Import 3D Mesh File
+
+<Entry
+	functionMenu={[
+		"Prepare",
+		<div className="flex items-center gap-1">
+			<ChituboxOpenIcon />
+			Open
+		</div>,
+	]}
+	mainMenu={["Open"]}
+	componentList={["Double Click"]}
+	shortcut={["Ctrl", "O"]}
+/>
+
+### Export 3D Mesh File
+
+<Entry
+	functionMenu={[
+		"Prepare",
+		<div className="flex items-center gap-1">
+			<ExportIcon />
+			Export
+		</div>,
+	]}
+	mainMenu={["Export"]}
+/>
+
+### Open Recent Files
+
+<Entry
+	functionMenu={[
+		"Prepare",
+		<div className="flex items-center gap-1">
+			<HistoryIcon />
+			History
+		</div>,
+	]}
+	mainMenu={["Recently Opened"]}
+	shortcut={["Ctrl", "L"]}
+/>
+
+## Slice Files
+
+### Supported Slice File Formats
+
+| File Type               | File Suffix |
+| ----------------------- | ----------- |
+| CHITUBOX slice file     | \*.cbddlp   |
+| CHITUBOX slice file     | \*.ctb      |
+| Halot One Series        | \*.cxdlp    |
+| ZIP Compress            | \*.zip      |
+| SLC                     | \*.slc      |
+| Fhd                     | \*.fhd      |
+| WoW                     | \*.wow      |
+| Goo                     | \*.goo      |
+| Prz                     | \*.prz      |
+| Photon Series           | \*.photon   |
+| Photon Series           | \*.photons  |
+| CHITUBOX General Format | \*.gf       |
+| Phrozen Files           | \*.phz      |
+| FlashDLPrint Files      | \*.svgx     |
+| fdg                     | \*.fdg      |
+| Photon Series           | \*.pw0      |
+| Photon Series           | \*.pwmo     |
+| Photon Series           | \*.pwms     |
+| Photon Series           | \*.pwmx     |
+| Photon Series           | \*.pwma     |
+| Photon Series           | \*.pwmb     |
+| Photon Series           | \*.pmsq     |
+| Photon Series           | \*.pwx      |
+| Photon Series           | \*.pws      |
+| Photon Series           | \*.pm3      |
+| Photon Series           | \*.pm3m     |
+| Photon Series           | \*.pm3n     |
+| Photon Series           | \*.pm3r     |
+| Photon Series           | \*.pm5      |
+| Photon Series           | \*.pm5s     |
+| Photon Series           | \*.pmx2     |
+| Photon Series           | \*.px6s     |
+| Photon Series           | \*.dlp      |
+| Photon Series           | \*.dl2p     |
+| Plugin 1                | \*.cws      |
+| Plugin 2                | \*.lgs      |
+
+### Import and Export Slice Files
+
+<Entry
+	functionMenu={[
+		"Prepare",
+		<div className="flex items-center gap-1">
+			<ChituboxOpenIcon />
+			Open
+		</div>,
+		"Select Slice File Format",
+	]}
+	mainMenu={["Open", "Select Slice File Format"]}
+	shortcut={["Ctrl", "O", "Select Slice File Format"]}
+/>
+
+<Admonition type="tip" title="Tip">
+	Besides importing files as described above, you can drag model files,
+	project files or slice files directly to the program window to quickly open
+	the files.
+</Admonition>
+
+### Export Slice Files with Plug-ins
+
+Some printers are supported through plugins within CHITUBOX. You will need to download and install the corresponding plug-ins before saving a slice file.
+
+| Printer Make and Model | Plugin                                                                                                                                                                                                |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Longer 3D Orange10     | <SpanA href="/plugins/Longer3d-Orange10-Windows64bit-V1.4.CHplugin" download>Windows version</SpanA> <br /> <SpanA href="/plugins/Longer3d-Orange10-macOS-V1.4.CHplugin" download>Mac version</SpanA> |
+| Longer 3D Orange30     | <SpanA href="/plugins/Longer3d-Orange30-Windows64bit-V1.4.CHplugin" download>Windows version</SpanA> <br /> <SpanA href="/plugins/Longer3d-Orange30-macOS-V1.4.CHplugin" download>Mac version</SpanA> |
+| Longer 3D Orange4K     | <SpanA href="/plugins/Longer3D-Orange4K-Windows64bit-V1.5.CHplugin" download>Windows version</SpanA> <br /> <SpanA href="/plugins/Longer3d-Orange4K-macOS-V1.5.CHplugin" download>Mac version</SpanA> |
+
+After downloading the plugin, You can go to the **Main Menu > Help > Plugin** to open the plugin window and import the plugin file.
+
+### Slice File Thumbnail View
+
+<Entry mainMenu={["Settings", "File", "Slice File Thumbnail View"]} />
+
+You can change the slice file thumbnail in settings. Three types of thumbnails are supported: Placement View, Home View and Front View.
+
+## Configuration File
+
+| File Type          | File Suffix | Description                                                           |
+| ------------------ | ----------- | --------------------------------------------------------------------- |
+| Configuration File | \*.cfgx     | Includes more configurable parameters, such as customizable shortcuts |
+| Configuration File | \*.cfg      | Includes printer configuration and support configuration data         |
+
+## File Naming Settings
+
+### Model File
+
+<Entry mainMenu={["Settings", "File", "Model Rename"]} />
+
+Automatically adds suffix to the model file name based on your presets. i.e."#number", "Hollowed", "Repaired" or "Mirrored".
+
+### Project File
+
+<Entry mainMenu={["Settings", "File", "Project File Naming"]} />
+
+-   Append Model Filename Sequentially: generate the filename based on the order in which the models are loaded into the file.
+
+### Slice File
+
+<Entry mainMenu={["Settings", "File", "Slice File Naming"]} />
+
+Configure naming rules for slice files.
+
+### Name Replacement
+
+#### Duplicate Name Replacement
+
+<Entry mainMenu={["Settings", "File", "Duplicate Replacement"]} />
+
+Set the rules for conflicting file names.
+
+#### Character Replacement
+
+<Entry mainMenu={["Settings", "File", "Character Replacement"]} />
+
+Certain operating systems do not allow special characters in file names. These characters will be automatically replaced based on preset rules.
+
+#### Custom Character Replacement
+
+<Entry mainMenu={["Settings", "File", "Custom Character Replacement"]} />
+
+Allows you to customize character replacement rules.

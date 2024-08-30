@@ -457,14 +457,12 @@
 																"depth": 3,
 																"value": "New Project",
 																"id": "new-project-1"
-															}
-														]
-													},
-													{
-														"depth": 2,
-														"value": "Export Model",
-														"id": "export-model-1",
-														"children": [
+															},
+															{
+																"depth": 3,
+																"value": "Export Model",
+																"id": "export-model-1"
+															},
 															{
 																"depth": 3,
 																"value": "Replace Model",
@@ -648,8 +646,8 @@
 													},
 													{
 														"depth": 2,
-														"value": "Message Remind",
-														"id": "message-remind"
+														"value": "Notifications",
+														"id": "notifications"
 													},
 													{
 														"depth": 2,
@@ -1692,12 +1690,1728 @@
 				"versionedContexts": [
 					{
 						"versionCode": "latest",
-						"versionNumber": "1.4.1",
+						"versionNumber": "2.0.0",
 						"pagesContext": [
 							{
 								"item": "introduction",
 								"label": "Introduction",
 								"path": "/en-US/chitubox-pro/latest/introduction",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Introduction",
+										"id": "introduction",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Main Features",
+												"id": "main-features"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "installation",
+								"label": "Installation",
+								"path": "/en-US/chitubox-pro/latest/installation",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Installation",
+										"id": "installation",
+										"children": [
+											{
+												"depth": 2,
+												"value": "System Requirements",
+												"id": "system-requirements"
+											},
+											{
+												"depth": 2,
+												"value": "Windows",
+												"id": "windows"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "account-and-license",
+								"label": "Account and License",
+								"path": "/en-US/chitubox-pro/latest/account-and-license",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Account and License Key",
+										"id": "account-and-license-key",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Account Registration",
+												"id": "account-registration"
+											},
+											{
+												"depth": 2,
+												"value": "License Key",
+												"id": "license-key",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Activate and Bind License Keys",
+														"id": "activate-and-bind-license-keys"
+													},
+													{
+														"depth": 3,
+														"value": "Unbind License Keys",
+														"id": "unbind-license-keys"
+													},
+													{
+														"depth": 3,
+														"value": "Replace License Key",
+														"id": "replace-license-key"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "quick-start",
+								"label": "Quick Start",
+								"path": "/en-US/chitubox-pro/latest/quick-start",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Quick Start",
+										"id": "quick-start",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Add Machine",
+												"id": "add-machine"
+											},
+											{
+												"depth": 2,
+												"value": "Load Files",
+												"id": "load-files"
+											},
+											{
+												"depth": 2,
+												"value": "Add Supports",
+												"id": "add-supports"
+											},
+											{
+												"depth": 2,
+												"value": "Slice",
+												"id": "slice"
+											},
+											{
+												"depth": 2,
+												"value": "Export Printable Files",
+												"id": "export-printable-files"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "printer-management",
+								"label": "Printer Management",
+								"subItems": [
+									{
+										"item": "add-and-delete-printers",
+										"label": "Add and Delete Printers",
+										"path": "/en-US/chitubox-pro/latest/printer-management/add-and-delete-printers",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Add and Delete Printers",
+												"id": "add-and-delete-printers",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Add Printers",
+														"id": "add-printers"
+													},
+													{
+														"depth": 2,
+														"value": "Delete Printers",
+														"id": "delete-printers"
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "printer-configuration",
+										"label": "Printer Configuration",
+										"path": "/en-US/chitubox-pro/latest/printer-management/printer-configuration",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Printer Configuration",
+												"id": "printer-configuration",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Machine",
+														"id": "machine",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Name",
+																"id": "name"
+															},
+															{
+																"depth": 3,
+																"value": "Machine Type",
+																"id": "machine-type"
+															},
+															{
+																"depth": 3,
+																"value": "Mirror",
+																"id": "mirror"
+															},
+															{
+																"depth": 3,
+																"value": "Resolution and Size",
+																"id": "resolution-and-size"
+															},
+															{
+																"depth": 3,
+																"value": "Build Area Offset",
+																"id": "build-area-offset"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "Resin",
+														"id": "resin"
+													},
+													{
+														"depth": 2,
+														"value": "Print",
+														"id": "print",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Parameter Description",
+																"id": "parameter-description"
+															},
+															{
+																"depth": 3,
+																"value": "Two-Stage Motion Control (TSMC)",
+																"id": "two-stage-motion-control-tsmc"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "Advanced",
+														"id": "advanced",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Light PWM",
+																"id": "light-pwm"
+															},
+															{
+																"depth": 3,
+																"value": "Picture Grayscale",
+																"id": "picture-grayscale"
+															},
+															{
+																"depth": 3,
+																"value": "Anti-aliasing",
+																"id": "anti-aliasing",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Gray Scale Level",
+																		"id": "gray-scale-level",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "Anti-aliasing Level",
+																				"id": "anti-aliasing-level"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Image Blurring",
+																				"id": "image-blurring"
+																			}
+																		]
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Anti-aliasing Level (legacy)",
+																		"id": "anti-aliasing-level-legacy"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "Shrinkage Compensation",
+																"id": "shrinkage-compensation"
+															},
+															{
+																"depth": 3,
+																"value": "Tolerance Compensation",
+																"id": "tolerance-compensation"
+															},
+															{
+																"depth": 3,
+																"value": "Print Time Compensation",
+																"id": "print-time-compensation"
+															},
+															{
+																"depth": 3,
+																"value": "Mask",
+																"id": "mask",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Mask Generator",
+																		"id": "mask-generator",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "Hub-and-Spoke",
+																				"id": "hub-and-spoke"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Matrix Mode",
+																				"id": "matrix-mode"
+																			}
+																		]
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Gray scale unit",
+																		"id": "gray-scale-unit"
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/en-US/chitubox-pro/latest/printer-management",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Printer Management",
+										"id": "printer-management"
+									}
+								]
+							},
+							{
+								"item": "file",
+								"label": "File",
+								"path": "/en-US/chitubox-pro/latest/file",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "File",
+										"id": "file",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Project File",
+												"id": "project-file",
+												"children": [
+													{
+														"depth": 3,
+														"value": "New Project",
+														"id": "new-project"
+													},
+													{
+														"depth": 3,
+														"value": "Open Project",
+														"id": "open-project"
+													},
+													{
+														"depth": 3,
+														"value": "Save Project",
+														"id": "save-project"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "3D Mesh File",
+												"id": "3d-mesh-file",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Supported 3D Mesh File Format",
+														"id": "supported-3d-mesh-file-format"
+													},
+													{
+														"depth": 3,
+														"value": "Import 3D Mesh File",
+														"id": "import-3d-mesh-file"
+													},
+													{
+														"depth": 3,
+														"value": "Export 3D Mesh File",
+														"id": "export-3d-mesh-file"
+													},
+													{
+														"depth": 3,
+														"value": "Open Recent Files",
+														"id": "open-recent-files"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Slice Files",
+												"id": "slice-files",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Supported Slice File Formats",
+														"id": "supported-slice-file-formats"
+													},
+													{
+														"depth": 3,
+														"value": "Import and Export Slice Files",
+														"id": "import-and-export-slice-files"
+													},
+													{
+														"depth": 3,
+														"value": "Export Slice Files with Plug-ins",
+														"id": "export-slice-files-with-plug-ins"
+													},
+													{
+														"depth": 3,
+														"value": "Slice File Thumbnail View",
+														"id": "slice-file-thumbnail-view"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Configuration File",
+												"id": "configuration-file"
+											},
+											{
+												"depth": 2,
+												"value": "File Naming Settings",
+												"id": "file-naming-settings",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Model File",
+														"id": "model-file"
+													},
+													{
+														"depth": 3,
+														"value": "Project File",
+														"id": "project-file-1"
+													},
+													{
+														"depth": 3,
+														"value": "Slice File",
+														"id": "slice-file"
+													},
+													{
+														"depth": 3,
+														"value": "Name Replacement",
+														"id": "name-replacement",
+														"children": [
+															{
+																"depth": 4,
+																"value": "Duplicate Name Replacement",
+																"id": "duplicate-name-replacement"
+															},
+															{
+																"depth": 4,
+																"value": "Character Replacement",
+																"id": "character-replacement"
+															},
+															{
+																"depth": 4,
+																"value": "Custom Character Replacement",
+																"id": "custom-character-replacement"
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "model-processing",
+								"label": "Model Processing",
+								"path": "/en-US/chitubox-pro/latest/model-processing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Model Processing",
+										"id": "model-processing",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Select",
+												"id": "select"
+											},
+											{
+												"depth": 2,
+												"value": "Transform",
+												"id": "transform",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Move",
+														"id": "move"
+													},
+													{
+														"depth": 3,
+														"value": "Rotate",
+														"id": "rotate"
+													},
+													{
+														"depth": 3,
+														"value": "Scale",
+														"id": "scale"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Mirror",
+												"id": "mirror"
+											},
+											{
+												"depth": 2,
+												"value": "Copy",
+												"id": "copy"
+											},
+											{
+												"depth": 2,
+												"value": "Split Model",
+												"id": "split-model"
+											},
+											{
+												"depth": 2,
+												"value": "Auto Layout",
+												"id": "auto-layout"
+											},
+											{
+												"depth": 2,
+												"value": "Add Tag",
+												"id": "add-tag"
+											},
+											{
+												"depth": 2,
+												"value": "Boolean Operation",
+												"id": "boolean-operation"
+											},
+											{
+												"depth": 2,
+												"value": "Hollow",
+												"id": "hollow",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Infill Type",
+														"id": "infill-type",
+														"children": [
+															{
+																"depth": 4,
+																"value": "Scaffold",
+																"id": "scaffold"
+															},
+															{
+																"depth": 4,
+																"value": "Hive",
+																"id": "hive"
+															},
+															{
+																"depth": 4,
+																"value": "Grid",
+																"id": "grid"
+															}
+														]
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Hole",
+												"id": "hole"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "analyze-and-measure",
+								"label": "Analyze/Measure",
+								"path": "/en-US/chitubox-pro/latest/analyze-and-measure",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Analyze/Measure",
+										"id": "analyzemeasure",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Display Size",
+												"id": "display-size"
+											},
+											{
+												"depth": 2,
+												"value": "Two Point Distance",
+												"id": "two-point-distance"
+											},
+											{
+												"depth": 2,
+												"value": "Point to Plane Distance",
+												"id": "point-to-plane-distance"
+											},
+											{
+												"depth": 2,
+												"value": "Parallel Plane Distance",
+												"id": "parallel-plane-distance"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "support",
+								"label": "Support",
+								"subItems": [
+									{
+										"item": "add-edit-delete",
+										"label": "Add, Edit, and Delete",
+										"path": "/en-US/chitubox-pro/latest/support/add-edit-delete",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Add, Edit and Delete",
+												"id": "add-edit-and-delete",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Add Supports",
+														"id": "add-supports",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Auto Support",
+																"id": "auto-support"
+															},
+															{
+																"depth": 3,
+																"value": "Manual Support",
+																"id": "manual-support",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Support Types",
+																		"id": "support-types",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "Adaptive Support",
+																				"id": "adaptive-support"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Vertical Support",
+																				"id": "vertical-support"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Upright Support",
+																				"id": "upright-support"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Branch Support",
+																				"id": "branch-support"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Joint Support",
+																				"id": "joint-support"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Small Pillar",
+																				"id": "small-pillar"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Forked Support",
+																				"id": "forked-support"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Tree Support",
+																				"id": "tree-support"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Contour Support",
+																				"id": "contour-support"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Face Support",
+																				"id": "face-support"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "Boundary Support",
+																				"id": "boundary-support"
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "Symmetrical Support",
+																"id": "symmetrical-support"
+															},
+															{
+																"depth": 3,
+																"value": "Merge Supports",
+																"id": "merge-supports"
+															},
+															{
+																"depth": 3,
+																"value": "Add Supports to Overhangs",
+																"id": "add-supports-to-overhangs"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "Edit Support",
+														"id": "edit-support"
+													},
+													{
+														"depth": 2,
+														"value": "Delete Support",
+														"id": "delete-support"
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "support-configuration",
+										"label": "Support Configuration",
+										"path": "/en-US/chitubox-pro/latest/support/support-configuration",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Support Configuration",
+												"id": "support-configuration",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Raft Settings",
+														"id": "raft-settings",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Model Lift Height",
+																"id": "model-lift-height"
+															},
+															{
+																"depth": 3,
+																"value": "Raft Shape",
+																"id": "raft-shape",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Plate",
+																		"id": "plate"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Cross Grid",
+																		"id": "cross-grid"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Hexagonal Grid",
+																		"id": "hexagonal-grid"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Linear Connection",
+																		"id": "linear-connection"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "Support Settings",
+														"id": "support-settings",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Support Profile",
+																"id": "support-profile"
+															},
+															{
+																"depth": 3,
+																"value": "Basic Settings",
+																"id": "basic-settings",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Top Segment Upper Diameter",
+																		"id": "top-segment-upper-diameter"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Angle",
+																		"id": "angle"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Contact Point Spacing",
+																		"id": "contact-point-spacing"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Main Pillar Spacing",
+																		"id": "main-pillar-spacing"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "Advanced Settings",
+																"id": "advanced-settings",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Top",
+																		"id": "top"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Middle",
+																		"id": "middle"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Bottom",
+																		"id": "bottom"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Raft",
+																		"id": "raft"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "More Support Settings",
+																		"id": "more-support-settings",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "Enhanced Automatic Support",
+																				"id": "enhanced-automatic-support"
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "Auto Support",
+														"id": "auto-support",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Auto Support Mode",
+																"id": "auto-support-mode"
+															},
+															{
+																"depth": 3,
+																"value": "Auto Support Type",
+																"id": "auto-support-type"
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "magic-support",
+										"label": "Magic Support",
+										"path": "/en-US/chitubox-pro/latest/support/magic-support",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Magic Support",
+												"id": "magic-support",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Manage Magic Support Profiles",
+														"id": "manage-magic-support-profiles"
+													},
+													{
+														"depth": 2,
+														"value": "Workflow Management",
+														"id": "workflow-management",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Add/Delete a Step",
+																"id": "adddelete-a-step"
+															},
+															{
+																"depth": 3,
+																"value": "Step Settings",
+																"id": "step-settings"
+															},
+															{
+																"depth": 3,
+																"value": "Merge Supports",
+																"id": "merge-supports"
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/en-US/chitubox-pro/latest/support",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Support",
+										"id": "support"
+									}
+								]
+							},
+							{
+								"item": "risk-detection",
+								"label": "Risk Detection",
+								"path": "/en-US/chitubox-pro/latest/risk-detection",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Risk Detection",
+										"id": "risk-detection",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Cavity Detection",
+												"id": "cavity-detection"
+											},
+											{
+												"depth": 2,
+												"value": "Collision Detection",
+												"id": "collision-detection"
+											},
+											{
+												"depth": 2,
+												"value": "Overhang Detection",
+												"id": "overhang-detection"
+											},
+											{
+												"depth": 2,
+												"value": "Island Detection",
+												"id": "island-detection",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Check Islands",
+														"id": "check-islands"
+													},
+													{
+														"depth": 3,
+														"value": "Delete Islands",
+														"id": "delete-islands"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "slice",
+								"label": "Slice",
+								"subItems": [
+									{
+										"item": "slice-mode",
+										"label": "Slice Mode",
+										"path": "/en-US/chitubox-pro/latest/slice/slice-mode",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Slice Mode",
+												"id": "slice-mode",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Single Parameter/Multi-parameter Slice",
+														"id": "single-parametermulti-parameter-slice",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Single Parameter Slice",
+																"id": "single-parameter-slice"
+															},
+															{
+																"depth": 3,
+																"value": "Multi-parameter Slice",
+																"id": "multi-parameter-slice",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Model",
+																		"id": "model"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Height",
+																		"id": "height"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Cross-sectional Area",
+																		"id": "cross-sectional-area"
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "slice-preview",
+										"label": "Slice Preview",
+										"path": "/en-US/chitubox-pro/latest/slice/slice-preview",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Slice Preview",
+												"id": "slice-preview",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Information Preview",
+														"id": "information-preview",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Basic Information Preview",
+																"id": "basic-information-preview"
+															},
+															{
+																"depth": 3,
+																"value": "Print Parameter Preview",
+																"id": "print-parameter-preview"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "Slice Editor",
+														"id": "slice-editor",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Slice Parameter Editor",
+																"id": "slice-parameter-editor"
+															},
+															{
+																"depth": 3,
+																"value": "Island Detection",
+																"id": "island-detection",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Detect Islands",
+																		"id": "detect-islands"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "Edit Pixels",
+																"id": "edit-pixels",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Add Pixels",
+																		"id": "add-pixels"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Delete Pixels",
+																		"id": "delete-pixels"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "Save Slice",
+														"id": "save-slice"
+													},
+													{
+														"depth": 2,
+														"value": "Network Sending",
+														"id": "network-sending"
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/en-US/chitubox-pro/latest/slice",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Slice",
+										"id": "slice"
+									}
+								]
+							},
+							{
+								"item": "chitu-action",
+								"label": "ChituAction",
+								"path": "/en-US/chitubox-pro/latest/chitu-action",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "ChituAction",
+										"id": "chituaction",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Prepare",
+												"id": "prepare",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Scale",
+														"id": "scale"
+													},
+													{
+														"depth": 3,
+														"value": "Orient",
+														"id": "orient"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Support",
+												"id": "support"
+											},
+											{
+												"depth": 2,
+												"value": "Layout",
+												"id": "layout"
+											},
+											{
+												"depth": 2,
+												"value": "Export/Save",
+												"id": "exportsave"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "standard-library",
+								"label": "Standard Library",
+								"path": "/en-US/chitubox-pro/latest/standard-library",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Standard Parts",
+										"id": "standard-parts"
+									}
+								]
+							},
+							{
+								"item": "user-interface",
+								"label": "User Interface",
+								"subItems": [
+									{
+										"item": "main-menu",
+										"label": "Main Menu",
+										"path": "/en-US/chitubox-pro/latest/user-interface/main-menu",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Main Menu",
+												"id": "main-menu",
+												"children": [
+													{
+														"depth": 2,
+														"value": "New Project",
+														"id": "new-project"
+													},
+													{
+														"depth": 2,
+														"value": "Open Project",
+														"id": "open-project"
+													},
+													{
+														"depth": 2,
+														"value": "Save Project",
+														"id": "save-project"
+													},
+													{
+														"depth": 2,
+														"value": "Open",
+														"id": "open"
+													},
+													{
+														"depth": 2,
+														"value": "Export Model",
+														"id": "export-model"
+													},
+													{
+														"depth": 2,
+														"value": "Recently Opened",
+														"id": "recently-opened"
+													},
+													{
+														"depth": 2,
+														"value": "Account",
+														"id": "account"
+													},
+													{
+														"depth": 2,
+														"value": "Community",
+														"id": "community"
+													},
+													{
+														"depth": 2,
+														"value": "Feedback",
+														"id": "feedback"
+													},
+													{
+														"depth": 2,
+														"value": "Language",
+														"id": "language"
+													},
+													{
+														"depth": 2,
+														"value": "Help",
+														"id": "help",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Check for Updates",
+																"id": "check-for-updates"
+															},
+															{
+																"depth": 3,
+																"value": "Update Log",
+																"id": "update-log"
+															},
+															{
+																"depth": 3,
+																"value": "Update Language",
+																"id": "update-language"
+															},
+															{
+																"depth": 3,
+																"value": "Factory Settings",
+																"id": "factory-settings"
+															},
+															{
+																"depth": 3,
+																"value": "Export Configuration",
+																"id": "export-configuration"
+															},
+															{
+																"depth": 3,
+																"value": "Import Configuration",
+																"id": "import-configuration"
+															},
+															{
+																"depth": 3,
+																"value": "About CHITUBOX",
+																"id": "about-chitubox"
+															},
+															{
+																"depth": 3,
+																"value": "Quality Improvement",
+																"id": "quality-improvement"
+															},
+															{
+																"depth": 3,
+																"value": "Open Log Path",
+																"id": "open-log-path"
+															},
+															{
+																"depth": 3,
+																"value": "User Manual",
+																"id": "user-manual"
+															},
+															{
+																"depth": 3,
+																"value": "Plugins",
+																"id": "plugins"
+															},
+															{
+																"depth": 3,
+																"value": "Correct Translation",
+																"id": "correct-translation"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "Shortcut",
+														"id": "shortcut"
+													},
+													{
+														"depth": 2,
+														"value": "Settings",
+														"id": "settings",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Appearance",
+																"id": "appearance",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Theme",
+																		"id": "theme"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "UI Display Scale",
+																		"id": "ui-display-scale"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Model Projection",
+																		"id": "model-projection"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "File",
+																"id": "file",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Slice File Thumbnail",
+																		"id": "slice-file-thumbnail"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Default View",
+																		"id": "default-view"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Default Save Directory",
+																		"id": "default-save-directory"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Default Open Directory",
+																		"id": "default-open-directory"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Use same directory for saving and opening",
+																		"id": "use-same-directory-for-saving-and-opening",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "Model Naming",
+																				"id": "model-naming"
+																			}
+																		]
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Project File Rename",
+																		"id": "project-file-rename"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Slice File Naming",
+																		"id": "slice-file-naming"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Duplicate Name Replacement",
+																		"id": "duplicate-name-replacement"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Character Replacement",
+																		"id": "character-replacement"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Custom Character Replacement",
+																		"id": "custom-character-replacement"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "System",
+																"id": "system",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Max Undo",
+																		"id": "max-undo"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "Function",
+																"id": "function",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "Desktop Thumbnail Preview",
+																		"id": "desktop-thumbnail-preview"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Support Preview (for manual supports)",
+																		"id": "support-preview-for-manual-supports"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Support Auxiliary Line",
+																		"id": "support-auxiliary-line"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Graphic Tooltip",
+																		"id": "graphic-tooltip"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Print Estimation Panel",
+																		"id": "print-estimation-panel"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Allow Raft Overlap in Collision Detection",
+																		"id": "allow-raft-overlap-in-collision-detection"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Support Hidden Angle",
+																		"id": "support-hidden-angle"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Network Transmission Integrity Check",
+																		"id": "network-transmission-integrity-check"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "Prompt for Model Generation when Loading Slice Files",
+																		"id": "prompt-for-model-generation-when-loading-slice-files"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "Examples",
+														"id": "examples"
+													},
+													{
+														"depth": 2,
+														"value": "Exit Software",
+														"id": "exit-software"
+													},
+													{
+														"depth": 2,
+														"value": "Right-click Menu",
+														"id": "right-click-menu",
+														"children": [
+															{
+																"depth": 3,
+																"value": "General Options",
+																"id": "general-options"
+															},
+															{
+																"depth": 3,
+																"value": "Options for Right-click on Models",
+																"id": "options-for-right-click-on-models"
+															},
+															{
+																"depth": 3,
+																"value": "Options for Right-click on Black Spaces in the Canvas",
+																"id": "options-for-right-click-on-black-spaces-in-the-canvas"
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "function-menu",
+										"label": "Function Menu",
+										"path": "/en-US/chitubox-pro/latest/user-interface/function-menu",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Function Menu",
+												"id": "function-menu",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Prepare Function Tab",
+														"id": "prepare-function-tab",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Add Machine",
+																"id": "add-machine"
+															},
+															{
+																"depth": 3,
+																"value": "History",
+																"id": "history"
+															},
+															{
+																"depth": 3,
+																"value": "Open",
+																"id": "open"
+															},
+															{
+																"depth": 3,
+																"value": "Export",
+																"id": "export"
+															},
+															{
+																"depth": 3,
+																"value": "Save",
+																"id": "save"
+															},
+															{
+																"depth": 3,
+																"value": "Copy",
+																"id": "copy"
+															},
+															{
+																"depth": 3,
+																"value": "Split Model",
+																"id": "split-model"
+															},
+															{
+																"depth": 3,
+																"value": "Auto Layout",
+																"id": "auto-layout"
+															},
+															{
+																"depth": 3,
+																"value": "Add Tag",
+																"id": "add-tag"
+															},
+															{
+																"depth": 3,
+																"value": "Boolean Operation",
+																"id": "boolean-operation"
+															},
+															{
+																"depth": 3,
+																"value": "Hollow",
+																"id": "hollow"
+															},
+															{
+																"depth": 3,
+																"value": "Hole",
+																"id": "hole"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "Support Function Tab",
+														"id": "support-function-tab",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Symmetrical Support",
+																"id": "symmetrical-support"
+															},
+															{
+																"depth": 3,
+																"value": "Merge Supports",
+																"id": "merge-supports"
+															},
+															{
+																"depth": 3,
+																"value": "Overhang Detection",
+																"id": "overhang-detection"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "Analyze/Measure Function Tab",
+														"id": "analyzemeasure-function-tab"
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "component-list",
+										"label": "Component List",
+										"path": "/en-US/chitubox-pro/latest/user-interface/component-list",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Component List",
+												"id": "component-list"
+											}
+										]
+									},
+									{
+										"item": "gadgets",
+										"label": "Gadgets",
+										"path": "/en-US/chitubox-pro/latest/user-interface/gadgets",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Gadgets",
+												"id": "gadgets",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Toolbar",
+														"id": "toolbar"
+													},
+													{
+														"depth": 2,
+														"value": "Information Panel",
+														"id": "information-panel"
+													},
+													{
+														"depth": 2,
+														"value": "Machine Management Bar",
+														"id": "machine-management-bar"
+													},
+													{
+														"depth": 2,
+														"value": "Support Display Mode",
+														"id": "support-display-mode"
+													},
+													{
+														"depth": 2,
+														"value": "Render Mode",
+														"id": "render-mode"
+													},
+													{
+														"depth": 2,
+														"value": "View Cube",
+														"id": "view-cube"
+													},
+													{
+														"depth": 2,
+														"value": "Slider",
+														"id": "slider"
+													},
+													{
+														"depth": 2,
+														"value": "Magnifier",
+														"id": "magnifier"
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/en-US/chitubox-pro/latest/user-interface",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "User Interface",
+										"id": "user-interface"
+									}
+								]
+							},
+							{
+								"item": "help-and-feedback",
+								"label": "Help and Feedback",
+								"path": "/en-US/chitubox-pro/latest/help-and-feedback",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Help and Feedback",
+										"id": "help-and-feedback",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Frequently Asked Questions",
+												"id": "frequently-asked-questions"
+											},
+											{
+												"depth": 2,
+												"value": "Technical Support",
+												"id": "technical-support"
+											},
+											{
+												"depth": 2,
+												"value": "Advanced Tutorials",
+												"id": "advanced-tutorials"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"versionCode": "v1.4.1",
+						"versionNumber": "1.4.1",
+						"pagesContext": [
+							{
+								"item": "introduction",
+								"label": "Introduction",
+								"path": "/en-US/chitubox-pro/v1.4.1/introduction",
 								"toc": [
 									{
 										"depth": 1,
@@ -1765,7 +3479,7 @@
 							{
 								"item": "comparison",
 								"label": "Comparison",
-								"path": "/en-US/chitubox-pro/latest/comparison",
+								"path": "/en-US/chitubox-pro/v1.4.1/comparison",
 								"toc": [
 									{
 										"depth": 1,
@@ -1777,7 +3491,7 @@
 							{
 								"item": "requirements",
 								"label": "Requirements",
-								"path": "/en-US/chitubox-pro/latest/requirements",
+								"path": "/en-US/chitubox-pro/v1.4.1/requirements",
 								"toc": [
 									{
 										"depth": 1,
@@ -1846,7 +3560,7 @@
 									{
 										"item": "installation",
 										"label": "Installation",
-										"path": "/en-US/chitubox-pro/latest/setting-up/installation",
+										"path": "/en-US/chitubox-pro/v1.4.1/setting-up/installation",
 										"toc": [
 											{
 												"depth": 1,
@@ -1865,7 +3579,7 @@
 									{
 										"item": "manage-your-account-and-license",
 										"label": "Manage Your Account and License",
-										"path": "/en-US/chitubox-pro/latest/setting-up/manage-your-account-and-license",
+										"path": "/en-US/chitubox-pro/v1.4.1/setting-up/manage-your-account-and-license",
 										"toc": [
 											{
 												"depth": 1,
@@ -1894,7 +3608,7 @@
 									{
 										"item": "update-printer-firmware",
 										"label": "Update Printer Firmware",
-										"path": "/en-US/chitubox-pro/latest/setting-up/update-printer-firmware",
+										"path": "/en-US/chitubox-pro/v1.4.1/setting-up/update-printer-firmware",
 										"toc": [
 											{
 												"depth": 1,
@@ -1933,7 +3647,7 @@
 									{
 										"item": "configure-print-parameters",
 										"label": "Configure Print Parameters",
-										"path": "/en-US/chitubox-pro/latest/setting-up/configure-print-parameters",
+										"path": "/en-US/chitubox-pro/v1.4.1/setting-up/configure-print-parameters",
 										"toc": [
 											{
 												"depth": 1,
@@ -2096,7 +3810,7 @@
 									{
 										"item": "configure-support-parameters",
 										"label": "Configure Support Parameters",
-										"path": "/en-US/chitubox-pro/latest/setting-up/configure-support-parameters",
+										"path": "/en-US/chitubox-pro/v1.4.1/setting-up/configure-support-parameters",
 										"toc": [
 											{
 												"depth": 1,
@@ -2152,7 +3866,7 @@
 										]
 									}
 								],
-								"path": "/en-US/chitubox-pro/latest/setting-up",
+								"path": "/en-US/chitubox-pro/v1.4.1/setting-up",
 								"toc": [
 									{
 										"depth": 1,
@@ -2168,7 +3882,7 @@
 									{
 										"item": "ui-introduction",
 										"label": "UI Introduction",
-										"path": "/en-US/chitubox-pro/latest/application-overview/ui-introduction",
+										"path": "/en-US/chitubox-pro/v1.4.1/application-overview/ui-introduction",
 										"toc": [
 											{
 												"depth": 1,
@@ -2180,7 +3894,7 @@
 									{
 										"item": "start",
 										"label": "Start",
-										"path": "/en-US/chitubox-pro/latest/application-overview/start",
+										"path": "/en-US/chitubox-pro/v1.4.1/application-overview/start",
 										"toc": [
 											{
 												"depth": 1,
@@ -2244,7 +3958,7 @@
 									{
 										"item": "prepare",
 										"label": "Prepare",
-										"path": "/en-US/chitubox-pro/latest/application-overview/prepare",
+										"path": "/en-US/chitubox-pro/v1.4.1/application-overview/prepare",
 										"toc": [
 											{
 												"depth": 1,
@@ -2303,7 +4017,7 @@
 									{
 										"item": "repair",
 										"label": "Repair",
-										"path": "/en-US/chitubox-pro/latest/application-overview/repair",
+										"path": "/en-US/chitubox-pro/v1.4.1/application-overview/repair",
 										"toc": [
 											{
 												"depth": 1,
@@ -2367,7 +4081,7 @@
 									{
 										"item": "support",
 										"label": "Support",
-										"path": "/en-US/chitubox-pro/latest/application-overview/support",
+										"path": "/en-US/chitubox-pro/v1.4.1/application-overview/support",
 										"toc": [
 											{
 												"depth": 1,
@@ -2465,7 +4179,7 @@
 									{
 										"item": "analyze-and-measure",
 										"label": "Analyze/Measure",
-										"path": "/en-US/chitubox-pro/latest/application-overview/analyze-and-measure",
+										"path": "/en-US/chitubox-pro/v1.4.1/application-overview/analyze-and-measure",
 										"toc": [
 											{
 												"depth": 1,
@@ -2504,7 +4218,7 @@
 									{
 										"item": "setting-and-help",
 										"label": "Setting/Help",
-										"path": "/en-US/chitubox-pro/latest/application-overview/setting-and-help",
+										"path": "/en-US/chitubox-pro/v1.4.1/application-overview/setting-and-help",
 										"toc": [
 											{
 												"depth": 1,
@@ -2627,7 +4341,7 @@
 									{
 										"item": "slice",
 										"label": "Slice",
-										"path": "/en-US/chitubox-pro/latest/application-overview/slice",
+										"path": "/en-US/chitubox-pro/v1.4.1/application-overview/slice",
 										"toc": [
 											{
 												"depth": 1,
@@ -2675,7 +4389,7 @@
 									{
 										"item": "slice-preview",
 										"label": "Slice Preview",
-										"path": "/en-US/chitubox-pro/latest/application-overview/slice-preview",
+										"path": "/en-US/chitubox-pro/v1.4.1/application-overview/slice-preview",
 										"toc": [
 											{
 												"depth": 1,
@@ -2732,7 +4446,7 @@
 										]
 									}
 								],
-								"path": "/en-US/chitubox-pro/latest/application-overview",
+								"path": "/en-US/chitubox-pro/v1.4.1/application-overview",
 								"toc": [
 									{
 										"depth": 1,
@@ -2764,6 +4478,11 @@
 										"value": "Introduction",
 										"id": "introduction",
 										"children": [
+											{
+												"depth": 2,
+												"value": "System Requirements",
+												"id": "system-requirements"
+											},
 											{
 												"depth": 2,
 												"value": "Installation",
@@ -5329,12 +7048,1757 @@
 				"versionedContexts": [
 					{
 						"versionCode": "latest",
-						"versionNumber": "1.4.1",
+						"versionNumber": "2.0.0",
 						"pagesContext": [
 							{
 								"item": "introduction",
 								"label": "介绍",
 								"path": "/zh-CN/chitubox-pro/latest/introduction",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "介绍",
+										"id": "介绍",
+										"children": [
+											{
+												"depth": 2,
+												"value": "主要特性",
+												"id": "主要特性"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "installation",
+								"label": "安装",
+								"path": "/zh-CN/chitubox-pro/latest/installation",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "安装",
+										"id": "安装",
+										"children": [
+											{
+												"depth": 2,
+												"value": "系统要求",
+												"id": "系统要求"
+											},
+											{
+												"depth": 2,
+												"value": "Windows",
+												"id": "windows"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "account-and-license",
+								"label": "账号和密钥",
+								"path": "/zh-CN/chitubox-pro/latest/account-and-license",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "账号和密钥",
+										"id": "账号和密钥",
+										"children": [
+											{
+												"depth": 2,
+												"value": "注册账号",
+												"id": "注册账号"
+											},
+											{
+												"depth": 2,
+												"value": "密钥",
+												"id": "密钥",
+												"children": [
+													{
+														"depth": 3,
+														"value": "激活和绑定密钥",
+														"id": "激活和绑定密钥"
+													},
+													{
+														"depth": 3,
+														"value": "将密钥和设备解绑",
+														"id": "将密钥和设备解绑"
+													},
+													{
+														"depth": 3,
+														"value": "更换密钥",
+														"id": "更换密钥"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "quick-start",
+								"label": "快速入门",
+								"path": "/zh-CN/chitubox-pro/latest/quick-start",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "快速入门",
+										"id": "快速入门",
+										"children": [
+											{
+												"depth": 2,
+												"value": "添加机器",
+												"id": "添加机器"
+											},
+											{
+												"depth": 2,
+												"value": "加载文件",
+												"id": "加载文件"
+											},
+											{
+												"depth": 2,
+												"value": "添加支撑",
+												"id": "添加支撑"
+											},
+											{
+												"depth": 2,
+												"value": "切片",
+												"id": "切片"
+											},
+											{
+												"depth": 2,
+												"value": "导出可打印文件",
+												"id": "导出可打印文件"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "printer-management",
+								"label": "打印机管理",
+								"subItems": [
+									{
+										"item": "add-and-delete-printers",
+										"label": "添加和删除打印机",
+										"path": "/zh-CN/chitubox-pro/latest/printer-management/add-and-delete-printers",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "添加和删除打印机",
+												"id": "添加和删除打印机",
+												"children": [
+													{
+														"depth": 2,
+														"value": "添加打印机",
+														"id": "添加打印机"
+													},
+													{
+														"depth": 2,
+														"value": "删除打印机",
+														"id": "删除打印机"
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "printer-configuration",
+										"label": "打印机设置",
+										"path": "/zh-CN/chitubox-pro/latest/printer-management/printer-configuration",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "打印机设置",
+												"id": "打印机设置",
+												"children": [
+													{
+														"depth": 2,
+														"value": "机器",
+														"id": "机器",
+														"children": [
+															{
+																"depth": 3,
+																"value": "机器名称",
+																"id": "机器名称"
+															},
+															{
+																"depth": 3,
+																"value": "机器类型",
+																"id": "机器类型"
+															},
+															{
+																"depth": 3,
+																"value": "镜像",
+																"id": "镜像"
+															},
+															{
+																"depth": 3,
+																"value": "分辨率和大小",
+																"id": "分辨率和大小"
+															},
+															{
+																"depth": 3,
+																"value": "构建区域偏移",
+																"id": "构建区域偏移"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "树脂",
+														"id": "树脂"
+													},
+													{
+														"depth": 2,
+														"value": "打印",
+														"id": "打印",
+														"children": [
+															{
+																"depth": 3,
+																"value": "参数解释",
+																"id": "参数解释"
+															},
+															{
+																"depth": 3,
+																"value": "二段运动控制 (TSMC)",
+																"id": "二段运动控制-tsmc"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "高级",
+														"id": "高级",
+														"children": [
+															{
+																"depth": 3,
+																"value": "光强 PWM",
+																"id": "光强-pwm"
+															},
+															{
+																"depth": 3,
+																"value": "图片灰度",
+																"id": "图片灰度"
+															},
+															{
+																"depth": 3,
+																"value": "抗锯齿",
+																"id": "抗锯齿",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "灰度抗锯齿",
+																		"id": "灰度抗锯齿",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "灰度范围",
+																				"id": "灰度范围"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "图像模糊",
+																				"id": "图像模糊"
+																			}
+																		]
+																	},
+																	{
+																		"depth": 4,
+																		"value": "抗锯齿等级（遗留）",
+																		"id": "抗锯齿等级遗留"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "缩放补偿",
+																"id": "缩放补偿"
+															},
+															{
+																"depth": 3,
+																"value": "公差补偿",
+																"id": "公差补偿"
+															},
+															{
+																"depth": 3,
+																"value": "层打印时间补偿",
+																"id": "层打印时间补偿"
+															},
+															{
+																"depth": 3,
+																"value": "蒙板",
+																"id": "蒙板",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "蒙版生成器",
+																		"id": "蒙版生成器",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "中心辐射",
+																				"id": "中心辐射"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "矩阵模式",
+																				"id": "矩阵模式"
+																			}
+																		]
+																	},
+																	{
+																		"depth": 4,
+																		"value": "灰度单位",
+																		"id": "灰度单位"
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/zh-CN/chitubox-pro/latest/printer-management",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "打印机管理",
+										"id": "打印机管理"
+									}
+								]
+							},
+							{
+								"item": "file",
+								"label": "文件",
+								"path": "/zh-CN/chitubox-pro/latest/file",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "文件",
+										"id": "文件",
+										"children": [
+											{
+												"depth": 2,
+												"value": "项目文件",
+												"id": "项目文件",
+												"children": [
+													{
+														"depth": 3,
+														"value": "新建项目文件",
+														"id": "新建项目文件"
+													},
+													{
+														"depth": 3,
+														"value": "打开项目文件",
+														"id": "打开项目文件"
+													},
+													{
+														"depth": 3,
+														"value": "保存项目文件",
+														"id": "保存项目文件"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "3D 网格文件",
+												"id": "3d-网格文件",
+												"children": [
+													{
+														"depth": 3,
+														"value": "支持的 3D 网格文件格式",
+														"id": "支持的-3d-网格文件格式"
+													},
+													{
+														"depth": 3,
+														"value": "导入 3D 网格文件",
+														"id": "导入-3d-网格文件"
+													},
+													{
+														"depth": 3,
+														"value": "导出 3D 网格文件",
+														"id": "导出-3d-网格文件"
+													},
+													{
+														"depth": 3,
+														"value": "打开最近的文件",
+														"id": "打开最近的文件"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "切片文件",
+												"id": "切片文件",
+												"children": [
+													{
+														"depth": 3,
+														"value": "支持的切片文件格式",
+														"id": "支持的切片文件格式"
+													},
+													{
+														"depth": 3,
+														"value": "导入和导出切片文件",
+														"id": "导入和导出切片文件",
+														"children": [
+															{
+																"depth": 4,
+																"value": "导入切片文件",
+																"id": "导入切片文件"
+															},
+															{
+																"depth": 4,
+																"value": "导出切片文件",
+																"id": "导出切片文件"
+															}
+														]
+													},
+													{
+														"depth": 3,
+														"value": "使用插件导出切片文件",
+														"id": "使用插件导出切片文件"
+													},
+													{
+														"depth": 3,
+														"value": "切片文件缩略图",
+														"id": "切片文件缩略图"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "配置文件",
+												"id": "配置文件"
+											},
+											{
+												"depth": 2,
+												"value": "文件命名设置",
+												"id": "文件命名设置",
+												"children": [
+													{
+														"depth": 3,
+														"value": "模型文件",
+														"id": "模型文件"
+													},
+													{
+														"depth": 3,
+														"value": "项目文件",
+														"id": "项目文件-1"
+													},
+													{
+														"depth": 3,
+														"value": "切片文件",
+														"id": "切片文件-1"
+													},
+													{
+														"depth": 3,
+														"value": "名字替换",
+														"id": "名字替换",
+														"children": [
+															{
+																"depth": 4,
+																"value": "重复名称替换",
+																"id": "重复名称替换"
+															},
+															{
+																"depth": 4,
+																"value": "字符替换",
+																"id": "字符替换"
+															},
+															{
+																"depth": 4,
+																"value": "自定义字符替换",
+																"id": "自定义字符替换"
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "model-processing",
+								"label": "模型处理",
+								"path": "/zh-CN/chitubox-pro/latest/model-processing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "模型处理",
+										"id": "模型处理",
+										"children": [
+											{
+												"depth": 2,
+												"value": "选择",
+												"id": "选择"
+											},
+											{
+												"depth": 2,
+												"value": "变换",
+												"id": "变换",
+												"children": [
+													{
+														"depth": 3,
+														"value": "移动",
+														"id": "移动"
+													},
+													{
+														"depth": 3,
+														"value": "旋转",
+														"id": "旋转"
+													},
+													{
+														"depth": 3,
+														"value": "缩放",
+														"id": "缩放"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "镜像",
+												"id": "镜像"
+											},
+											{
+												"depth": 2,
+												"value": "复制",
+												"id": "复制"
+											},
+											{
+												"depth": 2,
+												"value": "拆分模型",
+												"id": "拆分模型"
+											},
+											{
+												"depth": 2,
+												"value": "自动布局",
+												"id": "自动布局"
+											},
+											{
+												"depth": 2,
+												"value": "添加标签",
+												"id": "添加标签"
+											},
+											{
+												"depth": 2,
+												"value": "布尔操作",
+												"id": "布尔操作"
+											},
+											{
+												"depth": 2,
+												"value": "镂空",
+												"id": "镂空",
+												"children": [
+													{
+														"depth": 3,
+														"value": "填充类型",
+														"id": "填充类型",
+														"children": [
+															{
+																"depth": 4,
+																"value": "立体框架",
+																"id": "立体框架"
+															},
+															{
+																"depth": 4,
+																"value": "蜂窝结构",
+																"id": "蜂窝结构"
+															},
+															{
+																"depth": 4,
+																"value": "网格结构",
+																"id": "网格结构"
+															}
+														]
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "挖洞",
+												"id": "挖洞"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "analyze-and-measure",
+								"label": "分析/测量",
+								"path": "/zh-CN/chitubox-pro/latest/analyze-and-measure",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "分析/测量",
+										"id": "分析测量",
+										"children": [
+											{
+												"depth": 2,
+												"value": "显示大小",
+												"id": "显示大小"
+											},
+											{
+												"depth": 2,
+												"value": "两点距离",
+												"id": "两点距离"
+											},
+											{
+												"depth": 2,
+												"value": "点到平面距离",
+												"id": "点到平面距离"
+											},
+											{
+												"depth": 2,
+												"value": "平行平面距离",
+												"id": "平行平面距离"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "support",
+								"label": "支撑",
+								"subItems": [
+									{
+										"item": "add-edit-delete",
+										"label": "添加，编辑和删除",
+										"path": "/zh-CN/chitubox-pro/latest/support/add-edit-delete",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "添加，编辑和删除",
+												"id": "添加编辑和删除",
+												"children": [
+													{
+														"depth": 2,
+														"value": "添加支撑",
+														"id": "添加支撑",
+														"children": [
+															{
+																"depth": 3,
+																"value": "自动支撑",
+																"id": "自动支撑"
+															},
+															{
+																"depth": 3,
+																"value": "手动支撑",
+																"id": "手动支撑",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "支撑类型",
+																		"id": "支撑类型",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "自适应支撑",
+																				"id": "自适应支撑"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "垂直支撑",
+																				"id": "垂直支撑"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "竖直支撑",
+																				"id": "竖直支撑"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "树杈支撑",
+																				"id": "树杈支撑"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "关节支撑",
+																				"id": "关节支撑"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "小柱支撑",
+																				"id": "小柱支撑"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "分叉支撑",
+																				"id": "分叉支撑"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "树状支撑",
+																				"id": "树状支撑"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "等高支撑",
+																				"id": "等高支撑"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "法面支撑",
+																				"id": "法面支撑"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "边界支撑",
+																				"id": "边界支撑"
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "对称支撑",
+																"id": "对称支撑"
+															},
+															{
+																"depth": 3,
+																"value": "合并支撑",
+																"id": "合并支撑"
+															},
+															{
+																"depth": 3,
+																"value": "悬空支撑",
+																"id": "悬空支撑"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "编辑支撑",
+														"id": "编辑支撑"
+													},
+													{
+														"depth": 2,
+														"value": "删除支撑",
+														"id": "删除支撑"
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "support-configuration",
+										"label": "支撑设置",
+										"path": "/zh-CN/chitubox-pro/latest/support/support-configuration",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "支撑设置",
+												"id": "支撑设置",
+												"children": [
+													{
+														"depth": 2,
+														"value": "底筏设置",
+														"id": "底筏设置",
+														"children": [
+															{
+																"depth": 3,
+																"value": "模型抬升高度",
+																"id": "模型抬升高度"
+															},
+															{
+																"depth": 3,
+																"value": "底筏形状",
+																"id": "底筏形状",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "滑板",
+																		"id": "滑板"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "十字网络",
+																		"id": "十字网络"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "六角网格",
+																		"id": "六角网格"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "底部相连",
+																		"id": "底部相连"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "支撑设置",
+														"id": "支撑设置-1",
+														"children": [
+															{
+																"depth": 3,
+																"value": "支撑配置",
+																"id": "支撑配置"
+															},
+															{
+																"depth": 3,
+																"value": "基础设置",
+																"id": "基础设置",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "顶部接触直径",
+																		"id": "顶部接触直径"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "角度",
+																		"id": "角度"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "接触点间距",
+																		"id": "接触点间距"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "中部支撑间距",
+																		"id": "中部支撑间距"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "高级设置",
+																"id": "高级设置",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "顶部",
+																		"id": "顶部"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "中部",
+																		"id": "中部"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "底部",
+																		"id": "底部"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "底筏",
+																		"id": "底筏"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "更多支撑设置",
+																		"id": "更多支撑设置",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "增强自动支撑",
+																				"id": "增强自动支撑"
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "自动支撑",
+														"id": "自动支撑",
+														"children": [
+															{
+																"depth": 3,
+																"value": "自动支撑模式",
+																"id": "自动支撑模式"
+															},
+															{
+																"depth": 3,
+																"value": "自动支撑类型",
+																"id": "自动支撑类型"
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "magic-support",
+										"label": "魔法支撑",
+										"path": "/zh-CN/chitubox-pro/latest/support/magic-support",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "魔法支撑",
+												"id": "魔法支撑",
+												"children": [
+													{
+														"depth": 2,
+														"value": "魔法支撑配置管理",
+														"id": "魔法支撑配置管理"
+													},
+													{
+														"depth": 2,
+														"value": "流程管理",
+														"id": "流程管理",
+														"children": [
+															{
+																"depth": 3,
+																"value": "添加/删除步骤",
+																"id": "添加删除步骤"
+															},
+															{
+																"depth": 3,
+																"value": "步骤设置",
+																"id": "步骤设置"
+															},
+															{
+																"depth": 3,
+																"value": "合并支撑",
+																"id": "合并支撑"
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/zh-CN/chitubox-pro/latest/support",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "支撑",
+										"id": "支撑"
+									}
+								]
+							},
+							{
+								"item": "risk-detection",
+								"label": "风险检测",
+								"path": "/zh-CN/chitubox-pro/latest/risk-detection",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "风险检测",
+										"id": "风险检测",
+										"children": [
+											{
+												"depth": 2,
+												"value": "空腔检测",
+												"id": "空腔检测"
+											},
+											{
+												"depth": 2,
+												"value": "碰撞检测",
+												"id": "碰撞检测"
+											},
+											{
+												"depth": 2,
+												"value": "悬空检测",
+												"id": "悬空检测"
+											},
+											{
+												"depth": 2,
+												"value": "孤岛检测",
+												"id": "孤岛检测",
+												"children": [
+													{
+														"depth": 3,
+														"value": "查看孤岛",
+														"id": "查看孤岛"
+													},
+													{
+														"depth": 3,
+														"value": "删除孤岛",
+														"id": "删除孤岛"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "slice",
+								"label": "切片",
+								"subItems": [
+									{
+										"item": "slice-mode",
+										"label": "切片模式",
+										"path": "/zh-CN/chitubox-pro/latest/slice/slice-mode",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "切片模式",
+												"id": "切片模式",
+												"children": [
+													{
+														"depth": 2,
+														"value": "单参数/多参数切片",
+														"id": "单参数多参数切片",
+														"children": [
+															{
+																"depth": 3,
+																"value": "单参数切片",
+																"id": "单参数切片"
+															},
+															{
+																"depth": 3,
+																"value": "多参数切片",
+																"id": "多参数切片",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "模型",
+																		"id": "模型"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "高度",
+																		"id": "高度"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "横截面面积",
+																		"id": "横截面面积"
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "slice-preview",
+										"label": "切片预览",
+										"path": "/zh-CN/chitubox-pro/latest/slice/slice-preview",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "切片预览",
+												"id": "切片预览",
+												"children": [
+													{
+														"depth": 2,
+														"value": "信息预览",
+														"id": "信息预览",
+														"children": [
+															{
+																"depth": 3,
+																"value": "基本信息预览",
+																"id": "基本信息预览"
+															},
+															{
+																"depth": 3,
+																"value": "打印参数预览",
+																"id": "打印参数预览"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "切片编辑",
+														"id": "切片编辑",
+														"children": [
+															{
+																"depth": 3,
+																"value": "切片参数编辑",
+																"id": "切片参数编辑"
+															},
+															{
+																"depth": 3,
+																"value": "孤岛检测",
+																"id": "孤岛检测",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "检测孤岛",
+																		"id": "检测孤岛"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "编辑像素",
+																"id": "编辑像素",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "添加像素",
+																		"id": "添加像素"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "删除像素",
+																		"id": "删除像素"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "保存切片",
+														"id": "保存切片"
+													},
+													{
+														"depth": 2,
+														"value": "网络发送",
+														"id": "网络发送"
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/zh-CN/chitubox-pro/latest/slice",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "切片",
+										"id": "切片"
+									}
+								]
+							},
+							{
+								"item": "chitu-action",
+								"label": "ChituAction",
+								"path": "/zh-CN/chitubox-pro/latest/chitu-action",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "ChituAction",
+										"id": "chituaction",
+										"children": [
+											{
+												"depth": 2,
+												"value": "准备",
+												"id": "准备",
+												"children": [
+													{
+														"depth": 3,
+														"value": "缩放",
+														"id": "缩放"
+													},
+													{
+														"depth": 3,
+														"value": "定向",
+														"id": "定向"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "支撑",
+												"id": "支撑"
+											},
+											{
+												"depth": 2,
+												"value": "布局",
+												"id": "布局"
+											},
+											{
+												"depth": 2,
+												"value": "导出/保存",
+												"id": "导出保存"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "standard-library",
+								"label": "标准库",
+								"path": "/zh-CN/chitubox-pro/latest/standard-library",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "标准库",
+										"id": "标准库"
+									}
+								]
+							},
+							{
+								"item": "user-interface",
+								"label": "用户界面",
+								"subItems": [
+									{
+										"item": "main-menu",
+										"label": "主菜单",
+										"path": "/zh-CN/chitubox-pro/latest/user-interface/main-menu",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "主菜单",
+												"id": "主菜单",
+												"children": [
+													{
+														"depth": 2,
+														"value": "新项目",
+														"id": "新项目"
+													},
+													{
+														"depth": 2,
+														"value": "打开项目",
+														"id": "打开项目"
+													},
+													{
+														"depth": 2,
+														"value": "保存项目",
+														"id": "保存项目"
+													},
+													{
+														"depth": 2,
+														"value": "打开",
+														"id": "打开"
+													},
+													{
+														"depth": 2,
+														"value": "导出模型",
+														"id": "导出模型"
+													},
+													{
+														"depth": 2,
+														"value": "最近打开",
+														"id": "最近打开"
+													},
+													{
+														"depth": 2,
+														"value": "账户",
+														"id": "账户"
+													},
+													{
+														"depth": 2,
+														"value": "社区",
+														"id": "社区"
+													},
+													{
+														"depth": 2,
+														"value": "反馈",
+														"id": "反馈"
+													},
+													{
+														"depth": 2,
+														"value": "语言",
+														"id": "语言"
+													},
+													{
+														"depth": 2,
+														"value": "帮助",
+														"id": "帮助",
+														"children": [
+															{
+																"depth": 3,
+																"value": "检查更新",
+																"id": "检查更新"
+															},
+															{
+																"depth": 3,
+																"value": "更新日志",
+																"id": "更新日志"
+															},
+															{
+																"depth": 3,
+																"value": "更新语言",
+																"id": "更新语言"
+															},
+															{
+																"depth": 3,
+																"value": "出厂设置",
+																"id": "出厂设置"
+															},
+															{
+																"depth": 3,
+																"value": "导出配置",
+																"id": "导出配置"
+															},
+															{
+																"depth": 3,
+																"value": "导入配置",
+																"id": "导入配置"
+															},
+															{
+																"depth": 3,
+																"value": "关于 CHITUBOX",
+																"id": "关于-chitubox"
+															},
+															{
+																"depth": 3,
+																"value": "质量改进计划",
+																"id": "质量改进计划"
+															},
+															{
+																"depth": 3,
+																"value": "打开日志路径",
+																"id": "打开日志路径"
+															},
+															{
+																"depth": 3,
+																"value": "用户手册",
+																"id": "用户手册"
+															},
+															{
+																"depth": 3,
+																"value": "插件",
+																"id": "插件"
+															},
+															{
+																"depth": 3,
+																"value": "修正翻译",
+																"id": "修正翻译"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "快捷键",
+														"id": "快捷键"
+													},
+													{
+														"depth": 2,
+														"value": "设置",
+														"id": "设置",
+														"children": [
+															{
+																"depth": 3,
+																"value": "外观",
+																"id": "外观",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "网格宽度",
+																		"id": "网格宽度"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "UI 显示比例",
+																		"id": "ui-显示比例"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "文件",
+																"id": "文件",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "切片文件缩略图视图",
+																		"id": "切片文件缩略图视图"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "默认视角",
+																		"id": "默认视角"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "默认保存路径",
+																		"id": "默认保存路径"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "默认打开路径",
+																		"id": "默认打开路径"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "文件保存目录和打开目录一致",
+																		"id": "文件保存目录和打开目录一致",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "模型重命名",
+																				"id": "模型重命名"
+																			}
+																		]
+																	},
+																	{
+																		"depth": 4,
+																		"value": "项目文件命名",
+																		"id": "项目文件命名"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "切片文件命名",
+																		"id": "切片文件命名"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "启用重复名称替换",
+																		"id": "启用重复名称替换"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "字符替换",
+																		"id": "字符替换"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "自定义字符替换",
+																		"id": "自定义字符替换"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "系统",
+																"id": "系统",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "撤销次数",
+																		"id": "撤销次数"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "功能",
+																"id": "功能",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "桌面缩略图预览",
+																		"id": "桌面缩略图预览"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "预览支撑",
+																		"id": "预览支撑"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "显示支撑辅助线",
+																		"id": "显示支撑辅助线"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "打开图形工具提示",
+																		"id": "打开图形工具提示"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "打开打印预估辅助提示",
+																		"id": "打开打印预估辅助提示"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "碰撞检测允许底阀重叠",
+																		"id": "碰撞检测允许底阀重叠"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "支撑隐藏角度",
+																		"id": "支撑隐藏角度"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "验证网络传输文件的完整性",
+																		"id": "验证网络传输文件的完整性"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "示例",
+														"id": "示例"
+													},
+													{
+														"depth": 2,
+														"value": "退出软件",
+														"id": "退出软件"
+													},
+													{
+														"depth": 2,
+														"value": "右键菜单",
+														"id": "右键菜单",
+														"children": [
+															{
+																"depth": 3,
+																"value": "通用选项",
+																"id": "通用选项"
+															},
+															{
+																"depth": 3,
+																"value": "在模型上触发",
+																"id": "在模型上触发"
+															},
+															{
+																"depth": 3,
+																"value": "在空白处触发",
+																"id": "在空白处触发"
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "function-menu",
+										"label": "功能菜单",
+										"path": "/zh-CN/chitubox-pro/latest/user-interface/function-menu",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "功能菜单",
+												"id": "功能菜单",
+												"children": [
+													{
+														"depth": 2,
+														"value": "准备功能面板",
+														"id": "准备功能面板",
+														"children": [
+															{
+																"depth": 3,
+																"value": "添加机器",
+																"id": "添加机器"
+															},
+															{
+																"depth": 3,
+																"value": "历史记录",
+																"id": "历史记录"
+															},
+															{
+																"depth": 3,
+																"value": "打开",
+																"id": "打开"
+															},
+															{
+																"depth": 3,
+																"value": "导出",
+																"id": "导出"
+															},
+															{
+																"depth": 3,
+																"value": "保存",
+																"id": "保存"
+															},
+															{
+																"depth": 3,
+																"value": "复制",
+																"id": "复制"
+															},
+															{
+																"depth": 3,
+																"value": "拆分模型",
+																"id": "拆分模型"
+															},
+															{
+																"depth": 3,
+																"value": "自动布局",
+																"id": "自动布局"
+															},
+															{
+																"depth": 3,
+																"value": "添加标签",
+																"id": "添加标签"
+															},
+															{
+																"depth": 3,
+																"value": "布尔操作",
+																"id": "布尔操作"
+															},
+															{
+																"depth": 3,
+																"value": "镂空",
+																"id": "镂空"
+															},
+															{
+																"depth": 3,
+																"value": "挖洞",
+																"id": "挖洞"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "支撑功能面板",
+														"id": "支撑功能面板",
+														"children": [
+															{
+																"depth": 3,
+																"value": "对称支撑",
+																"id": "对称支撑"
+															},
+															{
+																"depth": 3,
+																"value": "合并支撑",
+																"id": "合并支撑"
+															},
+															{
+																"depth": 3,
+																"value": "悬空检测",
+																"id": "悬空检测"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "分析/测量功能面板",
+														"id": "分析测量功能面板"
+													},
+													{
+														"depth": 2,
+														"value": "切片功能面板",
+														"id": "切片功能面板",
+														"children": [
+															{
+																"depth": 3,
+																"value": "保存",
+																"id": "保存-1"
+															},
+															{
+																"depth": 3,
+																"value": "切片参数编辑",
+																"id": "切片参数编辑"
+															},
+															{
+																"depth": 3,
+																"value": "孤岛检测",
+																"id": "孤岛检测"
+															},
+															{
+																"depth": 3,
+																"value": "编辑像素",
+																"id": "编辑像素"
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "component-list",
+										"label": "组件列表",
+										"path": "/zh-CN/chitubox-pro/latest/user-interface/component-list",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "组件列表",
+												"id": "组件列表"
+											}
+										]
+									},
+									{
+										"item": "gadgets",
+										"label": "小工具",
+										"path": "/zh-CN/chitubox-pro/latest/user-interface/gadgets",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "小工具",
+												"id": "小工具",
+												"children": [
+													{
+														"depth": 2,
+														"value": "工具栏",
+														"id": "工具栏"
+													},
+													{
+														"depth": 2,
+														"value": "信息面板",
+														"id": "信息面板"
+													},
+													{
+														"depth": 2,
+														"value": "机器管理栏",
+														"id": "机器管理栏"
+													},
+													{
+														"depth": 2,
+														"value": "支撑显示模式",
+														"id": "支撑显示模式"
+													},
+													{
+														"depth": 2,
+														"value": "渲染模式",
+														"id": "渲染模式"
+													},
+													{
+														"depth": 2,
+														"value": "视窗小工具",
+														"id": "视窗小工具"
+													},
+													{
+														"depth": 2,
+														"value": "滑动条",
+														"id": "滑动条"
+													},
+													{
+														"depth": 2,
+														"value": "放大镜",
+														"id": "放大镜"
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/zh-CN/chitubox-pro/latest/user-interface",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "用户界面",
+										"id": "用户界面"
+									}
+								]
+							},
+							{
+								"item": "help-and-feedback",
+								"label": "帮助和反馈",
+								"path": "/zh-CN/chitubox-pro/latest/help-and-feedback",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "帮助和反馈",
+										"id": "帮助和反馈",
+										"children": [
+											{
+												"depth": 2,
+												"value": "常见问题解答",
+												"id": "常见问题解答"
+											},
+											{
+												"depth": 2,
+												"value": "技术支持",
+												"id": "技术支持"
+											},
+											{
+												"depth": 2,
+												"value": "进阶教程",
+												"id": "进阶教程"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"versionCode": "v1.4.1",
+						"versionNumber": "1.4.1",
+						"pagesContext": [
+							{
+								"item": "introduction",
+								"label": "介绍",
+								"path": "/zh-CN/chitubox-pro/v1.4.1/introduction",
 								"toc": [
 									{
 										"depth": 1,
@@ -5400,7 +8864,7 @@
 							{
 								"item": "comparison",
 								"label": "比较",
-								"path": "/zh-CN/chitubox-pro/latest/comparison",
+								"path": "/zh-CN/chitubox-pro/v1.4.1/comparison",
 								"toc": [
 									{
 										"depth": 1,
@@ -5412,7 +8876,7 @@
 							{
 								"item": "requirements",
 								"label": "要求",
-								"path": "/zh-CN/chitubox-pro/latest/requirements",
+								"path": "/zh-CN/chitubox-pro/v1.4.1/requirements",
 								"toc": [
 									{
 										"depth": 1,
@@ -5481,7 +8945,7 @@
 									{
 										"item": "installation",
 										"label": "安装",
-										"path": "/zh-CN/chitubox-pro/latest/setting-up/installation",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/setting-up/installation",
 										"toc": [
 											{
 												"depth": 1,
@@ -5500,7 +8964,7 @@
 									{
 										"item": "manage-your-account-and-license",
 										"label": "管理你的账号和许可",
-										"path": "/zh-CN/chitubox-pro/latest/setting-up/manage-your-account-and-license",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/setting-up/manage-your-account-and-license",
 										"toc": [
 											{
 												"depth": 1,
@@ -5529,7 +8993,7 @@
 									{
 										"item": "update-printer-firmware",
 										"label": "更新打印机固件",
-										"path": "/zh-CN/chitubox-pro/latest/setting-up/update-printer-firmware",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/setting-up/update-printer-firmware",
 										"toc": [
 											{
 												"depth": 1,
@@ -5568,7 +9032,7 @@
 									{
 										"item": "configure-print-parameters",
 										"label": "设置打印参数",
-										"path": "/zh-CN/chitubox-pro/latest/setting-up/configure-print-parameters",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/setting-up/configure-print-parameters",
 										"toc": [
 											{
 												"depth": 1,
@@ -5731,7 +9195,7 @@
 									{
 										"item": "configure-support-parameters",
 										"label": "设置支撑参数",
-										"path": "/zh-CN/chitubox-pro/latest/setting-up/configure-support-parameters",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/setting-up/configure-support-parameters",
 										"toc": [
 											{
 												"depth": 1,
@@ -5787,7 +9251,7 @@
 										]
 									}
 								],
-								"path": "/zh-CN/chitubox-pro/latest/setting-up",
+								"path": "/zh-CN/chitubox-pro/v1.4.1/setting-up",
 								"toc": [
 									{
 										"depth": 1,
@@ -5803,7 +9267,7 @@
 									{
 										"item": "ui-introduction",
 										"label": "用户界面介绍",
-										"path": "/zh-CN/chitubox-pro/latest/application-overview/ui-introduction",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/application-overview/ui-introduction",
 										"toc": [
 											{
 												"depth": 1,
@@ -5815,7 +9279,7 @@
 									{
 										"item": "start",
 										"label": "开始",
-										"path": "/zh-CN/chitubox-pro/latest/application-overview/start",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/application-overview/start",
 										"toc": [
 											{
 												"depth": 1,
@@ -5879,7 +9343,7 @@
 									{
 										"item": "prepare",
 										"label": "准备",
-										"path": "/zh-CN/chitubox-pro/latest/application-overview/prepare",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/application-overview/prepare",
 										"toc": [
 											{
 												"depth": 1,
@@ -5938,7 +9402,7 @@
 									{
 										"item": "repair",
 										"label": "修复",
-										"path": "/zh-CN/chitubox-pro/latest/application-overview/repair",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/application-overview/repair",
 										"toc": [
 											{
 												"depth": 1,
@@ -6002,7 +9466,7 @@
 									{
 										"item": "support",
 										"label": "支撑",
-										"path": "/zh-CN/chitubox-pro/latest/application-overview/support",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/application-overview/support",
 										"toc": [
 											{
 												"depth": 1,
@@ -6100,7 +9564,7 @@
 									{
 										"item": "analyze-and-measure",
 										"label": "分析/测量",
-										"path": "/zh-CN/chitubox-pro/latest/application-overview/analyze-and-measure",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/application-overview/analyze-and-measure",
 										"toc": [
 											{
 												"depth": 1,
@@ -6139,7 +9603,7 @@
 									{
 										"item": "setting-and-help",
 										"label": "设置/帮助",
-										"path": "/zh-CN/chitubox-pro/latest/application-overview/setting-and-help",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/application-overview/setting-and-help",
 										"toc": [
 											{
 												"depth": 1,
@@ -6262,7 +9726,7 @@
 									{
 										"item": "slice",
 										"label": "切片",
-										"path": "/zh-CN/chitubox-pro/latest/application-overview/slice",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/application-overview/slice",
 										"toc": [
 											{
 												"depth": 1,
@@ -6310,7 +9774,7 @@
 									{
 										"item": "slice-preview",
 										"label": "切片预览",
-										"path": "/zh-CN/chitubox-pro/latest/application-overview/slice-preview",
+										"path": "/zh-CN/chitubox-pro/v1.4.1/application-overview/slice-preview",
 										"toc": [
 											{
 												"depth": 1,
@@ -6367,7 +9831,7 @@
 										]
 									}
 								],
-								"path": "/zh-CN/chitubox-pro/latest/application-overview",
+								"path": "/zh-CN/chitubox-pro/v1.4.1/application-overview",
 								"toc": [
 									{
 										"depth": 1,
@@ -6399,6 +9863,11 @@
 										"value": "介绍",
 										"id": "介绍",
 										"children": [
+											{
+												"depth": 2,
+												"value": "系统要求",
+												"id": "系统要求"
+											},
 											{
 												"depth": 2,
 												"value": "安装",
@@ -8964,12 +12433,1757 @@
 				"versionedContexts": [
 					{
 						"versionCode": "latest",
-						"versionNumber": "1.4.1",
+						"versionNumber": "2.0.0",
 						"pagesContext": [
 							{
 								"item": "introduction",
 								"label": "介紹",
 								"path": "/zh-TW/chitubox-pro/latest/introduction",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "介紹",
+										"id": "介紹",
+										"children": [
+											{
+												"depth": 2,
+												"value": "主要特性",
+												"id": "主要特性"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "installation",
+								"label": "安裝",
+								"path": "/zh-TW/chitubox-pro/latest/installation",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "安裝",
+										"id": "安裝",
+										"children": [
+											{
+												"depth": 2,
+												"value": "系统要求",
+												"id": "系统要求"
+											},
+											{
+												"depth": 2,
+												"value": "Windows",
+												"id": "windows"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "account-and-license",
+								"label": "賬號和密鑰",
+								"path": "/zh-TW/chitubox-pro/latest/account-and-license",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "賬號和密鑰",
+										"id": "賬號和密鑰",
+										"children": [
+											{
+												"depth": 2,
+												"value": "註冊帳號",
+												"id": "註冊帳號"
+											},
+											{
+												"depth": 2,
+												"value": "密鑰",
+												"id": "密鑰",
+												"children": [
+													{
+														"depth": 3,
+														"value": "激活和綁定密鑰",
+														"id": "激活和綁定密鑰"
+													},
+													{
+														"depth": 3,
+														"value": "將密鑰和設備解綁",
+														"id": "將密鑰和設備解綁"
+													},
+													{
+														"depth": 3,
+														"value": "更換密鑰",
+														"id": "更換密鑰"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "quick-start",
+								"label": "快速入門",
+								"path": "/zh-TW/chitubox-pro/latest/quick-start",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "快速入門",
+										"id": "快速入門",
+										"children": [
+											{
+												"depth": 2,
+												"value": "添加機器",
+												"id": "添加機器"
+											},
+											{
+												"depth": 2,
+												"value": "加載文件",
+												"id": "加載文件"
+											},
+											{
+												"depth": 2,
+												"value": "添加支撐",
+												"id": "添加支撐"
+											},
+											{
+												"depth": 2,
+												"value": "切片",
+												"id": "切片"
+											},
+											{
+												"depth": 2,
+												"value": "導出可列印文件",
+												"id": "導出可列印文件"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "printer-management",
+								"label": "列印機管理",
+								"subItems": [
+									{
+										"item": "add-and-delete-printers",
+										"label": "添加和刪除列印機",
+										"path": "/zh-TW/chitubox-pro/latest/printer-management/add-and-delete-printers",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "添加和刪除列印機",
+												"id": "添加和刪除列印機",
+												"children": [
+													{
+														"depth": 2,
+														"value": "添加列印機",
+														"id": "添加列印機"
+													},
+													{
+														"depth": 2,
+														"value": "刪除列印機",
+														"id": "刪除列印機"
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "printer-configuration",
+										"label": "列印機設定",
+										"path": "/zh-TW/chitubox-pro/latest/printer-management/printer-configuration",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "列印機設定",
+												"id": "列印機設定",
+												"children": [
+													{
+														"depth": 2,
+														"value": "機器",
+														"id": "機器",
+														"children": [
+															{
+																"depth": 3,
+																"value": "機器名稱",
+																"id": "機器名稱"
+															},
+															{
+																"depth": 3,
+																"value": "機器類型",
+																"id": "機器類型"
+															},
+															{
+																"depth": 3,
+																"value": "鏡像",
+																"id": "鏡像"
+															},
+															{
+																"depth": 3,
+																"value": "分辨率和大小",
+																"id": "分辨率和大小"
+															},
+															{
+																"depth": 3,
+																"value": "建構區域偏移",
+																"id": "建構區域偏移"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "樹脂",
+														"id": "樹脂"
+													},
+													{
+														"depth": 2,
+														"value": "列印",
+														"id": "列印",
+														"children": [
+															{
+																"depth": 3,
+																"value": "參數解釋",
+																"id": "參數解釋"
+															},
+															{
+																"depth": 3,
+																"value": "二段运动控制 (TSMC)",
+																"id": "二段运动控制-tsmc"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "高級",
+														"id": "高級",
+														"children": [
+															{
+																"depth": 3,
+																"value": "光强 PWM",
+																"id": "光强-pwm"
+															},
+															{
+																"depth": 3,
+																"value": "圖片灰度",
+																"id": "圖片灰度"
+															},
+															{
+																"depth": 3,
+																"value": "抗鋸齒",
+																"id": "抗鋸齒",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "灰階抗鋸齒",
+																		"id": "灰階抗鋸齒",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "灰階範圍",
+																				"id": "灰階範圍"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "圖像模糊",
+																				"id": "圖像模糊"
+																			}
+																		]
+																	},
+																	{
+																		"depth": 4,
+																		"value": "抗鋸齒等級（遺留）",
+																		"id": "抗鋸齒等級遺留"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "縮放補償",
+																"id": "縮放補償"
+															},
+															{
+																"depth": 3,
+																"value": "公差補償",
+																"id": "公差補償"
+															},
+															{
+																"depth": 3,
+																"value": "層列印時間補償",
+																"id": "層列印時間補償"
+															},
+															{
+																"depth": 3,
+																"value": "蒙板",
+																"id": "蒙板",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "蒙版生成器",
+																		"id": "蒙版生成器",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "中心輻射",
+																				"id": "中心輻射"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "矩陣模式",
+																				"id": "矩陣模式"
+																			}
+																		]
+																	},
+																	{
+																		"depth": 4,
+																		"value": "灰度單位",
+																		"id": "灰度單位"
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/zh-TW/chitubox-pro/latest/printer-management",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "列印機管理",
+										"id": "列印機管理"
+									}
+								]
+							},
+							{
+								"item": "file",
+								"label": "文件",
+								"path": "/zh-TW/chitubox-pro/latest/file",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "文件",
+										"id": "文件",
+										"children": [
+											{
+												"depth": 2,
+												"value": "項目文件",
+												"id": "項目文件",
+												"children": [
+													{
+														"depth": 3,
+														"value": "新建項目文件",
+														"id": "新建項目文件"
+													},
+													{
+														"depth": 3,
+														"value": "打開項目文件",
+														"id": "打開項目文件"
+													},
+													{
+														"depth": 3,
+														"value": "保存項目文件",
+														"id": "保存項目文件"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "3D 網格文件",
+												"id": "3d-網格文件",
+												"children": [
+													{
+														"depth": 3,
+														"value": "支持的 3D 網格文件格式",
+														"id": "支持的-3d-網格文件格式"
+													},
+													{
+														"depth": 3,
+														"value": "導入 3D 網格文件",
+														"id": "導入-3d-網格文件"
+													},
+													{
+														"depth": 3,
+														"value": "導出 3D 網格文件",
+														"id": "導出-3d-網格文件"
+													},
+													{
+														"depth": 3,
+														"value": "打開最近的文件",
+														"id": "打開最近的文件"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "切片文件",
+												"id": "切片文件",
+												"children": [
+													{
+														"depth": 3,
+														"value": "支持的切片文件格式",
+														"id": "支持的切片文件格式"
+													},
+													{
+														"depth": 3,
+														"value": "導入和導出切片文件",
+														"id": "導入和導出切片文件",
+														"children": [
+															{
+																"depth": 4,
+																"value": "導入切片文件",
+																"id": "導入切片文件"
+															},
+															{
+																"depth": 4,
+																"value": "導出切片文件",
+																"id": "導出切片文件"
+															}
+														]
+													},
+													{
+														"depth": 3,
+														"value": "使用插件導出切片文件",
+														"id": "使用插件導出切片文件"
+													},
+													{
+														"depth": 3,
+														"value": "切片文件縮略圖",
+														"id": "切片文件縮略圖"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "配置文件",
+												"id": "配置文件"
+											},
+											{
+												"depth": 2,
+												"value": "文件命名設定",
+												"id": "文件命名設定",
+												"children": [
+													{
+														"depth": 3,
+														"value": "模型文件",
+														"id": "模型文件"
+													},
+													{
+														"depth": 3,
+														"value": "項目文件",
+														"id": "項目文件-1"
+													},
+													{
+														"depth": 3,
+														"value": "切片文件",
+														"id": "切片文件-1"
+													},
+													{
+														"depth": 3,
+														"value": "名字替換",
+														"id": "名字替換",
+														"children": [
+															{
+																"depth": 4,
+																"value": "重複名稱替換",
+																"id": "重複名稱替換"
+															},
+															{
+																"depth": 4,
+																"value": "字符替換",
+																"id": "字符替換"
+															},
+															{
+																"depth": 4,
+																"value": "自訂字符替換",
+																"id": "自訂字符替換"
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "model-processing",
+								"label": "模型處理",
+								"path": "/zh-TW/chitubox-pro/latest/model-processing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "模型處理",
+										"id": "模型處理",
+										"children": [
+											{
+												"depth": 2,
+												"value": "选择",
+												"id": "选择"
+											},
+											{
+												"depth": 2,
+												"value": "變換",
+												"id": "變換",
+												"children": [
+													{
+														"depth": 3,
+														"value": "移動",
+														"id": "移動"
+													},
+													{
+														"depth": 3,
+														"value": "旋轉",
+														"id": "旋轉"
+													},
+													{
+														"depth": 3,
+														"value": "縮放",
+														"id": "縮放"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "鏡像",
+												"id": "鏡像"
+											},
+											{
+												"depth": 2,
+												"value": "複製",
+												"id": "複製"
+											},
+											{
+												"depth": 2,
+												"value": "拆分模型",
+												"id": "拆分模型"
+											},
+											{
+												"depth": 2,
+												"value": "自動佈局",
+												"id": "自動佈局"
+											},
+											{
+												"depth": 2,
+												"value": "添加標簽",
+												"id": "添加標簽"
+											},
+											{
+												"depth": 2,
+												"value": "布爾操作",
+												"id": "布爾操作"
+											},
+											{
+												"depth": 2,
+												"value": "鏤空",
+												"id": "鏤空",
+												"children": [
+													{
+														"depth": 3,
+														"value": "填充類型",
+														"id": "填充類型",
+														"children": [
+															{
+																"depth": 4,
+																"value": "立體框架",
+																"id": "立體框架"
+															},
+															{
+																"depth": 4,
+																"value": "蜂窩結構",
+																"id": "蜂窩結構"
+															},
+															{
+																"depth": 4,
+																"value": "網格結構",
+																"id": "網格結構"
+															}
+														]
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "挖洞",
+												"id": "挖洞"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "analyze-and-measure",
+								"label": "分析/測量",
+								"path": "/zh-TW/chitubox-pro/latest/analyze-and-measure",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "分析/測量",
+										"id": "分析測量",
+										"children": [
+											{
+												"depth": 2,
+												"value": "顯示大小",
+												"id": "顯示大小"
+											},
+											{
+												"depth": 2,
+												"value": "兩點距離",
+												"id": "兩點距離"
+											},
+											{
+												"depth": 2,
+												"value": "點到平面距離",
+												"id": "點到平面距離"
+											},
+											{
+												"depth": 2,
+												"value": "平行平面距離",
+												"id": "平行平面距離"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "support",
+								"label": "支撐",
+								"subItems": [
+									{
+										"item": "add-edit-delete",
+										"label": "添加，編輯和刪除",
+										"path": "/zh-TW/chitubox-pro/latest/support/add-edit-delete",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "添加、編輯和刪除",
+												"id": "添加編輯和刪除",
+												"children": [
+													{
+														"depth": 2,
+														"value": "添加支撐",
+														"id": "添加支撐",
+														"children": [
+															{
+																"depth": 3,
+																"value": "自動支撐",
+																"id": "自動支撐"
+															},
+															{
+																"depth": 3,
+																"value": "手動支撐",
+																"id": "手動支撐",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "支撐類型",
+																		"id": "支撐類型",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "自適應支撐",
+																				"id": "自適應支撐"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "垂直支撐",
+																				"id": "垂直支撐"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "豎直支撐",
+																				"id": "豎直支撐"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "樹杈支撐",
+																				"id": "樹杈支撐"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "關節支撐",
+																				"id": "關節支撐"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "小柱支撐",
+																				"id": "小柱支撐"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "分叉支撐",
+																				"id": "分叉支撐"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "樹狀支撐",
+																				"id": "樹狀支撐"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "等高支撐",
+																				"id": "等高支撐"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "法面支撐",
+																				"id": "法面支撐"
+																			},
+																			{
+																				"depth": 5,
+																				"value": "邊界支撐",
+																				"id": "邊界支撐"
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "對稱支撐",
+																"id": "對稱支撐"
+															},
+															{
+																"depth": 3,
+																"value": "合併支撐",
+																"id": "合併支撐"
+															},
+															{
+																"depth": 3,
+																"value": "懸空支撐",
+																"id": "懸空支撐"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "編輯支撐",
+														"id": "編輯支撐"
+													},
+													{
+														"depth": 2,
+														"value": "刪除支撐",
+														"id": "刪除支撐"
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "support-configuration",
+										"label": "支撐設定",
+										"path": "/zh-TW/chitubox-pro/latest/support/support-configuration",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "支撐設定",
+												"id": "支撐設定",
+												"children": [
+													{
+														"depth": 2,
+														"value": "底閥設定",
+														"id": "底閥設定",
+														"children": [
+															{
+																"depth": 3,
+																"value": "模型抬升高度",
+																"id": "模型抬升高度"
+															},
+															{
+																"depth": 3,
+																"value": "底閥形狀",
+																"id": "底閥形狀",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "滑板",
+																		"id": "滑板"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "十字网络",
+																		"id": "十字网络"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "六角网格",
+																		"id": "六角网格"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "底部相连",
+																		"id": "底部相连"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "支撐設定",
+														"id": "支撐設定-1",
+														"children": [
+															{
+																"depth": 3,
+																"value": "支撐配置",
+																"id": "支撐配置"
+															},
+															{
+																"depth": 3,
+																"value": "基礎設定",
+																"id": "基礎設定",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "頂部接觸直徑",
+																		"id": "頂部接觸直徑"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "角度",
+																		"id": "角度"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "接觸點間距",
+																		"id": "接觸點間距"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "中部支撐間距",
+																		"id": "中部支撐間距"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "高級設定",
+																"id": "高級設定",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "頂部",
+																		"id": "頂部"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "中部",
+																		"id": "中部"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "底部",
+																		"id": "底部"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "底筏",
+																		"id": "底筏"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "更多支撐設定",
+																		"id": "更多支撐設定",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "增强自動支撐",
+																				"id": "增强自動支撐"
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "自動支撐",
+														"id": "自動支撐",
+														"children": [
+															{
+																"depth": 3,
+																"value": "自動支撐模式",
+																"id": "自動支撐模式"
+															},
+															{
+																"depth": 3,
+																"value": "自動支撐类型",
+																"id": "自動支撐类型"
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "magic-support",
+										"label": "魔法支撐",
+										"path": "/zh-TW/chitubox-pro/latest/support/magic-support",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "魔法支撐",
+												"id": "魔法支撐",
+												"children": [
+													{
+														"depth": 2,
+														"value": "魔法支撐配置管理",
+														"id": "魔法支撐配置管理"
+													},
+													{
+														"depth": 2,
+														"value": "流程管理",
+														"id": "流程管理",
+														"children": [
+															{
+																"depth": 3,
+																"value": "新增/刪除步驟",
+																"id": "新增刪除步驟"
+															},
+															{
+																"depth": 3,
+																"value": "步驟設定",
+																"id": "步驟設定"
+															},
+															{
+																"depth": 3,
+																"value": "合併支撐",
+																"id": "合併支撐"
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/zh-TW/chitubox-pro/latest/support",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "支撐",
+										"id": "支撐"
+									}
+								]
+							},
+							{
+								"item": "risk-detection",
+								"label": "風險檢測",
+								"path": "/zh-TW/chitubox-pro/latest/risk-detection",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "風險檢測",
+										"id": "風險檢測",
+										"children": [
+											{
+												"depth": 2,
+												"value": "空腔檢測",
+												"id": "空腔檢測"
+											},
+											{
+												"depth": 2,
+												"value": "碰撞檢測",
+												"id": "碰撞檢測"
+											},
+											{
+												"depth": 2,
+												"value": "懸空檢測",
+												"id": "懸空檢測"
+											},
+											{
+												"depth": 2,
+												"value": "孤島檢測",
+												"id": "孤島檢測",
+												"children": [
+													{
+														"depth": 3,
+														"value": "查看孤島",
+														"id": "查看孤島"
+													},
+													{
+														"depth": 3,
+														"value": "刪除孤島",
+														"id": "刪除孤島"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "slice",
+								"label": "切片",
+								"subItems": [
+									{
+										"item": "slice-mode",
+										"label": "切片模式",
+										"path": "/zh-TW/chitubox-pro/latest/slice/slice-mode",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "切片模式",
+												"id": "切片模式",
+												"children": [
+													{
+														"depth": 2,
+														"value": "單參數/多參數切片",
+														"id": "單參數多參數切片",
+														"children": [
+															{
+																"depth": 3,
+																"value": "單參數切片",
+																"id": "單參數切片"
+															},
+															{
+																"depth": 3,
+																"value": "多參數切片",
+																"id": "多參數切片",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "模型",
+																		"id": "模型"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "高度",
+																		"id": "高度"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "橫截面面積",
+																		"id": "橫截面面積"
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "slice-preview",
+										"label": "切片預覽",
+										"path": "/zh-TW/chitubox-pro/latest/slice/slice-preview",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "切片預覽",
+												"id": "切片預覽",
+												"children": [
+													{
+														"depth": 2,
+														"value": "信息預覽",
+														"id": "信息預覽",
+														"children": [
+															{
+																"depth": 3,
+																"value": "基本信息預覽",
+																"id": "基本信息預覽"
+															},
+															{
+																"depth": 3,
+																"value": "列印參數預覽",
+																"id": "列印參數預覽"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "切片編輯",
+														"id": "切片編輯",
+														"children": [
+															{
+																"depth": 3,
+																"value": "切片參數編輯",
+																"id": "切片參數編輯"
+															},
+															{
+																"depth": 3,
+																"value": "孤島檢測",
+																"id": "孤島檢測",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "檢測孤島",
+																		"id": "檢測孤島"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "編輯像素",
+																"id": "編輯像素",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "添加像素",
+																		"id": "添加像素"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "刪除像素",
+																		"id": "刪除像素"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "保存切片",
+														"id": "保存切片"
+													},
+													{
+														"depth": 2,
+														"value": "網路發送",
+														"id": "網路發送"
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/zh-TW/chitubox-pro/latest/slice",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "切片",
+										"id": "切片"
+									}
+								]
+							},
+							{
+								"item": "chitu-action",
+								"label": "ChituAction",
+								"path": "/zh-TW/chitubox-pro/latest/chitu-action",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "ChituAction",
+										"id": "chituaction",
+										"children": [
+											{
+												"depth": 2,
+												"value": "準備",
+												"id": "準備",
+												"children": [
+													{
+														"depth": 3,
+														"value": "縮放",
+														"id": "縮放"
+													},
+													{
+														"depth": 3,
+														"value": "定向",
+														"id": "定向"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "支撐",
+												"id": "支撐"
+											},
+											{
+												"depth": 2,
+												"value": "佈局",
+												"id": "佈局"
+											},
+											{
+												"depth": 2,
+												"value": "導出/保存",
+												"id": "導出保存"
+											}
+										]
+									}
+								]
+							},
+							{
+								"item": "standard-library",
+								"label": "標準庫",
+								"path": "/zh-TW/chitubox-pro/latest/standard-library",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "標準庫",
+										"id": "標準庫"
+									}
+								]
+							},
+							{
+								"item": "user-interface",
+								"label": "用戶界面",
+								"subItems": [
+									{
+										"item": "main-menu",
+										"label": "主菜單",
+										"path": "/zh-TW/chitubox-pro/latest/user-interface/main-menu",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "主菜單",
+												"id": "主菜單",
+												"children": [
+													{
+														"depth": 2,
+														"value": "新項目",
+														"id": "新項目"
+													},
+													{
+														"depth": 2,
+														"value": "打開項目",
+														"id": "打開項目"
+													},
+													{
+														"depth": 2,
+														"value": "保存項目",
+														"id": "保存項目"
+													},
+													{
+														"depth": 2,
+														"value": "打開",
+														"id": "打開"
+													},
+													{
+														"depth": 2,
+														"value": "導出模型",
+														"id": "導出模型"
+													},
+													{
+														"depth": 2,
+														"value": "最近打開",
+														"id": "最近打開"
+													},
+													{
+														"depth": 2,
+														"value": "賬戶",
+														"id": "賬戶"
+													},
+													{
+														"depth": 2,
+														"value": "社群",
+														"id": "社群"
+													},
+													{
+														"depth": 2,
+														"value": "反饋",
+														"id": "反饋"
+													},
+													{
+														"depth": 2,
+														"value": "語言",
+														"id": "語言"
+													},
+													{
+														"depth": 2,
+														"value": "幫助",
+														"id": "幫助",
+														"children": [
+															{
+																"depth": 3,
+																"value": "檢查更新",
+																"id": "檢查更新"
+															},
+															{
+																"depth": 3,
+																"value": "更新日志",
+																"id": "更新日志"
+															},
+															{
+																"depth": 3,
+																"value": "更新語言",
+																"id": "更新語言"
+															},
+															{
+																"depth": 3,
+																"value": "出產設置",
+																"id": "出產設置"
+															},
+															{
+																"depth": 3,
+																"value": "導出配置",
+																"id": "導出配置"
+															},
+															{
+																"depth": 3,
+																"value": "導入配置",
+																"id": "導入配置"
+															},
+															{
+																"depth": 3,
+																"value": "關於 CHITUBOX",
+																"id": "關於-chitubox"
+															},
+															{
+																"depth": 3,
+																"value": "質量改進計劃",
+																"id": "質量改進計劃"
+															},
+															{
+																"depth": 3,
+																"value": "打開日志路徑",
+																"id": "打開日志路徑"
+															},
+															{
+																"depth": 3,
+																"value": "用戶手冊",
+																"id": "用戶手冊"
+															},
+															{
+																"depth": 3,
+																"value": "插件",
+																"id": "插件"
+															},
+															{
+																"depth": 3,
+																"value": "修正翻譯",
+																"id": "修正翻譯"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "快捷鍵",
+														"id": "快捷鍵"
+													},
+													{
+														"depth": 2,
+														"value": "設置",
+														"id": "設置",
+														"children": [
+															{
+																"depth": 3,
+																"value": "外觀",
+																"id": "外觀",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "網格寬度",
+																		"id": "網格寬度"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "UI 顯示比例",
+																		"id": "ui-顯示比例"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "文件",
+																"id": "文件",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "切片文件縮略圖",
+																		"id": "切片文件縮略圖"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "默認視角",
+																		"id": "默認視角"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "默認保存路徑",
+																		"id": "默認保存路徑"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "默認打開路徑",
+																		"id": "默認打開路徑"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "文件儲存目錄和開啟目錄一致",
+																		"id": "文件儲存目錄和開啟目錄一致",
+																		"children": [
+																			{
+																				"depth": 5,
+																				"value": "模型重命名",
+																				"id": "模型重命名"
+																			}
+																		]
+																	},
+																	{
+																		"depth": 4,
+																		"value": "項目文件命名",
+																		"id": "項目文件命名"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "切片文件命名",
+																		"id": "切片文件命名"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "啓用重複名稱替換",
+																		"id": "啓用重複名稱替換"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "字符替換",
+																		"id": "字符替換"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "自訂字符替換",
+																		"id": "自訂字符替換"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "系統",
+																"id": "系統",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "撤銷次數",
+																		"id": "撤銷次數"
+																	}
+																]
+															},
+															{
+																"depth": 3,
+																"value": "功能",
+																"id": "功能",
+																"children": [
+																	{
+																		"depth": 4,
+																		"value": "桌面縮略圖預覽",
+																		"id": "桌面縮略圖預覽"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "預覽支撐",
+																		"id": "預覽支撐"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "顯示支撐輔助線",
+																		"id": "顯示支撐輔助線"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "打開圖形工具提示",
+																		"id": "打開圖形工具提示"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "打開列印預估輔助提示",
+																		"id": "打開列印預估輔助提示"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "碰撞檢測允許底筏重疊",
+																		"id": "碰撞檢測允許底筏重疊"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "支撐隱藏角度",
+																		"id": "支撐隱藏角度"
+																	},
+																	{
+																		"depth": 4,
+																		"value": "驗證網路傳輸文件的完整性",
+																		"id": "驗證網路傳輸文件的完整性"
+																	}
+																]
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "示例",
+														"id": "示例"
+													},
+													{
+														"depth": 2,
+														"value": "退出軟體。",
+														"id": "退出軟體"
+													},
+													{
+														"depth": 2,
+														"value": "右鍵菜單",
+														"id": "右鍵菜單",
+														"children": [
+															{
+																"depth": 3,
+																"value": "通用選項",
+																"id": "通用選項"
+															},
+															{
+																"depth": 3,
+																"value": "在模型上觸發",
+																"id": "在模型上觸發"
+															},
+															{
+																"depth": 3,
+																"value": "在空白處觸發",
+																"id": "在空白處觸發"
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "function-menu",
+										"label": "功能菜單",
+										"path": "/zh-TW/chitubox-pro/latest/user-interface/function-menu",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "功能菜單",
+												"id": "功能菜單",
+												"children": [
+													{
+														"depth": 2,
+														"value": "準備功能面板",
+														"id": "準備功能面板",
+														"children": [
+															{
+																"depth": 3,
+																"value": "添加機器",
+																"id": "添加機器"
+															},
+															{
+																"depth": 3,
+																"value": "歷史記錄",
+																"id": "歷史記錄"
+															},
+															{
+																"depth": 3,
+																"value": "打開",
+																"id": "打開"
+															},
+															{
+																"depth": 3,
+																"value": "導出",
+																"id": "導出"
+															},
+															{
+																"depth": 3,
+																"value": "保存",
+																"id": "保存"
+															},
+															{
+																"depth": 3,
+																"value": "複製",
+																"id": "複製"
+															},
+															{
+																"depth": 3,
+																"value": "拆分模型",
+																"id": "拆分模型"
+															},
+															{
+																"depth": 3,
+																"value": "自動佈局",
+																"id": "自動佈局"
+															},
+															{
+																"depth": 3,
+																"value": "添加標簽",
+																"id": "添加標簽"
+															},
+															{
+																"depth": 3,
+																"value": "布爾操作",
+																"id": "布爾操作"
+															},
+															{
+																"depth": 3,
+																"value": "鏤空",
+																"id": "鏤空"
+															},
+															{
+																"depth": 3,
+																"value": "挖洞",
+																"id": "挖洞"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "支撐功能面板",
+														"id": "支撐功能面板",
+														"children": [
+															{
+																"depth": 3,
+																"value": "對稱支撐",
+																"id": "對稱支撐"
+															},
+															{
+																"depth": 3,
+																"value": "合并支撐",
+																"id": "合并支撐"
+															},
+															{
+																"depth": 3,
+																"value": "懸空檢測",
+																"id": "懸空檢測"
+															}
+														]
+													},
+													{
+														"depth": 2,
+														"value": "分析/測量功能面板",
+														"id": "分析測量功能面板"
+													},
+													{
+														"depth": 2,
+														"value": "切片功能面板",
+														"id": "切片功能面板",
+														"children": [
+															{
+																"depth": 3,
+																"value": "保存",
+																"id": "保存-1"
+															},
+															{
+																"depth": 3,
+																"value": "切片參數編輯",
+																"id": "切片參數編輯"
+															},
+															{
+																"depth": 3,
+																"value": "孤島檢測",
+																"id": "孤島檢測"
+															},
+															{
+																"depth": 3,
+																"value": "編輯像素",
+																"id": "編輯像素"
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"item": "component-list",
+										"label": "組件列表",
+										"path": "/zh-TW/chitubox-pro/latest/user-interface/component-list",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "組件列表",
+												"id": "組件列表"
+											}
+										]
+									},
+									{
+										"item": "gadgets",
+										"label": "小工具",
+										"path": "/zh-TW/chitubox-pro/latest/user-interface/gadgets",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "小工具",
+												"id": "小工具",
+												"children": [
+													{
+														"depth": 2,
+														"value": "工具欄",
+														"id": "工具欄"
+													},
+													{
+														"depth": 2,
+														"value": "信息面板",
+														"id": "信息面板"
+													},
+													{
+														"depth": 2,
+														"value": "機器管理欄",
+														"id": "機器管理欄"
+													},
+													{
+														"depth": 2,
+														"value": "支撐顯示模式",
+														"id": "支撐顯示模式"
+													},
+													{
+														"depth": 2,
+														"value": "渲染模式",
+														"id": "渲染模式"
+													},
+													{
+														"depth": 2,
+														"value": "視窗小工具",
+														"id": "視窗小工具"
+													},
+													{
+														"depth": 2,
+														"value": "滑動條",
+														"id": "滑動條"
+													},
+													{
+														"depth": 2,
+														"value": "放大镜",
+														"id": "放大镜"
+													}
+												]
+											}
+										]
+									}
+								],
+								"path": "/zh-TW/chitubox-pro/latest/user-interface",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "用戶界面",
+										"id": "用戶界面"
+									}
+								]
+							},
+							{
+								"item": "help-and-feedback",
+								"label": "幫助和反饋",
+								"path": "/zh-TW/chitubox-pro/latest/help-and-feedback",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "幫助和反饋",
+										"id": "幫助和反饋",
+										"children": [
+											{
+												"depth": 2,
+												"value": "常見問題解答",
+												"id": "常見問題解答"
+											},
+											{
+												"depth": 2,
+												"value": "聯繫技術支援",
+												"id": "聯繫技術支援"
+											},
+											{
+												"depth": 2,
+												"value": "進階教程",
+												"id": "進階教程"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"versionCode": "v1.4.1",
+						"versionNumber": "1.4.1",
+						"pagesContext": [
+							{
+								"item": "introduction",
+								"label": "介紹",
+								"path": "/zh-TW/chitubox-pro/v1.4.1/introduction",
 								"toc": [
 									{
 										"depth": 1,
@@ -9035,7 +14249,7 @@
 							{
 								"item": "comparison",
 								"label": "比較",
-								"path": "/zh-TW/chitubox-pro/latest/comparison",
+								"path": "/zh-TW/chitubox-pro/v1.4.1/comparison",
 								"toc": [
 									{
 										"depth": 1,
@@ -9047,7 +14261,7 @@
 							{
 								"item": "requirements",
 								"label": "要求",
-								"path": "/zh-TW/chitubox-pro/latest/requirements",
+								"path": "/zh-TW/chitubox-pro/v1.4.1/requirements",
 								"toc": [
 									{
 										"depth": 1,
@@ -9116,7 +14330,7 @@
 									{
 										"item": "installation",
 										"label": "安裝",
-										"path": "/zh-TW/chitubox-pro/latest/setting-up/installation",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/setting-up/installation",
 										"toc": [
 											{
 												"depth": 1,
@@ -9135,7 +14349,7 @@
 									{
 										"item": "manage-your-account-and-license",
 										"label": "管理你的賬號和許可",
-										"path": "/zh-TW/chitubox-pro/latest/setting-up/manage-your-account-and-license",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/setting-up/manage-your-account-and-license",
 										"toc": [
 											{
 												"depth": 1,
@@ -9164,7 +14378,7 @@
 									{
 										"item": "update-printer-firmware",
 										"label": "更新列印機韌體",
-										"path": "/zh-TW/chitubox-pro/latest/setting-up/update-printer-firmware",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/setting-up/update-printer-firmware",
 										"toc": [
 											{
 												"depth": 1,
@@ -9203,7 +14417,7 @@
 									{
 										"item": "configure-print-parameters",
 										"label": "設定列印參數",
-										"path": "/zh-TW/chitubox-pro/latest/setting-up/configure-print-parameters",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/setting-up/configure-print-parameters",
 										"toc": [
 											{
 												"depth": 1,
@@ -9366,7 +14580,7 @@
 									{
 										"item": "configure-support-parameters",
 										"label": "設置支撐參數",
-										"path": "/zh-TW/chitubox-pro/latest/setting-up/configure-support-parameters",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/setting-up/configure-support-parameters",
 										"toc": [
 											{
 												"depth": 1,
@@ -9422,7 +14636,7 @@
 										]
 									}
 								],
-								"path": "/zh-TW/chitubox-pro/latest/setting-up",
+								"path": "/zh-TW/chitubox-pro/v1.4.1/setting-up",
 								"toc": [
 									{
 										"depth": 1,
@@ -9438,7 +14652,7 @@
 									{
 										"item": "ui-introduction",
 										"label": "用戶界面介紹",
-										"path": "/zh-TW/chitubox-pro/latest/application-overview/ui-introduction",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/application-overview/ui-introduction",
 										"toc": [
 											{
 												"depth": 1,
@@ -9450,7 +14664,7 @@
 									{
 										"item": "start",
 										"label": "開始",
-										"path": "/zh-TW/chitubox-pro/latest/application-overview/start",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/application-overview/start",
 										"toc": [
 											{
 												"depth": 1,
@@ -9514,7 +14728,7 @@
 									{
 										"item": "prepare",
 										"label": "準備",
-										"path": "/zh-TW/chitubox-pro/latest/application-overview/prepare",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/application-overview/prepare",
 										"toc": [
 											{
 												"depth": 1,
@@ -9573,7 +14787,7 @@
 									{
 										"item": "repair",
 										"label": "修復",
-										"path": "/zh-TW/chitubox-pro/latest/application-overview/repair",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/application-overview/repair",
 										"toc": [
 											{
 												"depth": 1,
@@ -9637,7 +14851,7 @@
 									{
 										"item": "support",
 										"label": "支撐",
-										"path": "/zh-TW/chitubox-pro/latest/application-overview/support",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/application-overview/support",
 										"toc": [
 											{
 												"depth": 1,
@@ -9735,7 +14949,7 @@
 									{
 										"item": "analyze-and-measure",
 										"label": "分析/測量",
-										"path": "/zh-TW/chitubox-pro/latest/application-overview/analyze-and-measure",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/application-overview/analyze-and-measure",
 										"toc": [
 											{
 												"depth": 1,
@@ -9774,7 +14988,7 @@
 									{
 										"item": "setting-and-help",
 										"label": "設置/説明",
-										"path": "/zh-TW/chitubox-pro/latest/application-overview/setting-and-help",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/application-overview/setting-and-help",
 										"toc": [
 											{
 												"depth": 1,
@@ -9897,7 +15111,7 @@
 									{
 										"item": "slice",
 										"label": "切片",
-										"path": "/zh-TW/chitubox-pro/latest/application-overview/slice",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/application-overview/slice",
 										"toc": [
 											{
 												"depth": 1,
@@ -9945,7 +15159,7 @@
 									{
 										"item": "slice-preview",
 										"label": "切片預覽",
-										"path": "/zh-TW/chitubox-pro/latest/application-overview/slice-preview",
+										"path": "/zh-TW/chitubox-pro/v1.4.1/application-overview/slice-preview",
 										"toc": [
 											{
 												"depth": 1,
@@ -10002,7 +15216,7 @@
 										]
 									}
 								],
-								"path": "/zh-TW/chitubox-pro/latest/application-overview",
+								"path": "/zh-TW/chitubox-pro/v1.4.1/application-overview",
 								"toc": [
 									{
 										"depth": 1,
@@ -10034,6 +15248,11 @@
 										"value": "介紹",
 										"id": "介紹",
 										"children": [
+											{
+												"depth": 2,
+												"value": "系統要求",
+												"id": "系統要求"
+											},
 											{
 												"depth": 2,
 												"value": "安装",

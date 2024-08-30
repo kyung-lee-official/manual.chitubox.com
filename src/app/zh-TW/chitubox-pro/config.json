@@ -4,6 +4,124 @@
 	"versionedContexts": [
 		{
 			"versionCode": "latest",
+			"versionNumber": "2.0.0",
+			"pagesContext": [
+				{
+					"item": "introduction",
+					"label": "介紹"
+				},
+				{
+					"item": "installation",
+					"label": "安裝"
+				},
+				{
+					"item": "account-and-license",
+					"label": "賬號和密鑰"
+				},
+				{
+					"item": "quick-start",
+					"label": "快速入門"
+				},
+				{
+					"item": "printer-management",
+					"label": "列印機管理",
+					"subItems": [
+						{
+							"item": "add-and-delete-printers",
+							"label": "添加和刪除列印機"
+						},
+						{
+							"item": "printer-configuration",
+							"label": "列印機設定"
+						}
+					]
+				},
+				{
+					"item": "file",
+					"label": "文件"
+				},
+				{
+					"item": "model-processing",
+					"label": "模型處理"
+				},
+				{
+					"item": "analyze-and-measure",
+					"label": "分析/測量"
+				},
+				{
+					"item": "support",
+					"label": "支撐",
+					"subItems": [
+						{
+							"item": "add-edit-delete",
+							"label": "添加，編輯和刪除"
+						},
+						{
+							"item": "support-configuration",
+							"label": "支撐設定"
+						},
+						{
+							"item": "magic-support",
+							"label": "魔法支撐"
+						}
+					]
+				},
+				{
+					"item": "risk-detection",
+					"label": "風險檢測"
+				},
+				{
+					"item": "slice",
+					"label": "切片",
+					"subItems": [
+						{
+							"item": "slice-mode",
+							"label": "切片模式"
+						},
+						{
+							"item": "slice-preview",
+							"label": "切片預覽"
+						}
+					]
+				},
+				{
+					"item": "chitu-action",
+					"label": "ChituAction"
+				},
+				{
+					"item": "standard-library",
+					"label": "標準庫"
+				},
+				{
+					"item": "user-interface",
+					"label": "用戶界面",
+					"subItems": [
+						{
+							"item": "main-menu",
+							"label": "主菜單"
+						},
+						{
+							"item": "function-menu",
+							"label": "功能菜單"
+						},
+						{
+							"item": "component-list",
+							"label": "組件列表"
+						},
+						{
+							"item": "gadgets",
+							"label": "小工具"
+						}
+					]
+				},
+				{
+					"item": "help-and-feedback",
+					"label": "幫助和反饋"
+				}
+			]
+		},
+		{
+			"versionCode": "v1.4.1",
 			"versionNumber": "1.4.1",
 			"pagesContext": [
 				{

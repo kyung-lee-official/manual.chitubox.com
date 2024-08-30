@@ -1,0 +1,69 @@
+import {
+	ChituboxProfileImportIcon,
+	ChituboxProfileAddIcon,
+	ChituboxProfileDeleteIcon,
+} from "@/components/icons/Icons";
+import {
+	ProfileExportAllIcon,
+	MagicSupport,
+} from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
+
+export const metadata = {
+	title: "Magic Support",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "CHITUBOX Pro Magic Support",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/support/magic-support",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Magic Support
+
+<Entry
+	toolbar={[
+		<div className="flex items-center gap-1">
+			Magic Support
+			<MagicSupport />
+		</div>,
+	]}
+	shortcut={["Alt", "M"]}
+/>
+
+Magic Support is an intelligent support generation algorithm that can execute several support creation commands with just one click. You can press one button to achieve a series of support actions.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-pro/2.x.x/012-magic-support.png"}
+/>
+
+Click **Apply** to create supports based on the order of support settings from top to bottom.
+
+## Manage Magic Support Profiles
+
+<ChituboxProfileAddIcon /> Add new Magic Support profiles.
+<ChituboxProfileImportIcon /> Import Magic Support profiles.
+<ProfileExportAllIcon /> Export all Magic Support profiles.
+<ChituboxProfileDeleteIcon /> Delete current Magic Support profile.
+
+## Workflow Management
+
+### Add/Delete a Step
+
+-   Add a step: click the **+** sign at the bottom of a step card to add a new auto support step below.
+
+-   Delete a step: click the **-** sign at the right side of a step to delete an unnecessary step.
+
+### Step Settings
+
+| Parameters        | Description                                     |
+| ----------------- | ----------------------------------------------- |
+| Support Parameter | Choose a support parameter file                 |
+| Auto Support Mode | Choose a mode for how auto support is generated |
+| Auto Support Type | Choose the type of auto support generated       |
+
+### Merge Supports
+
+When enabled, added supports will be automatically merged at the end.

@@ -1,0 +1,120 @@
+import {
+	SliceParameterEditor,
+	EditPixels,
+} from "@/components/icons/ChituboxProIcons";
+
+export const metadata = {
+	title: "Slice Preview",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"It is important to preview slice results in the software to ensure accurate 3D printing and meet your expectations.",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/slice-preview",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Slice Preview
+
+The main window will be split into model view and slice preview when the slice process is done. **Model View** displays sliced models, and **Slice Preview** shows a preview of every sliced layer.
+
+## Information Preview
+
+### Basic Information Preview
+
+You can check basic print information on the top right estimation panel. Print information includes machine model, resin, volume, weight, cost, and estimated print time.
+
+<Admonition type="note" title="Note">
+	The volume of resin is a simple calculation of summing up of all voxels (area of pixels x layer height).
+	This is, however, a theoretic value, that can be affected by many other factors in reality, such as residual resin on the build plate or the model, resin volatility, density change during curing etc.
+</Admonition>
+
+### Print Parameter Preview
+
+-   Print Parameter Preview Panel: displays the preview of the slice file, detailed information of the current printer and certain print parameters for the viewed layer.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/016-slice-preview-print-configuration-preview-panel.png"
+	}
+/>
+
+## Slice Editor
+
+### Slice Parameter Editor
+
+<SliceParameterEditor /> Edit and adjust printer parameters of the sliced models.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/016-slice-preview-slice-parameter-editor.png"
+	}
+/>
+
+This window provides quick access to some parameters found under **Slice Settings > Print**, allowing users to change these parameters without quitting the slice preview window.
+
+<Admonition type="note" title="Note">
+	**Slicing Parameter Editing** is only available under **Single Parameter Slice** mode.
+</Admonition>
+
+### Island Detection
+
+#### Detect Islands
+
+Use <NextLink href="/en-US/chitubox-pro/latest/risk-detection#island-detection">Island Detection</NextLink> tools to check for unprintable islands.
+
+<Admonition type="note" title="Note">
+	Run <b>Detect Islands</b> first to use the functions
+	<NextLink href="/en-US/chitubox-pro/latest/risk-detection#delete-islands">Delete All Islands</NextLink> and <NextLink href="#edit-pixels">Edit Pixels </NextLink>.
+</Admonition>
+
+### Edit Pixels
+
+<EditPixels /> adds or deletes pixels in the current slice file.
+
+#### Add Pixels
+
+1. Left click in the slice preview window to add pixels.
+
+1. Hold Ctrl and drag Left-button of the mouse to add continuous pixels. 
+
+#### Delete Pixels
+
+1. Right click in the slice preview window to delete pixels.
+
+1. Hold Ctrl and drag Right-button of the mouse to erase pixels continuously.
+
+<Admonition type="tip" title="Note">
+	Hold Ctrl and scroll the Middle-button of the mouse to resize the pen
+</Admonition>
+
+## Save Slice
+
+Click the **Save Slice** button to save the slice file.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/016-slice-preview-save-slice.png"
+	}
+/>
+
+<Admonition type="note" title="Note">
+	* Only file formats supported by the current printer are displayed in the save file dialog. Please go back and check if the right printer is selected if no appropriate file format is available.
+    * The **Default** printer allows you to save the slice file to any format supported by CHITUBOX. You should choose the **Default** printer type when no configuration file for your printer is loaded into CHITUBOX.
+</Admonition>
+
+## Network Sending
+
+The **Network Sending** button is only available when your printer supports the function. Network Sending allows direct sending of print data to the machine for quick printing. Click on the button to open the <NextLink href="/en-US/chitu-manager/latest/ui-and-features/network-sending"> Network Sending Window </NextLink>。
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/011-preview-network-sending.png"
+	}
+/>
+
+<Admonition type="note" title="Note">
+	Installation of ChituManager is required for Network Sending. Please follow the suggested steps after clicking on the **Network Sending** button to download and install ChituManager if it has not been installed.
+	</Admonition>

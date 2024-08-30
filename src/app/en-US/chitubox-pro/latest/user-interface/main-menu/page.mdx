@@ -1,0 +1,339 @@
+import { ChituboxMenu } from "@/components/icons/Icons";
+
+export const metadata = {
+	title: "Main Menu",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"Main Menu is a list of options for users to execute various tasks. You can click the main menu icon on the top left corner to expand the list.",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/main-menu",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Main Menu
+
+Click the Menu button <ChituboxMenu size={24} /> on the top left corner to open the main menu.
+
+<ImageContainer src={"/images/docs/en-US/chitubox-pro/2.x.x/menu-001.png"} />
+
+## New Project
+
+Create a new project.
+
+## Open Project
+
+Open an existing project file or load a project file and combine with the current project.
+
+Project files have an file extension _.chitubox_ . Please make sure not to mix them with 3D model files or slice files.
+
+## Save Project
+
+Save all or selected models to a _.chitubox_ project file.
+
+## Open
+
+Open project file, load in 3D model file or slice files. 
+
+<Admonition type="warning" title="Warning">
+	Please note that .ctb files are the final slice file that can only be used for printing in most cases.
+	Please do not perform 3D
+	model manipulations on these files. Slice files only support some non-modeling operations such as exposure time, platform move speed and pixel editing(only in CHITUBOX Pro).
+</Admonition>
+
+## Export Model
+
+Export all or selected models (including supports).
+
+You can export models in any of the supported formats, allowing you to share models with other users or use them with other 3D modeling software.
+
+## Recently Opened
+
+Open projects files and 3D model files that have been successfully opened in the software.
+
+## Account
+
+Open Personal Center and manage your authorization.
+
+## Community
+
+Visit the official CHITUBOX community, where you can interact with other users using our software, access latest news, new versions and updates.
+
+Welcome to join the community and create endless possibility with CHITUBOX!
+
+## Feedback
+
+You can submit any ideas, suggestions and feedback about CHITUBOX to our development team.
+
+## Language
+
+Users can select the displayed language based on their needs.
+
+Currently supported languages includes: German, English, French, Italian, Hungarian, Dutch, Polish, Portuguese, Finnish, Turkish, Spanish, Czech, Greek, Russian, Arabic, Japanese, Simplified Chinese, Traditional Chinese and Korean.
+
+## Help
+
+### Check for Updates
+
+Check if the current software version needs updates and display update logs for different versions.
+
+### Update Log
+
+Display software update log information.
+
+### Update Language
+
+Reset software language to factory settings.
+
+### Factory Settings
+
+Restore factory settings. This helps you to resolve any software issues or reset the program.
+
+### Export Configuration
+
+Export current machine settings to a _.cfgx_ file. This function helps to backup print configurations or share your configuration with other users.
+
+### Import Configuration
+
+Choose a _.cfg_ or _.cfgx_ file and import to the current machine settings. This function helps to restore print settings or use print settings shared by other users.
+
+### About CHITUBOX
+
+Check software information, including current version number, copy right information and more. This window helps you to know version of the currently running software and ensure it is up to date.
+
+### Quality Improvement
+
+Participate in the quality improvement plan. Check and see what data CHITUBOX is collecting and how the data is used.
+
+### Open Log Path
+
+Visit the folder containing log files.
+
+{/*
+You can visit the log directory directly below if you cannot open the software during a crash：
+
+-   Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Log`
+
+-   macOS: `Macintosh HD/Users/{user-name}/Library/Application Support/chitubox2_0/Log`
+
+-   Ubuntu: `~/.local/share/chitubox2_0/Log`
+
+*/}
+
+### User Manual
+
+Read CHITUBOX user manual.
+
+### Plugins
+
+Manage software plugins. You can import or export plugins to support printers that do not use Chitu Systems. 
+
+### Correct Translation
+
+Correct translation errors.
+
+## Shortcut
+
+Check and manage shortcuts.
+
+## Settings
+
+General settings for CHITUBOX Pro.
+
+### Appearance 
+
+#### Theme
+
+There are three themes available: Light, Dark and Classic.
+
+#### UI Display Scale
+
+Change the size of displayed UI.
+
+#### Model Projection
+
+Turn on/off the display of model shadow projected onto the platform.
+
+### File
+
+#### Slice File Thumbnail
+
+Change the displayed view used for slice file thumbnails. 
+
+#### Default View
+
+Default displayed view when starting up CHITUBOX.
+
+#### Default Save Directory
+
+Choose the default directory when saving files.
+
+#### Default Open Directory
+
+Choose the default directory when opening files.
+
+#### Use same directory for saving and opening
+
+When enabled, the saving directory will always be the same as the latest directory for opening files.
+
+##### Model Naming
+
+Automatically add suffixes to file names based on your choice, such as "#number", "hollowed", "repaired" and "mirrored".
+
+#### Project File Rename
+
+-   Combine Model Names: generate project file name by appending model file names based on the order of models loaded into the file.
+
+#### Slice File Naming
+
+Set rules for naming slice files.
+
+#### Duplicate Name Replacement
+
+Set the naming rule for conflicting file names.
+
+#### Character Replacement
+
+Some operating systems do not allow certain characters in filenames. Built-in characters will be used to automatically replace those characters with other characters.
+
+#### Custom Character Replacement
+
+Define custom character replacement rules.
+
+### System
+
+#### Max Undo
+
+This allows you to change the maximum number of undo operations that can be performed.
+
+{/*
+#### Graphics Card Backward Compatible
+
+Turn on this option if the model preview appears abnormal or the software does not run as expected. Restart the software for the option to take effect.
+
+<Admonition type="note" title="注意">
+	如果打开此选项，程序将使用更多内存。
+</Admonition>
+
+#### 图形质量
+
+CHITUBOX 的画质等级。数字越大，刷新率越低，图形质量越高。
+
+#### 渲染引擎
+
+选择渲染引擎。
+
+在 Windows 版本，您可以选择 Direct3D 或 OpenGL 作为渲染引擎。
+
+在 macOS 版本，您可以选择 Metal 或 OpenGL 作为渲染引擎。
+*/}
+
+### Function
+
+{/*
+#### 切片模型体积计算
+
+切片期间启用或禁用体积计算。
+
+<Admonition type="note" title="注意">
+	启用此选项可能会降低切片速度。
+</Admonition> 
+*/}
+
+#### Desktop Thumbnail Preview
+
+Enable/disable Desktop Thumbnail Preview
+
+#### Support Preview (for manual supports)
+
+Enable/disable support preview during manual supports.
+
+#### Support Auxiliary Line
+
+Enable/disable support auxiliary line.
+
+#### Graphic Tooltip
+
+Enable/disable graphic tooltips.
+
+#### Print Estimation Panel
+
+Enable/disable print estimation panel at the bottom left corner.
+
+#### Allow Raft Overlap in Collision Detection
+
+When enabled, collision detection ignores support raft overlaps and will not generate warnings for them.
+
+#### Support Hidden Angle
+
+The angle between the view camera's axis and negative z axis of the print platform. Supports will be hidden when the angle is smaller than the set value.
+
+#### Network Transmission Integrity Check
+
+Enable/disable check for slice file integrity when sending files through network. When enabled, users will receive a notification when the file is incomplete.
+
+#### Prompt for Model Generation when Loading Slice Files
+
+Enable/disable prompt asking whether to reverse-generate model when loading in slice files.
+
+## Examples
+
+Open example models come with the software.
+
+## Exit Software
+
+Exit CHITUBOX Pro.
+
+## Right-click Menu
+
+### General Options
+
+-   New Project: create a new project file.
+
+-   Display Mode: supports Solid, X-Ray, Triangle Mesh and Wire Frame modes.
+
+### Options for Right-click on Models
+
+-   Save: save the current project file.
+
+-   Delete Model: delete currently selected models.
+
+-   Replace Model: the option allows you to replace a supported model with a slightly different model without re-supporting it.
+
+-   Select Model: allows you to select a model when the pointer is on an unselected model. You can also hold down the Ctrl key and click to select multiple models.
+
+-   Deselect Model: allows you to deselect a model when the pointer is on an selected model.
+
+-   Reverse Select: deselect currently selected models and select all unselected models.
+
+-   Paste: copy and paste current model. 
+
+-   Move: open the Move tool panel. Input value to accurately move selected models or drag models to disired locations.
+
+-   Rotate: open the Rotate tool panel and enable free rotation of selected models.
+
+-   Scale: open the Scale tool panel to adjust model size.
+
+-   Mirror: open the Mirror tool panel to choose mirror options for selected models.
+
+### Options for Right-click on Black Spaces in the Canvas
+
+-   Select All: select all models. 
+
+-   Deselect All: deselect all models.
+
+-   Delete All: delete all models. 
+
+-   Front View: switch to front view to observe models. 
+
+-   Back View: switch to back view to observe models.
+
+-   Left View: switch to left view to observe models.
+
+-   Right View: switch to right view to observe models.
+
+-   Top View: switch to top view to observe models.
+
+-   Bottom View: switch to bottom view to observe models.

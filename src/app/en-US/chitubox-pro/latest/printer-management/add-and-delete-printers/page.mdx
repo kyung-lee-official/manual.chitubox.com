@@ -1,0 +1,51 @@
+import { Entry } from "@/docComponents/entry/Entry";
+import { AddMachineIcon } from "@/components/icons/ChituboxProIcons";
+import { ChituboxAddMachine } from "@/components/icons/Icons";
+
+export const metadata = {
+	title: "Add and Delete Printers",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "This chapter introcues how to add, configure and delete printers in CHITUBOX Pro.",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/printer-management",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Add and Delete Printers
+
+## Add Printers
+
+<Entry
+	functionMenu={[
+		"Prepare",
+		<div className="flex items-center gap-1">
+			<AddMachineIcon />
+			Add Machine
+		</div>,
+	]}
+	machineTab={[
+		<div>
+			Click icon <ChituboxAddMachine /> to add new printers.
+		</div>,
+	]}
+/>
+
+Choose your printer's make and model. Click "Next".
+
+<NextLink href="/en-US/chitubox-pro/latest/printer-management/printer-configuration">Configure your printer</NextLink>, and click "Apply" to finish adding a printer.
+
+## Delete Printers
+
+<Entry
+	machineTab={[
+		<div>
+			Printer Menu
+		</div>,
+		<div>
+			Delete Machine
+		</div>
+	]}
+/>

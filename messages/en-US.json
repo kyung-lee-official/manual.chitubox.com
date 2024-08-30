@@ -133,6 +133,47 @@
 			"expand": "Click to expand",
 			"hide": "Click to hide"
 		},
+		"entry": {
+			"title": "Entry",
+			"mainMenu": {
+				"title": "Main Menu",
+				"link": "/en-US/chitubox-pro/latest/user-interface/main-menu"
+			},
+			"functionMenu": {
+				"title": "Function Menu",
+				"link": "/en-US/chitubox-pro/latest/user-interface/function-menu"
+			},
+			"machineTab": {
+				"title": "Machine Tab",
+				"link": "/en-US/chitubox-pro/latest/user-interface/machine-tab"
+			},
+			"toolbar": {
+				"title": "Toolbar",
+				"link": "/en-US/chitubox-pro/latest/user-interface/gadgets#工具栏"
+			},
+			"shortcut": {
+				"title": "Shortcut"
+			},
+			"componentList": {
+				"title": "Component List",
+				"link": "/en-US/chitubox-pro/latest/user-interface/component-list"
+			},
+			"supportSettingsPanel": {
+				"title": "Support Settings Panel",
+				"link": "/en-US/chitubox-pro/latest/user-interface/support-settings-panel"
+			},
+			"manualSupportOptions": {
+				"title": "Manual Support Options"
+			},
+			"profileList": {
+				"title": "Profile List",
+				"link": ""
+			},
+			"islandsDetectionPanel": {
+				"title": "lslands Detection Panel"
+			}
+		},
+		"imageGray": "Image Gray",
 		"isPageUseful": {
 			"question": "Is this page useful?",
 			"thanks": "Thanks for your feedback!"

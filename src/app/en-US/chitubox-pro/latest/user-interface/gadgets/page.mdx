@@ -1,0 +1,169 @@
+import {
+	ChituboxSelectIcon,
+	ChituboxSelectBoxIcon,
+	ChituboxMoveIcon,
+	ChituboxRotateIcon,
+	ChituboxScaleIcon,
+	ChituboxMirrorIcon,
+	ChituboxGlobalIcon,
+	ChituboxLocalIcon,
+	ChituboxResetIcon,
+	ChituboxAddMachine,
+	ChituboxMachineBarMenuIcon,
+	ChituboxDeleteIcon,
+	ChituboxCopyAddIcon,
+	ChituboxSupport,
+	ChituboxSupportDisplayAllIcon,
+	ChituboxSupportDisplayTopIcon,
+	ChituboxSupportDisplayTipIcon,
+	ChituboxRenderDetailedIcon,
+	ChituboxRenderFresnelIcon,
+	ChituboxHomeIcon,
+	ChituboxPerspectiveIcon,
+	ChituboxOthographicIcon,
+	ChituboxEyeIcon,
+} from "@/components/icons/Icons";
+import { ResetSliderIcon } from "@/components/icons/ChituboxProIcons";
+import { Entry } from "@/docComponents/entry/Entry";
+
+import {
+	MagnifierIcon,
+	HidePlatform,
+	DeleteMachine,
+} from "@/components/icons/ChituboxProIcons";
+
+export const metadata = {
+	title: "Gadgets",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "Helpful gadgets used in CHITUBOX.",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/gadgets",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Gadgets
+
+We will introduce some useful gadgets in CHITUBOX Pro in this chapter.
+
+## Toolbar
+
+<ImageContainer src="/images/docs/zh-CN/chitubox-pro/2.x.x/toolbar.png" />
+
+Toolbar is located on the left side of the main window. It contains five tools: <NextLink href="/en-US/chitubox-pro/latest/model-processing#select">Selection</NextLink>, <NextLink href="/en-US/chitubox-pro/latest/model-processing#move">Move</NextLink>, <NextLink href="/en-US/chitubox-pro/latest/model-processing#rotate">Rotate</NextLink>, <NextLink href="/en-US/chitubox-pro/latest/model-processing#scale">Scale</NextLink> and <NextLink href="/en-US/chitubox-pro/latest/model-processing#mirror">Mirror</NextLink>.
+
+## Information Panel
+
+Information Panel is located at the bottom left corner of the main window, providing brief information for current settings.
+
+## Machine Management Bar
+
+Machine Management Bar is located at the bottom of the main window, where you can add, delete and copy machines.
+
+Click the <ChituboxAddMachine />Add Machine button to add a new machine. Click the icon <ChituboxMachineBarMenuIcon /> next to a machine, you will see the <ChituboxEyeIcon /> Hide Platform/Grid, <ChituboxCopyAddIcon /> Copy Machine and <DeleteMachine /> Delete Machine options.
+
+## Support Display Mode
+
+Click "Support" on the Function Menu to switch to the support view. There are three buttons allowing you to switch to different support display modes.
+
+<ChituboxSupportDisplayAllIcon /> Display complete supports.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-all.png"
+	}
+/>
+
+<ChituboxSupportDisplayTopIcon /> Display top segments of supports.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-top.png"
+	}
+/>
+
+<ChituboxSupportDisplayTipIcon /> Display support tips.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/005-gadgets-support-display-tip.png"
+	}
+/>
+
+## Render Mode
+
+Render Mode is located on the top right corner of the main window, including two mode: Detail and Shadow modes.
+
+<ChituboxRenderDetailedIcon /> More model details are shown under Detail Mode. 
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-details.png"}
+/>
+
+<ChituboxRenderFresnelIcon /> Model surfaces appear smoother under Shadow Mode.
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-fresnel.png"}
+/>
+
+## View Cube
+
+View Cube is located on the top right corner of the main window, providing quick ways to manipulate the view angle or perspective, in order to check relative positions between objects.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/005-gadget-viewport_gizmo.svg"
+	}
+/>
+
+The <ChituboxHomeIcon /> icon and Perspective <ChituboxPerspectiveIcon /> /
+Orthographic <ChituboxOthographicIcon /> icons are located on the top right corner of the main window next to View Cube.
+
+The Home View icon allows users to reset the view to the default view. The Perspective/Orthographic icons allow users to switch between perspective view and Orthographic view mode. The perspective view mode provides a more realistic scene, whereas the orthographic view mode provides plans views for a scene, allowing for easy evaluation of the relative positions between objects on the platform and making adjustments accordingly.
+
+## Slider
+
+Slider is located on the right side of the main window. It is used to preview the cross sectional areas of models (pre-slice), and layers of models (post-slice). You can move the slider block to observe every part or layer of the model along the z-axis. You can also expand the x-axis and y-axis sliders by clicking the "X" and "Y" icons above the slider, allowing the observation of cross sections along the x and y axes.
+
+<div className="flex justify-center items-center">
+	<div className="flex-1 p-2">
+		<ImageContainer
+			src={"/images/docs/en-US/chitubox-pro/2.x.x/gadget-slider-xy.png"}
+			style={{ width: "400px" }}
+		/>
+	</div>
+	<div className="flex-1">
+		<ImageContainer
+			src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadget-slider.png"}
+			style={{ height: "600px" }}
+		/>
+	</div>
+	<div className="flex-1">
+		<ImageContainer
+			src={
+				"/images/docs/zh-CN/chitubox-pro/2.x.x/gadget-slider-after-slicing.png"
+			}
+			style={{ height: "600px" }}
+		/>
+	</div>
+</div>
+
+-   Pre-Slice
+
+There are two buttons above and below the slicer to run animation of moving the slider positions. Clicking the<ResetSliderIcon /> Reset button at the bottom returns the slider to the original positions. The Slider component can help users evaluate model quality before sending it to the printer and adjust as needed.
+
+-   Post-Slice
+
+Layer number will be displayed on top of the slider post-slice. Entering a layer number will bring up the exact layer.
+
+## Magnifier
+
+After model slicing, a<MagnifierIcon /> Magnifier too will be available below the slice preview window.
+
+You can set the magnification scale upon clicking the Magnifier icon. Move the pointer to the slice preview to magnify certain parts of the layer to check for slice quality and details.
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/gadgets-magnifier-02.png"}
+/>

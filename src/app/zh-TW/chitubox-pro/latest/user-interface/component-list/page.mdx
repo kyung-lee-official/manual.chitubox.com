@@ -1,0 +1,40 @@
+import {
+	ChituboxCheckboxIcon,
+	ChituboxEyeIcon,
+	ChituboxRulerIcon,
+	ChituboxProfileDeleteIcon,
+	ChituboxProfileAddIcon,
+} from "@/components/icons/Icons";
+import { InvertSelection } from "@/components/icons/ChituboxProIcons";
+
+export const metadata = {
+	title: "組件列表",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/zh-TW/chitubox-pro/v2.0.0/component-list",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 組件列表
+
+所有已載入完成的文件都會顯示在組件列表中。您可以同時選擇多個文件，也能透過單擊全選按鈕來選擇所有文件。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/component-list-panel.png"}
+/>
+
+複選框圖標 <ChituboxCheckboxIcon /> 允許您選擇該文件。
+
+反選圖標 <InvertSelection /> 允許您反選文件。
+
+標尺圖標 <ChituboxRulerIcon /> 允許您顯示所有文件的<SpanA href={"https://zh.wikipedia.org/wiki/%E5%8C%85%E5%9B%B4%E4%BD%93"}>包圍體</SpanA>尺寸。
+
+添加圖標 <ChituboxProfileAddIcon /> 允許您添加文件，也可以通过双击列表空白处导入文件。
+
+垃圾桶圖標 <ChituboxProfileDeleteIcon /> 允許您刪除所選文件。
+
+眼睛圖標 <ChituboxEyeIcon /> 允許您隱藏文件。
