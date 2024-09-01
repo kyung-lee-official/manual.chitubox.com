@@ -1,18 +1,17 @@
 FROM node:lts-slim AS base
-RUN npm i -g pnpm
+RUN npm install -g bun
 WORKDIR /app
 COPY . ./
 
 # Install dependencies based on the preferred package manager
 FROM base AS deps
-RUN pnpm i
+RUN bun i
 
 # Rebuild the source code
 FROM deps AS build
-RUN pnpm preload
-RUN pnpm build
+RUN bun preload
+RUN bun run build
 
 # Production image, run NextJS
 FROM build
-# CMD ["ls", "-la"]
-CMD ["pnpm", "start"]
+CMD ["bun", "start"]
