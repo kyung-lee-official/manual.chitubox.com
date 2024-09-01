@@ -1,4 +1,5 @@
 import * as path from "path";
+import { lstatSync } from "fs";
 import { access, lstat, readdir, readFile, writeFile } from "fs/promises";
 import { compile } from "@mdx-js/mdx";
 import remarkGfm from "remark-gfm";
@@ -7,6 +8,7 @@ import rehypeKatex from "rehype-katex";
 import rehypeSlug from "rehype-slug";
 import withToc from "@stefanprobst/rehype-extract-toc";
 import util from "util";
+import { Locale, locales } from "../utils/types";
 
 console.time("preload");
 
@@ -14,11 +16,11 @@ console.time("preload");
 const absRootPath = path.resolve("../app");
 const rootItems = await readdir(absRootPath);
 const absLocalePaths: string[] = [];
-const locales = ["en-US", "zh-CN", "zh-TW"];
+
 for (const item of rootItems) {
 	const absItemPath = path.resolve(absRootPath, item);
 	const absItemPathStat = await lstat(absItemPath);
-	if (locales.includes(item) && absItemPathStat.isDirectory()) {
+	if (locales.includes(item as Locale) && absItemPathStat.isDirectory()) {
 		/* item is a locale directory */
 		absLocalePaths.push(absItemPath);
 	} else {
@@ -114,8 +116,9 @@ for (const absLocalePath of absLocalePaths) {
 									urlPath = `/${absVersionedPath
 										.split(path.sep)
 										.slice(systemPathLength)
-										.join(path.posix.sep)}/${pageContext.item
-										}/${subPageContext.item}`;
+										.join(path.posix.sep)}/${
+										pageContext.item
+									}/${subPageContext.item}`;
 									subPageContext.path = urlPath;
 									absPagePath = path.resolve(
 										absVersionedPath,
@@ -185,8 +188,9 @@ for (const absLocalePath of absLocalePaths) {
 									urlPath = `/${absVersionedPath
 										.split(path.sep)
 										.slice(systemPathLength)
-										.join(path.posix.sep)}/${pageContext.item
-										}/${subPageContext.item}`;
+										.join(path.posix.sep)}/${
+										pageContext.item
+									}/${subPageContext.item}`;
 									subPageContext.path = urlPath;
 									absPagePath = path.resolve(
 										absVersionedPath,

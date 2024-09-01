@@ -1,8 +1,9 @@
 {
+	"name": "docs.chitubox.com",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"preload": "cd src/preload && tsc && node ./out/preload.js",
+		"preload": "cd src/preload && bun preload.ts && bun flatten.ts && bun category-urls.ts",
 		"dev": "next dev -H 0.0.0.0",
 		"dev:turbo": "next dev --turbo",
 		"build": "next build",

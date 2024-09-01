@@ -2,13 +2,13 @@ import { Metadata } from "next";
 import "../globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
-import { locales } from "../../../messages/Locale";
 import { UrlHashPilot } from "@/components/urlHashPilot/UrlHashPilot";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
 import dynamic from "next/dynamic";
 import KatexHtmlSanitizer from "@/components/katexHtmlSanitizer/KatexHtmlSanitizer";
 import { NotLatestHint } from "@/components/notLatestHint/NotLatestHint";
+import { locales } from "@/utils/types";
 
 const DynamicDocsSidebar = dynamic(
 	() => import("@/components/docsSidebar/DocsSidebar"),

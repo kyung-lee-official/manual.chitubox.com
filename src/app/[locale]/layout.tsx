@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "../globals.css";
 import { notFound, useParams } from "next/navigation";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
-import { Locale, locales } from "../../../messages/Locale";
 import { UrlHashPilot } from "@/components/urlHashPilot/UrlHashPilot";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
 import Ask from "@/components/orama/ask/Ask";
+import { Locale, locales } from "@/utils/types";
 
 /* https://nextjs.org/docs/app/api-reference/functions/generate-static-params */
 export function generateStaticParams() {

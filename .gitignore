@@ -42,3 +42,5 @@ next-env.d.ts
 /src/preload/out
 /src/preload/node_modules
 /src/preload/docsContext.json
+/src/preload/flattenContext.json
+/src/preload/categoryUrlTable.json
