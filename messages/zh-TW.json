@@ -1,8 +1,9 @@
 {
-	"title": "CHITUBOX - 文檔",
+	"title": "CHITUBOX 文檔",
 	"description": "CHITUBOX 文檔",
 	"header": {
 		"title": "CHITUBOX 文檔",
+		"docs": "文檔",
 		"placeholder": "占位",
 		"about": "關於",
 		"languages": "語言",
@@ -115,6 +116,16 @@
 	"error": {
 		"pageNotFound": "找不到該頁面。",
 		"backHome": "返回首頁"
+	},
+	"components": {
+		"docsboard": {
+			"chitubox-baisc": "CHITUBOX Basic",
+			"chitubox-pro": "CHITUBOX Pro",
+			"chitu-manager": "ChituManager",
+			"chitubox-printing-test": "CHITUBOX 列印測試",
+			"faq": "常見問題",
+			"read-more": "閱讀更多"
+		}
 	},
 	"docComponents": {
 		"tsmc": {

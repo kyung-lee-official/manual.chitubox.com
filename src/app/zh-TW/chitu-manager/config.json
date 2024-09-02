@@ -1,33 +1,35 @@
 {
-	"docInstanceName": "ChituManager",
+	"fieldName": "ChituManager",
 	"isVersioned": true,
-	"versionedContexts": [
+	"type": "book",
+	"homeUrl": "/zh-TW/chitu-manager/latest/introduction",
+	"versions": [
 		{
-			"versionCode": "latest",
-			"versionNumber": "1.0.0",
-			"pagesContext": [
+			"versionCode": "1.0.0",
+			"isLatest": true,
+			"category": [
 				{
-					"item": "introduction",
+					"pageId": "introduction",
 					"label": "介绍"
 				},
 				{
-					"item": "ui-and-features",
+					"pageId": "ui-and-features",
 					"label": "界面和功能",
-					"subItems": [
+					"pages": [
 						{
-							"item": "network-sending",
+							"pageId": "network-sending",
 							"label": "網絡傳送"
 						},
 						{
-							"item": "printer-list",
+							"pageId": "printer-list",
 							"label": "打印机列表"
 						},
 						{
-							"item": "management",
+							"pageId": "management",
 							"label": "管理"
 						},
 						{
-							"item": "operations",
+							"pageId": "operations",
 							"label": "操作"
 						}
 					]

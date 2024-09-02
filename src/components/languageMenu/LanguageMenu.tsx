@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import { IoLanguage } from "../icons/Icons";
+"use client";
+
+import { useState } from "react";
+import { LanguageIcon } from "../icons/Icons";
 import { Link, usePathname } from "@/navigation";
 import { useMediaQuery } from "react-responsive";
 import { MediaQuery } from "@/utils/types";
@@ -23,9 +25,9 @@ const LanguageMenu = () => {
 	const pathname = usePathname();
 	const [showLanguageMenu, setShowLanguageMenu] = useState<boolean>(false);
 
-	const isDesktopOrLaptop = useMediaQuery({ query: MediaQuery.lg });
+	const is2xl = useMediaQuery({ query: MediaQuery["2xl"] });
 
-	if (isDesktopOrLaptop) {
+	if (is2xl) {
 		return (
 			<div className="relative w-8 h-8">
 				<div
@@ -41,7 +43,7 @@ const LanguageMenu = () => {
 							setShowLanguageMenu(true);
 						}}
 					>
-						<IoLanguage size={32} />
+						<LanguageIcon size={32} />
 					</button>
 					{showLanguageMenu && (
 						<ul

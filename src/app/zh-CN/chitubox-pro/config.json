@@ -1,205 +1,207 @@
 {
-	"docInstanceName": "CHITUBOX Pro",
+	"fieldName": "CHITUBOX Pro",
 	"isVersioned": true,
-	"versionedContexts": [
+	"type": "book",
+	"homeUrl": "/zh-CN/chitubox-pro/latest/introduction",
+	"versions": [
 		{
-			"versionCode": "latest",
-			"versionNumber": "2.0.0",
-			"pagesContext": [
+			"versionCode": "2.0.0",
+			"isLatest": true,
+			"category": [
 				{
-					"item": "introduction",
+					"pageId": "introduction",
 					"label": "介绍"
 				},
 				{
-					"item": "installation",
+					"pageId": "installation",
 					"label": "安装"
 				},
 				{
-					"item": "account-and-license",
+					"pageId": "account-and-license",
 					"label": "账号和密钥"
 				},
 				{
-					"item": "quick-start",
+					"pageId": "quick-start",
 					"label": "快速入门"
 				},
 				{
-					"item": "printer-management",
+					"pageId": "printer-management",
 					"label": "打印机管理",
-					"subItems": [
+					"pages": [
 						{
-							"item": "add-and-delete-printers",
+							"pageId": "add-and-delete-printers",
 							"label": "添加和删除打印机"
 						},
 						{
-							"item": "printer-configuration",
+							"pageId": "printer-configuration",
 							"label": "打印机设置"
 						}
 					]
 				},
 				{
-					"item": "file",
+					"pageId": "file",
 					"label": "文件"
 				},
 				{
-					"item": "model-processing",
+					"pageId": "model-processing",
 					"label": "模型处理"
 				},
 				{
-					"item": "analyze-and-measure",
+					"pageId": "analyze-and-measure",
 					"label": "分析/测量"
 				},
 				{
-					"item": "support",
+					"pageId": "support",
 					"label": "支撑",
-					"subItems": [
+					"pages": [
 						{
-							"item": "add-edit-delete",
+							"pageId": "add-edit-delete",
 							"label": "添加，编辑和删除"
 						},
 						{
-							"item": "support-configuration",
+							"pageId": "support-configuration",
 							"label": "支撑设置"
 						},
 						{
-							"item": "magic-support",
+							"pageId": "magic-support",
 							"label": "魔法支撑"
 						}
 					]
 				},
 				{
-					"item": "risk-detection",
+					"pageId": "risk-detection",
 					"label": "风险检测"
 				},
 				{
-					"item": "slice",
+					"pageId": "slice",
 					"label": "切片",
-					"subItems": [
+					"pages": [
 						{
-							"item": "slice-mode",
+							"pageId": "slice-mode",
 							"label": "切片模式"
 						},
 						{
-							"item": "slice-preview",
+							"pageId": "slice-preview",
 							"label": "切片预览"
 						}
 					]
 				},
 				{
-					"item": "chitu-action",
+					"pageId": "chitu-action",
 					"label": "ChituAction"
 				},
 				{
-					"item": "standard-library",
+					"pageId": "standard-library",
 					"label": "标准库"
 				},
 				{
-					"item": "user-interface",
+					"pageId": "user-interface",
 					"label": "用户界面",
-					"subItems": [
+					"pages": [
 						{
-							"item": "main-menu",
+							"pageId": "main-menu",
 							"label": "主菜单"
 						},
 						{
-							"item": "function-menu",
+							"pageId": "function-menu",
 							"label": "功能菜单"
 						},
 						{
-							"item": "component-list",
+							"pageId": "component-list",
 							"label": "组件列表"
 						},
 						{
-							"item": "gadgets",
+							"pageId": "gadgets",
 							"label": "小工具"
 						}
 					]
 				},
 				{
-					"item": "help-and-feedback",
+					"pageId": "help-and-feedback",
 					"label": "帮助和反馈"
 				}
 			]
 		},
 		{
-			"versionCode": "v1.4.1",
-			"versionNumber": "1.4.1",
-			"pagesContext": [
+			"versionCode": "1.4.1",
+			"isLatest": false,
+			"category": [
 				{
-					"item": "introduction",
+					"pageId": "introduction",
 					"label": "介绍"
 				},
 				{
-					"item": "comparison",
+					"pageId": "comparison",
 					"label": "比较"
 				},
 				{
-					"item": "requirements",
+					"pageId": "requirements",
 					"label": "要求"
 				},
 				{
-					"item": "setting-up",
+					"pageId": "setting-up",
 					"label": "上手",
-					"subItems": [
+					"pages": [
 						{
-							"item": "installation",
+							"pageId": "installation",
 							"label": "安装"
 						},
 						{
-							"item": "manage-your-account-and-license",
+							"pageId": "manage-your-account-and-license",
 							"label": "管理你的账号和许可"
 						},
 						{
-							"item": "update-printer-firmware",
+							"pageId": "update-printer-firmware",
 							"label": "更新打印机固件"
 						},
 						{
-							"item": "configure-print-parameters",
+							"pageId": "configure-print-parameters",
 							"label": "设置打印参数"
 						},
 						{
-							"item": "configure-support-parameters",
+							"pageId": "configure-support-parameters",
 							"label": "设置支撑参数"
 						}
 					]
 				},
 				{
-					"item": "application-overview",
+					"pageId": "application-overview",
 					"label": "软件概述",
-					"subItems": [
+					"pages": [
 						{
-							"item": "ui-introduction",
+							"pageId": "ui-introduction",
 							"label": "用户界面介绍"
 						},
 						{
-							"item": "start",
+							"pageId": "start",
 							"label": "开始"
 						},
 						{
-							"item": "prepare",
+							"pageId": "prepare",
 							"label": "准备"
 						},
 						{
-							"item": "repair",
+							"pageId": "repair",
 							"label": "修复"
 						},
 						{
-							"item": "support",
+							"pageId": "support",
 							"label": "支撑"
 						},
 						{
-							"item": "analyze-and-measure",
+							"pageId": "analyze-and-measure",
 							"label": "分析/测量"
 						},
 						{
-							"item": "setting-and-help",
+							"pageId": "setting-and-help",
 							"label": "设置/帮助"
 						},
 						{
-							"item": "slice",
+							"pageId": "slice",
 							"label": "切片"
 						},
 						{
-							"item": "slice-preview",
+							"pageId": "slice-preview",
 							"label": "切片预览"
 						}
 					]

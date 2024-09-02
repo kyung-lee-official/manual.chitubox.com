@@ -1,14 +1,14 @@
-"use client";
-
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import Subtitle from "./Subtitle";
 
 const DocsCard = (props: { href: string; title: string }) => {
+	const t = useTranslations("components.docsboard");
+
 	const { href, title } = props;
 	return (
 		<div
-			className="flex flex-col items-start p-8 gap-4
+			className="flex flex-col items-start p-6 gap-4
 			bg-white/50 dark:bg-neutral-800/60
 			rounded-xl hover:shadow-lg duration-200"
 		>
@@ -29,25 +29,14 @@ const DocsCard = (props: { href: string; title: string }) => {
 					{title}
 				</Link>
 			</div>
-			<Subtitle docInstanceName={title} />
+			<Subtitle fieldName={title} readMore={t("read-more")} />
 		</div>
 	);
 };
 
-const Docsboard = (props: {
-	chituboxBasic: string;
-	chituboxPro: string;
-	chituManager: string;
-	chituboxPrintingTest: string;
-	faq: string;
-}) => {
-	const {
-		chituboxBasic,
-		chituboxPro,
-		chituManager,
-		chituboxPrintingTest,
-		faq,
-	} = props;
+const Docsboard = () => {
+	const t = useTranslations("components.docsboard");
+
 	const locale = useLocale();
 	return (
 		<div
@@ -72,23 +61,23 @@ const Docsboard = (props: {
 			>
 				<DocsCard
 					href={`/${locale}/chitubox-basic/latest/introduction`}
-					title={chituboxBasic}
+					title={t("chitubox-baisc")}
 				/>
 				<DocsCard
 					href={`/${locale}/chitubox-pro/latest/introduction`}
-					title={chituboxPro}
+					title={t("chitubox-pro")}
 				/>
 				<DocsCard
 					href={`/${locale}/chitu-manager/latest/introduction`}
-					title={chituManager}
+					title={t("chitu-manager")}
 				/>
 				<DocsCard
 					href={`/${locale}/faq/latest/chitubox-basic-faq`}
-					title={faq}
+					title={t("faq")}
 				/>
 				<DocsCard
 					href={`/${locale}/chitubox-printing-test/latest/overview-of-the-standard-model`}
-					title={chituboxPrintingTest}
+					title={t("chitubox-printing-test")}
 				/>
 			</div>
 		</div>

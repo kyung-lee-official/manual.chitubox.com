@@ -1,33 +1,35 @@
 {
-	"docInstanceName": "ChituManager",
+	"fieldName": "ChituManager",
 	"isVersioned": true,
-	"versionedContexts": [
+	"type": "book",
+	"homeUrl": "/en-US/chitu-manager/latest/introduction",
+	"versions": [
 		{
-			"versionCode": "latest",
-			"versionNumber": "1.0.0",
-			"pagesContext": [
+			"versionCode": "1.0.0",
+			"isLatest": true,
+			"category": [
 				{
-					"item": "introduction",
+					"pageId": "introduction",
 					"label": "Introduction"
 				},
 				{
-					"item": "ui-and-features",
+					"pageId": "ui-and-features",
 					"label": "UI and Features",
-					"subItems": [
+					"pages": [
 						{
-							"item": "network-sending",
+							"pageId": "network-sending",
 							"label": "Network Sending"
 						},
 						{
-							"item": "printer-list",
+							"pageId": "printer-list",
 							"label": "Printer List"
 						},
 						{
-							"item": "management",
+							"pageId": "management",
 							"label": "Management"
 						},
 						{
-							"item": "operations",
+							"pageId": "operations",
 							"label": "Operations"
 						}
 					]

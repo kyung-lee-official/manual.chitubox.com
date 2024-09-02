@@ -4,13 +4,14 @@ import { createPortal } from "react-dom";
 import { DocsMenu } from "./DocsMenu";
 import { LanguageMenu } from "./LanguageMenu";
 import { DocsSearch } from "./DocsSearch";
-import { Instance } from "./Instance";
+import { FieldTitles } from "./FieldTitles";
 
 const MobileMenuModal = (props: {
+	docs: string;
 	showMenu: boolean;
 	setShowMenu: Dispatch<SetStateAction<boolean>>;
 }) => {
-	const { showMenu, setShowMenu } = props;
+	const { docs, showMenu, setShowMenu } = props;
 	const [headerHeight, setHeaderHeight] = useState("0px");
 
 	useEffect(() => {
@@ -52,14 +53,14 @@ const MobileMenuModal = (props: {
 							height: `calc(100vh - ${headerHeight})`,
 						}}
 					>
-						<div className="flex flex-col w-full gap-4">
-							<Instance />
-							<div
-								className="flex flex-col w-full gap-4 overflow-y-auto"
-								style={{
-									height: `calc(100vh - ${headerHeight} - 127px)`,
-								}}
-							>
+						<div
+							className="flex flex-col w-full gap-4 overflow-y-auto"
+							style={{
+								height: `calc(100vh - ${headerHeight} - 32px)` /* here 32px is the padding of the parent div */,
+							}}
+						>
+							<FieldTitles docs={docs} />
+							<div className="flex flex-col w-full gap-4">
 								<DocsSearch setShowMenu={setShowMenu} />
 								<DocsMenu setShowMenu={setShowMenu} />
 								<LanguageMenu />

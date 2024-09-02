@@ -17,7 +17,7 @@ export const metadata = {
 
 # 设置打印参数
 
-要配置打印参数，你需要先添加一台打印机，如果你还没添加打印机，点击 <NextLink href="/zh-CN/chitubox-pro/latest/application-overview/start#添加机器">这里</NextLink> 查看如何添加一台打印机。
+要配置打印参数，你需要先添加一台打印机，如果你还没添加打印机，点击 <Link href="/zh-CN/chitubox-pro/latest/application-overview/start#添加机器">这里</Link> 查看如何添加一台打印机。
 
 一台打印机可以添加多个切片配置文件，你可以在**切片设置列表**管理你的切片配置文件，你可以在这里添加，删除，导入，导出，以及重置你的切片配置文件。
 
@@ -54,7 +54,7 @@ export const metadata = {
 在这里设置你的打印参数。
 
 <Admonition type="note" title="注意">
-	目前只有部分打印机支持 **静止时间** 等待模式，点击<SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃这里</SpanA>查看机器兼容性表格。
+	目前只有部分打印机支持 **静止时间** 等待模式，点击<Link href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃这里</Link>查看机器兼容性表格。
 </Admonition>
 
 | 参数                                                             | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -65,7 +65,7 @@ export const metadata = {
 | 底层曝光时间                                                     | 底层的曝光时间。适当增加底层曝光时间有助于增加打印模型与打印平台的粘结强度                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | 过渡层数                                                         | 底层之后的过渡层数，使各层之间的粘合更紧密。除曝光时间外，过渡层的其他参数与正常层一致                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | 过渡类型                                                         | 设置从底层过渡到正常层时曝光时间的过渡类型                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| <NextLink href="#2-打印过程等待模式">打印过程等待模式</NextLink> | <NextLink href="#21-静止时间"><em>静止时间：</em></NextLink><ul><li>抬升前的静止时间: 打印曝光结束到打印平台开始远离曝光面的间隔时间差</li><li>抬升后的静止时间: 打印平台打印抬升后开始静止到开始回程的间隔时间差</li><li>回程后的静止时间: 打印平台运动至打印面开始静止到开始曝光的间隔时间差</li></ul><NextLink href="#22-灯灭延迟"><em>灯灭延迟：</em><br /></NextLink>灯灭延迟等于平台抬升时间，等待时间和回程时间的总时间<ul><li>灯灭延迟: 正常层的灯灭延迟，真正的机器灭灯时间 = max（z 轴上下移动的总时间， 配置的灭灯延迟）</li><li>底层灯灭延迟: 底层的灯灭延迟，真正的机器灭灯时间 = max（z 轴上下移动的总时间， 配置的灭灯延迟）</li></ul> |
+| <Link href="#2-打印过程等待模式">打印过程等待模式</Link> | <Link href="#21-静止时间"><em>静止时间：</em></Link><ul><li>抬升前的静止时间: 打印曝光结束到打印平台开始远离曝光面的间隔时间差</li><li>抬升后的静止时间: 打印平台打印抬升后开始静止到开始回程的间隔时间差</li><li>回程后的静止时间: 打印平台运动至打印面开始静止到开始曝光的间隔时间差</li></ul><Link href="#22-灯灭延迟"><em>灯灭延迟：</em><br /></Link>灯灭延迟等于平台抬升时间，等待时间和回程时间的总时间<ul><li>灯灭延迟: 正常层的灯灭延迟，真正的机器灭灯时间 = max（z 轴上下移动的总时间， 配置的灭灯延迟）</li><li>底层灯灭延迟: 底层的灯灭延迟，真正的机器灭灯时间 = max（z 轴上下移动的总时间， 配置的灭灯延迟）</li></ul> |
 | 底层抬升距离                                                     | 底层打印过程中，打印平台每次远离打印面的距离                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 抬升距离                                                         | 正常层打印过程中，打印平台每次远离打印面的距离                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | 底层回程距离                                                     | 底层打印过程中，打印平台的回程距离，没有充足理由的情况下不要改动                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -78,7 +78,7 @@ export const metadata = {
 #### 1. 二段运动控制 TSMC
 
 <Admonition type="note" title="注意">
-	目前只有部分打印机支持 **TSMC**，点击<SpanA href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃这里</SpanA>查看机器兼容性表格。
+	目前只有部分打印机支持 **TSMC**，点击<Link href="https://wkhvloo2kw.feishu.cn/docx/W9XedDtuqoHK2IxsicvccQthngf">📃这里</Link>查看机器兼容性表格。
 </Admonition>
 
 为了缩短打印时间，同时保证较高的打印成功率，CHITUBOX 将原本打印平台单一的上升下降速度分为两种速度，即**二段运动控制 TSMC (Two-Stage Motion Control)**，打印平台在远离打印面时，可以以相对较快的速度运动。
@@ -246,7 +246,7 @@ $$T_{LOD} \geq 5.998 + 2 + 2 \approx 10\ \text{秒}$$
 
 底层光强的脉冲宽度调制，范围从 `0` 到 `255`，控制底层曝光时 UV 光源的光强。
 
-单击 <SpanA href="https://baike.baidu.com/item/%E8%84%89%E5%86%B2%E5%AE%BD%E5%BA%A6%E8%B0%83%E5%88%B6">此处</SpanA> 了解有关 PWM 的更多信息。
+单击 <Link href="https://baike.baidu.com/item/%E8%84%89%E5%86%B2%E5%AE%BD%E5%BA%A6%E8%B0%83%E5%88%B6">此处</Link> 了解有关 PWM 的更多信息。
 
 #### 2. 光强 PWM
 
@@ -290,7 +290,7 @@ $$T_{LOD} \geq 5.998 + 2 + 2 \approx 10\ \text{秒}$$
 
     -   _图像模糊像素_：`2` ~ `8`，决定了边缘过渡像素的数量，等级越高，边缘越模糊。类似于 Photoshop 中的羽化功能。
 
-打开 <SpanA href="https://www.bilibili.com/video/BV1Wg41177jH?share_source=copy_web">📺 这条视频</SpanA> 和 <SpanA href="https://www.chitubox.com/zh-Hans/article/academy/advanced/pre-/52">📃 这篇文章</SpanA> 了解更多关于**抗锯齿**，**灰度**，和**图像模糊**的内容。
+打开 <Link href="https://www.bilibili.com/video/BV1Wg41177jH?share_source=copy_web">📺 这条视频</Link> 和 <Link href="https://www.chitubox.com/zh-Hans/article/academy/advanced/pre-/52">📃 这篇文章</Link> 了解更多关于**抗锯齿**，**灰度**，和**图像模糊**的内容。
 
 #### 5. 收缩补偿
 
@@ -306,7 +306,7 @@ a 的值越小，内径越大，模型实体越小。<br />
 b 为正值（补偿模型收缩部分），内径减小，模型实体增大。<br />
 b 为负值（补偿模型膨胀部分），内径增大，模型实体减小。
 
-打开 <SpanA href="https://www.bilibili.com/video/BV1tw411R7QB?share_source=copy_web">📺 这条视频</SpanA> 和 <SpanA href="https://www.chitubox.com/zh-Hans/article/support/howto/chitubox-free/settings/how-to-use-tolerance-compensation-on-chitubox">📃 这篇文章</SpanA> 了解更多关于**公差补偿**的内容。
+打开 <Link href="https://www.bilibili.com/video/BV1tw411R7QB?share_source=copy_web">📺 这条视频</Link> 和 <Link href="https://www.chitubox.com/zh-Hans/article/support/howto/chitubox-free/settings/how-to-use-tolerance-compensation-on-chitubox">📃 这篇文章</Link> 了解更多关于**公差补偿**的内容。
 
 #### 7. 底部公差补偿
 
@@ -350,8 +350,8 @@ b 为负值（补偿模型膨胀部分），内径增大，模型实体减小。
 
 蒙版是为了解决一个常见的光源问题而设计的：光源在屏幕上不同位置的光强不均匀，这通常是由于使用了不合适的光源所致，蒙版的目的是通过调节屏幕不同区域的透光率从而提供一层修正层，使得原本不均匀的光源变得均匀。
 
-_蒙版文件_： 你可以通过点击 `...` 图标来选择现有的文件，或者点击齿轮图标以使用 CHITUBOX 内置的 <NextLink href="#91-蒙版生成器">蒙版生成器</NextLink> 来生成一张蒙版图片。 <br />
-_灰度单位_：点击 <NextLink href="#92-灰度单位">此处</NextLink> 了解灰度单位。
+_蒙版文件_： 你可以通过点击 `...` 图标来选择现有的文件，或者点击齿轮图标以使用 CHITUBOX 内置的 <Link href="#91-蒙版生成器">蒙版生成器</Link> 来生成一张蒙版图片。 <br />
+_灰度单位_：点击 <Link href="#92-灰度单位">此处</Link> 了解灰度单位。
 
 ##### 9.1 蒙版生成器
 
@@ -459,7 +459,7 @@ $$\frac{800}{51} = 15$$，余数 35
 | 显示校正     | 为 DLP 打印机设计的功能，补偿校正由于光机安装方位偏差导致的投影图片的变形          |
 
 <Admonition type="note" title="注意">
-	点击<SpanA href="https://www.chitubox.com/zh/article/support/howto/chitubox-free/slicing/44">📃这里</SpanA>了解更多关于<b>镜像</b>的内容。
+	点击<Link href="https://www.chitubox.com/zh/article/support/howto/chitubox-free/slicing/44">📃这里</Link>了解更多关于<b>镜像</b>的内容。
 
 	**构建区域偏移**是为固化屏幕边缘存在坏点或者屏幕边缘部分作为非工作区域的情况设计的，设置偏移可以避开坏点。
 </Admonition>

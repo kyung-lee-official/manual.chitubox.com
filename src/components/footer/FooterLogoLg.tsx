@@ -5,9 +5,9 @@ import { useMediaQuery } from "react-responsive";
 import FooterLogo from "./FooterLogo";
 
 const FooterLogoLg = ({ size, fill }: any) => {
-	const isDesktopOrLaptop = useMediaQuery({ query: MediaQuery.lg });
+	const isLg = useMediaQuery({ query: MediaQuery.lg });
 
-	if (isDesktopOrLaptop) {
+	if (isLg) {
 		return (
 			<div className="flex items-center h-8 gap-4">
 				<FooterLogo />

@@ -1,57 +1,59 @@
 {
-	"docInstanceName": "CHITUBOX Basic",
+	"fieldName": "CHITUBOX Basic",
 	"isVersioned": true,
-	"versionedContexts": [
+	"type": "book",
+	"homeUrl": "/zh-TW/chitubox-basic/latest/introduction",
+	"versions": [
 		{
-			"versionCode": "latest",
-			"versionNumber": "2.1.0",
-			"pagesContext": [
+			"versionCode": "2.1.0",
+			"isLatest": true,
+			"category": [
 				{
-					"item": "introduction",
+					"pageId": "introduction",
 					"label": "介紹"
 				},
 				{
-					"item": "installation",
+					"pageId": "installation",
 					"label": "安裝"
 				},
 				{
-					"item": "quick-start",
+					"pageId": "quick-start",
 					"label": "快速入門"
 				},
 				{
-					"item": "ui-and-features",
+					"pageId": "ui-and-features",
 					"label": "界面和功能",
-					"subItems": [
+					"pages": [
 						{
-							"item": "menu",
+							"pageId": "menu",
 							"label": "菜單"
 						},
 						{
-							"item": "gadgets",
+							"pageId": "gadgets",
 							"label": "小工具"
 						},
 						{
-							"item": "operations",
+							"pageId": "operations",
 							"label": "操作"
 						},
 						{
-							"item": "file-list",
+							"pageId": "file-list",
 							"label": "檔案列表"
 						},
 						{
-							"item": "risk-detection",
+							"pageId": "risk-detection",
 							"label": "風險檢測"
 						},
 						{
-							"item": "configure-print-parameters",
+							"pageId": "configure-print-parameters",
 							"label": "設定列印參數"
 						},
 						{
-							"item": "configure-support-parameters",
+							"pageId": "configure-support-parameters",
 							"label": "設定支撐參數"
 						},
 						{
-							"item": "preview",
+							"pageId": "preview",
 							"label": "預覽"
 						}
 					]
@@ -59,61 +61,61 @@
 			]
 		},
 		{
-			"versionCode": "v1.9.5",
-			"versionNumber": "1.9.5",
-			"pagesContext": [
+			"versionCode": "1.9.5",
+			"isLatest": false,
+			"category": [
 				{
-					"item": "introduction",
+					"pageId": "introduction",
 					"label": "介紹"
 				},
 				{
-					"item": "comparison",
+					"pageId": "comparison",
 					"label": "比較"
 				},
 				{
-					"item": "requirements",
+					"pageId": "requirements",
 					"label": "要求"
 				},
 				{
-					"item": "setting-up",
+					"pageId": "setting-up",
 					"label": "上手",
-					"subItems": [
+					"pages": [
 						{
-							"item": "installation",
+							"pageId": "installation",
 							"label": "安裝"
 						},
 						{
-							"item": "update-printer-firmware",
+							"pageId": "update-printer-firmware",
 							"label": "更新列印機韌體"
 						},
 						{
-							"item": "configure-print-parameters",
+							"pageId": "configure-print-parameters",
 							"label": "設定列印參數"
 						},
 						{
-							"item": "configure-support-parameters",
+							"pageId": "configure-support-parameters",
 							"label": "設定支撐參數"
 						}
 					]
 				},
 				{
-					"item": "application-overview",
+					"pageId": "application-overview",
 					"label": "軟體概況",
-					"subItems": [
+					"pages": [
 						{
-							"item": "ui-introduction",
+							"pageId": "ui-introduction",
 							"label": "用戶界面介紹"
 						},
 						{
-							"item": "file",
+							"pageId": "file",
 							"label": "文件"
 						},
 						{
-							"item": "menu-bar",
+							"pageId": "menu-bar",
 							"label": "菜單欄"
 						},
 						{
-							"item": "slice-preview",
+							"pageId": "slice-preview",
 							"label": "切片預覽"
 						}
 					]

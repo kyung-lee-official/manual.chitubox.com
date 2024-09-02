@@ -1,18 +1,32 @@
+"use client";
+
 import { useState } from "react";
 import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 import { TbVersions } from "../icons/Icons";
 import { MediaQuery } from "@/utils/types";
-import { useDocsContext } from "@/utils/hooks";
+import { usePageContext } from "@/utils/hooks";
+import docsContext from "@/preload/docsContext.json";
+import { DocsContext } from "@/utils/types";
 
 const VersionDropdown = () => {
-	const { docInstanceContext } = useDocsContext();
-
 	const [showVersionMenu, setShowVersionMenu] = useState<boolean>(false);
 
-	const isDesktopOrLaptop = useMediaQuery({ query: MediaQuery.lg });
+	const is2xl = useMediaQuery({ query: MediaQuery["2xl"] });
 
-	if (isDesktopOrLaptop && docInstanceContext) {
+	const pageCtx = usePageContext();
+	if (!pageCtx) return null;
+	const { locale, fieldId, isVersioned } = pageCtx;
+	const localeCtx = (docsContext as DocsContext).find((localeCtx) => {
+		return localeCtx.locale === locale;
+	});
+	if (!localeCtx) return null;
+	const field = localeCtx.localizedFields.find((field) => {
+		return field.fieldId === fieldId;
+	});
+	if (!field) return null;
+
+	if (is2xl && isVersioned) {
 		return (
 			<div className="relative w-8 h-8">
 				<div
@@ -37,24 +51,21 @@ const VersionDropdown = () => {
 							border-[1px] border-neutral-200 dark:border-neutral-800
 							rounded-md"
 						>
-							{docInstanceContext.versionedContexts.map(
-								(versionedContext: any, i: any) => {
-									return (
-										<Link
-											href={
-												versionedContext.pagesContext[0]
-													.path
-											}
-											key={i}
-											className="w-full px-2 py-1
-											hover:bg-neutral-100 dark:hover:bg-neutral-800
-											rounded"
-										>
-											{versionedContext.versionCode}
-										</Link>
-									);
-								}
-							)}
+							{field.versions.map((version, i: any) => {
+								return (
+									<Link
+										href={version.category[0].url}
+										key={i}
+										className="w-full px-2 py-1
+										hover:bg-neutral-100 dark:hover:bg-neutral-800
+										rounded"
+									>
+										{version.isLatest
+											? "latest"
+											: version.versionCode}
+									</Link>
+								);
+							})}
 						</ul>
 					)}
 				</div>

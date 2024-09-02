@@ -56,28 +56,28 @@ Do this ✅:
 
 Styling `a` tag in _MDXComponent.tsx_ will lost the `href` property, the solution is to create a component to wrap the `a` tag.
 
-Use `SpanA` defined in _MDXComponent.tsx_ for external links, and `NextLink` for internal links.
+Use `Link` defined in _MDXComponent.tsx_ for external links, and `Link` for internal links.
 
 This may cause an error ❌:
 
 ```md
-<SpanA href="https://www.lipsum.com">
+<Link href="https://www.lipsum.com">
 	Lorem ipsum
-</SpanA> dolor sit amet, consectetur adipiscing elit.
+</Link> dolor sit amet, consectetur adipiscing elit.
 ```
 
 Inline (all content must be placed in a single line) ✅:
 
 ```md
-<SpanA href="https://www.lipsum.com">Lorem ipsum</SpanA> dolor sit amet, consectetur adipiscing elit.
+<Link href="https://www.lipsum.com">Lorem ipsum</Link> dolor sit amet, consectetur adipiscing elit.
 ```
 
 Paragraph ✅:
 
 ```md
-<SpanA href="https://www.lipsum.com">
+<Link href="https://www.lipsum.com">
 	Lorem ipsum
-</SpanA>
+</Link>
 ```
 
 Note: Prettier's auto-formating may cause syntax errors

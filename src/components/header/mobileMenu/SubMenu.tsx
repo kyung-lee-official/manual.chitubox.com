@@ -1,95 +1,94 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { SubMenuToggle } from "../../icons/Icons";
-import { CategoryContext } from "@/utils/types";
+import { SectionContextWithoutToc } from "@/utils/types";
 import _ from "lodash";
 
 export const SubMenu = (props: {
-	categoryContext: CategoryContext;
+	sectionCtx: SectionContextWithoutToc;
 	pathname: string;
 	openKeys: string[];
 	setOpenKeys: React.Dispatch<React.SetStateAction<string[]>>;
 	setShowMenu: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
-	const { categoryContext, pathname, openKeys, setOpenKeys, setShowMenu } =
-		props;
+	const { sectionCtx, pathname, openKeys, setOpenKeys, setShowMenu } = props;
 
 	const [hasActiveKey, setHasActiveKey] = useState(
-		categoryContext.path === pathname ||
-			categoryContext.subItems.some((subItem: any) => {
-				return subItem.path === pathname;
+		sectionCtx.url === pathname ||
+			sectionCtx.pages.some((subItem: any) => {
+				return subItem.url === pathname;
 			})
 	);
 
 	useEffect(() => {
 		setHasActiveKey(
-			categoryContext.path === pathname ||
-				categoryContext.subItems.some((subItem: any) => {
-					return subItem.path === pathname;
+			sectionCtx.url === pathname ||
+				sectionCtx.pages.some((subItem: any) => {
+					return subItem.url === pathname;
 				})
 		);
 
 		if (
-			categoryContext.path === pathname ||
-			categoryContext.subItems.some((subItem: any) => {
-				return subItem.path === pathname;
+			sectionCtx.url === pathname ||
+			sectionCtx.pages.some((subItem: any) => {
+				return subItem.url === pathname;
 			})
 		) {
-			setOpenKeys(_.uniq([...openKeys, categoryContext.path]));
+			setOpenKeys(_.uniq([...openKeys, sectionCtx.url]));
 		}
 	}, [pathname]);
 
 	return (
 		<div>
 			<Link
-				href={categoryContext.path}
+				href={sectionCtx.url}
 				className={`flex justify-between items-center py-2
 				${hasActiveKey && "text-blue-500 dark:text-sky-400"}
 				cursor-pointer`}
 				onClick={() => {
-					if (pathname === categoryContext.path) {
+					if (pathname === sectionCtx.url) {
 						setOpenKeys((prev) => {
-							if (prev.includes(categoryContext.path)) {
+							if (prev.includes(sectionCtx.url)) {
 								return prev.filter(
-									(key) => key !== categoryContext.path
+									(key) => key !== sectionCtx.url
 								);
 							} else {
-								return [...prev, categoryContext.path];
+								return [...prev, sectionCtx.url];
 							}
 						});
 					}
 				}}
 			>
-				<div>{categoryContext.label}</div>
+				<div>{sectionCtx.label}</div>
 				<div
 					className={`flex justify-center items-center
-					${openKeys.includes(categoryContext.path) && `transform rotate-90`}
+					${openKeys.includes(sectionCtx.url) && `transform rotate-90`}
 					duration-150`}
 				>
 					<SubMenuToggle size={24} />
 				</div>
 			</Link>
-			{openKeys.includes(categoryContext.path) && (
+			{openKeys.includes(sectionCtx.url) && (
 				<ul
 					className="flex flex-col list-none
 					border-t-[1px] border-solid border-neutral-200 dark:border-neutral-700"
 				>
-					{categoryContext.subItems.map((subItem: any, i: number) => {
+					{sectionCtx.pages.map((subItem: any, i: number) => {
 						return (
 							<Link
-								href={subItem.path}
-								key={subItem.path}
+								href={subItem.url}
+								key={subItem.url}
 								onClick={() => {
 									setShowMenu(false);
 								}}
 							>
 								<li
 									className={`pl-3 py-2
-									${subItem.path === pathname && "text-blue-500 dark:text-sky-400"}`}
+									${subItem.url === pathname && "text-blue-500 dark:text-sky-400"}`}
 								>
 									{subItem.label}
 								</li>
-								{i < categoryContext.subItems.length - 1 && (
+								{i < sectionCtx.pages.length - 1 && (
 									<hr className="ml-3 dark:border-neutral-700" />
 								)}
 							</Link>

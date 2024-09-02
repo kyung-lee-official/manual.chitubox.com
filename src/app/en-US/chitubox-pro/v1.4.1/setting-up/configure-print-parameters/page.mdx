@@ -17,7 +17,7 @@ export const metadata = {
 
 # Configure Print Parameters
 
-Add a printer before configure your print parameters. See <NextLink href="/en-US/chitubox-pro/latest/application-overview/start#add-machine">here</NextLink> on how to add a printer.
+Add a printer before configure your print parameters. See <Link href="/en-US/chitubox-pro/latest/application-overview/start#add-machine">here</Link> on how to add a printer.
 
 One printer can store multiple slicing configuration profiles. You can manage your profiles in the **Slicing Profile Panel**, where you can add, delete, import, export, and reset your profiles.
 
@@ -52,7 +52,7 @@ Set your resin type, density, and cost here.
 Set your print parameters here.
 
 <Admonition type="note">
-	Not all printers support **Resting Time** waiting mode. Read the <SpanA href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃full compatibility list</SpanA> here.
+	Not all printers support **Resting Time** waiting mode. Read the <Link href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃full compatibility list</Link> here.
 </Admonition>
 
 | Parameter                                                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -76,7 +76,7 @@ Set your print parameters here.
 #### 1 TSMC
 
 <Admonition type="note">
-	Not all printers support **TSMC**. Read the <SpanA href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃full compatibility list</SpanA> here.
+	Not all printers support **TSMC**. Read the <Link href="https://wkhvloo2kw.feishu.cn/docx/Q5nbdGSnfo5EbAxgEwKccN0Rnxe">📃full compatibility list</Link> here.
 </Admonition>
 
 In order to shorten the printing time and ensure a higher printing success rate, CHITUBOX divides the original constant speed into two speed segments, a.k.a **TSMC (Two-Stage Motion Control)**. When the printing platform is moving away from the printing face, it is allowed to move at a faster speed.
@@ -250,7 +250,7 @@ Modify editable fields to get **Light-off Delay**.
 
 Light PWM for bottom layers, from ` 0` to ` 255` , controls the power of the UV light source for bottom layers.
 
-Click <SpanA href="https://en.wikipedia.org/wiki/Pulse-width_modulation">here</SpanA> to learn more information about PWM.
+Click <Link href="https://en.wikipedia.org/wiki/Pulse-width_modulation">here</Link> to learn more information about PWM.
 
 #### 2. Light PWM
 
@@ -299,7 +299,7 @@ Anti-aliasting softens the triangular sawtooth of image edge to achieve smoother
         	be. Similar to the feather function in Photoshop.
         </span>
 
-Open <SpanA href="https://youtu.be/ihITNQetn94">📺this video</SpanA> and <SpanA href="https://www.chitubox.com/en/article/academy/advanced/pre-/52">📃this article</SpanA> to learn more about **Anti-aliasing**, **Grayscale**, and **Image Blur**.
+Open <Link href="https://youtu.be/ihITNQetn94">📺this video</Link> and <Link href="https://www.chitubox.com/en/article/academy/advanced/pre-/52">📃this article</Link> to learn more about **Anti-aliasing**, **Grayscale**, and **Image Blur**.
 
 #### 5. Shrinkage Compensation
 
@@ -324,7 +324,7 @@ When b is smaller, the outer diameter is shorter, and the model body is smaller.
 _Parity Compensation_ : Shrink designated value, effect on even layers only.
 This will expand the layer if a negative value was specified.
 
-Open <SpanA href="https://youtu.be/iYKVPmmoUUo">📺this video</SpanA> and <SpanA href="https://www.chitubox.com/en/article/academy/tutorial/chitubox-free/manual/how-to-use-tolerance-compensation-on-chitubox">📃this article</SpanA> to learn more about **Tolerance Compensation**.
+Open <Link href="https://youtu.be/iYKVPmmoUUo">📺this video</Link> and <Link href="https://www.chitubox.com/en/article/academy/tutorial/chitubox-free/manual/how-to-use-tolerance-compensation-on-chitubox">📃this article</Link> to learn more about **Tolerance Compensation**.
 
 #### 7. Bottom Tolerance Compensation
 
@@ -372,9 +372,9 @@ Some high-resolution printers can have extra delays when loading data and will l
 
 Mask is designed to solve a common light source issue of uneven light strength at different spots of the screen. The issue is usually caused by improper light sources. The purpose of the mask is to provide a correction layer on the screen by adjusting the transmittance on different areas of the screen respectively, making the uneven light homogeneous.
 
-_Mask File_ : You can select an existing image by clicking `...` icon or create a new one using CHITUBOX's built-in <NextLink href="#91-mask-generator">mask generator</NextLink> by clicking the gear icon.
+_Mask File_ : You can select an existing image by clicking `...` icon or create a new one using CHITUBOX's built-in <Link href="#91-mask-generator">mask generator</Link> by clicking the gear icon.
 
-_Gray scale unit_ : click <NextLink href="#92-gray-scale-unit">here</NextLink> to learn more about gray scale unit.
+_Gray scale unit_ : click <Link href="#92-gray-scale-unit">here</Link> to learn more about gray scale unit.
 
 ##### 9.1 Mask Generator
 
@@ -480,7 +480,7 @@ This remaining pixels' grey sclae will be the average of 35 pixels of the same s
 | Display Correction | Designed for DLP printers, corrects the deformation of projected image caused by position deviation of the projector during installation |
 
 <Admonition type="note">
-	Learn more about **Mirror** <SpanA href="https://www.chitubox.com/docs/en-US/chitubox/howto/chitubox-free/slicing/44">📃here</SpanA>. <br />
+	Learn more about **Mirror** <Link href="https://www.chitubox.com/docs/en-US/chitubox/howto/chitubox-free/slicing/44">📃here</Link>. <br />
 
     **Build Area Offset** is designed for the case when there are bad points in the edge area of your printer's curing screen, or when parts of the edge are non-working areas. Build Area Offset is used to avoid those areas.
 </Admonition>

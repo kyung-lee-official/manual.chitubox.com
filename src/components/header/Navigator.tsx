@@ -2,11 +2,10 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { BasicLogo2022 } from "../icons/Icons";
 import ThemeSwitch from "../icons/ThemeSwitch";
-import { usePathname } from "next/navigation";
-import { OramaSearch } from "../orama/search/OramaSearch";
+import { useTranslations } from "next-intl";
 
-const DynamicInstanceTitles = dynamic(
-	() => import("@/components/header/InstanceTitles"),
+const DynamicFieldTitles = dynamic(
+	() => import("@/components/header/FieldTitles"),
 	{
 		ssr: false,
 	}
@@ -41,43 +40,29 @@ const DynamicMobileMenuEntry = dynamic(
 );
 
 export const Navigator = (props: any) => {
-	const pathname = usePathname();
-
-	const oramaRules =
-		pathname === "/en-US" ||
-		pathname.includes("/en-US/chitubox-basic/latest");
-
+	const t = useTranslations();
 	return (
-		<div
+		<nav
 			className={`flex justify-between items-center h-16
-			px-4 
-			sm:px-6
-			md:px-10
-			lg:px-10
-			xl:px-20
+			px-4 lg:px-16
 			gap-4 lg:gap-10
 			text-neutral-800 dark:text-neutral-200
 			bg-white dark:bg-black
 			border-b-[1px] border-solid border-neutral-200 dark:border-neutral-800`}
 		>
-			<Link href="/">
+			<Link href="/" className="flex items-center gap-4">
 				<BasicLogo2022 size={40} />
+				<div className="text-xl">{t("title")}</div>
 			</Link>
-			{/* <Link
-				href="/"
-				className="flex justify-center items-center gap-2 no-underline"
-			>
-				{t("title")}
-			</Link> */}
-			<DynamicInstanceTitles />
+			<DynamicFieldTitles />
 			<div className="flex-1" /> {/* Placeholder */}
 			<div className="flex gap-6">
-				{oramaRules ? <OramaSearch /> : <DynamicDocsSearch />}
+				<DynamicDocsSearch />
 				<DynamicVersionDropdown />
 				<ThemeSwitch />
 				<DynamicLanguageMenu />
 			</div>
-			<DynamicMobileMenuEntry />
-		</div>
+			<DynamicMobileMenuEntry docs={t("header.docs")} />
+		</nav>
 	);
 };

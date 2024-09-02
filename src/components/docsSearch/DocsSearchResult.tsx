@@ -4,9 +4,9 @@ import { useMediaQuery } from "react-responsive";
 
 const DocsSearchResult: React.FC<any> = ({ searchResults }) => {
 	const router = useRouter();
-	const isDesktopOrLaptop = useMediaQuery({ query: MediaQuery.lg });
+	const isLg = useMediaQuery({ query: MediaQuery.lg });
 
-	if (isDesktopOrLaptop) {
+	if (isLg) {
 		if (searchResults.length > 0) {
 			return (
 				<div

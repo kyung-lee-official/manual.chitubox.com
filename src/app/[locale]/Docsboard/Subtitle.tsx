@@ -1,32 +1,48 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import docsContext from "../../../preload/docsContext.json";
-import { DocsContext } from "@/utils/types";
+import docsContext from "@/preload/docsContext.json";
+import { DocsContext, ItemContext, VersionedContext } from "@/utils/types";
 import Link from "next/link";
 
-const Subtitle = (props: { docInstanceName: string }) => {
-	const { docInstanceName } = props;
+const Subtitle = (props: { fieldName: string; readMore: string }) => {
+	const { fieldName, readMore } = props;
 	const locale = useLocale();
-	const localizedContext = (docsContext as DocsContext).find((doc) => {
-		return doc.locale === locale;
+	const localeCtx = (docsContext as DocsContext).find((localeCtx) => {
+		return localeCtx.locale === locale;
 	});
-	if (!localizedContext) {
+	if (!localeCtx) {
 		return null;
 	}
-	const docInstance = localizedContext.localizedDocInstances.find(
-		(docInstance) => docInstance.docInstanceName === docInstanceName
+	const field = localeCtx.localizedFields.find(
+		(field) => field.fieldName === fieldName
 	);
-	if (!docInstance) {
+	if (!field) {
 		return null;
 	}
-	const latestVersion = docInstance.versionedContexts.find((version) => {
-		return version.versionCode === "latest";
-	});
-	if (!latestVersion) {
+	let versionCtx: VersionedContext | undefined;
+	if (field.isVersioned) {
+		/* Versioned */
+		versionCtx = field.versions.find((version) => {
+			return version.isLatest;
+		});
+	} else {
+		/* Not versioned */
+		versionCtx = field.versions[0];
+	}
+	if (!versionCtx) {
 		return null;
 	}
-	const { pagesContext } = latestVersion;
+
+	const { category } = versionCtx;
+	const maxItems = 5;
+	let trimmedCategory: ItemContext[] = [];
+	const isTrimmed = category.length > maxItems;
+	if (category.length > maxItems) {
+		trimmedCategory = category.slice(0, maxItems);
+	} else {
+		trimmedCategory = category;
+	}
 
 	return (
 		<div
@@ -38,13 +54,12 @@ const Subtitle = (props: { docInstanceName: string }) => {
 			text-neutral-500
 			dark:text-neutral-400"
 		>
-			{pagesContext.map((item) => {
+			{trimmedCategory.map((item) => {
 				return (
 					<Link
-						key={item.path}
-						href={item.path}
-						className="
-						hover:text-neutral-800
+						key={item.url}
+						href={item.url}
+						className="hover:text-neutral-800
 						dark:hover:text-neutral-300
 						duration-200"
 					>
@@ -52,6 +67,17 @@ const Subtitle = (props: { docInstanceName: string }) => {
 					</Link>
 				);
 			})}
+			{isTrimmed && (
+				<Link
+					href={trimmedCategory[0].url}
+					className="flex justify-end
+					hover:text-neutral-800
+					dark:hover:text-neutral-300
+					duration-200"
+				>
+					{readMore}
+				</Link>
+			)}
 		</div>
 	);
 };

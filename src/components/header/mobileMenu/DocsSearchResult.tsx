@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { Block } from "./Block";
 import { Dispatch, SetStateAction } from "react";
+import { FlattenPage } from "@/utils/types";
 
 export const DocsSearchResult = (props: {
-	searchResults: any;
+	searchResults: FlattenPage[];
 	setShowMenu: Dispatch<SetStateAction<boolean>>;
 }) => {
 	const { searchResults, setShowMenu } = props;
@@ -11,11 +12,11 @@ export const DocsSearchResult = (props: {
 	if (searchResults.length > 0) {
 		return (
 			<Block>
-				{searchResults.map((result: any, i: number) => {
-					const { label, path } = result;
+				{searchResults.map((result, i: number) => {
+					const { label, url } = result;
 					if (i < searchResults.length - 1) {
 						return (
-							<Link href={path} key={path}>
+							<Link href={url} key={url}>
 								<div
 									className="flex justify-start items-center py-2"
 									onClick={() => {
@@ -30,8 +31,8 @@ export const DocsSearchResult = (props: {
 					} else {
 						return (
 							<Link
-								href={path}
-								key={path}
+								href={url}
+								key={url}
 								className="flex justify-start items-center py-2"
 								onClick={() => {
 									setShowMenu(false);

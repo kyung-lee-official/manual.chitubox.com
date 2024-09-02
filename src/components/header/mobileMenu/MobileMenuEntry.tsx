@@ -6,12 +6,13 @@ import { useMediaQuery } from "react-responsive";
 import { MediaQuery } from "@/utils/types";
 import MobileMenuModal from "./MobileMenuModal";
 
-export const MobileMenuEntry = () => {
+export const MobileMenuEntry = (props: { docs: string }) => {
 	const [showMenu, setShowMenu] = useState<boolean>(false);
+	const { docs } = props;
 
-	const isDesktopOrLaptop = useMediaQuery({ query: MediaQuery.lg });
+	const is2xl = useMediaQuery({ query: MediaQuery["2xl"] });
 
-	if (isDesktopOrLaptop) {
+	if (is2xl) {
 		return null;
 	} else {
 		return (
@@ -28,6 +29,7 @@ export const MobileMenuEntry = () => {
 					)}
 				</button>
 				<MobileMenuModal
+					docs={docs}
 					showMenu={showMenu}
 					setShowMenu={setShowMenu}
 				/>

@@ -1,57 +1,59 @@
 {
-	"docInstanceName": "CHITUBOX Basic",
+	"fieldName": "CHITUBOX Basic",
 	"isVersioned": true,
-	"versionedContexts": [
+	"type": "book",
+	"homeUrl": "/en-US/chitubox-basic/latest/introduction",
+	"versions": [
 		{
-			"versionCode": "latest",
-			"versionNumber": "2.1.0",
-			"pagesContext": [
+			"versionCode": "2.1.0",
+			"isLatest": true,
+			"category": [
 				{
-					"item": "introduction",
+					"pageId": "introduction",
 					"label": "Introduction"
 				},
 				{
-					"item": "installation",
+					"pageId": "installation",
 					"label": "Installation"
 				},
 				{
-					"item": "quick-start",
+					"pageId": "quick-start",
 					"label": "Quick Start"
 				},
 				{
-					"item": "ui-and-features",
+					"pageId": "ui-and-features",
 					"label": "UI And Features",
-					"subItems": [
+					"pages": [
 						{
-							"item": "menu",
+							"pageId": "menu",
 							"label": "Menu"
 						},
 						{
-							"item": "gadgets",
+							"pageId": "gadgets",
 							"label": "Gadgets"
 						},
 						{
-							"item": "operations",
+							"pageId": "operations",
 							"label": "Operations"
 						},
 						{
-							"item": "file-list",
+							"pageId": "file-list",
 							"label": "File List"
 						},
 						{
-							"item": "risk-detection",
+							"pageId": "risk-detection",
 							"label": "Risk Detection"
 						},
 						{
-							"item": "configure-print-parameters",
+							"pageId": "configure-print-parameters",
 							"label": "Configure Print Parameters"
 						},
 						{
-							"item": "configure-support-parameters",
+							"pageId": "configure-support-parameters",
 							"label": "Configure Support Parameters"
 						},
 						{
-							"item": "preview",
+							"pageId": "preview",
 							"label": "Preview"
 						}
 					]
@@ -59,61 +61,61 @@
 			]
 		},
 		{
-			"versionCode": "v1.9.5",
-			"versionNumber": "1.9.5",
-			"pagesContext": [
+			"versionCode": "1.9.5",
+			"isLatest": false,
+			"category": [
 				{
-					"item": "introduction",
+					"pageId": "introduction",
 					"label": "Introduction"
 				},
 				{
-					"item": "comparison",
+					"pageId": "comparison",
 					"label": "Comparison"
 				},
 				{
-					"item": "requirements",
+					"pageId": "requirements",
 					"label": "Requirements"
 				},
 				{
-					"item": "setting-up",
+					"pageId": "setting-up",
 					"label": "Setting Up",
-					"subItems": [
+					"pages": [
 						{
-							"item": "installation",
+							"pageId": "installation",
 							"label": "Installation"
 						},
 						{
-							"item": "update-printer-firmware",
+							"pageId": "update-printer-firmware",
 							"label": "Update Printer Firmware"
 						},
 						{
-							"item": "configure-print-parameters",
+							"pageId": "configure-print-parameters",
 							"label": "Configure Print Parameters"
 						},
 						{
-							"item": "configure-support-parameters",
+							"pageId": "configure-support-parameters",
 							"label": "Configure Support Parameters"
 						}
 					]
 				},
 				{
-					"item": "application-overview",
+					"pageId": "application-overview",
 					"label": "Application Overview",
-					"subItems": [
+					"pages": [
 						{
-							"item": "ui-introduction",
+							"pageId": "ui-introduction",
 							"label": "UI Introduction"
 						},
 						{
-							"item": "file",
+							"pageId": "file",
 							"label": "File"
 						},
 						{
-							"item": "menu-bar",
+							"pageId": "menu-bar",
 							"label": "Menu Bar"
 						},
 						{
-							"item": "slice-preview",
+							"pageId": "slice-preview",
 							"label": "Slice Preview"
 						}
 					]

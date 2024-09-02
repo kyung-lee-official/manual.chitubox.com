@@ -1,4 +1,4 @@
-export const ImageContainer: React.FC<any> = (props: any) => {
+export const ImageContainer = (props: any) => {
 	const { src, alt, style } = props;
 	return (
 		<div

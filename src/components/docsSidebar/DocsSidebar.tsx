@@ -19,9 +19,9 @@ const DocsSidebar = () => {
 		return () => resizeObserver.disconnect(); /* clean up */
 	}, []);
 
-	const isDesktopOrLaptop = useMediaQuery({ query: MediaQuery.lg });
+	const isLg = useMediaQuery({ query: MediaQuery.lg });
 
-	if (isDesktopOrLaptop) {
+	if (isLg) {
 		return (
 			<div
 				className="flex-[0_0_300px]

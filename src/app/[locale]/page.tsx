@@ -1,8 +1,7 @@
-import { Locale } from "../../../messages/Locale";
 import dynamic from "next/dynamic";
 import Docsboard from "./Docsboard/Docsboard";
-import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
+import { Locale } from "@/utils/types";
 
 const DynamicHero = dynamic(() => import("./hero/Hero"), {
 	ssr: false,
@@ -11,8 +10,6 @@ const DynamicHero = dynamic(() => import("./hero/Hero"), {
 export default function Page(props: { params: { locale: Locale } }) {
 	const { locale } = props.params;
 	unstable_setRequestLocale(locale);
-
-	const t = useTranslations("footer");
 
 	return (
 		<div
@@ -29,13 +26,7 @@ export default function Page(props: { params: { locale: Locale } }) {
 				dark:bg-[radial-gradient(circle_at_20%_20%,#d946ef33,transparent_500px),radial-gradient(circle_at_80%_20%,#0369a144,transparent_600px)]"
 			>
 				<DynamicHero />
-				<Docsboard
-					chituboxBasic={"CHITUBOX Basic"}
-					chituboxPro={"CHITUBOX Pro"}
-					chituManager={"ChituManager"}
-					chituboxPrintingTest={t("chituboxPrintingTestDoc")}
-					faq={t("faqDoc")}
-				/>
+				<Docsboard />
 			</div>
 		</div>
 	);

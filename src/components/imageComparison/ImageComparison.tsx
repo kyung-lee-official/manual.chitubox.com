@@ -1,12 +1,7 @@
 import React from "react";
 import { Image } from "antd";
 
-export const ImageComparison: React.FC<any> = ({
-	img1Src,
-	text1,
-	img2Src,
-	text2,
-}) => {
+export const ImageComparison = ({ img1Src, text1, img2Src, text2 }: any) => {
 	return (
 		<div className="w-full max-w-[1000px]">
 			<div className="flex gap-4">

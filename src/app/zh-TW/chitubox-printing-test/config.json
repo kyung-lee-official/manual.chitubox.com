@@ -1,43 +1,45 @@
 {
-	"docInstanceName": "CHITUBOX 列印測試",
+	"fieldName": "CHITUBOX 列印測試",
 	"isVersioned": true,
-	"versionedContexts": [
+	"type": "book",
+	"homeUrl": "/zh-TW/chitubox-printing-test/latest/introduction",
+	"versions": [
 		{
-			"versionCode": "latest",
-			"versionNumber": "1.0.0",
-			"pagesContext": [
+			"versionCode": "1.0.0",
+			"isLatest": true,
+			"category": [
 				{
-					"item": "overview-of-the-standard-model",
+					"pageId": "overview-of-the-standard-model",
 					"label": "标准模型概述"
 				},
 				{
-					"item": "test-preparation",
+					"pageId": "test-preparation",
 					"label": "列印測試",
-					"subItems": [
+					"pages": [
 						{
-							"item": "printing-preparation-conditions",
+							"pageId": "printing-preparation-conditions",
 							"label": "列印準備條件"
 						},
 						{
-							"item": "model-printing-and-post-print-processing",
+							"pageId": "model-printing-and-post-print-processing",
 							"label": "模型列印及列印後處理"
 						},
 						{
-							"item": "data-recording",
+							"pageId": "data-recording",
 							"label": "數據記錄"
 						}
 					]
 				},
 				{
-					"item": "analysis",
+					"pageId": "analysis",
 					"label": "分析",
-					"subItems": [
+					"pages": [
 						{
-							"item": "printing-preparation",
+							"pageId": "printing-preparation",
 							"label": "列印前準備"
 						},
 						{
-							"item": "result-assessment",
+							"pageId": "result-assessment",
 							"label": "列印效果評定"
 						}
 					]

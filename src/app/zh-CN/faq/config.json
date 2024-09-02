@@ -1,31 +1,33 @@
 {
-	"docInstanceName": "常见问题",
+	"fieldName": "常见问题",
 	"isVersioned": true,
-	"versionedContexts": [
+	"type": "book",
+	"homeUrl": "/zh-CN/faq/latest/chitubox-basic-faq",
+	"versions": [
 		{
-			"versionCode": "latest",
-			"versionNumber": "latest",
-			"pagesContext": [
+			"versionCode": "2.x.x",
+			"isLatest": true,
+			"category": [
 				{
-					"item": "chitubox-basic-faq",
+					"pageId": "chitubox-basic-faq",
 					"label": "CHITUBOX Basic 常见问题"
 				},
 				{
-					"item": "chitubox-pro-faq",
+					"pageId": "chitubox-pro-faq",
 					"label": "CHITUBOX Pro 常见问题"
 				},
 				{
-					"item": "chitu-manager-faq",
+					"pageId": "chitu-manager-faq",
 					"label": "ChituManager 常见问题"
 				}
 			]
 		},
 		{
-			"versionCode": "v1.x.x",
-			"versionNumber": "1.x.x",
-			"pagesContext": [
+			"versionCode": "1.x.x",
+			"isLatest": false,
+			"category": [
 				{
-					"item": "chitubox-basic-faq",
+					"pageId": "chitubox-basic-faq",
 					"label": "CHITUBOX Basic 常见问题"
 				}
 			]

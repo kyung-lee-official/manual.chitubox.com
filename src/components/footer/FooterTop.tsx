@@ -12,8 +12,8 @@ import {
 } from "../icons/Sns";
 
 const FooterTop = () => {
-	const isDesktopOrLaptop = useMediaQuery({ query: MediaQuery.lg });
-	if (isDesktopOrLaptop) {
+	const isLg = useMediaQuery({ query: MediaQuery.lg });
+	if (isLg) {
 		return null;
 	} else {
 		return (

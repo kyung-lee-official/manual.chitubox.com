@@ -29,11 +29,11 @@ const VerticalVideoContainerForDesktop = (props: any) => {
 };
 
 const FacebookVideoContainer: React.FC<any> = ({ children }) => {
-	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1280px)" });
-	const [isDesktop, setIsDesktop] = useState(isDesktopOrLaptop);
+	const isLg = useMediaQuery({ query: "(min-width: 1280px)" });
+	const [isDesktop, setIsDesktop] = useState(isLg);
 	useEffect(() => {
-		setIsDesktop(isDesktopOrLaptop);
-	}, [isDesktopOrLaptop]);
+		setIsDesktop(isLg);
+	}, [isLg]);
 
 	if (isDesktop) {
 		if (children.props.width > children.props.height) {

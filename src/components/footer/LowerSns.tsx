@@ -11,9 +11,9 @@ import { useMediaQuery } from "react-responsive";
 import { MediaQuery } from "@/utils/types";
 
 const LowerSns = () => {
-	const isDesktopOrLaptop = useMediaQuery({ query: MediaQuery.lg });
+	const isLg = useMediaQuery({ query: MediaQuery.lg });
 
-	if (isDesktopOrLaptop) {
+	if (isLg) {
 		return (
 			<div className="flex items-center gap-4">
 				<a href="https://discord.com/invite/E45UFqGPZh">

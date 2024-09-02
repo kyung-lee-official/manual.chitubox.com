@@ -2,7 +2,7 @@ import { getFlattenToc } from "@/utils/data";
 import { useState, useMemo, useCallback, useRef, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import _ from "lodash";
-import { useDocsContext } from "@/utils/hooks";
+import { usePageContext } from "@/utils/hooks";
 
 const TocHeading = (props: any) => {
 	const { isActive, depth, children } = props;
@@ -16,19 +16,18 @@ const TocHeading = (props: any) => {
 	);
 };
 
-export const TocHeadings = (props: any) => {
-	const { headerHeight } = props;
-	const { pageContext } = useDocsContext();
+function Content(props: { toc: any; headerHeight: any }) {
+	const { toc, headerHeight } = props;
 
 	const [activeTocItem, setActiveTocItem] = useState("");
 	const h2H3Toc = useMemo(() => {
-		const flattenToc = getFlattenToc(pageContext?.toc);
+		const flattenToc = getFlattenToc(toc);
 		if (flattenToc) {
 			return flattenToc.filter((heading: any) => {
 				return heading.depth === 2 || heading.depth === 3;
 			});
 		}
-	}, [pageContext]);
+	}, [toc]);
 	const h2H3TocIds = useMemo(() => {
 		if (h2H3Toc) {
 			return h2H3Toc.map((heading: any) => heading.id);
@@ -140,4 +139,12 @@ export const TocHeadings = (props: any) => {
 			</div>
 		</div>
 	);
+}
+
+export const TocHeadings = (props: any) => {
+	const { headerHeight } = props;
+	const pageCtx = usePageContext();
+	if (!pageCtx) return null;
+	const { toc } = pageCtx;
+	return <Content toc={toc} headerHeight={headerHeight} />;
 };

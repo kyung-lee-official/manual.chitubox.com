@@ -1,43 +1,45 @@
 {
-	"docInstanceName": "CHITUBOX Printing Test",
+	"fieldName": "CHITUBOX Printing Test",
 	"isVersioned": true,
-	"versionedContexts": [
+	"type": "book",
+	"homeUrl": "/en-US/chitubox-printing-test/latest/overview-of-the-standard-model",
+	"versions": [
 		{
-			"versionCode": "latest",
-			"versionNumber": "1.0.0",
-			"pagesContext": [
+			"versionCode": "1.0.0",
+			"isLatest": true,
+			"category": [
 				{
-					"item": "overview-of-the-standard-model",
+					"pageId": "overview-of-the-standard-model",
 					"label": "Overview of the Standard Model"
 				},
 				{
-					"item": "test-preparation",
+					"pageId": "test-preparation",
 					"label": "Test Preparation",
-					"subItems": [
+					"pages": [
 						{
-							"item": "printing-preparation-conditions",
+							"pageId": "printing-preparation-conditions",
 							"label": "Printing Preparation Conditions"
 						},
 						{
-							"item": "model-printing-and-post-print-processing",
+							"pageId": "model-printing-and-post-print-processing",
 							"label": "Model Printing And Post-Print Processing"
 						},
 						{
-							"item": "data-recording",
+							"pageId": "data-recording",
 							"label": "Data Recording"
 						}
 					]
 				},
 				{
-					"item": "analysis",
+					"pageId": "analysis",
 					"label": "Analysis",
-					"subItems": [
+					"pages": [
 						{
-							"item": "printing-preparation",
+							"pageId": "printing-preparation",
 							"label": "Printing Preparation"
 						},
 						{
-							"item": "result-assessment",
+							"pageId": "result-assessment",
 							"label": "Result Assessment"
 						}
 					]

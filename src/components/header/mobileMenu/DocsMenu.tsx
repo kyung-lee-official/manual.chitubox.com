@@ -5,29 +5,37 @@ import { Dispatch, SetStateAction, useState } from "react";
 import { usePathname } from "next/navigation";
 import { SubMenu } from "./SubMenu";
 import { Block } from "./Block";
-import { useDocsContext } from "@/utils/hooks";
+import categoryUrlTable from "@/preload/categoryUrlTable.json";
+import { CategoryUrlMap } from "@/utils/types";
+import { usePageContext } from "@/utils/hooks";
 
 export const DocsMenu = (props: {
 	setShowMenu: Dispatch<SetStateAction<boolean>>;
 }) => {
-	const { setShowMenu } = props;
-
 	const pathname = usePathname();
-	const { docInstanceContext, versionedContext } = useDocsContext();
+	const category = (categoryUrlTable as CategoryUrlMap[]).find((cat) => {
+		return cat.urls.some((url) => {
+			return url === pathname;
+		});
+	});
+	const pageCtx = usePageContext();
+
+	const { setShowMenu } = props;
 
 	/* Set activeKey and openKey for Menu. */
 	const [openKeys, setOpenKeys] = useState<string[]>([]);
 
-	if (docInstanceContext) {
+	if (category && pageCtx?.type === "book") {
 		return (
 			<Block>
-				{versionedContext.pagesContext.map((item: any, i: number) => {
-					if (i < versionedContext.pagesContext.length - 1) {
-						if (item.subItems) {
+				{category.catWithoutToc.map((item, i: number) => {
+					if (i < category.catWithoutToc.length - 1) {
+						if ("pages" in item) {
+							/* Is a section */
 							return (
-								<div key={item.path}>
+								<div key={i}>
 									<SubMenu
-										categoryContext={item}
+										sectionCtx={item}
 										pathname={pathname}
 										openKeys={openKeys}
 										setOpenKeys={setOpenKeys}
@@ -37,17 +45,18 @@ export const DocsMenu = (props: {
 								</div>
 							);
 						} else {
+							/* Is a page */
 							return (
 								<Link
-									href={item.path}
-									key={item.path}
+									href={item.url}
+									key={i}
 									onClick={() => {
 										setShowMenu(false);
 									}}
 								>
 									<div
 										className={`py-2 ${
-											item.path === pathname &&
+											item.url === pathname &&
 											"text-blue-500 dark:text-sky-400"
 										}`}
 									>
@@ -59,11 +68,12 @@ export const DocsMenu = (props: {
 						}
 					} else {
 						/* last one */
-						if (item.subItems) {
+						if ("pages" in item) {
+							/* Is a section */
 							return (
 								<SubMenu
-									key={item.path}
-									categoryContext={item}
+									key={i}
+									sectionCtx={item}
 									pathname={pathname}
 									openKeys={openKeys}
 									setOpenKeys={setOpenKeys}
@@ -71,17 +81,18 @@ export const DocsMenu = (props: {
 								/>
 							);
 						} else {
+							/* Is a page */
 							return (
 								<Link
-									href={item.path}
-									key={item.path}
+									href={item.url}
+									key={i}
 									onClick={() => {
 										setShowMenu(false);
 									}}
 								>
 									<div
 										className={`py-2 ${
-											item.path === pathname &&
+											item.url === pathname &&
 											"text-blue-500 dark:text-sky-400"
 										}`}
 									>

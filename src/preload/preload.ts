@@ -1,14 +1,23 @@
 import * as path from "path";
 import { lstatSync } from "fs";
-import { access, lstat, readdir, readFile, writeFile } from "fs/promises";
+import { access, readdir, readFile, writeFile } from "fs/promises";
 import { compile } from "@mdx-js/mdx";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import rehypeSlug from "rehype-slug";
 import withToc from "@stefanprobst/rehype-extract-toc";
+import {
+	Field,
+	FieldConfig,
+	DocsContext,
+	VersionedContext,
+	isLocale,
+	locales,
+	Locale,
+} from "../utils/types";
 import util from "util";
-import { Locale, locales } from "../utils/types";
+import { VFile } from "@mdx-js/mdx/lib/compile";
 
 console.time("preload");
 
@@ -19,7 +28,7 @@ const absLocalePaths: string[] = [];
 
 for (const item of rootItems) {
 	const absItemPath = path.resolve(absRootPath, item);
-	const absItemPathStat = await lstat(absItemPath);
+	const absItemPathStat = lstatSync(absItemPath);
 	if (locales.includes(item as Locale) && absItemPathStat.isDirectory()) {
 		/* item is a locale directory */
 		absLocalePaths.push(absItemPath);
@@ -29,194 +38,254 @@ for (const item of rootItems) {
 }
 
 /* Get all versioned doc paths */
-let docsContext: any = [];
+let docsContext: DocsContext = [];
 for (const absLocalePath of absLocalePaths) {
-	const urlLocale = path.basename(absLocalePath);
-	docsContext.push({ locale: urlLocale, localizedDocInstances: [] });
-	let itemsInLocaleFolder = await readdir(absLocalePath);
-	const docInstances = itemsInLocaleFolder.filter(async (item) => {
-		const absLocalePathState = await lstat(
-			path.resolve(absLocalePath, item)
-		);
-		if (absLocalePathState.isDirectory()) {
+	const locale = path.basename(absLocalePath);
+	if (!isLocale(locale)) {
+		throw new Error(`Invalid locale, locale: ${locale}`);
+	}
+	docsContext.push({ locale: locale, localizedFields: [] });
+	let itemsInLocaleDir = await readdir(absLocalePath);
+	const fieldDirs = itemsInLocaleDir.filter((item) => {
+		const absItemPath = path.resolve(absLocalePath, item);
+		const absPathState = lstatSync(absItemPath);
+		if (absPathState.isDirectory()) {
 			return true;
 		} else {
 			return false;
 		}
 	});
-	const orderedDocInstanceIdList = JSON.parse(
+
+	/* Get ordered doc field list from /locale/config.json */
+	const orderedFieldIdList: string[] = JSON.parse(
 		await readFile(path.resolve(absLocalePath, "config.json"), "utf-8")
 	);
-	const orderedDocInstances = [];
-	for (const instanceId of orderedDocInstanceIdList) {
-		for (const docInstance of docInstances) {
-			if (docInstance === instanceId) {
-				orderedDocInstances.push(docInstance);
+
+	/* Find the ordered fields */
+	const orderedFields: Field[] = [];
+	for (const fieldId of orderedFieldIdList) {
+		for (const fieldDir of fieldDirs) {
+			if (fieldDir === fieldId) {
+				/* push fields with Id only */
+				orderedFields.push({
+					fieldId: fieldId,
+					fieldName: "",
+					isVersioned: false,
+					type: "book",
+					homeUrl: "",
+					versions: [],
+				});
 			}
 		}
 	}
 
-	for (const docInstance of orderedDocInstances) {
-		const localizedContext = getLocalizedContext(docsContext, urlLocale);
-		localizedContext.localizedDocInstances.push({
-			docInstance: docInstance,
-		});
-		const absDocInstancePath = path.resolve(absLocalePath, docInstance);
-		const docInstanceStat = await lstat(absDocInstancePath);
-		if (docInstanceStat.isDirectory()) {
-			const config = JSON.parse(
+	for (const field of orderedFields) {
+		const localizedContext = getLocalizedContext(docsContext, locale);
+		if (!localizedContext) {
+			throw new Error(`Localized context not found, locale: ${locale}`);
+		}
+
+		localizedContext.localizedFields.push(field);
+		const absFieldPath = path.resolve(absLocalePath, field.fieldId);
+		const fieldStat = lstatSync(absFieldPath);
+		if (fieldStat.isDirectory()) {
+			const config: FieldConfig = JSON.parse(
 				await readFile(
-					path.resolve(absDocInstancePath, "config.json"),
+					path.resolve(absFieldPath, "config.json"),
 					"utf-8"
 				)
 			);
-			const docInstanceContext = getDocInstanceContext(
-				localizedContext.localizedDocInstances,
-				docInstance
+			const fieldContext = getFieldContext(
+				localizedContext.localizedFields,
+				field.fieldId
 			);
-			docInstanceContext.docInstanceName = config.docInstanceName;
-			let items = await readdir(absDocInstancePath);
-			/* Check whether there is a "latest" directory */
-			if (config.isVersioned === true) {
+			if (!fieldContext) {
+				throw new Error(
+					`Field context not found, fieldId: ${field.fieldId}`
+				);
+			}
+			fieldContext.fieldName = config.fieldName;
+			let fsNodes = await readdir(absFieldPath);
+			/* Check whether the field is versioned */
+			if (config.isVersioned) {
 				/* Is versioned */
-				docInstanceContext.isVersioned = true;
-				docInstanceContext.versionedContexts = config.versionedContexts;
-				for (const item of items) {
-					if (item !== "config.json") {
+				fieldContext.isVersioned = true;
+				fieldContext.type = config.type;
+				fieldContext.homeUrl = config.homeUrl;
+				fieldContext.versions = config.versions;
+				for (const fsNode of fsNodes) {
+					if (fsNode !== "config.json") {
 						/* Is a version directory */
-						const absVersionedPath = path.resolve(
-							absDocInstancePath,
-							item
+						const absVersionPath = path.resolve(
+							absFieldPath,
+							fsNode
 						);
 						const systemPathLength = path
 							.resolve("../app")
 							.split(path.sep).length;
 						const versionedContext = getVersionedContext(
-							docInstanceContext.versionedContexts,
-							item
+							fieldContext.versions,
+							fsNode
 						);
-						for (const pageContext of versionedContext.pagesContext) {
-							let urlPath;
-							let absPagePath;
-							if (pageContext.subItems) {
-								/* Is a category */
-								urlPath = `/${absVersionedPath
+						if (!versionedContext) {
+							throw new Error(
+								`Versioned context not found, versionCode: ${fsNode}`
+							);
+						}
+						for (const item of versionedContext.category) {
+							let url;
+							let absMdxPath;
+							if ("pages" in item) {
+								/* Is a section */
+								const section = item;
+								url = `/${absVersionPath
 									.split(path.sep)
 									.slice(systemPathLength)
-									.join(path.posix.sep)}/${pageContext.item}`;
-								pageContext.path = urlPath;
-								absPagePath = path.resolve(
-									absVersionedPath,
-									pageContext.item,
+									.join(path.posix.sep)}/${section.pageId}`;
+								section.url = url;
+								absMdxPath = path.resolve(
+									absVersionPath,
+									section.pageId,
 									"page.mdx"
 								);
-								const toc = await getTocContext(absPagePath);
-								pageContext.toc = toc;
-								for (const subPageContext of pageContext.subItems) {
-									urlPath = `/${absVersionedPath
+								const compiledMdx = await getCompiledMdx(
+									absMdxPath
+								);
+								const mdxContext = getMdxContext(compiledMdx);
+								section.toc = mdxContext.toc;
+								section.metadata = mdxContext.metadata;
+								for (const page of section.pages) {
+									url = `/${absVersionPath
 										.split(path.sep)
 										.slice(systemPathLength)
 										.join(path.posix.sep)}/${
-										pageContext.item
-									}/${subPageContext.item}`;
-									subPageContext.path = urlPath;
-									absPagePath = path.resolve(
-										absVersionedPath,
-										pageContext.item,
-										subPageContext.item,
+										section.pageId
+									}/${page.pageId}`;
+									page.url = url;
+									absMdxPath = path.resolve(
+										absVersionPath,
+										section.pageId,
+										page.pageId,
 										"page.mdx"
 									);
-									const toc = await getTocContext(
-										absPagePath
+									const compiledMdx = await getCompiledMdx(
+										absMdxPath
 									);
-									subPageContext.toc = toc;
+									const mdxContext =
+										getMdxContext(compiledMdx);
+									page.toc = mdxContext.toc;
+									page.metadata = mdxContext.metadata;
 								}
 							} else {
 								/* Is a page */
-								urlPath = `/${absVersionedPath
+								const page = item;
+								const url = `/${absVersionPath
 									.split(path.sep)
 									.slice(systemPathLength)
-									.join(path.posix.sep)}/${pageContext.item}`;
-								pageContext.path = urlPath;
-								absPagePath = path.resolve(
-									absVersionedPath,
-									pageContext.item,
+									.join(path.posix.sep)}/${page.pageId}`;
+								page.url = url;
+
+								absMdxPath = path.resolve(
+									absVersionPath,
+									page.pageId,
 									"page.mdx"
 								);
-								const toc = await getTocContext(absPagePath);
-								pageContext.toc = toc;
+								const compiledMdx = await getCompiledMdx(
+									absMdxPath
+								);
+								const mdxContext = getMdxContext(compiledMdx);
+								page.toc = mdxContext.toc;
+								page.metadata = mdxContext.metadata;
 							}
 						}
 					}
 				}
 			} else {
 				/* Not versioned */
-				docInstanceContext.isVersioned = false;
-				docInstanceContext.versionedContexts = config.versionedContexts;
-				for (const item of items) {
-					if (item === "latest") {
-						/* Only parse the "latest" directory */
-						const absVersionedPath = path.resolve(
-							absDocInstancePath,
-							item
-						);
+				fieldContext.isVersioned = false;
+				fieldContext.type = config.type;
+				fieldContext.homeUrl = config.homeUrl;
+				fieldContext.versions = config.versions;
+				for (const fsNode of fsNodes) {
+					if (fsNode !== "config.json") {
+						/* Is a page or section directory */
+						const absPageOrSecPath = path.resolve(
+							absFieldPath,
+							fsNode
+						); /* can be abs section path or abs page path */
 						const systemPathLength = path
 							.resolve("../app")
 							.split(path.sep).length;
-						const versionedContext = getVersionedContext(
-							docInstanceContext.versionedContexts,
-							item
-						);
-						for (const pageContext of versionedContext.pagesContext) {
-							let urlPath;
-							let absPagePath;
-							if (pageContext.subItems) {
-								/* Is a category */
-								urlPath = `/${absVersionedPath
+						const versionedContext = fieldContext.versions[0];
+						if (!versionedContext) {
+							throw new Error(
+								`Versioned context not found, item: ${fsNode}`
+							);
+						}
+						for (const item of versionedContext.category) {
+							let url;
+							let absMdxPath;
+							if ("pages" in item) {
+								/* Is a section */
+								const section = item;
+								url = `/${absFieldPath
 									.split(path.sep)
 									.slice(systemPathLength)
-									.join(path.posix.sep)}/${pageContext.item}`;
-								pageContext.path = urlPath;
-								absPagePath = path.resolve(
-									absVersionedPath,
-									pageContext.item,
+									.join(path.posix.sep)}/${section.pageId}`;
+
+								section.url = url;
+								absMdxPath = path.resolve(
+									absFieldPath,
+									section.pageId,
 									"page.mdx"
 								);
-								const toc = await getTocContext(absPagePath);
-								pageContext.toc = toc;
-								for (const subPageContext of pageContext.subItems) {
-									urlPath = `/${absVersionedPath
+								const compiledMdx = await getCompiledMdx(
+									absMdxPath
+								);
+								const mdxContext = getMdxContext(compiledMdx);
+								section.toc = mdxContext.toc;
+								section.metadata = mdxContext.metadata;
+								for (const page of section.pages) {
+									url = `/${absFieldPath
 										.split(path.sep)
 										.slice(systemPathLength)
 										.join(path.posix.sep)}/${
-										pageContext.item
-									}/${subPageContext.item}`;
-									subPageContext.path = urlPath;
-									absPagePath = path.resolve(
-										absVersionedPath,
-										pageContext.item,
-										subPageContext.item,
+										section.pageId
+									}/${page.pageId}`;
+									page.url = url;
+									absMdxPath = path.resolve(
+										absFieldPath,
+										section.pageId,
+										page.pageId,
 										"page.mdx"
 									);
-									const toc = await getTocContext(
-										absPagePath
+									const compiledMdx = await getCompiledMdx(
+										absMdxPath
 									);
-									subPageContext.toc = toc;
+									const mdxContext =
+										getMdxContext(compiledMdx);
+									page.toc = mdxContext.toc;
+									page.metadata = mdxContext.metadata;
 								}
 							} else {
 								/* Is a page */
-								urlPath = `/${absVersionedPath
+								const page = item;
+								url = `/${absFieldPath
 									.split(path.sep)
 									.slice(systemPathLength)
-									.join(path.posix.sep)}/${pageContext.item}`;
-								pageContext.path = urlPath;
-								absPagePath = path.resolve(
-									absVersionedPath,
-									pageContext.item,
+									.join(path.posix.sep)}/${page.pageId}`;
+								page.url = url;
+								absMdxPath = path.resolve(
+									absFieldPath,
+									page.pageId,
 									"page.mdx"
 								);
-								const toc = await getTocContext(absPagePath);
-								pageContext.toc = toc;
+								const compiledMdx = await getCompiledMdx(
+									absMdxPath
+								);
+								const mdxContext = getMdxContext(compiledMdx);
+								page.toc = mdxContext.toc;
+								page.metadata = mdxContext.metadata;
 							}
 						}
 					}
@@ -224,9 +293,9 @@ for (const absLocalePath of absLocalePaths) {
 			}
 		} else {
 			const error = new Error(
-				`Doc instance is not a directory, path: ${path.resolve(
+				`Field should be a directory, path: ${path.resolve(
 					absLocalePath,
-					docInstance
+					field.fieldId
 				)}`
 			);
 			throw error;
@@ -244,68 +313,70 @@ console.timeEnd("preload");
  * @param targetUrlLocale target url locale, ex. "en-US"
  * @returns localized context
  */
-function getLocalizedContext(docsContext: any, targetUrlLocale: string) {
-	return docsContext.find((context: any) => {
+function getLocalizedContext(
+	docsContext: DocsContext,
+	targetUrlLocale: string
+) {
+	return docsContext.find((context) => {
 		return context.locale === targetUrlLocale;
 	});
 }
 
 /**
- * Returns a doc instance context
- * @param localizedDocInstanceContexts localized context that contains multiple doc instances
- * @param targetDocInstance target doc instance, ex. "chitubox-basic"
- * @returns doc instance context
+ * Returns a field context
+ * @param localizedFieldContexts localized context that contains multiple fields
+ * @param fieldId target field id, ex. "chitubox-basic"
+ * @returns field context
  */
-function getDocInstanceContext(
-	localizedDocInstanceContexts: any,
-	targetDocInstance: string
-) {
-	return localizedDocInstanceContexts.find((docInstance: any) => {
-		return docInstance.docInstance === targetDocInstance;
+function getFieldContext(localizedFieldContexts: Field[], fieldId: string) {
+	return localizedFieldContexts.find((field: Field) => {
+		return field.fieldId === fieldId;
 	});
 }
 
 /**
  * Returns a versioned doc context
- * @param docInstanceContext doc instance that contains multiple versions
- * @param targetVersionCode target version code, ex. "latest", "v1.3.0"
+ * @param fieldContext field that contains multiple versions
+ * @param fsNode fsNode named by version code, ex. "latest", "v1.3.0"
  * @returns versioned doc context
  */
-function getVersionedContext(
-	docInstanceContext: any,
-	targetVersionCode: string
-) {
-	return docInstanceContext.find((versionedContext: any) => {
-		return versionedContext.versionCode === targetVersionCode;
-	});
+function getVersionedContext(fieldContext: VersionedContext[], fsNode: string) {
+	const versionCode = fsNode[0] === "v" ? fsNode.slice(1) : fsNode;
+	if (fsNode === "latest") {
+		const versionCtx = fieldContext.find(
+			(versionContext: VersionedContext) => {
+				return versionContext.isLatest;
+			}
+		);
+		return versionCtx;
+	} else {
+		const versionCtx = fieldContext.find(
+			(versionContext: VersionedContext) => {
+				return versionContext.versionCode === versionCode;
+			}
+		);
+		return versionCtx;
+	}
 }
 
-function getPageContext(versionedContext: any, item: string) {
-	return versionedContext.find((pageContext: any) => {
-		return pageContext.item === item;
-	});
-}
-
-async function getTocContext(absPagePath: string) {
-	const content = await readFile(absPagePath, "utf-8");
+async function getCompiledMdx(absMdxPath: string) {
+	const content = await readFile(absMdxPath, "utf-8");
 	const compiled = await compile(content, {
 		remarkPlugins: [remarkGfm, remarkMath],
 		rehypePlugins: [rehypeKatex, rehypeSlug, withToc],
 		providerImportSource: "@mdx-js/react",
 	});
-	return compiled.data.toc;
+	return compiled;
 }
 
-async function recurseVersionedPath(absPath: string, pagesContext: any) {
-	const items = await readdir(absPath);
-	for (const item of items) {
-		const absItempath = path.resolve(absPath, item);
-		const itemStat = await lstat(absItempath);
-		if (itemStat.isDirectory()) {
-			pagesContext.push({ type: "category" });
-			await recurseVersionedPath(absItempath, pagesContext);
-		} else {
-			pagesContext.push({ type: "doc" });
-		}
-	}
+function getMdxContext(compiledMdx: VFile) {
+	const { data, value } = compiledMdx;
+	const startingIndex = (value as string).indexOf("const metadata = {");
+	const endingIndex = (value as string).indexOf("};", startingIndex);
+	const metaString = (value as string)
+		.slice(startingIndex + 17, endingIndex + 1)
+		.replaceAll("\n", "");
+	const metadata = eval(`const metadata = ${metaString};metadata;`);
+	const { toc } = data;
+	return { metadata, toc } as any;
 }

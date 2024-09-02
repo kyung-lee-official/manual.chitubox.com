@@ -1,33 +1,40 @@
-import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
-import { DocsContext } from "./types";
-import docsContext from "../preload/docsContext.json";
-import { getDocContexts } from "./data";
+import { FlattenPage } from "./types";
+import flattenContext from "@/preload/flattenContext.json";
 
-export function useDocsContext() {
+export function usePageContext() {
 	const pathname = usePathname();
-	const locale = useLocale();
-	const docInstance = pathname.split("/")[2];
-	/* "latest" or "vx.x.x" */
-	const versionCode = pathname.split("/")[3];
-	const {
-		localizedContext,
-		docInstanceContext,
-		versionedContext,
-		flattenPagesContext,
-		pageContext,
-	} = getDocContexts(
-		docsContext as DocsContext,
-		locale,
-		docInstance,
-		versionCode,
-		pathname
-	);
-	return {
-		localizedContext,
-		docInstanceContext,
-		versionedContext,
-		flattenPagesContext,
-		pageContext,
-	};
+	const ctx = (flattenContext as FlattenPage[]).find((ctx) => {
+		return ctx.url === pathname;
+	});
+	if (ctx) {
+		const {
+			locale,
+			fieldId,
+			fieldName,
+			isVersioned,
+			type,
+			homeUrl,
+			versionCode,
+			pageId,
+			label,
+			url,
+			toc,
+		} = ctx;
+		return {
+			locale,
+			fieldId,
+			fieldName,
+			isVersioned,
+			type,
+			homeUrl,
+			versionCode,
+			pageId,
+			label,
+			url,
+			toc,
+		} as FlattenPage;
+	} else {
+		return null;
+	}
 }

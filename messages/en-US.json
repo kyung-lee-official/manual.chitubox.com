@@ -1,8 +1,9 @@
 {
-	"title": "CHITUBOX - Docs",
+	"title": "CHITUBOX Docs",
 	"description": "CHITUBOX Docs",
 	"header": {
 		"title": "CHITUBOX Docs",
+		"docs": "Docs",
 		"placeholder": "Placeholder",
 		"about": "About",
 		"languages": "Languages",
@@ -117,6 +118,16 @@
 	"error": {
 		"pageNotFound": "This page could not be found.",
 		"backHome": "Back to Home"
+	},
+	"components": {
+		"docsboard": {
+			"chitubox-baisc": "CHITUBOX Basic",
+			"chitubox-pro": "CHITUBOX Pro",
+			"chitu-manager": "ChituManager",
+			"chitubox-printing-test": "CHITUBOX Printing Test",
+			"faq": "FAQ",
+			"read-more": "Read more"
+		}
 	},
 	"docComponents": {
 		"tsmc": {

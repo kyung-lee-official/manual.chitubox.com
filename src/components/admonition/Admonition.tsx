@@ -60,7 +60,7 @@ const AdmonitionContainer = (props: any) => {
 	);
 };
 
-export const Admonition: React.FC<any> = ({
+export const Admonition = ({
 	type,
 	title,
 	children,

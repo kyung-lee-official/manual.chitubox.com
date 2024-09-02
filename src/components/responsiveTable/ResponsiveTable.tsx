@@ -18,7 +18,7 @@ const Table = (props: any) => {
 	);
 };
 
-export const ResponsiveTable: React.FC<any> = ({ children }) => {
+export const ResponsiveTable = ({ children }: any) => {
 	return (
 		<div
 			className="flex w-full my-8 overflow-x-auto horizontal-scrollbar

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronRightIcon, IoLanguage } from "@/components/icons/Icons";
+import { ChevronRightIcon, LanguageIcon } from "@/components/icons/Icons";
 import { Link, usePathname } from "@/navigation";
 import { Block } from "./Block";
 
@@ -15,7 +15,7 @@ export const LanguageMenu = () => {
 					setShowSubmenu(!showSubmenu);
 				}}
 			>
-				<IoLanguage size={24} />
+				<LanguageIcon size={24} />
 				<div
 					className={
 						showSubmenu ? "rotate-90 duration-200" : "duration-200"
@@ -35,10 +35,6 @@ export const LanguageMenu = () => {
 					<hr className="dark:border-neutral-700" />
 					<Link href={pathname} locale="zh-CN" className="py-2">
 						简体中文
-					</Link>
-					<hr className="dark:border-neutral-700" />
-					<Link href={pathname} locale="zh-TW" className="py-2">
-						繁體中文
 					</Link>
 				</div>
 			)}

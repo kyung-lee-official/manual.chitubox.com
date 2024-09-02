@@ -1,205 +1,207 @@
 {
-	"docInstanceName": "CHITUBOX Pro",
+	"fieldName": "CHITUBOX Pro",
 	"isVersioned": true,
-	"versionedContexts": [
+	"type": "book",
+	"homeUrl": "/en-US/chitubox-pro/latest/introduction",
+	"versions": [
 		{
-			"versionCode": "latest",
-			"versionNumber": "2.0.0",
-			"pagesContext": [
+			"versionCode": "2.0.0",
+			"isLatest": true,
+			"category": [
 				{
-					"item": "introduction",
+					"pageId": "introduction",
 					"label": "Introduction"
 				},
 				{
-					"item": "installation",
+					"pageId": "installation",
 					"label": "Installation"
 				},
 				{
-					"item": "account-and-license",
+					"pageId": "account-and-license",
 					"label": "Account and License"
 				},
 				{
-					"item": "quick-start",
+					"pageId": "quick-start",
 					"label": "Quick Start"
 				},
 				{
-					"item": "printer-management",
+					"pageId": "printer-management",
 					"label": "Printer Management",
-					"subItems": [
+					"pages": [
 						{
-							"item": "add-and-delete-printers",
+							"pageId": "add-and-delete-printers",
 							"label": "Add and Delete Printers"
 						},
 						{
-							"item": "printer-configuration",
+							"pageId": "printer-configuration",
 							"label": "Printer Configuration"
 						}
 					]
 				},
 				{
-					"item": "file",
+					"pageId": "file",
 					"label": "File"
 				},
 				{
-					"item": "model-processing",
+					"pageId": "model-processing",
 					"label": "Model Processing"
 				},
 				{
-					"item": "analyze-and-measure",
+					"pageId": "analyze-and-measure",
 					"label": "Analyze/Measure"
 				},
 				{
-					"item": "support",
+					"pageId": "support",
 					"label": "Support",
-					"subItems": [
+					"pages": [
 						{
-							"item": "add-edit-delete",
+							"pageId": "add-edit-delete",
 							"label": "Add, Edit, and Delete"
 						},
 						{
-							"item": "support-configuration",
+							"pageId": "support-configuration",
 							"label": "Support Configuration"
 						},
 						{
-							"item": "magic-support",
+							"pageId": "magic-support",
 							"label": "Magic Support"
 						}
 					]
 				},
 				{
-					"item": "risk-detection",
+					"pageId": "risk-detection",
 					"label": "Risk Detection"
 				},
 				{
-					"item": "slice",
+					"pageId": "slice",
 					"label": "Slice",
-					"subItems": [
+					"pages": [
 						{
-							"item": "slice-mode",
+							"pageId": "slice-mode",
 							"label": "Slice Mode"
 						},
 						{
-							"item": "slice-preview",
+							"pageId": "slice-preview",
 							"label": "Slice Preview"
 						}
 					]
 				},
 				{
-					"item": "chitu-action",
+					"pageId": "chitu-action",
 					"label": "ChituAction"
 				},
 				{
-					"item": "standard-library",
+					"pageId": "standard-library",
 					"label": "Standard Library"
 				},
 				{
-					"item": "user-interface",
+					"pageId": "user-interface",
 					"label": "User Interface",
-					"subItems": [
+					"pages": [
 						{
-							"item": "main-menu",
+							"pageId": "main-menu",
 							"label": "Main Menu"
 						},
 						{
-							"item": "function-menu",
+							"pageId": "function-menu",
 							"label": "Function Menu"
 						},
 						{
-							"item": "component-list",
+							"pageId": "component-list",
 							"label": "Component List"
 						},
 						{
-							"item": "gadgets",
+							"pageId": "gadgets",
 							"label": "Gadgets"
 						}
 					]
 				},
 				{
-					"item": "help-and-feedback",
+					"pageId": "help-and-feedback",
 					"label": "Help and Feedback"
 				}
 			]
 		},
 		{
-			"versionCode": "v1.4.1",
-			"versionNumber": "1.4.1",
-			"pagesContext": [
+			"versionCode": "1.4.1",
+			"isLatest": false,
+			"category": [
 				{
-					"item": "introduction",
+					"pageId": "introduction",
 					"label": "Introduction"
 				},
 				{
-					"item": "comparison",
+					"pageId": "comparison",
 					"label": "Comparison"
 				},
 				{
-					"item": "requirements",
+					"pageId": "requirements",
 					"label": "Requirements"
 				},
 				{
-					"item": "setting-up",
+					"pageId": "setting-up",
 					"label": "Setting Up",
-					"subItems": [
+					"pages": [
 						{
-							"item": "installation",
+							"pageId": "installation",
 							"label": "Installation"
 						},
 						{
-							"item": "manage-your-account-and-license",
+							"pageId": "manage-your-account-and-license",
 							"label": "Manage Your Account and License"
 						},
 						{
-							"item": "update-printer-firmware",
+							"pageId": "update-printer-firmware",
 							"label": "Update Printer Firmware"
 						},
 						{
-							"item": "configure-print-parameters",
+							"pageId": "configure-print-parameters",
 							"label": "Configure Print Parameters"
 						},
 						{
-							"item": "configure-support-parameters",
+							"pageId": "configure-support-parameters",
 							"label": "Configure Support Parameters"
 						}
 					]
 				},
 				{
-					"item": "application-overview",
+					"pageId": "application-overview",
 					"label": "Application Overview",
-					"subItems": [
+					"pages": [
 						{
-							"item": "ui-introduction",
+							"pageId": "ui-introduction",
 							"label": "UI Introduction"
 						},
 						{
-							"item": "start",
+							"pageId": "start",
 							"label": "Start"
 						},
 						{
-							"item": "prepare",
+							"pageId": "prepare",
 							"label": "Prepare"
 						},
 						{
-							"item": "repair",
+							"pageId": "repair",
 							"label": "Repair"
 						},
 						{
-							"item": "support",
+							"pageId": "support",
 							"label": "Support"
 						},
 						{
-							"item": "analyze-and-measure",
+							"pageId": "analyze-and-measure",
 							"label": "Analyze/Measure"
 						},
 						{
-							"item": "setting-and-help",
+							"pageId": "setting-and-help",
 							"label": "Setting/Help"
 						},
 						{
-							"item": "slice",
+							"pageId": "slice",
 							"label": "Slice"
 						},
 						{
-							"item": "slice-preview",
+							"pageId": "slice-preview",
 							"label": "Slice Preview"
 						}
 					]

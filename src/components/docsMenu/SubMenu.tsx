@@ -1,75 +1,75 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { SubMenuToggle } from "../icons/Icons";
-import { CategoryContext } from "@/utils/types";
 import _ from "lodash";
 import { AnimatePresence, motion } from "framer-motion";
+import { SectionContextWithoutToc } from "@/utils/types";
 
-export const SubMenu: React.FC<any> = (props: {
-	categoryContext: CategoryContext;
+export const SubMenu = (props: {
+	sectionCtx: SectionContextWithoutToc;
 	pathname: string;
 	openKeys: string[];
 	setOpenKeys: React.Dispatch<React.SetStateAction<string[]>>;
 }) => {
-	const { categoryContext, pathname, openKeys, setOpenKeys } = props;
+	const { sectionCtx, pathname, openKeys, setOpenKeys } = props;
 
 	const [hasActiveKey, setHasActiveKey] = useState(
-		categoryContext.path === pathname ||
-			categoryContext.subItems.some((subItem: any) => {
-				return subItem.path === pathname;
+		sectionCtx.url === pathname ||
+			sectionCtx.pages.some((page) => {
+				return page.url === pathname;
 			})
 	);
 
 	useEffect(() => {
 		setHasActiveKey(
-			categoryContext.path === pathname ||
-				categoryContext.subItems.some((subItem: any) => {
-					return subItem.path === pathname;
+			sectionCtx.url === pathname ||
+				sectionCtx.pages.some((page) => {
+					return page.url === pathname;
 				})
 		);
 
 		if (
-			categoryContext.path === pathname ||
-			categoryContext.subItems.some((subItem: any) => {
-				return subItem.path === pathname;
+			sectionCtx.url === pathname ||
+			sectionCtx.pages.some((page: any) => {
+				return page.url === pathname;
 			})
 		) {
-			setOpenKeys(_.uniq([...openKeys, categoryContext.path]));
+			setOpenKeys(_.uniq([...openKeys, sectionCtx.url]));
 		}
 	}, [pathname]);
 
 	return (
 		<div>
 			<Link
-				href={categoryContext.path}
+				href={sectionCtx.url}
 				className={`flex justify-between items-center
 				${hasActiveKey && "text-blue-500 dark:text-sky-400"}
 				cursor-pointer`}
 				onClick={() => {
-					if (pathname === categoryContext.path) {
+					if (pathname === sectionCtx.url) {
 						setOpenKeys((prev) => {
-							if (prev.includes(categoryContext.path)) {
+							if (prev.includes(sectionCtx.url)) {
 								return prev.filter(
-									(key) => key !== categoryContext.path
+									(key) => key !== sectionCtx.url
 								);
 							} else {
-								return [...prev, categoryContext.path];
+								return [...prev, sectionCtx.url];
 							}
 						});
 					}
 				}}
 			>
-				<div>{categoryContext.label}</div>
+				<div>{sectionCtx.label}</div>
 				<div
 					className={`flex justify-center items-center
-					${openKeys.includes(categoryContext.path) && `transform rotate-90`}
+					${openKeys.includes(sectionCtx.url) && `transform rotate-90`}
 					duration-100`}
 				>
 					<SubMenuToggle size={24} />
 				</div>
 			</Link>
 			<AnimatePresence>
-				{openKeys.includes(categoryContext.path) && (
+				{openKeys.includes(sectionCtx.url) && (
 					<motion.div
 						initial={{ opacity: 0, y: -10, scaleY: 0.8 }}
 						animate={{
@@ -86,33 +86,23 @@ export const SubMenu: React.FC<any> = (props: {
 						}}
 						className="flex flex-col gap-2 list-none py-2 origin-top"
 					>
-						{categoryContext.subItems.map(
-							(subItem: any, i: number) => {
-								if (subItem.path === pathname) {
-									return (
-										<Link
-											href={subItem.path}
-											key={subItem.path}
-										>
-											<div className="pl-6 text-blue-500 dark:text-sky-400">
-												{subItem.label}
-											</div>
-										</Link>
-									);
-								} else {
-									return (
-										<Link
-											href={subItem.path}
-											key={subItem.path}
-										>
-											<div className="pl-6">
-												{subItem.label}
-											</div>
-										</Link>
-									);
-								}
+						{sectionCtx.pages.map((page, i: number) => {
+							if (page.url === pathname) {
+								return (
+									<Link href={page.url} key={page.url}>
+										<div className="pl-6 text-blue-500 dark:text-sky-400">
+											{page.label}
+										</div>
+									</Link>
+								);
+							} else {
+								return (
+									<Link href={page.url} key={page.url}>
+										<div className="pl-6">{page.label}</div>
+									</Link>
+								);
 							}
-						)}
+						})}
 					</motion.div>
 				)}
 			</AnimatePresence>

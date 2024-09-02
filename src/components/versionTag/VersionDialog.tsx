@@ -10,15 +10,17 @@ import {
 import { CloseIcon } from "../icons/Icons";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { usePageContext } from "@/utils/hooks";
+import docsContext from "@/preload/docsContext.json";
+import { DocsContext } from "@/utils/types";
 
 const DialogContent = forwardRef(function DialogContent(
 	props: {
-		docInstanceContext: any;
 		setShowDialog: Dispatch<SetStateAction<boolean>>;
 	},
 	ref: ForwardedRef<HTMLDialogElement | null>
 ) {
-	const { docInstanceContext, setShowDialog } = props;
+	const { setShowDialog } = props;
 	const dialogRef = ref as MutableRefObject<HTMLDialogElement | null>;
 	const dialogBgRef = useRef<HTMLDivElement | null>(null);
 
@@ -49,6 +51,18 @@ const DialogContent = forwardRef(function DialogContent(
 
 	const t = useTranslations();
 
+	const pageCtx = usePageContext();
+	if (!pageCtx) return null;
+	const { locale, fieldId } = pageCtx;
+	const localeCtx = (docsContext as DocsContext).find((localeCtx) => {
+		return localeCtx.locale === locale;
+	});
+	if (!localeCtx) return null;
+	const field = localeCtx.localizedFields.find((field) => {
+		return field.fieldId === fieldId;
+	});
+	if (!field) return null;
+
 	return (
 		<div ref={dialogBgRef}>
 			<div
@@ -73,53 +87,42 @@ const DialogContent = forwardRef(function DialogContent(
 					bg-neutral-100 dark:bg-neutral-700
 					rounded-md"
 				>
-					{docInstanceContext.versionedContexts.map(
-						(versionedContext: any, i: any) => {
-							if (
-								i <
-								docInstanceContext.versionedContexts.length - 1
-							) {
-								return (
-									<Link
-										href={
-											versionedContext.pagesContext[0]
-												.path
-										}
-										key={i}
-										className="w-full py-2
+					{field.versions.map((versionedContext, i: any) => {
+						if (i < field.versions.length - 1) {
+							return (
+								<Link
+									href={versionedContext.category[0].url}
+									key={i}
+									className="w-full py-2
 										border-b-[1px] border-solid border-neutral-200"
-										onClick={() => {
-											if (dialogRef.current) {
-												dialogRef.current.close();
-												setShowDialog(false);
-											}
-										}}
-									>
-										{versionedContext.versionCode}
-									</Link>
-								);
-							} else {
-								return (
-									<Link
-										href={
-											versionedContext.pagesContext[0]
-												.path
+									onClick={() => {
+										if (dialogRef.current) {
+											dialogRef.current.close();
+											setShowDialog(false);
 										}
-										key={i}
-										className="w-full py-2"
-										onClick={() => {
-											if (dialogRef.current) {
-												dialogRef.current.close();
-												setShowDialog(false);
-											}
-										}}
-									>
-										{versionedContext.versionCode}
-									</Link>
-								);
-							}
+									}}
+								>
+									{versionedContext.versionCode}
+								</Link>
+							);
+						} else {
+							return (
+								<Link
+									href={versionedContext.category[0].url}
+									key={i}
+									className="w-full py-2"
+									onClick={() => {
+										if (dialogRef.current) {
+											dialogRef.current.close();
+											setShowDialog(false);
+										}
+									}}
+								>
+									{versionedContext.versionCode}
+								</Link>
+							);
 						}
-					)}
+					})}
 				</div>
 			</div>
 		</div>
@@ -128,13 +131,12 @@ const DialogContent = forwardRef(function DialogContent(
 
 export const VersionDialog = forwardRef(function VersionDialog(
 	props: {
-		docInstanceContext: any;
 		showDialog: boolean;
 		setShowDialog: Dispatch<SetStateAction<boolean>>;
 	},
 	ref: ForwardedRef<HTMLDialogElement | null>
 ) {
-	const { docInstanceContext, showDialog, setShowDialog } = props;
+	const { showDialog, setShowDialog } = props;
 	const dialogRef = ref;
 
 	return (
@@ -146,11 +148,7 @@ export const VersionDialog = forwardRef(function VersionDialog(
 			rounded-md backdrop:bg-black/80 backdrop:[backdrop-filter:blur(2px)]"
 		>
 			{showDialog && (
-				<DialogContent
-					ref={dialogRef}
-					docInstanceContext={docInstanceContext}
-					setShowDialog={setShowDialog}
-				/>
+				<DialogContent ref={dialogRef} setShowDialog={setShowDialog} />
 			)}
 		</dialog>
 	);

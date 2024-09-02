@@ -1,9 +1,10 @@
+"use client";
+
 import { Theme, useThemeStore } from "@/stores/theme";
 import { motion, useAnimationControls } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const ThemeSwitch = () => {
-
 	const strokeWidth: string = "23px";
 	let shapes = [
 		/* Sun */

@@ -128,31 +128,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		);
 	};
 
-	const SpanA = (props: any) => {
-		const { children, ...rest } = props;
-		return (
-			<a
-				{...rest}
-				target="_blank"
-				className="text-blue-500 dark:text-sky-400 font-medium"
-			>
-				{children}
-			</a>
-		);
-	};
-
-	const NextLink = (props: any) => {
-		const { children, ...rest } = props;
-		return (
-			<Link
-				{...rest}
-				className="text-blue-500 dark:text-sky-400 font-medium"
-			>
-				{children}
-			</Link>
-		);
-	};
-
 	const InlineCode = (props: any) => {
 		const { children } = props;
 		return (
@@ -176,18 +151,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 	};
 
 	return {
-		code: ({ children }: any) => {
-			return <InlineCode>{children}</InlineCode>;
-		},
-
-		table: ({ children }: any) => {
-			return <ResponsiveTable>{children}</ResponsiveTable>;
-		},
-
-		blockquote: ({ children }: any) => {
-			return <Blockquote>{children}</Blockquote>;
-		},
-
 		h1: h1,
 		h2: h2,
 		h3: h3,
@@ -197,13 +160,31 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		p: p,
 		ul: ul,
 		ol: ol,
-		SpanA: SpanA,
-		NextLink: NextLink,
-		FacebookVideoContainer: FacebookVideoContainer,
+		code: ({ children }: any) => {
+			return <InlineCode>{children}</InlineCode>;
+		},
+		table: ({ children }: any) => {
+			return <ResponsiveTable>{children}</ResponsiveTable>;
+		},
+		blockquote: ({ children }: any) => {
+			return <Blockquote>{children}</Blockquote>;
+		},
+
+		Link: (props) => {
+			const { href, children } = props;
+			return (
+				<Link href={href} className="text-sky-500 underline">
+					{children}
+				</Link>
+			);
+		},
+
 		ResponsiveTable: ResponsiveTable,
 		Admonition: Admonition,
 		ImageContainer: ImageContainer,
 		ImageComparison: ImageComparison,
+		FacebookVideoContainer: FacebookVideoContainer,
+
 		...components,
 	};
 }

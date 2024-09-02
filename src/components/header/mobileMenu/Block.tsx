@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Block = (props: any) => {
 	const { children } = props;
 	return (
