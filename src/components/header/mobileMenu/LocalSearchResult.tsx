@@ -3,7 +3,7 @@ import { Block } from "./Block";
 import { Dispatch, SetStateAction } from "react";
 import { FlattenPage } from "@/utils/types";
 
-export const DocsSearchResult = (props: {
+const LocalSearchResult = (props: {
 	searchResults: FlattenPage[];
 	setShowMenu: Dispatch<SetStateAction<boolean>>;
 }) => {
@@ -49,3 +49,5 @@ export const DocsSearchResult = (props: {
 		return null;
 	}
 };
+
+export default LocalSearchResult;

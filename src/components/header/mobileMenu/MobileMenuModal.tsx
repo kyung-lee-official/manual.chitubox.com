@@ -3,8 +3,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { createPortal } from "react-dom";
 import { DocsMenu } from "./DocsMenu";
 import { LanguageMenu } from "./LanguageMenu";
-import { DocsSearch } from "./DocsSearch";
 import { FieldTitles } from "./FieldTitles";
+import DocsSearch from "./DocsSearch";
 
 const MobileMenuModal = (props: {
 	docs: string;

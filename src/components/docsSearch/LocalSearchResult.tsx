@@ -1,10 +1,11 @@
-import { MediaQuery } from "@/utils/types";
+import { FlattenPage, MediaQuery } from "@/utils/types";
 import { useRouter } from "next/navigation";
 import { useMediaQuery } from "react-responsive";
 
-const DocsSearchResult: React.FC<any> = ({ searchResults }) => {
+const LocalSearchResult = (props: { searchResults: FlattenPage[] }) => {
 	const router = useRouter();
 	const isLg = useMediaQuery({ query: MediaQuery.lg });
+	const { searchResults } = props;
 
 	if (isLg) {
 		if (searchResults.length > 0) {
@@ -41,4 +42,4 @@ const DocsSearchResult: React.FC<any> = ({ searchResults }) => {
 	}
 };
 
-export default DocsSearchResult;
+export default LocalSearchResult;

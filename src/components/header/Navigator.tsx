@@ -41,6 +41,7 @@ const DynamicMobileMenuEntry = dynamic(
 
 export const Navigator = (props: any) => {
 	const t = useTranslations();
+
 	return (
 		<nav
 			className={`flex justify-between items-center h-16

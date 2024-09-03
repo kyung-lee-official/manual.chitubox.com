@@ -7,9 +7,10 @@ export const SearchFilter = (props: {
 
 	return (
 		<div
-			className="flex flex-wrap p-4 gap-4
-			text-xs
-			border-t-[1px] border-neutral-300 dark:border-neutral-500"
+			className="flex flex-wrap
+			py-4 px-0 2xl:px-4
+			gap-4
+			text-xs"
 		>
 			{tags.map((tag) => {
 				return (
@@ -19,9 +20,9 @@ export const SearchFilter = (props: {
 						text-neutral-50 dark:text-neutral-600
 						${
 							selectedTag.includes(tag)
-								? "bg-slate-700 dark:bg-slate-300/70"
+								? "bg-slate-700 dark:bg-slate-200/80"
 								: `bg-neutral-300 hover:bg-neutral-300/70
-									dark:bg-neutral-300/30 dark:hover:bg-neutral-300/40`
+								dark:bg-neutral-300/30 dark:hover:bg-neutral-300/40`
 						}
 						rounded duration-150`}
 						onClick={() => {
