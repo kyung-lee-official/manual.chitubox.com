@@ -11,12 +11,14 @@ jobs:
         steps:
             - name: Checkout Repo 📦
               uses: actions/checkout@v4
+            - name: Create .env.local File 📄
+              run: |
+                  echo "NEXT_PUBLIC_ORAMA_ENDPOINT=${{ vars.NEXT_PUBLIC_ORAMA_ENDPOINT }}" >> .env.local
+                  echo "NEXT_PUBLIC_ORAMA_API_KEY=${{ vars.NEXT_PUBLIC_ORAMA_API_KEY }}" >> .env.local
+                  cat .env.local
             - name: Build Docker Image 🐳
               run: |
-                  docker build --build-arg NEXT_PUBLIC_ORAMA_ENDPOINT="$NEXT_PUBLIC_ORAMA_ENDPOINT" --build-arg NEXT_PUBLIC_ORAMA_API_KEY="$NEXT_PUBLIC_ORAMA_API_KEY" -t i-docs.chitubox.com .
-              env:
-                  NEXT_PUBLIC_ORAMA_ENDPOINT: ${{ vars.NEXT_PUBLIC_ORAMA_ENDPOINT }}
-                  NEXT_PUBLIC_ORAMA_API_KEY: ${{ vars.NEXT_PUBLIC_ORAMA_API_KEY }}
+                  docker build -t i-docs.chitubox.com .
             - name: Check Docker Images 🥽
               run: |
                   docker images
