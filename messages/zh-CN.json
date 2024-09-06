@@ -158,7 +158,7 @@
 			},
 			"toolbar": {
 				"title": "工具栏",
-				"link": "/zh-CN/chitubox-pro/latest/user-interface/gadgets#工具栏"
+				"link": "/zh-CN/chitubox-pro/latest/user-interface/toolbar"
 			},
 			"shortcut": {
 				"title": "快捷键"
@@ -177,6 +177,10 @@
 			"profileList": {
 				"title": "配置列表",
 				"link": ""
+			},
+			"slicePanel": {
+				"title": "切片面板",
+				"link": "/zh-CN/chitubox-pro/latest/user-interface/slice-panel"
 			},
 			"islandsDetectionPanel": {
 				"title": "孤岛检测面板"

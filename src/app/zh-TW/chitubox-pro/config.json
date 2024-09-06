@@ -107,8 +107,16 @@
 							"label": "功能菜單"
 						},
 						{
+							"pageId": "toolbar",
+							"label": "工具欄"
+						},
+						{
 							"pageId": "component-list",
 							"label": "組件列表"
+						},
+						{
+							"pageId": "slice-panel",
+							"label": "切片面板"
 						},
 						{
 							"pageId": "gadgets",

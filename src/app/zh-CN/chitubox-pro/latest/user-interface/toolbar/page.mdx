@@ -1,0 +1,54 @@
+import { MaskedImage } from "@/docComponents/maskedImage/MaskedImage";
+
+export const metadata = {
+	title: "工具栏",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/zh-CN/chitubox-pro/v2.0.0/toolbar",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 工具栏
+
+工具栏位于主窗口左侧。工具栏上的工具会根据您当前的工作界面而有所变化。
+
+<MaskedImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-open-files-2.png"
+	}
+	width={1000}
+	height={500}
+	vWidth={30}
+	vHeight={180}
+	vX={1}
+	vY={50}
+	rx={5}
+/>
+
+## 准备，分析/测量界面
+
+准备和分析/测量界面的工具栏主要包括<Link href="/zh-CN/chitubox-pro/latest/chitu-action">ChituAction</Link>、<Link href="/zh-CN/chitubox-pro/latest/model-processing#选择">选择</Link>、<Link href="/zh-CN/chitubox-pro/latest/model-processing#移动">移动</Link>、<Link href="/zh-CN/chitubox-pro/latest/model-processing#旋转">旋转</Link>、<Link href="/zh-CN/chitubox-pro/latest/model-processing#缩放">缩放</Link>和<Link href="/zh-CN/chitubox-pro/latest/model-processing#镜像">镜像</Link>这六个选项。
+
+## 支撑界面
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/support-toolbar.png"}
+/>
+
+支撑界面的工具栏主要包括<Link href="/zh-CN/chitubox-pro/latest/support/magic-support">魔法支撑</Link>、<Link href="#支撑组">支撑组</Link>和<Link href="#选择工具">选择工具</Link>。
+
+### 支撑组
+
+按照模型及支撑类型分组支撑，您可以快速预览所有支撑信息、批量编辑和删除支撑。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/toolbar-support-group.png"}
+/>
+
+### 选择工具
+
+您可以使用不同的工具来选择需要添加支撑的模型区域，也可以选择已生成的支撑进行编辑或删除。有五种选择工具可选：笔刷、线、矩形、多边形和自由曲线。

@@ -3328,7 +3328,7 @@
 									],
 									"description": "Risk detections features in CHITUBOX, including Cavity Detection, Collision Detection, Overhang Detection and Island Detection.",
 									"other": {
-										"pageId": "/en-US/chitubox-basic/v2.0.0/risk-detection"
+										"pageId": "/en-US/chitubox-pro/v2.0.0/risk-detection"
 									},
 									"openGraph": {
 										"images": [
@@ -4096,6 +4096,59 @@
 										}
 									},
 									{
+										"pageId": "toolbar",
+										"label": "Toolbar",
+										"url": "/en-US/chitubox-pro/latest/user-interface/toolbar",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Toolbar",
+												"id": "toolbar",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Prepare, Analyze/Measure Interface",
+														"id": "prepare-analyzemeasure-interface"
+													},
+													{
+														"depth": 2,
+														"value": "Support Interface",
+														"id": "support-interface",
+														"children": [
+															{
+																"depth": 3,
+																"value": "Support Group",
+																"id": "support-group"
+															},
+															{
+																"depth": 3,
+																"value": "Selection Tools",
+																"id": "selection-tools"
+															}
+														]
+													}
+												]
+											}
+										],
+										"metadata": {
+											"title": "Toolbar",
+											"authors": [
+												{
+													"name": "CHITUBOX Team"
+												}
+											],
+											"description": "",
+											"other": {
+												"pageId": "/en-US/chitubox-pro/v2.0.0/toolbar"
+											},
+											"openGraph": {
+												"images": [
+													"/images/docs/og_logo.png"
+												]
+											}
+										}
+									},
+									{
 										"pageId": "component-list",
 										"label": "Component List",
 										"url": "/en-US/chitubox-pro/latest/user-interface/component-list",
@@ -4125,6 +4178,52 @@
 										}
 									},
 									{
+										"pageId": "slice-panel",
+										"label": "Slice Panel",
+										"url": "/en-US/chitubox-pro/latest/user-interface/slice-panel",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "Slice Panel",
+												"id": "slice-panel",
+												"children": [
+													{
+														"depth": 2,
+														"value": "Slice Settings",
+														"id": "slice-settings"
+													},
+													{
+														"depth": 2,
+														"value": "Slice Mode",
+														"id": "slice-mode"
+													},
+													{
+														"depth": 2,
+														"value": "Single/Multi-Parameter Slicing",
+														"id": "singlemulti-parameter-slicing"
+													}
+												]
+											}
+										],
+										"metadata": {
+											"title": "Slice Panel",
+											"authors": [
+												{
+													"name": "CHITUBOX Team"
+												}
+											],
+											"description": "",
+											"other": {
+												"pageId": "/en-US/chitubox-pro/v2.0.0/slice-panel"
+											},
+											"openGraph": {
+												"images": [
+													"/images/docs/og_logo.png"
+												]
+											}
+										}
+									},
+									{
 										"pageId": "gadgets",
 										"label": "Gadgets",
 										"url": "/en-US/chitubox-pro/latest/user-interface/gadgets",
@@ -4134,11 +4233,6 @@
 												"value": "Gadgets",
 												"id": "gadgets",
 												"children": [
-													{
-														"depth": 2,
-														"value": "Toolbar",
-														"id": "toolbar"
-													},
 													{
 														"depth": 2,
 														"value": "Information Panel",
@@ -10204,7 +10298,7 @@
 									],
 									"description": "一些可以在 CHITUBOX 中使用的风险检测功能，包括空腔检测、碰撞检测、悬空检测和孤岛检测。",
 									"other": {
-										"pageId": "/zh-CN/chitubox-basic/v2.0.0/risk-detection"
+										"pageId": "/zh-CN/chitubox-pro/v2.0.0/risk-detection"
 									},
 									"openGraph": {
 										"images": [
@@ -10989,6 +11083,59 @@
 										}
 									},
 									{
+										"pageId": "toolbar",
+										"label": "工具栏",
+										"url": "/zh-CN/chitubox-pro/latest/user-interface/toolbar",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "工具栏",
+												"id": "工具栏",
+												"children": [
+													{
+														"depth": 2,
+														"value": "准备，分析/测量界面",
+														"id": "准备分析测量界面"
+													},
+													{
+														"depth": 2,
+														"value": "支撑界面",
+														"id": "支撑界面",
+														"children": [
+															{
+																"depth": 3,
+																"value": "支撑组",
+																"id": "支撑组"
+															},
+															{
+																"depth": 3,
+																"value": "选择工具",
+																"id": "选择工具"
+															}
+														]
+													}
+												]
+											}
+										],
+										"metadata": {
+											"title": "工具栏",
+											"authors": [
+												{
+													"name": "CHITUBOX Team"
+												}
+											],
+											"description": "",
+											"other": {
+												"pageId": "/zh-CN/chitubox-pro/v2.0.0/toolbar"
+											},
+											"openGraph": {
+												"images": [
+													"/images/docs/og_logo.png"
+												]
+											}
+										}
+									},
+									{
 										"pageId": "component-list",
 										"label": "组件列表",
 										"url": "/zh-CN/chitubox-pro/latest/user-interface/component-list",
@@ -11018,6 +11165,52 @@
 										}
 									},
 									{
+										"pageId": "slice-panel",
+										"label": "切片面板",
+										"url": "/zh-CN/chitubox-pro/latest/user-interface/slice-panel",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "切片面板",
+												"id": "切片面板",
+												"children": [
+													{
+														"depth": 2,
+														"value": "切片设置",
+														"id": "切片设置"
+													},
+													{
+														"depth": 2,
+														"value": "切片模式",
+														"id": "切片模式"
+													},
+													{
+														"depth": 2,
+														"value": "单参数/多参数切片",
+														"id": "单参数多参数切片"
+													}
+												]
+											}
+										],
+										"metadata": {
+											"title": "切片面板",
+											"authors": [
+												{
+													"name": "CHITUBOX Team"
+												}
+											],
+											"description": "",
+											"other": {
+												"pageId": "/zh-CN/chitubox-pro/v2.0.0/slice-panel"
+											},
+											"openGraph": {
+												"images": [
+													"/images/docs/og_logo.png"
+												]
+											}
+										}
+									},
+									{
 										"pageId": "gadgets",
 										"label": "小工具",
 										"url": "/zh-CN/chitubox-pro/latest/user-interface/gadgets",
@@ -11027,11 +11220,6 @@
 												"value": "小工具",
 												"id": "小工具",
 												"children": [
-													{
-														"depth": 2,
-														"value": "工具栏",
-														"id": "工具栏"
-													},
 													{
 														"depth": 2,
 														"value": "信息面板",
@@ -11054,8 +11242,8 @@
 													},
 													{
 														"depth": 2,
-														"value": "视窗小工具",
-														"id": "视窗小工具"
+														"value": "视图方块",
+														"id": "视图方块"
 													},
 													{
 														"depth": 2,
@@ -17085,7 +17273,7 @@
 									],
 									"description": "一些可以在 CHITUBOX 中使用的风险检测功能，包括空腔檢測、碰撞檢測、懸空檢測和孤島檢測。",
 									"other": {
-										"pageId": "/zh-CN/chitubox-basic/v2.0.0/risk-detection"
+										"pageId": "/zh-TW/chitubox-pro/v2.0.0/risk-detection"
 									},
 									"openGraph": {
 										"images": [
@@ -17870,6 +18058,59 @@
 										}
 									},
 									{
+										"pageId": "toolbar",
+										"label": "工具欄",
+										"url": "/zh-TW/chitubox-pro/latest/user-interface/toolbar",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "工具欄",
+												"id": "工具欄",
+												"children": [
+													{
+														"depth": 2,
+														"value": "準備，分析/測量界面",
+														"id": "準備分析測量界面"
+													},
+													{
+														"depth": 2,
+														"value": "支撐界面",
+														"id": "支撐界面",
+														"children": [
+															{
+																"depth": 3,
+																"value": "支撐組",
+																"id": "支撐組"
+															},
+															{
+																"depth": 3,
+																"value": "選擇工具",
+																"id": "選擇工具"
+															}
+														]
+													}
+												]
+											}
+										],
+										"metadata": {
+											"title": "工具栏",
+											"authors": [
+												{
+													"name": "CHITUBOX Team"
+												}
+											],
+											"description": "",
+											"other": {
+												"pageId": "/zh-TW/chitubox-pro/v2.0.0/toolbar"
+											},
+											"openGraph": {
+												"images": [
+													"/images/docs/og_logo.png"
+												]
+											}
+										}
+									},
+									{
 										"pageId": "component-list",
 										"label": "組件列表",
 										"url": "/zh-TW/chitubox-pro/latest/user-interface/component-list",
@@ -17899,6 +18140,52 @@
 										}
 									},
 									{
+										"pageId": "slice-panel",
+										"label": "切片面板",
+										"url": "/zh-TW/chitubox-pro/latest/user-interface/slice-panel",
+										"toc": [
+											{
+												"depth": 1,
+												"value": "切片面板",
+												"id": "切片面板",
+												"children": [
+													{
+														"depth": 2,
+														"value": "切片設定",
+														"id": "切片設定"
+													},
+													{
+														"depth": 2,
+														"value": "切片模式",
+														"id": "切片模式"
+													},
+													{
+														"depth": 2,
+														"value": "單參數/多參數切片",
+														"id": "單參數多參數切片"
+													}
+												]
+											}
+										],
+										"metadata": {
+											"title": "切片面板",
+											"authors": [
+												{
+													"name": "CHITUBOX Team"
+												}
+											],
+											"description": "",
+											"other": {
+												"pageId": "/zh-TW/chitubox-pro/v2.0.0/slice-panel"
+											},
+											"openGraph": {
+												"images": [
+													"/images/docs/og_logo.png"
+												]
+											}
+										}
+									},
+									{
 										"pageId": "gadgets",
 										"label": "小工具",
 										"url": "/zh-TW/chitubox-pro/latest/user-interface/gadgets",
@@ -17908,11 +18195,6 @@
 												"value": "小工具",
 												"id": "小工具",
 												"children": [
-													{
-														"depth": 2,
-														"value": "工具欄",
-														"id": "工具欄"
-													},
 													{
 														"depth": 2,
 														"value": "信息面板",
@@ -17935,8 +18217,8 @@
 													},
 													{
 														"depth": 2,
-														"value": "視窗小工具",
-														"id": "視窗小工具"
+														"value": "視圖方塊",
+														"id": "視圖方塊"
 													},
 													{
 														"depth": 2,

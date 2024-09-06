@@ -1,0 +1,42 @@
+import { MaskedImage } from "@/docComponents/maskedImage/MaskedImage";
+
+export const metadata = {
+	title: "切片面板",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/zh-CN/chitubox-pro/v2.0.0/slice-panel",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# 切片面板
+
+切片面板位于主界面的右下角。包含切片设置、切片模式和单参数/多参数切片按钮。
+
+<MaskedImage
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/004-quick-start-open-files-2.png"
+	}
+	width={1000}
+	height={500}
+	vWidth={135}
+	vHeight={69}
+	vX={731}
+	vY={390}
+	rx={5}
+/>
+
+## 切片设置
+
+打开当前打印机的<Link href="/zh-CN/chitubox-pro/latest/printer-management/printer-configuration">切片设置</Link>。
+
+## 切片模式
+
+选择单参数或多参数<Link href="/zh-CN/chitubox-pro/latest/slice/slice-mode">切片模式</Link>。 若所选打印机不支持多参数切片，则不支持修改。
+
+## 单参数/多参数切片
+
+点击此按钮对项目切片，进入<Link href="/zh-CN/chitubox-pro/latest/slice/slice-preview">切片预览</Link>界面。

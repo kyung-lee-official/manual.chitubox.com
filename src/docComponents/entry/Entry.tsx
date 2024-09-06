@@ -16,6 +16,7 @@ type EntryType = {
 	manualSupportOptions?: ReactNode[];
 	profileList?: ReactNode[];
 	islandsDetectionPanel?: ReactNode[];
+	slicePanel?: ReactNode[];
 };
 
 const Td1 = (props: { children: ReactNode }) => {
@@ -42,6 +43,7 @@ export const Entry = (props: EntryType) => {
 		manualSupportOptions,
 		profileList,
 		islandsDetectionPanel,
+		slicePanel,
 	} = props;
 
 	const t = useTranslations("docComponents.entry");
@@ -314,6 +316,38 @@ export const Entry = (props: EntryType) => {
 							<td className="p-2">
 								<div className="flex items-center gap-3">
 									{profileList.map((item, index) => {
+										if (index === 0) {
+											return (
+												<div key={index}>{item}</div>
+											);
+										} else {
+											return (
+												<div
+													key={index}
+													className="flex items-center gap-3"
+												>
+													<div>&gt;</div>
+													<div className="whitespace-nowrap">
+														{item}
+													</div>
+												</div>
+											);
+										}
+									})}
+								</div>
+							</td>
+						</tr>
+					)}
+					{slicePanel && (
+						<tr>
+							<Td1>
+								<Link href={t("slicePanel.link")}>
+									{t("slicePanel.title")}
+								</Link>
+							</Td1>
+							<td className="p-2">
+								<div className="flex items-center gap-3">
+									{slicePanel.map((item, index) => {
 										if (index === 0) {
 											return (
 												<div key={index}>{item}</div>

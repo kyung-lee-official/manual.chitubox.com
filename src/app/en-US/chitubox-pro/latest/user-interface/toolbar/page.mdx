@@ -1,0 +1,54 @@
+import { MaskedImage } from "@/docComponents/maskedImage/MaskedImage";
+
+export const metadata = {
+	title: "Toolbar",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/toolbar",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Toolbar
+
+Toolbar is located on the left side of the main window. The tools displayed on the toolbar change depending on the current workspace.
+
+<MaskedImage
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/quick-start-open-files-2.png"
+	}
+	width={1000}
+	height={500}
+	vWidth={30}
+	vHeight={180}
+	vX={1}
+	vY={50}
+	rx={5}
+/>
+
+## Prepare, Analyze/Measure Interface
+
+The toolbar in the Prepare and Analyze/Measure interface contains six tools: <Link href="/en-US/chitubox-pro/latest/chitu-action">ChituAction</Link>, <Link href="/en-US/chitubox-pro/latest/model-processing#select">Selection</Link>, <Link href="/en-US/chitubox-pro/latest/model-processing#move">Move</Link>, <Link href="/en-US/chitubox-pro/latest/model-processing#rotate">Rotate</Link>, <Link href="/en-US/chitubox-pro/latest/model-processing#scale">Scale</Link> and <Link href="/en-US/chitubox-pro/latest/model-processing#mirror">Mirror</Link>.
+
+## Support Interface
+
+<ImageContainer
+	src={"/images/docs/zh-CN/chitubox-pro/2.x.x/support-toolbar.png"}
+/>
+
+The toolbar in the Support interface includes <Link href="/en-US/chitubox-pro/latest/support/magic-support">Magic Support</Link>, <Link href="#support-group">Support Group</Link> and <Link href="#selection-tools">Selection Tools</Link>.
+
+### Support Group
+
+Group your supports by model and type for easier management. This makes it easy to preview all support details quickly and batch edit or delete supports.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-pro/2.x.x/toolbar-support-group.png"}
+/>
+
+### Selection Tools
+
+You can use different tools to select areas of your model for support addition, or to select added supports for editing or deletion. Five selection tools are available: Brush, Line, Rectangle, Polygon, and Free Curve.

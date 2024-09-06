@@ -1,0 +1,42 @@
+import { MaskedImage } from "@/docComponents/maskedImage/MaskedImage";
+
+export const metadata = {
+	title: "Slice Panel",
+	authors: [{ name: "CHITUBOX Team" }],
+	description: "",
+	other: {
+		pageId: "/en-US/chitubox-pro/v2.0.0/slice-panel",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Slice Panel
+
+The slice panel is located in the bottom right corner of the main interface. It includes slice settings, slice modes, and single/multi-parameter slicing buttons.
+
+<MaskedImage
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/quick-start-open-files-2.png"
+	}
+	width={1000}
+	height={500}
+	vWidth={135}
+	vHeight={69}
+	vX={731}
+	vY={390}
+	rx={5}
+/>
+
+## Slice Settings
+
+Open the <Link href="/en-US/chitubox-pro/latest/printer-management/printer-configuration">slice settings</Link> for the currently selected printer.
+
+## Slice Mode
+
+Choose between single parameter or multi-parameter <Link href="/en-US/chitubox-pro/latest/slice/slice-mode">slice mode</Link>. If the selected printer does not support multi-parameter slicing, this option will be unavailable.
+
+## Single/Multi-Parameter Slicing
+
+Click this button to slice the project and enter the <Link href="/en-US/chitubox-pro/latest/slice/slice-preview">slice preview</Link> interface.

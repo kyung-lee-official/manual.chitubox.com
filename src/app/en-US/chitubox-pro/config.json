@@ -107,8 +107,16 @@
 							"label": "Function Menu"
 						},
 						{
+							"pageId": "toolbar",
+							"label": "Toolbar"
+						},
+						{
 							"pageId": "component-list",
 							"label": "Component List"
+						},
+						{
+							"pageId": "slice-panel",
+							"label": "Slice Panel"
 						},
 						{
 							"pageId": "gadgets",
