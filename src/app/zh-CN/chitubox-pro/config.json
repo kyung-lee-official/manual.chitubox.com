@@ -47,6 +47,10 @@
 					"label": "模型处理"
 				},
 				{
+					"pageId": "repair",
+					"label": "修复"
+				},
+				{
 					"pageId": "analyze-and-measure",
 					"label": "分析/测量"
 				},
