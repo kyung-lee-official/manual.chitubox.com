@@ -47,6 +47,10 @@
 					"label": "Model Processing"
 				},
 				{
+					"pageId": "repair",
+					"label": "Repair"
+				},
+				{
 					"pageId": "analyze-and-measure",
 					"label": "Analyze/Measure"
 				},
