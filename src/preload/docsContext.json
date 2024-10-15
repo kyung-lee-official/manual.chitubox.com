@@ -2833,6 +2833,87 @@
 								}
 							},
 							{
+								"pageId": "repair",
+								"label": "Repair",
+								"url": "/en-US/chitubox-pro/latest/repair",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "修复",
+										"id": "修复",
+										"children": [
+											{
+												"depth": 2,
+												"value": "错误列表",
+												"id": "错误列表"
+											},
+											{
+												"depth": 2,
+												"value": "左侧工具栏",
+												"id": "左侧工具栏"
+											},
+											{
+												"depth": 2,
+												"value": "闭合小孔",
+												"id": "闭合小孔"
+											},
+											{
+												"depth": 2,
+												"value": "闭合所有孔",
+												"id": "闭合所有孔"
+											},
+											{
+												"depth": 2,
+												"value": "方向修复",
+												"id": "方向修复"
+											},
+											{
+												"depth": 2,
+												"value": "包裹外表面",
+												"id": "包裹外表面"
+											},
+											{
+												"depth": 2,
+												"value": "添加三角面",
+												"id": "添加三角面"
+											},
+											{
+												"depth": 2,
+												"value": "删除多余壳体",
+												"id": "删除多余壳体"
+											},
+											{
+												"depth": 2,
+												"value": "删除三角面",
+												"id": "删除三角面"
+											},
+											{
+												"depth": 2,
+												"value": "翻转三角面",
+												"id": "翻转三角面"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "修复",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"description": "CHITUBOX Pro 的修复界面包含了闭合小孔、闭合所有孔、方向修复、包裹外表面、添加三角面、删除多余壳体、删除三角面和翻转三角面等多种功能，用于修复 3D 模型中的错误和缺陷，以确保模型能够顺利打印。",
+									"other": {
+										"pageId": "/zh-CN/chitubox-pro/v2.0.0/repair"
+									},
+									"openGraph": {
+										"images": [
+											"/images/docs/og_logo.png"
+										]
+									}
+								}
+							},
+							{
 								"pageId": "analyze-and-measure",
 								"label": "Analyze/Measure",
 								"url": "/en-US/chitubox-pro/latest/analyze-and-measure",
@@ -9836,21 +9917,6 @@
 												"depth": 2,
 												"value": "方向修复",
 												"id": "方向修复"
-											},
-											{
-												"depth": 2,
-												"value": "包裹外表面",
-												"id": "包裹外表面"
-											},
-											{
-												"depth": 2,
-												"value": "添加三角面",
-												"id": "添加三角面"
-											},
-											{
-												"depth": 2,
-												"value": "删除多余壳体",
-												"id": "删除多余壳体"
 											},
 											{
 												"depth": 2,
