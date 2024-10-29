@@ -2,7 +2,7 @@
 	"fieldName": "ChituManager",
 	"isVersioned": true,
 	"type": "book",
-	"homeUrl": "/zh-CN/faq/latest/chitubox-basic-faq",
+	"homeUrl": "/zh-CN/chitu-manager/latest/introduction",
 	"versions": [
 		{
 			"versionCode": "1.0.0",
