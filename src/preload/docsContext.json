@@ -2839,72 +2839,57 @@
 								"toc": [
 									{
 										"depth": 1,
-										"value": "修复",
-										"id": "修复",
+										"value": "Repair",
+										"id": "repair",
 										"children": [
 											{
 												"depth": 2,
-												"value": "错误列表",
-												"id": "错误列表"
+												"value": "Error List",
+												"id": "error-list"
 											},
 											{
 												"depth": 2,
-												"value": "左侧工具栏",
-												"id": "左侧工具栏"
+												"value": "Toolbar",
+												"id": "toolbar"
 											},
 											{
 												"depth": 2,
-												"value": "闭合小孔",
-												"id": "闭合小孔"
+												"value": "Close Trivial Holes",
+												"id": "close-trivial-holes"
 											},
 											{
 												"depth": 2,
-												"value": "闭合所有孔",
-												"id": "闭合所有孔"
+												"value": "Close All Holes",
+												"id": "close-all-holes"
 											},
 											{
 												"depth": 2,
-												"value": "方向修复",
-												"id": "方向修复"
+												"value": "Orientation Repair",
+												"id": "orientation-repair"
 											},
 											{
 												"depth": 2,
-												"value": "包裹外表面",
-												"id": "包裹外表面"
+												"value": "Delete Triangle",
+												"id": "delete-triangle"
 											},
 											{
 												"depth": 2,
-												"value": "添加三角面",
-												"id": "添加三角面"
-											},
-											{
-												"depth": 2,
-												"value": "删除多余壳体",
-												"id": "删除多余壳体"
-											},
-											{
-												"depth": 2,
-												"value": "删除三角面",
-												"id": "删除三角面"
-											},
-											{
-												"depth": 2,
-												"value": "翻转三角面",
-												"id": "翻转三角面"
+												"value": "Reverse Triangle",
+												"id": "reverse-triangle"
 											}
 										]
 									}
 								],
 								"metadata": {
-									"title": "修复",
+									"title": "Repair",
 									"authors": [
 										{
 											"name": "CHITUBOX Team"
 										}
 									],
-									"description": "CHITUBOX Pro 的修复界面包含了闭合小孔、闭合所有孔、方向修复、包裹外表面、添加三角面、删除多余壳体、删除三角面和翻转三角面等多种功能，用于修复 3D 模型中的错误和缺陷，以确保模型能够顺利打印。",
+									"description": "The Repair tab in CHITUBOX Pro includes Close Trivial Holes, Close All Holes, Orientation Repair, Coat Outer Surface, Add Triangle, Remove Redundant Shells, Delete Triangle, Reverse Triangles and other functions to fix errors and defects in models and ensure successful prints.",
 									"other": {
-										"pageId": "/zh-CN/chitubox-pro/v2.0.0/repair"
+										"pageId": "/en-US/chitubox-pro/v2.0.0/repair"
 									},
 									"openGraph": {
 										"images": [
@@ -16923,6 +16908,72 @@
 									"description": "CHITUBOX Pro 中的模型處理功能。包括選擇、移動、旋轉、縮放、鏡像、複製、分割模型、自動佈局、添加標籤、布爾運算、鏤空、挖洞等。",
 									"other": {
 										"pageId": "/zh-TW/chitubox-pro/v2.0.0/model-processing"
+									},
+									"openGraph": {
+										"images": [
+											"/images/docs/og_logo.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "repair",
+								"label": "修復",
+								"url": "/zh-TW/chitubox-pro/latest/repair",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "修複",
+										"id": "修複",
+										"children": [
+											{
+												"depth": 2,
+												"value": "錯誤列表",
+												"id": "錯誤列表"
+											},
+											{
+												"depth": 2,
+												"value": "左側工具欄",
+												"id": "左側工具欄"
+											},
+											{
+												"depth": 2,
+												"value": "閉合小孔",
+												"id": "閉合小孔"
+											},
+											{
+												"depth": 2,
+												"value": "閉合所有孔",
+												"id": "閉合所有孔"
+											},
+											{
+												"depth": 2,
+												"value": "方向修複",
+												"id": "方向修複"
+											},
+											{
+												"depth": 2,
+												"value": "刪除三角面",
+												"id": "刪除三角面"
+											},
+											{
+												"depth": 2,
+												"value": "翻轉三角面",
+												"id": "翻轉三角面"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "修复",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"description": "CHITUBOX Pro 的修复界面包含了闭合小孔、闭合所有孔、方向修复、包裹外表面、添加三角面、删除多余壳体、删除三角面和翻转三角面等多种功能，用于修复 3D 模型中的错误和缺陷，以确保模型能够顺利打印。",
+									"other": {
+										"pageId": "/zh-TW/chitubox-pro/v2.0.0/repair"
 									},
 									"openGraph": {
 										"images": [

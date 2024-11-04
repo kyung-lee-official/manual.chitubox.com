@@ -1,3 +1,5 @@
+import { Entry } from "@/docComponents/entry/Entry";
+
 import {
 	CloseSmallHoles,
 	CloseAllHoles,
@@ -24,20 +26,30 @@ export const metadata = {
 
 # 修複
 
-點擊軟件最上方的“修複”按鈕打開修複界麵。修複界麵包含了多種功能用於檢測和修複 3D 模型中的錯誤，以確保模型能夠順利打印。
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修複
+		</div>,
+	]}
+/>
+
+修復介麵包含了多種功能用於檢測和修復 3D 模型中的錯誤，以提高模型的列印成功率。
+
 <ImageContainer
-        src={
-                "/images/docs/zh-TW/chitubox-basic/2.x.x/001-repair.png"
-        }
+	src={
+		"/images/docs/zh-TW/chitubox-pro/2.x.x/repair.png"
+	}
 />
 
 ## 錯誤列表
 
 右邊的錯誤列表可查看檢測出來的模型錯誤，支持檢測的錯誤類型包括**多餘殼體**，**孔洞**，**壞邊**，**反向**，**相交**。
+
 <ImageContainer
-        src={
-                "/images/docs/zh-TW/chitubox-basic/2.x.x/002-repair.png"
-        }
+	src={
+		"/images/docs/zh-TW/chitubox-basic/2.x.x/002-repair.png"
+	}
 />
 
 點擊**檢測**選項，軟件將會自動檢測模型，並展示出模型的錯誤類型及對應數據。點擊基本修複和高級修複可一鍵修複絶大多數的錯誤類型。
@@ -46,18 +58,29 @@ export const metadata = {
 
 通過**左側工具欄**的多種選擇工具可以快速選取模型局部區域進行修複。快捷選擇工具包括**筆刷**、**線**、**矩形**、**多邊形**和**自由曲線**。
 <ImageContainer
-        src={
-                "/images/docs/zh-TW/chitubox-basic/2.x.x/003-repair.png"
-        }
+	src={
+		"/images/docs/zh-TW/chitubox-basic/2.x.x/003-repair.png"
+	}
 />
 
 ## 閉合小孔
-<ImageContainer
-        src={
-                "/images/docs/zh-TW/chitubox-basic/2.x.x/fillholes.png"
-        }
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修複 &gt; 閉合小孔
+		</div>,
+	]}
 />
+
+<ImageContainer
+	src={
+		"/images/docs/zh-TW/chitubox-basic/2.x.x/fillholes.png"
+	}
+/>
+
 <CloseSmallHoles /> 點擊**閉合小孔**，自動修複模型中損壞的 6 邊（含）以下的小孔及缺失麵，自動將這些區域填補閉合，確保模型表麵完整無缺。
+
 <ImageComparison
 	img1Src={
 		"/images/docs/zh-TW/chitubox-basic/2.x.x/005-repair-fillholes.png"
@@ -70,12 +93,23 @@ export const metadata = {
 />
 
 ## 閉合所有孔
-<ImageContainer
-        src={
-                "/images/docs/zh-TW/chitubox-basic/2.x.x/fillallholes.png"
-        }
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修複 &gt; 閉合所有孔
+		</div>,
+	]}
 />
+
+<ImageContainer
+	src={
+		"/images/docs/zh-TW/chitubox-basic/2.x.x/fillallholes.png"
+	}
+/>
+
 <CloseAllHoles /> 點擊**閉合所有孔**，自動修複模型中損壞的損壞的所有孔洞及缺失麵，自動將這些區域填補閉合，確保模型表麵完整無缺。
+
 <ImageComparison
 	img1Src={
 		"/images/docs/zh-TW/chitubox-basic/2.x.x/007-repair-fillallholes.png"
@@ -88,13 +122,23 @@ export const metadata = {
 />
 
 ## 方向修複
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修複 &gt; 方向修複
+		</div>,
+	]}
+/>
+
 <ImageContainer
-        src={
-                "/images/docs/zh-TW/chitubox-basic/2.x.x/flipnormals.png"
-        }
+	src={
+		"/images/docs/zh-TW/chitubox-basic/2.x.x/flipnormals.png"
+	}
 />
 
 <OrientationRepair /> 點擊**方向修複**，自動修複模型表面法向錯誤的三角面，確保模型的每個三角面都指向正確方向。
+
 <ImageComparison
 	img1Src={
 		"/images/docs/zh-TW/chitubox-basic/2.x.x/011-repair-normalsflip.png"
@@ -107,6 +151,15 @@ export const metadata = {
 />
 
 ## 刪除三角面
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修複 &gt; 刪除三角面
+		</div>,
+	]}
+/>
+
 <ImageContainer
         src={
                 "/images/docs/zh-TW/chitubox-basic/2.x.x/deletetriangle.png"
@@ -115,6 +168,15 @@ export const metadata = {
 <DeleteTriangle /> 鼠標左鍵點擊選中需刪除的三角面，點擊**刪除三角面**功能，完成刪除。
 
 ## 翻轉三角面
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修複 &gt; 翻轉三角面
+		</div>,
+	]}
+/>
+
 <ImageContainer
         src={
                 "/images/docs/zh-TW/chitubox-basic/2.x.x/fliptriangle.png"

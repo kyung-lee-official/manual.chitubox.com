@@ -1,3 +1,5 @@
+import { Entry } from "@/docComponents/entry/Entry";
+
 export const metadata = {
 	title: "修复",
 	authors: [{ name: "CHITUBOX Team" }],
@@ -13,37 +15,62 @@ export const metadata = {
 
 # 修复
 
-点击软件最上方的“修复”按钮打开修复界面。修复界面包含了多种功能用于检测和修复 3D 模型中的错误，以确保模型能够顺利打印。
-<ImageContainer
-        src={
-                "/images/docs/zh-CN/chitubox-pro/2.x.x/001-repair.png"
-        }
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修复
+		</div>,
+	]}
 />
+
+修复界面包含了多种功能用于检测和修复 3D 模型中的错误，以提高模型的打印成功率。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/repair.png"
+	}
+/>
+
 ## 错误列表
 
 右边的错误列表可查看检测出来的模型错误，支持检测的错误类型包括**多余壳体**，**孔洞**，**坏边**，**反向**，**相交**。
+
 <ImageContainer
-        src={
-                "/images/docs/zh-CN/chitubox-pro/2.x.x/002-repair.png"
-        }
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/002-repair.png"
+	}
 />
+
 点击**检测**选项，软件将会自动检测模型，并展示出模型的错误类型及对应数据。点击基本修复和高级修复可一键修复绝大多数的错误类型。
 
 ## 左侧工具栏
 
 通过**左侧工具栏**的多种选择工具可以快速选取模型局部区域进行修复。快捷选择工具包括**笔刷**、**线**、**矩形**、**多边形**和**自由曲线**。
+
 <ImageContainer
-        src={
-                "/images/docs/zh-CN/chitubox-pro/2.x.x/003-repair.png"
-        }
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/003-repair.png"
+	}
 />
+
 ## 闭合小孔
-<ImageContainer
-        src={
-                "/images/docs/zh-CN/chitubox-pro/2.x.x/004-repair-fillholes.png"
-        }
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修复 &gt; 闭合小孔
+		</div>,
+	]}
 />
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/004-repair-fillholes.png"
+	}
+/>
+
 点击**闭合小孔**，自动修复模型中损坏的 6 边（含）以下的小孔及缺失面，自动将这些区域填补闭合，确保模型表面完整无缺。
+
 <ImageComparison
 	img1Src={
 		"/images/docs/zh-CN/chitubox-pro/2.x.x/005-repair-fillholes.png"
@@ -56,12 +83,23 @@ export const metadata = {
 />
 
 ## 闭合所有孔
-<ImageContainer
-        src={
-                "/images/docs/zh-CN/chitubox-pro/2.x.x/009-repair-fillallholes.png"
-        }
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修复 &gt; 闭合所有孔
+		</div>,
+	]}
 />
-点击**闭合所有孔**，自动修复模型中损坏的损坏的所有孔洞及缺失面，自动将这些区域填补闭合，确保模型表面完整无缺。
+
+<ImageContainer
+	src={
+			"/images/docs/zh-CN/chitubox-pro/2.x.x/009-repair-fillallholes.png"
+	}
+/>
+
+点击**闭合所有孔**，自动修复模型中损坏的所有孔洞及缺失面，自动将这些区域填补闭合，确保模型表面完整无缺。
+
 <ImageComparison
 	img1Src={
 		"/images/docs/zh-CN/chitubox-pro/2.x.x/007-repair-fillallholes.png"
@@ -74,12 +112,23 @@ export const metadata = {
 />
 
 ## 方向修复
-<ImageContainer
-        src={
-                "/images/docs/zh-CN/chitubox-pro/2.x.x/004-repair-fillholes.png"
-        }
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修复 &gt; 方向修复
+		</div>,
+	]}
 />
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/004-repair-fillholes.png"
+	}
+/>
+
 点击**方向修复**，自动修复模型表面法向错误的三角面，确保模型的每个三角面都指向正确方向。
+
 <ImageComparison
 	img1Src={
 		"/images/docs/zh-CN/chitubox-pro/2.x.x/011-repair-normalsflip.png"
@@ -90,6 +139,7 @@ export const metadata = {
 	}
 	text2={"修复方向后"}
 />
+
 {/* ## 包裹外表面
 
 将模型的三角面包覆方向统一向外，删除矛盾三角面，并去除交叉关联模型的重叠部分，确保模型的完整性。 */}
@@ -99,19 +149,39 @@ export const metadata = {
 点击**删除多余壳体**，选中模型中多余壳体数，点击删除。添加三角面: 当使用**添加三角形**功能时，鼠标左键点击对象不再是三角面数据，而是非封闭三角面的边线。 */}
 
 ## 删除三角面
-<ImageContainer
-        src={
-                "/images/docs/zh-CN/chitubox-pro/2.x.x/013-repair-triangleflip.png"
-        }
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修复 &gt; 删除三角面
+		</div>,
+	]}
 />
+
+<ImageContainer
+	src={
+			"/images/docs/zh-CN/chitubox-pro/2.x.x/013-repair-triangleflip.png"
+	}
+/>
+
 鼠标左键点击选中需删除的三角面，点击**删除三角面**功能，完成删除。
 
 ## 翻转三角面
-<ImageContainer
-        src={
-                "/images/docs/zh-CN/chitubox-pro/2.x.x/014-repair-triangledelete.png"
-        }
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			修复 &gt; 翻转三角面
+		</div>,
+	]}
 />
+
+<ImageContainer
+	src={
+			"/images/docs/zh-CN/chitubox-pro/2.x.x/014-repair-triangledelete.png"
+	}
+/>
+
 鼠标左键点击选中需翻转的三角面，点击**翻转三角面**功能，手动修正模型表面方向错误的三角面。
 
 <Admonition type="note" title="注意">

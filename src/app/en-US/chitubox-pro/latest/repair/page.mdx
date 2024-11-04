@@ -1,62 +1,189 @@
+import { Entry } from "@/docComponents/entry/Entry";
+
 export const metadata = {
-	title: "修复",
+	title: "Repair",
 	authors: [{ name: "CHITUBOX Team" }],
 	description:
-		"CHITUBOX Pro 的修复界面包含了闭合小孔、闭合所有孔、方向修复、包裹外表面、添加三角面、删除多余壳体、删除三角面和翻转三角面等多种功能，用于修复 3D 模型中的错误和缺陷，以确保模型能够顺利打印。",
+		"The Repair tab in CHITUBOX Pro includes Close Trivial Holes, Close All Holes, Orientation Repair, Coat Outer Surface, Add Triangle, Remove Redundant Shells, Delete Triangle, Reverse Triangles and other functions to fix errors and defects in models and ensure successful prints.",
 	other: {
-		pageId: "/zh-CN/chitubox-pro/v2.0.0/repair",
+		pageId: "/en-US/chitubox-pro/v2.0.0/repair",
 	},
 	openGraph: {
 		images: ["/images/docs/og_logo.png"],
 	},
 };
 
-# 修复
+# Repair
 
-点击软件最上方的“修复”按钮打开修复界面。修复界面包含了多种功能用于检测和修复 3D 模型中的错误，以确保模型能够顺利打印。
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			Repair
+		</div>,
+	]}
+/>
 
-## 错误列表
+The Repair tab includes many functions for inspecting and fixing 3D model erros to improve success rates in Printing.
 
-右边的错误列表可查看检测出来的模型错误，支持检测的错误类型包括**多余壳体**，**孔洞**，**坏边**，**反向**，**相交**。
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/repair.png"
+	}
+/>
 
-点击**检测**选项，软件将会自动检测模型，并展示出模型的错误数据。点击基本修复可一键完成绝大多数的修复任务，高级修复是针对清除多余壳体的优化修复。
+## Error List
 
-## 左侧工具栏
+The Error List on the right displays all detected model errors. Supported error types include: **Excess Shells**, **Holes**, **Bad Side**, **Reverse** and **Intersect**.
 
-通过**左侧工具栏**的多种选择工具可以快速选取模型局部区域进行修复。快捷选择工具包括**笔刷**、**线**、**矩形**、**多边形**和**自由曲线**。
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/002-repair.png"
+	}
+/>
 
-## 闭合小孔
+Click on the **Detect** button to run automatic error detection and the software will display model error types and related data. Choose Basic Repair or Advanced Repair to fix most error types with a single click.
 
-将模型上存在损坏的 6 边（含）以下的小孔及缺失面进行闭合操作。
+## Toolbar
 
-## 闭合所有孔
+The **Toolbar** on the left includes multiple tools for quick selecting of model areas that need repair. The quick selection tools include **Brush**, **Line**, **Rectangular**, **Polygon** and **Free Box**.
 
-将模型上存在损坏的所有孔及缺失面进行闭合操作。
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/003-repair.png"
+	}
+/>
 
-## 方向修复
+## Close Trivial Holes
 
-修复模型中存在法向方向错误的三角面，确保模型的每个三角面都指向正确方向。
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			Repair &gt; Close Trivial Holes
+		</div>,
+	]}
+/>
 
-## 包裹外表面
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/004-repair-fillholes.png"
+	}
+/>
 
-将模型的三角面包覆方向统一向外，删除矛盾三角面，并去除交叉关联模型的重叠部分，确保模型的完整性。
+Click **Close Trivial Holes** to automatically fix defected holes with 6 edges or less and missing surfaces. The program will fill these areas to ensure complete model surfaces for printing.
 
-## 添加三角面
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/005-repair-fillholes.png"
+	}
+	text1={"Before Closing Trivial Holes"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/006-repair-fillholes.png"
+	}
+	text2={"After Closing Trivial Holes"}
+/>
 
-使用**添加三角面**功能时，鼠标左键点击空缺三角面周围的边线完成添加。
+## Close All Holes
 
-## 删除多余壳体
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			Repair &gt; Close All Holes
+		</div>,
+	]}
+/>
 
-点击**删除多余壳体**，选中模型中多余壳体数，点击删除。
+<ImageContainer
+	src={
+			"/images/docs/en-US/chitubox-pro/2.x.x/009-repair-fillallholes.png"
+	}
+/>
 
-## 删除三角面
+Click **Close All Holes** to automatically fix all damaged holes and missing surfaces in the model. The program will fill these areas to ensure complete model surfaces for printing.
 
-鼠标左键点击选中需删除的三角面，点击**删除三角面**功能，完成删除。
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/007-repair-fillallholes.png"
+	}
+	text1={"Before Closing All Holes"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/008-repair-fillallholes.png"
+	}
+	text2={"After Closing All Holes"}
+/>
 
-## 翻转三角面
+## Orientation Repair
 
- 翻转所选的三角面。
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			Repair &gt; Orientation Repair
+		</div>,
+	]}
+/>
 
-<Admonition type="note" title="注意">
-	当没有三角面被选中时，**删除三角形**和**翻转三角形**功能不可被使用。
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-pro/2.x.x/004-repair-fillholes.png"
+	}
+/>
+
+Click **Orientation Repair** to automatically fix triangles with wrong normal directions on model surfaces and ensure all triangles are facing correct directions.
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/011-repair-normalsflip.png"
+	}
+	text1={"Before Orientation Repair"}
+	img2Src={
+		"/images/docs/zh-CN/chitubox-pro/2.x.x/012-repair-normalsflip.png"
+	}
+	text2={"After Orientation Repair"}
+/>
+
+{/* ## Coat Outer Surface
+
+Adjust all surface triangles to face outward, remove conflicingting triangles and delete overlapping segments between intersecting models to ensure model integrity. */}
+
+{/* ## Remove Redundant Shell
+
+Click **Remove Redundant Shell**, select shell from the list and click on delete to remove. Add Triangle: The target for mouse left click becomes open traingle edges instead of traingle faces for the "Add Triangle" function, . */}
+
+## Delete Triangle
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			Repair &gt; Delete Triangle
+		</div>,
+	]}
+/>
+
+<ImageContainer
+	src={
+			"/images/docs/en-US/chitubox-pro/2.x.x/013-repair-triangleflip.png"
+	}
+/>
+
+Left mouse click to pick triangles that need to be deleted, click "Delete Triangles" to complete deletion.
+
+## Reverse Triangle
+
+<Entry
+	functionMenu={[
+		<div className="flex items-center gap-1">
+			Repair &gt; Reverse Triangle
+		</div>,
+	]}
+/>
+
+<ImageContainer
+	src={
+			"/images/docs/en-US/chitubox-pro/2.x.x/014-repair-triangledelete.png"
+	}
+/>
+
+Left mouse click to pick triangles that need to be reversed, click "Reverse Triangle" to manually fix triangles facing wrong directions on model surfaces.
+
+<Admonition type="note" title="Note">
+	**Delete Triangle** and **Reverse Triangle** functions cannot be activated when no triangles are selected.
 </Admonition>
