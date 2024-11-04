@@ -253,3 +253,45 @@ STL 文件并不包含具体的单位信息，而是使用数字记录。因此�
     <ImageContainer
     	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq009.png"}
     />
+
+## 清除及重新创建缩略图缓存
+
+如果您需要清除和重新创建缩略图的缓存，可以尝试以下方法。
+
+方法1：磁盘清理
+
+1. 通过按快捷键Win+E，打开“文件资源管理器”，单击本地磁盘“C盘”，右击选择属性，点击“磁盘清理”。
+
+勾选“缩略图”，再点击“清理系统文件”，然后点击“确定”。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq004-4.png"}
+/>
+
+2. 选择“删除文件”。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq004-5.png"}
+/>
+
+方法2：命令提示符
+
+1. 打开“开始”菜单，搜索“命令提示符”，并选择“以管理员身份运行”。
+2. 先输入 `taskkill /f /im explorer.exe` 停止资源管理器 > 输入 `del /f /s /q /a %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db` 删除缩略图缓存 > 再输入 `start explorer.exe` 重启资源管理器：`start explorer.exe`。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/2.x.x/FAQ-thumbnails03.png"}
+/>
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/2.x.x/FAQ-thumbnails04.png"}
+/>
+
+如果尝试了上述方法，缩略图仍然没有显示，请检查以下设置。
+
+1. 通过按快捷键Win+E，打开“文件资源管理器”。
+2. 点击“查看”选项卡，选择“选项”。
+3. 在“查看”选项卡中，取消勾选“始终显示图标，从不显示缩略图”。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/2.x.x/FAQ-Thumbnails05.png"}
+/>

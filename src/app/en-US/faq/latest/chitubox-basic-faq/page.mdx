@@ -255,3 +255,50 @@ Printers may fail to read certain USB drives sometimes. Usually this is because 
     <ImageContainer
     	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq009.png"}
     />
+
+## Clear and Rebuild Thumbnails
+If you need to clear and rebuild thumbnails, you can follow the steps below on your Windows system to clear and rebuild the thumbnail cache.
+
+**Disk Cleanup**
+
+Hold down Win + E to open File Explorer, right-click your system disk (usually C drive) and select Properties option, and then click Disk Cleanup.
+
+<ImageContainer
+	src={"/images/docs/en-US/faq/chitubox-basic/2.x.x/FAQ-thumbnails-en001.png"}
+/>
+
+Then check the Thumbnails option, click Clean up system files, click the OK button and finally click the Delete Files option.
+
+<ImageContainer
+	src={"/images/docs/en-US/faq/chitubox-basic/2.x.x/FAQ-thumbnails-en002.png"}
+/>
+
+<ImageContainer
+	src={"/images/docs/en-US/faq/chitubox-basic/1.x.x/faq004-5.png"}
+/>
+
+
+**Use Command Prompt**
+
+1. Open the Start menu.
+2. Search for "Command Prompt", right-click on the result, and select "Run as administrator."
+3. Type the following command and press Enter to stop File Explorer: `taskkill /f /im explorer.exe`
+4. Type the following command and press Enter to delete all thumbnail database files without confirmation: `del /f /s /q /a %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db`
+5. Type the following command and press Enter to restart File Explorer, to restart File Explorer:`start explorer.exe`.
+
+<ImageContainer
+	src={"/images/docs/en-US/faq/chitubox-basic/2.x.x/FAQ-thumbnails-en003.png"}
+/>
+<ImageContainer
+	src={"/images/docs/en-US/faq/chitubox-basic/2.x.x/FAQ-thumbnails-en004.png"}
+/>
+
+After completing these steps, you should be able to browse files and folders with thumbnail previews displaying correctly. If the thumbnails still do not appear after trying the above methods, please check the following settings:
+
+1. Open File Explorer and click on the View tab.
+2. Click the Options button to open Folder Options and click on the View tab.
+3. Uncheck the option for **Always show icons, never thumbnails** and finally click Apply and then OK button.
+
+<ImageContainer
+	src={"/images/docs/en-US/faq/chitubox-basic/2.x.x/FAQ-thumbnails-en005.png"}
+/>

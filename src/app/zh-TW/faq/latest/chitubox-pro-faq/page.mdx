@@ -227,6 +227,50 @@ STL 檔案並不包含具體的單位資訊，而是使用數字記錄。因此�
 
 1. 重新開啟軟體後，會產生新的 📁*machine* 資料夾，可以將 _.cfg_ 檔案複製粘貼到新的 📁*machine* 資料夾中以恢復您的機器。請不要一次性將所有的 _.cfg_ 檔案複製到 📁 _machine_ 資料夾中，因為您遇到的問題有可能是其中一個檔案引起的。
 
+### 清除及重新創建縮略圖緩存
+
+清除及重新創建縮略圖緩存
+
+如果您需要清除和重新創建縮略圖的緩存，可以嘗試以下方法。
+
+方法1：磁盤清理
+
+通過按快捷鍵Win+E，打開“文件資源管理器”，單擊本地磁盤“C盤”，右擊選擇屬性，點擊“磁盤清理”。
+
+勾選“縮略圖”，再點擊“清理系統文件”，然後點擊“確定”。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq004-4.png"}
+/>
+
+選擇“刪除文件”。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/1.x.x/faq004-5.png"}
+/>
+
+方法2：命令提示符
+
+1. 打開“開始”菜單，搜索“命令提示符”，並選擇“以管理員身份運行”。。
+2. 先輸入 `taskkill /f /im explorer.exe` 停止資源管理器 > 輸入 `del /f /s /q /a %LocalAppData%\Microsoft\Windows\Explorer\thumbcache_*.db` 刪除縮略圖緩存 > 再輸入 `start explorer.exe` 重啓資源管理器：`start explorer.exe`。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/2.x.x/FAQ-thumbnails03.png"}
+/>
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/2.x.x/FAQ-thumbnails04.png"}
+/>
+
+如果嘗試了上述方法，縮略圖仍然沒有顯示，請檢查以下設置。
+
+1. 通過按快捷鍵Win+E，打開“文件資源管理器”。
+2. 點擊“查看”選項卡，選擇“選項”。
+3. 在“查看”選項卡中，取消勾選“始終顯示圖標，從不顯示縮略圖”。
+
+<ImageContainer
+	src={"/images/docs/zh-CN/faq/chitubox-basic/2.x.x/FAQ-Thumbnails05.png"}
+/>
+
 ## 隨身碟問題
 
 您可能會發現您的列印機有時無法正確讀取您的隨身碟。這主要是因為您的列印機控制板設計為使用 USB 2.0 且容量等於或小於 16GB。USB 3.0 使用較大的電流，因此有時會對控制板造成電氣干擾。您的隨身碟應滿足以下要求：
