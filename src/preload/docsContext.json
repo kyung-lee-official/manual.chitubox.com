@@ -6223,6 +6223,11 @@
 												"depth": 2,
 												"value": "USB Drive Issues",
 												"id": "usb-drive-issues"
+											},
+											{
+												"depth": 2,
+												"value": "Clear and Rebuild Thumbnails",
+												"id": "clear-and-rebuild-thumbnails"
 											}
 										]
 									}
@@ -6357,6 +6362,11 @@
 												"depth": 2,
 												"value": "How to Join Our Affiliate",
 												"id": "how-to-join-our-affiliate"
+											},
+											{
+												"depth": 2,
+												"value": "Clear and Rebuild Thumbnails",
+												"id": "clear-and-rebuild-thumbnails"
 											}
 										]
 									}
@@ -12864,7 +12874,7 @@
 				"fieldName": "ChituManager",
 				"isVersioned": true,
 				"type": "book",
-				"homeUrl": "/zh-CN/faq/latest/chitubox-basic-faq",
+				"homeUrl": "/zh-CN/chitu-manager/latest/introduction",
 				"versions": [
 					{
 						"versionCode": "1.0.0",
@@ -13273,14 +13283,12 @@
 											{
 												"depth": 2,
 												"value": "U 盘问题",
-												"id": "u-盘问题",
-												"children": [
-													{
-														"depth": 3,
-														"value": "清除及重建缩略图",
-														"id": "清除及重建缩略图"
-													}
-												]
+												"id": "u-盘问题"
+											},
+											{
+												"depth": 2,
+												"value": "清除及重新创建缩略图缓存",
+												"id": "清除及重新创建缩略图缓存"
 											}
 										]
 									}
@@ -13403,6 +13411,11 @@
 														"depth": 3,
 														"value": "清除缓存",
 														"id": "清除缓存"
+													},
+													{
+														"depth": 3,
+														"value": "清除及重新创建缩略图缓存",
+														"id": "清除及重新创建缩略图缓存"
 													}
 												]
 											},
@@ -20322,6 +20335,11 @@
 												"depth": 2,
 												"value": "隨身碟問題",
 												"id": "隨身碟問題"
+											},
+											{
+												"depth": 2,
+												"value": "清除及重新創建縮略圖緩存",
+												"id": "清除及重新創建縮略圖緩存"
 											}
 										]
 									}
@@ -20444,6 +20462,11 @@
 														"depth": 3,
 														"value": "清除緩存",
 														"id": "清除緩存"
+													},
+													{
+														"depth": 3,
+														"value": "清除及重新創建縮略圖緩存",
+														"id": "清除及重新創建縮略圖緩存"
 													}
 												]
 											},
