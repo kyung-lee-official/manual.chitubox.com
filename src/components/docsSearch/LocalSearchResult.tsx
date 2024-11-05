@@ -16,16 +16,17 @@ const LocalSearchResult = (props: { searchResults: FlattenPage[] }) => {
 					border-[1px] border-neutral-200 dark:border-neutral-800
 					rounded-md cursor-default"
 				>
-					{searchResults.map((result: any) => {
-						const { label, path } = result;
+					{searchResults.map((result: FlattenPage) => {
+						const { label, url } = result;
+
 						return (
 							<div
 								className="flex justify-start items-center px-6
                                 hover:text-sky-400
                                 cursor-pointer"
-								key={path}
+								key={url}
 								onMouseDown={() => {
-									router.push(path);
+									router.push(url);
 								}}
 							>
 								{label}
