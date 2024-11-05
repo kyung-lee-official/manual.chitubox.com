@@ -4,13 +4,13 @@ import { Dangerous, InfoCircle, Lightbulb, Warning } from "../icons/Icons";
 const Icon: React.FC<any> = ({ type }) => {
 	switch (type) {
 		case "note":
-			return <InfoCircle size={30} />;
+			return <InfoCircle size={20} />;
 		case "tip":
-			return <Lightbulb size={30} />;
+			return <Lightbulb size={20} />;
 		case "warning":
-			return <Warning size={30} />;
+			return <Warning size={20} />;
 		case "danger":
-			return <Dangerous size={30} />;
+			return <Dangerous size={20} />;
 		default:
 			return null;
 			break;
