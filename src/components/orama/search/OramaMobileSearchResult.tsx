@@ -25,7 +25,7 @@ function OramaMobileSearchResult(props: {
 		});
 	}
 
-	const [selectedTag, setSelectedTag] = useState([
+	const [selectedTags, setSelectedTags] = useState([
 		"CHITUBOX Basic",
 		"CHITUBOX Pro",
 		"ChituManager",
@@ -73,13 +73,13 @@ function OramaMobileSearchResult(props: {
 					{term && (
 						<div className="flex flex-col">
 							<SearchFilter
-								selectedTag={selectedTag}
-								setSelectedTag={setSelectedTag}
+								selectedTags={selectedTags}
+								setSelectedTags={setSelectedTags}
 							/>
 							<Block>
 								{results?.hits
 									.filter((hit: any) => {
-										return selectedTag.includes(
+										return selectedTags.includes(
 											hit.document.name
 										);
 									})

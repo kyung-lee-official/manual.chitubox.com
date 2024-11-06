@@ -31,7 +31,7 @@ export const DialogContent = forwardRef(function DialogContent(
 		});
 	}
 
-	const [selectedTag, setSelectedTag] = useState([
+	const [selectedTags, setSelectedTags] = useState([
 		"CHITUBOX Basic",
 		"CHITUBOX Pro",
 		"ChituManager",
@@ -69,6 +69,7 @@ export const DialogContent = forwardRef(function DialogContent(
 					className="w-full
 					bg-white/0
 					outline-none"
+					autoFocus
 					placeholder="Search Documentation"
 					onChange={(e) => {
 						searchTerms(e.target.value);
@@ -91,8 +92,8 @@ export const DialogContent = forwardRef(function DialogContent(
 			{term && (
 				<div className="flex flex-col">
 					<SearchFilter
-						selectedTag={selectedTag}
-						setSelectedTag={setSelectedTag}
+						selectedTags={selectedTags}
+						setSelectedTags={setSelectedTags}
 					/>
 					<div
 						className="flex flex-col max-h-[400px] p-4 gap-2
@@ -101,7 +102,9 @@ export const DialogContent = forwardRef(function DialogContent(
 					>
 						{results?.hits
 							.filter((hit: any) => {
-								return selectedTag.includes(hit.document.name);
+								console.log(hit.document.name);
+
+								return selectedTags.includes(hit.document.name);
 							})
 							?.map((hit: any) => {
 								return (
