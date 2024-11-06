@@ -1,4 +1,5 @@
 import { ChituboxMenu } from "@/components/icons/Icons";
+import { Button } from "@/components/button/Button";
 
 export const metadata = {
 	title: "Main Menu",
@@ -128,7 +129,74 @@ Read CHITUBOX user manual.
 
 ### Plugins
 
-Manage software plugins. You can import or export plugins to support printers that do not use Chitu Systems. 
+Manage software plugins. You can import or export plugins to support printers that are not natively supported by CHITUBOX.
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>Brand</th>
+			<th>Plugin</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Nova 3D</td>
+			<td>
+				<Button
+					buttonType={"link"}
+					href="/plugins/nova3d_plugin_1_0_8.CHplugin"
+				>
+					Nova 3D
+				</Button>
+			</td>
+		</tr>
+		<tr>
+			<td>Longer</td>
+			<td>
+				<div className="flex gap-1.5">
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3D-Orange4K-Windows64bit-V1.5.CHplugin"
+					>
+						Orange 4K for Windows
+					</Button>
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3d-Orange10-Windows64bit-V1.4.CHplugin"
+					>
+						Orange 10 for Windows
+					</Button>
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3d-Orange30-Windows64bit-V1.4.CHplugin"
+					>
+						Orange 30 for Windows
+					</Button>
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3D-Orange4K-macOS-V1.5.CHplugin"
+					>
+						Orange 4K for macOS
+					</Button>
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3d-Orange10-macOS-V1.4.CHplugin"
+					>
+						Orange 10 for macOS
+					</Button>
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3d-Orange30-macOS-V1.4.CHplugin"
+					>
+						Orange 30 for macOS
+					</Button>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+After downloading the plugin, You can go to the **Main Menu > Help > Plugin** to open the plugin window and import the plugin file.
 
 ### Correct Translation
 

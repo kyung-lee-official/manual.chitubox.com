@@ -1897,14 +1897,6 @@
 	{
 		"name": "CHITUBOX Pro",
 		"version": "2.0.0",
-		"title": "Export Slice Files with Plug-ins",
-		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#export-slice-files-with-plug-ins",
-		"level": 3,
-		"content":"Some printers are supported through plugins within CHITUBOX. You will need to download and install the corresponding plug-ins before saving a slice file. After downloading the plugin, You can go to the Main Menu > Help > Plugin to open the plugin window and import the plugin file. Click the [link](https://manual.chitubox.com/en-US/chitubox-pro/latest/file#export-slice-files-with-plug-ins) to learn more details."
-	},
-	{
-		"name": "CHITUBOX Pro",
-		"version": "2.0.0",
 		"title": "Slice File Thumbnail View",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#slice-file-thumbnail-view",
 		"level": 3,
