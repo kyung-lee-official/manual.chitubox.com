@@ -35,6 +35,7 @@ export const DialogContent = forwardRef(function DialogContent(
 		"CHITUBOX Basic",
 		"CHITUBOX Pro",
 		"ChituManager",
+		"FAQ",
 	]);
 
 	useEffect(() => {
