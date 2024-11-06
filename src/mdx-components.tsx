@@ -102,7 +102,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		);
 	};
 
-	const p = (props: any) => <p {...props} className="my-4" />;
+	const p = (props: any) => <p {...props} className="leading-6" />;
 
 	const ul = ({ children }: any) => {
 		return (

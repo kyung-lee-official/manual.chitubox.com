@@ -50,8 +50,7 @@ export const Button: React.FC<NativeButtonProps> = (props) => {
 		if (isLoading) {
 			return (
 				<button
-					className={`flex justify-center items-center py-1
-					px-4
+					className={`flex justify-center items-center px-3 py-1
 					text-gray-400 bg-gray-300
 					rounded
 					cursor-not-allowed
@@ -75,8 +74,7 @@ export const Button: React.FC<NativeButtonProps> = (props) => {
 
 		return (
 			<button
-				className={`flex justify-center items-center py-1
-				px-4
+				className={`flex justify-center items-center px-3 py-1
 				${disabled ? "text-gray-400" : "text-gray-200 hover:text-gray-100"}
 				${disabled ? "bg-gray-300" : buttonLevelClass}
 				rounded
@@ -92,8 +90,7 @@ export const Button: React.FC<NativeButtonProps> = (props) => {
 		if (isLoading) {
 			return (
 				<button
-					className={`flex justify-center items-center min-h-[40px]
-					px-4
+					className={`flex justify-center items-center px-3 py-1
 					text-gray-400 bg-gray-300
 					rounded-xl
 					cursor-not-allowed
@@ -117,8 +114,7 @@ export const Button: React.FC<NativeButtonProps> = (props) => {
 
 		return (
 			<button
-				className={`flex justify-center items-center min-h-[40px]
-				px-4
+				className={`flex justify-center items-center px-3 py-1
 				${disabled ? "text-gray-400" : "text-gray-200 hover:text-gray-100"}
 				${disabled ? "bg-gray-300" : buttonLevelClass}
 				rounded-xl
@@ -135,8 +131,8 @@ export const Button: React.FC<NativeButtonProps> = (props) => {
 		return (
 			<a
 				href={href}
-				className={`flex justify-center items-center min-h-[40px] px-4 gap-2
-                font-medium text-gray-200 hover:text-gray-100
+				className={`flex justify-center items-center px-3 py-1 my-2 gap-2
+                text-gray-200 hover:text-gray-100
                 bg-blue-500 hover:bg-blue-600
 				rounded-md shadow-md max-w-fit
 				transition-all duration-150`}
