@@ -48,6 +48,16 @@
 	.scrollbar-hide::-webkit-scrollbar {
 		@apply hidden;
 	}
+
+	/* For tsmc */
+	.tsmc-input::-webkit-outer-spin-button {
+		@apply [-webkit-appearance:none]
+		m-0;
+	}
+	.tsmc-input::-webkit-inner-spin-button {
+		@apply [-webkit-appearance:none]
+		m-0;
+	}
 }
 
 @font-face {

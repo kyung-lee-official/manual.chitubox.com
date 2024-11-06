@@ -121,7 +121,7 @@ export const Input = (props: any) => {
 				className={
 					className
 						? className
-						: "text-center w-[80px] bg-gray-100 dark:bg-gray-700 rounded-sm outline-none custom-input"
+						: "text-center w-[80px] bg-gray-100 dark:bg-gray-700 rounded-sm outline-none tsmc-input"
 				}
 				readOnly={readOnly}
 				onChange={

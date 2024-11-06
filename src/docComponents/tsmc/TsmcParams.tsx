@@ -606,7 +606,7 @@ const TsmcParams = (props: any) => {
 								stage={Stage.Br1}
 								setActiveStage={setActiveStage}
 								readOnly={true}
-								className="text-center w-[80px] bg-gray-50 dark:bg-gray-800 rounded-sm outline-none custom-input"
+								className="text-center w-[80px] bg-gray-50 dark:bg-gray-800 rounded-sm outline-none tsmc-input"
 							/>
 						</td>
 						<td>
@@ -753,7 +753,7 @@ const TsmcParams = (props: any) => {
 								stage={Stage.R1}
 								setActiveStage={setActiveStage}
 								readOnly={true}
-								className="text-center w-[80px] bg-gray-50 dark:bg-gray-800 rounded-sm outline-none custom-input"
+								className="text-center w-[80px] bg-gray-50 dark:bg-gray-800 rounded-sm outline-none tsmc-input"
 							/>
 						</td>
 						<td>
