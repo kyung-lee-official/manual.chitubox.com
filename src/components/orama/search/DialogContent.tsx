@@ -102,8 +102,6 @@ export const DialogContent = forwardRef(function DialogContent(
 					>
 						{results?.hits
 							.filter((hit: any) => {
-								console.log(hit.document.name);
-
 								return selectedTags.includes(hit.document.name);
 							})
 							?.map((hit: any) => {

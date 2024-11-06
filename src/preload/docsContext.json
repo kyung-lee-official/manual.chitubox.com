@@ -115,11 +115,6 @@
 											},
 											{
 												"depth": 2,
-												"value": "Plugin Requirements",
-												"id": "plugin-requirements"
-											},
-											{
-												"depth": 2,
 												"value": "Windows",
 												"id": "windows"
 											},
@@ -2627,11 +2622,6 @@
 														"depth": 3,
 														"value": "Import and Export Slice Files",
 														"id": "import-and-export-slice-files"
-													},
-													{
-														"depth": 3,
-														"value": "Export Slice Files with Plug-ins",
-														"id": "export-slice-files-with-plug-ins"
 													},
 													{
 														"depth": 3,
@@ -7144,11 +7134,6 @@
 											},
 											{
 												"depth": 2,
-												"value": "插件要求",
-												"id": "插件要求"
-											},
-											{
-												"depth": 2,
 												"value": "Windows",
 												"id": "windows"
 											},
@@ -9673,11 +9658,6 @@
 																"id": "导出切片文件"
 															}
 														]
-													},
-													{
-														"depth": 3,
-														"value": "使用插件导出切片文件",
-														"id": "使用插件导出切片文件"
 													},
 													{
 														"depth": 3,
@@ -14197,11 +14177,6 @@
 											},
 											{
 												"depth": 2,
-												"value": "插件要求",
-												"id": "插件要求"
-											},
-											{
-												"depth": 2,
 												"value": "Windows",
 												"id": "windows"
 											},
@@ -16724,11 +16699,6 @@
 																"id": "導出切片文件"
 															}
 														]
-													},
-													{
-														"depth": 3,
-														"value": "使用插件導出切片文件",
-														"id": "使用插件導出切片文件"
 													},
 													{
 														"depth": 3,

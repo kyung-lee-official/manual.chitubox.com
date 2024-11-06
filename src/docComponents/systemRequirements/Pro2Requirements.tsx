@@ -111,6 +111,10 @@ const enItems = [
 						<td>OS</td>
 						<td>macOS Monterey (version 12)</td>
 					</tr>
+					<tr>
+						<td>Graphics API</td>
+						<td>Metal 2 or above</td>
+					</tr>
 				</tbody>
 			</ResponsiveTable>
 		),
@@ -269,6 +273,10 @@ const zhItems = [
 						<td>操作系统</td>
 						<td>macOS Monterey (版本 12)</td>
 					</tr>
+					<tr>
+						<td>图形接口</td>
+						<td>Metal 2 或以上</td>
+					</tr>
 				</tbody>
 			</ResponsiveTable>
 		),
@@ -398,6 +406,10 @@ const zh_twItems = [
 					<tr>
 						<td>操作系統</td>
 						<td>macOS Monterey (版本 12)</td>
+					</tr>
+					<tr>
+						<td>图形接口</td>
+						<td>Metal 2 或以上</td>
 					</tr>
 				</tbody>
 			</ResponsiveTable>

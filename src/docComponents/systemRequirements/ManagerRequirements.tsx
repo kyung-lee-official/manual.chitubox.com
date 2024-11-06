@@ -80,7 +80,7 @@ const enItems = [
 					</tr>
 					<tr>
 						<td>OS</td>
-						<td>macOS Big Sur (version 11.7)</td>
+						<td>macOS Big Sur (version 11)</td>
 					</tr>
 				</tbody>
 			</ResponsiveTable>
@@ -202,7 +202,7 @@ const zhItems = [
 					</tr>
 					<tr>
 						<td>操作系统</td>
-						<td>macOS Big Sur (11.7 版本)</td>
+						<td>macOS Big Sur (11 版本)</td>
 					</tr>
 				</tbody>
 			</ResponsiveTable>
@@ -324,7 +324,7 @@ const zh_twItems = [
 					</tr>
 					<tr>
 						<td>操作系統</td>
-						<td>macOS Big Sur (11.7 版本)</td>
+						<td>macOS Big Sur (11 版本)</td>
 					</tr>
 				</tbody>
 			</ResponsiveTable>
