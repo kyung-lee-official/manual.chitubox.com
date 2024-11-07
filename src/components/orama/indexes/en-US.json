@@ -97,14 +97,6 @@
 	{
 		"name": "CHITUBOX Basic",
 		"version": "2.3.0",
-		"title": "Plugin Requirements",
-		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/installation#system-requirements",
-		"level": 2,
-		"content": "Some printers are supported in CHITUBOX through plugins. Therefore, you need to download and import the corresponding plugin files before saving sliced files. Once the download is complete, you can open the plugin window by going to the drop-down menu at the upper left corner > Help > Plugins, and then import the plugin file."
-	},
-	{
-		"name": "CHITUBOX Basic",
-		"version": "2.3.0",
 		"title": "Windows Installation",
 		"path": "https://manual.chitubox.com/en-US/chitubox-basic/latest/installation#windows",
 		"level": 2,
@@ -1304,14 +1296,6 @@
 	{
 		"name": "CHITUBOX Basic FAQ",
 		"version": "2.3.0",
-		"title": "This application failed to start because no Qt platform plugin could be initialized",
-		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized",
-		"level": 3,
-		"content": "Check out this link for detailed information: https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#this-application-failed-to-start-because-no-qt-platform-plugin-could-be-initialized"
-	},
-	{
-		"name": "CHITUBOX Basic FAQ",
-		"version": "2.3.0",
 		"title": "The code execution cannot process because CbdXXXX.dll was not found",
 		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#the-code-execution-cannot-process-because-cbdxxxxdll-was-not-found",
 		"level": 3,
@@ -1346,14 +1330,6 @@
 		"title": "Plugin Issues",
 		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#plugin-issues",
 		"level": 2
-	},
-	{
-		"name": "CHITUBOX Basic FAQ",
-		"version": "2.3.0",
-		"title": "Longer Error -1",
-		"path": "https://manual.chitubox.com/en-US/faq/latest/chitubox-basic-faq#longer-error--1",
-		"level": 3,
-		"content": "1. Longer's control board process the resolution specially, we have confirmed the correct resolution to be x: 960, y: 1708. We have have carefully checked and confirmed this, so please don't change it. 2. `Error code -1` is an internal error of the plug-in due to changing of the resolution. Download Longer plugin [here](https://drive.google.com/drive/u/0/folders/1rPRw68b3Z1oqLwc7hSmP5A9Zx0HjatbE?fbclid=IwAR2XyvSs_jCWwqXymOh9ZEvcuyKNuj-ibnmbLAmfOsZMWzjJdke71kxANwQ)."
 	},
 	{
 		"name": "CHITUBOX Basic FAQ",
