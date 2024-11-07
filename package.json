@@ -22,7 +22,6 @@
 		"@stefanprobst/rehype-extract-toc": "^2.2.0",
 		"@tanstack/react-query": "^5.53.1",
 		"@types/mdx": "^2.0.13",
-		"antd": "^5.20.3",
 		"axios": "^1.7.7",
 		"dayjs": "^1.11.13",
 		"framer-motion": "^11.3.31",
