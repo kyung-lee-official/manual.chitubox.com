@@ -111,9 +111,43 @@ export const metadata = {
 
 * Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Log`
 
-* macOS: `Macintosh HD/Users/{user-name}/Library/Application Support/chitubox2_0/Log`
+{/* macOS: `Macintosh HD/Users/{user-name}/Library/Application Support/chitubox2_0/Log`*/}
 
 * Ubuntu: `~/.local/share/chitubox2_0/Log`
+
+<Admonition type="note">
+	macOS 的路徑是動態生成，因此目前我們暫時無法准確定位 macOS 生成的日志路徑及緩存路徑。
+</Admonition>
+
+### 打開緩存路徑
+
+訪問包含緩存文件的文件夾。
+
+* Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Cache`
+
+* Ubuntu: `~/.local/share/chitubox2_0/Log/chitubox2_0/Cache`
+
+### 打開配置文件路徑
+
+訪問包含配置文件的文件夾。
+
+如果需要訪問存儲在程序中的打印配置，您可以通過以下路徑訪問配置文件夾。
+
+* Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Conf`
+
+* Ubuntu: `~/.local/share/chitubox2_0/Conf`
+
+### 打開 dmp 路徑
+
+如果程序崩潰後，您可通過以下路徑訪問 dmp 文件夾，獲得程序崩潰相關的信息。
+
+* Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Cache\dmp`
+
+<Admonition type="note">
+	如果程序崩潰，macOS 會彈出錯報錯窗口， 您可直接從報錯窗口獲取相關報錯信息及崩潰信息。
+	Ubuntu 暫不支持生成 dmp 文件夾。
+</Admonition>
+
 
 ### 使用手冊
 

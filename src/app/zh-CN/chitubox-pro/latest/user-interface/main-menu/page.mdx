@@ -123,6 +123,39 @@ export const metadata = {
 -   Ubuntu: `~/.local/share/chitubox2_0/Log`
 */}
 
+<Admonition type="note">
+	macOS 的路径是动态生成，因此目前我们暂时无法准确定位 macOS 生成的日志路径及缓存路径。
+</Admonition>
+
+### 打开缓存路径
+
+访问包含缓存文件的文件夹。
+
+* Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Cache`
+
+* Ubuntu: `~/.local/share/chitubox2_0/Log/chitubox2_0/Cache`
+
+### 打开配置文件路径
+
+访问包含配置文件的文件夹。
+
+如果需要访问存储在程序中的打印配置，您可以通过以下路径访问配置文件夹。
+
+* Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Conf`
+
+* Ubuntu: `~/.local/share/chitubox2_0/Conf`
+
+### 打开 dmp 路径
+
+如果程序崩溃后，您可通过以下路径访问 dmp 文件夹，获得程序崩溃相关的信息。
+
+* Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Cache\dmp`
+
+<Admonition type="note">
+	如果程序崩溃，macOS 会弹出错报错窗口， 您可直接从报错窗口获取相关报错信息及崩溃信息。
+	Ubuntu 暂不支持生成 dmp 文件夹。
+</Admonition>
+
 ### 用户手册
 
 查阅 CHITUBOX 使用说明手册。

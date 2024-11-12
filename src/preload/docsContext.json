@@ -306,6 +306,21 @@
 															},
 															{
 																"depth": 3,
+																"value": "Open Cache Path",
+																"id": "open-cache-path"
+															},
+															{
+																"depth": 3,
+																"value": "Open Config Path",
+																"id": "open-config-path"
+															},
+															{
+																"depth": 3,
+																"value": "Open dmp Path",
+																"id": "open-dmp-path"
+															},
+															{
+																"depth": 3,
 																"value": "User Manual",
 																"id": "user-manual"
 															},
@@ -3793,6 +3808,21 @@
 																"depth": 3,
 																"value": "Open Log Path",
 																"id": "open-log-path"
+															},
+															{
+																"depth": 3,
+																"value": "Open Cache Path",
+																"id": "open-cache-path"
+															},
+															{
+																"depth": 3,
+																"value": "Open Config Path",
+																"id": "open-config-path"
+															},
+															{
+																"depth": 3,
+																"value": "Open dmp Path",
+																"id": "open-dmp-path"
 															},
 															{
 																"depth": 3,
@@ -7330,6 +7360,21 @@
 															},
 															{
 																"depth": 3,
+																"value": "打开缓存路径",
+																"id": "打开缓存路径"
+															},
+															{
+																"depth": 3,
+																"value": "打开配置文件路径",
+																"id": "打开配置文件路径"
+															},
+															{
+																"depth": 3,
+																"value": "打开dmp路径",
+																"id": "打开dmp路径"
+															},
+															{
+																"depth": 3,
 																"value": "用户手册",
 																"id": "用户手册"
 															},
@@ -10829,6 +10874,21 @@
 																"depth": 3,
 																"value": "打开日志路径",
 																"id": "打开日志路径"
+															},
+															{
+																"depth": 3,
+																"value": "打开缓存路径",
+																"id": "打开缓存路径"
+															},
+															{
+																"depth": 3,
+																"value": "打开配置文件路径",
+																"id": "打开配置文件路径"
+															},
+															{
+																"depth": 3,
+																"value": "打开dmp路径",
+																"id": "打开dmp路径"
 															},
 															{
 																"depth": 3,
@@ -14373,6 +14433,21 @@
 															},
 															{
 																"depth": 3,
+																"value": "打開緩存路徑",
+																"id": "打開緩存路徑"
+															},
+															{
+																"depth": 3,
+																"value": "打開配置文件路徑",
+																"id": "打開配置文件路徑"
+															},
+															{
+																"depth": 3,
+																"value": "打開dmp路徑",
+																"id": "打開dmp路徑"
+															},
+															{
+																"depth": 3,
 																"value": "使用手冊",
 																"id": "使用手冊"
 															},
@@ -17870,6 +17945,21 @@
 																"depth": 3,
 																"value": "打開日志路徑",
 																"id": "打開日志路徑"
+															},
+															{
+																"depth": 3,
+																"value": "打開緩存路徑",
+																"id": "打開緩存路徑"
+															},
+															{
+																"depth": 3,
+																"value": "打開配置文件路徑",
+																"id": "打開配置文件路徑"
+															},
+															{
+																"depth": 3,
+																"value": "打開dmp路徑",
+																"id": "打開dmp路徑"
 															},
 															{
 																"depth": 3,
