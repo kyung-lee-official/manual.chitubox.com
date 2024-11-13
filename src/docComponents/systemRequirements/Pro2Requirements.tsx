@@ -41,7 +41,7 @@ const enItems = [
 						</tr>
 						<tr>
 							<td>RAM</td>
-							<td>4GB</td>
+							<td>16GB</td>
 						</tr>
 						<tr>
 							<td>Hard Drive</td>
@@ -203,7 +203,7 @@ const zhItems = [
 						</tr>
 						<tr>
 							<td>内存</td>
-							<td>4GB</td>
+							<td>16GB</td>
 						</tr>
 						<tr>
 							<td>硬盘</td>
@@ -364,7 +364,7 @@ const zh_twItems = [
 					</tr>
 					<tr>
 						<td>内存</td>
-						<td>4GB</td>
+						<td>16GB</td>
 					</tr>
 					<tr>
 						<td>硬盤</td>
