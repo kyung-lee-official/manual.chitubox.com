@@ -8,8 +8,10 @@ import { DocsContext } from "@/utils/types";
 import { useLocale } from "next-intl";
 import { Dropdown, DropdownProps } from "./Dropdown";
 
-const FieldTitles = () => {
+const FieldTitles = (props: { productDocs: string; learn: string }) => {
+	const { productDocs, learn } = props;
 	const locale = useLocale();
+
 	const is2xl = useMediaQuery({ query: MediaQuery["2xl"] });
 	let activeField: string;
 	const pageCtx = usePageContext();
@@ -30,11 +32,11 @@ const FieldTitles = () => {
 	});
 	const dropdowns: DropdownProps[] = [
 		{
-			title: "Product Docs",
+			title: productDocs,
 			menu: [],
 		},
 		{
-			title: "Learn",
+			title: learn,
 			menu: [],
 		},
 	];

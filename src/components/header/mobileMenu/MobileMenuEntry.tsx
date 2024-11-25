@@ -6,7 +6,11 @@ import { useMediaQuery } from "react-responsive";
 import { MediaQuery } from "@/utils/types";
 import MobileMenuModal from "./MobileMenuModal";
 
-export const MobileMenuEntry = () => {
+export const MobileMenuEntry = (props: {
+	productDocs: string;
+	learn: string;
+}) => {
+	const { productDocs, learn } = props;
 	const [showMenu, setShowMenu] = useState<boolean>(false);
 
 	const is2xl = useMediaQuery({ query: MediaQuery["2xl"] });
@@ -30,6 +34,8 @@ export const MobileMenuEntry = () => {
 				<MobileMenuModal
 					showMenu={showMenu}
 					setShowMenu={setShowMenu}
+					productDocs={productDocs}
+					learn={learn}
 				/>
 			</div>
 		);

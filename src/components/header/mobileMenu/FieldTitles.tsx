@@ -71,7 +71,8 @@ const Dropdown = (props: { dropdown: DropdownProps; isLastOne: boolean }) => {
 	);
 };
 
-export const FieldTitles = () => {
+export const FieldTitles = (props: { productDocs: string; learn: string }) => {
+	const { productDocs, learn } = props;
 	const locale = useLocale();
 	const pathname = usePathname();
 
@@ -94,11 +95,11 @@ export const FieldTitles = () => {
 	});
 	const dropdowns: DropdownProps[] = [
 		{
-			title: "Product Docs",
+			title: productDocs,
 			menu: [],
 		},
 		{
-			title: "Learn",
+			title: learn,
 			menu: [],
 		},
 	];
