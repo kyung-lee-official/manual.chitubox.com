@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef } from "react";
 import { animate, motion, useInView } from "framer-motion";
-import { ImageContainer } from "../../components/imageContainer/ImageContainer";
 import { RmaIcon } from "../../components/icons/Icons";
 
 export const Rma = () => {
@@ -23,7 +22,7 @@ export const Rma = () => {
 	}, [isInView]);
 
 	return (
-		<ImageContainer className={"justify-center"}>
+		<div className="flex justify-center w-full">
 			<motion.div
 				ref={ref}
 				id="rmaIcon"
@@ -31,6 +30,6 @@ export const Rma = () => {
 			>
 				<RmaIcon size={256} />
 			</motion.div>
-		</ImageContainer>
+		</div>
 	);
 };

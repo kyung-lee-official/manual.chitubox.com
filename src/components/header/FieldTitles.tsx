@@ -1,17 +1,15 @@
 "use client";
 
+import docsContext from "@/preload/docsContext.json";
 import { MediaQuery } from "@/utils/types";
 import { useMediaQuery } from "react-responsive";
-import Link from "next/link";
 import { usePageContext } from "@/utils/hooks";
-import docsContext from "@/preload/docsContext.json";
 import { DocsContext } from "@/utils/types";
 import { useLocale } from "next-intl";
-import { usePathname } from "next/navigation";
+import { Dropdown, DropdownProps } from "./Dropdown";
 
 const FieldTitles = () => {
 	const locale = useLocale();
-	const pathname = usePathname();
 	const is2xl = useMediaQuery({ query: MediaQuery["2xl"] });
 	let activeField: string;
 	const pageCtx = usePageContext();
@@ -30,27 +28,58 @@ const FieldTitles = () => {
 			url: field.homeUrl,
 		};
 	});
+	const dropdowns: DropdownProps[] = [
+		{
+			title: "Product Docs",
+			menu: [],
+		},
+		{
+			title: "Learn",
+			menu: [],
+		},
+	];
+
+	for (const field of fields) {
+		switch (field.fieldId) {
+			case "chitubox-basic":
+				dropdowns[0].menu.push(field);
+				break;
+			case "chitubox-pro":
+				dropdowns[0].menu.push(field);
+				break;
+			case "chitu-manager":
+				dropdowns[0].menu.push(field);
+				break;
+			case "faq":
+				dropdowns[0].menu.push(field);
+				break;
+			case "chitubox-printing-test":
+				dropdowns[1].menu.push(field);
+				break;
+			case "academy":
+				dropdowns[1].menu.push(field);
+				break;
+			case "cases":
+				dropdowns[1].menu.push(field);
+				break;
+			default:
+				break;
+		}
+	}
 
 	if (is2xl) {
 		return (
 			<div
-				className="flex gap-10
+				className="flex items-center gap-10
 				cursor-default"
 			>
-				{fields.map((field, i) => {
+				{dropdowns.map((dropdown, i) => {
 					return (
-						<Link
-							href={field.url}
+						<Dropdown
 							key={i}
-							className={`text-xl ${
-								pathname.startsWith(
-									`/${locale}/${field.fieldId}`
-								) && "text-blue-500 dark:text-sky-400"
-							}
-							cursor-pointer`}
-						>
-							{field.fieldName}
-						</Link>
+							title={dropdown.title}
+							menu={dropdown.menu}
+						/>
 					);
 				})}
 			</div>
