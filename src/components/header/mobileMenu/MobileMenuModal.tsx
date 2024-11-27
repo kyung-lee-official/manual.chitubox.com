@@ -7,11 +7,12 @@ import { FieldTitles } from "./FieldTitles";
 import DocsSearch from "./DocsSearch";
 
 const MobileMenuModal = (props: {
-	docs: string;
 	showMenu: boolean;
 	setShowMenu: Dispatch<SetStateAction<boolean>>;
+	productDocs: string;
+	learn: string;
 }) => {
-	const { docs, showMenu, setShowMenu } = props;
+	const { showMenu, setShowMenu, productDocs, learn } = props;
 	const [headerHeight, setHeaderHeight] = useState("0px");
 
 	useEffect(() => {
@@ -59,7 +60,10 @@ const MobileMenuModal = (props: {
 								height: `calc(100vh - ${headerHeight} - 32px)` /* here 32px is the padding of the parent div */,
 							}}
 						>
-							<FieldTitles docs={docs} />
+							<FieldTitles
+								productDocs={productDocs}
+								learn={learn}
+							/>
 							<div className="flex flex-col w-full gap-4">
 								<DocsSearch setShowMenu={setShowMenu} />
 								<DocsMenu setShowMenu={setShowMenu} />

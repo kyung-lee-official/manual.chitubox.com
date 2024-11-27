@@ -7,7 +7,11 @@
 		"placeholder": "占位",
 		"about": "關於",
 		"languages": "語言",
-		"searchResult": "項結果"
+		"searchResult": "項結果",
+		"dropdown": {
+			"product-docs": "產品文檔",
+			"learn": "學習中心"
+		}
 	},
 	"docContent": {
 		"version": "版本",

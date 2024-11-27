@@ -52,10 +52,14 @@ export const Navigator = (props: any) => {
 			border-b-[1px] border-solid border-neutral-200 dark:border-neutral-800`}
 		>
 			<Link href="/" className="flex items-center gap-4">
-				<BasicLogo2022 size={40} />
+				<BasicLogo2022 size={28} />
+				<div className="w-0.5 h-6 bg-neutral-800 dark:bg-neutral-200"></div>
 				<div className="text-xl">{t("title")}</div>
 			</Link>
-			<DynamicFieldTitles />
+			<DynamicFieldTitles
+				productDocs={t("header.dropdown.product-docs")}
+				learn={t("header.dropdown.learn")}
+			/>
 			<div className="flex-1" /> {/* Placeholder */}
 			<div className="flex gap-6">
 				<DynamicDocsSearch />
@@ -63,7 +67,10 @@ export const Navigator = (props: any) => {
 				<ThemeSwitch />
 				<DynamicLanguageMenu />
 			</div>
-			<DynamicMobileMenuEntry docs={t("header.docs")} />
+			<DynamicMobileMenuEntry
+				productDocs={t("header.dropdown.product-docs")}
+				learn={t("header.dropdown.learn")}
+			/>
 		</nav>
 	);
 };
