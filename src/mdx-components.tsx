@@ -7,6 +7,7 @@ import { ImageContainer } from "./components/imageContainer/ImageContainer";
 import { Admonition } from "./components/admonition/Admonition";
 import { ImageComparison } from "@/components/imageComparison/ImageComparison";
 import dynamic from "next/dynamic";
+import { BlogImageContainer } from "./components/imageContainer/BlogImageContainer";
 
 const FacebookVideoContainer = dynamic(
 	() => import("./components/videoContainer/FacebookVideoContainer"),
@@ -182,6 +183,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		ResponsiveTable: ResponsiveTable,
 		Admonition: Admonition,
 		ImageContainer: ImageContainer,
+		BlogImageContainer: BlogImageContainer,
 		ImageComparison: ImageComparison,
 		FacebookVideoContainer: FacebookVideoContainer,
 
