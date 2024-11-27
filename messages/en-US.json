@@ -20,6 +20,12 @@
 		"onThisPage": "On This Page",
 		"notLatest": "This is an older version of the documentation."
 	},
+	"pages": {
+		"academy": {
+			"title": "Academy",
+			"search-placeholder": "Search Academy"
+		}
+	},
 	"footer": {
 		"software": {
 			"title": "Software",
