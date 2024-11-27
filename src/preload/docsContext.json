@@ -7045,6 +7045,73 @@
 						]
 					}
 				]
+			},
+			{
+				"fieldId": "academy",
+				"fieldName": "Academy",
+				"isVersioned": false,
+				"type": "blog",
+				"homeUrl": "/en-US/academy",
+				"versions": [
+					{
+						"versionCode": null,
+						"isLatest": false,
+						"category": [
+							{
+								"pageId": "a-brief-overview-of-thermal-stress-in-resin-3d-printing",
+								"label": "A Brief Overview of Thermal Stress in Resin 3d Printing",
+								"url": "/en-US/academy/a-brief-overview-of-thermal-stress-in-resin-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "A Brief Overview of Thermal Stress in Resin 3D Printing",
+										"id": "a-brief-overview-of-thermal-stress-in-resin-3d-printing",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Thermal Stress Basic Concepts",
+												"id": "thermal-stress-basic-concepts"
+											},
+											{
+												"depth": 2,
+												"value": "The Basic Equations Of Thermal Elasticity",
+												"id": "the-basic-equations-of-thermal-elasticity"
+											},
+											{
+												"depth": 2,
+												"value": "Thermal Stress in SLA 3D Printing",
+												"id": "thermal-stress-in-sla-3d-printing"
+											},
+											{
+												"depth": 2,
+												"value": "Reducing the Effects of Thermal Stress",
+												"id": "reducing-the-effects-of-thermal-stress"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "A Brief Overview of Thermal Stress in Resin 3D Printing",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2023-10-31",
+									"description": "Introduction to thermal stress, its effects and solutions",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/en-US/academy/a-brief-overview-of-thermal-stress-in-resin-3d-printing/cover.png"
+										]
+									}
+								}
+							}
+						]
+					}
+				]
 			}
 		]
 	},

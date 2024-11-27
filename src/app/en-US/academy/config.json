@@ -1,0 +1,18 @@
+{
+	"fieldName": "Academy",
+	"isVersioned": false,
+	"type": "blog",
+	"homeUrl": "/en-US/academy",
+	"versions": [
+		{
+			"versionCode": null,
+			"isLatest": false,
+			"category": [
+				{
+					"pageId": "a-brief-overview-of-thermal-stress-in-resin-3d-printing",
+					"label": "A Brief Overview of Thermal Stress in Resin 3d Printing"
+				}
+			]
+		}
+	]
+}
