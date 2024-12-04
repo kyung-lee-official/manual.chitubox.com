@@ -7108,6 +7108,1431 @@
 										]
 									}
 								}
+							},
+							{
+								"pageId": "a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing",
+								"label": "A Complete Guide About Adding Supports in SLA/DLP/LCD 3D Printing",
+								"url": "/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "A Complete Guide about Adding Supports in SLA/DLP/LCD 3D Printing",
+										"id": "a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Support Structures in Top-down & Bottom-up 3D Printing",
+												"id": "support-structures-in-top-down--bottom-up-3d-printing"
+											},
+											{
+												"depth": 2,
+												"value": "Where is Support Needed in Bottom-up SLA/DLP/LCD 3D printing?",
+												"id": "where-is-support-needed-in-bottom-up-sladlplcd-3d-printing",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Overhangs and Bridges",
+														"id": "overhangs-and-bridges"
+													},
+													{
+														"depth": 3,
+														"value": "Weaker Structures",
+														"id": "weaker-structures"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Shapes of Support Structures in SLA/DLP/LCD 3D Printing",
+												"id": "shapes-of-support-structures-in-sladlplcd-3d-printing",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Ribs",
+														"id": "ribs"
+													},
+													{
+														"depth": 3,
+														"value": "Nets",
+														"id": "nets"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Things to Consider When Adding Supports",
+												"id": "things-to-consider-when-adding-supports",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Avoide Supports on Complex Surface",
+														"id": "avoide-supports-on-complex-surface"
+													},
+													{
+														"depth": 3,
+														"value": "Distribute Supports Evenly",
+														"id": "distribute-supports-evenly"
+													},
+													{
+														"depth": 3,
+														"value": "Use Interconnected Supports",
+														"id": "use-interconnected-supports"
+													},
+													{
+														"depth": 3,
+														"value": "Avoid Supports Overlapping with Model",
+														"id": "avoid-supports-overlapping-with-model"
+													},
+													{
+														"depth": 3,
+														"value": "Enhance Supports for Weak Structures",
+														"id": "enhance-supports-for-weak-structures"
+													}
+												]
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "A Complete Guide About Adding Supports in SLA/DLP/LCD 3D Printing",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-04",
+									"description": "Support structures are needed in SLA/DLP/LCD 3D Printing which are one of the most important safeguard for successfully producing parts.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "a-detailed-analysis-of-the-factors-affecting-printing-accuracy",
+								"label": "A Detailed Analysis of the Factors Affecting Printing Accuracy",
+								"url": "/en-US/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "A Detailed Analysis of the Factors Affecting Printing Accuracy",
+										"id": "a-detailed-analysis-of-the-factors-affecting-printing-accuracy",
+										"children": [
+											{
+												"depth": 2,
+												"value": "X/Y Resolution and Print Size",
+												"id": "xy-resolution-and-print-size"
+											},
+											{
+												"depth": 2,
+												"value": "Imaging Principles",
+												"id": "imaging-principles"
+											},
+											{
+												"depth": 2,
+												"value": "Set Resolution and Print Size in CHITUBOX",
+												"id": "set-resolution-and-print-size-in-chitubox"
+											},
+											{
+												"depth": 2,
+												"value": "Accuracy in the Z Direction",
+												"id": "accuracy-in-the-z-direction",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Layer Height",
+														"id": "layer-height"
+													},
+													{
+														"depth": 3,
+														"value": "Axis Stability",
+														"id": "axis-stability"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Other Factors Affecting Accuracy",
+												"id": "other-factors-affecting-accuracy",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Insufficient Supports",
+														"id": "insufficient-supports"
+													},
+													{
+														"depth": 3,
+														"value": "Underexposure or Overexposure",
+														"id": "underexposure-or-overexposure"
+													},
+													{
+														"depth": 3,
+														"value": "Isopropyl Alcohol Immersion",
+														"id": "isopropyl-alcohol-immersion"
+													}
+												]
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "A Detailed Analysis of the Factors Affecting Printing Accuracy",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "What's the relationship between resolution and printing size?",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "all-you-need-to-know-about-failed-printing",
+								"label": "All You Need to Know about Failed Printing",
+								"url": "/en-US/academy/all-you-need-to-know-about-failed-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "All You Need to Know about Failed Printing",
+										"id": "all-you-need-to-know-about-failed-printing",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Improperly Leveled or Zeroed",
+												"id": "improperly-leveled-or-zeroed"
+											},
+											{
+												"depth": 2,
+												"value": "Layer Height is too Thick",
+												"id": "layer-height-is-too-thick"
+											},
+											{
+												"depth": 2,
+												"value": "Too Large Sectional Area",
+												"id": "too-large-sectional-area"
+											},
+											{
+												"depth": 2,
+												"value": "Hermetic Chambers Formed",
+												"id": "hermetic-chambers-formed"
+											},
+											{
+												"depth": 2,
+												"value": "Islands",
+												"id": "islands"
+											},
+											{
+												"depth": 2,
+												"value": "Too Fast Lifting Speed",
+												"id": "too-fast-lifting-speed"
+											},
+											{
+												"depth": 2,
+												"value": "FEP Film Severely Worn",
+												"id": "fep-film-severely-worn"
+											},
+											{
+												"depth": 2,
+												"value": "Resin Vat or Build Plate not Clean",
+												"id": "resin-vat-or-build-plate-not-clean"
+											},
+											{
+												"depth": 2,
+												"value": "Improper Support Parameters",
+												"id": "improper-support-parameters"
+											},
+											{
+												"depth": 2,
+												"value": "Too Low Temperature",
+												"id": "too-low-temperature"
+											},
+											{
+												"depth": 2,
+												"value": "Underexposure",
+												"id": "underexposure"
+											},
+											{
+												"depth": 2,
+												"value": "Hardware Issues",
+												"id": "hardware-issues"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "All You Need to Know about Failed Printing",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-04",
+									"description": "Only get support and raft structures on the build plate.",
+									"keywords": [
+										"Troubleshooting"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/all-you-need-to-know-about-failed-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "bottom-curling-and-detachment",
+								"label": "Bottom Curling and Detachment",
+								"url": "/en-US/academy/bottom-curling-and-detachment",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Bottom Curling and Detachment",
+										"id": "bottom-curling-and-detachment",
+										"children": [
+											{
+												"depth": 2,
+												"value": "What",
+												"id": "what"
+											},
+											{
+												"depth": 2,
+												"value": "Why",
+												"id": "why",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Thermal Stress",
+														"id": "thermal-stress"
+													},
+													{
+														"depth": 3,
+														"value": "Bottom Fit",
+														"id": "bottom-fit",
+														"children": [
+															{
+																"depth": 4,
+																"value": "Impurities on the Build Plate",
+																"id": "impurities-on-the-build-plate"
+															},
+															{
+																"depth": 4,
+																"value": "Build Plated Not Leveled",
+																"id": "build-plated-not-leveled"
+															},
+															{
+																"depth": 4,
+																"value": "Build Plate Scratched",
+																"id": "build-plate-scratched"
+															},
+															{
+																"depth": 4,
+																"value": "Inappropriate Speed of Motion",
+																"id": "inappropriate-speed-of-motion"
+															}
+														]
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "How",
+												"id": "how",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Reduced Lift Print Speed",
+														"id": "reduced-lift-print-speed"
+													},
+													{
+														"depth": 3,
+														"value": "Thermal Optimization",
+														"id": "thermal-optimization"
+													},
+													{
+														"depth": 3,
+														"value": "Reduction of Residues",
+														"id": "reduction-of-residues"
+													},
+													{
+														"depth": 3,
+														"value": "Leveling the Build Plate",
+														"id": "leveling-the-build-plate"
+													},
+													{
+														"depth": 3,
+														"value": "Polish the Build Plate",
+														"id": "polish-the-build-plate"
+													},
+													{
+														"depth": 3,
+														"value": "Pick Suitable Resins",
+														"id": "pick-suitable-resins"
+													}
+												]
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "Bottom Curling and Detachment",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2023-11-01",
+									"description": "Principles and troubleshooting of warping in light-curing printing",
+									"keywords": [
+										"Troubleshooting"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/bottom-curling-and-detachment/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "effects-of-contact-shape-on-model-surface-quality",
+								"label": "Effects of Contact Shape on Model Surface Quality",
+								"url": "/en-US/academy/effects-of-contact-shape-on-model-surface-quality",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Effects of Contact Shape on Model Surface Quality",
+										"id": "effects-of-contact-shape-on-model-surface-quality",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Effect of Contact Shape on Model Surface",
+												"id": "effect-of-contact-shape-on-model-surface"
+											},
+											{
+												"depth": 2,
+												"value": "Effect of Contact Shape on Support Strength",
+												"id": "effect-of-contact-shape-on-support-strength"
+											},
+											{
+												"depth": 2,
+												"value": "Effect of Contact Shape on Support Removal",
+												"id": "effect-of-contact-shape-on-support-removal"
+											},
+											{
+												"depth": 2,
+												"value": "Conclusion",
+												"id": "conclusion"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "Effects of Contact Shape on Model Surface Quality",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "Two shapes affect the support removal and surface quality of the object.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/effects-of-contact-shape-on-model-surface-quality/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "effects-of-layer-height-on-sladlplcd-3d-printing",
+								"label": "Effects of Layer Height on SLA/DLP/LCD 3D Printing",
+								"url": "/en-US/academy/effects-of-layer-height-on-sladlplcd-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Effects of Layer Height on SLA/DLP/LCD 3D Printing",
+										"id": "effects-of-layer-height-on-sladlplcd-3d-printing",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Definition of Layer Height",
+												"id": "definition-of-layer-height"
+											},
+											{
+												"depth": 2,
+												"value": "Effects of Layer Height",
+												"id": "effects-of-layer-height"
+											},
+											{
+												"depth": 2,
+												"value": "Effects of Layer Height on Printing Quality",
+												"id": "effects-of-layer-height-on-printing-quality"
+											},
+											{
+												"depth": 2,
+												"value": "Effects of Layer Height on Success Rate",
+												"id": "effects-of-layer-height-on-success-rate"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "Effects of Layer Height on SLA/DLP/LCD 3D Printing",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-04",
+									"description": "This is known as the ladder effect, which becomes more obvious on surfaces with greater curvature.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/effects-of-layer-height-on-sladlplcd-3d-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "hollowed-part-being-broken-after-a-period-of-time",
+								"label": "Hollowed Part Being Broken After A Period of Time",
+								"url": "/en-US/academy/hollowed-part-being-broken-after-a-period-of-time",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Hollowed Part Being Broken After A Period of Time",
+										"id": "hollowed-part-being-broken-after-a-period-of-time",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Post-Curing",
+												"id": "post-curing"
+											},
+											{
+												"depth": 2,
+												"value": "Inner Cleaning",
+												"id": "inner-cleaning"
+											},
+											{
+												"depth": 2,
+												"value": "Internal Stress",
+												"id": "internal-stress"
+											},
+											{
+												"depth": 2,
+												"value": "Resin",
+												"id": "resin"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "Hollowed Part Being Broken After A Period of Time",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "For some hollowed parts, after putting for a period of time, it may be cracked or even broken.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/hollowed-part-being-broken-after-a-period-of-time/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-airtight-chamber-affect-prints",
+								"label": "How Airtight Chamber Affect Prints",
+								"url": "/en-US/academy/how-airtight-chamber-affect-prints",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "How Airtight Chamber Affect Prints",
+										"id": "how-airtight-chamber-affect-prints",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Conclusion First",
+												"id": "conclusion-first"
+											},
+											{
+												"depth": 2,
+												"value": "Why Airtight Chamber Affect Prints",
+												"id": "why-airtight-chamber-affect-prints"
+											},
+											{
+												"depth": 2,
+												"value": "An Airtight Chamber is Formed Between the Model and the FEP Film",
+												"id": "an-airtight-chamber-is-formed-between-the-model-and-the-fep-film"
+											},
+											{
+												"depth": 2,
+												"value": "The Chamber Structure of the Model is Higher Than the Resin Liquid Level",
+												"id": "the-chamber-structure-of-the-model-is-higher-than-the-resin-liquid-level"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "How Airtight Chamber Affect Prints",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "During the gradual investigation, we found that the most influential factor to the measurement was vacuum seal drawing.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/how-airtight-chamber-affect-prints/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-angles-of-models-affect-surface-quality",
+								"label": "How Angles of Models Affect Surface Quality",
+								"url": "/en-US/academy/how-angles-of-models-affect-surface-quality",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "How Angles of Models Affect Surface Quality",
+										"id": "how-angles-of-models-affect-surface-quality",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Preface",
+												"id": "preface"
+											},
+											{
+												"depth": 2,
+												"value": "Best Printing Angle",
+												"id": "best-printing-angle"
+											},
+											{
+												"depth": 2,
+												"value": "Print Angle Experiment",
+												"id": "print-angle-experiment"
+											},
+											{
+												"depth": 2,
+												"value": "Influence of Cross-Sectional Area and Lifting Speed on Peel Force",
+												"id": "influence-of-cross-sectional-area-and-lifting-speed-on-peel-force"
+											},
+											{
+												"depth": 2,
+												"value": "Conclusion First",
+												"id": "conclusion-first"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "How Angles of Models Affect Surface Quality",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-05-18",
+									"description": "In light-curing 3D printing, the placement angle of the model has a great influence on the printed surface.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/how-angles-of-models-affect-surface-quality/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-to-do-basic-fixes-to-your-models-using-blender",
+								"label": "How to Do Basic Fixes to Your Models Using Blender",
+								"url": "/en-US/academy/how-to-do-basic-fixes-to-your-models-using-blender",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "How to Do Basic Fixes to Your Models Using Blender?",
+										"id": "how-to-do-basic-fixes-to-your-models-using-blender",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Inverted Normal Fragments",
+												"id": "inverted-normal-fragments"
+											},
+											{
+												"depth": 2,
+												"value": "Open Structures",
+												"id": "open-structures"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "How to Do Basic Fixes to Your Models Using Blender?",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-05-10",
+									"description": "In this post, we will show you how to repair your models using the 3D modelling tool Blender.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/how-to-do-basic-fixes-to-your-models-using-blender/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-to-level-the-build-plate-on-a-bottom-up-3d-printer",
+								"label": "How to Level the Build Plate on a Bottom-up 3D Printer",
+								"url": "/en-US/academy/how-to-level-the-build-plate-on-a-bottom-up-3d-printer",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "How to Level the Build Plate on a Bottom-up 3D Printer?",
+										"id": "how-to-level-the-build-plate-on-a-bottom-up-3d-printer",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Why Do you Need to Level the Build Plate?",
+												"id": "why-do-you-need-to-level-the-build-plate"
+											},
+											{
+												"depth": 2,
+												"value": "How to Level the Build Plate on a Resin 3D Printer?",
+												"id": "how-to-level-the-build-plate-on-a-resin-3d-printer"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "How to Level the Build Plate on a Bottom-up 3D Printer?",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-04",
+									"description": "Using a bottom-up 3D printer, it is necessary to periodically calibrate or level the build plate before printing.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/how-to-level-the-build-plate-on-a-bottom-up-3d-printer/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-to-save-resin-in-sladlplcd-3d-printing",
+								"label": "How to Save Resin in SLA/DLP/LCD 3D Printing",
+								"url": "/en-US/academy/how-to-save-resin-in-sladlplcd-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "How to Save Resin in SLA/DLP/LCD 3D Printing?",
+										"id": "how-to-save-resin-in-sladlplcd-3d-printing",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Hollow Your Models",
+												"id": "hollow-your-models"
+											},
+											{
+												"depth": 2,
+												"value": "Scale Down Your Model",
+												"id": "scale-down-your-model"
+											},
+											{
+												"depth": 2,
+												"value": "Optimize the Structure of Your Model",
+												"id": "optimize-the-structure-of-your-model"
+											},
+											{
+												"depth": 2,
+												"value": "Remove Unnecessary Supports and Rafts",
+												"id": "remove-unnecessary-supports-and-rafts"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "How to Save Resin in SLA/DLP/LCD 3D Printing?",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "Saving considerable amount of resin will be equal to save time & money.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-to-strengthen-3d-printed-parts-in-sladlplcd",
+								"label": "How To Strengthen 3D Printed Parts in SLA/DLP/LCD",
+								"url": "/en-US/academy/how-to-strengthen-3d-printed-parts-in-sladlplcd",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "How To Strengthen 3D Printed Parts in SLA/DLP/LCD?",
+										"id": "how-to-strengthen-3d-printed-parts-in-sladlplcd",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Infill Density",
+												"id": "infill-density"
+											},
+											{
+												"depth": 2,
+												"value": "Wall Thickness",
+												"id": "wall-thickness"
+											},
+											{
+												"depth": 2,
+												"value": "Material Properties",
+												"id": "material-properties"
+											},
+											{
+												"depth": 2,
+												"value": "Part Orientation",
+												"id": "part-orientation"
+											},
+											{
+												"depth": 2,
+												"value": "Post-processing",
+												"id": "post-processing"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "How To Strengthen 3D Printed Parts in SLA/DLP/LCD?",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "Part strength ensures that the printed part is strong and durable during the use or storage which will not break over time.",
+									"keywords": [
+										"Tricks & Tips"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/how-to-strengthen-3d-printed-parts-in-sladlplcd/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing",
+								"label": "Obtain the Parameters of Photosensitive Resin in SLA/DLP/LCD 3D Printing",
+								"url": "/en-US/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Obtain the Parameters of Photosensitive Resin in SLA/DLP/LCD 3D Printing",
+										"id": "obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Fit Tolerance",
+												"id": "fit-tolerance"
+											},
+											{
+												"depth": 2,
+												"value": "The right size of XYZ",
+												"id": "the-right-size-of-xyz"
+											},
+											{
+												"depth": 2,
+												"value": "Perpendicularity and Roundness",
+												"id": "perpendicularity-and-roundness"
+											},
+											{
+												"depth": 2,
+												"value": "Test",
+												"id": "test",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Model Data",
+														"id": "model-data"
+													},
+													{
+														"depth": 3,
+														"value": "Test Process Description",
+														"id": "test-process-description"
+													},
+													{
+														"depth": 3,
+														"value": "Test 1: Exposure Time 15s",
+														"id": "test-1-exposure-time-15s"
+													},
+													{
+														"depth": 3,
+														"value": "Test 2: Exposure Time 10s",
+														"id": "test-2-exposure-time-10s"
+													},
+													{
+														"depth": 3,
+														"value": "Test 3: Exposure Time 17s",
+														"id": "test-3-exposure-time-17s"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Conclusion",
+												"id": "conclusion"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "Obtain the Parameters of Photosensitive Resin in SLA/DLP/LCD 3D Printing ",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "When using a new photosensitive resin, knowing its suitable 3D printing parameters is a priority before printing.",
+									"keywords": [
+										"Tricks & Tips"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "settings-to-improve-your-sladlplcd-3d-print-quality",
+								"label": "Settings to Improve Your SLA/DLP/LCD 3D Print Quality",
+								"url": "/en-US/academy/settings-to-improve-your-sladlplcd-3d-print-quality",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Settings to Improve Your SLA/DLP/LCD 3D Print Quality",
+										"id": "settings-to-improve-your-sladlplcd-3d-print-quality",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Layer Height (mm)",
+												"id": "layer-height-mm"
+											},
+											{
+												"depth": 2,
+												"value": "Exposure Time (s)",
+												"id": "exposure-time-s"
+											},
+											{
+												"depth": 2,
+												"value": "Lift Speed (mm/min)",
+												"id": "lift-speed-mmmin"
+											},
+											{
+												"depth": 2,
+												"value": "Part Orientation",
+												"id": "part-orientation"
+											},
+											{
+												"depth": 2,
+												"value": "Anti-Aliasing",
+												"id": "anti-aliasing"
+											},
+											{
+												"depth": 2,
+												"value": "Use Image Blur",
+												"id": "use-image-blur"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "Settings to Improve Your SLA/DLP/LCD 3D Print Quality",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-06",
+									"description": "The quality of 3D printing has a lot to do with equipment, materials and slices",
+									"keywords": [
+										"Tricks & Tips"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/settings-to-improve-your-sladlplcd-3d-print-quality/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "storage-and-curing-of-photopolymer-resin",
+								"label": "Storage And Curing of Photopolymer Resin",
+								"url": "/en-US/academy/storage-and-curing-of-photopolymer-resin",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Storage And Curing of Photopolymer Resin",
+										"id": "storage-and-curing-of-photopolymer-resin",
+										"children": [
+											{
+												"depth": 2,
+												"value": "How to store SLA/DLP/LCD UV curable resin?",
+												"id": "how-to-store-sladlplcd-uv-curable-resin"
+											},
+											{
+												"depth": 2,
+												"value": "Why is Post-Curing needed for SLA/DLP/LCD parts?",
+												"id": "why-is-post-curing-needed-for-sladlplcd-parts"
+											},
+											{
+												"depth": 2,
+												"value": "What will happen with over-curing?",
+												"id": "what-will-happen-with-over-curing"
+											},
+											{
+												"depth": 2,
+												"value": "The Characteristics of Curing Under Water",
+												"id": "the-characteristics-of-curing-under-water"
+											},
+											{
+												"depth": 2,
+												"value": "Is post-curing with sunlight useful?",
+												"id": "is-post-curing-with-sunlight-useful"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "Storage And Curing of Photopolymer Resin",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "Frankly, resin is not easy to get along with. It has its temper so it requires great care to keep it “alive” and handle it.",
+									"keywords": [
+										"Tricks & Tips"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/storage-and-curing-of-photopolymer-resin/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "stress-and-strain-properties-of-3d-printing-resin",
+								"label": "Stress and Strain Properties of 3D Printing Resin",
+								"url": "/en-US/academy/stress-and-strain-properties-of-3d-printing-resin",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Stress and Strain Properties of 3D Printing Resin",
+										"id": "stress-and-strain-properties-of-3d-printing-resin",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Stress-Strain Curve",
+												"id": "stress-strain-curve"
+											},
+											{
+												"depth": 2,
+												"value": "Overview of stress characteristics stages",
+												"id": "overview-of-stress-characteristics-stages",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Stage 1: Elastic",
+														"id": "stage-1-elastic"
+													},
+													{
+														"depth": 3,
+														"value": "Stage 2: Strain Hardening",
+														"id": "stage-2-strain-hardening"
+													},
+													{
+														"depth": 3,
+														"value": "Stage 3: Necking",
+														"id": "stage-3-necking"
+													},
+													{
+														"depth": 3,
+														"value": "Stage 4: Localized Deformation",
+														"id": "stage-4-localized-deformation"
+													},
+													{
+														"depth": 3,
+														"value": "Other Material Curves",
+														"id": "other-material-curves"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Glossary",
+												"id": "glossary",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Yield Strength",
+														"id": "yield-strength"
+													},
+													{
+														"depth": 3,
+														"value": "Elastic Limit",
+														"id": "elastic-limit"
+													},
+													{
+														"depth": 3,
+														"value": "Proportional Limit",
+														"id": "proportional-limit"
+													},
+													{
+														"depth": 3,
+														"value": "True Stress and True Strain",
+														"id": "true-stress-and-true-strain"
+													},
+													{
+														"depth": 3,
+														"value": "Ductility and Brittleness",
+														"id": "ductility-and-brittleness"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Comparison of Standard Resins and Tough Resins",
+												"id": "comparison-of-standard-resins-and-tough-resins"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "Stress and Strain Properties of 3D Printing Resin",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "Knowledge of the material properties coupled with the correct exposure times is an important prerequisite for selecting the right raw materials.",
+									"keywords": [
+										"Tricks & Tips"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/stress-and-strain-properties-of-3d-printing-resin/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "the-factors-to-affect-the-print-speed-of-a-resin-3d-printer",
+								"label": "The Factors to Affect the Print Speed of A Resin (SLA/DLP/LCD) 3D Printer",
+								"url": "/en-US/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "The Factors to Affect the Print Speed of A Resin (SLA/DLP/LCD) 3D Printer",
+										"id": "the-factors-to-affect-the-print-speed-of-a-resin-sladlplcd-3d-printer",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Print Technology",
+												"id": "print-technology"
+											},
+											{
+												"depth": 2,
+												"value": "3D Printer",
+												"id": "3d-printer"
+											},
+											{
+												"depth": 2,
+												"value": "Light Power",
+												"id": "light-power"
+											},
+											{
+												"depth": 2,
+												"value": "layer Thickness",
+												"id": "layer-thickness"
+											},
+											{
+												"depth": 2,
+												"value": "Material",
+												"id": "material"
+											},
+											{
+												"depth": 2,
+												"value": "Model",
+												"id": "model"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "The Factors to Affect the Print Speed of A Resin (SLA/DLP/LCD) 3D Printer",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "Right speed is particularly beneficial to boost print success and improve manufacturing efficiency.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "tools-to-remove-support-structures-and-rinse-3d-object-in-resin-sladlplcd-3d-printing",
+								"label": "Tools to Remove Support Structures and Rinse 3D Object in Resin (SLA/DLP/LCD) 3D Printing",
+								"url": "/en-US/academy/tools-to-remove-support-structures-and-rinse-3d-object-in-resin-sladlplcd-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Tools to Remove Support Structures and Rinse 3D Object in Resin (SLA/DLP/LCD) 3D Printing",
+										"id": "tools-to-remove-support-structures-and-rinse-3d-object-in-resin-sladlplcd-3d-printing",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Protective Equipments",
+												"id": "protective-equipments",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Nitrile Gloves",
+														"id": "nitrile-gloves"
+													},
+													{
+														"depth": 3,
+														"value": "Disposable Mask (Optional)",
+														"id": "disposable-mask-optional"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Cleaning Tools",
+												"id": "cleaning-tools",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Metal Scraper",
+														"id": "metal-scraper"
+													},
+													{
+														"depth": 3,
+														"value": "Blade",
+														"id": "blade"
+													},
+													{
+														"depth": 3,
+														"value": "Plastic Scraper",
+														"id": "plastic-scraper"
+													},
+													{
+														"depth": 3,
+														"value": "Silicone Scraper",
+														"id": "silicone-scraper"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Washing Tools",
+												"id": "washing-tools",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Isopropyl Alcohol",
+														"id": "isopropyl-alcohol"
+													},
+													{
+														"depth": 3,
+														"value": "Spare Containers",
+														"id": "spare-containers"
+													},
+													{
+														"depth": 3,
+														"value": "Measuring Cup",
+														"id": "measuring-cup"
+													},
+													{
+														"depth": 3,
+														"value": "Banister Brush",
+														"id": "banister-brush"
+													},
+													{
+														"depth": 3,
+														"value": "Spray Bottle (Optional)",
+														"id": "spray-bottle-optional"
+													},
+													{
+														"depth": 3,
+														"value": "Injector (Optional)",
+														"id": "injector-optional"
+													},
+													{
+														"depth": 3,
+														"value": "Magnetic Stirrer (Optional)",
+														"id": "magnetic-stirrer-optional"
+													},
+													{
+														"depth": 3,
+														"value": "Ultrasonic Cleaner",
+														"id": "ultrasonic-cleaner"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "Other Auxiliary Tools",
+												"id": "other-auxiliary-tools",
+												"children": [
+													{
+														"depth": 3,
+														"value": "Stainless Steel Plates",
+														"id": "stainless-steel-plates"
+													},
+													{
+														"depth": 3,
+														"value": "Glass Container",
+														"id": "glass-container"
+													},
+													{
+														"depth": 3,
+														"value": "Non-dust Cloth/Paper Towels",
+														"id": "non-dust-clothpaper-towels"
+													},
+													{
+														"depth": 3,
+														"value": "Diagonal Cutting Pliers",
+														"id": "diagonal-cutting-pliers"
+													},
+													{
+														"depth": 3,
+														"value": "Fine Grit Sandpaper",
+														"id": "fine-grit-sandpaper"
+													}
+												]
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "Tools to Remove Support Structures and Rinse 3D Object in Resin (SLA/DLP/LCD) 3D Printing",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "There are a few tools that will make life easier when working with a resin 3D printer.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/tools-to-remove-support-structures-and-rinse-3d-object-in-resin-sladlplcd-3d-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "verification-of-the-effect-of-light-source-intensity-on-printing-accuracy",
+								"label": "Verification of the Effect of Light Source Intensity on Printing Accuracy",
+								"url": "/en-US/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "Verification of the Effect of Light Source Intensity on Printing Accuracy",
+										"id": "verification-of-the-effect-of-light-source-intensity-on-printing-accuracy",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Voxel Size of a MSLA 3D Printer",
+												"id": "voxel-size-of-a-msla-3d-printer"
+											},
+											{
+												"depth": 2,
+												"value": "Imaging Principle of MSLA(LCD/DLP) 3D printer",
+												"id": "imaging-principle-of-mslalcddlp-3d-printer"
+											},
+											{
+												"depth": 2,
+												"value": "Antialiasing Parameters in CHITUBOX",
+												"id": "antialiasing-parameters-in-chitubox"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "Verification of the Effect of Light Source Intensity on Printing Accuracy",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-04",
+									"description": "The combination of the three will compensate for the pixel grain.",
+									"keywords": [
+										"Knowledge"
+									],
+									"openGraph": {
+										"images": [
+											"/en/academy/images/docs/advanced/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/cover.png"
+										]
+									}
+								}
 							}
 						]
 					}
