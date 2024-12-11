@@ -20,6 +20,12 @@
 		"onThisPage": "本页目录",
 		"notLatest": "您正在阅读的不是最新版本的文档。"
 	},
+	"pages": {
+		"academy": {
+			"title": "学习中心",
+			"search-placeholder": "搜索学习中心"
+		}
+	},
 	"footer": {
 		"software": {
 			"title": "软件",
