@@ -1,0 +1,191 @@
+import { DocsColumnContainer, DocsColumn } from "@/docComponents/docsColumn/DocsColumn";
+
+export const metadata = {
+	title: "打印件摆放角度对打印件表面的影响",
+	authors: [{ name: "CHITUBOX Team" }],
+	releaseDate: "2022-05-18",
+	description:
+		"在光固化3D打印中，打印件的摆放角度对打印出来的表面效果有很大的影响。",
+	keywords: ["打印知识"],
+	openGraph: {
+		images: [
+			"/images/docs/zh-CN/academy/how-angles-of-models-affect-surface-quality/cover.png",
+		],
+	},
+};
+
+# 打印件摆放角度对打印件表面的影响
+
+## 前言
+
+光固化 3D 打印的表面质量受模型摆放等因素的影响会有很大的不同。本文主要讨论如何优化模型摆放位置以提升表面质量。
+
+## 最佳打印角度
+
+我们总能浏览到某些博主讲解时或直播时将打印件斜着摆放，但是也许很少有人会告诉你具体摆放多少度合适。又或者你看到过类似这张图
+
+<ImageContainer>
+	<AntdImage
+		alt="print angle illustration"
+		src={
+			"/images/docs/zh-CN/academy/how-angles-of-models-affect-surface-quality/print-angle-illustration.png"
+		}
+	/>
+</ImageContainer>
+
+和这个公式：
+
+<div style={{ display: "flex", justifyContent: "center", fontSize: "1.3rem" }}>
+	$$\arctan ( \frac{\text{层高}}{\text{像素宽度}} )$$
+</div>
+
+但仍然不是很清楚为什么。
+
+我们知道对于光固化打印机来说，最小打印单位是体素（Voxel），这和平面图案中的像素非常类似。每个体素的体积就是单个像素的面积 × 层高。我们可以从微观的角度来观察一下对于平面来说不同的摆放角度有什么区别。假设一台打印机的像素宽度为 0.05mm，层高也设置为 0.05mm，那么最佳打印角度 θ 为：
+
+<div style={{ display: "flex", justifyContent: "center", fontSize: "1.3rem" }}>
+	$$\theta = \arctan ( \frac{0.05}{0.05} ) = 45^\circ$$
+</div>
+
+## 打印角度探讨
+
+我们看一下分别以 40°，45°，50° 摆放模型会发生什么。
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<div className="flex flex-col w-60 gap-4">
+			<AntdImage
+				alt="place model at 40°"
+				src={
+					"\images\docs\zh-CN\academy\how-angles-of-models-affect-surface-quality\place-model-at-40.png"
+				}
+			/>
+			<div className="flex justify-center items-center text-gray-500">
+				θ = 40°
+			</div>
+		</div>
+	</DocsColumn>
+	<DocsColumn>
+		<div className="flex flex-col w-60 gap-4">
+			<AntdImage
+				alt="place model at 45°"
+				src={
+					"/images/docs/zh-CN/academy/how-angles-of-models-affect-surface-quality/place-model-at-45.png"
+				}
+			/>
+			<div className="flex justify-center items-center text-gray-500">
+				θ = 45°
+			</div>
+		</div>
+	</DocsColumn>
+	<DocsColumn>
+		<div className="flex flex-col w-60 gap-4">
+			<AntdImage
+				alt="place model at 50°"
+				src={
+					"/images/docs/zh-CN/academy/how-angles-of-models-affect-surface-quality/place-model-at-50.png"
+				}
+			/>
+			<div className="flex justify-center items-center text-gray-500">
+				θ = 50°
+			</div>
+		</div>
+	</DocsColumn>
+</DocsColumnContainer>
+
+可以看到，只有当以 45° 摆放模型时，倾斜的平面上的体素才可以呈一条直线分布。
+
+实际验证一下，我们使用像素宽度为 0.051mm 的打印机，层高设置为 0.05mm，则最佳打印角度为：
+
+<div style={{ display: "flex", justifyContent: "center", fontSize: "1.3rem" }}>
+	$$\arctan ( \frac{0.05}{0.051} ) \approx 44.43^\circ$$
+</div>
+
+来看一下实际打印结果：
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<div className="flex flex-col w-60 gap-4">
+			<AntdImage
+				alt="print result"
+				src={
+					"/images/docs/zh-CN/academy/how-angles-of-models-affect-surface-quality/print-result-01.jpg"
+				}
+			/>
+			<div className="flex justify-center items-center text-gray-500">
+				θ = 40°
+			</div>
+		</div>
+	</DocsColumn>
+	<DocsColumn>
+		<div className="flex flex-col w-60 gap-4">
+			<AntdImage
+				alt="print result"
+				src={
+					"/images/docs/zh-CN/academy/how-angles-of-models-affect-surface-quality/print-result-02.jpg"
+				}
+			/>
+			<div className="flex justify-center items-center text-gray-500">
+				θ = 45°
+			</div>
+		</div>
+	</DocsColumn>
+	<DocsColumn>
+		<div className="flex flex-col w-60 gap-4">
+			<AntdImage
+				alt="print result"
+				src={
+					"/images/docs/zh-CN/academy/how-angles-of-models-affect-surface-quality/print-result-03.jpg"
+				}
+			/>
+			<div className="flex justify-center items-center text-gray-500">
+				θ = 50°
+			</div>
+		</div>
+	</DocsColumn>
+</DocsColumnContainer>
+
+可以看到以 44.43° 摆放的模型表面没有明显的等距横纹。对于平面模型来说，并不是一定要倾斜打印。如果对第一层厚度的精度要求不是非常高，是可以直接贴底打印的。
+
+> -   贴底打印和倾斜打印各有优缺点。
+>
+> 由于大部分打印机的 Z 轴调零都是手工完成的，多多少少会存在一些误差，精度很难达到微米级。如果 Z 轴零点设得过低，会导致第一层比设置的层高要薄。反之，如果 Z 轴零点设得过高，则会导致第一层比设置的层高厚。此外，由于底层的曝光时间通常比普通层长得多，贴底打印会出现大象腿问题（裙边问题），虽然可以使用 CHITUBOX 中的公差补偿来抵消，但是如果对精度要求很高，还需要花一些时间调校补偿值。而且贴底打印拆模型时会比较困难，有把模型拆坏的风险。贴底打印的好处就是底部无需加支持，打出来的平面光滑，无需后处理。关于公差补偿和大象腿问题可以查看文章<Link href="/tutorials/chitubox-basic/manual/how-to-use-tolerance-compensation-on-chitubox">如何使用 CHITUBOX 的公差补偿</Link>。
+>
+> 倾斜打印就不存在贴底打印的上述问题，但是由于打印的是平面，如果倾斜角度不大，需要添加密集支撑来对抗剥离力，尤其是边缘。这样，拆完支撑后会留下痕迹，需要较长的后处理时间，平滑度也不如贴底打印。
+
+有一种常见的错误打印方式是，将平面平行于打印平台并加支撑，这样相当于结合了贴底打印和倾斜打印的缺点，是不可取的。**避免这样加支撑**:
+
+<ImageContainer>
+	<AntdImage
+		alt="add supports when printing the model horizontally"
+		src={
+			"/images/docs/zh-CN/academy/how-angles-of-models-affect-surface-quality/add-supports-when-printing-the-model-horizontally.png"
+		}
+	/>
+</ImageContainer>
+
+## 横截面积和抬升速度对剥离力的影响
+
+对于非平面模型，需要关注的点就是打印横截面积。横截面积越大，剥离力就越大。
+
+对于类圆形的横截面，可以用<Link href="https://en.wikipedia.org/wiki/Stefan_adhesion">斯蒂芬粘性公式</Link>来近似估算剥离力。
+
+<div style={{ display:"flex", justifyContent: "center", fontSize: "1.5rem"}}>
+	$$F = \frac{3\pi\eta R^4}{2h^3}\frac{dh}{dt}$$
+</div>
+
+-   η：液体的粘度系数
+-   R：两个平行圆面的直径
+-   h：两个平行圆面的距离
+
+可以看到，当两个平行圆面的直径 R 增大为原来的 2 倍时，剥离力 F 会增大为原来的 16 倍，影响不容小觑。可以采取抬升降低速度的方式来减小剥离力。或者通过调整模型的角度来减小横截面积，但这样往往会使打印高度增加，从而导致打印时间变长。
+
+## 结论
+
+先说结论：不包含平面结构的模型不存在“最佳打印角度”的说法，只有平面模型才有“最佳打印角度”。对于平面模型来说，最佳打印角度为
+
+<div style={{ display:"flex", justifyContent: "center", fontSize: "1.4rem"}}>
+	$$\arctan ( \frac{\text{层高}}{\text{像素宽度}} )$$
+</div>
+
+非平面模型摆放时尽量避免层横截面积过大即可。

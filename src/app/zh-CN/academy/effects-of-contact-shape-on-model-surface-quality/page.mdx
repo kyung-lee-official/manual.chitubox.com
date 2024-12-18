@@ -1,0 +1,117 @@
+import { DocsColumnContainer, DocsColumn } from "@/docComponents/docsColumn/DocsColumn";
+
+export const metadata = {
+	title: "支撑顶部接触形状对打印件表面质量的影响",
+	authors: [{ name: "CHITUBOX Team" }],
+	releaseDate: "2022-04-01",
+	description:
+		"CHITUBOX “球形”接触形状与“无”接触形状在光固化3D打印中对打印件表面质量的影响对比。",
+	keywords: ["打印知识"],
+	openGraph: {
+		images: [
+			"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/cover.png",
+		],
+	},
+};
+
+# 支撑顶部接触形状对打印件表面质量的影响
+
+> 本案例使用树脂为 LCD 刚性树脂 GS-B11
+
+在 CHITUBOX 支撑设置里，有一项跟顶部相关的参数，叫做“接触形状”，可以选择无接触形状，或球形接触形状，如下图所示。今天我们就测试下，这两种形状对于支撑拆除和模型表面质量有什么影响。
+
+## 接触形状对模型表面的影响
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/different-contact-shapes-of-supports-01.png"
+	}
+	alt1={"different contact shapes of supports"}
+	img2Src={
+		"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/different-contact-shapes-of-supports-02.png"
+	}
+	alt2={"different contact shapes of supports"}
+/>
+
+通过改变支撑与模型表面的接触形状，我们可以看出球形接触形状和无接触形状支撑的一定区别。因为无接触形状的支撑顶部在打印过程中会在接触表面进行曝光强化，并从连接处逐渐增粗扩大，支撑与模型很好的连接在了一起，保证了连接的稳定性，但是也使得拆除支撑变得困难。
+
+## 接触形状对支撑强度的影响
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<div className="flex flex-col w-[217px] gap-4">
+			<AntdImage
+				alt="support parameters"
+				src={
+					"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/support-params.png"
+				}
+			/>
+			<div className="flex justify-center items-center text-gray-500">
+				支撑参数
+			</div>
+		</div>
+	</DocsColumn>
+	<DocsColumn>
+		<div className="flex flex-col w-60 gap-4">
+			<AntdImage
+				alt="with contact shape"
+				src={
+					"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/with-contact-shape.png"
+				}
+			/>
+			<div className="flex justify-center items-center text-gray-500">
+				有接触形状
+			</div>
+		</div>
+	</DocsColumn>
+	<DocsColumn>
+		<div className="flex flex-col w-60 gap-4">
+			<AntdImage
+				alt="without contact shape"
+				src={
+					"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/without-contact-shape.png"
+				}
+			/>
+			<div className="flex justify-center items-center text-gray-500">
+				无接触形状
+			</div>
+		</div>
+	</DocsColumn>
+</DocsColumnContainer>
+
+## 接触形状对拆除支撑的影响
+
+拆除支撑的时候，会明显感觉球形接触形状支撑比无接触形状支撑更容易拆除，但换句话说，无接触形状支撑比球形接触形状支撑更稳固。拆除支撑后，球形接触形状支撑比无接触形状支撑在模型表面留下的支撑残留更明显。
+
+如果模型比较精细，无接触形状支撑拆除时比球形支撑拆除时更容易误伤模型。
+
+打磨使用的是电动打磨笔，可以切换打磨头，这里用到了砂轮打磨和细砂纸卷抛光。
+
+<ImageContainer>
+	<AntdImage
+		alt="electric sanding pen"
+		src={
+			"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/electric-sanding-pen.png"
+		}
+	/>
+</ImageContainer>
+
+虽然球形接触形状支撑留下的残留物较多，但因为是凸起物，相对更好打磨。打磨后，球形接触形状表面质量相较于无接触形状会更好。
+
+此外，无接触形状表面能看到明显的坑洞。应该是刚性树脂比较脆，镊子剪的时候，连带到模型表面造成的。有球形接触形状的话，拆支撑的时候不容易破坏模型表面。
+
+## 总结
+
+1. 球形接触形状比无接触形状支撑更好拆除。
+1. 无接触形状比球接触形状支撑强度更稳固。
+1. 拆除支撑后，球形接触形状比无接触形状在模型表面留下的支撑残留更明显但由于都是凸起残留，坑洞较少，处理后表面质量比无接触性状光滑。
+1. 无接触形状比球形接触形状，更可能在模型表面留下坑洞。
+
+<ModelSource
+	items={[
+		[
+			"Spider Man - Miles Morales",
+			"https://www.thingiverse.com/thing:3306294",
+		],
+	]}
+/>

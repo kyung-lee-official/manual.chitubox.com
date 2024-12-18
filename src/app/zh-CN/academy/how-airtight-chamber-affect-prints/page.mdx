@@ -1,0 +1,58 @@
+export const metadata = {
+	title: "腔体结构对 3D 打印的影响",
+	authors: [{ name: "CHITUBOX Team" }],
+	releaseDate: "2022-04-01",
+	description:
+		"部分3D模型结构并不适合3D打印，其中一个原因即是会形成特殊的腔体结构，严重将会加剧离型膜的损耗",
+	keywords: ["打印知识"],
+	openGraph: {
+		images: [
+			"/images/docs/zh-CN/academy/how-airtight-chamber-affect-prints/cover.png",
+		],
+	},
+};
+
+# 腔体结构对 3D 打印的影响
+
+## 先说结论
+
+腔体是 3D 打印中绕不开的结构，很多情况下我们的模型都会包含腔体，当模型和 FEP 膜之间形成密闭腔体时，会影响打印件的质量。我们可以通过在不起眼位置打孔，破坏密闭结构，让树脂或空气可以自由地在腔体之间流通来解决这个问题。
+
+## 为什么腔体会对打印质量造成影响？
+
+我们需要讨论的有两种情况：
+
+-   模型和 FEP 之间形成密闭腔体，脱膜时的受力情况
+-   模型的腔体结构高于树脂液面时的受力情况
+
+## 模型和 FEP 之间形成密闭腔体
+
+我们以一个半球状模型为例，该结构在打印过程中，腔体的部分始终和空气隔绝，腔体内没有空气。脱膜开始之前，腔体原本的内外压力差很小。
+
+开始脱膜时，打印平台开始上升，模型受到拉力开始和 FEP 膜剥离。由于树脂的体积弹性模量(Bulk Modulus)要远高于空气，腔体中又充满了液态树脂，没有空气，剥离的瞬间，腔体下方会形成一个较显著的低压区，低压区周围的树脂（包括腔体内部的树脂）会受到一个向低压区的力，腔体内部的压强也会减小，从而导致腔体存在内外压差而受力。
+
+这个力的大小和腔体的横截面，脱膜速度，树脂粘性正相关。为了大幅减小这个力对模型的影响，通常我们会在腔体上打孔以破坏封闭结构。打孔后的模型在抬升阶段，树脂或空气可以通过孔洞流入腔体，大幅减小脱膜瞬间腔体内外的压差，从而减小作用在模型上的力。如下图所示：
+
+<ImageContainer>
+	<AntdImage
+		alt="airtight chamber without/with a hole"
+		src={
+			"/images/docs/zh-CN/academy/how-airtight-chamber-affect-prints/airtight-chamber-withoutwith-a-hole-01.gif"
+		}
+	/>
+</ImageContainer>
+
+下图展示了同样壁厚为 0.5mm 的半球模型，打孔和不打孔对表面的影响，可以看到，相对而言打孔的模型表面比较完整，而未打孔的模型表面会产生一些孔洞。
+
+<ImageContainer>
+	<AntdImage
+		alt="airtight chamber without/with a hole"
+		src={
+			"/images/docs/zh-CN/academy/how-airtight-chamber-affect-prints/airtight-chamber-withoutwith-a-hole-02.png"
+		}
+	/>
+</ImageContainer>
+
+## 模型的腔体结构高于树脂液面
+
+当腔体部分高于树脂液面时，由于腔体内部没有空气，压强小于大气压强，腔体内的树脂不会流出，而是随着腔体一起抬升，直至空气可以进入腔体。因此，在这个过程中，高出树脂液面的部分的腔体也会承受来自大气压的压力，如果腔体较小且壁厚较厚，这样的压力不会对打印质量造成什么影响。如果腔体过大，腔体内树脂的重力会对抗打印平台的拉力，可能导致模型脱落或支撑被扯断，这种情况下必须要打孔让空气流入腔体，减小腔体内外压差。

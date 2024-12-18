@@ -1,0 +1,98 @@
+{
+	"fieldName": "Academy",
+	"isVersioned": false,
+	"type": "blog",
+	"homeUrl": "/zh-CN/academy",
+	"versions": [
+		{
+			"versionCode": null,
+			"isLatest": false,
+			"category": [
+				{
+					"pageId": "a-brief-overview-of-thermal-stress-in-resin-3d-printing",
+					"label": "光固化 3D 打印中的热应力简述"
+				},
+				{
+					"pageId": "a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing",
+					"label": "SLA/DLP/LCD 3D 打印支撑添加全解"
+				},
+				{
+					"pageId": "a-detailed-analysis-of-the-factors-affecting-printing-accuracy",
+					"label": "影响打印精度的因素详解"
+				},
+				{
+					"pageId": "all-you-need-to-know-about-failed-printing",
+					"label": "关于常见 3D 打印失败的错误排查"
+				},
+				{
+					"pageId": "bottom-curling-and-detachment",
+					"label": "光固化打印件底部翘边导致脱落问题详解"
+				},
+				{
+					"pageId": "effects-of-contact-shape-on-model-surface-quality",
+					"label": "支撑顶部接触形状对打印件表面质量的影响"
+				},
+				{
+					"pageId": "effects-of-layer-height-on-sladlplcd-3d-printing",
+					"label": "层厚对于光固化 3D 打印的影响"
+				},
+				{
+					"pageId": "hollowed-part-being-broken-after-a-period-of-time",
+					"label": "镂空模型久置后破裂"
+				},
+				{
+					"pageId": "how-airtight-chamber-affect-prints",
+					"label": "腔体结构对 3D 打印的影响"
+				},
+				{
+					"pageId": "how-angles-of-models-affect-surface-quality",
+					"label": "打印件摆放角度对打印件表面的影响"
+				},
+				{
+					"pageId": "how-to-do-basic-fixes-to-your-models-using-blender",
+					"label": "如何使用 Blender 对模型进行基本修复？"
+				},
+				{
+					"pageId": "how-to-level-the-build-plate-on-a-bottom-up-3d-printer",
+					"label": "上拉式光固化 3D 打印机成型平台调平技巧"
+				},
+				{
+					"pageId": "how-to-save-resin-in-sladlplcd-3d-printing",
+					"label": "节省树脂的技巧汇总"
+				},
+				{
+					"pageId": "how-to-strengthen-3d-printed-parts-in-sladlplcd",
+					"label": "如何增强光固化 3D 打印模型强度"
+				},
+				{
+					"pageId": "obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing",
+					"label": "掌握光敏树脂参数配置"
+				},
+				{
+					"pageId": "settings-to-improve-your-sladlplcd-3d-print-quality",
+					"label": "提高光固化 3D 打印质量的参数设置技巧"
+				},
+				{
+					"pageId": "storage-and-curing-of-photopolymer-resin",
+					"label": "光固化 3D 打印光敏树脂保存与固化"
+				},
+				{
+					"pageId": "stress-and-strain-properties-of-3d-printing-resin",
+					"label": "光敏树脂应力特性说明"
+				},
+				{
+					"pageId": "the-factors-to-affect-the-print-speed-of-a-resin-3d-printer",
+					"label": "影响 SLA/DLP/LCD 3D 打印速度的因素有哪些"
+				},
+				{
+					"pageId": "tools-to-remove-support-structures-and-rinse-3d-object-in-resin-sladlplcd-3d-printing",
+					"label": "树脂3D打印，拆除支撑、清洗树脂工具大盘点"
+				},
+				{
+					"pageId": "verification-of-the-effect-of-light-source-intensity-on-printing-accuracy",
+					"label": "控制光源强度对打印精度的影响验证"
+				}
+			]
+		}
+	]
+}

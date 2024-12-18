@@ -1,0 +1,221 @@
+import { DocsColumnContainer, DocsColumn } from "@/docComponents/docsColumn/DocsColumn";
+
+export const metadata = {
+	title: "SLA/DLP/LCD 3D 打印支撑添加全解",
+	authors: [{ name: "CHITUBOX Team" }],
+	releaseDate: "2022-04-04",
+	description:
+		"支撑是确保光固化3D打印件能被成功打印出来的重要元素之一，所以为什么要添加支撑，该在何处添加支撑将在本篇内容中进行介绍。",
+	keywords: ["打印知识"],
+	openGraph: {
+		images: [
+			"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/cover.png",
+		],
+	},
+};
+
+# SLA/DLP/LCD 3D 打印支撑添加全解
+
+光固化 SLA/DLP/LCD 3D 打印中一定会用到支撑结构，支撑结构是确保光固化 3D 打印件能被成功打印出来的重要元素之一。支撑使得模型不会变形以及崩塌。但也正因为支撑作为整体打印件不可分离的一部分，打印完成后就需要一系列的后处理来拆除支撑以及处理支撑留下的痕迹。
+
+## 下沉式和上拉式 3D 打印中的支撑结构
+
+下沉式和上拉式 3D 打印中的支撑结构往往不太一样：
+
+在下沉式 3D 打印中，支撑结构跟 FDM 比较类似，用来保证悬空和跨桥的成功打印。在下沉式 3D 打印中没有拉拔力/离型力（点击了解拉拔力/离型力详情：<Link href="https://www.chitubox.com/zh-CN/article_howto_17839_3_39.html">拉拔产生的 Z 轴纹路如何消除</Link>），因此一般来说，模型可以摆放成任意角度。在下沉式 3D 打印中，最需要把控的是减少支撑的数量，防止拆除时损坏模型表面；同时降低打印的总层数以降低打印时间。
+
+<ImageContainer>
+	<AntdImage
+		alt="Top-down 3D printing and Bottom-up 3D printing"
+		src={
+			"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/top-down-and-bottom-up-3d-printing.gif"
+		}
+	/>
+</ImageContainer>
+
+上拉式 3D 打印中，因为离型力的出现，情况会复杂的多，因为最需要考量的元素变成了如何减少拉拔力/离型力。影响拉拔力/离型力的因素有很多：树脂黏度、离型速度、新成型层面面积、新成型层面与离型膜高度距离。这些因素中，新成型层面面积会影响到支撑结构。因此在上拉式 3D 打印中，模型往往需要摆放成某一角度，来减少每层的横截面积。而减少支撑的数量并非首要问题。
+
+下面，我们将重点说明上拉式 3D 打印的支撑结构。
+
+## 上拉式 3D 打印哪里需要支撑？
+
+### 悬空和跨桥
+
+很多文章里，习惯用字母 Y、H 和 T 表示悬空或跨桥结构。
+
+<ImageContainer>
+	<AntdImage
+		alt="use letters Y, H, and T to illustrate overhangs and bridges"
+		src={
+			"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/letters-y-h-and-t.png"
+		}
+	/>
+</ImageContainer>
+
+如果一个悬空倾斜的垂直角度小于 45 度，那么可以在打印此悬空时不用支撑。字母 Y 的 V 型部分，分别与垂直方向成 30 度，因此无需支撑。而字母 T 的延伸部分与垂直方向成 90 度。因此，必须添加支撑来打印字母 T。同样地，并非所有的跨桥都需要支撑。如果跨桥的长度小于 5mm，打印机就可能不需要支撑结构打印出来。
+
+事实上，这些临界值很大程度上受限于 3D 打印机、材料、参数等有关的实际情况。因此，用<Link href="https://www.thingiverse.com/thing:40382">悬空</Link>和<Link href="https://www.thingiverse.com/thing:3931816">跨桥</Link>的测试模型来实测 3D 打印机的性能就很有必要。
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/overhangs.png"
+	}
+	alt1={"overhangs"}
+	img2Src={
+		"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/bridges.png"
+	}
+	alt2={"bridges"}
+/>
+
+跨桥一般是指连接模型两端的水平悬垂物，如符号 ∏ 的中间部分。并非所有的跨桥都需要支撑，如果跨桥的跨度较小，3D 打印机是可以打印出来的，不需要支撑结构。
+
+但如果跨桥跨度较大，在没有支撑或支撑不足的情况下，层面因悬空打印就可能出现如下图所示的断裂问题，即使跨桥的第一层打印出来，也可能因层面的续接打印出现分层的现象。
+
+<ImageContainer>
+	<AntdImage
+		alt="Due to the large span of the bridge and the lack of supports, its layers are broken"
+		src={
+			"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/bridge-layers-broken.png"
+		}
+	/>
+</ImageContainer>
+
+如图所示，跨度最大的跨桥分层较为明显，而跨度第二大的跨桥图片显示的虽然不明显，但同样存在分层问题，导致跨桥中段明显比两端厚。
+
+跨桥的打印跨度，这在很大程度上取决于打印机性能和光敏树脂材料。打印机性能不好（如：Z 轴不稳定，离型膜脱膜能力减弱，光源衰减等），树脂材料不匹配（如材料刚性不足等），都会影响跨桥的打印跨度。因此，在开始打印带有跨桥的模型前，最好先用特定的模型测试打印，了解打印机的性能，并掌握树脂情况。
+
+了解机器所能“挑战”最大跨桥的打印跨度后，就需要在 CHITUBOX 中给超过该长度的跨桥，合理地添加支撑或小柱子，以确保打印成功。
+
+有一个更简单的方法用来判断上拉式 3D 打印中哪里需要支撑，就是在 CHITUBOX 切片预览模式下，轻松识别这些位置。
+
+<ImageContainer>
+	<AntdImage
+		alt="examples"
+		src={
+			"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/examples.jpg"
+		}
+	/>
+</ImageContainer>
+
+拿上面这个“吉祥安康金鼠”模型为例。我们重点关注底座的以下几个位置，悬空开始出现和分开的位置，可以看到这一层是和之前固化的层面连接在一起，无需支撑，就可以逐层叠加。
+
+<ImageContainer>
+	<AntdImage
+		alt="the layer is connected with the previously cured layer"
+		src={
+			"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/connection-layers01.jpg"
+		}
+	/>
+</ImageContainer>
+
+随后底座悬空开始向两侧延长，一整片的层面开始分离，但可以看到，即使在分离过程中，新的层面依旧和之前固化的层面连接在一起，直至整个悬空结构打印完成。
+
+<ImageContainer>
+	<AntdImage
+		alt="layers are still connected with the previously cured layer"
+		src={
+			"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/connection-layers02.jpg"
+		}
+	/>
+</ImageContainer>
+
+至于“吉祥安康金鼠”的部分，所有 CHITUBOX 切片预览模式下悬空的部分，都需要添加支撑。
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<AntdImage
+			alt="suspendings"
+			width={195}
+			src={
+				"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/suspendings01.jpg"
+			}
+		/>
+	</DocsColumn>
+	<DocsColumn>
+		<AntdImage
+			alt="suspendings"
+			width={300}
+			src={
+				"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/suspendings02.jpg"
+			}
+		/>
+	</DocsColumn>
+	<DocsColumn>
+		<AntdImage
+			alt="suspendings"
+			width={223}
+			src={
+				"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/suspendings03.jpg"
+			}
+		/>
+	</DocsColumn>
+</DocsColumnContainer>
+
+### 薄弱结构
+
+其中针对打印件中过于细小，厚度较薄的位置，我们暂可称为薄弱结构。上拉式 3D 打印中的拉拔力/离型力可能造成薄弱结构处的变形、层纹、甚至拉断。虽然这些位置不加支撑理论上也可以成功打印出来，但考虑到打印过程中稳固结构，最好还是给这些薄弱结构添加支撑。
+
+## SLA/DLP/LCD 3D 打印的支撑形状
+
+### 柱状
+
+SLA/DLP/LCD 3D 打印最常见的就是柱状支撑。看上去像一根根的柱子，只有顶部和模型接触，更加节省树脂材料。柱状支撑满足绝大部分应用，不会过多的损坏模型表面质量。
+
+### 网状
+
+网状支撑可以理解为多个片状支撑交织成的网格形成一个底座位于模型底部。模型底部几乎被这些网状支撑全部包裹住。因为比片状支撑更薄，网状支撑更易拆除。同时网状支撑的接触点更细密。
+
+## 添加支撑的注意事项
+
+### 避免在展示面生成支撑
+
+SLA/DLP/LCD 通常用于对成品表面质量有很高要求的精细打印。这种情况下，在设计支撑时，避免给展示面添加支撑就很重要。支撑可以添加在对表面质量要求较低的底部或者背面。
+
+<ImageContainer>
+	<AntdImage
+		alt="add supports to the Spider-Man's back"
+		src={
+			"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/spider-man.gif"
+		}
+	/>
+</ImageContainer>
+
+上图为例，支撑尽量添加在蜘蛛侠背部和底部，避开了有很多细节纹路的脸部正面，以及胸口蜘蛛雕刻。
+
+我们可以通过调整模型摆放来改变支撑位置。对于这些对表面美观度要求很高的模型，调整模型摆放，就可以在这些表面添加极少的支撑甚至零支撑。
+
+### 均匀分布支撑
+
+对于上拉式光固化 3D 打印机来说，支撑均匀分布能让模型受力均匀。如果分布不均匀，支撑集中的地方在离型力作用下，就相对安全，而支撑稀疏的部位就可能被拉断，模型和支撑分离悬空导致模型缺肉或变形。
+
+### 交联支撑
+
+当生成支撑时，添加交联支撑，也就是支撑间相互连接而不是单独一根根矗立。如果你用的切片软件做不到这点，趁早舍弃吧。在 CHITUBOX 里，交联支撑可以大大降低支撑变形的几率。这种设计让支撑更坚实地连成一片，使得支撑不易破裂失败。
+
+<ImageContainer footnote={"左：交联支撑 右：单独支撑"}>
+	<AntdImage
+		alt="Interconnected Supports and Individual Supports"
+		src={
+			"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/interconnected-supports-and-individual-supports.png"
+		}
+	/>
+</ImageContainer>
+
+### 避免支撑和模型重叠
+
+和模型表面接触的支撑部分应该只有支撑头。对于一些较复杂的模型，留意编辑支撑的位置，不要和模型重叠。因为打印完成后拆除支撑，重叠的位置就会留下一根棍子，打磨时很可能损坏模型表面。
+
+### 支撑薄弱时进行强化
+
+当某些打印件的模型高度到达一定程度，即使改变支撑参数，也会因为整体支撑高度过大，支撑主体薄弱导致支撑的打印出现问题进而导致整个打印件打印失败。此时需要使用独立支撑或支撑强化等功能，将添加的支撑当做打印件对待进行支撑添加，加强支撑的稳定性。
+
+<ModelSource
+	items={[
+		["Massive Overhang Test", "https://www.thingiverse.com/thing:40382"],
+		["Bridge-Test", "https://www.thingiverse.com/thing:3931816"],
+		[
+			"Spider Man - Miles Morales",
+			"https://www.thingiverse.com/thing:3306294",
+		],
+	]}
+/>

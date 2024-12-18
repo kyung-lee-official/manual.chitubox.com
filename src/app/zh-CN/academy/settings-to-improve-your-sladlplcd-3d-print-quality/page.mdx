@@ -1,0 +1,118 @@
+export const metadata = {
+	title: "提高光固化 3D 打印质量的参数设置技巧",
+	authors: [{ name: "CHITUBOX Team" }],
+	releaseDate: "2022-04-06",
+	description:
+		"打印件的打印质量与设备、材料以及软件内的打印参数都有密切的联系，而其中我们能掌控的大部分环节主要来自于切片软件输出的各个打印参数。",
+	keywords: ["小技巧"],
+	openGraph: {
+		images: [
+			"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/cover.png",
+		],
+	},
+};
+
+# 提高光固化 3D 打印质量的参数设置技巧
+
+光固化（SLA/DLP/LCD）3D 打印是市场上最普遍的 3D 打印技术之一，它可以打印出拥有极高精度的成品，尤其适用于表面具有丰富细节和精度要求的模型。虽然相比于 FDM 等其他 3D 打印技术，光固化打印的精度已经很高了，但如果你不熟悉切片、打印技巧等，也可能导致 3D 打印的模型会非常粗糙。
+
+其实，3D 打印的质量和设备、材料以及切片等都有很大的关系。不过也不用太担心，我们完全可以通过调整下面几个小参数来改善 3D 打印质量。
+
+## 切片层厚(mm)
+
+顾名思义，层厚是指模型固化时每一层的厚度。层厚不仅影响打印速度（打印时间），还会影响打印质量。打印一个模型，其总层数决定了模型打印速度，以及所需要的打印时间。在固定高度下，层厚越薄，模型就会被切成更多层，打印时间就会更长。但相对地，层厚越薄，打印质量越高，模型表面更加平滑，Z 轴垂直方向的细节呈现也会更加清晰。
+
+<ImageContainer footnote={"左：100µm层厚   右：50µm层厚"}>
+	<AntdImage
+		alt="hemisphere with different layer heights"
+		src={
+			"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/hemisphere-with-different-layer-heights.png"
+		}
+	/>
+</ImageContainer>
+
+一般来说，不同品牌、不同型号的 3D 打印机会存在着各式差异，它们能够打印的层厚区间也略有不同，有的打印机可以打印出非常薄的层厚。层厚一般以毫米(mm)为单位计算，当然部分机器或者切片软件也会使用微米(µm)作为单位，例如 CHITUBOX 切片软件的层厚单位就是毫米(mm)。
+
+市场上的光固化（SLA/DLP/LCD）3D 打印机可以打印的最小层厚是 25µm (0.025mm)，最大为 100 µm (0.1mm)。根据打印机的实际情况，我们可以在 CHITUBOX 里调整层厚这一参数。如果你不知道设置什么样的数值比较合适，建议可以从 50 μm (0.05mm)着手，这也是 CHITUBOX 的默认层厚。
+
+<ImageContainer>
+	<AntdImage
+		alt="layer height"
+		src={
+			"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/layer-height.png"
+		}
+	/>
+</ImageContainer>
+
+## 曝光时间(s)
+
+除了树脂不同特性的影响外，3D 打印质量还会受到光源强度以及固化/曝光时间的影响。曝光时间是指打印时每层所需的光源曝光时长。不同的树脂，固化所需时长往往有很大不同。
+
+CHITUBOX 默认的曝光时间是 6 秒。对于很多树脂来说，这个曝光时间是可以的。但在实际的打印中，建议你还是根据树脂的特性来调整这项参数。
+
+<ImageContainer>
+	<AntdImage
+		alt="exposure time"
+		src={
+			"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/exposure-time.png"
+		}
+	/>
+</ImageContainer>
+
+对于底层曝光时间，建议是正常曝光时间的 8~12 倍。CHITUBOX 默认的底层曝光时间是 50 秒。一般来说，底层曝光时间越长，底层部分粘在成型平台上就越牢固。所以，如果你发现底层部分无法很好地粘在成型平台上，那么你就需要去增加底层曝光时间。
+
+如果你想了解更多有关于打印平台方面的技巧，你可以阅读<Link href="https://www.chitubox.com/zh-Hans/article/academy/advanced/pre-/22">你想了解的关于打印失败的一切</Link>这篇文章。
+
+## 抬升速度(mm/min)
+
+抬升速度是指打印每一层面时，成型平台从料槽抬升的速度，CHITUBOX 的默认抬升速度是 65 mm/min。由于成型平台和料槽底部离型膜之间的拉力存在，如果抬升速度太快，模型就有可能会被拉断，支撑也有可能会被破坏。但是如果速度过低，打印时长就会增加。当我们在调整抬升速度时，需要同时兼顾打印质量以及打印时间。
+
+## 模型摆放
+
+模型的摆放位置不同，对于光固化 3D 打印质量也有很大的影响。如果说，模型结构的横截面积从较小突增成较大，是会导致层面间产生剧烈的体积变化的，而层面之间树脂体积的剧变又会导致固化层面收缩不均匀。
+
+<ImageContainer footnote={"模型的不同摆放位置"}>
+	<AntdImage
+		alt="different orientations"
+		src={
+			"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/different-orientations.png"
+		}
+	/>
+</ImageContainer>
+
+模型结构的剧变不光会影响模型打印的完整性，还会导致模型表面出现层纹。此外，由于打印过程中 Z 轴的抬升，模型摆放不同也会直接影响表面质量。
+
+关于模型摆放和打印质量之间的关系，请阅读<Link href="https://www.chitubox.com/zh-Hans/article/academy/advanced/faq/53">这篇文章</Link>。
+
+## 利用 CHITUBOX 的抗锯齿功能
+
+锯齿是显示器输出的画面中图物边缘出现凹凸锯齿的情况，我们知道 LCD 和 DLP 打印机的曝光图案是由像素构成的，而像素的形状近似于方形，锯齿正是由于这些方形的边缘而产生的。在 3D 打印时，抗锯齿通过羽化边缘像素的灰度使得模型表面更加平滑。
+
+CHITUBOX 自带抗锯齿功能，经过专门的边缘模糊算法处理，使模型更加光滑细腻，可以有效减少边缘锯齿现象。
+
+<ImageContainer>
+	<AntdImage
+		alt="disable/enable antialiasing"
+		src={
+			"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/disableenable-antialiasing.png"
+		}
+	/>
+</ImageContainer>
+
+当然，提升 3D 打印质量的方法和技巧远远不止以上几个方面，光是支撑一个部分，就能展开讲好几个篇章。但是，通过 CHITUBOX 简单地调整这几个参数，或多或少就能提升 3D 打印质量，让光固化（SLA/DLP/LCD）3D 打印呈现出它本应有的高质量。
+
+## 利用模糊像素功能
+
+CHITUBOX 模糊像素功能可以在打印件打印的表面细节和尺寸精度上，提供更加光滑的表面效果，合理的使用可以让打印件打印出来表面后有一定的磨砂效果；
+
+<ImageComparison
+	img1Src={
+		"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/blur-level-2.png"
+	}
+	text1={"2 级效果图"}
+	img2Src={
+		"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/blur-level-8.png"
+	}
+	text2={"8 级效果图"}
+	height={350}
+/>

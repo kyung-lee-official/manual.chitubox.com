@@ -1,0 +1,167 @@
+import { TrueStressStrainCurve } from "@/docComponents/stressAndStrainPropertiesOf3dPrintingResin/TrueStressStrainCurve";
+import { TrueAndEngineeringCurve } from "@/docComponents/stressAndStrainPropertiesOf3dPrintingResin/TrueAndEngineeringCurve";
+import { BritleAndDuctile } from "@/docComponents/stressAndStrainPropertiesOf3dPrintingResin/BritleAndDuctile";
+import { MetalStressStrain } from "@/docComponents/stressAndStrainPropertiesOf3dPrintingResin/MetalStressStrain";
+import { StandardAndToughResin } from "@/docComponents/stressAndStrainPropertiesOf3dPrintingResin/StandardAndToughResin";
+import { OtherMaterialCurve } from "@/docComponents/stressAndStrainPropertiesOf3dPrintingResin/OtherMaterialCurve";
+import { ProportionalityLimit } from "@/docComponents/stressAndStrainPropertiesOf3dPrintingResin/ProportionalityLimit";
+import { Limits } from "@/docComponents/stressAndStrainPropertiesOf3dPrintingResin/Limits";
+import { DocsColumnContainer, DocsColumn } from "@/docComponents/docsColumn/DocsColumn";
+
+export const metadata = {
+	title: "光敏树脂应力特性说明",
+	authors: [{ name: "CHITUBOX Team" }],
+	releaseDate: "2022-04-01",
+	description:
+		"了解材料特性是选择合适树脂的重要前提。",
+	keywords: ["打印知识"],
+	openGraph: {
+		images: [
+			"/images/docs/zh-CN/academy/stress-and-strain-properties-of-3d-printing-resin/cover.png",
+		],
+	},
+};
+
+# 光敏树脂应力特性说明
+
+## 应力特性曲线
+
+在了解光敏树脂的应力特性之前，我们首先学习下材料应力应变曲线图。拉伸实验得到的应力应变，通常指工程应力和工程应变，用于计算应力应变的横截面积和长度，是未变形的初始横截面积和初始长度。与之对应的，还有真应力和真应变，用于计算应力应变的横截面积和长度，是变形后的横截面积和长度。
+
+在应力低于比例极限的情况下，应力 $\sigma$ 与应变 $\epsilon$ 成正比，即 $\sigma = E\epsilon$；式中 $E$ 为常数，称为弹性模量或杨氏模量，是正应力与正应变的比值，弹性模量的单位与应力的单位相同。剪切模量的定义与类似，是切应力与切应变的比值。
+
+原理上，聚合物材料具有粘弹性，当应力被移除后，一部分功被用于摩擦效应而被转化为热能，这一过程可用应力应变曲线表示。金属材料具有弹性变形性，若在超过其屈服强度之后继续加载，材料发生塑性变形直至破坏。这一过程也可用应力应变曲线表示。这过程一般分为：弹性阶段、屈服阶段、硬化阶段、局部変形四个阶段。下述以金属应力特性曲线图为例进行讲解。金属的应力应变曲线通常分为四个阶段：弹性阶段，屈服阶段，应变硬化阶段和颈缩断裂阶段。
+
+<Limits />
+
+曲线的横坐标是应变，纵坐标是外加的应力。曲线的形状反应材料在外力作用下发生的脆性，塑性，屈服，断裂等各种形变过程。这种应力-应变曲线通常称为工程应力-应变曲线，它与载荷-变形曲线外形相似，但是坐标不同。
+
+## 应力特性阶段概述
+
+### 阶段 1: 弹性阶段
+
+特征：当应力低于 $\sigma_{pl}$ 时，应力与试样的应变成正比，应力去除，变形消失，即试样处于弹性变形阶段。
+
+重要概念： $\sigma_{el}$ 为材料的弹性极限，表示材料保持完全弹性变形的最大应力。
+
+在弹性阶段有一特殊直线 oa 段，在该段内 $\sigma$ 与 $\epsilon$ 之间呈线性关系，称为比例阶段，也称为线弹性阶段，满足胡克定律 $\sigma = E\epsilon$；
+
+$E$ 称为材料的弹性模量，一般钢材 $E = 200 \text{GPa}$。
+
+比例界限 $\sigma_{pl}$ 是应力应变之间服从胡克定律的应力的最大值。
+
+<Admonition type="tip" title="提示">
+	* 只有工作应力 $\frac{F}{A} < \sigma_{el}$ 时，$\sigma$ 与 $\epsilon$ 才服从胡克定律
+	* $\sigma_{pl} < \sigma < \sigma_{el}$ 时，ab 段内胡克定律不再成立，但仍为弹性变形
+	* 由于 $\sigma_{pl}$ 、$\sigma_{el}$ 相差不大，工程上并不区分
+</Admonition>
+
+### 阶段 2: 应变硬化阶段
+
+特征：当应力超过 $\sigma_{pl}$ 达到某一数值后，应力与应变之间的直线关系被破坏，应变显著增加，而应力先是下降，然后微小波动，在曲线上出现接近水平线的小锯齿线段。如果卸载，试样的变形只能部分恢复，而保留一部分残余变形，即塑性变形。这说明钢的变形进入塑性变形阶段。
+
+重要概念：$\sigma_{y}$ 称为材料的屈服强度或屈服点，是塑性材料一个重要指标。对于无明显屈服的金属材料，规定以产生 0.2% 残余变形的应力值为其屈服极限。
+
+### 阶段 3: 颈缩阶段
+
+特征：试样发生明显而均匀的塑性变形，若使试样的应变增大，则必须增加应力值，这种随着塑性变形的增大，塑性变形抗力不断增加的现象成为加工硬化或形变硬化。
+
+重要概念：当应力达到 $\sigma_{u}$ 时试样的均匀变形阶段即告终止，此最大应力 $\sigma_{u}$ 成为材料的强度极限或抗拉强度，它标识材料对最大均匀塑性变形的抗力。材料在拉伸破坏之前能承受的最大应力。
+
+### 阶段 4: 局部变形
+
+特征：在 $\sigma_{u}$ 之后试样开始发生不均匀变形并形成缩颈，应力下降，最后应力达到 $\sigma_{f}$ 时试样断裂。
+
+重要概念：$\sigma_{f}$ 为材料的条件断裂强度，他表示材料对塑性的极限抗力。
+
+上述应力-应变曲线中的应力和应变是以试样的初始尺寸进行计算的，事实上，在拉伸过程中试样的尺寸是在不断变化的，此时的真是应力 $\sigma$ 应该是瞬时载荷 ($P$) 除以试样的瞬时截面积 ($A$)。
+
+即， $\sigma = \frac{P}{A}$
+
+同样，真实应变 $\epsilon$ 应该是瞬时伸长量除以瞬时长度
+
+<div style={{ display:"flex", justifyContent: "center", fontSize: "1.4rem"}}>
+	$$\Delta\epsilon = \frac{\Delta L}{L}$$
+</div>
+
+下图为真应力-真应变曲线：
+
+<TrueStressStrainCurve />
+
+它不像应力-应变曲线那样在载荷达到最大值后转而下降，而是继续上升直至断裂，这说明金属在塑性变形过程中不断的发生加工硬化，从而外加应力必须不断增高，才能使变形继续进行，即使在出现缩颈之后，缩颈处的真实应力仍在升高，这就排除了应力-应变曲线中应力下降的假象。
+
+### 其他材料曲线
+
+注意：不同的材料，应力应变曲线会有差异，并不是每种材料都会表现出上述四个阶段。根据材料的不同，其应力-应变曲线大概如以下图示。
+
+<OtherMaterialCurve />
+
+## 名词解释
+
+### 屈服强度
+
+材料的屈服强度，是指材料开始发生塑性变形时所对应的应力。由于不同材料应力应变曲线变化各异，通常很难确定在多大的应力下，材料开始屈服。实际应用中，也会用到以下几种定义屈服点的方式。
+
+### 弹性极限
+
+能检测到塑性变形的最小应力。
+
+### 比例极限
+
+应力应变曲线开始出现非线性的应力。很多金属材料的弹性极限和比例极限几乎是一样的。偏移屈服点：有些材料的应力应变曲线，弹性阶段和塑性阶段之间没有明显的分界点，可以采用指定的很小的塑性应变，通常是 0.2%，对应的应力作为屈服点。
+
+<ProportionalityLimit />
+
+### 真应力和真应变
+
+前面拉伸实验得到的工程应力 ($\sigma$) 和工程应变 ($\epsilon$)，是基于试件未变形的初始横截面积 ($A_0$) 和初始长度 ($L_0$) 计算的。而实际中，随着载荷的变化，横截面积和长度都是在发生变化的。特别是当材料的应力超过抗拉强度后发生颈缩，横截面明显缩小，如果仍然用初始横截面积计算应力，就不太合适了。
+
+真应力 $\sigma_T$ 和真应变 $\epsilon_T$ ，顾名思义就是真实的应力和真实的应变。是以载荷作用下发生变形后的实际横截面积 ($A_0$) 和实际长度 ($L_0$)，来计算应力和应变的。
+
+弹性变形阶段，由于变形很小，工程应力应变和真实应力应变，几乎没有什么差异。
+
+塑性变形阶段，基于塑性变形体积不变的假设 $AL=A_0 L_0$ ，可以由工程应力应变计算出真实应力应变：
+
+真应力：$$\sigma_T = \frac{P}{A} = \frac{PL}{A_0 L_0} = \frac{P(L_0 + \Delta L)}{A_0 L_0} = \frac{P}{A_0}(1+\epsilon) = \sigma(1 + \epsilon)$$
+
+真应变：$$\epsilon_T = \int_{L_0}^L \frac{dL}{L} = \ln(\frac{L}{L_0}) = \ln(1 + \epsilon)$$
+
+<TrueAndEngineeringCurve />
+
+### 延展性和脆性
+
+根据材料的力学可以大致将材料分为两类：延展类材料和脆性材料。
+
+钢和铝通常属于延展性材料；玻璃、陶瓷、混凝土和铸铁，通常属于脆性材料。
+
+拉伸试验中，延展性材料在发生断裂前，通常会尽力较大的塑性变形；而脆性材料在受到拉伸时，几乎不存在屈服阶段，应力超过弹性极限后很快就会断掉
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<BritleAndDuctile />
+	</DocsColumn>
+	<DocsColumn>
+		<MetalStressStrain />
+	</DocsColumn>
+</DocsColumnContainer>
+
+## 标准树脂与韧性树脂材料对比
+
+<StandardAndToughResin />
+
+在 3D 打印打印材料中，特别是对于功能性和原型树脂，了解材料特性以及正确的曝光时间是选择合适原材料的重要前提。曲线的形状反应材料在外力作用下发生的脆性、塑性、屈服、断裂等各种形变过程，可以看出材料是脆性材料还是延展性材料。
+
+很多时候，我们需要打印件能够承受较高应力或较大应变也不易发生脆性断裂，这也就是所谓的韧性。韧性表示材料在塑性变形和破裂过程中吸收能量的能力。韧性越好，则发生脆性断裂的可能性越小。
+
+韧性也被定义为应力-应变曲线下的面积。韧性材料通常具有良好的强度(材料所能承受的应力)和延展性(延伸率或应变百分率)的平衡。正因为如此，韧性材料的应力-应变曲线下的面积比低延伸率的强韧材料下的面积大得多。
+
+韧性树脂更耐用、适应性更强、抗冲击更好，能承受高应力或应变，可用于制造承受强大抗冲击的坚固原型，也可以用于搭接接头，活动铰链和零件。
+
+<References
+	items={[
+		[
+			"材料力学性能（2）应力应变曲线",
+			"https://www.teesim.com/Theory/MAT02/MAT02.html",
+		],
+	]}
+/>

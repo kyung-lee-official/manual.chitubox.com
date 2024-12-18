@@ -1,0 +1,74 @@
+export const metadata = {
+	title: "镂空模型久置后破裂",
+	authors: [{ name: "CHITUBOX Team" }],
+	releaseDate: "2022-04-01",
+	description: "有些镂空模型，在存放久了后会出现开裂甚至破裂的情况。",
+	keywords: ["打印知识"],
+	openGraph: {
+		images: [
+			"/images/docs/zh-CN/academy/hollowed-part-being-broken-after-a-period-of-time/cover.png",
+		],
+	},
+};
+
+# 镂空模型久置后破裂
+
+有些镂空模型，在存放久了后会出现开裂甚至破裂的情况，这是由什么原因引起的呢？
+
+<ImageContainer>
+	<AntdImage
+		alt="the hollowed model is broken after being left for a long time"
+		src={
+			"/images/docs/zh-CN/academy/hollowed-part-being-broken-after-a-period-of-time/a-broken-hollow-model.jpg"
+		}
+	/>
+</ImageContainer>
+
+## 二次固化
+
+虽然模型已经成型，但表面仍然比较黏并且相对较软。在打印完成时，他们通常没有反应完全与固化，所以需要二次固化来完成未完成的反应。二次固化可以改善诸如应变模数、强度和稳定性等材料特性。二次固化后的模型表面更加坚硬与干燥，可以保存更久。
+
+## 内壁清洗
+
+模型内壁未清洗干净，液体树脂有相溶性，经过长时间渗透腐蚀，就会发生开裂甚至破裂等问题。
+
+<ImageContainer>
+	<AntdImage
+		alt="the inner wall is not clean enough"
+		src={
+			"/images/docs/zh-CN/academy/hollowed-part-being-broken-after-a-period-of-time/unclean-inner-wall-01.jpg"
+		}
+	/>
+</ImageContainer>
+
+<ImageContainer>
+	<AntdImage
+		alt="the inner wall is not clean enough"
+		src={
+			"/images/docs/zh-CN/academy/hollowed-part-being-broken-after-a-period-of-time/unclean-inner-wall-02.jpg"
+		}
+	/>
+</ImageContainer>
+
+## 内应力
+
+所谓内应力，是指当外部荷载去掉以后，仍残存在物体内部的应力。它是由于材料内部宏观或微观的组织发生了不均匀的体积变化而产生的。在没有外力存在下，材料内部由于加工成型不当，温度变化，溶剂作用等原因就会产生内应力，导致模型开裂甚至破裂。
+
+## 树脂
+
+光敏树脂材料根据配方或者制作方式的不同呈现出不同的性能，同时适合应用于不同的领域。一般来说，韧性材料如类 ABS 树脂，通常具有良好的强度(材料所能承受的应力)和延展性(延伸率或应变百分率)的平衡，能够承受较高应力或较大应变也不易发生脆性断裂。如果树脂韧性较差，相反就会很容易发生脆性断裂。
+
+延伸阅读：
+
+<Link href="/advanced/stress-and-strain-properties-of-3d-printing-resin">
+	光敏树脂应力应变特性说明
+</Link>
+
+<ModelSource
+	items={[
+		[
+			"The Dark Knight bust",
+			"https://www.myminifactory.com/cn/object/3d-print-the-dark-knight-bust-90339",
+		],
+	]}
+/>

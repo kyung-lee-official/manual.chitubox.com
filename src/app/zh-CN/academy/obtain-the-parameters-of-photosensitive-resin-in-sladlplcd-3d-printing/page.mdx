@@ -1,0 +1,575 @@
+import { DocsColumnContainer, DocsColumn } from "@/docComponents/docsColumn/DocsColumn";
+import { Square } from "@/docComponents/obtainTheParametersOfPhotosensitiveResin/Square";
+import { ConvexCylinder } from "@/docComponents/obtainTheParametersOfPhotosensitiveResin/ConvexCylinder";
+import { ConcaveCylinder } from "@/docComponents/obtainTheParametersOfPhotosensitiveResin/ConcaveCylinder";
+import { ToleranceOfFit } from "@/docComponents/obtainTheParametersOfPhotosensitiveResin/ToleranceOfFit";
+
+export const metadata = {
+	title: "掌握光敏树脂参数配置",
+	authors: [{ name: "CHITUBOX Team" }],
+	releaseDate: "2022-04-01",
+	description:
+		"当使用一款新的树脂时，了解树脂特性并为其配置一套专属于这款树脂的打印参数是保证打印成功的重要前提。",
+	keywords: ["小技巧"],
+	openGraph: {
+		images: [
+			"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/cover.png",
+		],
+	},
+};
+
+# 掌握光敏树脂参数配置
+
+光敏树脂作为 SLA/DLP/LCD 等光固化技术的主要耗材，目前在多个领域里得到广泛应用。光敏树脂材料有许多不同的类别，细分的光敏树脂材料根据配方或者制作方式的不同呈现出不同的性能，同时适合应用于不同的领域。因此，**对于不同的光敏树脂来说，并没有一个固定的参数可以通用**。当使用一款新的光敏树脂时，在打印之前，掌握适合它的 3D 打印参数是首要工作。
+
+掌握一款新的光敏树脂参数，并不意味着眉毛胡子一把抓。**向厂家或购买渠道询问相关参数，可以省掉大部分的测试工作**。这些参数当然越详细越好，包括了曝光时间，抬升/下降速度，甚至还可以是粘度、收缩率、抗拉强度、密度等。今天，我们就来说明下如何测试一款新的光敏树脂的曝光值。
+
+很少有厂家或购买渠道直接告诉你一个特定的曝光值，比如 8 秒，当然这样你就可以以这个数值着手进行测试。大部分厂家或购买渠道会告诉你，曝光时间为 3-15 秒，底层曝光时间为 20-80 秒，最佳曝光时间以实际打印效果为准。
+
+这个时候就需要进行几次实际打印来测试树脂曝光值，当然在测试之前，还有一件事情需要搞清楚，就是**打印机的光源瓦数/流明**。不同打印机的光源强度不同，对于曝光的影响很大，同时还要了解打印机的实际光源输出，以此来调整曝光时间的长短。
+
+3 秒和 15 秒都是比较临界的曝光值，很大可能会导致曝光不足或者过曝，两者间**宁愿选择过曝来开始测试**。如何验证厂家或购买渠道提供的曝光值？这里就需要选择正确的模型，模型应满足以下几个测试点。
+
+## 配合公差
+
+配合公差（fit tolerance）是指组成配合的孔、轴公差之和。它是允许间隙或过盈的变动量。孔和轴的公差带大小和公差带位置组成了配合公差。孔和轴配合公差的大小表示孔和轴的配合精度。孔和轴配合公差带的大小和位置表示孔和轴的配合精度和配合性质。配合公差的大小=公差带的大小；配合公差带大小和位置=配合性质。
+
+-   配合公差的大小 = 公差带的大小
+-   配合公差带大小和位置 = 配合性质
+
+## XYZ 正确尺寸
+
+X+Y+Z 为三维空间，可以表示出物体的体积，也就是我们通常说的长宽高。
+
+## 物体的垂直度和真圆度
+
+垂直度(Perpendicularity)是位置公差，用符号 ⊥ 表示。垂直度评价直线之间、平面之间或直线与平面之间的垂直状态。其中一个直线或平面是评价基准，而直线可以是被测样品的直线部分或直线运动轨迹，平面可以是被测样品的平面部分或运动轨迹形成的平面。
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<ImageContainer>
+			<AntdImage
+				alt="perpendicularity and roundness"
+				src={
+					"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/perpendicularity-and-roundness.png"
+				}
+			/>
+		</ImageContainer>
+	</DocsColumn>
+	<DocsColumn>
+		<ImageContainer>
+			<AntdImage
+				alt="structure with holes and shafts"
+				src={
+					"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/structure-with-holes-and-shafts.png"
+				}
+			/>
+		</ImageContainer>
+	</DocsColumn>
+</DocsColumnContainer>
+
+真圆度（简称圆度）是指圆柱或者圆锥任意正截面的圆周必须位于半径差为给定形状公差里的两同心圆之间。
+
+## 测试过程说明
+
+简单来说，我们需要的模型就是**带有孔和轴配合结构，可以看到直角 ⊥ 是否呈垂直状态，验证真圆度是否无变形共用一个中心点**。于是我们选取了以下 3 个模型来验证树脂曝光值。
+
+**模型数据**
+
+<table>
+	<thead>
+		<tr>
+			<th></th>
+			<th>外直径</th>
+			<th>内直径</th>
+			<th>厚度</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>凸形圆柱</td>
+			<td>10mm</td>
+			<td>5mm</td>
+			<td>5mm</td>
+		</tr>
+		<tr>
+			<td>凹形圆柱</td>
+			<td>10mm</td>
+			<td>5mm</td>
+			<td>5mm</td>
+		</tr>
+		<tr>
+			<th></th>
+			<th>X</th>
+			<th>Y</th>
+			<th>Z</th>
+		</tr>
+		<tr>
+			<td>方块（标有 XY）</td>
+			<td>10mm</td>
+			<td>10mm</td>
+			<td>5mm</td>
+		</tr>
+	</tbody>
+</table>
+
+模型已经过二次固化，手动测量存在一定误差，数据仅供参考，意在说明验证树脂曝光值的方法。
+
+### 测试 1：曝光时间 15s
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<div className="flex w-full
+			border-[1px] border-neutral-700
+			rounded-md">
+			<table
+				className="w-full text-center
+				[&_>_thead_>_tr_>_th]:bg-neutral-700
+				[&_>_thead_>_tr_>_th]:p-2
+				[&_>_tbody_>_tr_>_td]:p-2
+				[&_>_tbody_>_tr_>_td]:text-left
+				[&_>_tbody_>_tr_>_td]:border-[1px] [&_>_tbody_>_tr_>_td]:border-neutral-700
+				[&_>_tbody_>_tr_>_td:first-child]:border-l-[0px] [&_>_tbody_>_tr_>_td:last-child]:border-r-[0px]
+				[&_>_tbody_>_tr:last-child_>_td]:border-b-[0px]
+				[&_>_tbody_>_tr:last-child_>_td:first-child]:rounded-bl-md
+				[&_>_tbody_>_tr:last-child_>_td:last-child]:rounded-br-md"
+			>
+				<thead>
+					<tr>
+						<th></th>
+						<th>外直径</th>
+						<th>内直径</th>
+						<th>厚度</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>凸形圆柱</td>
+						<td>9.91mm</td>
+						<td>4.82mm</td>
+						<td>4.98mm</td>
+					</tr>
+					<tr>
+						<td>凹形圆柱</td>
+						<td>9.93mm</td>
+						<td>4.80mm</td>
+						<td>4.98mm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div className="flex w-full
+			border-[1px] border-neutral-700
+			rounded-md">
+			<table
+				className="w-full text-center
+				[&_>_thead_>_tr_>_th]:bg-neutral-700
+				[&_>_thead_>_tr_>_th]:p-2
+				[&_>_tbody_>_tr_>_td]:p-2
+				[&_>_tbody_>_tr_>_td]:text-left
+				[&_>_tbody_>_tr_>_td]:border-[1px] [&_>_tbody_>_tr_>_td]:border-neutral-700
+				[&_>_tbody_>_tr_>_td:first-child]:border-l-[0px] [&_>_tbody_>_tr_>_td:last-child]:border-r-[0px]
+				[&_>_tbody_>_tr:last-child_>_td]:border-b-[0px]
+				[&_>_tbody_>_tr:last-child_>_td:first-child]:rounded-bl-md
+				[&_>_tbody_>_tr:last-child_>_td:last-child]:rounded-br-md"
+			>
+				<thead>
+					<tr>
+						<th></th>
+						<th>X</th>
+						<th>Y</th>
+						<th>Z</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>方块（标有 XY）</td>
+						<td>10.02mm</td>
+						<td>10.02mm</td>
+						<td>5.01mm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		第一次测试，数据误差可以接受，特别是方块数据误差，**圆柱孔、轴呈紧配合状态（相差-0.02mm）**。
+	</DocsColumn>
+	<DocsColumn>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 1 data"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-1-data-01.jpg"
+					}
+				/>
+			</div>
+		</div>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 1 data"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-1-data-02.jpg"
+					}
+				/>
+			</div>
+		</div>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 1 data"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-1-data-03.jpg"
+					}
+				/>
+			</div>
+		</div>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 1 print results"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-1-print-results.jpg"
+					}
+				/>
+			</div>
+		</div>
+	</DocsColumn>
+</DocsColumnContainer>
+
+### 测试 2：曝光时间 10s
+
+<DocsColumnContainer>
+	<DocsColumn>
+	<div className="flex w-full
+			border-[1px] border-neutral-700
+			rounded-md">
+			<table
+				className="w-full text-center
+				[&_>_thead_>_tr_>_th]:bg-neutral-700
+				[&_>_thead_>_tr_>_th]:p-2
+				[&_>_tbody_>_tr_>_td]:p-2
+				[&_>_tbody_>_tr_>_td]:text-left
+				[&_>_tbody_>_tr_>_td]:border-[1px] [&_>_tbody_>_tr_>_td]:border-neutral-700
+				[&_>_tbody_>_tr_>_td:first-child]:border-l-[0px] [&_>_tbody_>_tr_>_td:last-child]:border-r-[0px]
+				[&_>_tbody_>_tr:last-child_>_td]:border-b-[0px]
+				[&_>_tbody_>_tr:last-child_>_td:first-child]:rounded-bl-md
+				[&_>_tbody_>_tr:last-child_>_td:last-child]:rounded-br-md"
+			>
+				<thead>
+					<tr>
+						<th></th>
+						<th>外直径</th>
+						<th>内直径</th>
+						<th>厚度</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>凸形圆柱</td>
+						<td>9.77mm</td>
+						<td>4.66mm</td>
+						<td>4.92mm</td>
+					</tr>
+					<tr>
+						<td>凹形圆柱</td>
+						<td>9.68mm</td>
+						<td>5.04mm</td>
+						<td>4.90mm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div className="flex w-full
+			border-[1px] border-neutral-700
+			rounded-md">
+			<table
+				className="w-full text-center
+				[&_>_thead_>_tr_>_th]:bg-neutral-700
+				[&_>_thead_>_tr_>_th]:p-2
+				[&_>_tbody_>_tr_>_td]:p-2
+				[&_>_tbody_>_tr_>_td]:text-left
+				[&_>_tbody_>_tr_>_td]:border-[1px] [&_>_tbody_>_tr_>_td]:border-neutral-700
+				[&_>_tbody_>_tr_>_td:first-child]:border-l-[0px] [&_>_tbody_>_tr_>_td:last-child]:border-r-[0px]
+				[&_>_tbody_>_tr:last-child_>_td]:border-b-[0px]
+				[&_>_tbody_>_tr:last-child_>_td:first-child]:rounded-bl-md
+				[&_>_tbody_>_tr:last-child_>_td:last-child]:rounded-br-md"
+			>
+				<thead>
+					<tr>
+						<th></th>
+						<th>X</th>
+						<th>Y</th>
+						<th>Z</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>方块（标有 XY）</td>
+						<td>9.77mm</td>
+						<td>9.75mm</td>
+						<td>4.97mm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		很明显第二次测试曝光时间不足，凸起圆柱内直径降低，凹陷圆柱内直径因固化不足向外扩张，**圆柱孔、轴呈松配合（相差0.38mm）**。
+	</DocsColumn>
+	<DocsColumn>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 2 data"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-2-data-01.jpg"
+					}
+				/>
+			</div>
+		</div>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 2 data"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-2-data-02.jpg"
+					}
+				/>
+			</div>
+		</div>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 2 data"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-2-data-03.jpg"
+					}
+				/>
+			</div>
+		</div>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 2 print results"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-2-print-results.jpg"
+					}
+				/>
+			</div>
+		</div>
+	</DocsColumn>
+</DocsColumnContainer>
+
+为了验证曝光超过 15s，会不会出现过曝现象，我们进行了第三次测试，这次曝光时间为 17s。
+
+### 测试 3：曝光时间 17s
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<div className="flex w-full
+			border-[1px] border-neutral-700
+			rounded-md">
+			<table
+				className="w-full text-center
+				[&_>_thead_>_tr_>_th]:bg-neutral-700
+				[&_>_thead_>_tr_>_th]:p-2
+				[&_>_tbody_>_tr_>_td]:p-2
+				[&_>_tbody_>_tr_>_td]:text-left
+				[&_>_tbody_>_tr_>_td]:border-[1px] [&_>_tbody_>_tr_>_td]:border-neutral-700
+				[&_>_tbody_>_tr_>_td:first-child]:border-l-[0px] [&_>_tbody_>_tr_>_td:last-child]:border-r-[0px]
+				[&_>_tbody_>_tr:last-child_>_td]:border-b-[0px]
+				[&_>_tbody_>_tr:last-child_>_td:first-child]:rounded-bl-md
+				[&_>_tbody_>_tr:last-child_>_td:last-child]:rounded-br-md"
+			>
+				<thead>
+					<tr>
+						<th></th>
+						<th>外直径</th>
+						<th>内直径</th>
+						<th>厚度</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>凸形圆柱</td>
+						<td>9.88mm</td>
+						<td>4.85mm</td>
+						<td>4.90mm</td>
+					</tr>
+					<tr>
+						<td>凹形圆柱</td>
+						<td>9.91mm</td>
+						<td>4.66mm</td>
+						<td>4.91mm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div className="flex w-full
+			border-[1px] border-neutral-700
+			rounded-md">
+			<table
+				className="w-full text-center
+				[&_>_thead_>_tr_>_th]:bg-neutral-700
+				[&_>_thead_>_tr_>_th]:p-2
+				[&_>_tbody_>_tr_>_td]:p-2
+				[&_>_tbody_>_tr_>_td]:text-left
+				[&_>_tbody_>_tr_>_td]:border-[1px] [&_>_tbody_>_tr_>_td]:border-neutral-700
+				[&_>_tbody_>_tr_>_td:first-child]:border-l-[0px] [&_>_tbody_>_tr_>_td:last-child]:border-r-[0px]
+				[&_>_tbody_>_tr:last-child_>_td]:border-b-[0px]
+				[&_>_tbody_>_tr:last-child_>_td:first-child]:rounded-bl-md
+				[&_>_tbody_>_tr:last-child_>_td:last-child]:rounded-br-md"
+			>
+				<thead>
+					<tr>
+						<th></th>
+						<th>X</th>
+						<th>Y</th>
+						<th>Z</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>方块（标有 XY）</td>
+						<td>9.89mm</td>
+						<td>9.88mm</td>
+						<td>4.95mm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		很明显，曝光时间上升到 17s 后，开始过曝，**圆柱孔、轴从松配合紧配合更严重（相差-0.19mm）**，导致凸形圆柱不用力已经按不进去凹形圆柱。
+	</DocsColumn>
+	<DocsColumn>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 3 data"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-3-data-01.jpg"
+					}
+				/>
+			</div>
+		</div>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 3 data"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-3-data-02.jpg"
+					}
+				/>
+			</div>
+		</div>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 3 data"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-3-data-03.jpg"
+					}
+				/>
+			</div>
+		</div>
+		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
+			<div
+				className="flex items-center
+				drop-shadow-lg"
+			>
+				<AntdImage
+					alt="test 3 print results"
+					src={
+						"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/test-3-print-results.jpg"
+					}
+				/>
+			</div>
+		</div>
+	</DocsColumn>
+</DocsColumnContainer>
+
+## 结论
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<div className="w-[350px]">
+			从方块的 XY 数据来看，三个曝光时间的蓝色 X 折线和红色 Y
+			折线基本重叠，数值基本保持一致。Z 折线基本呈水平，说明三次曝光的 Z
+			尺寸偏差也不大。
+		</div>
+	</DocsColumn>
+	<DocsColumn>
+		<Square />
+	</DocsColumn>
+</DocsColumnContainer>
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<div className="w-[350px]">
+			从凸形圆柱数据来看，曝光时间对厚度影响不大，但很明显，10s
+			曝光时间不足，导致内外直径较之其他两个曝光时间明显降低。
+		</div>
+	</DocsColumn>
+	<DocsColumn>
+		<ConvexCylinder />
+	</DocsColumn>
+</DocsColumnContainer>
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<div className="w-[350px]">
+			从凹形圆柱数据来看，曝光时间对厚度同样影响不大，但曝光时间不足，凹陷部位固化不够，导致内直径向外扩张，相反曝光过量，凹陷部位持续固化，导致内直径收缩。
+		</div>
+	</DocsColumn>
+	<DocsColumn>
+		<ConcaveCylinder />
+	</DocsColumn>
+</DocsColumnContainer>
+
+<DocsColumnContainer>
+	<DocsColumn>
+		<div className="w-[350px]">
+			就配合公差来看，无论是曝光时间 15s 的紧配合状态（相差-0.02mm），或是
+			17s
+			的紧配合状态（相差-0.19mm），偏差都是可以接受的，具体还要看零件的实际松紧需求。
+			<br /> <br /> 因此从理论上来说，这款灰色树脂的曝光时间 15s 和 17s 都可以接受。10s
+			就不行了，配合公差相差较大（0.38mm）。当然 14s 应该更佳，这里我们只说明方法，就不再测试。
+		</div>
+	</DocsColumn>
+	<DocsColumn>
+		<ToleranceOfFit />
+	</DocsColumn>
+</DocsColumnContainer>
+
+总的来说，测试一款新的光敏树脂的曝光值，首先是向厂家或购买渠道询问相关参数，然后可以从一个相对过曝的秒速开始验证，利用配合公差的圆柱模型，以及方块来验证配合程度和 XYZ 轴的正确尺寸，最终验证最佳曝光时间。

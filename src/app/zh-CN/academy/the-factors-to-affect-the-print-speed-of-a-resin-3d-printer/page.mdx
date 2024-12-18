@@ -1,0 +1,93 @@
+export const metadata = {
+	title: "影响 SLA/DLP/LCD 3D 打印速度的因素有哪些？",
+	authors: [{ name: "CHITUBOX Team" }],
+	releaseDate: "2022-04-01",
+	description:
+		"设置合适的打印参数来调节打印速度，可以提高3D打印的成功率和打印效率。",
+	keywords: ["打印知识"],
+	openGraph: {
+		images: [
+			"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/cover.png",
+		],
+	},
+};
+
+# 影响 SLA/DLP/LCD 3D 打印速度的因素有哪些？
+
+有很多因素直接影响 SLA/DLP/LCD 3D 打印的成型速度。设置合适的打印速度对于提高打印成功率和提升制造效率都很有帮助。但控制打印速度并非那么容易，特别对于新手来说。在控制打印速度前，你需要了解，影响 SLA/DLP/LCD 3D 打印机打印速度有哪些因素，主要分为以下几个方面：
+（以下均以同一种打印件的打印时间长短来进行说明打印速度）
+
+## 打印技术
+
+跟 SLA 相比，DLP 和 LCD 有一个同样的优势，那就是打印速度。SLA 的技术原理在于使用激光进行点曝光成型，通过规划激光移动路径实现堆叠打印，首先需要形成“面”后形成“体”；而 DLP 和 LCD 的技术原理在于使用光源进行面曝光成型，通过将模型规划成一层层的切片面进行堆叠打印，可以直接进行堆叠形成“体”。所以 SLA 的线曝光比 DLP 和 LCD 的打印速度慢较多的主要原因在于成型速度上。同样的一个模型 SLA 需要拆解成一条条线路径进行曝光，而 DLP 和 LCD 只需要拆解成一层层面进行曝光；
+
+<ImageContainer footnote={"SLA 打印机结构"}>
+	<AntdImage
+		alt="SLA"
+		src={
+			"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/sla.png"
+		}
+	/>
+</ImageContainer>
+
+<ImageContainer footnote={"DLP 打印机结构"}>
+	<AntdImage
+		alt="DLP"
+		src={
+			"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/dlp.png"
+		}
+	/>
+</ImageContainer>
+
+<ImageContainer footnote={"LCD 打印机结构"}>
+	<AntdImage
+		alt="LCD"
+		src={
+			"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/lcd.png"
+		}
+	/>
+</ImageContainer>
+
+## 打印机本身
+
+如果打印机有预置速度，那么打印速度怎么都不会超过这个设置的速度。
+
+另一个跟树脂 3D 打印相关的速度因素就是系统在层面打印时的速度。在使用某些打印机时，光源从透明树脂料槽的底部穿过，刚固化的树脂需要一个繁琐的剥离过程，然后继续固化新的一层。有些制造商会让系统快速地完成剥离过程，以提升打印速度。另一个消除这种麻烦的方式，还可以在树脂液面的顶部进行固化，而不是底部。
+
+## 光源强度
+
+树脂打印是用光源固化光敏液体树脂，来打印 3D 模型。这三种主要的树脂打印技术，差别在于固化树脂所用的光源不同。
+
+打印速度取决于使用的光源强度如何。可以通过增加光源强度来提升打印速度，但这样也意味着产生额外的费用。
+
+## 层厚
+
+层厚既影响打印速度，又影响模型质量。打印模型所需层厚决定了打印速度以及打印所需时间。层厚越薄，打印相同高度的 3D 模型时，所需要的时间就越多。因为总高度不变的情况下，层厚越薄，意味着打印机需要打印更多层数，所花的时间自然就越长。但相对地，层厚越薄，成品的质量就越高。
+
+## 材料
+
+3D 打印机的速度，还取决于打印材料的类别。由不同单体，预聚物，光引发剂以及各种其他添加剂组合而成的树脂，直接导致材料的不同特性和不同的固化时间。
+
+<ImageContainer>
+	<AntdImage
+		alt="material combination"
+		src={
+			"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/material-combination.gif"
+		}
+	/>
+</ImageContainer>
+
+## 模型
+
+模型本身也影响打印速度。如果模型镂空，并且没有较复杂的细节，打印就会快很多。合理地摆放模型也会影响打印速度。一般来说，与竖放相比，把同一个模型横放，打印同样会快很多，但精度可能会降低。
+
+<ImageContainer>
+	<AntdImage
+		alt="different orientations"
+		src={
+			"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/different-orientations.png"
+		}
+	/>
+</ImageContainer>
+
+这些就是影响 3D 打印速度的一些因素。增材制造的过程，影响到打印速度的因素，可能会更复杂，远不止这些。同时，打印速度是一个需要取舍的选择题，一旦打印速度加快，很可能打印质量就会降低。如何权衡各方的利弊，还需要根据情况决定。
