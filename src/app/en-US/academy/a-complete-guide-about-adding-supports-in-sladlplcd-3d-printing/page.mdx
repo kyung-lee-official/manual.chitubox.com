@@ -24,14 +24,11 @@ Support structures in top-down and bottom-up 3D printing are not the same:
 
 In top-down 3D printing, support structures are similar to FDM. They are needed for producing accurately overhangs and bridges. As there are no peel force/separation force (Click here to know more about peel force/separation force: <Link href="https://www.chitubox.com/en/article/support/howto/chitubox-free/editing/39">How to Eliminate Z-axis Lines Caused by Peel Force/Separation Force?</Link>) during the 3D print process, the part can be oriented in any position. In top-down 3D printing, the most crucial factors to consider is to minimize the amount of support to avoid damaging part surface & reduce post-processing and decrease the total number of layers to reduce printing time.
 
-<ImageContainer>
-	<AntdImage
-		alt="Top-down 3D printing and Bottom-up 3D printing"
-		src={
-			"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/top-down-and-bottom-up-3d-printing.gif"
-		}
-	/>
-</ImageContainer>
+<ImageContainer alt="Top-down 3D printing and Bottom-up 3D printing"
+	src={
+		"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/top-down-and-bottom-up-3d-printing.gif"
+	} 
+/>
 
 While in bottom-up 3D printing, the situation is much more complicated due to peel force/separation force as the most crucial criterion is to fight with peel force/separation force. There are many factors to affect the peel force/separation force like resin viscosity, lifting speed, radius of newly cured layer, and height between newly cured layer and FEP film. Among them, the cross-sectional area of each layer is related to the support structures. So in bottom-up 3D printing, parts should be oriented in a certain angle to minimize the cross-sectional area of each layer. And the reduction of support structures isn’t a priority.
 
@@ -43,14 +40,14 @@ In the following guide, we’ll be focused on support structures in bottom-up 3D
 
 Overhangs and bridges are usually illustrated with the help of the letters Y, H, and T in many articles.
 
-<ImageContainer>
+{/* <ImageContainer>
 	<AntdImage
 		alt="use letters Y, H, and T to illustrate overhangs and bridges"
 		src={
 			"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/letters-y-h-and-t.png"
 		}
 	/>
-</ImageContainer>
+</ImageContainer> */}
 
 If an overhang tilts at an angle less than 45 degrees from the vertical, then you may be able to print that overhang without support structures. Letter Y has an angle of 30 degrees with the vertical which can be printed without support structures. The overhangs in the letter T have an angle of 90 degrees with the vertical. So you must use 3D printing support structures to print the letter T. In general, if a bridge is less than 5mm in length, the printer may be able to print it without support structures.
 
@@ -71,14 +68,14 @@ A bridge generally refers to a horizontal overhang that connects two ends of a p
 
 However, if the span of the bridge is long, in the case of no support or insufficient support, the layer broken problem as shown above may occur due to the suspension printing. Even if the first layer of the bridge is printed successfully, layer-separated phenomenon may occur due to the continuation printing of the layers as shown below.
 
-<ImageContainer>
+{/* <ImageContainer>
 	<AntdImage
 		alt="Due to the large span of the bridge and the lack of supports, its layers are broken"
 		src={
 			"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/bridge-layers-broken.png"
 		}
 	/>
-</ImageContainer>
+</ImageContainer> */}
 
 As shown, the bridge with the longest span is layer-separated obviously. While the second longest span, although not obvious, also has layer-separated problem, resulting in the middle part of the span is obviously thicker than the two ends.
 
@@ -88,42 +85,42 @@ Once you know the maximum printing span of the bridge that your 3D printer can "
 
 Here is an easier way to judge where is support needed in bottom-up SLA/DLP/LCD 3D printing. Under CHITUBOX slicing preview, we can easily detect those positions.
 
-<ImageContainer>
+{/* <ImageContainer>
 	<AntdImage
 		alt="examples"
 		src={
 			"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/examples.jpg"
 		}
 	/>
-</ImageContainer>
+</ImageContainer> */}
 
 Take the above parts as examples. We focus on the following positions of the base where the overhangs begin to appear and seperate. We can see that this layer is connected with the previously cured layer, and can be superimposed layer by layer without support structures.
 
-<ImageContainer>
+{/* <ImageContainer>
 	<AntdImage
 		alt="the layer is connected with the previously cured layer"
 		src={
 			"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/connection-layers01.jpg"
 		}
 	/>
-</ImageContainer>
+</ImageContainer> */}
 
 Then the overhangs begin to extend to both sides, and the whole layer separate into two parts. Even during the separation process, the new layer is still connected to the previously cured layer, until the whole structure of the overhang is printed.
 
-<ImageContainer>
+{/* <ImageContainer>
 	<AntdImage
 		alt="layers are still connected with the previously cured layer"
 		src={
 			"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/connection-layers02.jpg"
 		}
 	/>
-</ImageContainer>
+</ImageContainer> */}
 
 As for the “mouse” part, all the suspendings under CHITUBOX slicing preview need to be shored up with support structures.
 
 <DocsColumnContainer>
 	<DocsColumn>
-		<AntdImage
+		<ImageContainer
 			alt="suspendings"
 			width={195}
 			src={
@@ -132,7 +129,7 @@ As for the “mouse” part, all the suspendings under CHITUBOX slicing preview 
 		/>
 	</DocsColumn>
 	<DocsColumn>
-		<AntdImage
+		<ImageContainer
 			alt="suspendings"
 			width={300}
 			src={
@@ -141,7 +138,7 @@ As for the “mouse” part, all the suspendings under CHITUBOX slicing preview 
 		/>
 	</DocsColumn>
 	<DocsColumn>
-		<AntdImage
+		<ImageContainer
 			alt="suspendings"
 			width={223}
 			src={
@@ -171,14 +168,12 @@ Net support structures are like the intertwinement of shin flakes which provide 
 
 SLA/DLP/LCD is very often used for applications where appearance or a smooth surface finish is required. In this case, it’s important to design your part to avoid that the forward-facing areas of your print are not in contact with support structures.
 
-<ImageContainer>
-	<AntdImage
-		alt="add supports to the Spider-Man's back"
-		src={
-			"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/spider-man.gif"
-		}
-	/>
-</ImageContainer>
+<ImageContainer
+	alt="add supports to the Spider-Man's back"
+	src={
+		"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/spider-man.gif"
+	}
+/>
 
 Orientation plays an important role in this case. If the aesthetic appearance of a surface on a component is paramount, orientating the part so that there is little to no support in contact with that area can also be an option.
 
@@ -191,15 +186,12 @@ For a bottom-up stererolithography 3D printer, the object will be stressed unifo
 When generating supports, it’s better to bridge supports together instead of placing them individually. If your slicer can't bring it to achievement, just abandon it. Such interconnection among supports in CHITUBOX greatly reduce chances of support failures. This technique will produce stiffer set of base and secondary supports that are less prone to breakage and failures.
 
 <ImageContainer
-	footnote={"Left: Interconnected Supports Right: Individual Supports"}
->
-	<AntdImage
-		alt="Interconnected Supports and Individual Supports"
-		src={
-			"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/interconnected-supports-and-individual-supports.png"
-		}
-	/>
-</ImageContainer>
+	figcaption={"Left: Interconnected Supports Right: Individual Supports"}
+	alt="Interconnected Supports and Individual Supports"
+	src={
+		"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/interconnected-supports-and-individual-supports.png"
+	}
+/>
 
 ### Avoid Supports Overlapping with Model
 

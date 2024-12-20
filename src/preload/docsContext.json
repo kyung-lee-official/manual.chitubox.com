@@ -15610,6 +15610,1490 @@
 						]
 					}
 				]
+			},
+			{
+				"fieldId": "academy",
+				"fieldName": "Academy",
+				"isVersioned": false,
+				"type": "blog",
+				"homeUrl": "/zh-CN/academy",
+				"versions": [
+					{
+						"versionCode": null,
+						"isLatest": false,
+						"category": [
+							{
+								"pageId": "a-brief-overview-of-thermal-stress-in-resin-3d-printing",
+								"label": "光固化 3D 打印中的热应力简述",
+								"url": "/zh-CN/academy/a-brief-overview-of-thermal-stress-in-resin-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "光固化 3D 打印中的热应力简述",
+										"id": "光固化-3d-打印中的热应力简述",
+										"children": [
+											{
+												"depth": 2,
+												"value": "热应力基本概念",
+												"id": "热应力基本概念"
+											},
+											{
+												"depth": 2,
+												"value": "热弹性力学的基本关系式",
+												"id": "热弹性力学的基本关系式"
+											},
+											{
+												"depth": 2,
+												"value": "光固化 3D 打印中的热应力",
+												"id": "光固化-3d-打印中的热应力"
+											},
+											{
+												"depth": 2,
+												"value": "减小热应力影响",
+												"id": "减小热应力影响"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "光固化 3D 打印中的热应力简述",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2023-10-31",
+									"description": "关于热应力的简述、影响范围及解决办法",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/a-brief-overview-of-thermal-stress-in-resin-3d-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing",
+								"label": "SLA/DLP/LCD 3D 打印支撑添加全解",
+								"url": "/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "SLA/DLP/LCD 3D 打印支撑添加全解",
+										"id": "sladlplcd-3d-打印支撑添加全解",
+										"children": [
+											{
+												"depth": 2,
+												"value": "下沉式和上拉式 3D 打印中的支撑结构",
+												"id": "下沉式和上拉式-3d-打印中的支撑结构"
+											},
+											{
+												"depth": 2,
+												"value": "上拉式 3D 打印哪里需要支撑？",
+												"id": "上拉式-3d-打印哪里需要支撑",
+												"children": [
+													{
+														"depth": 3,
+														"value": "悬空和跨桥",
+														"id": "悬空和跨桥"
+													},
+													{
+														"depth": 3,
+														"value": "薄弱结构",
+														"id": "薄弱结构"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "SLA/DLP/LCD 3D 打印的支撑形状",
+												"id": "sladlplcd-3d-打印的支撑形状",
+												"children": [
+													{
+														"depth": 3,
+														"value": "柱状",
+														"id": "柱状"
+													},
+													{
+														"depth": 3,
+														"value": "网状",
+														"id": "网状"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "添加支撑的注意事项",
+												"id": "添加支撑的注意事项",
+												"children": [
+													{
+														"depth": 3,
+														"value": "避免在展示面生成支撑",
+														"id": "避免在展示面生成支撑"
+													},
+													{
+														"depth": 3,
+														"value": "均匀分布支撑",
+														"id": "均匀分布支撑"
+													},
+													{
+														"depth": 3,
+														"value": "交联支撑",
+														"id": "交联支撑"
+													},
+													{
+														"depth": 3,
+														"value": "避免支撑和模型重叠",
+														"id": "避免支撑和模型重叠"
+													},
+													{
+														"depth": 3,
+														"value": "支撑薄弱时进行强化",
+														"id": "支撑薄弱时进行强化"
+													}
+												]
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "SLA/DLP/LCD 3D 打印支撑添加全解",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-04",
+									"description": "支撑是确保光固化3D打印件能被成功打印出来的重要元素之一，所以为什么要添加支撑，该在何处添加支撑将在本篇内容中进行介绍。",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "a-detailed-analysis-of-the-factors-affecting-printing-accuracy",
+								"label": "影响打印精度的因素详解",
+								"url": "/zh-CN/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "影响打印精度的因素详解",
+										"id": "影响打印精度的因素详解",
+										"children": [
+											{
+												"depth": 2,
+												"value": "X/Y 分辨率和打印尺寸",
+												"id": "xy-分辨率和打印尺寸"
+											},
+											{
+												"depth": 2,
+												"value": "成像原理",
+												"id": "成像原理"
+											},
+											{
+												"depth": 2,
+												"value": "在 CHITUBOX 中设置分辨率和打印尺寸",
+												"id": "在-chitubox-中设置分辨率和打印尺寸"
+											},
+											{
+												"depth": 2,
+												"value": "Z 方向精度",
+												"id": "z-方向精度",
+												"children": [
+													{
+														"depth": 3,
+														"value": "层厚",
+														"id": "层厚"
+													},
+													{
+														"depth": 3,
+														"value": "Z 轴稳定性",
+														"id": "z-轴稳定性"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "其他影响因素",
+												"id": "其他影响因素",
+												"children": [
+													{
+														"depth": 3,
+														"value": "支撑添加不够",
+														"id": "支撑添加不够"
+													},
+													{
+														"depth": 3,
+														"value": "曝光不足或过曝",
+														"id": "曝光不足或过曝"
+													},
+													{
+														"depth": 3,
+														"value": "酒精浸泡过久",
+														"id": "酒精浸泡过久"
+													}
+												]
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "影响打印精度的因素详解",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "本期内容将从光固化3D打印原理来进行剖析打印机影响精度的因素，分为xy轴的面成像精度和z方向上的成像精度两方面进行讲解",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "all-you-need-to-know-about-failed-printing",
+								"label": "关于常见 3D 打印失败的错误排查",
+								"url": "/zh-CN/academy/all-you-need-to-know-about-failed-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "关于常见 3D 打印失败的错误排查",
+										"id": "关于常见-3d-打印失败的错误排查",
+										"children": [
+											{
+												"depth": 2,
+												"value": "未正确调平或调零",
+												"id": "未正确调平或调零"
+											},
+											{
+												"depth": 2,
+												"value": "层高设置过大",
+												"id": "层高设置过大"
+											},
+											{
+												"depth": 2,
+												"value": "横截面过大",
+												"id": "横截面过大"
+											},
+											{
+												"depth": 2,
+												"value": "模型和 FEP 膜形成密封腔体结构",
+												"id": "模型和-fep-膜形成密封腔体结构"
+											},
+											{
+												"depth": 2,
+												"value": "模型存在孤岛",
+												"id": "模型存在孤岛"
+											},
+											{
+												"depth": 2,
+												"value": "上拉速度过快",
+												"id": "上拉速度过快"
+											},
+											{
+												"depth": 2,
+												"value": "离型膜磨损严重",
+												"id": "离型膜磨损严重"
+											},
+											{
+												"depth": 2,
+												"value": "料槽或打印平台存在杂质或有磨损",
+												"id": "料槽或打印平台存在杂质或有磨损"
+											},
+											{
+												"depth": 2,
+												"value": "支撑参数不合适",
+												"id": "支撑参数不合适"
+											},
+											{
+												"depth": 2,
+												"value": "温度过低",
+												"id": "温度过低"
+											},
+											{
+												"depth": 2,
+												"value": "设置曝光不足",
+												"id": "设置曝光不足"
+											},
+											{
+												"depth": 2,
+												"value": "硬件问题",
+												"id": "硬件问题"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "关于常见 3D 打印失败的错误排查",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-04",
+									"description": "上拉式光固化3D打印失败常见案例。",
+									"keywords": [
+										"打印问题"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "bottom-curling-and-detachment",
+								"label": "光固化打印件底部翘边导致脱落问题详解",
+								"url": "/zh-CN/academy/bottom-curling-and-detachment",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "光固化打印件底部翘边导致脱落问题详解",
+										"id": "光固化打印件底部翘边导致脱落问题详解",
+										"children": [
+											{
+												"depth": 2,
+												"value": "What",
+												"id": "what"
+											},
+											{
+												"depth": 2,
+												"value": "Why",
+												"id": "why",
+												"children": [
+													{
+														"depth": 3,
+														"value": "热应力",
+														"id": "热应力"
+													},
+													{
+														"depth": 3,
+														"value": "底部贴合",
+														"id": "底部贴合",
+														"children": [
+															{
+																"depth": 4,
+																"value": "成型平台上有杂质",
+																"id": "成型平台上有杂质"
+															},
+															{
+																"depth": 4,
+																"value": "成型平台不平",
+																"id": "成型平台不平"
+															},
+															{
+																"depth": 4,
+																"value": "成型平台损坏",
+																"id": "成型平台损坏"
+															},
+															{
+																"depth": 4,
+																"value": "机器运动速度不合适",
+																"id": "机器运动速度不合适"
+															}
+														]
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "How",
+												"id": "how",
+												"children": [
+													{
+														"depth": 3,
+														"value": "降低抬升打印速度",
+														"id": "降低抬升打印速度"
+													},
+													{
+														"depth": 3,
+														"value": "散热优化",
+														"id": "散热优化"
+													},
+													{
+														"depth": 3,
+														"value": "减少残余物",
+														"id": "减少残余物"
+													},
+													{
+														"depth": 3,
+														"value": "调平成型平台",
+														"id": "调平成型平台"
+													},
+													{
+														"depth": 3,
+														"value": "打磨成型平台",
+														"id": "打磨成型平台"
+													},
+													{
+														"depth": 3,
+														"value": "调整树脂材料",
+														"id": "调整树脂材料"
+													}
+												]
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "光固化打印件底部翘边导致脱落问题详解",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2023-11-01",
+									"description": "关于光固化打印中打印件翘边的原理和问题排查一览",
+									"keywords": [
+										"打印问题"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/bottom-curling-and-detachment/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "effects-of-contact-shape-on-model-surface-quality",
+								"label": "支撑顶部接触形状对打印件表面质量的影响",
+								"url": "/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "支撑顶部接触形状对打印件表面质量的影响",
+										"id": "支撑顶部接触形状对打印件表面质量的影响",
+										"children": [
+											{
+												"depth": 2,
+												"value": "接触形状对模型表面的影响",
+												"id": "接触形状对模型表面的影响"
+											},
+											{
+												"depth": 2,
+												"value": "接触形状对支撑强度的影响",
+												"id": "接触形状对支撑强度的影响"
+											},
+											{
+												"depth": 2,
+												"value": "接触形状对拆除支撑的影响",
+												"id": "接触形状对拆除支撑的影响"
+											},
+											{
+												"depth": 2,
+												"value": "总结",
+												"id": "总结"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "支撑顶部接触形状对打印件表面质量的影响",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "CHITUBOX “球形”接触形状与“无”接触形状在光固化3D打印中对打印件表面质量的影响对比。",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "effects-of-layer-height-on-sladlplcd-3d-printing",
+								"label": "层厚对于光固化 3D 打印的影响",
+								"url": "/zh-CN/academy/effects-of-layer-height-on-sladlplcd-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "层厚对于光固化 3D 打印的影响",
+										"id": "层厚对于光固化-3d-打印的影响",
+										"children": [
+											{
+												"depth": 2,
+												"value": "层厚的定义",
+												"id": "层厚的定义"
+											},
+											{
+												"depth": 2,
+												"value": "层厚对打印的影响",
+												"id": "层厚对打印的影响",
+												"children": [
+													{
+														"depth": 3,
+														"value": "层厚对打印质量的实验",
+														"id": "层厚对打印质量的实验"
+													},
+													{
+														"depth": 3,
+														"value": "层厚对打印成功的影响",
+														"id": "层厚对打印成功的影响"
+													}
+												]
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "层厚对于光固化 3D 打印的影响",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-04",
+									"description": "每一层的层厚决定了Z轴方向上的精度，尤其是对曲线和角度的影响更明显。",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/effects-of-layer-height-on-sladlplcd-3d-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "hollowed-part-being-broken-after-a-period-of-time",
+								"label": "镂空模型久置后破裂",
+								"url": "/zh-CN/academy/hollowed-part-being-broken-after-a-period-of-time",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "镂空模型久置后破裂",
+										"id": "镂空模型久置后破裂",
+										"children": [
+											{
+												"depth": 2,
+												"value": "二次固化",
+												"id": "二次固化"
+											},
+											{
+												"depth": 2,
+												"value": "内壁清洗",
+												"id": "内壁清洗"
+											},
+											{
+												"depth": 2,
+												"value": "内应力",
+												"id": "内应力"
+											},
+											{
+												"depth": 2,
+												"value": "树脂",
+												"id": "树脂"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "镂空模型久置后破裂",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "有些镂空模型，在存放久了后会出现开裂甚至破裂的情况。",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/hollowed-part-being-broken-after-a-period-of-time/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-airtight-chamber-affect-prints",
+								"label": "腔体结构对 3D 打印的影响",
+								"url": "/zh-CN/academy/how-airtight-chamber-affect-prints",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "腔体结构对 3D 打印的影响",
+										"id": "腔体结构对-3d-打印的影响",
+										"children": [
+											{
+												"depth": 2,
+												"value": "先说结论",
+												"id": "先说结论"
+											},
+											{
+												"depth": 2,
+												"value": "为什么腔体会对打印质量造成影响？",
+												"id": "为什么腔体会对打印质量造成影响"
+											},
+											{
+												"depth": 2,
+												"value": "模型和 FEP 之间形成密闭腔体",
+												"id": "模型和-fep-之间形成密闭腔体"
+											},
+											{
+												"depth": 2,
+												"value": "模型的腔体结构高于树脂液面",
+												"id": "模型的腔体结构高于树脂液面"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "腔体结构对 3D 打印的影响",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "部分3D模型结构并不适合3D打印，其中一个原因即是会形成特殊的腔体结构，严重将会加剧离型膜的损耗",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/how-airtight-chamber-affect-prints/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-angles-of-models-affect-surface-quality",
+								"label": "打印件摆放角度对打印件表面的影响",
+								"url": "/zh-CN/academy/how-angles-of-models-affect-surface-quality",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "打印件摆放角度对打印件表面的影响",
+										"id": "打印件摆放角度对打印件表面的影响",
+										"children": [
+											{
+												"depth": 2,
+												"value": "前言",
+												"id": "前言"
+											},
+											{
+												"depth": 2,
+												"value": "最佳打印角度",
+												"id": "最佳打印角度"
+											},
+											{
+												"depth": 2,
+												"value": "打印角度探讨",
+												"id": "打印角度探讨"
+											},
+											{
+												"depth": 2,
+												"value": "横截面积和抬升速度对剥离力的影响",
+												"id": "横截面积和抬升速度对剥离力的影响"
+											},
+											{
+												"depth": 2,
+												"value": "结论",
+												"id": "结论"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "打印件摆放角度对打印件表面的影响",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-05-18",
+									"description": "在光固化3D打印中，打印件的摆放角度对打印出来的表面效果有很大的影响。",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/how-angles-of-models-affect-surface-quality/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-to-do-basic-fixes-to-your-models-using-blender",
+								"label": "如何使用 Blender 对模型进行基本修复？",
+								"url": "/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "如何使用 Blender 对模型进行基本修复？",
+										"id": "如何使用-blender-对模型进行基本修复",
+										"children": [
+											{
+												"depth": 2,
+												"value": "倒置的正常面片",
+												"id": "倒置的正常面片"
+											},
+											{
+												"depth": 2,
+												"value": "开放式结构",
+												"id": "开放式结构"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "如何使用 Blender 对模型进行基本修复？",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-05-10",
+									"description": "本篇教程，你会学习到如何使用 Blender 对模型进行基本修复。",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-to-level-the-build-plate-on-a-bottom-up-3d-printer",
+								"label": "上拉式光固化 3D 打印机成型平台调平技巧",
+								"url": "/zh-CN/academy/how-to-level-the-build-plate-on-a-bottom-up-3d-printer",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "上拉式光固化 3D 打印机成型平台调平技巧",
+										"id": "上拉式光固化-3d-打印机成型平台调平技巧",
+										"children": [
+											{
+												"depth": 2,
+												"value": "为什么要调平上拉式光固化 3D 打印机成型平台？",
+												"id": "为什么要调平上拉式光固化-3d-打印机成型平台"
+											},
+											{
+												"depth": 2,
+												"value": "如何调平上拉式光固化 3D 打印机成型平台？",
+												"id": "如何调平上拉式光固化-3d-打印机成型平台"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "上拉式光固化 3D 打印机成型平台调平技巧",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-04",
+									"description": "成型平台不平，直接影响打印成功率",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/how-to-level-the-build-plate-on-a-bottom-up-3d-printer/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-to-save-resin-in-sladlplcd-3d-printing",
+								"label": "节省树脂的技巧汇总",
+								"url": "/zh-CN/academy/how-to-save-resin-in-sladlplcd-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "How to Save Resin in SLA/DLP/LCD 3D Printing?",
+										"id": "how-to-save-resin-in-sladlplcd-3d-printing",
+										"children": [
+											{
+												"depth": 2,
+												"value": "Hollow Your Models",
+												"id": "hollow-your-models"
+											},
+											{
+												"depth": 2,
+												"value": "Scale Down Your Model",
+												"id": "scale-down-your-model"
+											},
+											{
+												"depth": 2,
+												"value": "Optimize the Structure of Your Model",
+												"id": "optimize-the-structure-of-your-model"
+											},
+											{
+												"depth": 2,
+												"value": "Remove Unnecessary Supports and Rafts",
+												"id": "remove-unnecessary-supports-and-rafts"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "How to Save Resin in SLA/DLP/LCD 3D Printing?",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "Saving considerable amount of resin will be equal to save time & money.",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"imagesdocszh-CNacademyhow-to-save-resin-in-sladlplcd-3d-printingcover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "how-to-strengthen-3d-printed-parts-in-sladlplcd",
+								"label": "如何增强光固化 3D 打印模型强度",
+								"url": "/zh-CN/academy/how-to-strengthen-3d-printed-parts-in-sladlplcd",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "如何增强光固化 3D 打印模型强度",
+										"id": "如何增强光固化-3d-打印模型强度",
+										"children": [
+											{
+												"depth": 2,
+												"value": "填充密度",
+												"id": "填充密度"
+											},
+											{
+												"depth": 2,
+												"value": "壁厚",
+												"id": "壁厚"
+											},
+											{
+												"depth": 2,
+												"value": "树脂特性",
+												"id": "树脂特性"
+											},
+											{
+												"depth": 2,
+												"value": "摆放方向",
+												"id": "摆放方向"
+											},
+											{
+												"depth": 2,
+												"value": "后处理",
+												"id": "后处理"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "如何增强光固化 3D 打印模型强度",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "增强光固化 3D 打印模型强度",
+									"keywords": [
+										"光固化"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/how-to-strengthen-3d-printed-parts-in-sladlplcd/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing",
+								"label": "掌握光敏树脂参数配置",
+								"url": "/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "掌握光敏树脂参数配置",
+										"id": "掌握光敏树脂参数配置",
+										"children": [
+											{
+												"depth": 2,
+												"value": "配合公差",
+												"id": "配合公差"
+											},
+											{
+												"depth": 2,
+												"value": "XYZ 正确尺寸",
+												"id": "xyz-正确尺寸"
+											},
+											{
+												"depth": 2,
+												"value": "物体的垂直度和真圆度",
+												"id": "物体的垂直度和真圆度"
+											},
+											{
+												"depth": 2,
+												"value": "测试过程说明",
+												"id": "测试过程说明",
+												"children": [
+													{
+														"depth": 3,
+														"value": "测试 1：曝光时间 15s",
+														"id": "测试-1曝光时间-15s"
+													},
+													{
+														"depth": 3,
+														"value": "测试 2：曝光时间 10s",
+														"id": "测试-2曝光时间-10s"
+													},
+													{
+														"depth": 3,
+														"value": "测试 3：曝光时间 17s",
+														"id": "测试-3曝光时间-17s"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "结论",
+												"id": "结论"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "掌握光敏树脂参数配置",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "当使用一款新的树脂时，了解树脂特性并为其配置一套专属于这款树脂的打印参数是保证打印成功的重要前提。",
+									"keywords": [
+										"小技巧"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/obtain-the-parameters-of-photosensitive-resin-in-sladlplcd-3d-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "settings-to-improve-your-sladlplcd-3d-print-quality",
+								"label": "提高光固化 3D 打印质量的参数设置技巧",
+								"url": "/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "提高光固化 3D 打印质量的参数设置技巧",
+										"id": "提高光固化-3d-打印质量的参数设置技巧",
+										"children": [
+											{
+												"depth": 2,
+												"value": "切片层厚(mm)",
+												"id": "切片层厚mm"
+											},
+											{
+												"depth": 2,
+												"value": "曝光时间(s)",
+												"id": "曝光时间s"
+											},
+											{
+												"depth": 2,
+												"value": "抬升速度(mm/min)",
+												"id": "抬升速度mmmin"
+											},
+											{
+												"depth": 2,
+												"value": "模型摆放",
+												"id": "模型摆放"
+											},
+											{
+												"depth": 2,
+												"value": "利用 CHITUBOX 的抗锯齿功能",
+												"id": "利用-chitubox-的抗锯齿功能"
+											},
+											{
+												"depth": 2,
+												"value": "利用模糊像素功能",
+												"id": "利用模糊像素功能"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "提高光固化 3D 打印质量的参数设置技巧",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-06",
+									"description": "打印件的打印质量与设备、材料以及软件内的打印参数都有密切的联系，而其中我们能掌控的大部分环节主要来自于切片软件输出的各个打印参数。",
+									"keywords": [
+										"小技巧"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "storage-and-curing-of-photopolymer-resin",
+								"label": "光固化 3D 打印光敏树脂保存与固化",
+								"url": "/zh-CN/academy/storage-and-curing-of-photopolymer-resin",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "光固化 3D 打印光敏树脂保存与固化",
+										"id": "光固化-3d-打印光敏树脂保存与固化",
+										"children": [
+											{
+												"depth": 2,
+												"value": "如何保存光敏树脂？",
+												"id": "如何保存光敏树脂"
+											},
+											{
+												"depth": 2,
+												"value": "为什么 SLA/DLP/LCD 模型还需要二次固化?",
+												"id": "为什么-sladlplcd-模型还需要二次固化"
+											},
+											{
+												"depth": 2,
+												"value": "过度固化会怎么样?",
+												"id": "过度固化会怎么样"
+											},
+											{
+												"depth": 2,
+												"value": "在水下固化的特点",
+												"id": "在水下固化的特点"
+											},
+											{
+												"depth": 2,
+												"value": "在自然光下二次固化有用吗?",
+												"id": "在自然光下二次固化有用吗"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "光固化 3D 打印光敏树脂保存与固化",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "这一期的内容将有助于掌握更多关于光固化3D打印光敏树脂的知识和使用和保存方法。",
+									"keywords": [
+										"小技巧"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/storage-and-curing-of-photopolymer-resin/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "stress-and-strain-properties-of-3d-printing-resin",
+								"label": "光敏树脂应力特性说明",
+								"url": "/zh-CN/academy/stress-and-strain-properties-of-3d-printing-resin",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "光敏树脂应力特性说明",
+										"id": "光敏树脂应力特性说明",
+										"children": [
+											{
+												"depth": 2,
+												"value": "应力特性曲线",
+												"id": "应力特性曲线"
+											},
+											{
+												"depth": 2,
+												"value": "应力特性阶段概述",
+												"id": "应力特性阶段概述",
+												"children": [
+													{
+														"depth": 3,
+														"value": "阶段 1: 弹性阶段",
+														"id": "阶段-1-弹性阶段"
+													},
+													{
+														"depth": 3,
+														"value": "阶段 2: 应变硬化阶段",
+														"id": "阶段-2-应变硬化阶段"
+													},
+													{
+														"depth": 3,
+														"value": "阶段 3: 颈缩阶段",
+														"id": "阶段-3-颈缩阶段"
+													},
+													{
+														"depth": 3,
+														"value": "阶段 4: 局部变形",
+														"id": "阶段-4-局部变形"
+													},
+													{
+														"depth": 3,
+														"value": "其他材料曲线",
+														"id": "其他材料曲线"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "名词解释",
+												"id": "名词解释",
+												"children": [
+													{
+														"depth": 3,
+														"value": "屈服强度",
+														"id": "屈服强度"
+													},
+													{
+														"depth": 3,
+														"value": "弹性极限",
+														"id": "弹性极限"
+													},
+													{
+														"depth": 3,
+														"value": "比例极限",
+														"id": "比例极限"
+													},
+													{
+														"depth": 3,
+														"value": "真应力和真应变",
+														"id": "真应力和真应变"
+													},
+													{
+														"depth": 3,
+														"value": "延展性和脆性",
+														"id": "延展性和脆性"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "标准树脂与韧性树脂材料对比",
+												"id": "标准树脂与韧性树脂材料对比"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "光敏树脂应力特性说明",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "了解材料特性是选择合适树脂的重要前提。",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/stress-and-strain-properties-of-3d-printing-resin/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "the-factors-to-affect-the-print-speed-of-a-resin-3d-printer",
+								"label": "影响 SLA/DLP/LCD 3D 打印速度的因素有哪些",
+								"url": "/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "影响 SLA/DLP/LCD 3D 打印速度的因素有哪些？",
+										"id": "影响-sladlplcd-3d-打印速度的因素有哪些",
+										"children": [
+											{
+												"depth": 2,
+												"value": "打印技术",
+												"id": "打印技术"
+											},
+											{
+												"depth": 2,
+												"value": "打印机本身",
+												"id": "打印机本身"
+											},
+											{
+												"depth": 2,
+												"value": "光源强度",
+												"id": "光源强度"
+											},
+											{
+												"depth": 2,
+												"value": "层厚",
+												"id": "层厚"
+											},
+											{
+												"depth": 2,
+												"value": "材料",
+												"id": "材料"
+											},
+											{
+												"depth": 2,
+												"value": "模型",
+												"id": "模型"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "影响 SLA/DLP/LCD 3D 打印速度的因素有哪些？",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "设置合适的打印参数来调节打印速度，可以提高3D打印的成功率和打印效率。",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "tools-to-remove-support-structures-and-rinse-3d-object-in-resin-sladlplcd-3d-printing",
+								"label": "树脂3D打印，拆除支撑、清洗树脂工具大盘点",
+								"url": "/zh-CN/academy/tools-to-remove-support-structures-and-rinse-3d-object-in-resin-sladlplcd-3d-printing",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "树脂 3D 打印，拆除支撑、清洗树脂工具大盘点",
+										"id": "树脂-3d-打印拆除支撑清洗树脂工具大盘点",
+										"children": [
+											{
+												"depth": 2,
+												"value": "防护用具",
+												"id": "防护用具",
+												"children": [
+													{
+														"depth": 3,
+														"value": "丁腈手套",
+														"id": "丁腈手套"
+													},
+													{
+														"depth": 3,
+														"value": "一次性口罩（非必要）",
+														"id": "一次性口罩非必要"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "清理工具",
+												"id": "清理工具",
+												"children": [
+													{
+														"depth": 3,
+														"value": "金属铲刀",
+														"id": "金属铲刀"
+													},
+													{
+														"depth": 3,
+														"value": "刀片",
+														"id": "刀片"
+													},
+													{
+														"depth": 3,
+														"value": "塑料铲刀",
+														"id": "塑料铲刀"
+													},
+													{
+														"depth": 3,
+														"value": "硅胶刮板",
+														"id": "硅胶刮板"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "清洗工具",
+												"id": "清洗工具",
+												"children": [
+													{
+														"depth": 3,
+														"value": "酒精",
+														"id": "酒精"
+													},
+													{
+														"depth": 3,
+														"value": "容器",
+														"id": "容器"
+													},
+													{
+														"depth": 3,
+														"value": "量杯",
+														"id": "量杯"
+													},
+													{
+														"depth": 3,
+														"value": "软毛刷",
+														"id": "软毛刷"
+													},
+													{
+														"depth": 3,
+														"value": "喷瓶（非必要）",
+														"id": "喷瓶非必要"
+													},
+													{
+														"depth": 3,
+														"value": "注射器（非必要）",
+														"id": "注射器非必要"
+													},
+													{
+														"depth": 3,
+														"value": "电磁搅拌器（非必要）",
+														"id": "电磁搅拌器非必要"
+													},
+													{
+														"depth": 3,
+														"value": "超声波清洗机",
+														"id": "超声波清洗机"
+													}
+												]
+											},
+											{
+												"depth": 2,
+												"value": "其余辅助用具",
+												"id": "其余辅助用具",
+												"children": [
+													{
+														"depth": 3,
+														"value": "不锈钢盘",
+														"id": "不锈钢盘"
+													},
+													{
+														"depth": 3,
+														"value": "玻璃容器",
+														"id": "玻璃容器"
+													},
+													{
+														"depth": 3,
+														"value": "无尘布/纸巾",
+														"id": "无尘布纸巾"
+													},
+													{
+														"depth": 3,
+														"value": "斜口钳",
+														"id": "斜口钳"
+													},
+													{
+														"depth": 3,
+														"value": "细砂纸",
+														"id": "细砂纸"
+													}
+												]
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "树脂3D打印，拆除支撑、清洗树脂工具大盘点",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-01",
+									"description": "恰当的工具让后处理工作变得舒适和具有效率。",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/tools-to-remove-support-structures-and-rinse-3d-object-in-resin-sladlplcd-3d-printing/cover.png"
+										]
+									}
+								}
+							},
+							{
+								"pageId": "verification-of-the-effect-of-light-source-intensity-on-printing-accuracy",
+								"label": "控制光源强度对打印精度的影响验证",
+								"url": "/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy",
+								"toc": [
+									{
+										"depth": 1,
+										"value": "控制光源强度对打印精度的影响验证",
+										"id": "控制光源强度对打印精度的影响验证",
+										"children": [
+											{
+												"depth": 2,
+												"value": "DLP/MSLA(LCD) 3D 打印机最小成像精度/像素尺寸",
+												"id": "dlpmslalcd-3d-打印机最小成像精度像素尺寸"
+											},
+											{
+												"depth": 2,
+												"value": "DLP/MSLA(LCD) 3D 打印机的成像",
+												"id": "dlpmslalcd-3d-打印机的成像"
+											},
+											{
+												"depth": 2,
+												"value": "CHITUBOX 软件中的抗锯齿相关参数",
+												"id": "chitubox-软件中的抗锯齿相关参数"
+											}
+										]
+									}
+								],
+								"metadata": {
+									"title": "控制光源强度对打印精度的影响验证",
+									"authors": [
+										{
+											"name": "CHITUBOX Team"
+										}
+									],
+									"releaseDate": "2022-04-04",
+									"description": "这期内容将深化打印精度的影响因素研究，通过控制光源强度来实现半个体素甚至更小体素生成的方法，以达到更高精度的打印结果。",
+									"keywords": [
+										"打印知识"
+									],
+									"openGraph": {
+										"images": [
+											"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/cover.png"
+										]
+									}
+								}
+							}
+						]
+					}
+				]
 			}
 		]
 	},

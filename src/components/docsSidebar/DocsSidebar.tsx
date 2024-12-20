@@ -3,10 +3,17 @@
 import { useEffect, useState } from "react";
 import { DocsMenu } from "../docsMenu/DocsMenu";
 import { useMediaQuery } from "react-responsive";
-import { MediaQuery } from "@/utils/types";
+import { FieldType, MediaQuery } from "@/utils/types";
+import { usePageContext } from "@/utils/hooks";
 
 const DocsSidebar = () => {
 	const [headerHeight, setHeaderHeight] = useState("0px");
+
+	const pgCtx = usePageContext();
+	let type: FieldType = "book";
+	if (pgCtx && "type" in pgCtx) {
+		type = pgCtx.type;
+	}
 
 	useEffect(() => {
 		const header = document.getElementById("header");
@@ -22,23 +29,27 @@ const DocsSidebar = () => {
 	const isLg = useMediaQuery({ query: MediaQuery.lg });
 
 	if (isLg) {
-		return (
-			<div
-				className="flex-[0_0_300px]
-				border-r-[1px] border-neutral-200 dark:border-neutral-800
-				duration-300"
-			>
+		if (type === "book") {
+			return (
 				<div
-					className={`sticky overflow-auto scrollbar`}
-					style={{
-						top: headerHeight,
-						height: `calc(100vh - ${headerHeight})`,
-					}}
+					className="flex-[0_0_300px]
+					border-r-[1px] border-neutral-200 dark:border-neutral-800
+					duration-300"
 				>
-					<DocsMenu />
+					<div
+						className={`sticky overflow-auto scrollbar`}
+						style={{
+							top: headerHeight,
+							height: `calc(100vh - ${headerHeight})`,
+						}}
+					>
+						<DocsMenu />
+					</div>
 				</div>
-			</div>
-		);
+			);
+		} else {
+			return null;
+		}
 	} else {
 		return null;
 	}
