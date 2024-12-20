@@ -9,7 +9,7 @@ export const metadata = {
 	keywords: ["光固化"],
 	openGraph: {
 		images: [
-			"\images\docs\zh-CN\academy\how-to-strengthen-3d-printed-parts-in-sladlplcd\cover.png",
+			"/images/docs/zh-CN/academy/how-to-strengthen-3d-printed-parts-in-sladlplcd/cover.png",
 		],
 	},
 };
@@ -28,7 +28,7 @@ export const metadata = {
 	<AntdImage
 		alt="15 infill density"
 		src={
-			"public\images\docs\zh-CN\academy\how-to-strengthen-3d-printed-parts-in-sladlplcd\15-infill-density.jpg"
+			"public/images/docs/zh-CN/academy/how-to-strengthen-3d-printed-parts-in-sladlplcd/15-infill-density.jpg"
 		}
 	/>
 </ImageContainer>
@@ -39,10 +39,10 @@ export const metadata = {
 	<AntdImage
 		alt="35 infill density"
 		src={
-			"\images\docs\zh-CN\academy\how-to-strengthen-3d-printed-parts-in-sladlplcd\35-infill-density.jpg"
+			"/images/docs/zh-CN/academy/how-to-strengthen-3d-printed-parts-in-sladlplcd/35-infill-density.jpg"
 		}
-	/>
-</ImageContainer>重新截图 
+    	/>
+    </ImageContainer>
 
 填充密度 35%
 
@@ -56,8 +56,8 @@ export const metadata = {
 		src={
 			"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/scale-down-the-model.gif"
 		}
-	/>
-</ImageContainer> 无脸男重新打印拍照
+    	/>
+    </ImageContainer>
 
 最小壁厚指的是在某种打印材料及打印技术下，模型能被打印成功的最小壁厚。对于树脂 3D 打印来说，最好将壁厚设置在 2mm 以上。当然，模型尺寸越大，所需最小壁厚也越大。
 
@@ -71,9 +71,10 @@ export const metadata = {
 	<AntdImage
 		alt="high strength resin"
 		src={
-			"\images\docs\zh-CN\academy\how-to-strengthen-3d-printed-parts-in-sladlplcd\high-strength-resin.gif"
+			"/images/docs/zh-CN/academy/how-to-strengthen-3d-printed-parts-in-sladlplcd/high-strength-resin.gif"
 		}
-	/>
+    	/>
+    </ImageContainer>
 
 针对光敏树脂强度不足，容易断裂的缺点，许多公司开始生产更坚固耐用的树脂。高强树脂具有与 ABS 相媲美的强度，此类材料在强度和伸长率之间取得了一种平衡，使 3D 打印的产品拥有更好的抗冲击性和强度，适用于汽车、工业和消费品产品制造。
 
@@ -85,125 +86,11 @@ export const metadata = {
 	<AntdImage
 		alt="different tension loads"
 		src={
-			"\images\docs\zh-CN\academy\how-to-strengthen-3d-printed-parts-in-sladlplcd\different-tension-loads.png"
+			"/images/docs/zh-CN/academy/how-to-strengthen-3d-printed-parts-in-sladlplcd/different-tension-loads.png"
 		}
-	/>
+    	/>
+    </ImageContainer>
 
 ## 后处理
 
 虽然模型已经成型，但表面仍然比较黏并且相对较软。在打印完成时，他们通常没有反应完全与固化，所以需要二次固化来完成未完成的反应。这也是美学和机械性能变化的主要原因。二次固化可以改善诸如应变模数、强度和稳定性等材料特性。固化后的模型表面更加坚硬与干燥，这使得它们更容易打磨和喷漆。
-
-
-
-
-
-
-
-# 节省树脂的技巧汇总
-
-在 3D 打印工艺中，当您希望获得更光滑的表面和精致的细节时，树脂可能是最理想的材料之一。然而，树脂不像 PLA 材料那样实惠，标准 SLA 树脂的平均价格达到 50 美元/升左右。一些特殊树脂，如牙科树脂或陶瓷树脂，更是价格不菲。
-
-因此，除了选择经济型树脂外，3D 打印从业者必还需要了解一些其他节约树脂的技巧，它可以节省大量成本。在这里，我们列举了您可能会忽略的 4 个小技巧。
-
-## 镂空你的模型
-
-在大多数情况下，您不必将模型打印成实体，将原本实体的模型在软件中镂空会为您节省大量树脂。镂空时有两点需要注意：
-
-1. 较薄的墙壁肯定会更经济，但它也会使您的模型变得脆弱，甚至可能增加精致结构打印失败的风险。
-1. 镂空部分在打印过程中可能会形成一个密闭的腔室，腔室中的低压可能会破坏您的模型或导致意外问题，您需要使用 CHITUBOX 对模型进行打孔以平衡内压和外压，以避免此类问题。
-    <ImageContainer>
-    	<AntdImage
-    		alt="hollowed model"
-    		src={
-    			"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/hollowed-model.png"
-    		}
-    	/>
-    </ImageContainer>
-    CHITUBOX 提供了一个简单的工具，用于在您的镂空模型表面上打孔，只需点击几下即可完成工作。
-
-## 缩小模型尺寸
-
-毫无疑问，树脂消耗的另一个直接因素是模型的尺寸。在 CHITUBOX 中，您可以在左侧工具栏中输入精确的比例来调整模型的大小，或者手动拖拽手柄来缩放模型。 CHITUBOX 允许您同时在 3 个维度上等比例缩放模型或分别沿单个轴向进行缩放。
-
-<ImageContainer>
-	<AntdImage
-		alt="scale down the model"
-		src={
-			"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/scale-down-the-model.gif"
-		}
-	/>
-</ImageContainer>
-
-## 优化 3D 模型结构
-
-打印失败是导致树脂浪费最大的原因，尤其是对于大型模型，在具有大打印尺寸的高分辨率打印机上打印失败可能会白白浪费你大半瓶的树脂，甚至更多。
-
-为避免打印失败，如果您能够使用 3D 建模软件修改模型，则需要注意模型的结构并尽可能优化它。例如，较薄的壁可以减轻模型重量，这意味着更少的树脂消耗，但也意味着牺牲模型的坚固性，结构强度不足对上拉式树脂打印的影响可能是致命的。模型倒挂在构建板上并在打印过程中承受重力。更尖锐的拐角会增加结构应力，也会增加裂缝的可能性。小于 0.5mm 的小孔很难处理，您可能需要使用 CHITUBOX 中的公差补偿来处理这个问题。骨架和角撑板结构可帮助您加强某些需要承受外力的位置。
-
-<ImageContainer>
-	<AntdImage
-		alt="ribs and gussets"
-		src={
-			"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/ribs-and-gussets.png"
-		}
-	/>
-</ImageContainer>
-
-## 移除不必要的支撑和筏板
-
-如果您将模型放置在不同的方向，自动添加的支撑和筏板的数量可能会有所不同。找到一个可以产生较少支撑和筏板的角度（确保首先保证支撑的强度）。挑选出多余的支撑并手动删除它们。通常垂直方向摆放模型所需要的支撑较少。
-
-<DocsColumnContainer>
-	<DocsColumn>
-		<div className="flex flex-col items-center justify-center w-[400px] gap-2">
-			<div
-				className="flex items-center
-				drop-shadow-lg"
-			>
-				<AntdImage
-					alt="more-auto-supports"
-					src={
-						"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/more-auto-supports.png"
-					}
-				/>
-			</div>
-		</div>
-	</DocsColumn>
-	<DocsColumn>
-		<div className="flex flex-col items-center justify-center w-[321px] gap-2">
-			<div
-				className="flex items-center
-				drop-shadow-lg"
-			>
-				<AntdImage
-					alt="less auto-supports"
-					src={
-						"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/less-auto-supports.png"
-					}
-				/>
-			</div>
-		</div>
-	</DocsColumn>
-</DocsColumnContainer>
-
-在结构稳定的前提下，更少的支撑为可以带来更平滑的打印表面，减少后处理工作量。
-
-上述 4 个技巧有助于减少树脂消耗。 CHITUBOX 通过对每个生成的体素（像素面积 × 层高）求和来计算切片模型后的树脂消耗量，算法简单，在大多数情况下应该足够准确且不易出错。此外也有第三方在线树脂计算工具，如果站点是可信任的，您也可以上传您的模型来预估树脂消耗量。
-
-<ImageContainer>
-	<AntdImage
-		alt="resin consumption"
-		src={
-			"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/resin-consumption.png"
-		}
-	/>
-</ImageContainer>
-
-<ModelSource
-	items={[
-		[
-			"Tyrant scale rending claws",
-			"https://www.thingiverse.com/thing:2520821",
-		],
-	]}
-/>
