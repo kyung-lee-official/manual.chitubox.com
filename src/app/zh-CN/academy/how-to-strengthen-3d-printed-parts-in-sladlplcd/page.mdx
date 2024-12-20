@@ -1,12 +1,12 @@
 import { DocsColumnContainer, DocsColumn } from "@/docComponents/docsColumn/DocsColumn";
 
 export const metadata = {
-	title: "节省树脂的技巧汇总",
+	title: "如何增强光固化 3D 打印模型强度",
 	authors: [{ name: "CHITUBOX Team" }],
 	releaseDate: "2022-04-01",
 	description:
-		"合理的使用技巧在打印同一个打印件的情况下，树脂使用的更少，让打印消耗更具有性价比，降低打印失败带来的损失",
-	keywords: ["小技巧"],
+		"增强光固化 3D 打印模型强度",
+	keywords: ["光固化"],
 	openGraph: {
 		images: [
 			"\images\docs\zh-CN\academy\how-to-strengthen-3d-printed-parts-in-sladlplcd\cover.png",
@@ -18,47 +18,28 @@ export const metadata = {
 
 对于有些模型来说，强度会是其实际应用中重要的考虑元素之一。强度确保模型在使用或者存放的过程中，坚固耐用，不至于随着时间的推移而破裂。虽然有些模型原本的强度不高，但合理的方法可以使其强度增强。下面，我们就来探讨下如何增强光固化 3D 打印模型强度。
 
-<ImageContainer>
-	<AntdImage
-		alt="scale down the model"
-		src={
-			"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/scale-down-the-model.gif"
-		}
-	/>
-</ImageContainer>
-
 ## 填充密度
 
 对于镂空的模型来说，最显而易见的增强强度方式就是增加填充密度。使用 CHITUBOX 的镂空功能，选择填充结构为 "网格 3D"，会出现 "填充密度" 参数，这里可以设置从 0%-100% 的填充密度。
-
-2.0 重新截图
-<ImageContainer>
-	<AntdImage
-		alt="scale down the model"
-		src={
-			"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/scale-down-the-model.gif"
-		}
-	/>
-</ImageContainer>
 
 镂空后，以下图填充密度 15% 和 35% 对比，我们可以很清楚的判断自己所需的填充密度。
 
 <ImageContainer>
 	<AntdImage
-		alt="scale down the model"
+		alt="15 infill density"
 		src={
-			"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/scale-down-the-model.gif"
+			"public\images\docs\zh-CN\academy\how-to-strengthen-3d-printed-parts-in-sladlplcd\15-infill-density.jpg"
 		}
 	/>
-</ImageContainer> 2.0 重新截图
+</ImageContainer>
 
 填充密度 15%
 
 <ImageContainer>
 	<AntdImage
-		alt="scale down the model"
+		alt="35 infill density"
 		src={
-			"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/scale-down-the-model.gif"
+			"\images\docs\zh-CN\academy\how-to-strengthen-3d-printed-parts-in-sladlplcd\35-infill-density.jpg"
 		}
 	/>
 </ImageContainer>重新截图 
@@ -88,12 +69,11 @@ export const metadata = {
 
  <ImageContainer>
 	<AntdImage
-		alt="scale down the model"
+		alt="high strength resin"
 		src={
-			"/zh-Hans/academy/images/docs/advanced/how-to-save-resin-in-sladlplcd-3d-printing/scale-down-the-model.gif"
+			"\images\docs\zh-CN\academy\how-to-strengthen-3d-printed-parts-in-sladlplcd\high-strength-resin.gif"
 		}
 	/>
-</ImageContainer>榔头捶泰森球 gif 
 
 针对光敏树脂强度不足，容易断裂的缺点，许多公司开始生产更坚固耐用的树脂。高强树脂具有与 ABS 相媲美的强度，此类材料在强度和伸长率之间取得了一种平衡，使 3D 打印的产品拥有更好的抗冲击性和强度，适用于汽车、工业和消费品产品制造。
 
@@ -101,7 +81,13 @@ export const metadata = {
 
 将 3D 打印模型平行放于成型平台上，这个时候的强度是最大的，也就是说模型在 XY 方向的强度远大于 Z 方向。垂直方向的力会沿着层纹去劈裂模型，但水平方向的力一般来说却是沿着纹路把负重分布开。可以把它当做木头纹理来理解，从垂直方向很容易劈开木头，但从水平方向就很难。
 
-![](./img/tension_zh.png)
+ <ImageContainer>
+	<AntdImage
+		alt="different tension loads"
+		src={
+			"\images\docs\zh-CN\academy\how-to-strengthen-3d-printed-parts-in-sladlplcd\different-tension-loads.png"
+		}
+	/>
 
 ## 后处理
 
