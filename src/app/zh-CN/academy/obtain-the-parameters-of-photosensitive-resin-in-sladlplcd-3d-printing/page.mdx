@@ -517,55 +517,27 @@ X+Y+Z 为三维空间，可以表示出物体的体积，也就是我们通常�
 
 ## 结论
 
-<DocsColumnContainer>
-	<DocsColumn>
-		<div className="w-[350px]">
-			从方块的 XY 数据来看，三个曝光时间的蓝色 X 折线和红色 Y
-			折线基本重叠，数值基本保持一致。Z 折线基本呈水平，说明三次曝光的 Z
-			尺寸偏差也不大。
-		</div>
-	</DocsColumn>
-	<DocsColumn>
-		<Square />
-	</DocsColumn>
-</DocsColumnContainer>
+从方块的 XY 数据来看，三个曝光时间的蓝色 X 折线和红色 Y
+折线基本重叠，数值基本保持一致。Z 折线基本呈水平，说明三次曝光的 Z
+尺寸偏差也不大。
 
-<DocsColumnContainer>
-	<DocsColumn>
-		<div className="w-[350px]">
-			从凸形圆柱数据来看，曝光时间对厚度影响不大，但很明显，10s
-			曝光时间不足，导致内外直径较之其他两个曝光时间明显降低。
-		</div>
-	</DocsColumn>
-	<DocsColumn>
-		<ConvexCylinder />
-	</DocsColumn>
-</DocsColumnContainer>
+<Square />
 
-<DocsColumnContainer>
-	<DocsColumn>
-		<div className="w-[350px]">
-			从凹形圆柱数据来看，曝光时间对厚度同样影响不大，但曝光时间不足，凹陷部位固化不够，导致内直径向外扩张，相反曝光过量，凹陷部位持续固化，导致内直径收缩。
-		</div>
-	</DocsColumn>
-	<DocsColumn>
-		<ConcaveCylinder />
-	</DocsColumn>
-</DocsColumnContainer>
+从凸形圆柱数据来看，曝光时间对厚度影响不大，但很明显，10s
+曝光时间不足，导致内外直径较之其他两个曝光时间明显降低。
 
-<DocsColumnContainer>
-	<DocsColumn>
-		<div className="w-[350px]">
-			就配合公差来看，无论是曝光时间 15s 的紧配合状态（相差-0.02mm），或是
-			17s
-			的紧配合状态（相差-0.19mm），偏差都是可以接受的，具体还要看零件的实际松紧需求。
-			<br /> <br /> 因此从理论上来说，这款灰色树脂的曝光时间 15s 和 17s 都可以接受。10s
-			就不行了，配合公差相差较大（0.38mm）。当然 14s 应该更佳，这里我们只说明方法，就不再测试。
-		</div>
-	</DocsColumn>
-	<DocsColumn>
-		<ToleranceOfFit />
-	</DocsColumn>
-</DocsColumnContainer>
+<ConvexCylinder />
+
+从凹形圆柱数据来看，曝光时间对厚度同样影响不大，但曝光时间不足，凹陷部位固化不够，导致内直径向外扩张，相反曝光过量，凹陷部位持续固化，导致内直径收缩。
+
+<ConcaveCylinder />
+
+就配合公差来看，无论是曝光时间 15s 的紧配合状态（相差-0.02mm），或是
+17s
+的紧配合状态（相差-0.19mm），偏差都是可以接受的，具体还要看零件的实际松紧需求。
+<br /> <br /> 因此从理论上来说，这款灰色树脂的曝光时间 15s 和 17s 都可以接受。10s
+就不行了，配合公差相差较大（0.38mm）。当然 14s 应该更佳，这里我们只说明方法，就不再测试。
+
+<ToleranceOfFit />
 
 总的来说，测试一款新的光敏树脂的曝光值，首先是向厂家或购买渠道询问相关参数，然后可以从一个相对过曝的秒速开始验证，利用配合公差的圆柱模型，以及方块来验证配合程度和 XYZ 轴的正确尺寸，最终验证最佳曝光时间。
