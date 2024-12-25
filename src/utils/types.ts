@@ -1,9 +1,9 @@
-export const locales = ["en-US", "zh-CN", "zh-TW"] as const;
+export const locales = ["en-US", "zh-CN"] as const;
 
 export type Locale = (typeof locales)[number];
 
 export function isLocale(locale: string): locale is Locale {
-	return locale === "en-US" || locale === "zh-CN" || locale === "zh-TW";
+	return locale === "en-US" || locale === "zh-CN";
 }
 
 /**

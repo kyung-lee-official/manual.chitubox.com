@@ -58,9 +58,6 @@ const LanguageMenu = () => {
 							<Locale href={pathname} locale="zh-CN">
 								简体中文
 							</Locale>
-							<Locale href={pathname} locale="zh-TW">
-								繁體中文
-							</Locale>
 						</ul>
 					)}
 				</div>

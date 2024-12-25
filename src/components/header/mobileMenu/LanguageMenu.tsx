@@ -36,10 +36,6 @@ export const LanguageMenu = () => {
 					<Link href={pathname} locale="zh-CN" className="py-2">
 						简体中文
 					</Link>
-					<hr className="dark:border-neutral-700" />
-					<Link href={pathname} locale="zh-TW" className="py-2">
-						繁體中文
-					</Link>
 				</div>
 			)}
 		</Block>
