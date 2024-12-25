@@ -9,6 +9,7 @@ import { ImageComparison } from "@/components/imageComparison/ImageComparison";
 import dynamic from "next/dynamic";
 import { BlogImageContainer } from "./components/imageContainer/BlogImageContainer";
 import { ModelSource } from "./docComponents/modelSource/ModelSource";
+import { References } from "./docComponents/references/References";
 
 const FacebookVideoContainer = dynamic(
 	() => import("./components/videoContainer/FacebookVideoContainer"),
@@ -189,6 +190,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		FacebookVideoContainer: FacebookVideoContainer,
 
 		ModelSource: ModelSource,
+		References: References,
 
 		...components,
 	};

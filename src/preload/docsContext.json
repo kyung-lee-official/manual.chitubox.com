@@ -16426,34 +16426,34 @@
 								"toc": [
 									{
 										"depth": 1,
-										"value": "How to Save Resin in SLA/DLP/LCD 3D Printing?",
-										"id": "how-to-save-resin-in-sladlplcd-3d-printing",
+										"value": "节省树脂的技巧汇总",
+										"id": "节省树脂的技巧汇总",
 										"children": [
 											{
 												"depth": 2,
-												"value": "Hollow Your Models",
-												"id": "hollow-your-models"
+												"value": "镂空你的模型",
+												"id": "镂空你的模型"
 											},
 											{
 												"depth": 2,
-												"value": "Scale Down Your Model",
-												"id": "scale-down-your-model"
+												"value": "缩小模型尺寸",
+												"id": "缩小模型尺寸"
 											},
 											{
 												"depth": 2,
-												"value": "Optimize the Structure of Your Model",
-												"id": "optimize-the-structure-of-your-model"
+												"value": "优化 3D 模型结构",
+												"id": "优化-3d-模型结构"
 											},
 											{
 												"depth": 2,
-												"value": "Remove Unnecessary Supports and Rafts",
-												"id": "remove-unnecessary-supports-and-rafts"
+												"value": "移除不必要的支撑和筏板",
+												"id": "移除不必要的支撑和筏板"
 											}
 										]
 									}
 								],
 								"metadata": {
-									"title": "How to Save Resin in SLA/DLP/LCD 3D Printing?",
+									"title": "节省树脂的技巧汇总",
 									"authors": [
 										{
 											"name": "CHITUBOX Team"
@@ -16466,7 +16466,7 @@
 									],
 									"openGraph": {
 										"images": [
-											"imagesdocszh-CNacademyhow-to-save-resin-in-sladlplcd-3d-printingcover.png"
+											"/images/docs/zh-CN/academy/how-to-save-resin-in-sladlplcd-3d-printing/cover.png"
 										]
 									}
 								}
