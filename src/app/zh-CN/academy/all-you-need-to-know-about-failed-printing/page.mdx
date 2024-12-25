@@ -17,61 +17,49 @@ export const metadata = {
 
 对于上拉式光固化 3D 打印机，常见的失败来自于脱膜问题，下面是一些常见的脱膜失败案例：
 
-<ImageContainer footnote="底筏翘边">
-	<AntdImage
-		alt="Upwarped bottom layers"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/upwarped-bottom-layers.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="底筏翘边"
+	alt="Upwarped bottom layers"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/upwarped-bottom-layers.png"
+	}
+/>
 
-<ImageContainer footnote="只有支撑被打印出来">
-	<AntdImage
-		alt="Only supports were printed"
+<BlogImageContainer footnote="只有支撑被打印出来"
+	alt="Only supports were printed"
 		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/only-supports-were-printed-01.png"
-		}
-	/>
-</ImageContainer>
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/only-supports-were-printed-01.png"
+	}
+/>
 
-<ImageContainer footnote="粘在 FEP 膜上">
-	<AntdImage
-		alt="Sticking on the FEP"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/only-supports-were-printe-02.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="粘在 FEP 膜上"
+	alt="Sticking on the FEP"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/only-supports-were-printe-02.png"
+	}
+/>
 
-<ImageContainer>
-	<AntdImage
-		alt="Laminaria-like layers or bubbles"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/laminaria-like-layers-or-bubbles-01.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="Laminaria-like layers or bubbles"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/laminaria-like-layers-or-bubbles-01.png"
+	}
+/>
 
-<ImageContainer footnote="分层或有气泡">
-	<AntdImage
-		alt="Laminaria-like layers or bubbles"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/laminaria-like-layers-or-bubbles-02.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="分层或有气泡"
+	alt="Laminaria-like layers or bubbles"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/laminaria-like-layers-or-bubbles-02.png"
+	}
+/>
 
 <p id="misrun"></p>
 
-<ImageContainer footnote="缺肉">
-	<AntdImage
-		alt="misrun"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/misrun.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="缺肉"
+	alt="misrun"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/misrun.png"
+	}
+/>
 
 脱膜失败可能由多种原因导致，但归根结底可以分为以下几类：
 
@@ -85,14 +73,12 @@ export const metadata = {
 
 底层粘在 FEP 膜上主要原因跟打印平台和首层息息相关。如果打印平台不平行于屏幕，在打印较大模型时，不同位置平台和屏幕的间距不同，间距过大的地方可能无法成型或固化不足而导致打印失败，如下图所示：
 
-<ImageContainer>
-	<AntdImage
-		alt="improper leveling and zeroing"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/improper-leveling-and-zeroing.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="improper leveling and zeroing"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/improper-leveling-and-zeroing.png"
+	}
+/>
 
 此外，调零距离过大（即屏幕和打印平台之间的距离过大），模型就无法粘在打印平台上。因此，在开始
 3D 打印之前，第一步是确保 3D 打印机调试完成，打印平台水平并且距离合适。
@@ -139,25 +125,22 @@ export const metadata = {
 
 我们需要通过调整支撑参数来增加脱膜时支撑对模型的拉力以保证模型可以被正常拉起。我们从 <Link href="https://www.thingiverse.com/thing:2520821">Thingiverse</Link> 下载了一对爪子,并用 CHITUBOX 来演示测试调整支撑设置。
 
-<ImageContainer>
-	<AntdImage
-		alt="claws"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/claws.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="claws"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/claws.png"
+	}
+/>
 
 在支撑的参数中，最重要的就是支撑顶部。顶部是用来连接模型和支撑的关键部位。顶部结构中有两个参数至关重要：接触深度、上端直径。
 
-<ImageContainer>
-	<AntdImage
-		alt="the top of the support"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/the-top-of-the-support.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="the top of the support"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/the-top-of-the-support.png"
+	}
+/>
+
 
 接触深度越深，支撑头插入模型的深度就越深。我们需要确保接触深度足以在打印平台和离型膜之间的拉力赛中占据上风。
 
@@ -165,71 +148,59 @@ export const metadata = {
 	当启用<Link href="https://manual.chitubox.com/zh-CN/docs/chitubox-pro/latest/setting-up/configure-print-parameters#3-%E5%9B%BE%E5%83%8F%E7%81%B0%E5%BA%A6">📃图像灰度</Link>且灰度低于 255 时，支撑和模型的曝光强度不同，此时插入模型的支撑部分曝光强度会强于模型部分，如下图所示，设置支撑深度时需要注意该问题。
 </Admonition>
 
-<ImageContainer>
-	<AntdImage
-		alt="the exposure strength will be different for supports and the model when Image Gray is enabled"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/different-exposure-strength-on-supports-and-the-model.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="the exposure strength will be different for supports and the model when Image Gray is enabled"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/different-exposure-strength-on-supports-and-the-model.png"
+	}
+/>
 
 上端直径越大，支撑头与模型的接触面积就越大，模型和支撑之间的连接就越牢靠。合理地调整上端直径很重要。
 
 测试的爪子模型并不是很大（26.63 \* 60.46 \* 47.21mm），因此一开始考虑支撑设置里的“细”就足够了，参数默认的接触深度 0.3mm，上端直径 0.3mm。
 
-<ImageContainer>
-	<AntdImage
-		alt="add Light supports for claws"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/add-light-supports-to-claws.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="add Light supports for claws"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/add-light-supports-to-claws.png"
+	}
+/>
 
 可惜打印失败了，打印平台上只有支撑，模型完全缺失。
 
-<ImageContainer>
-	<AntdImage
-		alt="only supports were printed"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/only-supports-were-printe-02.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="only supports were printed"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/only-supports-were-printe-02.png"
+	}
+/>
 
 所以把支撑设置里的“细”调整为“中”，默认接触深度 0.4mm，上端直径 0.4mm。
 
-<ImageContainer>
-	<AntdImage
-		alt="add Medium supports to claws"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/add-medium-supports-to-claws.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="add Medium supports to claws"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/add-medium-supports-to-claws.png"
+	}
+/>
 
 不出所料，这一次成功了。除了顶部设置变动外，从“细”调整为“中”时，中部直径也会加多 0.4mm。
 
-<ImageContainer>
-	<AntdImage
-		alt="claws were printed"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/claws-were-printed.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="claws were printed"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/claws-were-printed.png"
+	}
+/>
 
 支撑密度不够或支撑结构不完善也可能导致打印失败，特别是对于悬空以及边界处，如果这些位置没有支撑，或者支撑不能起到应有的作用，就会在层层打印的过程中，在该层的相应位置，因缺少支撑而导致打印失败，即使后续的层面连接上了，这部分也会变形。 我们在本文开头提到的<Link href="#misrun">缺肉</Link>问题就是一个典型的例子。
 
-<ImageContainer>
-	<AntdImage
-		alt="insufficient support density"
-		src={
-			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/insufficient-support-density.jpg"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="insufficient support density"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/insufficient-support-density.jpg"
+	}
+/>
 
 ## 温度过低
 
@@ -251,36 +222,30 @@ export const metadata = {
 
 -   屏幕上是否存在可见的坏点。 这是一张有坏点的屏幕图片，
 
-    <ImageContainer>
-    	<AntdImage
-    		alt="a screen with dead pixels"
-    		src={
-    			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/a-screen-with-dead-pixels.png"
-    		}
-    	/>
-    </ImageContainer>
+<BlogImageContainer
+	alt="a screen with dead pixels"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/a-screen-with-dead-pixels.png"
+	}
+/>
 
     这会导致 FEP 薄膜上出现小碎片固化。
 
-    <ImageContainer>
-    	<AntdImage
-    		alt="a FEP film with cured small debris"
-    		src={
-    			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/a-fep-film-with-cured-small-debris.jpg"
-    		}
-    	/>
-    </ImageContainer>
+<BlogImageContainer
+	alt="a FEP film with cured small debris"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/a-fep-film-with-cured-small-debris.jpg"
+	}
+/>
 
     或者在模型上产生孔。
 
-    <ImageContainer>
-    	<AntdImage
-    		alt="holes on the model"
-    		src={
-    			"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/holes-on-the-model.png"
-    		}
-    	/>
-    </ImageContainer>
+<BlogImageContainer
+	alt="holes on the model"
+	src={
+		"/images/docs/zh-CN/academy/all-you-need-to-know-about-failed-printing/holes-on-the-model.png"
+	}
+/>
 
     液晶面板有一定的使用寿命。 如果打印过程中温度过高，内部散热不好，就会损坏面板。 一般来说，这种损坏是可逆的，静置冷却后，面板大部分区域已恢复正常。 但在持续的加热工作中，仍有可能因高温而损坏面板，直至不可逆转。
 

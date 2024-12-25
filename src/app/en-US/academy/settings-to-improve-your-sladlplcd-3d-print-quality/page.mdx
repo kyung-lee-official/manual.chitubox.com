@@ -22,38 +22,32 @@ In fact, the quality of 3D printing has a lot to do with the equipment, material
 
 As the name implies, layer height is the exact height of each cured layer. Layer thickness not only affects the speed (printing time), but aslo the quality of each print. The number of layers required to create an object determines the printing speed and thus the printing time required. The thinner the layer thickness, the longer it takes to make a 3D printed object of a given height. While relatively, with a thinner layer height you will increase the quality of the print, leading to a smoother surface and more detail visible in the Z-direction (height) of the model.
 
-<ImageContainer footnote="Left: 100µm layer thickness   Right: 50µm layer thickness">
-	<AntdImage
-		alt="hemisphere with different layer heights"
-		src={
-			"/images/docs/en-US/academy/settings-to-improve-your-sladlplcd-3d-print-quality/hemisphere-with-different-layer-heights.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="Left: 100µm layer thickness   Right: 50µm layer thickness"
+	alt="hemisphere with different layer heights"
+	src={
+		"/images/docs/en-US/academy/settings-to-improve-your-sladlplcd-3d-print-quality/hemisphere-with-different-layer-heights.png"
+	}
+/>
 
 In general, according to technological differences of 3D printers, they generate different layer heights as some may generate lower layer height than others. Layer Thickness is measured in fractions of a millimeter (mm), and are often given in microns(µm). Generally, the min layer height of SLA/DLP/LCD 3D printers is 25 µm (0.025mm) layer height and the max is 100 µm (0.1mm) layer height. You can adjust this setting in your slicing tool like CHITUBOX based on the actual situation of your SLA/DLP/LCD 3D printer. If you have no idea how to choose the right one, there’s a tried-and-true technique to just start your trying with the layer height of 50 μm (0.05mm).
 
-<ImageContainer>
-	<AntdImage
-		alt="layer height"
-		src={
-			"/images/docs/en-US/academy/settings-to-improve-your-sladlplcd-3d-print-quality/layer-height.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="layer height"
+	src={
+		"/images/docs/en-US/academy/settings-to-improve-your-sladlplcd-3d-print-quality/layer-height.png"
+	}
+/>
 
 ## Exposure Time (s)
 
 The print quality for each 3D resin is also affected by the light power and the curing or exposure time. Exposure Time is the amount of time that the light source will expose each layer during printing. Different SLA/DLP/LCD 3D printers have different cure times for resins.
 
-<ImageContainer>
-	<AntdImage
-		alt="exposure time"
-		src={
-			"/images/docs/en-US/academy/settings-to-improve-your-sladlplcd-3d-print-quality/exposure-time.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="exposure time"
+	src={
+		"/images/docs/en-US/academy/settings-to-improve-your-sladlplcd-3d-print-quality/exposure-time.png"
+	}
+/>
 
 The default is 6 seconds in CHITUBOX. For most resins, this exposure time is enough. And this setting can be modified based on the actual situations.
 
@@ -73,14 +67,12 @@ Lift speed refers to the speed at which the build plate is lifted from the resin
 
 By orientating the part in different directions, there is a significant difference in the print quality. Sudden changes of the model structure from a small cross-section to a large cross section area will lead to severe volumetric changes of layers as the volume of 3D resin in each layer highly affects the shrinkage of each cured layer.
 
-<ImageContainer>
-	<AntdImage
-		alt="different orientations"
-		src={
-			"/images/docs/en-US/academy/settings-to-improve-your-sladlplcd-3d-print-quality/different-orientations.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="different orientations"
+	src={
+		"/images/docs/en-US/academy/settings-to-improve-your-sladlplcd-3d-print-quality/different-orientations.png"
+	}
+/>
 
 Sudden changes of the model structure not only affects model integrity, but it will also typically result in visible surface lines. Besides, part orientation impacts surface quality due to the process of slicing and printing the part in increments in the Z direction.
 
@@ -92,14 +84,12 @@ Aliasing is the staircase effect that occurs when diagonal or curved lines or bo
 
 CHITUBOX has built-in anti-aliasing feature. After special algorithm processing, it makes the model more smooth and exquisite and effectively reduces edge aliasing.
 
-<ImageContainer>
-	<AntdImage
-		alt="disable/enable antialiasing"
-		src={
-			"/images/docs/en-US/academy/settings-to-improve-your-sladlplcd-3d-print-quality/disableenable-antialiasing.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="disable/enable antialiasing"
+	src={
+		"/images/docs/en-US/academy/settings-to-improve-your-sladlplcd-3d-print-quality/disableenable-antialiasing.png"
+	}
+/>
 
 There are more than those factors to improve the printing quality. The support structures alone can be demonstrated with several chapters. However, by simply adjusting these settings in CHITUBOX, the resin 3D printing quality can be more or less improved so that the output of photocuring (SLA/DLP/LCD) 3D printing can be as high-quality as it should be.
 

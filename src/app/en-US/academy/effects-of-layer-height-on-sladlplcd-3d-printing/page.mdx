@@ -20,14 +20,12 @@ As we all know, stereolithography SLA/DLP/LCD 3D printing creates a part by repr
 
 For example, to print a cylinder with a hole, CHITUBOX must slice it into multiple layers and then stack them which will form an unsmooth edge that looks like a staircase. This is known as the ladder effect, which becomes more obvious on surfaces with greater curvature.
 
-<ImageContainer footnote={"Layer height: 0.2mm"}>
-	<AntdImage
-		alt="a cylinder with layer height of 0.2mm"
-		src={
-			"/images/docs/en-US/academy/effects-of-layer-height-on-sladlplcd-3d-printing/a-cylinder-with-layer-height-of-02mm.jpg"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote={"Layer height: 0.2mm"}
+	alt="a cylinder with layer height of 0.2mm"
+	src={
+		"/images/docs/en-US/academy/effects-of-layer-height-on-sladlplcd-3d-printing/a-cylinder-with-layer-height-of-02mm.jpg"
+	}
+/>
 
 ## Effects of Layer Height
 
@@ -39,18 +37,17 @@ At this point, it is necessary to strike a balance between quality and speed. In
 
 Take the following test as an example, it can be clearly seen that the surface quality of the parts performs under the layer height settings of 0.05mm, 0.1mm and 0.2mm. The thinner the layer height, the heigher the precision.
 
-<ImageContainer
+<BlogImageContainer
 	footnote={
 		"Layer height: 0.05mm(left), Layer height: 0.1mm(middle), Layer height: 0.2mm(right)"
 	}
->
-	<AntdImage
+/>
+<BlogImageContainer
 		alt="different layer heights of the cylinder"
 		src={
 			"/images/docs/en-US/academy/effects-of-layer-height-on-sladlplcd-3d-printing/different-layer-heights-of-the-cylinder.jpg"
 		}
-	/>
-</ImageContainer>
+/>
 
 It should be further explained here that the layer height of 0.2mm cannot make the layer completely cured within 3s. So there are only 6 layers of the bottom which can be reproduced successfully on the build platform with the exposure time of 50s.
 
@@ -60,13 +57,11 @@ In order to verify whether the cause of printing failure is due to insufficient 
 
 The effect of layer height on SLA/DLP/LCD 3D printing is not only quality and time. As shown below, if the z-axis of the machine is not stable enough, higher layer height settings under the higher printing speeds (like 100 mm/min lift speed, 200 mm/min retract speed) will aggravate this instability which leads to layer separation, fragmentation and even shifting.
 
-<ImageContainer
+<BlogImageContainer
 	footnote={"Layer height: 0.05mm(left), Layer height: 0.1mm(right)"}
->
-	<AntdImage
-		alt="the effect of different layer heights on printing"
-		src={
-			"/images/docs/en-US/academy/effects-of-layer-height-on-sladlplcd-3d-printing/the-effect-of-different-layer-heights-on-printing.jpg"
-		}
-	/>
-</ImageContainer>
+
+	alt="the effect of different layer heights on printing"
+	src={
+		"/images/docs/en-US/academy/effects-of-layer-height-on-sladlplcd-3d-printing/the-effect-of-different-layer-heights-on-printing.jpg"
+	}
+/>

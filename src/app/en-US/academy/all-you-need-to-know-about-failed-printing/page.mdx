@@ -17,61 +17,49 @@ This article introduces the most common reasons for failed printing. For example
 
 For bottom-up resin printers, layers not sticking to the build plate (for the first layer) or the previous layer would be the nightmare you never wanna experience. These are common cases you will see:
 
-<ImageContainer footnote="Upwarped bottom layers">
-	<AntdImage
-		alt="Upwarped bottom layers"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/upwarped-bottom-layers.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="Upwarped bottom layers"
+	alt="Upwarped bottom layers"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/upwarped-bottom-layers.png"
+	}
+/>
 
-<ImageContainer footnote="Only supports were printed">
-	<AntdImage
-		alt="Only supports were printed"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/only-supports-were-printed-01.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="Only supports were printed"
+	alt="Only supports were printed"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/only-supports-were-printed-01.png"
+	}
+/>
 
-<ImageContainer footnote="Sticking on the FEP">
-	<AntdImage
-		alt="Sticking on the FEP"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/sticking-on-the-fep.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="Sticking on the FEP"
+	alt="Sticking on the FEP"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/sticking-on-the-fep.png"
+	}
+/>
 
-<ImageContainer footnote="Laminaria-like layers or bubbles (1)">
-	<AntdImage
-		alt="Laminaria-like layers or bubbles"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/laminaria-like-layers-or-bubbles-01.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="Laminaria-like layers or bubbles (1)"
+	alt="Laminaria-like layers or bubbles"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/laminaria-like-layers-or-bubbles-01.png"
+	}
+/>
 
-<ImageContainer footnote="Laminaria-like layers or bubbles (2)">
-	<AntdImage
-		alt="Laminaria-like layers or bubbles"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/laminaria-like-layers-or-bubbles-02.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="Laminaria-like layers or bubbles (2)"
+	alt="Laminaria-like layers or bubbles"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/laminaria-like-layers-or-bubbles-02.png"
+	}
+/>
 
 <p id="misrun"></p>
 
-<ImageContainer footnote="Misrun" className="bg-gray-100 rounded-lg">
-	<AntdImage
-		alt="misrun"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/misrun.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="Misrun" className="bg-gray-100 rounded-lg"
+	alt="misrun"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/misrun.png"
+	}
+/>
 
 There are a lot of reasons that can cause layers don't stick to the build plate or the previous layer, in balance they can be summarized into a few essential reasons:
 
@@ -85,14 +73,12 @@ In this article, we will enumerate common reasons that can cause the issue so yo
 
 It's very common to see failed printing caused by improper leveling and zeroing. If the build plate is not well-leveled, it won't be parallel to the printing screen, which leads to inequable gaps between the build plate and the printing screen in different areas, where the larger gap might result in underexposure, the resin will be inadequately polymerized, as the picture illustrated below:
 
-<ImageContainer>
-	<AntdImage
-		alt="improper leveling and zeroing"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/improper-leveling-and-zeroing.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="improper leveling and zeroing"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/improper-leveling-and-zeroing.png"
+	}
+/>
 
 Besides leveling issues, improper zeroing could also make the gap between the printing screen and the build plate larger than the layer height you set in the software when curing the first layer, which might also lead to underexposure.
 
@@ -138,25 +124,21 @@ To guarantee a reliable adhesion, you will need to keep the build plate clean, i
 
 Proper support parameters help guarantee sufficient peeling force from the build plate against the pulling force from the FEP film. We downloaded a pair of claws from <Link href="https://www.thingiverse.com/thing:2520821">Thingiverse</Link> to demonstrate effects made by different support parameters.
 
-<ImageContainer>
-	<AntdImage
-		alt="claws"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/claws.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="claws"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/claws.png"
+	}
+/>
 
 The most vital parameters that affect the peeling force that supports can bear are under the top parameter tab. The top is a critical section to connect the model and support. There are two parameters that play an important role: **Contact Depth** and **Upper Diameter**.
 
-<ImageContainer>
-	<AntdImage
-		alt="the top of the support"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/the-top-of-the-support.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="the top of the support"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/the-top-of-the-support.png"
+	}
+/>
 
 The larger the **Contact Depth**, the deeper the support tip goes. Sufficient depth helps win the tug-of-war between the build plate and the FEP film.
 
@@ -164,71 +146,59 @@ The larger the **Contact Depth**, the deeper the support tip goes. Sufficient de
 	When <Link href="https://manual.chitubox.com/en-US/chitubox-basic/latest/ui-and-features/configure-print-parameters#picture-grayscale">📃Picture Grayscale</Link> is enabled, and the grayscale is less than 255, the exposure strength will be different for supports and the model, as the picture shown below.
 </Admonition>
 
-<ImageContainer>
-	<AntdImage
-		alt="different exposure strength on supports and the model"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/different-exposure-strength-on-supports-and-the-model.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="different exposure strength on supports and the model"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/different-exposure-strength-on-supports-and-the-model.png"
+	}
+/>
 
 Larger **Upper Diameter** results in a larger contact area (if the **Contact Shape** is None), also a better firmness of the connection between supports and the model.
 
 The claws for testing are not considered very large (26.63 × 60.46 × 47.21mm), so we tried the "Light" support type at the beginning. The default **Contact Depth** and **Upper Diameter** are both 0.3mm.
 
-<ImageContainer>
-	<AntdImage
-		alt="add Light supports to claws"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/add-light-supports-to-claws.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="add Light supports to claws"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/add-light-supports-to-claws.png"
+	}
+/>
 
 Apparently, we underestimated the peeling force, only supports were produced.
 
-<ImageContainer>
-	<AntdImage
-		alt="only supports were printed"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/only-supports-were-printe-02.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="only supports were printed"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/only-supports-were-printe-02.png"
+	}
+/>
 
 We thereby changed the support type from "Light" to "Medium", with default **Contact Depth** and **Upper Diameter** of 0.4mm.
 
-<ImageContainer>
-	<AntdImage
-		alt="add Medium supports to claws"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/add-medium-supports-to-claws.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="add Medium supports to claws"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/add-medium-supports-to-claws.png"
+	}
+/>
 
 As expected, we made it. By switching to the "Medium" support type, the diameter of the middle section also increases 0.4mm.
 
-<ImageContainer>
-	<AntdImage
-		alt="claws were printed"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/claws-were-printed.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="claws were printed"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/claws-were-printed.png"
+	}
+/>
 
 Insufficient support density or inadequate support structures could also cause failed printing, Especially for the overhangings and boundaries, if there is no support or the support does not play its due role, the corresponding position of the layer will fail to print due to the lack of support. Even if the subsequent layers are connected, this part will be misshapen. The <Link href="#misrun">misrun</Link> issue we mentioned at the beginning of this article is a typical example.
 
-<ImageContainer>
-	<AntdImage
-		alt="insufficient support density"
-		src={
-			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/insufficient-support-density.jpg"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="insufficient support density"
+	src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/insufficient-support-density.jpg"
+	}
+/>
 
 ## Too Low Temperature
 
@@ -251,36 +221,30 @@ Firstly, take the resin vat off from your printer, enable the exposure testing f
 
 -   Whether there are visible dead pixels on the screen. Here is a picture of a screen with dead pixels,
 
-    <ImageContainer>
-    	<AntdImage
-    		alt="a screen with dead pixels"
-    		src={
-    			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/a-screen-with-dead-pixels.png"
-    		}
-    	/>
-    </ImageContainer>
+    <BlogImageContainer
+		alt="a screen with dead pixels"
+		src={
+			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/a-screen-with-dead-pixels.png"
+		}
+	/>
 
     Which can lead to curing small debris on the FEP film.
 
-    <ImageContainer>
-    	<AntdImage
-    		alt="a FEP film with cured small debris"
-    		src={
-    			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/a-fep-film-with-cured-small-debris.jpg"
-    		}
-    	/>
-    </ImageContainer>
+    	<BlogImageContainer
+		alt="a FEP film with cured small debris"
+		src={
+		"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/a-fep-film-with-cured-small-debris.jpg"
+		}
+	/>
 
     Or produces holes on the model.
 
-    <ImageContainer>
-    	<AntdImage
-    		alt="holes on the model"
-    		src={
-    			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/holes-on-the-model.png"
-    		}
-    	/>
-    </ImageContainer>
+    <BlogImageContainer
+		alt="holes on the model"
+		src={
+			"/images/docs/en-US/academy/all-you-need-to-know-about-failed-printing/holes-on-the-model.png"
+		}
+	/>
 
     The LCD panel has a certain service life. If the temperature is too high in the printing process and the internal heat dissipation is not good, the panel will be damaged. In general, this damage is reversible, and after standing cooling, most areas of the panel have returned to normal, as shown below. However, in the continuous heating work, it is still possible to damage the panel due to high temperature until it is irreversible.
 

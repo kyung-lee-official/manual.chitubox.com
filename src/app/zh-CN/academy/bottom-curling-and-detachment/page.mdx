@@ -29,40 +29,35 @@ export const metadata = {
 
 光固化 3D 打印过程中，光束通过照射感光树脂，使其固化成所需形状。在固化过程中，感光树脂会释放出热量，而这些热量在未能及时散热的情况下，过多的热量将导致物体内部温度分布不均匀，此时因为内部变形约束产生的热应力将导致零件翘曲；相关概述可以查看<Link href="/advanced/a-brief-overview-of-thermal-stress-in-resin-3d-printing">📃 光固化 3D 打印中的热应力简述</Link>。
 
-<ImageContainer>
-	<AntdImage
-		alt="Thermal deformation"
-		src={
-			"/images/docs/zh-CN/academy/bottom-curling-and-detachment/thermal-deformation.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="Thermal deformation"
+	src={
+		"/images/docs/zh-CN/academy/bottom-curling-and-detachment/thermal-deformation.png"
+	}
+/>
 
 ### 底部贴合
 
 翘边的最终结果是打印件底部没办法很好与平台进行粘连，在打印机平台向上运动时，打印平台所带来的拉力和 FEP 膜给模型之间的吸引力进行对抗，最终使得未能很好贴合平台表面的模型逐步与平台脱离的情况，而后续打印依然在这些不正常的基础上继续打印，最终导致翘边的情况，底部贴合大多和成型平台有一定的关系，例如以下集几种情况；
 
-<ImageContainer>
-	<AntdImage
-		alt="Upwarped bottom layers"
-		src={
-			"/images/docs/zh-CN/academy/bottom-curling-and-detachment/upwarped-bottom-layers.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="Upwarped bottom layers"
+	src={
+		"/images/docs/zh-CN/academy/bottom-curling-and-detachment/upwarped-bottom-layers.png"
+	}
+/>
 
 #### 成型平台上有杂质
 
 为了保证良好的附着力，模型和成型平台接触面应该干净。这就需要成型平台上没有油渍、油脂以及指纹等杂质；其中平台上如果附着一些的打印件残留，未清理直接投入二次打印，会直接导致打印底部不平 严重可能会压坏打印屏；
 
-<ImageContainer>
-	<AntdImage
-		alt="Warp caused by residue"
-		src={
-			"/images/docs/zh-CN/academy/bottom-curling-and-detachment/warp-caused-by-residue.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="Warp caused by residue"
+	src={
+		"/images/docs/zh-CN/academy/bottom-curling-and-detachment/warp-caused-by-residue.png"
+	}
+/>
+
 
 #### 成型平台不平
 
@@ -86,14 +81,12 @@ export const metadata = {
 
 除此之外，另外一种方式为调节静止时间，这个方式可以保证打印过程的反应完成，从而达到降低翘曲出现概率的结果
 
-<ImageContainer>
-	<AntdImage
-		alt="Motion Parameters"
-		src={
-			"/images/docs/zh-CN/academy/bottom-curling-and-detachment/motion-params.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="Motion Parameters"
+	src={
+		"/images/docs/zh-CN/academy/bottom-curling-and-detachment/motion-params.png"
+	}
+/>
 
 ### 散热优化
 

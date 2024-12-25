@@ -22,27 +22,23 @@ export const metadata = {
 
 顾名思义，层厚是指模型固化时每一层的厚度。层厚不仅影响打印速度（打印时间），还会影响打印质量。打印一个模型，其总层数决定了模型打印速度，以及所需要的打印时间。在固定高度下，层厚越薄，模型就会被切成更多层，打印时间就会更长。但相对地，层厚越薄，打印质量越高，模型表面更加平滑，Z 轴垂直方向的细节呈现也会更加清晰。
 
-<ImageContainer footnote={"左：100µm层厚   右：50µm层厚"}>
-	<AntdImage
-		alt="hemisphere with different layer heights"
-		src={
-			"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/hemisphere-with-different-layer-heights.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote={"左：100µm层厚   右：50µm层厚"}
+	alt="hemisphere with different layer heights"
+	src={
+		"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/hemisphere-with-different-layer-heights.png"
+	}
+/>
 
 一般来说，不同品牌、不同型号的 3D 打印机会存在着各式差异，它们能够打印的层厚区间也略有不同，有的打印机可以打印出非常薄的层厚。层厚一般以毫米(mm)为单位计算，当然部分机器或者切片软件也会使用微米(µm)作为单位，例如 CHITUBOX 切片软件的层厚单位就是毫米(mm)。
 
 市场上的光固化（SLA/DLP/LCD）3D 打印机可以打印的最小层厚是 25µm (0.025mm)，最大为 100 µm (0.1mm)。根据打印机的实际情况，我们可以在 CHITUBOX 里调整层厚这一参数。如果你不知道设置什么样的数值比较合适，建议可以从 50 μm (0.05mm)着手，这也是 CHITUBOX 的默认层厚。
 
-<ImageContainer>
-	<AntdImage
-		alt="layer height"
-		src={
-			"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/layer-height.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="layer height"
+	src={
+		"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/layer-height.png"
+	}
+/>
 
 ## 曝光时间(s)
 
@@ -50,14 +46,12 @@ export const metadata = {
 
 CHITUBOX 默认的曝光时间是 6 秒。对于很多树脂来说，这个曝光时间是可以的。但在实际的打印中，建议你还是根据树脂的特性来调整这项参数。
 
-<ImageContainer>
-	<AntdImage
-		alt="exposure time"
-		src={
-			"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/exposure-time.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="exposure time"
+	src={
+		"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/exposure-time.png"
+	}
+/>
 
 对于底层曝光时间，建议是正常曝光时间的 8~12 倍。CHITUBOX 默认的底层曝光时间是 50 秒。一般来说，底层曝光时间越长，底层部分粘在成型平台上就越牢固。所以，如果你发现底层部分无法很好地粘在成型平台上，那么你就需要去增加底层曝光时间。
 
@@ -71,14 +65,12 @@ CHITUBOX 默认的曝光时间是 6 秒。对于很多树脂来说，这个曝�
 
 模型的摆放位置不同，对于光固化 3D 打印质量也有很大的影响。如果说，模型结构的横截面积从较小突增成较大，是会导致层面间产生剧烈的体积变化的，而层面之间树脂体积的剧变又会导致固化层面收缩不均匀。
 
-<ImageContainer footnote={"模型的不同摆放位置"}>
-	<AntdImage
-		alt="different orientations"
-		src={
-			"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/different-orientations.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote={"模型的不同摆放位置"}
+	alt="different orientations"
+	src={
+		"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/different-orientations.png"
+	}
+/>
 
 模型结构的剧变不光会影响模型打印的完整性，还会导致模型表面出现层纹。此外，由于打印过程中 Z 轴的抬升，模型摆放不同也会直接影响表面质量。
 
@@ -90,14 +82,12 @@ CHITUBOX 默认的曝光时间是 6 秒。对于很多树脂来说，这个曝�
 
 CHITUBOX 自带抗锯齿功能，经过专门的边缘模糊算法处理，使模型更加光滑细腻，可以有效减少边缘锯齿现象。
 
-<ImageContainer>
-	<AntdImage
-		alt="disable/enable antialiasing"
-		src={
-			"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/disableenable-antialiasing.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="disable/enable antialiasing"
+	src={
+		"/images/docs/zh-CN/academy/settings-to-improve-your-sladlplcd-3d-print-quality/disableenable-antialiasing.png"
+	}
+/>
 
 当然，提升 3D 打印质量的方法和技巧远远不止以上几个方面，光是支撑一个部分，就能展开讲好几个篇章。但是，通过 CHITUBOX 简单地调整这几个参数，或多或少就能提升 3D 打印质量，让光固化（SLA/DLP/LCD）3D 打印呈现出它本应有的高质量。
 

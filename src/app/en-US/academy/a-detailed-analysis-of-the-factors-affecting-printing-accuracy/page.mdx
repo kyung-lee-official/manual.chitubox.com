@@ -32,36 +32,30 @@ You might wonder what UV units are. In fact, the size of the UV unit is determin
 
 SLA is driven by two mirrors which is known as "galvanometers" or "galvos" (one on the X-axis and one on the Y-axis). The mirrors aim the laser beam quickly across the target print area to cure the resin as it moves along. In order to reproduce a solid object, SLA must slice the entity, layer by layer, into a series of points and lines that are given to the "galvos" as a set of coordinates whose trajectories are tracked by the laser. So in SLA, the UV unit is determined by the laser beam diameter.
 
-<ImageContainer footnote="SLA">
-	<AntdImage
+<BlogImageContainer footnote="SLA"
 		alt="SLA imaging principle"
 		src={
 			"/images/docs/en-US/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/sla-imaging-principle.png"
 		}
-	/>
-</ImageContainer>
+/>
 
 DLP uses a digital projector to project individual images of each layer at once across the entire platform. Since the image of each layer is displayed digitally, it is composed of many square pixels. The UV unit, in this case, is determined by the pixel size projected on resin.
 
-<ImageContainer footnote="DLP">
-	<AntdImage
-		alt="DLP imaging principle"
-		src={
-			"/images/docs/en-US/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/dlp-imaging-principle.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="DLP"
+	alt="DLP imaging principle"
+	src={
+		"/images/docs/en-US/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/dlp-imaging-principle.png"
+	}
+/>
 
 LCD and DLP are almost the same but with the UV light coming from an array of LEDs shining through an LCD, not a projector. The screen acts as a mask, displaying only the pixels needed for the current layer, so the UV unit is determined by the pixel size of the screen.
 
-<ImageContainer footnote="LCD">
-	<AntdImage
-		alt="LCD imaging principle"
-		src={
-			"/images/docs/en-US/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/lcd-imaging-principle.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="LCD"
+	alt="LCD imaging principle"
+	src={
+		"/images/docs/en-US/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/lcd-imaging-principle.png"
+	}
+/>
 
 Let's take a look at this example, the forming width of a printer in the X-axis direction is 68mm, and the number of pixels in the X-axis direction is 1440, then the pixel accuracy in the X-axis direction is:
 
@@ -85,14 +79,12 @@ If the resolution and print size were not set correctly, the model will be disto
 
 Take Elegoo Mars Pro as an example, we can find that it is 120 × 68 × 155mm Build Volume and 68.04 × 120.96mm Display Area. Although the two parameters are with little difference, it will still cause the accuracy distortion of XY direction.
 
-<ImageContainer>
-	<AntdImage
-		alt="print size"
-		src={
-			"/images/docs/en-US/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/print-size.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="print size"
+	src={
+		"/images/docs/en-US/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/print-size.png"
+	}
+/>
 
 These two areas can easily confuse the less experienced users. In fact, the screen area of Elegoo Mars Pro is 68.04 × 120.96mm. But due to the assembly (When LCD printer is installed, the tempered glass will block the edge of the screen to avoid light leakage), the printable area is only 68 × 120mm (In general, DLP printers do not have this issue). However the resolution needs to match the printing size, it is correct to fill in the parameter of 68.04 × 120.96mm.
 

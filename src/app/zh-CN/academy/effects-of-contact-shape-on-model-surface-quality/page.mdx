@@ -40,7 +40,7 @@ export const metadata = {
 <DocsColumnContainer>
 	<DocsColumn>
 		<div className="flex flex-col w-[217px] gap-4">
-			<AntdImage
+		<BlogImageContainer
 				alt="support parameters"
 				src={
 					"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/support-params.png"
@@ -53,7 +53,7 @@ export const metadata = {
 	</DocsColumn>
 	<DocsColumn>
 		<div className="flex flex-col w-60 gap-4">
-			<AntdImage
+			<BlogImageContainer
 				alt="with contact shape"
 				src={
 					"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/with-contact-shape.png"
@@ -66,7 +66,7 @@ export const metadata = {
 	</DocsColumn>
 	<DocsColumn>
 		<div className="flex flex-col w-60 gap-4">
-			<AntdImage
+			<BlogImageContainer
 				alt="without contact shape"
 				src={
 					"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/without-contact-shape.png"
@@ -87,14 +87,12 @@ export const metadata = {
 
 打磨使用的是电动打磨笔，可以切换打磨头，这里用到了砂轮打磨和细砂纸卷抛光。
 
-<ImageContainer>
-	<AntdImage
-		alt="electric sanding pen"
-		src={
-			"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/electric-sanding-pen.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="electric sanding pen"
+	src={
+		"/images/docs/zh-CN/academy/effects-of-contact-shape-on-model-surface-quality/electric-sanding-pen.png"
+	}
+/>
 
 虽然球形接触形状支撑留下的残留物较多，但因为是凸起物，相对更好打磨。打磨后，球形接触形状表面质量相较于无接触形状会更好。
 

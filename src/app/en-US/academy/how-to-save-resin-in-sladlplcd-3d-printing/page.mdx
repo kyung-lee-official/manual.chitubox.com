@@ -27,27 +27,23 @@ In most cases, you don't have to print your model in solid, hollowing your model
 1. Thinner walls would for sure be more economic, but it also makes your model fragile, and might even increase the risk of print failures for delicate structures.
 1. Hollowed part might form an airtight chamber during printing, the low pressure in the chamber might thereby break your model or result in unexpected issues, you will need to punch holes using CHITUBOX to balance inner pressure and outer pressure so such problems can be avoided.
 
-<ImageContainer>
-	<AntdImage
-		alt="hollowed model"
-		src={
-			"/images/docs/en-US/academy/how-to-save-resin-in-sladlplcd-3d-printing/hollowed-model.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="hollowed model"
+	src={
+		"/images/docs/en-US/academy/how-to-save-resin-in-sladlplcd-3d-printing/hollowed-model.png"
+	}
+/>
 
 ## Scale Down Your Model
 
 Another direct factor of resin consumption is, undisputedly, the size of your model. In CHITUBOX, you can adjust the size of your model from the left side toolbar by inputting the exact proportion, or, drag the handler manually to scale your model. CHITUBOX allows you to either scale your model in 3 dimensions simultaneously or scale along each axis respectively.
 
-<ImageContainer>
-	<AntdImage
-		alt="scale down the model"
-		src={
-			"/images/docs/en-US/academy/how-to-save-resin-in-sladlplcd-3d-printing/scale-down-the-model.gif"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="scale down the model"
+	src={
+		"/images/docs/en-US/academy/how-to-save-resin-in-sladlplcd-3d-printing/scale-down-the-model.gif"
+	}
+/>
 
 ## Optimize the Structure of Your Model
 
@@ -55,14 +51,12 @@ The scenario that wastes your resin the most would be failed prints, especially 
 
 To avoid failed prints, you will need to take care of your models' structures and optimize it as possible if you are capable of modifying the model with 3D modeling software. For example, thinner walls give you less model weight, which means less resin consumption, but also means the firmness of your model was sacrificed somehow, insufficient structure strength could be fatal for bottom-up resin printing. The model is hung upside-down on the build plate and bears gravity during printing. Sharper corners increase structure stress, also the possibility of cracks. Tiny holes smaller than 0.5mm would be tricky to handle, you might wanna use TC (Tolerance Compensation) in CHITUBOX to deal with that issue. Ribs and gussets help you enhance some areas of your model strength where outer force will likely be applied to.
 
-<ImageContainer>
-	<AntdImage
-		alt="ribs and gussets"
-		src={
-			"/images/docs/en-US/academy/how-to-save-resin-in-sladlplcd-3d-printing/ribs-and-gussets.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="ribs and gussets"
+	src={
+		"/images/docs/en-US/academy/how-to-save-resin-in-sladlplcd-3d-printing/ribs-and-gussets.png"
+	}
+/>
 
 ## Remove Unnecessary Supports and Rafts
 
@@ -75,7 +69,7 @@ The amount of auto-added supports and rafts can be distinct if you place your mo
 				className="flex items-center
 				drop-shadow-lg"
 			>
-				<AntdImage
+				<BlogImageContainer
 					alt="more auto-supports"
 					src={
 						"/images/docs/en-US/academy/how-to-save-resin-in-sladlplcd-3d-printing/more-auto-supports.png"
@@ -90,7 +84,7 @@ The amount of auto-added supports and rafts can be distinct if you place your mo
 				className="flex items-center
 				drop-shadow-lg"
 			>
-				<AntdImage
+				<BlogImageContainer
 					alt="less auto-supports"
 					src={
 						"/images/docs/en-US/academy/how-to-save-resin-in-sladlplcd-3d-printing/less-auto-supports.png"
@@ -105,14 +99,12 @@ Under the premise of structural stability, fewer supports bring you smoother pri
 
 The 4 tips above help cut down resin consumption. CHITUBOX calculates resin consumption after slicing models by summing up each generated voxel (pixel area × layer height), simple but should be accurate enough and less error-prone in most circumstances. There are also 3rd-party online resin calculation tools, you can upload your model if the site is trusted.
 
-<ImageContainer>
-	<AntdImage
-		alt="resin consumption"
-		src={
-			"/images/docs/en-US/academy/how-to-save-resin-in-sladlplcd-3d-printing/resin-consumption.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="resin consumption"
+	src={
+		"/images/docs/en-US/academy/how-to-save-resin-in-sladlplcd-3d-printing/resin-consumption.png"
+	}
+/>
 
 <ModelSource
 	items={[

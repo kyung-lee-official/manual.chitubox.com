@@ -32,36 +32,30 @@ export const metadata = {
 
 SLA 是通过用紫外激光去勾勒模型的每一层，由两个连接电机的振镜驱动，他们被称为“电流计”或“检流计”(一个在 X 轴，一个在 Y 轴)。两个镜子把激光快速瞄准到目标打印区域，一边移动一边固化树脂。为了打印出一个实体物体，SLA 必须将实体一层一层地分解成一系列的点和线，这些点和线传递给“检流计”，形成一组坐标，激光会追踪它们的成像轨迹。
 
-<ImageContainer footnote="SLA">
-	<AntdImage
-		alt="SLA imaging principle"
-		src={
-			"/images/docs/zh-CN/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/sla-imaging-principle.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="SLA"
+	alt="SLA imaging principle"
+	src={
+		"/images/docs/zh-CN/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/sla-imaging-principle.png"
+	}
+/>
 
 DLP 使用数字投影仪在整个平台上一次性地投影每一层的单个图像。由于每一层的图像都是数字显示，因此它是由许多正方体素组成的。
 
-<ImageContainer footnote="DLP">
-	<AntdImage
-		alt="DLP imaging principle"
-		src={
-			"/images/docs/zh-CN/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/dlp-imaging-principle.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote="DLP"
+	alt="DLP imaging principle"
+	src={
+		"/images/docs/zh-CN/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/dlp-imaging-principle.png"
+	}
+/>
 
 LCD(MSLA) 和 DLP 几乎一样，但是 LCD(MSLA) 是 LED 光源而不是投影仪光源。屏幕充当掩膜，只显示当前层所需的像素。
 
-<ImageContainer footnote="LCD">
-	<AntdImage
+<BlogImageContainer footnote="LCD"
 		alt="LCD imaging principle"
 		src={
 			"/images/docs/zh-CN/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/lcd-imaging-principle.png"
 		}
 	/>
-</ImageContainer>
 
 例如，某打印机在 X 轴方向的成型宽度是 68mm， X 轴方向的像素数量为 1440，那么，其 X 轴方向的像素精度为：
 
@@ -84,14 +78,12 @@ Y 轴方向同理。
 
 一般来说，厂家会提供这些出厂数据，以 Elegoo Mars Pro 为例，我们可以查到，规格表里的成型尺寸（Build Volume）是 120 x 68 x 155 mm，此外还有一组 68.04 x 120.96mm 的显示面积（Display Area）。 虽说两组数据差别不大，但我们都知道差之毫厘谬以千里，即使零点零几的差距，也会造成 XY 方向的精度失真。
 
-<ImageContainer>
-	<AntdImage
-		alt="print size"
-		src={
-			"/images/docs/zh-CN/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/print-size.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="print size"
+	src={
+		"/images/docs/zh-CN/academy/a-detailed-analysis-of-the-factors-affecting-printing-accuracy/print-size.png"
+	}
+/>
 
 这两个面积很容易造成新手的困惑，实际上 Elegoo Mars Pro 屏幕面积是 68.04 x 120.96mm，但由于装配方式的问题，LCD 打印机安装时钢化玻璃为避免漏光，会遮挡屏幕边缘（一般情况下，DLP 打印机不会出现此情况），导致能打印的成型区域只有 68 x 120mm，但是分辨率需要与打印尺寸匹配（不匹配会导致图像缩放），因此填写 68.04 x 120.96mm 参数才是正确。
 

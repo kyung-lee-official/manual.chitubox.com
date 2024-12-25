@@ -18,14 +18,12 @@ export const metadata = {
 
 我们都知道，光固化 3D 打印是通过逐层叠加来生成一个模型。顾名思义，层厚是指模型固化时每一层的厚度。正是由于这种增材制作特性，每一层的层厚自然就决定了**Z 轴方向上的精度**，尤其是对曲线和角度的影响更明显。
 
-<ImageContainer footnote={"层厚0.2mm"}>
-	<AntdImage
-		alt="a cylinder with layer height of 0.2mm"
-		src={
-			"/images/docs/zh-CN/academy/effects-of-layer-height-on-sladlplcd-3d-printing/a-cylinder-with-layer-height-of-02mm.jpg"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote={"层厚0.2mm"}
+	alt="a cylinder with layer height of 0.2mm"
+	src={
+		"/images/docs/zh-CN/academy/effects-of-layer-height-on-sladlplcd-3d-printing/a-cylinder-with-layer-height-of-02mm.jpg"
+	}
+/>
 
 ## 层厚对打印的影响
 
@@ -37,14 +35,12 @@ export const metadata = {
 
 以下面的实测为例，可以很明显看出，模型表面质量在 0.05mm、0.1mm 以及 0.2mm 层厚设置下的表现。层厚约小，精度越高，打印件表面细节愈发清晰。
 
-<ImageContainer footnote={"层厚0.05mm（左）、层厚0.1mm（中）、层厚0.2mm（右）"}>
-	<AntdImage
-		alt="different layer heights of the cylinder"
-		src={
-			"/images/docs/zh-CN/academy/effects-of-layer-height-on-sladlplcd-3d-printing/different-layer-heights-of-the-cylinder.jpg"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote={"层厚0.05mm（左）、层厚0.1mm（中）、层厚0.2mm（右）"}
+	alt="different layer heights of the cylinder"
+	src={
+		"/images/docs/zh-CN/academy/effects-of-layer-height-on-sladlplcd-3d-printing/different-layer-heights-of-the-cylinder.jpg"
+	}
+/>
 
 这里要额外说明的是，在本案例中，0.2mm 的层厚对于设置的 3s 曝光时间来说，无法在 3s 内使得层面完全固化，因此在成型平台上打印成功的仅有能在 50s 底层曝光时间下，充分得到曝光的 6 层底层。
 
@@ -52,11 +48,9 @@ export const metadata = {
 
 层厚对于光固化 3D 打印的影响，不仅仅只有精度和时间。如下图所示，如果机器的 Z 轴稳定不够，在较高的打印速度下（下图模型抬升速度 100 毫米/分，回程速度 200 毫米/分），较高的层厚会加剧不稳定，导致层面分离、残缺甚至偏移。
 
-<ImageContainer footnote={"层厚0.05mm（左）、层厚0.1mm（右）"}>
-	<AntdImage
-		alt="the effect of different layer heights on printing"
-		src={
-			"/images/docs/zh-CN/academy/effects-of-layer-height-on-sladlplcd-3d-printing/the-effect-of-different-layer-heights-on-printing.jpg"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote={"层厚0.05mm（左）、层厚0.1mm（右）"}
+	alt="the effect of different layer heights on printing"
+	src={
+		"/images/docs/zh-CN/academy/effects-of-layer-height-on-sladlplcd-3d-printing/the-effect-of-different-layer-heights-on-printing.jpg"
+	}
+/>

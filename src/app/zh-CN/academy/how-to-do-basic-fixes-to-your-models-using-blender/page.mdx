@@ -25,14 +25,12 @@ CHITUBOX 和其它一些流行的 3D 软件提供了辅助的自动模型修复�
 
 并非所有 3D 模型都适合 3D 打印。其中一些模型可能是为 CG 动画或商业广告而设计的，因此它们可能不需要是严格封闭的结构。但是当谈到 3D 打印时，事情就不一样了。你必须封闭所有结构以表示具有确定体积的实体。开放结构被认为是没有厚度和体积的面片，换句话说，它们是不可打印的，如下图所示：
 
-<ImageContainer>
-	<AntdImage
-		alt="open structures"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/open-structures.gif"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="open structures"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/open-structures.gif"
+	}
+/>
 
 在切片之前，您需要确保您的模型没有开放结构。否则，您可能会得到意想不到的结果。
 
@@ -42,34 +40,28 @@ CHITUBOX 和其它一些流行的 3D 软件提供了辅助的自动模型修复�
 
 这几乎是 3D 模型中最常见的问题，但究竟什么是反转法线？3D 模型是由面片组成的，每个面片都有两个面。有一条垂直于面片的线，称为“法线”。根据面片的渲染方式，法线有其方向。朝向正方向的面被视为外部，而朝向负方向的面被视为内部。如果模型是封闭结构，您将只能看到外表面。CHITUOBX 将内部面渲染为深蓝色，而在 Blender 中，如果启用了面朝向（我们将在后面介绍），它将显示为红色，如下图所示。
 
-<ImageContainer>
-	<AntdImage
-		alt="inverted normal fragments inside the cube"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/inverted-normal-fragments-inside-the-cube.gif"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="inverted normal fragments inside the cube"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/inverted-normal-fragments-inside-the-cube.gif"
+	}
+/>
 
 如果您尝试对文件进行切片，您可能会得到如下信息：
 
-<ImageContainer>
-	<AntdImage
-		alt="slice result"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/slice-result-01.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="slice result"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/slice-result-01.png"
+	}
+/>
 
-<ImageContainer>
-	<AntdImage
-		alt="slice result"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/slice-result-02.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="slice result"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/slice-result-02.png"
+	}
+/>
 
 模型内部是空心的，但切片结果不是。
 
@@ -79,36 +71,30 @@ CHITUBOX 和其它一些流行的 3D 软件提供了辅助的自动模型修复�
 
 您将在 Blender 中使用两种模式，**Object mode** 和 **Edit mode**，通过 Tab 键切换。当前模式显示在左上角：
 
-<ImageContainer>
-	<AntdImage
-		alt="change to Edit mode in Blender"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/edit-mode.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="change to Edit mode in Blender"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/edit-mode.png"
+	}
+/>
 
 确保您处于对象模式，然后单击 Overlays > Face Orientation，这样可以更轻松地观察法线方向。
 
-<ImageContainer>
-	<AntdImage
-		alt="Face Orientation option"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/face-orientation-option.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="Face Orientation option"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/face-orientation-option.png"
+	}
+/>
 
 现在点击 Tab 进入 Edit mode，然后选择那些已经反转的面（以红色显示）。单击 Mesh > Normals > Flip，当现在应以深蓝色显示所选面部时，您可以使用它完成。
 
-<ImageContainer>
-	<AntdImage
-		alt="flip selected faces"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/flip-selected-faces.gif"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="flip selected faces"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/flip-selected-faces.gif"
+	}
+/>
 
 当你对模型满意后，将其导出为 STL 文件并将其加载回 CHITUBOX。
 
@@ -116,60 +102,50 @@ CHITUBOX 和其它一些流行的 3D 软件提供了辅助的自动模型修复�
 
 与反转法线相比，开放结构通常有点复杂。不过不要被吓倒，原理还是很简单的：找到缺失的面片并填充。开放结构指的是您的模型不是封闭的，但是您如何判断模型是否有开放结构？如果模型内部的一个点可以在不穿透任何面片的情况下移动到模型外部，那么模型就是开放的。如图所示，左边的半球是开放结构，右边的半球是封闭结构，因为它有厚度和体积：
 
-<ImageContainer>
-	<AntdImage
-		alt="open/enclosed structure semi-sphere"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/openenclosed-structure-semi-sphere.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="open/enclosed structure semi-sphere"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/openenclosed-structure-semi-sphere.png"
+	}
+/>
 
 不同的形状可能需要不同的修复方法，修复开放结构最简单的方法是选择开放结构的所有边缘并填充它。点击 Tab 切换到编辑模式。如您所见，左上角有 3 种选择模式：**Vertex select**, **Edge select**, **Face select**.
 
-<ImageContainer>
-	<AntdImage
-		alt="3 selection modes"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/3-selection-modes.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="3 selection modes"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/3-selection-modes.png"
+	}
+/>
 
 单击 **Edge select**，然后选择开放结构周围的边缘。如果边缘是连续的，您可以按住 Alt 并单击其中一个边缘以将它们全部选中。选择所有边缘为封闭路径后，按 F 键填充它。
 
-<ImageContainer>
-	<AntdImage
-		alt="use Edge select mode to fix the model"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/use-edge-select-mode-to-fix-the-models.gif"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="use Edge select mode to fix the model"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/use-edge-select-mode-to-fix-the-models.gif"
+	}
+/>
 
 很简单，对吧？可惜现实世界总是更加艰难。 在构建视觉类作品 3D 场景时，只要不影响视觉效果，一些建模者可能会尝试使用开放结构来表示场景，这可以为他们节省一些时间。但它不适用于 3D 打印。上面展示的半球就是一个很好的例子。在这种情况下，如果您不想获得实心半球，则不能指望通过简单地按 F 键来解决问题。好消息是，Blender 提供了一个 “Solidify” 修改器，它可以对面片应用厚度。对于 3D 打印，您需要考虑外壳是否足够厚和坚固以支撑整个模型。
 
 切换到 Object mode，单击扳手图标，然后单击固化修改器，然后调整厚度直到满足您的要求。 单击下拉菜单，然后单击应用。现在，面片变成了具有厚度的物体。
 
-<ImageContainer>
-	<AntdImage
-		alt="solidify the semi-sphere"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/solidify-the-semi-sphere.gif"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="solidify the semi-sphere"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/solidify-the-semi-sphere.gif"
+	}
+/>
 
 一些开放结构并不容易找到，直到您对模型进行切片并在切片预览中发现一些空心结构才意识到模型可能有问题。如果您在 Blender 中仔细检查模型，您可能会在表面发现一些奇怪的条纹图案。其中一些可能如下所示：
 
-<ImageContainer>
-	<AntdImage
-		alt="stripe patterns"
-		src={
-			"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/stripe-patterns.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="stripe patterns"
+	src={
+		"/images/docs/zh-CN/academy/how-to-do-basic-fixes-to-your-models-using-blender/stripe-patterns.png"
+	}
+/>
 
 这提醒您的模型可能需要修复。
 

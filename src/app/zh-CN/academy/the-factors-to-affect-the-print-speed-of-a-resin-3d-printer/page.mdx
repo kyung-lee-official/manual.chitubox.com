@@ -21,32 +21,26 @@ export const metadata = {
 
 跟 SLA 相比，DLP 和 LCD 有一个同样的优势，那就是打印速度。SLA 的技术原理在于使用激光进行点曝光成型，通过规划激光移动路径实现堆叠打印，首先需要形成“面”后形成“体”；而 DLP 和 LCD 的技术原理在于使用光源进行面曝光成型，通过将模型规划成一层层的切片面进行堆叠打印，可以直接进行堆叠形成“体”。所以 SLA 的线曝光比 DLP 和 LCD 的打印速度慢较多的主要原因在于成型速度上。同样的一个模型 SLA 需要拆解成一条条线路径进行曝光，而 DLP 和 LCD 只需要拆解成一层层面进行曝光；
 
-<ImageContainer footnote={"SLA 打印机结构"}>
-	<AntdImage
-		alt="SLA"
-		src={
-			"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/sla.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote={"SLA 打印机结构"}
+	alt="SLA"
+	src={
+		"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/sla.png"
+	}
+/>
 
-<ImageContainer footnote={"DLP 打印机结构"}>
-	<AntdImage
-		alt="DLP"
-		src={
-			"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/dlp.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote={"DLP 打印机结构"}
+	alt="DLP"
+	src={
+		"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/dlp.png"
+	}
+/>
 
-<ImageContainer footnote={"LCD 打印机结构"}>
-	<AntdImage
-		alt="LCD"
-		src={
-			"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/lcd.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer footnote={"LCD 打印机结构"}
+	alt="LCD"
+	src={
+		"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/lcd.png"
+	}
+/>
 
 ## 打印机本身
 
@@ -68,26 +62,22 @@ export const metadata = {
 
 3D 打印机的速度，还取决于打印材料的类别。由不同单体，预聚物，光引发剂以及各种其他添加剂组合而成的树脂，直接导致材料的不同特性和不同的固化时间。
 
-<ImageContainer>
-	<AntdImage
-		alt="material combination"
-		src={
-			"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/material-combination.gif"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="material combination"
+	src={
+		"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/material-combination.gif"
+	}
+/>
 
 ## 模型
 
 模型本身也影响打印速度。如果模型镂空，并且没有较复杂的细节，打印就会快很多。合理地摆放模型也会影响打印速度。一般来说，与竖放相比，把同一个模型横放，打印同样会快很多，但精度可能会降低。
 
-<ImageContainer>
-	<AntdImage
-		alt="different orientations"
-		src={
-			"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/different-orientations.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="different orientations"
+	src={
+		"/images/docs/zh-CN/academy/the-factors-to-affect-the-print-speed-of-a-resin-3d-printer/different-orientations.png"
+	}
+/>
 
 这些就是影响 3D 打印速度的一些因素。增材制造的过程，影响到打印速度的因素，可能会更复杂，远不止这些。同时，打印速度是一个需要取舍的选择题，一旦打印速度加快，很可能打印质量就会降低。如何权衡各方的利弊，还需要根据情况决定。

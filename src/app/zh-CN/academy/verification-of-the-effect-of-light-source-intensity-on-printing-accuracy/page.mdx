@@ -22,131 +22,107 @@ DLP/MSLA(LCD) 打印机的精度直接受像素尺寸和层厚影响，他们共
 
 了解了光固化 3D 打印机可以生成的最小正方体素，那么现在就来说明 DLP/ MSLA(LCD) 3D 打印机是如何成像的。首先，我们需要知道的是，LCD 屏幕在 XY 方向上，被分成了约 50µm × 50µm 的一个个小方块体素。
 
-<ImageContainer>
-	<AntdImage
-		alt="50 × 50µm pixels"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/50-50µm-pixels.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="50 × 50µm pixels"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/50-50µm-pixels.png"
+	}
+/>
 
 光源在 LCD 屏幕上生成图像，这个一个个正方体素如果是白色的，那么这个位置的光源就会固化液体树脂，形成一个固体正方体素。如果这个正方体素是黑色的，那么这个位置就没有光源透过，树脂不进行固化反应。
 
-<ImageContainer>
-	<AntdImage
-		alt="white/black pixels"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/whiteblack-pixels.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="white/black pixels"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/whiteblack-pixels.png"
+	}
+/>
 
 现在，我们有 4 个 50µm × 50µm × 50µm 的正方体素组成一个模型，在它旁边间隔一定位置，有一个相同的由 4 个 50µm × 50µm × 50µm 的正方体素组成的模型。
 
-<ImageContainer>
-	<AntdImage
-		alt="50µm spacing"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/50µm-spacing.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="50µm spacing"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/50µm-spacing.png"
+	}
+/>
 
-<ImageContainer>
-	<AntdImage
-		alt="100µm spacing"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/100µm-spacing.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="100µm spacing"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/100µm-spacing.png"
+	}
+/>
 
-<ImageContainer>
-	<AntdImage
-		alt="200µm spacing"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/200µm-spacing.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="200µm spacing"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/200µm-spacing.png"
+	}
+/>
 
 他们相隔的距离可以是 50µm，100µm，或者 200µm，甚至更多。但是它们相隔的距离必须是 50µm 的倍数，比如我们就无法使他们间隔 175µm，这是为什么呢？因为如果我们的成像是由纯白或者纯黑的像素组成的，在 LCD 屏幕被划分好的固定最小方格里，要么就曝光，要么就不曝光，没有办法一半曝光一半不曝光。
 
-<ImageContainer>
-	<AntdImage
-		alt="175µm spacing"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/175µm-spacing.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="175µm spacing"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/175µm-spacing.png"
+	}
+/>
 
 那么如果是介于白和黑之前的灰呢，是否可以实现一半曝光一半不曝光？那么曝光的一半是哪一半呢？左半边，右半边，前半边，后半边，上半边，还是下半边呢？
 
 Ember 团队分享过一个研究：一个体素是怎样生成的。他们把像素排成了一排，从深灰（接近纯黑）到纯白，然后用这个光源强度固化树脂。
 
-<ImageContainer>
-	<AntdImage
-		alt="pixels gray value"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/pixels-gray-value.jpg"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="pixels gray value"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/pixels-gray-value.jpg"
+	}
+/>
 
 研究表明，像素灰度低于一定值，也不会发生固化反应，但是从深灰上到某个临界亮度，就开始有半圆形的气泡在上一层生成，随着亮度增加，气泡越来越大，随后高度开始增加的很缓慢，横向发展迅速。这说明，体素的大小是可以通过每个像素的亮度控制的。
 
-<ImageContainer>
-	<AntdImage
-		alt="research results"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/research-results.gif"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="research results"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/research-results.gif"
+	}
+/>
 
 在实际中，一个灰色像素或半体素会向邻近的体素合并。因此，如果从左到右是 2 个白色体素+1 个灰色像素（半体素）+1 个黑色体素，就会靠着左边 2 个体素，生成个半体素。通过控制像素的亮度，同样可以生成 1/4 或者 1/8 甚至各种尺寸的体素。
 
-<ImageContainer>
-	<AntdImage
-		alt="gray pixel"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/gray-pixel.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="gray pixel"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/gray-pixel.png"
+	}
+/>
 
-<ImageContainer>
-	<AntdImage
-		alt="hemivoxel"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/hemivoxel.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="hemivoxel"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/hemivoxel.png"
+	}
+/>
 
 那么这个研究是否真的能运用在实际的打印中？我们再看下面这个实验。在两条分割线之间，从左到右等距地摆放 5 个由 10 × 10 个最小正方体素组成的方块，即 500µm × 500µm（0.5mm × 0.5mm）。从左到右，每个方块的最上方一排像素，光源从纯白到纯黑递减，最下面加一排像素，光源从纯黑到纯白递增。
 
-<ImageContainer>
-	<AntdImage
-		alt="experiment demonstration illustration"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/experiment-demonstration-illustration.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="experiment demonstration illustration"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/experiment-demonstration-illustration.png"
+	}
+/>
 
 从下图的打印结果可以看到，每个方块的最上方一排像素从左到右，因光源变暗，分别缺失的距离约为 0µm，12.5µm，25µm，37.5µm，50µm。说明，完全可以通过控制光源强度，打破最小成像精度的限制，实现更精准的尺寸控制。
 
-<ImageContainer>
-	<AntdImage
-		alt="print results"
-		src={
-			"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/print-results.jpg"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="print results"
+	src={
+		"/images/docs/zh-CN/academy/verification-of-the-effect-of-light-source-intensity-on-printing-accuracy/print-results.jpg"
+	}
+/>
 
 ## CHITUBOX 软件中的抗锯齿相关参数
 

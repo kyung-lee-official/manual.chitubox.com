@@ -24,10 +24,11 @@ Support structures in top-down and bottom-up 3D printing are not the same:
 
 In top-down 3D printing, support structures are similar to FDM. They are needed for producing accurately overhangs and bridges. As there are no peel force/separation force (Click here to know more about peel force/separation force: <Link href="https://www.chitubox.com/en/article/support/howto/chitubox-free/editing/39">How to Eliminate Z-axis Lines Caused by Peel Force/Separation Force?</Link>) during the 3D print process, the part can be oriented in any position. In top-down 3D printing, the most crucial factors to consider is to minimize the amount of support to avoid damaging part surface & reduce post-processing and decrease the total number of layers to reduce printing time.
 
-<ImageContainer alt="Top-down 3D printing and Bottom-up 3D printing"
+<BlogImageContainer
+	alt="Top-down 3D printing and Bottom-up 3D printing"
 	src={
 		"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/top-down-and-bottom-up-3d-printing.gif"
-	} 
+} 
 />
 
 While in bottom-up 3D printing, the situation is much more complicated due to peel force/separation force as the most crucial criterion is to fight with peel force/separation force. There are many factors to affect the peel force/separation force like resin viscosity, lifting speed, radius of newly cured layer, and height between newly cured layer and FEP film. Among them, the cross-sectional area of each layer is related to the support structures. So in bottom-up 3D printing, parts should be oriented in a certain angle to minimize the cross-sectional area of each layer. And the reduction of support structures isn’t a priority.
@@ -120,7 +121,7 @@ As for the “mouse” part, all the suspendings under CHITUBOX slicing preview 
 
 <DocsColumnContainer>
 	<DocsColumn>
-		<ImageContainer
+		<BlogImageContainer
 			alt="suspendings"
 			width={195}
 			src={
@@ -129,7 +130,7 @@ As for the “mouse” part, all the suspendings under CHITUBOX slicing preview 
 		/>
 	</DocsColumn>
 	<DocsColumn>
-		<ImageContainer
+		<BlogImageContainer
 			alt="suspendings"
 			width={300}
 			src={
@@ -138,7 +139,7 @@ As for the “mouse” part, all the suspendings under CHITUBOX slicing preview 
 		/>
 	</DocsColumn>
 	<DocsColumn>
-		<ImageContainer
+		<BlogImageContainer
 			alt="suspendings"
 			width={223}
 			src={
@@ -168,7 +169,7 @@ Net support structures are like the intertwinement of shin flakes which provide 
 
 SLA/DLP/LCD is very often used for applications where appearance or a smooth surface finish is required. In this case, it’s important to design your part to avoid that the forward-facing areas of your print are not in contact with support structures.
 
-<ImageContainer
+<BlogImageContainer
 	alt="add supports to the Spider-Man's back"
 	src={
 		"/images/docs/en-US/academy/a-complete-guide-about-adding-supports-in-sladlplcd-3d-printing/spider-man.gif"
@@ -185,7 +186,7 @@ For a bottom-up stererolithography 3D printer, the object will be stressed unifo
 
 When generating supports, it’s better to bridge supports together instead of placing them individually. If your slicer can't bring it to achievement, just abandon it. Such interconnection among supports in CHITUBOX greatly reduce chances of support failures. This technique will produce stiffer set of base and secondary supports that are less prone to breakage and failures.
 
-<ImageContainer
+<BlogImageContainer
 	figcaption={"Left: Interconnected Supports Right: Individual Supports"}
 	alt="Interconnected Supports and Individual Supports"
 	src={

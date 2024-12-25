@@ -29,40 +29,34 @@ Bottom curling refers to the phenomenon that the edge of the printed model is wa
 
 During the process of resin 3D printing, the light beam irradiates the photosensitive resin to solidify it into the required shape. During the curing process, the photosensitive resin will release heat. If the heat cannot be dissipated in time, too much heat will cause uneven temperature distribution inside the object. At this time, the thermal stress caused by internal deformation constraints will cause the part to warp. For a brief overview, please refer to <Link href="/advanced/a-brief-overview-of-thermal-stress-in-resin-3d-printing">📃 A Brief Overview of Thermal Stress in Resin 3D Printing</Link>.
 
-<ImageContainer>
-	<AntdImage
-		alt="Thermal deformation"
-		src={
-			"/images/docs/en-US/academy/bottom-curling-and-detachment/thermal-deformation.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="Thermal deformation"
+	src={
+		"/images/docs/en-US/academy/bottom-curling-and-detachment/thermal-deformation.png"
+	}
+/>
 
 ### Bottom Fit
 
 The final result of bottom curling is that the bottom of the printed model cannot be well bonded to the build plate. When the printer build plate moves upward, the tension brought by the build plate and the attraction between the FEP film and the model are confronted, which eventually leads to the model that cannot be well bonded to the build plate. Gradually detach from the build plate, and then continue to print on these abnormal bases, which eventually leads to the situation of bottom curling. The bottom fit is mostly related to the build plate, such as the following several situations;
 
-<ImageContainer>
-	<AntdImage
-		alt="Upwarped bottom layers"
-		src={
-			"/images/docs/en-US/academy/bottom-curling-and-detachment/upwarped-bottom-layers.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="Upwarped bottom layers"
+	src={
+		"/images/docs/en-US/academy/bottom-curling-and-detachment/upwarped-bottom-layers.png"
+	}
+/>
 
 #### Impurities on the Build Plate
 
 In order to ensure good adhesion, the contact surface between the model and the build plate should be clean. This requires that there are no oil stains, grease, fingerprints and other impurities on the build plate; if there are some residues of printed parts on the build plate and it is not cleaned and directly put into secondary printing, it will directly cause the bottom of the printing to be uneven and may seriously damage the printing screen;
 
-<ImageContainer>
-	<AntdImage
-		alt="Warp caused by residue"
-		src={
-			"/images/docs/en-US/academy/bottom-curling-and-detachment/warp-caused-by-residue.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="Warp caused by residue"
+	src={
+		"/images/docs/en-US/academy/bottom-curling-and-detachment/warp-caused-by-residue.png"
+	}
+/>
 
 #### Build Plated Not Leveled
 
@@ -86,14 +80,12 @@ Too high printing lift speed can easily lead to bottom curling and bending defor
 
 In addition, another way is to adjust the Rest Time, which can ensure the completion of the polymerization in the printing process, so as to reduce the probability of warping.
 
-<ImageContainer>
-	<AntdImage
-		alt="Motion Parameters"
-		src={
-			"/images/docs/en-US/academy/bottom-curling-and-detachment/motion-params.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="Motion Parameters"
+	src={
+		"/images/docs/en-US/academy/bottom-curling-and-detachment/motion-params.png"
+	}
+/>
 
 ### Thermal Optimization
 
