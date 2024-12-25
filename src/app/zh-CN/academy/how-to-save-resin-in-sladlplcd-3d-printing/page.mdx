@@ -1,7 +1,7 @@
 import { DocsColumnContainer, DocsColumn } from "@/docComponents/docsColumn/DocsColumn";
 
 export const metadata = {
-	title: "How to Save Resin in SLA/DLP/LCD 3D Printing?",
+	title: "节省树脂的技巧汇总",
 	authors: [{ name: "CHITUBOX Team" }],
 	releaseDate: "2022-04-01",
 	description:
@@ -9,64 +9,61 @@ export const metadata = {
 	keywords: ["打印知识"],
 	openGraph: {
 		images: [
-			"\images\docs\zh-CN\academy\how-to-save-resin-in-sladlplcd-3d-printing\cover.png",
+			"/images/docs/zh-CN/academy/how-to-save-resin-in-sladlplcd-3d-printing/cover.png",
 		],
 	},
 };
 
-# How to Save Resin in SLA/DLP/LCD 3D Printing?
+# 节省树脂的技巧汇总
 
-Resins are probably the ideal material you can find for 3D printing when aiming to gain smoother surfaces and delicate details. However, resins are not as affordable like PLA, the average price of standard SLA resin hits around 50 USD/liter. Some special resins like dental resins or ceramic resins might somehow cost even more.
+在 3D 打印工艺中，当您希望获得更光滑的表面和精致的细节时，树脂可能是最理想的材料之一。然而，树脂不像 PLA 材料那样实惠，标准 SLA 树脂的平均价格达到 50 美元/升左右。一些特殊树脂，如牙科树脂或陶瓷树脂，更是价格不菲。
 
-Therefore, besides choosing economic resins, learning to save your resin becomes an indispensable skill and could save you a lot of costs. Here we enumerate 4 tips that you might overlook for you.
+因此，除了选择经济型树脂外，3D 打印从业者必还需要了解一些其他节约树脂的技巧，它可以节省大量成本。在这里，我们列举了您可能会忽略的 4 个小技巧。
 
-## Hollow Your Models
+## 镂空你的模型
 
-In most cases, you don't have to print your model in solid, hollowing your model before sending it to your printer would save significant volumes of resin for you. There are two things to keep in mind when it comes to hollowing.
+在大多数情况下，您不必将模型打印成实体，将原本实体的模型在软件中镂空会为您节省大量树脂。镂空时有两点需要注意：
 
-1. Thinner walls would for sure be more economic, but it also makes your model fragile, and might even increase the risk of print failures for delicate structures.
-1. Hollowed part might form an airtight chamber during printing, the low pressure in the chamber might thereby break your model or result in unexpected issues, you will need to punch holes using CHITUBOX to balance inner pressure and outer pressure so such problems can be avoided.
+1. 较薄的墙壁肯定会更经济，但它也会使您的模型变得脆弱，甚至可能增加精致结构打印失败的风险。
+2. 镂空部分在打印过程中可能会形成一个密闭的腔室，腔室中的低压可能会破坏您的模型或导致意外问题，您需要使用 CHITUBOX 对模型进行打孔以平衡内压和外压，以避免此类问题。
 
-<ImageContainer>
-	<AntdImage
-		alt="hollowed model"
-		src={
-			"\images\docs\zh-CN\academy\how-to-save-resin-in-sladlplcd-3d-printing\hollowed-model.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="hollowed model"
+	src={
+		"/images/docs/zh-CN/academy/how-to-save-resin-in-sladlplcd-3d-printing/hollowed-model.png"
+	}
+/>
+CHITUBOX 提供了一个简单的工具，用于在您的镂空模型表面上打孔，只需点击几下即可完成工作。
 
-## Scale Down Your Model
+## 缩小模型尺寸
 
-Another direct factor of resin consumption is, undisputedly, the size of your model. In CHITUBOX, you can adjust the size of your model from the left side toolbar by inputting the exact proportion, or, drag the handler manually to scale your model. CHITUBOX allows you to either scale your model in 3 dimensions simultaneously or scale along each axis respectively.
+毫无疑问，树脂消耗的另一个直接因素是模型的尺寸。在 CHITUBOX 中，您可以在左侧工具栏中输入精确的比例来调整模型的大小，或者手动拖拽手柄来缩放模型。 CHITUBOX 允许您同时在 3 个维度上等比例缩放模型或分别沿单个轴向进行缩放。
 
-<ImageContainer>
-	<AntdImage
-		alt="scale down the model"
-		src={
-			"\images\docs\zh-CN\academy\how-to-save-resin-in-sladlplcd-3d-printing\scale-down-the-model.gif"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="scale down the model"
+	src={
+		"/images/docs/zh-CN/academy/how-to-save-resin-in-sladlplcd-3d-printing/scale-down-the-model.gif"
+	}
+/>
 
-## Optimize the Structure of Your Model
+## 优化 3D 模型结构
 
-The scenario that wastes your resin the most would be failed prints, especially for large-scale models, a failed print on a high-resolution printer with a large printing size could waste you half bottle of resin, or even more.
+打印失败是导致树脂浪费最大的原因，尤其是对于大型模型，在具有大打印尺寸的高分辨率打印机上打印失败可能会白白浪费你大半瓶的树脂，甚至更多。
 
-To avoid failed prints, you will need to take care of your models' structures and optimize it as possible if you are capable of modifying the model with 3D modeling software. For example, thinner walls give you less model weight, which means less resin consumption, but also means the firmness of your model was sacrificed somehow, insufficient structure strength could be fatal for bottom-up resin printing. The model is hung upside-down on the build plate and bears gravity during printing. Sharper corners increase structure stress, also the possibility of cracks. Tiny holes smaller than 0.5mm would be tricky to handle, you might wanna use TC (Tolerance Compensation) in CHITUBOX to deal with that issue. Ribs and gussets help you enhance some areas of your model strength where outer force will likely be applied to.
+为避免打印失败，如果您能够使用 3D 建模软件修改模型，则需要注意模型的结构并尽可能优化它。例如，较薄的壁可以减轻模型重量，这意味着更少的树脂消耗，但也意味着牺牲模型的坚固性，结构强度不足对上拉式树脂打印的影响可能是致命的。模型倒挂在构建板上并在打印过程中承受重力。更尖锐的拐角会增加结构应力，也会增加裂缝的可能性。小于 0.5mm 的小孔很难处理，您可能需要使用 CHITUBOX 中的公差补偿来处理这个问题。骨架和角撑板结构可帮助您加强某些需要承受外力的位置。
 
-<ImageContainer>
-	<AntdImage
-		alt="ribs and gussets"
-		src={
-			"\images\docs\zh-CN\academy\how-to-save-resin-in-sladlplcd-3d-printing\ribs-and-gussets.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="ribs and gussets"
+	src={
+		"/images/docs/zh-CN/academy/how-to-save-resin-in-sladlplcd-3d-printing/ribs-and-gussets.png"
+	}
+/>
 
-## Remove Unnecessary Supports and Rafts
 
-The amount of auto-added supports and rafts can be distinct if you place your model at different orientations. Find an angle where fewer supports and rafts will generate (make sure the strength of supports is guaranteed first). Pick out redundant supports and delete them manually. Vertical orientation always requires fewer supports.
+## 移除不必要的支撑和筏板
+
+如果您将模型放置在不同的方向，自动添加的支撑和筏板的数量可能会有所不同。找到一个可以产生较少支撑和筏板的角度（确保首先保证支撑的强度）。挑选出多余的支撑并手动删除它们。通常垂直方向摆放模型所需要的支撑较少。
+
 
 <DocsColumnContainer>
 	<DocsColumn>
@@ -75,10 +72,10 @@ The amount of auto-added supports and rafts can be distinct if you place your mo
 				className="flex items-center
 				drop-shadow-lg"
 			>
-				<AntdImage
+				<BlogImageContainer
 					alt="more auto-supports"
 					src={
-						"\images\docs\zh-CN\academy\how-to-save-resin-in-sladlplcd-3d-printing\more-auto-supports.png"
+						"/images/docs/zh-CN/academy/how-to-save-resin-in-sladlplcd-3d-printing/more-auto-supports.png"
 					}
 				/>
 			</div>
@@ -90,10 +87,10 @@ The amount of auto-added supports and rafts can be distinct if you place your mo
 				className="flex items-center
 				drop-shadow-lg"
 			>
-				<AntdImage
+				<BlogImageContainer
 					alt="less auto-supports"
 					src={
-						"\images\docs\zh-CN\academy\how-to-save-resin-in-sladlplcd-3d-printing\less-auto-supports.png"
+						"/images/docs/zh-CN/academy/how-to-save-resin-in-sladlplcd-3d-printing/less-auto-supports.png"
 					}
 				/>
 			</div>
@@ -101,18 +98,16 @@ The amount of auto-added supports and rafts can be distinct if you place your mo
 	</DocsColumn>
 </DocsColumnContainer>
 
-Under the premise of structural stability, fewer supports bring you smoother print surfaces and reduce post-processing workload.
+在结构稳定的前提下，更少的支撑为可以带来更平滑的打印表面，减少后处理工作量。
 
-The 4 tips above help cut down resin consumption. CHITUBOX calculates resin consumption after slicing models by summing up each generated voxel (pixel area × layer height), simple but should be accurate enough and less error-prone in most circumstances. There are also 3rd-party online resin calculation tools, you can upload your model if the site is trusted.
+上述 4 个技巧有助于减少树脂消耗。 CHITUBOX 通过对每个生成的体素（像素面积 × 层高）求和来计算切片模型后的树脂消耗量，算法简单，在大多数情况下应该足够准确且不易出错。此外也有第三方在线树脂计算工具，如果站点是可信任的，您也可以上传您的模型来预估树脂消耗量。
 
-<ImageContainer>
-	<AntdImage
-		alt="resin consumption"
-		src={
-			"\images\docs\zh-CN\academy\how-to-save-resin-in-sladlplcd-3d-printing\resin-consumption.png"
-		}
-	/>
-</ImageContainer>
+<BlogImageContainer
+	alt="resin consumption"
+	src={
+		"/images/docs/zh-CN/academy/how-to-save-resin-in-sladlplcd-3d-printing/resin-consumption.png"
+	}
+/>
 
 <ModelSource
 	items={[
