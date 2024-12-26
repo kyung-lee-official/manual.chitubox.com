@@ -69,7 +69,7 @@ const Subtitle = (props: { fieldName: string; readMore: string }) => {
 			})}
 			{isTrimmed && (
 				<Link
-					href={trimmedCategory[0].url}
+					href={field.homeUrl}
 					className="flex justify-end
 					hover:text-neutral-800
 					dark:hover:text-neutral-300

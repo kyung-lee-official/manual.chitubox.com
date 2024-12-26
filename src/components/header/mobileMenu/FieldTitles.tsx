@@ -137,6 +137,7 @@ export const FieldTitles = (props: { productDocs: string; learn: string }) => {
 			{dropdowns.map((dropdown, i) => {
 				return (
 					<Dropdown
+						key={i}
 						dropdown={dropdown}
 						isLastOne={i < dropdowns.length - 1}
 					/>
