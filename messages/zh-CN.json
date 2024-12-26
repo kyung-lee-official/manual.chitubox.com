@@ -22,7 +22,7 @@
 	},
 	"pages": {
 		"academy": {
-			"title": "学习中心",
+			"title": "打印学院",
 			"search-placeholder": "搜索学习中心"
 		}
 	},
@@ -132,6 +132,7 @@
 			"chitubox-baisc": "CHITUBOX Basic",
 			"chitubox-pro": "CHITUBOX Pro",
 			"chitu-manager": "ChituManager",
+			"print-academy": "打印学院",
 			"chitubox-printing-test": "CHITUBOX 打印测试",
 			"faq": "常见问题",
 			"read-more": "阅读更多"

@@ -76,6 +76,10 @@ const Docsboard = () => {
 					title={t("faq")}
 				/>
 				<DocsCard
+					href={`/${locale}/academy`}
+					title={t("print-academy")}
+				/>
+				<DocsCard
 					href={`/${locale}/chitubox-printing-test/latest/overview-of-the-standard-model`}
 					title={t("chitubox-printing-test")}
 				/>
