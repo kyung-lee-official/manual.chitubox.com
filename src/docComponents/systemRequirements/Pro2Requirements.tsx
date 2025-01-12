@@ -128,48 +128,51 @@ const enItems = [
 			</Label>
 		),
 		children: (
-			// <ResponsiveTable>
-			// 	<thead>
-			// 		<tr>
-			// 			<th>Specification</th>
-			// 			<th>Minimum</th>
-			// 		</tr>
-			// 	</thead>
-			// 	<tbody>
-			// 		<tr>
-			// 			<td>CPU</td>
-			// 			<td>Intel® Core™ i5 6600K or AMD Ryzen™ 5 1600</td>
-			// 		</tr>
-			// 		<tr>
-			// 			<td>OS</td>
-			// 			<td>Ubuntu 20.04 LTS</td>
-			// 		</tr>
-			// 		<tr>
-			// 			<td>RAM</td>
-			// 			<td>4GB</td>
-			// 		</tr>
-			// 		<tr>
-			// 			<td>Hard Drive</td>
-			// 			<td>At least 10GB of Storage Space</td>
-			// 		</tr>
-			// 		<tr>
-			// 			<td>GPU</td>
-			// 			<td>GPU RAM: ≥1GB</td>
-			// 		</tr>
-			// 		<tr>
-			// 			<td>Display Resolution </td>
-			// 			<td>≥ 1280x960</td>
-			// 		</tr>
-			// 	</tbody>
-			// </ResponsiveTable>
-			<div
-				className="flex justify-center items-center p-4 my-8
-				text-neutral-500 text-2xl
-				border border-neutral-200
-				rounded-md"
-			>
-				Ubuntu version is coming soon. Stay tuned...
-			</div>
+			<ResponsiveTable>
+				<thead>
+					<tr>
+						<th>Specification</th>
+						<th>Minimum</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>CPU</td>
+						<td>Intel® Core™ i5 6600K or AMD Ryzen™ 5 1600</td>
+					</tr>
+					<tr>
+						<td>OS</td>
+						<td>
+							Ubuntu 20.04 LTS <br /> Ubuntu 22.04 LTS <br />
+							Ubuntu 24.04 LTS
+						</td>
+					</tr>
+					<tr>
+						<td>RAM</td>
+						<td>4GB</td>
+					</tr>
+					<tr>
+						<td>Hard Drive</td>
+						<td>At least 10GB of Storage Space</td>
+					</tr>
+					<tr>
+						<td>GPU</td>
+						<td>GPU RAM: ≥1GB</td>
+					</tr>
+					<tr>
+						<td>Display Resolution </td>
+						<td>≥ 1280x960</td>
+					</tr>
+				</tbody>
+			</ResponsiveTable>
+			// <div
+			// 	className="flex justify-center items-center p-4 my-8
+			// 	text-neutral-500 text-2xl
+			// 	border border-neutral-200
+			// 	rounded-md"
+			// >
+			// 	Ubuntu version is coming soon. Stay tuned...
+			// </div>
 		),
 	},
 ];
@@ -290,48 +293,48 @@ const zhItems = [
 			</Label>
 		),
 		children: (
-			// <ResponsiveTable>
-			// 	<thead>
-			// 		<tr>
-			// 			<th>规格</th>
-			// 			<th>最低配置</th>
-			// 		</tr>
-			// 	</thead>
-			// 	<tbody>
-			// 		<tr>
-			// 			<td>处理器</td>
-			// 			<td>Intel® Core™ i5 6600K 或 AMD Ryzen™ 5 1600</td>
-			// 		</tr>
-			// 		<tr>
-			// 			<td>操作系统</td>
-			// 			<td>Ubuntu 20.04 LTS</td>
-			// 		</tr>
-			// 		<tr>
-			// 			<td>内存</td>
-			// 			<td>4GB</td>
-			// 		</tr>
-			// 		<tr>
-			// 			<td>硬盘</td>
-			// 			<td>不低于 10GB 的硬盘存储空间</td>
-			// 		</tr>
-			// 		<tr>
-			// 			<td>显卡</td>
-			// 			<td>GPU 显存: ≥1GB</td>
-			// 		</tr>
-			// 		<tr>
-			// 			<td>显示器分辨率</td>
-			// 			<td>≥ 1280x960</td>
-			// 		</tr>
-			// 	</tbody>
-			// </ResponsiveTable>
-			<div
-				className="flex justify-center items-center p-4 my-8
-				text-neutral-500 text-2xl
-				border border-neutral-200
-				rounded-md"
-			>
-				Ubuntu 版本正在开发中，敬请期待...
-			</div>
+			<ResponsiveTable>
+				<thead>
+					<tr>
+						<th>规格</th>
+						<th>最低配置</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>处理器</td>
+						<td>Intel® Core™ i5 6600K 或 AMD Ryzen™ 5 1600</td>
+					</tr>
+					<tr>
+						<td>操作系统</td>
+						<td>Ubuntu 20.04 LTS <br/> Ubuntu 22.04 LTS <br/> Ubuntu 24.04 LTS</td>
+					</tr>
+					<tr>
+						<td>内存</td>
+						<td>4GB</td>
+					</tr>
+					<tr>
+						<td>硬盘</td>
+						<td>不低于 10GB 的硬盘存储空间</td>
+					</tr>
+					<tr>
+						<td>显卡</td>
+						<td>GPU 显存: ≥1GB</td>
+					</tr>
+					<tr>
+						<td>显示器分辨率</td>
+						<td>≥ 1280x960</td>
+					</tr>
+				</tbody>
+			</ResponsiveTable>
+			// <div
+			// 	className="flex justify-center items-center p-4 my-8
+			// 	text-neutral-500 text-2xl
+			// 	border border-neutral-200
+			// 	rounded-md"
+			// >
+			// 	Ubuntu 版本正在开发中，敬请期待...
+			// </div>
 		),
 	},
 ];
