@@ -53,7 +53,7 @@ const enItems = [
 						</tr>
 						<tr>
 							<td>Display Resolution </td>
-							<td>≥ 1280x960</td>
+							<td>1920 × 1080</td>
 						</tr>
 					</tbody>
 				</ResponsiveTable>
@@ -149,7 +149,7 @@ const enItems = [
 					</tr>
 					<tr>
 						<td>RAM</td>
-						<td>4GB</td>
+						<td>16GB</td>
 					</tr>
 					<tr>
 						<td>Hard Drive</td>
@@ -160,8 +160,8 @@ const enItems = [
 						<td>GPU RAM: ≥1GB</td>
 					</tr>
 					<tr>
-						<td>Display Resolution </td>
-						<td>≥ 1280x960</td>
+						<td>Display Resolution</td>
+						<td>1920 × 1080</td>
 					</tr>
 				</tbody>
 			</ResponsiveTable>
@@ -218,7 +218,7 @@ const zhItems = [
 						</tr>
 						<tr>
 							<td>显示器分辨率</td>
-							<td>≥ 1280x960</td>
+							<td>1920 × 1080</td>
 						</tr>
 					</tbody>
 				</ResponsiveTable>
@@ -311,7 +311,7 @@ const zhItems = [
 					</tr>
 					<tr>
 						<td>内存</td>
-						<td>4GB</td>
+						<td>16GB</td>
 					</tr>
 					<tr>
 						<td>硬盘</td>
@@ -323,7 +323,7 @@ const zhItems = [
 					</tr>
 					<tr>
 						<td>显示器分辨率</td>
-						<td>≥ 1280x960</td>
+						<td>1920 × 1080</td>
 					</tr>
 				</tbody>
 			</ResponsiveTable>
