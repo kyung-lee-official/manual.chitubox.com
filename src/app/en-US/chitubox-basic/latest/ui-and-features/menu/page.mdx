@@ -107,10 +107,46 @@ You can directly access the log folder if the program crashes and cannot be open
 
 * Ubuntu: `~/.local/share/chitubox2_0/Log`
 
-<Admonition type="note">
-	The log of macOS can't be located for now as the its location is dynamic.
-</Admonition>
+{/*
 
+* Mac:
+Open Terminal from Finder. In the Terminal window, type the command "echo $TMPDIR" and press Enter. This will generate the path to the temporary directory where your logs are stored.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/en-maclog-001.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/en-maclog-002.png"
+	}
+/>
+
+Open Finder, then go to the Macintosh HD disk. Press Shift + Command + G to open the "Go to Folder" dialog.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/en-maclog-003.png"
+	}
+/>
+
+Paste the log path you copied from the Terminal into the dialog box, then press Enter. This will open the temporary directory containing your app's log files.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/en-maclog-004.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/en-maclog-005.png"
+	}
+/>
+
+*/}
 ### Open Cache Path
 
 Access the cache folder.
@@ -118,6 +154,10 @@ Access the cache folder.
 * Windows: `C:\Users\{user-name}\AppData\Local\chitubox2 0\Cache`
 
 * Ubuntu: `~/.local/share/chitubox2_0/Log/chitubox2 0/Cache`
+
+<Admonition type="note">
+	The cache path of macOS can't be located for now as the its location is dynamic.
+</Admonition>
 
 ### Open Config Path
 

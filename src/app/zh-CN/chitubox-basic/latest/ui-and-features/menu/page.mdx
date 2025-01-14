@@ -111,13 +111,46 @@ export const metadata = {
 
 * Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Log`
 
-* macOS: `Macintosh HD/Users/{user-name}/Library/Application Support/chitubox2_0/Log`
-
 * Ubuntu: `~/.local/share/chitubox2_0/Log`
 
-<Admonition type="note">
-	macOS 的路径是动态生成，因此目前我们暂时无法准确定位 macOS 生成的日志路径及缓存路径。
-</Admonition>
+{/*
+* Mac:
+在访达里打开终端，通过命令行终端输入 “ echo $TMPDIR ”，即可生成的存放日志的临时目录路径。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/2.x.x/zh-maclog-001.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/2.x.x/zh-maclog-002.png"
+	}
+/>
+
+再打开访达窗口，到电脑磁盘路径下（Macintosh HD），用快捷键 “ shift+command+G ”，打开跳转路径的窗口。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/2.x.x/zh-maclog-003.png"
+	}
+/>
+
+把命令行终端里面生成的log路径粘贴进跳转路径的窗口，即可打开存放日志的临时目录。
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/2.x.x/zh-maclog-004.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/zh-CN/chitubox-basic/2.x.x/zh-maclog-005.png"
+	}
+/>
+*/}
 
 ### 打开缓存路径
 
@@ -126,6 +159,10 @@ export const metadata = {
 * Windows: `C:\Users\{user-name}\AppData\Local\chitubox2 0\Cache`
 
 * Ubuntu: `~/.local/share/chitubox2_0/Log/chitubox2 0/Cache`
+
+<Admonition type="note">
+	macOS 的路径是动态生成，因此目前我们暂时无法准确定位 macOS 生成的缓存路径。
+</Admonition>
 
 ### 打开配置文件路径
 
