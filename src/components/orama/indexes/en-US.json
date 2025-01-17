@@ -1380,7 +1380,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Introduction",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/introduction",
 		"level": 1,
@@ -1388,7 +1388,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Main Features",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/introduction#main-features",
 		"level": 2,
@@ -1396,7 +1396,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Installation",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/installation",
 		"level": 1,
@@ -1404,7 +1404,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "System Requirements",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/installation#system-requirements",
 		"level": 2,
@@ -1412,7 +1412,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Required Environments",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/installation#system-requirements",
 		"level": 3,
@@ -1420,7 +1420,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Windows",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/installation#windows",
 		"level": 2,
@@ -1428,7 +1428,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Account and License Key",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/account-and-license",
 		"level": 1,
@@ -1436,7 +1436,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Account Registration",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/account-and-license#account-registration",
 		"level": 2,
@@ -1444,7 +1444,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "License Key",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/account-and-license#license-key",
 		"level": 2,
@@ -1452,7 +1452,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Activate and Bind License Keys",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/account-and-license#activate-and-bind-license-keys",
 		"level": 3,
@@ -1460,7 +1460,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Unbind License Keys",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/account-and-license#unbind-license-keys",
 		"level": 2,
@@ -1468,7 +1468,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Replace License Key",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/account-and-license#replace-license-key",
 		"level": 2,
@@ -1476,7 +1476,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Quick Start",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/quick-start",
 		"level": 1,
@@ -1484,7 +1484,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add Machine",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/quick-start#add-machine",
 		"level": 2,
@@ -1492,7 +1492,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Load Files",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/quick-start#load-files",
 		"level": 2,
@@ -1500,7 +1500,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add Supports",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/quick-start#add-supports",
 		"level": 2,
@@ -1508,7 +1508,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/quick-start#slice",
 		"level": 2,
@@ -1516,7 +1516,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Export Printable Files",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/quick-start#export-printable-files",
 		"level": 2,
@@ -1524,7 +1524,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Printer Management",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management",
 		"level": 1,
@@ -1532,14 +1532,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add and Delete Printers",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/add-and-delete-printers",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add Printers",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/add-and-delete-printers#add-printers",
 		"level": 3,
@@ -1547,7 +1547,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Delete Printers",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/add-and-delete-printers#delete-printers",
 		"level": 3,
@@ -1555,7 +1555,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Printer Configuration",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration",
 		"level": 1,
@@ -1563,14 +1563,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Machine",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#machine",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Name",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#name",
 		"level": 3,
@@ -1578,7 +1578,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Machine Type",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#machine-type",
 		"level": 3,
@@ -1586,7 +1586,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Mirror",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#mirror",
 		"level": 3,
@@ -1594,7 +1594,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Resolution and Size",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#resolution-and-size",
 		"level": 3,
@@ -1602,7 +1602,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Build Area Offset",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#build-area-offset",
 		"level": 3,
@@ -1610,7 +1610,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Resin",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#resin",
 		"level": 2,
@@ -1618,7 +1618,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Print",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#print",
 		"level": 2,
@@ -1626,7 +1626,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Parameter Description",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#parameter-description",
 		"level": 3,
@@ -1634,7 +1634,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Two-Stage Motion Control (TSMC)",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#two-stage-motion-control-tsmc",
 		"level": 3,
@@ -1642,14 +1642,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Advanced",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#advanced",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Light PWM",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#light-pwm",
 		"level": 3,
@@ -1657,7 +1657,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Picture Grayscale",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#picture-grayscale",
 		"level": 3,
@@ -1665,7 +1665,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Anti-aliasing",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#anti-aliasing",
 		"level": 3,
@@ -1673,7 +1673,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Gray Scale Level",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#gray-scale-level",
 		"level": 4,
@@ -1681,7 +1681,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Anti-aliasing Level",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#anti-aliasing-level",
 		"level": 5,
@@ -1689,7 +1689,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Image Blurring",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#image-blurring",
 		"level": 5,
@@ -1697,7 +1697,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Anti-aliasing Level (legacy)",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#anti-aliasing-level-legacy",
 		"level": 4,
@@ -1705,7 +1705,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Shrinkage Compensation",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#shrinkage-compensation",
 		"level": 3,
@@ -1713,7 +1713,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Tolerance Compensation",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#tolerance-compensation",
 		"level": 3,
@@ -1721,7 +1721,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Print Time Compensation",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#print-time-compensation",
 		"level": 3,
@@ -1729,7 +1729,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Mask",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#mask",
 		"level": 3,
@@ -1737,7 +1737,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Mask Generator",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#mask-generator",
 		"level": 4,
@@ -1745,7 +1745,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Hub-and-Spoke",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#hub-and-spoke",
 		"level": 5,
@@ -1753,7 +1753,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Matrix Mode",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#matrix-mode",
 		"level": 5,
@@ -1761,7 +1761,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Gray scale unit",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/printer-management/printer-configuration#gray-scale-unit",
 		"level": 4,
@@ -1769,14 +1769,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "File",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file",
 		"level": 1
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Project File",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#project-file",
 		"level": 2,
@@ -1784,7 +1784,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "New Project",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#new-project",
 		"level": 3,
@@ -1792,7 +1792,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Open Project",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#open-project",
 		"level": 3,
@@ -1800,7 +1800,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Save Project",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#save-project",
 		"level": 3,
@@ -1808,14 +1808,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "3D Mesh File",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#3d-mesh-file",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Supported 3D Mesh File Format",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#supported-3d-mesh-file-format",
 		"level": 3,
@@ -1823,7 +1823,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Import 3D Mesh File",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#import-3d-mesh-file",
 		"level": 3,
@@ -1831,7 +1831,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Export 3D Mesh File",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#export-3d-mesh-file",
 		"level": 3,
@@ -1839,7 +1839,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Open Recent Files",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#open-recent-files",
 		"level": 3,
@@ -1847,14 +1847,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice Files",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#slice-files",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Supported Slice File Formats",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#supported-slice-file-formats",
 		"level": 3,
@@ -1862,7 +1862,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Import and Export Slice Files",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#import-and-export-slice-files",
 		"level": 3,
@@ -1870,7 +1870,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice File Thumbnail View",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#slice-file-thumbnail-view",
 		"level": 3,
@@ -1878,7 +1878,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Configuration File",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#configuration-file",
 		"level": 2,
@@ -1886,14 +1886,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "File Naming Settings",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#file-naming-settings",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Model File",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#model-file",
 		"level": 3,
@@ -1901,7 +1901,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Project File",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#project-file-1",
 		"level": 3,
@@ -1909,7 +1909,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice File",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#slice-file",
 		"level": 3,
@@ -1917,14 +1917,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Name Replacement",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#name-replacement",
 		"level": 3
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Duplicate Name Replacement",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#duplicate-name-replacement",
 		"level": 4,
@@ -1932,7 +1932,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Character Replacement",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#character-replacement",
 		"level": 4,
@@ -1940,7 +1940,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Custom Character Replacement",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file#custom-character-replacement",
 		"level": 4,
@@ -1948,7 +1948,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Model Processing",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing",
 		"level": 1,
@@ -1956,7 +1956,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Select",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#select",
 		"level": 2,
@@ -1964,14 +1964,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Transform",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#transform",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Move",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#move",
 		"level": 3,
@@ -1979,7 +1979,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Rotate",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#rotate",
 		"level": 3,
@@ -1987,7 +1987,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Scale",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#scale",
 		"level": 3,
@@ -1995,7 +1995,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Mirror",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#mirror",
 		"level": 2,
@@ -2003,7 +2003,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Copy",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#copy",
 		"level": 2,
@@ -2011,7 +2011,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Split Model",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#split-model",
 		"level": 2,
@@ -2019,7 +2019,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Auto Layout",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#auto-layout",
 		"level": 2,
@@ -2027,7 +2027,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add Tag",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#add-tag",
 		"level": 2,
@@ -2035,7 +2035,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Boolean Operation",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#boolean-operation",
 		"level": 2,
@@ -2043,7 +2043,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Hollow",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#hollow",
 		"level": 2,
@@ -2051,14 +2051,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Infill Type",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#infill-type",
 		"level": 3
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Scaffold",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#scaffold",
 		"level": 4,
@@ -2066,7 +2066,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Hive",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#hive",
 		"level": 4,
@@ -2074,7 +2074,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Grid",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#grid",
 		"level": 4,
@@ -2082,7 +2082,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Hole",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/model-processing#hole",
 		"level": 2,
@@ -2090,14 +2090,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Analyze/Measure",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/analyze-and-measure",
 		"level": 1
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Display Size",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/analyze-and-measure#display-size",
 		"level": 2,
@@ -2105,7 +2105,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Two Point Distance",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/analyze-and-measure#point-to-plane-distance",
 		"level": 2,
@@ -2113,7 +2113,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Point to Plane Distance",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/analyze-and-measure#point-to-plane-distance",
 		"level": 2,
@@ -2121,7 +2121,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Parallel Plane Distance",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/analyze-and-measure#parallel-plane-distance",
 		"level": 2,
@@ -2129,7 +2129,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support",
 		"level": 1,
@@ -2137,21 +2137,21 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add, Edit and Delete",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete",
 		"level": 1
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add Supports",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#add-supports",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Auto Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#auto-support",
 		"level": 3,
@@ -2159,7 +2159,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Manual Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#manual-support",
 		"level": 3,
@@ -2167,14 +2167,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support Types",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#support-types",
 		"level": 4
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Adaptive Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#adaptive-support",
 		"level": 5,
@@ -2182,7 +2182,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Vertical Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#vertical-support",
 		"level": 5,
@@ -2190,7 +2190,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Upright Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#upright-support",
 		"level": 5,
@@ -2198,7 +2198,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Branch Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#branch-support",
 		"level": 5,
@@ -2206,7 +2206,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Joint Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#joint-support",
 		"level": 5,
@@ -2214,7 +2214,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Small Pillar",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#small-pillar",
 		"level": 5,
@@ -2222,7 +2222,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Forked Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#forked-support",
 		"level": 5,
@@ -2230,7 +2230,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Tree Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#tree-support",
 		"level": 5,
@@ -2238,7 +2238,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Contour Supporte",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#contour-support",
 		"level": 5,
@@ -2246,7 +2246,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Face Supporte",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#face-support",
 		"level": 5,
@@ -2254,7 +2254,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Boundary Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#boundary-support",
 		"level": 5,
@@ -2262,7 +2262,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Symmetrical Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#symmetrical-support",
 		"level": 5,
@@ -2270,7 +2270,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Merge Supports",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#merge-supports",
 		"level": 5,
@@ -2278,7 +2278,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add Supports to Overhangs",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#add-supports-to-overhangs",
 		"level": 3,
@@ -2286,7 +2286,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Edit Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#edit-support",
 		"level": 2,
@@ -2294,7 +2294,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Delete Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/add-edit-delete#delete-support",
 		"level": 2,
@@ -2302,21 +2302,21 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support Configuration",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration",
 		"level": 1
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Raft Shape",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#raft-settings",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Model Lift Height",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#model-lift-height",
 		"level": 3,
@@ -2324,14 +2324,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Raft Shape",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#raft-shape",
 		"level": 3
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Plate",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#plate",
 		"level": 4,
@@ -2339,7 +2339,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Cross Grid",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#cross-grid",
 		"level": 4,
@@ -2347,7 +2347,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Hexagonal Grid",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#hexagonal-grid",
 		"level": 4,
@@ -2355,7 +2355,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Linear Connection",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#linear-connection",
 		"level": 4,
@@ -2363,14 +2363,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support Settings",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#support-settings",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support Profile",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#support-profile",
 		"level": 3,
@@ -2378,14 +2378,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Basic Settings",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#basic-settings",
 		"level": 3
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Top Segment Upper Diameter",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#top-segment-upper-diameter",
 		"level": 4,
@@ -2393,7 +2393,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Angle",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#angle",
 		"level": 4,
@@ -2401,7 +2401,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Contact Point Spacing",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#contact-point-spacing",
 		"level": 4,
@@ -2409,7 +2409,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Main Pillar Spacing",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#main-pillar-spacing",
 		"level": 4,
@@ -2417,7 +2417,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Advanced Settingse",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#advanced-settings",
 		"level": 3,
@@ -2425,7 +2425,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Top",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#top",
 		"level": 4,
@@ -2433,7 +2433,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Middle",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#middle",
 		"level": 4,
@@ -2441,7 +2441,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Bottom",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#bottom",
 		"level": 4,
@@ -2449,7 +2449,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Raft",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#raft",
 		"level": 4,
@@ -2457,7 +2457,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "More Support Settings",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#more-support-settings",
 		"level": 4,
@@ -2465,7 +2465,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Enhanced Automatic Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#enhanced-automatic-support",
 		"level": 4,
@@ -2473,14 +2473,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Auto Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#auto-support",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Auto Support Mode",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#auto-support-mode",
 		"level": 3,
@@ -2488,7 +2488,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Auto Support Type",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/support-configuration#auto-support-type",
 		"level": 3,
@@ -2496,7 +2496,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Magic Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/magic-support",
 		"level": 1,
@@ -2504,7 +2504,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Manage Magic Support Profiles",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/magic-support#manage-magic-support-profiles",
 		"level": 2,
@@ -2512,14 +2512,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Workflow Management",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/magic-support#workflow-management",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add/Delete a Step",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/magic-support#adddelete-a-step",
 		"level": 3,
@@ -2527,7 +2527,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Step Settings",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/magic-support#step-settings",
 		"level": 3,
@@ -2535,7 +2535,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Merge Supports",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/support/magic-support#merge-supports",
 		"level": 3,
@@ -2543,14 +2543,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Risk Detection",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/risk-detection",
 		"level": 1
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Cavity Detection",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/risk-detection#cavity-detection",
 		"level": 2,
@@ -2558,7 +2558,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Collision Detection",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/risk-detection#collision-detection",
 		"level": 2,
@@ -2566,7 +2566,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Overhang Detection",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/risk-detection#overhang-detection",
 		"level": 2,
@@ -2574,7 +2574,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Island Detection",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/risk-detection#island-detection",
 		"level": 2,
@@ -2582,7 +2582,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Check Islands",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/risk-detection#check-islands",
 		"level": 2,
@@ -2590,7 +2590,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Delete Islands",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/risk-detection#delete-islands",
 		"level": 2,
@@ -2598,7 +2598,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice",
 		"level": 1,
@@ -2606,14 +2606,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice Mode",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-mode",
 		"level": 1
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Single Parameter/Multi-parameter Slice",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-mode#single-parametermulti-parameter-slice",
 		"level": 2,
@@ -2621,7 +2621,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Single Parameter Slice",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-mode#single-parameter-slice",
 		"level": 3,
@@ -2629,7 +2629,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Multi-parameter Slice",
 		"path": "m",
 		"level": 3,
@@ -2637,7 +2637,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Model",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-mode#model",
 		"level": 4,
@@ -2645,7 +2645,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Height",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-mode#height",
 		"level": 4,
@@ -2653,7 +2653,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Cross-sectional Area",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-mode#cross-sectional-area",
 		"level": 4,
@@ -2661,7 +2661,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice Preview",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview",
 		"level": 1,
@@ -2669,14 +2669,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Information Preview",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#information-preview",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Basic Information Preview",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#basic-information-preview",
 		"level": 3,
@@ -2684,7 +2684,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Print Parameter Preview",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#print-parameter-preview",
 		"level": 3,
@@ -2692,14 +2692,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice Editor",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#slice-editor",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice Parameter Editor",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#slice-parameter-editor",
 		"level": 3,
@@ -2707,14 +2707,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Island Detection",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#island-detection",
 		"level": 3
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Detect Islands",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#detect-islands",
 		"level": 4,
@@ -2722,7 +2722,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Edit Pixels",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#edit-pixels",
 		"level": 3,
@@ -2730,7 +2730,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add Pixels",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#add-pixels",
 		"level": 4,
@@ -2738,7 +2738,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Delete Pixels",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#delete-pixels",
 		"level": 4,
@@ -2746,7 +2746,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Save Slice",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#save-slice",
 		"level": 2,
@@ -2754,7 +2754,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Network Sending",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/slice/slice-preview#network-sending",
 		"level": 2,
@@ -2762,7 +2762,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "File",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/chitu-action",
 		"level": 1,
@@ -2770,7 +2770,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "ChituActione",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/chitu-action",
 		"level": 1,
@@ -2778,14 +2778,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Prepare",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/chitu-action#prepare",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Scale",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/chitu-action#scale",
 		"level": 3,
@@ -2793,7 +2793,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Orient",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/chitu-action#orient",
 		"level": 3,
@@ -2801,7 +2801,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/chitu-action#support",
 		"level": 2,
@@ -2809,7 +2809,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Layout",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/chitu-action#layout",
 		"level": 2,
@@ -2817,7 +2817,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Export/Save",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/chitu-action#exportsave",
 		"level": 2,
@@ -2825,7 +2825,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Standard Parts",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/standard-library",
 		"level": 1,
@@ -2833,7 +2833,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "User Interface",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface",
 		"level": 1,
@@ -2841,7 +2841,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Main Menu",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu",
 		"level": 1,
@@ -2849,7 +2849,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "New Project",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#new-project",
 		"level": 2,
@@ -2857,7 +2857,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Open Project",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#open-project",
 		"level": 2,
@@ -2865,7 +2865,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Save Project",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#save-project",
 		"level": 2,
@@ -2873,7 +2873,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Open",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file",
 		"level": 2,
@@ -2881,7 +2881,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Export Model",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#export-model",
 		"level": 2,
@@ -2889,7 +2889,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Recently Opened",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#recently-opened",
 		"level": 2,
@@ -2897,7 +2897,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Account",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#account",
 		"level": 2,
@@ -2905,7 +2905,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Community",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#community",
 		"level": 2,
@@ -2913,7 +2913,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Feedback",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#feedback",
 		"level": 2,
@@ -2921,7 +2921,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Language",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#language",
 		"level": 2,
@@ -2929,14 +2929,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Help",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#help",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Check for Updates",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file",
 		"level": 3,
@@ -2944,7 +2944,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Update Log",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#update-log",
 		"level": 3,
@@ -2952,7 +2952,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Factory Settings",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#factory-settings",
 		"level": 3,
@@ -2960,7 +2960,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Export Configuration",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#export-configuration",
 		"level": 3,
@@ -2968,7 +2968,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Import Configuration",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#import-configuration",
 		"level": 3,
@@ -2976,7 +2976,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "About CHITUBOX",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#about-chitubox",
 		"level": 3,
@@ -2984,7 +2984,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Quality Improvement",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#quality-improvement",
 		"level": 3,
@@ -2992,7 +2992,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Open Log Path",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#open-log-path",
 		"level": 3,
@@ -3000,7 +3000,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "User Manual",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#user-manual",
 		"level": 3,
@@ -3008,7 +3008,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Plugins",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#plugins",
 		"level": 3,
@@ -3016,7 +3016,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Correct Translation",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#correct-translation",
 		"level": 3,
@@ -3024,7 +3024,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Shortcut",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#shortcut",
 		"level": 2,
@@ -3032,7 +3032,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Settings",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#settings",
 		"level": 2,
@@ -3040,14 +3040,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Appearance",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#appearance",
 		"level": 3
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Theme",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#theme",
 		"level": 4,
@@ -3055,7 +3055,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "UI Display Scale",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#ui-display-scale",
 		"level": 4,
@@ -3063,7 +3063,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Model Projection",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#model-projection",
 		"level": 4,
@@ -3071,14 +3071,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "File",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#file",
 		"level": 3
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice File Thumbnail",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#slice-file-thumbnail",
 		"level": 4,
@@ -3086,7 +3086,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Default View",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#default-view",
 		"level": 4,
@@ -3094,7 +3094,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Default Save Directory",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#default-save-directory",
 		"level": 4,
@@ -3102,7 +3102,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Use same directory for saving and opening",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#use-same-directory-for-saving-and-opening",
 		"level": 4,
@@ -3110,7 +3110,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Model Naming",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#model-naming",
 		"level": 5,
@@ -3118,7 +3118,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Project File Rename",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#project-file-rename",
 		"level": 4,
@@ -3126,7 +3126,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice File Naming",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#character-replacement",
 		"level": 4,
@@ -3134,7 +3134,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Duplicate Name Replacement",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#duplicate-name-replacement",
 		"level": 4,
@@ -3142,7 +3142,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Character Replacement",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/file",
 		"level": 4,
@@ -3150,7 +3150,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Custom Character Replacement",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#custom-character-replacement",
 		"level": 4,
@@ -3158,14 +3158,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "System",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#system",
 		"level": 3
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Max Undo",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#max-undo",
 		"level": 4,
@@ -3173,14 +3173,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Function",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#function",
 		"level": 3
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Desktop Thumbnail Preview",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#desktop-thumbnail-preview",
 		"level": 4,
@@ -3188,7 +3188,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support Preview (for manual supports)",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#support-preview-for-manual-supports",
 		"level": 4,
@@ -3196,7 +3196,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support Auxiliary Line",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#support-auxiliary-line",
 		"level": 4,
@@ -3204,7 +3204,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Graphic Tooltip",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#graphic-tooltip",
 		"level": 4,
@@ -3212,7 +3212,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Print Estimation Panel",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#print-estimation-panel",
 		"level": 4,
@@ -3220,7 +3220,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Allow Raft Overlap in Collision Detection",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#allow-raft-overlap-in-collision-detection",
 		"level": 4,
@@ -3228,7 +3228,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support Hidden Angle",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#support-hidden-angle",
 		"level": 4,
@@ -3236,7 +3236,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Network Transmission Integrity Check",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#network-transmission-integrity-check",
 		"level": 4,
@@ -3244,7 +3244,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Prompt for Model Generation when Loading Slice Files",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#prompt-for-model-generation-when-loading-slice-files",
 		"level": 4,
@@ -3252,7 +3252,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Examples",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#examples",
 		"level": 2,
@@ -3260,7 +3260,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Exit Software",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#exit-software",
 		"level": 2,
@@ -3268,14 +3268,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Right-click Menu",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#right-click-menu",
 		"level": 2
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "General Options",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#general-options",
 		"level": 3,
@@ -3283,7 +3283,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Options for Right-click on Models",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#options-for-right-click-on-models",
 		"level": 3,
@@ -3291,7 +3291,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Options for Right-click on Black Spaces in the Canvas",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/main-menu#options-for-right-click-on-black-spaces-in-the-canvas",
 		"level": 3,
@@ -3299,14 +3299,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Function Menu",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu",
 		"level": 1
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Prepare Function Tab",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#prepare-function-tab",
 		"level": 2,
@@ -3314,7 +3314,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add Machine",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#add-machine",
 		"level": 3,
@@ -3322,7 +3322,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "History",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#history",
 		"level": 3,
@@ -3330,7 +3330,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Open",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#open",
 		"level": 3,
@@ -3338,7 +3338,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Export",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#export",
 		"level": 3,
@@ -3346,7 +3346,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Save",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#save",
 		"level": 3,
@@ -3354,7 +3354,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Copy",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#copy",
 		"level": 3,
@@ -3362,7 +3362,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Split Model",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#split-model",
 		"level": 3,
@@ -3370,7 +3370,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Auto Layout",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#auto-layout",
 		"level": 3,
@@ -3378,7 +3378,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Add Tag",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#add-tag",
 		"level": 3,
@@ -3386,7 +3386,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Boolean Operation",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#boolean-operation",
 		"level": 3,
@@ -3394,7 +3394,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Hollow",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#hollow",
 		"level": 3,
@@ -3402,7 +3402,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support Function Tab",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#support-function-tab",
 		"level": 2,
@@ -3410,7 +3410,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Symmetrical Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#symmetrical-support",
 		"level": 3,
@@ -3418,7 +3418,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Merge Supports",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#merge-supports",
 		"level": 3,
@@ -3426,7 +3426,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Overhang Detection",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#overhang-detection",
 		"level": 3,
@@ -3434,7 +3434,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Analyze/Measure Function Tab",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/function-menu#analyzemeasure-function-tab",
 		"level": 2,
@@ -3442,7 +3442,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Toolbar",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/toolbar",
 		"level": 1,
@@ -3450,7 +3450,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Prepare, Analyze/Measure Interface",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/toolbar#prepare-analyzemeasure-interface",
 		"level": 2,
@@ -3458,7 +3458,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support Interface",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/toolbar#support-interface",
 		"level": 2,
@@ -3466,7 +3466,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support Group",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/toolbar#support-group",
 		"level": 3,
@@ -3474,7 +3474,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Selection Tools",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/toolbar#selection-tools",
 		"level": 3,
@@ -3482,7 +3482,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Component List",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/component-list",
 		"level": 1,
@@ -3490,7 +3490,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice Panel",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/slice-panel",
 		"level": 1,
@@ -3498,7 +3498,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice Settings",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/slice-panel#slice-settings",
 		"level": 2,
@@ -3506,7 +3506,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slice Mode",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/slice-panel#slice-mode",
 		"level": 2,
@@ -3514,7 +3514,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Single/Multi-Parameter Slicing",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/slice-panel#singlemulti-parameter-slicing",
 		"level": 2,
@@ -3522,7 +3522,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Gadgets",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/gadgets",
 		"level": 1,
@@ -3530,7 +3530,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Information Panel",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/gadgets#information-panel",
 		"level": 2,
@@ -3538,7 +3538,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Machine Management Bar",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/gadgets#machine-management-bar",
 		"level": 2,
@@ -3546,7 +3546,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Support Display Mode",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/gadgets#support-display-mode",
 		"level": 2,
@@ -3554,7 +3554,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Render Mode",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/gadgets#render-mode",
 		"level": 2,
@@ -3562,7 +3562,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "View Cube",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/gadgets#view-cube",
 		"level": 2,
@@ -3570,7 +3570,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Slider",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/gadgets#slider",
 		"level": 2,
@@ -3578,7 +3578,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Magnifier",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/user-interface/gadgets#magnifier",
 		"level": 2,
@@ -3586,14 +3586,14 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Help and Feedback",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/help-and-feedback",
 		"level": 1
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Frequently Asked Questions",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/help-and-feedback#frequently-asked-questions",
 		"level": 2,
@@ -3601,7 +3601,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Technical Support",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/help-and-feedback#technical-support",
 		"level": 2,
@@ -3609,7 +3609,7 @@
 	},
 	{
 		"name": "CHITUBOX Pro",
-		"version": "2.0.6",
+		"version": "2.0.8",
 		"title": "Advanced Tutorials",
 		"path": "https://manual.chitubox.com/en-US/chitubox-pro/latest/help-and-feedback#advanced-tutorials",
 		"level": 2,
