@@ -1,8 +1,28 @@
-[
-	"chitubox-basic",
-	"chitubox-pro",
-	"chitu-manager",
-	"faq",
-	"chitubox-printing-test",
-	"academy"
-]
+{
+	"fields": [
+		{
+			"fieldId": "chitubox-basic",
+			"relativeConfigPath": "chitubox-basic"
+		},
+		{
+			"fieldId": "chitubox-pro",
+			"relativeConfigPath": "chitubox-pro"
+		},
+		{
+			"fieldId": "chitu-manager",
+			"relativeConfigPath": "chitu-manager"
+		},
+		{
+			"fieldId": "faq",
+			"relativeConfigPath": "faq"
+		},
+		{
+			"fieldId": "chitubox-printing-test",
+			"relativeConfigPath": "chitubox-printing-test"
+		},
+		{
+			"fieldId": "academy",
+			"relativeConfigPath": "academy"
+		}
+	]
+}
