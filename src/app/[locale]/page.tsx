@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import Docsboard from "./Docsboard/Docsboard";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { Locale } from "@/utils/types";
 
 const DynamicHero = dynamic(() => import("./hero/Hero"), {
@@ -9,7 +9,7 @@ const DynamicHero = dynamic(() => import("./hero/Hero"), {
 
 export default function Page(props: { params: { locale: Locale } }) {
 	const { locale } = props.params;
-	unstable_setRequestLocale(locale);
+	setRequestLocale(locale);
 
 	return (
 		<div

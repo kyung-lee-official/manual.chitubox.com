@@ -1,8 +1,8 @@
 import { redirect } from "@/navigation";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 
 export default function Page() {
-	unstable_setRequestLocale("en-US");
+	setRequestLocale("en-US");
 
 	redirect("/chitubox-pro/latest/introduction");
 

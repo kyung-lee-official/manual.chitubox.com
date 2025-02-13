@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import "../globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { UrlHashPilot } from "@/components/urlHashPilot/UrlHashPilot";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
@@ -63,7 +63,7 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
-	unstable_setRequestLocale("zh-CN");
+	setRequestLocale("zh-CN");
 
 	const messages = useMessages();
 

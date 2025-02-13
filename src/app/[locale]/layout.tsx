@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import { notFound, useParams } from "next/navigation";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { UrlHashPilot } from "@/components/urlHashPilot/UrlHashPilot";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
@@ -48,7 +48,7 @@ export default async function RootLayout({
 	/* Validate that the incoming `locale` parameter is valid */
 	if (!locales.includes(locale)) notFound();
 
-	unstable_setRequestLocale(locale);
+	setRequestLocale(locale);
 
 	return (
 		<html lang={locale}>
