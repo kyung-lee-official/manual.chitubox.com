@@ -58,8 +58,9 @@ const Col1Unit = (props: any) => {
 	const { isActive, children } = props;
 	return (
 		<div
-			className={`flex-[0_0_30px] ${isActive ? "text-black" : "text-gray-400"
-				}`}
+			className={`flex-[0_0_30px] ${
+				isActive ? "text-black" : "text-gray-400"
+			}`}
 		>
 			{children}
 		</div>
@@ -70,8 +71,9 @@ const Col2Label = (props: any) => {
 	const { isActive, children } = props;
 	return (
 		<div
-			className={`flex-[1_0_150px] ${isActive ? "text-black" : "text-gray-400"
-				} whitespace-nowrap overflow-hidden text-overflow-ellipsis`}
+			className={`flex-[1_0_150px] ${
+				isActive ? "text-black" : "text-gray-400"
+			} whitespace-nowrap overflow-hidden text-overflow-ellipsis`}
 		>
 			{children}
 		</div>
@@ -96,8 +98,9 @@ const Col2Sign = (props: any) => {
 	const { isActive, children } = props;
 	return (
 		<div
-			className={`flex-[0_0_12px] ${isActive ? "text-black" : "text-gray-400"
-				} text-center`}
+			className={`flex-[0_0_12px] ${
+				isActive ? "text-black" : "text-gray-400"
+			} text-center`}
 		>
 			{children}
 		</div>
@@ -122,8 +125,9 @@ const Col2Unit = (props: any) => {
 	const { isActive, children } = props;
 	return (
 		<div
-			className={`flex-[0_0_65px] ${isActive ? "text-black" : "text-gray-400"
-				}`}
+			className={`flex-[0_0_65px] ${
+				isActive ? "text-black" : "text-gray-400"
+			}`}
 		>
 			{children}
 		</div>
@@ -422,9 +426,7 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 		expectedWaitTime: 2,
 	};
 
-	const [state, dispatch] = useReducer<
-		(state: State, action: Action) => State
-	>(reducer, initState);
+	const [state, dispatch] = useReducer(reducer, initState);
 
 	/* A1 */
 	const handleDistanceA1Change = (event: any) => {
@@ -523,7 +525,7 @@ export const LightOffDelayCalculator: React.FC<any> = (props) => {
 						subStageB1Time +
 						subStageA2Time +
 						subStageB2Time) *
-					60 +
+						60 +
 					state.expectedWaitTime
 				).toFixed(2)
 			),

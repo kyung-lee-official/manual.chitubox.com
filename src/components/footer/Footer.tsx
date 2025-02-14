@@ -1,19 +1,9 @@
 import { useTranslations } from "next-intl";
 import { Year } from "./Year";
-import dynamic from "next/dynamic";
 import Link from "next/link";
-
-const DynamicFooterTop = dynamic(() => import("./FooterTop"), {
-	ssr: false,
-});
-
-const DynamicFooterLogoLg = dynamic(() => import("./FooterLogoLg"), {
-	ssr: false,
-});
-
-const DynamicLowerSns = dynamic(() => import("./LowerSns"), {
-	ssr: false,
-});
+import { DynamicFooterTop } from "./DynamicFooterTop";
+import { DynamicFooterLogoLg } from "./DynamicLogoLg";
+import { DynamicLowerSns } from "./DynamicLowerSns";
 
 const FooterCol = (props: any) => {
 	const { title, children } = props;

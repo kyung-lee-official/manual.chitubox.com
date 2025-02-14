@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
-const VideoContainer: React.FC<any> = (props: any) => {
+const VideoContainer = (props: any) => {
 	const { heightWidthRatio, children } = props;
 	return (
 		<div
@@ -28,7 +28,7 @@ const VerticalVideoContainerForDesktop = (props: any) => {
 	);
 };
 
-const FacebookVideoContainer: React.FC<any> = ({ children }) => {
+const FacebookVideoContainer = ({ children }: any) => {
 	const isLg = useMediaQuery({ query: "(min-width: 1280px)" });
 	const [isDesktop, setIsDesktop] = useState(isLg);
 	useEffect(() => {

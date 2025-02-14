@@ -1,14 +1,13 @@
-import dynamic from "next/dynamic";
 import Docsboard from "./Docsboard/Docsboard";
 import { setRequestLocale } from "next-intl/server";
 import { Locale } from "@/utils/types";
+import { DynamicHero } from "./hero/DynamicHero";
 
-const DynamicHero = dynamic(() => import("./hero/Hero"), {
-	ssr: false,
-});
-
-export default function Page(props: { params: { locale: Locale } }) {
-	const { locale } = props.params;
+export default async function Page(props: {
+	params: Promise<{ locale: Locale }>;
+}) {
+	const { params } = props;
+	const { locale } = await params;
 	setRequestLocale(locale);
 
 	return (

@@ -7,15 +7,11 @@ import Pagination from "@/components/blogDocs/pagination/Pagination";
 import DocsCard from "@/components/blogDocs/docsCard/DocsCard";
 import flattenContext from "@/preload/flattenContext.json";
 import { FlattenPage } from "@/utils/types";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import DocsSearch from "@/components/blogDocs/docsSearch/DocsSearch";
 
-export const Content = (props: {
-	title: string;
-	searchPlaceholder: string;
-}) => {
-	const { title, searchPlaceholder } = props;
-
+export const Content = () => {
+	const t = useTranslations("pages.academy");
 	const locale = useLocale();
 
 	const pages = (flattenContext as FlattenPage[]).filter(
@@ -97,11 +93,11 @@ export const Content = (props: {
 				className="flex justify-center items-center h-28
 				text-6xl font-bold text-neutral-600 dark:text-neutral-300"
 			>
-				{title}
+				{t("title")}
 			</div>
 			<DocsSearch
 				setSearchTerm={setSearchTerm}
-				placeholder={searchPlaceholder}
+				placeholder={t("search-placeholder")}
 			/>
 			{/* <TagFilter
 				availableTags={availableTags}

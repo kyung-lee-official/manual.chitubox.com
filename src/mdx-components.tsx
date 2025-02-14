@@ -6,15 +6,10 @@ import { ResponsiveTable } from "./components/responsiveTable/ResponsiveTable";
 import { ImageContainer } from "./components/imageContainer/ImageContainer";
 import { Admonition } from "./components/admonition/Admonition";
 import { ImageComparison } from "@/components/imageComparison/ImageComparison";
-import dynamic from "next/dynamic";
 import { BlogImageContainer } from "./components/imageContainer/BlogImageContainer";
 import { ModelSource } from "./docComponents/modelSource/ModelSource";
 import { References } from "./docComponents/references/References";
-
-const FacebookVideoContainer = dynamic(
-	() => import("./components/videoContainer/FacebookVideoContainer"),
-	{ ssr: false }
-);
+import FacebookVideoContainer from "./components/videoContainer/FacebookVideoContainer";
 
 const HeadingAnchor = (props: any) => {
 	const { ...rest } = props;

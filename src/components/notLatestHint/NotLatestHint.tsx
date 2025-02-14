@@ -5,12 +5,12 @@ import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 
 export const NotLatestHint = () => {
+	const t = useTranslations();
+	const pathname = usePathname();
+
 	const pageCtx = usePageContext();
 	if (!pageCtx) return null;
 	const { isVersioned } = pageCtx;
-
-	const t = useTranslations();
-	const pathname = usePathname();
 
 	if (!isVersioned) {
 		return null;
