@@ -213,17 +213,24 @@ STL 文件并不包含具体的单位信息，而是使用数字记录。因此�
 
 ### 清除缓存
 
-1. 打开软件日志路径 （设置/帮助 > 打开日志）。<Link href="/zh-CN/chitubox-pro/v1.4.1/application-overview/setting-and-help#打开日志">📃 点击这里</Link>学习如何打开日志。
+1. 通过以下路径，打开存放软件缓存的文件夹：C:\Users\{用户名}\AppData\Local\CHITUBOX Pro
+
+ （设置/帮助 > 打开日志）。<Link href="/zh-CN/chitubox-pro/v1.4.1/application-overview/setting-and-help#打开日志">📃 点击这里</Link>学习如何打开日志。
 
 1. 关闭 CHITUBOX Pro (**务必先关闭 CHITUBOX Pro**) 。
 
-1. 确保已经关闭 CHITUBOX Pro 后，备份 📁*machine* 文件夹到其他路径，删除除了 📄*userLogin.cfg* 以外的所有文件和文件夹。
+1. 确保已经关闭 CHITUBOX Pro 后，备份文件夹📁*CHITUBOX Pro*　中的　📁*3995433653* 文件夹到其他路径，即可删除 📁*CHITUBOX Pro* 这一整个文件夹，以清理缓存。
 
-    <ImageContainer src={"/images/docs/zh-CN/faq/chitubox-pro/faq003.png"} />
+    <ImageContainer src={"/images/docs/zh-CN/faq/chitubox-pro/faq-clearcache-ch.png"} />
 
 1. 重新打开 CHITUBOX Pro。
 
-1. 重新打开软件后，会生成新的 📁*machine* 文件夹，可以将 _.cfg_ 文件复制粘贴到新的 📁*machine* 文件夹中以恢复您的机器。请不要一次性将所有的 _.cfg_ 文件复制到 📁*machine* 文件夹中，因为您遇到的问题有可能是其中的一个文件引起的。
+1. 重新打开软件后，会生成新的 📁*CHITUBOX Pro* 文件夹。如果您有需要备份的切片配置及支撑配置，可在清理缓存前先将配置上传至云端保存。 请不要将所有配置文件直接复制到新生成的📁*CHITUBOX Pro* 文件夹中，因为您遇到的问题有可能是其中的某个配置文件引起的。
+
+<Admonition type="note" title="Note">
+	📁*3995433653* 文件夹中存放了您的机器配置，软件配置及快捷件等，备份此文件夹可帮您保留重要的配置文件。但您遇到的问题可能是其中某个配置文件的损坏引起的，因此若配置文件发生损坏，此文件将无法再使用
+</Admonition>
+
 
 ### 清除及重新创建缩略图缓存
 
