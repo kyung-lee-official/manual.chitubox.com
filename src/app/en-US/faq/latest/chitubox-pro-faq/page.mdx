@@ -228,19 +228,24 @@ You may encounter other issues caused by data corruption between versions in cer
 
 ### Clear Cache
 
-1. Open the log path (Setting/Help > Open Log). <Link href="/en-US/chitubox-pro/v1.4.1/application-overview/setting-and-help#open-log">📃Click here</Link> to learn how to open the log.
+1. Open the folder where CHITUBOX Pro stores the cache: C:\Users\Username\AppData\Local\CHITUBOX Pro.
 
-1. Close CHITUBOX Pro (**make sure to close the software first**).
+1. Close CHITUBOX Pro (**Make sure to close CHITUBOX Pro before proceeding**).
 
-1. Ensure that CHITUBOX Pro is closed, back up the 📂*machine* folder to another location, and then delete all files and folders except the 📄*userLogin.cfg* file.
+1. Then back up the 📁*3995433653* folder inside the 📁*CHITUBOX Pro* by copying it to another location. After backing up, you can delete the entire 📁*CHITUBOX Pro* folder to clear the cache.
 
-    <ImageContainer
-    	src={"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq003.png"}
-    />
+<ImageContainer
+	src={
+		"/images/docs/en-US/faq/chitubox-pro/1.x.x/faq-clearcache-en.png"
+	}
+/>
 
-1. Restart CHITUBOX Pro.
+Restart CHITUBOX Pro—a new 📁*CHITUBOX Pro*  folder will be automatically generated. If you need to save your slicing and support settings, it's best to upload them to the cloud before clearing the cache.
 
-1. After restarting CHITUBOX Pro, a new 📂*machine* folder will be generated. You can restore your machines by copying and pasting _.cfg_ files back to the new 📂*machine* folder. Please do not copy all _.cfg_ files back to the 📂*machine* folder at once as the issue you encountered might be caused by one of them.
+<Admonition type="note" title="Note">
+	📁*3995433653* folder contains your machine settings, appearance preferences, shortcut configurations and etc. Backing up this folder helps retain your important configuration files. However, if the issue you're facing is due to a corrupted configuration file, restoring this folder may not resolve the problem.
+	Do not copy all the backed-up configuration files directly into the new 📁*CHITUBOX Pro* folder, as the issue may have been caused by one of these files.
+</Admonition>
 
 ## USB Drive Issues
 
