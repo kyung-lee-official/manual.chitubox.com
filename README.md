@@ -155,3 +155,7 @@ Do this ✅:
 ## Todos
 
 -   [ ] Add description to **Slice File Naming**
+
+## Deprecated
+
+-   The `pageId` in `metadata` is deprecated, use the page's pathname instead, despite this will lose track for version-specific pages, it significantly relieves the burden of maintaining the `pageId`.
