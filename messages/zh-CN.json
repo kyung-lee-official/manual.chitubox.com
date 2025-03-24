@@ -202,5 +202,13 @@
 			"question": "本页面是否有用？",
 			"thanks": "感谢您的反馈！"
 		}
+	},
+	"ai": {
+		"startContent": "您好，有什么可以帮到您的？",
+		"enterPrompt": "输入您的问题",
+		"closeButton": "关闭",
+		"sendButton": "发送",
+		"errorPrompt": "发送失败，请重试",
+		"canNotBeEmpty": "不能为空!"
 	}
 }

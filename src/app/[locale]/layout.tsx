@@ -9,7 +9,7 @@ import {
 import { UrlHashPilot } from "@/components/urlHashPilot/UrlHashPilot";
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
-import Ask from "@/components/orama/ask/Ask";
+import { Ask } from "@/components/qwen/ask/Ask";
 import { Locale, locales } from "@/utils/types";
 import { NextIntlClientProvider } from "next-intl";
 
@@ -66,9 +66,9 @@ export default async function LocaleLayout({
 				<NextIntlClientProvider messages={messages}>
 					<Header />
 					<main className="dark:bg-black">{children}</main>
+					<Ask />
 				</NextIntlClientProvider>
 				<Footer />
-				<Ask />
 			</body>
 		</html>
 	);

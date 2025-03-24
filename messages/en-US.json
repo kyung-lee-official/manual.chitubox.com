@@ -204,5 +204,13 @@
 			"question": "Is this page useful?",
 			"thanks": "Thanks for your feedback!"
 		}
+	},
+	"ai": {
+		"startContent": "Hello! How can I help you?",
+		"enterPrompt": "Enter to send",
+		"closeButton": "Close",
+		"sendButton": "Send",
+		"errorPrompt":"An error occurred",
+		"canNotBeEmpty": "Can not be empty!"
 	}
 }
