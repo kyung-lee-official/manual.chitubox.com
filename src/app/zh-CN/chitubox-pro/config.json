@@ -131,6 +131,10 @@
 				{
 					"pageId": "help-and-feedback",
 					"label": "帮助和反馈"
+				},
+				{
+					"pageId": "developer-reference",
+					"label": "开发者参考文档"
 				}
 			]
 		},
