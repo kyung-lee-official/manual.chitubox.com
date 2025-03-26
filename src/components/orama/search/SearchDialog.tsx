@@ -49,9 +49,7 @@ export const SearchDialog = forwardRef(function Dialog(
 	return (
 		<dialog
 			ref={dialogRef}
-			className="w-full mt-32
-			lg:w-[500px]
-			xl:w-[600px]
+			className="fixed top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[90vw] lg:w-[500px] xl:w-[600px]
 			dark:text-neutral-100
 			dark:bg-neutral-700
 			rounded-lg backdrop:bg-black/50
