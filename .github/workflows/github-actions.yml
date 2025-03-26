@@ -15,6 +15,8 @@ jobs:
               run: |
                   echo "NEXT_PUBLIC_ORAMA_ENDPOINT=${{ vars.NEXT_PUBLIC_ORAMA_ENDPOINT }}" >> .env.local
                   echo "NEXT_PUBLIC_ORAMA_API_KEY=${{ vars.NEXT_PUBLIC_ORAMA_API_KEY }}" >> .env.local
+                  echo "NEXT_PUBLIC_QWEN_ENDPOINT=${{ vars.NEXT_PUBLIC_QWEN_ENDPOINT }}" >> .env.local
+                  echo "NEXT_PUBLIC_QWEN_API_KEY=${{ vars.NEXT_PUBLIC_QWEN_API_KEY }}" >> .env.local
                   cat .env.local
             - name: Build Docker Image 🐳
               run: |
