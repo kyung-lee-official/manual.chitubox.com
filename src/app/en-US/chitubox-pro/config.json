@@ -131,6 +131,10 @@
 				{
 					"pageId": "help-and-feedback",
 					"label": "Help and Feedback"
+				},
+				{
+					"pageId": "developer-reference",
+					"label": "Developer Reference"
 				}
 			]
 		},
