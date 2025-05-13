@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChevronRightIcon, LanguageIcon } from "@/components/icons/Icons";
-import { Link, usePathname } from "@/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { Block } from "./Block";
 
 export const LanguageMenu = () => {

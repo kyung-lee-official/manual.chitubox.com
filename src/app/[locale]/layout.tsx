@@ -11,7 +11,8 @@ import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
 import { Ask } from "@/components/qwen/ask/Ask";
 import { Locale, locales } from "@/utils/types";
-import { NextIntlClientProvider } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { routing } from "@/i18n/routing";
 
 /* https://nextjs.org/docs/app/api-reference/functions/generate-static-params */
 export function generateStaticParams() {
@@ -49,9 +50,9 @@ export default async function LocaleLayout({
 	children: React.ReactNode;
 	params: Promise<{ locale: Locale }>;
 }) {
-	/* Validate that the incoming `locale` parameter is valid */
+	/* Ensure that the incoming `locale` is valid */
 	const { locale } = await params;
-	if (!locales.includes(locale)) {
+	if (!hasLocale(routing.locales, locale)) {
 		notFound();
 	}
 

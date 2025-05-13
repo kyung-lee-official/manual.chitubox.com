@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { LanguageIcon } from "../icons/Icons";
-import { Link, usePathname } from "@/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useMediaQuery } from "react-responsive";
 import { MediaQuery } from "@/utils/types";
 
