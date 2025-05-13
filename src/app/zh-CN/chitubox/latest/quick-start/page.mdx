@@ -1,0 +1,122 @@
+import {
+	ChituboxMenu,
+	ChituboxAddMachine,
+	ChituboxSupport,
+	ChituboxFileConfig,
+} from "@/components/icons/Icons";
+
+export const metadata = {
+	title: "Quick Start",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"This section will guide you through the most basic usage of CHITUBOX to get you hands-on as fast as possible. We will start by loading a model, adding supports, slicing the model, and finally exporting the printable file to your printer.",
+	other: {
+		pageId: "/en-US/chitubox-basic/v2.0.0/quick-start",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Quick Start
+
+This section will guide you through the basic usage of CHITUBOX helping you to get started quickly. We will start by loading a model, and then add supports, slice the model, and finally export the printable file to your printer.
+
+## Add a printer
+
+You will need to add the printer you need when you first launch CHITUBOX. Taking ELEGOO Jupiter as an example: click the plus button <ChituboxAddMachine size={24} /> on the machine management bar, and select ELEGOO Jupiter from the list.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/003-quick-start-add-machines.png"
+	}
+/>
+
+Click "Next".
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/003-quick-start-configurations.png"
+	}
+/>
+
+Here you can change the configurations of the printer. We will use the default settings for convenience. Click "Apply".
+
+<Admonition type="warning">
+	Never change the **Resolution** and **Size** of a preset printer
+	configuration as it may cause the printer to report an error when reading
+	the file.
+</Admonition>
+
+## Load Files
+
+You can load existing files into CHITUBOX via the dialog window or by dragging and dropping the file into CHITUBOX. Let's try opening a file through the dialog window.
+
+Click the menu button  on the upper left corner of the main window. If you want to load up an existing project, click **Open Project**. If you want to open a 3D mesh file instead, click **Open...**. You can click <Link href="/en-US/chitubox-basic/latest/introduction#supported-file-formats">🔗this link</Link> to see the supported 3D mesh file types. 
+
+Select a 3D mesh file you want to slice from your computer.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/003-quick-start-open-files.png"
+	}
+/>
+
+Click "Open".
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/003-quick-start-open-files-2.png"
+	}
+/>
+
+## Add Supports
+
+Without supports, a model will likely fail to print successfully with only a single point on the build plate. And  the model will be very unstable state as the model's center of gravity is above the contact point. Click the support icon <ChituboxSupport size={24} /> on the upper right corner of the main window to enter the support configuration window.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-basic/2.x.x/003-quick-start-support.png"}
+/>
+
+We will use auto-support here for simplicity. Click the "Auto Support" button.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/003-quick-start-supported.png"
+	}
+/>
+
+Great! Now we're can go ahead to slice the file.
+
+## Slicing
+
+Click the file configuration button <ChituboxFileConfig size={24} /> in the upper right corner to get back to the main window.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-basic/2.x.x/003-quick-start-slice.png"}
+/>
+
+Then click the "Slice" button in the lower right corner to slice the file. This process takes some time, depending on the size of the model and the complexity of the supports.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-basic/2.x.x/003-quick-start-slice.gif"}
+/>
+
+## Exporting the Printable File
+
+This is the final step. Click the "Save" button in the lower right to open up the save slice file window.
+
+<Admonition type="warning">
+	Please do not save the sliced file directly to the USB drive as it may cause file errors.
+	The recommended workflow is to first save the file to your computer's hard drive, and then copy the file to the USB drive.
+
+    Also, it is highly recommended to load the sliced file back to chitubox and preview the file before printing large models. Visually checking model errors can help save time and resin wasted from printing a corrupted file.
+</Admonition>
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-basic/2.x.x/003-quick-start-save-as.png"}
+/>
+
+Here you can name the file and choose where to save the file. Make sure to select the _.ctb_ format in the "Save as type" dropdown menu. Click "Save" to save the file. And then copy the file to your USB drive.
+
+Congratulations, you have completed the CHITUBOX basic tutorial. Have fun printing! 🎉🎉🎉

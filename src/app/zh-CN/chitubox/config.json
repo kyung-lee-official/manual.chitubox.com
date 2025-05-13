@@ -1,0 +1,36 @@
+{
+	"fieldName": "CHITUBOX",
+	"isVersioned": true,
+	"type": "book",
+	"homeUrl": "/zh-CN/chitubox/latest/introduction",
+	"versions": [
+		{
+			"versionCode": "1.0.0",
+			"isLatest": true,
+			"category": [
+				{
+					"pageId": "introduction",
+					"label": "简介"
+				},
+				{
+					"pageId": "installation",
+					"label": "安装"
+				},
+				{
+					"pageId": "quick-start",
+					"label": "快速上手"
+				},
+				{
+					"pageId": "ui-and-features",
+					"label": "UI 和特性",
+					"pages": [
+						{
+							"pageId": "menu",
+							"label": "菜单"
+						}
+					]
+				}
+			]
+		}
+	]
+}

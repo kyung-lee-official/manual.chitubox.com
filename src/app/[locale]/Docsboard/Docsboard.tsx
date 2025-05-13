@@ -60,12 +60,8 @@ const Docsboard = () => {
 				md:gap-10"
 			>
 				<DocsCard
-					href={`/${locale}/chitubox-basic/latest/introduction`}
-					title={t("chitubox-baisc")}
-				/>
-				<DocsCard
-					href={`/${locale}/chitubox-pro/latest/introduction`}
-					title={t("chitubox-pro")}
+					href={`/${locale}/chitubox/latest/introduction`}
+					title={t("chitubox")}
 				/>
 				<DocsCard
 					href={`/${locale}/chitu-manager/latest/introduction`}

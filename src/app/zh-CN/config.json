@@ -1,6 +1,10 @@
 {
 	"fields": [
 		{
+			"fieldId": "chitubox",
+			"relativeConfigPath": "chitubox"
+		},
+		{
 			"fieldId": "chitubox-basic",
 			"relativeConfigPath": "chitubox-basic"
 		},

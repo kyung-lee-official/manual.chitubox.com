@@ -51,17 +51,24 @@ export const Footer = () => {
 				>
 					<DynamicFooterLogoLg />
 					<FooterCol title={t("footer.software.title")}>
-						<Flink href={t("footer.software.chitubox-pro.link")}>
-							{t("footer.software.chitubox-pro.title")}
-						</Flink>
-						<Flink href={t("footer.software.chitubox-basic.link")}>
-							{t("footer.software.chitubox-basic.title")}
+						<Flink href={t("footer.software.chitubox.link")}>
+							{t("footer.software.chitubox.title")}
 						</Flink>
 						<Flink href={t("footer.software.chitubox-dental.link")}>
 							{t("footer.software.chitubox-dental.title")}
 						</Flink>
 						<Flink href={t("footer.software.chitu-manager.link")}>
 							{t("footer.software.chitu-manager.title")}
+						</Flink>
+						<Flink href={t("footer.software.chitubox-pro.link")}>
+							<div className="opacity-50">
+								{t("footer.software.chitubox-pro.title")}
+							</div>
+						</Flink>
+						<Flink href={t("footer.software.chitubox-basic.link")}>
+							<div className="opacity-50">
+								{t("footer.software.chitubox-basic.title")}
+							</div>
 						</Flink>
 					</FooterCol>
 					<FooterCol title={t("footer.customer.title")}>

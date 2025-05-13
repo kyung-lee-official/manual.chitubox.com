@@ -43,12 +43,15 @@ const FieldTitles = (props: { productDocs: string; learn: string }) => {
 
 	for (const field of fields) {
 		switch (field.fieldId) {
-			case "chitubox-basic":
+			case "chitubox":
 				dropdowns[0].menu.push(field);
 				break;
-			case "chitubox-pro":
-				dropdowns[0].menu.push(field);
-				break;
+			// case "chitubox-basic":
+			// 	dropdowns[0].menu.push(field);
+			// 	break;
+			// case "chitubox-pro":
+			// 	dropdowns[0].menu.push(field);
+			// 	break;
 			case "chitu-manager":
 				dropdowns[0].menu.push(field);
 				break;

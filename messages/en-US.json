@@ -18,7 +18,7 @@
 		"selectDocs": "Select A Doc",
 		"selectVersion": "Select A Version",
 		"onThisPage": "On This Page",
-		"notLatest": "This is an older version of the documentation."
+		"notLatest": "You are not reading the latest version of the document."
 	},
 	"pages": {
 		"academy": {
@@ -29,12 +29,16 @@
 	"footer": {
 		"software": {
 			"title": "Software",
+			"chitubox": {
+				"title": "CHITUBOX",
+				"link": "https://www.chitubox.com/en/page/chitubox"
+			},
 			"chitubox-pro": {
-				"title": "CHITUBOX Pro",
+				"title": "CHITUBOX Pro (Deprecated)",
 				"link": "https://www.chitubox.com/en/page/chitubox-pro"
 			},
 			"chitubox-basic": {
-				"title": "CHITUBOX Basic",
+				"title": "CHITUBOX Basic (Deprecated)",
 				"link": "https://www.chitubox.com/en/download/chitubox-free"
 			},
 			"chitubox-dental": {
@@ -131,8 +135,9 @@
 	},
 	"components": {
 		"docsboard": {
-			"chitubox-baisc": "CHITUBOX Basic",
-			"chitubox-pro": "CHITUBOX Pro",
+			"chitubox": "CHITUBOX",
+			"chitubox-baisc": "CHITUBOX Basic (Deprecated)",
+			"chitubox-pro": "CHITUBOX Pro (Deprecated)",
 			"chitu-manager": "ChituManager",
 			"print-academy": "Academy",
 			"chitubox-printing-test": "CHITUBOX Printing Test",
@@ -210,7 +215,7 @@
 		"enterPrompt": "Enter to send",
 		"closeButton": "Close",
 		"sendButton": "Send",
-		"errorPrompt":"An error occurred",
+		"errorPrompt": "An error occurred",
 		"canNotBeEmpty": "Can not be empty!"
 	}
 }

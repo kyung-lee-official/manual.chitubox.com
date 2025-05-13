@@ -29,12 +29,16 @@
 	"footer": {
 		"software": {
 			"title": "软件",
+			"chitubox": {
+				"title": "CHITUBOX",
+				"link": "https://www.chitubox.com/en/page/chitubox"
+			},
 			"chitubox-pro": {
-				"title": "CHITUBOX Pro",
+				"title": "CHITUBOX Pro (已停止维护)",
 				"link": "https://www.chitubox.com/zh-Hans/page/chitubox-pro"
 			},
 			"chitubox-basic": {
-				"title": "CHITUBOX Basic",
+				"title": "CHITUBOX Basic (已停止维护)",
 				"link": "https://www.chitubox.com/zh-Hans/download/chitubox-free"
 			},
 			"chitubox-dental": {
@@ -129,8 +133,9 @@
 	},
 	"components": {
 		"docsboard": {
-			"chitubox-baisc": "CHITUBOX Basic",
-			"chitubox-pro": "CHITUBOX Pro",
+			"chitubox": "CHITUBOX",
+			"chitubox-baisc": "CHITUBOX Basic (已停止维护)",
+			"chitubox-pro": "CHITUBOX Pro (已停止维护)",
 			"chitu-manager": "ChituManager",
 			"print-academy": "打印学院",
 			"chitubox-printing-test": "CHITUBOX 打印测试",

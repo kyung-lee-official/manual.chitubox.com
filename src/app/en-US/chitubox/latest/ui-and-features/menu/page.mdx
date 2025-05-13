@@ -1,0 +1,429 @@
+import { ChituboxMenu } from "@/components/icons/Icons";
+import { Button } from "@/components/button/Button";
+
+export const metadata = {
+	title: "Menu",
+	authors: [{ name: "CHITUBOX Team" }],
+	description:
+		"The menu is a list of options that users can select to perform different tasks in software. You can click the Menu Icon on the top left corner of CHITUBOX to open the Menu.",
+	other: {
+		pageId: "/en-US/chitubox-basic/v2.0.0/menu",
+	},
+	openGraph: {
+		images: ["/images/docs/og_logo.png"],
+	},
+};
+
+# Menu
+
+Click the Menu Icon <ChituboxMenu size={24} /> on the top left corner to open the Menu.
+
+<ImageContainer
+	src={"/images/docs/en-US/chitubox-basic/2.x.x/004-menu-001.png"}
+/>
+
+## New Project
+
+Create a new project.
+
+## Open Project
+
+Open an existing project file or load and merge the project file into the current project.
+
+Project files have the extension _.chitubox_. Please make sure not to confuse them with 3D mesh files or slice files.
+
+## Save Project
+
+Save all or selected models as a _.chitubox_ project file.
+
+## Open
+
+Open a project file, import a 3D model, or slice file.
+
+<Admonition type="warning">
+	Please note that .ctb files are the final slice files, used for printing only. You **SHOULD NOT** try to modify their 3D structures. Only a few non-structure-relative operations like exposure time, lift and retract speed, and layer pixel editing (CHITUBOX Pro only), etc. are available.
+</Admonition>
+
+## Save As
+
+Save all models on the print platform as a project file.
+
+## Export Model
+
+Export all or selected 3D models (including supports). You can export models in a variety of file formats, allowing you to share your models with other users or use them with other 3D software.
+
+## Recently Opened
+
+Open previously successfully opened projects and 3D model files.
+
+## Account
+
+Log in to your CHITUBOX account. You can create an account and log in to access additional features, such as saving your settings across multiple devices.
+
+## Community
+
+Quickly access the CHITUBOX official community. You can interact with other users using our software and stay up-to-date with the latest news, releases, and updates. 
+
+Join community to create endless possibilities with CHITUBOX together.
+
+## Feedback
+
+Here you can submit any ideas, suggestions, or comments about CHITUBOX to the developers.
+
+## Language
+Users can choose the displayed language as needed. 
+
+Currently supported languages are: German, English, French, Italian, Hungarian, Dutch, Polish, Portuguese, Finnish, Turkish, Spanish, Czech, Greek, Russian, Arabic, Japanese, Simplified Chinese, Traditional Chinese, Korean.
+
+## Help
+
+### Check for Updates
+
+Check if the current version needs updating and display the update log for different versions of the softwareFactory Setting.
+
+### Factory Setting
+
+Restore factory settings. This can help solve software issues you may encounter or reset the software.
+
+### Export configuration
+
+Export the current machine's configuration and save it as a _.cfg_ file. This can help back up your print settings or share your print settings with other users.
+
+### Import configuration
+
+Select a _.cfg_ file and import it into the current machine configuration. This can help restore print settings or import print settings from other users
+
+### About CHITUBOX
+
+View software information such as current version of the software and copyright information. This can help to keep track of the version and stay up to date with the latest version.
+
+### Open Log Path
+
+Access the folder containing log files.
+
+You can directly access the log folder if the program crashes and cannot be opened:
+
+* Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Log`
+
+* Ubuntu: `~/.local/share/chitubox2_0/Log`
+
+{/*
+
+* Mac:
+Open Terminal from Finder. In the Terminal window, type the command "echo $TMPDIR" and press Enter. This will generate the path to the temporary directory where your logs are stored.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/en-maclog-001.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/en-maclog-002.png"
+	}
+/>
+
+Open Finder, then go to the Macintosh HD disk. Press Shift + Command + G to open the "Go to Folder" dialog.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/en-maclog-003.png"
+	}
+/>
+
+Paste the log path you copied from the Terminal into the dialog box, then press Enter. This will open the temporary directory containing your app's log files.
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/en-maclog-004.png"
+	}
+/>
+
+<ImageContainer
+	src={
+		"/images/docs/en-US/chitubox-basic/2.x.x/en-maclog-005.png"
+	}
+/>
+
+*/}
+### Open Cache Path
+
+Access the cache folder.
+
+* Windows: `C:\Users\{user-name}\AppData\Local\chitubox2 0\Cache`
+
+* Ubuntu: `~/.local/share/chitubox2_0/Log/chitubox2 0/Cache`
+
+<Admonition type="note">
+	The cache path of macOS can't be located for now as the its location is dynamic.
+</Admonition>
+
+### Open Config Path
+
+Access the folder containing your printing configuration.
+
+You can access the config folder of your printing configuration stored in CHITUBOX.
+
+* Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Conf`
+
+* Ubuntu: `~/.local/share/chitubox2_0/Conf`
+
+### Open dmp Path
+
+Access the folder containing the crash information.
+
+You can access the dmp folder to get the crash information if the CHITUBOX Basic crashes.
+
+* Windows: `C:\Users\{user-name}\AppData\Local\chitubox2_0\Cache\dmp`
+
+<Admonition type="note">
+	No dmp folder is available on macOS as there will be an error pop-up on MacOS when app crashes. Ubuntu doesn't support creating dmp folder for now.
+</Admonition>
+
+### User Manual
+
+Visit the CHITUBOX user manual.
+
+### Data Collection
+
+See what data CHITUBOX is collecting and how it is used.
+
+### Plugins
+
+Manage software plugins. You can import or export plugins to support printers that are not natively supported by CHITUBOX.
+
+<ResponsiveTable>
+	<thead>
+		<tr>
+			<th>Brand</th>
+			<th>Plugin</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Nova 3D</td>
+			<td>
+				<Button
+					buttonType={"link"}
+					href="/plugins/nova3d_plugin_1_0_8.CHplugin"
+				>
+					Nova 3D
+				</Button>
+			</td>
+		</tr>
+		<tr>
+			<td>Longer</td>
+			<td>
+				<div className="flex gap-1.5">
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3D-Orange4K-Windows64bit-V1.5.CHplugin"
+					>
+						Orange 4K for Windows
+					</Button>
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3d-Orange10-Windows64bit-V1.4.CHplugin"
+					>
+						Orange 10 for Windows
+					</Button>
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3d-Orange30-Windows64bit-V1.4.CHplugin"
+					>
+						Orange 30 for Windows
+					</Button>
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3D-Orange4K-macOS-V1.5.CHplugin"
+					>
+						Orange 4K for macOS
+					</Button>
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3d-Orange10-macOS-V1.4.CHplugin"
+					>
+						Orange 10 for macOS
+					</Button>
+					<Button
+						buttonType={"link"}
+						href="/plugins/Longer3d-Orange30-macOS-V1.4.CHplugin"
+					>
+						Orange 30 for macOS
+					</Button>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</ResponsiveTable>
+
+After downloading the plugin, You can go to the **Main Menu > Help > Plugin** to open the plugin window and import the plugin file.
+
+### Shortcut
+
+View and modify keyboard shortcuts for the software.
+
+### Trim Translation
+
+The "Trim Translation" option in CHITUBOX allows you to trim the translation error in the software.
+
+## Settings
+
+General settings for CHITUBOX Basic.
+
+### Appearance
+
+#### Theme
+
+There are three themes available: Light, Dark, and Classic.
+
+#### Sectional Area Pattern
+
+Change the displayed pattern of the sectional area.
+
+#### UI Display Scale
+
+Change the size of the UI.
+
+#### Grid Width
+
+Change the width of the grid on the build plate shown in the model view.
+
+### File
+
+#### Sliced File Thumbnail
+
+Change the perspective in the thumbnail of the sliced file.
+
+#### Auto Save Interval
+
+Change the interval at which the software automatically saves projects.
+
+#### Auto Save Directory
+
+Change the directory where the software saves projects.
+
+#### Model Rename
+
+Automatically add custom suffixes to file names. For example, `#number`, `hollowed out`, `fixed`, and `mirrored`.
+
+#### Project File Naming
+
+-   Append Model Filename Sequentially: The filename is composed of the loaded model filename Sequentially.
+
+#### Slice File Naming
+
+Set the naming rules for sliced files. Most rules are self-explanatory. Only a few special rules are explained below.
+
+#### Duplicate Name Replacement
+
+Set the naming rule for conflicting file names.
+
+#### Character Replacement
+
+Some operating systems do not allow certain characters in filenames. Built-in characters will be used to automatically replace those characters with other characters.
+
+#### Custom Character Replacement
+
+Define custom character replacement rules.
+
+### System
+
+#### Max Undos
+
+This allows you to change the maximum number of undo operations that can be performed.
+
+#### Graphics Card Backward Compatible
+
+Turn on this option if the model preview appears abnormal or the software does not run as expected. Restart the software for the option to take effect.
+
+<Admonition type="note">
+	The program will use more memory if this option is turned on.
+</Admonition>
+
+#### Graphics Quality
+
+The graphics quality grade of CHITUBOX. Increase the value to decrease the refresh rate and improve the graphics quality.
+
+#### Render Engine
+
+Change the render engine of the software.
+
+On Windows, you can choose Direct3D or OpenGL as the rendering engine.
+
+On macOS, you can choose Metal or OpenGL as the rendering engine.
+
+### Function
+
+#### Slicing Model Volume Calculation
+
+Enable or disable volume calculation during slicing.
+
+<Admonition type="note">
+	Enabling this option may slow down the slicing speed.
+</Admonition>
+
+#### Thumbnail Preview of Desktop
+
+Enable or disable the thumbnail preview on the desktop.
+
+#### Preview Supports
+
+Enable or disable support preview when adding manual supports.
+
+#### Display Support Auxiliary Lines
+
+Enable or disable support auxiliary lines.
+
+#### Open Graphics Tooltips
+
+Enable or disable the graphic tooltips.
+
+#### Support Hidden Angle
+
+The angle between the camera optical axis and the negative Z axis of the build plate, supports will be hidden if the angle is smaller than the value you set.
+
+## Examples
+
+Open sample models included with the software.
+
+## Exit
+
+Quit the software.
+
+## Right-click Menu
+
+### New Project
+
+Create a new project.
+
+### Export Model
+
+Export all models or selected models (including supports). 
+
+You can export models in a variety of file formats allowing you to share your models with other users or use them with other 3D software.
+
+### Replace Model
+
+Replace the current model with another model that has slight differences without having to add supports again.
+
+### Select Model
+
+Select the model under the mouse cursor if not already selected. Hold down the Ctrl key and click to select multiple models.
+
+### Cancel Seleted Model
+
+Deselect a selected model under the mouse cursor.
+
+### Hide
+
+Hide the model under the mouse cursor.
+
+### Hide Others
+
+Hide all models except the one under the mouse cursor.
+
+### Display All Models
+
+Display all hidden models.
